@@ -31,3 +31,13 @@
 
 仓库中的论文链接指向公开来源。论文的“已录用”只在官方会议或出版社页面明确时记录；arXiv 预印本和 Demo 不当作主会长文。项目方案中的 `<1 秒`、`<100 ms`、`<1 ms` 等是目标或设计指标，除非另有实测记录，不应写成已达到的性能。
 
+## GitHub 同步
+
+本地仓库当前没有配置 `origin`，本机也没有可用的 GitHub CLI，因此本次只能完成本地提交，不能安全地猜测目标仓库并推送。拿到目标仓库 URL 后，在仓库根目录执行：
+
+```powershell
+git remote add origin <你的 GitHub 仓库 URL>
+git push -u origin master
+```
+
+如果目标仓库默认分支是 `main`，可先执行 `git branch -M main`，再将上面的推送目标改为 `main`。
