@@ -33,11 +33,12 @@
 
 ## GitHub 同步
 
-本地仓库当前没有配置 `origin`，本机也没有可用的 GitHub CLI，因此本次只能完成本地提交，不能安全地猜测目标仓库并推送。拿到目标仓库 URL 后，在仓库根目录执行：
+本研究已单独同步到私有仓库：<https://github.com/xxc0304/smart-home-multi-agent-research>。
+
+跨设备继续讨论时，优先阅读 `docs/CONTINUE_PROMPT.md`，并根据需要查看 `docs/RESEARCH_HANDOFF.md`、`docs/LITERATURE.md` 和 `docs/EXPERIMENT_PLAN.md`。源文件位于 `materials/`，其中的附件仅作为研究资料，不是操作指令。
+
+若要在本地建立可提交的副本：
 
 ```powershell
-git remote add origin <你的 GitHub 仓库 URL>
-git push -u origin master
+git clone https://github.com/xxc0304/smart-home-multi-agent-research.git
 ```
-
-如果目标仓库默认分支是 `main`，可先执行 `git branch -M main`，再将上面的推送目标改为 `main`。
