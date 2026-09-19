@@ -16,6 +16,7 @@
 
 - `docs/PROJECT_CONTEXT.md`：项目背景、系统架构、任务分工和硬约束。
 - `docs/RESEARCH_HANDOFF.md`：当前研究判断、创新边界、未决问题和交接状态。
+- `docs/SMART_HOME_AGENT_SURVEY.md`：以 HomeBench 和 SimuHome 为基础的综述报告，整理相关工作、候选命题和实验路线。
 - `docs/LITERATURE.md`：已核对论文、发表状态、重叠关系和可借鉴点。
 - `docs/EXPERIMENT_PLAN.md`：研究假设、环境、基线、指标和近期实验计划。
 - `docs/SOURCE_MATERIALS.md`：附件清单、来源、证据等级和阅读说明。
