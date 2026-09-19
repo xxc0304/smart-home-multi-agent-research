@@ -1,8 +1,12 @@
 # 跨设备继续讨论提示词
 
-请读取这个项目仓库的 `README.md`、`docs/PROJECT_CONTEXT.md`、`docs/RESEARCH_HANDOFF.md`、`docs/LITERATURE.md` 和 `docs/EXPERIMENT_PLAN.md`，再继续讨论智慧家庭多 Agent 研究。
+请读取这个项目仓库的 `README.md`、`docs/PROJECT_CONTEXT.md`、`docs/RESEARCH_HANDOFF.md`、`docs/LITERATURE.md`、`docs/SMART_HOME_AGENT_SURVEY.md` 和 `docs/EXPERIMENT_PLAN.md`，再继续讨论智慧家庭多 Agent 研究。
 
-当前背景：我负责智慧家庭项目中多 Agent 协同编排方向。项目采用主调度 Agent、专业 Agent／Skill、Home Assistant 确定性执行器和云边端分层。实际部署强调本地实时控制、断网可用和安全优先。我的研究候选命题是：在多个 Agent 共享且持续变化的家庭环境中，任务存在依赖、资源冲突、不同截止时间和异步反馈时，如何根据剩余时间、状态新鲜度和已执行进度，选择继续执行、局部修复、取消或全局重规划。
+当前背景：我负责智慧家庭项目中多 Agent 协同编排方向。项目采用主调度 Agent、专业 Agent／Skill、Home Assistant 确定性执行器和云边端分层。实际部署强调本地实时控制、断网可用和安全优先。第一篇论文暂定为 HomeCoord-Bench，核心问题是：多个专业 Agent 异步作用于动态共享家庭环境时，协调机制减少动作冲突需要付出多少响应时延和任务效用？选择性修复、模型路由和预测执行保留为后续方法方向。
+
+当前验证进度：已经实现 4 条种子 episode、11 条参数化变体、C1–C4 确定性评测器、CentralSingleAgent／IndependentMultiAgent／RuleCoordinator 三种闭环和 DeepSeek API 适配。6 个关键配置各重复 5 次后，发现共享策略提示不能稳定消除冲突，低优先级 Agent 先返回会破坏简单优先级规则。规则协调器增加待决高优先级检查后，在直接冲突配置中复测 5/5 过程有效、0 次 C1；相比独立架构，首动作中位数约增加 129 ms，任务服务率从 100% 降至 50%。这些仍是校准结果，不是论文统计结论。请先读 `docs/VALIDATION_LOG.md` 和 `homecoord_bench/results/`。
+
+当前文献清单已整理为本轮讨论的 19 篇论文。除 HomeBench、SimuHome、SMH-Bench、PersonalHomeBench、SAGE、HomeFlow 等家庭工作外，还包括 DynTaskMAS、REALM-Bench、SagaLLM、ALAS、SyncPlan、VeraRAN、Agent JIT Compilation、Speculative Actions、Win Fast or Lose Slow、HearthNet、When Do LLM Agents Help? 和 Agentic Fast-Slow Planning。LLMCompiler 与 Multi-Agent Path Finding with Deadlines 作为补充背景，不计入 19 篇。
 
 目前另行保留低延迟方向 HomeSpec：面向多 Agent 家庭自动化的风险与截止时间感知预测式协同执行。它借鉴 Speculative Actions 的“预测—并行准备—状态验证—提交／丢弃”机制，但不直接提前执行危险物理动作。研究重点是低风险工具预取、状态版本和资源租约、预测分支动态选择，以及预测失配后的受影响子图局部修复。建议采用“本地预授权策略保证首个安全动作＋快速 Speculator 准备后续步骤＋慢速主 Agent 权威确认”的三层架构。
 
