@@ -55,11 +55,39 @@
       "runs": 15,
       "process_valid_successes": 3,
       "process_valid_success_rate": 0.2,
+      "process_valid_success_rate_ci95_wilson": [
+        0.07047420643610414,
+        0.4518593533465045
+      ],
       "conflicts": {
         "C1": 6,
         "C2": 0,
         "C3": 0,
         "C4": 3
+      },
+      "conflict_episode_counts": {
+        "C1": 6,
+        "C2": 0,
+        "C3": 0,
+        "C4": 3
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.19824228082594664,
+          0.642535572434923
+        ],
+        "C2": [
+          0.0,
+          0.20388926630434784
+        ],
+        "C3": [
+          0.0,
+          0.20388926630434784
+        ],
+        "C4": [
+          0.07047420643610414,
+          0.4518593533465045
+        ]
       },
       "first_effective_action_latency_ms": {
         "min": 1153,
@@ -81,11 +109,39 @@
       "runs": 15,
       "process_valid_successes": 8,
       "process_valid_success_rate": 0.5333333333333333,
+      "process_valid_success_rate_ci95_wilson": [
+        0.3011663015105079,
+        0.7519077474025355
+      ],
       "conflicts": {
         "C1": 3,
         "C2": 0,
         "C3": 0,
         "C4": 0
+      },
+      "conflict_episode_counts": {
+        "C1": 3,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.07047420643610414,
+          0.4518593533465045
+        ],
+        "C2": [
+          0.0,
+          0.20388926630434784
+        ],
+        "C3": [
+          0.0,
+          0.20388926630434784
+        ],
+        "C4": [
+          0.0,
+          0.20388926630434784
+        ]
       },
       "first_effective_action_latency_ms": {
         "min": 1110,
@@ -104,16 +160,370 @@
       "mean_task_service_rate": 0.6666666666666666
     }
   },
-  "direct_conflict_by_visibility": {
-    "IndependentMultiAgent.local_only": {
+  "configurations": {
+    "HC-VAR-002-local_only-0.IndependentMultiAgent": {
       "runs": 5,
       "process_valid_successes": 0,
       "process_valid_success_rate": 0.0,
+      "process_valid_success_rate_ci95_wilson": [
+        0.0,
+        0.43449149475208104
+      ],
       "conflicts": {
         "C1": 4,
         "C2": 0,
         "C3": 0,
         "C4": 0
+      },
+      "conflict_episode_counts": {
+        "C1": 4,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.3755282641185388,
+          0.9637768390302125
+        ],
+        "C2": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C3": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C4": [
+          0.0,
+          0.43449149475208104
+        ]
+      },
+      "first_effective_action_latency_ms": {
+        "min": 1228,
+        "p50": 1372,
+        "p95": 2549.7999999999997,
+        "max": 2797,
+        "mean": 1663.2
+      },
+      "task_completion_time_ms": {
+        "min": 1228,
+        "p50": 1372,
+        "p95": 2549.7999999999997,
+        "max": 2797,
+        "mean": 1663.2
+      },
+      "mean_task_service_rate": 1.0
+    },
+    "HC-VAR-002-local_only-0.RuleCoordinator": {
+      "runs": 5,
+      "process_valid_successes": 2,
+      "process_valid_success_rate": 0.4,
+      "process_valid_success_rate_ci95_wilson": [
+        0.1176182311592533,
+        0.769280067791163
+      ],
+      "conflicts": {
+        "C1": 3,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_counts": {
+        "C1": 3,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "C2": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C3": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C4": [
+          0.0,
+          0.43449149475208104
+        ]
+      },
+      "first_effective_action_latency_ms": {
+        "min": 1311,
+        "p50": 1340,
+        "p95": 5001.799999999999,
+        "max": 5886,
+        "mean": 2263.4
+      },
+      "task_completion_time_ms": {
+        "min": 1311,
+        "p50": 1340,
+        "p95": 5001.799999999999,
+        "max": 5886,
+        "mean": 2263.4
+      },
+      "mean_task_service_rate": 0.8
+    },
+    "HC-VAR-002-policy_visible-0.IndependentMultiAgent": {
+      "runs": 5,
+      "process_valid_successes": 3,
+      "process_valid_success_rate": 0.6,
+      "process_valid_success_rate_ci95_wilson": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
+      "conflicts": {
+        "C1": 2,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_counts": {
+        "C1": 2,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.1176182311592533,
+          0.769280067791163
+        ],
+        "C2": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C3": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C4": [
+          0.0,
+          0.43449149475208104
+        ]
+      },
+      "first_effective_action_latency_ms": {
+        "min": 1382,
+        "p50": 1460,
+        "p95": 1525.4,
+        "max": 1539,
+        "mean": 1449.4
+      },
+      "task_completion_time_ms": {
+        "min": 1382,
+        "p50": 1460,
+        "p95": 1525.4,
+        "max": 1539,
+        "mean": 1449.4
+      },
+      "mean_task_service_rate": 0.7
+    },
+    "HC-VAR-004-enter-1500.RuleCoordinator": {
+      "runs": 5,
+      "process_valid_successes": 4,
+      "process_valid_success_rate": 0.8,
+      "process_valid_success_rate_ci95_wilson": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "conflicts": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_counts": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C2": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C3": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C4": [
+          0.0,
+          0.43449149475208104
+        ]
+      },
+      "first_effective_action_latency_ms": {
+        "min": 1110,
+        "p50": 1222.5,
+        "p95": 1461.1,
+        "max": 1492,
+        "mean": 1261.75
+      },
+      "task_completion_time_ms": {
+        "min": 1110,
+        "p50": 1222.5,
+        "p95": 1461.1,
+        "max": 1492,
+        "mean": 1261.75
+      },
+      "mean_task_service_rate": 0.8
+    },
+    "HC-VAR-004-enter-800.IndependentMultiAgent": {
+      "runs": 5,
+      "process_valid_successes": 0,
+      "process_valid_success_rate": 0.0,
+      "process_valid_success_rate_ci95_wilson": [
+        0.0,
+        0.43449149475208104
+      ],
+      "conflicts": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "C4": 3
+      },
+      "conflict_episode_counts": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "C4": 3
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C2": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C3": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C4": [
+          0.23071993220883708,
+          0.8823817688407467
+        ]
+      },
+      "first_effective_action_latency_ms": {
+        "min": 1153,
+        "p50": 1298,
+        "p95": 1408.7,
+        "max": 1421,
+        "mean": 1290.6666666666667
+      },
+      "task_completion_time_ms": {
+        "min": 1153,
+        "p50": 1298,
+        "p95": 1408.7,
+        "max": 1421,
+        "mean": 1290.6666666666667
+      },
+      "mean_task_service_rate": 0.6
+    },
+    "HC-VAR-004-enter-800.RuleCoordinator": {
+      "runs": 5,
+      "process_valid_successes": 2,
+      "process_valid_success_rate": 0.4,
+      "process_valid_success_rate_ci95_wilson": [
+        0.1176182311592533,
+        0.769280067791163
+      ],
+      "conflicts": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_counts": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C2": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C3": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C4": [
+          0.0,
+          0.43449149475208104
+        ]
+      },
+      "first_effective_action_latency_ms": {
+        "min": 5746,
+        "p50": 5797.5,
+        "p95": 5843.85,
+        "max": 5849,
+        "mean": 5797.5
+      },
+      "task_completion_time_ms": {
+        "min": 5746,
+        "p50": 5797.5,
+        "p95": 5843.85,
+        "max": 5849,
+        "mean": 5797.5
+      },
+      "mean_task_service_rate": 0.4
+    }
+  },
+  "direct_conflict_by_visibility": {
+    "IndependentMultiAgent.local_only": {
+      "runs": 5,
+      "process_valid_successes": 0,
+      "process_valid_success_rate": 0.0,
+      "process_valid_success_rate_ci95_wilson": [
+        0.0,
+        0.43449149475208104
+      ],
+      "conflicts": {
+        "C1": 4,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_counts": {
+        "C1": 4,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.3755282641185388,
+          0.9637768390302125
+        ],
+        "C2": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C3": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C4": [
+          0.0,
+          0.43449149475208104
+        ]
       },
       "first_effective_action_latency_ms": {
         "min": 1228,
@@ -135,11 +545,39 @@
       "runs": 5,
       "process_valid_successes": 3,
       "process_valid_success_rate": 0.6,
+      "process_valid_success_rate_ci95_wilson": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
       "conflicts": {
         "C1": 2,
         "C2": 0,
         "C3": 0,
         "C4": 0
+      },
+      "conflict_episode_counts": {
+        "C1": 2,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.1176182311592533,
+          0.769280067791163
+        ],
+        "C2": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C3": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C4": [
+          0.0,
+          0.43449149475208104
+        ]
       },
       "first_effective_action_latency_ms": {
         "min": 1382,
@@ -161,11 +599,39 @@
       "runs": 5,
       "process_valid_successes": 2,
       "process_valid_success_rate": 0.4,
+      "process_valid_success_rate_ci95_wilson": [
+        0.1176182311592533,
+        0.769280067791163
+      ],
       "conflicts": {
         "C1": 3,
         "C2": 0,
         "C3": 0,
         "C4": 0
+      },
+      "conflict_episode_counts": {
+        "C1": 3,
+        "C2": 0,
+        "C3": 0,
+        "C4": 0
+      },
+      "conflict_episode_rate_ci95_wilson": {
+        "C1": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "C2": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C3": [
+          0.0,
+          0.43449149475208104
+        ],
+        "C4": [
+          0.0,
+          0.43449149475208104
+        ]
       },
       "first_effective_action_latency_ms": {
         "min": 1311,
@@ -310,6 +776,8 @@
       }
     ]
   },
+  "indirect_conflict_by_task_gap": {},
+  "resource_conflict_by_capacity": {},
   "episodes": [
     {
       "family": "direct_device_conflict",

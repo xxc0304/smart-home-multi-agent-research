@@ -13,10 +13,15 @@ from runtime.deepseek_client import DeepSeekResponsesClient
 from runtime.dry_run import DryRunClient
 from runtime.event_log import EventLogger
 from runtime.execution import run_closed_loop_episode
-from runtime.variants import direct_conflict_variants, stale_action_variants
+from runtime.variants import (
+    direct_conflict_variants,
+    indirect_conflict_variants,
+    resource_capacity_variants,
+    stale_action_variants,
+)
 
 
-TARGETS = (
+CORE_TARGETS = (
     ("HC-VAR-002-policy_visible-0", "IndependentMultiAgent"),
     ("HC-VAR-002-local_only-0", "IndependentMultiAgent"),
     ("HC-VAR-002-local_only-0", "RuleCoordinator"),
@@ -25,11 +30,26 @@ TARGETS = (
     ("HC-VAR-004-enter-1500", "RuleCoordinator"),
 )
 
+CONFLICT_TARGETS = (
+    ("HC-VAR-003-gap-1000", "IndependentMultiAgent"),
+    ("HC-VAR-003-gap-1000", "ConstraintCoordinator"),
+    ("HC-VAR-003-gap-1500", "IndependentMultiAgent"),
+    ("HC-VAR-003-gap-1500", "ConstraintCoordinator"),
+    ("HC-VAR-001-cap-1p21", "IndependentMultiAgent"),
+    ("HC-VAR-001-cap-1p21", "ConstraintCoordinator"),
+    ("HC-VAR-001-cap-1p23", "IndependentMultiAgent"),
+    ("HC-VAR-001-cap-1p23", "ConstraintCoordinator"),
+)
+
+TARGETS = CORE_TARGETS + CONFLICT_TARGETS
+
 
 def calibration_variants() -> dict[str, dict]:
     variants = [
         *direct_conflict_variants(load_json(ROOT / "data" / "seeds" / "HC-SEED-002.json")),
         *stale_action_variants(load_json(ROOT / "data" / "seeds" / "HC-SEED-004.json")),
+        *indirect_conflict_variants(load_json(ROOT / "data" / "seeds" / "HC-SEED-003.json")),
+        *resource_capacity_variants(load_json(ROOT / "data" / "seeds" / "HC-SEED-001.json")),
     ]
     return {episode["episode_id"]: episode for episode in variants}
 
@@ -89,13 +109,15 @@ if __name__ == "__main__":
     parser.add_argument("--provider", choices=("dry-run", "deepseek"), default="dry-run")
     parser.add_argument("--repetitions", type=int, default=5)
     parser.add_argument("--output-dir", type=Path, default=ROOT / "runs" / "targeted-repetitions")
+    parser.add_argument("--suite", choices=("core", "c2c3", "all"), default="core")
     parser.add_argument(
         "--target", action="append",
         choices=[f"{variant_id}|{architecture}" for variant_id, architecture in TARGETS],
         help="repeat one selected calibration configuration; may be passed more than once",
     )
     args = parser.parse_args()
-    selected = tuple(tuple(item.split("|", 1)) for item in args.target) if args.target else TARGETS
+    suites = {"core": CORE_TARGETS, "c2c3": CONFLICT_TARGETS, "all": TARGETS}
+    selected = tuple(tuple(item.split("|", 1)) for item in args.target) if args.target else suites[args.suite]
     rows = run(args.provider, args.repetitions, args.output_dir, selected)
     print(json.dumps({
         "runs": len(rows),

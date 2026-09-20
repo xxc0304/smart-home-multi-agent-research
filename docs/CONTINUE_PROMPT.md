@@ -4,7 +4,7 @@
 
 当前背景：我负责智慧家庭项目中多 Agent 协同编排方向。项目采用主调度 Agent、专业 Agent／Skill、Home Assistant 确定性执行器和云边端分层。实际部署强调本地实时控制、断网可用和安全优先。第一篇论文暂定为 HomeCoord-Bench，核心问题是：多个专业 Agent 异步作用于动态共享家庭环境时，协调机制减少动作冲突需要付出多少响应时延和任务效用？选择性修复、模型路由和预测执行保留为后续方法方向。
 
-当前验证进度：已经实现 4 条种子 episode、11 条参数化变体、C1–C4 确定性评测器、CentralSingleAgent／IndependentMultiAgent／RuleCoordinator 三种闭环和 DeepSeek API 适配。6 个关键配置各重复 5 次后，发现共享策略提示不能稳定消除冲突，低优先级 Agent 先返回会破坏简单优先级规则。规则协调器增加待决高优先级检查后，在直接冲突配置中复测 5/5 过程有效、0 次 C1；相比独立架构，首动作中位数约增加 129 ms，任务服务率从 100% 降至 50%。这些仍是校准结果，不是论文统计结论。请先读 `docs/VALIDATION_LOG.md` 和 `homecoord_bench/results/`。
+当前验证进度：已经实现 4 条种子 episode、20 条参数化变体、C1–C4 确定性评测器、CentralSingleAgent／IndependentMultiAgent／RuleCoordinator／ConstraintCoordinator 四种闭环和 DeepSeek API 适配。C1–C4 的关键配置均已各重复 20 次。局部信息下 Independent 有 19/20 次 C1，修正后的 RuleCoordinator 为 0/20；住户 800 ms 进入时 Independent 有 17/20 次 C4，RuleCoordinator 为 0/20；C2/C3 冲突边界下 Independent 分别有 8/20 和 18/20 次冲突，ConstraintCoordinator 均为 0/20。相同提案的反事实回放表明：C1 协调主要降低低优先级任务服务率；C2/C3 只在冲突样本增加完整完成时间，安全样本和首个有效动作的时延增量为 0。这些仍是校准结果，不是论文最终统计结论。请先读 `docs/VALIDATION_LOG.md` 和 `homecoord_bench/results/`。
 
 当前文献清单已整理为本轮讨论的 19 篇论文。除 HomeBench、SimuHome、SMH-Bench、PersonalHomeBench、SAGE、HomeFlow 等家庭工作外，还包括 DynTaskMAS、REALM-Bench、SagaLLM、ALAS、SyncPlan、VeraRAN、Agent JIT Compilation、Speculative Actions、Win Fast or Lose Slow、HearthNet、When Do LLM Agents Help? 和 Agentic Fast-Slow Planning。LLMCompiler 与 Multi-Agent Path Finding with Deadlines 作为补充背景，不计入 19 篇。
 

@@ -242,3 +242,99 @@ dry-run 形成了预期边界：EnergyAgent 看不到舒适策略时，独立多
 
 - `homecoord_bench/results/deepseek_targeted_repetitions_20260920.json`；
 - `homecoord_bench/results/deepseek_rule_direct_retest_20260920.json`。
+
+## 2026-09-20：关键配置扩展到 20 次
+
+6 个关键配置现已各重复 20 次，共 120 个架构—配置运行。257 次逻辑模型调用产生 263 次 API 尝试，6 次无效输出均在一次重试后成功。包含无效尝试的费用约为 0.05417–0.10834 美元。逻辑调用时延 P50 为 1180.494 ms、P95 为 1591.282 ms，最大值为 12214.646 ms。
+
+| 配置 | 过程有效成功 | 主要冲突 Episode | 平均任务服务率 | 首动作 P50 / P95 |
+|---|---:|---:|---:|---:|
+| Independent，C1 策略可见 | 11/20 | C1：8/20 | 72.5% | 1433 / 2393 ms |
+| Independent，C1 仅局部状态 | 1/20 | C1：19/20 | 97.5% | 1328.5 / 1743.9 ms |
+| RuleCoordinator，C1 仅局部状态 | 20/20 | C1：0/20 | 50% | 1276 / 1662.4 ms |
+| Independent，住户 800 ms 进入 | 0/20 | C4：17/20 | 85% | 1418 / 1557.6 ms |
+| RuleCoordinator，住户 800 ms 进入 | 15/20 | C4：0/20 | 75% | 5606 / 6189.3 ms |
+| RuleCoordinator，住户 1500 ms 进入 | 17/20 | C4：0/20 | 85% | 1212 / 6254.2 ms |
+
+Wilson 95% 区间进一步说明当前差异已不只是单次偶然：C1 局部信息下 Independent 的过程有效成功率区间为 0.9%–23.6%，RuleCoordinator 为 83.9%–100%；策略可见的 Independent 为 34.2%–74.2%。策略提示能改善结果，但不能替代显式协调。
+
+20 次结果修正了 5 次小样本产生的一个印象：在 C1 中，规则协调器的首动作中位数并没有稳定增加。原因是低优先级节能动作被拒绝后，高优先级舒适动作仍可立即执行。该家族主要体现安全—任务效用权衡，而不是安全—首动作时延权衡。C4 则明显体现安全—完成时延权衡：住户较早进入时，安全协调器需要等待住户离开，完成时延中位数约 5.6 秒。
+
+住户 1500 ms 进入时的 P95 达到 6.25 秒，而 P50 只有 1.21 秒，形成明显双峰：模型和设备动作若在事件前完成则走快速路径，否则需要等待状态恢复。该现象适合用分布和 deadline miss rate 表达，不能只报告均值。
+
+聚合结果：`homecoord_bench/results/deepseek_targeted_repetitions_20_20260920.json`。
+
+## 2026-09-20：C2/C3 参数化家族与反事实回放
+
+### 离线临界边界
+
+新增两组程序化变体：
+
+- C2：制热任务相对通风任务的释放间隔为 0、500、1000、1500、2500 ms；
+- C3：家庭容量为 1.20、1.21、1.23、8.0 kW，两项并行动作合计为 1.22 kW。
+
+dry-run 中，IndependentMultiAgent 和 RuleCoordinator 在 C2 的 0–1000 ms 间隔产生冲突，1500 ms 后不再冲突；在 C3 的 1.20–1.21 kW 条件产生冲突，1.23 kW 后不再冲突。新增 `ConstraintCoordinator` 作为强规则基线：它只在检测到 C2/C3 时延后一个动作，所有冲突配置均安全，在安全配置中不增加完成时间。自动测试现为 31 项并全部通过。
+
+### DeepSeek 单次扫描
+
+9 个变体、4 种架构共 36 个运行全部完成。72 次逻辑模型调用产生 74 次 API 尝试，2 次格式失败均重试成功，费用约为 0.01533–0.03066 美元。
+
+- C2 完整复现离线边界：IndependentMultiAgent 和 RuleCoordinator 在 0、500、1000 ms 时均产生 C2，在 1500、2500 ms 时均安全；ConstraintCoordinator 5/5 安全。
+- C3 在 1.21 kW 条件下由 IndependentMultiAgent 和 RuleCoordinator 产生冲突，ConstraintCoordinator 消除冲突；1.23 kW 和 8.0 kW 条件均安全。
+- C3 的 1.20 kW 单次 Independent 运行没有冲突，因为两次真实模型响应相差超过 1000 ms，短暂的灯光动作已经结束。这说明推理时延不仅是成本，也会改变并发动作是否实际重叠。
+
+### 同提案反事实回放
+
+不同架构分别调用模型会混入输出和网络时延随机性。为隔离协调机制本身，新增反事实回放：记录 IndependentMultiAgent 的专业 Agent 决策和逻辑调用时延，再把完全相同的提案交给协调器处理，不发出新 API 请求。
+
+| 家族 | 配对数 | 原冲突 Episode | 协调后冲突 | 首动作时延变化 | 冲突样本完成时延变化 | 任务服务率变化 |
+|---|---:|---:|---:|---:|---:|---:|
+| C1：Independent → RuleCoordinator | 40 | 27 | 0 | P50/P95 = 0/0 ms | P50/P95 = 0/0 ms | 85% → 50% |
+| C2：Independent → ConstraintCoordinator | 5 | 3 | 0 | P50/P95 = 0/0 ms | P50/P95 = 1462/2507.8 ms | 100% → 100% |
+| C3：Independent → ConstraintCoordinator | 4 | 1 | 0 | P50/P95 = 0/0 ms | 2996 ms（单样本） | 100% → 100% |
+
+三类冲突呈现不同代价：
+
+- C1 通过拒绝低优先级动作解决，代价主要是局部任务效用，不增加当前定义下的首个有效动作或全局目标完成时间；
+- C2/C3 通过保留两个任务并错开执行解决，首个有效动作仍可立即发生，但完整任务完成时间增加；
+- 因此论文不应预设“协调一定增加首动作时延”，而应分别测量首动作、完整完成时间、冲突率和任务服务率。
+
+这些反事实结果比跨架构独立调用更适合归因协调开销，但 C2/C3 目前分别只有 3 个和 1 个真实冲突样本，仍需重复试验。
+
+聚合结果：
+
+- `homecoord_bench/results/deepseek_conflict_family_sweep_20260920.json`；
+- `homecoord_bench/results/deepseek_direct_counterfactual_replay_20260920.json`；
+- `homecoord_bench/results/deepseek_indirect_counterfactual_replay_20260920.json`；
+- `homecoord_bench/results/deepseek_capacity_counterfactual_replay_20260920.json`。
+
+## 2026-09-20：C2/C3 关键边界各重复 20 次
+
+在单次扫描后，选择 C2 的 1000/1500 ms 间隔和 C3 的 1.21/1.23 kW 容量，分别用 IndependentMultiAgent 与 ConstraintCoordinator 各重复 20 次，共 160 个运行。320 次逻辑模型调用产生 328 次 API 尝试，8 次格式失败均重试成功；费用约为 0.06793–0.13585 美元。逻辑调用 P50/P95 为 1220.834/1571.009 ms。
+
+| 家族与边界 | 架构 | 过程有效成功 | 冲突 Episode | 任务服务率 | 完成时间 P50 / P95 |
+|---|---|---:|---:|---:|---:|
+| C2，1000 ms | Independent | 12/20 | C2：8/20 | 100% | 2351.5 / 2602.2 ms |
+| C2，1000 ms | ConstraintCoordinator | 20/20 | C2：0/20 | 100% | 3212 / 3508 ms |
+| C2，1500 ms 安全边界 | Independent | 20/20 | 0 | 100% | 2767.5 / 3042.8 ms |
+| C2，1500 ms 安全边界 | ConstraintCoordinator | 20/20 | 0 | 100% | 2751 / 3037.3 ms |
+| C3，1.21 kW | Independent | 2/20 | C3：18/20 | 100% | 1400 / 2779.2 ms |
+| C3，1.21 kW | ConstraintCoordinator | 20/20 | C3：0/20 | 100% | 3287.5 / 4424.6 ms |
+| C3，1.23 kW 安全边界 | Independent | 20/20 | 0 | 100% | 1516 / 2804.7 ms |
+| C3，1.23 kW 安全边界 | ConstraintCoordinator | 20/20 | 0 | 100% | 1514 / 2749.1 ms |
+
+C2 冲突边界下 Independent 的过程有效成功率 Wilson 95% 区间为 38.7%–78.1%；C3 冲突边界为 2.8%–30.1%；ConstraintCoordinator 两个家族均为 83.9%–100%。安全边界中两种架构均为 20/20 有效，说明强规则基线没有因为存在协调模块就固定串行化全部任务。
+
+使用 Independent 的相同提案与相同逻辑调用时延做 40 对反事实回放：
+
+- C2：8 个原冲突全部消除；冲突样本完成时间增量 P50/P95 为 1112.5/1339.05 ms，32 个安全样本增量 P50/P95 为 0/0 ms；
+- C3：18 个原冲突全部消除；冲突样本完成时间增量 P50/P95 为 927.5/2895.15 ms，22 个安全样本增量 P50/P95 为 0/0 ms；
+- 两个家族的首个有效动作增量均为 P50/P95 0/0 ms，任务服务率保持 100%。
+
+这为核心 benchmark 命题提供了当前最干净的校准证据：选择性协调可以消除冲突，且只对冲突样本增加完整完成时间；它不必拖慢首个有效动作，也不必牺牲任务服务率。不同冲突类别仍需要分别报告，因为 C1 的主要代价是放弃低优先级任务，而 C2/C3 的主要代价是延后完成。
+
+聚合结果：
+
+- `homecoord_bench/results/deepseek_c2_c3_targeted_repetitions_20_20260920.json`；
+- `homecoord_bench/results/deepseek_indirect_counterfactual_replay_20_20260920.json`；
+- `homecoord_bench/results/deepseek_capacity_counterfactual_replay_20_20260920.json`。

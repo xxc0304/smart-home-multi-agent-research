@@ -139,6 +139,13 @@ def _indirect_conflict(first: dict[str, Any], second: dict[str, Any]) -> bool:
     return pair == {("window", "open"), ("heater", "heat_high")} and _overlap(first, second) >= 1000
 
 
+def _capacity_conflict_end(accepted: list[dict[str, Any]], candidate: dict[str, Any], capacity_kw: float) -> int | None:
+    overlapping = [event for event in accepted if _overlap(event, candidate) > 0]
+    if candidate.get("power_kw", 0) + sum(event.get("power_kw", 0) for event in overlapping) <= capacity_kw:
+        return None
+    return max(event["timestamp_ms"] + event["duration_ms"] for event in overlapping)
+
+
 def _synthetic_latency_ms(episode_id: str, agent_id: str, architecture: str, task_agent_id: str | None = None) -> int:
     effective_role = task_agent_id or agent_id
     if episode_id == "HC-SEED-004" and effective_role == "CleaningAgent":
@@ -180,7 +187,7 @@ def run_closed_loop_episode(
     *,
     synthetic_latency: bool,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
-    if architecture not in {"CentralSingleAgent", "IndependentMultiAgent", "RuleCoordinator"}:
+    if architecture not in {"CentralSingleAgent", "IndependentMultiAgent", "RuleCoordinator", "ConstraintCoordinator"}:
         raise ValueError(f"unsupported architecture: {architecture}")
 
     events: list[dict[str, Any]] = [
@@ -281,13 +288,32 @@ def run_closed_loop_episode(
             latest_end = max(old["timestamp_ms"] + old["duration_ms"] for old in accepted if {old["target"], candidate["target"]} == {"window", "heater"})
             candidate["timestamp_ms"] = latest_end
 
+        delay_reason = None
+        if architecture == "ConstraintCoordinator" and reason is None:
+            indirect = [old for old in accepted if _indirect_conflict(old, candidate)]
+            if indirect:
+                candidate["timestamp_ms"] = max(old["timestamp_ms"] + old["duration_ms"] for old in indirect)
+                delay_reason = "indirect_environment_conflict"
+            capacity_end = _capacity_conflict_end(
+                accepted,
+                candidate,
+                float(episode.get("home", {}).get("resources", {}).get("max_power_kw", float("inf"))),
+            )
+            if capacity_end is not None:
+                candidate["timestamp_ms"] = max(candidate["timestamp_ms"], capacity_end)
+                delay_reason = "resource_capacity_conflict"
+
         if reason:
             rejected.append({**proposal, "reason": reason})
             events.append({"type": "coordination_decision", "timestamp_ms": proposal["ready_at_ms"], "decision": "reject", "proposal_id": action["proposal_id"], "reason": reason})
             continue
 
         if architecture != "IndependentMultiAgent":
-            events.append({"type": "coordination_decision", "timestamp_ms": proposal["ready_at_ms"], "decision": "accept", "proposal_id": action["proposal_id"]})
+            coordination_event = {"type": "coordination_decision", "timestamp_ms": proposal["ready_at_ms"], "decision": "accept", "proposal_id": action["proposal_id"]}
+            if delay_reason:
+                coordination_event["reason"] = delay_reason
+                coordination_event["defer_until_ms"] = candidate["timestamp_ms"]
+            events.append(coordination_event)
         accepted.append(candidate)
         if architecture == "CentralSingleAgent":
             serial_cursor = candidate["timestamp_ms"] + candidate["duration_ms"]

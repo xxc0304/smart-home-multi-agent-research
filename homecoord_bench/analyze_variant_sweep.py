@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from collections import defaultdict
 from pathlib import Path
 from statistics import mean, median
@@ -34,17 +35,40 @@ def latency_summary(values: list[float]) -> dict[str, float | None]:
     }
 
 
+def wilson_interval(successes: int, total: int, z: float = 1.96) -> list[float] | None:
+    if total == 0:
+        return None
+    proportion = successes / total
+    denominator = 1 + z * z / total
+    center = (proportion + z * z / (2 * total)) / denominator
+    margin = z * math.sqrt(
+        proportion * (1 - proportion) / total + z * z / (4 * total * total)
+    ) / denominator
+    return [max(0.0, center - margin), min(1.0, center + margin)]
+
+
 def summarize_rows(rows: list[dict[str, Any]]) -> dict[str, Any]:
     first_actions = [row["first_effective_action_latency_ms"] for row in rows if row.get("first_effective_action_latency_ms") is not None]
     completions = [row["task_completion_time_ms"] for row in rows if row.get("task_completion_time_ms") is not None]
     service_rates = [row["task_service_rate"] for row in rows if row.get("task_service_rate") is not None]
+    success_count = sum(bool(row.get("process_valid_success")) for row in rows)
+    conflict_episode_counts = {
+        key: sum(row.get("conflict_counts", {}).get(key, 0) > 0 for row in rows)
+        for key in ("C1", "C2", "C3", "C4")
+    }
     return {
         "runs": len(rows),
-        "process_valid_successes": sum(bool(row.get("process_valid_success")) for row in rows),
-        "process_valid_success_rate": sum(bool(row.get("process_valid_success")) for row in rows) / len(rows) if rows else None,
+        "process_valid_successes": success_count,
+        "process_valid_success_rate": success_count / len(rows) if rows else None,
+        "process_valid_success_rate_ci95_wilson": wilson_interval(success_count, len(rows)),
         "conflicts": {
             key: sum(row.get("conflict_counts", {}).get(key, 0) for row in rows)
             for key in ("C1", "C2", "C3", "C4")
+        },
+        "conflict_episode_counts": conflict_episode_counts,
+        "conflict_episode_rate_ci95_wilson": {
+            key: wilson_interval(count, len(rows))
+            for key, count in conflict_episode_counts.items()
         },
         "first_effective_action_latency_ms": latency_summary(first_actions),
         "task_completion_time_ms": latency_summary(completions),
@@ -98,12 +122,21 @@ def analyze(run_dir: Path) -> dict[str, Any]:
     by_architecture: dict[str, list[dict[str, Any]]] = defaultdict(list)
     direct_groups: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     stale_groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    indirect_groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    capacity_groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    configuration_groups: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         by_architecture[row["architecture"]].append(row)
+        configuration_id = row.get("base_variant_id", row["episode_id"].split(".rep-", 1)[0])
+        configuration_groups[(configuration_id, row["architecture"])].append(row)
         if row.get("family") == "direct_device_conflict":
             direct_groups[(row["architecture"], row["energy_visibility"])].append(row)
         elif row.get("family") == "stale_state_action":
             stale_groups[row["architecture"]].append(row)
+        elif row.get("family") == "indirect_environment_conflict":
+            indirect_groups[row["architecture"]].append(row)
+        elif row.get("family") == "resource_capacity_conflict":
+            capacity_groups[row["architecture"]].append(row)
 
     input_cost_off_peak = token_totals["input"] * 0.15 / 1_000_000
     output_cost_off_peak = token_totals["output"] * 0.60 / 1_000_000
@@ -146,6 +179,10 @@ def analyze(run_dir: Path) -> dict[str, Any]:
             "peak_all_input_cache_miss": 2 * (input_cost_off_peak + output_cost_off_peak),
         },
         "architectures": {name: summarize_rows(group) for name, group in sorted(by_architecture.items())},
+        "configurations": {
+            f"{configuration_id}.{architecture}": summarize_rows(group)
+            for (configuration_id, architecture), group in sorted(configuration_groups.items())
+        },
         "direct_conflict_by_visibility": {
             f"{architecture}.{visibility}": summarize_rows(group)
             for (architecture, visibility), group in sorted(direct_groups.items())
@@ -163,6 +200,32 @@ def analyze(run_dir: Path) -> dict[str, Any]:
                 for row in sorted(group, key=lambda item: item["resident_enter_at_ms"])
             ]
             for architecture, group in sorted(stale_groups.items())
+        },
+        "indirect_conflict_by_task_gap": {
+            architecture: [
+                {
+                    "second_task_gap_ms": row["second_task_gap_ms"],
+                    "process_valid_success": row["process_valid_success"],
+                    "C2": row["conflict_counts"]["C2"],
+                    "first_effective_action_latency_ms": row["first_effective_action_latency_ms"],
+                    "task_completion_time_ms": row["task_completion_time_ms"],
+                }
+                for row in sorted(group, key=lambda item: item["second_task_gap_ms"])
+            ]
+            for architecture, group in sorted(indirect_groups.items())
+        },
+        "resource_conflict_by_capacity": {
+            architecture: [
+                {
+                    "capacity_kw": row["capacity_kw"],
+                    "process_valid_success": row["process_valid_success"],
+                    "C3": row["conflict_counts"]["C3"],
+                    "first_effective_action_latency_ms": row["first_effective_action_latency_ms"],
+                    "task_completion_time_ms": row["task_completion_time_ms"],
+                }
+                for row in sorted(group, key=lambda item: item["capacity_kw"])
+            ]
+            for architecture, group in sorted(capacity_groups.items())
         },
         "episodes": rows,
     }

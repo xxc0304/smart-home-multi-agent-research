@@ -9,7 +9,12 @@ from evaluate import load_json  # noqa: E402
 from run_protocol_pilot import INSTRUCTIONS  # noqa: E402
 from runtime.dry_run import DryRunClient  # noqa: E402
 from runtime.execution import run_closed_loop_episode  # noqa: E402
-from runtime.variants import direct_conflict_variants, stale_action_variants  # noqa: E402
+from runtime.variants import (  # noqa: E402
+    direct_conflict_variants,
+    indirect_conflict_variants,
+    resource_capacity_variants,
+    stale_action_variants,
+)
 
 
 class ClosedLoopTests(unittest.TestCase):
@@ -168,6 +173,60 @@ class ClosedLoopTests(unittest.TestCase):
         self.assertTrue(coordinated_before["process_valid_success"])
         self.assertTrue(independent_after["process_valid_success"])
         self.assertTrue(coordinated_after["process_valid_success"])
+
+    def test_indirect_conflict_boundary_depends_on_action_overlap(self):
+        seed = load_json(BENCH_ROOT / "data" / "seeds" / "HC-SEED-003.json")
+        variants = indirect_conflict_variants(seed)
+        boundary_conflict = next(item for item in variants if item["variant"]["second_task_gap_ms"] == 1000)
+        boundary_safe = next(item for item in variants if item["variant"]["second_task_gap_ms"] == 1500)
+
+        _, independent_conflict = self.run_variant(boundary_conflict, "IndependentMultiAgent")
+        _, rules_conflict = self.run_variant(boundary_conflict, "RuleCoordinator")
+        _, constrained_safe = self.run_variant(boundary_conflict, "ConstraintCoordinator")
+        _, central_safe = self.run_variant(boundary_conflict, "CentralSingleAgent")
+        _, independent_safe = self.run_variant(boundary_safe, "IndependentMultiAgent")
+        _, constrained_boundary_safe = self.run_variant(boundary_safe, "ConstraintCoordinator")
+
+        self.assertEqual(1, independent_conflict["conflict_counts"]["C2"])
+        self.assertEqual(1, rules_conflict["conflict_counts"]["C2"])
+        self.assertEqual(0, constrained_safe["conflict_counts"]["C2"])
+        self.assertEqual(0, central_safe["conflict_counts"]["C2"])
+        self.assertEqual(0, independent_safe["conflict_counts"]["C2"])
+        self.assertEqual(
+            independent_safe["task_completion_time_ms"],
+            constrained_boundary_safe["task_completion_time_ms"],
+        )
+        self.assertGreater(
+            constrained_safe["task_completion_time_ms"],
+            independent_conflict["task_completion_time_ms"],
+        )
+
+    def test_resource_capacity_boundary_depends_on_parallel_power(self):
+        seed = load_json(BENCH_ROOT / "data" / "seeds" / "HC-SEED-001.json")
+        variants = resource_capacity_variants(seed)
+        constrained = next(item for item in variants if item["variant"]["capacity_kw"] == 1.21)
+        sufficient = next(item for item in variants if item["variant"]["capacity_kw"] == 1.23)
+
+        _, independent_conflict = self.run_variant(constrained, "IndependentMultiAgent")
+        _, rules_conflict = self.run_variant(constrained, "RuleCoordinator")
+        _, constrained_safe = self.run_variant(constrained, "ConstraintCoordinator")
+        _, central_safe = self.run_variant(constrained, "CentralSingleAgent")
+        _, independent_safe = self.run_variant(sufficient, "IndependentMultiAgent")
+        _, constrained_capacity_safe = self.run_variant(sufficient, "ConstraintCoordinator")
+
+        self.assertEqual(1, independent_conflict["conflict_counts"]["C3"])
+        self.assertEqual(1, rules_conflict["conflict_counts"]["C3"])
+        self.assertEqual(0, constrained_safe["conflict_counts"]["C3"])
+        self.assertEqual(0, central_safe["conflict_counts"]["C3"])
+        self.assertEqual(0, independent_safe["conflict_counts"]["C3"])
+        self.assertEqual(
+            independent_safe["task_completion_time_ms"],
+            constrained_capacity_safe["task_completion_time_ms"],
+        )
+        self.assertGreater(
+            constrained_safe["task_completion_time_ms"],
+            independent_conflict["task_completion_time_ms"],
+        )
 
 
 if __name__ == "__main__":
