@@ -138,7 +138,7 @@ class OpenAIResponsesClient:
                         + "\nYour previous response failed protocol validation: "
                         + str(exc)[:500]
                         + "\nReturn a corrected object. Use response_type, not type. "
-                        + "The actions array may contain at most one action, and every requirement must use value_json as a JSON-encoded string."
+                        + "The actions array may contain at most one action. Use native JSON scalar values in value, never value_json; every requirement must include range_min and range_max, using null except for between."
                     )
                     continue
                 raise

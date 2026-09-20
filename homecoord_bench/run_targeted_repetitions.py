@@ -54,10 +54,17 @@ def calibration_variants() -> dict[str, dict]:
     return {episode["episode_id"]: episode for episode in variants}
 
 
-def run(provider: str, repetitions: int, output_dir: Path, targets: tuple[tuple[str, str], ...] = TARGETS) -> list[dict]:
+def run(
+    provider: str,
+    repetitions: int,
+    output_dir: Path,
+    targets: tuple[tuple[str, str], ...] = TARGETS,
+    model: str | None = None,
+) -> list[dict]:
     output_dir.mkdir(parents=True, exist_ok=True)
-    logger = EventLogger(output_dir / "model_events.jsonl", f"targeted-repetitions-{provider}") if provider == "deepseek" else None
-    client = DeepSeekResponsesClient(logger=logger) if provider == "deepseek" else DryRunClient()
+    run_label = f"targeted-repetitions-{provider}-{model or 'default'}"
+    logger = EventLogger(output_dir / "model_events.jsonl", run_label) if provider == "deepseek" else None
+    client = DeepSeekResponsesClient(logger=logger, model=model or "deepseek-flash") if provider == "deepseek" else DryRunClient()
     variants = calibration_variants()
     rows = []
     materialized_episodes = []
@@ -107,6 +114,7 @@ def run(provider: str, repetitions: int, output_dir: Path, targets: tuple[tuple[
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--provider", choices=("dry-run", "deepseek"), default="dry-run")
+    parser.add_argument("--model", help="override the DeepSeek model")
     parser.add_argument("--repetitions", type=int, default=5)
     parser.add_argument("--output-dir", type=Path, default=ROOT / "runs" / "targeted-repetitions")
     parser.add_argument("--suite", choices=("core", "c2c3", "all"), default="core")
@@ -118,7 +126,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     suites = {"core": CORE_TARGETS, "c2c3": CONFLICT_TARGETS, "all": TARGETS}
     selected = tuple(tuple(item.split("|", 1)) for item in args.target) if args.target else suites[args.suite]
-    rows = run(args.provider, args.repetitions, args.output_dir, selected)
+    rows = run(args.provider, args.repetitions, args.output_dir, selected, args.model)
     print(json.dumps({
         "runs": len(rows),
         "errors": sum("error" in row for row in rows),

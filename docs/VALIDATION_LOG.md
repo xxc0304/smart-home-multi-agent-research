@@ -338,3 +338,113 @@ C2 冲突边界下 Independent 的过程有效成功率 Wilson 95% 区间为 38.
 - `homecoord_bench/results/deepseek_c2_c3_targeted_repetitions_20_20260920.json`；
 - `homecoord_bench/results/deepseek_indirect_counterfactual_replay_20_20260920.json`；
 - `homecoord_bench/results/deepseek_capacity_counterfactual_replay_20_20260920.json`。
+
+## 2026-09-20：第二模型 `deepseek-v4-pro` 的 5 次初筛
+
+### 协议兼容性
+
+先在 4 条种子 episode 的 8 个专业 Agent 决策上运行 `deepseek-v4-pro` 非思考模式。8 个决策全部完成；9 次 API 尝试中有 1 次结构化输出无效，并在一次重试后恢复。包含失败尝试共使用 7,855 输入 Token、1,494 输出 Token。按 2026-09-20 DeepSeek 官方定价页的全缓存未命中价格计算，费用约为 0.00814–0.01629 美元。
+
+### C1–C4 关键边界初筛
+
+选择每类冲突的危险边界，在 Independent 和对应强协调器上各重复 5 次，共 40 个闭环运行。37 个运行完成评测，3 个运行因结构化输出在一次重试后仍无效而失败。83 次逻辑调用产生 96 次 API 尝试，其中 16 次尝试未通过协议校验，10 个逻辑调用重试成功。总用量为 84,072 输入 Token、15,305 输出 Token；费用约为 0.08579–0.17158 美元。
+
+| 配置 | 已评测运行 | 过程有效 | 冲突 Episode | 任务服务率 | 完成时间 P50 |
+|---|---:|---:|---:|---:|---:|
+| C1 局部信息，Independent | 4 | 0/4 | C1：4/4 | 100% | 2928.5 ms |
+| C1 局部信息，RuleCoordinator | 5 | 5/5 | C1：0/5 | 50% | 2882 ms |
+| C2 任务间隔 1000 ms，Independent | 5 | 4/5 | C2：1/5 | 100% | 6069 ms |
+| C2 任务间隔 1000 ms，ConstraintCoordinator | 4 | 4/4 | C2：0/4 | 100% | 5632 ms |
+| C3 容量 1.21 kW，Independent | 5 | 0/5 | C3：5/5 | 100% | 2462 ms |
+| C3 容量 1.21 kW，ConstraintCoordinator | 5 | 5/5 | C3：0/5 | 100% | 3494 ms |
+| C4 住户 800 ms 进入，Independent | 4 | 2/4 | C4：2/4 | 100% | 3089.5 ms |
+| C4 住户 800 ms 进入，RuleCoordinator | 5 | 5/5 | C4：0/5 | 100% | 7300 ms |
+
+定性上，第二模型复现了当前最重要的机制差异：无协调架构仍会出现 C1–C4，对应强协调器在已评测运行中均消除了冲突；C1 通过放弃低优先级任务换取安全，C3/C4 通过延后动作增加完成时间。C2 的冲突频率只有 1/5，说明具体冲突概率会受模型输出和真实调用时延影响，不能假定跨模型完全一致。
+
+成功 API 尝试的时延 P50/P95 为 2422.745/3075.423 ms；计入格式重试后，逻辑调用 P50/P95 为 2486.519/5161.346 ms。相比 `deepseek-flash` 20 次校准中约 1.18–1.22 秒的成功尝试 P50 和约 1.57–1.59 秒的逻辑调用 P95，`deepseek-v4-pro` 更慢且本轮格式失败更多。模型名称或产品层级不能直接等同于部署效果；benchmark 应把协议有效率、重试成本和尾时延与任务正确性一起报告。
+
+本轮每配置只有 5 次，且 3 个运行缺失，不能据此宣称模型无关性或比较模型能力优劣。扩展到 20 次前，应先决定：保留严格 `value_json` 协议，把格式失败作为 Agent 可靠性指标；或将参数值改为原生 JSON 类型，避免 JSON 字符串的双重编码成为不必要的测量混杂。
+
+聚合结果：`homecoord_bench/results/deepseek_v4_pro_targeted_5_20260920.json`。
+
+## 2026-09-20：切换到原生 JSON `value` 协议
+
+为避免把双层 JSON 字符串编码混入多 Agent 协调评测，协议已将参数和前置条件从 `value_json: string` 改为原生 JSON `value`。执行器现在直接读取参数值，校验器递归检查字符串、数字、布尔值、数组、对象和 null；格式失败率与重试时延仍作为独立指标保留。旧协议的历史结果不与新协议结果合并。
+
+本地 32 项自动测试和完整 dry-run 闭环均通过。下一步需用真实模型完成协议兼容性试跑，然后在新协议下重新收集两个模型的关键配置重复数据。
+
+真实兼容性试跑也已完成：`deepseek-v4-pro` 和 `deepseek-flash` 各在 8 个种子任务上完成 8/8 次决策；两者各有 1 次输出在一次重试后恢复。随后两个模型分别对 C1–C4 的 8 个关键配置各运行 1 次，均完成 8/8 个闭环，无运行级失败。新协议下的单次聚合结果分别为 `homecoord_bench/results/deepseek_v4_pro_native_scalar_targeted_1_20260920.json` 和 `homecoord_bench/results/deepseek_flash_native_scalar_targeted_1_20260920.json`。这些只是协议与闭环冒烟证据，不能替代 20 次重复。
+
+## 2026-09-20：原生标量协议下的双模型 20 次重复
+
+在最终协议下，对两个模型的 8 个关键配置各重复 20 次，共 320 个架构—配置运行。`deepseek-flash` 的 160/160 个运行完成；`deepseek-v4-pro` 有 157/160 个运行完成，3 个运行在一次格式重试后仍未形成可解析决策。两批数据使用同一 episode、同一架构集合和同一确定性评测器。
+
+| 冲突家族 | `deepseek-flash`：Independent | `deepseek-flash`：协调器 | `deepseek-v4-pro`：Independent | `deepseek-v4-pro`：协调器 |
+|---|---:|---:|---:|---:|
+| C1，局部信息 | C1：19/20 | C1：0/20 | C1：20/20 | C1：0/20 |
+| C2，任务间隔 1000 ms | C2：10/20 | C2：0/20 | C2：8/20 | C2：0/19 |
+| C3，容量 1.21 kW | C3：20/20 | C3：0/20 | C3：17/20 | C3：0/19 |
+| C4，住户 800 ms 进入 | C4：16/20 | C4：0/20 | C4：18/20 | C4：0/19 |
+
+这里的协调器是 C1 的 `RuleCoordinator`、C2/C3 的 `ConstraintCoordinator`。两种模型都复现了核心定性规律：独立异步 Agent 在危险边界出现冲突，强规则协调器消除了对应冲突；C1 的主要代价是低优先级任务服务率下降，C2/C3 的主要代价是完整完成时间增加，C4 的主要代价是等待状态恢复。
+
+模型运行特征也形成了可报告的系统差异：
+
+| 指标 | `deepseek-flash` | `deepseek-v4-pro` |
+|---|---:|---:|
+| 运行级失败 | 0/160 | 3/160 |
+| API 格式失败尝试 | 13/351（3.7%） | 20/351（5.7%） |
+| 成功尝试时延 P50 | 1331 ms | 2745 ms |
+| 逻辑调用时延 P95（含重试） | 1805 ms | 5385 ms |
+| 估算费用（非高峰/高峰） | $0.081/$0.162 | $0.354/$0.709 |
+
+这支持一个比“模型越强越好”更谨慎的系统结论：模型更换会显著改变推理时延、格式可靠性和实际冲突概率，因此多 Agent 家庭系统必须把模型调用成本纳入协调评测。跨模型结果支持 HomeCoord-Bench 的主问题，但不能据此声称已经完成模型无关性证明。
+
+当前证据仍有边界：任务来自 4 条种子 episode 的 8 个关键参数化配置，设备时长与功耗仍是合成环境值，尚未加入第二个家庭模拟器或真实设备轨迹。因此下一步重点从“继续重复同一配置”转向扩展 20 条人工审核任务，并校准物理动作与反馈延迟。
+
+聚合结果：
+
+- `homecoord_bench/results/deepseek_flash_native_scalar_targeted_20_20260920.json`；
+- `homecoord_bench/results/deepseek_v4_pro_native_scalar_targeted_20_20260920.json`。
+
+## 2026-09-20：首批候选任务的泛化 dry-run
+
+将动作执行从 4 条种子任务的硬编码分派改为 episode 内 `action_grounding` 能力表，并加入任务级 `action_template` 确定性客户端。首批实现 HC-M02（阅读灯／节能关闭）、HC-M03（隐私窗帘／采光）、HC-M07（开窗／制冷）和 HC-M08（加湿／除湿），分别覆盖新的直接设备和间接环境对象。
+
+四条候选任务均通过四种架构的确定性回放。IndependentMultiAgent 在 M02/M03 中各产生 1 次 C1，在 M07/M08 中各产生 1 次 C2；ConstraintCoordinator 四条任务均无冲突并满足全局目标。C1 任务中协调器通过拒绝低优先级动作换取安全，任务服务率为 50%；C2 任务中协调器保留两个任务并错开动作，任务服务率保持 100%，但完整目标完成时间在发生冲突时增加。该结果只证明能力表、冲突规则和评测器能迁移到新设备对象，不是模型能力或物理真实性结论。
+
+自动测试从 32 项增加到 33 项，新增回归覆盖候选任务的通用 grounding、C1/C2 判定和 ConstraintCoordinator 安全结果。运行命令：
+
+```powershell
+python -m unittest discover -s homecoord_bench/tests -v
+python homecoord_bench/run_candidate_dry_run.py
+```
+
+回放摘要保存在 `homecoord_bench/runs/candidate-dry-run-20260920/summary.json`；这些任务仍处于 `candidate_dry_run`，下一步需要双人审核和动作时长、功耗、环境效果校准。
+
+## 2026-09-20：第二批候选任务的容量与过期状态 dry-run
+
+继续使用 episode 内能力表实现 HC-M12（洗衣机／烘干机容量竞争）、HC-M13（电动车充电／热水容量竞争）、HC-M17（降雨使浇水前置条件过期）和 HC-M20（住户返回使布防前置条件过期）。四种架构的 16 个新增回放全部完成，没有 API 调用。
+
+IndependentMultiAgent 在 M12/M13 各触发 1 次 C3，在 M17/M20 各触发 1 次 C4；ConstraintCoordinator 四条任务均消除对应冲突并满足全局目标。容量任务中两个必要动作均保留，协调代价表现为完整完成时间增加（M12：800 ms→4700 ms，M13：800 ms→6700 ms）；过期状态任务中外部事件已经满足最终目标，协调器拒绝旧动作，任务服务率下降到 50%，避免了不安全动作。该结果验证了第二批模板能够覆盖 C3/C4，但仍是合成 dry-run，不能替代物理参数校准。
+
+自动测试增加到 34 项并全部通过。当前 8 条候选任务均已具备可回放 episode 和通用能力表，仍需双人审核、动作效果校准，并检查任务设计是否奖励了过度拒绝动作。
+
+## 2026-09-20：候选任务机器预审矩阵
+
+新增 `review_candidates.py`，对当前 20 条候选任务检查最小 episode 结构、Agent 与任务引用、`action_template` 与 `required_action` 一致性、`action_grounding` 完整性、C1/C2/C3 规则可落地性以及外部事件版本单调性。20/20 通过机器预审，但 20/20 的 `calibration_status` 仍为 `missing`，因为持续时间、功耗和环境效果尚未有模拟器或设备轨迹来源。
+
+预审矩阵见 `docs/HOMECOORD_BENCH_REVIEW_MATRIX_v0.1.md`，机器结果见 `homecoord_bench/results/candidate_pre_review_20260920.json`。矩阵保留两列人工审核位，不能把机器通过解释为正式数据集准入。新增预审回归测试后，自动测试总数为 35 项，全部通过。
+
+本轮还将剩余 12 条目录任务实现为首版可回放 episode：M01、M04、M05 覆盖新的直接设备冲突，M06、M09、M10 覆盖新的间接环境冲突，M11、M14、M15 覆盖新的资源容量冲突，M16、M18、M19 覆盖新的过期状态动作。20 条任务共完成 80 个四架构 dry-run，全部无运行错误；IndependentMultiAgent 在每条对应家族任务中触发预期冲突，ConstraintCoordinator 消除对应冲突。所有任务仍使用合成动作参数，不能直接作为最终实验结果。
+
+随后收紧了 C2 的预审定义：间接冲突必须在 `action_grounding.environment_effects` 中声明共同环境变量，并且两个动作对该变量具有相反方向。该检查发现并修正了 HC-M07 中“开窗—制冷”的效果方向歧义；修正后 20/20 任务仍通过机器预审。这个检查避免仅凭 `conflict_rules` 人为标记冲突，要求每条 C2 任务具有可解释的环境效果依据。
+
+## 2026-09-20：无真实设备时的合成参数敏感性分析
+
+由于当前没有真实家庭设备，20 条候选任务增加了明确的 `synthetic_range` 校准状态：动作持续时间按名义值的 0.80–1.20 倍采样，功耗按 0.85–1.15 倍采样。新增 `runtime/calibration.py` 提供确定性采样，`run_calibration_sweep.py --replicates 10` 对 20 条任务、4 种架构完成 800 个回放。
+
+在该范围内，IndependentMultiAgent 每个任务家族均稳定触发对应冲突；ConstraintCoordinator 均消除对应冲突。容量和间接环境任务的协调代价表现为完成时间增加，过期状态任务表现为等待恢复或取消过期动作。由于动作效果方向和参数仍是合成假设，本轮只能说明结论对名义时长和功耗的小范围扰动具有稳定性，不能支持真实设备性能结论。
+
+结果见 `homecoord_bench/results/synthetic_calibration_sweep_20260920.json`。该 sweep 只用于检查命题对占位参数小范围扰动的敏感性，不要求先建立完整物理模拟器。当前下一步改为真实模型可行性 pilot：C1–C4 各选代表任务，在 IndependentMultiAgent 与对应协调器上进行小样本重复；只有核心规律成立后，才投入详细环境动力学和设备校准。

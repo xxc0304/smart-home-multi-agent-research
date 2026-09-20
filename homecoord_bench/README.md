@@ -1,6 +1,6 @@
 # HomeCoord-Bench 最小验证原型
 
-这个目录实现数据规范 v0.3 的验证闭环：4 条种子 episode、20 条参数化变体、人工正反轨迹、确定性评测器、四种架构和 DeepSeek API 适配。人工轨迹、dry-run 和真实 API 结果在文档中分别标注，不混为一类证据。
+这个目录实现数据规范 v0.3 的验证闭环：4 条种子 episode、20 条参数化变体、20 条候选任务、人工正反轨迹、确定性评测器、四种架构和 DeepSeek API 适配。人工轨迹、dry-run 和真实 API 结果在文档中分别标注，不混为一类证据。
 
 运行验证：
 
@@ -25,13 +25,20 @@ python homecoord_bench/run_protocol_pilot.py --provider dry-run
 
 ## 模型协议试跑
 
-`run_protocol_pilot.py` 默认使用确定性假模型，验证 4 条 episode 中 8 个专业 Agent 的统一请求、结构化动作提案和 JSONL 事件记录。指定供应商才会发出真实请求。
+`run_protocol_pilot.py` 默认使用确定性假模型，验证 4 条 episode 中 8 个专业 Agent 的统一请求、结构化动作提案和 JSONL 事件记录。动作参数和前置条件使用原生 JSON `value` 字段，不在字符串中再次编码 JSON。指定供应商才会发出真实请求。
 
 DeepSeek 首轮使用 `deepseek-flash` 和非思考模式：
 
 ```powershell
 $env:DEEPSEEK_API_KEY = "在本机设置，不要写入仓库"
 python homecoord_bench/run_protocol_pilot.py --provider deepseek
+```
+
+第二模型对照可显式指定模型名；当前已用 `deepseek-v4-pro` 完成 8 个专业 Agent 决策的兼容性试跑和 C1–C4 关键边界各 5 次初筛：
+
+```powershell
+python homecoord_bench/run_protocol_pilot.py --provider deepseek --model deepseek-v4-pro
+python homecoord_bench/run_targeted_repetitions.py --provider deepseek --model deepseek-v4-pro --repetitions 5
 ```
 
 OpenAI 对照仍可使用 `--provider openai`。两种适配器都使用严格 JSON Schema；DeepSeek Responses API 固定不存储响应，OpenAI 请求显式设置 `store=false`。运行日志写到已被 Git 忽略的 `homecoord_bench/runs/`，不记录 API Key。
@@ -43,6 +50,31 @@ OpenAI 对照仍可使用 `--provider openai`。两种适配器都使用严格 J
 ```powershell
 python homecoord_bench/run_closed_loop.py --provider dry-run
 ```
+
+已实现候选任务（HC-M02、HC-M03、HC-M07、HC-M08、HC-M12、HC-M13、HC-M17、HC-M20）的四架构确定性回放：
+
+```powershell
+python homecoord_bench/run_candidate_dry_run.py
+```
+
+候选任务用 episode 内的 `action_grounding` 能力表描述动作效果，用任务内的 `action_template` 驱动确定性客户端；新增设备类型不需要修改种子任务的硬编码分派表。当前候选仍是待双审的校准样本，不能与正式金标准或真实模型结果混合报告。
+
+生成候选任务机器预审矩阵：
+
+```powershell
+python homecoord_bench/review_candidates.py
+```
+
+结果写入 `docs/HOMECOORD_BENCH_REVIEW_MATRIX_v0.1.md` 和 `homecoord_bench/results/candidate_pre_review_20260920.json`。机器预审只检查结构、引用、冲突可判定性和确定性回放准备情况；物理参数仍需人工双审和设备／模拟器校准。
+
+没有真实设备时运行合成参数敏感性分析：
+
+```powershell
+python homecoord_bench/annotate_synthetic_calibration.py
+python homecoord_bench/run_calibration_sweep.py --replicates 10
+```
+
+该 sweep 只改变动作持续时间和功耗的声明范围，用于检查结论是否依赖固定占位值；输出明确标记为 `sensitivity_only`，不能作为真实设备性能结果。
 
 真实 DeepSeek 小样本闭环：
 

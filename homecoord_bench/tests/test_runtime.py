@@ -23,7 +23,7 @@ def valid_decision():
             "proposal_id": "p1",
             "target": "study_light",
             "operation": "set_reading",
-            "parameters": [{"name": "lux", "value_json": "500"}],
+            "parameters": [{"name": "lux", "value": 500}],
             "based_on_state_version": 100,
             "requires": [],
             "estimated_duration_ms": 1000,
@@ -151,11 +151,32 @@ class RuntimeTests(unittest.TestCase):
 
     def test_nested_schema_violation_is_rejected(self):
         decision = valid_decision()
-        requirement = {"path": "living_room.occupied", "op": "eq", "value": "false"}
+        requirement = {
+            "path": "living_room.occupied",
+            "op": "eq",
+            "value_json": "false",
+            "range_min": None,
+            "range_max": None,
+        }
         decision["actions"][0]["requires"] = [requirement]
         errors = validate_agent_decision(decision)
-        self.assertTrue(any("missing value_json" in error for error in errors))
-        self.assertTrue(any("unexpected value" in error for error in errors))
+        self.assertTrue(any("missing value" in error for error in errors))
+        self.assertTrue(any("unexpected value_json" in error for error in errors))
+
+    def test_native_json_values_are_accepted(self):
+        decision = valid_decision()
+        decision["actions"][0]["parameters"] = [{
+            "name": "temperature_c",
+            "value": 24,
+        }]
+        decision["actions"][0]["requires"] = [{
+            "path": "living_room.occupied",
+            "op": "between",
+            "value": None,
+            "range_min": 0,
+            "range_max": 1,
+        }]
+        self.assertEqual([], validate_agent_decision(decision))
 
     def test_more_than_one_action_is_rejected(self):
         decision = valid_decision()

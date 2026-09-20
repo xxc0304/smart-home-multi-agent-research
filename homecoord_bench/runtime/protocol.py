@@ -2,19 +2,25 @@
 
 from __future__ import annotations
 
-import json
+import math
 from copy import deepcopy
 from typing import Any
 from uuid import uuid4
+
+
+NATIVE_SCALAR_SCHEMA = {
+    "type": ["string", "number", "boolean", "null"],
+    "description": "A native JSON scalar; do not encode JSON inside a string",
+}
 
 
 PARAMETER_SCHEMA = {
     "type": "object",
     "properties": {
         "name": {"type": "string"},
-        "value_json": {"type": "string", "description": "JSON-encoded parameter value"},
+        "value": NATIVE_SCALAR_SCHEMA,
     },
-    "required": ["name", "value_json"],
+    "required": ["name", "value"],
     "additionalProperties": False,
 }
 
@@ -23,9 +29,11 @@ REQUIREMENT_SCHEMA = {
     "properties": {
         "path": {"type": "string"},
         "op": {"type": "string", "enum": ["eq", "neq", "lt", "lte", "gt", "gte", "between"]},
-        "value_json": {"type": "string", "description": "JSON-encoded expected value"},
+        "value": NATIVE_SCALAR_SCHEMA,
+        "range_min": {"type": ["number", "null"]},
+        "range_max": {"type": ["number", "null"]},
     },
-    "required": ["path", "op", "value_json"],
+    "required": ["path", "op", "value", "range_min", "range_max"],
     "additionalProperties": False,
 }
 
@@ -146,6 +154,15 @@ def _validate_keys(value: dict[str, Any], required: set[str], context: str) -> l
     return errors
 
 
+def _is_native_json_scalar(value: Any) -> bool:
+    """Return whether a value fits the provider-compatible native JSON scalar subset."""
+    if value is None or isinstance(value, (str, bool, int)):
+        return True
+    if isinstance(value, float):
+        return math.isfinite(value)
+    return False
+
+
 def validate_agent_decision(decision: dict[str, Any]) -> list[str]:
     required = set(AGENT_DECISION_SCHEMA["required"])
     errors = _validate_keys(decision, required, "decision")
@@ -181,13 +198,10 @@ def validate_agent_decision(decision: dict[str, Any]) -> list[str]:
                     errors.append(f"{context}: must be an object")
                     continue
                 errors.extend(_validate_keys(parameter, parameter_required, context))
-                if not isinstance(parameter.get("name"), str) or not isinstance(parameter.get("value_json"), str):
-                    errors.append(f"{context}: name and value_json must be strings")
-                else:
-                    try:
-                        json.loads(parameter["value_json"])
-                    except ValueError:
-                        errors.append(f"{context}: value_json must contain valid JSON")
+                if not isinstance(parameter.get("name"), str):
+                    errors.append(f"{context}: name must be a string")
+                if "value" in parameter and not _is_native_json_scalar(parameter["value"]):
+                    errors.append(f"{context}: value must be a native JSON scalar")
         requirements = action.get("requires")
         if not isinstance(requirements, list):
             errors.append(f"action[{index}]: requires must be a list")
@@ -200,13 +214,25 @@ def validate_agent_decision(decision: dict[str, Any]) -> list[str]:
                 errors.extend(_validate_keys(requirement, requirement_required, context))
                 if requirement.get("op") not in allowed_ops:
                     errors.append(f"{context}: invalid op")
-                if not isinstance(requirement.get("path"), str) or not isinstance(requirement.get("value_json"), str):
-                    errors.append(f"{context}: path and value_json must be strings")
-                else:
-                    try:
-                        json.loads(requirement["value_json"])
-                    except ValueError:
-                        errors.append(f"{context}: value_json must contain valid JSON")
+                if not isinstance(requirement.get("path"), str):
+                    errors.append(f"{context}: path must be a string")
+                if "value" in requirement and not _is_native_json_scalar(requirement["value"]):
+                    errors.append(f"{context}: value must be a native JSON scalar")
+                for bound in ("range_min", "range_max"):
+                    bound_value = requirement.get(bound)
+                    if bound_value is not None and (
+                        isinstance(bound_value, bool)
+                        or not isinstance(bound_value, (int, float))
+                        or (isinstance(bound_value, float) and not math.isfinite(bound_value))
+                    ):
+                        errors.append(f"{context}: {bound} must be a number or null")
+                if requirement.get("op") == "between":
+                    if requirement.get("value") is not None:
+                        errors.append(f"{context}: between requires value to be null")
+                    if requirement.get("range_min") is None or requirement.get("range_max") is None:
+                        errors.append(f"{context}: between requires range_min and range_max")
+                elif requirement.get("range_min") is not None or requirement.get("range_max") is not None:
+                    errors.append(f"{context}: non-between requirements cannot use range bounds")
         for field in ("estimated_duration_ms", "estimated_power_kw"):
             value = action.get(field)
             if isinstance(value, bool) or (value is not None and not isinstance(value, (int, float))):

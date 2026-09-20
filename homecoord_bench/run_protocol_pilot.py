@@ -14,19 +14,24 @@ from runtime.event_log import EventLogger
 from runtime.openai_client import OpenAIResponsesClient
 from runtime.protocol import build_agent_request
 
-INSTRUCTIONS = """You are a smart-home specialist agent. Return exactly one decision matching the supplied schema. Propose only actions allowed by your tools. Base actions on the supplied state_version. Do not claim an action has executed; you are only proposing or coordinating it."""
+INSTRUCTIONS = """You are a smart-home specialist agent. Return exactly one decision matching the supplied schema. Propose only actions allowed by your tools. Base actions on the supplied state_version. Do not claim an action has executed; you are only proposing or coordinating it. Parameter and requirement values must be native JSON scalar values in the `value` field; never encode JSON inside a string and never use `value_json`. Every requirement must also include range_min and range_max: use null for both except for between, where value is null and the two bounds are numbers."""
 
 
-def run(*, provider: str = "dry-run", output_path: Path | None = None) -> list[dict]:
+def run(
+    *,
+    provider: str = "dry-run",
+    output_path: Path | None = None,
+    model: str | None = None,
+) -> list[dict]:
     run_id = f"protocol-{uuid4()}"
     output_path = output_path or ROOT / "runs" / f"{run_id}.jsonl"
     logger = EventLogger(output_path, run_id)
     if provider == "deepseek":
-        client = DeepSeekResponsesClient(logger=logger)
-        model = "deepseek-flash"
+        model = model or "deepseek-flash"
+        client = DeepSeekResponsesClient(logger=logger, model=model)
     elif provider == "openai":
-        client = OpenAIResponsesClient(logger=logger)
-        model = "gpt-5.6-luna"
+        model = model or "gpt-5.6-luna"
+        client = OpenAIResponsesClient(logger=logger, model=model)
     elif provider == "dry-run":
         client = DryRunClient()
         model = "deterministic"
@@ -85,8 +90,9 @@ def run(*, provider: str = "dry-run", output_path: Path | None = None) -> list[d
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--provider", choices=["dry-run", "deepseek", "openai"], default="dry-run")
+    parser.add_argument("--model", help="override the live provider model")
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    rows = run(provider=args.provider, output_path=args.output)
+    rows = run(provider=args.provider, output_path=args.output, model=args.model)
     failures = sum("error" in row for row in rows)
     print(json.dumps({"provider": args.provider, "decisions": len(rows) - failures, "failures": failures}, ensure_ascii=False))

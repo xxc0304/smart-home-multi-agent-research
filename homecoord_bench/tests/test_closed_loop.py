@@ -228,6 +228,63 @@ class ClosedLoopTests(unittest.TestCase):
             independent_conflict["task_completion_time_ms"],
         )
 
+    def test_first_candidate_templates_use_episode_grounding(self):
+        """New device/environment tasks must exercise the generic grounding path."""
+        for episode_id in ("HC-M02", "HC-M03", "HC-M07", "HC-M08"):
+            with self.subTest(episode_id=episode_id):
+                episode = load_json(BENCH_ROOT / "data" / "candidates" / f"{episode_id}.json")
+                _, independent = run_closed_loop_episode(
+                    episode, DryRunClient(), "IndependentMultiAgent", INSTRUCTIONS, synthetic_latency=True
+                )
+                _, constrained = run_closed_loop_episode(
+                    episode, DryRunClient(), "ConstraintCoordinator", INSTRUCTIONS, synthetic_latency=True
+                )
+                self.assertEqual(1.0, independent["task_service_rate"])
+                self.assertEqual(0, sum(constrained["conflict_counts"].values()))
+                self.assertTrue(constrained["final_goal_success"])
+                self.assertTrue(constrained["process_valid_success"])
+        for episode_id in ("HC-M02", "HC-M03"):
+            episode = load_json(BENCH_ROOT / "data" / "candidates" / f"{episode_id}.json")
+            _, independent = run_closed_loop_episode(
+                episode, DryRunClient(), "IndependentMultiAgent", INSTRUCTIONS, synthetic_latency=True
+            )
+            self.assertEqual(1, independent["conflict_counts"]["C1"])
+        for episode_id in ("HC-M07", "HC-M08"):
+            episode = load_json(BENCH_ROOT / "data" / "candidates" / f"{episode_id}.json")
+            _, independent = run_closed_loop_episode(
+                episode, DryRunClient(), "IndependentMultiAgent", INSTRUCTIONS, synthetic_latency=True
+            )
+            self.assertEqual(1, independent["conflict_counts"]["C2"])
+
+    def test_second_candidate_templates_cover_capacity_and_stale_state(self):
+        for episode_id in ("HC-M12", "HC-M13"):
+            with self.subTest(episode_id=episode_id):
+                episode = load_json(BENCH_ROOT / "data" / "candidates" / f"{episode_id}.json")
+                _, independent = run_closed_loop_episode(
+                    episode, DryRunClient(), "IndependentMultiAgent", INSTRUCTIONS, synthetic_latency=True
+                )
+                _, constrained = run_closed_loop_episode(
+                    episode, DryRunClient(), "ConstraintCoordinator", INSTRUCTIONS, synthetic_latency=True
+                )
+                self.assertEqual(1, independent["conflict_counts"]["C3"])
+                self.assertFalse(independent["process_valid_success"])
+                self.assertEqual(0, sum(constrained["conflict_counts"].values()))
+                self.assertTrue(constrained["process_valid_success"])
+                self.assertEqual(1.0, constrained["task_service_rate"])
+        for episode_id in ("HC-M17", "HC-M20"):
+            with self.subTest(episode_id=episode_id):
+                episode = load_json(BENCH_ROOT / "data" / "candidates" / f"{episode_id}.json")
+                _, independent = run_closed_loop_episode(
+                    episode, DryRunClient(), "IndependentMultiAgent", INSTRUCTIONS, synthetic_latency=True
+                )
+                _, constrained = run_closed_loop_episode(
+                    episode, DryRunClient(), "ConstraintCoordinator", INSTRUCTIONS, synthetic_latency=True
+                )
+                self.assertEqual(1, independent["conflict_counts"]["C4"])
+                self.assertFalse(independent["process_valid_success"])
+                self.assertEqual(0, sum(constrained["conflict_counts"].values()))
+                self.assertTrue(constrained["process_valid_success"])
+
 
 if __name__ == "__main__":
     unittest.main()

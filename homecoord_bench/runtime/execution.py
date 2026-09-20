@@ -8,7 +8,6 @@ not be reported as model or device performance.
 
 from __future__ import annotations
 
-import json
 from copy import deepcopy
 from time import perf_counter_ns
 from typing import Any
@@ -23,15 +22,18 @@ DEVICE_DELAY_MS = 100
 def _decode_parameters(action: dict[str, Any]) -> dict[str, Any]:
     decoded = {}
     for item in action.get("parameters", []):
-        decoded[item["name"]] = json.loads(item["value_json"])
+        decoded[item["name"]] = item["value"]
     return decoded
 
 
 def _decode_requirements(action: dict[str, Any]) -> list[dict[str, Any]]:
-    return [
-        {"path": item["path"], "op": item["op"], "value": json.loads(item["value_json"])}
-        for item in action.get("requires", [])
-    ]
+    requirements = []
+    for item in action.get("requires", []):
+        value = item["value"]
+        if item["op"] == "between":
+            value = [item["range_min"], item["range_max"]]
+        requirements.append({"path": item["path"], "op": item["op"], "value": value})
+    return requirements
 
 
 def _target_name(target: str) -> str:
@@ -39,13 +41,15 @@ def _target_name(target: str) -> str:
 
 
 def materialize_action(
-    episode_id: str,
+    episode_or_id: dict[str, Any] | str,
     agent_id: str,
     task_id: str,
     action: dict[str, Any],
     effective_at_ms: int,
 ) -> dict[str, Any]:
-    """Ground a permitted proposal into the tiny seed-environment model."""
+    """Ground a permitted proposal using episode capabilities or legacy seed rules."""
+    episode = episode_or_id if isinstance(episode_or_id, dict) else None
+    episode_id = episode.get("base_episode_id", episode["episode_id"]) if episode else episode_or_id
     target = _target_name(action["target"])
     parameters = _decode_parameters(action)
     duration = action.get("estimated_duration_ms")
@@ -53,38 +57,57 @@ def materialize_action(
     effects: dict[str, Any]
     operation: str
 
-    key = (episode_id, agent_id, task_id)
-    if key == ("HC-SEED-001", "LightingAgent", "light"):
-        operation, effects = "set_reading", {"devices.study_light": "reading", "study.lux": 500}
-        actual_duration, actual_power = 1000, 0.02
-    elif key == ("HC-SEED-001", "ClimateAgent", "climate"):
-        operation, effects = "cool", {"devices.bedroom_hvac": "cool_25", "bedroom.temperature_c": 25}
-        actual_duration, actual_power = 3000, 1.2
-    elif key == ("HC-SEED-002", "ComfortAgent", "comfort"):
-        operation, effects = "cool", {"devices.living_hvac": "cool_24", "living_room.temperature_c": 24}
-        actual_duration, actual_power = 10000, 1.4
-    elif key == ("HC-SEED-002", "EnergyAgent", "energy"):
-        mode = parameters.get("mode") or parameters.get("state")
-        if action["operation"] == "off" or mode == "off":
-            operation, effects = "off", {"devices.living_hvac": "forced_off"}
-            actual_duration, actual_power = 1000, 0.0
-        else:
-            operation, effects = "cool", {"devices.living_hvac": "cool_24", "living_room.temperature_c": 24}
-            actual_duration, actual_power = 10000, 1.2
-    elif key == ("HC-SEED-003", "AirQualityAgent", "air"):
-        operation, effects = "open", {"devices.window": "open", "living_room.co2_ppm": 900}
-        actual_duration, actual_power = 2000, 0.0
-    elif key == ("HC-SEED-003", "ClimateAgent", "heat"):
-        operation, effects = "heat_high", {"devices.heater": "high", "living_room.temperature_c": 21}
-        actual_duration, actual_power = 3000, 2.0
-    elif key == ("HC-SEED-004", "CleaningAgent", "clean"):
-        operation, effects = "clean", {"devices.robot": "complete", "living_room.clean": True}
-        actual_duration, actual_power = 3000, 0.2
-    elif key == ("HC-SEED-004", "CareAgent", "care"):
-        operation, effects = "observe", {}
-        actual_duration, actual_power = 100, 0.0
+    grounding = None
+    if episode:
+        records = episode.get("action_grounding", [])
+        grounding = next(
+            (
+                item for item in records
+                if item.get("agent_id") == agent_id
+                and item.get("task_id") == task_id
+                and item.get("operation", "*") in {"*", action.get("operation")}
+            ),
+            None,
+        )
+    if grounding:
+        target = _target_name(grounding.get("target", action["target"]))
+        operation = grounding.get("grounded_operation", action["operation"])
+        effects = deepcopy(grounding.get("effects", {}))
+        actual_duration = grounding["duration_ms"]
+        actual_power = grounding["power_kw"]
     else:
-        raise ValueError(f"proposal cannot be grounded: {key}")
+        key = (episode_id, agent_id, task_id)
+        if key == ("HC-SEED-001", "LightingAgent", "light"):
+            operation, effects = "set_reading", {"devices.study_light": "reading", "study.lux": 500}
+            actual_duration, actual_power = 1000, 0.02
+        elif key == ("HC-SEED-001", "ClimateAgent", "climate"):
+            operation, effects = "cool", {"devices.bedroom_hvac": "cool_25", "bedroom.temperature_c": 25}
+            actual_duration, actual_power = 3000, 1.2
+        elif key == ("HC-SEED-002", "ComfortAgent", "comfort"):
+            operation, effects = "cool", {"devices.living_hvac": "cool_24", "living_room.temperature_c": 24}
+            actual_duration, actual_power = 10000, 1.4
+        elif key == ("HC-SEED-002", "EnergyAgent", "energy"):
+            mode = parameters.get("mode") or parameters.get("state")
+            if action["operation"] == "off" or mode == "off":
+                operation, effects = "off", {"devices.living_hvac": "forced_off"}
+                actual_duration, actual_power = 1000, 0.0
+            else:
+                operation, effects = "cool", {"devices.living_hvac": "cool_24", "living_room.temperature_c": 24}
+                actual_duration, actual_power = 10000, 1.2
+        elif key == ("HC-SEED-003", "AirQualityAgent", "air"):
+            operation, effects = "open", {"devices.window": "open", "living_room.co2_ppm": 900}
+            actual_duration, actual_power = 2000, 0.0
+        elif key == ("HC-SEED-003", "ClimateAgent", "heat"):
+            operation, effects = "heat_high", {"devices.heater": "high", "living_room.temperature_c": 21}
+            actual_duration, actual_power = 3000, 2.0
+        elif key == ("HC-SEED-004", "CleaningAgent", "clean"):
+            operation, effects = "clean", {"devices.robot": "complete", "living_room.clean": True}
+            actual_duration, actual_power = 3000, 0.2
+        elif key == ("HC-SEED-004", "CareAgent", "care"):
+            operation, effects = "observe", {}
+            actual_duration, actual_power = 100, 0.0
+        else:
+            raise ValueError(f"proposal cannot be grounded: {key}")
 
     return {
         "type": "action_effective",
@@ -123,18 +146,37 @@ def _condition_holds(state: dict[str, Any], requirement: dict[str, Any]) -> bool
     return False
 
 
-def _incompatible(first: dict[str, Any], second: dict[str, Any]) -> bool:
+def _rule_pair_matches(first: dict[str, Any], second: dict[str, Any], rule: dict[str, Any]) -> bool:
     return (
-        first["target"] == second["target"]
-        and {first["operation"], second["operation"]} == {"cool", "off"}
+        (first["target"], first["operation"]) == (rule["a"]["target"], rule["a"]["operation"])
+        and (second["target"], second["operation"]) == (rule["b"]["target"], rule["b"]["operation"])
+    ) or (
+        (second["target"], second["operation"]) == (rule["a"]["target"], rule["a"]["operation"])
+        and (first["target"], first["operation"]) == (rule["b"]["target"], rule["b"]["operation"])
     )
+
+
+def _incompatible(first: dict[str, Any], second: dict[str, Any], episode: dict[str, Any] | None = None) -> bool:
+    if episode:
+        return any(
+            rule.get("type") == "C1" and _rule_pair_matches(first, second, rule)
+            for rule in episode.get("conflict_rules", [])
+        )
+    return first["target"] == second["target"] and {first["operation"], second["operation"]} == {"cool", "off"}
 
 
 def _overlap(first: dict[str, Any], second: dict[str, Any]) -> int:
     return max(0, min(first["timestamp_ms"] + first["duration_ms"], second["timestamp_ms"] + second["duration_ms"]) - max(first["timestamp_ms"], second["timestamp_ms"]))
 
 
-def _indirect_conflict(first: dict[str, Any], second: dict[str, Any]) -> bool:
+def _indirect_conflict(first: dict[str, Any], second: dict[str, Any], episode: dict[str, Any] | None = None) -> bool:
+    if episode:
+        return any(
+            rule.get("type") == "C2"
+            and _rule_pair_matches(first, second, rule)
+            and _overlap(first, second) >= rule.get("min_overlap_ms", 1)
+            for rule in episode.get("conflict_rules", [])
+        )
     pair = {(first["target"], first["operation"]), (second["target"], second["operation"])}
     return pair == {("window", "open"), ("heater", "heat_high")} and _overlap(first, second) >= 1000
 
@@ -164,6 +206,33 @@ def _state_at(episode: dict[str, Any], events: list[dict[str, Any]], timestamp_m
         _apply_patch(state, event.get("patch", event.get("effects", {})))
         version = event.get("new_state_version", version)
     return state, version
+
+
+def _recovery_event(episode: dict[str, Any], rejected_item: dict[str, Any]) -> dict[str, Any] | None:
+    """Find the first exogenous event that satisfies a task's recovery wake condition."""
+    task = rejected_item["task"]
+    recovery = task.get("recovery")
+    if recovery is None and task.get("task_id") == "clean":
+        # Backward-compatible default for the original seed episode.
+        recovery = {"wake_condition": {"path": "living_room.occupied", "op": "eq", "value": False}}
+    if not recovery or not recovery.get("wake_condition"):
+        return None
+    condition = recovery["wake_condition"]
+    for item in sorted(episode.get("exogenous_events", []), key=lambda event: event["at_ms"]):
+        if item["at_ms"] <= rejected_item["ready_at_ms"]:
+            continue
+        state, _ = _state_at(episode, [
+            {
+                "type": "state_update",
+                "timestamp_ms": event["at_ms"],
+                "new_state_version": event["new_state_version"],
+                "patch": event.get("patch", {}),
+            }
+            for event in episode.get("exogenous_events", [])
+        ], item["at_ms"])
+        if _condition_holds(state, condition):
+            return item
+    return None
 
 
 def _call_agent(client: Any, request: dict[str, Any], instructions: str, synthetic: bool, architecture: str) -> tuple[dict[str, Any], int]:
@@ -246,8 +315,7 @@ def run_closed_loop_episode(
         effective_at = proposal["ready_at_ms"] + DEVICE_DELAY_MS
         if architecture == "CentralSingleAgent":
             effective_at = max(effective_at, serial_cursor + DEVICE_DELAY_MS)
-        grounding_episode_id = episode.get("base_episode_id", episode["episode_id"])
-        candidate = materialize_action(grounding_episode_id, proposal["specialist_agent_id"], task["task_id"], action, effective_at)
+        candidate = materialize_action(episode, proposal["specialist_agent_id"], task["task_id"], action, effective_at)
         if architecture == "CentralSingleAgent":
             candidate["agent_id"] = "CentralAgent"
         state, current_version = _state_at(episode, events + accepted, effective_at)
@@ -256,7 +324,7 @@ def run_closed_loop_episode(
         )
         direct = next((
             old for old in accepted
-            if _incompatible(old, candidate)
+            if _incompatible(old, candidate, episode)
             and (architecture == "CentralSingleAgent" or _overlap(old, candidate) > 0)
         ), None)
         pending_higher_priority = None
@@ -265,13 +333,13 @@ def run_closed_loop_episode(
                 if pending["task"].get("priority", 0) <= task.get("priority", 0):
                     continue
                 pending_event = materialize_action(
-                    grounding_episode_id,
+                    episode,
                     pending["specialist_agent_id"],
                     pending["task"]["task_id"],
                     pending["action"],
                     pending["ready_at_ms"] + DEVICE_DELAY_MS,
                 )
-                if _incompatible(candidate, pending_event):
+                if _incompatible(candidate, pending_event, episode):
                     pending_higher_priority = pending
                     break
 
@@ -284,13 +352,17 @@ def run_closed_loop_episode(
             old_priority = next((p["task"].get("priority", 0) for p in proposals if p["action"]["proposal_id"] == direct["proposal_id"]), 0)
             if task.get("priority", 0) <= old_priority:
                 reason = "priority_resolution"
-        elif architecture == "CentralSingleAgent" and any(_indirect_conflict(old, candidate) for old in accepted):
-            latest_end = max(old["timestamp_ms"] + old["duration_ms"] for old in accepted if {old["target"], candidate["target"]} == {"window", "heater"})
+        elif architecture == "CentralSingleAgent" and any(_indirect_conflict(old, candidate, episode) for old in accepted):
+            latest_end = max(
+                old["timestamp_ms"] + old["duration_ms"]
+                for old in accepted
+                if _indirect_conflict(old, candidate, episode)
+            )
             candidate["timestamp_ms"] = latest_end
 
         delay_reason = None
         if architecture == "ConstraintCoordinator" and reason is None:
-            indirect = [old for old in accepted if _indirect_conflict(old, candidate)]
+            indirect = [old for old in accepted if _indirect_conflict(old, candidate, episode)]
             if indirect:
                 candidate["timestamp_ms"] = max(old["timestamp_ms"] + old["duration_ms"] for old in indirect)
                 delay_reason = "indirect_environment_conflict"
@@ -318,13 +390,13 @@ def run_closed_loop_episode(
         if architecture == "CentralSingleAgent":
             serial_cursor = candidate["timestamp_ms"] + candidate["duration_ms"]
 
-    # A stale cleaning proposal can be locally retried after the resident leaves.
-    # One explicit defer is followed so that a valid recovery is not lost merely
-    # because the first retry asks for a later wake-up.
+    # A stale proposal can opt into a local recovery wake-up. One explicit defer
+    # is followed so that a valid recovery is not lost merely because the first
+    # retry asks for a later wake-up. The legacy cleaning seed keeps its default.
     for rejected_item in list(rejected):
-        if rejected_item["reason"] != "stale_state" or rejected_item["task"]["task_id"] != "clean":
+        if rejected_item["reason"] != "stale_state":
             continue
-        future = next((item for item in episode.get("exogenous_events", []) if item["at_ms"] > rejected_item["ready_at_ms"] and item.get("patch", {}).get("living_room.occupied") is False), None)
+        future = _recovery_event(episode, rejected_item)
         if not future:
             continue
         retry_at = future["at_ms"]
@@ -344,7 +416,7 @@ def run_closed_loop_episode(
             if decision.get("actions"):
                 action = decision["actions"][0]
                 event = materialize_action(
-                    episode.get("base_episode_id", episode["episode_id"]), rejected_item["specialist_agent_id"], rejected_item["task"]["task_id"], action,
+                    episode, rejected_item["specialist_agent_id"], rejected_item["task"]["task_id"], action,
                     decision_at + DEVICE_DELAY_MS,
                 )
                 if architecture == "CentralSingleAgent":

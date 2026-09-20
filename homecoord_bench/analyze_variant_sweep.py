@@ -138,8 +138,28 @@ def analyze(run_dir: Path) -> dict[str, Any]:
         elif row.get("family") == "resource_capacity_conflict":
             capacity_groups[row["architecture"]].append(row)
 
-    input_cost_off_peak = token_totals["input"] * 0.15 / 1_000_000
-    output_cost_off_peak = token_totals["output"] * 0.60 / 1_000_000
+    providers = sorted({event.get("provider") for event in starts if event.get("provider")})
+    models = sorted({event.get("model") for event in starts if event.get("model")})
+    reasoning_efforts = sorted({event.get("reasoning_effort") for event in starts if event.get("reasoning_effort")})
+    model = models[0] if len(models) == 1 else models
+    pricing = {
+        "deepseek-flash": {"off_peak_input": 0.15, "off_peak_output": 0.60, "peak_multiplier": 2.0},
+        "deepseek-v4-pro": {"off_peak_input": 0.66, "off_peak_output": 1.98, "peak_multiplier": 2.0},
+    }.get(model if isinstance(model, str) else "")
+    if pricing:
+        input_cost_off_peak = token_totals["input"] * pricing["off_peak_input"] / 1_000_000
+        output_cost_off_peak = token_totals["output"] * pricing["off_peak_output"] / 1_000_000
+        estimated_cost = {
+            "off_peak_all_input_cache_miss": input_cost_off_peak + output_cost_off_peak,
+            "peak_all_input_cache_miss": pricing["peak_multiplier"] * (input_cost_off_peak + output_cost_off_peak),
+            "pricing_source": "DeepSeek Models & Pricing page checked 2026-09-20; verify again before publication",
+        }
+    else:
+        estimated_cost = {
+            "off_peak_all_input_cache_miss": None,
+            "peak_all_input_cache_miss": None,
+            "pricing_source": f"no verified pricing configured for {model}",
+        }
     repetitions = max((row.get("repetition", 1) for row in rows), default=0)
     return {
         "status": (
@@ -147,9 +167,9 @@ def analyze(run_dir: Path) -> dict[str, Any]:
             if repetitions > 1
             else "single-repetition parameter sweep; calibration evidence, not a paper result"
         ),
-        "provider": "deepseek",
-        "model": "deepseek-flash",
-        "reasoning_effort": "none",
+        "provider": providers[0] if len(providers) == 1 else providers,
+        "model": model,
+        "reasoning_effort": reasoning_efforts[0] if len(reasoning_efforts) == 1 else reasoning_efforts,
         "data_scope": {
             "variant_episodes": len({row["episode_id"] for row in rows}),
             "architecture_runs": len(raw_rows),
@@ -174,10 +194,7 @@ def analyze(run_dir: Path) -> dict[str, Any]:
             "logical_call_including_invalid_retry": latency_summary(logical_latencies),
         },
         "tokens_including_invalid_attempts": token_totals,
-        "estimated_cost_usd": {
-            "off_peak_all_input_cache_miss": input_cost_off_peak + output_cost_off_peak,
-            "peak_all_input_cache_miss": 2 * (input_cost_off_peak + output_cost_off_peak),
-        },
+        "estimated_cost_usd": estimated_cost,
         "architectures": {name: summarize_rows(group) for name, group in sorted(by_architecture.items())},
         "configurations": {
             f"{configuration_id}.{architecture}": summarize_rows(group)
