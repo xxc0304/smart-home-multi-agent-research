@@ -19,6 +19,10 @@
 - `docs/SMART_HOME_AGENT_SURVEY.md`：以 HomeBench 和 SimuHome 为基础的综述报告，整理相关工作、候选命题和实验路线。
 - `docs/LITERATURE.md`：已核对论文、发表状态、重叠关系和可借鉴点。
 - `docs/EXPERIMENT_PLAN.md`：研究假设、环境、基线、指标和近期实验计划。
+- `智慧家庭Agent综述_教师审阅版_v1.3_final.docx`：当前综述文稿；配套源稿和文献矩阵分别为 `智慧家庭Agent综述_新稿_v0.6.md` 与 `智慧家庭Agent文献矩阵_v0.2.md`。
+- `HomeCoord-Bench_研究问题与实验方案简要说明_v0.2.docx`：当前研究问题与实验方案简报。
+- `figures/academic_clean_v8/`：v1.3综述使用的七张定稿插图。
+- `homecoord_bench/README.md`：可复现实验入口；代表性修订草稿的五策略基线矩阵见 `docs/REPRESENTATIVE_REVISION_BASELINE_MATRIX_2026-09-27.md`，Agent 动作导致在途前提失效的探针见 `docs/AGENT_CAUSED_INFLIGHT_PROBE_2026-09-27.md`，事件排序和指标口径审查见 `docs/EVENT_SIMULATOR_SEMANTICS_AUDIT_2026-09-27.md`。
 - `docs/SOURCE_MATERIALS.md`：附件清单、来源、证据等级和阅读说明。
 - `docs/CONTINUE_PROMPT.md`：在另一台设备上继续讨论时可直接粘贴的上下文提示词。
 - `materials/`：本会话可访问的项目源文件副本。
