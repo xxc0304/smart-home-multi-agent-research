@@ -54,6 +54,7 @@ def main():
         p.add_argument('--output',type=Path,required=True)
         if name=='train':p.add_argument('--technical-steps',type=int)
         if name=='generate':
+            p.add_argument('--technical-prefix',type=int)
             p.add_argument('--role',choices=['V','C'],required=True)
             p.add_argument('--condition',choices=['B','E'],required=True)
             p.add_argument('--adapter',type=Path)
@@ -87,7 +88,8 @@ def main():
     else:
         config=json.loads(args.config.read_text(encoding='utf-8'))
         if args.command=='generate':
-            result=generate(config,args.role,args.condition,args.adapter,args.output)
+            result=generate(config,args.role,args.condition,args.adapter,args.output,
+                technical_prefix=args.technical_prefix)
         elif args.command=='tokenize-check':
             # No model weights needed, but use the exact chosen tokenizer/template.
             require_config(config)

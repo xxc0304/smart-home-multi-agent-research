@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "primary_enabled": true,
+  "qualification": "SUPPORTED_TASK_ADVANTAGE",
+  "n_expected": 160,
+  "difference": 0.375,
+  "cluster_ci95": [
+    0.2893081761006289,
+    0.4605283094098883
+  ],
+  "item_ci95": [
+    0.29375,
+    0.4625
+  ],
+  "n_groups": 139,
+  "largest_group_n": 4,
+  "warnings": [],
+  "paired_counts": {
+    "both_correct": 17,
+    "only_expert": 65,
+    "only_baseline": 5,
+    "both_wrong": 73
+  },
+  "evidence_type": "ACTUAL_MODEL_RESPONSES",
+  "bootstrap": {
+    "repeats": 10000,
+    "seed": 20261102,
+    "unit": "predeclared_dependency_group"
+  }
+}

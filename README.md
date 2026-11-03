@@ -1,3 +1,7 @@
+# 最新实验进展（2026-11-03）
+
+[CoReTA 实测结果与当前工作](CoReTA/README.md)：4B专家训练及C160资格验证已完成，团队实验尚未启动。
+
 # 最新接手入口（2026-11-03）
 
 当前进展与实验室3090主机迁移说明见 [LAB_HANDOFF_20261103.md](LAB_HANDOFF_20261103.md)。CoReTA 当前状态以 handoff.md / CURRENT_STATE.md 顶部为准。下方2026-10-18导航为历史记录。
@@ -61,4 +65,5 @@
 ```powershell
 git clone https://github.com/xxc0304/smart-home-multi-agent-research.git
 ```
+
 

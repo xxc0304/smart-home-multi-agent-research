@@ -1,3 +1,15 @@
+# 最新实测进展（2026-11-03）
+
+Qwen3-4B/NF4仅答案LoRA首轮1796题训练完成。V200：底座EM13.5%，微调45.0%；独立C160：13.75%→51.25%，配对提升37.5pp，139组bootstrap95%区间[28.93,46.05]pp。两组均完整；任务优势资格通过，尚无团队效果证据。
+
+- [训练及V结果](engineering/b0-first-run-20261103/RESULTS.md)
+- [C160资格及边界](engineering/b0-first-run-20261103/C160_RESULTS.md)
+- [低底座分数审核](TRAINING_VALIDATION_LOW_BASELINE_REVIEW_20261103.md)
+- [当前交接](handoff.md)
+
+当前待办：在V做有限基线健康诊断（尚未运行），再核团队条件中的独答优势、长度和成本。C已使用且关闭调参，H未读。以下旧条目保留历史，以顶部交接为准。模型权重、adapter、数据集及完整runs原件未纳入Git；已同步小型评分/训练状态证据及运行配置。
+
+---
 # CoReTA
 
 **Complementary Reasoning through Targeted Assistance**。通过定向帮助、贡献检查与实际应用反馈，发挥成员互补能力，提升多 Agent 团队的协调与问题解决能力。当前能力与机制优先，同成本优势及成本节约后置。
@@ -60,3 +72,4 @@
 - [运行目录索引](experiment/run-index.md)：定位 `runs/` 下全部版本化记录。
 
 CoReTA 已有的 `research/`、`refine-logs/`、`runs/` 和 `data/` 保持原位；工作流入口链接到这些详细记录，不搬动历史证据。
+

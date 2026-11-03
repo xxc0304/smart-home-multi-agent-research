@@ -1,0 +1,216 @@
+{
+  "V": {
+    "stats": {
+      "B": {
+        "n": 200,
+        "em": 0.135,
+        "f1": 0.2539589213329843,
+        "recomputed_mismatches": 0,
+        "median_output_tokens": 4.0,
+        "mean_output_tokens": 7.47,
+        "over20_tokens": 9,
+        "nonexact_contains_gold": 8,
+        "byhop": {
+          "2": {
+            "n": 175,
+            "em": 0.12
+          },
+          "3": {
+            "n": 25,
+            "em": 0.24
+          }
+        }
+      },
+      "E": {
+        "n": 200,
+        "em": 0.45,
+        "f1": 0.5342469654528478,
+        "recomputed_mismatches": 0,
+        "median_output_tokens": 4.0,
+        "mean_output_tokens": 4.595,
+        "over20_tokens": 0,
+        "nonexact_contains_gold": 7,
+        "byhop": {
+          "2": {
+            "n": 175,
+            "em": 0.4514285714285714
+          },
+          "3": {
+            "n": 25,
+            "em": 0.44
+          }
+        }
+      }
+    },
+    "first8_baseline_nonexact": [
+      {
+        "id": "2hop__142515_31413",
+        "pred": "Kassetten's performers collaborated with members of the Birthday Party.",
+        "gold": "the Birthday Party",
+        "f1": 0.4,
+        "contains_gold": true
+      },
+      {
+        "id": "2hop__14120_89145",
+        "pred": "Macintosh",
+        "gold": "the 1980s",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "2hop__558996_529125",
+        "pred": "Calaveras County",
+        "gold": "San Andreas",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "3hop1__146192_728452_124684",
+        "pred": "Ralfe",
+        "gold": "Eric Fletcher Waters",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "2hop__559896_160837",
+        "pred": "Venezuela",
+        "gold": "5.1",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "2hop__92103_29312",
+        "pred": "George W. Bush",
+        "gold": "surged to near 90%",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "2hop__16777_419765",
+        "pred": "Benjamin Disraeli",
+        "gold": "Isaac D'Israeli",
+        "f1": 0.5,
+        "contains_gold": false
+      },
+      {
+        "id": "2hop__287389_160837",
+        "pred": "Venezuela",
+        "gold": "5.1",
+        "f1": 0,
+        "contains_gold": false
+      }
+    ],
+    "paired_inference_equal": true
+  },
+  "C": {
+    "stats": {
+      "B": {
+        "n": 160,
+        "em": 0.1375,
+        "f1": 0.23764232920445036,
+        "recomputed_mismatches": 0,
+        "median_output_tokens": 5.0,
+        "mean_output_tokens": 8.76875,
+        "over20_tokens": 6,
+        "nonexact_contains_gold": 10,
+        "byhop": {
+          "3": {
+            "n": 32,
+            "em": 0.0625
+          },
+          "2": {
+            "n": 121,
+            "em": 0.15702479338842976
+          },
+          "4": {
+            "n": 7,
+            "em": 0.14285714285714285
+          }
+        }
+      },
+      "E": {
+        "n": 160,
+        "em": 0.5125,
+        "f1": 0.5878869047619047,
+        "recomputed_mismatches": 0,
+        "median_output_tokens": 5.0,
+        "mean_output_tokens": 5.5375,
+        "over20_tokens": 0,
+        "nonexact_contains_gold": 8,
+        "byhop": {
+          "3": {
+            "n": 32,
+            "em": 0.25
+          },
+          "2": {
+            "n": 121,
+            "em": 0.5867768595041323
+          },
+          "4": {
+            "n": 7,
+            "em": 0.42857142857142855
+          }
+        }
+      }
+    },
+    "first8_baseline_nonexact": [
+      {
+        "id": "3hop1__81424_42691_217606",
+        "pred": "Hans Island",
+        "gold": "Nares Strait",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "2hop__705590_208796",
+        "pred": "John Barry",
+        "gold": "Ralph Vaughan Williams",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "2hop__173998_75878",
+        "pred": "Classic Albums: Iron Maiden – The Number of the Beast",
+        "gold": "Classic Albums: Iron Maiden -- The Number of the Beast",
+        "f1": 0.9333333333333333,
+        "contains_gold": true
+      },
+      {
+        "id": "3hop1__68869_67065_43617",
+        "pred": "Texas",
+        "gold": "1,989 mi",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "3hop1__532033_768598_68900",
+        "pred": "mid September",
+        "gold": "mid-September",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "2hop__135799_442683",
+        "pred": "Hugo Schiff",
+        "gold": "Italian",
+        "f1": 0,
+        "contains_gold": false
+      },
+      {
+        "id": "3hop1__195580_452704_406400",
+        "pred": "Hickory Grove is in York County, South Carolina. The county that includes Hickory Grove is York County. The question asks for the other county adjacent to the second country that borders York County. From the provided paragraphs, there is no direct information about counties bordering a second country in relation to Hickory Grove. However, the only mention of a border with a second country is in the context of San Diego, which borders Mexico. Since Hickory Grove is in South Carolina, and the only county mentioned bordering a second country is York County, the answer is not directly provided. However, based on the information given, the answer is not directly determinable from the provided paragraphs. But since the question is about Hickory Grove and the county that includes it, and the only county mentioned bordering a second country is York County, the answer is York County.",
+        "gold": "Charlotte County",
+        "f1": 0.015748031496062992,
+        "contains_gold": false
+      },
+      {
+        "id": "3hop1__638093_715836_71981",
+        "pred": "2018",
+        "gold": "four years of production",
+        "f1": 0,
+        "contains_gold": false
+      }
+    ],
+    "paired_inference_equal": true
+  }
+}

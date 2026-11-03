@@ -56,7 +56,8 @@ def score_run(directory, targets):
              for key in ('em', 'f1')} if complete else None
     return dict(manifest=manifest, status='COMPLETE' if complete else 'INCOMPLETE',
         n_expected=len(expected), n_valid=sum(r['metrics'] is not None for r in scored),
-        metrics=means, records=scored, primary_enabled=complete and not manifest['fixture'])
+        metrics=means, records=scored, primary_enabled=complete and not manifest['fixture']
+        and not manifest.get('technical_preflight', False))
 
 
 def percentile(values, p):

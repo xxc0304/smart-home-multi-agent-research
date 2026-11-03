@@ -1,0 +1,36 @@
+{
+  "fixture": false,
+  "reviewed_for_run": true,
+  "model_path": "/data2/xiaoxinchen/models/Qwen3-4B-1cfa9a7",
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "dtype": "bfloat16",
+  "quantization": "4bit",
+  "device": "cuda:0",
+  "max_length": 7326,
+  "template_kwargs": {
+    "enable_thinking": false
+  },
+  "wall_seconds": 3600,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "gradient_accumulation_steps": 1,
+  "gradient_checkpointing": true,
+  "r": 8,
+  "alpha": 16,
+  "learning_rate": 2e-05,
+  "epochs": 1,
+  "seed": 20261102,
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "purpose": "expert_training",
+  "evaluation_answer_suffix": "\n\nAnswer the question above. Output ONLY the short answer: a name, entity, date, number, or short phrase. Do not explain, restate the question, or describe your reasoning."
+}

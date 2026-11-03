@@ -49,6 +49,18 @@ def fixture_config(base):
 
 
 class AnswerChecks(unittest.TestCase):
+    def test_real_technical_prefix_cannot_enable_primary_scoring(self):
+        with tempfile.TemporaryDirectory() as d:
+            directory=Path(d)
+            write_json(directory/'manifest.json',dict(expected_ids=['v1'],fixture=False,
+                role='V',condition='B',technical_preflight=True))
+            (directory/'responses.jsonl').write_text(json.dumps(dict(id='v1',status='OK',raw_output='NYC'))+'\n')
+            result=score_run(directory,{'v1':dict(answer='NYC')})
+            self.assertEqual(result['status'],'COMPLETE')
+            self.assertFalse(result['primary_enabled'])
+            with self.assertRaisesRegex(ValueError,'technical_prefix_requires'):
+                generate(fixture_config(directory),'C','B',None,directory/'bad',technical_prefix=3)
+
     def test_alias_and_normalization_without_schema(self):
         target = dict(answer='New York City', answer_aliases=['NYC'])
         self.assertEqual(answer_score(' Answer: NYC ',target)['em'],1)

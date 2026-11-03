@@ -1,0 +1,7 @@
+# Stage registration 2026-11-03
+
+Goal: establish first bounded answer-only task adapter, then compare B/E on fixed V200 before any C qualification.
+Scope: existing Qwen3-4B fixed revision/NF4/bf16,1796T/200V, seed20261102, no data reselection or C/H bodies. V technical preflight uses original first3 inputs in original order, baseline only,64 tokens greedy, same real generate path; only plumbing/timing/EOS inspected, no gold-based tuning. Separate technical manifest disables primary scoring. No technical adapter used as E.
+Completion: preflight3/3 terminal OK and scorer replay, finite bounded first1epoch training with adapter origin expert_training, same-condition V200 B/E and scores. C160/B1 not authorized in this batch. Failure/OOM retains partial records and stops dependent stage; no automatic rerun or second training attempt.
+Choice recorded before runs: batch1/accum1, r8/alpha16/lr2e-5, gradient checkpointing, all attention+MLP linear targets. Full training wall10800s(3h; previous10step linear estimate68min with margin),1epoch1796 steps. V B/E separate wall3600s each, finalized against measured prefix latency before launch. One first attempt candidate only; no auto second attempt. Max length7326,thinkingfalse. No environment rebuild, spec06ec4d42 unchanged.
+Implementation change: explicit technical-prefix on V baseline only,1..8; manifests stay actual-model/nonfixture but technical_preflight disables primary scoring. Freeze new source before each batch; earlier hashes remain history.

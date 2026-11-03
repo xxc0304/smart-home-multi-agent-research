@@ -1,0 +1,81 @@
+{
+  "manifest": {
+    "role": "V",
+    "condition": "B",
+    "adapter": null,
+    "fixture": false,
+    "expected_ids": [
+      "2hop__142515_31413",
+      "2hop__14120_89145",
+      "2hop__558996_529125"
+    ],
+    "inference": {
+      "model_path": "/data2/xiaoxinchen/models/Qwen3-4B-1cfa9a7",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "dtype": "bfloat16",
+      "quantization": "4bit",
+      "device": "cuda:0",
+      "max_length": 7326,
+      "template_kwargs": {
+        "enable_thinking": false
+      },
+      "seed": 20261102,
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 64
+      },
+      "evaluation_answer_suffix": "\n\nAnswer the question above. Output ONLY the short answer: a name, entity, date, number, or short phrase. Do not explain, restate the question, or describe your reasoning."
+    },
+    "technical_preflight": true,
+    "technical_prefix": 3
+  },
+  "status": "COMPLETE",
+  "n_expected": 3,
+  "n_valid": 3,
+  "metrics": {
+    "em": 0.0,
+    "f1": 0.13333333333333333
+  },
+  "records": [
+    {
+      "id": "2hop__142515_31413",
+      "status": "OK",
+      "raw_output": "Kassetten's performers collaborated with members of the Birthday Party.",
+      "input_tokens": 3134,
+      "output_tokens": 14,
+      "elapsed_seconds": 1.2114613379999355,
+      "metrics": {
+        "answer": "Kassetten's performers collaborated with members of the Birthday Party.",
+        "em": 0,
+        "f1": 0.4
+      }
+    },
+    {
+      "id": "2hop__14120_89145",
+      "status": "OK",
+      "raw_output": "Macintosh",
+      "input_tokens": 3043,
+      "output_tokens": 3,
+      "elapsed_seconds": 0.5261696859997755,
+      "metrics": {
+        "answer": "Macintosh",
+        "em": 0,
+        "f1": 0
+      }
+    },
+    {
+      "id": "2hop__558996_529125",
+      "status": "OK",
+      "raw_output": "Calaveras County",
+      "input_tokens": 2211,
+      "output_tokens": 5,
+      "elapsed_seconds": 0.5092135710001457,
+      "metrics": {
+        "answer": "Calaveras County",
+        "em": 0,
+        "f1": 0
+      }
+    }
+  ],
+  "primary_enabled": false
+}

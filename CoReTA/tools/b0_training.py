@@ -172,6 +172,9 @@ def train(config, rows, output, *, max_steps=None):
             fixture=config['fixture'], steps=trainer.state.global_step,
             elapsed_seconds=time.monotonic() - started,
             peak_allocated_bytes=torch.cuda.max_memory_allocated() if config['device'] != 'cpu' else None,
+            cuda_allocator_stats={k:torch.cuda.memory_stats().get(k) for k in
+                ('reserved_bytes.all.peak','num_alloc_retries','num_ooms')}
+                if config['device'] != 'cpu' else None,
             history=trainer.state.log_history))
         return model, tok
     except Exception as exc:
@@ -187,15 +190,18 @@ def train(config, rows, output, *, max_steps=None):
         raise
 
 
-def generate(config, role, condition, adapter, output, *, fixture_tasks=None):
+def generate(config, role, condition, adapter, output, *, fixture_tasks=None, technical_prefix=None):
     require_config(config)
     if role not in ('V', 'C') or condition not in ('B', 'E'):
         raise ValueError('only_V_or_C_and_B_or_E')
+    if technical_prefix is not None and (role != 'V' or condition != 'B' or
+            type(technical_prefix) is not int or not 1 <= technical_prefix <= 8):
+        raise ValueError('technical_prefix_requires_V_baseline_and_1_to_8')
     if bool(adapter) != (condition == 'E'):
         raise ValueError('expert_requires_adapter_baseline_must_not_have_one')
     if fixture_tasks is not None and not config['fixture']:
         raise ValueError('custom_tasks_fixture_only')
-    if config['generation'] != dict(do_sample=False, max_new_tokens=64) and not config['fixture']:
+    if config['generation'] not in [dict(do_sample=False, max_new_tokens=n) for n in (64,256)] and not config['fixture']:
         raise ValueError('generation_policy_not_frozen_default')
     if adapter:
         origin = json.loads((Path(adapter) / 'b0_origin.json').read_text(encoding='utf-8'))
@@ -215,12 +221,18 @@ def generate(config, role, condition, adapter, output, *, fixture_tasks=None):
         raise ValueError('invalid_task_ids')
     if not config['fixture'] and len(tasks) != (200 if role == 'V' else 160):
         raise ValueError('unexpected_role_size')
+    if technical_prefix is not None:
+        tasks = tasks[:technical_prefix]
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)
     inference = {key:config[key] for key in ('model_path','revision','dtype','quantization',
         'device','max_length','template_kwargs','seed','generation')}
+    if config.get('evaluation_answer_suffix'):
+        inference['evaluation_answer_suffix'] = config['evaluation_answer_suffix']
     manifest = dict(role=role, condition=condition, adapter=str(adapter) if adapter else None,
         fixture=config['fixture'], expected_ids=[t['id'] for t in tasks], inference=inference)
+    if technical_prefix is not None:
+        manifest.update(technical_preflight=True, technical_prefix=technical_prefix)
     write_json(output / 'manifest.json', manifest)
     response_path = output / 'responses.jsonl'
     response_path.touch()
@@ -240,7 +252,8 @@ def generate(config, role, condition, adapter, output, *, fixture_tasks=None):
             record = dict(id=task['id'], status='TECHNICAL_FAILURE', raw_output=None)
             try:
                 messages = [dict(role='system',content=SYSTEM),dict(role='user',content='TASK_DATA\n' +
-                    json.dumps(task_data(task), ensure_ascii=False, indent=2))]
+                    json.dumps(task_data(task), ensure_ascii=False, indent=2) +
+                    config.get('evaluation_answer_suffix', ''))]
                 ids = tok.apply_chat_template(messages, tokenize=True, add_generation_prompt=True,
                     return_dict=False, **config['template_kwargs'])
                 if len(ids) + config['generation']['max_new_tokens'] > config['max_length']:

@@ -1,0 +1,65 @@
+{
+  "manifest": {
+    "role": "V",
+    "condition": "B",
+    "adapter": null,
+    "fixture": false,
+    "expected_ids": [
+      "2hop__142515_31413",
+      "2hop__14120_89145",
+      "2hop__558996_529125"
+    ],
+    "inference": {
+      "model_path": "/data2/xiaoxinchen/models/Qwen3-4B-1cfa9a7",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "dtype": "bfloat16",
+      "quantization": "4bit",
+      "device": "cuda:0",
+      "max_length": 7326,
+      "template_kwargs": {
+        "enable_thinking": false
+      },
+      "seed": 20261102,
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 64
+      }
+    },
+    "technical_preflight": true,
+    "technical_prefix": 3
+  },
+  "status": "INCOMPLETE",
+  "n_expected": 3,
+  "n_valid": 0,
+  "metrics": null,
+  "records": [
+    {
+      "id": "2hop__142515_31413",
+      "status": "OUTPUT_LIMIT",
+      "raw_output": "The question is about who the members of Kassetten's performers collaborated with. From the provided paragraphs, the only one that mentions Kassetten is paragraph 18, which states: \"Kassetten (English: 'Cassettes') is the fifth release of Einstürzende Neubauten",
+      "input_tokens": 3096,
+      "output_tokens": 64,
+      "elapsed_seconds": 3.275120941998466,
+      "metrics": null
+    },
+    {
+      "id": "2hop__14120_89145",
+      "status": "OUTPUT_LIMIT",
+      "raw_output": "The question contains several parts that need to be addressed. First, the company that first used the \"multiple exclusive\" event marketing concept is Regis McKenna, as mentioned in the paragraph about the Macintosh launch. Second, the company that changed from sugar to corn syrup is Pepsi-Cola Made with Real Sugar, which was",
+      "input_tokens": 3005,
+      "output_tokens": 64,
+      "elapsed_seconds": 3.051044973999524,
+      "metrics": null
+    },
+    {
+      "id": "2hop__558996_529125",
+      "status": "OUTPUT_LIMIT",
+      "raw_output": "The capital of the county where Ponderosa Park is found is San Andreas. However, based on the provided information, the correct answer is not directly stated. The paragraph about Ponderosa Park, California, mentions it is in Calaveras County, California. The Calaveras County Courthouse is in San Andreas",
+      "input_tokens": 2173,
+      "output_tokens": 64,
+      "elapsed_seconds": 2.9110602920009114,
+      "metrics": null
+    }
+  ],
+  "primary_enabled": false
+}
