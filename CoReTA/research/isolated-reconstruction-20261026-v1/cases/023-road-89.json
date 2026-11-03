@@ -1,0 +1,386 @@
+{
+  "case_id": "023-road-89",
+  "checker_context": {
+    "task": {
+      "task_id": "candidate-screening-023",
+      "scenario": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions.",
+      "shared_information": [
+        "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests.",
+        "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking.",
+        "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food).",
+        "All three venues are within a 15-minute drive for most community members."
+      ],
+      "choices": [
+        {
+          "id": "option_1",
+          "text": "Lakeview Resort"
+        },
+        {
+          "id": "option_2",
+          "text": "Heritage Public Library"
+        },
+        {
+          "id": "option_3",
+          "text": "Grand Oak Hotel"
+        }
+      ],
+      "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+    },
+    "member": "A1",
+    "public_sources": [
+      {
+        "ref": "TASK",
+        "content": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions."
+      },
+      {
+        "ref": "PUBLIC.1",
+        "content": "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests."
+      },
+      {
+        "ref": "PUBLIC.2",
+        "content": "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking."
+      },
+      {
+        "ref": "PUBLIC.3",
+        "content": "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food)."
+      },
+      {
+        "ref": "PUBLIC.4",
+        "content": "All three venues are within a 15-minute drive for most community members."
+      }
+    ],
+    "own_sources": [
+      {
+        "ref": "S01",
+        "content": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend."
+      }
+    ]
+  },
+  "receiver_context": {
+    "task": {
+      "task_id": "candidate-screening-023",
+      "scenario": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions.",
+      "shared_information": [
+        "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests.",
+        "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking.",
+        "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food).",
+        "All three venues are within a 15-minute drive for most community members."
+      ],
+      "choices": [
+        {
+          "id": "option_1",
+          "text": "Lakeview Resort"
+        },
+        {
+          "id": "option_2",
+          "text": "Heritage Public Library"
+        },
+        {
+          "id": "option_3",
+          "text": "Grand Oak Hotel"
+        }
+      ],
+      "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+    },
+    "member": "A1",
+    "public_sources": [
+      {
+        "ref": "TASK",
+        "content": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions."
+      },
+      {
+        "ref": "PUBLIC.1",
+        "content": "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests."
+      },
+      {
+        "ref": "PUBLIC.2",
+        "content": "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking."
+      },
+      {
+        "ref": "PUBLIC.3",
+        "content": "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food)."
+      },
+      {
+        "ref": "PUBLIC.4",
+        "content": "All three venues are within a 15-minute drive for most community members."
+      }
+    ],
+    "own_sources": [
+      {
+        "ref": "S01",
+        "content": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend."
+      }
+    ],
+    "shared_contributions": {
+      "A1": {
+        "text": "Lakeview Resort has confirmed outdoor capacity for 120, but my private source reports its only access road is flooded and impassable through the weekend, which conflicts with the need for Saturday-night access. Grand Oak Hotel has the largest ballroom but usually requires two weeks' notice, and Heritage Public Library may restrict non-packaged catering. None of the venues is clearly confirmed as fully meeting all requirements; the access-road closure makes Lakeview risky, and no final choice is made here.",
+        "facts": [
+          {
+            "candidate": "Lakeview Resort",
+            "field": "group_capacity_sufficient",
+            "value": true,
+            "source": "PUBLIC.1",
+            "quote": "listed as having outdoor seating for up to 120 guests"
+          },
+          {
+            "candidate": "Lakeview Resort",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S01",
+            "quote": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend."
+          },
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "group_capacity_sufficient",
+            "value": true,
+            "source": "PUBLIC.2",
+            "quote": "has the largest ballroom in the area"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "catering restrictions may apply (for non-packaged food)"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "accessible_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "available on short notice"
+          },
+          {
+            "field": "catering_permitted",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "allow food catering"
+          },
+          {
+            "field": "group_capacity_sufficient",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "accommodate everyone (about 90 guests)"
+          }
+        ],
+        "caveats": [
+          "PUBLIC.1 says Lakeview is free on most weekends, but that does not confirm availability for this specific Saturday.",
+          "S01 reports the only access road to Lakeview is flooded and impassable through the weekend; this is a strong access concern, though the field definition notes one blocked route does not by itself prove all routes blocked.",
+          "Grand Oak Hotel 'usually requires at least two weeks' notice', which conflicts with the short-notice requirement; whether an exception is possible is unknown.",
+          "Heritage Public Library's catering restriction is only stated as possibly applying to non-packaged food; it is unknown whether the committee's required catering would be permitted.",
+          "No source confirms any venue's readiness for this Saturday night specifically."
+        ],
+        "solution": null
+      },
+      "A2": {
+        "text": "From my private source, Grand Oak Hotel's online 'unavailable' status is explained by a scheduling software failure, and last-minute phone bookings are possible this week. That resolves the short-notice concern for Grand Oak, though the public note that it 'usually requires at least two weeks' notice' remains a caveat. Lakeview's outdoor seating (120) fits the group size, but outdoor use on a Saturday night is weather-dependent. Heritage Library has possible catering restrictions for non-packaged food, which is unresolved. I do not select a final option.",
+        "facts": [
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "ready_for_task",
+            "value": true,
+            "source": "S02",
+            "quote": "last-minute bookings can be accepted by phone this week"
+          },
+          {
+            "candidate": "Lakeview Resort",
+            "field": "group_capacity_sufficient",
+            "value": true,
+            "source": "PUBLIC.1",
+            "quote": "listed as having outdoor seating for up to 120 guests"
+          },
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "group_capacity_sufficient",
+            "value": true,
+            "source": "PUBLIC.2",
+            "quote": "has the largest ballroom in the area"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "catering restrictions may apply (for non-packaged food)"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "group_capacity_sufficient",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "accommodate everyone (about 90 guests)"
+          },
+          {
+            "field": "catering_permitted",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "allow food catering"
+          },
+          {
+            "field": "ready_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "available on short notice"
+          }
+        ],
+        "caveats": [
+          "Grand Oak Hotel 'usually requires at least two weeks' notice' per PUBLIC.2, which may conflict with the phone-booking exception in S02; confirm by phone.",
+          "Lakeview Resort's 120 seats are outdoor seating; Saturday-night weather and indoor backup are unresolved.",
+          "Heritage Public Library's catering permission for non-packaged food is uncertain; 'may apply' is not confirmation.",
+          "Online 'unavailable' for Grand Oak is attributed to a software failure only in my private source; verify current booking status.",
+          "No source explicitly confirms catering permission for Lakeview or Grand Oak."
+        ],
+        "solution": null
+      },
+      "A3": {
+        "text": "Heritage Public Library is effectively eliminated for catering: my private source S03 states it now allows only sealed pre-packaged snacks with no catering permitted. Lakeview Resort has outdoor seating for 120 (capacity sufficient for ~90), but 'free on most weekends' does not confirm availability this Saturday, and no source confirms catering permission. Grand Oak Hotel has the largest ballroom, but requires two weeks' notice, conflicting with this Saturday. No option is fully confirmed on all criteria; Lakeview looks most promising pending confirmation of this-Saturday availability and catering.",
+        "facts": [
+          {
+            "candidate": "Lakeview Resort",
+            "field": "group_capacity_sufficient",
+            "value": true,
+            "source": "PUBLIC.1",
+            "quote": "listed as having outdoor seating for up to 120 guests"
+          },
+          {
+            "candidate": "Lakeview Resort",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "free on most weekends"
+          },
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "group_capacity_sufficient",
+            "value": true,
+            "source": "PUBLIC.2",
+            "quote": "has the largest ballroom in the area"
+          },
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "ready_for_task",
+            "value": false,
+            "source": "PUBLIC.2",
+            "quote": "usually requires at least two weeks' notice for events"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": false,
+            "source": "S03",
+            "quote": "now only sealed, pre-packaged snacks are allowed in the meeting hall, with no catering permitted"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "group_capacity_sufficient",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "accommodate everyone (about 90 guests)"
+          },
+          {
+            "field": "catering_permitted",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "allow food catering"
+          },
+          {
+            "field": "ready_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "available on short notice"
+          }
+        ],
+        "caveats": [
+          "Lakeview's 'free on most weekends' does not confirm this specific Saturday; readiness is unresolved.",
+          "No source addresses catering permission at Lakeview or Grand Oak.",
+          "Grand Oak's two-week notice is described as usual, not absolute; short-notice availability is uncertain.",
+          "Heritage Library's no-catering policy comes only from my private source S03 and may conflict with the public 'may apply' phrasing.",
+          "Grand Oak capacity is stated qualitatively ('largest ballroom') without a guest count."
+        ],
+        "solution": null
+      },
+      "A4": {
+        "text": "No venue is confirmed ready or catering-compliant on the evidence available. Lakeview is free on most weekends and seats 120 outdoors, but 'most' does not establish this Saturday and my private source only warns of mosquitoes, not closure. Grand Oak's usual two-week notice conflicts with a Saturday booking. Heritage may restrict non-packaged catering. I do not select an option; unresolved availability and catering details must be checked.",
+        "facts": [
+          {
+            "candidate": "Lakeview Resort",
+            "field": "group_capacity_sufficient",
+            "value": true,
+            "source": "PUBLIC.1",
+            "quote": "listed as having outdoor seating for up to 120 guests"
+          },
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "group_capacity_sufficient",
+            "value": null,
+            "source": "PUBLIC.2",
+            "quote": "has the largest ballroom in the area"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "catering restrictions may apply (for non-packaged food)"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "group_capacity_sufficient",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "accommodate everyone (about 90 guests)"
+          },
+          {
+            "field": "catering_permitted",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "allow food catering"
+          },
+          {
+            "field": "ready_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "available on short notice"
+          }
+        ],
+        "caveats": [
+          "Lakeview being 'free on most weekends' does not confirm availability this Saturday.",
+          "My private source warns of mosquitoes at lakeside events but notes road safety as the health department's primary weekend concern; it does not establish closure or readiness.",
+          "Grand Oak's usual two-week notice requirement makes short-notice Saturday availability doubtful, though 'usually' is not absolute.",
+          "Heritage's catering restriction is uncertain ('may apply') and could block non-packaged catering.",
+          "No source confirms current readiness for any venue."
+        ],
+        "solution": null
+      }
+    },
+    "execution_report": null,
+    "historical_author": "A1",
+    "historical_work": {
+      "reason": "No venue is confirmed to satisfy all criteria (capacity ~90, catering permitted, short-notice Saturday availability). Lakeview has sufficient outdoor capacity (PUBLIC.1: \"listed as having outdoor seating for up to 120 guests\"), but A1's private source reports its only access road is closed by flooding through the weekend, making access risky; catering permission and this-Saturday availability are unconfirmed. Grand Oak has a large ballroom, but PUBLIC.2 says it \"usually requires at least two weeks' notice for events,\" conflicting with short notice (A2's phone-booking claim is uncorroborated by my own sources and remains a caveat). Heritage has an unresolved catering restriction (PUBLIC.3: \"catering restrictions may apply (for non-packaged food)\"), and A3's private claim of no catering permitted is not personally inspected evidence. Among imperfect options, Lakeview best fits the stated capacity requirement and has the least categorical restriction (the access concern is one route, and the field definition notes one blocked route does not prove all routes blocked), so it is the most defensible tentative choice pending confirmation of access, this-Saturday availability, and catering.",
+      "artifact": "option_1",
+      "solution": null
+    }
+  },
+  "target_answer": {
+    "reason": "No venue is confirmed to satisfy all criteria (capacity ~90, catering permitted, short-notice Saturday availability). Lakeview has sufficient outdoor capacity (PUBLIC.1: \"listed as having outdoor seating for up to 120 guests\"), but A1's private source reports its only access road is closed by flooding through the weekend, making access risky; catering permission and this-Saturday availability are unconfirmed. Grand Oak has a large ballroom, but PUBLIC.2 says it \"usually requires at least two weeks' notice for events,\" conflicting with short notice (A2's phone-booking claim is uncorroborated by my own sources and remains a caveat). Heritage has an unresolved catering restriction (PUBLIC.3: \"catering restrictions may apply (for non-packaged food)\"), and A3's private claim of no catering permitted is not personally inspected evidence. Among imperfect options, Lakeview best fits the stated capacity requirement and has the least categorical restriction (the access concern is one route, and the field definition notes one blocked route does not prove all routes blocked), so it is the most defensible tentative choice pending confirmation of access, this-Saturday availability, and catering.",
+    "artifact": "option_1",
+    "solution": null
+  },
+  "local_question": "What do your sources establish about access to Lakeview Resort during the banquet's scheduled time? State the geographic scope and time limits of the report."
+}

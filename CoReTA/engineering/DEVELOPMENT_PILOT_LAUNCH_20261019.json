@@ -1,0 +1,37 @@
+{
+  "scope": "E1: GSM8K train10 + MBPP sanitized train10; three conditions; one logical repeat17",
+  "plan": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\engineering\\DEVELOPMENT_PILOT_TOKENIZER_PLAN_20261019.json",
+  "plan_sha256": "fd0a395e5b4a62b5d70b24bb8b7cfe1985b424f9a5e46b1da101df5b6e6dcd2b",
+  "jobs": 60,
+  "normal_deployment_call_upper_bound": 520,
+  "run_directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019",
+  "source_sha256": {
+    "src\\coreta\\analyze.py": "9b5d883b20f3ee1c2ecc3f78f9211647c08c87fb3f107d38e12bd3a3ef7774a3",
+    "src\\coreta\\batch.py": "9c8768dbfa97de5a7f95bc9d0207e60fcca057f9e6a57e3ac92da87ca0ebcdea",
+    "src\\coreta\\model_client.py": "5da91ab801ff8aa0c7bc26d3653d151be2dd0957f70c9331c970080e583088a3",
+    "src\\coreta\\prompts.py": "ac90b2f26f6f96ad65b1769a3236284a82154cd41e75a9fab36b0998cbae0671",
+    "src\\coreta\\protocol.py": "9b80ea95d8059873769f983f6f2b500de4043a5349e9c33568f428a69247ab25",
+    "src\\coreta\\run.py": "91fb947bd6a3ece13a8400988062ca818f91afb1ccf9f2a0cbcc0f5254cc8b3d",
+    "src\\coreta\\schemas.py": "b29cfd895afa443d59296687dee6ae17d6174a6e4d4cbf4b8790dcaea7a5486d",
+    "src\\coreta\\scoring.py": "dea1cfc0d3b8cd8158cd582a97b8612bdd22ae4fcf47cbe73a7845ec362ff413",
+    "src\\coreta\\scoring_worker.py": "93c8edf8b18fe0990ae46e7b82eb770acc27f31006f85a04ea64c62edf79368c",
+    "src\\coreta\\state.py": "e47e8c801cbba4f30dbd8aeead00705ee77db4a9eb7e339d8b6019b6176a0aec",
+    "src\\coreta\\tasks.py": "6856e73de9f401e7ad988e9b9696f3b2f6e5c8c9f4e5376c1dc8195a1426b6dd",
+    "src\\coreta\\__init__.py": "8608a0b01c8c873561084886037877a63606a9484ae4e69408ad0d1d60bcabf6",
+    "tools\\summarize_development_pilot.py": "9a9e974ba1851b9491443b299dddf42e2cdec995fd8ca6a4b9c01796ad1ee0e0",
+    "config\\deepseek_flash.json": "e8b175e535373c3c401d630b14ed78fd156f39d4e7ab9c23071243c28981393a",
+    "design\\v0.3\\PROMPTS.md": "3d55704794deb40bd5d3b89fb8eecde6af16042edaad00b4009a1beba946eaec",
+    "design\\v0.3\\coreta.schema.json": "963552ce9c8463d17191645dbe90c07b5c0873a3a409c18bad4aab6182d15c69",
+    "tools/summarize_development_pilot.py": "3caacddaa6412fe01f624173c9193346a0e042a4ca0f210df9f4e2d1c298dba9"
+  },
+  "notes": [
+    "No online evaluation feedback",
+    "Do not select or rerun tasks by score",
+    "Existing two integration runs are not reused as pilot results",
+    "Shared independent draft bank within this pilot",
+    "Local tokenizer estimates, not exact provider template tokens",
+    "DeepSeek seed unsupported; logical seed identifies repetition only"
+  ],
+  "snapshot_at": "2026-10-19T02:31:57.668695+00:00",
+  "started_at": "2026-10-19T02:30:18.075762+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "question": "多个成员的局部条件组合后形成对当前候选的反证：019轨迹及直接先行工作",
+  "sources": [
+    {"title":"Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs", "url":"https://arxiv.org/html/2505.11556v4", "read_scope":"§3, §6.4 and task-generation appendix; two facts jointly rule out option and Exchange-then-Decide."},
+    {"title":"HiddenBench ICML simulator source", "url":"https://github.com/Yassellee/HiddenBench_ICML/blob/3be6ca16973e4fb751ffc0dfb7eb11f2d28335d1/src/hiddenbench/simulator.py", "read_scope":"instantiate_agents shuffles hidden facts and allocates one per member."},
+    {"title":"HiddenBench author published discussion and vote result files", "url":"https://huggingface.co/datasets/YuxuanLi1225/HiddenBench-results", "read_scope":"hidden_generated Gemini-2.5-Pro and GPT-4.1 019 records; source filenames and hashes saved in extraction."},
+    {"title":"Communication and Verification in LLM Agents towards Collaboration under Information Asymmetry", "url":"https://arxiv.org/html/2510.25595v2", "read_scope":"§3–5 and Appendix C, split constraints, reasoning verifier and results."},
+    {"title":"Consilience: Conformally Calibrated Communication Control for Hidden-Profile Multi-Agent Reasoning", "url":"https://arxiv.org/html/2608.20564v1", "read_scope":"§3.1.2 and appendix action prompts; ask for facts that support or rule out current candidates."},
+    {"title":"Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards", "url":"https://arxiv.org/html/2610.17893v1", "read_scope":"Appendix L.3 SplitQA, information held by two agents combined into answer; not an 019 case."}
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "scope": "packet/contract checks, not launch preflight or semantic success",
+  "new_api_calls": 0,
+  "four_contexts": [
+    {
+      "task": "010",
+      "receiver": "A1",
+      "origin_slot": 6,
+      "first_pair_packets_equal": true,
+      "first_estimated_tokens": {
+        "ordinary": 5945,
+        "diagnose": 5981
+      },
+      "final_with_real_historical_analysis_tokens": 6108,
+      "historical_analysis_replay_only": true,
+      "carrier_file": "runs\\candidate-screening-probe-live-20261025-r1\\03.raw.txt",
+      "carrier_stage": "historical_EXTRACT_not_new_diagnosis"
+    },
+    {
+      "task": "023",
+      "receiver": "A1",
+      "origin_slot": 89,
+      "first_pair_packets_equal": true,
+      "first_estimated_tokens": {
+        "ordinary": 3769,
+        "diagnose": 3805
+      },
+      "final_with_real_historical_analysis_tokens": 3972,
+      "historical_analysis_replay_only": true,
+      "carrier_file": "runs\\candidate-screening-probe-live-20261025-r1\\85.raw.txt",
+      "carrier_stage": "historical_EXTRACT_not_new_diagnosis"
+    },
+    {
+      "task": "027",
+      "receiver": "A2",
+      "origin_slot": 119,
+      "first_pair_packets_equal": true,
+      "first_estimated_tokens": {
+        "ordinary": 5754,
+        "diagnose": 5790
+      },
+      "final_with_real_historical_analysis_tokens": 5925,
+      "historical_analysis_replay_only": true,
+      "carrier_file": "runs\\candidate-screening-probe-live-20261025-r1\\115.raw.txt",
+      "carrier_stage": "historical_EXTRACT_not_new_diagnosis"
+    },
+    {
+      "task": "011",
+      "receiver": "A1",
+      "origin_slot": 18,
+      "first_pair_packets_equal": true,
+      "first_estimated_tokens": {
+        "ordinary": 5470,
+        "diagnose": 5506
+      },
+      "final_with_real_historical_analysis_tokens": 5686,
+      "historical_analysis_replay_only": true,
+      "carrier_file": "runs\\candidate-screening-probe-live-20261025-r1\\14.raw.txt",
+      "carrier_stage": "historical_EXTRACT_not_new_diagnosis"
+    }
+  ],
+  "first_real_replays": [
+    {
+      "file": "runs\\evidence-first-live-20261025-r1\\016.raw.txt",
+      "text_length": 1472,
+      "extra_fields": [
+        "status",
+        "source_ids"
+      ]
+    },
+    {
+      "file": "runs\\evidence-first-live-20261025-r1\\025.raw.txt",
+      "text_length": 1835,
+      "extra_fields": [
+        "status",
+        "source_ids"
+      ]
+    }
+  ],
+  "final_real_replays": [
+    {
+      "file": "runs\\evidence-first-live-20261025-r1\\018.raw.txt",
+      "choice": "O1",
+      "annotations": [
+        {
+          "field": "extra_fields",
+          "issue": "retained_separately",
+          "names": [
+            "used_contributions"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "runs\\evidence-first-live-20261025-r1\\036.raw.txt",
+      "choice": "O1",
+      "annotations": [
+        {
+          "field": "extra_fields",
+          "issue": "retained_separately",
+          "names": [
+            "used_contributions"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "runs\\evidence-first-live-20261025-r1\\063.raw.txt",
+      "choice": "O1",
+      "annotations": []
+    }
+  ],
+  "rejected_boundary_cases": [
+    {
+      "stage": "first",
+      "correctly_rejected": true
+    },
+    {
+      "stage": "first",
+      "correctly_rejected": true
+    },
+    {
+      "stage": "first",
+      "correctly_rejected": true
+    },
+    {
+      "stage": "first",
+      "correctly_rejected": true
+    },
+    {
+      "stage": "first",
+      "correctly_rejected": true
+    },
+    {
+      "stage": "final",
+      "correctly_rejected": true
+    },
+    {
+      "stage": "final",
+      "correctly_rejected": true
+    },
+    {
+      "stage": "final",
+      "correctly_rejected": true
+    },
+    {
+      "stage": "final",
+      "correctly_rejected": true
+    },
+    {
+      "stage": "final",
+      "correctly_rejected": true
+    }
+  ],
+  "null_choice_accepted": true,
+  "legacy_incompatibilities": [
+    {
+      "task": "010",
+      "expected_rejection": "legacy reason/artifact keys; not silently renamed"
+    },
+    {
+      "task": "023",
+      "expected_rejection": "legacy reason/artifact keys; not silently renamed"
+    },
+    {
+      "task": "027",
+      "expected_rejection": "legacy reason/artifact keys; not silently renamed"
+    },
+    {
+      "task": "011",
+      "expected_rejection": "legacy reason/artifact keys; not silently renamed"
+    }
+  ],
+  "schedule_requests": 32,
+  "source_hashes": {
+    "tools/prepare_receiver_baseline_20261026.py": "47d1195ef97cba644dd6154a298ef65a3428c6316b91cf304342cd2c1381851e",
+    "tools/minimal_final_answer_contract.py": "34e73ea30c4e681986cd0ea0729723c345cc5bac08b61bc118fd5373c2d3e552",
+    "tools/local_judgment_frontend.py": "b1a82330b5f6fb6050816a4e01c9ea2762094a9341c2b2df4572099c71c82035",
+    "research/bottleneck-selection-20261026/MECHANISM_EVIDENCE.json": "d94f7cbe05e4fc5b03930182fd344e270ae152ecd7d2b4a7d19f2b44f207a12e"
+  },
+  "pending": [
+    "No live transport or dependency-failure exporter implemented.",
+    "No cumulative usage-stop simulation or response-length stress replay.",
+    "Source snapshot and launch manifest not frozen; examples are local replay only.",
+    "New diagnostic semantic output has no historical live replay; old text carriers test the common contract only."
+  ]
+}

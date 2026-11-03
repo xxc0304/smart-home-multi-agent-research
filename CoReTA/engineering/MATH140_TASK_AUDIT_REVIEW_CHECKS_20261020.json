@@ -1,0 +1,44 @@
+{
+  "frozen_files_count": 23,
+  "frozen_files_match": true,
+  "initial_hashes_match": true,
+  "delivery_is_original_A0": true,
+  "collaboration_events": 0,
+  "request_count": 2,
+  "response_count": 2,
+  "runtime_contexts": [
+    {
+      "material_keys": [
+        "task"
+      ],
+      "public_task_matches": true,
+      "reference_index": [],
+      "tools_supplied": false
+    },
+    {
+      "material_keys": [
+        "task"
+      ],
+      "public_task_matches": true,
+      "reference_index": [],
+      "tools_supplied": false
+    }
+  ],
+  "errors": [
+    {
+      "code": "REFERENCE_ERROR",
+      "detail": "TaskFact F01 quote does not match public task"
+    }
+  ],
+  "grouped_fact_coverage_diagnostic": {
+    "scope": "Offline synthetic conformance example, not a new model trajectory",
+    "fact_quote": "p(0,0) &=p(1,0) = p( - 1,0)",
+    "fact_point_count": 3,
+    "declared_coverage": "exhaustive_for_listed_facts",
+    "declared_scope": "All three point constraints listed in F02",
+    "case_count": 1,
+    "tested_input": "(0,0)",
+    "runtime_validation_errors": [],
+    "interpretation": "Current check covers declared fact IDs, not individual conditions inside one fact."
+  }
+}

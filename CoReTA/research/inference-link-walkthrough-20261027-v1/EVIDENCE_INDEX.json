@@ -1,0 +1,59 @@
+[
+  {
+    "case_id": "004-identity",
+    "slot": 38,
+    "request_path": "runs/example-adaptation-live-20261026-r1/actual_requests/038.json",
+    "request_sha256": "c370a9e84be0dc33c49c47f306bb397f92fe3678d7b1c73f510072c0d5c1b361",
+    "answer_path": "runs/example-adaptation-live-20261026-r1/038.raw.txt",
+    "answer_sha256": "4c5914d8481e87c0cd92bf09fd8f0fe476d272f26810069f6826d79acf8a4ad9",
+    "exact_target_offset": [
+      1313,
+      1404
+    ],
+    "visible_anchors_verified": 3,
+    "transformations": [
+      "remove demonstrations",
+      "target actual latest answer rather than older archived draft",
+      "explicit original local-question addressee",
+      "repeat only already-visible source spans as selected anchors"
+    ]
+  },
+  {
+    "case_id": "023-notice",
+    "slot": 19,
+    "request_path": "runs/example-adaptation-live-20261026-r1/actual_requests/019.json",
+    "request_sha256": "fc980266701ffe26d9e7db5d05926a5a40af1db3e04bd583e06db1f96020a63c",
+    "answer_path": "runs/example-adaptation-live-20261026-r1/019.raw.txt",
+    "answer_sha256": "ce10194b5e6981ab9818a6dec8c1d2612763ea2eda71b587efaa25d7413efcd0",
+    "exact_target_offset": [
+      1274,
+      1341
+    ],
+    "visible_anchors_verified": 2,
+    "transformations": [
+      "remove demonstrations",
+      "target actual latest answer rather than older archived draft",
+      "explicit original local-question addressee",
+      "repeat only already-visible source spans as selected anchors"
+    ]
+  },
+  {
+    "case_id": "011-time-supported",
+    "slot": 49,
+    "request_path": "runs/example-adaptation-live-20261026-r1/actual_requests/049.json",
+    "request_sha256": "cae078034fc6bf88c2e9eb052861b8f5c250d71496250271ab0412d31779c725",
+    "answer_path": "runs/example-adaptation-live-20261026-r1/049.raw.txt",
+    "answer_sha256": "3c66a2c84577cd5d09c56c806e578f213fdcb3999e333c59a297426dfc610577",
+    "exact_target_offset": [
+      899,
+      1039
+    ],
+    "visible_anchors_verified": 2,
+    "transformations": [
+      "remove demonstrations",
+      "target actual latest answer rather than older archived draft",
+      "explicit original local-question addressee",
+      "repeat only already-visible source spans as selected anchors"
+    ]
+  }
+]

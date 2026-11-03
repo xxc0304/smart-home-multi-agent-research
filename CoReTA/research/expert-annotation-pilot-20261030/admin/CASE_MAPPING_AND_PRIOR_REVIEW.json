@@ -1,0 +1,2125 @@
+{
+  "version": "expert-transfer-annotation-v0.1-20261030",
+  "cases": [
+    {
+      "case_id": "S01",
+      "original_case_id": "C01",
+      "task": "030",
+      "branch_mapping": {
+        "full_information": "B01",
+        "standard": "B02",
+        "shared": "B03",
+        "imp": "B04"
+      },
+      "events": [
+        {
+          "event_id": "E001",
+          "slot": 1,
+          "seed_record_index": 0,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/001.raw.txt",
+          "source_raw_sha256": "93a0063b98ff8e2136c700d5c331454961449f80d400f69284f8ceba60f5173a",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 1,
+          "request_payload_sha256": "abb6ae31efa7df4eac43ef01f052f53f8d23b017f9eb431a88297683512d0d1b"
+        },
+        {
+          "event_id": "E002",
+          "slot": 2,
+          "seed_record_index": 1,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/002.raw.txt",
+          "source_raw_sha256": "0036092af2ed772bc06344859c43b5e93dff63fe2f1dbb6be4775209722b97cc",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 2,
+          "request_payload_sha256": "bb769b03ec76c2bc7a70f420035a2161273f552cea12af0a6cfca66911286555"
+        },
+        {
+          "event_id": "E003",
+          "slot": 3,
+          "seed_record_index": 2,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/003.raw.txt",
+          "source_raw_sha256": "a56d73018912d8ccf71551a11dffec9e3ca6114f5130bd066ca43e92d1bde3c9",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 3,
+          "request_payload_sha256": "33f0e0989d7ab30107b0c113698b50d64540610bd489816095b6d968b6462d44"
+        },
+        {
+          "event_id": "E004",
+          "slot": 4,
+          "seed_record_index": 3,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/004.raw.txt",
+          "source_raw_sha256": "fcafb871861fd792aa6f3f9b0f88ecbd4674961bdca24e55868e7a34b23d30d5",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 4,
+          "request_payload_sha256": "318097d0f349b2a0e655215eb7e5dcf9e968a713739093571cd2883382b40d17"
+        },
+        {
+          "event_id": "E005",
+          "slot": 5,
+          "seed_record_index": 4,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/005.raw.txt",
+          "source_raw_sha256": "eacc4c55cc000d01b1c274c25fb37656daf1b0dec7782bc661a6a169c6d2e670",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 5,
+          "request_payload_sha256": "a0b370058a52c3b6339e48b4073ace6d72b8c014ed4fa51ff09724507d4ca25c"
+        },
+        {
+          "event_id": "E006",
+          "slot": 6,
+          "seed_record_index": 5,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/006.raw.txt",
+          "source_raw_sha256": "ca88e22f345e560cffc63efec65256456e514aebefa3ec737aa0ffc887f919af",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 6,
+          "request_payload_sha256": "a58418c31a8bebe603a22a040d3c496234eaa627cb998009ff5ef9ab14b28924"
+        },
+        {
+          "event_id": "E007",
+          "slot": 7,
+          "seed_record_index": 6,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/007.raw.txt",
+          "source_raw_sha256": "733e8a608acd56d4df4b02d9590f3418fd25ac5a47244c6113e338d5b88baf16",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 7,
+          "request_payload_sha256": "0ff014e4aea094e75cfbd030216cc9221bdf0f544cffe9d0b5b4dab518bdddde"
+        },
+        {
+          "event_id": "E008",
+          "slot": 8,
+          "seed_record_index": 7,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/008.raw.txt",
+          "source_raw_sha256": "4b8ee1f82c256c4d0ffc71a6a8e215f242ff586c334af4f640b6c6019d400e34",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 8,
+          "request_payload_sha256": "9e228a91f0d15623af222a2bcb28c454b19e700d51b1b3cac06eb2c0653947d9"
+        },
+        {
+          "event_id": "E009",
+          "slot": 9,
+          "seed_record_index": 8,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/009.raw.txt",
+          "source_raw_sha256": "076e5d8fc251e420f705461349f75780f1d9dd733881af05e2186c77beb34419",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 9,
+          "request_payload_sha256": "bd20b465fe0ab209e20e6f9bc63895aead9dc3d75595637783b294a6cf4a1c33"
+        },
+        {
+          "event_id": "E010",
+          "slot": 10,
+          "seed_record_index": 9,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+          "source_raw_sha256": "d5ad39ed683d677816282e1d1061a8f3f1c119757eef97b3b7b78fc92f4d2467",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 10,
+          "request_payload_sha256": "1ecf87a997304c4045e166a59f2259d4d5cd1ba7fdc8673d9620be22a350ef50"
+        },
+        {
+          "event_id": "E011",
+          "slot": 11,
+          "seed_record_index": 10,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/011.raw.txt",
+          "source_raw_sha256": "021d98691341c59640f41529e2225b14d52b6e5cb0a57538f1b3fbeb0eea2f4d",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 11,
+          "request_payload_sha256": "7b34ed4e73d737083b9b2b0343094506a98f64dc8fa51ff87e6432661d3ec42f"
+        },
+        {
+          "event_id": "E012",
+          "slot": 12,
+          "seed_record_index": 11,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/012.raw.txt",
+          "source_raw_sha256": "99ded7686513a068f1e179a618dd735332cfb6df233f70a7cf98dcd430008989",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 12,
+          "request_payload_sha256": "9880248ca13cdc95890321774f8333d20978abd00ba68efc699297dcaf720681"
+        },
+        {
+          "event_id": "E013",
+          "slot": 13,
+          "seed_record_index": 12,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/013.raw.txt",
+          "source_raw_sha256": "26ebce61abd1582edb38281a2122a07914d3d16bba43eba95a8ee30ec1f357fc",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 13,
+          "request_payload_sha256": "7446470ca2f606d736fd7d2201396ae1250c35653c8e09612021667204796182"
+        },
+        {
+          "event_id": "E014",
+          "slot": 14,
+          "seed_record_index": 13,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/014.raw.txt",
+          "source_raw_sha256": "0cad7e269209381646ba4c73abebeb389b71bb788a5b341571ad4a4b06888d79",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 14,
+          "request_payload_sha256": "ab8c4c3356acc79cb6a5ec743b70cf9a982d4f6c418788e53531e714882cf87f"
+        },
+        {
+          "event_id": "E015",
+          "slot": 15,
+          "seed_record_index": 14,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/015.raw.txt",
+          "source_raw_sha256": "22650c027d830df32c304164f601eed27da8e5c9030dc747ae875483678d96c7",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 15,
+          "request_payload_sha256": "8b2b590368348c632dad5aa1087a9c7b6d324a0dfd1bcc3191b1f1ad46b0d07e"
+        },
+        {
+          "event_id": "E016",
+          "slot": 16,
+          "seed_record_index": 15,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/016.raw.txt",
+          "source_raw_sha256": "08984e607723c9957c6eb4bb27586305bef8d0cca628cfb615de5b1ca0a0ce8d",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 16,
+          "request_payload_sha256": "96ed3716c7f146a6e356fecf9e53051b0f69d943cbf961203ed6128f7c8c1f9d"
+        }
+      ],
+      "source_type": "project_actual_team_run",
+      "expertise_previous_assessment": "Information-distribution advantage; no calibrated stable ability expert",
+      "previous_observations": [
+        {
+          "slot": 2,
+          "seed_pointer": "/cases/0/records/1/packet/information_available/3/content",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/002.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 2,
+          "matched_fragment": "co-investor partnership",
+          "excerpt": "Skylake Ventures just finalized a co-investor partnership with a well-known angel group yesterday, meeting their usual requirements for a deal of this size.",
+          "observation": "原始私有资料支持共同投资条件已满足"
+        },
+        {
+          "slot": 10,
+          "seed_pointer": "/cases/0/records/9/packet/messages_from_other_participants/0/text",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 10,
+          "matched_fragment": "PRIVATE.A2 resolves",
+          "excerpt": "PRIVATE.A2 resolves Skylake's only stated blocker: its finalized co-investor partnership satisfies the reputable co-investor requirement for a deal this size. Peak's 3-d",
+          "observation": "接收者确实收到了该条件已满足的报告"
+        },
+        {
+          "slot": 10,
+          "seed_pointer": "/cases/0/records/9/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 10,
+          "matched_fragment": "cannot be credited",
+          "excerpt": "act; A3 correctly notes A2's PRIVATE.A2 is absent from the packet and cannot be credited. On available facts, Skylake's co-investor requirement is unresolved, Northstar has late-pullout and committee-timing risk, while Peak's stated 3-day",
+          "observation": "接收者称原始私有资料不在本包，拒绝计入"
+        },
+        {
+          "slot": 13,
+          "seed_pointer": "/cases/0/records/12/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/013.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 13,
+          "matched_fragment": "within 12 hours",
+          "excerpt": "ecution on hold, no new investments processed. Northstar cannot close within 12 hours: investment committee meets monthly, next in three weeks, and has late-pullout risk. Skylake's co-investor condition is satisfied by its finalized an",
+          "observation": "答对分支也把选择期限推成成交期限，需单独核忠实性"
+        }
+      ],
+      "reference_source_pointer": "/item[id=30]/correct_answer",
+      "author_source": null
+    },
+    {
+      "case_id": "S02",
+      "original_case_id": "C05",
+      "task": "004",
+      "branch_mapping": {
+        "visible_draft": "B01",
+        "isolated_rebuild": "B02"
+      },
+      "events": [
+        {
+          "event_id": "E001",
+          "slot": 1,
+          "seed_record_index": 0,
+          "source_raw": "runs/local-reconstruction-live-20261026-r1/001.raw.txt",
+          "source_raw_sha256": "ba2ce7fdd59b024148337f1e466b0843f2a3f14d1613a6c8a71c7d2187df3ded",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 1,
+          "request_payload_sha256": "3f3ff3eb0836dd18d0b978bdc2551b6b34d91a1276b210d9e12d0ace2ef45f1d"
+        },
+        {
+          "event_id": "E002",
+          "slot": 2,
+          "seed_record_index": 1,
+          "source_raw": "runs/local-reconstruction-live-20261026-r1/002.raw.txt",
+          "source_raw_sha256": "9d0585806fb5325ce07e1f1d5cfc8e62385656959e37da8290e9a5675bf661ae",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 2,
+          "request_payload_sha256": "55b91eee11bb883ec505e36bcd27963efb60c1fd4dd8903021ed10c872ff8e13"
+        },
+        {
+          "event_id": "E003",
+          "slot": 3,
+          "seed_record_index": 2,
+          "source_raw": "runs/local-reconstruction-live-20261026-r1/003.raw.txt",
+          "source_raw_sha256": "5475004b2e6e550a5b78a155a997fd9cb261f42eecbb7ac6ce126c75f4caba42",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 3,
+          "request_payload_sha256": "c99f1e19392f9c93b67b14e4b078919468dcb4fee86f988e7b88fd12d51257c9"
+        },
+        {
+          "event_id": "E004",
+          "slot": 4,
+          "seed_record_index": 3,
+          "source_raw": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+          "source_raw_sha256": "e57e23c1b5ebc97825176d8ac5749ba8f108e7c188b09ece8689ff1b94aad4c3",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 4,
+          "request_payload_sha256": "d8616d1457e8937360c89b48331d2f1b209cdfd5f6a5ee4f34b2f9be9185118b"
+        }
+      ],
+      "source_type": "project_actual_receiver_probe",
+      "expertise_previous_assessment": "Source-holder/local reconstruction; historical draft is not an independent baseline for this run",
+      "previous_observations": [
+        {
+          "slot": 3,
+          "seed_pointer": "/cases/4/records/2/packet/own_sources/0/content",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/003.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 3,
+          "matched_fragment": "less than 30",
+          "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others appr",
+          "observation": "局部持有者直接看到年龄限制"
+        },
+        {
+          "slot": 4,
+          "seed_pointer": "/cases/4/records/3/packet/local_reconstruction/text",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 4,
+          "matched_fragment": "less than 30",
+          "excerpt": "My own source S02 states: \"The guilty person is less than 30 years old.\" This is a reported constraint from my source, not an independently confirmed fact, and it is an age restriction only. It also adds inexpe",
+          "observation": "限制也确实进入终答接收者输入"
+        },
+        {
+          "slot": 4,
+          "seed_pointer": "/cases/4/records/3/packet/historical_work/reason",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 4,
+          "matched_fragment": "passenger",
+          "excerpt": "ement excludes Mr. Z (motorcycle). Mr. X's son is described only as a passenger returning home with his father, so he is unlikely to be the car driver. Among the car drivers, Mr. X is the one explicitly described as having drunk ",
+          "observation": "乘客说法已出现在旧稿，不能说由本轮接收者首次创造"
+        },
+        {
+          "slot": 4,
+          "seed_pointer": "/cases/4/records/3/row/answer/reasoning",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 4,
+          "matched_fragment": "cannot override",
+          "excerpt": "int comes from a different member's source and is not established; it cannot override the more specific vehicle/alcohol profile in A1's own source. The unresolved limits are that no public source gives a numeric 1.5 reading or an expli",
+          "observation": "终答承认年龄冲突却优先自身车辆/酒精推断"
+        }
+      ],
+      "reference_source_pointer": "/item[id=4]/correct_answer",
+      "author_source": null
+    },
+    {
+      "case_id": "S03",
+      "original_case_id": "C07",
+      "task": "019",
+      "branch_mapping": {},
+      "events": [
+        {
+          "event_id": "E001",
+          "author_pointer": "/conditions/0/runs/104/initial_votes/0"
+        },
+        {
+          "event_id": "E002",
+          "author_pointer": "/conditions/0/runs/104/initial_votes/1"
+        },
+        {
+          "event_id": "E003",
+          "author_pointer": "/conditions/0/runs/104/initial_votes/2"
+        },
+        {
+          "event_id": "E004",
+          "author_pointer": "/conditions/0/runs/104/initial_votes/3"
+        },
+        {
+          "event_id": "E005",
+          "author_pointer": "/conditions/0/runs/104/rounds/0/messages/0"
+        },
+        {
+          "event_id": "E006",
+          "author_pointer": "/conditions/0/runs/104/rounds/0/messages/1"
+        },
+        {
+          "event_id": "E007",
+          "author_pointer": "/conditions/0/runs/104/rounds/0/messages/2"
+        },
+        {
+          "event_id": "E008",
+          "author_pointer": "/conditions/0/runs/104/rounds/0/messages/3"
+        },
+        {
+          "event_id": "E009",
+          "author_pointer": "/conditions/0/runs/104/rounds/1/messages/0"
+        },
+        {
+          "event_id": "E010",
+          "author_pointer": "/conditions/0/runs/104/rounds/1/messages/1"
+        },
+        {
+          "event_id": "E011",
+          "author_pointer": "/conditions/0/runs/104/rounds/1/messages/2"
+        },
+        {
+          "event_id": "E012",
+          "author_pointer": "/conditions/0/runs/104/rounds/1/messages/3"
+        },
+        {
+          "event_id": "E013",
+          "author_pointer": "/conditions/0/runs/104/rounds/2/messages/0"
+        },
+        {
+          "event_id": "E014",
+          "author_pointer": "/conditions/0/runs/104/rounds/2/messages/1"
+        },
+        {
+          "event_id": "E015",
+          "author_pointer": "/conditions/0/runs/104/rounds/2/messages/2"
+        },
+        {
+          "event_id": "E016",
+          "author_pointer": "/conditions/0/runs/104/rounds/2/messages/3"
+        },
+        {
+          "event_id": "E017",
+          "author_pointer": "/conditions/0/runs/104/rounds/3/messages/0"
+        },
+        {
+          "event_id": "E018",
+          "author_pointer": "/conditions/0/runs/104/rounds/3/messages/1"
+        },
+        {
+          "event_id": "E019",
+          "author_pointer": "/conditions/0/runs/104/rounds/3/messages/2"
+        },
+        {
+          "event_id": "E020",
+          "author_pointer": "/conditions/0/runs/104/rounds/3/messages/3"
+        },
+        {
+          "event_id": "E021",
+          "author_pointer": "/conditions/0/runs/104/rounds/4/messages/0"
+        },
+        {
+          "event_id": "E022",
+          "author_pointer": "/conditions/0/runs/104/rounds/4/messages/1"
+        },
+        {
+          "event_id": "E023",
+          "author_pointer": "/conditions/0/runs/104/rounds/4/messages/2"
+        },
+        {
+          "event_id": "E024",
+          "author_pointer": "/conditions/0/runs/104/rounds/4/messages/3"
+        },
+        {
+          "event_id": "E025",
+          "author_pointer": "/conditions/0/runs/104/rounds/5/messages/0"
+        },
+        {
+          "event_id": "E026",
+          "author_pointer": "/conditions/0/runs/104/rounds/5/messages/1"
+        },
+        {
+          "event_id": "E027",
+          "author_pointer": "/conditions/0/runs/104/rounds/5/messages/2"
+        },
+        {
+          "event_id": "E028",
+          "author_pointer": "/conditions/0/runs/104/rounds/5/messages/3"
+        },
+        {
+          "event_id": "E029",
+          "author_pointer": "/conditions/0/runs/104/rounds/6/messages/0"
+        },
+        {
+          "event_id": "E030",
+          "author_pointer": "/conditions/0/runs/104/rounds/6/messages/1"
+        },
+        {
+          "event_id": "E031",
+          "author_pointer": "/conditions/0/runs/104/rounds/6/messages/2"
+        },
+        {
+          "event_id": "E032",
+          "author_pointer": "/conditions/0/runs/104/rounds/6/messages/3"
+        },
+        {
+          "event_id": "E033",
+          "author_pointer": "/conditions/0/runs/104/rounds/7/messages/0"
+        },
+        {
+          "event_id": "E034",
+          "author_pointer": "/conditions/0/runs/104/rounds/7/messages/1"
+        },
+        {
+          "event_id": "E035",
+          "author_pointer": "/conditions/0/runs/104/rounds/7/messages/2"
+        },
+        {
+          "event_id": "E036",
+          "author_pointer": "/conditions/0/runs/104/rounds/7/messages/3"
+        },
+        {
+          "event_id": "E037",
+          "author_pointer": "/conditions/0/runs/104/rounds/8/messages/0"
+        },
+        {
+          "event_id": "E038",
+          "author_pointer": "/conditions/0/runs/104/rounds/8/messages/1"
+        },
+        {
+          "event_id": "E039",
+          "author_pointer": "/conditions/0/runs/104/rounds/8/messages/2"
+        },
+        {
+          "event_id": "E040",
+          "author_pointer": "/conditions/0/runs/104/rounds/8/messages/3"
+        },
+        {
+          "event_id": "E041",
+          "author_pointer": "/conditions/0/runs/104/rounds/9/messages/0"
+        },
+        {
+          "event_id": "E042",
+          "author_pointer": "/conditions/0/runs/104/rounds/9/messages/1"
+        },
+        {
+          "event_id": "E043",
+          "author_pointer": "/conditions/0/runs/104/rounds/9/messages/2"
+        },
+        {
+          "event_id": "E044",
+          "author_pointer": "/conditions/0/runs/104/rounds/9/messages/3"
+        },
+        {
+          "event_id": "E045",
+          "author_pointer": "/conditions/0/runs/104/rounds/10/messages/0"
+        },
+        {
+          "event_id": "E046",
+          "author_pointer": "/conditions/0/runs/104/rounds/10/messages/1"
+        },
+        {
+          "event_id": "E047",
+          "author_pointer": "/conditions/0/runs/104/rounds/10/messages/2"
+        },
+        {
+          "event_id": "E048",
+          "author_pointer": "/conditions/0/runs/104/rounds/10/messages/3"
+        },
+        {
+          "event_id": "E049",
+          "author_pointer": "/conditions/0/runs/104/rounds/11/messages/0"
+        },
+        {
+          "event_id": "E050",
+          "author_pointer": "/conditions/0/runs/104/rounds/11/messages/1"
+        },
+        {
+          "event_id": "E051",
+          "author_pointer": "/conditions/0/runs/104/rounds/11/messages/2"
+        },
+        {
+          "event_id": "E052",
+          "author_pointer": "/conditions/0/runs/104/rounds/11/messages/3"
+        },
+        {
+          "event_id": "E053",
+          "author_pointer": "/conditions/0/runs/104/rounds/12/messages/0"
+        },
+        {
+          "event_id": "E054",
+          "author_pointer": "/conditions/0/runs/104/rounds/12/messages/1"
+        },
+        {
+          "event_id": "E055",
+          "author_pointer": "/conditions/0/runs/104/rounds/12/messages/2"
+        },
+        {
+          "event_id": "E056",
+          "author_pointer": "/conditions/0/runs/104/rounds/12/messages/3"
+        },
+        {
+          "event_id": "E057",
+          "author_pointer": "/conditions/0/runs/104/rounds/13/messages/0"
+        },
+        {
+          "event_id": "E058",
+          "author_pointer": "/conditions/0/runs/104/rounds/13/messages/1"
+        },
+        {
+          "event_id": "E059",
+          "author_pointer": "/conditions/0/runs/104/rounds/13/messages/2"
+        },
+        {
+          "event_id": "E060",
+          "author_pointer": "/conditions/0/runs/104/rounds/13/messages/3"
+        },
+        {
+          "event_id": "E061",
+          "author_pointer": "/conditions/0/runs/104/rounds/14/messages/0"
+        },
+        {
+          "event_id": "E062",
+          "author_pointer": "/conditions/0/runs/104/rounds/14/messages/1"
+        },
+        {
+          "event_id": "E063",
+          "author_pointer": "/conditions/0/runs/104/rounds/14/messages/2"
+        },
+        {
+          "event_id": "E064",
+          "author_pointer": "/conditions/0/runs/104/rounds/14/messages/3"
+        }
+      ],
+      "source_type": "author_published_actual_dialogue",
+      "expertise_previous_assessment": "Distributed information; exact original agent assignment/system inputs not fully logged",
+      "previous_observations": [
+        {
+          "round": 2,
+          "message_index": 0,
+          "agent": "Person 1",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+          "original_pointer": "/conditions/0/runs/104/rounds/1/messages/0/response",
+          "matched_fragment": "blocked South Street",
+          "excerpt": "While Greenfield High School is the best-equipped shelter, the blocked South Street access raises serious concern about whether residents can get there in time; unless we confirm safe routes to Greenfield, Blue River, despite its dra",
+          "observation": "成员明确报告阻断"
+        },
+        {
+          "round": 2,
+          "message_index": 1,
+          "agent": "Person 2",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+          "original_pointer": "/conditions/0/runs/104/rounds/1/messages/1/prompt",
+          "matched_fragment": "blocked South Street",
+          "excerpt": "son 1: While Greenfield High School is the best-equipped shelter, the blocked South Street access raises serious concern about whether residents can get there in time; unless we confirm safe routes to Greenfield, Blue River, despite its dra",
+          "observation": "下一成员输入含该消息，不是只有说出而无法证明收到"
+        },
+        {
+          "round": 2,
+          "message_index": 1,
+          "agent": "Person 2",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+          "original_pointer": "/conditions/0/runs/104/rounds/1/messages/1/response",
+          "matched_fragment": "South Street remains open",
+          "excerpt": "Given South Street remains open to vehicles and Greenfield High School is the only shelter with proven safety and supplies, we should instruct all residents with vehicle access to g",
+          "observation": "下一成员仍称开放"
+        },
+        {
+          "round": 3,
+          "message_index": 0,
+          "agent": "Person 1",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+          "original_pointer": "/conditions/0/runs/104/rounds/2/messages/0/response",
+          "matched_fragment": "South Street confirmed open",
+          "excerpt": "With South Street confirmed open, I agree that all residents should be directed to Greenfield High School immediately, using available vehicles, and we should rapidly coordinate ride",
+          "observation": "原报告者随后也采纳开放说法"
+        }
+      ],
+      "reference_source_pointer": "/item[id=19]/correct_answer",
+      "author_source": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json"
+    },
+    {
+      "case_id": "S04",
+      "original_case_id": "C06",
+      "task": "023",
+      "branch_mapping": {
+        "isolated_rebuild": "B01",
+        "visible_draft": "B02"
+      },
+      "events": [
+        {
+          "event_id": "E001",
+          "slot": 25,
+          "seed_record_index": 0,
+          "source_raw": "runs/local-reconstruction-live-20261026-r1/025.raw.txt",
+          "source_raw_sha256": "b4d8133ed2d4c091362d45a53baf008552e39541c825b5e75e1463ade0bcfc38",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 25,
+          "request_payload_sha256": "f9b1cd26ad69399626215478432fb18ee5e06bc5211cadb850227dd819dd850c"
+        },
+        {
+          "event_id": "E002",
+          "slot": 26,
+          "seed_record_index": 1,
+          "source_raw": "runs/local-reconstruction-live-20261026-r1/026.raw.txt",
+          "source_raw_sha256": "a820235e1c786b2a779c15649d7c682856e8a55baf425043144e38ae6f9e5855",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 26,
+          "request_payload_sha256": "b9ff27b1de5f9044c97753dc5e2ab42b69075ce02850228dc3e7875f7d8e7ed5"
+        },
+        {
+          "event_id": "E003",
+          "slot": 27,
+          "seed_record_index": 2,
+          "source_raw": "runs/local-reconstruction-live-20261026-r1/027.raw.txt",
+          "source_raw_sha256": "61e9f9bf379a1845442a981fbdb2418e914a2f6e017b35ae38fc8c8c1f8cd71a",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 27,
+          "request_payload_sha256": "60bb6659bf3e96441c022c25b2f938c003327462b22ef7102c14d21d4ba306f9"
+        },
+        {
+          "event_id": "E004",
+          "slot": 28,
+          "seed_record_index": 3,
+          "source_raw": "runs/local-reconstruction-live-20261026-r1/028.raw.txt",
+          "source_raw_sha256": "fe3add8003f2e9f3a5659cc68bd747020fd1d8ac0f7f63aabfb46d48d1b27cde",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 28,
+          "request_payload_sha256": "1b3d528c24ed219b63ab0b28bd2c5e813f69c1d990a44b581cae9eb417c8d4e6"
+        }
+      ],
+      "source_type": "project_actual_receiver_probe",
+      "expertise_previous_assessment": "Source-holder/local reconstruction; historical draft is not an independent baseline for this run",
+      "previous_observations": [
+        {
+          "slot": 27,
+          "seed_pointer": "/cases/5/records/2/packet/own_sources/0/content",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/027.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 27,
+          "matched_fragment": "only access road",
+          "excerpt": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend.",
+          "observation": "原始地理范围限定为唯一通路"
+        },
+        {
+          "slot": 27,
+          "seed_pointer": "/cases/5/records/2/row/answer/text",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/027.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 27,
+          "matched_fragment": "expectation",
+          "excerpt": "d following this week's storm; the weekend closure is described as an expectation, not a confirmed fact for Saturday night. S01 does not state an alternative route exists or that the venue itself is closed or unavailable, and no so",
+          "observation": "局部稿保留预计持续关闭的时间不确定性"
+        },
+        {
+          "slot": 26,
+          "seed_pointer": "/cases/5/records/1/row/answer/reasoning",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/026.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 26,
+          "matched_fragment": "categorical obstacle",
+          "excerpt": " explicitly calls it the only access road, so the access problem is a categorical obstacle for the scheduled time, not merely a risk. Catering and this-Saturday availability at Lakeview are also unconfirmed. Heritage Public Library has an u",
+          "observation": "参考命中分支将预计关闭表述为确定障碍"
+        },
+        {
+          "slot": 28,
+          "seed_pointer": "/cases/5/records/3/row/answer/reasoning",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/028.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 28,
+          "matched_fragment": "alternative route",
+          "excerpt": " and it does not establish that the venue itself is closed or that no alternative route exists. This narrows but does not overturn the historical work's tentative selection of Lakeview. Recomputing: Lakeview has documented capacity for 1",
+          "observation": "另一分支对唯一通路与替代通路作不同应用"
+        }
+      ],
+      "reference_source_pointer": "/item[id=23]/correct_answer",
+      "author_source": null
+    },
+    {
+      "case_id": "S05",
+      "original_case_id": "C02",
+      "task": "033",
+      "branch_mapping": {
+        "full_information": "B01",
+        "imp": "B02",
+        "shared": "B03",
+        "standard": "B04"
+      },
+      "events": [
+        {
+          "event_id": "E001",
+          "slot": 17,
+          "seed_record_index": 0,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/017.raw.txt",
+          "source_raw_sha256": "ca4feb47052096bfb43a56fe5ba949b142c4782e3df27cc3840e3fba592f9402",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 17,
+          "request_payload_sha256": "fbf96e52054737660281feaef0c44851ca197e96bd67ec612b9492a5a083be6a"
+        },
+        {
+          "event_id": "E002",
+          "slot": 18,
+          "seed_record_index": 1,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/018.raw.txt",
+          "source_raw_sha256": "ba5671f75a9cf5cca0bcada3514f63a0af97e9c357f466122d14a0dbe1f75e9f",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 18,
+          "request_payload_sha256": "a616a9800c01e20bca7d59f3c07ba794c28132e99cc9e3da74f6b52e048e960c"
+        },
+        {
+          "event_id": "E003",
+          "slot": 19,
+          "seed_record_index": 2,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/019.raw.txt",
+          "source_raw_sha256": "d1c22b8b0dd2e540ad5de78c47bf49559ef54d120ce46fd96572a12b16073868",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 19,
+          "request_payload_sha256": "1077ec443fc842ccb73b6394d405d641123719a2ab9ac1da0d374014684d8134"
+        },
+        {
+          "event_id": "E004",
+          "slot": 20,
+          "seed_record_index": 3,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/020.raw.txt",
+          "source_raw_sha256": "b3fc4b60b21b4e1b5b880290aba4281c613e19feef6116062f32f8729f8468cb",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 20,
+          "request_payload_sha256": "ad9a2f51e474706300e8d960c276747990f500f4d76fca8a7fae5f017ae1be21"
+        },
+        {
+          "event_id": "E005",
+          "slot": 21,
+          "seed_record_index": 4,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/021.raw.txt",
+          "source_raw_sha256": "1a03d470601df9fbf42177851852e51433b7efd67c62289f12083278bcc9ab5c",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 21,
+          "request_payload_sha256": "6516d6ad9bb9bde1293c550cb03920e3a4889bde3f693851ade2d1bf27c3c60e"
+        },
+        {
+          "event_id": "E006",
+          "slot": 22,
+          "seed_record_index": 5,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/022.raw.txt",
+          "source_raw_sha256": "760f6214514f360f378fcdafed8613065514ee008886b8a63ba34bdf74ecc5f0",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 22,
+          "request_payload_sha256": "254ae8259f64dd25690d8d9d950bd78dc7b2bfce2a1d65e58f178090c6077e83"
+        },
+        {
+          "event_id": "E007",
+          "slot": 23,
+          "seed_record_index": 6,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/023.raw.txt",
+          "source_raw_sha256": "a54356cd5a2759788d985a7438e35da8265eadd2265aef6db85441947d6f32c1",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 23,
+          "request_payload_sha256": "3d2c90bc2a35aa2e44a4527f36dd227cdcc19b44ea44580d4f07c817343a9df7"
+        },
+        {
+          "event_id": "E008",
+          "slot": 24,
+          "seed_record_index": 7,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/024.raw.txt",
+          "source_raw_sha256": "00f52eabcffcf1966377bb27d6cb465f4576bd7392c04f343b354d09ae54d556",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 24,
+          "request_payload_sha256": "fa235bb885f83a4c766aa1af9b3fc5882de717a9773e9a7e2accae8bfa3f5755"
+        },
+        {
+          "event_id": "E009",
+          "slot": 25,
+          "seed_record_index": 8,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/025.raw.txt",
+          "source_raw_sha256": "c5587929e0b15d45dfae4afc0ff4e679b4470751481d3b782f6e522280a2fc5a",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 25,
+          "request_payload_sha256": "25f6d4eeb928ac51029c841617bcbbe93543b45280e8533255af74812caf734c"
+        },
+        {
+          "event_id": "E010",
+          "slot": 26,
+          "seed_record_index": 9,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/026.raw.txt",
+          "source_raw_sha256": "cadca4113e7bdf29223cf2b72991dd6a3092ce4a5939b5e469769491f31107df",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 26,
+          "request_payload_sha256": "c55262350b37136e4ef86e1c30b8f1bb2100626a5bd38ebe5500f9fa1b117107"
+        },
+        {
+          "event_id": "E011",
+          "slot": 27,
+          "seed_record_index": 10,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/027.raw.txt",
+          "source_raw_sha256": "1a13e9d1670804ab48ee80c05b437b80f17d4209c1825afa8cc898278a7f9f78",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 27,
+          "request_payload_sha256": "1114a8381777233054ced264f1917f21a53c309ad052a03f2bee1b1cc99cd5be"
+        },
+        {
+          "event_id": "E012",
+          "slot": 28,
+          "seed_record_index": 11,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/028.raw.txt",
+          "source_raw_sha256": "fc72fe0bcb68b9654f48068e8e5882684f7532c09455664b958013eeae5c7c28",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 28,
+          "request_payload_sha256": "c372317bc5438c950512a68a160b6111ffac84d25e3e8ea932f7c045758b2e2a"
+        },
+        {
+          "event_id": "E013",
+          "slot": 29,
+          "seed_record_index": 12,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/029.raw.txt",
+          "source_raw_sha256": "158646fefbac2b74e0915659433f678590d211a868eb5289bebe681b1c85d539",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 29,
+          "request_payload_sha256": "9203945dd9efc9b7208f5731c6b53c315d33cefe3ba95035a89673e251a5ea5e"
+        },
+        {
+          "event_id": "E014",
+          "slot": 30,
+          "seed_record_index": 13,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/030.raw.txt",
+          "source_raw_sha256": "ca19419593284922c2da76dd68e6f7abe0e187f0fe2d678b95ba31fec0dd8875",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 30,
+          "request_payload_sha256": "d68371119b0a04e2569cffa33113a3034400969f294a88de78fe8e7320e78691"
+        },
+        {
+          "event_id": "E015",
+          "slot": 31,
+          "seed_record_index": 14,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/031.raw.txt",
+          "source_raw_sha256": "7c4ee89667effe199bf08acaf7fb0f0435b784ba04f4236b7634d8c1c5e38025",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 31,
+          "request_payload_sha256": "45fcddd90f75eb3b34b6a137e492514cb1620a453a3d9a9367376577505b5cf6"
+        },
+        {
+          "event_id": "E016",
+          "slot": 32,
+          "seed_record_index": 15,
+          "source_raw": "runs/imp-adaptation-live-20261026-r1/032.raw.txt",
+          "source_raw_sha256": "3b4867c29d72d46ed8df63b8a3d5dd0e8709811a5d4d4c3ef7bdbbb463613a70",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 32,
+          "request_payload_sha256": "365ec373f5a80ba53c467e5339d210aade20948b3e0f0a4d266262b4d822f7a1"
+        }
+      ],
+      "source_type": "project_actual_team_run",
+      "expertise_previous_assessment": "Information-distribution advantage; no calibrated stable ability expert",
+      "previous_observations": [
+        {
+          "slot": 17,
+          "seed_pointer": "/cases/1/records/0/packet/information_available/3/content",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/017.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 17,
+          "matched_fragment": "main highway",
+          "excerpt": "The main highway to Gemini is temporarily closed for repairs; only emergency vehicles are allowed through, but your sample transport van does not qualify as such.",
+          "observation": "原始资料只指主公路"
+        },
+        {
+          "slot": 17,
+          "seed_pointer": "/cases/1/records/0/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/017.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 17,
+          "matched_fragment": "only viable route",
+          "excerpt": "Gemini is likely unreachable because the only viable route is closed to non-emergency vans, making the six-hour deadline unreliable despite its strong capability. Atlas offers proven reliability with senior t",
+          "observation": "发送者将主公路扩大为唯一可行道路"
+        },
+        {
+          "slot": 21,
+          "seed_pointer": "/cases/1/records/4/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/021.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 21,
+          "matched_fragment": "unsupported",
+          "excerpt": "sufficient backup power (PRIVATE.A2), and A1's route-closure claim is unsupported. Nova lacks emergency-transfer experience. Gemini remains the strongest choice.",
+          "observation": "接收者拒绝道路封闭报告，包含支持性与可信度争议"
+        },
+        {
+          "slot": 23,
+          "seed_pointer": "/cases/1/records/6/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/023.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 23,
+          "matched_fragment": "Nova",
+          "excerpt": " leaves insufficient backup power for a highly heat-sensitive sample. Nova has fully restored functionality, all equipment and staff available for rapid intake, and its renovation supports immediate processing; its limited e",
+          "observation": "完整资料分支选中新参考候选，不等于所有理由均忠实"
+        }
+      ],
+      "reference_source_pointer": "/item[id=33]/correct_answer",
+      "author_source": null
+    },
+    {
+      "case_id": "S06",
+      "original_case_id": "C04",
+      "task": "008",
+      "branch_mapping": {
+        "shared": "B01",
+        "full_information": "B02",
+        "standard": "B03",
+        "imp": "B04"
+      },
+      "events": [
+        {
+          "event_id": "E001",
+          "slot": 22,
+          "seed_record_index": 0,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/022.raw.txt",
+          "source_raw_sha256": "b7d5792d5f41e5aecf7796d9948eb9ce064009b10c32a500a763fd41c6d70faa",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 22,
+          "request_payload_sha256": "36bea2f535b1ab5e3c83f6f983b733ead8920ee4ea927305167e5f55ae9a69c2"
+        },
+        {
+          "event_id": "E002",
+          "slot": 23,
+          "seed_record_index": 1,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/023.raw.txt",
+          "source_raw_sha256": "8aeac41dcef7bbcf126112975c7c608ff7cf19a218b3d39ca2dfe5295efecd96",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 23,
+          "request_payload_sha256": "b439ef04298310625042c15ad9efe1b5a93dea09a8584cb4470bd8bb8973d9a2"
+        },
+        {
+          "event_id": "E003",
+          "slot": 24,
+          "seed_record_index": 2,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/024.raw.txt",
+          "source_raw_sha256": "49b9bf32cf6701bd6eaa0473f99adbb3e2c8f7ee8a94782d1270c99f3b978d00",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 24,
+          "request_payload_sha256": "7f5212d99997a1abc6c104ea8e74a1348a9c850f931874e923ff1a6ee61f72a4"
+        },
+        {
+          "event_id": "E004",
+          "slot": 25,
+          "seed_record_index": 3,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/025.raw.txt",
+          "source_raw_sha256": "ef196230b255c242d0affd1577ec808777913f42451b373e08a4f3db077cdbb1",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 25,
+          "request_payload_sha256": "44d5e0a47773c8689440db7913932a25de3ee9cde61a93eef578e4a082128001"
+        },
+        {
+          "event_id": "E005",
+          "slot": 26,
+          "seed_record_index": 4,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/026.raw.txt",
+          "source_raw_sha256": "4a9196767100a20a1041f757a4a172e75fd03995349e9e0128bd25bff6fab473",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 26,
+          "request_payload_sha256": "75cdaabd6c61ec26ffa1e3f4da3376364b0d05aeb6d7a93cdaadc5782b829570"
+        },
+        {
+          "event_id": "E006",
+          "slot": 27,
+          "seed_record_index": 5,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/027.raw.txt",
+          "source_raw_sha256": "fe2fac9f21b4b0d44452679a7b61246213ee0bcd18745e606c2a8214bd8918e2",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 27,
+          "request_payload_sha256": "4048ef19be52ab9383c25726a5a6f512e91a2448d659c40aef3d367e2b8d7757"
+        },
+        {
+          "event_id": "E007",
+          "slot": 28,
+          "seed_record_index": 6,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/028.raw.txt",
+          "source_raw_sha256": "aca1d8d5bd177db39312e9624c52ec76322d2e04864239b0bdefa588e4f40050",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 28,
+          "request_payload_sha256": "9ea320f35b7ed911ad71a2f176be1dffbc6d3b37fab037faad54af2be1344edb"
+        },
+        {
+          "event_id": "E008",
+          "slot": 29,
+          "seed_record_index": 7,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/029.raw.txt",
+          "source_raw_sha256": "e94b522e97473ea06e80d493e1c13cf9fe3430d341b420c5a38e692a114f4ad6",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 29,
+          "request_payload_sha256": "4884f69dc86b3e7483074a4630c2c4a6fcd53aedf28c6d260e0e4dd73507e076"
+        },
+        {
+          "event_id": "E009",
+          "slot": 30,
+          "seed_record_index": 8,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/030.raw.txt",
+          "source_raw_sha256": "46e15af7f9849b1e5c95e35a9b96df0e390f2f86adc95c6d5b6885dd2482d618",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 30,
+          "request_payload_sha256": "2b8bb01225ad40c1dc2682cf12ca2f46484027d143ffaae3b98db532472e8fb6"
+        },
+        {
+          "event_id": "E010",
+          "slot": 31,
+          "seed_record_index": 9,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/031.raw.txt",
+          "source_raw_sha256": "1c33916d251bd355ca5d1351dc22314c29c96f8acfca2d30f9ab11ff8b61d3b0",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 31,
+          "request_payload_sha256": "5f77084ddd2d398cbd59510825b9d82465ddab7ab03ea1e29e63c342e55dc936"
+        },
+        {
+          "event_id": "E011",
+          "slot": 32,
+          "seed_record_index": 10,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/032.raw.txt",
+          "source_raw_sha256": "d2a850ff2297e8de197028d3e1700a1bab47ea70839cfb82e8f4ad0cd4912266",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 32,
+          "request_payload_sha256": "64e508e447a1f625a502f7da713ea2353b19d3b6058c0cc28a19d464018769e5"
+        },
+        {
+          "event_id": "E012",
+          "slot": 33,
+          "seed_record_index": 11,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/033.raw.txt",
+          "source_raw_sha256": "3cb2b2e337ad1a1f6c746e40e27541b826d391c7e4d2f14c47e6424ac636df25",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 33,
+          "request_payload_sha256": "6608760a76fc85d7bee74596b8277126adf1928c1d12e587a4ebb019da1ed6c7"
+        },
+        {
+          "event_id": "E013",
+          "slot": 34,
+          "seed_record_index": 12,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/034.raw.txt",
+          "source_raw_sha256": "3425be5ea252de1882bca7f800287ec263162032d4619afd243e8fa140b82ff0",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 34,
+          "request_payload_sha256": "b9bd951661631f9f1781f752bacbaa06e1b9bee6d2b6d624cffdc88112ddb51a"
+        },
+        {
+          "event_id": "E014",
+          "slot": 35,
+          "seed_record_index": 13,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/035.raw.txt",
+          "source_raw_sha256": "d22d4a3d1ac7d0d1a619f966d7f27eaf29d58c9eb2046c296e938d6f3b162053",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 35,
+          "request_payload_sha256": "a47d938d2648b515a004feeb3a67b5bd6bd4fce27ca28e00316bbd58f3231bcf"
+        },
+        {
+          "event_id": "E015",
+          "slot": 36,
+          "seed_record_index": 14,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/036.raw.txt",
+          "source_raw_sha256": "8cb96505b45d6a680a30e33369a60c4da0b534dadd2194307c2844ccc082f14b",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 36,
+          "request_payload_sha256": "3f22b822d0b51fe2f4c1977a2205627b864bd6f3d5b67e72cdba3b16439721e5"
+        },
+        {
+          "event_id": "E016",
+          "slot": 37,
+          "seed_record_index": 15,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/037.raw.txt",
+          "source_raw_sha256": "f2e14811e1ffee46f408555c87429ffa74791cfd2cbff0e93075a7b062044a8f",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 37,
+          "request_payload_sha256": "6ec2176a1f41ba06da172ae87c8801becb78521444d8a26ca42f3e321ec4f998"
+        }
+      ],
+      "source_type": "project_actual_team_run",
+      "expertise_previous_assessment": "Information-distribution advantage; no calibrated stable ability expert",
+      "previous_observations": [
+        {
+          "slot": 29,
+          "seed_pointer": "/cases/3/records/7/row/answer/choice",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/029.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 29,
+          "matched_fragment": "option_1",
+          "excerpt": "option_1",
+          "observation": "A2中间答案命中参考"
+        },
+        {
+          "slot": 32,
+          "seed_pointer": "/cases/3/records/10/row/answer/choice",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/032.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 32,
+          "matched_fragment": "option_3",
+          "excerpt": "option_3",
+          "observation": "相同原始资料下A2改为非参考答案"
+        }
+      ],
+      "reference_source_pointer": "/item[id=8]/correct_answer",
+      "author_source": null
+    },
+    {
+      "case_id": "S07",
+      "original_case_id": "C03",
+      "task": "007",
+      "branch_mapping": {
+        "imp": "B01",
+        "full_information": "B02",
+        "shared": "B03",
+        "standard": "B04"
+      },
+      "events": [
+        {
+          "event_id": "E001",
+          "slot": 38,
+          "seed_record_index": 0,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/038.raw.txt",
+          "source_raw_sha256": "c29007ad75e4a5ab5ab000a0f08eea2594970294c90d712c1fdc9574b9e5b715",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 38,
+          "request_payload_sha256": "e8832a18560cd56b570b3a18fa2889bd2a2c9be16272cf6ce64c747558d9fe3d"
+        },
+        {
+          "event_id": "E002",
+          "slot": 39,
+          "seed_record_index": 1,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/039.raw.txt",
+          "source_raw_sha256": "a36a251912bce656de4ee50dee82364acf5d29aa100af837303fa8d19145ea9f",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 39,
+          "request_payload_sha256": "fc7e10b73c21b65789ce46590874b510d661ff6c7139df69c7823b64251b5741"
+        },
+        {
+          "event_id": "E003",
+          "slot": 40,
+          "seed_record_index": 2,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/040.raw.txt",
+          "source_raw_sha256": "5b1acc1875a4d5eacac727ab127bd9c21352696f2cf879356e01709db52a53c8",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 40,
+          "request_payload_sha256": "b00bc0cbeeb9b22a9c0e42fefff099ac7431dd8151d2a4fa40ae8bf72557f003"
+        },
+        {
+          "event_id": "E004",
+          "slot": 41,
+          "seed_record_index": 3,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/041.raw.txt",
+          "source_raw_sha256": "aed23cce8af7e427ca2a653eca0a08d4cbb8324c9bdda11368e07b6e7add1788",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 41,
+          "request_payload_sha256": "f058b230c16909a4685d63cde939a22f81113af5dbe73cb5230f7a3af34154af"
+        },
+        {
+          "event_id": "E005",
+          "slot": 42,
+          "seed_record_index": 4,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/042.raw.txt",
+          "source_raw_sha256": "e4b9e4bb795c2cc598e4929fe2543a5fcb7850fc8933e69494ea93d3873f002f",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 42,
+          "request_payload_sha256": "773a1dc93c84c5ac65bed1b4493c96069ad252c5777450519f589c91c9cdf3be"
+        },
+        {
+          "event_id": "E006",
+          "slot": 43,
+          "seed_record_index": 5,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/043.raw.txt",
+          "source_raw_sha256": "8b0f1f57e44d4e5dc86cdfaa9e154caf8f83e916006a0dbdf1a6ccbdae8ca490",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 43,
+          "request_payload_sha256": "38809f49f00a0bb64fdcc5225eceb790c5c3129906592853bfb6ba5c1e10e398"
+        },
+        {
+          "event_id": "E007",
+          "slot": 44,
+          "seed_record_index": 6,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/044.raw.txt",
+          "source_raw_sha256": "112df821a031521ca76f836638ef40c2d6c1195d5a7f18cedcf6dd9470d1770d",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 44,
+          "request_payload_sha256": "171e7425b49d26c0dac3d70de9b1ae39e4fbae744ada6f33f5f43b3f80ec0e2b"
+        },
+        {
+          "event_id": "E008",
+          "slot": 45,
+          "seed_record_index": 7,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/045.raw.txt",
+          "source_raw_sha256": "695e06a9910c4badd182f481c92bbb912064f0f182afdde7b14ee2285af2c381",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 45,
+          "request_payload_sha256": "56fbef66d2410f08b42d3621c518477d0f9ed8e3eed854809ff65f71cb8decf8"
+        },
+        {
+          "event_id": "E009",
+          "slot": 46,
+          "seed_record_index": 8,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/046.raw.txt",
+          "source_raw_sha256": "db2d439f9db7aab5851504c8ec428658cb3e8898174bb4a48a606da1e1deb8de",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 46,
+          "request_payload_sha256": "41ab249f895c744c7a555c2aff7723095e981e5de29b546b87daf32efe742e62"
+        },
+        {
+          "event_id": "E010",
+          "slot": 47,
+          "seed_record_index": 9,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/047.raw.txt",
+          "source_raw_sha256": "2f751bc7e502ce098dee72dc39543e3b4276c5b7f93b3ce888a0f8a707facd5f",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 47,
+          "request_payload_sha256": "61d22ea8405e9e41fbe7e7a2e76b0602611b7ed218b746b6abf1c29074a7a358"
+        },
+        {
+          "event_id": "E011",
+          "slot": 48,
+          "seed_record_index": 10,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/048.raw.txt",
+          "source_raw_sha256": "7b105495d10d1c5da10b41a3eaae7067d6bda73bf9f60b5c512444e82a2d22cc",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 48,
+          "request_payload_sha256": "86e71c53ec30d29e26ea63f58e98b3b92e1f2a084fd7993b760c015e23e65363"
+        },
+        {
+          "event_id": "E012",
+          "slot": 49,
+          "seed_record_index": 11,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/049.raw.txt",
+          "source_raw_sha256": "ded0ece0c33a6e8ff1cea93f82539d8a4ed4ab1c7aa9aa9abed8109169bc7885",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 49,
+          "request_payload_sha256": "8750f0c74d8ac1cad16ce960f154d13e0cad1d9578b61c08a6eb2a2ca25096fb"
+        },
+        {
+          "event_id": "E013",
+          "slot": 50,
+          "seed_record_index": 12,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/050.raw.txt",
+          "source_raw_sha256": "65fa50ba6f7b8bd49ce89685a3d513fdeb2521f8a81066f997eefcfee560b076",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 50,
+          "request_payload_sha256": "5c71abd19f73888e2bd91ebea0d3f3724054c39c41d813db0afe592ce1d43e33"
+        },
+        {
+          "event_id": "E014",
+          "slot": 51,
+          "seed_record_index": 13,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/051.raw.txt",
+          "source_raw_sha256": "5c5539b5b7e3c819c3f9c4956c1996a12adf3d31d12acb317bb1d9523c75496e",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 51,
+          "request_payload_sha256": "8833c2f60a8173cb0bcb01f033e590eb88f02895330776926e84d4b976a3a840"
+        },
+        {
+          "event_id": "E015",
+          "slot": 52,
+          "seed_record_index": 14,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/052.raw.txt",
+          "source_raw_sha256": "6e770514d56397d777feb91a99636c12eec0d3f338fae688767a86c340960dc5",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 52,
+          "request_payload_sha256": "c80f07e3b62f45cb7df03db902b0f51da1fbcee2ec8e72ed10e6f5592cc1317d"
+        },
+        {
+          "event_id": "E016",
+          "slot": 53,
+          "seed_record_index": 15,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/053.raw.txt",
+          "source_raw_sha256": "cbb3e0b85cfb904dfcdc95ce1cc089e43dc74c296d85797a6f867e03e28fef91",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 53,
+          "request_payload_sha256": "7d3c45c16736bd0a42281930bd89e312ce0cbf44f50d3902c9164f388eedd7c4"
+        },
+        {
+          "event_id": "E017",
+          "slot": 54,
+          "seed_record_index": 16,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/054.raw.txt",
+          "source_raw_sha256": "e05d19d213fc1ee0a24544fc826a9d3cb63321ca8c310a04cc97f26251797689",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 54,
+          "request_payload_sha256": "edb375fca17a709acb4856c518bd1e924bea7adf3e59128333323ebb64f5feec"
+        },
+        {
+          "event_id": "E018",
+          "slot": 55,
+          "seed_record_index": 17,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+          "source_raw_sha256": "1a531a1611058eacb80534e108c15121f82f8d357f1201bcd5786b7806f60a09",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 55,
+          "request_payload_sha256": "1df1dfbc40fe13250313eb461497bb20dc339ab83213df9d449eaf50b2338574"
+        },
+        {
+          "event_id": "E019",
+          "slot": 56,
+          "seed_record_index": 18,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/056.raw.txt",
+          "source_raw_sha256": "adeb6827f7620a844f9aa4a51fa9b60ef21f9341532567761326cc0f65e1e8c1",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 56,
+          "request_payload_sha256": "41e796951805b30ed07648b29cd96fed786eabb90d45aff0806c495b6eb276df"
+        },
+        {
+          "event_id": "E020",
+          "slot": 57,
+          "seed_record_index": 19,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/057.raw.txt",
+          "source_raw_sha256": "fe540950862ec1389ebeebf5036afd9762c6b73adeef8a259730f732d9e01bf0",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 57,
+          "request_payload_sha256": "2e21226f701a17bcfdee289cc3f46d09453f1825744bcffa9e3d09f3b4f46e16"
+        },
+        {
+          "event_id": "E021",
+          "slot": 58,
+          "seed_record_index": 20,
+          "source_raw": "runs/imp-confirmation-live-20261026-r1/058.raw.txt",
+          "source_raw_sha256": "9cbebbed12f535c0b8e1ef6115d79a4a119582dd4f838a8829eeacfb9af5cf3a",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 58,
+          "request_payload_sha256": "39e00e8da3ef0dcb4f1ee64dd3ddc1a3d617d68754fb34a285504417b512f6e1"
+        }
+      ],
+      "source_type": "project_actual_team_run",
+      "expertise_previous_assessment": "Information-distribution advantage; no calibrated stable ability expert",
+      "previous_observations": [
+        {
+          "slot": 55,
+          "seed_pointer": "/cases/2/records/17/packet/information_available/18/content",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 55,
+          "matched_fragment": "Cape Industries: (h) N",
+          "excerpt": "Cape Industries: (h) N",
+          "observation": "接收者自己的资料已明确Cape成本条件失败"
+        },
+        {
+          "slot": 55,
+          "seed_pointer": "/cases/2/records/17/packet/messages_from_other_participants/0/text",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 55,
+          "matched_fragment": "A2/A3's claims",
+          "excerpt": "ts, Cape's profile is strongest and consistent with the prior answer; A2/A3's claims about Cape failing (h) and Starlight satisfying (f)/(i) are unsupported by the provided checklist data.",
+          "observation": "A1消息反称已有失败信息不受资料支持"
+        },
+        {
+          "slot": 55,
+          "seed_pointer": "/cases/2/records/17/row/answer/reasoning",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 55,
+          "matched_fragment": "Cape fails (h) cost",
+          "excerpt": "e RFP's emphasis on those make Cape's profile more complete. However, Cape fails (h) cost and (f) weight, central criteria. Starlight's unknowns leave genuine gaps. Given one best choice and coordination value, I follow A1's stronger-suppo",
+          "observation": "接收者仍承认成本失败"
+        },
+        {
+          "slot": 55,
+          "seed_pointer": "/cases/2/records/17/row/answer/reasoning",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 55,
+          "matched_fragment": "I follow A1",
+          "excerpt": "wns leave genuine gaps. Given one best choice and coordination value, I follow A1's stronger-supported reading: Cape.",
+          "observation": "输出明示追随，但仍不能从自述建立因果机制"
+        }
+      ],
+      "reference_source_pointer": "/item[id=7]/correct_answer",
+      "author_source": null
+    },
+    {
+      "case_id": "S08",
+      "original_case_id": "C08",
+      "task": "019",
+      "branch_mapping": {},
+      "events": [
+        {
+          "event_id": "E001",
+          "author_pointer": "/conditions/0/runs/100/initial_votes/0"
+        },
+        {
+          "event_id": "E002",
+          "author_pointer": "/conditions/0/runs/100/initial_votes/1"
+        },
+        {
+          "event_id": "E003",
+          "author_pointer": "/conditions/0/runs/100/initial_votes/2"
+        },
+        {
+          "event_id": "E004",
+          "author_pointer": "/conditions/0/runs/100/initial_votes/3"
+        },
+        {
+          "event_id": "E005",
+          "author_pointer": "/conditions/0/runs/100/rounds/0/messages/0"
+        },
+        {
+          "event_id": "E006",
+          "author_pointer": "/conditions/0/runs/100/rounds/0/messages/1"
+        },
+        {
+          "event_id": "E007",
+          "author_pointer": "/conditions/0/runs/100/rounds/0/messages/2"
+        },
+        {
+          "event_id": "E008",
+          "author_pointer": "/conditions/0/runs/100/rounds/0/messages/3"
+        },
+        {
+          "event_id": "E009",
+          "author_pointer": "/conditions/0/runs/100/rounds/1/messages/0"
+        },
+        {
+          "event_id": "E010",
+          "author_pointer": "/conditions/0/runs/100/rounds/1/messages/1"
+        },
+        {
+          "event_id": "E011",
+          "author_pointer": "/conditions/0/runs/100/rounds/1/messages/2"
+        },
+        {
+          "event_id": "E012",
+          "author_pointer": "/conditions/0/runs/100/rounds/1/messages/3"
+        },
+        {
+          "event_id": "E013",
+          "author_pointer": "/conditions/0/runs/100/rounds/2/messages/0"
+        },
+        {
+          "event_id": "E014",
+          "author_pointer": "/conditions/0/runs/100/rounds/2/messages/1"
+        },
+        {
+          "event_id": "E015",
+          "author_pointer": "/conditions/0/runs/100/rounds/2/messages/2"
+        },
+        {
+          "event_id": "E016",
+          "author_pointer": "/conditions/0/runs/100/rounds/2/messages/3"
+        },
+        {
+          "event_id": "E017",
+          "author_pointer": "/conditions/0/runs/100/rounds/3/messages/0"
+        },
+        {
+          "event_id": "E018",
+          "author_pointer": "/conditions/0/runs/100/rounds/3/messages/1"
+        },
+        {
+          "event_id": "E019",
+          "author_pointer": "/conditions/0/runs/100/rounds/3/messages/2"
+        },
+        {
+          "event_id": "E020",
+          "author_pointer": "/conditions/0/runs/100/rounds/3/messages/3"
+        },
+        {
+          "event_id": "E021",
+          "author_pointer": "/conditions/0/runs/100/rounds/4/messages/0"
+        },
+        {
+          "event_id": "E022",
+          "author_pointer": "/conditions/0/runs/100/rounds/4/messages/1"
+        },
+        {
+          "event_id": "E023",
+          "author_pointer": "/conditions/0/runs/100/rounds/4/messages/2"
+        },
+        {
+          "event_id": "E024",
+          "author_pointer": "/conditions/0/runs/100/rounds/4/messages/3"
+        },
+        {
+          "event_id": "E025",
+          "author_pointer": "/conditions/0/runs/100/rounds/5/messages/0"
+        },
+        {
+          "event_id": "E026",
+          "author_pointer": "/conditions/0/runs/100/rounds/5/messages/1"
+        },
+        {
+          "event_id": "E027",
+          "author_pointer": "/conditions/0/runs/100/rounds/5/messages/2"
+        },
+        {
+          "event_id": "E028",
+          "author_pointer": "/conditions/0/runs/100/rounds/5/messages/3"
+        },
+        {
+          "event_id": "E029",
+          "author_pointer": "/conditions/0/runs/100/rounds/6/messages/0"
+        },
+        {
+          "event_id": "E030",
+          "author_pointer": "/conditions/0/runs/100/rounds/6/messages/1"
+        },
+        {
+          "event_id": "E031",
+          "author_pointer": "/conditions/0/runs/100/rounds/6/messages/2"
+        },
+        {
+          "event_id": "E032",
+          "author_pointer": "/conditions/0/runs/100/rounds/6/messages/3"
+        },
+        {
+          "event_id": "E033",
+          "author_pointer": "/conditions/0/runs/100/rounds/7/messages/0"
+        },
+        {
+          "event_id": "E034",
+          "author_pointer": "/conditions/0/runs/100/rounds/7/messages/1"
+        },
+        {
+          "event_id": "E035",
+          "author_pointer": "/conditions/0/runs/100/rounds/7/messages/2"
+        },
+        {
+          "event_id": "E036",
+          "author_pointer": "/conditions/0/runs/100/rounds/7/messages/3"
+        },
+        {
+          "event_id": "E037",
+          "author_pointer": "/conditions/0/runs/100/rounds/8/messages/0"
+        },
+        {
+          "event_id": "E038",
+          "author_pointer": "/conditions/0/runs/100/rounds/8/messages/1"
+        },
+        {
+          "event_id": "E039",
+          "author_pointer": "/conditions/0/runs/100/rounds/8/messages/2"
+        },
+        {
+          "event_id": "E040",
+          "author_pointer": "/conditions/0/runs/100/rounds/8/messages/3"
+        },
+        {
+          "event_id": "E041",
+          "author_pointer": "/conditions/0/runs/100/rounds/9/messages/0"
+        },
+        {
+          "event_id": "E042",
+          "author_pointer": "/conditions/0/runs/100/rounds/9/messages/1"
+        },
+        {
+          "event_id": "E043",
+          "author_pointer": "/conditions/0/runs/100/rounds/9/messages/2"
+        },
+        {
+          "event_id": "E044",
+          "author_pointer": "/conditions/0/runs/100/rounds/9/messages/3"
+        },
+        {
+          "event_id": "E045",
+          "author_pointer": "/conditions/0/runs/100/rounds/10/messages/0"
+        },
+        {
+          "event_id": "E046",
+          "author_pointer": "/conditions/0/runs/100/rounds/10/messages/1"
+        },
+        {
+          "event_id": "E047",
+          "author_pointer": "/conditions/0/runs/100/rounds/10/messages/2"
+        },
+        {
+          "event_id": "E048",
+          "author_pointer": "/conditions/0/runs/100/rounds/10/messages/3"
+        },
+        {
+          "event_id": "E049",
+          "author_pointer": "/conditions/0/runs/100/rounds/11/messages/0"
+        },
+        {
+          "event_id": "E050",
+          "author_pointer": "/conditions/0/runs/100/rounds/11/messages/1"
+        },
+        {
+          "event_id": "E051",
+          "author_pointer": "/conditions/0/runs/100/rounds/11/messages/2"
+        },
+        {
+          "event_id": "E052",
+          "author_pointer": "/conditions/0/runs/100/rounds/11/messages/3"
+        },
+        {
+          "event_id": "E053",
+          "author_pointer": "/conditions/0/runs/100/rounds/12/messages/0"
+        },
+        {
+          "event_id": "E054",
+          "author_pointer": "/conditions/0/runs/100/rounds/12/messages/1"
+        },
+        {
+          "event_id": "E055",
+          "author_pointer": "/conditions/0/runs/100/rounds/12/messages/2"
+        },
+        {
+          "event_id": "E056",
+          "author_pointer": "/conditions/0/runs/100/rounds/12/messages/3"
+        },
+        {
+          "event_id": "E057",
+          "author_pointer": "/conditions/0/runs/100/rounds/13/messages/0"
+        },
+        {
+          "event_id": "E058",
+          "author_pointer": "/conditions/0/runs/100/rounds/13/messages/1"
+        },
+        {
+          "event_id": "E059",
+          "author_pointer": "/conditions/0/runs/100/rounds/13/messages/2"
+        },
+        {
+          "event_id": "E060",
+          "author_pointer": "/conditions/0/runs/100/rounds/13/messages/3"
+        },
+        {
+          "event_id": "E061",
+          "author_pointer": "/conditions/0/runs/100/rounds/14/messages/0"
+        },
+        {
+          "event_id": "E062",
+          "author_pointer": "/conditions/0/runs/100/rounds/14/messages/1"
+        },
+        {
+          "event_id": "E063",
+          "author_pointer": "/conditions/0/runs/100/rounds/14/messages/2"
+        },
+        {
+          "event_id": "E064",
+          "author_pointer": "/conditions/0/runs/100/rounds/14/messages/3"
+        }
+      ],
+      "source_type": "author_published_actual_dialogue",
+      "expertise_previous_assessment": "Distributed information; exact original agent assignment/system inputs not fully logged",
+      "previous_observations": [
+        {
+          "round": 3,
+          "message_index": 3,
+          "agent": "Person 4",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+          "original_pointer": "/conditions/0/runs/100/rounds/2/messages/3/response",
+          "matched_fragment": "I am contacting",
+          "excerpt": "Excellent, we have a clear consensus. I am contacting the Emergency Operations Center right now to get that single, verified report for us.",
+          "observation": "先提出并声称发起核验"
+        },
+        {
+          "round": 5,
+          "message_index": 3,
+          "agent": "Person 4",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+          "original_pointer": "/conditions/0/runs/100/rounds/4/messages/3/response",
+          "matched_fragment": "unified report",
+          "excerpt": "Okay, I have the EOC's unified report: Greenfield High is completely inaccessible due to flooding, and Blue River's generators have failed, making it unsafe. They confirm Oakridge Library",
+          "observation": "后声称已经收到EOC报告"
+        },
+        {
+          "round": 6,
+          "message_index": 0,
+          "agent": "Person 1",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+          "original_pointer": "/conditions/0/runs/100/rounds/5/messages/0/response",
+          "matched_fragment": "Oakridge Library",
+          "excerpt": "Thank you for that definitive report. Oakridge Library is our only safe and accessible shelter; we must issue the directive for all residents to go there immediately.",
+          "observation": "后续成员采用该结论"
+        }
+      ],
+      "reference_source_pointer": "/item[id=19]/correct_answer",
+      "author_source": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    }
+  ],
+  "prior_assistant_interpretations": {
+    "date": "2026-10-30",
+    "source": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\research\\expert-team-assets-20261029\\CASE_SEED_8.json",
+    "case_units": 8,
+    "unique_tasks": 7,
+    "literal_evidence_events": 29,
+    "new_model_calls": 0,
+    "scope": "Literal/source-layer checks plus explicitly authored interpretations; not mechanism prevalence or causal estimation",
+    "cases": [
+      {
+        "id": "C01",
+        "task": "030",
+        "observations": [
+          {
+            "slot": 2,
+            "seed_pointer": "/cases/0/records/1/packet/information_available/3/content",
+            "raw_path": "runs/imp-adaptation-live-20261026-r1/002.raw.txt",
+            "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+            "request_line": 2,
+            "matched_fragment": "co-investor partnership",
+            "excerpt": "Skylake Ventures just finalized a co-investor partnership with a well-known angel group yesterday, meeting their usual requirements for a deal of this size.",
+            "observation": "原始私有资料支持共同投资条件已满足"
+          },
+          {
+            "slot": 10,
+            "seed_pointer": "/cases/0/records/9/packet/messages_from_other_participants/0/text",
+            "raw_path": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+            "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+            "request_line": 10,
+            "matched_fragment": "PRIVATE.A2 resolves",
+            "excerpt": "PRIVATE.A2 resolves Skylake's only stated blocker: its finalized co-investor partnership satisfies the reputable co-investor requirement for a deal this size. Peak's 3-d",
+            "observation": "接收者确实收到了该条件已满足的报告"
+          },
+          {
+            "slot": 10,
+            "seed_pointer": "/cases/0/records/9/row/answer/reasoning",
+            "raw_path": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+            "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+            "request_line": 10,
+            "matched_fragment": "cannot be credited",
+            "excerpt": "act; A3 correctly notes A2's PRIVATE.A2 is absent from the packet and cannot be credited. On available facts, Skylake's co-investor requirement is unresolved, Northstar has late-pullout and committee-timing risk, while Peak's stated 3-day",
+            "observation": "接收者称原始私有资料不在本包，拒绝计入"
+          },
+          {
+            "slot": 13,
+            "seed_pointer": "/cases/0/records/12/row/answer/reasoning",
+            "raw_path": "runs/imp-adaptation-live-20261026-r1/013.raw.txt",
+            "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+            "request_line": 13,
+            "matched_fragment": "within 12 hours",
+            "excerpt": "ecution on hold, no new investments processed. Northstar cannot close within 12 hours: investment committee meets monthly, next in three weeks, and has late-pullout risk. Skylake's co-investor condition is satisfied by its finalized an",
+            "observation": "答对分支也把选择期限推成成交期限，需单独核忠实性"
+          }
+        ],
+        "checks": {},
+        "finding": "资料不在直接来源栏，被当成不可用",
+        "interpretation_boundary": "披露真实资料与汇总观点的协议同时改变；12小时语义也不稳。不能归因为专家身份或从众。",
+        "expertise": "Information-distribution advantage; no calibrated stable ability expert",
+        "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+      },
+      {
+        "id": "C02",
+        "task": "033",
+        "observations": [
+          {
+            "slot": 17,
+            "seed_pointer": "/cases/1/records/0/packet/information_available/3/content",
+            "raw_path": "runs/imp-adaptation-live-20261026-r1/017.raw.txt",
+            "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+            "request_line": 17,
+            "matched_fragment": "main highway",
+            "excerpt": "The main highway to Gemini is temporarily closed for repairs; only emergency vehicles are allowed through, but your sample transport van does not qualify as such.",
+            "observation": "原始资料只指主公路"
+          },
+          {
+            "slot": 17,
+            "seed_pointer": "/cases/1/records/0/row/answer/reasoning",
+            "raw_path": "runs/imp-adaptation-live-20261026-r1/017.raw.txt",
+            "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+            "request_line": 17,
+            "matched_fragment": "only viable route",
+            "excerpt": "Gemini is likely unreachable because the only viable route is closed to non-emergency vans, making the six-hour deadline unreliable despite its strong capability. Atlas offers proven reliability with senior t",
+            "observation": "发送者将主公路扩大为唯一可行道路"
+          },
+          {
+            "slot": 21,
+            "seed_pointer": "/cases/1/records/4/row/answer/reasoning",
+            "raw_path": "runs/imp-adaptation-live-20261026-r1/021.raw.txt",
+            "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+            "request_line": 21,
+            "matched_fragment": "unsupported",
+            "excerpt": "sufficient backup power (PRIVATE.A2), and A1's route-closure claim is unsupported. Nova lacks emergency-transfer experience. Gemini remains the strongest choice.",
+            "observation": "接收者拒绝道路封闭报告，包含支持性与可信度争议"
+          },
+          {
+            "slot": 23,
+            "seed_pointer": "/cases/1/records/6/row/answer/reasoning",
+            "raw_path": "runs/imp-adaptation-live-20261026-r1/023.raw.txt",
+            "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+            "request_line": 23,
+            "matched_fragment": "Nova",
+            "excerpt": " leaves insufficient backup power for a highly heat-sensitive sample. Nova has fully restored functionality, all equipment and staff available for rapid intake, and its renovation supports immediate processing; its limited e",
+            "observation": "完整资料分支选中新参考候选，不等于所有理由均忠实"
+          }
+        ],
+        "checks": {},
+        "finding": "信息组合产生原初答没有的正确候选",
+        "interpretation_boundary": "发送者也存在范围扩大；原始资料路由不是单纯改善说服，不能将0对1解释为单因素效果。",
+        "expertise": "Information-distribution advantage; no calibrated stable ability expert",
+        "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+      },
+      {
+        "id": "C03",
+        "task": "007",
+        "observations": [
+          {
+            "slot": 55,
+            "seed_pointer": "/cases/2/records/17/packet/information_available/18/content",
+            "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+            "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+            "request_line": 55,
+            "matched_fragment": "Cape Industries: (h) N",
+            "excerpt": "Cape Industries: (h) N",
+            "observation": "接收者自己的资料已明确Cape成本条件失败"
+          },
+          {
+            "slot": 55,
+            "seed_pointer": "/cases/2/records/17/packet/messages_from_other_participants/0/text",
+            "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+            "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+            "request_line": 55,
+            "matched_fragment": "A2/A3's claims",
+            "excerpt": "ts, Cape's profile is strongest and consistent with the prior answer; A2/A3's claims about Cape failing (h) and Starlight satisfying (f)/(i) are unsupported by the provided checklist data.",
+            "observation": "A1消息反称已有失败信息不受资料支持"
+          },
+          {
+            "slot": 55,
+            "seed_pointer": "/cases/2/records/17/row/answer/reasoning",
+            "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+            "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+            "request_line": 55,
+            "matched_fragment": "Cape fails (h) cost",
+            "excerpt": "e RFP's emphasis on those make Cape's profile more complete. However, Cape fails (h) cost and (f) weight, central criteria. Starlight's unknowns leave genuine gaps. Given one best choice and coordination value, I follow A1's stronger-suppo",
+            "observation": "接收者仍承认成本失败"
+          },
+          {
+            "slot": 55,
+            "seed_pointer": "/cases/2/records/17/row/answer/reasoning",
+            "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+            "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+            "request_line": 55,
+            "matched_fragment": "I follow A1",
+            "excerpt": "wns leave genuine gaps. Given one best choice and coordination value, I follow A1's stronger-supported reading: Cape.",
+            "observation": "输出明示追随，但仍不能从自述建立因果机制"
+          }
+        ],
+        "checks": {},
+        "finding": "事实已承认但终答未依此处理，含明示意见依赖",
+        "interpretation_boundary": "普通终票2:2、评分0.5；缺少固定消息的反事实和无消息对照，不能确定从众因果。",
+        "expertise": "Information-distribution advantage; no calibrated stable ability expert",
+        "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+      },
+      {
+        "id": "C04",
+        "task": "008",
+        "observations": [
+          {
+            "slot": 29,
+            "seed_pointer": "/cases/3/records/7/row/answer/choice",
+            "raw_path": "runs/imp-confirmation-live-20261026-r1/029.raw.txt",
+            "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+            "request_line": 29,
+            "matched_fragment": "option_1",
+            "excerpt": "option_1",
+            "observation": "A2中间答案命中参考"
+          },
+          {
+            "slot": 32,
+            "seed_pointer": "/cases/3/records/10/row/answer/choice",
+            "raw_path": "runs/imp-confirmation-live-20261026-r1/032.raw.txt",
+            "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+            "request_line": 32,
+            "matched_fragment": "option_3",
+            "excerpt": "option_3",
+            "observation": "相同原始资料下A2改为非参考答案"
+          }
+        ],
+        "checks": {
+          "different_packet_keys": [
+            "previous_answer"
+          ],
+          "peer_messages_are_source_records": true
+        },
+        "finding": "没有他人推荐也能从对改错",
+        "interpretation_boundary": "自身previous_answer变化、再次生成及推理波动仍未分离；不是所有错误都能由社会影响解释。",
+        "expertise": "Information-distribution advantage; no calibrated stable ability expert",
+        "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+      },
+      {
+        "id": "C05",
+        "task": "004",
+        "observations": [
+          {
+            "slot": 3,
+            "seed_pointer": "/cases/4/records/2/packet/own_sources/0/content",
+            "raw_path": "runs/local-reconstruction-live-20261026-r1/003.raw.txt",
+            "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+            "request_line": 3,
+            "matched_fragment": "less than 30",
+            "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others appr",
+            "observation": "局部持有者直接看到年龄限制"
+          },
+          {
+            "slot": 4,
+            "seed_pointer": "/cases/4/records/3/packet/local_reconstruction/text",
+            "raw_path": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+            "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+            "request_line": 4,
+            "matched_fragment": "less than 30",
+            "excerpt": "My own source S02 states: \"The guilty person is less than 30 years old.\" This is a reported constraint from my source, not an independently confirmed fact, and it is an age restriction only. It also adds inexpe",
+            "observation": "限制也确实进入终答接收者输入"
+          },
+          {
+            "slot": 4,
+            "seed_pointer": "/cases/4/records/3/packet/historical_work/reason",
+            "raw_path": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+            "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+            "request_line": 4,
+            "matched_fragment": "passenger",
+            "excerpt": "ement excludes Mr. Z (motorcycle). Mr. X's son is described only as a passenger returning home with his father, so he is unlikely to be the car driver. Among the car drivers, Mr. X is the one explicitly described as having drunk ",
+            "observation": "乘客说法已出现在旧稿，不能说由本轮接收者首次创造"
+          },
+          {
+            "slot": 4,
+            "seed_pointer": "/cases/4/records/3/row/answer/reasoning",
+            "raw_path": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+            "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+            "request_line": 4,
+            "matched_fragment": "cannot override",
+            "excerpt": "int comes from a different member's source and is not established; it cannot override the more specific vehicle/alcohol profile in A1's own source. The unresolved limits are that no public source gives a numeric 1.5 reading or an expli",
+            "observation": "终答承认年龄冲突却优先自身车辆/酒精推断"
+          }
+        ],
+        "checks": {
+          "passenger_explicit_in_original_public_sources": false,
+          "passenger_already_in_shared_structured_facts": true
+        },
+        "finding": "收到且承认限制，并未保证正确应用",
+        "interpretation_boundary": "乘客字段在上游共享稿/旧稿已存在；不能简单归责为接收者新编造，也不构成稳定专家证据。",
+        "expertise": "Source-holder/local reconstruction; historical draft is not an independent baseline for this run",
+        "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+      },
+      {
+        "id": "C06",
+        "task": "023",
+        "observations": [
+          {
+            "slot": 27,
+            "seed_pointer": "/cases/5/records/2/packet/own_sources/0/content",
+            "raw_path": "runs/local-reconstruction-live-20261026-r1/027.raw.txt",
+            "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+            "request_line": 27,
+            "matched_fragment": "only access road",
+            "excerpt": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend.",
+            "observation": "原始地理范围限定为唯一通路"
+          },
+          {
+            "slot": 27,
+            "seed_pointer": "/cases/5/records/2/row/answer/text",
+            "raw_path": "runs/local-reconstruction-live-20261026-r1/027.raw.txt",
+            "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+            "request_line": 27,
+            "matched_fragment": "expectation",
+            "excerpt": "d following this week's storm; the weekend closure is described as an expectation, not a confirmed fact for Saturday night. S01 does not state an alternative route exists or that the venue itself is closed or unavailable, and no so",
+            "observation": "局部稿保留预计持续关闭的时间不确定性"
+          },
+          {
+            "slot": 26,
+            "seed_pointer": "/cases/5/records/1/row/answer/reasoning",
+            "raw_path": "runs/local-reconstruction-live-20261026-r1/026.raw.txt",
+            "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+            "request_line": 26,
+            "matched_fragment": "categorical obstacle",
+            "excerpt": " explicitly calls it the only access road, so the access problem is a categorical obstacle for the scheduled time, not merely a risk. Catering and this-Saturday availability at Lakeview are also unconfirmed. Heritage Public Library has an u",
+            "observation": "参考命中分支将预计关闭表述为确定障碍"
+          },
+          {
+            "slot": 28,
+            "seed_pointer": "/cases/5/records/3/row/answer/reasoning",
+            "raw_path": "runs/local-reconstruction-live-20261026-r1/028.raw.txt",
+            "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+            "request_line": 28,
+            "matched_fragment": "alternative route",
+            "excerpt": " and it does not establish that the venue itself is closed or that no alternative route exists. This narrows but does not overturn the historical work's tentative selection of Lakeview. Recomputing: Lakeview has documented capacity for 1",
+            "observation": "另一分支对唯一通路与替代通路作不同应用"
+          }
+        ],
+        "checks": {},
+        "finding": "地理范围与时间不确定性被不同处理",
+        "interpretation_boundary": "局部稿内容和历史可见性同时变化，且答对分支有强于原文的时间表述；无单因素因果结论。",
+        "expertise": "Source-holder/local reconstruction; historical draft is not an independent baseline for this run",
+        "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+      },
+      {
+        "id": "C07",
+        "task": "019",
+        "observations": [
+          {
+            "round": 2,
+            "message_index": 0,
+            "agent": "Person 1",
+            "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+            "original_pointer": "/conditions/0/runs/104/rounds/1/messages/0/response",
+            "matched_fragment": "blocked South Street",
+            "excerpt": "While Greenfield High School is the best-equipped shelter, the blocked South Street access raises serious concern about whether residents can get there in time; unless we confirm safe routes to Greenfield, Blue River, despite its dra",
+            "observation": "成员明确报告阻断"
+          },
+          {
+            "round": 2,
+            "message_index": 1,
+            "agent": "Person 2",
+            "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+            "original_pointer": "/conditions/0/runs/104/rounds/1/messages/1/prompt",
+            "matched_fragment": "blocked South Street",
+            "excerpt": "son 1: While Greenfield High School is the best-equipped shelter, the blocked South Street access raises serious concern about whether residents can get there in time; unless we confirm safe routes to Greenfield, Blue River, despite its dra",
+            "observation": "下一成员输入含该消息，不是只有说出而无法证明收到"
+          },
+          {
+            "round": 2,
+            "message_index": 1,
+            "agent": "Person 2",
+            "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+            "original_pointer": "/conditions/0/runs/104/rounds/1/messages/1/response",
+            "matched_fragment": "South Street remains open",
+            "excerpt": "Given South Street remains open to vehicles and Greenfield High School is the only shelter with proven safety and supplies, we should instruct all residents with vehicle access to g",
+            "observation": "下一成员仍称开放"
+          },
+          {
+            "round": 3,
+            "message_index": 0,
+            "agent": "Person 1",
+            "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+            "original_pointer": "/conditions/0/runs/104/rounds/2/messages/0/response",
+            "matched_fragment": "South Street confirmed open",
+            "excerpt": "With South Street confirmed open, I agree that all residents should be directed to Greenfield High School immediately, using available vehicles, and we should rapidly coordinate ride",
+            "observation": "原报告者随后也采纳开放说法"
+          }
+        ],
+        "checks": {},
+        "finding": "受阻说法实际进入下一成员收件后被开放说法覆盖",
+        "interpretation_boundary": "初始没有正确选票，隐藏信息随机分配原映射未发布，不能称正确专家少数被压倒。",
+        "expertise": "Distributed information; exact original agent assignment/system inputs not fully logged",
+        "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+      },
+      {
+        "id": "C08",
+        "task": "019",
+        "observations": [
+          {
+            "round": 3,
+            "message_index": 3,
+            "agent": "Person 4",
+            "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+            "original_pointer": "/conditions/0/runs/100/rounds/2/messages/3/response",
+            "matched_fragment": "I am contacting",
+            "excerpt": "Excellent, we have a clear consensus. I am contacting the Emergency Operations Center right now to get that single, verified report for us.",
+            "observation": "先提出并声称发起核验"
+          },
+          {
+            "round": 5,
+            "message_index": 3,
+            "agent": "Person 4",
+            "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+            "original_pointer": "/conditions/0/runs/100/rounds/4/messages/3/response",
+            "matched_fragment": "unified report",
+            "excerpt": "Okay, I have the EOC's unified report: Greenfield High is completely inaccessible due to flooding, and Blue River's generators have failed, making it unsafe. They confirm Oakridge Library",
+            "observation": "后声称已经收到EOC报告"
+          },
+          {
+            "round": 6,
+            "message_index": 0,
+            "agent": "Person 1",
+            "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+            "original_pointer": "/conditions/0/runs/100/rounds/5/messages/0/response",
+            "matched_fragment": "Oakridge Library",
+            "excerpt": "Thank you for that definitive report. Oakridge Library is our only safe and accessible shelter; we must issue the directive for all residents to go there immediately.",
+            "observation": "后续成员采用该结论"
+          }
+        ],
+        "checks": {
+          "released_run_keys": [
+            "final_votes",
+            "initial_votes",
+            "majority_vote",
+            "model",
+            "num_agents",
+            "num_special",
+            "rounds",
+            "scenario",
+            "timestamp"
+          ]
+        },
+        "finding": "同伴声称取得外部核验，后续按其统一行动且答对",
+        "interpretation_boundary": "当前发布文件无独立工具回执字段；不确认真实核验，也不证明现实运行绝无外部工具。",
+        "expertise": "Distributed information; exact original agent assignment/system inputs not fully logged",
+        "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+      }
+    ]
+  },
+  "masking": "Case and branch aliases; previous assistant interpretation and external reference/score separated. Actual historical prompts unchanged. Partial masking only."
+}

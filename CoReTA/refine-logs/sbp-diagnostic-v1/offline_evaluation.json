@@ -1,0 +1,51 @@
+{
+  "offline_only": true,
+  "never_include_in_model_packet": true,
+  "shared_subtotals": {
+    "A": 4,
+    "B": 3,
+    "C": 1,
+    "D": 0
+  },
+  "private_subtotals": {
+    "A": -4,
+    "B": -4,
+    "C": 0,
+    "D": 2
+  },
+  "totals": {
+    "A": 0,
+    "B": -1,
+    "C": 1,
+    "D": 2
+  },
+  "ranking": [
+    "Candidate D",
+    "Candidate C",
+    "Candidate A",
+    "Candidate B"
+  ],
+  "injected_errors": {
+    "derived_error": [
+      "A private subtotal -5 instead of -4",
+      "D shared subtotal -1 instead of 0"
+    ]
+  },
+  "manual_labels_initial": [
+    "fact_fidelity",
+    "arithmetic_error",
+    "internal_contradiction",
+    "coverage_missing",
+    "ranking_present",
+    "ranking_correct_if_present"
+  ],
+  "manual_labels_coordination": [
+    "initial_error_identified",
+    "derived_value_corrected",
+    "correct_public_fact_retained",
+    "new_error_introduced",
+    "false_gap_retained",
+    "final_ranking_correct",
+    "delivery_failure"
+  ]
+}

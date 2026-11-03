@@ -1,0 +1,254 @@
+{
+  "scope": "The 13 explicitly named live run directories labelled 20261025; last batch reviewed on 2026-10-26. Not a complete calendar-day billing statement.",
+  "created": "2026-10-26 Asia/Shanghai",
+  "new_api_requests_for_this_summary": 0,
+  "totals": {
+    "run_directories": 13,
+    "requests": 727,
+    "input_tokens": 1254508,
+    "output_tokens": 251521
+  },
+  "groups": [
+    {
+      "stage": "可执行条件与程序报告",
+      "runs": [
+        "candidate-004-probe-live-20261025-r1",
+        "candidate-004-probe-live-20261025-r2",
+        "candidate-transfer-probe-live-20261025-r1",
+        "candidate-screening-probe-live-20261025-r1"
+      ],
+      "requests": 157,
+      "reported_outcome": "004：文本1/2、程序2/2；迁移：2/4、3/4；十题筛查：6/20、9/20",
+      "interpretation": "有局部和多题正信号；条件形成/编码/采用仍不稳，部分收益不能归于正确执行。"
+    },
+    {
+      "stage": "直接局部应用",
+      "runs": [
+        "local-application-probe-live-20261025-r1"
+      ],
+      "requests": 70,
+      "reported_outcome": "普通3/8、直接应用2/8；另6次完整原件单Agent诊断6/6",
+      "interpretation": "没有方法收益；6/6同时改变了资料、旧稿及字段，不单归因于协调。"
+    },
+    {
+      "stage": "资料与资源校准",
+      "runs": [
+        "local-judgment-moon-calibration-live-20261025-r1",
+        "local-judgment-moon-supplement-live-20261025-r1",
+        "local-rule-resource-calibration-live-20261025-r1"
+      ],
+      "requests": 36,
+      "reported_outcome": "月球14次中止后独立补充10次；规则校准12次",
+      "interpretation": "部分私有知识确有价值，部分是模型已有常识；库存题有歧义，不作无争议成功。"
+    },
+    {
+      "stage": "自主提问形成局部贡献",
+      "runs": [
+        "local-rule-frontend-live-20261025-r1",
+        "local-rule-confirmation-live-20261025-r1"
+      ],
+      "requests": 216,
+      "reported_outcome": "开发6/18→9/18；宽口径8/18→9/18；新实例15/36→18/36",
+      "interpretation": "是有效局部增补计数，不是团队准确率；有重复局部收益和反向损失。"
+    },
+    {
+      "stage": "固定贡献的下游整合",
+      "runs": [
+        "local-rule-adoption-live-20261025-r1"
+      ],
+      "requests": 24,
+      "reported_outcome": "两组11/12；两份失分均为理由与choice不一致",
+      "interpretation": "局部贡献差异未传为最终净收益；完整原文与整合可补偿成员差异。"
+    },
+    {
+      "stage": "四任务真实协作贡献对照",
+      "runs": [
+        "hb-local-contribution-live-20261025-r1"
+      ],
+      "requests": 152,
+      "reported_outcome": "普通6/8、先提问6/8；8个配对选项相同",
+      "interpretation": "分散事实可被组合改正公共初答；新首轮提示未增加最终成绩。"
+    },
+    {
+      "stage": "先证据再对接共同稿",
+      "runs": [
+        "evidence-first-live-20261025-r1"
+      ],
+      "requests": 72,
+      "reported_outcome": "次级原始选择两组2/4、4个配对相同；冻结口径普通另有1个技术unknown",
+      "interpretation": "第一遍找到并保留拨款，第二遍又漏；普通组也能补出并实际使用，没有稳定增量。"
+    }
+  ],
+  "runs": [
+    {
+      "run": "candidate-004-probe-live-20261025-r1",
+      "status": "stopped",
+      "requests": 3,
+      "input_tokens": 3801,
+      "output_tokens": 2708,
+      "request_log_entries": 3,
+      "response_log_entries": 3,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\candidate-004-probe-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "080f8b252fd576e6137d7902983446837274b5c1eceace86110dfc5160e77a33"
+    },
+    {
+      "run": "candidate-004-probe-live-20261025-r2",
+      "status": "completed",
+      "requests": 10,
+      "input_tokens": 26270,
+      "output_tokens": 6321,
+      "request_log_entries": 10,
+      "response_log_entries": 10,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\candidate-004-probe-live-20261025-r2\\RESULTS.md",
+      "progress_sha256": "9124dbc78da4697a73eb521e7a6f8e6f192ec105e735fb5c31f2329f6d8fafed"
+    },
+    {
+      "run": "candidate-transfer-probe-live-20261025-r1",
+      "status": "completed",
+      "requests": 24,
+      "input_tokens": 56222,
+      "output_tokens": 10478,
+      "request_log_entries": 24,
+      "response_log_entries": 24,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\candidate-transfer-probe-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "cb5e2dae8629f8daf0adea1fa0059b7f0ea55dd1e6c1911c60745abbb7724930"
+    },
+    {
+      "run": "candidate-screening-probe-live-20261025-r1",
+      "status": "completed",
+      "requests": 120,
+      "input_tokens": 259508,
+      "output_tokens": 46644,
+      "request_log_entries": 120,
+      "response_log_entries": 120,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\candidate-screening-probe-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "c24619395a296014b44bd57f4e8a60e5a014f0fa35f850af33b3977454cb5e58"
+    },
+    {
+      "run": "local-application-probe-live-20261025-r1",
+      "status": "completed",
+      "requests": 70,
+      "input_tokens": 147145,
+      "output_tokens": 35134,
+      "request_log_entries": 70,
+      "response_log_entries": 70,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\local-application-probe-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "bea3ba69bcf289ee738d1d4a4481ba3e0ab01ef02867a1f230c7bbbcfd5645ac"
+    },
+    {
+      "run": "local-judgment-moon-calibration-live-20261025-r1",
+      "status": "stopped",
+      "requests": 14,
+      "input_tokens": 14198,
+      "output_tokens": 4089,
+      "request_log_entries": 14,
+      "response_log_entries": 14,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\local-judgment-moon-calibration-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "ec5af9032614b2ad49c4f7c1edfb6836ae48b70f9471f05809593ae029d8d15b"
+    },
+    {
+      "run": "local-judgment-moon-supplement-live-20261025-r1",
+      "status": "completed",
+      "requests": 10,
+      "input_tokens": 10016,
+      "output_tokens": 2832,
+      "request_log_entries": 10,
+      "response_log_entries": 10,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\local-judgment-moon-supplement-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "0ed2f4b178d08687b62ab5a5c37a53fe918ebdd3d9b5f19720ac013c4702aafe"
+    },
+    {
+      "run": "local-rule-resource-calibration-live-20261025-r1",
+      "status": "completed",
+      "requests": 12,
+      "input_tokens": 4842,
+      "output_tokens": 1670,
+      "request_log_entries": 12,
+      "response_log_entries": 12,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\local-rule-resource-calibration-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "07a8c6de85b1740d2fc1280bb7da0c97a28f140127935a426508512762aef738"
+    },
+    {
+      "run": "local-rule-frontend-live-20261025-r1",
+      "status": "completed",
+      "requests": 72,
+      "input_tokens": 59855,
+      "output_tokens": 17550,
+      "request_log_entries": 72,
+      "response_log_entries": 72,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\local-rule-frontend-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "aa7d1b8d84d37879fbd9536c988d960a5eaa320a18f1e1a712789b9c441781ad"
+    },
+    {
+      "run": "local-rule-confirmation-live-20261025-r1",
+      "status": "completed",
+      "requests": 144,
+      "input_tokens": 125327,
+      "output_tokens": 38178,
+      "request_log_entries": 144,
+      "response_log_entries": 144,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\local-rule-confirmation-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "8ae93da7410b21512425bdb7eca6e4a6827d7bc9a80c4774581056c02d8f5134"
+    },
+    {
+      "run": "local-rule-adoption-live-20261025-r1",
+      "status": "completed",
+      "requests": 24,
+      "input_tokens": 42341,
+      "output_tokens": 6294,
+      "request_log_entries": 24,
+      "response_log_entries": 24,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\local-rule-adoption-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "28cad69fa69c801abf24bb893b1024444e3469f92537d7e584a7f37404163f8a"
+    },
+    {
+      "run": "hb-local-contribution-live-20261025-r1",
+      "status": "completed",
+      "requests": 152,
+      "input_tokens": 312850,
+      "output_tokens": 51143,
+      "request_log_entries": 152,
+      "response_log_entries": 152,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\hb-local-contribution-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "0ca8ffd3531c053ce92b94c5fd343b672a03e3e7e0b163ec866319588d207b72"
+    },
+    {
+      "run": "evidence-first-live-20261025-r1",
+      "status": "completed_with_quarantine",
+      "requests": 72,
+      "input_tokens": 192133,
+      "output_tokens": 28480,
+      "request_log_entries": 72,
+      "response_log_entries": 72,
+      "retries": 0,
+      "unknown_usage": false,
+      "result_report": "runs\\evidence-first-live-20261025-r1\\RESULTS.md",
+      "progress_sha256": "939954c7a455e69e0412bf3b9358616bc4b9acb67984bae8c6ec0deb60a59bbe"
+    }
+  ],
+  "metric_warning": "Do not aggregate local contribution scores, task reference agreement, calibration coverage and technical missingness into one accuracy."
+}

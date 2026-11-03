@@ -1,0 +1,272 @@
+{
+  "status": "offline_spec_not_launch_frozen",
+  "max_requests": 32,
+  "max_output_tokens_per_request": 1536,
+  "max_total_output_tokens": 49152,
+  "max_input_tokens_per_request": 16384,
+  "max_total_input_tokens": 393216,
+  "retries": 0,
+  "schedule": [
+    {
+      "unit": "010-r1-ordinary",
+      "task": "010",
+      "repeat": 1,
+      "method": "ordinary",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "010-r1-ordinary",
+      "task": "010",
+      "repeat": 1,
+      "method": "ordinary",
+      "stage": "final",
+      "depends_on": "010-r1-ordinary-first"
+    },
+    {
+      "unit": "010-r1-diagnose",
+      "task": "010",
+      "repeat": 1,
+      "method": "diagnose",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "010-r1-diagnose",
+      "task": "010",
+      "repeat": 1,
+      "method": "diagnose",
+      "stage": "final",
+      "depends_on": "010-r1-diagnose-first"
+    },
+    {
+      "unit": "010-r2-diagnose",
+      "task": "010",
+      "repeat": 2,
+      "method": "diagnose",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "010-r2-diagnose",
+      "task": "010",
+      "repeat": 2,
+      "method": "diagnose",
+      "stage": "final",
+      "depends_on": "010-r2-diagnose-first"
+    },
+    {
+      "unit": "010-r2-ordinary",
+      "task": "010",
+      "repeat": 2,
+      "method": "ordinary",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "010-r2-ordinary",
+      "task": "010",
+      "repeat": 2,
+      "method": "ordinary",
+      "stage": "final",
+      "depends_on": "010-r2-ordinary-first"
+    },
+    {
+      "unit": "023-r1-ordinary",
+      "task": "023",
+      "repeat": 1,
+      "method": "ordinary",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "023-r1-ordinary",
+      "task": "023",
+      "repeat": 1,
+      "method": "ordinary",
+      "stage": "final",
+      "depends_on": "023-r1-ordinary-first"
+    },
+    {
+      "unit": "023-r1-diagnose",
+      "task": "023",
+      "repeat": 1,
+      "method": "diagnose",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "023-r1-diagnose",
+      "task": "023",
+      "repeat": 1,
+      "method": "diagnose",
+      "stage": "final",
+      "depends_on": "023-r1-diagnose-first"
+    },
+    {
+      "unit": "023-r2-diagnose",
+      "task": "023",
+      "repeat": 2,
+      "method": "diagnose",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "023-r2-diagnose",
+      "task": "023",
+      "repeat": 2,
+      "method": "diagnose",
+      "stage": "final",
+      "depends_on": "023-r2-diagnose-first"
+    },
+    {
+      "unit": "023-r2-ordinary",
+      "task": "023",
+      "repeat": 2,
+      "method": "ordinary",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "023-r2-ordinary",
+      "task": "023",
+      "repeat": 2,
+      "method": "ordinary",
+      "stage": "final",
+      "depends_on": "023-r2-ordinary-first"
+    },
+    {
+      "unit": "027-r1-ordinary",
+      "task": "027",
+      "repeat": 1,
+      "method": "ordinary",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "027-r1-ordinary",
+      "task": "027",
+      "repeat": 1,
+      "method": "ordinary",
+      "stage": "final",
+      "depends_on": "027-r1-ordinary-first"
+    },
+    {
+      "unit": "027-r1-diagnose",
+      "task": "027",
+      "repeat": 1,
+      "method": "diagnose",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "027-r1-diagnose",
+      "task": "027",
+      "repeat": 1,
+      "method": "diagnose",
+      "stage": "final",
+      "depends_on": "027-r1-diagnose-first"
+    },
+    {
+      "unit": "027-r2-diagnose",
+      "task": "027",
+      "repeat": 2,
+      "method": "diagnose",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "027-r2-diagnose",
+      "task": "027",
+      "repeat": 2,
+      "method": "diagnose",
+      "stage": "final",
+      "depends_on": "027-r2-diagnose-first"
+    },
+    {
+      "unit": "027-r2-ordinary",
+      "task": "027",
+      "repeat": 2,
+      "method": "ordinary",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "027-r2-ordinary",
+      "task": "027",
+      "repeat": 2,
+      "method": "ordinary",
+      "stage": "final",
+      "depends_on": "027-r2-ordinary-first"
+    },
+    {
+      "unit": "011-r1-ordinary",
+      "task": "011",
+      "repeat": 1,
+      "method": "ordinary",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "011-r1-ordinary",
+      "task": "011",
+      "repeat": 1,
+      "method": "ordinary",
+      "stage": "final",
+      "depends_on": "011-r1-ordinary-first"
+    },
+    {
+      "unit": "011-r1-diagnose",
+      "task": "011",
+      "repeat": 1,
+      "method": "diagnose",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "011-r1-diagnose",
+      "task": "011",
+      "repeat": 1,
+      "method": "diagnose",
+      "stage": "final",
+      "depends_on": "011-r1-diagnose-first"
+    },
+    {
+      "unit": "011-r2-diagnose",
+      "task": "011",
+      "repeat": 2,
+      "method": "diagnose",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "011-r2-diagnose",
+      "task": "011",
+      "repeat": 2,
+      "method": "diagnose",
+      "stage": "final",
+      "depends_on": "011-r2-diagnose-first"
+    },
+    {
+      "unit": "011-r2-ordinary",
+      "task": "011",
+      "repeat": 2,
+      "method": "ordinary",
+      "stage": "first",
+      "depends_on": null
+    },
+    {
+      "unit": "011-r2-ordinary",
+      "task": "011",
+      "repeat": 2,
+      "method": "ordinary",
+      "stage": "final",
+      "depends_on": "011-r2-ordinary-first"
+    }
+  ],
+  "first_methods": [
+    "ordinary",
+    "diagnose"
+  ],
+  "no_auto_expand": true
+}

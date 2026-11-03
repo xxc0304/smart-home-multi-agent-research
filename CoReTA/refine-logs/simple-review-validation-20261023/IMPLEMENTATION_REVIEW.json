@@ -1,0 +1,22 @@
+{
+  "undeclared": [],
+  "stale_rows": [],
+  "defects": [],
+  "semantic_undeclared": 0,
+  "verdict": "provisional_no_findings",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "evidence": {
+    "frozen_hashes": "All current source_hashes and payload_hashes match.",
+    "payloads": "All eight C files are byte-identical to prior B files. Every S preserves the complete PACKET/OUTPUT_SCHEMA suffix byte-for-byte and all other payload fields.",
+    "identity_access_schema": "All eight packets retain their declared member, role, private materials and source access. Embedded and transport schemas agree. All output caps remain 3072.",
+    "schedule": "32 calls cover each of eight inputs under C and S with repeats 1 and 2; metadata and payload filenames match. Order alternates as declared.",
+    "runner": "Existing runner accepts the new kind and C/S conditions. Calls load frozen payloads independently without injecting earlier responses. The frozen configuration has zero transport retries; schema, incomplete-response, transport and unknown-usage errors stop the batch. No repair or resume path is used.",
+    "budget": "32 attempts maximum and 98304 output tokens maximum are consistent with the prepared payloads.",
+    "semantics": "P02 declares joint prefix-package simplification while retaining the full packet/history. P03 and the rubric restrict interpretation to correlated development inputs, without task generalization or final-answer improvement claims."
+  },
+  "limits": [
+    "Read-only inspection and static file comparisons only; no edits, test execution or live requests.",
+    "The prior 004 manual regrade was not independently re-adjudicated by this engineering audit."
+  ]
+}

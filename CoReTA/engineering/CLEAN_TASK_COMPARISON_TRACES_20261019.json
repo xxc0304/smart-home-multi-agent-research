@@ -1,0 +1,854 @@
+[
+  {
+    "task_id": "gsm8k/train/604",
+    "run_id": "coreta-revision-c11e7b40ea10",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Santana has 7 brothers total: 3 born in March, 1 in October, 1 in November, and 2 in December (3 + 1 + 1 + 2 = 7).\n\nFirst half of the year (January–June): only the 3 March birthdays occur, so she buys 3 birthday presents. No Christmas presents fall in this half.\n\nSecond half of the year (July–December): birthday presents are 1 (October) + 1 (November) + 2 (December) = 4. Christmas is in December, so she buys one Christmas present for each of the 7 brothers = 7. Second-half total = 4 + 7 = 11.\n\nDifference: 11 − 3 = 8.\n\n\\boxed{8}",
+    "prefinal_artifact": "Santana has 7 brothers. Split the calendar year into two halves.\n\nFirst half (January–June): the only listed birthdays in this half are the 3 in March. She buys one birthday present per brother, so she buys 3 birthday presents. No Christmas presents fall in the first half.\n\nSecond half (July–December): the listed birthdays are 1 in October, 1 in November, and 2 in December. That gives 1 + 1 + 2 = 4 birthday presents. Christmas is in December (second half), and she buys each of her 7 brothers a Christmas present, giving 7 Christmas presents. Second-half total = 4 + 7 = 11 presents.\n\nDifference: 11 − 3 = 8.\n\nTherefore Santana buys 8 more presents in the second half of the year than in the first half.\n\n\\boxed{8}",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 10,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "29197552137fd7503886171b857130219c1223eb51b8f58ca1b872f1b70983c8",
+      "a19af5e5866097efa7dcee9211a4153bba6d2100aac6f8f3afc2ed172028407c",
+      "8a0aafb7f4eaa38cdff05ef734f7168a1ada590122fb6feb01406e74a96fe7dd"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/604",
+    "run_id": "coreta-revision-727e539d5f44",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "First half of the year (January–June) contains only the 3 March birthdays, so Santana buys 3 birthday presents: 3 presents.\n\nSecond half (July–December) contains October (1), November (1), and December (2) birthdays, giving 1 + 1 + 2 = 4 birthday presents. She also buys one Christmas present for each of her 7 brothers, all in December: 7 presents. Second-half total = 4 + 7 = 11 presents.\n\nDifference = 11 − 3 = 8.\n\n\\boxed{8}",
+    "prefinal_artifact": "Santana has 7 brothers total. First half of the year (Jan–Jun): 3 March birthdays, so 3 birthday presents. Second half (Jul–Dec): 1 October + 1 November + 2 December = 4 birthday presents, plus Christmas presents for all 7 brothers = 7. Total second-half presents = 4 + 7 = 11. Difference = 11 − 3 = 8. Boxed answer: 8 more presents.",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "29197552137fd7503886171b857130219c1223eb51b8f58ca1b872f1b70983c8",
+      "a19af5e5866097efa7dcee9211a4153bba6d2100aac6f8f3afc2ed172028407c",
+      "8a0aafb7f4eaa38cdff05ef734f7168a1ada590122fb6feb01406e74a96fe7dd"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/604",
+    "run_id": "coreta-revision-370e3fb7d090",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Santana has 7 brothers, and the given birth months account for all of them: 3 in March, 1 in October, 1 in November, and 2 in December, since 3 + 1 + 1 + 2 = 7.\n\nEach brother receives one birthday present and one Christmas present.\n\nFirst half of the year (January–June): the only birthdays are the 3 in March, so she buys 3 birthday presents and no Christmas presents, totaling 3 presents.\n\nSecond half of the year (July–December): birthday presents are October 1 + November 1 + December 2 = 4, plus 7 Christmas presents (one per brother, all in December), giving 4 + 7 = 11 presents.\n\nDifference: 11 − 3 = 8.\n\nSantana buys 8 more presents in the second half of the year than in the first half.\n\n\\boxed{8}",
+    "prefinal_artifact": "Santana has 7 brothers, and the given months account for all of them: 3 in March, 1 in October, 1 in November, and 2 in December (3+1+1+2 = 7).\n\nEach brother receives one birthday present and one Christmas present.\n\nFirst half (January–June): only the 3 March birthdays occur, so she buys 3 birthday presents and 0 Christmas presents → 3 presents.\n\nSecond half (July–December): birthday presents are October 1 + November 1 + December 2 = 4, plus 7 Christmas presents (one per brother, all in December) → 4 + 7 = 11 presents.\n\nDifference: 11 − 3 = 8.\n\nSantana buys 8 more presents in the second half of the year than in the first half.\n\n\\boxed{8}",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "29197552137fd7503886171b857130219c1223eb51b8f58ca1b872f1b70983c8",
+      "a19af5e5866097efa7dcee9211a4153bba6d2100aac6f8f3afc2ed172028407c",
+      "8a0aafb7f4eaa38cdff05ef734f7168a1ada590122fb6feb01406e74a96fe7dd"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/604",
+    "run_id": "coreta-revision-7c69c3ca1675",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Santana has 7 brothers total. The birthday months partition as March: 3, October: 1, November: 1, December: 2, and 3 + 1 + 1 + 2 = 7, so each brother has exactly one birthday present.\n\nFirst half of the year (January–June): only the 3 March birthdays occur, so Santana buys 3 birthday presents and no Christmas presents. First-half total = 3.\n\nSecond half of the year (July–December): birthday presents are October (1) + November (1) + December (2) = 4. She also buys one Christmas present for each of her 7 brothers, all falling in December, hence in the second half: 7 presents. Second-half total = 4 + 7 = 11.\n\nCross-check: total presents = 7 birthday + 7 Christmas = 14; removing the 3 first-half presents leaves 14 − 3 = 11 in the second half, agreeing with the direct count.\n\nDifference: 11 − 3 = 8 more presents in the second half of the year.\n\n\\boxed{8}",
+    "prefinal_artifact": "Santana has 7 brothers total. The birthdays are March: 3, October: 1, November: 1, December: 2, which sum to 3 + 1 + 1 + 2 = 7, so all brothers are accounted for, each with exactly one birthday present.\n\nFirst half of the year (January–June): only the 3 March birthdays occur, so Santana buys 3 birthday presents and no Christmas presents.\n\nSecond half of the year (July–December): birthday presents are October (1) + November (1) + December (2) = 4. In addition, she buys one Christmas present for each of her 7 brothers, and all Christmas presents fall in December, hence in the second half: 7 presents. Second-half total = 4 + 7 = 11 presents.\n\nCross-check: total presents = 7 birthday + 7 Christmas = 14; subtracting the 3 first-half presents leaves 14 − 3 = 11 in the second half, agreeing with the direct count.\n\nDifference: 11 − 3 = 8 more presents in the second half of the year.\n\n\\boxed{8}",
+    "finalizer_changed": true,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 5,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "29197552137fd7503886171b857130219c1223eb51b8f58ca1b872f1b70983c8",
+      "a19af5e5866097efa7dcee9211a4153bba6d2100aac6f8f3afc2ed172028407c",
+      "8a0aafb7f4eaa38cdff05ef734f7168a1ada590122fb6feb01406e74a96fe7dd"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "gsm8k/train/7424",
+    "run_id": "coreta-revision-b400d0d07ec3",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Penny's total cost per pound is the bulk price plus the tax: $5 + $1 = $6 per pound. Since she paid $240, the number of pounds purchased is 240 / 6 = 40 pounds. The minimum spend of $40 is before tax, so at the $5 bulk price it corresponds to 40 / 5 = 8 pounds. Thus Penny's purchase exceeds the minimum-spend quantity by 40 - 8 = 32 pounds.\n\n\\boxed{32}",
+    "prefinal_artifact": "Total cost per pound = bulk price $5/lb + tax $1/lb = $6/lb. Penny paid $240, so pounds purchased = 240 / 6 = 40 lb. Minimum spend is $40 before tax, which corresponds to 40 / 5 = 8 lb. Excess pounds beyond the minimum-spend quantity = 40 - 8 = 32 lb. Boxed answer: 32 pounds.",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 4,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a53cd03d5302676d025547427ace7b36983096d69cd94cbdd7731f8e48ed0744",
+      "cf53228193f287a506e17daa6abed36178cf4fc2be903ba500273d4970af4288",
+      "5502cb41740fbc351c36969f37cfa14b801419e9da97e06e5429f0f367a16007"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/7424",
+    "run_id": "coreta-revision-ebcef91c89d0",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Each pound costs $5 before tax plus $1 tax, so the total cost per pound is $6. Penny paid $240, so she bought $240 / $6 = 40 pounds.\n\nThe minimum spend is $40 before tax. At $5 per pound, that corresponds to $40 / $5 = 8 pounds. Thus Penny's purchase exceeds the minimum-spend quantity by 40 - 8 = 32 pounds.\n\n\\boxed{32\\text{ pounds}}",
+    "prefinal_artifact": "Each pound costs $5 before tax plus $1 tax, so the total cost per pound is $6. Penny paid $240, so she bought $240 / $6 = 40 pounds.\n\nThe minimum spend is $40 before tax. At $5 per pound, that corresponds to $40 / $5 = 8 pounds. Thus Penny's purchase exceeds the minimum-spend quantity by 40 - 8 = 32 pounds.\n\n\\boxed{32\\text{ pounds}}",
+    "finalizer_changed": false,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a53cd03d5302676d025547427ace7b36983096d69cd94cbdd7731f8e48ed0744",
+      "cf53228193f287a506e17daa6abed36178cf4fc2be903ba500273d4970af4288",
+      "5502cb41740fbc351c36969f37cfa14b801419e9da97e06e5429f0f367a16007"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/7424",
+    "run_id": "coreta-revision-022a8c06526e",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "The honey costs $5 per pound before tax and is taxed at $1 per pound, so the total cost is $5 + $1 = $6 per pound. Penny paid $240, so she bought 240 / 6 = 40 pounds of honey.\n\nThe minimum spend is $40 before tax; at the $5 per pound pre-tax price, this corresponds to 40 / 5 = 8 pounds. The tax is a per-pound surcharge on pounds actually purchased, not on the minimum-spend threshold, so the pre-tax rate is the correct one for converting the threshold to pounds.\n\nLedger check: 8 lb at $5/lb costs exactly the $40 pre-tax minimum; 40 lb costs 40·$5 = $200 pre-tax plus 40·$1 = $40 tax, totaling $240, matching Penny's payment.\n\nPenny's purchase exceeds the minimum-spend quantity by 40 - 8 = 32 pounds.\n\n\\boxed{32}",
+    "prefinal_artifact": "The honey costs $5 per pound before tax and is taxed at $1 per pound, so the total cost is $5 + $1 = $6 per pound. Penny paid $240, so she bought 240 / 6 = 40 pounds of honey.\n\nThe minimum spend is $40 before tax; at $5 per pound, this corresponds to 40 / 5 = 8 pounds. The tax is a per-pound surcharge on pounds actually purchased, not on the minimum-spend threshold, so the pre-tax rate is the correct one for converting the threshold to pounds.\n\nLedger check: 8 lb at $5/lb costs exactly the $40 pre-tax minimum; 40 lb costs 40·$5 = $200 pre-tax plus 40·$1 = $40 tax, totaling $240, matching Penny's payment.\n\nPenny's purchase exceeds the minimum-spend quantity by 40 - 8 = 32 pounds.\n\n\\boxed{32}",
+    "finalizer_changed": true,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 5,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a53cd03d5302676d025547427ace7b36983096d69cd94cbdd7731f8e48ed0744",
+      "cf53228193f287a506e17daa6abed36178cf4fc2be903ba500273d4970af4288",
+      "5502cb41740fbc351c36969f37cfa14b801419e9da97e06e5429f0f367a16007"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "gsm8k/train/7424",
+    "run_id": "coreta-revision-9ebfc7ac4acf",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Total cost per pound = $5 bulk price + $1 tax = $6 per pound. Penny paid $240, so pounds purchased = 240 / 6 = 40 pounds. The minimum spend of $40 is before tax, so at $5 per pound it corresponds to 40 / 5 = 8 pounds. Penny's purchase exceeds the minimum-spend quantity by 40 − 8 = 32 pounds.\n\n\\boxed{32}",
+    "prefinal_artifact": "Penny's total cost per pound is the $5 bulk price plus the $1 per pound tax, i.e. $6 per pound. Since she paid $240, she purchased 240 / 6 = 40 pounds. The $40 minimum spend is specified before tax, so at $5 per pound it corresponds to 40 / 5 = 8 pounds. Her purchase therefore exceeds the minimum-spend quantity by 40 − 8 = 32 pounds.\n\n\\boxed{32}",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a53cd03d5302676d025547427ace7b36983096d69cd94cbdd7731f8e48ed0744",
+      "cf53228193f287a506e17daa6abed36178cf4fc2be903ba500273d4970af4288",
+      "5502cb41740fbc351c36969f37cfa14b801419e9da97e06e5429f0f367a16007"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/6133",
+    "run_id": "coreta-revision-9c7b145e40e3",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Jaxon has 15 toys. Gabriel has twice as many as Jaxon: 2 × 15 = 30. Jerry has 8 more than Gabriel: 30 + 8 = 38. Total = 15 + 30 + 38 = 83. Boxed answer: \\boxed{83}",
+    "prefinal_artifact": "Jaxon = 15. Gabriel = 2 × Jaxon = 2 × 15 = 30. Jerry = Gabriel + 8 = 30 + 8 = 38. Total = 15 + 30 + 38 = 83. Boxed answer: 83.",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 4,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a7a14c52a26c6a2c4897285881c2fcf769822148603699343c59d049bad64a18",
+      "636fd8125ec069fa43b36df2bd67a41ee1b139160782ced9bcefb94bc3178312",
+      "dee51237a4cc92ba7768eda684874bd32a108fe1e452c6f34e617fcb01e941d5"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/6133",
+    "run_id": "coreta-revision-7f7bc469a343",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Jaxon has 15 toys. Gabriel has twice as many as Jaxon: 2 × 15 = 30 toys. Jerry has 8 more than Gabriel: 30 + 8 = 38 toys. Total = 15 + 30 + 38 = 83 toys.\n\n\\boxed{83}",
+    "prefinal_artifact": "Jaxon = 15 toys. Gabriel has twice as many as Jaxon: 2 × 15 = 30 toys. Jerry has 8 more than Gabriel: 30 + 8 = 38 toys. Total = 15 + 30 + 38 = 83 toys. Boxed answer: \\boxed{83}",
+    "finalizer_changed": true,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 5,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a7a14c52a26c6a2c4897285881c2fcf769822148603699343c59d049bad64a18",
+      "636fd8125ec069fa43b36df2bd67a41ee1b139160782ced9bcefb94bc3178312",
+      "dee51237a4cc92ba7768eda684874bd32a108fe1e452c6f34e617fcb01e941d5"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "gsm8k/train/6133",
+    "run_id": "coreta-revision-dcfd503c943a",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Jaxon has 15 toys. Gabriel has twice as many toys as Jaxon: 2 × 15 = 30 toys. Jerry has 8 more toys than Gabriel: 30 + 8 = 38 toys. Total = 15 + 30 + 38 = 83 toys.\n\nBoxed answer: \\boxed{83}",
+    "prefinal_artifact": "Jaxon has 15 toys. Gabriel has twice as many toys as Jaxon: 2 × 15 = 30 toys. Jerry has 8 more toys than Gabriel: 30 + 8 = 38 toys. Total = 15 + 30 + 38 = 83 toys.\n\nBoxed answer: \\boxed{83}",
+    "finalizer_changed": false,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a7a14c52a26c6a2c4897285881c2fcf769822148603699343c59d049bad64a18",
+      "636fd8125ec069fa43b36df2bd67a41ee1b139160782ced9bcefb94bc3178312",
+      "dee51237a4cc92ba7768eda684874bd32a108fe1e452c6f34e617fcb01e941d5"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/6133",
+    "run_id": "coreta-revision-cc5ebec98253",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Jaxon has 15 toys. Gabriel has twice as many as Jaxon: 2 × 15 = 30 toys. Jerry has 8 more than Gabriel: 30 + 8 = 38 toys. Total = 15 + 30 + 38 = 83 toys.\n\n\\boxed{83}",
+    "prefinal_artifact": "Jaxon = 15 toys. Gabriel has twice as many as Jaxon: 2 × 15 = 30 toys. Jerry has 8 more than Gabriel: 30 + 8 = 38 toys. Total = 15 + 30 + 38 = 83 toys. Boxed answer: \\boxed{83}",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a7a14c52a26c6a2c4897285881c2fcf769822148603699343c59d049bad64a18",
+      "636fd8125ec069fa43b36df2bd67a41ee1b139160782ced9bcefb94bc3178312",
+      "dee51237a4cc92ba7768eda684874bd32a108fe1e452c6f34e617fcb01e941d5"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/623",
+    "run_id": "coreta-revision-31e873bc21e9",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def nth_nums(nums, n):\n    \"\"\"Return a new list containing each number in nums raised to the power n.\"\"\"\n    return [x ** n for x in nums]\n",
+    "prefinal_artifact": "def nth_nums(nums, n):\n    \"\"\"Return a new list containing each number in nums raised to the power n.\"\"\"\n    return [x ** n for x in nums]\n",
+    "finalizer_changed": false,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 8,
+    "issues": {
+      "i0001": {
+        "description": "The task does not specify the domain of nums or the type/range of n (e.g., negative exponents, 0**0, floats). The candidate adopts standard Python ** semantics and documents this assumption; no draft conflicts. This is a reasonable standard assumption rather than a concrete defect requiring change.",
+        "blocking": false,
+        "target_refs": [
+          "coreta-revision-31e873bc21e9:e0000#s4",
+          "coreta-revision-31e873bc21e9:e0002#s5"
+        ],
+        "existing_issue_id": null,
+        "issue_id": "i0001",
+        "status": "addressed",
+        "source_event_id": "coreta-revision-31e873bc21e9:e0003",
+        "version": 0,
+        "handling_events": [
+          {
+            "version": 2,
+            "issue_id": "i0001",
+            "status": "addressed",
+            "reason": "A1's e0004 supplies the precise boundary the prior wording glossed over, and A2's e0005 independently confirms it by hand derivation: under ** semantics, 'negative n yields float reciprocals for ints' holds only for nonzero bases; nth_nums([0], -1) raises ZeroDivisionError, and non-numeric elements raise TypeError. Step s5 now states this exactly, and s2 records why ** is the reasonable standard assumption (preserves exact ints, unlike math.pow). No code change is warranted; the issue was a documentation-precision note, not a defect.",
+            "evidence_refs": [
+              "coreta-revision-31e873bc21e9:e0004",
+              "coreta-revision-31e873bc21e9:e0005"
+            ],
+            "changed_step_ids": [
+              "s2",
+              "s5"
+            ]
+          }
+        ],
+        "related_events": [
+          {
+            "event_id": "coreta-revision-31e873bc21e9:e0004",
+            "description": "Extends i0001 with the precise boundary the current edge-case wording glosses over: 'negative n yields float reciprocals for ints' holds only for nonzero bases. Under the adopted ** semantics, nth_nums([0], -1) raises ZeroDivisionError, and non-numeric elements raise TypeError. This is standard Python behavior consistent with the task, so it does not block correctness; it is a documentation-precision note, not a code change.",
+            "blocking": false,
+            "target_refs": [
+              "coreta-revision-31e873bc21e9:e0000#s4",
+              "coreta-revision-31e873bc21e9:e0003#s4",
+              "coreta-revision-31e873bc21e9:e0003#s5"
+            ],
+            "existing_issue_id": "i0001"
+          }
+        ]
+      }
+    },
+    "errors": [],
+    "draft_hashes": [
+      "2809bc3871dd7413ee2296fe4f45bba27a1dcec5eb19c879280a0ed7c7348164",
+      "6c71969874b7b2c1ce69ed1114b11119dffd54406a97fcdaeff6e91604e4a7c3",
+      "886cf86b5b2f4191b677900428b5a5a35292b7c9d24c83b4157ef2fbed49b3f2"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "mbpp/train/623",
+    "run_id": "coreta-revision-9a238e97ca9e",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def nth_nums(nums, n):\n    \"\"\"Return a list containing each number in nums raised to the power n.\"\"\"\n    return [num ** n for num in nums]\n",
+    "prefinal_artifact": "def nth_nums(nums, n):\n    \"\"\"Return a list containing each number in nums raised to the power n.\"\"\"\n    return [num ** n for num in nums]\n",
+    "finalizer_changed": false,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "2809bc3871dd7413ee2296fe4f45bba27a1dcec5eb19c879280a0ed7c7348164",
+      "6c71969874b7b2c1ce69ed1114b11119dffd54406a97fcdaeff6e91604e4a7c3",
+      "886cf86b5b2f4191b677900428b5a5a35292b7c9d24c83b4157ef2fbed49b3f2"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/623",
+    "run_id": "coreta-revision-ac365803317e",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def nth_nums(nums, n):\n    \"\"\"Return a list containing each number in nums raised to the power n.\"\"\"\n    return [num ** n for num in nums]\n",
+    "prefinal_artifact": "def nth_nums(nums, n):\n    \"\"\"Return a list containing each number in nums raised to the power n.\"\"\"\n    return [num ** n for num in nums]\n",
+    "finalizer_changed": false,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "2809bc3871dd7413ee2296fe4f45bba27a1dcec5eb19c879280a0ed7c7348164",
+      "6c71969874b7b2c1ce69ed1114b11119dffd54406a97fcdaeff6e91604e4a7c3",
+      "886cf86b5b2f4191b677900428b5a5a35292b7c9d24c83b4157ef2fbed49b3f2"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/623",
+    "run_id": "coreta-revision-227bf5c5d9f7",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def nth_nums(nums, n):\n    \"\"\"Return a new list containing each number in nums raised to the power n.\"\"\"\n    return [x ** n for x in nums]\n",
+    "prefinal_artifact": "def nth_nums(nums, n):\n    \"\"\"Return a list containing each number in nums raised to the power n.\"\"\"\n    return [x ** n for x in nums]\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "2809bc3871dd7413ee2296fe4f45bba27a1dcec5eb19c879280a0ed7c7348164",
+      "6c71969874b7b2c1ce69ed1114b11119dffd54406a97fcdaeff6e91604e4a7c3",
+      "886cf86b5b2f4191b677900428b5a5a35292b7c9d24c83b4157ef2fbed49b3f2"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/781",
+    "run_id": "coreta-revision-b70b5a3bc020",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def count_divisors(n):\n    \"\"\"Return True if the number of positive divisors of n is even, else False.\n\n    A positive integer has an odd number of positive divisors exactly when it\n    is a perfect square; otherwise the divisor count is even.\n    \"\"\"\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n    count = 0\n    i = 1\n    while i * i <= n:\n        if n % i == 0:\n            if i * i == n:\n                count += 1\n            else:\n                count += 2\n        i += 1\n    return count % 2 == 0\n",
+    "prefinal_artifact": "def count_divisors(n):\n    \"\"\"Return True if the number of positive divisors of n is even.\"\"\"\n    if not isinstance(n, int) or isinstance(n, bool):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n    count = 0\n    i = 1\n    while i * i <= n:\n        if n % i == 0:\n            count += 1\n            if i != n // i:\n                count += 1\n        i += 1\n    return count % 2 == 0\n",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 4,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a0303948fe07e094fd62eca9b7fc39a8070075db610a50792dd31a137358c5e8",
+      "5c3957928ac150a7222dc56cf104dd94f941f3a61be4f4bf44e491a979f5b8af",
+      "0e6bc1a0f261274d1026a0d407619345b1efdbbd0d68d0cf3deedd3777f8fc5d"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/781",
+    "run_id": "coreta-revision-73b6d4cb2b5e",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def count_divisors(n):\n    \"\"\"Return True if the number of positive divisors of n is even, else False.\"\"\"\n    if not isinstance(n, int) or isinstance(n, bool):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n    count = 0\n    i = 1\n    while i * i <= n:\n        if n % i == 0:\n            count += 1 if i * i == n else 2\n        i += 1\n    return count % 2 == 0\n",
+    "prefinal_artifact": "def count_divisors(n):\n    \"\"\"Return True if the number of positive divisors of n is even, else False.\"\"\"\n    if not isinstance(n, int) or isinstance(n, bool):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n    count = 0\n    i = 1\n    while i * i <= n:\n        if n % i == 0:\n            count += 1 if i * i == n else 2\n        i += 1\n    return count % 2 == 0\n",
+    "finalizer_changed": false,
+    "normal_calls": 8,
+    "format_repairs": 1,
+    "http_attempts": 6,
+    "issues": {
+      "i0001": {
+        "description": "The prompt does not specify behavior for n <= 0 (or non-integer input). Drafts conflict: e0000 and e0001 raise ValueError for n <= 0, while e0002 returns False. This candidate adopts the raise convention plus TypeError for non-ints. This is a concrete unresolved convention choice that could affect hidden-test outcomes for out-of-domain inputs; it does not affect correctness for positive integers.",
+        "blocking": false,
+        "target_refs": [
+          "coreta-revision-73b6d4cb2b5e:e0000#s4",
+          "coreta-revision-73b6d4cb2b5e:e0001#s5",
+          "coreta-revision-73b6d4cb2b5e:e0002#s5"
+        ],
+        "existing_issue_id": null,
+        "issue_id": "i0001",
+        "status": "open",
+        "source_event_id": "coreta-revision-73b6d4cb2b5e:e0003",
+        "version": 0,
+        "handling_events": [],
+        "related_events": [
+          {
+            "event_id": "coreta-revision-73b6d4cb2b5e:e0005",
+            "description": "Out-of-domain convention remains unresolved: the prompt does not specify behavior for n<=0 or non-integer input. The current candidate raises ValueError for n<=0 and TypeError for non-ints (including bool), while draft e0002 returns False for n<=0. This is a concrete unresolved convention choice that may affect hidden-test outcomes for out-of-domain inputs; it does not affect correctness for positive integers, where the pairwise count and the perfect-square parity argument agree.",
+            "blocking": false,
+            "target_refs": [
+              "coreta-revision-73b6d4cb2b5e:e0003#s5",
+              "coreta-revision-73b6d4cb2b5e:e0002#s5",
+              "coreta-revision-73b6d4cb2b5e:e0004"
+            ],
+            "existing_issue_id": "i0001"
+          }
+        ]
+      }
+    },
+    "errors": [],
+    "draft_hashes": [
+      "a0303948fe07e094fd62eca9b7fc39a8070075db610a50792dd31a137358c5e8",
+      "5c3957928ac150a7222dc56cf104dd94f941f3a61be4f4bf44e491a979f5b8af",
+      "0e6bc1a0f261274d1026a0d407619345b1efdbbd0d68d0cf3deedd3777f8fc5d"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "mbpp/train/781",
+    "run_id": "coreta-revision-f9b2b6b155bb",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def count_divisors(n):\n    \"\"\"Return True if the number of positive divisors of n is even, else False.\"\"\"\n    if isinstance(n, bool) or not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n    count = 0\n    i = 1\n    while i * i <= n:\n        if n % i == 0:\n            count += 1\n            if i != n // i:\n                count += 1\n        i += 1\n    return count % 2 == 0\n",
+    "prefinal_artifact": "def count_divisors(n):\n    \"\"\"Return True if the number of positive divisors of n is even.\"\"\"\n    if isinstance(n, bool) or not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n    count = 0\n    i = 1\n    while i * i <= n:\n        if n % i == 0:\n            count += 1\n            if i != n // i:\n                count += 1\n        i += 1\n    return count % 2 == 0\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a0303948fe07e094fd62eca9b7fc39a8070075db610a50792dd31a137358c5e8",
+      "5c3957928ac150a7222dc56cf104dd94f941f3a61be4f4bf44e491a979f5b8af",
+      "0e6bc1a0f261274d1026a0d407619345b1efdbbd0d68d0cf3deedd3777f8fc5d"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/781",
+    "run_id": "coreta-revision-1788942af9c0",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def count_divisors(n):\n    \"\"\"Return True if the number of positive divisors of n is even, else False.\n\n    For a positive integer n, divisors pair as (d, n//d); the only unpaired\n    case is d == n//d, i.e. n is a perfect square. Hence the divisor count is\n    odd exactly when n is a perfect square, and even otherwise.\n    \"\"\"\n    if isinstance(n, bool) or not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n    import math\n    root = math.isqrt(n)\n    return root * root != n\n",
+    "prefinal_artifact": "def count_divisors(n):\n    \"\"\"Return True if the number of positive divisors of n is even, else False.\n\n    For a positive integer n, divisors pair as (d, n//d); the only unpaired\n    divisor is sqrt(n) when n is a perfect square. Hence the divisor count is\n    odd exactly when n is a perfect square, and even otherwise.\n    \"\"\"\n    if isinstance(n, bool) or not isinstance(n, int):\n        raise TypeError(\"n must be an integer\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n    import math\n    root = math.isqrt(n)\n    return root * root != n\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "a0303948fe07e094fd62eca9b7fc39a8070075db610a50792dd31a137358c5e8",
+      "5c3957928ac150a7222dc56cf104dd94f941f3a61be4f4bf44e491a979f5b8af",
+      "0e6bc1a0f261274d1026a0d407619345b1efdbbd0d68d0cf3deedd3777f8fc5d"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/641",
+    "run_id": "coreta-revision-9029a43c3fb0",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def is_nonagonal(n):\n    \"\"\"Return the nth nonagonal (enneagonal) number.\n\n    The nth nonagonal number is n * (7*n - 5) // 2.\n    Convention: n is a positive integer; n = 1 gives 1.\n    \"\"\"\n    return n * (7 * n - 5) // 2\n",
+    "prefinal_artifact": "def is_nonagonal(n):\n    \"\"\"Return the nth nonagonal number.\n\n    The nth nonagonal (9-gonal) number is n*(7*n - 5)//2.\n    \"\"\"\n    return n * (7 * n - 5) // 2\n",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 4,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "e834194f70b40474a0cc62f56a1c2e9eea32d25536f84203de8ecbb2e5d3b07d",
+      "5b39c771b1c9567fa585b672bd1f40ef03c035b5881218cc9d4f67bc9880c65e",
+      "1ee666c9f23fcf924957aefc56049077eab03f1acd05b8a79bc9a150f50aa4f3"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/641",
+    "run_id": "coreta-revision-674843edc202",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def is_nonagonal(n):\n    \"\"\"Return the nth nonagonal (enneagonal) number.\n\n    The nth nonagonal number is given by n * (7*n - 5) // 2.\n    Convention: n is a positive integer; n = 1 gives 1.\n    \"\"\"\n    return n * (7 * n - 5) // 2\n",
+    "prefinal_artifact": "def is_nonagonal(n):\n    \"\"\"Return the nth nonagonal (enneagonal) number.\n\n    The nth nonagonal number is n * (7*n - 5) // 2.\n    Convention: n is a positive integer; n = 1 gives 1.\n    \"\"\"\n    return n * (7 * n - 5) // 2\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "e834194f70b40474a0cc62f56a1c2e9eea32d25536f84203de8ecbb2e5d3b07d",
+      "5b39c771b1c9567fa585b672bd1f40ef03c035b5881218cc9d4f67bc9880c65e",
+      "1ee666c9f23fcf924957aefc56049077eab03f1acd05b8a79bc9a150f50aa4f3"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/641",
+    "run_id": "coreta-revision-00b4f62505ff",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def is_nonagonal(n):\n    \"\"\"Return the nth nonagonal (enneagonal) number.\n\n    The nth nonagonal number is given by n * (7*n - 5) // 2.\n    Convention: n is a positive integer; n = 1 gives 1.\n    \"\"\"\n    return n * (7 * n - 5) // 2\n",
+    "prefinal_artifact": "def is_nonagonal(n):\n    \"\"\"Return the nth nonagonal number.\n\n    The nth nonagonal (9-gonal) number is n*(7*n - 5)//2.\n    \"\"\"\n    return n * (7 * n - 5) // 2\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "e834194f70b40474a0cc62f56a1c2e9eea32d25536f84203de8ecbb2e5d3b07d",
+      "5b39c771b1c9567fa585b672bd1f40ef03c035b5881218cc9d4f67bc9880c65e",
+      "1ee666c9f23fcf924957aefc56049077eab03f1acd05b8a79bc9a150f50aa4f3"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/641",
+    "run_id": "coreta-revision-0db0d43a389b",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def is_nonagonal(n):\n    \"\"\"Return the nth nonagonal (enneagonal) number.\n\n    The nth nonagonal (9-gonal) number is n*(7*n - 5)//2.\n    Convention: n is a positive integer; n = 1 gives 1.\n    \"\"\"\n    return n * (7 * n - 5) // 2\n",
+    "prefinal_artifact": "def is_nonagonal(n):\n    \"\"\"Return the nth nonagonal (enneagonal) number.\n\n    The nth nonagonal (9-gonal) number is n*(7*n - 5)//2.\n    Convention: n is a positive integer; n = 1 gives 1.\n    \"\"\"\n    return n * (7 * n - 5) // 2\n",
+    "finalizer_changed": false,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 5,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "e834194f70b40474a0cc62f56a1c2e9eea32d25536f84203de8ecbb2e5d3b07d",
+      "5b39c771b1c9567fa585b672bd1f40ef03c035b5881218cc9d4f67bc9880c65e",
+      "1ee666c9f23fcf924957aefc56049077eab03f1acd05b8a79bc9a150f50aa4f3"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  }
+]

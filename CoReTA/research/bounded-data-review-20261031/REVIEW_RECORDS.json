@@ -1,0 +1,394 @@
+{
+  "date": "2026-10-31",
+  "kind": "ASSISTANT_TEXT_REVIEW_NOT_MODEL_RESULTS",
+  "independence": "none",
+  "D_n": 8,
+  "T_n": 12,
+  "full_context_cases": 12,
+  "verdict_counts_by_role": {
+    "D": {
+      "SUPPORTED_QUALIFIED": 5,
+      "UNSUPPORTED_BRIDGE": 1,
+      "SUPPORTED": 2
+    },
+    "T": {
+      "UNSUPPORTED_BRIDGE": 1,
+      "SUPPORTED_QUALIFIED": 4,
+      "ENTITY_CONFLICT": 1,
+      "SUPPORTED": 4,
+      "RELATION_CONFLICT": 1,
+      "SUBJECT_CONFLICT": 1
+    }
+  },
+  "records": [
+    {
+      "case": "D01",
+      "task_id": "2hop__123383_21417",
+      "role": "D",
+      "question": "When was Wesley Alba Sturges's institutional employer created?",
+      "reference_answer": "1843",
+      "verdict": "SUPPORTED_QUALIFIED",
+      "evidence_paragraphs": [
+        17,
+        15
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "P17含Yale与Miami两处任职；Yale Law School→1843可由P15支持，但雇主未限定时期。保留答案，记录指代限制。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "D02",
+      "task_id": "3hop1__478606_751065_78953",
+      "role": "D",
+      "question": "Where is the country that the owner of Virgin Holiday Cruises is from located on the map?",
+      "reference_answer": "Lying off the north - western coast of the European mainland",
+      "verdict": "UNSUPPORTED_BRIDGE",
+      "evidence_paragraphs": [
+        6,
+        5,
+        10
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "P6 owner为Virgin Group；P5谈Virgin Games在英国经营及品牌许可，不明确支持Virgin Group所属国家。P10支持英国地理部分；标注桥接不能视为已给定。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "D03",
+      "task_id": "2hop__663664_46366",
+      "role": "D",
+      "question": "Who sings with the performer of A Feelin' Like That on Every Storm?",
+      "reference_answer": "Co-writer Hillary Lindsey",
+      "verdict": "SUPPORTED_QUALIFIED",
+      "evidence_paragraphs": [
+        0,
+        18
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "P0给Gary Allan；P18给Hillary Lindsey伴唱但不再次写Gary Allan。按歌曲名可直接找到答案，不能据答对证明使用完整链。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "D04",
+      "task_id": "2hop__782778_777968",
+      "role": "D",
+      "question": "What is the capitol of the province where Artsvanik is located?",
+      "reference_answer": "Kapan",
+      "verdict": "SUPPORTED",
+      "evidence_paragraphs": [
+        5,
+        17
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "Artsvanik→Syunik Province→Kapan两关系明确。问句capitol视为可理解拼写，不改题。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "D05",
+      "task_id": "3hop1__75339_677201_90941",
+      "role": "D",
+      "question": "Who gifted the Statue of Liberty to the state which contains the location where the novel The Great Gatsby was set?",
+      "reference_answer": "the people of France",
+      "verdict": "SUPPORTED_QUALIFIED",
+      "evidence_paragraphs": [
+        6,
+        8,
+        14
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "Gatsby→Long Island→New York可接；P14明确赠送者people of France。实际文字受赠者为美国人民，问句称给州是宽泛表达；答案仍有支持，也存在只读Statue段捷径。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "D06",
+      "task_id": "2hop__153074_79404",
+      "role": "D",
+      "question": "How does one become a Justice of the Peace in the city that Yves Bouvier is from?",
+      "reference_answer": "appointed by the President of the Republic of Singapore",
+      "verdict": "SUPPORTED_QUALIFIED",
+      "evidence_paragraphs": [
+        18,
+        16
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "P18写Yves Bouvier于2009迁居Singapore；P16写新加坡任命方式。from若指居住地可接，不能当作已证明出生地；仅按给定旧文本核读，不作现行法律建议。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "D07",
+      "task_id": "2hop__65069_90450",
+      "role": "D",
+      "question": "Who was president when the state where the first Aldi opened in the US became a state?",
+      "reference_answer": "President James K. Polk",
+      "verdict": "SUPPORTED",
+      "evidence_paragraphs": [
+        17,
+        16
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "P17明确美国首店Iowa；P16明确Iowa入联法案由James K. Polk签署。1846州成立而非1976首店开业时间。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "D08",
+      "task_id": "2hop__136868_80243",
+      "role": "D",
+      "question": "What is the currency in the city in China that The Last Conflict is based in?",
+      "reference_answer": "Hong Kong dollar",
+      "verdict": "SUPPORTED_QUALIFIED",
+      "evidence_paragraphs": [
+        12,
+        4
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "P12称该片为Hong Kong film，P4写香港货币。一般地域指代支持答案；若based in专指剧情地点，则P12未明确交代。保留评分，不扩大成无条件剧情推断。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T01",
+      "task_id": "2hop__641879_47353",
+      "role": "T",
+      "question": "Who played the performer of Live at the Star Club, Hamburg in Walk the Line?",
+      "reference_answer": "Waylon Malloy Payne",
+      "verdict": "UNSUPPORTED_BRIDGE",
+      "evidence_paragraphs": [
+        9,
+        7
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "P9演出者Jerry Lee Lewis，P7仅Waylon Payne个人资料，未给电影Walk the Line扮演关系；全文P12/P15是歌曲I Walk the Line，不能补该关系。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T02",
+      "task_id": "2hop__179444_140822",
+      "role": "T",
+      "question": "Where can you find the show ESPN College Football on the original broadcaster of The Colbys?",
+      "reference_answer": "American Broadcasting Company",
+      "verdict": "SUPPORTED_QUALIFIED",
+      "evidence_paragraphs": [
+        3,
+        0
+      ],
+      "full_context_read": false,
+      "review_scope": "question/decomposition/labeled support",
+      "finding": "The Colbys→ABC、比赛由ABC播出关系明确；直接看节目标题/正文也可能答出，不能保证监督完整组合。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T03",
+      "task_id": "2hop__73879_439537",
+      "role": "T",
+      "question": "What record label does the singer of You'll Never Find belong to?",
+      "reference_answer": "Capitol Records",
+      "verdict": "SUPPORTED_QUALIFIED",
+      "evidence_paragraphs": [
+        3,
+        15
+      ],
+      "full_context_read": false,
+      "review_scope": "question/decomposition/labeled support",
+      "finding": "歌曲由Lou Rawls演唱，1962专辑由Capitol发行有支持；未限定时期的belong to不应被扩成其唯一/现任厂牌。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T04",
+      "task_id": "3hop1__566317_578030_41436",
+      "role": "T",
+      "question": "What portion of households in the city located in the same county James Glisson was born have only one person?",
+      "reference_answer": "29.7%",
+      "verdict": "ENTITY_CONFLICT",
+      "evidence_paragraphs": [
+        14,
+        5,
+        11
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "P14出生Jackson County, Florida；P5县法院在Jacksonville, Oregon；P11统计来自Jacksonville, Florida。同名县/城市跨州错接，不是有效同实体链。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T05",
+      "task_id": "2hop__774253_501351",
+      "role": "T",
+      "question": "Who founded the alma mater of Barnas Sears?",
+      "reference_answer": "James Manning",
+      "verdict": "SUPPORTED",
+      "evidence_paragraphs": [
+        5,
+        0
+      ],
+      "full_context_read": false,
+      "review_scope": "question/decomposition/labeled support",
+      "finding": "Barnas Sears毕业Brown，James Manning为Brown创办者之一；问题未要求唯一创办人，one of founders足够支持。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T06",
+      "task_id": "2hop__472785_16861",
+      "role": "T",
+      "question": "Which year did the founder of Regius Professor of Surgery die?",
+      "reference_answer": "1820",
+      "verdict": "SUPPORTED",
+      "evidence_paragraphs": [
+        13,
+        8
+      ],
+      "full_context_read": false,
+      "review_scope": "question/decomposition/labeled support",
+      "finding": "P13职位由King George III创设；P8虽标题Queen Victoria，正文明确George III死于1820。标题不同不等于错标。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T07",
+      "task_id": "2hop__48667_3315",
+      "role": "T",
+      "question": "How many seasons was the performer who wrote All I Want For Christmas is You a judge on American Idol?",
+      "reference_answer": "one",
+      "verdict": "SUPPORTED",
+      "evidence_paragraphs": [
+        5,
+        7
+      ],
+      "full_context_read": false,
+      "review_scope": "question/decomposition/labeled support",
+      "finding": "P5 performer兼作者Mariah Carey；P7明确她与Nicki Minaj都在一季后离开评委席。作者还有Walter，问句performer限定了目标。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T08",
+      "task_id": "2hop__607883_83687",
+      "role": "T",
+      "question": "What is the population of the California city where Cardinal Newman High School is located?",
+      "reference_answer": "175,155",
+      "verdict": "SUPPORTED",
+      "evidence_paragraphs": [
+        18,
+        2
+      ],
+      "full_context_read": false,
+      "review_scope": "question/decomposition/labeled support",
+      "finding": "学校位于Santa Rosa，P2明确2016估计人口175155；按给定年代数据支持，不将此数当当前人口。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T09",
+      "task_id": "2hop__130522_701819",
+      "role": "T",
+      "question": "What community is adjacent and southeast of the Riviere-Verte that is found in the same province as Butts Corner?",
+      "reference_answer": "Edmundston",
+      "verdict": "RELATION_CONFLICT",
+      "evidence_paragraphs": [
+        16,
+        4
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "Burtts Corner→New Brunswick无问题；P4说Rivière-Verte在Edmundston东南15公里，因此Edmundston在Rivière-Verte西北。组合问句要其东南，方向倒置，且15公里不证明接壤。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T10",
+      "task_id": "2hop__398903_872",
+      "role": "T",
+      "question": "Who was ordered to force a Tibetan assault into the birthplace of Lan Xing?",
+      "reference_answer": "Ming general Qu Neng",
+      "verdict": "SUPPORTED_QUALIFIED",
+      "evidence_paragraphs": [
+        0,
+        3
+      ],
+      "full_context_read": false,
+      "review_scope": "question/decomposition/labeled support",
+      "finding": "Lan Xing出生四川；P3明确Qu Neng受令repel assault into Sichuan。问句force assault措辞不自然，应按上下文抵御入侵理解，不能改成他发动入侵。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T11",
+      "task_id": "2hop__78247_383079",
+      "role": "T",
+      "question": "What instrument does the man who played the preacher in the movie Tommy play?",
+      "reference_answer": "violin",
+      "verdict": "SUBJECT_CONFLICT",
+      "evidence_paragraphs": [
+        11,
+        19
+      ],
+      "full_context_read": true,
+      "review_scope": "full candidate context and labeled support",
+      "finding": "P11 preacher为Eric Clapton；P19学习guitar/mandolin/violin的主语是Stevie Blacke，Eric仅为其听的音乐。不能推出Eric演奏violin；本轮不凭常识替换gold为guitar。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    },
+    {
+      "case": "T12",
+      "task_id": "2hop__71056_10984",
+      "role": "T",
+      "question": "In what year did the originator of the phrase elephant in the room start?",
+      "reference_answer": "1851",
+      "verdict": "SUPPORTED_QUALIFIED",
+      "evidence_paragraphs": [
+        6,
+        0
+      ],
+      "full_context_read": false,
+      "review_scope": "question/decomposition/labeled support",
+      "finding": "P6将首次记录归NYT，P0列NYT 1851。按该归属可得参考答案；first recorded use不等于证实发明者，originator表达宽泛，保留限制不作硬错误。",
+      "reviewer": "main_assistant",
+      "independent_human_label": false
+    }
+  ],
+  "training_use_overlay": {
+    "date": "2026-10-31",
+    "status": "REVIEW_CANDIDATE_NOT_ACTIVATED_NOT_TRAINED",
+    "original_training": "data\\expert-training-20261030-v1\\train.messages.jsonl",
+    "original_n": 1800,
+    "proposed_n": 1796,
+    "excluded_known_issue_ids": [
+      "2hop__641879_47353",
+      "3hop1__566317_578030_41436",
+      "2hop__130522_701819",
+      "2hop__78247_383079"
+    ],
+    "selection_basis": "Fixed-prefix text evidence, no model scores; only explicit bridge/entity/relation/subject issues excluded.",
+    "candidate_messages": "data\\expert-training-20261031-review-candidate\\train.messages.jsonl",
+    "validation_inputs": "data/expert-training-20261030-v1/validation.inputs.jsonl",
+    "validation_targets": "data/expert-training-20261030-v1/validation.targets.jsonl",
+    "limitations": [
+      "1796 is a known-issue-filtered candidate, not a fully audited clean dataset.",
+      "Source T/V/C/D/H assignments and official scoring unchanged; no excluded rows recycled into evaluation.",
+      "Only 12 training rows semantically examined; no corpus-wide defect rate inferred.",
+      "Use requires recording this candidate in the eventual run contract; active v0.5 not silently switched."
+    ]
+  },
+  "experimental_model_calls": 0,
+  "training_runs": 0,
+  "limits": "Fixed prefixes are not representative prevalence estimates; no human independent annotation performed."
+}

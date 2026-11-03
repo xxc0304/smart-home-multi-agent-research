@@ -1,0 +1,143 @@
+{
+  "tasks": [
+    {
+      "task_id": "gsm8k/train/604",
+      "family": "gsm8k",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "independent_refine": 1,
+        "independent_aggregate": 1,
+        "static_debate": 1,
+        "coreta_revision": 1
+      },
+      "statuses": {
+        "independent_refine": "completed",
+        "independent_aggregate": "completed",
+        "static_debate": "completed",
+        "coreta_revision": "completed"
+      }
+    },
+    {
+      "task_id": "gsm8k/train/7424",
+      "family": "gsm8k",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "independent_aggregate": 1,
+        "independent_refine": 1,
+        "coreta_revision": 1,
+        "static_debate": 1
+      },
+      "statuses": {
+        "independent_aggregate": "completed",
+        "independent_refine": "completed",
+        "coreta_revision": "completed",
+        "static_debate": "completed"
+      }
+    },
+    {
+      "task_id": "gsm8k/train/6133",
+      "family": "gsm8k",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "independent_aggregate": 1,
+        "coreta_revision": 1,
+        "independent_refine": 1,
+        "static_debate": 1
+      },
+      "statuses": {
+        "independent_aggregate": "completed",
+        "coreta_revision": "completed",
+        "independent_refine": "completed",
+        "static_debate": "completed"
+      }
+    },
+    {
+      "task_id": "mbpp/train/623",
+      "family": "mbpp",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "coreta_revision": 1,
+        "independent_refine": 1,
+        "independent_aggregate": 1,
+        "static_debate": 1
+      },
+      "statuses": {
+        "coreta_revision": "completed",
+        "independent_refine": "completed",
+        "independent_aggregate": "completed",
+        "static_debate": "completed"
+      }
+    },
+    {
+      "task_id": "mbpp/train/781",
+      "family": "mbpp",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "independent_aggregate": 1,
+        "coreta_revision": 1,
+        "independent_refine": 1,
+        "static_debate": 1
+      },
+      "statuses": {
+        "independent_aggregate": "completed",
+        "coreta_revision": "completed",
+        "independent_refine": "completed",
+        "static_debate": "completed"
+      }
+    },
+    {
+      "task_id": "mbpp/train/641",
+      "family": "mbpp",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "independent_aggregate": 1,
+        "static_debate": 1,
+        "independent_refine": 1,
+        "coreta_revision": 1
+      },
+      "statuses": {
+        "independent_aggregate": "completed",
+        "static_debate": "completed",
+        "independent_refine": "completed",
+        "coreta_revision": "completed"
+      }
+    }
+  ],
+  "job_count": 24,
+  "shared_initials_verified": true,
+  "normal_calls": 192,
+  "http_attempts": 139,
+  "format_repairs": 1,
+  "scoring_image": "sha256:841f8763c03c5cc688a811a90e13e82541d3350cdaccf3bba64aefb627be5cf6",
+  "scope": "six manually reviewed development tasks, one seed; no population or equal-cost claim"
+}

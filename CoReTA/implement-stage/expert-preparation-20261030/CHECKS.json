@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-30",
+  "commands": [
+    {
+      "command": ".venv/Scripts/python.exe tools/prepare_expert_training.py",
+      "exit_code": 0,
+      "n_train": 1800,
+      "n_validation": 200
+    },
+    {
+      "command": ".venv/Scripts/python.exe tools/prepare_expert_discussion.py --verify",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m unittest discover -s tests -p test_expert*.py -v",
+      "exit_code": 0,
+      "tests": 35
+    }
+  ],
+  "experimental_model_calls": 0,
+  "training_runs": 0,
+  "review_agent_calls": 2,
+  "assumption_sweep": {
+    "rounds": 2,
+    "semantic_undeclared_final": 0,
+    "review_independence": "same-family",
+    "acceptance_status": "provisional"
+  },
+  "scope": "Offline preparation only; no real expert advantage or team effect established."
+}

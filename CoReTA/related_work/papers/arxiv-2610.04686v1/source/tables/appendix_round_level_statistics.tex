@@ -1,0 +1,168 @@
+This appendix collects the full round-level tables behind
+\figref{fig:r5_debate_dynamics_label_based} and
+\figref{fig:r5_debate_dynamics_label_free}. The tables expand the mechanism
+diagnostics used in \secref{sec:experiments} and \secref{sec:supply}. They ask two
+questions: whether the selected agents supply correct proposals that vote
+misses, and whether the matched readout converts that supply into final
+accuracy without excessive damage.
+
+\paragraph{Metrics and Reading Guide.}
+Vote is the majority-vote accuracy on the proposal multiset at a given round.
+Proposal Hit is the probability that at least one visible proposal at that
+round contains the correct answer. Headroom $H$ is the gap between these two
+events: it counts cases where the proposal multiset contains the correct answer
+but majority vote misses it. Final is the end-of-run
+\texttt{vote\_then\_judge\_tiebreak} accuracy. Gain $G$ is Final minus Vote.
+Recovery $R$ is the final accuracy on headroom instances. New Correctness $I$
+is the final accuracy on instances where the visible proposal multiset did not
+contain the correct answer and Vote was wrong. Damage $L$ is the failure rate
+on instances where Vote is already correct. Thus Proposal Hit and Headroom
+diagnose proposal supply, while Recovery, New Correctness, and Damage diagnose
+readout conversion.
+
+These definitions make the appendix a supply-readout analysis rather than a
+second main-results table. Higher Proposal Hit or Headroom means that the
+selected agents surface more correct proposals. Higher Recovery means that the
+readout converts more surfaced correct minorities into final answers. Lower
+Damage means that the readout preserves cases already solved by majority vote.
+New Correctness tracks gains not explained by the proposal-hit supply at the
+chosen round. Final accuracy combines these effects, so it can hide whether a
+gain comes from better proposal supply, better readout conversion, or lower
+damage.
+
+The main pattern is that useful proposal supply appears early and then contracts
+as debate moves toward consensus. At R0, all four debate societies have
+7--8 points of recoverable headroom on average. By R5, the remaining headroom
+falls to about one point. This supports the fixed-initial-proposal view in
+\secref{sec:headroom_lvd}: the society often surfaces correct minorities before
+interaction, and later rounds can reduce the set of alternatives even when vote
+accuracy improves. Debate gains therefore depend on recovering useful minority
+answers before proposal-hit coverage collapses.
+
+The recovery and damage columns show why higher proposal-hit supply is not
+enough by itself. For example, AC-Greedy Debate has the highest average R0
+proposal-hit rate, 84.93\%, but its final lift over the R0 vote is 1.64 points.
+SC-Greedy Debate has lower average R0 proposal-hit rate, 83.88\%, but larger
+average lift, 2.48 points, because its starting vote is lower and more of its
+gain comes from converting missed proposals. These differences are why the main
+text reports headroom, recovery, and damage rather than final accuracy alone.
+
+\subsubsection{Average Recovery Diagnostics}
+
+\begin{table}[t]
+\centering
+\caption{Round-level recovery diagnostics averaged over the five benchmarks.
+For each round, Vote and Hit are the round-specific majority-vote and
+proposal-hit accuracies, while Final is the end-of-run
+\texttt{vote\_then\_judge\_tiebreak} accuracy. We define $H=P-V$, $G=D-V$,
+$\rho=G/H$, $R=\Pr(D=1\mid P=1,V=0)$,
+$I=\Pr(D=1\mid P=0,V=0)$, and $L=\Pr(D=0\mid V=1)$, where $D$ is the final
+decision. All values except $\rho$ are percentages; averages are unweighted
+over benchmarks.}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Method & Round & Vote & Hit & Final & $H$ & $G$ & $\rho$ & $R$ & $I$ & $L$ \\
+\midrule
+Vanilla Debate & R0 & 75.65 & 83.03 & 77.92 & 7.39 & 2.27 & 0.31 & 53.49 & 9.94 & 5.00 \\
+ & R1 & 77.85 & 85.05 & 77.92 & 7.20 & 0.07 & 0.01 & 43.10 & 1.23 & 4.25 \\
+ & R2 & 77.84 & 81.86 & 77.92 & 4.02 & 0.08 & 0.02 & 24.33 & 0.14 & 1.58 \\
+ & R3 & 78.05 & 80.07 & 77.92 & 2.03 & -0.13 & -0.06 & 43.39 & 0.60 & 1.37 \\
+ & R4 & 78.13 & 79.04 & 77.92 & 0.92 & -0.21 & -0.23 & 38.89 & 0.13 & 1.08 \\
+ & R5 & 77.99 & 78.98 & 77.92 & 0.99 & -0.08 & -0.08 & 10.00 & 0.13 & 0.33 \\
+\midrule
+Top-4 Debate & R0 & 76.25 & 84.11 & 78.28 & 7.87 & 2.03 & 0.26 & 40.88 & 7.26 & 4.53 \\
+ & R1 & 78.51 & 85.15 & 78.28 & 6.64 & -0.23 & -0.03 & 29.46 & 0.38 & 3.67 \\
+ & R2 & 78.72 & 82.22 & 78.28 & 3.51 & -0.44 & -0.13 & 28.94 & 0.48 & 2.16 \\
+ & R3 & 78.30 & 80.93 & 78.28 & 2.63 & -0.02 & -0.01 & 30.09 & 0.00 & 1.18 \\
+ & R4 & 78.11 & 79.66 & 78.28 & 1.56 & 0.17 & 0.11 & 42.93 & 0.00 & 0.73 \\
+ & R5 & 78.16 & 79.27 & 78.28 & 1.11 & 0.11 & 0.10 & 17.78 & 0.00 & 0.25 \\
+\midrule
+AC-Greedy Debate & R0 & 76.84 & 84.93 & 78.48 & 8.09 & 1.64 & 0.20 & 48.94 & 7.70 & 6.01 \\
+ & R1 & 78.63 & 85.72 & 78.48 & 7.09 & -0.15 & -0.02 & 34.76 & 1.68 & 4.23 \\
+ & R2 & 78.43 & 82.49 & 78.48 & 4.06 & 0.06 & 0.01 & 45.25 & 0.40 & 2.46 \\
+ & R3 & 78.73 & 80.84 & 78.48 & 2.10 & -0.25 & -0.12 & 37.24 & 0.00 & 1.58 \\
+ & R4 & 78.50 & 79.97 & 78.48 & 1.47 & -0.02 & -0.01 & 39.44 & 0.00 & 0.64 \\
+ & R5 & 78.41 & 79.60 & 78.48 & 1.19 & 0.07 & 0.06 & 32.00 & 0.00 & 0.11 \\
+\midrule
+SC-Greedy Debate & R0 & 75.64 & 83.88 & 78.12 & 8.23 & 2.48 & 0.30 & 48.52 & 7.20 & 5.34 \\
+ & R1 & 77.37 & 85.35 & 78.12 & 7.98 & 0.75 & 0.09 & 34.76 & 1.45 & 3.55 \\
+ & R2 & 78.32 & 82.25 & 78.12 & 3.93 & -0.20 & -0.05 & 25.29 & 0.00 & 2.58 \\
+ & R3 & 78.33 & 80.42 & 78.12 & 2.09 & -0.21 & -0.10 & 29.56 & 0.00 & 1.37 \\
+ & R4 & 77.69 & 79.65 & 78.12 & 1.97 & 0.43 & 0.22 & 24.71 & 0.00 & 0.42 \\
+ & R5 & 78.22 & 79.19 & 78.12 & 0.97 & -0.10 & -0.10 & 6.67 & 0.00 & 0.26 \\
+\bottomrule
+\end{tabular}
+}
+\label{tab:round_recovery_diagnostics}
+\end{table}
+
+\paragraph{Interpretation.}
+\tabref{tab:round_recovery_diagnostics} separates proposal supply from readout
+conversion. Initial headroom is substantial for every method, which means the
+selected societies surface correct answers that majority vote does not extract.
+However, recovery falls sharply after the first few rounds because debate
+compresses the proposal set. Damage also falls over rounds, since fewer
+vote-correct cases are changed once the agents converge. New Correctness is
+largest at R0 and becomes small after the debate trace has mostly converged,
+which means most final gains are explained by surfaced proposal supply rather
+than late invention of new correct answers. The tradeoff is
+therefore not monotone: later rounds can make the majority more stable, but
+they can also remove the minority alternatives that the readout needs to
+recover.
+
+\subsubsection{Five-Round New-Seed Debate Results}
+
+\begin{table}[t]
+\centering
+\caption{Five-round debate results for the new seed teams. Final is accuracy
+after \texttt{vote\_then\_judge\_tiebreak}; Lift is Final minus Init Vote.
+Bold marks the best final accuracy within each dataset. Average rows report the
+unweighted mean across the five benchmarks.}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Dataset & Method & N & Init Vote & R5 Vote & Final & Init Hit & R5 Hit & Lift & Judge Ties \\
+\midrule
+MATH500 & Vanilla Debate & 300 & 91.33 & 91.33 & 91.33 & 93.33 & 91.67 & +0.00 & 1 \\
+MATH500 & AC-Greedy Debate & 300 & 91.33 & 91.33 & 91.67 & 94.33 & 91.67 & +0.33 & 2 \\
+MATH500 & SC-Greedy Debate & 300 & 92.00 & 92.00 & \textbf{92.00} & 93.67 & 92.67 & +0.00 & 0 \\
+OlympiadBench & Vanilla Debate & 474 & 80.38 & 81.65 & 81.22 & 83.54 & 82.28 & +0.84 & 7 \\
+OlympiadBench & AC-Greedy Debate & 474 & 79.11 & 81.43 & \textbf{81.43} & 82.91 & 81.86 & +2.32 & 7 \\
+OlympiadBench & SC-Greedy Debate & 474 & 80.59 & 80.59 & 80.80 & 83.33 & 81.22 & +0.21 & 5 \\
+AMC12 & Vanilla Debate & 739 & 91.07 & 92.96 & \textbf{92.96} & 94.32 & 93.37 & +1.89 & 4 \\
+AMC12 & AC-Greedy Debate & 739 & 90.53 & 91.88 & 91.61 & 95.13 & 92.83 & +1.08 & 9 \\
+AMC12 & SC-Greedy Debate & 739 & 89.85 & 92.02 & 91.88 & 93.91 & 92.56 & +2.03 & 2 \\
+GPQA & Vanilla Debate & 346 & 47.11 & 52.02 & 51.73 & 67.63 & 54.91 & +4.62 & 4 \\
+GPQA & AC-Greedy Debate & 346 & 48.55 & 51.73 & \textbf{52.02} & 67.63 & 54.62 & +3.47 & 3 \\
+GPQA & SC-Greedy Debate & 346 & 47.11 & 51.16 & 50.58 & 66.47 & 53.18 & +3.47 & 4 \\
+MMLU-Redux & Vanilla Debate & 300 & 68.33 & 72.00 & 72.33 & 76.33 & 72.67 & +4.00 & 2 \\
+MMLU-Redux & AC-Greedy Debate & 300 & 74.67 & 75.67 & \textbf{75.67} & 84.67 & 77.00 & +1.00 & 1 \\
+MMLU-Redux & SC-Greedy Debate & 300 & 68.67 & 75.33 & 75.33 & 82.00 & 76.33 & +6.67 & 2 \\
+\midrule
+Average & Vanilla Debate & -- & 75.65 & 77.99 & 77.92 & 83.03 & 78.98 & +2.27 & 3.6 \\
+Average & AC-Greedy Debate & -- & 76.84 & 78.41 & \textbf{78.48} & 84.93 & 79.60 & +1.64 & 4.4 \\
+Average & SC-Greedy Debate & -- & 75.64 & 78.22 & 78.12 & 83.88 & 79.19 & +2.48 & 2.6 \\
+\bottomrule
+\end{tabular}
+}
+\label{tab:r5_new_seed_debate}
+\end{table}
+
+\paragraph{Interpretation.}
+\tabref{tab:r5_new_seed_debate} shows that the same mechanism appears at the
+dataset level. On GPQA and MMLU-Redux, initial proposal-hit rates are much
+higher than initial vote accuracy, and debate produces the largest lifts. On
+MATH500 and AMC12, the initial vote is already high, so the available room for
+final improvement is smaller even when proposal-hit coverage is high. This is
+consistent with \propref{prop:recovery_damage_decomposition}: final gain is
+largest when there is recoverable headroom and the readout converts it without
+large damage.
+
+The construction methods also behave differently across datasets. AC-Greedy
+Debate gives the best average final accuracy, but SC-Greedy Debate gives the
+largest average lift from its own initial vote. This supports the role of
+label-free coverage as a practical supply constructor, while also showing why
+the supervised construction remains a useful reference.

@@ -1,0 +1,128 @@
+{
+  "kind": "scripted_load_audit_not_model_quality",
+  "network_requests": 0,
+  "profiles": [
+    {
+      "task_id": "hb-dev-005",
+      "method": "ground_access_only_v2",
+      "new_issues_per_check": 0,
+      "status": "completed",
+      "calls": 25,
+      "max_input_tokens": 14643,
+      "max_output_ratio": 0.24951171875,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    },
+    {
+      "task_id": "hb-dev-005",
+      "method": "ground_issue_loop_v2",
+      "new_issues_per_check": 0,
+      "status": "completed",
+      "calls": 25,
+      "max_input_tokens": 15279,
+      "max_output_ratio": 0.24951171875,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    },
+    {
+      "task_id": "hb-dev-005",
+      "method": "ground_issue_loop_v2",
+      "new_issues_per_check": 1,
+      "status": "completed",
+      "calls": 25,
+      "max_input_tokens": 18175,
+      "max_output_ratio": 0.24951171875,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    },
+    {
+      "task_id": "hb-dev-005",
+      "method": "ground_issue_loop_v2",
+      "new_issues_per_check": 3,
+      "status": "completed",
+      "calls": 25,
+      "max_input_tokens": 24213,
+      "max_output_ratio": 0.29931640625,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    },
+    {
+      "task_id": "hb-dev-005",
+      "method": "ground_issue_loop_v2",
+      "new_issues_per_check": 5,
+      "status": "completed",
+      "calls": 25,
+      "max_input_tokens": 30251,
+      "max_output_ratio": 0.48974609375,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    },
+    {
+      "task_id": "hb-dev-006",
+      "method": "ground_access_only_v2",
+      "new_issues_per_check": 0,
+      "status": "completed",
+      "calls": 16,
+      "max_input_tokens": 9835,
+      "max_output_ratio": 0.195556640625,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    },
+    {
+      "task_id": "hb-dev-006",
+      "method": "ground_issue_loop_v2",
+      "new_issues_per_check": 0,
+      "status": "completed",
+      "calls": 16,
+      "max_input_tokens": 10429,
+      "max_output_ratio": 0.195556640625,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    },
+    {
+      "task_id": "hb-dev-006",
+      "method": "ground_issue_loop_v2",
+      "new_issues_per_check": 1,
+      "status": "completed",
+      "calls": 16,
+      "max_input_tokens": 12087,
+      "max_output_ratio": 0.195556640625,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    },
+    {
+      "task_id": "hb-dev-006",
+      "method": "ground_issue_loop_v2",
+      "new_issues_per_check": 3,
+      "status": "completed",
+      "calls": 16,
+      "max_input_tokens": 15403,
+      "max_output_ratio": 0.2421875,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    },
+    {
+      "task_id": "hb-dev-006",
+      "method": "ground_issue_loop_v2",
+      "new_issues_per_check": 5,
+      "status": "completed",
+      "calls": 16,
+      "max_input_tokens": 18719,
+      "max_output_ratio": 0.39453125,
+      "exceeded_stages": [],
+      "error": null,
+      "pass_within_caps": true
+    }
+  ],
+  "all_profiles_pass": true,
+  "limits": "Synthetic concise issue/recheck replies with real historical revision text; not a universal length bound or proof of live JSON compatibility. Historical revisions used only offline, never supplied to the live comparison."
+}

@@ -1,0 +1,218 @@
+{
+  "scope": "two preselected engineering tasks; not a comparative effectiveness experiment",
+  "runs": [
+    {
+      "run_id": "coreta-5cbe788f0ea8",
+      "task_id": "gsm8k/train/6388",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 6,
+      "errors": [],
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\live-integration-20261019\\math-attempt-01",
+      "count_calibration": [
+        {
+          "attempt": 1,
+          "estimate": 1267,
+          "input_tokens": 940,
+          "output_tokens": 451,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 2,
+          "estimate": 1267,
+          "input_tokens": 940,
+          "output_tokens": 521,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 3,
+          "estimate": 1267,
+          "input_tokens": 940,
+          "output_tokens": 476,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 4,
+          "estimate": 3266,
+          "input_tokens": 2720,
+          "output_tokens": 305,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 5,
+          "estimate": 6648,
+          "input_tokens": 5883,
+          "output_tokens": 792,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 6,
+          "estimate": 4390,
+          "input_tokens": 3716,
+          "output_tokens": 232,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        }
+      ],
+      "log_sha256": {
+        "events.jsonl": "068274f55be47a1db783677cc90ba967125e2afceb3ce8bf55ee5b78d0b7a030",
+        "manifest.json": "4abd490e53261481071b9535f25d5793d54facc004631060b90a7a715772b416",
+        "parsed.jsonl": "bb3847acdadbc698a86ce2a844fc16b1e7b4e014d32b2eecaf836bcc2b6c716e",
+        "public_task.json": "8dc8df593c1bf1c7029690b33bfad33f5dd9b9e576120fbd1ed267b06d527e4c",
+        "requests.jsonl": "b09eabcf3ff7cfd4be0cc1f4c5089aebeb72d1f2ed89c408505dbb078fa229f9",
+        "responses.jsonl": "b6152a1f0b9866c41a309778ec66d37c83f6339d86f063c4c36a9482e8432c0e",
+        "result.json": "23f17807cccd455a54d90840ad9d62816c3ff330bddce162879086e22ea24b72"
+      }
+    },
+    {
+      "run_id": "coreta-0b5e91d4ed1a",
+      "task_id": "mbpp/train/802",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 1,
+      "http_attempts": 7,
+      "errors": [],
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\live-integration-20261019\\code-attempt-01",
+      "count_calibration": [
+        {
+          "attempt": 1,
+          "estimate": 1264,
+          "input_tokens": 934,
+          "output_tokens": 557,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 2,
+          "estimate": 1264,
+          "input_tokens": 934,
+          "output_tokens": 593,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 3,
+          "estimate": 1264,
+          "input_tokens": 934,
+          "output_tokens": 661,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 4,
+          "estimate": 3629,
+          "input_tokens": 3069,
+          "output_tokens": 647,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 5,
+          "estimate": 4759,
+          "input_tokens": 4067,
+          "output_tokens": 762,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 6,
+          "estimate": 7514,
+          "input_tokens": 6728,
+          "output_tokens": 1114,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        },
+        {
+          "attempt": 7,
+          "estimate": 5556,
+          "input_tokens": 4840,
+          "output_tokens": 332,
+          "returned_model": "deepseek-flash",
+          "response_status": "completed"
+        }
+      ],
+      "log_sha256": {
+        "events.jsonl": "27a1d130837949ce87a4ea76807a502fada58413286f275697eb3519f028a5a5",
+        "manifest.json": "5466228ebd30d2cf971459e7f2579803bad602d536907bf9b2b7351f2af7824a",
+        "parsed.jsonl": "10246114e0b6eff79418a3b7ad670a689160cffb43ce2417006e09f4623c605e",
+        "public_task.json": "a86adb23cee7b54f7444c9dc6d3db8c1620b62573ddb5e99faac44171811e524",
+        "requests.jsonl": "1aaabc8a53dbbad2d132e39774314b11ba3a07972a752ce50bfb061f79ebe233",
+        "responses.jsonl": "92953c9b6f8e0cd3d06a01158703807c2e413ba02f1319c84cbe80587bceaf88",
+        "result.json": "f209c40b8ea264b55eac9bf9b2fdba9a1d1eacb5178104adb13dbd482fff2e77"
+      }
+    }
+  ],
+  "math_scores": [
+    {
+      "task_id": "gsm8k/train/6388",
+      "status": "scored",
+      "score": 1,
+      "attempts": 1,
+      "diagnostic_only": false,
+      "math_verify_version": "0.9.0",
+      "system": "coreta",
+      "seed": 17,
+      "artifact_field": "prefinal_artifact",
+      "trajectory_status": "completed"
+    },
+    {
+      "task_id": "gsm8k/train/6388",
+      "status": "scored",
+      "score": 1,
+      "attempts": 1,
+      "diagnostic_only": false,
+      "math_verify_version": "0.9.0",
+      "system": "coreta",
+      "seed": 17,
+      "artifact_field": "artifact",
+      "trajectory_status": "completed"
+    }
+  ],
+  "code_scores": {
+    "prefinal_artifact": {
+      "status": "completed",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "task_score": {
+        "task_id": "mbpp/train/802",
+        "status": "candidate_failed",
+        "score": 0,
+        "error_type": "AssertionError"
+      }
+    },
+    "artifact": {
+      "status": "completed",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "task_score": {
+        "task_id": "mbpp/train/802",
+        "status": "candidate_failed",
+        "score": 0,
+        "error_type": "AssertionError"
+      }
+    }
+  },
+  "http_attempts_total": 13,
+  "usage_totals": {
+    "input_tokens": 36645,
+    "output_tokens": 7443
+  },
+  "tokenizer_source": {
+    "repo": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "revision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/tokenizer.json"
+  },
+  "tokenizer_sha256": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b"
+}

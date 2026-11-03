@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-29",
+  "local_runs": [
+    {
+      "folder": "runs/imp-adaptation-live-20261026-r1",
+      "progress_rows": 64,
+      "request_records": 64,
+      "response_records": 64,
+      "task_or_case_ids": [
+        "030",
+        "033"
+      ],
+      "benchmark_task_ids": [
+        "030",
+        "033"
+      ],
+      "core_field_failures": [],
+      "provider_model_aliases": [
+        "deepseek-flash"
+      ],
+      "scope": "Structural and core-text correspondence only; not a causal or semantic validity audit"
+    },
+    {
+      "folder": "runs/imp-confirmation-live-20261026-r1",
+      "progress_rows": 74,
+      "request_records": 74,
+      "response_records": 74,
+      "task_or_case_ids": [
+        "007",
+        "008"
+      ],
+      "benchmark_task_ids": [
+        "007",
+        "008"
+      ],
+      "core_field_failures": [],
+      "provider_model_aliases": [
+        "deepseek-flash"
+      ],
+      "scope": "Structural and core-text correspondence only; not a causal or semantic validity audit"
+    },
+    {
+      "folder": "runs/local-reconstruction-live-20261026-r1",
+      "progress_rows": 32,
+      "request_records": 32,
+      "response_records": 32,
+      "task_or_case_ids": [
+        "004-age-09",
+        "004-age-10",
+        "009-beds-06",
+        "009-beds-11",
+        "011-time-18",
+        "011-time-24",
+        "023-road-89",
+        "023-road-95"
+      ],
+      "benchmark_task_ids": [
+        "004",
+        "009",
+        "011",
+        "023"
+      ],
+      "core_field_failures": [],
+      "provider_model_aliases": [
+        "deepseek-flash"
+      ],
+      "scope": "Structural and core-text correspondence only; not a causal or semantic validity audit"
+    }
+  ],
+  "author_files": {
+    "gemini-2.5-pro": {
+      "file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+      "runs": 570,
+      "scenarios": 57,
+      "rows_with_initial_rounds_final": 570,
+      "round_count_distribution": {
+        "15": 570
+      },
+      "019_count": 10,
+      "prompt_field_present_in_every_message": true,
+      "top_level_run_keys": [
+        "final_votes",
+        "initial_votes",
+        "majority_vote",
+        "model",
+        "num_agents",
+        "num_special",
+        "rounds",
+        "scenario",
+        "timestamp"
+      ]
+    },
+    "gpt-4.1": {
+      "file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+      "runs": 570,
+      "scenarios": 57,
+      "rows_with_initial_rounds_final": 570,
+      "round_count_distribution": {
+        "15": 570
+      },
+      "019_count": 10,
+      "prompt_field_present_in_every_message": true,
+      "top_level_run_keys": [
+        "final_votes",
+        "initial_votes",
+        "majority_vote",
+        "model",
+        "num_agents",
+        "num_special",
+        "rounds",
+        "scenario",
+        "timestamp"
+      ]
+    }
+  },
+  "case_count": 8,
+  "unique_task_ids": [
+    "004",
+    "007",
+    "008",
+    "019",
+    "023",
+    "030",
+    "033"
+  ],
+  "case_specific_checks": {
+    "C04": {
+      "slots": [
+        29,
+        32
+      ],
+      "packet_keys": [
+        "information_available",
+        "messages_from_other_participants",
+        "previous_answer",
+        "task"
+      ],
+      "different_packet_keys": [
+        "previous_answer"
+      ]
+    }
+  },
+  "selection": "Purposeful, non-blind starter cases for schema/analysis development; not a representative sample or independent annotation",
+  "new_model_calls": 0
+}

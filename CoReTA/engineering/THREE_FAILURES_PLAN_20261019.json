@@ -1,0 +1,153 @@
+{
+  "version": "three-failures-diagnostic/1",
+  "tasks": [
+    {
+      "task_id": "gsm8k/train/5134",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a1fad4b7d548b191.json",
+      "sha256": "114b253097f6e31b394232181d2e558380d16eac618791f313e1257b4fc09976"
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\fe7734dbe7e75390.json",
+      "sha256": "67f89b3d12e10b6000845487d5464c21bb9b1ff5c3fa0f8dc213154043a4cbd0"
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a6207bc5735be1d3.json",
+      "sha256": "a86adb23cee7b54f7444c9dc6d3db8c1620b62573ddb5e99faac44171811e524"
+    }
+  ],
+  "jobs": [
+    {
+      "task_id": "gsm8k/train/5134",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a1fad4b7d548b191.json",
+      "sha256": "114b253097f6e31b394232181d2e558380d16eac618791f313e1257b4fc09976",
+      "system": "independent_refine",
+      "seed": 17,
+      "job_id": "1e3ebcc50855ebee"
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a1fad4b7d548b191.json",
+      "sha256": "114b253097f6e31b394232181d2e558380d16eac618791f313e1257b4fc09976",
+      "system": "static_debate",
+      "seed": 17,
+      "job_id": "5bc2562d657488ed"
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a1fad4b7d548b191.json",
+      "sha256": "114b253097f6e31b394232181d2e558380d16eac618791f313e1257b4fc09976",
+      "system": "coreta_revision",
+      "seed": 17,
+      "job_id": "07f32134d65676a8"
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a1fad4b7d548b191.json",
+      "sha256": "114b253097f6e31b394232181d2e558380d16eac618791f313e1257b4fc09976",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "job_id": "002dee6c1e1e4d79"
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\fe7734dbe7e75390.json",
+      "sha256": "67f89b3d12e10b6000845487d5464c21bb9b1ff5c3fa0f8dc213154043a4cbd0",
+      "system": "independent_refine",
+      "seed": 17,
+      "job_id": "b1a28d1cd4409058"
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\fe7734dbe7e75390.json",
+      "sha256": "67f89b3d12e10b6000845487d5464c21bb9b1ff5c3fa0f8dc213154043a4cbd0",
+      "system": "static_debate",
+      "seed": 17,
+      "job_id": "6ece3baecf634d8d"
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\fe7734dbe7e75390.json",
+      "sha256": "67f89b3d12e10b6000845487d5464c21bb9b1ff5c3fa0f8dc213154043a4cbd0",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "job_id": "70fc0869c58f82a5"
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\fe7734dbe7e75390.json",
+      "sha256": "67f89b3d12e10b6000845487d5464c21bb9b1ff5c3fa0f8dc213154043a4cbd0",
+      "system": "coreta_revision",
+      "seed": 17,
+      "job_id": "33aa7e8b182d7541"
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a6207bc5735be1d3.json",
+      "sha256": "a86adb23cee7b54f7444c9dc6d3db8c1620b62573ddb5e99faac44171811e524",
+      "system": "static_debate",
+      "seed": 17,
+      "job_id": "59d6e64a2d2bb376"
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a6207bc5735be1d3.json",
+      "sha256": "a86adb23cee7b54f7444c9dc6d3db8c1620b62573ddb5e99faac44171811e524",
+      "system": "coreta_revision",
+      "seed": 17,
+      "job_id": "7b3cd1dfbb8e79f5"
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a6207bc5735be1d3.json",
+      "sha256": "a86adb23cee7b54f7444c9dc6d3db8c1620b62573ddb5e99faac44171811e524",
+      "system": "independent_refine",
+      "seed": 17,
+      "job_id": "df29e11e2f1fb0e9"
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a6207bc5735be1d3.json",
+      "sha256": "a86adb23cee7b54f7444c9dc6d3db8c1620b62573ddb5e99faac44171811e524",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "job_id": "7586ce0dd6f5d5da"
+    }
+  ],
+  "selection": "the three previously failed team tasks explicitly requested by user; no task edits",
+  "scope": "original-score diagnostic with known contract questions; not an effectiveness estimate",
+  "normal_call_upper_bound": 114,
+  "failure_policy": "retain protocol degradation and continue other frozen jobs; stop on implementation failure; no automatic retry or protocol changes",
+  "source_hashes": {
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\revision.py": "5d14789e94bc6e673fe04d40845d31b3bad8426a6229ae554ceb9243d4ea7fd1",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\run_revision.py": "380d27cdd658224a63dc45826c622d2bf4d4c2751c8be344cf8d0b2cc1f0283e",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\model_client.py": "5da91ab801ff8aa0c7bc26d3653d151be2dd0957f70c9331c970080e583088a3",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\schemas.py": "b29cfd895afa443d59296687dee6ae17d6174a6e4d4cbf4b8790dcaea7a5486d",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\state.py": "e47e8c801cbba4f30dbd8aeead00705ee77db4a9eb7e339d8b6019b6176a0aec",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\revision_prompts.json": "c6ef7fbdb6de03f047a3507ccdb8efd2650a4f892f1316fd658fb4093e94b6dc",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\v0.3\\coreta.schema.json": "963552ce9c8463d17191645dbe90c07b5c0873a3a409c18bad4aab6182d15c69",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\config\\deepseek_flash.json": "e8b175e535373c3c401d630b14ed78fd156f39d4e7ab9c23071243c28981393a",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\tokenizer-v4.1-flash-1017\\tokenizer.json": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\tasks.json": "6bf00186c6e06d26a45238b9816b8dac536da8abd9f8234199bd813386a8bd1a",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\evaluation\\math_gold.json": "e974f167c7d60d0c3baa69c27072ba1e90893ef73371914fa5d7caa86c62c3c3",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\evaluation\\mbpp_tests.json": "c34bcaac2df04769ee14daa5afe29bc429047e746bc02472fef9ee161035c961",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\tools\\retest_three_failures.py": "8d9284e347191679a8d507294aad086e473bce464cf3df91ce3887ff565519c0"
+  },
+  "output": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\three-failures-retest-20261019"
+}

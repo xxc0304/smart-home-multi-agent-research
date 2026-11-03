@@ -1,0 +1,20 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "round_budget": 2,
+  "rounds_used": 2,
+  "round1": "SILENT_ASSUMPTION_SWEEP_ROUND1.json",
+  "round2_status": "SWEEP_UNAVAILABLE_FINAL_JSON",
+  "round2_final_message_verbatim": "Agent errored: You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 11:15 PM.\n\nThis agent's turn failed. If you still need this agent, use the available collaboration tools to give it another task.",
+  "round2_received_messages_verbatim": [
+    "Current runner fixes and v3 artifacts verify the early-stop and KeyboardInterrupt issues are resolved. One small ledger consistency item remains: A10 still says the conditions/missing-input guidance goes to 'all arms', but DiscussionFlow replaces TOOL_GUIDE and has no W/input tools. Scope that phrase to arms with W support, as you did A04. No further substantive blocker found.",
+    "Verification complete: v3 failure artifacts all retain 12 planned rows and null scores; keyboard_second has status stopped, two attempts, unknown_usage=true, 11 not_started rows, first sibling raw/readable preserved and second missing, plus an explicit interrupted usage record. Pending only the A10 wording adjustment before I emit the final JSON; it is descriptive and not a blocking code defect."
+  ],
+  "executor_disposition": {
+    "round1_findings": "Both fixed and declared A14-A15.",
+    "round2_findings": "Unstarted-row export, KeyboardInterrupt preservation, A04 and A10 wording fixed; A18-A19 declared.",
+    "post_review_executor_only": "A10 wording, separate three-arm offline scoring and frozen-reference checks, explicit preflight gate; final 50 checks and 84-slot qualification passed.",
+    "clean_verdict_claimed": false,
+    "additional_model_calls": 0
+  }
+}

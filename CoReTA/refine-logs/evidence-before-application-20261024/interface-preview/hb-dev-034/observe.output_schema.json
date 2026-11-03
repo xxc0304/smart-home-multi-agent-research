@@ -1,0 +1,145 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "pass",
+        "offer"
+      ]
+    },
+    "offer": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "target": {
+              "type": "string",
+              "enum": [
+                "W1",
+                "W1:artifact:L1",
+                "W1:work_text:L1",
+                "W2",
+                "W2:artifact:L1",
+                "W2:work_text:L1",
+                "W3",
+                "W3:artifact:L1",
+                "W3:work_text:L1",
+                "W4",
+                "W4:artifact:L1",
+                "W4:work_text:L1",
+                "W5",
+                "W5:artifact:L1",
+                "W5:work_text:L1",
+                "whole_goal"
+              ]
+            },
+            "knowledge": {
+              "type": "string",
+              "minLength": 1
+            },
+            "support": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "ref": {
+                    "type": "string",
+                    "enum": [
+                      "O1",
+                      "O2",
+                      "O3",
+                      "O4",
+                      "O5",
+                      "O6",
+                      "S02",
+                      "T",
+                      "W1",
+                      "W2",
+                      "W3",
+                      "W4",
+                      "W5"
+                    ]
+                  },
+                  "excerpt": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "ref",
+                  "excerpt"
+                ]
+              }
+            },
+            "proposed_use": {
+              "type": "string",
+              "minLength": 1
+            },
+            "claims": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "statement": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "premises": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "source_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "O1",
+                        "O2",
+                        "O3",
+                        "O4",
+                        "O5",
+                        "O6",
+                        "S02",
+                        "T",
+                        "W1",
+                        "W2",
+                        "W3",
+                        "W4",
+                        "W5"
+                      ]
+                    },
+                    "uniqueItems": true
+                  }
+                },
+                "required": [
+                  "statement",
+                  "premises",
+                  "source_refs"
+                ]
+              }
+            }
+          },
+          "required": [
+            "target",
+            "knowledge",
+            "support",
+            "proposed_use",
+            "claims"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "action",
+    "offer"
+  ]
+}

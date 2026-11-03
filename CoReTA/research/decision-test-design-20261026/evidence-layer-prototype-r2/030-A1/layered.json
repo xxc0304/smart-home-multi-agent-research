@@ -1,0 +1,135 @@
+{
+  "task": {
+    "task_id": "hb-receiver-confirm-030",
+    "scenario": "You are co-founders of a startup that just received three offers from venture capital firms to lead your Series B funding round. Time is tight—you must select a lead investor within 12 hours to avoid losing all momentum. There are three possible firms: Peak Capital, Skylake Ventures, and Northstar Partners. Each seems attractive in its own way, but you only have partial information about their offers and constraints. The correct answer is the one that can definitely close the deal, on time, without unmanageable risk or hidden issues. Your task: discuss all available information to decide which investor you can reliably choose as your lead.",
+    "shared_information": [
+      "Peak Capital is known for closing deals quickly; a partner says they can transfer funds within 3 days if terms are met.",
+      "Skylake Ventures requires at least one reputable co-investor to participate in a round before they can commit any funds.",
+      "Northstar Partners prefers to lead deals where the company has strong IP protection, and they've sometimes pulled out late after legal hiccups."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Peak Capital"
+      },
+      {
+        "id": "option_2",
+        "text": "Skylake Ventures"
+      },
+      {
+        "id": "option_3",
+        "text": "Northstar Partners"
+      }
+    ],
+    "instruction": "Follow the decision requirement in the task and explain genuine unresolved conditions."
+  },
+  "member": "A1",
+  "target_answer": {
+    "author": "PUBLIC_SOLVER",
+    "answer": {
+      "choice": "option_1",
+      "reasoning": "Peak Capital is the only firm with public information indicating it can close quickly and reliably: a partner states funds can be transferred within 3 days if terms are met, which fits the 12-hour decision and momentum constraint. Skylake cannot commit any funds until at least one reputable co-investor participates, and no such co-investor is identified in the public information, so its ability to close on time is unresolved and conditional. Northstar prefers strong IP protection and has sometimes pulled out late after legal hiccups, creating a late-withdrawal risk that conflicts with the requirement to avoid unmanageable risk or hidden issues. Peak's condition ('if terms are met') is a normal closing condition rather than a hidden dependency, so it is the most reliable choice among the three.",
+      "annotation_issues": [],
+      "extra_annotations": {}
+    }
+  },
+  "contributor_reports": [
+    {
+      "author": "A1",
+      "content": {
+        "text": "Local evidence: Peak Capital's apparent speed advantage is undercut by private information that it is under regulatory investigation, its deal execution is on hold at the bank, and no new investments have been processed this month — so Peak cannot be reliably chosen to close within the 12-hour window; the 3-day transfer claim is conditional ('if terms are met') and currently blocked. Skylake cannot commit any funds without at least one reputable co-investor, and no such co-investor is identified, so Skylake's ability to close on time is unresolved and cannot be assumed. Northstar's stated preference for strong IP protection plus a history of late pullouts after legal hiccups is a risk signal, but the public record contains no actual legal issue or IP deficiency for our company, so it is not a confirmed disqualifier. Genuine unresolved conditions: (1) whether any reputable co-investor would join Skylake within 12 hours and on acceptable terms; (2) whether our IP/legal position would survive Northstar's diligence and whether their pullout risk is real here; (3) whether Peak's regulatory hold could lift in time — currently not supported. On the evidence available, Northstar is the least definitively blocked option, but this is a conditional ranking, not a guarantee: before selecting, we should confirm Northstar's diligence timeline and any known legal concerns, and in parallel test whether a co-investor for Skylake exists. If Northstar's diligence cannot be confirmed within the window, no option can be said to definitely close on time without unmanageable risk.",
+        "extra_annotations": {}
+      },
+      "judgment_annotations": {
+        "local_judgment": {
+          "quote": "Peak Capital's apparent speed advantage is undercut by private information that it is under regulatory investigation, its deal execution is on hold at the bank, and no new investments have been processed this month — so Peak cannot be reliably chosen to close within the 12-hour window"
+        },
+        "overall_recommendation": {
+          "quote": "On the evidence available, Northstar is the least definitively blocked option, but this is a conditional ranking, not a guarantee"
+        }
+      },
+      "disclosed_source_refs": [
+        "PRIVATE.A1"
+      ]
+    },
+    {
+      "author": "A2",
+      "content": {
+        "text": "Local evidence supports Skylake Ventures as the most defensible lead choice, but only conditionally. My private source says Skylake finalized a co-investor partnership with a well-known angel group yesterday, satisfying their usual requirement for a deal of this size. That directly removes the main stated blocker: Skylake cannot commit funds without at least one reputable co-investor, and that condition now appears met. By contrast, Peak Capital says it can transfer funds within 3 days 'if terms are met,' which leaves unresolved whether terms will be met within the 12-hour decision window and whether its speed reputation substitutes for a documented commitment. Northstar Partners prefers strong IP protection and has sometimes pulled out late after legal hiccups, creating a late-withdrawal risk that is especially dangerous under a 12-hour deadline. Therefore, on the supplied information, Skylake is the most reliable pick, but the decision is not unconditional: I would need to confirm that the angel group is actually participating in this Series B, that the co-investor documentation is executed or enforceable, and that Skylake's commitment is not still subject to additional diligence or approval. If those confirmations fail, Peak Capital becomes the fallback, but only if its 'terms met' condition can be verified quickly; Northstar should not be chosen under this deadline because its late-pullout history is an unmanageable hidden risk. The unresolved conditions are the exact co-investor commitment status and Skylake's remaining closing conditions, which the public record alone does not settle.",
+        "extra_annotations": {}
+      },
+      "judgment_annotations": {
+        "local_judgment": {
+          "quote": "That directly removes the main stated blocker: Skylake cannot commit funds without at least one reputable co-investor, and that condition now appears met."
+        },
+        "overall_recommendation": {
+          "quote": "Therefore, on the supplied information, Skylake is the most reliable pick, but the decision is not unconditional"
+        }
+      },
+      "disclosed_source_refs": [
+        "PRIVATE.A2"
+      ]
+    },
+    {
+      "author": "A3",
+      "content": {
+        "text": "Given the 12-hour deadline and the requirement that the chosen lead can definitely close on time without unmanageable risk, the only defensible selection is Peak Capital (option_1), but only conditionally and subject to verification of the 'if terms are met' clause. Evidence: Peak is described as known for fast closing and a partner states funds can transfer within 3 days if terms are met (PUBLIC.1). Skylake cannot commit any funds until at least one reputable co-investor participates (PUBLIC.2); with no co-investor identified in the shared information, Skylake cannot be relied on to close within the deadline, so it is not a safe lead choice. Northstar prefers strong IP protection and has sometimes pulled out late after legal hiccups (PUBLIC.3); my own source adds that Northstar's investment committee now meets only once per month due to staff shortage, with the next meeting in three weeks (PRIVATE.A3), which makes a timely commitment implausible within 12 hours and compounds late-withdrawal risk. Genuine unresolved conditions: for Peak, we do not know what 'terms are met' requires, whether definitive documents can be executed within the window, or whether any hidden diligence or approval conditions exist; those must be confirmed before treating Peak as certain. For Skylake, no reputable co-investor is identified, and even if one appeared, their commitment timing is unknown. For Northstar, the three-week committee schedule is a strong negative but not proof they could not act faster through some exception. Scope note: my local evidence is limited to the listed public information and my own source; it does not establish Peak's actual closing certainty, only that Peak is the only option without a disclosed structural blocker to a timely close. Therefore the reliable choice, subject to those unresolved confirmations, is Peak Capital.",
+        "extra_annotations": {}
+      },
+      "judgment_annotations": {
+        "local_judgment": {
+          "quote": "Skylake cannot commit any funds until at least one reputable co-investor participates (PUBLIC.2); with no co-investor identified in the shared information, Skylake cannot be relied on to close within the deadline, so it is not a safe lead choice."
+        },
+        "overall_recommendation": {
+          "quote": "Therefore the reliable choice, subject to those unresolved confirmations, is Peak Capital."
+        }
+      },
+      "disclosed_source_refs": [
+        "PRIVATE.A3"
+      ]
+    }
+  ],
+  "public_source_refs": [
+    "TASK",
+    "PUBLIC.1",
+    "PUBLIC.2",
+    "PUBLIC.3"
+  ],
+  "originally_owned_source_refs": [
+    "PRIVATE.A1"
+  ],
+  "available_original_documents": [
+    {
+      "ref": "TASK",
+      "content": "You are co-founders of a startup that just received three offers from venture capital firms to lead your Series B funding round. Time is tight—you must select a lead investor within 12 hours to avoid losing all momentum. There are three possible firms: Peak Capital, Skylake Ventures, and Northstar Partners. Each seems attractive in its own way, but you only have partial information about their offers and constraints. The correct answer is the one that can definitely close the deal, on time, without unmanageable risk or hidden issues. Your task: discuss all available information to decide which investor you can reliably choose as your lead."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "Peak Capital is known for closing deals quickly; a partner says they can transfer funds within 3 days if terms are met."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Skylake Ventures requires at least one reputable co-investor to participate in a round before they can commit any funds."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "Northstar Partners prefers to lead deals where the company has strong IP protection, and they've sometimes pulled out late after legal hiccups."
+    },
+    {
+      "ref": "PRIVATE.A1",
+      "content": "Peak Capital is being investigated for regulatory issues; their deal execution is currently on hold at the bank, and no new investments have been processed this month."
+    },
+    {
+      "ref": "PRIVATE.A1",
+      "content": "Peak Capital is being investigated for regulatory issues; their deal execution is currently on hold at the bank, and no new investments have been processed this month."
+    },
+    {
+      "ref": "PRIVATE.A2",
+      "content": "Skylake Ventures just finalized a co-investor partnership with a well-known angel group yesterday, meeting their usual requirements for a deal of this size."
+    },
+    {
+      "ref": "PRIVATE.A3",
+      "content": "Northstar Partners internally reduced their investment committee meeting schedule to once per month due to staff shortage; their next meeting is in three weeks."
+    }
+  ]
+}

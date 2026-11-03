@@ -1,0 +1,131 @@
+{
+  "task": {
+    "task_id": "hb-receiver-confirm-033",
+    "scenario": "You are a team responsible for transporting a life-saving, temperature-sensitive biological sample to a laboratory for immediate processing. The sample must be analyzed within six hours or it will be rendered useless. Three well-known research laboratories in neighboring cities have offered to help. You must quickly decide where to send the sample.",
+    "shared_information": [
+      "Lab Gemini processed a record number of similar emergency samples last year; its cooling systems are state-of-the-art and always monitored.",
+      "Lab Atlas has a great reputation for reliability and always keeps at least two senior technicians on duty at all times.",
+      "Lab Nova recently completed a major renovation of its analytical laboratory, but until now has received few emergency transfer requests."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Lab Gemini"
+      },
+      {
+        "id": "option_2",
+        "text": "Lab Atlas"
+      },
+      {
+        "id": "option_3",
+        "text": "Lab Nova"
+      }
+    ],
+    "instruction": "Follow the decision requirement in the task and explain genuine unresolved conditions."
+  },
+  "member": "A3",
+  "target_answer": {
+    "author": "PUBLIC_SOLVER",
+    "answer": {
+      "choice": "option_1",
+      "reasoning": "The decision hinges on which lab can most reliably process a temperature-sensitive sample within the six-hour window. Lab Gemini has directly relevant, demonstrated experience: it processed a record number of similar emergency samples last year, and its cooling systems are state-of-the-art and continuously monitored, which directly addresses the temperature-sensitivity requirement and suggests proven throughput for urgent transfers. Lab Atlas has a strong reliability reputation and senior technicians on duty, but the shared information does not specifically confirm emergency-sample processing capacity or temperature-controlled handling. Lab Nova recently renovated but has little experience with emergency transfer requests, making it the least proven option for this time-critical case. Therefore Lab Gemini is the best-supported choice among the three.",
+      "annotation_issues": [],
+      "extra_annotations": {}
+    }
+  },
+  "contributor_reports": [
+    {
+      "author": "A1",
+      "content": {
+        "text": "Local evidence from my assigned source (PRIVATE.A1) is decisive against Lab Gemini: the main highway to Gemini is temporarily closed except for emergency vehicles, and our sample transport van does not qualify, so the six-hour deadline is at serious risk regardless of Gemini's strong processing record and monitored cooling systems. That leaves Lab Atlas and Lab Nova. Atlas's stated strength is reliability and two senior technicians on duty at all times, which supports immediate processing capacity but does not by itself establish that it has comparable experience with this exact temperature-sensitive emergency sample type. Nova has a newly renovated analytical lab but few prior emergency transfers, so its capability is plausible yet unproven under time pressure. Genuine unresolved conditions: actual travel time from our location to Atlas and Nova under current traffic; whether Atlas and Nova can begin analysis immediately on arrival and sustain temperature control throughout; whether Atlas has specific experience with similar emergency samples; and whether Nova's new facility has been validated for this sample type. On the local evidence available to me, Atlas is the safer provisional destination because Gemini's route is blocked and Nova's emergency-transfer readiness is unverified, but this should be confirmed against travel-time and immediate-acceptance information before dispatch.",
+        "extra_annotations": {}
+      },
+      "judgment_annotations": {
+        "local_judgment": {
+          "quote": "Local evidence from my assigned source (PRIVATE.A1) is decisive against Lab Gemini: the main highway to Gemini is temporarily closed except for emergency vehicles, and our sample transport van does not qualify, so the six-hour deadline is at serious risk regardless of Gemini's strong processing record and monitored cooling systems."
+        },
+        "overall_recommendation": {
+          "quote": "On the local evidence available to me, Atlas is the safer provisional destination because Gemini's route is blocked and Nova's emergency-transfer readiness is unverified, but this should be confirmed against travel-time and immediate-acceptance information before dispatch."
+        }
+      },
+      "disclosed_source_refs": [
+        "PRIVATE.A1"
+      ]
+    },
+    {
+      "author": "A2",
+      "content": {
+        "text": "Local evidence from my own source (PRIVATE.A2) materially changes the assessment: Lab Atlas, despite its reliability reputation and senior technician staffing, is currently in scheduled freezer maintenance with only one freezer on backup power, which is insufficient for a sample this heat-sensitive. That is an unresolved operational condition I cannot verify as resolved before the six-hour deadline, so Atlas is not the safe default. The public record favors Lab Gemini on directly relevant criteria: record volume of similar emergency samples plus state-of-the-art, continuously monitored cooling systems, which matches the temperature-sensitive, time-critical requirement. Lab Nova's renovated analytical lab is promising but its lack of emergency transfer experience is an unverified risk under a six-hour cutoff. Genuine unresolved conditions remain: transport time from each neighboring city to the processing lab is not provided, so I cannot confirm any option meets the six-hour window; Gemini's current capacity and whether its monitoring covers the full transport-plus-analysis chain are unstated; Atlas's maintenance completion time is unknown; and Nova's actual emergency readiness is untested. On available local evidence I would choose option_1 (Lab Gemini), contingent on confirming transport time under six hours and current intake capacity; if transport time to Gemini is infeasible, Atlas becomes viable only if its freezer maintenance is confirmed complete, otherwise Nova would need a rapid readiness check.",
+        "extra_annotations": {}
+      },
+      "judgment_annotations": {
+        "local_judgment": {
+          "quote": "Lab Atlas, despite its reliability reputation and senior technician staffing, is currently in scheduled freezer maintenance with only one freezer on backup power, which is insufficient for a sample this heat-sensitive."
+        },
+        "overall_recommendation": {
+          "quote": "On available local evidence I would choose option_1 (Lab Gemini), contingent on confirming transport time under six hours and current intake capacity; if transport time to Gemini is infeasible, Atlas becomes viable only if its freezer maintenance is confirmed complete, otherwise Nova would need a rapid readiness check."
+        }
+      },
+      "disclosed_source_refs": [
+        "PRIVATE.A2"
+      ]
+    },
+    {
+      "author": "A3",
+      "content": {
+        "text": "Local evidence relevant to the six-hour deadline: Gemini has the strongest demonstrated throughput and monitored cooling for similar emergency samples (PUBLIC.1); Atlas offers reliability and at least two senior technicians on duty (PUBLIC.2); Nova has new analytical facilities but little emergency-transfer experience (PUBLIC.3). My own source adds that Nova suffered a city-wide power outage two days ago, but its new generator restored functionality within a few hours, and it currently has all equipment and staff available for rapid intake (PRIVATE.A3). This makes Nova more plausible than the public record alone suggests, but it does not establish that Nova can meet the six-hour window. Genuine unresolved conditions: actual transport time from the sample's location to each neighboring city; whether each lab can begin analysis immediately on arrival and complete it within six hours; whether Gemini's record volume implies current capacity or backlog; whether Atlas's on-duty senior technicians cover the needed analytical method; and whether Nova's post-outage generator and equipment have been verified for temperature-sensitive handling. On the available evidence, Gemini is the strongest default choice because its prior emergency-sample throughput and monitored cooling most directly address the deadline and temperature requirements. Nova is a conditional alternative only if real-time confirmation shows immediate intake capacity and verified post-outage functionality. Atlas remains a reliability-based fallback, but the public information does not show emergency-sample or cooling performance.",
+        "extra_annotations": {}
+      },
+      "judgment_annotations": {
+        "local_judgment": {
+          "quote": "On the available evidence, Gemini is the strongest default choice because its prior emergency-sample throughput and monitored cooling most directly address the deadline and temperature requirements."
+        },
+        "overall_recommendation": {
+          "quote": "On the available evidence, Gemini is the strongest default choice because its prior emergency-sample throughput and monitored cooling most directly address the deadline and temperature requirements."
+        }
+      },
+      "disclosed_source_refs": [
+        "PRIVATE.A3"
+      ]
+    }
+  ],
+  "public_source_refs": [
+    "TASK",
+    "PUBLIC.1",
+    "PUBLIC.2",
+    "PUBLIC.3"
+  ],
+  "originally_owned_source_refs": [
+    "PRIVATE.A3"
+  ],
+  "available_original_documents": [
+    {
+      "ref": "TASK",
+      "content": "You are a team responsible for transporting a life-saving, temperature-sensitive biological sample to a laboratory for immediate processing. The sample must be analyzed within six hours or it will be rendered useless. Three well-known research laboratories in neighboring cities have offered to help. You must quickly decide where to send the sample."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "Lab Gemini processed a record number of similar emergency samples last year; its cooling systems are state-of-the-art and always monitored."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Lab Atlas has a great reputation for reliability and always keeps at least two senior technicians on duty at all times."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "Lab Nova recently completed a major renovation of its analytical laboratory, but until now has received few emergency transfer requests."
+    },
+    {
+      "ref": "PRIVATE.A3",
+      "content": "A city-wide power outage hit Nova two days ago, but the facility's newly installed generator fully restored functionality a few hours later, and Nova currently has all its equipment and staff available for rapid intake."
+    },
+    {
+      "ref": "PRIVATE.A1",
+      "content": "The main highway to Gemini is temporarily closed for repairs; only emergency vehicles are allowed through, but your sample transport van does not qualify as such."
+    },
+    {
+      "ref": "PRIVATE.A2",
+      "content": "Lab Atlas is currently undergoing scheduled maintenance on its freezers, leaving only one with a backup power supply—insufficient for samples as heat-sensitive as yours."
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "version": "expert-transfer-annotation-v0.1-20261030",
+  "date": "2026-10-30",
+  "case_units": 8,
+  "unique_tasks": 7,
+  "case_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08"
+  ],
+  "build_script_sha256": "4ed0bfd222a792337edb29bf88cd447551ecee155b197c097812d9ff3aedc09f",
+  "codebook_sha256": "3a23ee04257653e26b0b71dfc6522228edfaa4ef032b1c75a1228e32d01f0577",
+  "admin_mapping_sha256": "0a7339fc0f2c0cd9144c9e7f35f743227735b086cc2940e87bccefe60951b504",
+  "reviewer_work_surfaces": [
+    {
+      "path": "research/expert-annotation-pilot-20261030/REVIEWER_A.md",
+      "sha256": "daf64f3456e873f659aff9fd9aaca0ee81e04819e9cd4df0fe5e77898a96f52f"
+    },
+    {
+      "path": "research/expert-annotation-pilot-20261030/REVIEWER_B.md",
+      "sha256": "fe71ca91d9eff4e7fd92569db1688777ae661d0f70b62716a1c94c942e5596d0"
+    },
+    {
+      "path": "research/expert-annotation-pilot-20261030/DISAGREEMENT_TEMPLATE.csv",
+      "sha256": "067699471802bdbf88bde15cdc32b75cccdad01dfbd778cdf7b2b3b84858b6f4"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "research/expert-team-assets-20261029/CASE_SEED_8.json",
+      "sha256": "9cb869f6ee37eb767f078492438e09405caadf33d70fd56099235a8a0751ce90"
+    },
+    {
+      "path": "research/expert-task-alignment-20261030/CASE_EVIDENCE_REVIEW.json",
+      "sha256": "cde04968b9e30940156b734ca342c1e2299630f7d1015c310b74585d1ee5aecd"
+    },
+    {
+      "path": "data/task-source-audit-20261021/hiddenbench.json",
+      "sha256": "2815afffca4e470d1dfbc81e625160447df1109ce371968181c9e1e6b90443a3"
+    }
+  ],
+  "counts": {
+    "local_record_events": 77,
+    "author_record_events": 128
+  },
+  "case_checks": [
+    {
+      "case_id": "S01",
+      "original_case_id": "C01",
+      "events": 16,
+      "baseline_events": 3,
+      "phase_a_external_labels_absent": true
+    },
+    {
+      "case_id": "S02",
+      "original_case_id": "C05",
+      "events": 4,
+      "baseline_events": 0,
+      "phase_a_external_labels_absent": true
+    },
+    {
+      "case_id": "S03",
+      "original_case_id": "C07",
+      "events": 64,
+      "baseline_events": 4,
+      "phase_a_external_labels_absent": true
+    },
+    {
+      "case_id": "S04",
+      "original_case_id": "C06",
+      "events": 4,
+      "baseline_events": 0,
+      "phase_a_external_labels_absent": true
+    },
+    {
+      "case_id": "S05",
+      "original_case_id": "C02",
+      "events": 16,
+      "baseline_events": 3,
+      "phase_a_external_labels_absent": true
+    },
+    {
+      "case_id": "S06",
+      "original_case_id": "C04",
+      "events": 16,
+      "baseline_events": 3,
+      "phase_a_external_labels_absent": true
+    },
+    {
+      "case_id": "S07",
+      "original_case_id": "C03",
+      "events": 21,
+      "baseline_events": 4,
+      "phase_a_external_labels_absent": true
+    },
+    {
+      "case_id": "S08",
+      "original_case_id": "C08",
+      "events": 64,
+      "baseline_events": 4,
+      "phase_a_external_labels_absent": true
+    }
+  ],
+  "case_order": "Deterministic hash aliases; A/B review orders differ in REVIEWER_START.",
+  "files": [
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S01/A.html",
+      "bytes": 4038,
+      "sha256": "46555d08dbbc9a8fa8913b1168a325873a1be5ed20dc7d9a66d292e9d26c5abd"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S01/A.json",
+      "bytes": 3087,
+      "sha256": "0ff5633d6d8e3dcf161d9aec8dc371ce7324b63fd6a3a7a0cd60add44cd97204"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S01/B.html",
+      "bytes": 149434,
+      "sha256": "b4b001b9d6ddd5df63baf64af20dd56f2f55567ac8573d26d34dc98f1da102e0"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S01/B.json",
+      "bytes": 143199,
+      "sha256": "46a33b8af35ba7fad40ad18851e285c3bf13cd7b6c6acd1ce5d69bbc434dbd27"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S01/C.html",
+      "bytes": 3665,
+      "sha256": "d0356a9552983eb6218a60db62a52317fe4236fb46bc55235412c888753ed077"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S01/C.json",
+      "bytes": 2439,
+      "sha256": "907d72c92ed6b3e2cc920d81e5fccaf2e7c6fbe48abbbdfa866d4b4a23d8466b"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S02/A.html",
+      "bytes": 5564,
+      "sha256": "4ed4060d9154add0edbc3d8966e5a5b9d16f092dd92cd14b8c6e6f272e727c91"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S02/A.json",
+      "bytes": 4433,
+      "sha256": "6e251f9123a23dac736ecb62426baa9c8f143f358cc00a09d55341b1011db16c"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S02/B.html",
+      "bytes": 127150,
+      "sha256": "dfd236b40e700e91a61078ccd8a2bfb6bf95079e45830c7b4496d8a9a9e6a594"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S02/B.json",
+      "bytes": 112719,
+      "sha256": "423c536cd00b14f13e7c1582de4684dc00da4223fc20e2201723a4d6fccc476b"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S02/C.html",
+      "bytes": 1897,
+      "sha256": "3609e909ab847c5388ec75c42ba1337e3afbbb5cc772401ffda572ee5575dede"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S02/C.json",
+      "bytes": 986,
+      "sha256": "8b78a292892450b1fec560e152653c9d3c0085fb7a992679d395667952c29daa"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S03/A.html",
+      "bytes": 2998,
+      "sha256": "335f1e2c2a2ec42f8953eab195cb4e517fd399c474e576c644716a05c2a05674"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S03/A.json",
+      "bytes": 2202,
+      "sha256": "83e88d7ab44c32b284098bd2c583a6876903ffca840c54dade829fe2050a510b"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S03/B.html",
+      "bytes": 97354,
+      "sha256": "b9070b2441685fd6317af793cfaeee778ab63890caee6be3af419614197d6690"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S03/B.json",
+      "bytes": 94293,
+      "sha256": "e207e5874bdfc90dc9d32a850b0d891d9be8bfe32e16036ef3b4f7546b631609"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S03/C.html",
+      "bytes": 4174,
+      "sha256": "5a3fe62334d9b50b5ccfb70fdd62cec15812eb0e83b3e799f09188f87c7282e5"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S03/C.json",
+      "bytes": 3208,
+      "sha256": "154c1948bd53286c21104de0e1c1895f2b0bd164775fe297aabcee1ed7bc525e"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S04/A.html",
+      "bytes": 5137,
+      "sha256": "3406c1dcf16db040a049879a33a5367944206f2fdc3054923d1588f9fe1cae5a"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S04/A.json",
+      "bytes": 4091,
+      "sha256": "b5a4f04f7c4a773496710669c321b125456094a36ba737da483d5c50e0835a1f"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S04/B.html",
+      "bytes": 120899,
+      "sha256": "3f1598487d1e7c6fe671a04066f0eef4cae1c08f8c0aaf3a660ab1f11888ca8c"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S04/B.json",
+      "bytes": 111939,
+      "sha256": "841e9e8035ff6a8870b643834a7b55107aacb76339ef933c14518c6706bbc922"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S04/C.html",
+      "bytes": 2988,
+      "sha256": "0809f0cf771bc89023f6e6ac6a46e47428adacd8eef155734947d058fbd83b55"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S04/C.json",
+      "bytes": 2042,
+      "sha256": "d3c38340407f72cea4b4abbd2036f6811154c836cf9b4a4fa1c2b393dcf42a8e"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S05/A.html",
+      "bytes": 3483,
+      "sha256": "4f54a1317638e05eb1095ffe546f8f7a278650b499e2e37ef9c196e5fbc74338"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S05/A.json",
+      "bytes": 2532,
+      "sha256": "8909c1d973cf9431020d424a679151115e458ad63ff1992823d16733d04fae3f"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S05/B.html",
+      "bytes": 138325,
+      "sha256": "1e73819fb4c5507fa31551ee41f30a2c14d2be106ea5aa0ecbe9c22b41aced5f"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S05/B.json",
+      "bytes": 132191,
+      "sha256": "8e4edb34417b519b24a27ca0f3edb930d92eb86bfe6d8eae08a70a94b7b293f6"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S05/C.html",
+      "bytes": 3758,
+      "sha256": "3767b13b0f830c07f4008c096eb5a89050e7f70ef87ad5b2664814af52b861f6"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S05/C.json",
+      "bytes": 2542,
+      "sha256": "f0bb4868bd9b52e327b21a4b032191099295bcf73d800d4df6413992096b944e"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S06/A.html",
+      "bytes": 5212,
+      "sha256": "95d5a037d4db39dd5b186a01f3404b22ede447d45de4f4e84ec32f1726f90680"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S06/A.json",
+      "bytes": 4131,
+      "sha256": "3592fbc54c195594dfd2b040b17b025267dbf5dd61c3d66b5fe8e94af5ace286"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S06/B.html",
+      "bytes": 187064,
+      "sha256": "37369dbeaa7f707da79053cab76f18530753d2181cf5cdff6653105024efc378"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S06/B.json",
+      "bytes": 173809,
+      "sha256": "3407713cc03f50b6c137b974bf7377ce1329fc44b76e889e813586a71d82689a"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S06/C.html",
+      "bytes": 2786,
+      "sha256": "a3ab980b2609b5b366cc1728374803f196e57740d60f0b4b517b15f03cf86530"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S06/C.json",
+      "bytes": 1590,
+      "sha256": "82da2eb23badc63ca7f9108ded6b7cf7821ab01feca3279a7b111eb306de60a0"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S07/A.html",
+      "bytes": 7538,
+      "sha256": "33e501846a827fd7f62b1ea279a0582ffc4c354d3d7304600585c8765817aef0"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S07/A.json",
+      "bytes": 6582,
+      "sha256": "86a57bb171a705b476f40ca33c21124d62cf09102d7d46155a662556a020e115"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S07/B.html",
+      "bytes": 349528,
+      "sha256": "df08dbc931167a64c62946a83304c54f1ca18476c744c75c2c46ae64caaba1cc"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S07/B.json",
+      "bytes": 317270,
+      "sha256": "3f6fd80ac0f51aafc494d3ec2613c539b07aa8c5d7c49d806553ec37461c5921"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S07/C.html",
+      "bytes": 2871,
+      "sha256": "6d12e0e409f9dfb9d8787a56610286a1394c09a131c6b6121b3d4f331c01e0a6"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S07/C.json",
+      "bytes": 1655,
+      "sha256": "fccb6d3742bcf8a7dfce82b4e0bdee12f9ec94306ac43e52efb0b066cb2da731"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S08/A.html",
+      "bytes": 2998,
+      "sha256": "ac0ee59a864991af5cc659216f21ae435c2e9635a87f309c8ddcfc7bdb7b7d16"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S08/A.json",
+      "bytes": 2202,
+      "sha256": "45ed4a9573859eefc883df08bec33caf649d745eaa75b930e82db07781ac87e2"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S08/B.html",
+      "bytes": 79008,
+      "sha256": "b1a8b294ec9b32fa79352364ea8b84670a511e798a25b95a4eeecb8863669a70"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S08/B.json",
+      "bytes": 75542,
+      "sha256": "691125ebd41d1220771d071a4ec916f70243839b85f5a9c038dbd0c40f9ca0dc"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S08/C.html",
+      "bytes": 4120,
+      "sha256": "ccbb3761d7e864f4b31fd71f196e8da703d8578cd8321da5a151e2b15840bf18"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/cases/S08/C.json",
+      "bytes": 3159,
+      "sha256": "dede1f31639987647f9903ae9fac98ec688ddf97e2e44f0fc3f55ec4ba415ef9"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/participant/index.html",
+      "bytes": 1804,
+      "sha256": "dc84e5dbcc9a75f6a7f814a926270a977c050e516fd7f228c985221b013c94a0"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/README.md",
+      "bytes": 1220,
+      "sha256": "aa252f4bd189b32a5e69c2add62efdbcf0afdda0059e6d0f676fcfdc7aebf2e7"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_A/S01.json",
+      "bytes": 1624,
+      "sha256": "eb745a9c22795f8220825dfdc3d19a1bf48e594256b7d7730ba5533b34138881"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_A/S02.json",
+      "bytes": 1624,
+      "sha256": "21415093616f28b992d7bc103208592b948e80ff619d02efeee950f278052d48"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_A/S03.json",
+      "bytes": 1624,
+      "sha256": "fc929844aa080ac887848b6c218ab504edf5c1a50e8bb97002d5e4e1c148e4e5"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_A/S04.json",
+      "bytes": 1624,
+      "sha256": "889699b593ca41783af88dc72312a4d1f677104464c1bfa997804d86afc254ef"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_A/S05.json",
+      "bytes": 1624,
+      "sha256": "b416e388ec8d31efc0e424479637135c3733f8ba6ab4e151e2c04a2006a06462"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_A/S06.json",
+      "bytes": 1624,
+      "sha256": "48603586f9f8842b871c0a8f2e9ac9b035edbf0902bbe07ece08f1b1e17739a7"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_A/S07.json",
+      "bytes": 1624,
+      "sha256": "c9a5994ea8457c2a1f51759c632dbd365d3942d2f79de79300f2e9713f505c4f"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_A/S08.json",
+      "bytes": 1624,
+      "sha256": "c961cc8419d51c2b58cb119de7e560617ae17176465abce48dd4c8d3f9ce3782"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_B/S01.json",
+      "bytes": 1624,
+      "sha256": "eb745a9c22795f8220825dfdc3d19a1bf48e594256b7d7730ba5533b34138881"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_B/S02.json",
+      "bytes": 1624,
+      "sha256": "21415093616f28b992d7bc103208592b948e80ff619d02efeee950f278052d48"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_B/S03.json",
+      "bytes": 1624,
+      "sha256": "fc929844aa080ac887848b6c218ab504edf5c1a50e8bb97002d5e4e1c148e4e5"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_B/S04.json",
+      "bytes": 1624,
+      "sha256": "889699b593ca41783af88dc72312a4d1f677104464c1bfa997804d86afc254ef"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_B/S05.json",
+      "bytes": 1624,
+      "sha256": "b416e388ec8d31efc0e424479637135c3733f8ba6ab4e151e2c04a2006a06462"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_B/S06.json",
+      "bytes": 1624,
+      "sha256": "48603586f9f8842b871c0a8f2e9ac9b035edbf0902bbe07ece08f1b1e17739a7"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_B/S07.json",
+      "bytes": 1624,
+      "sha256": "c9a5994ea8457c2a1f51759c632dbd365d3942d2f79de79300f2e9713f505c4f"
+    },
+    {
+      "path": "data/expert-transfer-annotation-20261030-v0.1/templates/reviewer_B/S08.json",
+      "bytes": 1624,
+      "sha256": "c961cc8419d51c2b58cb119de7e560617ae17176465abce48dd4c8d3f9ce3782"
+    }
+  ],
+  "human_completed": 0,
+  "agreement": null,
+  "status": "MATERIAL_PREPARED_HUMAN_REVIEW_PENDING",
+  "limits": [
+    "Purposefully selected 8 cases from 7 tasks; not a frequency sample.",
+    "Partial masking: actual model prompts/output can reveal task, intervention and final choice. Prior discussion exposure must be declared.",
+    "C07/C08 source-private allocation is unavailable; benchmark snapshot is auditor context, not proof of individual receipt.",
+    "Stable calibrated capability is not established by these old information-distribution cases."
+  ]
+}

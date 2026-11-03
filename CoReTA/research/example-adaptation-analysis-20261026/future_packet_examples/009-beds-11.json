@@ -1,0 +1,620 @@
+{
+  "task": {
+    "task_id": "candidate-transfer-009",
+    "scenario": "You are on the hospital staff of a rural clinic. A young patient has collapsed with symptoms of a rare but treatable illness. The patient needs to be transferred immediately to a hospital with advanced ICU facilities. There are three hospitals within reach: Hospital A (north), Hospital B (east), and Hospital C (south). You have a single ambulance, and time is critical. Weather conditions are poor (intense rain), some roads may be blocked, and you have no radio contact with the hospitals. Each of you, as staff, have partial updates from local contacts, but you must pool your information to choose which hospital to send the ambulance to. Pick wrong, and the patient may not make it.",
+    "shared_information": [
+      "The main road to Hospital B has been recently repaired and is the most commonly used route. Hospital B is known for its large ICU and currently has at least one doctor on emergency shift.",
+      "Hospital A has a good reputation but is smaller and sometimes lacks staff at night. The northern mountain pass leading to Hospital A can become hazardous after heavy rain.",
+      "Hospital C is the oldest hospital and has a history of equipment failures; it’s reached by a secondary road that sometimes floods. However, its ICU was upgraded last year and their ambulance often helps transfer patients."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Hospital A"
+      },
+      {
+        "id": "option_2",
+        "text": "Hospital C"
+      },
+      {
+        "id": "option_3",
+        "text": "Hospital B"
+      }
+    ],
+    "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+  },
+  "member": "A2",
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "You are on the hospital staff of a rural clinic. A young patient has collapsed with symptoms of a rare but treatable illness. The patient needs to be transferred immediately to a hospital with advanced ICU facilities. There are three hospitals within reach: Hospital A (north), Hospital B (east), and Hospital C (south). You have a single ambulance, and time is critical. Weather conditions are poor (intense rain), some roads may be blocked, and you have no radio contact with the hospitals. Each of you, as staff, have partial updates from local contacts, but you must pool your information to choose which hospital to send the ambulance to. Pick wrong, and the patient may not make it."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "The main road to Hospital B has been recently repaired and is the most commonly used route. Hospital B is known for its large ICU and currently has at least one doctor on emergency shift."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Hospital A has a good reputation but is smaller and sometimes lacks staff at night. The northern mountain pass leading to Hospital A can become hazardous after heavy rain."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "Hospital C is the oldest hospital and has a history of equipment failures; it’s reached by a secondary road that sometimes floods. However, its ICU was upgraded last year and their ambulance often helps transfer patients."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "S02",
+      "content": "A police alert reported a landslide blocking the last stretch of the main road to Hospital B this morning—traffic is completely halted for at least 24 hours."
+    }
+  ],
+  "shared_contributions": {
+    "A1": {
+      "text": "Own source S01 indicates Hospital C's ICU upgrade is incomplete and critical care is unavailable until oxygen repairs are done, which undercuts C despite its upgraded-ICU reputation. Hospital B has a large ICU, at least one doctor on emergency shift, and a recently repaired main road, though poor weather leaves route status uncertain. Hospital A's mountain pass is hazardous after heavy rain and it may lack night staff. I do not select a final option; B is the most supported candidate, but no route or ICU is confirmed operational.",
+      "facts": [
+        {
+          "candidate": "option_2",
+          "field": "critical_care_available",
+          "value": false,
+          "source": "S01",
+          "quote": "no critical care available until fixed"
+        },
+        {
+          "candidate": "option_3",
+          "field": "critical_care_available",
+          "value": null,
+          "source": "PUBLIC.1",
+          "quote": "Hospital B is known for its large ICU and currently has at least one doctor on emergency shift."
+        },
+        {
+          "candidate": "option_3",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "PUBLIC.1",
+          "quote": "The main road to Hospital B has been recently repaired and is the most commonly used route."
+        },
+        {
+          "candidate": "option_1",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "PUBLIC.2",
+          "quote": "The northern mountain pass leading to Hospital A can become hazardous after heavy rain."
+        },
+        {
+          "candidate": "option_2",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "PUBLIC.3",
+          "quote": "it’s reached by a secondary road that sometimes floods"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "critical_care_available",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities."
+        }
+      ],
+      "caveats": [
+        "Hospital B's ICU capability and doctor presence are reported but not confirmed by direct contact; route usability in intense rain is unknown.",
+        "Hospital C's equipment-failure history and incomplete ICU upgrade make it a poor candidate unless S01 is superseded by confirmed repairs.",
+        "Hospital A's staffing at night and mountain-pass safety in heavy rain are unresolved.",
+        "No source confirms any hospital's current ability to receive this specific patient or that any route is passable now."
+      ],
+      "solution": null
+    },
+    "A2": {
+      "text": "Evidence favors Hospital B only if an alternative route exists; the main road to B is reported blocked for at least 24 hours by a landslide. Hospital B has the strongest documented ICU/staff signal, while A's mountain pass is rain-hazardous and C has equipment-failure history plus a flood-prone secondary road. No candidate's ambulance accessibility or current critical-care capability is fully confirmed.",
+      "facts": [
+        {
+          "candidate": "Hospital B",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "S02",
+          "quote": "A police alert reported a landslide blocking the last stretch of the main road to Hospital B this morning—traffic is completely halted for at least 24 hours."
+        },
+        {
+          "candidate": "Hospital B",
+          "field": "critical_care_available",
+          "value": null,
+          "source": "PUBLIC.1",
+          "quote": "Hospital B is known for its large ICU and currently has at least one doctor on emergency shift."
+        },
+        {
+          "candidate": "Hospital A",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "PUBLIC.2",
+          "quote": "The northern mountain pass leading to Hospital A can become hazardous after heavy rain."
+        },
+        {
+          "candidate": "Hospital A",
+          "field": "critical_care_available",
+          "value": null,
+          "source": "PUBLIC.2",
+          "quote": "Hospital A has a good reputation but is smaller and sometimes lacks staff at night."
+        },
+        {
+          "candidate": "Hospital C",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "PUBLIC.3",
+          "quote": "it’s reached by a secondary road that sometimes floods"
+        },
+        {
+          "candidate": "Hospital C",
+          "field": "critical_care_available",
+          "value": null,
+          "source": "PUBLIC.3",
+          "quote": "However, its ICU was upgraded last year and their ambulance often helps transfer patients."
+        }
+      ],
+      "conditions": [
+        {
+          "field": "critical_care_available",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities."
+        }
+      ],
+      "caveats": [
+        "The blocked main road to Hospital B does not by itself prove Hospital B is unreachable; an alternative route is unknown.",
+        "Hospital B's large ICU and one emergency-shift doctor do not confirm current advanced critical-care capability for this patient.",
+        "Hospital A's reputation and Hospital C's upgraded ICU are not current confirmation of critical-care availability.",
+        "Weather and flooding may further affect all routes; no radio contact means conditions may have changed.",
+        "No final option is selected here; unresolved route and capability information prevents a definitive choice."
+      ],
+      "solution": null
+    },
+    "A3": {
+      "text": "Evidence favors Hospital B: recently repaired main road, large ICU, and at least one doctor on emergency shift. Hospital A's pass is reported cleared and safe (S03), offsetting the rain hazard, but A is smaller and may lack night staff. Hospital C has an upgraded ICU but a history of equipment failures and a flood-prone secondary road. Unresolved: no radio confirmation of current ICU/staff status at any hospital, and no verification of road conditions beyond S03.",
+      "facts": [
+        {
+          "candidate": "Hospital B",
+          "field": "ambulance_accessible",
+          "value": true,
+          "source": "PUBLIC.1",
+          "quote": "The main road to Hospital B has been recently repaired and is the most commonly used route."
+        },
+        {
+          "candidate": "Hospital B",
+          "field": "critical_care_available",
+          "value": true,
+          "source": "PUBLIC.1",
+          "quote": "Hospital B is known for its large ICU and currently has at least one doctor on emergency shift."
+        },
+        {
+          "candidate": "Hospital A",
+          "field": "ambulance_accessible",
+          "value": true,
+          "source": "S03",
+          "quote": "The northern mountain pass to Hospital A has been cleared and is confirmed safe for ambulance travel as of an hour ago."
+        },
+        {
+          "candidate": "Hospital A",
+          "field": "critical_care_available",
+          "value": null,
+          "source": "PUBLIC.2",
+          "quote": "Hospital A has a good reputation but is smaller and sometimes lacks staff at night."
+        },
+        {
+          "candidate": "Hospital C",
+          "field": "critical_care_available",
+          "value": null,
+          "source": "PUBLIC.3",
+          "quote": "However, its ICU was upgraded last year and their ambulance often helps transfer patients."
+        },
+        {
+          "candidate": "Hospital C",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "PUBLIC.3",
+          "quote": "it’s reached by a secondary road that sometimes floods"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "ambulance_accessible",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities."
+        },
+        {
+          "field": "critical_care_available",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities."
+        }
+      ],
+      "caveats": [
+        "No radio contact means current ICU capacity and staffing cannot be confirmed at any hospital; reputation or past upgrades are not confirmation.",
+        "Hospital A's pass is cleared per a local contact an hour ago, but heavy rain could change conditions.",
+        "Hospital C's ICU upgrade is noted, but its history of equipment failures and flood-prone secondary road remain unresolved risks.",
+        "Hospital B is the most commonly used route, but current blockage from intense rain is unverified."
+      ],
+      "solution": null
+    },
+    "A4": {
+      "text": "Hospital B is the strongest candidate on public evidence (large ICU, doctor on shift, recently repaired main road), but my private update S04 indicates its emergency doctor is overwhelmed and it is temporarily out of critical care beds, which undercuts current critical-care availability. Hospital C has an upgraded ICU but a flooding secondary road and equipment-failure history; Hospital A is smaller, may lack night staff, and its mountain pass is hazardous in heavy rain. No option is clearly safe; I do not choose a final option.",
+      "facts": [
+        {
+          "candidate": "Hospital B",
+          "field": "critical_care_available",
+          "value": false,
+          "source": "S04",
+          "quote": "Hospital B's emergency shift doctor is dealing with a multi-patient accident, and the hospital is temporarily out of critical care beds."
+        },
+        {
+          "candidate": "Hospital B",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "PUBLIC.1",
+          "quote": "The main road to Hospital B has been recently repaired and is the most commonly used route."
+        },
+        {
+          "candidate": "Hospital A",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "PUBLIC.2",
+          "quote": "The northern mountain pass leading to Hospital A can become hazardous after heavy rain."
+        },
+        {
+          "candidate": "Hospital C",
+          "field": "ambulance_accessible",
+          "value": null,
+          "source": "PUBLIC.3",
+          "quote": "it’s reached by a secondary road that sometimes floods"
+        }
+      ],
+      "conditions": [
+        {
+          "field": "critical_care_available",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities."
+        }
+      ],
+      "caveats": [
+        "S04 directly contradicts the public impression of Hospital B's readiness; current bed availability, not reputation, determines critical-care availability.",
+        "No source confirms a currently usable ambulance route to any hospital; poor weather and possible road blockages leave ambulance_accessible unknown for A, B, and C.",
+        "Hospital C's upgraded ICU is not confirmation of current critical-care availability, and its equipment-failure history and flood-prone road remain risks.",
+        "Hospital A's staffing at night and rain-hazardous mountain pass are unresolved risks.",
+        "The main road to B being repaired does not establish that it is passable now, nor that no alternative route exists."
+      ],
+      "solution": null
+    }
+  },
+  "execution_report": {
+    "member_conditions": [
+      {
+        "id": "A1.C1",
+        "owner": "A1",
+        "field": "critical_care_available",
+        "op": "eq",
+        "value": true,
+        "source": "TASK",
+        "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities.",
+        "diagnostic": null
+      },
+      {
+        "id": "A2.C1",
+        "owner": "A2",
+        "field": "critical_care_available",
+        "op": "eq",
+        "value": true,
+        "source": "TASK",
+        "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities.",
+        "diagnostic": null
+      },
+      {
+        "id": "A3.C1",
+        "owner": "A3",
+        "field": "ambulance_accessible",
+        "op": "eq",
+        "value": true,
+        "source": "TASK",
+        "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities.",
+        "diagnostic": null
+      },
+      {
+        "id": "A3.C2",
+        "owner": "A3",
+        "field": "critical_care_available",
+        "op": "eq",
+        "value": true,
+        "source": "TASK",
+        "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities.",
+        "diagnostic": null
+      },
+      {
+        "id": "A4.C1",
+        "owner": "A4",
+        "field": "critical_care_available",
+        "op": "eq",
+        "value": true,
+        "source": "TASK",
+        "quote": "The patient needs to be transferred immediately to a hospital with advanced ICU facilities.",
+        "diagnostic": null
+      }
+    ],
+    "model_fact_table": {
+      "option_2": {
+        "critical_care_available": false,
+        "ambulance_accessible": null
+      },
+      "option_3": {
+        "critical_care_available": null,
+        "ambulance_accessible": true
+      },
+      "option_1": {
+        "ambulance_accessible": true,
+        "critical_care_available": null
+      }
+    },
+    "fact_conflicts": [
+      {
+        "candidate": "option_3",
+        "field": "critical_care_available",
+        "values": [
+          null,
+          null,
+          true,
+          false
+        ]
+      }
+    ],
+    "candidate_fact_coverage": {
+      "A1.C1": 1,
+      "A2.C1": 1,
+      "A3.C1": 2,
+      "A3.C2": 1,
+      "A4.C1": 1
+    },
+    "notices": [
+      {
+        "owner": "A2",
+        "kind": "exact_candidate_alias",
+        "index": 0,
+        "original": "Hospital B",
+        "normalized": "option_3"
+      },
+      {
+        "owner": "A2",
+        "kind": "exact_candidate_alias",
+        "index": 1,
+        "original": "Hospital B",
+        "normalized": "option_3"
+      },
+      {
+        "owner": "A2",
+        "kind": "exact_candidate_alias",
+        "index": 2,
+        "original": "Hospital A",
+        "normalized": "option_1"
+      },
+      {
+        "owner": "A2",
+        "kind": "exact_candidate_alias",
+        "index": 3,
+        "original": "Hospital A",
+        "normalized": "option_1"
+      },
+      {
+        "owner": "A2",
+        "kind": "exact_candidate_alias",
+        "index": 4,
+        "original": "Hospital C",
+        "normalized": "option_2"
+      },
+      {
+        "owner": "A2",
+        "kind": "exact_candidate_alias",
+        "index": 5,
+        "original": "Hospital C",
+        "normalized": "option_2"
+      },
+      {
+        "owner": "A3",
+        "kind": "exact_candidate_alias",
+        "index": 0,
+        "original": "Hospital B",
+        "normalized": "option_3"
+      },
+      {
+        "owner": "A3",
+        "kind": "exact_candidate_alias",
+        "index": 1,
+        "original": "Hospital B",
+        "normalized": "option_3"
+      },
+      {
+        "owner": "A3",
+        "kind": "exact_candidate_alias",
+        "index": 2,
+        "original": "Hospital A",
+        "normalized": "option_1"
+      },
+      {
+        "owner": "A3",
+        "kind": "exact_candidate_alias",
+        "index": 3,
+        "original": "Hospital A",
+        "normalized": "option_1"
+      },
+      {
+        "owner": "A3",
+        "kind": "exact_candidate_alias",
+        "index": 4,
+        "original": "Hospital C",
+        "normalized": "option_2"
+      },
+      {
+        "owner": "A3",
+        "kind": "exact_candidate_alias",
+        "index": 5,
+        "original": "Hospital C",
+        "normalized": "option_2"
+      },
+      {
+        "owner": "A4",
+        "kind": "exact_candidate_alias",
+        "index": 0,
+        "original": "Hospital B",
+        "normalized": "option_3"
+      },
+      {
+        "owner": "A4",
+        "kind": "exact_candidate_alias",
+        "index": 1,
+        "original": "Hospital B",
+        "normalized": "option_3"
+      },
+      {
+        "owner": "A4",
+        "kind": "exact_candidate_alias",
+        "index": 2,
+        "original": "Hospital A",
+        "normalized": "option_1"
+      },
+      {
+        "owner": "A4",
+        "kind": "exact_candidate_alias",
+        "index": 3,
+        "original": "Hospital C",
+        "normalized": "option_2"
+      }
+    ],
+    "candidate_checks": [
+      {
+        "candidate": "option_1",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C1",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A4.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          }
+        ]
+      },
+      {
+        "candidate": "option_2",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null
+          },
+          {
+            "condition": "A2.C1",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C2",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null
+          },
+          {
+            "condition": "A4.C1",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null
+          }
+        ]
+      },
+      {
+        "candidate": "option_3",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C1",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A4.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          }
+        ]
+      }
+    ],
+    "not_excluded": [
+      "option_1",
+      "option_3"
+    ],
+    "meaning": "Literal checks of model interpretations, not source-semantic verification. Unknown is not true; not-excluded is not proven correct."
+  },
+  "historical_author": "A2",
+  "historical_work": {
+    "reason": "The strongest documented critical-care signal is at Hospital B (large ICU, at least one doctor on emergency shift), and its main road was recently repaired and is the most used route. However, my own source S02 reports a landslide blocking the last stretch of the main road to B for at least 24 hours; this does not prove B is unreachable (an alternative route is unknown), but it makes B's ambulance accessibility uncertain. A's mountain pass is rain-hazardous and A may lack night staff; C has a history of equipment failures and a flood-prone secondary road, and A1's private report that C's ICU upgrade is incomplete (critical care unavailable until oxygen repairs) undercuts C. A3's claim that A's pass is cleared is a colleague report I cannot personally verify, and A4's report that B is out of critical-care beds conflicts with the public B description; these are unresolved. No hospital's current critical-care capability or route is fully confirmed. On balance, B remains the best-supported candidate because its ICU/staff signal is strongest and the road blockage may be bypassable, but this is a judgment under uncertainty rather than a confirmed-safe choice.",
+    "artifact": "option_3",
+    "solution": null
+  },
+  "local_reconstruction": {
+    "author": "A4",
+    "text": "My own source S04 establishes that Hospital B's emergency shift doctor is dealing with a multi-patient accident and that the hospital is \"temporarily out of critical care beds.\" That is a report of present, temporary bed unavailability at B — not a permanent capability judgment and not confirmation that no critical care could be provided. It directly qualifies the public description in PUBLIC.1, which says only that B \"is known for its large ICU and currently has at least one doctor on emergency shift\": a large ICU and an on-shift doctor do not establish a currently available critical-care bed, and S04 indicates the opposite at this moment. The public description and S04 are not logically contradictory (a large ICU can be temporarily full), but S04 undercuts any inference from PUBLIC.1 that B currently has capacity. Limits: S04 does not say how long beds will be unavailable, whether any bed could be freed, or whether the doctor can still stabilize a transfer; it also does not address route conditions. No source I hold confirms current bed availability at A or C, so this finding about B should not by itself be read as establishing that another hospital is the better destination."
+  },
+  "prior_local_question": {
+    "addressed_member": "A4",
+    "text": "What do your sources establish about Hospital B's present critical-care bed availability, and how does that relate to the public description of its ICU?"
+  }
+}

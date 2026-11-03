@@ -1,0 +1,792 @@
+{
+  "annotation": "executor_manual_read_all24_not_independent_or_blind",
+  "manual_failed_call_ids": [
+    1,
+    2,
+    3,
+    4,
+    13,
+    14,
+    15,
+    16
+  ],
+  "source_stage_sha256": "53399e7d8e5f7919fedac8b5c1ebe77b515b4a2a6e21c65126e063b72094489c",
+  "summary": {
+    "F": {
+      "n": 12,
+      "artifact_correct": 10,
+      "semantic_full_pass": 8,
+      "input_tokens": 9656,
+      "output_tokens": 2849,
+      "cases": {
+        "application-004": {
+          "n": 2,
+          "artifact_correct": 0,
+          "semantic_full_pass": 0,
+          "input_tokens": 3088,
+          "output_tokens": 804
+        },
+        "application-034": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 0,
+          "input_tokens": 2610,
+          "output_tokens": 861
+        },
+        "update-mixed": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1024,
+          "output_tokens": 300
+        },
+        "joint-mixed": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 966,
+          "output_tokens": 271
+        },
+        "all-supported": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 972,
+          "output_tokens": 290
+        },
+        "all-unsupported": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 996,
+          "output_tokens": 323
+        }
+      }
+    },
+    "K": {
+      "n": 12,
+      "artifact_correct": 10,
+      "semantic_full_pass": 8,
+      "input_tokens": 10352,
+      "output_tokens": 2937,
+      "cases": {
+        "application-004": {
+          "n": 2,
+          "artifact_correct": 0,
+          "semantic_full_pass": 0,
+          "input_tokens": 3204,
+          "output_tokens": 746
+        },
+        "application-034": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 0,
+          "input_tokens": 2726,
+          "output_tokens": 891
+        },
+        "update-mixed": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1140,
+          "output_tokens": 341
+        },
+        "joint-mixed": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1082,
+          "output_tokens": 290
+        },
+        "all-supported": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1088,
+          "output_tokens": 346
+        },
+        "all-unsupported": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1112,
+          "output_tokens": 323
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "logical_call": 1,
+      "case": "application-004",
+      "condition": "F",
+      "repeat": 1,
+      "artifact": "option_4",
+      "expected_artifact": "option_3",
+      "artifact_correct": false,
+      "semantic_full_pass": false,
+      "useful_part_applied": true,
+      "bad_part_avoided": false,
+      "manual_note": "Uses car constraint to exclude Z, but accepts unsupported passenger claim, selects father despite age clue, and conflates car-owner alcohol with driver evidence.",
+      "stage_output": {
+        "artifact": "option_4",
+        "work_text": "Reassessing the clues, the strongest and most direct evidence is my own original S01: the guilty person is driving a car, had a 1.5 alcohol level, and admits being inattentive. A 1.5 blood-alcohol level and admitted inattention fit Mr. X, who had just drunk several glasses of spirits at dinner, far better than anyone else. The car constraint excludes Mr. Z (motorcycle), and the son is described as a passenger returning home, not the driver, so option_3 is out. Mrs. Y has damaged lights but no alcohol or inattention clue, so option_2 is weaker. The peer-reported S02 (under 30, inexperience, didn't see others) and S03 (a man, father indirectly responsible, 110 km/h) pull toward Mr. Z, and I previously chose option_1 on that basis. But A2's contribution correctly stresses that the guilty person was in a car, which excludes the motorcyclist Z, and that the son was a passenger. Weighing my directly inspected S01 (car + 1.5 alcohol + inattention) against indirectly reported S02/S03, the alcohol and car clues most specifically identify Mr. X; the 'father indirectly responsible' in S03 can also be read as the father's drinking setting up the son, but the direct alcohol finding points to the father himself. Uncertainty remains: S02/S03 are known only through peer reports, the 110 km/h and under-30 clues do not fit Mr. X well, and the 'father indirectly responsible' phrasing is ambiguous. On balance, the car-driver plus high-alcohol plus inattention combination best fits Mr. X, so I select option_4, while noting the unresolved conflict with the under-30/speeding peer clues."
+      },
+      "usage": {
+        "input_tokens": 1544,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 391,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1935
+      }
+    },
+    {
+      "logical_call": 2,
+      "case": "application-004",
+      "condition": "K",
+      "repeat": 1,
+      "artifact": "option_4",
+      "expected_artifact": "option_3",
+      "artifact_correct": false,
+      "semantic_full_pass": false,
+      "useful_part_applied": true,
+      "bad_part_avoided": false,
+      "manual_note": "Uses car constraint to exclude Z, but accepts unsupported passenger claim, selects father despite age clue, and conflates car-owner alcohol with driver evidence.",
+      "stage_output": {
+        "artifact": "option_4",
+        "work_text": "The contribution correctly identifies a decisive constraint from S01 (my own direct material): the guilty person was driving a car, with a 1.5 alcohol level, and admitted inattentiveness. The motorcyclist Mr. Z is therefore excluded, which overturns the prior option_1 choice. The son is described as a passenger returning home with his father, not as driving, so option_3 is also unsupported. That leaves the two car drivers: Mr. X and Mrs. Y.\n\nS01's alcohol clue (1.5 level) fits Mr. X, who had just drunk several glasses of spirits, far better than Mrs. Y, for whom no alcohol fact exists. The peer-reported S02 clue (under 30, inexperience) would point to Mrs. Y (27, license 1 year) and conflicts with Mr. X (53). The peer-reported S03 clue (a man, 110 km/h, father indirectly responsible) points to a male driver, which fits Mr. X and not Mrs. Y. Weighing these: two independent clue sets (S01 alcohol/inattention and S03 male) converge on Mr. X, while only S02's age/inexperience clue favors Mrs. Y. The 'father indirectly responsible' line also fits the scenario where Mr. X's drinking is the indirect cause, and the son's presence.\n\nUnresolved limits: S02 and S03 are known only through colleague reports, not originals I inspected, and S02's under-30 clue directly contradicts Mr. X's age. S01 gives no name. On balance the car-plus-alcohol-plus-male convergence makes Mr. X (option_4) the best-supported single choice, though residual uncertainty remains because of the S02 age conflict. Coordination with A1/A3 is still advisable for the bonus."
+      },
+      "usage": {
+        "input_tokens": 1602,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 396,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1998
+      }
+    },
+    {
+      "logical_call": 3,
+      "case": "application-034",
+      "condition": "K",
+      "repeat": 1,
+      "artifact": "option_2",
+      "expected_artifact": "option_2",
+      "artifact_correct": true,
+      "semantic_full_pass": false,
+      "useful_part_applied": true,
+      "bad_part_avoided": false,
+      "manual_note": "Adds communication resources and retains option_2, but explicitly denies that S01 reported Pine dangerous and accepts the false correction.",
+      "stage_output": {
+        "artifact": "option_2",
+        "work_text": "The decision stands at Cedar Station (option_2). The key elimination is Maple Lodge: A2 reports (from original S02, which I cannot read directly) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. Reachability is a hard requirement under an imminent alert, and an unverified access failure on the sole route is enough to disqualify Maple, since there is no time to confirm an alternate route. That leaves Pine Retreat and Cedar Station. My own direct original S01 says the chemical cloud is drifting north; Pine Retreat is north, so it sits in the plume path. A2's correction is fair and I adopt it: S01 states the northward drift, and the danger at Pine is our inference from that drift plus Pine's northern position, not something the advisory explicitly labels. Even as an inference, though, it is a strong and direct one, and it outweighs the generic 'farther from the spill' point, which ignores wind direction. Cedar Station is the best remaining choice: it is not in the reported northward plume path, its route is familiar to the whole team (cutting navigation delay under time pressure), and all sites reportedly have 24h food/water. A2's contribution also usefully adds Cedar's communication resources recalled via P-S03 (functional landline, backup generator, emergency broadcast radio), which directly supports the coordination-with-authorities goal and strengthens Cedar over Pine. I treat P-S03 as a peer-reported recollection I have not verified, so it is a supporting plus rather than a decisive fact. Limits: the Maple washout is peer-reported and unverified, and may cover only the main road or be stale; Cedar's structural safety and contamination status are unstated, and its communication gear is only a recollection; S01's north-drift advisory is a single private source that could be superseded; and I have no direct access to S02 or S03."
+      },
+      "usage": {
+        "input_tokens": 1363,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 413,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1776
+      }
+    },
+    {
+      "logical_call": 4,
+      "case": "application-034",
+      "condition": "F",
+      "repeat": 1,
+      "artifact": "option_2",
+      "expected_artifact": "option_2",
+      "artifact_correct": true,
+      "semantic_full_pass": false,
+      "useful_part_applied": true,
+      "bad_part_avoided": false,
+      "manual_note": "Adds communication resources and retains option_2, but explicitly denies that S01 reported Pine dangerous and accepts the false correction.",
+      "stage_output": {
+        "artifact": "option_2",
+        "work_text": "Cedar Station (option_2) remains the best choice after incorporating A2's contribution. Reasoning: Maple Lodge is the designated evacuation site for chemical incidents, but A2's report (P-S02, sourced from S02, which I cannot read directly) says its only road is washed out and it is inaccessible by car or foot; reachability is a hard requirement and there is no time to verify an alternate route, so Maple is disqualified on peer-reported evidence. Pine Retreat is farther from the spill than our current position, but my own direct source S01 (latest radio advisory) says the chemical cloud is drifting north; Pine is to the north, so it likely lies in the plume path. A2 is right to correct my wording: S01 reports northward drift, not explicitly that Pine is dangerous — the danger at Pine is an inference, though a strong one given the geography. Cedar Station is south, away from the reported northward drift, the route is familiar to the whole team (reducing delay under time pressure), and A2's contribution adds that Cedar reportedly has a functional landline, backup generator, and emergency broadcast radio (P-S03), which directly serves the goal of coordinating with emergency services. All sites reportedly have 24h food/water. Unresolved limits: the Maple washout and Cedar's communication assets are peer-reported claims I have not verified from originals (S02, S03) and could be stale or incomplete; S01's north-drift advisory is a single private source and could be superseded; Cedar's structural safety and contamination status are unstated, and its lack of a chemical-incident evacuation designation is a real drawback; the washout might cover only the main road. On balance, under time pressure, Cedar is the only option without a known hard failure (access or plume path) and with reported communication capability, so option_2."
+      },
+      "usage": {
+        "input_tokens": 1305,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 401,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1706
+      }
+    },
+    {
+      "logical_call": 5,
+      "case": "update-mixed",
+      "condition": "F",
+      "repeat": 1,
+      "artifact": "Elm",
+      "expected_artifact": "Elm",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": true,
+      "manual_note": "Applies explicit reopening and capacity while rejecting false Birch closure.",
+      "stage_output": {
+        "artifact": "Elm",
+        "work_text": "The 08:00 report says the bridge to Elm is closed, which would make Elm inaccessible. However, the task states that later official reports explicitly override earlier ones, and the 10:00 official report says the same bridge to Elm has reopened to all traffic. That later report supersedes the closure, so Elm is accessible. Since Elm's capacity (60) exceeds Birch's (40), Elm is the accessible shelter with greatest capacity. The contribution's suggestion that Birch's road has closed is unsupported: the 10:00 report says the road to Birch remains open, so that part of the contribution should be rejected. The controlling uncertainty is whether the 10:00 reopening is indeed the latest applicable official report; given the packet, it is, so the answer is Elm."
+      },
+      "usage": {
+        "input_tokens": 512,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 169,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 681
+      }
+    },
+    {
+      "logical_call": 6,
+      "case": "update-mixed",
+      "condition": "K",
+      "repeat": 1,
+      "artifact": "Elm",
+      "expected_artifact": "Elm",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": true,
+      "manual_note": "Applies explicit reopening and capacity while rejecting false Birch closure.",
+      "stage_output": {
+        "artifact": "Elm",
+        "work_text": "The 08:00 report said the bridge to Elm was closed, which made Elm inaccessible and supported Birch in the earlier answer. The later 10:00 official report explicitly reopens that same bridge to all traffic, and the task states later official reports override earlier ones. Therefore Elm is accessible. Elm's capacity (60) exceeds Birch's (40), so Elm is the accessible shelter with greatest capacity. The contribution's additional claim that Birch's road has closed is unsupported: the 10:00 report says the road to Birch remains open. That mistaken premise does not affect the choice, because Elm's greater capacity makes it preferred regardless of Birch's accessibility. Residual uncertainty is minimal, resting on the reliability of the 10:00 official reopening report."
+      },
+      "usage": {
+        "input_tokens": 570,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 163,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 733
+      }
+    },
+    {
+      "logical_call": 7,
+      "case": "joint-mixed",
+      "condition": "K",
+      "repeat": 1,
+      "artifact": "P",
+      "expected_artifact": "P",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": true,
+      "manual_note": "Combines blue and circular requirements while rejecting only-blue assertion.",
+      "stage_output": {
+        "artifact": "P",
+        "work_text": "Inspector 1 requires blue (S1). Inspector 2 requires circular (reported in P2; I did not personally inspect S2, so this is accepted with that caveat). Checking the complete candidate list: P is a blue circle and satisfies both; Q is a blue square and fails the circular requirement; R is a red circle and fails the blue requirement. Thus P is the unique item satisfying both inspectors, revising the earlier tentative choice of Q. The contribution's conclusion (choose P) is supported, but its accompanying claim that P is the only blue item is incorrect: Q is also blue. That erroneous explanation is not carried into the answer."
+      },
+      "usage": {
+        "input_tokens": 541,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 143,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 684
+      }
+    },
+    {
+      "logical_call": 8,
+      "case": "joint-mixed",
+      "condition": "F",
+      "repeat": 1,
+      "artifact": "P",
+      "expected_artifact": "P",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": true,
+      "manual_note": "Combines blue and circular requirements while rejecting only-blue assertion.",
+      "stage_output": {
+        "artifact": "P",
+        "work_text": "Inspector 1 requires blue; Inspector 2 (per A2's report) requires circular. Among the complete list, P (blue circle) is the only item satisfying both: Q is blue but square, R is circular but red. The contribution's selection of P is correct. However, its claim that P is the only blue item is wrong—Q is also blue—so I adopt P but reject that ancillary claim. Uncertainty: Inspector 2's requirement is known only through A2's report, not from a directly inspected original, but it is consistent with the task and the unique-intersection result."
+      },
+      "usage": {
+        "input_tokens": 483,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 134,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 617
+      }
+    },
+    {
+      "logical_call": 9,
+      "case": "all-supported",
+      "condition": "F",
+      "repeat": 1,
+      "artifact": "River",
+      "expected_artifact": "River",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": null,
+      "manual_note": "Uses accessibility and radio information without rejecting supported contribution.",
+      "stage_output": {
+        "artifact": "River",
+        "work_text": "River holds 30 and Hill holds 50, so on capacity alone Hill is better. However, the road report (S1) states that River is accessible and Hill is inaccessible. Since the task asks for the accessible shelter with the greatest capacity, Hill is excluded despite its larger capacity, leaving River as the only accessible option. The facilities report (P2) adds that River has a working emergency radio, which is a useful secondary feature but not decisive. The main uncertainty is that the accessibility claim rests on a single road report; if it were wrong or outdated, Hill would be preferable on capacity. On the information given, River is the correct choice."
+      },
+      "usage": {
+        "input_tokens": 486,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 141,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 627
+      }
+    },
+    {
+      "logical_call": 10,
+      "case": "all-supported",
+      "condition": "K",
+      "repeat": 1,
+      "artifact": "River",
+      "expected_artifact": "River",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": null,
+      "manual_note": "Uses accessibility and radio information without rejecting supported contribution.",
+      "stage_output": {
+        "artifact": "River",
+        "work_text": "The task is to choose the accessible shelter with the greatest capacity. My own material (S1) states River is accessible and Hill is inaccessible, so Hill is eliminated despite its larger capacity (50 vs. River's 30). The contribution's central conclusion, choose River because Hill is inaccessible, is therefore supported by S1. The contribution also cites River's working emergency radio, which comes from A2's public report P2 (S2); that is a colleague report about the same event, not an original I inspected, so I treat the radio detail as a secondary, lower-confidence point that does not affect the choice. The earlier answer (Hill) is revised because it ignored accessibility. Among accessible shelters only River qualifies, so River is the answer with certainty contingent on S1 being accurate."
+      },
+      "usage": {
+        "input_tokens": 544,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 172,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 716
+      }
+    },
+    {
+      "logical_call": 11,
+      "case": "all-unsupported",
+      "condition": "K",
+      "repeat": 1,
+      "artifact": "Oak",
+      "expected_artifact": "Oak",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": null,
+      "bad_part_avoided": true,
+      "manual_note": "Preserves feasible larger room and rejects both unsupported changes.",
+      "stage_output": {
+        "artifact": "Oak",
+        "work_text": "Oak remains the correct choice. S1 states both Oak and Ash are available for the full 14:00-15:00 interval, so there is no supported basis for an overlapping reservation at Oak; the contribution's claim that Oak 'might' have one is speculation and conflicts with the availability statement. P2 reports both rooms have functioning projectors, so the projector requirement is met by both and the contribution's instruction to state that Oak lacks a functioning projector is unsupported and should not be repeated. Both rooms are feasible, and Oak has 12 seats versus Ash's 8, so Oak has the most seats. Uncertainty is limited to the fact that P2 is a colleague report rather than a directly inspected original, but it is the only projector evidence and it supports Oak as well as Ash."
+      },
+      "usage": {
+        "input_tokens": 556,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 170,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 726
+      }
+    },
+    {
+      "logical_call": 12,
+      "case": "all-unsupported",
+      "condition": "F",
+      "repeat": 1,
+      "artifact": "Oak",
+      "expected_artifact": "Oak",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": null,
+      "bad_part_avoided": true,
+      "manual_note": "Preserves feasible larger room and rejects both unsupported changes.",
+      "stage_output": {
+        "artifact": "Oak",
+        "work_text": "Both rooms satisfy the stated constraints: my direct material (S1) says Oak and Ash are both available for the full 14:00–15:00 interval, and the colleague report (P2) says both have functioning projectors. Oak has 12 seats versus Ash's 8, so Oak is the feasible room with the most seats. I decline the contribution's proposed switch: its claim that Oak might have an overlapping reservation conflicts with S1, whose availability statements are specified to cover the full meeting interval, and its claim that Oak has no functioning projector conflicts with P2. The contribution provides no new evidence, only unsupported assertions. Residual uncertainty is limited to reliance on S1 and P2 being accurate; nothing in the packet supports preferring Ash."
+      },
+      "usage": {
+        "input_tokens": 498,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 163,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 661
+      }
+    },
+    {
+      "logical_call": 13,
+      "case": "application-004",
+      "condition": "K",
+      "repeat": 2,
+      "artifact": "option_4",
+      "expected_artifact": "option_3",
+      "artifact_correct": false,
+      "semantic_full_pass": false,
+      "useful_part_applied": true,
+      "bad_part_avoided": false,
+      "manual_note": "Uses car constraint to exclude Z, but accepts unsupported passenger claim, selects father despite age clue, and conflates car-owner alcohol with driver evidence.",
+      "stage_output": {
+        "artifact": "option_4",
+        "work_text": "Reassessing the clues: my own original S01 states the guilty person was driving a car, had a 1.5 alcohol level, and admits being inattentive. A2's contribution correctly emphasizes the car-driver constraint, which excludes Mr. Z (motorcyclist) and, since the son is described as a passenger returning home in his father's car, excludes the son. That leaves Mr. X and Mrs. Y. Mrs. Y's damaged lights could explain not seeing others, but the alcohol clue (1.5 level, several glasses of spirits at dinner) fits Mr. X directly and strongly; a 1.5 level also implies inattention. Peer report S02's 'under 30/inexperience' clue would point to Mrs. Y or the son, but it conflicts with the direct alcohol evidence and with the passenger status of the son; S02 is only a colleague report, not an original I inspected, whereas S01 is my directly accessible material. S03's 'a man' and 'father indirectly responsible' fit Mr. X (a man; his drinking and the son's presence), though S03's 110 km/h speeding fits neither Mr. X well nor the narrow poorly lit road scenario as neatly as it fits Mr. Z. Weighing direct evidence most heavily, the alcohol plus car plus inattention converge on Mr. X. I therefore switch from option_1 to option_4. Limits: S02 and S03 are known only via peer reports and contain conflicting signals (under-30, speeding), so some uncertainty remains and coordination with teammates is needed for the bonus."
+      },
+      "usage": {
+        "input_tokens": 1602,
+        "input_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "output_tokens": 350,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1952
+      }
+    },
+    {
+      "logical_call": 14,
+      "case": "application-004",
+      "condition": "F",
+      "repeat": 2,
+      "artifact": "option_4",
+      "expected_artifact": "option_3",
+      "artifact_correct": false,
+      "semantic_full_pass": false,
+      "useful_part_applied": true,
+      "bad_part_avoided": false,
+      "manual_note": "Uses car constraint to exclude Z, but accepts unsupported passenger claim, selects father despite age clue, and conflates car-owner alcohol with driver evidence.",
+      "stage_output": {
+        "artifact": "option_4",
+        "work_text": "Reassessing the clues, Mr. X (option_4) is the best-supported suspect. My direct original S01 states the guilty person was driving a car, had a blood-alcohol level of 1.5, and admitted being inattentive. This fits Mr. X precisely: he had just drunk several glasses of spirits at dinner and was driving his car home. The 1.5 alcohol reading is a decisive, hard constraint that only Mr. X among the suspects plausibly satisfies; the son was a passenger and is 17, Mrs. Y's facts mention damaged lights but no alcohol, and Mr. Z was on a motorcycle (not a car) and his issue is speeding, not drinking. A2's contribution correctly emphasizes that the guilty party was in a car (excluding motorcyclist Z) and that the son was a passenger (excluding him), leaving Mr. X as the car driver matching the alcohol and inattention clues. The competing clues from peer reports (S02: under 30, inexperience; S03: male, 110 km/h, father indirectly responsible) are indirect and partly point to the son or Z, but they conflict with the hard fact that the guilty person drove a car with a 1.5 alcohol level. Mrs. Y is a possible car driver but has no alcohol clue and is female, conflicting with S03's 'a man.' The son is under 30 and male, and his father's drinking could be 'indirectly responsible,' but the son is described as a passenger, not the driver. Thus the alcohol-plus-car-plus-inattention combination most strongly identifies Mr. X. Uncertainty remains because S02/S03 are known only through peer reports and the under-30/inexperience clue does not fit Mr. X (53); however, the direct S01 evidence is the strongest single constraint and aligns with Mr. X's documented drinking. I therefore choose option_4."
+      },
+      "usage": {
+        "input_tokens": 1544,
+        "input_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "output_tokens": 413,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1957
+      }
+    },
+    {
+      "logical_call": 15,
+      "case": "application-034",
+      "condition": "F",
+      "repeat": 2,
+      "artifact": "option_2",
+      "expected_artifact": "option_2",
+      "artifact_correct": true,
+      "semantic_full_pass": false,
+      "useful_part_applied": true,
+      "bad_part_avoided": false,
+      "manual_note": "Adds communication resources and retains option_2, but explicitly denies that S01 reported Pine dangerous and accepts the false correction.",
+      "stage_output": {
+        "artifact": "option_2",
+        "work_text": "Cedar Station (option_2) remains the best choice, and A2's contribution strengthens rather than changes it. Reasoning: (1) Maple Lodge is disqualified on reachability — A2's report (P-S02) says the only road is washed out and it is inaccessible by car or foot. This is peer-reported, not something I read directly, so some uncertainty remains (it could be stale or cover only the main road), but under imminent-alert time pressure an unverified access failure on the sole route is enough to rule out a site, since reachability is a hard requirement and there is no time to scout alternates. (2) Pine Retreat is disqualified on safety: my own direct source S01 (radio advisory) says the chemical cloud is drifting north, and Pine is north of our position. A2 correctly notes S01 states only the drift, so danger at Pine is an inference from wind direction plus geography rather than an explicit warning about Pine; I accept that correction, but the inference is still strong and time-critical, and Pine's only stated advantage ('farther from the spill') does not address a northward plume. (3) Cedar Station is the best remaining option: it lies south, away from the reported northward drift; its route is familiar to the whole team, reducing navigation delay; and all sites reportedly have 24h food and water. A2's contribution adds that Cedar has a recalled functional landline, backup generator, and emergency broadcast radio (P-S03) — directly serving the goal of coordinating with emergency services, which no other site is reported to offer. I weight this as supportive but peer-reported, not personally verified. Unresolved limits: the Maple washout and Cedar's communication equipment are colleague-reported claims I cannot confirm from originals; Cedar's structural safety and contamination status are unstated, and it lacks a stated chemical-incident designation unlike Maple; S01 is a single private advisory that could be superseded; and if the washout report proved false or partial, Maple Lodge (the designated chemical-incident safe site) would become competitive again. On the available facts, option_2 maximizes both safety and coordination ability."
+      },
+      "usage": {
+        "input_tokens": 1305,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens": 460,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1765
+      }
+    },
+    {
+      "logical_call": 16,
+      "case": "application-034",
+      "condition": "K",
+      "repeat": 2,
+      "artifact": "option_2",
+      "expected_artifact": "option_2",
+      "artifact_correct": true,
+      "semantic_full_pass": false,
+      "useful_part_applied": true,
+      "bad_part_avoided": false,
+      "manual_note": "Adds communication resources and retains option_2, but explicitly denies that S01 reported Pine dangerous and accepts the false correction.",
+      "stage_output": {
+        "artifact": "option_2",
+        "work_text": "Cedar Station (option_2) remains the best choice, and A2's contribution strengthens it while slightly correcting the reasoning.\n\nKey points:\n1. Maple Lodge (option_1) is the evacuation-plan designated safe site for chemical incidents, which is a strong positive. However, A2's report (P-S02, from source S02) says the only road to Maple Lodge is washed out and it is inaccessible by car or foot. Reachability is a hard requirement under time pressure, and an unverified but specific access failure on the only route is enough to rule it out when there is no time to confirm an alternate route. This is peer-reported, not something I inspected directly, so it carries uncertainty.\n2. Pine Retreat (option_3) is north. My own source S01 says the chemical cloud is drifting north. A2 correctly notes that S01 states only the drift direction; that Pine is dangerous is an inference from the plume direction, not an explicit advisory statement. The inference is still reasonable and safety-relevant, but it is weaker than I previously framed it. Combined with the fact that Pine's only advantage is being farther from the spill (which does not address wind-borne drift), Pine is not the safest pick.\n3. Cedar Station is not in the reported northward plume path, its route is familiar to the whole team (reducing navigation delay), and all sites reportedly have 24h food/water. A2's contribution (P-S03, from source S03) adds that Cedar has a functional landline, backup generator, and emergency broadcast radio, which directly supports the coordination-with-authorities goal. This is a recalled claim from a team member, not independently verified, but it is plausible and consistent with an old ranger station.\n\nUnresolved limits: the Maple washout is peer-reported and may be stale or cover only the main road; Cedar's structural safety and contamination status are unstated and it lacks a chemical-incident designation; S01's north-drift advisory is a single private source and could be superseded; and the communication assets at Cedar are recalled rather than confirmed. On balance, Cedar Station best satisfies both safety (off the reported plume path) and coordination (communication assets, familiar route)."
+      },
+      "usage": {
+        "input_tokens": 1363,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens": 478,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1841
+      }
+    },
+    {
+      "logical_call": 17,
+      "case": "update-mixed",
+      "condition": "K",
+      "repeat": 2,
+      "artifact": "Elm",
+      "expected_artifact": "Elm",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": true,
+      "manual_note": "Applies explicit reopening and capacity while rejecting false Birch closure.",
+      "stage_output": {
+        "artifact": "Elm",
+        "work_text": "The 08:00 official report (S1) states the bridge to Elm is closed, which initially made Elm inaccessible and supported choosing Birch. The later 10:00 official report (P2) explicitly reopens that same bridge to all traffic, and the task says later official reports explicitly override earlier ones. Therefore Elm is accessible again, and with capacity 60 versus Birch's 40, Elm is the accessible shelter with greatest capacity. The contribution's conclusion to choose Elm is supported. However, its additional claim that Birch is inaccessible because its road has closed is unsupported: P2 states the road to Birch remains open, the opposite of that claim. That mistaken accompanying statement is not carried into the answer. Residual uncertainty is minimal, resting only on treating P2's reported excerpt as an accurate account of the later official report."
+      },
+      "usage": {
+        "input_tokens": 570,
+        "input_tokens_details": {
+          "cached_tokens": 384
+        },
+        "output_tokens": 178,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 748
+      }
+    },
+    {
+      "logical_call": 18,
+      "case": "update-mixed",
+      "condition": "F",
+      "repeat": 2,
+      "artifact": "Elm",
+      "expected_artifact": "Elm",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": true,
+      "manual_note": "Applies explicit reopening and capacity while rejecting false Birch closure.",
+      "stage_output": {
+        "artifact": "Elm",
+        "work_text": "The 10:00 official report explicitly overrides the earlier 08:00 report, so the bridge to Elm is now open and Elm is accessible. Birch's road also remains open, but Elm has the greater capacity (60 vs. 40), so Elm is the best choice. I do not adopt the contribution's added claim that Birch is inaccessible; the report says the road to Birch remains open, so that part is unsupported. Uncertainty is minimal given the explicit override rule, though the conclusion depends on the 10:00 report being accurate and later than the 08:00 report."
+      },
+      "usage": {
+        "input_tokens": 512,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 131,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 643
+      }
+    },
+    {
+      "logical_call": 19,
+      "case": "joint-mixed",
+      "condition": "F",
+      "repeat": 2,
+      "artifact": "P",
+      "expected_artifact": "P",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": true,
+      "manual_note": "Combines blue and circular requirements while rejecting only-blue assertion.",
+      "stage_output": {
+        "artifact": "P",
+        "work_text": "Inspector 1 requires blue; Inspector 2 (per A2's report of S2) requires circular. Among the candidates, P is a blue circle, satisfying both; Q is blue but square, and R is red. The contribution's selection of P is correct. However, its added claim that P is the only blue item is false, since Q is also blue. So the answer is P, with that correction noted. Uncertainty: Inspector 2's requirement is known only via A2's reported excerpt, not an original I inspected, but it is consistent with the candidate descriptions and yields a unique match."
+      },
+      "usage": {
+        "input_tokens": 483,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 137,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 620
+      }
+    },
+    {
+      "logical_call": 20,
+      "case": "joint-mixed",
+      "condition": "K",
+      "repeat": 2,
+      "artifact": "P",
+      "expected_artifact": "P",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": true,
+      "manual_note": "Combines blue and circular requirements while rejecting only-blue assertion.",
+      "stage_output": {
+        "artifact": "P",
+        "work_text": "Inspector 1 requires blue, so the candidates are P (blue circle) and Q (blue square); R is red and excluded. The colleague report (P2, from source S2) states Inspector 2 requires a circular item. Combining the supported requirements, P is blue and circular, while Q is blue but square. Thus P uniquely satisfies both inspectors. I do not adopt the contribution's extra claim that P is the only blue item, since Q is also blue; that claim is false. The conclusion rests on the reported Inspector 2 requirement, which I have not directly inspected, but it is the only available evidence on that requirement and is consistent with the candidate list."
+      },
+      "usage": {
+        "input_tokens": 541,
+        "input_tokens_details": {
+          "cached_tokens": 384
+        },
+        "output_tokens": 147,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 688
+      }
+    },
+    {
+      "logical_call": 21,
+      "case": "all-supported",
+      "condition": "K",
+      "repeat": 2,
+      "artifact": "River",
+      "expected_artifact": "River",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": null,
+      "manual_note": "Uses accessibility and radio information without rejecting supported contribution.",
+      "stage_output": {
+        "artifact": "River",
+        "work_text": "Hill has the greater capacity (50 vs. 30), but the road report (S1) states Hill is inaccessible and River is accessible. Since the task requires choosing among accessible shelters, Hill must be excluded, leaving River as the only accessible option, so River is chosen despite its smaller capacity. The facilities report (P2) adds that River has a working emergency radio while Hill has none; this is a useful supporting detail, though it does not affect the capacity comparison. The prior answer (Hill) is revised because it overlooked accessibility. Uncertainty: the accessibility determination rests on a single road report (S1); if that report were wrong and Hill were actually accessible, Hill would be preferred for its larger capacity. The radio detail comes from a colleague's report rather than direct inspection and is not decisive."
+      },
+      "usage": {
+        "input_tokens": 544,
+        "input_tokens_details": {
+          "cached_tokens": 384
+        },
+        "output_tokens": 174,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 718
+      }
+    },
+    {
+      "logical_call": 22,
+      "case": "all-supported",
+      "condition": "F",
+      "repeat": 2,
+      "artifact": "River",
+      "expected_artifact": "River",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": true,
+      "bad_part_avoided": null,
+      "manual_note": "Uses accessibility and radio information without rejecting supported contribution.",
+      "stage_output": {
+        "artifact": "River",
+        "work_text": "The task requires choosing among accessible shelters, so accessibility is a constraint that takes priority over capacity. My directly inspected material (S1) states that River is accessible and Hill is inaccessible, which rules out Hill regardless of its larger capacity (50 vs. 30). A2's contribution reaches the same conclusion, and the public facilities report (P2) adds that River has a working emergency radio, a useful but secondary feature. The only uncertainty is that accessibility rests on a single road report I have not independently corroborated; if that report were wrong, Hill's greater capacity would make it the better choice. On the available information, River is the only accessible option and is therefore the correct answer."
+      },
+      "usage": {
+        "input_tokens": 486,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 149,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 635
+      }
+    },
+    {
+      "logical_call": 23,
+      "case": "all-unsupported",
+      "condition": "F",
+      "repeat": 2,
+      "artifact": "Oak",
+      "expected_artifact": "Oak",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": null,
+      "bad_part_avoided": true,
+      "manual_note": "Preserves feasible larger room and rejects both unsupported changes.",
+      "stage_output": {
+        "artifact": "Oak",
+        "work_text": "Both rooms are feasible for 14:00-15:00: my source material states Oak and Ash are both available for the full interval, and the public report states both have functioning projectors. Oak has 12 seats versus Ash's 8, so Oak is the feasible room with the most seats. I do not adopt the contribution's suggestions: there is no evidence in the available materials of an overlapping reservation for Oak, and the claim that Oak lacks a functioning projector is contradicted by the public report. The contribution appears to introduce unsupported concerns and a false projector statement. Residual uncertainty is limited to the reliability of the availability and projector statements, which I have no basis to doubt given the task's assurance that availability covers the full meeting interval."
+      },
+      "usage": {
+        "input_tokens": 498,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 160,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 658
+      }
+    },
+    {
+      "logical_call": 24,
+      "case": "all-unsupported",
+      "condition": "K",
+      "repeat": 2,
+      "artifact": "Oak",
+      "expected_artifact": "Oak",
+      "artifact_correct": true,
+      "semantic_full_pass": true,
+      "useful_part_applied": null,
+      "bad_part_avoided": true,
+      "manual_note": "Preserves feasible larger room and rejects both unsupported changes.",
+      "stage_output": {
+        "artifact": "Oak",
+        "work_text": "The task requires the feasible room with the most seats for 14:00-15:00 with a projector. S1 states both Oak and Ash are available for the full interval. P2 reports both have functioning projectors. Therefore both rooms are feasible; Oak (12 seats) beats Ash (8 seats), so Oak remains correct. The contribution's suggestion to switch to Ash rests on an unsupported speculation that Oak might have an overlapping reservation, which conflicts with S1's availability statement, and its claim that Oak has no functioning projector is contradicted by P2. Neither assertion is supported, so I retain Oak. Uncertainty is limited to reliance on the reports that both rooms are available and both projectors work."
+      },
+      "usage": {
+        "input_tokens": 556,
+        "input_tokens_details": {
+          "cached_tokens": 384
+        },
+        "output_tokens": 153,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 709
+      }
+    }
+  ]
+}

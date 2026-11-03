@@ -1,0 +1,1278 @@
+{
+  "model_answer": {
+    "choice": "option_4",
+    "reasoning": "The historical work's application is largely supported by its own source S01, which is A1's direct original access: the culprit was driving a car, had a measured alcohol level of 1.5, and admitted inattentiveness. The car condition excludes Mr. Z (motorcycle). Mr. X's son is described as returning home in the first car with Mr. X, and the natural reading is that Mr. X, the licensed 30-year driver, was driving; thus the son is not established as a car driver. Between the car drivers, Mr. X is the only one publicly described as having drunk spirits, which qualitatively matches the alcohol condition; Mrs. Y's only noted issue is damaged lights and short experience. So the best-supported unique choice is Mr. X (option_4). A2's local reconstruction adds an age restriction (under 30) from S02, which would exclude Mr. X, but S02 is not among my own sources; A2's quoted evidence cannot override A1's direct original access, and it does not name a suspect or resolve which of the three under-30 candidates is responsible. The age filter is compatible with Mr. Z, Mrs. Y, and Mr. X's son but does not establish responsibility, and it conflicts with the alcohol/car-driver inference in the historical work. Because A1's own source directly constrains the culprit to a car driver with a 1.5 alcohol reading, and Mr. X is the only suspect publicly described as having consumed alcohol while driving a car, the historical application to Mr. X is retained. Limits: no public source gives a numeric 1.5 reading or an explicit inattention admission for any named suspect, so the identification rests on qualitative inference; the son's exact role is not explicitly stated as driver or passenger, though the phrasing favors Mr. X as driver.",
+    "annotation_issues": [],
+    "extra_annotations": {}
+  },
+  "action": {
+    "status": "not_proposed"
+  },
+  "delivery": {
+    "mode": "report_reference",
+    "version": 1,
+    "choice": "option_4",
+    "model_choice": "option_4",
+    "model_reasoning": "The historical work's application is largely supported by its own source S01, which is A1's direct original access: the culprit was driving a car, had a measured alcohol level of 1.5, and admitted inattentiveness. The car condition excludes Mr. Z (motorcycle). Mr. X's son is described as returning home in the first car with Mr. X, and the natural reading is that Mr. X, the licensed 30-year driver, was driving; thus the son is not established as a car driver. Between the car drivers, Mr. X is the only one publicly described as having drunk spirits, which qualitatively matches the alcohol condition; Mrs. Y's only noted issue is damaged lights and short experience. So the best-supported unique choice is Mr. X (option_4). A2's local reconstruction adds an age restriction (under 30) from S02, which would exclude Mr. X, but S02 is not among my own sources; A2's quoted evidence cannot override A1's direct original access, and it does not name a suspect or resolve which of the three under-30 candidates is responsible. The age filter is compatible with Mr. Z, Mrs. Y, and Mr. X's son but does not establish responsibility, and it conflicts with the alcohol/car-driver inference in the historical work. Because A1's own source directly constrains the culprit to a car driver with a 1.5 alcohol reading, and Mr. X is the only suspect publicly described as having consumed alcohol while driving a car, the historical application to Mr. X is retained. Limits: no public source gives a numeric 1.5 reading or an explicit inattention admission for any named suspect, so the identification rests on qualitative inference; the son's exact role is not explicitly stated as driver or passenger, though the phrasing favors Mr. X as driver.",
+    "selector": "model_proposal",
+    "host_changed_choice": false,
+    "not_excluded": [
+      "option_3"
+    ],
+    "exclusion_trace": [
+      {
+        "candidate": "option_1",
+        "violations": [
+          {
+            "condition": "A1.C1",
+            "status": "violates",
+            "actual": "motorcycle",
+            "diagnostic": null,
+            "premise": {
+              "id": "A1.C1",
+              "owner": "A1",
+              "value": "car",
+              "source": "S01",
+              "field": "driver_vehicle",
+              "op": "eq",
+              "quote": "The guilty person is driving a car.",
+              "diagnostic": null
+            }
+          }
+        ]
+      },
+      {
+        "candidate": "option_2",
+        "violations": [
+          {
+            "condition": "A3.C1",
+            "status": "violates",
+            "actual": "female",
+            "diagnostic": null,
+            "premise": {
+              "id": "A3.C1",
+              "owner": "A3",
+              "value": "male",
+              "source": "S03",
+              "field": "sex",
+              "op": "eq",
+              "quote": "The guilty person is a man.",
+              "diagnostic": null
+            }
+          }
+        ]
+      },
+      {
+        "candidate": "option_4",
+        "violations": [
+          {
+            "condition": "A2.C1",
+            "status": "violates",
+            "actual": 53,
+            "diagnostic": null,
+            "premise": {
+              "id": "A2.C1",
+              "owner": "A2",
+              "value": 30,
+              "source": "S02",
+              "field": "age",
+              "op": "lt",
+              "quote": "The guilty person is less than 30 years old.",
+              "diagnostic": null
+            }
+          }
+        ]
+      }
+    ],
+    "unresolved": false,
+    "feasibility": "not_certified",
+    "interpretation": "Conditional on the current model encodings; not a guarantee of task correctness.",
+    "reasoning_source": "model"
+  },
+  "state_events": [],
+  "report": {
+    "version": 1,
+    "member_conditions": [
+      {
+        "id": "A1.C1",
+        "owner": "A1",
+        "value": "car",
+        "source": "S01",
+        "field": "driver_vehicle",
+        "op": "eq",
+        "quote": "The guilty person is driving a car.",
+        "diagnostic": null
+      },
+      {
+        "id": "A1.C2",
+        "owner": "A1",
+        "value": 1.5,
+        "source": "S01",
+        "field": "measured_alcohol",
+        "op": "eq",
+        "quote": "the guilty car owner was discovered to have a 1.5 level of alcohol",
+        "diagnostic": null
+      },
+      {
+        "id": "A1.C3",
+        "owner": "A1",
+        "value": true,
+        "source": "S01",
+        "field": "inattentive",
+        "op": "eq",
+        "quote": "The guilty person admits that he was inattentive at the time of the collision.",
+        "diagnostic": null
+      },
+      {
+        "id": "A2.C1",
+        "owner": "A2",
+        "value": 30,
+        "source": "S02",
+        "field": "age",
+        "op": "lt",
+        "quote": "The guilty person is less than 30 years old.",
+        "diagnostic": null
+      },
+      {
+        "id": "A3.C1",
+        "owner": "A3",
+        "value": "male",
+        "source": "S03",
+        "field": "sex",
+        "op": "eq",
+        "quote": "The guilty person is a man.",
+        "diagnostic": null
+      },
+      {
+        "id": "A3.C2",
+        "owner": "A3",
+        "value": 110,
+        "source": "S03",
+        "field": "speed_kmh",
+        "op": "eq",
+        "quote": "The guilty person was driving at 110 km/h.",
+        "diagnostic": null
+      }
+    ],
+    "model_fact_table": {
+      "option_4": {
+        "age": 53,
+        "license_years": 30,
+        "drank_spirits": true,
+        "driver_vehicle": "car",
+        "role": "driver"
+      },
+      "option_3": {
+        "age": 17,
+        "role": "passenger"
+      },
+      "option_2": {
+        "age": 27,
+        "license_years": 1,
+        "driver_vehicle": "car",
+        "vehicle_context": "car",
+        "sex": "female",
+        "role": "driver"
+      },
+      "option_1": {
+        "age": 28,
+        "license_years": 5,
+        "driver_vehicle": "motorcycle",
+        "speed_kmh": null,
+        "vehicle_context": "motorcycle",
+        "role": "driver"
+      }
+    },
+    "fact_conflicts": [],
+    "candidate_fact_coverage": {
+      "A1.C1": 3,
+      "A1.C2": 0,
+      "A1.C3": 0,
+      "A2.C1": 4,
+      "A3.C1": 1,
+      "A3.C2": 0
+    },
+    "notices": [],
+    "candidate_checks": [
+      {
+        "candidate": "option_1",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "violates",
+            "actual": "motorcycle",
+            "diagnostic": null
+          },
+          {
+            "condition": "A1.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A1.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C1",
+            "status": "consistent",
+            "actual": 28,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          }
+        ]
+      },
+      {
+        "candidate": "option_2",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "consistent",
+            "actual": "car",
+            "diagnostic": null
+          },
+          {
+            "condition": "A1.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A1.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C1",
+            "status": "consistent",
+            "actual": 27,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C1",
+            "status": "violates",
+            "actual": "female",
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          }
+        ]
+      },
+      {
+        "candidate": "option_3",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A1.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A1.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C1",
+            "status": "consistent",
+            "actual": 17,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          }
+        ]
+      },
+      {
+        "candidate": "option_4",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "consistent",
+            "actual": "car",
+            "diagnostic": null
+          },
+          {
+            "condition": "A1.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A1.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C1",
+            "status": "violates",
+            "actual": 53,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          }
+        ]
+      }
+    ],
+    "not_excluded": [
+      "option_3"
+    ],
+    "meaning": "Literal checks of model interpretations, not source-semantic verification. Unknown is not true; not-excluded is not proven correct.",
+    "admission": [
+      {
+        "id": "A1.F1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F2",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F3",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F4",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F5",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F6",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F7",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F8",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F9",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F10",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F11",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F12",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.F13",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.C1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.C2",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.C3",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F2",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F3",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F4",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F5",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F6",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F7",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F8",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F9",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F10",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F11",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.C1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F2",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F3",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F4",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F5",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F6",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F7",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F8",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F9",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F10",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F11",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F12",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F13",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F14",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F15",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.C1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.C2",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      }
+    ],
+    "entries": [
+      {
+        "id": "A1.F1",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": 53,
+          "source": "PUBLIC.1",
+          "field": "age",
+          "quote": "Mr. X—who is 53 years old",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F2",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": 30,
+          "source": "PUBLIC.1",
+          "field": "license_years",
+          "quote": "has held a driving license for 30 years",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F3",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.1",
+          "field": "drank_spirits",
+          "quote": "The father had just drunk several glasses of spirits during a dinner with his friends.",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F4",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": "car",
+          "source": "PUBLIC.1",
+          "field": "driver_vehicle",
+          "quote": "In the first car, Mr. X",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F5",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": 17,
+          "source": "PUBLIC.1",
+          "field": "age",
+          "quote": "his 17-year-old son",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F6",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": "passenger",
+          "source": "PUBLIC.1",
+          "field": "role",
+          "quote": "Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home.",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F7",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": 27,
+          "source": "PUBLIC.2",
+          "field": "age",
+          "quote": "Mrs. Y, 27 years old",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F8",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": 1,
+          "source": "PUBLIC.2",
+          "field": "license_years",
+          "quote": "having held a driving license for only 1 year",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F9",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": "car",
+          "source": "PUBLIC.2",
+          "field": "driver_vehicle",
+          "quote": "In the second car, Mrs. Y",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F10",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": 28,
+          "source": "PUBLIC.3",
+          "field": "age",
+          "quote": "Mr. Z, 28 years old",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F11",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": 5,
+          "source": "PUBLIC.3",
+          "field": "license_years",
+          "quote": "who has held a driving license for 5 years",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F12",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": "motorcycle",
+          "source": "PUBLIC.3",
+          "field": "driver_vehicle",
+          "quote": "On the motorcycle, Mr. Z",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F13",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": null,
+          "source": "PUBLIC.3",
+          "field": "speed_kmh",
+          "quote": "He is speeding on the N13 road.",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.C1",
+        "owner": "A1",
+        "section": "conditions",
+        "value": {
+          "value": "car",
+          "source": "S01",
+          "field": "driver_vehicle",
+          "op": "eq",
+          "quote": "The guilty person is driving a car."
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.C2",
+        "owner": "A1",
+        "section": "conditions",
+        "value": {
+          "value": 1.5,
+          "source": "S01",
+          "field": "measured_alcohol",
+          "op": "eq",
+          "quote": "the guilty car owner was discovered to have a 1.5 level of alcohol"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.C3",
+        "owner": "A1",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "S01",
+          "field": "inattentive",
+          "op": "eq",
+          "quote": "The guilty person admits that he was inattentive at the time of the collision."
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F1",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": 53,
+          "source": "PUBLIC.1",
+          "field": "age",
+          "quote": "Mr. X—who is 53 years old",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F2",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": 30,
+          "source": "PUBLIC.1",
+          "field": "license_years",
+          "quote": "has held a driving license for 30 years",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F3",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.1",
+          "field": "drank_spirits",
+          "quote": "The father had just drunk several glasses of spirits",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F4",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": 17,
+          "source": "PUBLIC.1",
+          "field": "age",
+          "quote": "his 17-year-old son",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F5",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": 27,
+          "source": "PUBLIC.2",
+          "field": "age",
+          "quote": "Mrs. Y, 27 years old",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F6",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": 1,
+          "source": "PUBLIC.2",
+          "field": "license_years",
+          "quote": "having held a driving license for only 1 year",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F7",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": "car",
+          "source": "PUBLIC.2",
+          "field": "vehicle_context",
+          "quote": "In the second car, Mrs. Y",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F8",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": 28,
+          "source": "PUBLIC.3",
+          "field": "age",
+          "quote": "Mr. Z, 28 years old",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F9",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": 5,
+          "source": "PUBLIC.3",
+          "field": "license_years",
+          "quote": "who has held a driving license for 5 years",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F10",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": "motorcycle",
+          "source": "PUBLIC.3",
+          "field": "driver_vehicle",
+          "quote": "On the motorcycle, Mr. Z",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F11",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": null,
+          "source": "PUBLIC.3",
+          "field": "speed_kmh",
+          "quote": "He is speeding on the N13 road.",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.C1",
+        "owner": "A2",
+        "section": "conditions",
+        "value": {
+          "value": 30,
+          "source": "S02",
+          "field": "age",
+          "op": "lt",
+          "quote": "The guilty person is less than 30 years old."
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F1",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": 53,
+          "source": "PUBLIC.1",
+          "field": "age",
+          "quote": "Mr. X—who is 53 years old",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F2",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": 30,
+          "source": "PUBLIC.1",
+          "field": "license_years",
+          "quote": "has held a driving license for 30 years",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F3",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.1",
+          "field": "drank_spirits",
+          "quote": "The father had just drunk several glasses of spirits",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F4",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": "driver",
+          "source": "PUBLIC.1",
+          "field": "role",
+          "quote": "In the first car, Mr. X",
+          "candidate": "option_4"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F5",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": 17,
+          "source": "PUBLIC.1",
+          "field": "age",
+          "quote": "his 17-year-old son",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F6",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": "passenger",
+          "source": "PUBLIC.1",
+          "field": "role",
+          "quote": "and his 17-year-old son return home",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F7",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": 27,
+          "source": "PUBLIC.2",
+          "field": "age",
+          "quote": "Mrs. Y, 27 years old",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F8",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": 1,
+          "source": "PUBLIC.2",
+          "field": "license_years",
+          "quote": "having held a driving license for only 1 year",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F9",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": "female",
+          "source": "PUBLIC.2",
+          "field": "sex",
+          "quote": "Mrs. Y",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F10",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": "driver",
+          "source": "PUBLIC.2",
+          "field": "role",
+          "quote": "Her car's lights are damaged",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F11",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": 28,
+          "source": "PUBLIC.3",
+          "field": "age",
+          "quote": "Mr. Z, 28 years old",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F12",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": 5,
+          "source": "PUBLIC.3",
+          "field": "license_years",
+          "quote": "who has held a driving license for 5 years",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F13",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": "motorcycle",
+          "source": "PUBLIC.3",
+          "field": "vehicle_context",
+          "quote": "On the motorcycle, Mr. Z",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F14",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": "driver",
+          "source": "PUBLIC.3",
+          "field": "role",
+          "quote": "On the motorcycle, Mr. Z",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F15",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": null,
+          "source": "PUBLIC.3",
+          "field": "speed_kmh",
+          "quote": "He is speeding on the N13 road.",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.C1",
+        "owner": "A3",
+        "section": "conditions",
+        "value": {
+          "value": "male",
+          "source": "S03",
+          "field": "sex",
+          "op": "eq",
+          "quote": "The guilty person is a man."
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.C2",
+        "owner": "A3",
+        "section": "conditions",
+        "value": {
+          "value": 110,
+          "source": "S03",
+          "field": "speed_kmh",
+          "op": "eq",
+          "quote": "The guilty person was driving at 110 km/h."
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "owner": "public",
+        "source": "PUBLIC.1",
+        "text": "In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.",
+        "access": "visible_public_original"
+      },
+      {
+        "id": "E2",
+        "owner": "public",
+        "source": "PUBLIC.2",
+        "text": "In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.",
+        "access": "visible_public_original"
+      },
+      {
+        "id": "E3",
+        "owner": "public",
+        "source": "PUBLIC.3",
+        "text": "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road.",
+        "access": "visible_public_original"
+      },
+      {
+        "id": "E4",
+        "owner": "A1",
+        "source": "S01",
+        "text": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision.",
+        "access": "receiver_visible_original"
+      },
+      {
+        "id": "E5",
+        "owner": "A2",
+        "source": "S02",
+        "text": "The guilty person is less than 30 years old.",
+        "access": "already_shared_quotes_not_full_original"
+      },
+      {
+        "id": "E6",
+        "owner": "A3",
+        "source": "S03",
+        "text": "The guilty person is a man.",
+        "access": "already_shared_quotes_not_full_original"
+      },
+      {
+        "id": "E7",
+        "owner": "A3",
+        "source": "S03",
+        "text": "The guilty person was driving at 110 km/h.",
+        "access": "already_shared_quotes_not_full_original"
+      }
+    ],
+    "semantics": "Active means current model-declared interpretation, not independently verified truth."
+  }
+}

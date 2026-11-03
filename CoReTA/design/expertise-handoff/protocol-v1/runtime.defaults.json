@@ -1,0 +1,28 @@
+{
+  "protocol_version": "coreta/local-contribution-v1-design",
+  "status": "offline_and_live_schema_validated_development_runs_not_started",
+  "model_settings_source": "CoReTA/config/deepseek_flash_inspection.json",
+  "agent_ids": ["A1", "A2", "A3"],
+  "driver_selection": "task_ordinal_mod_agent_count",
+  "runtime_tools": [],
+  "limits": {
+    "max_interventions": 3,
+    "max_final_reviews": 2,
+    "max_network_attempts_total": 20,
+    "format_retries_per_stage": 1,
+    "transport_retries_per_request": 1,
+    "request_timeout_seconds": 120,
+    "task_timeout_seconds": 1800,
+    "max_initial_items_per_agent": 3,
+    "max_reply_items": 3
+  },
+  "max_output_tokens": {
+    "contribute": 3072,
+    "apply": 6144,
+    "reply": 3072,
+    "review": 3072
+  },
+  "input_policy": "full_task_self_materials_public_contributions_current_work_relevant_events; fail_on_overflow",
+  "evaluation_policy": "offline_only_no_hidden_tests_in_packets",
+  "note": "Prototype defaults, not optimized. Each network request including transport and format retries consumes the same total attempt cap. A per-stage output token limit is a ceiling, not a required answer length."
+}

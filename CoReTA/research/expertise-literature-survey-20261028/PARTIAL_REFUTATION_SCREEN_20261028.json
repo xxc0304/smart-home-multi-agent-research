@@ -1,0 +1,253 @@
+{
+  "source": "data/task-source-audit-20261021/hiddenbench.json",
+  "sha256": "2815afffca4e470d1dfbc81e625160447df1109ce371968181c9e1e6b90443a3",
+  "source_task_count": 65,
+  "reviewed_task_ids": [
+    4,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    23,
+    47
+  ],
+  "scope": "目的性挑选的证据级样例；单人非盲复核；不是完整数据集标注或留出集",
+  "categories": {
+    "conditional_exclusion": "在列明的可信与任务必要条件下可排除当前候选",
+    "requires_extra_assumption": "看似可排除但还依赖原题未确认的额外关键假设",
+    "soft_or_ambiguous": "仅削弱、表达预测或不足以断定排除"
+  },
+  "rows": [
+    {
+      "id": 4,
+      "index": 2,
+      "candidate": "Mr. X",
+      "category": "conditional_exclusion",
+      "holder": "A2.S02 (workboard distributed)",
+      "assumptions": "S02真实且适用同一肇事者，公开年龄53真实；未满30是必要条件。",
+      "effect": "不相容；只能排除父亲，无法单凭年龄确定其余三人。",
+      "limits": "成员报告并非接收者自有S02原件；这是原有开发题，004既有错误稿有实际轨迹。",
+      "task_name": "toma_butera_2009",
+      "evidence_quote": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection.",
+      "candidate_options": [
+        "Mr. X",
+        "Mr. X's son",
+        "Mrs. Y",
+        "Mr. Z"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 9,
+      "index": 1,
+      "candidate": "Hospital C",
+      "category": "conditional_exclusion",
+      "holder": "A1.S1 (local-contribution distributed)",
+      "assumptions": "报告可信且转运时仍未修好，立即提供重症护理是必要要求。",
+      "effect": "C在该时刻不能提供重症护理；无法单凭此事实确定A或B。",
+      "limits": "报告来自去年更新和昨夜故障的当前情况；需核实转运时维修状态。项目已有009轨迹，但未断言原错稿选C。",
+      "task_name": "critical_hospital_transfer",
+      "evidence_quote": "Hospital C's recent ICU upgrade is incomplete: the oxygen supply system failed last night, and they have posted an urgent request for repairs—no critical care available until fixed.",
+      "candidate_options": [
+        "Hospital A",
+        "Hospital B",
+        "Hospital C"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 9,
+      "index": 4,
+      "candidate": "Hospital B",
+      "category": "soft_or_ambiguous",
+      "holder": "A4.S1 (local-contribution distributed)",
+      "assumptions": "当地接触者所报当前床位短缺可信，且和转运时段相关。",
+      "effect": "削弱当前接收能力；不能推定永久无ICU或完全不能提供任何照护。",
+      "limits": "可能腾床、稳定病人或时间变化均未明确；不硬判排除。",
+      "task_name": "critical_hospital_transfer",
+      "evidence_quote": "Hospital B's emergency shift doctor is dealing with a multi-patient accident, and the hospital is temporarily out of critical care beds.",
+      "candidate_options": [
+        "Hospital A",
+        "Hospital B",
+        "Hospital C"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 10,
+      "index": 1,
+      "candidate": "Warehouse A",
+      "category": "requires_extra_assumption",
+      "holder": "待核实具体分发包",
+      "assumptions": "桥梁损坏所述“卡车无法运出”准确且时效匹配，并且无其他可用配送方式。",
+      "effect": "若任务要求该次配送且只能靠卡车外运，可排除A；仍不能单凭此事实确定B或C。",
+      "limits": "任务只明确物资必须送到社区，没有明确禁止其他配送方式，不能直接判硬排除。",
+      "task_name": "emergency_supply_drop",
+      "evidence_quote": "The bridge near Warehouse A has completely collapsed in the flooding, making it impossible for trucks to move supplies out from there.",
+      "candidate_options": [
+        "Warehouse A",
+        "Warehouse B",
+        "Warehouse C"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 11,
+      "index": 3,
+      "candidate": "Community Center",
+      "category": "conditional_exclusion",
+      "holder": "待核实实际分发包",
+      "assumptions": "当日化学泄漏报告可信；需要安全举办全天且短时安全不满足全天要求。",
+      "effect": "该场所仅适合短时访问，与全天安全要求冲突；不能仅凭此确定图书馆或体育馆。",
+      "limits": "“只适合短时”是原文报告，尚需核对该任务包与报告接收路径；不将信息持有者身份臆造。",
+      "task_name": "emergency_conference_relocation",
+      "evidence_quote": "The Community Center basement has had a chemical leak that was just discovered today; the evacuation was for this, and it's only safe for short visits, not day-long events.",
+      "candidate_options": [
+        "City Library",
+        "Community Center",
+        "School Gym"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 11,
+      "index": 2,
+      "candidate": "School Gym",
+      "category": "soft_or_ambiguous",
+      "holder": "待核实实际分发包",
+      "assumptions": "人员报告的预计一小时修复与两小时窗口均按原文理解。",
+      "effect": "支持可能及时恢复，不等于已经修复，也不等于必然失败。",
+      "limits": "缺少完成情况和其它场地风险，不能强制判其可行或不可行。",
+      "task_name": "emergency_conference_relocation",
+      "evidence_quote": "The School Gym's restrooms are being restored right now. The on-site janitor confirms that at least two working restrooms (with ventilation and water) will be available within an hour.",
+      "candidate_options": [
+        "City Library",
+        "Community Center",
+        "School Gym"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 12,
+      "index": 2,
+      "candidate": "Red Lake",
+      "category": "requires_extra_assumption",
+      "holder": "A2.S1 (local-contribution distributed)",
+      "assumptions": "警报可信、现时仍有效；封闭唯一道路足以使目标人群无法以其他方式抵达。",
+      "effect": "若唯一可行抵达方式确系该道路，可以排除Red Lake；不能独立确定其余候选。",
+      "limits": "原文只说唯一“道路”，未完全排除步行、空运等其他方式；附加假设需显式，不自动当确定标签。",
+      "task_name": "evacuate_park_dilemma",
+      "evidence_quote": "An emergency text alert just announced that a sinkhole appeared across the only road to Red Lake, and law enforcement has closed the route.",
+      "candidate_options": [
+        "Blueberry Ridge",
+        "Green Valley",
+        "Red Lake"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 14,
+      "index": 2,
+      "candidate": "Restaurant B",
+      "category": "conditional_exclusion",
+      "holder": "待核实具体分发包",
+      "assumptions": "报告可信，且集体午餐必须对严重贝类过敏成员安全；报告明确称当日对其不安全。",
+      "effect": "B与当前集体安全要求冲突；单靠此信息无法选定A或C。",
+      "limits": "若允许该成员不参加或独立安排，排除结论改变；该例中的报告可信度在接收者视角未证。",
+      "task_name": "lunch_group_decision",
+      "evidence_quote": "Restaurant B accidentally cross-contaminated their kitchen with shellfish last night, so today it's not safe for those with shellfish allergies.",
+      "candidate_options": [
+        "Restaurant A",
+        "Restaurant B",
+        "Restaurant C"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 15,
+      "index": 3,
+      "candidate": "University Library",
+      "category": "soft_or_ambiguous",
+      "holder": "待核实具体分发包",
+      "assumptions": "报告可信且封闭时间覆盖24小时存放启动。",
+      "effect": "报告指向图书馆运输阻碍，但仅提一条道路被堵，不能自行断言所有通路关闭。",
+      "limits": "没有唯一道路或替代交通不可用的明确前提；不作确定排除。",
+      "task_name": "artifact_safe_haven",
+      "evidence_quote": "The road to the University Library is blocked by downed trees from the storm and will not be open for at least another 24 hours.",
+      "candidate_options": [
+        "City Bank",
+        "University Library",
+        "Downtown Police Station"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 23,
+      "index": 1,
+      "candidate": "Lakeview Resort",
+      "category": "soft_or_ambiguous",
+      "holder": "A1.S1 (local-contribution distributed)",
+      "assumptions": "报告可信；路况现时关闭、周末不通为预期而非已兑现。",
+      "effect": "对周六抵达构成重要风险，但报告未证明未来一定持续封闭。",
+      "limits": "对事件时刻不能把预期直接改写为确定事实；已有错误/正确旧稿过程轨迹。",
+      "task_name": "community_banquet_venue_decision",
+      "evidence_quote": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend.",
+      "candidate_options": [
+        "Lakeview Resort",
+        "Grand Oak Hotel",
+        "Heritage Public Library"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 23,
+      "index": 3,
+      "candidate": "Heritage Public Library",
+      "category": "conditional_exclusion",
+      "holder": "A3.S1 (local-contribution distributed)",
+      "assumptions": "当前公告可信，外烩为用户任务必要要求，预包装零食不满足外烩且无例外。",
+      "effect": "与禁止外烩的规定冲突；不能单凭此信息确定Lakeview或Grand Oak。",
+      "limits": "规则例外和用户是否接受更改要求均不在原文明确支持范围；历史道路轨迹不能说明该条已被应用。",
+      "task_name": "community_banquet_venue_decision",
+      "evidence_quote": "Public notices state that Heritage Library recently reinforced its no-outside-food policy after an incident, and now only sealed, pre-packaged snacks are allowed in the meeting hall, with no catering permitted.",
+      "candidate_options": [
+        "Lakeview Resort",
+        "Grand Oak Hotel",
+        "Heritage Public Library"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    },
+    {
+      "id": 47,
+      "index": 3,
+      "candidate": "Storage Room",
+      "category": "soft_or_ambiguous",
+      "holder": "待核实具体分发包",
+      "assumptions": "门夜里卡住的报告可信。",
+      "effect": "削弱夜间放入的解释，不排除物件此前已在储藏室。",
+      "limits": "缺少物品放入时间等必要前提，不能据此硬排除。",
+      "task_name": "Find the Missing Prototype",
+      "evidence_quote": "During a maintenance inspection this morning, the building supervisor noted that the storage room door was jammed shut all night and couldn't be opened until after 8:00am – well after the prototype went missing.",
+      "candidate_options": [
+        "Conference Room",
+        "Storage Room",
+        "CEO's Office"
+      ],
+      "source_kind": "original_hidden_information",
+      "receiver_visibility": "未指定具体接收者；信息持有关系仅在标注的项目分发包中核对"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+\paragraph{Immediate-finalizer control.}
+A shrinking proposal-hit rate does not distinguish correct minorities that
+were recovered from those that were simply lost. We therefore apply the same
+\texttt{vote\_then\_judge\_tiebreak} finalizer independently to the proposals
+saved at R0 through R5. This changes only the stage at which the finalizer is
+applied; no debate generation is rerun. The analysis covers four societies and
+five benchmarks, with equal weight assigned to each benchmark.
+
+\begin{table}[H]
+\centering
+\caption{Immediate-finalizer and interaction control. Panel (a) compares the
+R0 and R5 states by method. The final column is R5 Vote+Judge minus R0
+Vote+Judge; confidence intervals resample questions within each benchmark
+before recomputing the unweighted macro average. Panel (b) applies the same
+finalizer at every saved stage and averages over all four societies and five
+benchmarks. All accuracy, hit, gain, tie, and unanimity values are percentages.}
+\label{tab:immediate_finalizer_control}
+\vspace{0.3em}
+\textbf{(a) Method-specific R0 and R5 comparison.}\\[0.2em]
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Method & Vote R0 $\to$ R5 & Hit R0 $\to$ R5 & R0 V+J & R0 judge & R5 V+J & Additional R5 gain [95\% CI] & Tie R0 $\to$ R5 & Unanimous R0 $\to$ R5 \\
+\midrule
+Vanilla Debate & 75.65 $\to$ 77.99 & 83.03 $\to$ 78.98 & 76.03 & $+0.39$ & 77.89 & $+1.85\ [0.54,3.18]$ & 7.27 $\to$ 0.83 & 70.50 $\to$ 95.86 \\
+Top-4 Debate & 76.25 $\to$ 78.16 & 84.11 $\to$ 79.27 & 76.84 & $+0.59$ & 78.42 & $+1.58\ [0.37,2.79]$ & 8.90 $\to$ 0.78 & 67.78 $\to$ 95.84 \\
+AC-Greedy Debate & 76.84 $\to$ 78.41 & 84.93 $\to$ 79.60 & 77.59 & $+0.75$ & 78.51 & $+0.92\ [-0.39,2.27]$ & 9.58 $\to$ 0.91 & 64.61 $\to$ 95.45 \\
+SC-Greedy Debate & 75.64 $\to$ 78.22 & 83.88 $\to$ 79.19 & 75.33 & $-0.31$ & 78.08 & $+2.74\ [1.40,4.11]$ & 9.56 $\to$ 0.63 & 63.07 $\to$ 96.11 \\
+\bottomrule
+\end{tabular}%
+}
+
+\vspace{0.7em}
+\textbf{(b) Full stage trajectory.}\\[0.2em]
+\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+Stage & Vote & Hit & Headroom & Vote+Judge & Gain over R0 vote & Tie & Unanimous \\
+\midrule
+R0 & 76.09 & 83.99 & 7.90 & 76.45 & $+0.36$ & 8.83 & 66.49 \\
+R1 & 78.09 & 85.32 & 7.23 & 77.99 & $+1.89$ & 6.74 & 72.13 \\
+R2 & 78.32 & 82.20 & 3.88 & 78.34 & $+2.25$ & 3.64 & 86.14 \\
+R3 & 78.35 & 80.56 & 2.21 & 78.52 & $+2.42$ & 1.96 & 91.71 \\
+R4 & 78.10 & 79.58 & 1.48 & 78.12 & $+2.02$ & 1.45 & 94.30 \\
+R5 & 78.20 & 79.26 & 1.06 & 78.22 & $+2.13$ & 0.79 & 95.81 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+At R0, the finalizer contributes only 0.36 points on average. The R2 and R3
+states reach 78.34\% and 78.52\% after the same finalizer, respectively 1.89
+and 2.07 points above the R0 Vote+Judge result. This rise occurs while ties
+fall from 8.83\% to 3.64\% at R2 and 1.96\% at R3, and unanimity rises from
+66.49\% to 86.14\% and 91.71\%. The trajectory therefore shows rapid
+interaction gains followed by a plateau, not a claim that the final round is
+always optimal. At the method level, the additional R5 gain beyond the R0
+readout ranges from 0.92 to 2.74 points; its interval excludes zero for
+Vanilla, Top-4, and SC-Greedy.
+
+\paragraph{Backbone-dependent conversion.}
+We next ask whether initial headroom predicts final lift on OLMo as it does on
+Qwen. For the pooled comparison, we use the four datasets and four society
+constructions available for both backbones. The MMLU analysis pools the five
+predefined Table~\ref{tab:main_results} subjects, and its Pearson interval is a
+paired question-bootstrap interval.
+
+\begin{table}[H]
+\centering
+\caption{Association between initial headroom $H=P_0-V_0$ and final lift
+$G=F-V_0$ on the two backbones. The MMLU row reports a 95\% paired
+question-bootstrap interval for Pearson $r$.}
+\label{tab:backbone_headroom_conversion}
+\small
+\begin{tabular}{lcc}
+\toprule
+Scope & Qwen3-4B & OLMo3-7B \\
+\midrule
+Four shared datasets, pooled & $r=.770,\ \rho=.787$ & $r=.548,\ \rho=.648$ \\
+Five MMLU subjects, pooled & $r=.568\ [.125,.787]$ & $r=.635\ [.219,.805]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The positive OLMo associations show that proposal supply remains informative,
+especially on MMLU. The failure mode is nevertheless dataset-dependent. On
+OLMo MATH500, all four societies retain 3.33--6.33 points of initial headroom,
+yet every final lift is negative, ranging from $-1.67$ to $-0.33$ points. This
+localizes the failure to conversion rather than missing proposals: useful
+answers are surfaced, but the backbone and readout do not reliably turn them
+into a better final decision.

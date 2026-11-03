@@ -1,0 +1,23 @@
+{
+  "scope": "Offline mapping of real public state only; no review response, no task success",
+  "candidate_hash_unchanged": true,
+  "issues": 4,
+  "original_cases": 6,
+  "historical_object_count": 1,
+  "input_estimate": 18526,
+  "input_limit": 32768,
+  "external_api_requests": 0,
+  "repair_budget_scope": "independent component; full workflow must inject shared task budget",
+  "source_sha256": "e00fd87ab8d67740861d81fe7533e007a5cf9767a7459585824dd77d9bd93023",
+  "source": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\math140-correct-repair-review-v3-20261020\\public_component_input.json",
+  "new_test_methods": 8,
+  "tests_executed": 231,
+  "tests_passed": 231,
+  "provider_transport_connected": false,
+  "source_hashes": {
+    "src/coreta/minimal_review.py": "001cec17407b1f5912108702598303aa8163777865ac2059431f9acfef814f95",
+    "src/coreta/review_packet.py": "16c78db72ca62900983cdc2f77818bac4a01f8cef60557212de38c1c22c8417a",
+    "tools/build_real_review_packet.py": "0e1d1e066a0fea78b6bcf61ea5e049117c37289f2dc1755bd55f68bc872b33b7",
+    "tests/test_review_packet.py": "fb796e65e613c60f859d829d569face2f45ab962ea74cc90978cbb978b321abc"
+  }
+}

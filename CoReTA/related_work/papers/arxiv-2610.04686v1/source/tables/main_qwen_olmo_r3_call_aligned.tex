@@ -1,0 +1,183 @@
+
+\begin{table*}[t]
+    \caption{Accuracy (\%) on Qwen3-4B-Instruct and OLMo-3-7B-Instruct under a unified computation budget. SC and Neural thicket vote rows use \texttt{vote20}; debate rows use round-3 (R3) majority vote from matched five-round, four-agent traces. MMLU-Redux is split into five 60-example subjects. Avg is the unweighted mean over the eight displayed columns, and Avg Ranking is the mean within-block method rank. \textbf{Boldface} and \underline{underline} denote the best and second-best result per column within each method block and model. Gray rows mark our proposed agent pool construction methods.}
+    \vspace{0.15em}
+    \label{tab:main_results}
+    \label{tab:call_aligned_r3}
+    \label{tab:olmo_main_r3_call_aligned}
+    \centering
+    \scriptsize
+    \resizebox{1\linewidth}{!}{%
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{l ccc ccccc cc}
+    \toprule
+      \multicolumn{1}{c}{\multirow{2}{*}{\textbf{Method}}}
+      & \multicolumn{3}{c}{\textbf{Reasoning}}
+      & \multicolumn{5}{c}{\textbf{MMLU-Redux}}
+      & \multirow{2}{*}{\textbf{Avg}}
+      & \multirow{2}{*}{\textbf{Avg Ranking}} \\
+      \cmidrule(lr){2-4} \cmidrule(lr){5-9}
+      & \textbf{AMC12}
+      & \textbf{MATH500}
+      & \textbf{GPQA}
+      & \textbf{Moral}
+      & \textbf{Chem.}
+      & \textbf{CS}
+      & \textbf{Acct.}
+      & \textbf{Med.}
+      & & \\
+    \midrule
+    \rowcolor{black!12}
+    \multicolumn{11}{c}{\textbf{Backbone: Qwen3-4B-Instruct}} \\
+    \midrule
+    \multicolumn{11}{@{}c@{}}{\color{black!45}\hrulefill\quad\textit{Label-Free Methods}\quad\hrulefill} \\
+    SC@20
+        & 91.20
+        & \underline{92.33}
+        & 49.13
+        & 30.00
+        & \underline{70.00}
+        & \textbf{81.67}
+        & \underline{75.00}
+        & \underline{83.33}
+        & 71.58
+        & 2.38 \\
+    Vanilla Debate
+        & \textbf{92.69}
+        & 91.67
+        & \textbf{52.31}
+        & \underline{50.00}
+        & \textbf{71.67}
+        & \underline{80.00}
+        & \textbf{76.67}
+        & \underline{83.33}
+        & \underline{74.79}
+        & \textbf{1.81} \\
+    \rowcolor{black!6}
+    SC-Greedy Debate (Ours)
+        & \underline{92.29}
+        & \textbf{92.67}
+        & \underline{51.45}
+        & \textbf{63.33}
+        & 68.33
+        & \textbf{81.67}
+        & 73.33
+        & \textbf{86.67}
+        & \textbf{76.22}
+        & \textbf{1.81} \\
+    \midrule
+    \multicolumn{11}{@{}c@{}}{\color{black!45}\hrulefill\quad\textit{Label-Based Methods}\quad\hrulefill} \\
+    Neural Thicket Vote
+        & 90.93
+        & \textbf{91.33}
+        & 50.00
+        & \underline{70.00}
+        & 63.33
+        & \underline{80.00}
+        & \textbf{76.67}
+        & \underline{81.67}
+        & 75.49
+        & \underline{2.19} \\
+    Top-4 Debate
+        & \underline{92.15}
+        & \underline{90.67}
+        & \underline{52.31}
+        & 68.33
+        & \underline{66.67}
+        & 78.33
+        & \underline{75.00}
+        & \textbf{88.33}
+        & \underline{76.47}
+        & 2.25 \\
+    \rowcolor{black!6}
+    AC-Greedy Debate (Ours)
+        & \textbf{92.29}
+        & \textbf{91.33}
+        & \textbf{52.60}
+        & \textbf{73.33}
+        & \textbf{68.33}
+        & \textbf{85.00}
+        & 73.33
+        & 80.00
+        & \textbf{77.03}
+        & \textbf{1.56} \\
+    \midrule
+    \rowcolor{black!12}
+    \multicolumn{11}{c}{\textbf{Backbone: OLMo-3-7B-Instruct}} \\
+    \midrule
+    \multicolumn{11}{@{}c@{}}{\color{black!45}\hrulefill\quad\textit{Label-Free Methods}\quad\hrulefill} \\
+    SC@20
+        & \textbf{87.01}
+        & \textbf{88.33}
+        & 35.55
+        & \underline{25.00}
+        & \underline{50.00}
+        & 61.67
+        & \underline{56.67}
+        & 61.67
+        & 58.24
+        & 2.12 \\
+    Vanilla Debate
+        & \underline{86.33}
+        & \underline{85.33}
+        & \textbf{39.31}
+        & 23.33
+        & 48.33
+        & \underline{68.33}
+        & \textbf{66.67}
+        & \underline{63.33}
+        & \underline{60.12}
+        & \underline{2.00} \\
+    \rowcolor{black!6}
+    SC-Greedy Debate (Ours)
+        & 84.03
+        & 84.00
+        & \underline{37.57}
+        & \textbf{28.33}
+        & \textbf{56.67}
+        & \textbf{76.67}
+        & 55.00
+        & \textbf{70.00}
+        & \textbf{61.53}
+        & \textbf{1.88} \\
+    \midrule
+    \multicolumn{11}{@{}c@{}}{\color{black!45}\hrulefill\quad\textit{Label-Based Methods}\quad\hrulefill} \\
+    Neural Thicket Vote
+        & \textbf{86.87}
+        & \underline{84.67}
+        & \textbf{37.57}
+        & 28.33
+        & 51.67
+        & \textbf{78.33}
+        & \underline{46.67}
+        & \textbf{71.67}
+        & 60.72
+        & \textbf{2.00} \\
+    Top-4 Debate
+        & \underline{85.93}
+        & 84.33
+        & \underline{36.42}
+        & \textbf{36.67}
+        & \underline{56.67}
+        & \textbf{78.33}
+        & \underline{46.67}
+        & \textbf{71.67}
+        & \underline{62.09}
+        & \textbf{2.00} \\
+    \rowcolor{black!6}
+    AC-Greedy Debate (Ours)
+        & 85.25
+        & \textbf{85.00}
+        & 35.84
+        & \underline{35.00}
+        & \textbf{58.33}
+        & \underline{73.33}
+        & \textbf{56.67}
+        & \textbf{71.67}
+        & \textbf{62.64}
+        & \textbf{2.00} \\
+    \bottomrule
+    \end{tabular}
+    }
+    \vskip -0.2cm
+\end{table*}

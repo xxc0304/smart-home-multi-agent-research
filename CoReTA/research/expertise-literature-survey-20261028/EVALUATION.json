@@ -1,0 +1,243 @@
+[
+  {
+    "id": "arxiv-2610.01042v1",
+    "title": "Beyond Final Accuracy: Auditing Communication in LLM Multi-Agent Systems",
+    "authors": [
+      "Shixuan Li",
+      "Wei Yang",
+      "Peiyu Zhang",
+      "Anzhe Cheng",
+      "Heng Ping",
+      "Paul Bogdan"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "version": "v1, 2026-10-01",
+    "url": "https://arxiv.org/html/2610.01042v1",
+    "read_scope": "摘要/引言、§3.1–3.3、§4.1/4.3/4.4、附录A.3；核对固定轨迹与单跳协议、指标和核查提示。",
+    "problem": "如何分开通信造成的纠错、腐蚀和额外推理收益，而不让最终准确率掩盖过程。",
+    "mechanism": "固定独立初答；构建全部有向发送—接收事件且不传播修订；比较无消息、只答案、完整推理及latent channels，按双方初始正确性分层；另比较先查外部主张再查自身推理的接收策略。",
+    "findings": "完整推理相对只传答案提高纠错并降低正确保留；结构化核查提高保留同时减少纠错，选择性改变随任务/通道不同。核心贡献是可复用的受控审计。",
+    "conditions": "Qwen3-4B主审计四推理基准，8B补充两基准；单跳配对，不是完整团队顺序交互。",
+    "limits": "初答正确不等于专长；发送者答案正确不认证每条推理；sender matching不建立因果采用。完整团队及稳定专长干预未在该审计中验证，不能因此说其审计无效。",
+    "gap_kind": [
+      "observed:纠错—保留权衡",
+      "unvalidated:完整异质专家团队中的迁移"
+    ],
+    "relevance": "直接评价近邻，提供分析工具与条件证据，不是已解决专家利用不足的新架构。",
+    "verification": "VERIFIED：全文标题作者与arXiv记录一致；只采用正文可核读论断。"
+  },
+  {
+    "id": "arxiv-2606.00820v2",
+    "title": "Not All Flips Are Conformity: Decomposing Stance Convergence in Multi-Agent LLM Debate",
+    "authors": [
+      "Xiqi Hao",
+      "Zengqing Wu",
+      "Yu-Xuan Qiu",
+      "Chuan Xiao",
+      "Ruiqi Xu",
+      "Shuyuan Zheng",
+      "Jianbin Qin"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "version": "v2, 2026-10-18",
+    "url": "https://arxiv.org/html/2606.00820v2",
+    "read_scope": "摘要/引言、§3、§4.4、§5、§6.1–6.3、附录A；特别核读最新部署干预。",
+    "problem": "观察到的改答是自身不稳定、立场采用还是论证作用，是否有助最终群体决策。",
+    "mechanism": "从同一初答并行比较无同伴自省、只立场、完整理由；再用控制材料与部署特征风险排序测试干预。",
+    "findings": "自省也产生大量改答；理由带来的个体改善未必提高最终投票。无需当前答案真值的干预同时减少有害和有益采用，未检测到准确率增益；可用特征有有限风险排序能力。",
+    "conditions": "主实验五GPT-4o、单轮、多选题；部分跨数据集/跨目标模型检查，非原生异质团队交互。",
+    "limits": "strict conformity依赖一次自省稳定性；构造材料条件不是自然讨论的总体发生率；带真值筛选诊断与部署不能混报。",
+    "gap_kind": [
+      "observed:预测愿不愿改不等于预测改得对不对",
+      "unvalidated:多轮异质团队及开放式任务"
+    ],
+    "relevance": "为机制诊断提供可借用对照，也允许正确同伴可用时采用是正面收益；不能全盘把改答当从众。",
+    "verification": "VERIFIED：以v2全文为准，未沿用v1二手积极结论。"
+  },
+  {
+    "id": "arxiv-2606.01637v2",
+    "title": "Easier to Mislead Than to Correct: Harmful and Beneficial Revision in LLM Conformity",
+    "authors": [
+      "Jiaming Qu",
+      "Lucheng Fu",
+      "Yibo Hu"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "version": "v2, 2026-06-06",
+    "url": "https://arxiv.org/html/2606.01637v2",
+    "read_scope": "引言、§3.1–3.6、§4.1/4.3、§5.2；核读peer构造与两类条件分母。",
+    "problem": "同伴一致和权威标签对有害与有益修订的影响是否对称，CoT/反思是否改善选择性。",
+    "mechanism": "先独立回答，再呈现六名模板模拟同伴；操纵全对/全错/混合和组织身份标签、人数；分别测试CoT和reflect-then-revise。",
+    "findings": "错误同伴一致的误导作用较强；权威增加跟随倾向而不区分真假；一般推理/反思提示未可靠同时降低伤害并保留纠错。",
+    "conditions": "四个7–9B open-weight模型、七多选QA/推理数据集、三seed；同伴为答案表态模板，无真实论证。",
+    "limits": "组织权威标签不是经过校准的真实专家能力；社会线索结果不能直接外推全部真实团队。条件正确/错误分母不同，不能直接以两率相减算净收益。",
+    "gap_kind": [
+      "observed:普通推理提示不选择性",
+      "unvalidated:真实专家贡献、工具证据与多轮团队"
+    ],
+    "relevance": "支持研究为何表达/人数压过可靠知识；没有证明所有反从众机制无效。",
+    "verification": "VERIFIED：arXiv题名作者与全文一致，技术取自§3–5。"
+  },
+  {
+    "id": "acl-2026-long-650",
+    "title": "When Identity Skews Debate: Anonymization for Bias-Reduced Multi-Agent Reasoning",
+    "authors": [
+      "Hyeong Kyu Choi",
+      "Xiaojin Zhu (ACL metadata: Jerry Zhu)",
+      "Sharon Li"
+    ],
+    "year": 2026,
+    "venue": "ACL 2026 Long Papers",
+    "version": "正式版，2026.acl-long.650，pp.14284–14311",
+    "url": "https://aclanthology.org/2026.acl-long.650/",
+    "read_scope": "正式PDF摘要、§4.2/5.1–5.2、Limitations、附录J/J.1；正式页面核验元数据。",
+    "problem": "相同内容因标作自己或同伴而获得不同影响，如何量化并去除身份偏差。",
+    "mechanism": "建立identity-weighted更新模型，去除自我/同伴来源标记，定义匿名化前后差的IBC。",
+    "findings": "所测模型中身份敏感普遍且多偏向同伴；匿名化显著改变身份偏差。附录J报告总体准确率大体不变，不能把去偏误作任务质量提高。",
+    "conditions": "五模型配置、四推理基准；含异质/多同伴扩展，指标首轮测量。",
+    "limits": "质量、上下文长度等权重因素仍未涵盖；消除非理性身份线索不自动建立内容正确性或利用可靠专长的能力。模型假设内等权结论不是任意实际模型的保证。",
+    "gap_kind": [
+      "observed:去身份偏差与准确率收益分离",
+      "unvalidated:可靠专家信号和有害身份线索的联合处理"
+    ],
+    "relevance": "核心方法近邻和必要概念区分；研究专家识别时需区分有用的能力来源与无根据身份偏好。",
+    "verification": "VERIFIED：正式PDF用Xiaojin Zhu，Anthology元数据用Jerry Zhu，保留别名而不误认两人。",
+    "pdf_url": "https://aclanthology.org/2026.acl-long.650.pdf"
+  },
+  {
+    "id": "arxiv-2508.17536v2",
+    "title": "Debate or Vote: Which Yields Better Decisions in Multi-Agent Large Language Models?",
+    "authors": [
+      "Hyeong Kyu Choi",
+      "Xiaojin Zhu",
+      "Sharon Li"
+    ],
+    "year": 2025,
+    "venue": "NeurIPS 2025",
+    "version": "正式会议记录；机制核读arXiv v2, 2025-10-23",
+    "url": "https://arxiv.org/html/2508.17536v2",
+    "read_scope": "§3.1/3.2、§4条件、§5.1/5.2、§6、附录D.3.1–D.3.2；官方会议页确认venue。",
+    "problem": "多样本集成与agent间讨论各贡献多少，何时互动能额外有益。",
+    "mechanism": "同初始群体比较讨论前投票与多种讨论拓扑；DCM/Bayesian模型；真值锁定MAD-oracle与可部署多数引导两种改进。",
+    "findings": "多任务上初答投票已解释多数收益；理论中性漂移依模型/拓扑条件。多数引导可优于vanilla；真值锁定提供正确信号保留的潜力证据。",
+    "conditions": "主比较N=5，七基准，拓展更大模型、persona异质与开放任务。",
+    "limits": "MAD-oracle需金标不可部署；martingale不是所有异质、带新证据/工具讨论的不可能性；多数引导不保证保护正确少数。",
+    "gap_kind": [
+      "observed:普通讨论相对初答投票的增量有限",
+      "unvalidated:可运行的可靠少数保留机制"
+    ],
+    "relevance": "提供强对照及正确贡献保留的研究动机；不要求每篇新方法必须推翻其所有经验设置。",
+    "verification": "VERIFIED：NeurIPS官方题名作者/venue，arXiv全文核机制。",
+    "official_url": "https://papers.nips.cc/paper_files/paper/2025/hash/934252acd87f254d5d4672fbde283bd2-Abstract-Conference.html"
+  },
+  {
+    "id": "arxiv-2510.20963v2",
+    "title": "When and Why Does Multi-Agent Debate Fail and Does It Really Underperform?",
+    "authors": [
+      "Yongqiang Chen",
+      "Gang Niu",
+      "James Cheng",
+      "Bo Han",
+      "Masashi Sugiyama"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint；全文称初步版在ICML 2026 Failure Modes of Agentic AI Workshop报告，未独立核验正式主会身份",
+    "version": "v2, 2026-07-14",
+    "url": "https://arxiv.org/html/2510.20963v2",
+    "read_scope": "§2.2–2.3、§4.1–4.3、Table1、附录B.7/E.1/F（协议组件、成本、统计）；原文核版。",
+    "problem": "竞争说服和共识追求为何引起debate hacking，合作求真协议是否能恢复讨论价值。",
+    "mechanism": "ColMAD要求互补缺失信息、承认对方正确点；引用原context证据并exact-match核引文、自我审核和置信表达；两debaters后judge决策。",
+    "findings": "错误检测等设置中ColMAD较竞争/共识协议有益，且在匹配预算比较中可改善SA。提供讨论有用的正面证据，不能把所有交互一概说无效。",
+    "conditions": "主要ReaLMistake三类错误检测，异质强弱模型组合，补充推理/安全任务；初始一致时可跳过争议过程。",
+    "limits": "引用存在性检查不等于语义推理验证；新提示组件与角色组织共同构成方法；结果不认证所有任务的专家身份利用。最新v2有消融/统计附录，不照抄旧二手批评说没有。",
+    "gap_kind": [
+      "observed:竞争/共识的部分失败已在所测设置改善",
+      "unvalidated:已知专家条件、逐局部贡献采用与强协同泛化"
+    ],
+    "relevance": "与当前方向高度相关的正面方法，说明保留有信息的分歧/互补证据已获具体实现；仍可研究其条件差异。",
+    "verification": "VERIFIED：题名作者和v2全文，会议主会身份未确认所以标预印本。"
+  },
+  {
+    "id": "arxiv-2609.18998v1",
+    "title": "One Axis, No Brake: Self-Knowledge Limits the Filtering of Harmful Peer Conformity in LLMs",
+    "authors": [
+      "Yibo Hu"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "version": "v1；原HTML显示17 Jul 2026，与ID月份不一致，日期不据此做优先权判断",
+    "url": "https://arxiv.org/html/2609.18998v1",
+    "read_scope": "§2–5、§7–8、附录F/G；特别核读构造社会信号、所测AUROC的lower-bound性质和warrant效果。",
+    "problem": "只凭模型可暴露的自我信号，能否区分并过滤有害与有益的同伴修订；群体何时锁定错误。",
+    "mechanism": "构造不含论证的同伴票数/信心压力；测置信门控、内部探针与激活steering；小群体多轮动力学；初步预先承诺改答条件的warrant审计。",
+    "findings": "所测信号难选择性区分两类修订，steering常同时改变两者；部分混合能力群体弱于best。预承诺能暴露部分违反自身条件的改答，但未抑制flip。",
+    "conditions": "ARC/TruthfulQA为主，小型多选societies与4–8B为主的多模型/规模补充；无证据同伴摘要。",
+    "limits": "作者定义valence=1−initial_correct，不能直接等同一般多选任务含W→W的净纠错分类；所测AUROC是经验lower bound，不是全部可能验证器的数值上限；mean-field示意，工具/检索和开放任务未验证；warrant仅单seed单模型同family自评。",
+    "gap_kind": [
+      "observed:所测自我信号与steering非选择性",
+      "unvalidated:独立证据/检验来源和完整专家协作"
+    ],
+    "relevance": "提醒不能把更坚定或多写反思当正确性判别；它自身不否决内容核查，也未证明所有新架构无空间。",
+    "verification": "VERIFIED：题名/作者及方法可核读；日期异常显式保留，不用于优先权。"
+  },
+  {
+    "id": "arxiv-2509.05396v2",
+    "title": "Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate",
+    "authors": [
+      "Andrea Wynn",
+      "Harsh Satija",
+      "Gillian K. Hadfield"
+    ],
+    "year": 2025,
+    "venue": "arXiv preprint；作者主页确认ICML 2025 MAS Workshop版本",
+    "version": "v2, 2025-10-13",
+    "url": "https://arxiv.org/html/2509.05396v2",
+    "read_scope": "§3–6，尤其§4.1–4.2条件、§5跨任务正负结果、§6.1–6.3机制诊断；作者主页核workshop。",
+    "problem": "能力异质群体讨论是否改善初答投票，错误如何随轮次传播。",
+    "mechanism": "三成员不同能力组合，两轮交换理由，讨论前后投票比较；分析改答、初始支持人数与额外正确性奖励提示。",
+    "findings": "CSQA多组合讨论退化，但MMLU/GSM8K存在改善组合；强模型数量较多也不保证免于损害，单纯正确性奖励提示不可靠。",
+    "conditions": "GPT-4o-mini、Llama3.1-8B、Mistral7B，三任务每任务100题、五seed、两轮。",
+    "limits": "支持人数和改错的关联不是RLHF致因证明；模型与任务覆盖有限，正反结果应一起保留。",
+    "gap_kind": [
+      "observed:异质团队和额外奖励提示仍可失效",
+      "unvalidated:可靠专家明示、证据核查和训练组织机制"
+    ],
+    "relevance": "很早直接讨论弱成员拖累强成员，是原始动机的重要先例；其条件性结论不等于讨论普遍有害。",
+    "verification": "VERIFIED：arXiv核题名作者/方法，作者主页核workshop。",
+    "author_url": "https://andreawynn.github.io/"
+  },
+  {
+    "id": "arxiv-2502.08788v3",
+    "title": "Stop Overvaluing Multi-Agent Debate—We Must Rethink Evaluation and Embrace Model Heterogeneity",
+    "authors": [
+      "Hangfan Zhang",
+      "Zhiyao Cui",
+      "Jianhao Chen",
+      "Xinrun Wang",
+      "Qiaosheng Zhang",
+      "Zhen Wang",
+      "Dinghao Wu",
+      "Shuyue Hu"
+    ],
+    "year": 2025,
+    "venue": "arXiv position paper",
+    "version": "v3, 2025-06-21",
+    "url": "https://arxiv.org/abs/2502.08788v3",
+    "read_scope": "原HTML仅摘要/引文，改用本地paper.pdf核读pp.1–12：§3实验与§4 Heter-MAD、Table4/Figure5；不是摘要级机制推测。",
+    "problem": "现有MAD评价是否夸大效果；模型异质性能否提升普通框架。",
+    "mechanism": "五MAD对照SA/CoT/SC，统一调用量并研究token；Heter-MAD复用原框架，每次输出随机从GPT-4o-mini/Llama3.1-70B模型池各0.5选一个。",
+    "findings": "多项传统MAD不稳定胜CoT/SC；Heter-MAD使所测四框架相对单模型平均结果改善，显示异质性有实际价值。",
+    "conditions": "九基准、四基础模型的主评价；异质改造为两模型随机混合；Table4收益主要相对MAD平均/CoT平均。",
+    "limits": "相对平均提升不等于总胜最强单体；也非固定每agent一专长。作者明确未提出专门利用异质性的优化设计，留下机制空间，不能把摘要universal antidote推广为所有组合保证。",
+    "gap_kind": [
+      "observed:传统框架较强SA收益有限，异质有条件正面收益",
+      "unvalidated:从异质平均收益到可解释专长利用"
+    ],
+    "relevance": "为“异质模型有用”保留正面证据，并帮助与弱成员拖累现象区分比较对象。",
+    "verification": "VERIFIED：精确题名检索/原arXiv摘要元数据与本地v3全文一致；venue未核实故保留预印本。",
+    "local_pdf": "CoReTA/related_work/papers/arxiv-2502.08788v3/paper.pdf"
+  }
+]

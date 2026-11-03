@@ -1,0 +1,21 @@
+{
+  "fields": [
+    "accessible_for_task",
+    "ready_for_task",
+    "catering_permitted",
+    "group_capacity_sufficient"
+  ],
+  "field_meanings": {
+    "accessible_for_task": "At least one usable access or transport method exists for the stated group or cargo within the task time window; one blocked route does not prove all routes blocked.",
+    "ready_for_task": "Currently ready, or explicitly ready by the required start, for the stated use; reputation, equipment ownership or beginning preparation alone does not confirm readiness.",
+    "catering_permitted": "The kind of catering required by the task is permitted; limited snacks or unrelated food permission are not automatically sufficient.",
+    "group_capacity_sufficient": "Can accommodate the full group size specified by the task for its intended use; historical attendance alone is not current capacity confirmation."
+  },
+  "value_types": [
+    "boolean",
+    "null"
+  ],
+  "field_values_provided_by_host": false,
+  "field_requirements_provided_by_host": false,
+  "note": "Manual task vocabulary supplied equally to both arms; representation-assisted screening, not automatic schema discovery."
+}

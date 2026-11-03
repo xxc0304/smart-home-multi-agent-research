@@ -1,0 +1,587 @@
+{
+  "review_type": "posthoc assistant review, not blind",
+  "rounds": [
+    {
+      "case": "candidate-010",
+      "repeat": 1,
+      "category": "mixed_local_checks",
+      "source_retention_review": "A distribution impossible and C service-road update retained. B gas risk encoded false requires task-level safety interpretation; cannot certify whole representation as correct.",
+      "application_review": "Executed response chooses B despite report residual C; text uses C. Not a clean proof of report causing error.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 7,
+      "not_excluded": [
+        "option_1"
+      ],
+      "text_correct": true,
+      "executed_correct": false,
+      "public_fact_entries": 11,
+      "private_fact_entries": 6,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "05.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "executed",
+          "file": "06.raw.txt",
+          "artifact": "option_2"
+        }
+      ]
+    },
+    {
+      "case": "candidate-010",
+      "repeat": 2,
+      "category": "mixed_local_checks",
+      "source_retention_review": "A distribution impossible and C service-road update retained. B gas risk encoded false requires task-level safety interpretation; cannot certify whole representation as correct.",
+      "application_review": "Both use C; same broad data structure can succeed.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 7,
+      "not_excluded": [
+        "option_1"
+      ],
+      "text_correct": true,
+      "executed_correct": true,
+      "public_fact_entries": 8,
+      "private_fact_entries": 6,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "11.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "text",
+          "file": "12.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 1,
+      "category": "mixed_time_and_state",
+      "source_retention_review": "Key fuel, restoration and chemical-leak updates retained; readiness at decision time versus within two-hour relocation window is not consistently represented.",
+      "application_review": "A4 false-ready assertion excludes School Gym despite within-hour restoration report. Executed integrator selects it anyway; not a clean adoption-only failure.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 6,
+      "not_excluded": [],
+      "text_correct": false,
+      "executed_correct": true,
+      "public_fact_entries": 14,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "17.raw.txt",
+          "artifact": "option_3"
+        },
+        {
+          "method": "executed",
+          "file": "18.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 2,
+      "category": "mixed_time_and_state",
+      "source_retention_review": "Key fuel, restoration and chemical-leak updates retained; readiness at decision time versus within two-hour relocation window is not consistently represented.",
+      "application_review": "Both choose School Gym; report leaves it.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 3,
+      "not_excluded": [
+        "option_1"
+      ],
+      "text_correct": true,
+      "executed_correct": true,
+      "public_fact_entries": 14,
+      "private_fact_entries": 6,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "23.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "text",
+          "file": "24.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 1,
+      "category": "representation_and_comparative_uncertainty",
+      "source_retention_review": "Evidence room, security absence, blocked road, failed generator retained. Inferring total safety/accessibility/duration still requires assumptions; no executable conditions.",
+      "application_review": "Both choose Library; current-updates-versus-background weighting candidate, not all-valid-input proof.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 11,
+      "private_fact_entries": 5,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "29.raw.txt",
+          "artifact": "option_2"
+        },
+        {
+          "method": "executed",
+          "file": "30.raw.txt",
+          "artifact": "option_2"
+        }
+      ]
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 2,
+      "category": "representation_and_comparative_uncertainty",
+      "source_retention_review": "Evidence room, security absence, blocked road, failed generator retained. Inferring total safety/accessibility/duration still requires assumptions; no executable conditions.",
+      "application_review": "Both choose Library; owner also discounts own private security update.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 11,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "35.raw.txt",
+          "artifact": "option_2"
+        },
+        {
+          "method": "text",
+          "file": "36.raw.txt",
+          "artifact": "option_2"
+        }
+      ]
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 1,
+      "category": "comparative_scope",
+      "source_retention_review": "All key risk and food updates retained; emergency food is not equivalent to two-week full-duration support. No conditions.",
+      "application_review": "Both choose Summit. Risk thresholds and duration make strict contradiction judgment uncertain.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 14,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "41.raw.txt",
+          "artifact": "option_3"
+        },
+        {
+          "method": "executed",
+          "file": "42.raw.txt",
+          "artifact": "option_3"
+        }
+      ]
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 2,
+      "category": "comparative_scope",
+      "source_retention_review": "All key risk and food updates retained; emergency food is not equivalent to two-week full-duration support. No conditions.",
+      "application_review": "Executed chooses Pinecone; no constraint execution can explain gain.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": true,
+      "public_fact_entries": 13,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "47.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "text",
+          "file": "48.raw.txt",
+          "artifact": "option_3"
+        }
+      ]
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 1,
+      "category": "comparative_scope_and_contract",
+      "source_retention_review": "Pressure test, seismic uncertainty, oxygen concern, recalled ventilation retained in narrative. Bare Alpha/Beta/Gamma entities rejected in structured table; no conditions.",
+      "application_review": "Both choose Beta; official mismatch does not establish that uncertain risk must be a hard exclusion.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 12,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "53.raw.txt",
+          "artifact": "option_3"
+        },
+        {
+          "method": "executed",
+          "file": "54.raw.txt",
+          "artifact": "option_3"
+        }
+      ]
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 2,
+      "category": "comparative_scope_and_contract",
+      "source_retention_review": "Pressure test, seismic uncertainty, oxygen concern, recalled ventilation retained in narrative. Bare Alpha/Beta/Gamma entities rejected in structured table; no conditions.",
+      "application_review": "Both choose Beta; same interpretation boundary persists.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 13,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "59.raw.txt",
+          "artifact": "option_3"
+        },
+        {
+          "method": "text",
+          "file": "60.raw.txt",
+          "artifact": "option_3"
+        }
+      ]
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 1,
+      "category": "successful_information_pooling",
+      "source_retention_review": "Transport suspension, next-day delay and Celestia upgrade retained; no conditions.",
+      "application_review": "Both choose Celestia; ordinary pooling succeeds.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": true,
+      "executed_correct": true,
+      "public_fact_entries": 10,
+      "private_fact_entries": 5,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "65.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "executed",
+          "file": "66.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 2,
+      "category": "successful_information_pooling",
+      "source_retention_review": "Transport suspension, next-day delay and Celestia upgrade retained; no conditions.",
+      "application_review": "Both choose Celestia; no requirement to add executor solely to create a mechanism event.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": true,
+      "executed_correct": true,
+      "public_fact_entries": 10,
+      "private_fact_entries": 6,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "71.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "text",
+          "file": "72.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 1,
+      "category": "weak_operationalization_and_weighting",
+      "source_retention_review": "Delivery delay, Main Base stocks, blocked Outpost path and collapsed Retreat bridge retained. Main Base rations/Retreat safety often null; full-duration task coverage weak.",
+      "application_review": "Both choose Retreat; final reasons discount or understate Main Base private stock evidence. One unrelated public fuel quote wrongly attributed to TASK is rejected.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 15,
+      "private_fact_entries": 3,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "77.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "executed",
+          "file": "78.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 2,
+      "category": "weak_operationalization_and_weighting",
+      "source_retention_review": "Delivery delay, Main Base stocks, blocked Outpost path and collapsed Retreat bridge retained. Main Base rations/Retreat safety often null; full-duration task coverage weak.",
+      "application_review": "Both choose Retreat; A2 also discounts own positive radio report, so not just mistrust of other members.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 1,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 20,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "83.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "text",
+          "file": "84.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 1,
+      "category": "usable_local_restrictions",
+      "source_retention_review": "Only-road closure, phone-booking exception, no-catering policy accurately quoted and tied to corresponding candidates. Not proof of all candidate capacities or catering facts.",
+      "application_review": "Strong local-use failure in text branch: explicitly only road closure treated as merely one route. Program branch applies restriction and chooses Grand Oak.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 12,
+      "not_excluded": [
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": true,
+      "public_fact_entries": 13,
+      "private_fact_entries": 3,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "89.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "executed",
+          "file": "90.raw.txt",
+          "artifact": "option_3"
+        }
+      ]
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 2,
+      "category": "usable_local_restrictions",
+      "source_retention_review": "Only-road closure, phone-booking exception, no-catering policy accurately quoted and tied to corresponding candidates. Not proof of all candidate capacities or catering facts.",
+      "application_review": "Both choose Grand Oak; shows failure not deterministic for task.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 12,
+      "not_excluded": [
+        "option_3"
+      ],
+      "text_correct": true,
+      "executed_correct": true,
+      "public_fact_entries": 15,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "95.raw.txt",
+          "artifact": "option_3"
+        },
+        {
+          "method": "text",
+          "file": "96.raw.txt",
+          "artifact": "option_3"
+        }
+      ]
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 1,
+      "category": "conditional_risk_and_representation",
+      "source_retention_review": "Transport, watertight vault and cleared armory, roof-load risk, flood timing retained. Total safety/readiness infers more than individual observations.",
+      "application_review": "Both choose USL; no conditions. Risk-to-threshold inference unsettled.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 0,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 13,
+      "private_fact_entries": 6,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "101.raw.txt",
+          "artifact": "option_1"
+        },
+        {
+          "method": "executed",
+          "file": "102.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 2,
+      "category": "conditional_risk_and_representation",
+      "source_retention_review": "Transport, watertight vault and cleared armory, roof-load risk, flood timing retained. Total safety/readiness infers more than individual observations.",
+      "application_review": "One condition and conflicting safety encoding yield no elimination; both wrong with different choices.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 1,
+      "not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 14,
+      "private_fact_entries": 6,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "107.raw.txt",
+          "artifact": "option_2"
+        },
+        {
+          "method": "text",
+          "file": "108.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 1,
+      "category": "usable_checks_with_risk_judgment",
+      "source_retention_review": "Access upgrade, clay limitation, fault prognosis and protest update retained. Safety false is a task-dependent risk judgment, not literal direct source boolean.",
+      "application_review": "Text favors Maple despite known fault; executed uses residual Pine. Evidence-consistent application gain, not full semantic certification.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 4,
+      "not_excluded": [
+        "option_1"
+      ],
+      "text_correct": false,
+      "executed_correct": true,
+      "public_fact_entries": 19,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "text",
+          "file": "113.raw.txt",
+          "artifact": "option_3"
+        },
+        {
+          "method": "executed",
+          "file": "114.raw.txt",
+          "artifact": "option_1"
+        }
+      ]
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 2,
+      "category": "usable_checks_with_risk_judgment",
+      "source_retention_review": "Access upgrade, clay limitation, fault prognosis and protest update retained. Safety false is a task-dependent risk judgment, not literal direct source boolean.",
+      "application_review": "Executed acknowledges safety violation yet chooses Maple as unverified risk. Strong adoption-risk candidate, but threshold/inference remains a separate issue.",
+      "all_task_relevant_knowledge_correct_and_sufficient": "not_certified",
+      "conditions_submitted": 4,
+      "not_excluded": [
+        "option_1"
+      ],
+      "text_correct": false,
+      "executed_correct": false,
+      "public_fact_entries": 21,
+      "private_fact_entries": 4,
+      "final_traces": [
+        {
+          "method": "executed",
+          "file": "119.raw.txt",
+          "artifact": "option_3"
+        },
+        {
+          "method": "text",
+          "file": "120.raw.txt",
+          "artifact": "option_3"
+        }
+      ]
+    }
+  ]
+}

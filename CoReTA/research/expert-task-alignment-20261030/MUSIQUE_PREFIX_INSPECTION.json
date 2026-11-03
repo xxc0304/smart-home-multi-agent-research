@@ -1,0 +1,626 @@
+[
+  {
+    "split": "train",
+    "url": "https://drive.usercontent.google.com/download?id=1X3rJEAofrJ_tI55U2bquCZ-StVeaWnWu&export=download&confirm=t",
+    "official_index": "https://github.com/StonyBrookNLP/musique/blob/main/.all_data_information.json",
+    "scope": "At most 30 complete records from a bounded raw-file prefix; not a random sample or frozen split",
+    "response_content_type": "application/octet-stream",
+    "read_mode": "bounded-public-download",
+    "status": "read",
+    "records": 30,
+    "file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\external\\musique-inspection-20261030\\train_raw_prefix.jsonl",
+    "first_record_keys": [
+      "dataset",
+      "setname",
+      "id",
+      "decomposed_instances",
+      "question_text",
+      "component_question_texts",
+      "query_text",
+      "component_query_texts",
+      "answer_text",
+      "answerable",
+      "contexts",
+      "composed_question_text"
+    ],
+    "first_record": {
+      "dataset": "trex_squad2",
+      "setname": "train",
+      "id": "double__482757_12019",
+      "decomposed_instances": [
+        {
+          "id": 482757,
+          "dataset": "trex",
+          "answerable": true,
+          "question_text": "The Collegian [SEP] owned by",
+          "answer_text": "Houston Baptist University",
+          "is_tail": false,
+          "question_reverse_replacement": {},
+          "contexts": [
+            {
+              "wikipedia_id": 22879396,
+              "wikipedia_title": "The Collegian (Houston Baptist University)",
+              "paragraph_indices": [
+                1
+              ],
+              "paragraph_text": "The Collegian is the bi-weekly official student publication of Houston Baptist University in Houston, Texas. It was founded in 1963 as a newsletter, and adopted the newspaper format in 1990.",
+              "is_supporting": true
+            }
+          ],
+          "query_text": "The Collegian owned by"
+        },
+        {
+          "id": 12019,
+          "dataset": "squad2",
+          "answerable": true,
+          "question_text": "When was [[RQS]] 0 [[RQE]]  founded?",
+          "answer_text": "1960",
+          "is_tail": true,
+          "question_reverse_replacement": {
+            "[[RQS]] 0 [[RQE]]": "Houston Baptist University"
+          },
+          "contexts": [
+            {
+              "wikipedia_id": 13774,
+              "wikipedia_title": "Houston",
+              "paragraph_indices": [
+                119
+              ],
+              "paragraph_text": "Several private institutions of higher learning—ranging from liberal arts colleges, such as The University of St. Thomas, Houston's only Catholic university, to Rice University, the nationally recognized research university—are located within the city. Rice, with a total enrollment of slightly more than 6,000 students, has a number of distinguished graduate programs and research institutes, such as the James A. Baker Institute for Public Policy. Houston Baptist University, affiliated with the Baptist General Convention of Texas, offers bachelor's and graduate degrees. It was founded in 1960 and is located in the Sharpstown area in Southwest Houston.",
+              "is_supporting": true
+            }
+          ],
+          "query_text": "When was founded?"
+        }
+      ],
+      "question_text": "[[CQS]] 0 [[CQE]] The Collegian [SEP] owned by [[CQS]] 1 [[CQE]] When was [[RQS]] 0 [[RQE]] founded?",
+      "component_question_texts": [
+        "[[CQS]] 0 [[CQE]] The Collegian [SEP] owned by",
+        "[[CQS]] 1 [[CQE]] When was [[RQS]] 0 [[RQE]] founded?"
+      ],
+      "query_text": "The Collegian owned by When was founded?",
+      "component_query_texts": [
+        "The Collegian owned by",
+        "When was founded?"
+      ],
+      "answer_text": "1960",
+      "answerable": true,
+      "contexts": [
+        {
+          "wikipedia_id": 38199013,
+          "wikipedia_title": "Pakistan Super League",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Pakistan Super League (Urdu: پاکستان سپر لیگ ‬ ‎; PSL) is a Twenty20 cricket league, founded in Lahore on 9 September 2015 with five teams and now comprises six teams. Instead of operating as an association of independently owned teams, the league is a single entity in which each franchise is owned and controlled by investors.",
+          "is_supporting": false,
+          "retrieval_score": 8.668353,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 15361417,
+          "wikipedia_title": "Serena Wilson",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Serena Wilson (August 8, 1933 – June 17, 2007), often known just as \"Serena\", was a well-known dancer, choreographer, and teacher who helped popularize belly dance in the United States. Serena's work also helped legitimize the dance form and helped it to be perceived as more than burlesque or stripping. Serena danced in clubs in her younger years, opened her own studio, hosted her own television show, founded her own dance troupe, and was the author of several books about belly dance.",
+          "is_supporting": false,
+          "retrieval_score": 8.129177,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 213375,
+          "wikipedia_title": "Longman",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Longman, also known as Pearson Longman, is a publishing company founded in London, England, in 1724 and is owned by Pearson PLC.",
+          "is_supporting": false,
+          "retrieval_score": 9.396037,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 36932526,
+          "wikipedia_title": "Bankhaus Lampe",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Bankhaus Lampe is a private bank in Germany, founded in 1852 and headquartered in Bielefeld. It is wholly owned by the Oetker Group. The bank owns 50% of Universal Investment.",
+          "is_supporting": false,
+          "retrieval_score": 10.09656,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 544694,
+          "wikipedia_title": "Publix",
+          "paragraph_indices": [
+            1,
+            11
+          ],
+          "paragraph_text": "Publix Super Markets, Inc., commonly known as Publix, is an employee - owned, American supermarket chain headquartered in Lakeland, Florida. Founded in 1930 by George W. Jenkins, Publix is a private corporation that is wholly owned by present and past employees. It is considered the largest employee - owned company in the world. Publix operates throughout the Southeastern United States, with locations in Florida (785), Georgia (186), Alabama (68), South Carolina (58), Tennessee (42), North Carolina (35), and Virginia (8).",
+          "is_supporting": false,
+          "retrieval_score": 8.308724,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 22879396,
+          "wikipedia_title": "The Collegian (Houston Baptist University)",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "The Collegian is the bi-weekly official student publication of Houston Baptist University in Houston, Texas. It was founded in 1963 as a newsletter, and adopted the newspaper format in 1990.",
+          "is_supporting": true,
+          "retrieval_score": 10000,
+          "primary": true
+        },
+        {
+          "wikipedia_id": 17047551,
+          "wikipedia_title": "The Collegian (Hillsdale College)",
+          "paragraph_indices": [
+            3
+          ],
+          "paragraph_text": "The Collegian is the oldest college newspaper in Michigan. The paper's history traces back to 1878, when the Hillsdale Herald was first published. The administration started The Collegian in 1893 as a rival paper to the Herald.",
+          "is_supporting": false,
+          "retrieval_score": 17.72943,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 11477468,
+          "wikipedia_title": "List of Old Scotch Collegians",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "This is a list of Old Scotch Collegians, who are notable former students of Scotch College in Melbourne, Victoria, Australia.",
+          "is_supporting": false,
+          "retrieval_score": 15.578592,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 5477618,
+          "wikipedia_title": "Renaissance Broadcasting",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Renaissance Broadcasting, founded in 1982 by Michael Finkelstein, was a company that owned several UHF television stations, it was sold to Tribune Broadcasting in 1997. The company was headquartered in Greenwich, Connecticut.",
+          "is_supporting": false,
+          "retrieval_score": 8.778683,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 13774,
+          "wikipedia_title": "Houston",
+          "paragraph_indices": [
+            119
+          ],
+          "paragraph_text": "Several private institutions of higher learning—ranging from liberal arts colleges, such as The University of St. Thomas, Houston's only Catholic university, to Rice University, the nationally recognized research university—are located within the city. Rice, with a total enrollment of slightly more than 6,000 students, has a number of distinguished graduate programs and research institutes, such as the James A. Baker Institute for Public Policy. Houston Baptist University, affiliated with the Baptist General Convention of Texas, offers bachelor's and graduate degrees. It was founded in 1960 and is located in the Sharpstown area in Southwest Houston.",
+          "is_supporting": true,
+          "retrieval_score": 10000,
+          "primary": true
+        },
+        {
+          "wikipedia_id": 32960473,
+          "wikipedia_title": "France-Guyane",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "France-Guyane is a daily, French-language newspaper headquartered in Cayenne, French Guiana. Founded in 1973, the newspaper is owned by \"French-Antilles\", which is controlled by the Groupe Hersant Média group.",
+          "is_supporting": false,
+          "retrieval_score": 8.59054,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 46279422,
+          "wikipedia_title": "Bayou City Broadcasting",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Bayou City Broadcasting, LLC is a broadcasting company founded in December 2007 and owned by DuJuan McCoy. The company is based in The Woodlands, Texas.",
+          "is_supporting": false,
+          "retrieval_score": 9.180826,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 43458362,
+          "wikipedia_title": "GKS Górnik 1979 Łęczna",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "GKS Górnik 1979 Łęczna was a short-lived fan-owned phoenix club founded in 2011 by Górnik Łęczna fans who were unhappy with the name change to GKS Bogdanka. The club eventually changed its name back in 2013 but the fan owned counterpart has continued to operate in amateur football leagues until 2014.",
+          "is_supporting": false,
+          "retrieval_score": 8.480441,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 29219524,
+          "wikipedia_title": "Broadway Federal Bank",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "The Broadway Federal Bank is a community bank founded in 1946 and based in Los Angeles. As of 2011, it owned and operated three traditional branches and one loan production office.",
+          "is_supporting": false,
+          "retrieval_score": 8.778683,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 30101948,
+          "wikipedia_title": "Gubernija",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Gubernija is a brewery in Lithuania. It is one of the oldest businesses in the world, having been founded in 1665. Gubernija is listed on the NASDAQ OMX Vilnius stock exchange. Unlike other Lithuanian breweries, Gubernija has its own pubs.",
+          "is_supporting": false,
+          "retrieval_score": 8.15367,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 21170034,
+          "wikipedia_title": "Nordic Paper",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Nordic Paper AS is a Norwegian industrial company, operating in Norway and Sweden. It was founded in 2001 when \"Peterson Scanproof\", a branch of M. Peterson & Søn which consisted of production units in Greåker (formerly owned by Greaker Industrier) and Säffle, was merged with a paper factory in Geithus, owned by Norske Skog Union.",
+          "is_supporting": false,
+          "retrieval_score": 8.798531,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 503369,
+          "wikipedia_title": "Logica",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Logica was a multinational IT and management consultancy company headquartered in Reading, United Kingdom. Founded in 1969, the company became a wholly owned subsidiary of CGI Group in 2012.",
+          "is_supporting": false,
+          "retrieval_score": 8.875879,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 31132952,
+          "wikipedia_title": "Skipton Business Finance",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Skipton Business Finance is a UK factoring and Invoice discounting company, founded and based in Skipton, North Yorkshire. It is a wholly owned subsidiary of Skipton Building Society.",
+          "is_supporting": false,
+          "retrieval_score": 8.875879,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 5500253,
+          "wikipedia_title": "Brett Kearney",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Brett Kearney (born 29 September 1983 in Sydney, New South Wales), also known by the nickname of \"BK\", is an Australian professional rugby league footballer formerly with the Bradford Bulls in the Super League, now currently playing for the Collegians in the Illawarra Rugby League competition. A utility back, he has represented Country Origin and previously played for the South Sydney Rabbitohs and Cronulla.",
+          "is_supporting": false,
+          "retrieval_score": 11.390766,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 18047873,
+          "wikipedia_title": "Grand Duchy of Baden State Railway",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "The Grand Duchy of Baden was an independent state in what is now southwestern Germany until the creation of the German Empire in 1871. It had its own state-owned railway company, the Grand Duchy of Baden State Railways (\"Großherzoglich Badische Staatseisenbahnen or G.Bad.St.E.\"), which was founded in 1840. At the time when it was integrated into the Deutsche Reichsbahn in 1920, its network had an overall length of about .",
+          "is_supporting": false,
+          "retrieval_score": 8.242681,
+          "primary": false
+        }
+      ],
+      "composed_question_text": "When was the institute that owned The Collegian founded?"
+    }
+  },
+  {
+    "split": "dev",
+    "url": "https://drive.usercontent.google.com/download?id=1TRXU68wveSehVbQrRRtWsUsFkKUF43QS&export=download&confirm=t",
+    "official_index": "https://github.com/StonyBrookNLP/musique/blob/main/.all_data_information.json",
+    "scope": "At most 30 complete records from a bounded raw-file prefix; not a random sample or frozen split",
+    "response_content_type": "application/octet-stream",
+    "read_mode": "bounded-public-download",
+    "status": "read",
+    "records": 30,
+    "file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\external\\musique-inspection-20261030\\dev_raw_prefix.jsonl",
+    "first_record_keys": [
+      "dataset",
+      "setname",
+      "id",
+      "decomposed_instances",
+      "question_text",
+      "component_question_texts",
+      "query_text",
+      "component_query_texts",
+      "answer_text",
+      "answerable",
+      "contexts",
+      "composed_question_text"
+    ],
+    "first_record": {
+      "dataset": "trex_trex",
+      "setname": "dev",
+      "id": "double__460946_294723",
+      "decomposed_instances": [
+        {
+          "id": 460946,
+          "dataset": "trex",
+          "answerable": true,
+          "question_text": "Green [SEP] performer",
+          "answer_text": "Steve Hillage",
+          "is_tail": false,
+          "question_reverse_replacement": {},
+          "contexts": [
+            {
+              "wikipedia_id": 18468870,
+              "wikipedia_title": "Green (Steve Hillage album)",
+              "paragraph_indices": [
+                1
+              ],
+              "paragraph_text": "Green is the fourth studio album by British progressive rock musician Steve Hillage. Written in spring 1977 at the same time as his previous album, the funk-inflected \"Motivation Radio\" (1977), \"Green\" was originally going to be released as \"The Green Album\" as a companion to \"The Red Album\" (the originally intended name for \"Motivation Radio\"). However, this plan was dropped and after a US tour in late 1977, \"Green\" was recorded alone, primarily in Dorking, Surrey, and in London.",
+              "is_supporting": true
+            }
+          ],
+          "query_text": "Green performer"
+        },
+        {
+          "id": 294723,
+          "dataset": "trex",
+          "answerable": true,
+          "question_text": "[[RQS]] 0 [[RQE]]  [SEP] spouse",
+          "answer_text": "Miquette Giraudy",
+          "is_tail": true,
+          "question_reverse_replacement": {
+            "[[RQS]] 0 [[RQE]]": "Steve Hillage"
+          },
+          "contexts": [
+            {
+              "wikipedia_id": 5168262,
+              "wikipedia_title": "Miquette Giraudy",
+              "paragraph_indices": [
+                1
+              ],
+              "paragraph_text": "Miquette Giraudy (born 9 February 1953, Nice, France) is a keyboard player and vocalist, best known for her work in Gong and with her partner Steve Hillage. She and Hillage currently form the core of the ambient band System 7. In addition to her performances in music, she has also worked as an actress, film editor and writer. In each role, she has used different stage names.",
+              "is_supporting": true
+            }
+          ],
+          "query_text": "spouse"
+        }
+      ],
+      "question_text": "[[CQS]] 0 [[CQE]] Green [SEP] performer [[CQS]] 1 [[CQE]] [[RQS]] 0 [[RQE]] [SEP] spouse",
+      "component_question_texts": [
+        "[[CQS]] 0 [[CQE]] Green [SEP] performer",
+        "[[CQS]] 1 [[CQE]] [[RQS]] 0 [[RQE]] [SEP] spouse"
+      ],
+      "query_text": "Green performer spouse",
+      "component_query_texts": [
+        "Green performer",
+        "spouse"
+      ],
+      "answer_text": "Miquette Giraudy",
+      "answerable": true,
+      "contexts": [
+        {
+          "wikipedia_id": 28817786,
+          "wikipedia_title": "Grant's First Stand",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Grant's First Stand is the debut album by American jazz guitarist Grant Green featuring performances by Green recorded and released on the Blue Note label in 1961. Earlier recordings made by Green for Blue Note were released as \"First Session\" in 2001.",
+          "is_supporting": false,
+          "retrieval_score": 12.223488,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 475673,
+          "wikipedia_title": "List of show business families",
+          "paragraph_indices": [
+            23,
+            24
+          ],
+          "paragraph_text": "Actress / director / singer Phylicia Rashād is the older sister of performer Debbie Allen, who is married to former NBA basketball player, Norm Nixon. Phylicia Rashād is the former spouse of both Victor Willis, former lead singer of the group Village People, and former NFL football player turned sportscaster, Ahmad Rashād. Phylicia and Ahmad Rashād are the parents of actress Condola Rashād.",
+          "is_supporting": false,
+          "retrieval_score": 10.571926,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 12460,
+          "wikipedia_title": "Green",
+          "paragraph_indices": [
+            46
+          ],
+          "paragraph_text": "For the ancient Egyptians, green had very positive associations. The hieroglyph for green represented a growing papyrus sprout, showing the close connection between green, vegetation, vigor and growth. In wall paintings, the ruler of the underworld, Osiris, was typically portrayed with a green face, because green was the symbol of good health and rebirth. Palettes of green facial makeup, made with malachite, were found in tombs. It was worn by both the living and dead, particularly around the eyes, to protect them from evil. Tombs also often contained small green amulets in the shape of scarab beetles made of malachite, which would protect and give vigor to the deceased. It also symbolized the sea, which was called the \"Very Green.\"",
+          "is_supporting": false,
+          "retrieval_score": 8.404949,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 42307846,
+          "wikipedia_title": "Green Lake (Chisago City, Minnesota)",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Green Lake is a lake in Chisago City, Minnesota, United States. This lake is sometimes also referred to as \"Big Green Lake\" because it is connected to Little Green Lake by a channel. Green Lake was named from the fact its waters are green from the high algae content.",
+          "is_supporting": false,
+          "retrieval_score": 8.686051,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 25382311,
+          "wikipedia_title": "Musty Rusty",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Musty Rusty is an album by jazz saxophonist Lou Donaldson recorded for the Cadet label in 1965 and performed by Donaldson with Bill Hardman, Billy Gardner, Grant Green, and Ben Dixon.",
+          "is_supporting": false,
+          "retrieval_score": 10.73279,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 5168262,
+          "wikipedia_title": "Miquette Giraudy",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Miquette Giraudy (born 9 February 1953, Nice, France) is a keyboard player and vocalist, best known for her work in Gong and with her partner Steve Hillage. She and Hillage currently form the core of the ambient band System 7. In addition to her performances in music, she has also worked as an actress, film editor and writer. In each role, she has used different stage names.",
+          "is_supporting": true,
+          "retrieval_score": 10000,
+          "primary": true
+        },
+        {
+          "wikipedia_id": 12460,
+          "wikipedia_title": "Green",
+          "paragraph_indices": [
+            37
+          ],
+          "paragraph_text": "Animals typically use the color green as camouflage, blending in with the chlorophyll green of the surrounding environment. Green animals include, especially, amphibians, reptiles, and some fish, birds and insects. Most fish, reptiles, amphibians, and birds appear green because of a reflection of blue light coming through an over-layer of yellow pigment. Perception of color can also be affected by the surrounding environment. For example, broadleaf forests typically have a yellow-green light about them as the trees filter the light. Turacoverdin is one chemical which can cause a green hue in birds, especially. Invertebrates such as insects or mollusks often display green colors because of porphyrin pigments, sometimes caused by diet. This can causes their feces to look green as well. Other chemicals which generally contribute to greenness among organisms are flavins (lychochromes) and hemanovadin. Humans have imitated this by wearing green clothing as a camouflage in military and other fields. Substances that may impart a greenish hue to one's skin include biliverdin, the green pigment in bile, and ceruloplasmin, a protein that carries copper ions in chelation.",
+          "is_supporting": false,
+          "retrieval_score": 8.361465,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 48442701,
+          "wikipedia_title": "Star Trek: Discovery",
+          "paragraph_indices": [
+            3
+          ],
+          "paragraph_text": "Star Trek: Discovery premiered on September 19, 2017, at ArcLight Hollywood, before debuting on CBS and All Access on September 24. The rest of the 15 - episode first season are streaming weekly on All Access. The series' release led to record subscriptions for All Access, and positive reviews from critics who highlighted Martin - Green's performance. A second season was ordered in October 2017.",
+          "is_supporting": false,
+          "retrieval_score": 8.445697,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 28839496,
+          "wikipedia_title": "Gooden's Corner",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Gooden's Corner is an album by American jazz guitarist Grant Green featuring performances recorded in 1961 and released on the Japanese Blue Note label in 1980. The tracks were also released in 1997 as part of \"The Complete Quartets with Sonny Clark\".",
+          "is_supporting": false,
+          "retrieval_score": 9.976345,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 48442701,
+          "wikipedia_title": "Star Trek: Discovery",
+          "paragraph_indices": [
+            3
+          ],
+          "paragraph_text": "Star Trek: Discovery premiered on September 19, 2017, at ArcLight Hollywood, before debuting on CBS and CBS All Access on September 24. The rest of the 15 - episode first season is streaming weekly on All Access. The series' release led to record subscriptions for All Access, and positive reviews from critics who highlighted Martin - Green's performance. A second season was ordered in October 2017.",
+          "is_supporting": false,
+          "retrieval_score": 8.445697,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 18468870,
+          "wikipedia_title": "Green (Steve Hillage album)",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Green is the fourth studio album by British progressive rock musician Steve Hillage. Written in spring 1977 at the same time as his previous album, the funk-inflected \"Motivation Radio\" (1977), \"Green\" was originally going to be released as \"The Green Album\" as a companion to \"The Red Album\" (the originally intended name for \"Motivation Radio\"). However, this plan was dropped and after a US tour in late 1977, \"Green\" was recorded alone, primarily in Dorking, Surrey, and in London.",
+          "is_supporting": true,
+          "retrieval_score": 10000,
+          "primary": true
+        },
+        {
+          "wikipedia_id": 1776461,
+          "wikipedia_title": "Little Green (song)",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "\"Little Green\" is a song composed and performed by Joni Mitchell. It is the third track on her 1971 album \"Blue\".",
+          "is_supporting": false,
+          "retrieval_score": 11.751092,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 28886192,
+          "wikipedia_title": "The Main Attraction (album)",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "The Main Attraction is an album by American jazz guitarist Grant Green featuring performances recorded in 1976 and released on the Kudu label.",
+          "is_supporting": false,
+          "retrieval_score": 11.478821,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 30696,
+          "wikipedia_title": "Green Party of the United States",
+          "paragraph_indices": [
+            8
+          ],
+          "paragraph_text": "Green Party of the United States Chairperson Green National Committee Founded April 2001; 17 years ago (2001 - 04) Split from Greens / Green Party USA Preceded by Citizens Party Association of State Green Parties Headquarters 6411 Orchard Avenue, Suite 101, Takoma Park, Maryland 20912 Newspaper Green Pages Youth wing Young Greens Women's wing National Women's Caucus LGBT wing Lavender Greens Latinx wing Latinx Caucus Black wing Black Caucus Ideology Anti-capitalism Eco-socialism Green politics Political position Left - wing International affiliation Global Greens Continental affiliation Federation of the Green Parties of the Americas Colors Green Seats in the Senate 0 / 100 Seats in the House 0 / 435 Governorships 0 / 50 State Upper House Seats 0 / 1,972 State Lower House Seats 2 / 5,411 Territorial Governorships 0 / 6 Territorial Upper Chamber Seats 0 / 97 Territorial Lower Chamber Seats 0 / 91 Other elected offices 156 (2018) Website gp.org Politics of United States Political parties Elections",
+          "is_supporting": false,
+          "retrieval_score": 8.324394,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 11929956,
+          "wikipedia_title": "Countess Charlotte Brabantina of Nassau",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Countess Charlotte Brabantina of Nassau (Antwerp, 17 September 1580 – Château-Renard, August 1631) was the fifth daughter of William the Silent and his third spouse, Charlotte of Bourbon.",
+          "is_supporting": false,
+          "retrieval_score": 8.794397,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 41339806,
+          "wikipedia_title": "Native Son (play)",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Native Son is a 1941 Broadway drama written by Paul Green and Richard Wright based on Wright's novel \"Native Son\". It was produced by Orson Welles and John Houseman with Bern Bernard as associate producer and directed by Welles with scenic design by John Morcom. It ran for 114 performances from March 24, 1941 to June 28, 1941 at the St. James Theatre.",
+          "is_supporting": false,
+          "retrieval_score": 8.743818,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 48442701,
+          "wikipedia_title": "Star Trek: Discovery",
+          "paragraph_indices": [
+            3
+          ],
+          "paragraph_text": "Star Trek: Discovery premiered on September 19, 2017, at ArcLight Hollywood, before debuting on CBS and CBS All Access on September 24. The rest of the 15 - episode first season was streamed weekly on All Access. The series' release led to record subscriptions for All Access, and positive reviews from critics who highlighted Martin - Green's performance. A second season was ordered in October 2017.",
+          "is_supporting": false,
+          "retrieval_score": 8.445697,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 32683873,
+          "wikipedia_title": "The Odd Life of Timothy Green",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "The Odd Life of Timothy Green is a 2012 American fantasy comedy-drama film starring Jennifer Garner, Joel Edgerton, Dianne Wiest, CJ Adams, Rosemarie DeWitt, Ron Livingston, David Morse and Common, written and directed by Peter Hedges and produced by Walt Disney Pictures. Based on a concept by Ahmet Zappa, the film is about a magical pre-adolescent boy whose personality and naïveté have profound effects on the people in his town. The film was released theatrically on August 15, 2012. It received mixed reviews from critics, earned $55.3 million on a $25 million budget and had modest ticket sales in its debut weekend. CJ Adams's performance won him a Young Artist Award for Best Performance in a Feature Film, while Odeya Rush's performance was nominated for the same award. \"The Odd Life of Timothy Green\" was released by Walt Disney Studios Home Entertainment on Blu-ray and DVD on December 4, 2012.",
+          "is_supporting": false,
+          "retrieval_score": 9.108562,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 28842019,
+          "wikipedia_title": "The Latin Bit",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "The Latin Bit is an album by American jazz guitarist Grant Green featuring performances recorded in 1962 and released on the Blue Note label. It is a loose concept album inspired by Latin American music.",
+          "is_supporting": false,
+          "retrieval_score": 10.505206,
+          "primary": false
+        },
+        {
+          "wikipedia_id": 31344723,
+          "wikipedia_title": "Mok Kwai-lan",
+          "paragraph_indices": [
+            1
+          ],
+          "paragraph_text": "Mok Kwai-lan (; October 15, 1892 – November 3, 1982) was the fourth spouse of Lingnan martial arts grandmaster Wong Fei-hung.",
+          "is_supporting": false,
+          "retrieval_score": 9.089779,
+          "primary": false
+        }
+      ],
+      "composed_question_text": "Who is the spouse of the Green performer?"
+    }
+  }
+]

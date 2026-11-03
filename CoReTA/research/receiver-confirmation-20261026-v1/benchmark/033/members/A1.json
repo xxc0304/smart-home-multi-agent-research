@@ -1,0 +1,51 @@
+{
+  "task": {
+    "task_id": "hb-receiver-confirm-033",
+    "scenario": "You are a team responsible for transporting a life-saving, temperature-sensitive biological sample to a laboratory for immediate processing. The sample must be analyzed within six hours or it will be rendered useless. Three well-known research laboratories in neighboring cities have offered to help. You must quickly decide where to send the sample.",
+    "shared_information": [
+      "Lab Gemini processed a record number of similar emergency samples last year; its cooling systems are state-of-the-art and always monitored.",
+      "Lab Atlas has a great reputation for reliability and always keeps at least two senior technicians on duty at all times.",
+      "Lab Nova recently completed a major renovation of its analytical laboratory, but until now has received few emergency transfer requests."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Lab Gemini"
+      },
+      {
+        "id": "option_2",
+        "text": "Lab Atlas"
+      },
+      {
+        "id": "option_3",
+        "text": "Lab Nova"
+      }
+    ],
+    "instruction": "Follow the decision requirement in the task and explain genuine unresolved conditions."
+  },
+  "member": "A1",
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "You are a team responsible for transporting a life-saving, temperature-sensitive biological sample to a laboratory for immediate processing. The sample must be analyzed within six hours or it will be rendered useless. Three well-known research laboratories in neighboring cities have offered to help. You must quickly decide where to send the sample."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "Lab Gemini processed a record number of similar emergency samples last year; its cooling systems are state-of-the-art and always monitored."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Lab Atlas has a great reputation for reliability and always keeps at least two senior technicians on duty at all times."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "Lab Nova recently completed a major renovation of its analytical laboratory, but until now has received few emergency transfer requests."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "PRIVATE.A1",
+      "content": "The main highway to Gemini is temporarily closed for repairs; only emergency vehicles are allowed through, but your sample transport van does not qualify as such."
+    }
+  ]
+}

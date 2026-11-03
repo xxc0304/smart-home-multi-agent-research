@@ -1,0 +1,116 @@
+{
+  "scope": "Standalone component only; not end-to-end task success",
+  "terminal_error": null,
+  "http_attempts": 1,
+  "repairs_used": 0,
+  "response_attempts": 1,
+  "final_projection": {
+    "request_id": "a7470682d4d04ba7ac3bd7490d36cd1b",
+    "global_errors": [],
+    "issues": {
+      "I1": {
+        "status": "open",
+        "errors": [
+          "Current evidence failed or incomplete",
+          "Changed historical finding needs rebuttal or unresolved explanation"
+        ],
+        "historical_observations": [
+          {
+            "case_handle": "H1",
+            "old_observed_value": "-1",
+            "fresh_observed_value": "-1",
+            "assessment": "refuted",
+            "active_effect": "historical_only"
+          },
+          {
+            "case_handle": "H2",
+            "old_observed_value": "1",
+            "fresh_observed_value": "1",
+            "assessment": "refuted",
+            "active_effect": "historical_only"
+          },
+          {
+            "case_handle": "H3",
+            "old_observed_value": "1",
+            "fresh_observed_value": "1",
+            "assessment": "refuted",
+            "active_effect": "historical_only"
+          },
+          {
+            "case_handle": "H4",
+            "old_observed_value": "1",
+            "fresh_observed_value": "1",
+            "assessment": "refuted",
+            "active_effect": "historical_only"
+          }
+        ],
+        "current_outcomes": [
+          "needs_review",
+          "needs_review",
+          "needs_review",
+          "needs_review"
+        ],
+        "semantic_assessment": "model_asserted; not mechanically verified"
+      },
+      "I2": {
+        "status": "open",
+        "errors": [
+          "Current evidence failed or incomplete",
+          "Affected task constraints not covered"
+        ],
+        "historical_observations": [],
+        "current_outcomes": [
+          "needs_review"
+        ],
+        "semantic_assessment": "model_asserted; not mechanically verified"
+      },
+      "I3": {
+        "status": "open",
+        "errors": [
+          "Current evidence failed or incomplete",
+          "Affected task constraints not covered"
+        ],
+        "historical_observations": [],
+        "current_outcomes": [
+          "current_conflict"
+        ],
+        "semantic_assessment": "model_asserted; not mechanically verified"
+      },
+      "I4": {
+        "status": "open",
+        "errors": [
+          "Current evidence failed or incomplete"
+        ],
+        "historical_observations": [
+          {
+            "case_handle": "H5",
+            "old_observed_value": "both non-integers",
+            "fresh_observed_value": "both non-integers",
+            "assessment": "supported",
+            "active_effect": "historical_only"
+          },
+          {
+            "case_handle": "H6",
+            "old_observed_value": "(1/√2,-1/√2)",
+            "fresh_observed_value": "(1/sqrt2,-1/sqrt2)",
+            "assessment": "supported",
+            "active_effect": "historical_only"
+          }
+        ],
+        "current_outcomes": [
+          "needs_review",
+          "not_refuted",
+          "needs_review",
+          "needs_review",
+          "needs_review"
+        ],
+        "semantic_assessment": "model_asserted; not mechanically verified"
+      }
+    },
+    "new_findings": [],
+    "all_issues_resolved": false,
+    "task_correctness_proven": false
+  },
+  "task_correctness_proven": false,
+  "frozen_hashes_match": true
+}

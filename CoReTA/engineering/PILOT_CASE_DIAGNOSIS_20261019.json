@@ -1,0 +1,277 @@
+{
+  "review_independence": "none",
+  "acceptance_status": "local_review_only",
+  "new_model_calls": 0,
+  "case_count": 20,
+  "cases": [
+    {
+      "task_id": "gsm8k/train/1299",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "同一逐日乘除/求和链，三份初稿均通过；合理结束。"
+    },
+    {
+      "task_id": "gsm8k/train/1988",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "四倍、原值20%、差额均已在初稿完成；合理结束。"
+    },
+    {
+      "task_id": "gsm8k/train/3003",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "三初稿均用3*(x+10)=45；times deeper有语言约定，但无人拥有区别性的可靠解释材料。"
+    },
+    {
+      "task_id": "gsm8k/train/3018",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "三份初稿按总剂量或逐周求和得到同一结果，初审核对算术；合理结束。"
+    },
+    {
+      "task_id": "gsm8k/train/3076",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "三初稿均用固定年龄差得到过去时点8岁；无成员整解补救优势。"
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "initial_official_scores": {
+        "A0": 0,
+        "A1": 0,
+        "A2": 0
+      },
+      "review_verdict_model_reported": "defect",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": true,
+      "human_diagnosis": "三初稿均得到字面分数；初审的defect判定不等于存在算法错误。主Agent补充方向性反驳，但原gold仍不匹配；无法要求同伴凭空恢复错误gold。"
+    },
+    {
+      "task_id": "gsm8k/train/5366",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "11+6+4已完成，清楚的低推理负担样例；合理结束。"
+    },
+    {
+      "task_id": "gsm8k/train/6205",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": true,
+      "human_diagnosis": "未决项是保留名单与联系名单的文字指代；三成员已有相同解释，额外求助不能保证消除题面约定。"
+    },
+    {
+      "task_id": "gsm8k/train/6388",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "三份初稿同一方程及回代；未发现需要另一次帮助才能补完的局部缺口。"
+    },
+    {
+      "task_id": "gsm8k/train/6742",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "两次翻倍已在三初稿完成，初审只追加验证；合理结束。"
+    },
+    {
+      "task_id": "mbpp/train/607",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "unresolved",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": true,
+      "human_diagnosis": "三初稿匹配搜索主体相同，无匹配哨兵有所不同；差异来自接口约定，原断言均不触发。结束理由虚称轮数耗尽，实际还剩2轮；其是否导致结束未经反事实验证。"
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "initial_official_scores": {
+        "A0": 0,
+        "A1": 0,
+        "A2": 0
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": true,
+      "human_diagnosis": "三初稿同为各行平均，初审按此解释验证；官方按列平均，无成员已有可通过官方测试的整解。"
+    },
+    {
+      "task_id": "mbpp/train/620",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "三初稿同为排序后的整除链DP；初审对重复值DAG表述做局部补充，主Agent实际改了推理说明。已发生初审信息整合，但未发生新请求。"
+    },
+    {
+      "task_id": "mbpp/train/730",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "三初稿均是保序折叠相邻相等项；空表及非相邻重复已覆盖，无已观测补救机会。"
+    },
+    {
+      "task_id": "mbpp/train/732",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "三初稿均实现三类字符替换；初审把5字符的空格逗号空格点空格示例写成4个冒号，说明supported并不保证每个手算示例可靠，但实现本身通过原测试。"
+    },
+    {
+      "task_id": "mbpp/train/745",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": true,
+      "human_diagnosis": "三段代码均排除含0的数，但A1 summary/open_issues误称忽略0；文字自述不能代替代码检查。剩余问题是负数及0的题面范围约定。"
+    },
+    {
+      "task_id": "mbpp/train/756",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 0,
+        "A2": 0
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": true,
+      "human_diagnosis": "A0返回bool、A1/A2返回Match/None，后两者不通过==True/False。主Agent保留已通过的A0，比盲从多数更符合原测试；不是遗漏同伴补救机会。"
+    },
+    {
+      "task_id": "mbpp/train/763",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "defect",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": true,
+      "human_diagnosis": "三初稿主体均排序加邻差；初审称defect但理由实际是n与边界返回值未说明，未给常规输入上的反例。主Agent记录不确定性并结束不构成已证实错误。"
+    },
+    {
+      "task_id": "mbpp/train/799",
+      "initial_official_scores": {
+        "A0": 1,
+        "A1": 1,
+        "A2": 1
+      },
+      "review_verdict_model_reported": "supported",
+      "action": "FINISH",
+      "status": "completed",
+      "has_open_issues_after_update": true,
+      "human_diagnosis": "三初稿已做32位掩码和位移归一；未决项仅负位移含义。原参考缺少输出掩码是另外的参考代码问题。"
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "initial_official_scores": {
+        "A0": 0,
+        "A1": 0,
+        "A2": 0
+      },
+      "review_verdict_model_reported": "unresolved",
+      "action": null,
+      "status": "degraded",
+      "has_open_issues_after_update": false,
+      "human_diagnosis": "三初稿均用旋转有序数组最小索引；初审讨论重复元素而非官方非旋转样例。更新因contribution_id引用初稿失败，不是合法FINISH样本。"
+    }
+  ],
+  "protocol_evidence": {
+    "unique_bootstrap_tasks": 20,
+    "bootstrap_http_requests_including_repair": 21,
+    "all_remaining_two": true,
+    "all_five_actions": true,
+    "all_three_drafts_visible": true,
+    "runtime_config_template_match_launch": true,
+    "launch_manifest_issue": "tools\\summarize_development_pilot.py旧项过期；tools/summarize_development_pilot.py项匹配当前脚本。同一离线脚本有重复路径键，保留原记录。运行协议源码/配置/模板全部匹配启动记录。"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-30",
+  "verdict": "PASS_OFFLINE_INPUT_AND_SCORER_PACKAGE_ONLY",
+  "independent_real_task_inputs": 352,
+  "waiting_replay_dependencies": 56,
+  "synthetic_pipeline_examples": 56,
+  "hand_authored_semantic_examples": 7,
+  "old_real_outputs_parsed": 77,
+  "adapted_legacy_initial_outputs": 4,
+  "new_target_schema_replay_coverage": "NOT_YET_AVAILABLE",
+  "official_scoring_cases_checked": 6,
+  "fixture_refused_in_actual_path": true,
+  "gold_field_refused": true,
+  "same_question_context_initials_messages_verified": true,
+  "length_groups": {
+    "pipeline_fixture": {
+      "rows": 56,
+      "min_input_tokens": 2512,
+      "max_input_tokens": 4652,
+      "over_8192_including_512_reserve": 0,
+      "over_16384_including_512_reserve": 0
+    },
+    "semantic_example": {
+      "rows": 7,
+      "min_input_tokens": 2992,
+      "max_input_tokens": 3410,
+      "over_8192_including_512_reserve": 0,
+      "over_16384_including_512_reserve": 0
+    },
+    "stress": {
+      "rows": 7,
+      "min_input_tokens": 8217,
+      "max_input_tokens": 10802,
+      "over_8192_including_512_reserve": 7,
+      "over_16384_including_512_reserve": 0
+    }
+  },
+  "model_calls": 0,
+  "human_records_filled": 0,
+  "H_records_used": 0,
+  "execution_verdict": "DO_NOT_RUN",
+  "limits": [
+    "Actual model/backend and budget not selected.",
+    "No real new-task initial outputs; synthetic/legacy adapters are interface checks only.",
+    "Actual prompts still need provider/chat-schema and output-budget context validation; never silently truncate.",
+    "Semantic adoption and mechanism selectivity require further evidence."
+  ]
+}

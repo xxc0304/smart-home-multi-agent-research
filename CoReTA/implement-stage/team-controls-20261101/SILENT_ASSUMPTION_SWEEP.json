@@ -1,0 +1,24 @@
+{
+  "undeclared": [],
+  "stale_rows": [
+    {
+      "id": "A04",
+      "site": "tools/b1_runtime.py:121-125,146-147,222-225; .venv-expert/Lib/site-packages/transformers/generation/utils.py:2093-2104; .venv-expert/Lib/site-packages/peft/peft_model.py:2232-2235",
+      "mismatch": "top_k=0, temperature/top_p, beams and repetition are fixed, but the installed Transformers generate path fills other unset fields from the model's checkpoint config even with an explicit new GenerationConfig. A direct offline tiny Llama probe produced forced_eos_token_id None in the recorded config, 2 in the applied config, and min_p None versus 0.1. A checkpoint-forced EOS can also turn a cap-hit into an apparently normal completion. The ledger says only BOS/EOS are inherited and backend.json records actual settings. Assign the neutral config to the PEFT model's own generation config before generating, or declare and persist the effective inherited fields, and verify with a conflicting checkpoint default."
+    },
+    {
+      "id": "A10",
+      "site": "tools/b1_runtime.py:135-140,242-246; implement-stage/team-controls-20261101/README.md:55; .venv-expert/Lib/site-packages/transformers/utils/chat_template_utils.py:587-588",
+      "mismatch": "A ValueError now stops the batch, including the explicit overlength check. A genuine chat-template error still propagates as Jinja TemplateError, not ValueError. A real installed tokenizer with {{ raise_exception('bad template') }} in a two-item scripted fixture produced two backend attempts and two identical TemplateError failures. The promised global-template failure stop is therefore only partial. Map failures from the template-render call to the declared fatal configuration status."
+    },
+    {
+      "id": "A22",
+      "site": "tools/b1_runtime.py:117-128,146-158,217-225,242-246,261-265",
+      "mismatch": "CUDA peak statistics reset after model and adapter loading. They are sampled only after successfully returning from model.generate; the batch's OOM or initialization failure receives no final peak reading. Thus a first-request OOM produces no accessible peak and a high-water mark during loading is excluded from the value labelled batch peak. For the D8 resource gate, reset before the measured batch load and capture initialized CUDA peaks in the execution finalizer, including a failed request, or explicitly restrict the claimed scope and provide the separate batch measurement."
+    }
+  ],
+  "semantic_undeclared": 0,
+  "verdict": "gaps",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

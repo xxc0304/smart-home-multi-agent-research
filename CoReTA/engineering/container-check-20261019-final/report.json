@@ -1,0 +1,139 @@
+{
+  "started_at": "2026-10-19T02:00:59.260855+00:00",
+  "image": "sha256:841f8763c03c5cc688a811a90e13e82541d3350cdaccf3bba64aefb627be5cf6",
+  "scope": "engineering fixtures, official reference implementations and empty answers; no model capability evidence",
+  "real_model_calls": 0,
+  "checks": [
+    {
+      "name": "linux_nonroot_versions",
+      "passed": true,
+      "details": {
+        "platform": "linux",
+        "uid": 65532
+      }
+    },
+    {
+      "name": "linux_math_scoring",
+      "passed": true,
+      "details": [
+        {
+          "task_id": "fixture-equivalence",
+          "status": "scored",
+          "score": 1,
+          "attempts": 1,
+          "diagnostic_only": false,
+          "math_verify_version": "0.9.0"
+        },
+        {
+          "task_id": "fixture-wrong",
+          "status": "scored",
+          "score": 0,
+          "attempts": 1,
+          "diagnostic_only": false,
+          "math_verify_version": "0.9.0"
+        },
+        {
+          "task_id": "fixture-empty",
+          "status": "prediction_unparseable",
+          "score": 0,
+          "attempts": 1,
+          "diagnostic_only": false,
+          "math_verify_version": "0.9.0"
+        },
+        {
+          "task_id": "fixture-last-box",
+          "status": "scored",
+          "score": 1,
+          "attempts": 1,
+          "diagnostic_only": false,
+          "math_verify_version": "0.9.0"
+        }
+      ]
+    },
+    {
+      "name": "development_math_gold_preflight",
+      "passed": true,
+      "details": {
+        "tasks": 50,
+        "ready": true
+      }
+    },
+    {
+      "name": "humaneval_official_reference",
+      "passed": true,
+      "details": [
+        {
+          "task_id": "HumanEval/0",
+          "system": "engineering_fixture",
+          "seed": 0,
+          "status": "scored",
+          "base_score": 1,
+          "plus_score": 1
+        },
+        {
+          "task_id": "HumanEval/1",
+          "system": "engineering_fixture",
+          "seed": 0,
+          "status": "scored",
+          "base_score": 1,
+          "plus_score": 1
+        }
+      ]
+    },
+    {
+      "name": "humaneval_empty_answer",
+      "passed": true,
+      "details": [
+        {
+          "task_id": "HumanEval/0",
+          "system": "engineering_fixture",
+          "seed": 0,
+          "status": "scored",
+          "base_score": 0,
+          "plus_score": 0
+        },
+        {
+          "task_id": "HumanEval/1",
+          "system": "engineering_fixture",
+          "seed": 0,
+          "status": "scored",
+          "base_score": 0,
+          "plus_score": 0
+        }
+      ]
+    },
+    {
+      "name": "mbpp_official_reference",
+      "passed": true,
+      "details": {
+        "status": "completed",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "task_score": {
+          "task_id": "mbpp/train/802",
+          "status": "scored",
+          "score": 1
+        }
+      }
+    },
+    {
+      "name": "mbpp_empty_answer",
+      "passed": true,
+      "details": {
+        "status": "completed",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "task_score": {
+          "task_id": "mbpp/train/802",
+          "status": "candidate_failed",
+          "score": 0,
+          "error_type": "NameError"
+        }
+      }
+    }
+  ],
+  "finished_at": "2026-10-19T02:01:47.856354+00:00",
+  "success": true
+}

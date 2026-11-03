@@ -1,0 +1,16 @@
+{
+  "skill": "aris:research-review",
+  "reviewer": "/root/blind_revision_semantics",
+  "route": "collaboration.spawn_agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "input": "refine-logs/blind-revision-audit-20261023/BLIND_CASES.json",
+  "prompt_summary": "Judge five masked-condition revision pairs only from source originals and artifacts; no gold, previous scores, reviews or executor conclusions. Preserve actual authors and distinguish auditor vs member access. Judge report preservation, inference strength, uncertainty, introduced/corrected inconsistencies and limits of cross-task recurrence.",
+  "status": "completed_two_rounds",
+  "raw_response": "REVIEW_RAW.md",
+  "followup": {"route":"collaboration.followup_task","prompt_summary":"Verify CASE-05 quote location and clarify whether joint constraints can infer driver and speed; no previous scores or conditions disclosed.","response":"REVIEW_ADDENDUM.md"},
+  "decisions": ["034 report-loss interpretation supported but whole revision mixed", "Retain valid cautious revision counterexample", "Correct overly conservative004 driver/speed interpretation", "Reject unsupported050 meeting-duration premise"],
+  "forbidden_inputs": ["PRIVATE_MAPPING.json", "prior reports and scores", "experiment condition labels"]
+}

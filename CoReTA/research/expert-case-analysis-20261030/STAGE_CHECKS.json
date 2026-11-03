@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-30",
+  "verdict": "PASS_ASSISTANT_QUALITATIVE_ANALYSIS_ONLY",
+  "evidence_items": 56,
+  "cases_analyzed": 8,
+  "unique_tasks": 7,
+  "existing_output_events_reviewed": 205,
+  "analysis_identity": "assistant",
+  "human_records_filled": 0,
+  "human_agreement": null,
+  "frozen_annotation_files_unchanged": 66,
+  "reviewer_surfaces_unchanged": 3,
+  "relative_links_checked": 154,
+  "model_experiment_calls": 0,
+  "training_runs": 0,
+  "new_case_sampling": 0,
+  "important_revisions": [
+    "C02 slot29 choice/justification inconsistency confirmed.",
+    "C05/C06 final historical_work unchanged; only local_reconstruction differs.",
+    "C08 correct candidate appears in round1 before EOC claim; Fact3 has divergent referents."
+  ],
+  "limits": [
+    "Literal checks do not independently validate assistant semantic interpretation.",
+    "Purposive old cases do not estimate prevalence or causal effect.",
+    "Human review scope follows intended paper claims; not a prerequisite to this analysis."
+  ]
+}

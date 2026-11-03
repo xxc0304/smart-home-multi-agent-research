@@ -1,0 +1,92 @@
+{
+  "fixture_kind": "Human-authored design example; not model or implementation evidence",
+  "scenario": "rebuttal",
+  "input_packet": {
+    "packet_id": "PROGRAM_ASSIGNED",
+    "candidate_identity": {
+      "version": 1,
+      "hash": "PROGRAM_COMPUTED"
+    },
+    "roles": {
+      "integrator": "A0",
+      "builder": "A1",
+      "checker": "A2"
+    },
+    "task": {
+      "text": "Find a polynomial F with F(1)=0.",
+      "sources": {
+        "T1": "F(1)=0"
+      }
+    },
+    "current_targets": {
+      "C1": {
+        "definition": "F(x)=x-1",
+        "candidate_version": 1
+      }
+    },
+    "issues": {
+      "I1": {
+        "closure_path": "rebuttal",
+        "acceptance_condition": "Verify current F(1)=0 and explain original objection.",
+        "required_case_handles": [
+          "H1"
+        ],
+        "historical_cases": {
+          "H1": {
+            "source_record_id": "PROGRAM_STORED_RECORD",
+            "audited_version": 1,
+            "definition": "F(x)=x-1",
+            "input": "x=1",
+            "quantity": "F_old(1)",
+            "expected_value": "0",
+            "old_observed_value": "-1"
+          }
+        },
+        "current_target_handles": [
+          "C1"
+        ]
+      }
+    }
+  },
+  "model_output_example": {
+    "issue_reviews": {
+      "I1": {
+        "original_case_reviews": [
+          {
+            "case_handle": "H1",
+            "observed_value": "0",
+            "original_assessment": "refuted",
+            "reason": "F(x)=x-1 evaluated at x=1 gives 0"
+          }
+        ],
+        "current_checks": [
+          {
+            "target_handle": "C1",
+            "task_refs": [
+              "T1"
+            ],
+            "input": "x=1",
+            "quantity": "F(x)=x-1 at x=1",
+            "expected_value": "0",
+            "observed_value": "0",
+            "comparison_kind": "exact_equality",
+            "outcome": "match",
+            "reason": "F(x)=x-1 at x=1 = 0"
+          }
+        ],
+        "resolution": "rebutted",
+        "dependency": "not_applicable",
+        "verdict": "resolved",
+        "reason": "Old record incorrectly reported -1 for F(x)=x-1 at1. Fresh calculation 1-1=0 refutes that observation. Original record is retained and new observation appended."
+      }
+    },
+    "new_findings": []
+  },
+  "expected_state": {
+    "I1": "dismissed",
+    "historical_old_observed_preserved": "-1",
+    "new_observation_appended": "0",
+    "current_candidate_changed": false,
+    "program_proves_semantic_correctness": false
+  }
+}

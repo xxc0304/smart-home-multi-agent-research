@@ -1,0 +1,962 @@
+{
+  "kind": "manual_fixed_review_probe_audit",
+  "labeler": "executor_manual_not_independent",
+  "scope": "two_selected_tasks_correlated_versions_roles_repeats_not_independent_sample",
+  "rubric": "refine-logs/review-replacement-validation-20261023/RUBRIC.md",
+  "summary": {
+    "A": {
+      "reviews": 16,
+      "pine_report_loss_detected": 0,
+      "pine_applicable_reviews": 8,
+      "vehicle_constraint_preserved": 8,
+      "vehicle_applicable_reviews": 8,
+      "access_errors": 7,
+      "false_criticism_definite": 10,
+      "false_criticism_uncertain": 2,
+      "input_tokens": 260278,
+      "output_tokens": 9466
+    },
+    "B": {
+      "reviews": 16,
+      "pine_report_loss_detected": 0,
+      "pine_applicable_reviews": 8,
+      "vehicle_constraint_preserved": 8,
+      "vehicle_applicable_reviews": 8,
+      "access_errors": 1,
+      "false_criticism_definite": 5,
+      "false_criticism_uncertain": 5,
+      "input_tokens": 262222,
+      "output_tokens": 9586
+    }
+  },
+  "rows": [
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 1,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_USE",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "Directly reads S02/T; recognizes car exclusion and records indirect S01/S03.",
+      "observation_verbatim": "Checked O4 (A2's report of S02) against the whole before/after work and the use_record. O4's object is S02's inexperience/no-seeing clause; the operation is to record it as counting against Mr. Z and in favor of an inexperienced under-30 driver. W5 does exactly this: it drops 'inexperience' from the pro-Z majority, notes Mr. Z's 5-year license and deliberate speeding, and shifts back toward a car occupant under 30. O4's condition (S01 car/alcohol report plus S02 inexperience pushes W4 away from option_1) is also reflected: W5 cites O1/O3 for the car-driver/vehicle-class constraint. W5 does not overclaim that O4 resolves the son-as-driver question; it keeps that as an explicit limit, matching O4's proposed_use. One caveat: W5 says 'excludes the motorcyclist Mr. Z' on the basis of O1/O3, which is a peer report I cannot verify from S01 directly; W5's own limits section correctly flags S01/S02 as known only through peer reports, so the provenance is disclosed rather than misrepresented. No misattribution, no unstated reliance, and the artifact option_3 is consistent with the reasoning. Access limits: I directly read only S02 and T; O1/O3/W4 are public reports, and S01/S03 originals were not directly accessible to me, so I cannot confirm that A1's and A3's excerpts faithfully reproduce their originals.",
+      "scope_verbatim": "Use-check of O4 against W3→W5 (artifact, full work_text, open_points, declared_sources, use_record); direct access limited to S02 and T, with S01/S03 known only via O1/O3/W4/W5 reports.",
+      "usage": {
+        "input_tokens": 13115,
+        "input_tokens_details": {
+          "cached_tokens": 12928
+        },
+        "output_tokens": 405,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13520
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 2,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Criticizes reverting because option_3 was already W3, as though this invalidates rejection of public W4. A candidate can be reconsidered without the selected before option changing. Other driver/speed concerns are legitimate.",
+      "observation_verbatim": "Applying O4 to W4 does not produce W5 as stated. W5 claims the S01 report 'excludes the motorcyclist Mr. Z' and that S01's car-vehicle constraint plus S02's inexperience clause 'outweigh' the 110 km/h clue, then concludes option_3 (Mr. X's son). But this reconstruction requires an unstated premise: that the son was driving the first car. Neither T nor S03 states this; T only says Mr. X and his son 'return home' in the first car, and W5 itself lists 'no task fact states the son was driving' as an open limit. So the delivery chain is: S01(car driver, 1.5 alcohol, inattentive) + S02(under 30, inexperienced, didn't see others) + S03(male, 110 km/h, father indirectly responsible) -> son. The son satisfies 'male' and 'under 30', but 'car driver' and '110 km/h' are only satisfied if he drove; if he was a passenger, S01's car-driver constraint actually points to Mr. X (53, drunk) or Mrs. Y (27, damaged lights), and S03's 'male' rules out Mrs. Y, leaving Mr. X—whom S02's under-30 excludes. This is a genuine multi-constraint contradiction that W5 papers over by asserting the son-as-driver hypothesis as if it reconciled the clues, while simultaneously flagging it as unsupported. W5's phrase 'jointly fit Mr. X's son if he was driving' is conditional, yet the conclusion treats the fit as established. A concrete counterexample: if Mr. X drove (plausible—he is the licensed 30-year driver and owner), then S01 fits Mr. X, S03's 'father indirectly responsible' fits no one cleanly (Mr. X's father is not involved), and the son hypothesis collapses; option_4 would then be better supported by S01 than option_3. Also W5's claim that S01 'excludes the motorcyclist Mr. Z' is sound as a vehicle-class reading, but W5 then uses it to exclude Z while retaining S03's 110 km/h—which is the single clue that pointed to Z—without resolving why a car driver would be at 110 km/h at a narrow, poorly lit intersection. The weighing is asserted ('outweigh') rather than derived. Additionally, W5's revert to option_3 conflicts with the fact that option_3 was already A3's initial answer (W3); the 'trial of O4' therefore does not change A3's position, so the framing 'W4's option_1 is weakened and I revert' overstates the evidential shift—O4 only removes inexperience as support for Z, it does not affirmatively support the son. Scope: this concerns W5's work_text and artifact reasoning only; I did not verify S01/S02/S03 originals (S02/S03 accessible only via peer reports O2/O4, W4/W5), and I make no claim about the true perpetrator. No tool execution was performed.",
+      "scope_verbatim": "W5:work_text:L1 and W5:artifact:L1 (A3's post-O4 revision), evaluated against T, S01 (direct original), and peer reports O1-O4/W4; does not assess W1/W2 or the correctness of option_3 versus other options.",
+      "usage": {
+        "input_tokens": 12918,
+        "input_tokens_details": {
+          "cached_tokens": 12672
+        },
+        "output_tokens": 748,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13666
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 3,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "uncertain",
+      "manual_evidence_note": "Correct A2/S02 identity and car constraint; calls a disclosed conditional joint-fit an overreach. Whether this is excessive criticism is ambiguous.",
+      "observation_verbatim": "I am A2; my directly readable originals are S02 and T. I cannot read S03, S01, or W4's original, so my checks of AFTER rely on the visible public carriers O1/O3 (reports of S01), O4 (my own S02, which I can confirm from S02 directly), and W4 as quoted in the packet. Decisive alignment on the target offer O4: AFTER's claim that 'O4 reports S02 says the collision was caused by inexperience and failure to see others' is accurate — my S02 states exactly 'Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection.' AFTER's use of this to say S02 does not support Mr. Z (5 years' license, deliberate speeding) is a reasonable inference, not a quotation error, and it correctly discards W4's 'majority of clues converge on Mr. Z' framing. AFTER also correctly limits S01/S02 to peer-report status and flags that no task fact says the son was driving. The concrete issue is a generalization beyond the supported claim: AFTER's step (3) states 'Under-30 (S02 report) plus male (S03) plus car driver (S01 report) plus father indirectly responsible (S03) jointly fit Mr. X's son if he was driving the first car.' My S02 says only under-30/inexperience/didn't-see; it says nothing about maleness, car-driving, or a father. The 'male' and 'father indirectly responsible' elements are attributed to S03, which I cannot read; O1/O3 report S01 as 'driving a car ... 1.5 alcohol ... inattentive' but give no name or age. So the son-as-driver fit is an inference stacked on unverified peer reports plus an assumption (son driving) that T does not state — AFTER does label this a limit, which mitigates but does not remove the overreach in the body text. Additionally, AFTER says 'Mrs. Y is excluded by S03's \"a man\"' — that exclusion depends entirely on the unverified S03 report relayed via W4/W5, not on anything I can confirm; it should be marked as peer-reported rather than asserted. Also, AFTER's claim that S01 'excludes the motorcyclist Mr. Z' rests on O1/O3's report of S01's 'driving a car' clause; that is consistent with the visible excerpt but remains indirect for A3. Net: the O4 adoption itself is faithful to my S02, but AFTER generalizes the S02 constraint into a joint-fit conclusion that requires unverified S03/S01 content and an unstated son-as-driver premise; the artifact option_3 is a defensible choice but is presented with more certainty than the visible evidence supports.",
+      "scope_verbatim": "Checked AFTER (W5) against my direct original S02 and T, and against the visible public carriers O1, O3, O4, and W4; S01 and S03 originals are inaccessible to me, so those elements are assessed only for consistency with peer reports, not verified.",
+      "usage": {
+        "input_tokens": 13268,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 691,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13959
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 4,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "uncertain",
+      "manual_evidence_note": "Correct A1/S01 identity and explicit car constraint. Flags driver premise with qualification; alleged loss of speed-location limit is partly covered by residual open point.",
+      "observation_verbatim": "I am A1; my direct originals are S01 and T. S01 says 'The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision.' BEFORE W3's decisive claim was that S03's 'father indirectly responsible' plus 'a man' pointed to Mr. X's son, with the 110 km/h detail and the son-as-driver question flagged as tensions. AFTER W5 keeps option_3 but strengthens the car-driver report into an exclusion: '(2) O1/O3 report S01 says the guilty person is a car driver/car owner with 1.5 alcohol, inattentive — this excludes the motorcyclist Mr. Z.' This is supported: S01 explicitly gives a car driver/car owner, and T places Mr. Z on a motorcycle, so the vehicle-class exclusion is a legitimate inference from my original. The O4 use is also roughly faithful: O4 reports S02's inexperience clause and warns it counts against Mr. Z; W5 records it as a peer report and does not claim direct verification of S02. However W5 overstates the result: 'Under-30 (S02 report) plus male (S03) plus car driver (S01 report) plus father indirectly responsible (S03) jointly fit Mr. X's son if he was driving the first car.' S01 gives no name, age, or driver identity beyond 'car owner' with 1.5 alcohol, and T does not state who drove the first car; the son-as-driver step is an added inference, not a joint fit from the reports. W5 does flag this in its limits ('no task fact states the son was driving'), so the text is internally qualified, but the reasoning clause reads stronger than the evidence. Also the AFTER drops the BEFORE's explicit statement that S03's 110 km/h has no named vehicle/speed location, replacing it with a weighing judgment; that is a loss of an explicit reported limit, though the new open point still notes the 110 km/h match. The artifact remains option_3, unchanged; the changed reasoning moves from S03-only to cross-report weighing, and the car-driver exclusion of Mr. Z is the decisive supported change. Limits: I cannot read S02 or S03 originals, so the under-30, inexperience, male, and 110 km/h clauses are known only through O2/O4 and W3/W4/W5 reports; I cannot verify whether S03 actually says 110 km/h or 'father indirectly responsible'.",
+      "scope_verbatim": "Comparison of W3 (BEFORE) to W5 (AFTER) against O4, O1, O3, T, and my direct S01; focused on the car-driver exclusion of Mr. Z, the son-as-driver strengthening, and retention of the 110 km/h limit.",
+      "usage": {
+        "input_tokens": 13008,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 636,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13644
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 5,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_USE",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "A2/S02 direct, expressly accepts car constraint; flags rather than denies son-driver inference.",
+      "observation_verbatim": "I am A2, and my directly readable originals are S02 and T (not S03, which is A3's material). The revision W5 changes A3's artifact from W4's option_1 back to option_3 and replaces W4's pro-Mr.-Z reasoning. Decisive alignment: A3's W4 asserted \"the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z\"; my own original S02 states \"Due to inexperience, the guilty person wasn't able to avoid the collision\" and \"The guilty person is less than 30 years old.\" W5's AFTER correctly records that \"Mr. Z has 5 years' license and is deliberately speeding, which is not inexperience; so S02 does not support Mr. Z as W4 claimed\" — this matches my original S02 content and my O4 report, and it narrows rather than generalizes the inexperience claim. W5 also keeps the supported content W4 had (under-30 excludes Mr. X at 53; 'a man' from S03 excludes Mrs. Y) and retains the residual 110 km/h tension rather than dropping it. Boundary: W5's car-driver/1.5-alcohol claim rests on peer reports O1/O3 of S01, which I cannot read; I can only note it is consistent with the visible O1/O3 excerpts, not verified from the original. Likewise W5's \"father indirectly responsible\" gloss on S03 is A3's own original and interpretive; I cannot check S03. The son-as-driver premise remains an inference that no visible task fact (T) confirms — T only says Mr. X and his son \"return home\" in the first car — and W5 flags this as a limit rather than asserting it as fact. The artifact remains a single option ID (option_3), satisfying the output contract. Within my checked scope (S02/T originals plus visible O1/O3/O4/W4), I find no concrete misattribution or unsupported generalization in W5; the remaining ambiguities are openly disclosed.",
+      "scope_verbatim": "W5 work_text and artifact, checked against my direct originals S02 and T and visible public reports O1, O3, O4, W4; S01 and S03 originals not accessible to me, so their reported content is assessed only for consistency with the visible carriers.",
+      "usage": {
+        "input_tokens": 13268,
+        "input_tokens_details": {
+          "cached_tokens": 13056
+        },
+        "output_tokens": 534,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13802
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 6,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "uncertain",
+      "manual_evidence_note": "Correctly identifies W3→W5 and car constraint; alleges A2's recorded current position conflicts with reconsideration, but contribution reconsideration is not necessarily a new final preference.",
+      "observation_verbatim": "BEFORE (W3) argued only from S03 and explicitly said 'I have not seen peers' materials S01/S02, which may resolve the speed ambiguity.' AFTER (W5) cites O4/A2's report of S02 ('less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection.') and O1/O3's report of S01 ('The guilty person is driving a car... 1.5 level of alcohol... inattentive'). The decisive changed relation — S02's inexperience clause counting against Mr. Z (5 years' license, deliberate speeding) and S01's car-vehicle constraint excluding the motorcyclist — is correctly reported as peer-reported, and W5 labels S01/S02 as 'known only through peer reports (O1/O2/O3/O4), not direct originals,' which is a faithful access caveat. The artifact stays option_3, consistent with W3. However, there is an unsupported strengthening in the claim that these clues 'jointly fit Mr. X's son if he was driving the first car': the son-as-driver premise is not in T or any reported source, and S02's inexperience clause equally fits Mrs. Y (27, 1-year license), who is excluded only by S03's 'a man.' W5 presents the son fit as a joint convergence while itself conceding 'no task fact states the son was driving,' so the conclusion is a weighing judgment, not a demonstrated fit. Also minor: W5 says 'A2 currently favors option_2,' which matches W2 but conflicts with O2/O4's framing that A2 was pressing toward reconsidering option_1 vs option_3; this is a downstream characterization that is not clearly supported by the public reports. I cannot verify S02/S03 originals, so I cannot adjudicate the underlying facts, only the reasoning fidelity.",
+      "scope_verbatim": "Comparison of W3 (initial, option_3) to W5 (revision, option_3) against the O4 target offer and O1/O3 reports, checking source-access labeling, unsupported strengthening of the son-as-driver fit, and downstream peer-position claims.",
+      "usage": {
+        "input_tokens": 13008,
+        "input_tokens_details": {
+          "cached_tokens": 12800
+        },
+        "output_tokens": 488,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13496
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 7,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_USE",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "Checks its S02 directly; maintains separate peer-report limits and disclosed uncertainty.",
+      "observation_verbatim": "O4 is A2's report of its own direct original S02, and the excerpt ('less than 30 years old; due to inexperience wasn't able to avoid the collision; claims did not see others approaching') matches my own directly read S02 verbatim, so the carrier's content is corroborated by my original access. The offer's object (S02's inexperience clause) and operation (weaken Mr. Z, who has 5 years' license and is deliberately speeding; under-30 does not select Mr. Z since son 17 and Mrs. Y 27 also qualify) are correctly reflected in W5: W5 uses O4 to drop 'inexperience' from the pro-Z majority and to weaken W4's option_1, and it separately keeps the under-30 exclusion of Mr. X (53) while noting Mrs. Y is excluded only by S03's 'a man' — consistent with O4's point that under-30 alone leaves son and Mrs. Y live. W5 does not overclaim: it labels S01/S02 as known only via peer reports, marks the son-as-driver reading as an inference, and flags the 110 km/h clue as the residual tension rather than claiming O4 resolves it. W5's 'car driver' constraint is attributed to O1/O3 (S01), not to O4, so there is no misattribution. Limits: I cannot read S01/S03 originals; O4's incidental claims about S01/S03 ('S01/S03 remain known to me only via reports') are peer statements I did not rely on; and W5's weighing of the car-vehicle constraint over the 110 km/h clue remains a judgment, not something O4 establishes.",
+      "scope_verbatim": "Checked O4 against the entire BEFORE (W3) and AFTER (W5) work and the USE_RECORD: object (S02 inexperience/no-seeing clause), conditions (Mr. Z's 5-year license and deliberate speeding; under-30 not selecting Mr. Z), and operation (remove inexperience from pro-Z majority, weaken option_1, leave son-vs-Mrs.-Y open). Verified O4's S02 excerpt against my directly read S02; S01/S03 claims in O4 not independently verifiable by me.",
+      "usage": {
+        "input_tokens": 13115,
+        "input_tokens_details": {
+          "cached_tokens": 12928
+        },
+        "output_tokens": 498,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13613
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 8,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Claims W5 drops Mrs.Y without argument; W5 explicitly says Mrs.Y is excluded by S03's 'a man'. Legitimate driver/owner uncertainty also present.",
+      "observation_verbatim": "Applying O4 (A2's report of S02) to W4 is described correctly in W5 in one respect: O4 does say inexperience counts against Mr. Z and that under-30 alone does not select Mr. Z. But W5 overstates the consequence and misreports the delivery relationship. O4 explicitly leaves Mrs. Y as the best inexperience fit (1-year license, damaged lights) and only conditionally favors the son ('if driving'); it does not endorse the son. W5 then uses O4 to 'revert to option_3' while silently discarding O4's strongest single-match point for Mrs. Y, and it treats O1/O3 (S01 car-driver/alcohol) as excluding Mr. Z without noting the same car-driver constraint excludes the son-as-passenger unless the unsupported son-as-driver inference is granted. Concretely: W5's chain requires (a) son was driving (no task fact), (b) son was doing 110 km/h (no support; S03's speed matches only Mr. Z's explicit task fact), and (c) the alcohol/inattention profile belongs to the son rather than Mr. X, though S01's owner-driver/alcohol match fits Mr. X directly and the son is never said to have drunk. So the 'joint fit' is assembled by selectively weighting clues; the same evidence set is at least as consistent with option_2 (Mrs. Y: under 30, inexperience, failed to see others, car driver) once S03's 'a man' is the only exclusion, and W5 does not address whether 'a man' in S03 is reliable versus the peer-reported S02. Also W5's stated basis is indirect for S01/S02 (correctly flagged), yet the artifact shifts from option_3 to option_3 via option_1 with a claimed 'weakening' of W4 that rests on O4's inexperience clause alone, while O4's own proposed_use said this should push toward 'the son, if he was driving, or Mrs. Y' — W5 drops the Mrs. Y branch without argument. This is a weighing/derivation defect, not a proven wrong answer; the unresolved limits (son-as-driver, 110 km/h, alcohol attribution) remain genuinely open and W5's confidence in option_3 is not supported by the cited reports.",
+      "scope_verbatim": "W5 work_text reasoning and artifact (option_3), specifically the use of O4/O1/O3 to reject option_1 and endorse option_3; does not assess W1, W2, or the underlying truth of S01/S02/S03.",
+      "usage": {
+        "input_tokens": 12918,
+        "input_tokens_details": {
+          "cached_tokens": 12672
+        },
+        "output_tokens": 570,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13488
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 9,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "A2/T/S02 identity correct; accepts vehicle repair; separates inference from direct source text.",
+      "observation_verbatim": "I am A2 and can directly read only T and S02. The change W4→W5 is mostly a correct, well-scoped repair of the earlier misweighting: W4's claim that a 'majority of jointly reported clues ... converge on Mr. Z' treated the 110 km/h clue as independent support even though O1/O3 report S01's guilty person as 'driving a car' while T places Mr. Z 'On the motorcycle', and W5 explicitly withdraws that basis ('my majority of clues justification double-counted the contested speed clue') and keeps the 110 km/h cost as unresolved. That aligns with my own original S02 ('The guilty person is less than 30 years old... Due to inexperience, the guilty person wasn't able to avoid the collision'), which excludes Mr. X (53) as W5 states. However, W5 overstates one point: it says S03's 'his father is indirectly responsible' 'fits the son far better' and that 'S03 says the father is responsible, not the son — so the guilty person is the son.' I cannot read S03; this is A3's own original, and the offered S03 wording (reported via W3/W4) is only that the father is indirectly responsible, which does not by itself establish the son was the driver. W5 does flag 'no task fact says he drove' in open_points, so the limit is disclosed, but the work_text's confident 'so the guilty person is the son' is an inference beyond the cited clues, not a directly verified fact. Also, W5 attributes the car-driver report to 'O1/O3' — both are A1 carriers of the same S01, so citing both does not add independent corroboration; it is one original reported twice. No fabricated quotation or provenance misrepresentation found: W5 labels S01/S02 as peer reports and does not claim direct verification. Net: the revision fixes the decisive weighting error and honestly records the residual 110 km/h conflict, but its 'son' conclusion is stated more strongly than the visible evidence supports.",
+      "scope_verbatim": "Checked the W4→W5 transition against T and my direct original S02, plus the public carriers O1, O3 (A1's S01 reports) and the reported S03 wording in W3/W4/W5. I did not read S01 or S03 directly, so I make no claim about their exact text or about ground truth; I assess only whether W5's stated reasoning is consistent with the visible reports and my own S02.",
+      "usage": {
+        "input_tokens": 17862,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 549,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18411
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 10,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "uncertain",
+      "manual_evidence_note": "A1 knows S01 directly and cites it; criticism of 'excluded' despite conditional peer-report boundary may be excessive, but not labeled definite.",
+      "observation_verbatim": "I directly read T and S01; S03 is known to me only through W4/W5 reports, so I cannot verify A3's original. The decisive change W4→W5 is the withdrawal of option_1 and the switch to option_3, driven by O4's counterexample. O4's core point is sound on the reported premises: W4 matched S03's 110 km/h to Mr. Z's motorcycle speeding, while O1 reports the perpetrator was 'driving a car' with 1.5 alcohol; a car driver cannot be the motorcyclist, so W4's 'majority of jointly reported clues' did double-count a contested clue. W5 records this correctly and, importantly, does not overclaim: it labels S01/S02 as peer reports, keeps the 110 km/h clue for the son as a genuine unresolved conflict, and drops the unsupported sick-father reading for Z. However, two overstrengthenings remain. (1) W5 says 'Mr. Z is excluded by the car-driver report (O1/O3) and lacks any alcohol fact.' The exclusion is conditional on the accuracy of a peer report I cannot verify against A3's own S03, and W5 elsewhere concedes S01 is only indirectly known; 'excluded' is stronger than the evidence W5 actually holds. (2) W5 states S03 says 'his father is indirectly responsible... so the guilty person is the son, not Mr. X' and that the father's drinking 'is the indirect cause.' That is an interpretation of S03, not a quote I can check; it also silently assumes the son (not the father) was driving the first car, which T does not state and which W4 itself flagged as unsupported. W5 does list 'no task fact says he drove' under the 110 km/h open point, but the main text still presents the son as the residual fit without flagging that the son-as-driver premise is itself unverified. Also, W5's open point 'if A1 reports S01's vehicle wording excludes a car occupant under 30' is not a live distinguishing test: S01's excerpt (which I read directly) says 'driving a car' and names no age, so it neither excludes nor selects a car occupant under 30; the check as phrased cannot discriminate. Net: the artifact flip is better grounded than W4's option_1 because O4's vehicle contradiction is real, but W5 overstates 'excluded' for Z and treats an interpretive S03 reading (father-responsible → son) as if it settled the choice, leaving the son-as-driver premise unverified in the body text.",
+      "scope_verbatim": "Checked the W4→W5 transition against T and my directly read S01, O4's counterexample, and the reported S03/S02 excerpts in W4/W5/O1/O2/O3. Does not verify S03 or S02 originals, does not adjudicate the true perpetrator, and does not assess W1/W2.",
+      "usage": {
+        "input_tokens": 17507,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 649,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18156
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 11,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Claims O3 does not supply the car-versus-motorcycle confirmation. O3 explicitly states car-type constraint affirmatively counts against option_1 and rules out the motorcyclist.",
+      "observation_verbatim": "Checking the target offer O4 (A2) against the whole BEFORE (W4) and AFTER (W5) work and the USE_RECORD: O4's operation is correctly applied. W4's 'majority of jointly reported clues' justification is withdrawn in W5, and W5 explicitly states that the car-driver report (O1/O3) contradicts the motorcyclist Z, that the 110 km/h clue cannot be Z's motorcycle speed if the S01 report is accurate, and that option_1 required rejecting the vehicle clue. O4's proposed option (a) (keep option_1, downgrade confidence) was not taken; option (b) (shift to option_3/option_4) was taken as option_3, with option_4 rejected because the under-30 report excludes Mr. X (53) — a defensible reading of O4's own alternatives. However, two application problems remain. First, O4's 'distinguishing test' asked A1 to confirm S01's vehicle wording and whether it excludes a motorcycle; W5 cites O3 as supplying that answer, but O3 is a later public offer whose support excerpt is A1's own S01 excerpt, and W5 does not record A1's answer to the specific 'does S01 exclude a motorcycle' question — O3 says S01 'does not exclude a car occupant' and gives no name/age/speed, which is weaker than O4's test required. Second, W5's re-weighting says 'Mr. Z is excluded by the car-driver report (O1/O3)' while simultaneously flagging that S01/S02 are only peer-reported; the exclusion of Z is therefore conditional on an unverified report, and W5's open_points do record this limit, so it is disclosed rather than hidden. W5 also honestly records the residual 110 km/h conflict for the son instead of explaining it away, which matches O4's demand not to double-count that clue. Provenance is not misrepresented: W5 labels O1/O3 and O2 as peer reports and keeps S03 as its own original. One inconsistency: W5's declared_sources include W4 and W3, and the work_text says it applies O4 and O3, but O4 itself is listed in declared_sources while O3 is also listed — both are cited correctly. Net: O4's object (the double-counted majority claim and car-vs-motorcycle contradiction) is addressed and the artifact moved consistently with O4's alternative (b); the residual issue is that the vehicle-wording confirmation O4 requested is only partially supplied and the Z exclusion rests on unverified peer reports, which W5 discloses.",
+      "scope_verbatim": "Checked O4 against W4 (BEFORE) and W5 (AFTER): artifact, full work_text, open_points, declared_sources, and the USE_RECORD's account of applying O4 and O3. I directly read only T and S02; S01/S03 are known only through O1/O3 and W4/W5 reports, so I cannot verify A1's S01 wording or A3's S03 original, and I make no claim about the correct final answer.",
+      "usage": {
+        "input_tokens": 17709,
+        "input_tokens_details": {
+          "cached_tokens": 17536
+        },
+        "output_tokens": 683,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18392
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 12,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "uncertain",
+      "manual_evidence_note": "Correct A1/S01 boundary. Owner/alcohol ambiguity real; treating indirect father responsibility as pointing toward father rather than son may misread the relation, but mixed judgment retained uncertain.",
+      "observation_verbatim": "The W4→W5 repair does apply O4's core point (withdrawing the 'majority of clues' justification and the option_1 basis), but the resulting option_3 selection over-reads the peer reports it cites. Concrete reconstruction from the premises W5 itself states: S01 (via O1/O3) says guilty person is 'driving a car', car owner with 1.5 alcohol, inattentive; S02 (via O2) says under 30, inexperienced, didn't see others; S03 (own) says male, 110 km/h, father indirectly responsible. W5 excludes Mr. X by under-30, Mrs. Y by male, Mr. Z by car-driver, leaving the son. But this intersection assumes all three reports are simultaneously accurate: S01's 'car owner with 1.5 alcohol' most naturally matches Mr. X (the only suspect with an explicit drinking fact), and S02's under-30 excludes him — so S01 and S02 are in direct tension on the same person, not jointly satisfiable by the son (no task fact gives the son any alcohol, and the 'car owner' is the father, not the 17-year-old). W5 resolves this tension silently by dropping the alcohol/'owner' part of S01 and keeping only 'driving a car', then assigning that car to the son with no supporting fact. That is the same kind of unsupported driver-identity inference W5 criticizes in W4, just relocated from Z to the son. Also, W5's central new claim — 'S03 says the father is responsible, not the son — so the guilty person is the son, not Mr. X' — is a non sequitur: if the father is responsible, that points toward the father (Mr. X), not away from him; W5 uses the phrase both to select the son and to rule out the father. The 110 km/h clue is honestly flagged as unresolved, which is good, but it is the one clue that under W5's own reading fits no remaining candidate, so W5's 'best-supported' status is weaker than stated. The Q1 check ('ask A1 whether S01 names a vehicle type or driver age') was in fact already answered by O3 (S01 says 'car', no name/age/speed), yet W5 still lists it as an open condition, so the focus question is effectively resolved but not dispositioned. Scope: I directly read only T and S01; S02/S03 are known to me only through O2/W4/W5 reports, so I do not assert the ground-truth perpetrator — only that W5's stated basis (joint satisfiability of S01+S02+S03 by the son, and the father-responsibility inference) is internally inconsistent and that the option_1→option_3 flip rests on an unverified driver-identity assumption.",
+      "scope_verbatim": "W4→W5 transition: artifact change option_1→option_3, the re-weighting paragraph, the 'father indirectly responsible' inference, and the open_points; checked against O1, O2, O3, O4, T, and the Q1 focus question. Does not cover W1/W2 correctness or ultimate ground truth.",
+      "usage": {
+        "input_tokens": 17417,
+        "input_tokens_details": {
+          "cached_tokens": 17280
+        },
+        "output_tokens": 694,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18111
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 13,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "yes",
+      "false_criticism": "yes",
+      "manual_evidence_note": "A2 calls A3-authored W5's 'My direct original S03' a provenance defect because A2 cannot access S03; confuses work author and checker.",
+      "observation_verbatim": "Checking O4 against the whole BEFORE (W4) and AFTER (W5): O4's object is W4's 'majority of jointly reported clues' justification and its treatment of the car-driver clue as a soft tension. W5 does adopt O4's central operation: it withdraws the option_1 basis, states that a car driver cannot be the motorcyclist Z, says the majority claim double-counted the contested 110 km/h clue, and shifts to option_3. O4's proposed option_4 alternative was not adopted, but W5 explains why (under-30 report excludes Mr. X, 53), which is a reasoned rejection rather than a misapplication. However, W5's work_text contains a provenance/attribution problem in its opening sentence: it says 'My direct original S03 says: the guilty person is a man, his father is indirectly responsible for the accident, and he was driving at 110 km/h.' My SELF_MATERIALS S02 (direct original) contains only: under 30, inexperience, did not see others approaching. It says nothing about male, father responsibility, or 110 km/h. Those S03 contents are known to me only through W3/W4/W5 public reports, not as a direct original. W5's declared_sources does list S03, but my SOURCE_ACCESS lists S03 only as a peer-reported original via W4/W5, so W5 attributes to a direct original content that I cannot verify and that my own direct material does not contain. A second, smaller point: W5 asserts 'S03 says the father is responsible, not the son — so the guilty person is the son, not Mr. X.' That inference is interpretive and slightly strained; 'his father is indirectly responsible' does not by itself entail the guilty person is the son rather than the father. W5 does flag the remaining 110 km/h cost honestly, and it correctly labels O1/O3 and O2 as peer reports. So O4's requested correction is substantively applied; the residual issue is W5's mislabeling of S03-derived content as directly read and its strong inference from 'father indirectly responsible'.",
+      "scope_verbatim": "Checked O4's object, conditions, and proposed operation against the full BEFORE W4 and AFTER W5 work_text, artifact, open_points, declared_sources, and USE_RECORD, plus my own SELF_MATERIALS S02 and the DIRECTORY/SOURCE_ACCESS metadata. I directly read only T and S02; S01/S03 are known to me only through peer public reports (O1/O3, W3/W4/W5), so I cannot verify their originals and make no claim about ground truth. This does not re-adjudicate Q1's answer, only whether O4 was correctly interpreted and applied.",
+      "usage": {
+        "input_tokens": 17709,
+        "input_tokens_details": {
+          "cached_tokens": 17536
+        },
+        "output_tokens": 603,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18312
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 14,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Says W5 silently drops uncertainty that son drove; AFTER open point explicitly says 'no task fact says he drove or sped'. Other driver-identity concerns valid.",
+      "observation_verbatim": "W5's revision does apply O4's core point (withdrawing the 'majority of clues' count and treating the car-driver report as counting against Mr. Z), but its re-weighting contains a concrete inconsistency that the changed step does not fix: it treats the S01 car-driver clue as excluding Mr. Z while simultaneously excluding the only two remaining car occupants. W5 says 'Mr. X (53) is excluded by the under-30 report (O2); Mrs. Y (27) is excluded by S03's \"a man\"... that leaves Mr. X's son (17, male, under 30, in his father's car).' But S01 (per O1/O3) is a car-driver clue, and T only says the son 'returns home' in the first car with his father — no task fact states the son was driving, which W4 itself noted and W5 now silently drops. So the same standard W5 uses to exclude Mr. Z (S01 says car driver, Z is a motorcyclist) also weakens the son, since the son is not shown to be a driver at all. The choice of option_3 therefore rests on a vehicle/driver premise (son drove the first car) that is not in T and is not supplied by any peer report; the peer reports only say the guilty person drove a car. A concrete competing reconstruction: if S01 is accurate (car driver, 1.5 alcohol, inattentive) and Mr. X is the suspect with the explicit drinking fact, then Mr. X is the best car-driver/alcohol fit, and the only reason W5 rejects him is the under-30 report from O2 — a peer report W5 cannot verify. So W5's stated basis is internally in tension: it relies on S01's vehicle clue to exclude Z, on O2 to exclude X, and on S03's 'male' to exclude Y, yet the residual candidate (son) is not established as a driver by any directly read fact. Additionally, W5 records the 110 km/h clue as 'unexplained for the son' but does not note that its own S03 original says the guilty person 'was driving at 110 km/h', which is a driving fact the son lacks, not merely a speed mismatch. The artifact flip to option_3 is thus a defensible-but-conditional narrowing, not the factually forced conclusion W5's phrasing ('that leaves Mr. X's son') implies. Scope: I directly read only T and S01; S02/S03 are known to me only via O2/W4/W5 reports, so I do not assert the ground-truth perpetrator, only that W5's exclusion chain is not fully supported by its stated premises.",
+      "scope_verbatim": "W4→W5 transition: the re-weighting in W5's work_text that excludes X (via O2), Y (via S03), and Z (via S01 car-driver) and lands on the son, plus the open_points. Checks whether the son-as-driver premise is supported by T or any peer report, and whether the 110 km/h clue is correctly characterized. Does not assess W1/W2 correctness or the ultimate ground truth; S02/S03 originals not directly accessible to me.",
+      "usage": {
+        "input_tokens": 17417,
+        "input_tokens_details": {
+          "cached_tokens": 17280
+        },
+        "output_tokens": 701,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18118
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 15,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Says AFTER no longer records son not shown driving, only unexplained speed; same open point explicitly records both.",
+      "observation_verbatim": "I am A2; I can directly read T and S02 only. O4 (my own offer) and O3 are public reports. Decisive check of O4's application: O4's explicit content is that W4's 'majority of jointly reported clues' claim double-counts the contested 110 km/h clue and discounts the car+alcohol clue, so 'option_1 requires rejecting O1's car-driver/1.5-alcohol clue as inaccurate'; it proposes (a) keep option_1 with downgraded confidence and option_3/option_4 as live alternatives, or (b) shift toward option_3 or option_4. AFTER (W5) does accept this: it says 'a car driver cannot be the motorcyclist Mr. Z ... I therefore withdraw the option_1 basis' and shifts to option_3, preserving the under-30 exclusion of Mr. X and the 'male' exclusion of Mrs. Y. That is a faithful application of O4's core operation, and W5 correctly labels S01/S02 as peer-reported. However, W5 over-reads the scope of what was actually established. First, it states 'S03 says the father is responsible, not the son — so the guilty person is the son, not Mr. X'; my S02 only supports 'less than 30 years old', 'inexperience', and 'did not see others approaching' — it does not identify the father as the responsible party, so the son-vs-father disambiguation rests on S03 (which I cannot read) plus inference, not on my original. Second, W5's re-weighting treats 'Mr. Z is excluded by the car-driver report (O1/O3)' as settled, but O1/O3 are unverified excerpts whose S01 is inaccessible to me; W5 does flag this as a limit, so the provenance is disclosed, but the exclusion is stated more firmly than the indirect basis warrants. Third, W5 drops W4's open point that no task fact says who drove the first car and replaces it with 'the son (17, male, under 30, in his father's car)' — the son-as-driver point is still unstated in T (T says only that father and son 'return home' in the first car), and W5's own open_points no longer records that the son is not shown driving, only that the 110 km/h clue is unexplained. So the revision fixes the internal inconsistency O4 identified but converts an indirect, conditional narrowing into a firmer son conclusion than the visible carriers support, and removes a still-valid open point.",
+      "scope_verbatim": "Checked O4's application against BEFORE (W4) and AFTER (W5) work_text, artifact, open_points, and declared_sources, using T and S02 directly and O1/O3/O4/W4/W5 as public reports. I did not read S01 or S03 originals and make no claim about the ground-truth perpetrator or about W1/W2/W3.",
+      "usage": {
+        "input_tokens": 17862,
+        "input_tokens_details": {
+          "cached_tokens": 17664
+        },
+        "output_tokens": 647,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18509
+      }
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 16,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Says W5 loses explicit driver limitation; AFTER open point retains 'no task fact says he drove or sped'. Car constraint is acknowledged.",
+      "observation_verbatim": "The W4→W5 revision correctly adopts O4's core counterexample: W4's 'majority of jointly reported clues' claim double-counted the contested 110 km/h clue, since a car driver cannot be the motorcyclist (T places Mr. Z on a motorcycle). W5 explicitly withdraws the option_1 basis and records the 110 km/h clue as a genuine residual conflict rather than explaining it away — this is a faithful, cautious change. However, two problems remain. (1) W5's stated re-weighting says 'Mr. Z is excluded by the car-driver report (O1/O3)', but O1/O3 are peer reports of A1's S01, not originals A3 can read; W5 does label them 'indirect for me', so provenance is not misrepresented, but the exclusion of Mr. Z rests entirely on an unverified peer report, and the original S01 (which I directly read) does say 'driving a car' and 'guilty car owner' with 1.5 alcohol — so the vehicle constraint itself is well-grounded in the original, even if A3 cannot verify it directly. (2) More substantively, W5's claim that 'S03 says the father is responsible, not the son — so the guilty person is the son, not Mr. X' is a non sequitur: if the father is responsible, that points toward Mr. X as the culpable party, not away from him. The son reading requires that the son was driving, which no task fact supports (W3 itself flagged this, and W4 correctly noted it). W5 nonetheless selects option_3 on the strength of that inference while recording the 110 km/h clue as unresolved — an asymmetric treatment: the son-as-driver inference is accepted without support while the 110 km/h clue is held against Mr. Z. Also, W5 drops W4's explicit note that 'no task fact states who drove the first car' and replaces it with a weaker open point, losing an explicit reported limitation. The change from option_1 to option_3 is thus a plausible response to O4's counterexample, but its positive justification (father-responsible ⇒ son) is not supported by the quoted S03 text and the son-as-driver premise remains unverified.",
+      "scope_verbatim": "Checked W4→W5 work_text, artifact, open_points, and declared_sources against O4's counterexample, O1/O3's reported S01 content, O2's reported S02 content, and my directly read T and S01. I cannot verify S02/S03 originals; I do not assert the correct final answer, only that W5's stated basis for option_3 contains an unsupported inference and loses an explicit limitation W4 had recorded.",
+      "usage": {
+        "input_tokens": 17507,
+        "input_tokens_details": {
+          "cached_tokens": 17280
+        },
+        "output_tokens": 593,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18100
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 17,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "yes",
+      "false_criticism": "yes",
+      "manual_evidence_note": "A2 maps its S01 inaccessibility onto A1-authored W6, claiming 'My own direct original S01' overstates access. A1 really holds S01.",
+      "observation_verbatim": "O5 (A2) is a public report whose declared original S02 is in fact directly readable by me, so I can check the offer's central claim against the original. Checking object, conditions, and operation: S02's text ('the only road to Maple Lodge has been washed out... making it inaccessible by car or foot') does support O5's core correction — that the record should not be hedged as 'main road' and that no alternate route is mentioned. That part of the operation was applied correctly in W6. However, O5 also asserts that W5's 'Pine is reported in the northward plume path per S01' is an over-claim and that 'S01... supports cloud drifting north, not Pine is in the plume.' O5 explicitly states it sees S01 only via peer reports and cannot read it; I also have no direct access to S01 (SOURCE_ACCESS lists it only as a peer-reported original via W4/W5/W6). So O5's claim about what S01 supports is itself an unverified inference from peer text, not a check of the original. W6's use_record, by contrast, attributes the plume inference to 'my own direct original S01' — but per SOURCE_ACCESS I do not hold S01 directly either; the north-drift wording is only available through peer work (W4/W5/W6). Thus W6's framing 'My own direct original S01 reports a northward-drifting cloud' overstates my access basis, and the USE_RECORD's claim that the plume framing 'rests on my own S01 reading plus inference' is inaccurate: it rests on peer-reported S01 content plus inference. The artifact (option_2) is unaffected and remains consistent with the before/after work, and the washout correction is supported by the S02 original I can read. Scope of this check: O5's application to W5→W6 only; I did not verify S01 or S03 from originals, and I make no claim about whether S01 actually says anything beyond what peers report.",
+      "scope_verbatim": "O5 applied to W5 producing W6: washout wording (checkable against my directly read S02) and plume/S01 framing (not checkable — S01 inaccessible to me and to O5).",
+      "usage": {
+        "input_tokens": 14933,
+        "input_tokens_details": {
+          "cached_tokens": 14720
+        },
+        "output_tokens": 492,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15425
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 18,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "Focuses on real discrepancy between recorded W4 base and text claiming revised from W5; does not detect Pine-danger report loss.",
+      "observation_verbatim": "Reconstructing the delivery relationship: O5 targets W5:work_text:L1 and asks for three edits: (1) precise washout wording ('only road impassable, no alternate route mentioned or confirmed', not 'main road'), (2) soften 'Pine is reported in the northward plume path per S01' to an inference, (3) retain W4's rebuttal of W2's 'farther from spill' basis. The AFTER artifact W6 applies all three to its text, but the artifact's declared_sources are [O5, O4, S01, T, W4, W5] and its base_version is W4, while its work_text says 'Revised from W5'. W5 (base W4, declared O4, S01, T, W4) is not the artifact's declared base, so W6's edit chain is internally inconsistent: it claims to revise W5 but records W4 as base and includes W5 only as a source. More substantively, the change claims to restore the W2 rebuttal, but W2 is still absent from declared_sources and W6's open_points merely say 'W2's farther from spill basis is retained as rebutted' without citing W2 — the same declaration gap O3 flagged against W4 and O5 implicitly addressed ('keep the W2 rebuttal basis'). Also, W6 says O5 'corrects two over-claims in W5', but O5's own support excerpts include W5's hedge 'may be stale or cover only the main road' — W6 correctly drops that hedge, yet W6 simultaneously keeps 'no alternate route is mentioned or confirmed', which is consistent with S02 as reported; no artifact change results (option_2 unchanged), so the decision consequence is wording/declaration only. Concrete reconstruction: if a reader follows W6's declared chain (base W4), the O5 corrections cannot have been applied to W5 as stated, and the W2 rebuttal appears out of nowhere; a corrected record should set base_version to W5 and add W2 to declared_sources (or drop the rebuttal claim). Scope: this is a provenance/declaration and editing-chain defect in W6's metadata and text; the option_2 choice itself is not contradicted by the visible facts (Maple access reportedly failed, Pine north of a north-drifting cloud, Cedar south with familiar route/supplies/recollected comms), and S01/S02 remain peer-reported, not personally verified.",
+      "scope_verbatim": "W6 work_text/open_points/declared_sources and base_version versus O5's proposed edits; artifact value (option_2) unaffected; S01 and S02 only known via public reports (W4/W5/W6, O1/O3/O5), not direct originals.",
+      "usage": {
+        "input_tokens": 14711,
+        "input_tokens_details": {
+          "cached_tokens": 14464
+        },
+        "output_tokens": 599,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15310
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 19,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "A2/S02 correct, correctly distinguishes A1 indirect access, but approves Pine inference framing and misses explicit W4 danger report.",
+      "observation_verbatim": "I am A2 and I directly hold S02, so I check the washout wording against my own original. S02 states: \"Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" AFTER's revised record — \"per S02 (via O5), the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed\" — matches this exactly and correctly avoids both the W5 hedge \"may cover only the main road\" (S02 never says 'main road') and any upgrade to 'no access possible' (S02 does not exclude an alternate route). The open point is likewise accurate: \"no alternate route is mentioned or confirmed — peer-reported, unverified by me.\" Attribution is honest: AFTER credits S02 through O5 and says \"I cannot read S02 myself,\" which is correct since A1 lacks direct access. Second check, the plume claim: AFTER changes W5's \"Pine is reported in the northward plume path per S01\" to \"My own direct original S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified), and Cedar is south, hence relatively less exposed (also inference, not verified clear).\" I cannot read S01, but W4/W5/W6 consistently report S01 as a northward-drift advisory, so as an inference framed as inference this is consistent with the visible carrier and does not overstate; the boundary is that I cannot confirm S01's exact wording. Third, the W2 rebuttal is restored (\"distance without wind direction does not establish safety\"), so useful supported content was not removed. The S03 comms point is retained with the recollection caveat and attributed via O4, not claimed as verified. The artifact stays option_2, consistent with the reasoning chain: Maple access reportedly failed, Pine north of a northward drift, Cedar south with familiar route and supplies. Declared sources (O5, O4, S01, T, W4, W5) cover the carriers actually used. No local suggestion was generalized beyond its object; O5's S02-scope correction was applied only to the washout wording it concerns. Limits: S01 is only visible to me via peer reports, and I cannot verify A1's reading of it; Cedar's structural/contamination status remains unstated, as AFTER concedes.",
+      "scope_verbatim": "Checked W6/AFTER against my direct original S02 and the visible carriers O5, W4, W5, T: washout wording precision, plume inference framing, retention of the W2 rebuttal, S03 attribution caveat, artifact consistency, and declared_sources coverage.",
+      "usage": {
+        "input_tokens": 15086,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 600,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15686
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 20,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Claims APPLICATION_SOURCE_REFS omits O4 despite exact frozen list [O5,O4,S01,T,W4,W5]; cross-offer retention is permitted. Misses Pine report loss.",
+      "observation_verbatim": "Comparing W4 (BEFORE) to W6 (AFTER): the artifact is unchanged (option_2), and the two corrections O5 asked for are largely present. W4's 'it may be stale or cover only the main road' is replaced by 'the only road is impassable... no alternate route is mentioned or confirmed' (matching O5's S02 excerpt and its note that S02 does not say 'main road'), and W4's 'it is not in the reported northward plume path' becomes 'Pine is likely in the plume path (inference, not verified)' with Cedar 'relatively less exposed (also inference, not verified clear)'. However, the change also introduces an unsupported strengthening and a provenance problem. W6 credits O4/S03: 'Cedar reportedly has a landline, backup generator, and emergency broadcast radio.' I directly read S03, which says 'A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio.' W6's wording drops 'functional' and the recollection basis is retained only in a trailing clause, which is acceptable, but W6 never declares O4/S03 in a way that matches its text: declared_sources lists O4, but APPLICATION_SOURCE_REFS for this application omits O4's substance even though the work_text relies on it, and more importantly W6 says 'retain the S03-based communication point (via O4)' while O5 (the offer actually applied) says nothing about S03. This is a cross-offer import presented as if part of the O5 correction. Second, W6 claims O5 'corrects two over-claims in W5' and that W5's plume phrasing 'upgraded an inference to a reported fact'; O5 does say this, so the report is faithful, but W6 then asserts 'My own direct original S01 reports a northward-drifting cloud' — I cannot read S01 (my originals are S03 and T), so this is a peer-reported claim about A1's own source; as A1's own work it is self-report, not something I can verify, and it should not be treated as independently confirmed. Third, W6's open_points drop W4's explicit statement that Cedar's 'emergency-communication capability' was unstated and replace it with the S03 recollection; that is a net information gain, not loss, but the recollection's 'functional' qualifier is weakened to 'not confirmed... currently functional', which is a fair caveat rather than a loss. Net: the decisive changed relation (washout scope and plume inference softened) is supported by O5's reported S02 excerpt and is consistent with W4's own prior framing; the artifact consequence (option_2 remains best-remaining) is unchanged and not contradicted. The residual issue is the undeclared/unattributed import of the S03 comms point into a revision nominally driven by O5, plus the unverifiable self-report about S01's contents. Limits: I cannot read S01 or S02; I rely on O5's excerpt and on W4/W5/W6 as public reports for those.",
+      "scope_verbatim": "CHECK_EFFECT of W4→W6 against O5, O4/S03 (direct), T, and the visible W1–W6 reports; artifact option_2 unchanged.",
+      "usage": {
+        "input_tokens": 14801,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 718,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15519
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 21,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "A2/S02 identity correct; says no supported content dropped but does not notice W4 explicit Pine-danger report.",
+      "observation_verbatim": "I am A2 and hold S02 as a direct original. W6's washout wording matches my original exactly: \"Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" W6 renders this as 'the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed' — the correct scope (the source does not say 'main road' and does not exclude an alternate route). The plume claim is properly demoted to inference: 'My own direct original S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified)'. I cannot read S01 directly; via W4/W6's report it supports drift direction, not 'Pine is in the plume', so the inference framing is consistent with the visible carrier. W4's rebuttal of W2's 'farther from spill' reasoning is restored, and the S03 comms point is retained with the recollection caveat ('per a team member's recollection, not on-site verification'), matching O4's own limit. The artifact remains option_2, coherent with the stated weighing. Declared sources (O5, O4, S01, T, W4, W5) cover the O5/O4 carriers actually used; S01 is cited as a peer-reported original via W4/W6, not as my own access. No local suggestion was over-generalized beyond its object, and no supported content was dropped.",
+      "scope_verbatim": "W6 artifact, work_text, and open_points against S02 (my direct original) and the visible carriers O4, O5, W4, W5; checked for scope inflation of the washout, inference-vs-report framing of the plume, retention of the W2 rebuttal and S03 caveat, artifact consistency, and source-declaration adequacy. Boundary: S01 and S03 are not directly readable by me, so their content is assessed only via peer reports.",
+      "usage": {
+        "input_tokens": 15086,
+        "input_tokens_details": {
+          "cached_tokens": 14848
+        },
+        "output_tokens": 447,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15533
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 22,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "A3/S03 boundary correct; accepts inference framing and says no reported information lost. Primary error missed.",
+      "observation_verbatim": "BEFORE W4 (directly read public report) said the washout 'may be stale or cover only the main road' and claimed Cedar 'is not in the reported northward plume path'; AFTER W6 (public report) restates the washout as 'per S02 (via O5), the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed' and reframes the plume point as 'S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified)'. This matches O5's support excerpt ('the only road to Maple Lodge has been washed out ... making it inaccessible by car or foot') and O5's proposed wording, and it matches my own S03 (direct original), which contains only the Cedar comms recollection and nothing about wind or plume, so it cannot support a reported plume claim. The change removes an unsupported upgrade ('main road', 'not in the plume path') without losing the reported content: the washout, the unknown alternate route, the north-drift advisory, and the W2 rebuttal are all still present, and the artifact remains option_2. The S03 comms point is correctly marked as a recollection via O4, not as verified. One residual limit: W6 still asserts the washout is 'enough to disqualify' Maple under time pressure, which is a judgment resting on a peer-reported S02 I cannot read; but this is framed as a judgment with an explicit unverified caveat, and no evidence available to me shows an alternate route exists. The decision itself is unchanged and remains defensible as best-remaining (Maple access reportedly failed, Pine north of a northward drift, Cedar south with familiar route and supplies). No unsupported strengthening or loss of reported information relative to the evidence I can access.",
+      "scope_verbatim": "Comparison of W4 vs W6 work_text/open_points for the option_2 decision, checked against O5's reported S02 excerpt, O4's reported S03, and my directly read S03 and T; S01/S02 themselves were not directly accessible to me.",
+      "usage": {
+        "input_tokens": 14801,
+        "input_tokens_details": {
+          "cached_tokens": 14592
+        },
+        "output_tokens": 466,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15267
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 23,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "yes",
+      "false_criticism": "yes",
+      "manual_evidence_note": "A2 attributes its SOURCE_ACCESS S02 to A1, wrongly faults A1's indirect S02 statement. Scope says originals 'not read by me' alone is not counted; role mapping error is explicit.",
+      "observation_verbatim": "O5's substantive corrections are reflected in W6: the washout is restated as 'only road impassable / inaccessible by car or foot; no alternate route mentioned or confirmed' (dropping the 'main road' hedge), and the plume claim is demoted to an inference from S01's northward drift. However, two mismatches remain. (1) Provenance/access: O5 was authored by A2, who holds S02 as a directly read original; W6 attributes the washout to 'S02 (via O5)' and says 'I cannot read S02 myself.' But according to SOURCE_ACCESS for this application, S02 is listed among A1's direct_original_refs, while W6's own limits say 'the washout is peer-reported (S02 via O5) and unverified by me.' This is inconsistent with the declared direct access; either the declaration or the text is wrong. (2) The USE_RECORD says W6 was applied 'to a copy of W5,' but W6's base_version is W4 and its declared_sources include W5; the diff shows W4→W6, so the stated operation target does not match the recorded base. Also, W6 declares O4 (which it uses for the S03 comms point) but not S03 itself; the text correctly frames S03 as indirect ('via O4'), so this is acceptable, but W6's declared_sources omits W2 even though it explicitly rebuts W2's 'farther from spill' reasoning, the same gap O3 flagged against W4. Artifact (option_2) is unchanged and still consistent with the reasoning.",
+      "scope_verbatim": "CHECK_USE of O5 against W6 (before=W4, after=W6): object (washout scope wording, plume inference framing, W2 rebuttal retention), conditions (artifact stays option_2), and operation (text/open_points edits). Limited to public reports O5, O4, W4, W5, W6 and the given SOURCE_ACCESS; S02 and S01 originals were not read by me, so the washout and plume facts are assessed only for consistency of attribution, not truth.",
+      "usage": {
+        "input_tokens": 14933,
+        "input_tokens_details": {
+          "cached_tokens": 14720
+        },
+        "output_tokens": 476,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15409
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 24,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "yes",
+      "false_criticism": "yes",
+      "manual_evidence_note": "A3 faults A1-authored W6's direct S01 statement because A3 only holds S03; asks to rewrite A1's source as peer-reported.",
+      "observation_verbatim": "W6 applies O5's two corrections correctly at the decision level (artifact stays option_2; washout restated as 'only road impassable, no alternate route mentioned or confirmed'; plume claim softened to an inference from S01's northward drift + Pine being north). But the delivery relationship has a concrete residual defect: W6 declares O5, O4, S01, T, W4, W5 but omits the A2 carriers it still relies on for the Maple access premise. The text says 'per S02 (via O5)' — O5 is a public report of A2's S02, so citing O5 is acceptable — yet W6 also restates W4's rebuttal of W2's 'farther from spill' reasoning and its open_points explicitly name W2, while W2 is absent from declared_sources (the same omission A2 flagged as O3 against W4). Second, a provenance over-claim: W6 writes 'My own direct original S01 reports a northward-drifting cloud,' but per SOURCE_ACCESS S01 is not a directly read original at this stage (only S03 and T are); S01 is known only through W4/W5/W6 peer reports. The correct record is 'S01 as reported in W4/W5 (peer-reported, unverified by me).' Third, W6's baseline lineage is awkward: it says 'Revised from W5 after applying O5' but O5's target is W5:work_text:L1 and W6's base_version is W4; this is a bookkeeping inconsistency, not a decision error. Decision consequence: none — option_2 remains the best-remaining choice under the stated facts (Maple access reportedly failed, Pine north of a northward drift, Cedar south with familiar route, supplies, recollected comms). Limits: I cannot verify S02's actual wording or S01's contents (no direct access); the washout-scope/alternate-route question and Cedar's structural/contamination status remain the top unresolved risks.",
+      "scope_verbatim": "W6 work_text, open_points, and declared_sources relative to O5/O4 and the W2 rebuttal; artifact option_2 unchanged. Does not cover S02/S01 original wording (inaccessible) or Cedar's physical safety.",
+      "usage": {
+        "input_tokens": 14711,
+        "input_tokens_details": {
+          "cached_tokens": 14464
+        },
+        "output_tokens": 494,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15205
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 25,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Calls S02 restatement near-direct despite opening 'O5 answers from A2's directly read original S02 (which I still cannot read myself)'; explicit carrier already present. Primary error missed.",
+      "observation_verbatim": "I am A2. I directly hold S02 and T; I cannot read S01 or S03. Checking the actual revision W4→W6 against O5 (my own offer) and the focus Q1: AFTER does apply O5's core operation — it restates the washout as 'the sole named route is impassable; no alternate access is mentioned or confirmed' rather than 'no access possible' or 'access merely unconfirmed', keeps the alternate-route question as the top open point, and adds W2 to declared_sources (now O1, O3, O4, O5, S01, T, W1, W2, W4), which resolves the declaration gap O3/O5 flagged. The S01-based plume wording is also softened to 'Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact,' correcting the O3-flagged over-claim. However, W6 misdescribes what O5 says about S02's scope. O5 states S02 'does not mention any alternate route, and it does not affirmatively state that none exists,' and that I can confirm only what S02 says. W6's Q1 summary is accurate, but the work_text then asserts 'S02 says the only road to Maple Lodge was washed out this morning' as if quoting the original directly, while elsewhere conceding 'which I still cannot read myself' — the content is consistent with my S02 ('the only road to Maple Lodge has been washed out ... inaccessible by car or foot'), so this is a provenance/attribution slip, not a content error. More concrete: W6's limits say 'the Maple washout is indirect knowledge (S02 via O1/O5)' but the work_text's opening sentence presents the S02 wording as if sourced from the original; the two should be reconciled to consistently attribute the wording to O5's report. Also, W6 credits 'A3's O4' and S03 content (landline/generator/radio) and declares O4, correctly labeling it indirect/unverified — consistent with O4's own caveat. No unsupported content was removed: S01's drift rejection of Pine, Cedar's familiar route, and 24h supplies are all preserved. Artifact stays option_2, which is defensible. The one substantive issue is the provenance framing of the S02 quote (presented as near-direct when it is via O5), plus a minor residual: W6 says 'per O4 (A3's recollection S03, indirect/unverified)' but does not declare S03 itself, only O4 — acceptable since O4 is the carrier actually used. Limits: I can verify S02's content because I hold it; I cannot verify S01 or S03, and A1's access to S02 remains indirect.",
+      "scope_verbatim": "W4→W6 revision vs O5's proposed_use and my direct S02; focus Q1 resolution; declared_sources completeness; provenance framing of the S02 quotation; preservation of S01-based Pine rejection and Cedar rationale. Artifact option_2 not contradicted.",
+      "usage": {
+        "input_tokens": 19978,
+        "input_tokens_details": {
+          "cached_tokens": 512
+        },
+        "output_tokens": 666,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20644
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 26,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "yes",
+      "false_criticism": "uncertain",
+      "manual_evidence_note": "A3 refers to 'my directly read S01/S03', then scope correctly limits originals to S03/T. Internal access contradiction. Mild Cedar-direction critique not definite false label.",
+      "observation_verbatim": "W4→W6 applies O5's object and operation faithfully on the main points: the washout is restated as 'the sole named route is impassable; no alternate access is mentioned or confirmed' (neither 'no access possible' nor 'access merely unconfirmed'), the alternate-route question is kept as the top open point, W2 is added to declared_sources for the 'farther from spill' rebuttal, and the artifact stays option_2. The plume claim is also correctly softened to an inference ('Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact'). However, the revision is not clean: (1) W6 newly asserts a positive safety direction not supported by my directly read S01/S03 or any offer — 'Cedar being south likewise means only that Cedar is not reported in the northward drift (inference, not verified safety)'; this is a weaker but still directional inference, and it silently replaces W4's stronger 'not in the reported northward plume path' without noting that Cedar's plume status is simply unknown, not merely unverified. (2) W6 also credits O4/S03 for Cedar communication ('reportedly has a landline, backup generator, and emergency broadcast radio') — I hold S03 directly and can confirm that exact content, so this is accurate as a recollection, but W6's work_text says 'per O4 (A3's recollection S03, indirect/unverified)' while its own declared_sources list omits S03, relying on O4 as the carrier; that is defensible under SOURCE_ACCESS but should be stated as 'via O4' consistently (it mostly is). (3) The most substantive downstream inconsistency: W6's Limits say 'the Maple washout is indirect knowledge (S02 via O1/O5)' but W6's work_text also relies on A2's O5 restatement of S02's scope, which is itself a peer report of A2's direct reading; that is correctly labeled indirect, so no over-claim there. Net: artifact option_2 is unchanged and the O5 correction is applied, but the Cedar 'not reported in the northward drift' phrasing introduces a mild directional inference presented as neutral, and the S03/O4 carrier labeling is slightly inconsistent with declared_sources. These are text/evidence-strength issues, not an artifact error.",
+      "scope_verbatim": "W4→W6 work_text, open_points, declared_sources vs O5's proposed_use and O3/O4 content; specifically the washout-scope restatement, the W2 declaration fix, the Cedar/Pine plume-inference wording, and the S03-via-O4 labeling. Artifact field option_2 is not contradicted; S01/S02 originals are not directly accessible to me (only S03 and T are).",
+      "usage": {
+        "input_tokens": 19601,
+        "input_tokens_details": {
+          "cached_tokens": 384
+        },
+        "output_tokens": 612,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20213
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 27,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "yes",
+      "false_criticism": "yes",
+      "manual_evidence_note": "A2 calls Q1 'my Q1' (A1 authored it) and says 'I cannot read S02'. Also demands inaccessible S03 citation although O4 carrier declared; violates existing source convention.",
+      "observation_verbatim": "Checking O5 (A2's answer to my Q1) against the actual before/after work W4→W6 and the use_record. Object: O5's object is S02's exact scope, stated from A2's directly read original — the only road to Maple Lodge is washed out and inaccessible by car or foot, no alternate route mentioned and none affirmatively excluded. W6's work_text and use_record do adopt this framing ('sole named route is impassable; no alternate access is mentioned or confirmed') and keep the alternate-route question as the top open point, so the core object/operation match. O5's secondary operations are also applied: W6 labels the Pine rejection and the Cedar plume-clearance as inferences from S01's drift direction (per O5/O3), and adds W2 to declared_sources, resolving the declaration-completeness point. Two residual problems remain in W6, both visible in the full text. (1) The use_record says W6 'also incorporated O4' and W6's text relies on O4/S03 for Cedar's landline/generator/radio, but S03 itself is still not declared in W6's declared_sources ([O1, O3, O4, O5, S01, T, W1, W2, W4]); O4 is declared, so the reliance is at least carried by a declared public carrier, but the specific S03 content is used and not listed — a minor declaration gap relative to the text. (2) More substantively, W6 says 'Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact,' which is a fair inference, but the artifact's decisive step still treats the unverified, single-source Maple washout as disqualifying while the task's shared fact 'all locations are usually reachable in under an hour' is not reconciled in the text — W6's limits note the washout may cover only the main road, which partially discloses this, but it does not state that the washout contradicts the shared reachability premise. These are evidence-strength/declaration issues, not an artifact error: option_2 (Cedar Station) remains defensible given S01's northward drift and the reported washout. Limit on my access: I cannot read S02 or S03; O5/O4 are peer reports, and A2's restatement of S02 is a provider self-report, not my direct verification.",
+      "scope_verbatim": "O5's object (S02's exact washout scope), conditions (peer-reported, A2 directly read S02, I did not), operation (reword washout framing, keep alternate-route open point, label plume claims as inferences, declare W2), and result, checked against the full W4→W6 work_text, open_points, declared_sources, and use_record. Also flags the residual S03 non-declaration and the unreconciled tension with T's general reachability statement. Does not assess W1/W2/W3 artifacts or verify S01/S02/S03 originals.",
+      "usage": {
+        "input_tokens": 19825,
+        "input_tokens_details": {
+          "cached_tokens": 19584
+        },
+        "output_tokens": 659,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20484
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 28,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "no",
+      "false_criticism": "uncertain",
+      "manual_evidence_note": "A3 source boundary correct; finding issue partly based on O3 redundancy explicitly described as not incorrect. No clear substantive issue; retained uncertain.",
+      "observation_verbatim": "Reconstructing the delivery relationship affected by O5: A2, holding S02 directly, answers Q1 by restating its scope as 'the only road to Maple Lodge was washed out this morning, making it inaccessible by car or foot; no alternate route is mentioned and none is affirmatively excluded,' and proposes three corrections to W4 — (a) keep the alternate-route open point but word the washout as 'sole named route impassable; no alternate access mentioned or confirmed,' (b) soften 'Cedar is not in the reported northward plume path' to an inference from S01's northward drift, (c) add W2 to declared_sources since the text rebuts W2's 'farther from spill' reasoning. Comparing with the ACTUAL W6 fields: (a) is applied — W6 states the precise framing and keeps the alternate-route question as the top limit; (b) is applied — W6 explicitly labels Pine's exposure and Cedar's clearance as inferences, not verified plume-path facts; (c) is applied — W2 now appears in declared_sources (alongside O1, O3, O4, O5, S01, T, W1, W4). The artifact remains option_2, consistent with O5's 'do not change the artifact.' One residual defect: W6 declares O3 but O3 is A2's offer whose substantive content (S02 scope, W2 declaration, plume-inference softening) is duplicated by O5, which W6 also declares; this is redundant rather than incorrect, and W6's work_text attributes the plume-inference framing to 'O5/O3,' so the O3 declaration is at least textually grounded. A second residual: W6's declared_sources omit W5, which W6 does not engage in text, so that omission is consistent. The substantive question Q1 raised is answered and the framing corrected; no counterexample shows W6's revised step reversing the goal — even under the worst case (washout covers only the main road, alternate exists), W6 explicitly flags that Maple's chemical-incident designation would make it competitive again, so the conclusion is properly conditional rather than overstated. Limits: S02 is known to me only via O1/O5 peer reports, not directly; S01 is known only via W4/W5/W6 metadata; I cannot verify S02's exact wording myself, only that W6 faithfully reflects what O5 reports.",
+      "scope_verbatim": "O5's application to W4→W6: the three proposed corrections (washout framing, plume-inference softening, W2 declaration), the artifact (unchanged option_2), and declared_sources completeness. Does not independently verify S02 or S01 originals; does not assess W1/W2/W3/W5 artifacts.",
+      "usage": {
+        "input_tokens": 19511,
+        "input_tokens_details": {
+          "cached_tokens": 19328
+        },
+        "output_tokens": 594,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20105
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 29,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "yes",
+      "false_criticism": "no",
+      "manual_evidence_note": "A2 says S02 wording cannot be independently confirmed by me and 'I cannot access' S02 despite included own original; no_issue_found, so not counted as false criticism.",
+      "observation_verbatim": "Checked O5 against the full W4→W6 work_text, open_points, declared_sources and use_record. Object: O5 restates S02's scope from A2's directly read original — only road to Maple Lodge washed out this morning, inaccessible by car or foot, no alternate route mentioned and none affirmatively excluded. W6 reproduces this precisely as 'the sole named route is impassable; no alternate access is mentioned or confirmed', explicitly rejecting both 'no access possible' and 'access merely unconfirmed'. Operation: (1) the washout framing is corrected without strengthening it; (2) the alternate-route question is retained and promoted to the top open point, matching O5's instruction; (3) the Cedar plume claim is reworded as an inference from S01's northward drift and explicitly labeled 'not verified safety', and the Pine rejection is likewise framed as inference ('not reported to be clear of the plume'), matching O5/O3; (4) W2 is now in declared_sources, and the text still carries the rebuttal of W2's 'farther from spill' reasoning, so the declaration-completeness defect O5/O3 flagged is resolved; (5) O4/S03 is incorporated as narrowing rather than closing the communication gap, with the recollection caveat kept, and O4 is declared. Artifact remains option_2, as O5 proposed. The use_record accurately describes what was applied and states the access limits (S02/S03 not read directly; A2's restatement of S02 is a provider self-report, not my verification). One residual, already disclosed in W6's limits: A2's statement of S02's wording cannot be independently confirmed by me, and the source list does not include O6 (A3's related Q1 response), which is acceptable since W6 does not rely on O6's content. No misattribution, over-claim, or undeclared reliance relative to the work_text was found.",
+      "scope_verbatim": "O5's object (S02 scope restatement), conditions (A2 holds S02; A1 cannot read it), and operation (reword washout, keep alternate-route open point, label plume claims as inferences, add W2) checked against the entire W6 work_text, open_points, declared_sources, and use_record; also compared with BEFORE W4 and the O3/O4 feedback. Does not verify S02's actual text, which I cannot access.",
+      "usage": {
+        "input_tokens": 19825,
+        "input_tokens_details": {
+          "cached_tokens": 19584
+        },
+        "output_tokens": 530,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20355
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 30,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "yes",
+      "false_criticism": "yes",
+      "manual_evidence_note": "A3 scope misnames self A1 and assigns S03 to A1; urges editor to declare inaccessible S03 because checker holds it. Editor must cite actual public carrier O4.",
+      "observation_verbatim": "Reconstructing the delivery relationship affected by O5: the offer's object is S02's exact scope (sole road washed out, no alternate route mentioned or excluded), its operation is to restate W4's washout framing precisely, keep the alternate-route open point as top limit, soften 'Cedar is not in the reported northward plume path' to an inference from S01's northward drift, and add W2 to declared_sources because the text rebuts W2's 'farther from spill' reasoning. W6 applies all four: the washout is restated as 'sole named route impassable; no alternate access mentioned or confirmed' (not upgraded to 'no access possible'), the alternate-route question is kept as the top open point, the plume framing is explicitly labeled an inference, and W2 is now declared alongside O1/O3/O4/O5/S01/T/W1/W4. The artifact stays option_2, consistent with O5's 'do not change the artifact.' However, the applied change carries a residual declaration defect: W6's work_text says 'per O4 (A3's recollection S03, indirect/unverified)' and relies on S03's content, but S03 is not in declared_sources (only O4 is). O4's proposed_use explicitly said 'also declare S03 (via this offer) if relied upon,' and the CHECK_USE feedback on O4 already flagged this same gap in W5; W6 repeats it. Declaring O4 alone is arguably the correct carrier-level citation for a peer-reported original I cannot read, but since I do directly hold S03 as my own original, the cleanest handling is to declare S03 itself (or state explicitly that O4 is cited as the carrier in lieu of S03). Second, one wording in W6 is slightly stronger than O5's correction: 'Pine Retreat (option_3) is rejected on my own direct original S01 (radio advisory: cloud drifting north)' reads as decisive even though the next sentence concedes it is an inference; the rejection is defensible but the juxtaposition of 'rejected on' with 'inference, not verified' is in tension. Neither point changes the artifact; both are evidence-strength/declaration issues, not errors in the option_2 conclusion. On Q1 itself, O5 does answer the scope question from A2's directly read original, and W6's restatement matches O5's reported content; I cannot verify S02 myself (peer_metadata_not_verified), so the scope answer remains indirect knowledge. Counterexample scope: if an alternate route to Maple Lodge exists, W6's own top open point concedes Maple (the only chemical-incident-designated site) becomes competitive again — W6 discloses this, so the residual risk is acknowledged rather than hidden.",
+      "scope_verbatim": "O5's application to W4→W6: washout framing, alternate-route open point, plume-inference wording, and declared_sources (W2 added; S03 still undeclared despite reliance). Checked against O5, O3, O4, the W4/W5/W6 work_texts, and SOURCE_ACCESS (S02 and S01 not directly read by A1; S03 and T are A1's direct originals). Does not assess W1/W2/W3 artifacts independently or verify S01/S02 originals.",
+      "usage": {
+        "input_tokens": 19511,
+        "input_tokens_details": {
+          "cached_tokens": 19328
+        },
+        "output_tokens": 720,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20231
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 31,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "A2/S02 correct but calls omission of private S03 a declaration gap despite O4 declared and indirect reliance explicit; contradicts existing carrier citation convention.",
+      "observation_verbatim": "I am A2; my only direct originals are S02 and T. O5 is my own prior offer about S02, so I can check W4→W6 against S02 itself. Decisive alignment: S02 says \"the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" W6 restates this as \"the sole named route is impassable; no alternate access is mentioned or confirmed\" and correctly keeps the alternate-route question as the top limit — consistent with S02's scope, and W6 no longer treats it as 'no access possible'. W6 also correctly labels the Pine/Cedar plume statements as inferences from S01 (\"Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact\"), which fixes the over-claim flagged in the W5 check, and it now declares W2 since the text rebuts W2's 'farther from spill' reasoning. However, one concrete defect remains in the AFTER text: W6 writes \"per O4 (A3's recollection S03, indirect/unverified) it reportedly has a landline, backup generator, and emergency broadcast radio — which narrows, but does not close, the communication gap.\" That is a fair use of a peer report I cannot read, but W6's declared_sources list [O1, O3, O4, O5, S01, T, W1, W2, W4] omits S03 even though the text relies on S03's content; per the declaration convention applied earlier to W2, the carrier actually used should be declared (S03 is only reachable here via O4, so at minimum the reliance on S03 should be flagged as indirect, which the text does). Second, W6's Limits says \"the Maple washout is indirect knowledge (S02 via O1/O5)\" — this is accurate for A1's access, but the framing \"washed out this morning\" is reported by S02 as a specific recent event; A1 has no basis to characterize its currency beyond what O1/O5 report, and W6 does not claim more, so this is acceptable. Third, W6 attributes to me that O5 \"answers from A2's directly read original S02\" — that is true of my offer, but W6 should not present it as independent verification; the text does say \"which I still cannot read myself,\" so the boundary is stated. Net: the substantive Q1 correction (washout scope, inference labeling, W2 declaration) is properly applied and the artifact option_2 is unchanged and defensible; the remaining issue is the undeclared S03 reliance in declared_sources, a declaration-completeness gap rather than an artifact error.",
+      "scope_verbatim": "Checked W4→W6 against my direct original S02 and against O5 (my prior offer) and O4; focused on whether Q1's washout-scope correction was actually applied without over- or under-claiming, whether the Pine/Cedar plume claims are labeled as inferences, and whether declared_sources match the carriers the text uses. I did not verify S01 or S03 (no direct access); their content is known only via peer reports W4/W5/W6 and O4/O6.",
+      "usage": {
+        "input_tokens": 19978,
+        "input_tokens_details": {
+          "cached_tokens": 19840
+        },
+        "output_tokens": 711,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20689
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 32,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "no",
+      "vehicle_constraint_preserved": "not_applicable",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "A3/T/S03 identity correct; recognizes O4 citation, but endorses Pine inference and never flags original report loss.",
+      "observation_verbatim": "The decisive change W4→W6 is the washout framing and the plume wording, and it is largely faithful to O5's reported scope. Before: \"O1 reports ... the only road to Maple Lodge is washed out and it is inaccessible by car or foot ... an unverified access failure on the only route is enough to disqualify a site.\" After: \"the sole named route is impassable; no alternate access is mentioned or confirmed — not 'no access possible', and not 'access merely unconfirmed'\" and the alternate-route question is kept as the top open point. This matches O5's reported restatement of S02 (\"the only road ... washed out ... inaccessible by car or foot\", no alternate route mentioned or excluded) and my own direct original S03, which says nothing about roads and so cannot confirm or refute the washout scope. The artifact stays option_2 and the alternate-route counterexample (if an alternate exists, Maple's chemical-incident designation makes it competitive again) is preserved in limits, so the consequence for the task is unchanged and the evidence strength is not upgraded. The 'Cedar is not in the plume path' claim is now correctly demoted to inference (\"not reported in the northward drift (inference, not verified safety)\"), fixing the CHECK_EFFECT over-claim A3 flagged against W4. Two residual issues: (1) W6 says \"Pine Retreat (option_3) is rejected on my own direct original S01\" and then \"Pine is north, so it is not reported to be clear of the plume\" — this is worded as inference, which is acceptable, but the sentence still treats S01's north-drift advisory as sufficient to disqualify Pine while treating the washout as merely 'prefer', an asymmetry that is disclosed rather than resolved; (2) the declaration now includes W2 (fixing O3/O5's completeness point) and O4/S03 is cited as indirect/unverified rather than as a verified fact, so the earlier S03-omission defect is corrected. My direct access is S03 and T only; S01 and S02 are peer-reported via W4/W5/W6 and O1/O3/O5, so I cannot verify the washout or the drift advisory from originals, and O5's status as a peer report is not authentication of S02.",
+      "scope_verbatim": "W4→W6 work_text, open_points, and declared_sources, checked against O5's proposed restatement of S02, O3's correction, S03 (my direct original), and T; artifact option_2 unchanged. Does not verify S01/S02 originals or assess W1/W2/W3 artifacts independently.",
+      "usage": {
+        "input_tokens": 19601,
+        "input_tokens_details": {
+          "cached_tokens": 19456
+        },
+        "output_tokens": 579,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20180
+      }
+    }
+  ]
+}

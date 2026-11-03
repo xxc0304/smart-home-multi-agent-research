@@ -1,0 +1,69 @@
+{
+  "external_api_requests": 0,
+  "new_test_methods": 12,
+  "full_test_executions": 260,
+  "output_fields_removed": [
+    "resolution",
+    "dependency"
+  ],
+  "provider_payload_input_estimate": 21990,
+  "input_limit": 32768,
+  "raw_old_output_not_migrated": true,
+  "manual_label_removal_counterfactual_can_pass_semantically_wrong_checks": true,
+  "task_correctness_proven": false,
+  "frozen_plans": [
+    {
+      "plan": "ALIGNED_REVIEW_COMPONENT_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_ATTRIBUTION_REVIEW_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_AUDIT_DELIVERY_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_CLOSURE_REFERENCE_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_CORRECT_REPAIR_REVIEW_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_CORRECT_REPAIR_REVIEW_V2_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_CORRECT_REPAIR_REVIEW_V3_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_INSPECTION_COMPONENT_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_INSPECTION_RECOVERY_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_SOURCE_BINDING_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_TASK_AUDIT_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MINIMAL_REVIEW_COMPONENT_PLAN_20261020.json",
+      "all_match": true
+    }
+  ],
+  "source_hashes": {
+    "src/coreta/evidence_review.py": "68fd25fa0365b7f4c32b65b6cf98424e53701d688378794f4f9f800a26639bbb",
+    "design/convergence/evidence_review.schema.json": "4f69d64ad1b1e972ede4fe5deb8f3712f875bf83d22a8f0ce3448c56d88dabc6",
+    "tests/test_evidence_review.py": "c9aae179578da93f1fe751c2171a6bdc5581d84fad7b48d9cbec00662a343316"
+  }
+}

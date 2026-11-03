@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoReTA local contribution protocol v1 - design only",
+  "$comment": "Extract one output definition as the stage root. Replace Ref with an enum of visible handles and Agent with an enum of known agent ids. Apply semantic constraints from SPEC separately.",
+  "$defs": {
+    "Ref": {"type": "string", "minLength": 1},
+    "Agent": {"type": "string", "minLength": 1},
+    "Refs": {"type": "array", "maxItems": 12, "uniqueItems": true, "items": {"$ref": "#/$defs/Ref"}},
+    "Texts": {"type": "array", "maxItems": 3, "items": {"type": "string", "minLength": 1}},
+    "Item": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "content": {"type": "string", "minLength": 1},
+        "support": {"type": "string", "minLength": 1},
+        "support_refs": {"$ref": "#/$defs/Refs"},
+        "conditions": {"$ref": "#/$defs/Texts"},
+        "needs": {"$ref": "#/$defs/Texts"}
+      },
+      "required": ["content", "support", "support_refs", "conditions", "needs"]
+    },
+    "ContributionOutput": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "items": {"type": "array", "maxItems": 3, "items": {"$ref": "#/$defs/Item"}},
+        "note": {"type": "string"}
+      },
+      "required": ["items", "note"]
+    },
+    "Application": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "refs": {"$ref": "#/$defs/Refs"},
+        "result": {"type": "string", "minLength": 1}
+      },
+      "required": ["refs", "result"]
+    },
+    "Exclusion": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "ref": {"$ref": "#/$defs/Ref"},
+        "reason": {"type": "string", "minLength": 1}
+      },
+      "required": ["ref", "reason"]
+    },
+    "Request": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "kind": {"enum": ["ask", "check", "probe"]},
+        "recipient": {"anyOf": [{"$ref": "#/$defs/Agent"}, {"type": "null"}]},
+        "target_refs": {"$ref": "#/$defs/Refs"},
+        "question": {"type": "string", "minLength": 1},
+        "impact": {"type": "string", "minLength": 1}
+      },
+      "required": ["kind", "recipient", "target_refs", "question", "impact"]
+    },
+    "ApplyOutput": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "artifact": {"type": ["string", "null"], "minLength": 1},
+        "applications": {"type": "array", "maxItems": 6, "items": {"$ref": "#/$defs/Application"}},
+        "excluded": {"type": "array", "maxItems": 4, "items": {"$ref": "#/$defs/Exclusion"}},
+        "unresolved": {"$ref": "#/$defs/Texts"},
+        "request": {"anyOf": [{"$ref": "#/$defs/Request"}, {"type": "null"}]}
+      },
+      "required": ["artifact", "applications", "excluded", "unresolved", "request"]
+    },
+    "ReviewOutput": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "verdict": {"enum": ["no_defect_found", "issue", "undetermined"]},
+        "finding": {"type": "string", "minLength": 1},
+        "target_refs": {"$ref": "#/$defs/Refs"},
+        "check_suggestion": {"type": ["string", "null"]}
+      },
+      "required": ["verdict", "finding", "target_refs", "check_suggestion"]
+    }
+  }
+}

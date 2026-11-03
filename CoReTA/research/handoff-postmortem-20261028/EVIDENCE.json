@@ -1,0 +1,3945 @@
+{
+  "review_type": "executor retrospective nonblind paired case review",
+  "new_api_calls": 0,
+  "architecture_edits": false,
+  "official_rescoring_changes": false,
+  "pair_checks": [
+    {
+      "case_id": "ordinary-01",
+      "repeat": 1,
+      "A1_initial_packet_and_schema_equal": true,
+      "final_instruction_prefix_equal": true,
+      "evidence": [
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-ordinary-r1/requests/00-A1.json",
+          "sha256": "53a17d95400063da666e00afde0ed9877ea4e2dbf25a4ec436efd7392860ee3b"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-local_work-r1/requests/00-A1.json",
+          "sha256": "72c08b5cd59bab1bf7fd355d97e0331388d3db4130f8264f427365a9384ae275"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-ordinary-r1/requests/03-A1.json",
+          "sha256": "acb0402de43da0867db80f8da9a4b76f39b83a8534748d5d180199c3c1e49c7f"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-local_work-r1/requests/03-A1.json",
+          "sha256": "cd5ce06fb275ff3b20fdbdb1129b0b83f2f3101130854ad76f6d92f96b3b20d5"
+        }
+      ]
+    },
+    {
+      "case_id": "ordinary-01",
+      "repeat": 2,
+      "A1_initial_packet_and_schema_equal": true,
+      "final_instruction_prefix_equal": true,
+      "evidence": [
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-ordinary-r2/requests/00-A1.json",
+          "sha256": "53a17d95400063da666e00afde0ed9877ea4e2dbf25a4ec436efd7392860ee3b"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-local_work-r2/requests/00-A1.json",
+          "sha256": "72c08b5cd59bab1bf7fd355d97e0331388d3db4130f8264f427365a9384ae275"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-ordinary-r2/requests/03-A1.json",
+          "sha256": "bf009d30b13b4654292102ac034dae06e1271d3199fc4e2ec76419feaf9cef9e"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-local_work-r2/requests/03-A1.json",
+          "sha256": "908a5368c48f70a34067a77ea0ed0924a8ec74cfbc1ffc1d3347a4302d23476d"
+        }
+      ]
+    },
+    {
+      "case_id": "ordinary-02",
+      "repeat": 1,
+      "A1_initial_packet_and_schema_equal": true,
+      "final_instruction_prefix_equal": true,
+      "evidence": [
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-02-ordinary-r1/requests/00-A1.json",
+          "sha256": "194fb09cace36f8211125b54a5fac1f46beefc6f6e35368cb27217514cf25997"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-02-local_work-r1/requests/00-A1.json",
+          "sha256": "31f39b26a7d14f1ebbebf160205dca27902679c841367f3bc1d1ba8917ce411f"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-02-ordinary-r1/requests/03-A2.json",
+          "sha256": "d3a48cb7d2674fd44d4f819c045460bc637229e5e6d4bb1173e47518fc0948d3"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-02-local_work-r1/requests/03-A2.json",
+          "sha256": "87cef90dd2c12cb759b0d9544f1930c3cb54471d92c99af1044ffe53f8236a0e"
+        }
+      ]
+    },
+    {
+      "case_id": "ordinary-02",
+      "repeat": 2,
+      "A1_initial_packet_and_schema_equal": true,
+      "final_instruction_prefix_equal": true,
+      "evidence": [
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-02-ordinary-r2/requests/00-A1.json",
+          "sha256": "194fb09cace36f8211125b54a5fac1f46beefc6f6e35368cb27217514cf25997"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-02-local_work-r2/requests/00-A1.json",
+          "sha256": "31f39b26a7d14f1ebbebf160205dca27902679c841367f3bc1d1ba8917ce411f"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-02-ordinary-r2/requests/03-A2.json",
+          "sha256": "954ad3e76bb4741c6d1e4dc32a554ccaafc12e6073e17858a56c2758894ef6e6"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-02-local_work-r2/requests/03-A2.json",
+          "sha256": "3ed4f5de13f42c4663db11dd8f47cd1b0339298079be22b24d91821c33d7fbdf"
+        }
+      ]
+    },
+    {
+      "case_id": "dependent-01",
+      "repeat": 1,
+      "A1_initial_packet_and_schema_equal": true,
+      "final_instruction_prefix_equal": true,
+      "evidence": [
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r1/requests/00-A1.json",
+          "sha256": "1d8661576061607f5f4d29aad5502da4bf57fd019d335012034682ef09d08e54"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r1/requests/00-A1.json",
+          "sha256": "bb1f4b4327ef8c46ea898daccbd3dce14d4352a0d413294367efd2de7cabc0a0"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r1/requests/03-A1.json",
+          "sha256": "9bc7fdf4f6d08c242ebc4bea263686a6864db1fe501a584fbc7648fe43845ab8"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r1/requests/03-A1.json",
+          "sha256": "8ab40fa3dc3260208751e586752a1b1970a46c0d18ca5818b311160ee062e500"
+        }
+      ]
+    },
+    {
+      "case_id": "dependent-01",
+      "repeat": 2,
+      "A1_initial_packet_and_schema_equal": true,
+      "final_instruction_prefix_equal": true,
+      "evidence": [
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r2/requests/00-A1.json",
+          "sha256": "1d8661576061607f5f4d29aad5502da4bf57fd019d335012034682ef09d08e54"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r2/requests/00-A1.json",
+          "sha256": "bb1f4b4327ef8c46ea898daccbd3dce14d4352a0d413294367efd2de7cabc0a0"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r2/requests/03-A1.json",
+          "sha256": "e37f1731ae08543ef1e45e13c42b89e1c645383a22deb5e338575e8d7db1b68a"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r2/requests/03-A1.json",
+          "sha256": "f8812473833df362f05226faf6b600f4abb084505eb0010b6430c00b12708dce"
+        }
+      ]
+    },
+    {
+      "case_id": "dependent-02",
+      "repeat": 1,
+      "A1_initial_packet_and_schema_equal": true,
+      "final_instruction_prefix_equal": true,
+      "evidence": [
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/requests/00-A1.json",
+          "sha256": "35a0ee39ff775a5f40c918ffd28c6f2a9fa05202638363bfae3ef9f8fbdae57e"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/00-A1.json",
+          "sha256": "af8e890a0baa62c9990ec1d6d0949137bda3590514e5465a2d2d0745539e9ef0"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/requests/03-A2.json",
+          "sha256": "c98be53e53714713fea964cf9cd4d93ffe2550b77cac96b862d08fdd3b702b60"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/03-A2.json",
+          "sha256": "f8dd8cdef3de2e52c289fd32dc2958a3a97b5c5a0c56435617aa399fc270abe9"
+        }
+      ]
+    },
+    {
+      "case_id": "dependent-02",
+      "repeat": 2,
+      "A1_initial_packet_and_schema_equal": true,
+      "final_instruction_prefix_equal": true,
+      "evidence": [
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r2/requests/00-A1.json",
+          "sha256": "35a0ee39ff775a5f40c918ffd28c6f2a9fa05202638363bfae3ef9f8fbdae57e"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r2/requests/00-A1.json",
+          "sha256": "af8e890a0baa62c9990ec1d6d0949137bda3590514e5465a2d2d0745539e9ef0"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r2/requests/03-A2.json",
+          "sha256": "3cd8ad77840e194cc1cdd4068eab1b9185cc733e79c4e57471d61cde2d36c5b9"
+        },
+        {
+          "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r2/requests/03-A2.json",
+          "sha256": "018aa91d7496dec8a7145bd74c1dd087fdc90da3488a773156402502105c0759"
+        }
+      ]
+    }
+  ],
+  "equity_first_repeat_paired_traces": [
+    {
+      "arm": "discussion",
+      "events": [
+        {
+          "wave": 0,
+          "actor": "A1",
+          "message": "The available data only provides Total equity for 2019 ($565,467 thousand) and 2018 ($907,320 thousand); values for 2017, 2016, and 2015 are not present in the visible sources, so the 2015–2019 average cannot be fully computed. If only 2018–2019 were intended, the average would be ($565,467 + $907,320) / 2 = $736,393.5 thousand. Please provide the 2015–2017 Total equity figures to compute the requested five-year average.",
+          "source_ids": [
+            "T1",
+            "T0",
+            "P1",
+            "P2"
+          ],
+          "receipts": [],
+          "calculations": [
+            {
+              "expression": "(565467+907320)/2",
+              "values": {
+                "a": 565467,
+                "b": 907320
+              }
+            }
+          ],
+          "accepted_work": [],
+          "rejections": []
+        },
+        {
+          "wave": 0,
+          "actor": "A2",
+          "message": "T0 confirms the fiscal-year columns include 2019, 2018, 2017, 2016, and 2015 (U.S. $ in thousands). T2 supplies Total equity for 2017, 2016, and 2015: $902,693, $731,663, and $190,054 thousand, respectively. Total equity for 2019 and 2018 is not present in the visible sources, so the five-year average cannot yet be computed. If T2's upstream table (uid 0b8a85b3-3cbb-4e2e-985e-fe13543f2bc5) contains the 2019 and 2018 Total equity rows, those values are needed; otherwise the question should be scoped to 2015–2017, whose average is the calculation shown (sum $1,824,410 thousand / 3 = $608,136.67 thousand).",
+          "source_ids": [
+            "T0",
+            "T2"
+          ],
+          "receipts": [],
+          "calculations": [
+            {
+              "expression": "(902693+731663+190054)/3",
+              "values": {
+                "902693": 902693,
+                "731663": 731663,
+                "190054": 190054
+              }
+            }
+          ],
+          "accepted_work": [],
+          "rejections": []
+        },
+        {
+          "wave": 1,
+          "actor": "A1",
+          "message": "Combining the complementary sources yields all five fiscal-year Total equity values (U.S. $ in thousands): 2019 $565,467 and 2018 $907,320 from T1; 2017 $902,693, 2016 $731,663, and 2015 $190,054 from T2 (columns confirmed by T0). The five-year sum is $3,297,197 thousand, so the average for fiscal years 2015–2019 is $659,439.4 thousand (about $659.4 million).",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0"
+          ],
+          "receipts": [],
+          "calculations": [
+            {
+              "expression": "(565467+907320+902693+731663+190054)/5",
+              "values": {
+                "y2019": 565467,
+                "y2018": 907320,
+                "y2017": 902693,
+                "y2016": 731663,
+                "y2015": 190054
+              }
+            }
+          ],
+          "accepted_work": [],
+          "rejections": []
+        },
+        {
+          "wave": 1,
+          "actor": "A2",
+          "message": "All five fiscal-year Total equity values are now visible across the two tables (both U.S. $ in thousands): 2019 = $565,467 (T1), 2018 = $907,320 (T1), 2017 = $902,693 (T2), 2016 = $731,663 (T2), 2015 = $190,054 (T2). T0 confirms the 2015–2019 column alignment. Sum = 565,467 + 907,320 + 902,693 + 731,663 + 190,054 = $3,297,197 thousand; average = $3,297,197 / 5 = $659,439.4 thousand (about $659.4 million). Note 2017 and 2018 are marked *As Adjusted (IFRS 15 retrospective adoption, per P2), so these are the adjusted balances.",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0",
+            "P2"
+          ],
+          "receipts": [],
+          "calculations": [
+            {
+              "expression": "(565467+907320+902693+731663+190054)/5",
+              "values": {
+                "a": 565467,
+                "b": 907320,
+                "c": 902693,
+                "d": 731663,
+                "e": 190054
+              }
+            }
+          ],
+          "accepted_work": [],
+          "rejections": []
+        },
+        {
+          "wave": 2,
+          "actor": "A1",
+          "message": "All five fiscal-year Total equity values are available (U.S. $ in thousands): 2019 = $565,467 (T1), 2018 = $907,320 (T1), 2017 = $902,693 (T2), 2016 = $731,663 (T2), 2015 = $190,054 (T2); T0 confirms the 2015–2019 column alignment. Sum = $3,297,197 thousand; average = $3,297,197 / 5 = $659,439.4 thousand (about $659.4 million). Note 2017 and 2018 are *As Adjusted per IFRS 15 retrospective adoption (P2).",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0",
+            "P2"
+          ],
+          "receipts": [],
+          "calculations": [
+            {
+              "expression": "(a+b+c+d+e)/5",
+              "values": {
+                "a": 565467,
+                "b": 907320,
+                "c": 902693,
+                "d": 731663,
+                "e": 190054
+              }
+            }
+          ],
+          "accepted_work": [],
+          "rejections": []
+        },
+        {
+          "wave": 2,
+          "actor": "A2",
+          "message": "The five fiscal-year Total equity values are all visible (U.S. $ in thousands): 2019 = $565,467 (T1), 2018 = $907,320 (T1), 2017 = $902,693 (T2), 2016 = $731,663 (T2), 2015 = $190,054 (T2); T0 confirms the 2015–2019 column alignment. The sum is $3,297,197 thousand, so the 2015–2019 average is $659,439.4 thousand (about $659.4 million). Note 2017 and 2018 are *As Adjusted per P2 (IFRS 15 retrospective adoption). My earlier calculation was rejected because the expression variables did not match the supplied values; the corrected calculation is included here.",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0",
+            "P2"
+          ],
+          "receipts": [],
+          "calculations": [
+            {
+              "expression": "(565467+907320+902693+731663+190054)/5",
+              "values": {
+                "565467": 565467,
+                "907320": 907320,
+                "902693": 902693,
+                "731663": 731663,
+                "190054": 190054
+              }
+            }
+          ],
+          "accepted_work": [],
+          "rejections": []
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "01",
+          "actor": "A1",
+          "visible_sources": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "work": [],
+          "results": {},
+          "calculator_results": [],
+          "evidence": {
+            "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/requests/01-A1.json",
+            "sha256": "5274f5fb4dccfb735d155e3ca4970530df63ee9585db6b7dfc89b586340069f0"
+          }
+        },
+        {
+          "stage": "02",
+          "actor": "A1",
+          "visible_sources": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "work": [],
+          "results": {},
+          "calculator_results": [],
+          "evidence": {
+            "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/requests/02-A1.json",
+            "sha256": "01fffba778c124112f196487114885616a5cd13a83bea85d3494a8650812c8c5"
+          }
+        },
+        {
+          "stage": "03",
+          "actor": "A2",
+          "visible_sources": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "work": [],
+          "results": {
+            "C1": {
+              "status": "ready",
+              "value": 659439.4,
+              "conditions": []
+            }
+          },
+          "calculator_results": [
+            {
+              "id": "C1",
+              "actor": "A1",
+              "value": 659439.4,
+              "expression": "(a+b+c+d+e)/5",
+              "values": {
+                "a": 565467,
+                "b": 907320,
+                "c": 902693,
+                "d": 731663,
+                "e": 190054
+              },
+              "semantics": "calculation only; supplied numbers not independently verified"
+            }
+          ],
+          "evidence": {
+            "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/requests/03-A2.json",
+            "sha256": "5a84e235b8913fb1654bafbd6acbf7fae4fc6994cbd86665bcd8174fdbb9f1e9"
+          }
+        }
+      ],
+      "event_evidence": {
+        "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/EVENTS.json",
+        "sha256": "43e3cc388876f061aa698554b41e8c15db4223c7417149702a1dda8bdac3b04c"
+      },
+      "final": {
+        "model_answer": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): 2019 = 565,467 (T1), 2018 = 907,320 (T1), 2017 = 902,693 (T2), 2016 = 731,663 (T2), 2015 = 190,054 (T2); column alignment confirmed by T0. Sum = 3,297,197 thousand; average = 3,297,197 / 5 = 659,439.4 thousand, i.e., about $659.4 million. 2017 and 2018 are as adjusted per IFRS 15 (P2). Result C1 matches this calculation.",
+          "result_id": "C1"
+        },
+        "delivered": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): 2019 = 565,467 (T1), 2018 = 907,320 (T1), 2017 = 902,693 (T2), 2016 = 731,663 (T2), 2015 = 190,054 (T2); column alignment confirmed by T0. Sum = 3,297,197 thousand; average = 3,297,197 / 5 = 659,439.4 thousand, i.e., about $659.4 million. 2017 and 2018 are as adjusted per IFRS 15 (P2). Result C1 matches this calculation.",
+          "result_id": "C1"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [],
+        "notices": []
+      },
+      "final_evidence": {
+        "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/SUMMARY.json",
+        "sha256": "664d6697a6ce22ef8cf59e7435ddaa4033edcb268d3a188eae8b65c37ed945da"
+      }
+    },
+    {
+      "arm": "ordinary",
+      "events": [
+        {
+          "wave": 0,
+          "actor": "A1",
+          "message": "The provided sources only give Total equity for 2019 ($565,467 thousand) and 2018 ($907,320 thousand); values for 2015–2017 are not present in the visible table content. Therefore the 2015–2019 average cannot be computed from these sources without guessing missing years.",
+          "source_ids": [
+            "T1",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "metadata": {
+                    "subject": "Total equity, FY2015",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "metadata": {
+                    "subject": "Total equity, FY2016",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "metadata": {
+                    "subject": "Total equity, FY2017",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "FY2018 and FY2019 figures are from the consolidated statements of financial position; FY2018 is marked *As Adjusted under IFRS 15 full retrospective adoption.",
+                "Total equity for FY2015, FY2016, and FY2017 is not visible in the provided table content and must be supplied from the original filing."
+              ]
+            }
+          ],
+          "calculations": [],
+          "accepted_work": [
+            "W1"
+          ],
+          "rejections": []
+        },
+        {
+          "wave": 0,
+          "actor": "A2",
+          "message": "The table T2 provides Total equity for 2017 ($902,693), 2016 ($731,663), and 2015 ($190,054), but the header T0 shows the full fiscal-year range 2019–2015; values for 2019 and 2018 are not visible in the provided sources, so the five-year average cannot be computed from the disclosed data. I can only compute the three-year average (2015–2017).",
+          "source_ids": [
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "average Total equity, fiscal years 2015-2017",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015-FY2017"
+              },
+              "expression": "(e2017+e2016+e2015)/3",
+              "inputs": [
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0"
+              ],
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+              ]
+            }
+          ],
+          "calculations": [
+            {
+              "expression": "(902693+731663+190054)/3",
+              "values": {}
+            }
+          ],
+          "accepted_work": [
+            "W2"
+          ],
+          "rejections": []
+        },
+        {
+          "wave": 1,
+          "actor": "A1",
+          "message": "The five-year average Total equity (FY2015–FY2019) can now be computed by combining the FY2018/FY2019 values visible in T1 (FY2018 $907,320; FY2019 $565,467 thousand, from the consolidated statements of financial position) with the FY2015–FY2017 values visible in T2 (FY2017 $902,693; FY2016 $731,663; FY2015 $190,054 thousand). Note T0/P2: FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption. Sum = 3,297,197; average = 659,439.4 U.S. $ in thousands.",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity, FY2015",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity, FY2016",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity, FY2017",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "All figures are Total equity as of June 30, in U.S. $ thousands.",
+                "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+              ],
+              "replaces": "W1",
+              "expected_revision": 1
+            }
+          ],
+          "calculations": [
+            {
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {}
+            }
+          ],
+          "accepted_work": [
+            "W1"
+          ],
+          "rejections": []
+        },
+        {
+          "wave": 1,
+          "actor": "A2",
+          "message": "The five-year average can now be completed by combining the FY2015–FY2017 average (W2, owned by A2) with the FY2018 and FY2019 Total equity values visible in T1. W2 = 608,136.6667 (from T2: 902,693; 731,663; 190,054) and the two remaining years are 907,320 (FY2018, *As Adjusted) and 565,467 (FY2019). Sum = 3,040,683.3333; divided by 5 = 608,136.6667. Note the coincidence: the five-year average equals W2's three-year average because the three-year total (1,824,410) plus 2018+2019 (1,472,787) happens to equal 5 × 608,136.6667. Unit is U.S. $ in thousands; FY2018 is adjusted under IFRS 15 full retrospective adoption.",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(w2*3+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "w2",
+                  "result_id": "W2",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015-FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "FY2018 Total equity is marked *As Adjusted for the full retrospective adoption of IFRS 15 (P2).",
+                "W2 covers FY2015–FY2017 only; it is multiplied by 3 to recover the three-year sum.",
+                "FY2019 and FY2018 values are from the consolidated statements of financial position (T1)."
+              ]
+            }
+          ],
+          "calculations": [
+            {
+              "expression": "(608136.6666666666*3+907320+565467)/5",
+              "values": {}
+            }
+          ],
+          "accepted_work": [
+            "W3"
+          ],
+          "rejections": []
+        },
+        {
+          "wave": 2,
+          "actor": "A1",
+          "message": "The five-year average Total equity (FY2015–FY2019) is $659,439.4 thousand, computed as (190,054 + 731,663 + 902,693 + 907,320 + 565,467)/5 = 3,297,197/5. FY2015–FY2017 values come from T2; FY2018 ($907,320) and FY2019 ($565,467) come from T1. Note T0/P2: FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption. This confirms the accepted W1 (revision 2) result independently from the visible source values.",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [],
+          "calculations": [
+            {
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {}
+            }
+          ],
+          "accepted_work": [],
+          "rejections": []
+        },
+        {
+          "wave": 2,
+          "actor": "A2",
+          "message": "The five-year average Total equity (FY2015–FY2019) is $659,439.4 thousand. Total equity by year: FY2015 $190,054 (T2), FY2016 $731,663 (T2), FY2017 $902,693 (T2, *As Adjusted), FY2018 $907,320 (T1, *As Adjusted), FY2019 $565,467 (T1). Sum = 3,297,197; average = 659,439.4. I note that A2's wave-1 message misstated its own result: W2's three-year average is 608,136.67, not 659,439.4, and the five-year average differs from the three-year average. The correct five-year figure agrees with A1's W1. FY2018 and FY2017 are as adjusted under IFRS 15 full retrospective adoption (P2).",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity, FY2015",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity, FY2016",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity, FY2017",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "All figures are Total equity as of June 30, in U.S. $ thousands.",
+                "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+              ]
+            }
+          ],
+          "calculations": [
+            {
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {}
+            }
+          ],
+          "accepted_work": [
+            "W4"
+          ],
+          "rejections": []
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "01",
+          "actor": "A1",
+          "visible_sources": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "work": [
+            {
+              "id": "W1",
+              "owner": "A1",
+              "revision": 1,
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "metadata": {
+                    "subject": "Total equity, FY2015",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "metadata": {
+                    "subject": "Total equity, FY2016",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "metadata": {
+                    "subject": "Total equity, FY2017",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "FY2018 and FY2019 figures are from the consolidated statements of financial position; FY2018 is marked *As Adjusted under IFRS 15 full retrospective adoption.",
+                "Total equity for FY2015, FY2016, and FY2017 is not visible in the provided table content and must be supplied from the original filing."
+              ]
+            },
+            {
+              "id": "W2",
+              "owner": "A2",
+              "revision": 1,
+              "target": "average Total equity, fiscal years 2015-2017",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015-FY2017"
+              },
+              "expression": "(e2017+e2016+e2015)/3",
+              "inputs": [
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0"
+              ],
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+              ]
+            }
+          ],
+          "results": {
+            "W1": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "e2015",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2016",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2017",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "conditions": [
+                "FY2018 and FY2019 figures are from the consolidated statements of financial position; FY2018 is marked *As Adjusted under IFRS 15 full retrospective adoption.",
+                "Total equity for FY2015, FY2016, and FY2017 is not visible in the provided table content and must be supplied from the original filing."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W2": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015-FY2017"
+              },
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+              ],
+              "sources": [
+                "T0",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "C1": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "conditions": []
+            }
+          },
+          "calculator_results": [
+            {
+              "id": "C1",
+              "actor": "A2",
+              "value": 608136.6666666666,
+              "expression": "(902693+731663+190054)/3",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            }
+          ],
+          "evidence": {
+            "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/requests/01-A1.json",
+            "sha256": "1c032f3aef41e8a275d89b3c00363945923618521d6cc6148b3bf3cb96255f7a"
+          }
+        },
+        {
+          "stage": "02",
+          "actor": "A1",
+          "visible_sources": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "work": [
+            {
+              "id": "W1",
+              "owner": "A1",
+              "revision": 2,
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity, FY2015",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity, FY2016",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity, FY2017",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "All figures are Total equity as of June 30, in U.S. $ thousands.",
+                "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+              ]
+            },
+            {
+              "id": "W2",
+              "owner": "A2",
+              "revision": 1,
+              "target": "average Total equity, fiscal years 2015-2017",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015-FY2017"
+              },
+              "expression": "(e2017+e2016+e2015)/3",
+              "inputs": [
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0"
+              ],
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+              ]
+            },
+            {
+              "id": "W3",
+              "owner": "A2",
+              "revision": 1,
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(w2*3+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "w2",
+                  "result_id": "W2",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015-FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "FY2018 Total equity is marked *As Adjusted for the full retrospective adoption of IFRS 15 (P2).",
+                "W2 covers FY2015–FY2017 only; it is multiplied by 3 to recover the three-year sum.",
+                "FY2019 and FY2018 values are from the consolidated statements of financial position (T1)."
+              ]
+            }
+          ],
+          "results": {
+            "W1": {
+              "status": "ready",
+              "value": 659439.4,
+              "missing": [],
+              "revision": 2,
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "conditions": [
+                "All figures are Total equity as of June 30, in U.S. $ thousands.",
+                "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W2": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015-FY2017"
+              },
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+              ],
+              "sources": [
+                "T0",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W3": {
+              "status": "ready",
+              "value": 659439.3999999999,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017.",
+                "FY2018 Total equity is marked *As Adjusted for the full retrospective adoption of IFRS 15 (P2).",
+                "FY2019 and FY2018 values are from the consolidated statements of financial position (T1).",
+                "W2 covers FY2015–FY2017 only; it is multiplied by 3 to recover the three-year sum."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "C1": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "conditions": []
+            },
+            "C2": {
+              "status": "ready",
+              "value": 659439.4,
+              "conditions": []
+            },
+            "C3": {
+              "status": "ready",
+              "value": 659439.3999999999,
+              "conditions": []
+            }
+          },
+          "calculator_results": [
+            {
+              "id": "C1",
+              "actor": "A2",
+              "value": 608136.6666666666,
+              "expression": "(902693+731663+190054)/3",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C2",
+              "actor": "A1",
+              "value": 659439.4,
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C3",
+              "actor": "A2",
+              "value": 659439.3999999999,
+              "expression": "(608136.6666666666*3+907320+565467)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            }
+          ],
+          "evidence": {
+            "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/requests/02-A1.json",
+            "sha256": "7ee5842b3c6a6f54b8b9bed989d9bbdce1216e870d2ee8286d874a27f8a1976a"
+          }
+        },
+        {
+          "stage": "03",
+          "actor": "A2",
+          "visible_sources": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "work": [
+            {
+              "id": "W1",
+              "owner": "A1",
+              "revision": 2,
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity, FY2015",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity, FY2016",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity, FY2017",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "All figures are Total equity as of June 30, in U.S. $ thousands.",
+                "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+              ]
+            },
+            {
+              "id": "W2",
+              "owner": "A2",
+              "revision": 1,
+              "target": "average Total equity, fiscal years 2015-2017",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015-FY2017"
+              },
+              "expression": "(e2017+e2016+e2015)/3",
+              "inputs": [
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0"
+              ],
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+              ]
+            },
+            {
+              "id": "W3",
+              "owner": "A2",
+              "revision": 1,
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(w2*3+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "w2",
+                  "result_id": "W2",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015-FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "FY2018 Total equity is marked *As Adjusted for the full retrospective adoption of IFRS 15 (P2).",
+                "W2 covers FY2015–FY2017 only; it is multiplied by 3 to recover the three-year sum.",
+                "FY2019 and FY2018 values are from the consolidated statements of financial position (T1)."
+              ]
+            },
+            {
+              "id": "W4",
+              "owner": "A2",
+              "revision": 1,
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity, FY2015",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity, FY2016",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity, FY2017",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "All figures are Total equity as of June 30, in U.S. $ thousands.",
+                "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+              ]
+            }
+          ],
+          "results": {
+            "W1": {
+              "status": "ready",
+              "value": 659439.4,
+              "missing": [],
+              "revision": 2,
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "conditions": [
+                "All figures are Total equity as of June 30, in U.S. $ thousands.",
+                "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W2": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015-FY2017"
+              },
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+              ],
+              "sources": [
+                "T0",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W3": {
+              "status": "ready",
+              "value": 659439.3999999999,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017.",
+                "FY2018 Total equity is marked *As Adjusted for the full retrospective adoption of IFRS 15 (P2).",
+                "FY2019 and FY2018 values are from the consolidated statements of financial position (T1).",
+                "W2 covers FY2015–FY2017 only; it is multiplied by 3 to recover the three-year sum."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W4": {
+              "status": "ready",
+              "value": 659439.4,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "conditions": [
+                "All figures are Total equity as of June 30, in U.S. $ thousands.",
+                "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "C1": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "conditions": []
+            },
+            "C2": {
+              "status": "ready",
+              "value": 659439.4,
+              "conditions": []
+            },
+            "C3": {
+              "status": "ready",
+              "value": 659439.3999999999,
+              "conditions": []
+            },
+            "C4": {
+              "status": "ready",
+              "value": 659439.4,
+              "conditions": []
+            },
+            "C5": {
+              "status": "ready",
+              "value": 659439.4,
+              "conditions": []
+            }
+          },
+          "calculator_results": [
+            {
+              "id": "C1",
+              "actor": "A2",
+              "value": 608136.6666666666,
+              "expression": "(902693+731663+190054)/3",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C2",
+              "actor": "A1",
+              "value": 659439.4,
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C3",
+              "actor": "A2",
+              "value": 659439.3999999999,
+              "expression": "(608136.6666666666*3+907320+565467)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C4",
+              "actor": "A1",
+              "value": 659439.4,
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C5",
+              "actor": "A2",
+              "value": 659439.4,
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            }
+          ],
+          "evidence": {
+            "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/requests/03-A2.json",
+            "sha256": "c98be53e53714713fea964cf9cd4d93ffe2550b77cac96b862d08fdd3b702b60"
+          }
+        }
+      ],
+      "event_evidence": {
+        "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/EVENTS.json",
+        "sha256": "f0246a6fb29df8caed4bb5030723cf6a8e50a9c75d1c02cf6f01898d6f8a7933"
+      },
+      "final": {
+        "model_answer": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): FY2015 $190,054 (T2), FY2016 $731,663 (T2), FY2017 $902,693 (T2, *As Adjusted), FY2018 $907,320 (T1, *As Adjusted), FY2019 $565,467 (T1). Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches W1/W4 and calculator C5; W2's three-year average (608,136.67) covers only FY2015–FY2017 and its wave-1 reuse was misstated.",
+          "result_id": "W1"
+        },
+        "delivered": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): FY2015 $190,054 (T2), FY2016 $731,663 (T2), FY2017 $902,693 (T2, *As Adjusted), FY2018 $907,320 (T1, *As Adjusted), FY2019 $565,467 (T1). Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches W1/W4 and calculator C5; W2's three-year average (608,136.67) covers only FY2015–FY2017 and its wave-1 reuse was misstated.",
+          "result_id": "W1"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "All figures are Total equity as of June 30, in U.S. $ thousands.",
+          "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+        ],
+        "notices": []
+      },
+      "final_evidence": {
+        "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/SUMMARY.json",
+        "sha256": "b8c09193ecc2f0b839f91230b265285b55c548f029c123d82d78417f91592daa"
+      }
+    },
+    {
+      "arm": "local_work",
+      "events": [
+        {
+          "wave": 0,
+          "actor": "A1",
+          "message": "The visible sources only provide Total equity for fiscal 2019 ($565,467 thousand) and 2018 ($907,320 thousand). The table header T0 lists 2015–2017 columns, but no Total equity values for 2015, 2016, or 2017 appear in the provided table content (T1 only has 2019 and 2018 columns). Therefore the 2015–2019 five-year average cannot be computed from the visible originals; those three year values are genuinely absent. I can publish the partial two-year average as reusable work while leaving the full-period calculation open.",
+          "source_ids": [
+            "T1",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "average_total_equity_2018_2019_partial",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+              },
+              "expression": "(e2019+e2018)/2",
+              "inputs": [
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2019"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2018 (as adjusted)"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average.",
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption."
+              ]
+            }
+          ],
+          "calculations": [
+            {
+              "expression": "(565467+907320)/2",
+              "values": {}
+            }
+          ],
+          "accepted_work": [
+            "W1"
+          ],
+          "rejections": []
+        },
+        {
+          "wave": 0,
+          "actor": "A2",
+          "message": "The provided table T2 gives Total equity for 2017, 2016, and 2015 only ($902,693; $731,663; $190,054 thousand). The header T0 shows columns for 2019 and 2018, but no Total equity values for those years are present in the packet, so the 2015–2019 five-year average cannot be computed from the visible sources. I can publish only the partial 3-year average explicitly supported by T2, while leaving 2018 and 2019 Total equity as genuinely absent inputs.",
+          "source_ids": [
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "Average Total equity, fiscal 2015–2019",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0",
+                "TASK"
+              ],
+              "conditions": [
+                "Total equity values for 2015, 2016, and 2017 are from T2; 2016 and 2017 are labeled *As Adjusted per T0/P2 (IFRS 15 retrospective adoption).",
+                "Total equity for fiscal 2018 and 2019 is not present in the visible packet sources; the five-year average remains unresolved until those values are supplied.",
+                "Partial three-year (2015–2017) average is 608,136.667 thousand, not the requested five-year average."
+              ]
+            }
+          ],
+          "calculations": [
+            {
+              "expression": "(902693+731663+190054)/3",
+              "values": {}
+            }
+          ],
+          "accepted_work": [
+            "W2"
+          ],
+          "rejections": []
+        },
+        {
+          "wave": 1,
+          "actor": "A1",
+          "message": "The full five-year 2015–2019 average can now be computed: A2's W2 supplies 2015–2017 Total equity, and A1's W1 supplies the 2018–2019 figures. I am revising W2 (owned by A2? No — W2 is owned by A2, so I cannot revise it; instead I create a new receipt that consumes W1 and W2). W1 is A1's own receipt (2018–2019 partial average, 736,393.5), and W2 is A2's partial 2015–2017 receipt (608,136.667). Sum of all five years = 190,054 + 731,663 + 902,693 + 907,320 + 565,467 = 3,297,197; divided by 5 = 659,439.4 thousand. Note W1 is a two-year average (sum/2), so to combine I must reconstruct the sum: 736,393.5*2 = 1,472,787 (2018+2019). And W2 is a three-year average: 608,136.6667*3 = 1,824,410 (2015+2016+2017). Total sum = 3,297,197. Average = 659,439.4. I will publish this as a new receipt consuming W1 and W2 via result_id, preserving their conditions.",
+          "source_ids": [
+            "T0",
+            "T1",
+            "T2",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "Average Total equity, fiscal 2015–2019 (five-year)",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(avg1819*2 + avg1517*3)/5",
+              "inputs": [
+                {
+                  "name": "avg1819",
+                  "result_id": "W1",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+                  }
+                },
+                {
+                  "name": "avg1517",
+                  "result_id": "W2",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal years 2015–2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T0",
+                "T1",
+                "T2",
+                "P1",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "Consumes A1's W1 (2018–2019 two-year average = 736,393.5) and A2's W2 (2015–2017 three-year average = 608,136.6667); each is multiplied by its year count to recover the five-year sum before dividing by 5.",
+                "2018 is '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2016 and 2017 are also labeled *As Adjusted in T0/P2.",
+                "Result 659,439.4 thousand is the requested average Total equity for fiscal years 2015–2019."
+              ]
+            }
+          ],
+          "calculations": [
+            {
+              "expression": "736393.5*2 + 608136.6666666666*3",
+              "values": {}
+            },
+            {
+              "expression": "(736393.5*2 + 608136.6666666666*3)/5",
+              "values": {}
+            }
+          ],
+          "accepted_work": [
+            "W3"
+          ],
+          "rejections": []
+        },
+        {
+          "wave": 1,
+          "actor": "A2",
+          "message": "The five-year 2015–2019 average Total equity can now be completed: my prior W2 already holds 2015–2017 values from T2 (2015 $190,054; 2016 $731,663 as adjusted; 2017 $902,693 as adjusted), and A1's W1 supplies 2018 $907,320 (as adjusted) and 2019 $565,467 from T1. Revising W2 to consume W1's e2018/e2019 rather than leaving them unbound. Average = (190,054 + 731,663 + 902,693 + 907,320 + 565,467)/5 = 3,297,197/5 = 659,439.4 (U.S. $ in thousands). Note 2016–2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+          "source_ids": [
+            "T0",
+            "T1",
+            "T2",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "Average Total equity, fiscal 2015–2019",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016 (as adjusted)"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017 (as adjusted)"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "result_id": "W1",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018 (as adjusted)"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "result_id": "W1",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0",
+                "T1",
+                "P1",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+                "e2018 and e2019 are taken from A1's W1 receipt (values 907320 and 565467), which is a partial 2018–2019 average; only its component values are consumed here, not its partial-average result.",
+                "Result 659,439.4 U.S. $ in thousands is the requested five-year average."
+              ],
+              "replaces": "W2",
+              "expected_revision": 1
+            }
+          ],
+          "calculations": [
+            {
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {}
+            }
+          ],
+          "accepted_work": [],
+          "rejections": [
+            {
+              "kind": "rejected_receipt",
+              "reason": "declared unit/period mismatch",
+              "raw": {
+                "target": "Average Total equity, fiscal 2015–2019",
+                "metadata": {
+                  "subject": "Total equity",
+                  "unit": "U.S. $ in thousands",
+                  "period": "fiscal years 2015–2019"
+                },
+                "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+                "inputs": [
+                  {
+                    "name": "e2015",
+                    "value": 190054,
+                    "metadata": {
+                      "subject": "Total equity",
+                      "unit": "U.S. $ in thousands",
+                      "period": "fiscal year 2015"
+                    }
+                  },
+                  {
+                    "name": "e2016",
+                    "value": 731663,
+                    "metadata": {
+                      "subject": "Total equity",
+                      "unit": "U.S. $ in thousands",
+                      "period": "fiscal year 2016 (as adjusted)"
+                    }
+                  },
+                  {
+                    "name": "e2017",
+                    "value": 902693,
+                    "metadata": {
+                      "subject": "Total equity",
+                      "unit": "U.S. $ in thousands",
+                      "period": "fiscal year 2017 (as adjusted)"
+                    }
+                  },
+                  {
+                    "name": "e2018",
+                    "result_id": "W1",
+                    "metadata": {
+                      "subject": "Total equity",
+                      "unit": "U.S. $ in thousands",
+                      "period": "fiscal year 2018 (as adjusted)"
+                    }
+                  },
+                  {
+                    "name": "e2019",
+                    "result_id": "W1",
+                    "metadata": {
+                      "subject": "Total equity",
+                      "unit": "U.S. $ in thousands",
+                      "period": "fiscal year 2019"
+                    }
+                  }
+                ],
+                "basis": [
+                  "T2",
+                  "T0",
+                  "T1",
+                  "P1",
+                  "P2",
+                  "TASK"
+                ],
+                "conditions": [
+                  "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+                  "e2018 and e2019 are taken from A1's W1 receipt (values 907320 and 565467), which is a partial 2018–2019 average; only its component values are consumed here, not its partial-average result.",
+                  "Result 659,439.4 U.S. $ in thousands is the requested five-year average."
+                ],
+                "replaces": "W2",
+                "expected_revision": 1
+              }
+            }
+          ]
+        },
+        {
+          "wave": 2,
+          "actor": "A1",
+          "message": "The requested five-year average is already fully resolved by A1's W3 (revision 1, accepted): (avg1819*2 + avg1517*3)/5 = (736,393.5*2 + 608,136.6667*3)/5 = 659,439.4 thousand, consuming W1 (2019 $565,467; 2018 $907,320 as adjusted, from T1/T0) and A2's W2 (2015 $190,054; 2016 $731,663 as adjusted; 2017 $902,693 as adjusted, from T2/T0). No new receipt is needed; I only verify the arithmetic independently. Note 2016–2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption, and the unit is U.S. $ in thousands.",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [],
+          "calculations": [
+            {
+              "expression": "(565467+907320+902693+731663+190054)/5",
+              "values": {}
+            }
+          ],
+          "accepted_work": [],
+          "rejections": []
+        },
+        {
+          "wave": 2,
+          "actor": "A2",
+          "message": "The five-year average Total equity is computable from the visible originals: 2015 $190,054; 2016 $731,663 (as adjusted); 2017 $902,693 (as adjusted) from T2; 2018 $907,320 (as adjusted) and 2019 $565,467 from T1. Sum = 3,297,197 thousand; /5 = 659,439.4 thousand. My prior W2 was rejected only for a binding/period mismatch when consuming W1's component values; the underlying arithmetic is unchanged. I re-publish the receipt using the five direct annual values (constants from T1/T2) rather than W1's partial average, so no mismatched period is inherited.",
+          "source_ids": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "receipts": [
+            {
+              "target": "Average Total equity, fiscal 2015–2019 (five-year)",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016 (as adjusted)"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017 (as adjusted)"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018 (as adjusted)"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2019 and 2015 are unadjusted.",
+                "Values are in U.S. $ in thousands; the average is 659,439.4 thousand, not a dollar-level figure."
+              ],
+              "replaces": "W2",
+              "expected_revision": 1
+            }
+          ],
+          "calculations": [
+            {
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {}
+            }
+          ],
+          "accepted_work": [
+            "W2"
+          ],
+          "rejections": []
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "01",
+          "actor": "A1",
+          "visible_sources": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "work": [
+            {
+              "id": "W1",
+              "owner": "A1",
+              "revision": 1,
+              "target": "average_total_equity_2018_2019_partial",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+              },
+              "expression": "(e2019+e2018)/2",
+              "inputs": [
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2019"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2018 (as adjusted)"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average.",
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption."
+              ]
+            },
+            {
+              "id": "W2",
+              "owner": "A2",
+              "revision": 1,
+              "target": "Average Total equity, fiscal 2015–2019",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0",
+                "TASK"
+              ],
+              "conditions": [
+                "Total equity values for 2015, 2016, and 2017 are from T2; 2016 and 2017 are labeled *As Adjusted per T0/P2 (IFRS 15 retrospective adoption).",
+                "Total equity for fiscal 2018 and 2019 is not present in the visible packet sources; the five-year average remains unresolved until those values are supplied.",
+                "Partial three-year (2015–2017) average is 608,136.667 thousand, not the requested five-year average."
+              ]
+            }
+          ],
+          "results": {
+            "W1": {
+              "status": "ready",
+              "value": 736393.5,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+              },
+              "conditions": [
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W2": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "e2018",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2019",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "conditions": [
+                "Partial three-year (2015–2017) average is 608,136.667 thousand, not the requested five-year average.",
+                "Total equity for fiscal 2018 and 2019 is not present in the visible packet sources; the five-year average remains unresolved until those values are supplied.",
+                "Total equity values for 2015, 2016, and 2017 are from T2; 2016 and 2017 are labeled *As Adjusted per T0/P2 (IFRS 15 retrospective adoption)."
+              ],
+              "sources": [
+                "T0",
+                "T2",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "C1": {
+              "status": "ready",
+              "value": 736393.5,
+              "conditions": []
+            },
+            "C2": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "conditions": []
+            }
+          },
+          "calculator_results": [
+            {
+              "id": "C1",
+              "actor": "A1",
+              "value": 736393.5,
+              "expression": "(565467+907320)/2",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C2",
+              "actor": "A2",
+              "value": 608136.6666666666,
+              "expression": "(902693+731663+190054)/3",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            }
+          ],
+          "evidence": {
+            "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/01-A1.json",
+            "sha256": "9c1c6880da49e3cbece5d90bf5203e51546e7c2fe916c46bfe951bd08bb4ea85"
+          }
+        },
+        {
+          "stage": "02",
+          "actor": "A1",
+          "visible_sources": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "work": [
+            {
+              "id": "W1",
+              "owner": "A1",
+              "revision": 1,
+              "target": "average_total_equity_2018_2019_partial",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+              },
+              "expression": "(e2019+e2018)/2",
+              "inputs": [
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2019"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2018 (as adjusted)"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average.",
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption."
+              ]
+            },
+            {
+              "id": "W2",
+              "owner": "A2",
+              "revision": 1,
+              "target": "Average Total equity, fiscal 2015–2019",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0",
+                "TASK"
+              ],
+              "conditions": [
+                "Total equity values for 2015, 2016, and 2017 are from T2; 2016 and 2017 are labeled *As Adjusted per T0/P2 (IFRS 15 retrospective adoption).",
+                "Total equity for fiscal 2018 and 2019 is not present in the visible packet sources; the five-year average remains unresolved until those values are supplied.",
+                "Partial three-year (2015–2017) average is 608,136.667 thousand, not the requested five-year average."
+              ]
+            },
+            {
+              "id": "W3",
+              "owner": "A1",
+              "revision": 1,
+              "target": "Average Total equity, fiscal 2015–2019 (five-year)",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(avg1819*2 + avg1517*3)/5",
+              "inputs": [
+                {
+                  "name": "avg1819",
+                  "result_id": "W1",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+                  }
+                },
+                {
+                  "name": "avg1517",
+                  "result_id": "W2",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal years 2015–2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T0",
+                "T1",
+                "T2",
+                "P1",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "Consumes A1's W1 (2018–2019 two-year average = 736,393.5) and A2's W2 (2015–2017 three-year average = 608,136.6667); each is multiplied by its year count to recover the five-year sum before dividing by 5.",
+                "2018 is '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2016 and 2017 are also labeled *As Adjusted in T0/P2.",
+                "Result 659,439.4 thousand is the requested average Total equity for fiscal years 2015–2019."
+              ]
+            }
+          ],
+          "results": {
+            "W1": {
+              "status": "ready",
+              "value": 736393.5,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+              },
+              "conditions": [
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W2": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "e2018",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2019",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "conditions": [
+                "Partial three-year (2015–2017) average is 608,136.667 thousand, not the requested five-year average.",
+                "Total equity for fiscal 2018 and 2019 is not present in the visible packet sources; the five-year average remains unresolved until those values are supplied.",
+                "Total equity values for 2015, 2016, and 2017 are from T2; 2016 and 2017 are labeled *As Adjusted per T0/P2 (IFRS 15 retrospective adoption)."
+              ],
+              "sources": [
+                "T0",
+                "T2",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W3": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "avg1517",
+                  "reason": "upstream_not_ready"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "conditions": [
+                "2018 is '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2016 and 2017 are also labeled *As Adjusted in T0/P2.",
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+                "Consumes A1's W1 (2018–2019 two-year average = 736,393.5) and A2's W2 (2015–2017 three-year average = 608,136.6667); each is multiplied by its year count to recover the five-year sum before dividing by 5.",
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average.",
+                "Result 659,439.4 thousand is the requested average Total equity for fiscal years 2015–2019."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1",
+                "T2",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "C1": {
+              "status": "ready",
+              "value": 736393.5,
+              "conditions": []
+            },
+            "C2": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "conditions": []
+            },
+            "C3": {
+              "status": "ready",
+              "value": 3297197.0,
+              "conditions": []
+            },
+            "C4": {
+              "status": "ready",
+              "value": 659439.3999999999,
+              "conditions": []
+            },
+            "C5": {
+              "status": "ready",
+              "value": 659439.4,
+              "conditions": []
+            }
+          },
+          "calculator_results": [
+            {
+              "id": "C1",
+              "actor": "A1",
+              "value": 736393.5,
+              "expression": "(565467+907320)/2",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C2",
+              "actor": "A2",
+              "value": 608136.6666666666,
+              "expression": "(902693+731663+190054)/3",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C3",
+              "actor": "A1",
+              "value": 3297197.0,
+              "expression": "736393.5*2 + 608136.6666666666*3",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C4",
+              "actor": "A1",
+              "value": 659439.3999999999,
+              "expression": "(736393.5*2 + 608136.6666666666*3)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C5",
+              "actor": "A2",
+              "value": 659439.4,
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            }
+          ],
+          "evidence": {
+            "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/02-A1.json",
+            "sha256": "5b4ff2be9c029d0dc3a39d069913e7c6bc96256aa4e6a4df796536e2a2d86d71"
+          }
+        },
+        {
+          "stage": "03",
+          "actor": "A2",
+          "visible_sources": [
+            "T1",
+            "T2",
+            "T0",
+            "P1",
+            "P2",
+            "TASK"
+          ],
+          "work": [
+            {
+              "id": "W1",
+              "owner": "A1",
+              "revision": 1,
+              "target": "average_total_equity_2018_2019_partial",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+              },
+              "expression": "(e2019+e2018)/2",
+              "inputs": [
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2019"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2018 (as adjusted)"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average.",
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption."
+              ]
+            },
+            {
+              "id": "W2",
+              "owner": "A2",
+              "revision": 2,
+              "target": "Average Total equity, fiscal 2015–2019 (five-year)",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016 (as adjusted)"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017 (as adjusted)"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018 (as adjusted)"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T2",
+                "T0",
+                "P1",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2019 and 2015 are unadjusted.",
+                "Values are in U.S. $ in thousands; the average is 659,439.4 thousand, not a dollar-level figure."
+              ]
+            },
+            {
+              "id": "W3",
+              "owner": "A1",
+              "revision": 1,
+              "target": "Average Total equity, fiscal 2015–2019 (five-year)",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(avg1819*2 + avg1517*3)/5",
+              "inputs": [
+                {
+                  "name": "avg1819",
+                  "result_id": "W1",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+                  }
+                },
+                {
+                  "name": "avg1517",
+                  "result_id": "W2",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal years 2015–2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T0",
+                "T1",
+                "T2",
+                "P1",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "Consumes A1's W1 (2018–2019 two-year average = 736,393.5) and A2's W2 (2015–2017 three-year average = 608,136.6667); each is multiplied by its year count to recover the five-year sum before dividing by 5.",
+                "2018 is '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2016 and 2017 are also labeled *As Adjusted in T0/P2.",
+                "Result 659,439.4 thousand is the requested average Total equity for fiscal years 2015–2019."
+              ]
+            }
+          ],
+          "results": {
+            "W1": {
+              "status": "ready",
+              "value": 736393.5,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+              },
+              "conditions": [
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W2": {
+              "status": "ready",
+              "value": 659439.4,
+              "missing": [],
+              "revision": 2,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "conditions": [
+                "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2019 and 2015 are unadjusted.",
+                "Values are in U.S. $ in thousands; the average is 659,439.4 thousand, not a dollar-level figure."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1",
+                "T2",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W3": {
+              "status": "ready",
+              "value": 690221.04,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "conditions": [
+                "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2019 and 2015 are unadjusted.",
+                "2018 is '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2016 and 2017 are also labeled *As Adjusted in T0/P2.",
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+                "Consumes A1's W1 (2018–2019 two-year average = 736,393.5) and A2's W2 (2015–2017 three-year average = 608,136.6667); each is multiplied by its year count to recover the five-year sum before dividing by 5.",
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average.",
+                "Result 659,439.4 thousand is the requested average Total equity for fiscal years 2015–2019.",
+                "Values are in U.S. $ in thousands; the average is 659,439.4 thousand, not a dollar-level figure."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1",
+                "T2",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "C1": {
+              "status": "ready",
+              "value": 736393.5,
+              "conditions": []
+            },
+            "C2": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "conditions": []
+            },
+            "C3": {
+              "status": "ready",
+              "value": 3297197.0,
+              "conditions": []
+            },
+            "C4": {
+              "status": "ready",
+              "value": 659439.3999999999,
+              "conditions": []
+            },
+            "C5": {
+              "status": "ready",
+              "value": 659439.4,
+              "conditions": []
+            },
+            "C6": {
+              "status": "ready",
+              "value": 659439.4,
+              "conditions": []
+            },
+            "C7": {
+              "status": "ready",
+              "value": 659439.4,
+              "conditions": []
+            }
+          },
+          "calculator_results": [
+            {
+              "id": "C1",
+              "actor": "A1",
+              "value": 736393.5,
+              "expression": "(565467+907320)/2",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C2",
+              "actor": "A2",
+              "value": 608136.6666666666,
+              "expression": "(902693+731663+190054)/3",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C3",
+              "actor": "A1",
+              "value": 3297197.0,
+              "expression": "736393.5*2 + 608136.6666666666*3",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C4",
+              "actor": "A1",
+              "value": 659439.3999999999,
+              "expression": "(736393.5*2 + 608136.6666666666*3)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C5",
+              "actor": "A2",
+              "value": 659439.4,
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C6",
+              "actor": "A1",
+              "value": 659439.4,
+              "expression": "(565467+907320+902693+731663+190054)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            },
+            {
+              "id": "C7",
+              "actor": "A2",
+              "value": 659439.4,
+              "expression": "(190054+731663+902693+907320+565467)/5",
+              "values": {},
+              "semantics": "calculation only; supplied numbers not independently verified"
+            }
+          ],
+          "evidence": {
+            "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/03-A2.json",
+            "sha256": "f8dd8cdef3de2e52c289fd32dc2958a3a97b5c5a0c56435617aa399fc270abe9"
+          }
+        }
+      ],
+      "event_evidence": {
+        "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/EVENTS.json",
+        "sha256": "d6caea4ea882ffe66a631bcb14373201a8b38859f486422239ca9cefcb2e0260"
+      },
+      "final": {
+        "model_answer": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): 2015 = 190,054; 2016 = 731,663 (as adjusted); 2017 = 902,693 (as adjusted) from T2; 2018 = 907,320 (as adjusted) and 2019 = 565,467 from T1. Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches the accepted W2 receipt and calculation C7. Note 2016–2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+          "result_id": "W2"
+        },
+        "delivered": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): 2015 = 190,054; 2016 = 731,663 (as adjusted); 2017 = 902,693 (as adjusted) from T2; 2018 = 907,320 (as adjusted) and 2019 = 565,467 from T1. Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches the accepted W2 receipt and calculation C7. Note 2016–2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+          "result_id": "W2"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2019 and 2015 are unadjusted.",
+          "Values are in U.S. $ in thousands; the average is 659,439.4 thousand, not a dollar-level figure."
+        ],
+        "notices": []
+      },
+      "final_evidence": {
+        "path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/SUMMARY.json",
+        "sha256": "8e7bb56daa4745117e50c4e4b64bba2e4f2c7a026a7fafe01583812b9df07b5d"
+      }
+    }
+  ],
+  "official_rows": [
+    {
+      "flow_id": "ordinary-01-discussion-r1",
+      "case_id": "ordinary-01",
+      "arm": "discussion",
+      "repeat": 1,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1.92,
+      "scale": "",
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C4",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-01-ordinary-r1",
+      "case_id": "ordinary-01",
+      "arm": "ordinary",
+      "repeat": 1,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1.92,
+      "scale": "",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W1",
+        "work_ids": [
+          "W1"
+        ],
+        "owners": [
+          "A1"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-01-local_work-r1",
+      "case_id": "ordinary-01",
+      "arm": "local_work",
+      "repeat": 1,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": -1.92,
+      "scale": "",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W3",
+        "work_ids": [
+          "W3"
+        ],
+        "owners": [
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-02-ordinary-r1",
+      "case_id": "ordinary-02",
+      "arm": "ordinary",
+      "repeat": 1,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 52.62659725508755,
+      "scale": "percent",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W1",
+        "work_ids": [
+          "W1"
+        ],
+        "owners": [
+          "A1"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-02-local_work-r1",
+      "case_id": "ordinary-02",
+      "arm": "local_work",
+      "repeat": 1,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 52.62659725508755,
+      "scale": "percent",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W2",
+        "work_ids": [
+          "W2"
+        ],
+        "owners": [
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-02-discussion-r1",
+      "case_id": "ordinary-02",
+      "arm": "discussion",
+      "repeat": 1,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 52.62659725508755,
+      "scale": "percent",
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C3",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-01-local_work-r1",
+      "case_id": "dependent-01",
+      "arm": "local_work",
+      "repeat": 1,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1718.5,
+      "scale": "million",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W3",
+        "work_ids": [
+          "W1",
+          "W2",
+          "W3"
+        ],
+        "owners": [
+          "A1",
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-01-discussion-r1",
+      "case_id": "dependent-01",
+      "arm": "discussion",
+      "repeat": 1,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1718.5,
+      "scale": "million",
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C12",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-01-ordinary-r1",
+      "case_id": "dependent-01",
+      "arm": "ordinary",
+      "repeat": 1,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1718.5,
+      "scale": "million",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W4",
+        "work_ids": [
+          "W1",
+          "W2",
+          "W4"
+        ],
+        "owners": [
+          "A1",
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-02-discussion-r1",
+      "case_id": "dependent-02",
+      "arm": "discussion",
+      "repeat": 1,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 659439.4,
+      "scale": "thousand",
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C1",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-02-ordinary-r1",
+      "case_id": "dependent-02",
+      "arm": "ordinary",
+      "repeat": 1,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 659439.4,
+      "scale": "thousand",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W1",
+        "work_ids": [
+          "W1"
+        ],
+        "owners": [
+          "A1"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-02-local_work-r1",
+      "case_id": "dependent-02",
+      "arm": "local_work",
+      "repeat": 1,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 659439.4,
+      "scale": "thousand",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W2",
+        "work_ids": [
+          "W2"
+        ],
+        "owners": [
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-01-ordinary-r2",
+      "case_id": "ordinary-01",
+      "arm": "ordinary",
+      "repeat": 2,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1.92,
+      "scale": "",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W1",
+        "work_ids": [
+          "W1"
+        ],
+        "owners": [
+          "A1"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-01-local_work-r2",
+      "case_id": "ordinary-01",
+      "arm": "local_work",
+      "repeat": 2,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": -1.92,
+      "scale": "",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W1",
+        "work_ids": [
+          "W1"
+        ],
+        "owners": [
+          "A1"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-01-discussion-r2",
+      "case_id": "ordinary-01",
+      "arm": "discussion",
+      "repeat": 2,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1.92,
+      "scale": "",
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C4",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-02-local_work-r2",
+      "case_id": "ordinary-02",
+      "arm": "local_work",
+      "repeat": 2,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 52.62659725508755,
+      "scale": "percent",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W1",
+        "work_ids": [
+          "W1"
+        ],
+        "owners": [
+          "A1"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-02-discussion-r2",
+      "case_id": "ordinary-02",
+      "arm": "discussion",
+      "repeat": 2,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 52.62659725508755,
+      "scale": "percent",
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C1",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "ordinary-02-ordinary-r2",
+      "case_id": "ordinary-02",
+      "arm": "ordinary",
+      "repeat": 2,
+      "group": "ordinary_regression",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 52.62659725508755,
+      "scale": "percent",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W3",
+        "work_ids": [
+          "W3"
+        ],
+        "owners": [
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-01-discussion-r2",
+      "case_id": "dependent-01",
+      "arm": "discussion",
+      "repeat": 2,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1718.5,
+      "scale": "million",
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C13",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-01-ordinary-r2",
+      "case_id": "dependent-01",
+      "arm": "ordinary",
+      "repeat": 2,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1718.5,
+      "scale": "million",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W4",
+        "work_ids": [
+          "W1",
+          "W2",
+          "W4"
+        ],
+        "owners": [
+          "A1",
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-01-local_work-r2",
+      "case_id": "dependent-01",
+      "arm": "local_work",
+      "repeat": 2,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 1718.5,
+      "scale": "million",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W4",
+        "work_ids": [
+          "W1",
+          "W3",
+          "W4"
+        ],
+        "owners": [
+          "A1",
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-02-ordinary-r2",
+      "case_id": "dependent-02",
+      "arm": "ordinary",
+      "repeat": 2,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 659439.4,
+      "scale": "thousand",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W4",
+        "work_ids": [
+          "W4"
+        ],
+        "owners": [
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-02-local_work-r2",
+      "case_id": "dependent-02",
+      "arm": "local_work",
+      "repeat": 2,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 659439.4,
+      "scale": "thousand",
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W1",
+        "work_ids": [
+          "W1"
+        ],
+        "owners": [
+          "A1"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    },
+    {
+      "flow_id": "dependent-02-discussion-r2",
+      "case_id": "dependent-02",
+      "arm": "discussion",
+      "repeat": 2,
+      "group": "controlled_dependency",
+      "status": "completed",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "scale_match": 1.0,
+      "nonanswer": false,
+      "answer": 659439.4,
+      "scale": "thousand",
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C3",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "evaluator": "unmodified upstream TAT-QA",
+      "no_host_scale_correction": true
+    }
+  ],
+  "usage_by_arm": {
+    "discussion": {
+      "input_tokens": 103561,
+      "output_tokens": 10317,
+      "cached_input_tokens": 28544,
+      "requests": 56
+    },
+    "ordinary": {
+      "input_tokens": 193582,
+      "output_tokens": 19802,
+      "cached_input_tokens": 52734,
+      "requests": 56
+    },
+    "local_work": {
+      "input_tokens": 191549,
+      "output_tokens": 17684,
+      "cached_input_tokens": 56444,
+      "requests": 56
+    }
+  },
+  "correction": "W2 always declared the full five-year average. Its output metadata did not change during completion. The consumer misinterpreted it from the outset; this is not an unhandled metadata-change bug.",
+  "causal_limit": "Paired cases share task/permissions/budgets, not identical generated messages. No within-trajectory intervention identifies the causal effect of stage guidance or receipt visibility.",
+  "additional_sources": [
+    {
+      "path": "src/coreta/local_work/handoff_flow.py",
+      "sha256": "5f97424d58a50652dba8b09d02b3b4d19f59ce5d474194556c7ef4f9e44ea1a0"
+    },
+    {
+      "path": "src/coreta/local_work/engine.py",
+      "sha256": "d7633b335a598b33ee496980d9fc51d6b4a7a05142657eff28050d7548a274f2"
+    },
+    {
+      "path": "research/local-work-handoff-confirm-20261027/REFERENCE_REVIEW.md",
+      "sha256": "d9bce6e787f4175fd846539cc1388d516a6163cba16621d5fb6bff17b47450b8"
+    },
+    {
+      "path": "research/local-work-handoff-pilot-20261027/RESULTS.md",
+      "sha256": "a6c77ffb25e22e36ba4993d5b242521f88803c19a6f3f917dcf8d51a1d5f543a"
+    }
+  ]
+}

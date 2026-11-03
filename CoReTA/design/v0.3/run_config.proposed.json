@@ -1,0 +1,143 @@
+{
+  "schema_version": "coreta/0.3",
+  "status": "DESIGN_ONLY",
+  "language": {
+    "task": "en",
+    "prompts": "en",
+    "documentation": "zh"
+  },
+  "roster": [
+    {
+      "id": "A0",
+      "model": "deepseek-flash"
+    },
+    {
+      "id": "A1",
+      "model": "deepseek-flash"
+    },
+    {
+      "id": "A2",
+      "model": "deepseek-flash"
+    }
+  ],
+  "leader": "A0",
+  "bootstrap_reviewer": "A2",
+  "model_revision": null,
+  "tokenizer_revision": null,
+  "provider_endpoint": "https://api.deepseek.com/responses",
+  "generation": {
+    "reasoning_effort": "none",
+    "temperature": 0.7,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "max_input_tokens": 24576,
+    "max_output_tokens": {
+      "draft": 2048,
+      "lead_update": 3072,
+      "contribution": 1536,
+      "review": 1024,
+      "final": 2048
+    }
+  },
+  "protocol": {
+    "max_work_turns": 2,
+    "bootstrap_check": true,
+    "max_semantic_calls": 12,
+    "max_format_repairs": 2,
+    "format_repairs_per_bad_output": 1,
+    "transport_retries_per_request": 2,
+    "request_timeout_seconds": 120,
+    "task_timeout_seconds": 1800,
+    "allow_runtime_tools": false,
+    "check_cannot_help": false,
+    "duplicate_handling": "log_only"
+  },
+  "tasks": {
+    "development": [
+      {
+        "dataset": "openai/gsm8k",
+        "configuration": "main",
+        "source_type": "huggingface_datasets",
+        "split": "train",
+        "n": 50
+      },
+      {
+        "dataset": "google-research-datasets/mbpp",
+        "configuration": "sanitized",
+        "source_type": "huggingface_datasets",
+        "split": "train",
+        "n": 50
+      }
+    ],
+    "pilot": {
+      "math_development_n": 10,
+      "code_development_n": 10,
+      "seeds": [
+        17
+      ]
+    },
+    "evaluation": [
+      {
+        "dataset": "HuggingFaceH4/MATH-500",
+        "split": "test",
+        "n": 500
+      },
+      {
+        "dataset": "humaneval",
+        "source_type": "evalplus_loader",
+        "data_version": "v0.1.10",
+        "n": 164,
+        "mini": false,
+        "noextreme": false
+      }
+    ]
+  },
+  "systems": {
+    "single_finalized": {
+      "max_semantic_calls": 2
+    },
+    "solo_refine": {
+      "max_semantic_calls": 4
+    },
+    "independent_aggregate": {
+      "max_semantic_calls": 4
+    },
+    "static_debate": {
+      "peer_update_rounds": 2,
+      "max_semantic_calls": 10
+    },
+    "coreta": {
+      "max_semantic_calls": 12
+    },
+    "generic_help": {
+      "max_semantic_calls": 12
+    },
+    "no_application_record": {
+      "max_semantic_calls": 12
+    }
+  },
+  "evaluation": {
+    "math_verify_version": "0.9.0_candidate_to_install_check",
+    "evalplus_package_revision": null,
+    "hidden_scoring_feedback": false,
+    "bootstrap_resamples": 10000,
+    "unit": "task",
+    "primary_comparison": [
+      "coreta",
+      "static_debate"
+    ],
+    "primary_metric": {
+      "math": "answer_accuracy",
+      "code": "humaneval_plus_pass_at_1"
+    },
+    "cost_advantage_required": false
+  },
+  "execution": {
+    "paid_calls_authorized": false,
+    "installation_performed": false,
+    "benchmark_execution_performed": false
+  }
+}

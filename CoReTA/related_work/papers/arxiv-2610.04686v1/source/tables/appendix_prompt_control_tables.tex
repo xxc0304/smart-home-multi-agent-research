@@ -1,0 +1,92 @@
+Tables~\ref{tab:r5_prompt_style_dynamics} and
+\ref{tab:r5_prompt_style_control} report the completed control that replaces
+the verification debate prompt with the normal \texttt{standard} debate prompt.
+The control uses the same five datasets, seed banks, verifier settings, debate
+rounds, saved traces, and finalizer as the main five-round runs. The standard
+prompt is slightly slower in the mean vote trajectory: it trails
+\texttt{verify\_then\_answer} in R1--R3, reaches its mean vote peak one round
+later, and ends essentially tied at R5. It preserves more proposal-hit coverage
+after R2, but the finalizer does not convert that extra coverage into higher
+final accuracy.
+
+These tables provide a secondary prompt-style analysis for the controlled
+readout probes in \secref{subsec:controlled_readout_probes}. In the averaged
+dynamics, the standard prompt retains 2.37 points more R5 proposal-hit coverage
+than the verification prompt, while their final accuracies differ by only 0.07
+points overall. The aggregate comparison therefore does not identify a uniform
+prompt advantage or directly estimate verification mass.
+
+The effect is not uniform across datasets or selection methods. The standard
+prompt helps Vanilla Debate on MATH500, OlympiadBench, and GPQA, while the
+verification prompt is better for MMLU-Redux Vanilla Debate and for
+AC-Greedy Debate on GPQA and MMLU-Redux. We therefore use this control as a
+secondary configuration diagnostic rather than evidence that one prompt
+dominates the other. The controlled fixed-proposal interventions in
+\secref{subsec:controlled_readout_probes} provide the direct test of
+answer-specific evidence use.
+
+\begin{table}[t]
+\centering
+\caption{Round-level prompt-style dynamics averaged over the 15 matched
+dataset-method cells. R0 is identical because both controls use the same seed
+answers before debate. $\Delta$ is Standard minus Verify. All values are
+percentages.}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Round & Verify Vote & Standard Vote & $\Delta$ Vote & Verify Hit & Standard Hit & $\Delta$ Hit \\
+\midrule
+R0 & 76.04 & 76.04 & +0.00 & 83.95 & 83.95 & +0.00 \\
+R1 & 77.95 & 77.81 & -0.14 & 85.38 & 84.89 & -0.49 \\
+R2 & 78.19 & 78.12 & -0.08 & 82.20 & 83.38 & +1.18 \\
+R3 & 78.37 & 78.16 & -0.21 & 80.44 & 82.98 & +2.54 \\
+R4 & 78.10 & 78.43 & +0.32 & 79.56 & 82.04 & +2.48 \\
+R5 & 78.21 & 78.13 & -0.08 & 79.26 & 81.62 & +2.37 \\
+\bottomrule
+\end{tabular}
+\label{tab:r5_prompt_style_dynamics}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Prompt-style control for the five-round new-seed debate runs. Verify
+Final is the completed \texttt{verify\_then\_answer} debate prompt; Standard
+Final repeats the same datasets, seed banks, verifier settings, and
+\texttt{vote\_then\_judge\_tiebreak} finalizer with the normal
+\texttt{standard} debate prompt. $\Delta$ is Standard Final minus Verify Final.
+All accuracy values are percentages.}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Method & N & Verify Final & Standard Final & $\Delta$ & Standard R5 Vote & Standard R5 Hit \\
+\midrule
+AMC12 & Vanilla Debate & 739 & 92.96 & 92.42 & -0.54 & 92.29 & 93.78 \\
+ & AC-Greedy Debate & 739 & 91.61 & 91.34 & -0.27 & 91.75 & 94.18 \\
+ & SC-Greedy Debate & 739 & 91.88 & 92.02 & +0.14 & 91.88 & 93.50 \\
+\midrule
+MATH500 & Vanilla Debate & 300 & 91.33 & 92.00 & +0.67 & 91.67 & 93.00 \\
+ & AC-Greedy Debate & 300 & 91.67 & 92.67 & +1.00 & 93.33 & 94.00 \\
+ & SC-Greedy Debate & 300 & 92.00 & 91.67 & -0.33 & 91.67 & 93.33 \\
+\midrule
+OlympiadBench & Vanilla Debate & 474 & 81.22 & 83.76 & +2.53 & 83.97 & 85.86 \\
+ & AC-Greedy Debate & 474 & 81.43 & 81.86 & +0.42 & 81.65 & 84.39 \\
+ & SC-Greedy Debate & 474 & 80.80 & 81.22 & +0.42 & 81.43 & 83.33 \\
+\midrule
+GPQA & Vanilla Debate & 346 & 51.73 & 52.31 & +0.58 & 51.45 & 60.98 \\
+ & AC-Greedy Debate & 346 & 52.02 & 49.71 & -2.31 & 50.58 & 60.98 \\
+ & SC-Greedy Debate & 346 & 50.58 & 50.58 & +0.00 & 50.29 & 58.96 \\
+\midrule
+MMLU-Redux & Vanilla Debate & 300 & 72.33 & 70.00 & -2.33 & 70.67 & 73.33 \\
+ & AC-Greedy Debate & 300 & 75.67 & 74.33 & -1.33 & 74.33 & 76.00 \\
+ & SC-Greedy Debate & 300 & 75.33 & 75.67 & +0.33 & 75.00 & 78.67 \\
+\midrule
+Average & Vanilla Debate & -- & 77.92 & 78.10 & +0.18 & 78.01 & 81.39 \\
+Average & AC-Greedy Debate & -- & 78.48 & 77.98 & -0.50 & 78.33 & 81.91 \\
+Average & SC-Greedy Debate & -- & 78.12 & 78.23 & +0.11 & 78.05 & 81.56 \\
+Overall & All & -- & 78.17 & 78.10 & -0.07 & 78.13 & 81.62 \\
+\bottomrule
+\end{tabular}
+}
+\label{tab:r5_prompt_style_control}
+\end{table}

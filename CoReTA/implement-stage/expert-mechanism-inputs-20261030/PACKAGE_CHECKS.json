@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-30",
+  "status": "OFFLINE_PACKAGE_PREPARED_NOT_LIVE_PREFLIGHT",
+  "independent_inputs": 352,
+  "C160_two_configs": 320,
+  "D8_four_members": 32,
+  "pending_replays": 56,
+  "synthetic_replay_examples": 56,
+  "semantic_worked_replay_examples": 7,
+  "legacy_interface_replay_examples": 7,
+  "source_schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "answer",
+      "support_idxs",
+      "reasoning"
+    ],
+    "properties": {
+      "answer": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "support_idxs": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        },
+        "uniqueItems": true
+      },
+      "reasoning": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "max_reference_stress_input_tokens": 10802,
+  "model_calls": 0,
+  "training_runs": 0,
+  "H_records_used": 0,
+  "remaining": [
+    "Model/backend and actual generation settings not selected.",
+    "Real MuSiQue initial responses and successful citation-locator replay not yet available.",
+    "Source-locator/G-A instruction lengths and hidden reasoning costs not exactly matched.",
+    "Semantic contribution validity and causal adoption cannot be certified by structural checks."
+  ]
+}

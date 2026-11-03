@@ -1,0 +1,21 @@
+{
+  "reviewer": "/root/followup_protocol_review",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "mode": "read_only_static_review",
+  "verdict": "ready_for_bounded_diagnostics",
+  "blocking_findings": [],
+  "resolved_notes": ["Each probe manifest now records execution_calls=1 and preserved_historical_budget=true."],
+  "verified_scope": [
+    "8 one-step probes plus four at-most-25-call historical method units equals 108 requests.",
+    "Original probe payload equality asserted; marked representation changes metadata only.",
+    "Only selected erroneous fixture substantive fields enter input, with no score or correct-fixture leakage.",
+    "Paired historical cache, balanced order/editor, first technical error stops without recovery."
+  ],
+  "limitations": [
+    "One-step outputs are not complete team runs.",
+    "Historical input is controlled synthetic content, not a new natural-failure task.",
+    "Grouping seven contributions into four Work objects changes representation and opportunities; not an exact reproduction or isolated component effect.",
+    "Two repeats do not estimate stable superiority or significance."
+  ]
+}

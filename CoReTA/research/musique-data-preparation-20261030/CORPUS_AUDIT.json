@@ -1,0 +1,209 @@
+{
+  "train": {
+    "n": 19938,
+    "schema_issues": [],
+    "duplicate_ids": {},
+    "duplicate_question_groups": 41,
+    "rows_with_duplicate_context_text": 7,
+    "hops": {
+      "2": 14376,
+      "3": 4387,
+      "4": 1175
+    },
+    "shapes": {
+      "2hop": 14376,
+      "3hop2": 650,
+      "3hop1": 3737,
+      "4hop1": 648,
+      "4hop2": 127,
+      "4hop3": 400
+    },
+    "paragraph_count_distribution": {
+      "20": 19917,
+      "18": 8,
+      "17": 2,
+      "16": 1,
+      "19": 10
+    },
+    "alias_count_distribution": {
+      "0": 14871,
+      "3": 431,
+      "1": 3186,
+      "2": 950,
+      "4": 246,
+      "5": 124,
+      "6": 62,
+      "9": 5,
+      "8": 16,
+      "10": 5,
+      "7": 42
+    },
+    "input_tokens": {
+      "n": 19938,
+      "min": 1038,
+      "median": 2448.0,
+      "p90_floor_rank": 3197,
+      "p95_floor_rank": 3439,
+      "max": 7260,
+      "over_4096": 171,
+      "over_8192": 0
+    },
+    "hard_key_components": {
+      "components": 867,
+      "largest_10": [
+        4894,
+        894,
+        407,
+        394,
+        289,
+        270,
+        259,
+        202,
+        196,
+        196
+      ],
+      "singletons": 279
+    }
+  },
+  "dev": {
+    "n": 2417,
+    "schema_issues": [],
+    "duplicate_ids": {},
+    "duplicate_question_groups": 6,
+    "rows_with_duplicate_context_text": 1,
+    "hops": {
+      "2": 1252,
+      "3": 760,
+      "4": 405
+    },
+    "shapes": {
+      "2hop": 1252,
+      "3hop1": 568,
+      "3hop2": 192,
+      "4hop1": 246,
+      "4hop3": 95,
+      "4hop2": 64
+    },
+    "paragraph_count_distribution": {
+      "20": 2401,
+      "19": 9,
+      "18": 5,
+      "17": 2
+    },
+    "alias_count_distribution": {
+      "0": 1737,
+      "1": 468,
+      "5": 27,
+      "4": 24,
+      "2": 117,
+      "3": 38,
+      "6": 6
+    },
+    "input_tokens": {
+      "n": 2417,
+      "min": 1148,
+      "median": 2552,
+      "p90_floor_rank": 3358,
+      "p95_floor_rank": 3693,
+      "max": 5385,
+      "over_4096": 32,
+      "over_8192": 0
+    },
+    "hard_key_components": {
+      "components": 528,
+      "largest_10": [
+        84,
+        58,
+        53,
+        49,
+        47,
+        43,
+        40,
+        39,
+        38,
+        37
+      ],
+      "singletons": 235
+    }
+  },
+  "official_train_dev_overlap": {
+    "id": {
+      "shared_keys": 0,
+      "left_rows": 0,
+      "right_rows": 0
+    },
+    "question_hash": {
+      "shared_keys": 0,
+      "left_rows": 0,
+      "right_rows": 0
+    },
+    "component_ids": {
+      "shared_keys": 0,
+      "left_rows": 0,
+      "right_rows": 0
+    },
+    "component_question_hashes": {
+      "shared_keys": 95,
+      "left_rows": 4828,
+      "right_rows": 917
+    },
+    "standalone_component_question_hashes": {
+      "shared_keys": 7,
+      "left_rows": 13,
+      "right_rows": 12
+    },
+    "component_answer_hashes": {
+      "shared_keys": 0,
+      "left_rows": 0,
+      "right_rows": 0
+    },
+    "support_hashes": {
+      "shared_keys": 0,
+      "left_rows": 0,
+      "right_rows": 0
+    },
+    "context_hashes": {
+      "shared_keys": 3696,
+      "left_rows": 12821,
+      "right_rows": 2250
+    },
+    "final_answer_hash": {
+      "shared_keys": 0,
+      "left_rows": 0,
+      "right_rows": 0
+    }
+  },
+  "cross_gold_to_visible_context": {
+    "train_gold_in_dev_context": {
+      "rows": 1518,
+      "example_ids": [
+        "2hop__460946_294723",
+        "2hop__252311_366220",
+        "2hop__701895_752697",
+        "2hop__259228_793698",
+        "2hop__697790_864352"
+      ]
+    },
+    "dev_gold_in_train_context": {
+      "rows": 4689,
+      "example_ids": [
+        "2hop__63593_126904",
+        "2hop__28482_46077",
+        "2hop__30913_30900",
+        "2hop__121758_211071",
+        "2hop__607476_26791"
+      ]
+    }
+  },
+  "tokenization": {
+    "tokenizer": "data\\external\\qwen3-4b-tokenizer-20261030\\tokenizer.json",
+    "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "special_tokens": false,
+    "truncation": false,
+    "scope": "base task prompt only; no chat wrapper, output, reasoning or discussion history"
+  },
+  "limits": [
+    "Exact normalized text and published component IDs only; semantic near-duplicates and pretraining contamination not ruled out.",
+    "Connected components use component IDs, standalone component question text (without #N references), supporting paragraph text and composed question; answer overlap is audited separately, not claimed absent."
+  ]
+}

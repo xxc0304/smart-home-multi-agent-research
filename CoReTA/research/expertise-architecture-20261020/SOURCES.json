@@ -1,0 +1,322 @@
+{
+  "date": "2026-10-20",
+  "count": 35,
+  "scope": "targeted multi-perspective review, not exhaustive novelty certification",
+  "sources": [
+    {
+      "id": "S1",
+      "branch": "专长设置",
+      "title": "Multi-Agent Teams Hold Experts Back",
+      "url": "https://arxiv.org/html/2602.01011v4",
+      "verification": "VERIFIED",
+      "read_scope": "方法/附录/官方代码",
+      "boundary": "集中/分布信息、异构能力；区分资料持有者与逐题正确者"
+    },
+    {
+      "id": "S2",
+      "branch": "专长设置",
+      "title": "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs / HiddenBench",
+      "url": "https://arxiv.org/html/2505.11556v3",
+      "verification": "VERIFIED",
+      "read_scope": "方法及6.2–6.3",
+      "boundary": "强制披露与被动摘要不同；Reveal-All结果限受检子集"
+    },
+    {
+      "id": "S3",
+      "branch": "专长设置",
+      "title": "iAgents / InformativeBench",
+      "url": "https://arxiv.org/html/2406.14928",
+      "verification": "VERIFIED",
+      "read_scope": "方法与附录C–D",
+      "boundary": "私有资料检索与信息导航，不等于能力专家"
+    },
+    {
+      "id": "S4",
+      "branch": "专长设置",
+      "title": "Communication and Verification in LLM Agents towards Collaboration under Information Asymmetry",
+      "url": "https://arxiv.org/html/2510.25595",
+      "verification": "VERIFIED",
+      "read_scope": "方法3–4、5.1",
+      "boundary": "约束/行动权限/环境验证；原设置非三人"
+    },
+    {
+      "id": "S5",
+      "branch": "专长设置",
+      "title": "Stop Overvaluing Multi-Agent Debate—We Must Rethink Evaluation and Embrace Model Heterogeneity",
+      "url": "https://arxiv.org/pdf/2502.08788",
+      "verification": "VERIFIED",
+      "read_scope": "方法及互补分层",
+      "boundary": "异构随机混合不等于已校准专长"
+    },
+    {
+      "id": "N1",
+      "branch": "近邻机制",
+      "title": "Self-Organizing Agent Teams Learn to Reason Together",
+      "url": "https://arxiv.org/html/2609.22682v1",
+      "verification": "VERIFIED",
+      "read_scope": "方法2、附录A/D",
+      "boundary": "学习策略、证书审计、少数依据恢复；预印本"
+    },
+    {
+      "id": "N2",
+      "branch": "近邻机制",
+      "title": "ReConcile: Round-Table Conference Improves Reasoning via Consensus among Diverse LLMs",
+      "url": "https://arxiv.org/html/2309.13007",
+      "verification": "VERIFIED",
+      "read_scope": "方法/实现附录",
+      "boundary": "异构、解释、置信加权，不是外部事实判定"
+    },
+    {
+      "id": "N3",
+      "branch": "近邻机制",
+      "title": "Breaking Mental Set to Improve Reasoning through Diverse Multi-Agent Debate",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/3de667dab3b3d812583abc0a786139a0-Abstract-Conference.html",
+      "verification": "VERIFIED",
+      "read_scope": "正式题录摘要/官方幻灯片；PDF未读",
+      "boundary": "只据核实范围谈不同推理操作，不推断全部实现"
+    },
+    {
+      "id": "N4",
+      "branch": "近邻机制",
+      "title": "AgentAsk",
+      "url": "https://arxiv.org/html/2510.07593",
+      "verification": "VERIFIED",
+      "read_scope": "方法4、附录A/F",
+      "boundary": "消息边的最小澄清，SFT/RL训练预算策略"
+    },
+    {
+      "id": "N5",
+      "branch": "近邻机制",
+      "title": "CoThinker",
+      "url": "https://arxiv.org/html/2506.06843",
+      "verification": "VERIFIED",
+      "read_scope": "方法4",
+      "boundary": "认知分工、transactive memory与信息流管理"
+    },
+    {
+      "id": "N6",
+      "branch": "近邻机制",
+      "title": "LASE",
+      "url": "https://arxiv.org/html/2610.16343v1",
+      "verification": "VERIFIED",
+      "read_scope": "方法3",
+      "boundary": "主答先行、置信触发局部同伴与专家升级；预印本"
+    },
+    {
+      "id": "N7",
+      "branch": "近邻机制",
+      "title": "Think, Then Verify: A Hypothesis-Verification Multi-Agent Framework for Long Video Understanding",
+      "url": "https://arxiv.org/html/2603.04977",
+      "verification": "VERIFIED",
+      "read_scope": "方法3.2–3.3/算法1",
+      "boundary": "候选假设→区分线索→视频取证→再检验"
+    },
+    {
+      "id": "N8",
+      "branch": "近邻机制",
+      "title": "Automated Hypothesis Testing with Agentic Sequential Falsifications / POPPER",
+      "url": "https://github.com/snap-stanford/POPPER",
+      "verification": "VERIFIED",
+      "read_scope": "原论文2–4及官方仓库",
+      "boundary": "先生成可测蕴含和检验、执行及顺序证据；统计假设不能直接迁到语言裁决"
+    },
+    {
+      "id": "N9",
+      "branch": "近邻机制",
+      "title": "Consilience: Conformally Calibrated Communication Control for Hidden-Profile Multi-Agent Reasoning",
+      "url": "https://arxiv.org/html/2608.20564",
+      "verification": "VERIFIED",
+      "read_scope": "方法3、校准限制、训练/留出说明",
+      "boundary": "反事实动作/发言选择与逐轮校准；保证代理一步损失而非最终正确"
+    },
+    {
+      "id": "N10",
+      "branch": "近邻机制",
+      "title": "Calibration Is Not Verification: Falsifiability-Aware Conformal Routing for Mixture-of-Agents",
+      "url": "https://arxiv.org/html/2609.25959",
+      "verification": "VERIFIED",
+      "read_scope": "方法/实验/限制",
+      "boundary": "盲near-miss、LOO及可用性融合；弱判定器可能有害，预印本"
+    },
+    {
+      "id": "N11",
+      "branch": "近邻机制",
+      "title": "When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning",
+      "url": "https://arxiv.org/html/2610.04686v1",
+      "verification": "VERIFIED",
+      "read_scope": "方法3、附录A.9",
+      "boundary": "区分候选供给与读出，正确/错误证据干预；按预印本使用"
+    },
+    {
+      "id": "N12",
+      "branch": "近邻机制",
+      "title": "Conformal Social Choice",
+      "url": "https://arxiv.org/html/2604.07667",
+      "verification": "VERIFIED",
+      "read_scope": "摘要/方法",
+      "boundary": "选择性输出与升级；coverage和风险同时报告"
+    },
+    {
+      "id": "N13",
+      "branch": "近邻机制",
+      "title": "Towards Trustworthy AI Results Using Evidence Structures",
+      "url": "https://experts.illinois.edu/en/publications/towards-trustworthy-ai-results-using-evidence-structures-from-cer/",
+      "verification": "PAYWALL",
+      "read_scope": "作者机构摘要",
+      "boundary": "仅支持证据结构/缺口反馈的摘要级先例，不作实现排重"
+    },
+    {
+      "id": "V1",
+      "branch": "反证与评价",
+      "title": "When Helping Hurts and How to Fix It: Multi-Agent Debate for Data Cleaning",
+      "url": "https://arxiv.org/html/2606.02866",
+      "verification": "VERIFIED",
+      "read_scope": "方法/factorial",
+      "boundary": "独立工具critic+证据门控已有；不引用有版本疑点精确效应值"
+    },
+    {
+      "id": "V2",
+      "branch": "反证与评价",
+      "title": "MAS-ProVe: Understanding the Process Verification of Multi-Agent Systems",
+      "url": "https://arxiv.org/html/2602.03053",
+      "verification": "VERIFIED",
+      "read_scope": "方法/结果/可解性",
+      "boundary": "评估中间轨迹仍不稳定，不支持加judge自动变强"
+    },
+    {
+      "id": "V3",
+      "branch": "反证与评价",
+      "title": "Debate Helps Supervise Unreliable Experts",
+      "url": "https://arxiv.org/html/2311.08702",
+      "verification": "VERIFIED",
+      "read_scope": "方法/consultancy/错误分析",
+      "boundary": "人类读者信息不对称与对抗监督，不能原样外推LLM合作"
+    },
+    {
+      "id": "V4",
+      "branch": "反证与评价",
+      "title": "On scalable oversight with weak LLMs judging strong LLMs",
+      "url": "https://arxiv.org/html/2407.04622",
+      "verification": "VERIFIED",
+      "read_scope": "方法/closed与extractive任务",
+      "boundary": "弱监督条件，部分给专家解释是受控辅助条件"
+    },
+    {
+      "id": "V5",
+      "branch": "反证与评价",
+      "title": "Multi-agent discussion gains less when dissent is withheld",
+      "url": "https://arxiv.org/html/2609.38324",
+      "verification": "VERIFIED",
+      "read_scope": "方法/信息池化与利用",
+      "boundary": "披露、内化、重新考虑与纠错分开；特定模型/任务结果"
+    },
+    {
+      "id": "X1",
+      "branch": "跨域迁移",
+      "title": "Bayesian Active Learning for Classification and Preference Learning",
+      "url": "https://arxiv.org/html/1112.5745",
+      "verification": "VERIFIED",
+      "read_scope": "方法2、4",
+      "boundary": "选择可消除模型分歧，LLM票数非后验"
+    },
+    {
+      "id": "X2",
+      "branch": "跨域迁移",
+      "title": "Representative, Informative, and De-Amplifying: Requirements for Robust Bayesian Active Learning under Model Misspecification",
+      "url": "https://proceedings.mlr.press/v300/tang26d.html",
+      "verification": "VERIFIED",
+      "read_scope": "正式题录+arxiv2506.07805方法",
+      "boundary": "失配下信息性可放大误差"
+    },
+    {
+      "id": "X3",
+      "branch": "跨域迁移",
+      "title": "Modeling Probability Forecasts via Information Diversity",
+      "url": "https://arxiv.org/html/1406.2148",
+      "verification": "VERIFIED",
+      "read_scope": "方法3–4/期刊存档",
+      "boundary": "重叠信息聚合；高斯校准假设不自动适用LLM"
+    },
+    {
+      "id": "X4",
+      "branch": "跨域迁移",
+      "title": "Prover-Verifier Games improve legibility of LLM outputs",
+      "url": "https://arxiv.org/html/2407.13692v1",
+      "verification": "VERIFIED",
+      "read_scope": "方法3–6",
+      "boundary": "有标签对抗训练、易检查性与正确性不同"
+    },
+    {
+      "id": "X5",
+      "branch": "跨域迁移",
+      "title": "Mitigating Legibility Tax with Decoupled Prover-Verifier Games",
+      "url": "https://arxiv.org/html/2602.23248",
+      "verification": "VERIFIED",
+      "read_scope": "方法2–4",
+      "boundary": "solver/translator分离；答案保真不等于推理正确，真标签训练"
+    },
+    {
+      "id": "X6",
+      "branch": "跨域迁移",
+      "title": "Near-Optimal Machine Teaching via Explanatory Teaching Sets",
+      "url": "https://proceedings.mlr.press/v84/chen18g.html",
+      "verification": "VERIFIED",
+      "read_scope": "方法3–4",
+      "boundary": "真教师/learner先验前提；正式页1970–1978"
+    },
+    {
+      "id": "X7",
+      "branch": "跨域迁移",
+      "title": "A rational account of pedagogical reasoning: Teaching by, and learning from, examples",
+      "url": "https://web.stanford.edu/~ngoodman/papers/shaftogg14.pdf",
+      "verification": "VERIFIED",
+      "read_scope": "方法2–3",
+      "boundary": "helpful teacher与选例推断，不能保证教师正确"
+    },
+    {
+      "id": "X8",
+      "branch": "跨域迁移",
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+      "url": "https://arxiv.org/html/2306.05685",
+      "verification": "VERIFIED",
+      "read_scope": "方法3.3–3.4",
+      "boundary": "位置/文风/自偏好，偏好评估非事实真值"
+    },
+    {
+      "id": "X9",
+      "branch": "跨域迁移",
+      "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "url": "https://arxiv.org/html/2310.01798",
+      "verification": "VERIFIED",
+      "read_scope": "方法3–5",
+      "boundary": "intrinsic self-correction条件限制，不外推所有未来模型"
+    },
+    {
+      "id": "X10",
+      "branch": "跨域迁移",
+      "title": "A Bayesian Truth Serum for Subjective Data",
+      "url": "https://nel.mit.edu/wp-content/uploads/2016/10/bts.pdf",
+      "verification": "VERIFIED",
+      "read_scope": "原文机制",
+      "boundary": "诚实激励均衡不等于事实真；三同源Agent不满足假设"
+    },
+    {
+      "id": "X11",
+      "branch": "跨域迁移",
+      "title": "AI Safety via Debate is Compromised by Cognitive Biases",
+      "url": "https://arxiv.org/html/2610.05461",
+      "verification": "VERIFIED",
+      "read_scope": "方法/限制",
+      "boundary": "特定侦探任务修辞干预，预筛偏差，预印本"
+    },
+    {
+      "id": "X12",
+      "branch": "跨域迁移",
+      "title": "Query by Committee",
+      "url": "https://collaborate.princeton.edu/en/publications/query-by-committee/",
+      "verification": "VERIFIED",
+      "read_scope": "机构题录/摘要",
+      "boundary": "仅作历史概念定位，不据此描述证明"
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "verdict": "PASS_OFFLINE_ENGINEERING_ONLY",
+  "actual_model_calls": 0,
+  "training_runs": 0,
+  "H_question_or_target_files_read": 0,
+  "team_generations": 24,
+  "extra_solo_generations": 5,
+  "old_original_responses_verified": 4,
+  "legacy_replay_messages": 24,
+  "official_score_cases": [
+    {
+      "case": "exact",
+      "status": "MATCH_UNCHANGED_OFFICIAL_SCORER",
+      "metrics": {
+        "answer_em": 1,
+        "answer_f1": 1.0,
+        "support_em": 1.0,
+        "support_f1": 1.0,
+        "abstained": false
+      }
+    },
+    {
+      "case": "alias_or_normalized_variant",
+      "status": "MATCH_UNCHANGED_OFFICIAL_SCORER",
+      "metrics": {
+        "answer_em": 1,
+        "answer_f1": 1.0,
+        "support_em": 1.0,
+        "support_f1": 1.0,
+        "abstained": false
+      }
+    },
+    {
+      "case": "wrong_answer",
+      "status": "MATCH_UNCHANGED_OFFICIAL_SCORER",
+      "metrics": {
+        "answer_em": 0,
+        "answer_f1": 0,
+        "support_em": 1.0,
+        "support_f1": 1.0,
+        "abstained": false
+      }
+    },
+    {
+      "case": "wrong_support",
+      "status": "MATCH_UNCHANGED_OFFICIAL_SCORER",
+      "metrics": {
+        "answer_em": 1,
+        "answer_f1": 1.0,
+        "support_em": 0.0,
+        "support_f1": 0.0,
+        "abstained": false
+      }
+    },
+    {
+      "case": "partial_support",
+      "status": "MATCH_UNCHANGED_OFFICIAL_SCORER",
+      "metrics": {
+        "answer_em": 1,
+        "answer_f1": 1.0,
+        "support_em": 0.0,
+        "support_f1": 0.6666666666666666,
+        "abstained": false
+      }
+    },
+    {
+      "case": "abstention",
+      "status": "MATCH_UNCHANGED_OFFICIAL_SCORER",
+      "metrics": {
+        "answer_em": 0,
+        "answer_f1": 0,
+        "support_em": 0.0,
+        "support_f1": 0.0,
+        "abstained": true
+      }
+    }
+  ],
+  "primary_comparison_enabled": false,
+  "pressure": {
+    "task_id": "2hop__115615_120682",
+    "measurements": [
+      {
+        "stage": "initial",
+        "round": 0,
+        "actor": "M1",
+        "input_tokens_without_chat_template": 7745
+      },
+      {
+        "stage": "initial",
+        "round": 0,
+        "actor": "M2",
+        "input_tokens_without_chat_template": 7745
+      },
+      {
+        "stage": "initial",
+        "round": 0,
+        "actor": "M3",
+        "input_tokens_without_chat_template": 7745
+      },
+      {
+        "stage": "initial",
+        "round": 0,
+        "actor": "M4",
+        "input_tokens_without_chat_template": 7745
+      },
+      {
+        "stage": "discussion",
+        "round": 1,
+        "actor": "M4",
+        "input_tokens_without_chat_template": 8231
+      },
+      {
+        "stage": "discussion",
+        "round": 1,
+        "actor": "M1",
+        "input_tokens_without_chat_template": 8336
+      },
+      {
+        "stage": "discussion",
+        "round": 1,
+        "actor": "M2",
+        "input_tokens_without_chat_template": 8435
+      },
+      {
+        "stage": "discussion",
+        "round": 1,
+        "actor": "M3",
+        "input_tokens_without_chat_template": 8589
+      },
+      {
+        "stage": "discussion",
+        "round": 2,
+        "actor": "M1",
+        "input_tokens_without_chat_template": 8758
+      },
+      {
+        "stage": "discussion",
+        "round": 2,
+        "actor": "M2",
+        "input_tokens_without_chat_template": 8857
+      },
+      {
+        "stage": "discussion",
+        "round": 2,
+        "actor": "M3",
+        "input_tokens_without_chat_template": 9011
+      },
+      {
+        "stage": "discussion",
+        "round": 2,
+        "actor": "M4",
+        "input_tokens_without_chat_template": 9180
+      },
+      {
+        "stage": "discussion",
+        "round": 3,
+        "actor": "M2",
+        "input_tokens_without_chat_template": 9285
+      },
+      {
+        "stage": "discussion",
+        "round": 3,
+        "actor": "M3",
+        "input_tokens_without_chat_template": 9439
+      },
+      {
+        "stage": "discussion",
+        "round": 3,
+        "actor": "M1",
+        "input_tokens_without_chat_template": 9608
+      },
+      {
+        "stage": "discussion",
+        "round": 3,
+        "actor": "M4",
+        "input_tokens_without_chat_template": 9707
+      },
+      {
+        "stage": "discussion",
+        "round": 4,
+        "actor": "M1",
+        "input_tokens_without_chat_template": 9812
+      },
+      {
+        "stage": "discussion",
+        "round": 4,
+        "actor": "M4",
+        "input_tokens_without_chat_template": 9911
+      },
+      {
+        "stage": "discussion",
+        "round": 4,
+        "actor": "M2",
+        "input_tokens_without_chat_template": 10016
+      },
+      {
+        "stage": "discussion",
+        "round": 4,
+        "actor": "M3",
+        "input_tokens_without_chat_template": 10170
+      },
+      {
+        "stage": "final",
+        "round": 5,
+        "actor": "M1",
+        "input_tokens_without_chat_template": 10395
+      },
+      {
+        "stage": "final",
+        "round": 5,
+        "actor": "M2",
+        "input_tokens_without_chat_template": 10395
+      },
+      {
+        "stage": "final",
+        "round": 5,
+        "actor": "M3",
+        "input_tokens_without_chat_template": 10395
+      },
+      {
+        "stage": "final",
+        "round": 5,
+        "actor": "M4",
+        "input_tokens_without_chat_template": 10395
+      }
+    ],
+    "max_input_tokens_without_chat_template": 10395,
+    "scope": "Reference tokenizer only; old messages reused; no chat/reasoning/output reserve; neither real fit measurement nor worst-case bound."
+  },
+  "execution_verdict": "DO_NOT_RUN_UNTIL_BACKEND_AND_CONTRACT_PREFLIGHT",
+  "limits": [
+    "No real new-task discussion or expert advantage demonstrated.",
+    "No trained adapter, model client, deployment, or paid run.",
+    "Identity and vote configurations are explicit candidates, not a frozen campaign contract.",
+    "Training-side V distribution differs; independent C calibration still required."
+  ]
+}

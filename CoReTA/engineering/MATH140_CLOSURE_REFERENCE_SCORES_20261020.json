@@ -1,0 +1,47 @@
+{
+  "task_id": "math_train/intermediate_algebra/140",
+  "initial_scores": [
+    0,
+    0,
+    0
+  ],
+  "final_score": 0,
+  "score_detail": {
+    "task_id": "math_train/intermediate_algebra/140",
+    "status": "prediction_unparseable",
+    "score": 0,
+    "attempts": 1,
+    "diagnostic_only": false,
+    "math_verify_version": "0.9.0"
+  },
+  "status": "degraded",
+  "stop_reason": "runtime_error",
+  "review_status": "reviewed",
+  "normal_calls": 10,
+  "http_attempts": 8,
+  "format_repairs": 2,
+  "audit_record_count": 3,
+  "errors": [
+    {
+      "code": "CONTEXT_OVERFLOW",
+      "detail": "Stage input exceeds configured conservative/tokenizer budget"
+    }
+  ],
+  "stages": [
+    "draft",
+    "draft",
+    "draft",
+    "task_facts",
+    "synthesize",
+    "build",
+    "apply",
+    "inspect",
+    "work"
+  ],
+  "source_hashes_match": true,
+  "scope": "One seen all-initial-fail engineering regression; no new-task effectiveness estimate",
+  "source_bindings_complete": true,
+  "declared_check_item_count": 15,
+  "pipeline_completed": false,
+  "mechanism_evaluable": true
+}

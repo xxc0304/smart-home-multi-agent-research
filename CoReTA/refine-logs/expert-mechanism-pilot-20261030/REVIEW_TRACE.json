@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-30",
+  "skills": [
+    "aris:experiment-plan",
+    "aris:research-review",
+    "aris:research-implement-feature"
+  ],
+  "reviewer_route": "historical local-self-review; current implementation same-family fresh-agent sweep",
+  "review_independence": "same-family implementation sweep; scientific stage remains assistant self-review",
+  "acceptance_status": "provisional",
+  "external_reviewer_calls": [
+    {
+      "agent": "/root/expert_preparation_sweep",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "rounds": 2,
+      "scope": "undeclared implementation assumptions",
+      "acceptance_status": "provisional"
+    }
+  ],
+  "delegation": "prior planning used no delegation; current two-round implementation audit explicitly required by research-implement-feature skill",
+  "rounds": [
+    {
+      "round": 1,
+      "input": "Previous user-visible four-condition sketch; eight-case analysis; project experiment charter",
+      "verdict": "REVISE",
+      "findings": [
+        "S changes search/attention and may change supplied evidence",
+        "A may improve generic reasoning",
+        "local replay does not establish full-team mechanism",
+        "expert calibration and actual execution contract absent"
+      ],
+      "record": "EXPERIMENT_REVIEW_20261030_104149.md"
+    },
+    {
+      "round": 2,
+      "input": "EXPERIMENT_PLAN_20261030_104149.md",
+      "verdict": "PASS for developmental diagnostic planning only; causal identification REVISE; execution BLOCKED",
+      "revisions": [
+        "operation effects separated from latent mechanisms",
+        "G and focal N0/N1 controls specified",
+        "gold-based source/consequence filling forbidden",
+        "whole-team anchor separated from local replay",
+        "outcome-to-claim map and resource gaps explicit"
+      ],
+      "record": "EXPERIMENT_REVIEW_20261030_104149.md"
+    },
+    {
+      "round": 3,
+      "input": "P1 v0.2 actual inputs, strict parser, official scorer controls and offline auditor",
+      "verdict": "PASS_OFFLINE_ONLY; live engineering BLOCKED",
+      "record": "EXPERIMENT_REVIEW_20261030_113456.md",
+      "tests_passed": 17,
+      "official_scoring_control_cases": 6,
+      "source_revision": "locator-only; full common context preserved once",
+      "new_model_calls": 0
+    },
+    {
+      "round": 4,
+      "verdict": "PASS_SEQUENCE_REVISION_ONLY; execution BLOCKED",
+      "record": "EXPERIMENT_REVIEW_20261030_115107.md",
+      "change": "baseline and multi-stage process inspection precede intervention choice; S/A not preselected",
+      "model_calls": 0
+    },
+    {
+      "round": 5,
+      "verdict": "PASS_DESIGN_UPDATE_ONLY; advantage PENDING; execution NOT_READY",
+      "record": "EXPERIMENT_REVIEW_20261030_162154.md",
+      "changes": [
+        "one adapter bounded training, train-side validation distinct from calibration",
+        "user selected four-round sequential broadcast discussion",
+        "no-message own-generation control and call counts revised",
+        "new protocol implementation explicitly pending"
+      ],
+      "model_calls": 0
+    },
+    {
+      "round": 6,
+      "input": "v0.5 offline implementation and T internal split",
+      "verdict": "PASS_OFFLINE_ONLY; live NOT_READY",
+      "record": "implement-stage/expert-preparation-20261030/SILENT_ASSUMPTION_SWEEP.json",
+      "first_sweep_semantic_undeclared": 1,
+      "final_sweep_semantic_undeclared": 0,
+      "checks": 35,
+      "experimental_model_calls": 0,
+      "training_runs": 0
+    }
+  ],
+  "scientific_gate": "PASS",
+  "scientific_gate_scope": "developmental intervention diagnostic, not mechanism confirmation",
+  "mechanism_confirmation_status": "REVISE",
+  "engineering_gate": "BLOCKED",
+  "launch_verdict": "DO_NOT_RUN",
+  "run_manifest": null,
+  "model_experiment_calls": 0,
+  "training_runs": 0,
+  "human_annotations": 0
+}

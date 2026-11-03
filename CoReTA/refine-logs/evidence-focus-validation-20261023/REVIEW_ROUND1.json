@@ -1,0 +1,38 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "verdict": "gaps",
+  "undeclared": [
+    {
+      "site": "CoReTA/tools/workboard_evidence_probe.py:extract_payload(local=True)",
+      "class": "interface",
+      "decision": "L removes BEFORE/AFTER identities and supplies excerpts identified only as W4, W6, W4. The instruction still requires a BEFORE/AFTER comparison.",
+      "why_it_matters": "All four L requests require the model to infer chronological roles from numeric version IDs. The diagnostic assumes that inference without declaring it.",
+      "priority": "prelaunch",
+      "minimal_fix": "Add an L-only explicit version mapping identifying W4 as BEFORE and W6 as AFTER, preserving excerpt text and access boundaries."
+    }
+  ],
+  "stale_rows": [
+    {
+      "row": "E05",
+      "class": "semantic",
+      "stated": "Balanced Latin sequence",
+      "actual": "Eight groups have first-position counts F=3, H=3, L=2. RUBRIC.md correctly describes approximate counterbalancing.",
+      "priority": "documentation",
+      "minimal_fix": "Align E05 wording with RUBRIC.md."
+    }
+  ],
+  "semantic_undeclared": 0,
+  "confirmed": [
+    "All four F payloads exactly equal the corresponding previous B payloads.",
+    "H preserves the full packet, instruction prefix and remaining payload fields, adding only PUBLIC_VERSION_EXCERPTS.",
+    "Every supplied excerpt is a verbatim substring of the identified visible public work and has the correct author.",
+    "H and L preserve each member's own SELF_MATERIALS. L directly exposes only T plus S02 or S03; S01 remains a public report.",
+    "L accurately labels carriers as partial and explicitly narrows the comparison. The declared interpretation acknowledges simultaneous context and scope changes.",
+    "Manifest contains 24 stateless calls: four inputs, three conditions, two repeats. Every payload caps output at 3072.",
+    "Transport has zero retries; runner has no format repairs, stops on the first error, preserves raw responses and available usage, and counts unknown usage.",
+    "Logical seeds 17/18 are logged but absent from payloads.",
+    "All frozen source and payload hashes matched during inspection."
+  ],
+  "review_actions": "Read-only source and artifact inspection; no files edited, tests rerun, or live API calls made."
+}

@@ -1,0 +1,2805 @@
+{
+  "scope": "single-repetition development pilot; descriptive, no formal effectiveness or causal claim",
+  "plan_sha256": "fd0a395e5b4a62b5d70b24bb8b7cfe1985b424f9a5e46b1da101df5b6e6dcd2b",
+  "scoring_image": "sha256:841f8763c03c5cc688a811a90e13e82541d3350cdaccf3bba64aefb627be5cf6",
+  "evaluation_sha256": {
+    "math_gold": "e974f167c7d60d0c3baa69c27072ba1e90893ef73371914fa5d7caa86c62c3c3",
+    "mbpp_tests": "c34bcaac2df04769ee14daa5afe29bc429047e746bc02472fef9ee161035c961",
+    "math_preflight": "9d931c34529aca06eb8ec115160e303145b0eb475819c3f0a0d5e745c6dfade6"
+  },
+  "coverage_complete": true,
+  "trajectories": 60,
+  "metric_records": 120,
+  "all_shared_drafts_verified": true,
+  "shared_draft_checks": [
+    {
+      "task_id": "gsm8k/train/1299",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "gsm8k/train/1988",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "gsm8k/train/3003",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "gsm8k/train/3018",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "gsm8k/train/3076",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "gsm8k/train/5366",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "gsm8k/train/6205",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "gsm8k/train/6388",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "gsm8k/train/6742",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/607",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/620",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/730",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/732",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/745",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/756",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/763",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/799",
+      "same_three_drafts": true
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "same_three_drafts": true
+    }
+  ],
+  "descriptive_scores": [
+    {
+      "family": "gsm8k",
+      "system": "coreta",
+      "artifact_field": "artifact",
+      "planned": 10,
+      "successes": 9,
+      "unresolved": 0,
+      "accuracy": 0.9
+    },
+    {
+      "family": "gsm8k",
+      "system": "coreta",
+      "artifact_field": "prefinal_artifact",
+      "planned": 10,
+      "successes": 9,
+      "unresolved": 0,
+      "accuracy": 0.9
+    },
+    {
+      "family": "gsm8k",
+      "system": "independent_aggregate",
+      "artifact_field": "artifact",
+      "planned": 10,
+      "successes": 9,
+      "unresolved": 0,
+      "accuracy": 0.9
+    },
+    {
+      "family": "gsm8k",
+      "system": "independent_aggregate",
+      "artifact_field": "prefinal_artifact",
+      "planned": 10,
+      "successes": 9,
+      "unresolved": 0,
+      "accuracy": 0.9
+    },
+    {
+      "family": "gsm8k",
+      "system": "static_debate",
+      "artifact_field": "artifact",
+      "planned": 10,
+      "successes": 9,
+      "unresolved": 0,
+      "accuracy": 0.9
+    },
+    {
+      "family": "gsm8k",
+      "system": "static_debate",
+      "artifact_field": "prefinal_artifact",
+      "planned": 10,
+      "successes": 9,
+      "unresolved": 0,
+      "accuracy": 0.9
+    },
+    {
+      "family": "mbpp",
+      "system": "coreta",
+      "artifact_field": "artifact",
+      "planned": 10,
+      "successes": 8,
+      "unresolved": 0,
+      "accuracy": 0.8
+    },
+    {
+      "family": "mbpp",
+      "system": "coreta",
+      "artifact_field": "prefinal_artifact",
+      "planned": 10,
+      "successes": 8,
+      "unresolved": 0,
+      "accuracy": 0.8
+    },
+    {
+      "family": "mbpp",
+      "system": "independent_aggregate",
+      "artifact_field": "artifact",
+      "planned": 10,
+      "successes": 8,
+      "unresolved": 0,
+      "accuracy": 0.8
+    },
+    {
+      "family": "mbpp",
+      "system": "independent_aggregate",
+      "artifact_field": "prefinal_artifact",
+      "planned": 10,
+      "successes": 8,
+      "unresolved": 0,
+      "accuracy": 0.8
+    },
+    {
+      "family": "mbpp",
+      "system": "static_debate",
+      "artifact_field": "artifact",
+      "planned": 10,
+      "successes": 8,
+      "unresolved": 0,
+      "accuracy": 0.8
+    },
+    {
+      "family": "mbpp",
+      "system": "static_debate",
+      "artifact_field": "prefinal_artifact",
+      "planned": 10,
+      "successes": 8,
+      "unresolved": 0,
+      "accuracy": 0.8
+    }
+  ],
+  "paired_outcomes": [
+    {
+      "family": "gsm8k",
+      "left": "coreta",
+      "right": "static_debate",
+      "counts": {
+        "tie": 10
+      }
+    },
+    {
+      "family": "gsm8k",
+      "left": "coreta",
+      "right": "independent_aggregate",
+      "counts": {
+        "tie": 10
+      }
+    },
+    {
+      "family": "mbpp",
+      "left": "coreta",
+      "right": "static_debate",
+      "counts": {
+        "tie": 10
+      }
+    },
+    {
+      "family": "mbpp",
+      "left": "coreta",
+      "right": "independent_aggregate",
+      "counts": {
+        "tie": 10
+      }
+    }
+  ],
+  "runs": [
+    {
+      "task_id": "gsm8k/train/6388",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 1,
+      "http_attempts": 11,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\bd822c5d54e77b9bff1f\\attempt_0001",
+      "result_sha256": "93bd0f10eafda38f5998cf5ba013651e83cf0d680261253727ba2a8633049f2a",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 31148,
+        "output_tokens": 6187,
+        "total_tokens": 37335
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "7131997cb3aad93d2584e1ce3074beca6b079afdf5ddef81ece339025e431427",
+        "A1": "ed59812604d4ac5cffddcc9e9d6f8453e317e57251b9f99c19899d4f58b21e94",
+        "A2": "e8b427548e8614e50ce37e485368165de2e7486d485c7beac3218400115d2cfc"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1267,
+        1267,
+        1267,
+        3649,
+        3649,
+        4716,
+        3649,
+        3437,
+        3437,
+        3437,
+        6002
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/6388",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\ddacbd4e12c4419476b6\\attempt_0001",
+      "result_sha256": "464a68f4c2b10f34ac476ea7350b4b8208530077b3bf969ddf1c02f4d2b40da4",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 13647,
+        "output_tokens": 1682,
+        "total_tokens": 15329
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "7131997cb3aad93d2584e1ce3074beca6b079afdf5ddef81ece339025e431427",
+        "A1": "ed59812604d4ac5cffddcc9e9d6f8453e317e57251b9f99c19899d4f58b21e94",
+        "A2": "e8b427548e8614e50ce37e485368165de2e7486d485c7beac3218400115d2cfc"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3622,
+        7164,
+        4986
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/6388",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\e310f702bf9dc5e49e6c\\attempt_0001",
+      "result_sha256": "bcb765c2da59a09f6b6996aaaf74c5ccc5d5730b2f4a48940a580ac409295665",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 2776,
+        "output_tokens": 254,
+        "total_tokens": 3030
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "7131997cb3aad93d2584e1ce3074beca6b079afdf5ddef81ece339025e431427",
+        "A1": "ed59812604d4ac5cffddcc9e9d6f8453e317e57251b9f99c19899d4f58b21e94",
+        "A2": "e8b427548e8614e50ce37e485368165de2e7486d485c7beac3218400115d2cfc"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3348
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/3018",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 4,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\1efc739f094e54fd6d65\\attempt_0001",
+      "result_sha256": "5a404d9aafbd83f28dd3f9de19c0b72a5086309552b98f8bea111a40982f31b1",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 5267,
+        "output_tokens": 1678,
+        "total_tokens": 6945
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "8c478978be81fc15ad0dfe1c818d82171e12e3621d5e97b53aee5269a5f719e3",
+        "A1": "f7b3136714ecda916a5380b9d5c0ed4ce36b9ba8564036ff0a5f779cdefd1e58",
+        "A2": "82b4a6a67b2bf62ac9c37967d363bef81dfd24288958d4f4adab05b0f2b1b438"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1274,
+        1274,
+        1274,
+        2942
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/3018",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\0f3894c0859d99175093\\attempt_0001",
+      "result_sha256": "283a32ac81d934ced2f86535473ccfaeb22db0650ad549c6e2f44e58c1b8b95d",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 23416,
+        "output_tokens": 4723,
+        "total_tokens": 28139
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "8c478978be81fc15ad0dfe1c818d82171e12e3621d5e97b53aee5269a5f719e3",
+        "A1": "f7b3136714ecda916a5380b9d5c0ed4ce36b9ba8564036ff0a5f779cdefd1e58",
+        "A2": "82b4a6a67b2bf62ac9c37967d363bef81dfd24288958d4f4adab05b0f2b1b438"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3192,
+        3192,
+        3192,
+        3551,
+        3551,
+        3551,
+        6156
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/3018",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\98b315b54c857341e50a\\attempt_0001",
+      "result_sha256": "914ab802d09ee8687f8857355e6fd3710505e038785d05164895721ceff42f7d",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 11915,
+        "output_tokens": 1355,
+        "total_tokens": 13270
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "8c478978be81fc15ad0dfe1c818d82171e12e3621d5e97b53aee5269a5f719e3",
+        "A1": "f7b3136714ecda916a5380b9d5c0ed4ce36b9ba8564036ff0a5f779cdefd1e58",
+        "A2": "82b4a6a67b2bf62ac9c37967d363bef81dfd24288958d4f4adab05b0f2b1b438"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3157,
+        6402,
+        4232
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/1299",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 6,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\ef2c29b38227877c5959\\attempt_0001",
+      "result_sha256": "9c885ad7cf676c3a8e83c4267d8e2ca581861c7866668ae75c408a460fa2f884",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 13007,
+        "output_tokens": 1969,
+        "total_tokens": 14976
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "b96f157bdbaf153e1d9d8240f53e30cbfb2b1cc1721f432a489cad18a4f99961",
+        "A1": "b15efe8b9f75e6c7425df6d91ed5a4bf8ea00a318ffc58e0a9d701e9dced6aa6",
+        "A2": "c26f47336ec9d35e2eb2acf72bab6c767f5017be8428c4d9a645662de7f927b4"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1303,
+        1303,
+        1303,
+        2680,
+        5635,
+        3505
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/1299",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\3b5920523ffb761b0d75\\attempt_0001",
+      "result_sha256": "25e6233d73d31b1ac311ac5e34bc9d2a9554910401749c6221c9a51eae06c86a",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 1902,
+        "output_tokens": 139,
+        "total_tokens": 2041
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "b96f157bdbaf153e1d9d8240f53e30cbfb2b1cc1721f432a489cad18a4f99961",
+        "A1": "b15efe8b9f75e6c7425df6d91ed5a4bf8ea00a318ffc58e0a9d701e9dced6aa6",
+        "A2": "c26f47336ec9d35e2eb2acf72bab6c767f5017be8428c4d9a645662de7f927b4"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2374
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/1299",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\9156ad81f8aa90066796\\attempt_0001",
+      "result_sha256": "3ed8127e06d3bfa14b327c0703907653fc0ee212712cfa52dc5ccd78219969c9",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 19254,
+        "output_tokens": 3352,
+        "total_tokens": 22606
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "b96f157bdbaf153e1d9d8240f53e30cbfb2b1cc1721f432a489cad18a4f99961",
+        "A1": "b15efe8b9f75e6c7425df6d91ed5a4bf8ea00a318ffc58e0a9d701e9dced6aa6",
+        "A2": "c26f47336ec9d35e2eb2acf72bab6c767f5017be8428c4d9a645662de7f927b4"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2627,
+        2627,
+        2627,
+        3190,
+        3190,
+        3190,
+        4600
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/6742",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 10,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\249b915b3ef40ba95457\\attempt_0001",
+      "result_sha256": "a1f3d52f3f2da0879476628fdf357611117e8abba06516606c304cd86b661ff6",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 18278,
+        "output_tokens": 3068,
+        "total_tokens": 21346
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "c4bd8da39bcb477f4641d11ac4b997b23f6a8fe50225bdc5a635e0c79d286b34",
+        "A1": "9bbaba187181a6ce01ce8f70f3eba6d73d3959f5ba116bd8d91f6f8b33ea8aeb",
+        "A2": "67d587e0d6c29857d7346b6f3543f124c7e02b332f0d0c72091139e58dab4a7a"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1252,
+        1252,
+        1252,
+        2345,
+        2345,
+        2345,
+        2366,
+        2366,
+        2366,
+        3920
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/6742",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\61fc861428689fbb1089\\attempt_0001",
+      "result_sha256": "61d28fea395ce2a7a14c3b764e5540549d1915d650af9dde27a0cc854eadd7b1",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 1663,
+        "output_tokens": 145,
+        "total_tokens": 1808
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "c4bd8da39bcb477f4641d11ac4b997b23f6a8fe50225bdc5a635e0c79d286b34",
+        "A1": "9bbaba187181a6ce01ce8f70f3eba6d73d3959f5ba116bd8d91f6f8b33ea8aeb",
+        "A2": "67d587e0d6c29857d7346b6f3543f124c7e02b332f0d0c72091139e58dab4a7a"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2107
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/6742",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\d282630be126b677ffe6\\attempt_0001",
+      "result_sha256": "d670be3dff757579344c294931acb73adfd337d4e1c2ccbab3acca6dbd393202",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 8909,
+        "output_tokens": 929,
+        "total_tokens": 9838
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "c4bd8da39bcb477f4641d11ac4b997b23f6a8fe50225bdc5a635e0c79d286b34",
+        "A1": "9bbaba187181a6ce01ce8f70f3eba6d73d3959f5ba116bd8d91f6f8b33ea8aeb",
+        "A2": "67d587e0d6c29857d7346b6f3543f124c7e02b332f0d0c72091139e58dab4a7a"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2366,
+        5135,
+        3031
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/3076",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 6,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\6a91f31261ea938fd7c4\\attempt_0001",
+      "result_sha256": "15918207b682912aacdc73b71bc8a010f1194d2310af4e78f0c8c357f09f5e72",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 13784,
+        "output_tokens": 2492,
+        "total_tokens": 16276
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "f8133c69cc1fb8066303209cc4ed5974052b251296846ff2f1f77e9f2ae9c0c5",
+        "A1": "0c9015c663819887495404d546c0095051ec795dfefe7c620aa937b90869c1e3",
+        "A2": "29f910c9e25eb11889da5f52b627097a2d9205a72c5b0a906cb015eb06e02dac"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1238,
+        1238,
+        1238,
+        2922,
+        6014,
+        3942
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/3076",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\b21db2b499b9227e3da4\\attempt_0001",
+      "result_sha256": "719a50bd1da334f3f033e253297c1afdb3430caa27b0ab8cfa767dd73532dbe6",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 2211,
+        "output_tokens": 191,
+        "total_tokens": 2402
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "f8133c69cc1fb8066303209cc4ed5974052b251296846ff2f1f77e9f2ae9c0c5",
+        "A1": "0c9015c663819887495404d546c0095051ec795dfefe7c620aa937b90869c1e3",
+        "A2": "29f910c9e25eb11889da5f52b627097a2d9205a72c5b0a906cb015eb06e02dac"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2705
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/3076",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\f5bb3c74dba305af2f36\\attempt_0001",
+      "result_sha256": "9976b92b9f6d06bd50570cce5fee97961a98e76faa35b0443dd547a7bee8195b",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 21534,
+        "output_tokens": 4145,
+        "total_tokens": 25679
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "f8133c69cc1fb8066303209cc4ed5974052b251296846ff2f1f77e9f2ae9c0c5",
+        "A1": "0c9015c663819887495404d546c0095051ec795dfefe7c620aa937b90869c1e3",
+        "A2": "29f910c9e25eb11889da5f52b627097a2d9205a72c5b0a906cb015eb06e02dac"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2913,
+        2913,
+        2913,
+        3469,
+        3469,
+        3469,
+        5212
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/1988",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 4,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\d05a73aa3cbafda527be\\attempt_0001",
+      "result_sha256": "1a4ff6e7377ce402a76c88bd50c06ff31211b74d1da2c8b8add145756c731d2f",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 4568,
+        "output_tokens": 987,
+        "total_tokens": 5555
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "a41d736bed4458f37fa4d98739e8b95186c99dda4e2550cfba310b472f37826f",
+        "A1": "f6ae6617e364270db0659362f43b0f822ca7f428c4282af4e853ff94255ad823",
+        "A2": "6645bb4fdd5f515ba96852d7061d3c8a98f22066263e10b14fb325226aa4129b"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1252,
+        1252,
+        1252,
+        2252
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/1988",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\98afa15d6f65066c3998\\attempt_0001",
+      "result_sha256": "2b930177ffd7054d26e6d68d582e0a029c149fe996ce95457d371efc906bd1f4",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 9620,
+        "output_tokens": 1089,
+        "total_tokens": 10709
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "a41d736bed4458f37fa4d98739e8b95186c99dda4e2550cfba310b472f37826f",
+        "A1": "f6ae6617e364270db0659362f43b0f822ca7f428c4282af4e853ff94255ad823",
+        "A2": "6645bb4fdd5f515ba96852d7061d3c8a98f22066263e10b14fb325226aa4129b"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2567,
+        5445,
+        3333
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/1988",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\fc1a58e9a8633049ac6b\\attempt_0001",
+      "result_sha256": "04e6bbab4b7696eae3ce35654489e7a8ad90f0de81e01357b634fc24a125e37c",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 17627,
+        "output_tokens": 2944,
+        "total_tokens": 20571
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "a41d736bed4458f37fa4d98739e8b95186c99dda4e2550cfba310b472f37826f",
+        "A1": "f6ae6617e364270db0659362f43b0f822ca7f428c4282af4e853ff94255ad823",
+        "A2": "6645bb4fdd5f515ba96852d7061d3c8a98f22066263e10b14fb325226aa4129b"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2488,
+        2488,
+        2488,
+        2900,
+        2900,
+        2900,
+        4130
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/6205",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 10,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\8d56e63779fe1c8365a0\\attempt_0001",
+      "result_sha256": "a0a731415481d9156ae5fe35aa6af7251b355aa7e83e91154f7422a3e595c621",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 22612,
+        "output_tokens": 4437,
+        "total_tokens": 27049
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "26e5fc8f1a9aef017c3f0309bb15e140d30096985f56531c621ed5a67576b535",
+        "A1": "979dd889089f6d687122ad5a713893187792afa0758bc4ab19a693431b486a6e",
+        "A2": "4d47baaccd9acc00704d8bfee87672f5ee017ec6c8345d3c810012f9ff257c73"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1279,
+        1279,
+        1279,
+        2856,
+        2856,
+        2856,
+        2934,
+        2934,
+        2934,
+        5164
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/6205",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\faa5fc03d7da0b2ba0d7\\attempt_0001",
+      "result_sha256": "d7cfffd951df47445c5e842fd11f9136671b93656e1c08ec51a0c130dfbedad8",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 11038,
+        "output_tokens": 1192,
+        "total_tokens": 12230
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "26e5fc8f1a9aef017c3f0309bb15e140d30096985f56531c621ed5a67576b535",
+        "A1": "979dd889089f6d687122ad5a713893187792afa0758bc4ab19a693431b486a6e",
+        "A2": "4d47baaccd9acc00704d8bfee87672f5ee017ec6c8345d3c810012f9ff257c73"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2938,
+        6075,
+        3812
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/6205",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\3614616228dfd1988479\\attempt_0001",
+      "result_sha256": "9dca446f8c8a382d5e76121950147428184d15ec7383a99759bb1fbbb76f5053",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 2054,
+        "output_tokens": 157,
+        "total_tokens": 2211
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "26e5fc8f1a9aef017c3f0309bb15e140d30096985f56531c621ed5a67576b535",
+        "A1": "979dd889089f6d687122ad5a713893187792afa0758bc4ab19a693431b486a6e",
+        "A2": "4d47baaccd9acc00704d8bfee87672f5ee017ec6c8345d3c810012f9ff257c73"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2538
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/5366",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 4,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\66c989dbff1457e2832f\\attempt_0001",
+      "result_sha256": "ebe25fda2e5900e94aac0f427842a35c5f8c771e618ef35537c4dc5c0775b7b0",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 4482,
+        "output_tokens": 872,
+        "total_tokens": 5354
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "7db5b96f258ce34bb60cfb0c3f84733015e86631bd068a2be3332a9a141d7a9e",
+        "A1": "b48d97515ee8c181791b5dc0ff0bcea13f478cd5b478bf2199aff2eba12b0829",
+        "A2": "e62427e7a1753dbab4ebd6bc30cb64e34513aa4112769ecfe542ebc84e62b87a"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1247,
+        1247,
+        1247,
+        2186
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/5366",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\b36c9b2cdae65f305d52\\attempt_0001",
+      "result_sha256": "fb3d4f8748e84540771083b418f6e387f25d9d5167086406d7135a9b570fc5fb",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 9156,
+        "output_tokens": 904,
+        "total_tokens": 10060
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "7db5b96f258ce34bb60cfb0c3f84733015e86631bd068a2be3332a9a141d7a9e",
+        "A1": "b48d97515ee8c181791b5dc0ff0bcea13f478cd5b478bf2199aff2eba12b0829",
+        "A2": "e62427e7a1753dbab4ebd6bc30cb64e34513aa4112769ecfe542ebc84e62b87a"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2459,
+        5294,
+        3111
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/5366",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\2fcaa9ba5c94eb0e623b\\attempt_0001",
+      "result_sha256": "7b650ec2b960bde76a950d35fef709944951647249c20339e544b1f62e97d0ee",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 15764,
+        "output_tokens": 1864,
+        "total_tokens": 17628
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "7db5b96f258ce34bb60cfb0c3f84733015e86631bd068a2be3332a9a141d7a9e",
+        "A1": "b48d97515ee8c181791b5dc0ff0bcea13f478cd5b478bf2199aff2eba12b0829",
+        "A2": "e62427e7a1753dbab4ebd6bc30cb64e34513aa4112769ecfe542ebc84e62b87a"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2440,
+        2440,
+        2440,
+        2512,
+        2512,
+        2512,
+        3533
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 2,
+      "http_attempts": 8,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\dc17e2cceb756553a219\\attempt_0001",
+      "result_sha256": "02baa787cc8cceca4b5ade6fa6ae9188787d723eee3bdf10bffe0c2fdde253e5",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 22147,
+        "output_tokens": 7253,
+        "total_tokens": 29400
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "cb7ec33ceb665c26c1e3715fc5d35d44ca518cf345a54f4affa2ac39c34c90de",
+        "A1": "988d2bbf7863abbf33fed3648bb874679906a3b2ff1dcb0292db73e810c1f89f",
+        "A2": "54f41c2cbededc5bf8e2d7a05c0ec3fa2c0a03b36d4881cf261f8b2311a42638"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 2,
+      "input_count_estimates": [
+        1257,
+        1257,
+        1257,
+        1641,
+        3615,
+        3975,
+        7358,
+        5588
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\c76788d6009f17a458fc\\attempt_0001",
+      "result_sha256": "fc66420f549d523ef7f554944e695bd3e693ac94258631dbc76378ab0c7d1238",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 2958,
+        "output_tokens": 324,
+        "total_tokens": 3282
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "cb7ec33ceb665c26c1e3715fc5d35d44ca518cf345a54f4affa2ac39c34c90de",
+        "A1": "988d2bbf7863abbf33fed3648bb874679906a3b2ff1dcb0292db73e810c1f89f",
+        "A2": "54f41c2cbededc5bf8e2d7a05c0ec3fa2c0a03b36d4881cf261f8b2311a42638"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3450
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\92e53c047f1ac3d09cc7\\attempt_0001",
+      "result_sha256": "8d81669e3addcf7cccaf8f0191bffa9381553b1cced51135ba3d38bc3084bd82",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 29596,
+        "output_tokens": 7008,
+        "total_tokens": 36604
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "cb7ec33ceb665c26c1e3715fc5d35d44ca518cf345a54f4affa2ac39c34c90de",
+        "A1": "988d2bbf7863abbf33fed3648bb874679906a3b2ff1dcb0292db73e810c1f89f",
+        "A2": "54f41c2cbededc5bf8e2d7a05c0ec3fa2c0a03b36d4881cf261f8b2311a42638"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3702,
+        3702,
+        3702,
+        4484,
+        4484,
+        4484,
+        7878
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/3003",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 10,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\670777bcab09135893e1\\attempt_0001",
+      "result_sha256": "83f2c4afc2c70fd6ab7d8a1c1874be67b412b37090fee14b97cba9d82fb6121a",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 27321,
+        "output_tokens": 6322,
+        "total_tokens": 33643
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "e26c35da1718aa1d0b19f389ec9072743a5327e8a3ec85a6e6b441572d22c7de",
+        "A1": "5d8881c6f7945648a95ccc08c64ddd8127a4a41708eb8ee3f3e6b2604e9ef306",
+        "A2": "b5d1588fc44cf7eab877cd17fe496d8da21c47fcaa44c94a24091a30f76e5878"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1278,
+        1278,
+        1278,
+        3070,
+        3070,
+        3070,
+        4054,
+        4054,
+        4054,
+        6132
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/3003",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\a0a6a68846be73c87a20\\attempt_0001",
+      "result_sha256": "6f0f3a1867a5bd98b7d08e75ac387ba1a7322aa80bc16cd37a4287494bfbfa89",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 2298,
+        "output_tokens": 160,
+        "total_tokens": 2458
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "e26c35da1718aa1d0b19f389ec9072743a5327e8a3ec85a6e6b441572d22c7de",
+        "A1": "5d8881c6f7945648a95ccc08c64ddd8127a4a41708eb8ee3f3e6b2604e9ef306",
+        "A2": "b5d1588fc44cf7eab877cd17fe496d8da21c47fcaa44c94a24091a30f76e5878"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2821
+      ]
+    },
+    {
+      "task_id": "gsm8k/train/3003",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "gsm8k",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\524874933813a61290eb\\attempt_0001",
+      "result_sha256": "b543cb78cb0cc5633fbd01abc32f0fb0f9bd85155b16b228f5c21f328472743b",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 11327,
+        "output_tokens": 1177,
+        "total_tokens": 12504
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "e26c35da1718aa1d0b19f389ec9072743a5327e8a3ec85a6e6b441572d22c7de",
+        "A1": "5d8881c6f7945648a95ccc08c64ddd8127a4a41708eb8ee3f3e6b2604e9ef306",
+        "A2": "b5d1588fc44cf7eab877cd17fe496d8da21c47fcaa44c94a24091a30f76e5878"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3055,
+        6211,
+        3967
+      ]
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 10,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\466cd8bdb4dbdb860d1f\\attempt_0001",
+      "result_sha256": "5514b550a7cb75fcfc9dbfe2c8c80848cec6075246ee8867a1446b91bef724c3",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 31157,
+        "output_tokens": 8253,
+        "total_tokens": 39410
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "c2c925a08983d5a2559b1c6ad41a34953ebf4a17d3e06b6ca4cdf435ac71f747",
+        "A1": "e5ceb13c6f1a3e799cc952b4c542c0b2d825013e40c36a12e302f97748d509b9",
+        "A2": "6cd5cc0def20ea8c7a2d8616719ef7ec9a3f6728849ccc3fd6034e7520a60bfd"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1264,
+        1264,
+        1264,
+        3395,
+        3395,
+        3395,
+        4834,
+        4834,
+        4834,
+        7123
+      ]
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\ab810b1d8fd498263248\\attempt_0001",
+      "result_sha256": "8c689214a641999819fef7fa87d9d2a75cbddf60cf8a30c6e58340c859f49108",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 2622,
+        "output_tokens": 323,
+        "total_tokens": 2945
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "c2c925a08983d5a2559b1c6ad41a34953ebf4a17d3e06b6ca4cdf435ac71f747",
+        "A1": "e5ceb13c6f1a3e799cc952b4c542c0b2d825013e40c36a12e302f97748d509b9",
+        "A2": "6cd5cc0def20ea8c7a2d8616719ef7ec9a3f6728849ccc3fd6034e7520a60bfd"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3169
+      ]
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "system": "coreta",
+      "seed": 17,
+      "status": "degraded",
+      "normal_calls": 6,
+      "format_repairs": 1,
+      "http_attempts": 4,
+      "errors": [
+        {
+          "code": "REFERENCE_ERROR",
+          "detail": "Application must bind this stage's evidence ids"
+        }
+      ],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\ea835e1e920b0cdf854b\\attempt_0001",
+      "result_sha256": "d90ebc431dc9aa5190daf07897b6f75b2f0c271495d0e67b07f6cffcc61c97fc",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 21346,
+        "output_tokens": 3281,
+        "total_tokens": 24627
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "c2c925a08983d5a2559b1c6ad41a34953ebf4a17d3e06b6ca4cdf435ac71f747",
+        "A1": "e5ceb13c6f1a3e799cc952b4c542c0b2d825013e40c36a12e302f97748d509b9",
+        "A2": "6cd5cc0def20ea8c7a2d8616719ef7ec9a3f6728849ccc3fd6034e7520a60bfd"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3481,
+        6985,
+        9712,
+        4475
+      ]
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 4,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\9069197d23fb67bba679\\attempt_0001",
+      "result_sha256": "297c3e61bc6ba83b27ce2635c9e6548b6d3c67f050b6a4fceb3ba5c15497a3ab",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 4417,
+        "output_tokens": 851,
+        "total_tokens": 5268
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "e2293ceb4ad65508b16598ea6de0bd6e84ec77793077233b9fea1f6ae317cac5",
+        "A1": "6c31f0daf679cabc6b7b5f6814d75355ae4e2974cc940f8b401e96a3a005d81f",
+        "A2": "04cad848c13bd298d5f47b14c03a3408015fd374dd82c87ebc89b7f60ca71e66"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1241,
+        1241,
+        1241,
+        2140
+      ]
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\52ba8ae4aa0be0be3a89\\attempt_0001",
+      "result_sha256": "32aa06ab80f92cd7bcfdaca62d820b3f7fd24339fb140f934768a3d5dd5e3a66",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 10070,
+        "output_tokens": 1376,
+        "total_tokens": 11446
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "e2293ceb4ad65508b16598ea6de0bd6e84ec77793077233b9fea1f6ae317cac5",
+        "A1": "6c31f0daf679cabc6b7b5f6814d75355ae4e2974cc940f8b401e96a3a005d81f",
+        "A2": "04cad848c13bd298d5f47b14c03a3408015fd374dd82c87ebc89b7f60ca71e66"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2548,
+        5593,
+        3640
+      ]
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\046227f7cd3b8e7710bd\\attempt_0001",
+      "result_sha256": "4e3991628cf18213511d11bbff73e72ec21483b45437b1b8c3b073064f6e8ae8",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 19160,
+        "output_tokens": 3726,
+        "total_tokens": 22886
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "e2293ceb4ad65508b16598ea6de0bd6e84ec77793077233b9fea1f6ae317cac5",
+        "A1": "6c31f0daf679cabc6b7b5f6814d75355ae4e2974cc940f8b401e96a3a005d81f",
+        "A2": "04cad848c13bd298d5f47b14c03a3408015fd374dd82c87ebc89b7f60ca71e66"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2414,
+        2414,
+        2414,
+        3348,
+        3348,
+        3348,
+        4589
+      ]
+    },
+    {
+      "task_id": "mbpp/train/607",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 6,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\45596b2579bc4db69ee2\\attempt_0001",
+      "result_sha256": "93a081d1ff6720dfd72ce0408f69bf16a31c61fc3f105cda7f6fb1e37b9474f3",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "unresolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 14391,
+        "output_tokens": 2777,
+        "total_tokens": 17168
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "dd684db1091a9320821e5a54836e0d0936dc08dd94119646d30a523f3475f2f3",
+        "A1": "741176d0c7119c67015872d21843accd198db344a6592e66bd0f98cf5e9ff366",
+        "A2": "be59928a35f213f85b39f6daf5e7027a851f0e4cd3c2bb9d3adb77fef457aa75"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1253,
+        1253,
+        1253,
+        3074,
+        6236,
+        4196
+      ]
+    },
+    {
+      "task_id": "mbpp/train/607",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\30afde55b12666756565\\attempt_0001",
+      "result_sha256": "cd3f73692ad4688887399dd313b571967aac7700101541d2ce9a76c6c2c8ff74",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 2207,
+        "output_tokens": 135,
+        "total_tokens": 2342
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "dd684db1091a9320821e5a54836e0d0936dc08dd94119646d30a523f3475f2f3",
+        "A1": "741176d0c7119c67015872d21843accd198db344a6592e66bd0f98cf5e9ff366",
+        "A2": "be59928a35f213f85b39f6daf5e7027a851f0e4cd3c2bb9d3adb77fef457aa75"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2706
+      ]
+    },
+    {
+      "task_id": "mbpp/train/607",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\65de97ea2cf331b7b422\\attempt_0001",
+      "result_sha256": "fdacc9ee33da8b285b19ae0e240ff31e00eb945df11dfe7a29deaab1cc4189e6",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 25228,
+        "output_tokens": 5792,
+        "total_tokens": 31020
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "dd684db1091a9320821e5a54836e0d0936dc08dd94119646d30a523f3475f2f3",
+        "A1": "741176d0c7119c67015872d21843accd198db344a6592e66bd0f98cf5e9ff366",
+        "A2": "be59928a35f213f85b39f6daf5e7027a851f0e4cd3c2bb9d3adb77fef457aa75"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2936,
+        2936,
+        2936,
+        4430,
+        4430,
+        4430,
+        6188
+      ]
+    },
+    {
+      "task_id": "mbpp/train/756",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 6,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\e2056360e26bba3eb4e6\\attempt_0001",
+      "result_sha256": "dc352f14a019cbff7e28ee83ae31a09e4afd601f9337bc3b18d4b3556737a366",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 12721,
+        "output_tokens": 2150,
+        "total_tokens": 14871
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "7a6b45fff74299cf65c8ca9642b1f2d33de5c564fdaef284a5151311db6cd531",
+        "A1": "498fc7e054896436f6cfb809cb46e1256088bb25fe95ba733edcaa602682dbe9",
+        "A2": "bf222b070c5299092b47bffd2889e977b73669d26b969e75af1f9d31bc54ecfa"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1265,
+        1265,
+        1265,
+        2580,
+        5565,
+        3547
+      ]
+    },
+    {
+      "task_id": "mbpp/train/756",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\9dec44d84e4c06cb8bd3\\attempt_0001",
+      "result_sha256": "4a720765898e2294c6447aed019e12552a8f5ca190c9debbdabf514ab5fe7e58",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 20325,
+        "output_tokens": 4152,
+        "total_tokens": 24477
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "7a6b45fff74299cf65c8ca9642b1f2d33de5c564fdaef284a5151311db6cd531",
+        "A1": "498fc7e054896436f6cfb809cb46e1256088bb25fe95ba733edcaa602682dbe9",
+        "A2": "bf222b070c5299092b47bffd2889e977b73669d26b969e75af1f9d31bc54ecfa"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2532,
+        2532,
+        2532,
+        3577,
+        3577,
+        3577,
+        4890
+      ]
+    },
+    {
+      "task_id": "mbpp/train/756",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\c6c0131503132b2057ee\\attempt_0001",
+      "result_sha256": "97c1989ccc28bec6f6bc52e7c385deed65fe85ad2cfeda79c9c13e1079908b57",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 1819,
+        "output_tokens": 138,
+        "total_tokens": 1957
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "7a6b45fff74299cf65c8ca9642b1f2d33de5c564fdaef284a5151311db6cd531",
+        "A1": "498fc7e054896436f6cfb809cb46e1256088bb25fe95ba733edcaa602682dbe9",
+        "A2": "bf222b070c5299092b47bffd2889e977b73669d26b969e75af1f9d31bc54ecfa"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2296
+      ]
+    },
+    {
+      "task_id": "mbpp/train/763",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 6,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\65f89fe8bb79ee80bc2c\\attempt_0001",
+      "result_sha256": "d1aa41fd5ddc6303b22be5b1de91415fdfea369e332a91ad5d447606e4722b27",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "unresolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 15455,
+        "output_tokens": 3361,
+        "total_tokens": 18816
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "ffe68a2921edd278278d6ef10c76e5c5da66b73defda6ed693290670236496dc",
+        "A1": "7aec3b9acf36f835c1b59ff037ef82d848846c83f51a9a2c952f66e6a851225f",
+        "A2": "80ffdbc9c7ba15c7ce35dcd59f1085ff964e95dcb87c01709a2aabd6c1f7e3e3"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1257,
+        1257,
+        1257,
+        3082,
+        6654,
+        4886
+      ]
+    },
+    {
+      "task_id": "mbpp/train/763",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\dff77bdf02c96210c2c7\\attempt_0001",
+      "result_sha256": "f76672a56b0ad09a158933ff60b45386dcfe1b88fa9f71f98ea701ca306ad0c2",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 2066,
+        "output_tokens": 196,
+        "total_tokens": 2262
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "ffe68a2921edd278278d6ef10c76e5c5da66b73defda6ed693290670236496dc",
+        "A1": "7aec3b9acf36f835c1b59ff037ef82d848846c83f51a9a2c952f66e6a851225f",
+        "A2": "80ffdbc9c7ba15c7ce35dcd59f1085ff964e95dcb87c01709a2aabd6c1f7e3e3"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2566
+      ]
+    },
+    {
+      "task_id": "mbpp/train/763",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\8b58302c4c27af3ba284\\attempt_0001",
+      "result_sha256": "f6b1e1804ee9cf06c0907511bbf0ecb877323a2c172ad78a8ac4f98588deb145",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 22463,
+        "output_tokens": 4654,
+        "total_tokens": 27117
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "ffe68a2921edd278278d6ef10c76e5c5da66b73defda6ed693290670236496dc",
+        "A1": "7aec3b9acf36f835c1b59ff037ef82d848846c83f51a9a2c952f66e6a851225f",
+        "A2": "80ffdbc9c7ba15c7ce35dcd59f1085ff964e95dcb87c01709a2aabd6c1f7e3e3"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2860,
+        2860,
+        2860,
+        3804,
+        3804,
+        3804,
+        5393
+      ]
+    },
+    {
+      "task_id": "mbpp/train/799",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 4,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\97a681895a75fae7c8ec\\attempt_0001",
+      "result_sha256": "d4dab5cc4a0ced07ede680611ec481b5e830c79908f6647992d9178606b776cc",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 4603,
+        "output_tokens": 1123,
+        "total_tokens": 5726
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "10458521c70d30447763ca7408688217e799c08954f4c5d7688a778b6ad1d0df",
+        "A1": "4c8142abd95d4fe9a519d875c3ae01e7a39d43805a4f80fc2198d43570da501b",
+        "A2": "f513c05195657d3549844950b12fd4e898107b787dc4d859c78a5fbfae28f590"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1247,
+        1247,
+        1247,
+        2324
+      ]
+    },
+    {
+      "task_id": "mbpp/train/799",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\4fd8f883fe49b9dc9a18\\attempt_0001",
+      "result_sha256": "57caebad46154dfdf9ddf2e22d4a82ba1f607d067885f771ccb1329d768988d1",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 20593,
+        "output_tokens": 4160,
+        "total_tokens": 24753
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "10458521c70d30447763ca7408688217e799c08954f4c5d7688a778b6ad1d0df",
+        "A1": "4c8142abd95d4fe9a519d875c3ae01e7a39d43805a4f80fc2198d43570da501b",
+        "A2": "f513c05195657d3549844950b12fd4e898107b787dc4d859c78a5fbfae28f590"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2578,
+        2578,
+        2578,
+        3603,
+        3603,
+        3603,
+        4826
+      ]
+    },
+    {
+      "task_id": "mbpp/train/799",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\5451fb676d42abf44852\\attempt_0001",
+      "result_sha256": "abf966f51c63d8a11a48712fe9cdaf766cfd96a2620f6d14480336daa00517d0",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 10666,
+        "output_tokens": 1371,
+        "total_tokens": 12037
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "10458521c70d30447763ca7408688217e799c08954f4c5d7688a778b6ad1d0df",
+        "A1": "4c8142abd95d4fe9a519d875c3ae01e7a39d43805a4f80fc2198d43570da501b",
+        "A2": "f513c05195657d3549844950b12fd4e898107b787dc4d859c78a5fbfae28f590"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2699,
+        5902,
+        3808
+      ]
+    },
+    {
+      "task_id": "mbpp/train/620",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 4,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\5cca4a826c525190b6d3\\attempt_0001",
+      "result_sha256": "cedb2483b38d0a454de6dfee6cd7fda232ec935378ccd2fa740f2a7f289cf539",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 4995,
+        "output_tokens": 1537,
+        "total_tokens": 6532
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "2d6c1b14ef724b615e4f0bdbc9966bfbad82b02b7beda07f75c09c839264e264",
+        "A1": "a814db07b8c0f19e83649dde860c5021d73f33de44375140caae8f733c7a2410",
+        "A2": "a4d5d84e4c456c1a908d1e408c1f8e63bf4d258a2200aa7755e33eb8f8b0c0e3"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1246,
+        1246,
+        1246,
+        2745
+      ]
+    },
+    {
+      "task_id": "mbpp/train/620",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\8b21610506998e0768ca\\attempt_0001",
+      "result_sha256": "55b4bd325015d8489a6c93314a3619af495661c7a7697748c70b3fcd48d867b5",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 12043,
+        "output_tokens": 1609,
+        "total_tokens": 13652
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "2d6c1b14ef724b615e4f0bdbc9966bfbad82b02b7beda07f75c09c839264e264",
+        "A1": "a814db07b8c0f19e83649dde860c5021d73f33de44375140caae8f733c7a2410",
+        "A2": "a4d5d84e4c456c1a908d1e408c1f8e63bf4d258a2200aa7755e33eb8f8b0c0e3"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3248,
+        6391,
+        4298
+      ]
+    },
+    {
+      "task_id": "mbpp/train/620",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\7613e363ff90823b9be6\\attempt_0001",
+      "result_sha256": "1c4bbf01a2889680176689b511355bd5a3183e79abebe8f2df513d7525d7e531",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 27366,
+        "output_tokens": 6383,
+        "total_tokens": 33749
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "2d6c1b14ef724b615e4f0bdbc9966bfbad82b02b7beda07f75c09c839264e264",
+        "A1": "a814db07b8c0f19e83649dde860c5021d73f33de44375140caae8f733c7a2410",
+        "A2": "a4d5d84e4c456c1a908d1e408c1f8e63bf4d258a2200aa7755e33eb8f8b0c0e3"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        3129,
+        3129,
+        3129,
+        4727,
+        4727,
+        4727,
+        6841
+      ]
+    },
+    {
+      "task_id": "mbpp/train/730",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 6,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\2554c7ad14e845393bab\\attempt_0001",
+      "result_sha256": "16875c21955e4c64f9e159efebf55d66259dd257426118648194a147f4d3c43f",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 11820,
+        "output_tokens": 1822,
+        "total_tokens": 13642
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "ccca08bae6b155ce437cdf3954d06853b6893f9c2fc77806f811e899c913c490",
+        "A1": "31be8449bd2f1d5d8af70d920a7725e438cdf370392dcfeb022b4e17934b5ee8",
+        "A2": "a936f91d70d0fb346786f3d84a1595eb139ea7121265e45c5971ac05a5039107"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1238,
+        1238,
+        1238,
+        2410,
+        5226,
+        3175
+      ]
+    },
+    {
+      "task_id": "mbpp/train/730",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\0147b410aded254e7d24\\attempt_0001",
+      "result_sha256": "96de30c1b764f13022777dc70f8c3ae0d7d1d2fd9e2a40c2226ddad806f9b4e3",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 1645,
+        "output_tokens": 110,
+        "total_tokens": 1755
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "ccca08bae6b155ce437cdf3954d06853b6893f9c2fc77806f811e899c913c490",
+        "A1": "31be8449bd2f1d5d8af70d920a7725e438cdf370392dcfeb022b4e17934b5ee8",
+        "A2": "a936f91d70d0fb346786f3d84a1595eb139ea7121265e45c5971ac05a5039107"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2110
+      ]
+    },
+    {
+      "task_id": "mbpp/train/730",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\fc2e7e1a9e12ed7a72cd\\attempt_0001",
+      "result_sha256": "b14273e73b42ed1e533b69403e953ca7e31eb4fdf268e35e98c151de3c6c7a21",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 18975,
+        "output_tokens": 3644,
+        "total_tokens": 22619
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "ccca08bae6b155ce437cdf3954d06853b6893f9c2fc77806f811e899c913c490",
+        "A1": "31be8449bd2f1d5d8af70d920a7725e438cdf370392dcfeb022b4e17934b5ee8",
+        "A2": "a936f91d70d0fb346786f3d84a1595eb139ea7121265e45c5971ac05a5039107"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2438,
+        2438,
+        2438,
+        3325,
+        3325,
+        3325,
+        4441
+      ]
+    },
+    {
+      "task_id": "mbpp/train/745",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 10,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\70d7d64951c889f2194b\\attempt_0001",
+      "result_sha256": "fb7e5c91be643f391f28fd953e4f929afe1c63e9123dd64f5a192c318cdb028a",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 24446,
+        "output_tokens": 5520,
+        "total_tokens": 29966
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "4eacdc668f4491edd3acdf0a20a5e5afd7489b03ddb150357c9cb5900912084c",
+        "A1": "e50a02c3f8ead21cce8c42818234e81261bde9ddbdf29c8bd352d66a88fbfaf3",
+        "A2": "4374a24d7af9308e02b21346ff17d5180da6b408d2b4dc315bc024f0375a4bda"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1273,
+        1273,
+        1273,
+        2690,
+        2690,
+        2690,
+        3680,
+        3680,
+        3680,
+        5306
+      ]
+    },
+    {
+      "task_id": "mbpp/train/745",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 3,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\4f3e3cf7ea2b6855f7c6\\attempt_0001",
+      "result_sha256": "2b2181128577ee490292290aa91371aaef7c1f4d825dede326e37e2ce04766c3",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 10395,
+        "output_tokens": 1321,
+        "total_tokens": 11716
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "4eacdc668f4491edd3acdf0a20a5e5afd7489b03ddb150357c9cb5900912084c",
+        "A1": "e50a02c3f8ead21cce8c42818234e81261bde9ddbdf29c8bd352d66a88fbfaf3",
+        "A2": "4374a24d7af9308e02b21346ff17d5180da6b408d2b4dc315bc024f0375a4bda"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2565,
+        5814,
+        3746
+      ]
+    },
+    {
+      "task_id": "mbpp/train/745",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\ef93fdd23139fb3340d2\\attempt_0001",
+      "result_sha256": "8d8afc0f6c1983809b1b3939202f566ef562b461a79af942a68012727f45ca09",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 1960,
+        "output_tokens": 133,
+        "total_tokens": 2093
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "4eacdc668f4491edd3acdf0a20a5e5afd7489b03ddb150357c9cb5900912084c",
+        "A1": "e50a02c3f8ead21cce8c42818234e81261bde9ddbdf29c8bd352d66a88fbfaf3",
+        "A2": "4374a24d7af9308e02b21346ff17d5180da6b408d2b4dc315bc024f0375a4bda"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2437
+      ]
+    },
+    {
+      "task_id": "mbpp/train/732",
+      "system": "coreta",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 6,
+      "format_repairs": 0,
+      "http_attempts": 6,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\c40342a4f7b448a99add\\attempt_0001",
+      "result_sha256": "a63fbf5dce0858d491dc2d4f87b50f785727cc599b818019689762c4f541e1d2",
+      "actions": {
+        "FINISH": 1
+      },
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {
+        "accepted": 1
+      },
+      "application_outcomes_self_reported": {
+        "resolved": 1
+      },
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 12626,
+        "output_tokens": 2036,
+        "total_tokens": 14662
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "916182db38dddab20d2096174138733125532447eb9bc6f2d64282620d058f0d",
+        "A1": "3c1887bca9a73ce4504f186523124ad355946ba1ffa612b4f5cfb651e86beebe",
+        "A2": "dccfc1e51df58741d928100b8eabda98ebe02aec157cd4881f6db38ac2c42015"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        1242,
+        1242,
+        1242,
+        2565,
+        5562,
+        3504
+      ]
+    },
+    {
+      "task_id": "mbpp/train/732",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 4,
+      "format_repairs": 0,
+      "http_attempts": 1,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\04cbce047850f130e40d\\attempt_0001",
+      "result_sha256": "e0b3fc4d2ebdba2d13240aab91ba5a5437277aa9108883f2bb406328493c5aa7",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 1876,
+        "output_tokens": 71,
+        "total_tokens": 1947
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "916182db38dddab20d2096174138733125532447eb9bc6f2d64282620d058f0d",
+        "A1": "3c1887bca9a73ce4504f186523124ad355946ba1ffa612b4f5cfb651e86beebe",
+        "A2": "dccfc1e51df58741d928100b8eabda98ebe02aec157cd4881f6db38ac2c42015"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2353
+      ]
+    },
+    {
+      "task_id": "mbpp/train/732",
+      "system": "static_debate",
+      "seed": 17,
+      "status": "completed",
+      "normal_calls": 10,
+      "format_repairs": 0,
+      "http_attempts": 7,
+      "errors": [],
+      "family": "mbpp",
+      "directory": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\development-pilot-20261019\\76da8b264a2362d26f30\\attempt_0001",
+      "result_sha256": "a9755080e8c8485c161b477b906c9fab59a9609e0d71cc0b096db36bd9e9df9d",
+      "actions": {},
+      "contributions": {},
+      "request_events": 0,
+      "application_dispositions": {},
+      "application_outcomes_self_reported": {},
+      "context_pruning_events": 0,
+      "usage": {
+        "input_tokens": 20650,
+        "output_tokens": 3995,
+        "total_tokens": 24645
+      },
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "initial_draft_hashes": {
+        "A0": "916182db38dddab20d2096174138733125532447eb9bc6f2d64282620d058f0d",
+        "A1": "3c1887bca9a73ce4504f186523124ad355946ba1ffa612b4f5cfb651e86beebe",
+        "A2": "dccfc1e51df58741d928100b8eabda98ebe02aec157cd4881f6db38ac2c42015"
+      },
+      "transport_errors": 0,
+      "incomplete_responses": 0,
+      "input_count_estimates": [
+        2607,
+        2607,
+        2607,
+        3581,
+        3581,
+        3581,
+        4934
+      ]
+    }
+  ]
+}

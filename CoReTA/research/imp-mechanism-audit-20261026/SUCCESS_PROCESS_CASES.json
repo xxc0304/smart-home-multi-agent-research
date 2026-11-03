@@ -1,0 +1,233 @@
+{
+  "cases": [
+    {
+      "label": "restatement_loss",
+      "run": "runs/imp-adaptation-live-20261026-r1",
+      "outputs": [
+        {
+          "task": "033",
+          "repeat": 1,
+          "method": "shared",
+          "round": 0,
+          "receiver": "A3",
+          "slot": 19,
+          "status": "readable",
+          "answer": {
+            "choice": "option_1",
+            "reasoning": "Lab Gemini has the strongest evidence for this exact need: record experience with similar emergency samples plus state-of-the-art, continuously monitored cooling for a temperature-sensitive sample. Atlas shows reliability but no cold-chain/emergency throughput evidence; Nova is newly renovated but has little emergency experience and a recent outage. Gemini best supports the six-hour processing window.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "033",
+          "repeat": 1,
+          "method": "standard",
+          "round": 1,
+          "receiver": "A2",
+          "slot": 21,
+          "status": "readable",
+          "answer": {
+            "choice": "option_1",
+            "reasoning": "Gemini has documented record experience with similar emergency samples and state-of-the-art monitored cooling, directly matching the temperature-sensitive six-hour need. Atlas is compromised by freezer maintenance and insufficient backup power (PRIVATE.A2), and A1's route-closure claim is unsupported. Nova lacks emergency-transfer experience. Gemini remains the strongest choice.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "033",
+          "repeat": 1,
+          "method": "imp",
+          "round": 1,
+          "receiver": "A2",
+          "slot": 24,
+          "status": "readable",
+          "answer": {
+            "choice": "option_3",
+            "reasoning": "Gemini (option_1) is undermined by the highway closure blocking non-emergency transport (PRIVATE.A1), despite strong cooling and experience. Atlas (option_2) is compromised by freezer maintenance and insufficient backup power (PRIVATE.A2). Nova (option_3) had a power outage but the generator fully restored functionality, and all equipment and staff are currently available for rapid intake (PRIVATE.A3), making it the viable choice within the six-hour window.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        }
+      ]
+    },
+    {
+      "label": "opinion_influence_030",
+      "run": "runs/imp-adaptation-live-20261026-r1",
+      "outputs": [
+        {
+          "task": "030",
+          "repeat": 1,
+          "method": "standard",
+          "round": 1,
+          "receiver": "A1",
+          "slot": 7,
+          "status": "readable",
+          "answer": {
+            "choice": "option_2",
+            "reasoning": "Peak is blocked by regulatory investigation and bank hold, making its 3-day transfer claim unreliable. Northstar has monthly IC (next in three weeks) and late-pullout legal risk. Skylake's only blocker—requiring a reputable co-investor—is reportedly satisfied by a finalized angel-group partnership (PRIVATE.A2), leaving it able to close without unresolved conditions or hidden risks. A2's update resolves the prior ambiguity, so Skylake is the reliable lead.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "030",
+          "repeat": 1,
+          "method": "standard",
+          "round": 1,
+          "receiver": "A3",
+          "slot": 9,
+          "status": "readable",
+          "answer": {
+            "choice": "option_1",
+            "reasoning": "A1's claims about Peak's regulatory investigation and bank hold are unsupported by the provided packet, so they should not be credited. A2's claimed PRIVATE.A2 angel-group partnership is also absent from the packet. On available facts, Peak is the only firm whose stated ability (3-day transfer if terms are met) can meet the timeline; Skylake has an unresolved co-investor condition, and Northstar's monthly committee (next in three weeks) plus late-pullout risk makes it unreliable. Peak's 'terms are met' condition is normal, not a hidden disqualifier.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "030",
+          "repeat": 1,
+          "method": "standard",
+          "round": 2,
+          "receiver": "A1",
+          "slot": 10,
+          "status": "readable",
+          "answer": {
+            "choice": "option_1",
+            "reasoning": "A1's regulatory/bank-hold claim is in the packet as information_available, so it is data to weigh, not necessarily verified fact; A3 correctly notes A2's PRIVATE.A2 is absent from the packet and cannot be credited. On available facts, Skylake's co-investor requirement is unresolved, Northstar has late-pullout and committee-timing risk, while Peak's stated 3-day transfer is the only timeline-viable path. Peak's 'if terms are met' is a normal condition, not a hidden disqualifier.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "030",
+          "repeat": 1,
+          "method": "imp",
+          "round": 2,
+          "receiver": "A1",
+          "slot": 13,
+          "status": "readable",
+          "answer": {
+            "choice": "option_2",
+            "reasoning": "Peak Capital cannot close: regulatory investigation, bank execution on hold, no new investments processed. Northstar cannot close within 12 hours: investment committee meets monthly, next in three weeks, and has late-pullout risk. Skylake's co-investor condition is satisfied by its finalized angel-group partnership, so it can commit funds and reliably close on time. Skylake Ventures is the only viable lead.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        }
+      ]
+    },
+    {
+      "label": "opinion_influence_007",
+      "run": "runs/imp-confirmation-live-20261026-r1",
+      "outputs": [
+        {
+          "task": "007",
+          "repeat": 2,
+          "method": "shared",
+          "round": 0,
+          "receiver": "A2",
+          "slot": 39,
+          "status": "readable",
+          "answer": {
+            "choice": "option_2",
+            "reasoning": "Franklin has explicit N on (i) and (j), Cape has N on (g), (b), (f), and (h). Starlight's only explicit N's are (a) and (c); its computer criteria shown are positive (e, h), and no negative is shown for (d), (f), (g), (i), or (j). Thus Starlight is the only proposal without a clear disqualifying failure on the stated RFP criteria, making it the best-supported choice despite incomplete checklist data.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "007",
+          "repeat": 2,
+          "method": "standard",
+          "round": 1,
+          "receiver": "A1",
+          "slot": 42,
+          "status": "readable",
+          "answer": {
+            "choice": "option_3",
+            "reasoning": "Franklin has explicit failures on (i) and (j), and Starlight fails (a) and (c). Cape's known failures are (b), (f), and (g), but it satisfies (a), (d), (e), (i), and (j), including past performance and manufacturing capacity. Given one best choice exists, Cape's profile is strongest and consistent with the prior answer; A2/A3's claims about Cape failing (h) and Starlight satisfying (f)/(i) are unsupported by the provided checklist data.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "007",
+          "repeat": 2,
+          "method": "standard",
+          "round": 1,
+          "receiver": "A2",
+          "slot": 43,
+          "status": "readable",
+          "answer": {
+            "choice": "option_2",
+            "reasoning": "Starlight has only two explicit failures (a, c), both air-vehicle criteria. Franklin fails (i) past performance and (j) manufacturing capacity, plus (a) and (c). Cape fails (g), (b), (f), and (h), including cost. Starlight's known computer criteria are positive, and no negative is shown for d, f, g, i, or j. With the fewest explicit disqualifying failures and key positive criteria, Starlight remains the best-supported choice.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "007",
+          "repeat": 2,
+          "method": "imp",
+          "round": 2,
+          "receiver": "A1",
+          "slot": 50,
+          "status": "readable",
+          "answer": {
+            "choice": "option_2",
+            "reasoning": "Franklin fails a, b, c, i, j; Cape fails b, f, g, h. Starlight fails only a and c based on available data, satisfying b, d, e, f, g, h, i, j. Starlight best satisfies the RFP criteria, so option_2 is the correct choice.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "007",
+          "repeat": 2,
+          "method": "imp",
+          "round": 2,
+          "receiver": "A2",
+          "slot": 51,
+          "status": "readable",
+          "answer": {
+            "choice": "option_2",
+            "reasoning": "Franklin fails (a), (b), (c), (i), (j). Cape fails (b), (f), (g), (h). Starlight's explicit N's are only (a) and (c), while messages add Y's on (b), (d), (e), (f), (g), (h), (i), (j). Starlight satisfies the most criteria and has the fewest disqualifications, making it the best-supported choice.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "007",
+          "repeat": 2,
+          "method": "standard",
+          "round": 2,
+          "receiver": "A1",
+          "slot": 54,
+          "status": "readable",
+          "answer": {
+            "choice": "option_3",
+            "reasoning": "The packet data shows Cape explicitly satisfies (a),(d),(e),(i),(j), with failures only on (b),(f),(g); Starlight fails (a),(c) and lacks data on most computer/cost/experience criteria; Franklin fails (b),(c),(i),(j). Other participants claim Cape fails (h) and Starlight satisfies (f),(i), but these are unsupported by the provided checklist. Given one best choice exists, Cape's profile—including positive past performance and manufacturing capacity—is strongest, so I retain option_3.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        },
+        {
+          "task": "007",
+          "repeat": 2,
+          "method": "standard",
+          "round": 2,
+          "receiver": "A2",
+          "slot": 55,
+          "status": "readable",
+          "answer": {
+            "choice": "option_3",
+            "reasoning": "Franklin fails (i) past performance and (j) manufacturing capacity, both critical and not just vehicle specs. Starlight fails (a) and (c) with several criteria unknown. Cape satisfies (a),(c),(j) and key computer criteria, with failures (b),(f),(g),(h); A1 notes Cape satisfies (d),(e),(i). Though A3/A4 prefer Starlight, Franklin's failures on (i)/(j) and the RFP's emphasis on those make Cape's profile more complete. However, Cape fails (h) cost and (f) weight, central criteria. Starlight's unknowns leave genuine gaps. Given one best choice and coordination value, I follow A1's stronger-supported reading: Cape.",
+            "annotation_issues": [],
+            "extra_annotations": {}
+          }
+        }
+      ]
+    }
+  ],
+  "causal_limit": "Examples support mechanism hypotheses; no factorial isolation of raw-evidence restoration, duplication and opinion filtering"
+}

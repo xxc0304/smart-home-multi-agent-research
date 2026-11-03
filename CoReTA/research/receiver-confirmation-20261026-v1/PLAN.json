@@ -1,0 +1,51 @@
+{
+  "status": "source_packets_and_design_only_not_live_ready",
+  "tasks": [
+    {
+      "id": "hb-receiver-confirm-030",
+      "kind": "public_benchmark_new_to_recorded_requests",
+      "members": 3,
+      "setup_calls": 4,
+      "paired_calls": 12,
+      "initial_draft": "one new public-only model draft, same for both arms and all receivers",
+      "contributions": "three new independent local contributions, one per native member; originals disclosed by host equally"
+    },
+    {
+      "id": "hb-receiver-confirm-033",
+      "kind": "public_benchmark_new_to_recorded_requests",
+      "members": 3,
+      "setup_calls": 4,
+      "paired_calls": 12,
+      "initial_draft": "one new public-only model draft, same for both arms and all receivers",
+      "contributions": "three new independent local contributions, one per native member; originals disclosed by host equally"
+    },
+    {
+      "id": "control-correct-with-wrong-report",
+      "kind": "authored_control_not_benchmark_score",
+      "members": 3,
+      "setup_calls": 0,
+      "paired_calls": 12,
+      "initial_draft": "fixed authored control",
+      "contributions": "fixed authored source carriers"
+    },
+    {
+      "id": "control-genuinely-underdetermined",
+      "kind": "authored_control_not_benchmark_score",
+      "members": 3,
+      "setup_calls": 0,
+      "paired_calls": 12,
+      "initial_draft": "fixed authored control",
+      "contributions": "fixed authored source carriers"
+    }
+  ],
+  "proposed_max_requests": 56,
+  "formation_calls": 8,
+  "paired_calls": 48,
+  "output_cap_per_request": 1536,
+  "proposed_total_output_cap": 86016,
+  "proposed_total_input_cap": 786432,
+  "repeats_per_condition": 1,
+  "receiver_policy": "all native members; three in each chosen task, no fictitious fourth expert",
+  "scientific_scope": "new benchmark-instance application confirmation plus separately scored synthetic controls",
+  "no_auto_expand": true
+}

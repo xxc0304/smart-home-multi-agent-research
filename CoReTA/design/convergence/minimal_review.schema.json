@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoReTA minimal review draft; runtime must bind handles and issue keys from packet",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "issue_reviews": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/review"
+      }
+    },
+    "new_findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "related_issue_handle": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "check": {
+            "$ref": "#/$defs/check"
+          }
+        },
+        "required": [
+          "related_issue_handle",
+          "check"
+        ]
+      }
+    }
+  },
+  "required": [
+    "issue_reviews",
+    "new_findings"
+  ],
+  "$defs": {
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "original_case_reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "case_handle": {
+                "type": "string"
+              },
+              "observed_value": {
+                "type": "string"
+              },
+              "original_assessment": {
+                "enum": [
+                  "supported",
+                  "refuted",
+                  "uncertain"
+                ]
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "case_handle",
+              "observed_value",
+              "original_assessment",
+              "reason"
+            ]
+          }
+        },
+        "current_checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/check"
+          }
+        },
+        "resolution": {
+          "enum": [
+            "same_object_repaired",
+            "replaced",
+            "rebutted",
+            "unresolved"
+          ]
+        },
+        "dependency": {
+          "enum": [
+            "still_used",
+            "removed",
+            "not_applicable",
+            "unknown"
+          ]
+        },
+        "verdict": {
+          "enum": [
+            "resolved",
+            "unresolved",
+            "defect"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "original_case_reviews",
+        "current_checks",
+        "resolution",
+        "dependency",
+        "verdict",
+        "reason"
+      ]
+    },
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_handle": {
+          "type": "string"
+        },
+        "input": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "string"
+        },
+        "expected_value": {
+          "type": "string"
+        },
+        "observed_value": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "task_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "comparison_kind": {
+          "enum": [
+            "exact_equality",
+            "model_judged"
+          ]
+        },
+        "outcome": {
+          "enum": [
+            "match",
+            "counterexample",
+            "uncertain"
+          ]
+        }
+      },
+      "required": [
+        "target_handle",
+        "input",
+        "quantity",
+        "expected_value",
+        "observed_value",
+        "reason",
+        "task_refs",
+        "comparison_kind",
+        "outcome"
+      ]
+    }
+  }
+}

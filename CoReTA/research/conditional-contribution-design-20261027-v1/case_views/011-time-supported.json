@@ -1,0 +1,420 @@
+{
+  "common": {
+    "task": {
+      "task_id": "candidate-screening-011",
+      "scenario": "You are on a committee responsible for an emergency scientific conference that suddenly lost its main venue due to a water pipe burst. You must relocate all attendees within the next two hours—if you can't agree, the event will be canceled. Three possible venues are nearby: City Library, Community Center, and School Gym. Each venue has different facilities and issues. The weather is turning hot and humid, and power outages have recently impacted the area. Your job is to pick the only venue that will safely accommodate all attendees for the full day of events without significant risks.",
+      "shared_information": [
+        "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power.",
+        "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave.",
+        "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet.",
+        "Temperatures are expected to exceed 37°C (99°F) in the afternoon. Organizers worry about heat stress if backup power fails."
+      ],
+      "choices": [
+        {
+          "id": "option_1",
+          "text": "School Gym"
+        },
+        {
+          "id": "option_2",
+          "text": "Community Center"
+        },
+        {
+          "id": "option_3",
+          "text": "City Library"
+        }
+      ],
+      "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+    },
+    "receiver": "A1",
+    "evidence": [
+      {
+        "id": "E1",
+        "access": "visible_original",
+        "owner": "public",
+        "source_ref": "TASK",
+        "text": "You are on a committee responsible for an emergency scientific conference that suddenly lost its main venue due to a water pipe burst. You must relocate all attendees within the next two hours—if you can't agree, the event will be canceled. Three possible venues are nearby: City Library, Community Center, and School Gym. Each venue has different facilities and issues. The weather is turning hot and humid, and power outages have recently impacted the area. Your job is to pick the only venue that will safely accommodate all attendees for the full day of events without significant risks.",
+        "pointer": [
+          "public_sources",
+          0,
+          "content"
+        ]
+      },
+      {
+        "id": "E2",
+        "access": "visible_original",
+        "owner": "public",
+        "source_ref": "PUBLIC.1",
+        "text": "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power.",
+        "pointer": [
+          "public_sources",
+          1,
+          "content"
+        ]
+      },
+      {
+        "id": "E3",
+        "access": "visible_original",
+        "owner": "public",
+        "source_ref": "PUBLIC.2",
+        "text": "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave.",
+        "pointer": [
+          "public_sources",
+          2,
+          "content"
+        ]
+      },
+      {
+        "id": "E4",
+        "access": "visible_original",
+        "owner": "public",
+        "source_ref": "PUBLIC.3",
+        "text": "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet.",
+        "pointer": [
+          "public_sources",
+          3,
+          "content"
+        ]
+      },
+      {
+        "id": "E5",
+        "access": "visible_original",
+        "owner": "public",
+        "source_ref": "PUBLIC.4",
+        "text": "Temperatures are expected to exceed 37°C (99°F) in the afternoon. Organizers worry about heat stress if backup power fails.",
+        "pointer": [
+          "public_sources",
+          4,
+          "content"
+        ]
+      },
+      {
+        "id": "E6",
+        "access": "visible_original",
+        "owner": "A1",
+        "source_ref": "S01",
+        "text": "Library staff admit privately that their backup generator only has enough fuel for 2 hours and cannot be refueled due to a citywide gasoline shortage.",
+        "pointer": [
+          "own_sources",
+          0,
+          "content"
+        ]
+      },
+      {
+        "id": "E7",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A1",
+        "source_ref": "PUBLIC.1",
+        "text": "claims to be ready",
+        "pointer": [
+          "shared_contributions",
+          "A1",
+          "facts",
+          0,
+          "quote"
+        ]
+      },
+      {
+        "id": "E8",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A1",
+        "source_ref": "S01",
+        "text": "backup generator only has enough fuel for 2 hours and cannot be refueled due to a citywide gasoline shortage",
+        "pointer": [
+          "shared_contributions",
+          "A1",
+          "facts",
+          1,
+          "quote"
+        ]
+      },
+      {
+        "id": "E9",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A1",
+        "source_ref": "PUBLIC.2",
+        "text": "staff report it's fully accessible and already evacuated in advance of the heat wave",
+        "pointer": [
+          "shared_contributions",
+          "A1",
+          "facts",
+          2,
+          "quote"
+        ]
+      },
+      {
+        "id": "E10",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A1",
+        "source_ref": "PUBLIC.3",
+        "text": "A city maintenance team is on its way but hasn't arrived yet",
+        "pointer": [
+          "shared_contributions",
+          "A1",
+          "facts",
+          3,
+          "quote"
+        ]
+      },
+      {
+        "id": "E11",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A1",
+        "source_ref": "TASK",
+        "text": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks",
+        "pointer": [
+          "shared_contributions",
+          "A1",
+          "conditions",
+          0,
+          "quote"
+        ]
+      },
+      {
+        "id": "E12",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A1",
+        "source_ref": "TASK",
+        "text": "safely accommodate all attendees for the full day of events",
+        "pointer": [
+          "shared_contributions",
+          "A1",
+          "conditions",
+          1,
+          "quote"
+        ]
+      },
+      {
+        "id": "E13",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A2",
+        "source_ref": "PUBLIC.1",
+        "text": "claims to be ready",
+        "pointer": [
+          "shared_contributions",
+          "A2",
+          "facts",
+          0,
+          "quote"
+        ]
+      },
+      {
+        "id": "E14",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A2",
+        "source_ref": "PUBLIC.1",
+        "text": "it also has a known backup generator for power",
+        "pointer": [
+          "shared_contributions",
+          "A2",
+          "facts",
+          1,
+          "quote"
+        ]
+      },
+      {
+        "id": "E15",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A2",
+        "source_ref": "PUBLIC.2",
+        "text": "the staff report it's fully accessible and already evacuated in advance of the heat wave",
+        "pointer": [
+          "shared_contributions",
+          "A2",
+          "facts",
+          2,
+          "quote"
+        ]
+      },
+      {
+        "id": "E16",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A2",
+        "source_ref": "S02",
+        "text": "at least two working restrooms (with ventilation and water) will be available within an hour",
+        "pointer": [
+          "shared_contributions",
+          "A2",
+          "facts",
+          3,
+          "quote"
+        ]
+      },
+      {
+        "id": "E17",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A2",
+        "source_ref": "PUBLIC.3",
+        "text": "the office says there may be issues with the restrooms",
+        "pointer": [
+          "shared_contributions",
+          "A2",
+          "facts",
+          4,
+          "quote"
+        ]
+      },
+      {
+        "id": "E18",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A2",
+        "source_ref": "TASK",
+        "text": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks",
+        "pointer": [
+          "shared_contributions",
+          "A2",
+          "conditions",
+          0,
+          "quote"
+        ]
+      },
+      {
+        "id": "E19",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A2",
+        "source_ref": "TASK",
+        "text": "safely accommodate all attendees for the full day of events without significant risks",
+        "pointer": [
+          "shared_contributions",
+          "A2",
+          "conditions",
+          2,
+          "quote"
+        ]
+      },
+      {
+        "id": "E20",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A3",
+        "source_ref": "S03",
+        "text": "it's only safe for short visits, not day-long events",
+        "pointer": [
+          "shared_contributions",
+          "A3",
+          "facts",
+          0,
+          "quote"
+        ]
+      },
+      {
+        "id": "E21",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A3",
+        "source_ref": "PUBLIC.3",
+        "text": "A city maintenance team is on its way but hasn't arrived yet",
+        "pointer": [
+          "shared_contributions",
+          "A3",
+          "facts",
+          2,
+          "quote"
+        ]
+      },
+      {
+        "id": "E22",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A3",
+        "source_ref": "PUBLIC.3",
+        "text": "there may be issues with the restrooms",
+        "pointer": [
+          "shared_contributions",
+          "A3",
+          "facts",
+          3,
+          "quote"
+        ]
+      },
+      {
+        "id": "E23",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A3",
+        "source_ref": "PUBLIC.1",
+        "text": "claims to be ready",
+        "pointer": [
+          "shared_contributions",
+          "A3",
+          "facts",
+          4,
+          "quote"
+        ]
+      },
+      {
+        "id": "E24",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A3",
+        "source_ref": "PUBLIC.1",
+        "text": "it also has a known backup generator for power",
+        "pointer": [
+          "shared_contributions",
+          "A3",
+          "facts",
+          5,
+          "quote"
+        ]
+      },
+      {
+        "id": "E25",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A3",
+        "source_ref": "TASK",
+        "text": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks",
+        "pointer": [
+          "shared_contributions",
+          "A3",
+          "conditions",
+          0,
+          "quote"
+        ]
+      },
+      {
+        "id": "E26",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A4",
+        "source_ref": "PUBLIC.3",
+        "text": "A city maintenance team is on its way but hasn't arrived yet.",
+        "pointer": [
+          "shared_contributions",
+          "A4",
+          "facts",
+          0,
+          "quote"
+        ]
+      },
+      {
+        "id": "E27",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A4",
+        "source_ref": "PUBLIC.2",
+        "text": "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave.",
+        "pointer": [
+          "shared_contributions",
+          "A4",
+          "facts",
+          1,
+          "quote"
+        ]
+      },
+      {
+        "id": "E28",
+        "access": "already_shared_quote_not_full_original",
+        "owner": "A4",
+        "source_ref": "PUBLIC.1",
+        "text": "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power.",
+        "pointer": [
+          "shared_contributions",
+          "A4",
+          "facts",
+          2,
+          "quote"
+        ]
+      }
+    ]
+  },
+  "focus": {
+    "id": "P1",
+    "evidence_id": "E16",
+    "statement": "at least two working restrooms (with ventilation and water) will be available within an hour"
+  },
+  "source": "runs/inference-link-prepared-20261027-r3/cases/011-time-supported.json",
+  "source_sha256": "e4e94c8512be9d2cb1b3d70363f4d4b199ecc0c02ead82fe6ffcdd924fc29fa0",
+  "selection": "analyst selected, not autonomous discovery"
+}

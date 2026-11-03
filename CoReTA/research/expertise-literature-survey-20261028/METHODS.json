@@ -1,0 +1,286 @@
+[
+  {
+    "id": "free-mad",
+    "title": "Free-MAD: Consensus-Free Multi-Agent Debate",
+    "authors": [
+      "Yu Cui",
+      "Hang Fu",
+      "Haibin Zhang",
+      "Licheng Wang",
+      "Cong Zuo"
+    ],
+    "year": 2026,
+    "venue": "Findings of ACL 2026",
+    "version": "正式版 2026.findings-acl.1600；另核 arXiv:2509.11035v1 的 G.2",
+    "url": "https://aclanthology.org/2026.findings-acl.1600/",
+    "source_urls": [
+      "https://aclanthology.org/2026.findings-acl.1600.pdf",
+      "https://arxiv.org/html/2509.11035"
+    ],
+    "read_scope": "正式版§4.2–4.4、§5.1、§6.1及附录E；本地预印本§4–6、G.2交叉核对。",
+    "problem": "从众和末轮投票可令初始正确意见丢失；追求一致也增加讨论成本。",
+    "mechanism": "反从众 CoT 提示要求指出同伴和自己的具体错误，说明是否改答，不凭多数、不确定则保留；全轨迹按初始、保持、放弃、新采用答案累积权重，较晚轮次降权；N/C两种讨论模式共享计分。",
+    "findings": "在八个数学、逻辑和知识基准的异质团队中，作者报告优于所比辩论变体并降低所测成本；消融显示计分有效。§6.1同时观察较弱模型在MATH500因反从众而固执、未采用正确推理，部分知识/逻辑任务C模式优于N模式。",
+    "conditions": "Qwen1.5-7B与DeepSeek-V3或Qwen2.5-72B组合，固定启发式权重；不是独立校准的已知领域专家干预。",
+    "limits": "预印本G.2称省略展示单agent对比并称做过验证，不能写成没做；未报告原始专家揭示/隐藏及相对最佳个体的同设定检验，故不能据其结果确认该特定专家问题已解决；也不能据此判其无效。轨迹保持/改答是正确性的启发式。",
+    "gap_kind": [
+      "observed:部分任务过度反从众导致固执",
+      "unvalidated:已知专家条件下的团队利用与强协同"
+    ],
+    "relevance": "最直接反从众方法近邻之一；当前通用错点检查/保留流程已有先例，但不是所有后续具体机制都被覆盖。",
+    "verification": "VERIFIED：正式ACL元数据与PDF；预印本版本差异已区分。"
+  },
+  {
+    "id": "sat",
+    "title": "Self-Organizing Agent Teams Learn to Reason Together",
+    "authors": [
+      "Aneesh Pappu",
+      "Mirac Suzgun",
+      "Yongchan Kwon",
+      "Federico Bianchi",
+      "Batu El",
+      "Mykel J. Kochenderfer",
+      "Hancheng Cao",
+      "James Zou"
+    ],
+    "year": 2026,
+    "venue": "arXiv预印本",
+    "version": "2609.22682v1，2026-09-19",
+    "url": "https://arxiv.org/abs/2609.22682",
+    "source_urls": [
+      "https://arxiv.org/html/2609.22682"
+    ],
+    "read_scope": "§1–5、§6部分、Appendix A部署策略；本地PDF页2–13、18/20重点复核。",
+    "problem": "固定成员的局部尝试可互补，但有用分工未必预先已知；团队能否从协作经验学会可迁移的组织策略并生成个体初始未生成的解。",
+    "mechanism": "离线反思—提议—执行—验证—筛选策略，策略DSL控制角色、阶段、参与者和信息流；冻结最多10项策略库后全部用于新题产生certificate，由一个成员审计选答。底层模型不训练。附录含少数意见挑战、关键主张保留修复与独立复查等学得协议。",
+    "findings": "数学/物理五基准平均最终准确率超过最佳成员、预算匹配linearization和独立答案routing oracle；知识/逻辑三基准的certificate覆盖率高于routing oracle，但最终选择准确率仍低于该oracle。由此区分创造正确解与识别正确解。",
+    "conditions": "两个固定异质团队，分别在15个AIME训练问题与25个GPQA训练问题学习；同库迁移至未见任务，模型选择保留余量，结果非所有任务最优。",
+    "limits": "知识/逻辑选择损失是已观察缺口。demonstrability与收益为跨八基准相关性，作者把提高demonstrability的因果干预留给未来，不能当作已实现方案。固定阵容的策略迁移不是任意新成员泛化保证。",
+    "gap_kind": [
+      "observed:正确certificate存在但最终选错",
+      "unvalidated:通过干预提升demonstrability产生收益",
+      "unvalidated:任意新成员/高度饱和任务泛化"
+    ],
+    "relevance": "重要正面证据，说明组织策略学习可以利用互补推理并超过强单体；不应只将其归约成附录流程先例，也不能要求CoReTA每一模块首创。",
+    "verification": "VERIFIED：arXiv作者元数据及本地完整PDF重点方法/结果/附录核读。"
+  },
+  {
+    "id": "demystifying",
+    "title": "Demystifying Multi-Agent Debate: The Role of Confidence and Diversity",
+    "authors": [
+      "Xiaochen Zhu",
+      "Caiqi Zhang",
+      "Yizhou Chi",
+      "Tom Stafford",
+      "Nigel Collier",
+      "Andreas Vlachos"
+    ],
+    "year": 2026,
+    "venue": "arXiv预印本；本视角未核实正式venue",
+    "version": "2601.19921v3，2026-06-03",
+    "url": "https://arxiv.org/html/2601.19921",
+    "read_scope": "§3–4、§6–8、Appendix B目录及训练说明；理论只核对假设和作者主张，不作证明验收。",
+    "problem": "同模型普通debate常低于初答投票；缺少有用候选与置信度的可靠表达/使用。",
+    "mechanism": "从更大候选池贪心选不同答案初始化；用GRPO+LoRA训练数值置信表达，并以正确性与校准联合奖励训练接收端利用同伴置信度修订。不是仅提示报0–10分。",
+    "findings": "在Llama3.1-8B和Qwen2.5-7B的QA/推理基准上报告多样化提高初始Pass@5，置信训练优于简单聚合消融；控制相同初答的转移图显示增加纠错并稳定正确答复。",
+    "conditions": "主要同模型采样团队；多样化增加初始采样量；训练有正确性监督，学习后的更新可迁移到两个所测OOD基准。",
+    "limits": "效果不能直接转述为任意自报置信有用；理论结论受同质、全连通及置信相关等模型假设限制，本调查未独立证明。未验证已知领域专家可被正确利用的全套设置。",
+    "gap_kind": [
+      "unvalidated:跨异质成员/领域专家的置信表达与接收校准",
+      "unvalidated:一般通信内容下的理论保证"
+    ],
+    "relevance": "直接反例于“只能压低所有改答”：有训练方法报告改善两方向；专长信号的表达与他人使用是两个可区分能力。",
+    "verification": "VERIFIED：原文作者、版本、方法、训练配置和结果核对；不采用二手理论批评或二手效果。"
+  },
+  {
+    "id": "peacemaker",
+    "title": "Peacemaker or Troublemaker: How Sycophancy Shapes Multi-Agent Debate",
+    "authors": [
+      "Binwei Yao",
+      "Chao Shang",
+      "Wanyu Du",
+      "Jianfeng He",
+      "Ruixue Lian",
+      "Yi Zhang",
+      "Hang Su",
+      "Sandesh Swamy",
+      "Yanjun Qi"
+    ],
+    "year": 2025,
+    "venue": "arXiv预印本；ICLR身份本视角未独立确认",
+    "version": "2509.23055v1，2025-09-27",
+    "url": "https://arxiv.org/html/2509.23055",
+    "read_scope": "§3定义与指标、§4、§5.1–5.2、§6；附录E persona设置说明。",
+    "problem": "agent间附和会使有正确可能的分歧过早坍缩；不同debater/judge的合作倾向怎样影响结果。",
+    "mechanism": "定义DCR/NAR与附和评分；用8级persona提示操纵debater/judge附和程度，在集中/分散框架比较组合。",
+    "findings": "Qwen3-32B/Llama3.3-70B的CommonsenseQA和MMLU-Pro研究显示极高附和常损害；最好配置通常混合适度合作与反对，而非所有成员最顽固；异质团队配置的收益变化较大，judge persona控制的影响较小。",
+    "conditions": "受控persona网格搜索，报告最佳与最差组合，不能视为已给出无测试标签的部署配置选择器；附和评分是LLM评价，部分结果为相关性。",
+    "limits": "特定模型、两个任务和所测架构；缺少任意任务的动态persona选择规则及明确专长采用检验，不能由此否定其控制实验贡献。",
+    "gap_kind": [
+      "observed:过强合作/独立均非统一最优",
+      "unvalidated:未知任务上动态选合作程度",
+      "unvalidated:已校准专家条件"
+    ],
+    "relevance": "支持研究适当让步而非全面抗共识；说明研究目标与已用persona机制应分别比较。",
+    "verification": "VERIFIED：arXiv原文作者、方法及结果；正式venue保持未核实。"
+  },
+  {
+    "id": "minority-sentinel",
+    "title": "Minority Sentinel: When to Overturn Majority Voting in Multi-Agent LLM Debates",
+    "authors": [
+      "Chuan He",
+      "Zebin Chen",
+      "Zhengyi Yang",
+      "Shaobo Qiao",
+      "Mingchen Ju",
+      "Jiate Liu",
+      "Dong Wen",
+      "Guanfeng Liu"
+    ],
+    "year": 2026,
+    "venue": "arXiv预印本；作者实验室确认AgentSearch Workshop/SIGIR2026展示，无archival proceedings",
+    "version": "2606.29270v1，2026-06-28",
+    "url": "https://arxiv.org/html/2606.29270",
+    "source_urls": [
+      "https://raids-lab.com/publications/he2026minority/"
+    ],
+    "read_scope": "§3–4、§5.3、§6.1–6.3、作者实验室元数据。",
+    "problem": "辩论结束后2:1多数可能错误，如何选择性改投正确少数并避免错误改票。",
+    "mechanism": "三异质agent初答+两轮辩论；22维轨迹/投票/语义审核特征输入LightGBM，对末轮2:1分歧输出少数正确概率；按阈值决定翻票。语义审核8维来自额外GPT-4o，不是完全无LLM。",
+    "findings": "在六基准的686个分歧样本OOF评估中报告正净收益，整体恢复部分少数真值；直接GPT-4o裁判比较为负收益，分类器轨迹信息有价值。",
+    "conditions": "固定3agent、2轮，保留非分歧结果；训练正确性标签、每数据集阈值优化、5-fold OOF，相关成本和分歧样本数需一同看。",
+    "limits": "作者承认小样本及逐数据集OOF阈值挑选的过拟合风险，独立/nested阈值评估仍待补；无法恢复已彻底消失于末轮的正确答案；更多成员、多路分歧和零样本校准未验证。",
+    "gap_kind": [
+      "observed:多数错误仍有未恢复空间",
+      "unvalidated:独立阈值外推、复杂分歧及失去正确候选",
+      "evaluation:OOF同集挑阈值未独立化"
+    ],
+    "relevance": "是最终选择层的具体正面方法；不能把“少数持对”直接当领域专长，也不能以其非纯LLM而声称完全独立判断。",
+    "verification": "VERIFIED：原文及作者实验室确认元数据，准确区分workshop展示与正式SIGIR论文。"
+  },
+  {
+    "id": "mad-mm",
+    "title": "Multi-Agent Debate with Memory Masking",
+    "authors": [
+      "Hongduan Tian",
+      "Xiao Feng",
+      "Ziyuan Zhao",
+      "Xiangyu Zhu",
+      "Rolan Yan",
+      "Bo Han"
+    ],
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "version": "arXiv:2603.20215v1；阅读版带Published as ICLR2026标记",
+    "url": "https://arxiv.org/html/2603.20215",
+    "source_urls": [
+      "https://openreview.net/pdf/e427537a83c21ee46356ed07dcebcd0e43b6c37e.pdf"
+    ],
+    "read_scope": "§2–4及Table1；本地PDF页5–8；正式OpenReview PDF检索核元数据。",
+    "problem": "上一轮含错的答案/推理当作memory可能污染后续判断，包括使原本正确成员改错。",
+    "mechanism": "每轮生成前按接收者评价先前整条memory；主观YES/NO/NOT SURE与strictness，或客观最低perplexity保留；只将保留memory输入下一轮，末轮多数投票。",
+    "findings": "四开源模型/数学及语言理解任务显示收益依模型和mask策略而变；强数学模型部分任务客观策略改善且减少token，一般弱模型/难题与部分主观策略没有改善或更差。",
+    "conditions": "三agent两轮，同模型实例为主，CoT-SC六采样和MAD对照；主观评价增加调用，客观筛选减少上下文但需要概率访问。",
+    "limits": "Table1直接显示并非所有模型任务上胜出；整条response筛选可能一并移除其中有用的局部推理（机制推断，非论文已证实因果）；过滤器正确性受成员能力限制。",
+    "gap_kind": [
+      "observed:收益随能力与过滤策略变化",
+      "inference:整答过滤与局部有用内容保留的张力",
+      "unvalidated:特定专家知识条件下的选择性筛选"
+    ],
+    "relevance": "实际改变信息可见性的具体先例，可与仅要求谨慎审查区分；其不均一收益帮助定位问题条件，不构成放弃内容过滤的理由。",
+    "verification": "VERIFIED：arXiv原文与带ICLR2026标记PDF；本视角未核代码与论文方向差异，不作代码bug结论。"
+  },
+  {
+    "id": "dear",
+    "title": "Group Perspective Matters: Regulating Debate Relationships Can Mitigate Blind Conformity in Multi-Agent Debate",
+    "authors": [
+      "Hao Wu",
+      "Shoucheng Song",
+      "Chang Yao",
+      "Huaiyu Wan",
+      "Youfang Lin",
+      "Kai Lv"
+    ],
+    "year": 2026,
+    "venue": "NeurIPS 2026录用，官方Downloads题名与作者校主页交叉确认；阅读arXiv版",
+    "version": "2608.03648v2，2026-10-21",
+    "url": "https://arxiv.org/html/2608.03648v2",
+    "source_urls": [
+      "https://arxiv.org/abs/2608.03648",
+      "https://neurips.cc/Downloads/2026",
+      "https://faculty.bjtu.edu.cn/7443/"
+    ],
+    "read_scope": "§3–5、Appendix D、E.1–E.4；v2元数据；NeurIPS官方列表。",
+    "problem": "只看单个agent置信/困惑度不足以控制盲从，怎样在群体状态中决定谁参考谁、怎样更新。",
+    "mechanism": "结论与推理语义相似构造group evidence，Subjective Logic转consultation tendency/uncertainty；Selection RL-Agent输出同伴参考mask；Behavior RL-Agent调temperature/top_p；HAPPO联合训练外部策略，基础LLM权重不变。",
+    "findings": "数学/QA同质及异质设置报告提高准确率并降低token；附录E.1在Qwen3-8B四任务同时报告比所比MAD/DMAD/CortexDebate/MAD-M²更低HCR、更高BCR；E.4跨领域有迁移收益但较域内降低。",
+    "conditions": "终局正确性作训练奖励；特征语义相似不等于内容真值。BCR/HCR限定有唯一多数的相邻轮转移，所测BCR/HCR实验使用同质Qwen3-8B，异质性效果另有实验。",
+    "limits": "部分跨领域迁移收益降低是已观察边界；BCR/HCR不直接衡量已知领域专家利用，且仅比较少数向多数两方向；阵容/任务外稳定校准和局部论证正确性不是该特征的保证。",
+    "gap_kind": [
+      "observed:跨领域分布变化导致效果降低",
+      "unvalidated:已知专家条件的专长利用",
+      "unvalidated:主张正确性而非群体状态的判别"
+    ],
+    "relevance": "必须纳入的直接近邻和正面证据，不能声称“兼顾纠错与抗从众尚没人做到”。动态参考关系及采样行为已可学习，但不因此覆盖所有专长利用问题。",
+    "verification": "VERIFIED：v2正文/abs同6作者；v1检索多一作者未沿用。NeurIPS官方题名链接poster/154678，详情当前cache miss，校主页亦确认。"
+  },
+  {
+    "id": "consensagent",
+    "title": "CONSENSAGENT: Towards Efficient and Effective Consensus in Multi-Agent LLM Interactions Through Sycophancy Mitigation",
+    "authors": [
+      "Priya Pitre",
+      "Naren Ramakrishnan",
+      "Xuan Wang"
+    ],
+    "year": 2025,
+    "venue": "Findings of ACL 2025",
+    "version": "2025.findings-acl.1141正式版",
+    "url": "https://aclanthology.org/2025.findings-acl.1141/",
+    "source_urls": [
+      "https://aclanthology.org/2025.findings-acl.1141.pdf"
+    ],
+    "read_scope": "正式PDF§3–6、§7部分和Limitations，尤其§4.4–4.6训练/推理输入区别。",
+    "problem": "附和、互换答案和题目误解使讨论低效；能否用讨论失败改善问题提示并提高最终答案。",
+    "mechanism": "停滞、换票、解释相似触发prompt优化；训练集用真值和讨论生成优化示例，微调GPT-4o作prompt optimizer；推理时optimizer仅输入原问题，不输入test真值/当前讨论。终答按置信与跨轮一致性计分。",
+    "findings": "六任务/多模型及3、5agent设置报告准确率提高、附和减少和触发后更快达成共识；给出单体/多体对照及组件消融，说明针对提示误解的上游修正有用。",
+    "conditions": "优化模型另行训练，训练数据同测试分开；推理不是每次把当前轨迹送入optimizer。输出仍倾向单一正确答案的结构化任务。",
+    "limits": "作者指出优化器训练成本、数据集依赖、开放创意任务和多正确解局限；更快共识与更好任务理解可共同解释收益，不应仅以附和率归因为专长利用。",
+    "gap_kind": [
+      "unvalidated:开放任务/多正确解泛化",
+      "unvalidated:当前交互轨迹条件下的在线优化",
+      "unvalidated:已知专家采用"
+    ],
+    "relevance": "提醒不要把所有失败都归为社会折中：原问题误解是另一可修复源；体现旧组件组合与训练仍可有明确贡献。",
+    "verification": "VERIFIED：ACL正式元数据、方法/训练与推理说明、结果及限制核读。"
+  },
+  {
+    "id": "cortexdebate",
+    "title": "CortexDebate: Debating Sparsely and Equally for Multi-Agent Debate",
+    "authors": [
+      "Yiliu Sun",
+      "Zicheng Zhao",
+      "Sheng Wan",
+      "Chen Gong"
+    ],
+    "year": 2025,
+    "venue": "Findings of ACL 2025",
+    "version": "2025.findings-acl.495；全文核读arXiv:2507.03928v1",
+    "url": "https://aclanthology.org/2025.findings-acl.495/",
+    "source_urls": [
+      "https://arxiv.org/html/2507.03928",
+      "https://aclanthology.org/2025.findings-acl.495.pdf"
+    ],
+    "read_scope": "§3–5及Table1–4、附录目录，正式PDF题名作者venue核验。",
+    "problem": "全连通上下文过长和过度自信成员主导，使其他有用意见被忽略。",
+    "mechanism": "动态稀疏有向图；MDM结合scale-law能力proxy、自报置信历史、观点差异、参与度计算边权，按每个接收者平均边权阈值筛选同伴；末轮多数投票或共识提前停。",
+    "findings": "八数据集/五7–9B异质模型报告提高准确率与减少输入长度；§5.3将观点碰撞和正确修订作为互助指标，含稀疏性与评价因素消融，显示关系层评价比纯个体置信更有用。",
+    "conditions": "采用能力与信任proxy而非观察到的当前题真值；同一组样本多次运行，附录另有更大样本；全不同终答按错误计。",
+    "limits": "proxy不认证局部主张正确性；参数规模/训练token能力估算不等于领域专长（概念边界，非所测无效）；统一多数/共识提交对正确少数的处置仍需单独检验。",
+    "gap_kind": [
+      "unvalidated:proxy与领域/局部专长的关系",
+      "unvalidated:已知正确少数在终答层的采用"
+    ],
+    "relevance": "动态有用性、同伴选择、非全连通沟通已有具体先例，不能将它们泛称未被研究；仍可研究其在特定专家条件的适用边界。",
+    "verification": "VERIFIED：正式ACL PDF与arXiv题名作者匹配，方法和结果读原文。"
+  }
+]

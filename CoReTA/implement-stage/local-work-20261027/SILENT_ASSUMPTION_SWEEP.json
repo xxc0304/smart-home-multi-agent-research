@@ -1,0 +1,81 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "round_2": {
+    "resolved_findings": [
+      {
+        "finding": "Binding silently accepts unseen provider metadata",
+        "status": "resolved",
+        "ledger": ["A-018", "A-021"],
+        "reproduction": "Repeated the original concurrent-revision scenario. Binding is now rejected with 'provider metadata changed since saved consumer snapshot'; consumer remains waiting with value=null.",
+        "additional_check": "Same-metadata value revision remains admissible and propagates normally, matching A-021."
+      },
+      {
+        "finding": "Every consumer revision deletes unchanged bindings",
+        "status": "resolved",
+        "ledger": ["A-016", "A-022"],
+        "reproduction": "Repeated x+1 to x+2 revision with unchanged input definitions and output metadata. Result changes from 11 to 12 and the binding remains.",
+        "additional_check": "Conditions-only revision preserves the binding and numeric result while adding the new condition."
+      }
+    ],
+    "undeclared": [],
+    "stale_rows": [],
+    "semantic_undeclared": 0,
+    "declared_invariant_violations": [],
+    "verdict": "clean",
+    "evidence": {
+      "reproductions": "Executed locally with bytecode writes disabled; all assertions passed.",
+      "tests_inspected": "Updated regression tests cover unseen provider metadata, formula revision, conditions-only revision, and preservation of unaffected input bindings.",
+      "refreshed_audit": {"tests_run": 22, "tests_passed": true, "model_calls": 0, "natural_new_schema_outputs": 0, "live_readiness": "BLOCKED"}
+    },
+    "review_status": "Same-family provisional. Clean within this bounded review; not independent acquittal or evidence of method effectiveness. Read-only; no code edits or API calls."
+  },
+  "round_1": {
+    "undeclared": [
+      {
+        "site": "src/coreta/local_work/engine.py:141,158,219,232",
+        "decision": "A new binding uses the provider's current metadata, even when it changed after the consumer's saved request snapshot.",
+        "why_it_matters": "The consumer can unknowingly authorize a different subject. Reproduced: its packet contains W1=10, subject total_credit; A1 revises W1 to 99, subject unrelated_quantity; A2 submits its old-snapshot binding for x+1. The binding is accepted without notices and returns 100. Changed metadata is not blocked because the binding records the unseen replacement metadata.",
+        "class": "semantic"
+      },
+      {
+        "site": "src/coreta/local_work/engine.py:200-203",
+        "decision": "Every consumer-work revision deletes all its bindings, including revisions that preserve input definitions and output metadata.",
+        "why_it_matters": "A conditions-only correction or expression correction requires another binding step before execution resumes. This is not declared in the ledger or prompt, and A-016 instead promises recomputation for operation revisions with unchanged output metadata.",
+        "class": "interface"
+      }
+    ],
+    "stale_rows": [
+      {
+        "id": "A-016",
+        "mismatch": "Changed provider metadata blocks existing bindings but not bindings submitted from an older saved snapshot. Operation revisions with unchanged output metadata clear their inputs rather than immediately recomputing."
+      },
+      {
+        "id": "A-018",
+        "mismatch": "Binding admission uses saved work IDs but current provider metadata; exact snapshot semantics are not preserved across concurrent revisions."
+      }
+    ],
+    "semantic_undeclared": 1,
+    "verdict": "gaps",
+    "declared_invariant_violations": [
+      {
+        "invariant": "Changed metadata blocks stale bindings; consumer explicitly decides semantic correspondence.",
+        "repro": "Create provider W1(subject=total_credit,value=10) and consumer W2(expression=x+1). Freeze both members' wave packets. Revise W1 to subject=unrelated_quantity,value=99, then apply W2 owner's binding from its frozen packet.",
+        "observed": "Binding accepted; W2 ready=100; no notices."
+      },
+      {
+        "invariant": "A-016: operation revisions recompute descendants if declared output metadata is unchanged.",
+        "repro": "Bind W2(expression=x+1) to literal W1=10, obtaining 11. Revise W2 to x+2 with identical inputs and output metadata.",
+        "observed": "W2 becomes waiting with missing_binding and bindings=[], instead of recomputing to 12. Conditions-only revisions exhibit the same clearing."
+      }
+    ],
+    "verified_correct": [
+      "Official-data adapter preserves complete table and paragraph content and selects by task-type annotations.",
+      "The stored audit distinguishes 19 passing engineering checks, 12 historical old-contract replays, and zero natural new-schema outputs.",
+      "The scripted trace is explicitly labelled engineering-only and produces 206.7.",
+      "Historical replies are correctly retained as old-schema evidence and rejected as new-schema generation coverage.",
+      "Existing bindings correctly become stale following provider metadata changes; the first finding concerns new bindings submitted from older snapshots."
+    ],
+    "review_status": "Same-family provisional review, not independent acquittal. Read-only; no code edits or API calls."
+  }
+}

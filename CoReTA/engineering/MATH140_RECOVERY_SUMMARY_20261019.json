@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "independent_aggregate",
+    "status": "completed",
+    "stop_reason": "complete",
+    "score": 0,
+    "normal_calls": 4,
+    "http_attempts": 1,
+    "format_repairs": 0,
+    "review_status": "unreviewed",
+    "errors": []
+  },
+  {
+    "condition": "static_debate",
+    "status": "completed",
+    "stop_reason": "complete",
+    "score": 0,
+    "normal_calls": 10,
+    "http_attempts": 7,
+    "format_repairs": 0,
+    "review_status": "unreviewed",
+    "errors": []
+  },
+  {
+    "condition": "precheck",
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "score": 0,
+    "normal_calls": 13,
+    "http_attempts": 11,
+    "format_repairs": 1,
+    "review_status": "unreviewed",
+    "errors": []
+  },
+  {
+    "condition": "postcheck",
+    "status": "degraded",
+    "stop_reason": "runtime_error",
+    "score": 0,
+    "normal_calls": 7,
+    "http_attempts": 6,
+    "format_repairs": 2,
+    "review_status": "unreviewed",
+    "errors": [
+      {
+        "code": "REFERENCE_ERROR",
+        "detail": "Review must identify unique pending proposal"
+      }
+    ]
+  },
+  {
+    "condition": "independent_refine",
+    "status": "completed",
+    "stop_reason": "complete",
+    "score": 0,
+    "normal_calls": 10,
+    "http_attempts": 7,
+    "format_repairs": 0,
+    "review_status": "unreviewed",
+    "errors": []
+  }
+]

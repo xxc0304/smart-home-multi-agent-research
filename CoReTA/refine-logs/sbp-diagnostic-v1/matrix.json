@@ -1,0 +1,341 @@
+{
+  "kind": "diagnostic_plan_not_runnable_preparation_or_results",
+  "model_calls": 0,
+  "sampling_seed_sent": false,
+  "input_sha256": {
+    "CoReTA\\data\\task-packs\\student-president-dev-v1\\public\\task.json": "b1fa8b2c63c44962018746fbffe7eb25e5ed314f8e63cfd899fe62f50eb26981",
+    "CoReTA\\data\\task-packs\\student-president-dev-v1\\packets\\concentrated_A1\\A1.json": "b243a68fb48019d546e996dcd55edc487e5145aa415cd4ceee9cfe21ef3a3d32",
+    "CoReTA\\data\\task-packs\\student-president-dev-v1\\packets\\concentrated_A1\\A2.json": "c4a1f1e026fabad4f245fdcd3f65744da2e4d3ae5a363708ed41bfa48fe624c5",
+    "CoReTA\\data\\task-packs\\student-president-dev-v1\\packets\\concentrated_A1\\A3.json": "5a62eb993c710d57a3425c2dee86d93113be67bc48e308c0863666bcb3021d7a",
+    "CoReTA\\data\\task-packs\\student-president-dev-v1\\packets\\concentrated_A1\\A4.json": "7a4c6a169d5a3bbddab9904b5cde249c487cd1a2ec50e1e28a94093cf1b7f54c",
+    "CoReTA\\refine-logs\\sbp-diagnostic-v1\\fixtures.json": "398ab3f2bef6635e2fba20ff95b2b3b1ad309ff5c3562971b0b57ee4e138da31"
+  },
+  "cells": [
+    {
+      "id": "I-r01-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 1,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r01-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 1,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r02-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 2,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r02-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 2,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r03-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 3,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r03-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 3,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r04-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 4,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r04-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 4,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r05-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 5,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r05-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 5,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r06-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 6,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r06-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 6,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r07-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 7,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r07-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 7,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r08-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 8,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r08-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 8,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r09-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 9,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r09-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 9,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r10-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 10,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r10-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 10,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r11-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 11,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r11-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 11,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r12-contribute",
+      "block": "initial_generation",
+      "arm": "contribute",
+      "member": "A1",
+      "repetition": 12,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "I-r12-independent",
+      "block": "initial_generation",
+      "arm": "independent",
+      "member": "A1",
+      "repetition": 12,
+      "max_http_attempts": 2,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-correct-r1-ordinary_discussion",
+      "block": "controlled_coordination",
+      "arm": "ordinary_discussion",
+      "fixture_id": "correct",
+      "repetition": 1,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-correct-r1-coreta",
+      "block": "controlled_coordination",
+      "arm": "coreta",
+      "fixture_id": "correct",
+      "repetition": 1,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-derived_error-r1-ordinary_discussion",
+      "block": "controlled_coordination",
+      "arm": "ordinary_discussion",
+      "fixture_id": "derived_error",
+      "repetition": 1,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-derived_error-r1-coreta",
+      "block": "controlled_coordination",
+      "arm": "coreta",
+      "fixture_id": "derived_error",
+      "repetition": 1,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-correct-r2-coreta",
+      "block": "controlled_coordination",
+      "arm": "coreta",
+      "fixture_id": "correct",
+      "repetition": 2,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-correct-r2-ordinary_discussion",
+      "block": "controlled_coordination",
+      "arm": "ordinary_discussion",
+      "fixture_id": "correct",
+      "repetition": 2,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-derived_error-r2-coreta",
+      "block": "controlled_coordination",
+      "arm": "coreta",
+      "fixture_id": "derived_error",
+      "repetition": 2,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-derived_error-r2-ordinary_discussion",
+      "block": "controlled_coordination",
+      "arm": "ordinary_discussion",
+      "fixture_id": "derived_error",
+      "repetition": 2,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-correct-r3-ordinary_discussion",
+      "block": "controlled_coordination",
+      "arm": "ordinary_discussion",
+      "fixture_id": "correct",
+      "repetition": 3,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-correct-r3-coreta",
+      "block": "controlled_coordination",
+      "arm": "coreta",
+      "fixture_id": "correct",
+      "repetition": 3,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-derived_error-r3-ordinary_discussion",
+      "block": "controlled_coordination",
+      "arm": "ordinary_discussion",
+      "fixture_id": "derived_error",
+      "repetition": 3,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    },
+    {
+      "id": "H-derived_error-r3-coreta",
+      "block": "controlled_coordination",
+      "arm": "coreta",
+      "fixture_id": "derived_error",
+      "repetition": 3,
+      "max_http_attempts": 20,
+      "status": "planned_not_prepared"
+    }
+  ],
+  "total_cells": 36,
+  "max_http_attempts": 288
+}

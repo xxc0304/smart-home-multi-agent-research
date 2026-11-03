@@ -1,0 +1,633 @@
+{
+  "status": "analyst_assisted_engineering_walkthrough_only",
+  "new_api_calls": 0,
+  "actual_source_path": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/03-A2.json",
+  "source_sha256": "f8dd8cdef3de2e52c289fd32dc2958a3a97b5c5a0c56435617aa399fc270abe9",
+  "formulas": {
+    "W1": {
+      "id": "W1",
+      "owner": "A1",
+      "revision": 1,
+      "target": "average_total_equity_2018_2019_partial",
+      "metadata": {
+        "subject": "Total equity",
+        "unit": "U.S. $ in thousands",
+        "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+      },
+      "expression": "(e2019+e2018)/2",
+      "inputs": [
+        {
+          "name": "e2019",
+          "value": 565467,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal 2019"
+          }
+        },
+        {
+          "name": "e2018",
+          "value": 907320,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal 2018 (as adjusted)"
+          }
+        }
+      ],
+      "basis": [
+        "T1",
+        "T0",
+        "P1",
+        "P2"
+      ],
+      "conditions": [
+        "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average.",
+        "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption."
+      ]
+    },
+    "W2": {
+      "id": "W2",
+      "owner": "A2",
+      "revision": 2,
+      "target": "Average Total equity, fiscal 2015–2019 (five-year)",
+      "metadata": {
+        "subject": "Total equity",
+        "unit": "U.S. $ in thousands",
+        "period": "fiscal years 2015–2019"
+      },
+      "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+      "inputs": [
+        {
+          "name": "e2015",
+          "value": 190054,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal year 2015"
+          }
+        },
+        {
+          "name": "e2016",
+          "value": 731663,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal year 2016 (as adjusted)"
+          }
+        },
+        {
+          "name": "e2017",
+          "value": 902693,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal year 2017 (as adjusted)"
+          }
+        },
+        {
+          "name": "e2018",
+          "value": 907320,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal year 2018 (as adjusted)"
+          }
+        },
+        {
+          "name": "e2019",
+          "value": 565467,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal year 2019"
+          }
+        }
+      ],
+      "basis": [
+        "T1",
+        "T2",
+        "T0",
+        "P1",
+        "P2",
+        "TASK"
+      ],
+      "conditions": [
+        "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2019 and 2015 are unadjusted.",
+        "Values are in U.S. $ in thousands; the average is 659,439.4 thousand, not a dollar-level figure."
+      ]
+    },
+    "W3": {
+      "id": "W3",
+      "owner": "A1",
+      "revision": 1,
+      "target": "Average Total equity, fiscal 2015–2019 (five-year)",
+      "metadata": {
+        "subject": "Total equity",
+        "unit": "U.S. $ in thousands",
+        "period": "fiscal years 2015–2019"
+      },
+      "expression": "(avg1819*2 + avg1517*3)/5",
+      "inputs": [
+        {
+          "name": "avg1819",
+          "result_id": "W1",
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+          }
+        },
+        {
+          "name": "avg1517",
+          "result_id": "W2",
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal years 2015–2019"
+          }
+        }
+      ],
+      "basis": [
+        "T0",
+        "T1",
+        "T2",
+        "P1",
+        "P2",
+        "TASK"
+      ],
+      "conditions": [
+        "Consumes A1's W1 (2018–2019 two-year average = 736,393.5) and A2's W2 (2015–2017 three-year average = 608,136.6667); each is multiplied by its year count to recover the five-year sum before dividing by 5.",
+        "2018 is '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2016 and 2017 are also labeled *As Adjusted in T0/P2.",
+        "Result 659,439.4 thousand is the requested average Total equity for fiscal years 2015–2019."
+      ]
+    }
+  },
+  "analyst_assisted_verified_source_bindings": [
+    {
+      "work_id": "W1",
+      "input_name": "e2019",
+      "year": "2019",
+      "source_id": "T1",
+      "row": 14,
+      "column": 1,
+      "year_header_row": 1,
+      "original_value": "565,467",
+      "numeric_value": "565467"
+    },
+    {
+      "work_id": "W1",
+      "input_name": "e2018",
+      "year": "2018",
+      "source_id": "T1",
+      "row": 14,
+      "column": 2,
+      "year_header_row": 1,
+      "original_value": "907,320",
+      "numeric_value": "907320"
+    },
+    {
+      "work_id": "W2",
+      "input_name": "e2015",
+      "year": "2015",
+      "source_id": "T2",
+      "row": 14,
+      "column": 3,
+      "year_header_row": 1,
+      "original_value": "190,054",
+      "numeric_value": "190054"
+    },
+    {
+      "work_id": "W2",
+      "input_name": "e2016",
+      "year": "2016",
+      "source_id": "T2",
+      "row": 14,
+      "column": 2,
+      "year_header_row": 1,
+      "original_value": "731,663",
+      "numeric_value": "731663"
+    },
+    {
+      "work_id": "W2",
+      "input_name": "e2017",
+      "year": "2017",
+      "source_id": "T2",
+      "row": 14,
+      "column": 1,
+      "year_header_row": 1,
+      "original_value": "902,693",
+      "numeric_value": "902693"
+    },
+    {
+      "work_id": "W2",
+      "input_name": "e2018",
+      "year": "2018",
+      "source_id": "T1",
+      "row": 14,
+      "column": 2,
+      "year_header_row": 1,
+      "original_value": "907,320",
+      "numeric_value": "907320"
+    },
+    {
+      "work_id": "W2",
+      "input_name": "e2019",
+      "year": "2019",
+      "source_id": "T1",
+      "row": 14,
+      "column": 1,
+      "year_header_row": 1,
+      "original_value": "565,467",
+      "numeric_value": "565467"
+    }
+  ],
+  "baseline_values": {
+    "W2": "659439.4",
+    "W3": "690221.04"
+  },
+  "trials": [
+    {
+      "changed_year": "2015",
+      "increase": 100,
+      "observed_deltas": {
+        "W2": "20.0",
+        "W3": "12.00"
+      },
+      "manually_grounded_five_year_mean_expected_delta": "20",
+      "violates_this_property": {
+        "W2": false,
+        "W3": true
+      }
+    },
+    {
+      "changed_year": "2016",
+      "increase": 100,
+      "observed_deltas": {
+        "W2": "20.0",
+        "W3": "12.00"
+      },
+      "manually_grounded_five_year_mean_expected_delta": "20",
+      "violates_this_property": {
+        "W2": false,
+        "W3": true
+      }
+    },
+    {
+      "changed_year": "2017",
+      "increase": 100,
+      "observed_deltas": {
+        "W2": "20.0",
+        "W3": "12.00"
+      },
+      "manually_grounded_five_year_mean_expected_delta": "20",
+      "violates_this_property": {
+        "W2": false,
+        "W3": true
+      }
+    },
+    {
+      "changed_year": "2018",
+      "increase": 100,
+      "observed_deltas": {
+        "W2": "20.0",
+        "W3": "32.00"
+      },
+      "manually_grounded_five_year_mean_expected_delta": "20",
+      "violates_this_property": {
+        "W2": false,
+        "W3": true
+      }
+    },
+    {
+      "changed_year": "2019",
+      "increase": 100,
+      "observed_deltas": {
+        "W2": "20.0",
+        "W3": "32.00"
+      },
+      "manually_grounded_five_year_mean_expected_delta": "20",
+      "violates_this_property": {
+        "W2": false,
+        "W3": true
+      }
+    }
+  ],
+  "invalid_property_control": {
+    "description": "Assume increasing FY2019 by100 should increase result by32; this is the WRONG expected relation for the task",
+    "passes": {
+      "W2": false,
+      "W3": true
+    },
+    "consequence": "Blindly using a generated test can reject the correct existing W2 and retain erroneous W3"
+  },
+  "v2_fixed_template_valid_scope": {
+    "results": {
+      "W2": {
+        "all_scans_pass": true,
+        "scans": [
+          {
+            "year": "2019",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2018",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2017",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2016",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2015",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          }
+        ]
+      },
+      "W3": {
+        "all_scans_pass": false,
+        "scans": [
+          {
+            "year": "2019",
+            "actual_delta": "32.00",
+            "expected_delta": "20",
+            "violated": true
+          },
+          {
+            "year": "2018",
+            "actual_delta": "32.00",
+            "expected_delta": "20",
+            "violated": true
+          },
+          {
+            "year": "2017",
+            "actual_delta": "12.00",
+            "expected_delta": "20",
+            "violated": true
+          },
+          {
+            "year": "2016",
+            "actual_delta": "12.00",
+            "expected_delta": "20",
+            "violated": true
+          },
+          {
+            "year": "2015",
+            "actual_delta": "12.00",
+            "expected_delta": "20",
+            "violated": true
+          }
+        ]
+      }
+    },
+    "hypothetical_local_switch": {
+      "action": "select_local_alternative",
+      "selected": "W2"
+    }
+  },
+  "equivalent_correct_control": {
+    "results": {
+      "W2": {
+        "all_scans_pass": true,
+        "scans": [
+          {
+            "year": "2019",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2018",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2017",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2016",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2015",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          }
+        ]
+      },
+      "rewrite": {
+        "all_scans_pass": true,
+        "scans": [
+          {
+            "year": "2019",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2018",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2017",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2016",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          },
+          {
+            "year": "2015",
+            "actual_delta": "20.0",
+            "expected_delta": "20",
+            "violated": false
+          }
+        ]
+      }
+    },
+    "hypothetical_local_switch": {
+      "action": "retain_current",
+      "selected": "W2"
+    }
+  },
+  "wrong_offset_undetected_control": {
+    "description": "A five-year mean plus1000 is wrong but has identical sensitivity under every chosen source-record perturbation",
+    "value": "660439.4",
+    "test_result": {
+      "all_scans_pass": true,
+      "scans": [
+        {
+          "year": "2019",
+          "actual_delta": "20.0",
+          "expected_delta": "20",
+          "violated": false
+        },
+        {
+          "year": "2018",
+          "actual_delta": "20.0",
+          "expected_delta": "20",
+          "violated": false
+        },
+        {
+          "year": "2017",
+          "actual_delta": "20.0",
+          "expected_delta": "20",
+          "violated": false
+        },
+        {
+          "year": "2016",
+          "actual_delta": "20.0",
+          "expected_delta": "20",
+          "violated": false
+        },
+        {
+          "year": "2015",
+          "actual_delta": "20.0",
+          "expected_delta": "20",
+          "violated": false
+        }
+      ]
+    },
+    "consequence": "Passing every sensitivity check is only a necessary property, weaker than direct computation of the already accepted mean specification."
+  },
+  "v2_wrong_target_control": {
+    "description": "Wrongly claim that original five-year task asks for only2018/2019. The fixed mean template is mathematically valid but task-inapplicable.",
+    "results": {
+      "W1": {
+        "all_scans_pass": true,
+        "scans": [
+          {
+            "year": "2019",
+            "actual_delta": "50.0",
+            "expected_delta": "50",
+            "violated": false
+          },
+          {
+            "year": "2018",
+            "actual_delta": "50.0",
+            "expected_delta": "50",
+            "violated": false
+          },
+          {
+            "year": "2017",
+            "actual_delta": "0.0",
+            "expected_delta": "0",
+            "violated": false
+          },
+          {
+            "year": "2016",
+            "actual_delta": "0.0",
+            "expected_delta": "0",
+            "violated": false
+          },
+          {
+            "year": "2015",
+            "actual_delta": "0.0",
+            "expected_delta": "0",
+            "violated": false
+          }
+        ]
+      },
+      "W2": {
+        "all_scans_pass": false,
+        "scans": [
+          {
+            "year": "2019",
+            "actual_delta": "20.0",
+            "expected_delta": "50",
+            "violated": true
+          },
+          {
+            "year": "2018",
+            "actual_delta": "20.0",
+            "expected_delta": "50",
+            "violated": true
+          },
+          {
+            "year": "2017",
+            "actual_delta": "20.0",
+            "expected_delta": "0",
+            "violated": true
+          },
+          {
+            "year": "2016",
+            "actual_delta": "20.0",
+            "expected_delta": "0",
+            "violated": true
+          },
+          {
+            "year": "2015",
+            "actual_delta": "20.0",
+            "expected_delta": "0",
+            "violated": true
+          }
+        ]
+      }
+    },
+    "hypothetical_local_switch": {
+      "action": "select_local_alternative",
+      "selected": "W1"
+    },
+    "selected_numeric_answer": "736393.5",
+    "consequence": "Correct existing W2 would be replaced by wrong-for-task W1. Template validity does not validate chosen target scope."
+  },
+  "simplification_control": {
+    "same_accepted_target_set_direct_mean": "659439.4",
+    "matches_existing_correct_W2": true,
+    "requires_alternative_candidate_or_perturbation": false,
+    "same_wrong_scope_direct_mean": "736393.5",
+    "interpretation": "With the correct full target set and values already required by this template, direct recomputation solves the local task. Behavioral testing has not shown extra solving value over this simpler control; neither removes target-scope ambiguity."
+  },
+  "nondiscriminating_control": {
+    "property": "Re-executing unchanged candidate yields same value",
+    "passes": {
+      "W2": true,
+      "W3": true
+    },
+    "consequence": "Self-consistency alone does not select a correct interpretation"
+  },
+  "actual_final_answer": 659439.4,
+  "added_correct_task_answers_demonstrated": 0,
+  "analyst_inputs": [
+    "historical error focus W3",
+    "existing W2 as alternative",
+    "five-year mean interpretation of question",
+    "raw-source/year to input mapping",
+    "sensitivity-test template and expected delta"
+  ],
+  "not_demonstrated": [
+    "automatic focus selection",
+    "automatic alternative generation",
+    "automatic valid-test generation/admission",
+    "autonomous source-grounded rebinding",
+    "model adoption/repair",
+    "multi-agent quality gain"
+  ]
+}

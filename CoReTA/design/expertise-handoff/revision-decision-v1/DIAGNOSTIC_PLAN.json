@@ -1,0 +1,60 @@
+{
+  "status": "implemented_offline_validated_not_live_run",
+  "purpose": "retrospective_single_update_diagnostic_not_capability_validation",
+  "model_settings_source": "CoReTA/config/deepseek_flash_inspection.json",
+  "source_batch": "CoReTA/runs/handoff-moon-pilot-20261021",
+  "checkpoints": [
+    {"id": "concentrated_v1", "run": "04-concentrated_A1-coreta", "work": "W1", "review": "V1"},
+    {"id": "distributed_v1", "run": "05-distributed_r0-coreta", "work": "W1", "review": "V1"},
+    {"id": "concentrated_v2", "run": "04-concentrated_A1-coreta", "work": "W2", "review": "V2"},
+    {"id": "distributed_v2", "run": "05-distributed_r0-coreta", "work": "W2", "review": "V2"}
+  ],
+  "arms": [
+    {"id": "current", "stage": "APPLY", "prompt": "current_frozen_apply"},
+    {"id": "comparison", "stage": "APPLY", "prompt": "current_frozen_apply_plus_PROMPT_DELTA.md_APPLY_block"}
+  ],
+  "repetitions_per_checkpoint_arm": 2,
+  "execution_order": "For repetition 1 use listed checkpoint order with current then comparison; repetition 2 uses the same checkpoint order with comparison then current",
+  "first_attempts": 16,
+  "max_network_attempts_per_cell": 4,
+  "max_network_attempts_total": 64,
+  "format_retries_per_stage": 1,
+  "transport_retries_per_request": 1,
+  "request_timeout_seconds": 120,
+  "cell_deadline_seconds": 480,
+  "max_output_tokens": 6144,
+  "max_input_tokens": 32768,
+  "input_count_mode": "same_pinned_local_tokenizer_estimate_plus_256",
+  "allowed_request_kinds_both_arms": [],
+  "snapshot_policy": [
+    "Reconstruct state immediately after the named review and before its following APPLY",
+    "Include complete original task, driver-private materials, original public contributions, current work and its existing application history, named review and original permissible past metadata",
+    "Include only works/reviews already created at that checkpoint; do not initialize from unfiltered final state",
+    "Set the same diagnostic remaining budget and empty allowed requests for both arms; these common metadata differ from historical full-run conditions",
+    "Retain the actual required-handling review ref and production reference checks",
+    "Do not expose later artifacts, later review findings, evaluator data or offline error numbers",
+    "Freeze one identical visible packet per checkpoint for both arms; only the prompt delta differs"
+  ],
+  "sampling_policy": "Independent new API samples; paired by checkpoint only, no claim of matched random samples or API seed support",
+  "scoring": "Separate offline scorer after each completed answer; record invalid/missing deliveries rather than filtering them",
+  "primary_records": [
+    "L1_before", "L1_after", "delta_L1_after_minus_before",
+    "improved_unchanged_or_worsened", "changed_ranking",
+    "delivery_failure", "unresolved", "has_unresolved", "actual_attempts", "usage"
+  ],
+  "content_checks": [
+    "Did the response address the named objection substantively?",
+    "Was a valid defect dismissed merely because no full replacement was supplied?",
+    "Was a replacement adopted only because the previous reason was challenged?",
+    "Was there task evidence or reasoning for the replacement rather than agreement or identity?",
+    "Was an unresolved defect silently erased?"
+  ],
+  "stop_if": ["source_or_snapshot_mismatch", "API_schema_rejection", "shared_context_overflow", "shared_delivery_contract_failure", "total_attempt_budget_exhausted"],
+  "not_claimed": [
+    "general_architecture_gain", "causal_explanation_of_ordinary_discussion_success",
+    "expertise_leveraging_validation", "all_initial_wrong_recovery_rate",
+    "statistical_significance", "benefit_of_cross_member_reply",
+    "effect_of_revised_review_generation", "repair_of_initial_integration_loss"
+  ],
+  "interpretation": "Four known checkpoints from two trajectories, not four independent tasks. No-change alone is not success: the rule must also permit supported correction. These records are development diagnostics; later fresh tasks with verified information advantage are required."
+}

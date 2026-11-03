@@ -1,0 +1,163 @@
+\paragraph{Transfer decomposition.}
+The transfer experiment in Table~\ref{tab:amc12_mmlu_transfer_r5} can be read
+through the exact gain decomposition in
+Proposition~\ref{prop:recovery_damage_decomposition}.
+Recovered, New correct, and Damage below are percentage-point contributions and
+satisfy $\text{Gain}=\text{Recovered}+\text{New correct}-\text{Damage}$.
+
+\begin{table}[H]
+\centering
+\caption{AMC12-to-MMLU-Redux transfer decomposition. Recovery rate is
+conditional on R0 headroom; the contribution columns are unconditional
+percentage points.}
+\label{tab:transfer_decomposition}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Backbone & Method & R0 vote & Headroom & Recovery rate & Recovered & New correct & Damage & Gain & Final \\
+\midrule
+Qwen3-4B & SC-Greedy & 72.33 & 11.67 & 45.71 & 5.33 & 0.67 & 2.00 & $+4.00$ & 76.33 \\
+Qwen3-4B & AC-Greedy & 75.33 & 8.33 & 48.00 & 4.00 & 0.33 & 3.00 & $+1.33$ & 76.67 \\
+\midrule
+OLMo3-7B & SC-Greedy & 55.33 & 14.67 & 36.36 & 5.33 & 0.67 & 3.00 & $+3.00$ & 58.33 \\
+OLMo3-7B & AC-Greedy & 54.00 & 15.33 & 26.09 & 4.00 & 0.33 & 2.00 & $+2.33$ & 56.33 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+On Qwen, AC-Greedy begins with the higher vote and therefore retains the best
+final accuracy. SC-Greedy has more headroom, recovers 5.33 rather than 4.00
+points, and incurs less damage, explaining its larger lift. On OLMo, the two
+methods have similar headroom, but SC-Greedy has the higher recovery rate and
+again recovers 5.33 rather than 4.00 points. Transfer therefore depends on both
+proposal supply and its subsequent conversion.
+
+\paragraph{Complementary-coverage diagnostics.}
+We use expertise in a behavioral, task-level sense: an agent is useful when it
+solves construction examples that its teammates miss and this complementarity
+improves coverage on unseen questions. Let $C_1$ and $C_2$ be the construction
+questions correctly solved by the first two selected agents. Lower
+$|C_1\cap C_2|/|C_1\cup C_2|$ means less redundant coverage.
+
+\begin{table}[H]
+\centering
+\caption{Complementarity and held-out coverage on Qwen3-4B MATH500. Panel (a)
+uses the 200-question construction split. Panel (b) freezes each four-agent
+society and evaluates cumulative R0 proposal-hit coverage on 300 held-out
+questions; agents are listed in selection order, and tied construction
+accuracies share the minimum rank.}
+\label{tab:complementary_coverage}
+\vspace{0.3em}
+\textbf{(a) Correct-solution overlap of the first two agents.}\\[0.2em]
+\small
+\begin{tabular}{lrrr}
+\toprule
+Method & Intersection & Union & IoU $\downarrow$ \\
+\midrule
+Top-4 Debate & 182 & 188 & 96.8\% \\
+AC-Greedy & 177 & 190 & 93.2\% \\
+SC-Greedy & 176 & 186 & 94.6\% \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.7em}
+\textbf{(b) Team composition and held-out cumulative R0 coverage.}\\[0.2em]
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrr}
+\toprule
+Method & Construction rank (accuracy), in team order & Held-out cumulative coverage & R5 final \\
+\midrule
+Top-4 Debate & 1 (92.5\%), 1 (92.5\%), 3 (92.0\%), 3 (92.0\%) & 88.33 $\to$ 91.33 $\to$ 92.00 $\to$ 92.67 & 90.67 \\
+AC-Greedy & 1 (92.5\%), 25 (91.0\%), 25 (91.0\%), 8 (91.5\%) & 90.00 $\to$ 92.67 $\to$ 93.33 $\to$ 94.33 & 91.67 \\
+SC-Greedy & 8 (91.5\%), 181 (89.5\%), 8 (91.5\%), 25 (91.0\%) & 90.67 $\to$ 92.67 $\to$ 93.67 $\to$ 93.67 & 92.00 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+Both coverage objectives select less-overlapping first pairs than Top-4. When
+the four-agent societies are evaluated out of sample, AC-Greedy covers 283 of
+300 questions, SC-Greedy covers 281, and Top-4 covers 278. The selected agent
+identities need not encode fixed semantic roles; the evidence supports the
+narrower claim of transferable, task-level complementary proposal behavior.
+
+\paragraph{Pool- and construction-size sensitivity.}
+We run 200 paired subsampling replications across four Qwen benchmarks, with
+four selected agents and 50 held-out questions per replication. Entries in
+Table~\ref{tab:construction_sensitivity} are equal-dataset macro held-out
+proposal-hit@4.
+
+\begin{table}[H]
+\centering
+\caption{Sensitivity to candidate-pool size $N$ and construction-set size $m$.
+Each arrow follows the increasing values shown in the column header.}
+\label{tab:construction_sensitivity}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcc}
+\toprule
+Selector & Pool $N=50\to100\to200\to500$ & Construction $m=25\to50\to100\to150$ \\
+\midrule
+AC-Greedy & $84.06\to84.08\to84.29\to84.12$ & $83.22\to83.59\to84.12\to84.38$ \\
+SC-Greedy & $83.95\to84.03\to84.01\to83.81$ & $83.30\to83.36\to83.81\to83.85$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+Coverage is effectively saturated over $N=50$--$500$, while increasing $m$
+from 25 to 150 improves AC-Greedy by 1.16 points (95\% CI $[0.87,1.43]$) and
+SC-Greedy by 0.56 points ($[0.26,0.86]$). The useful perturbation scale remains
+task- and backbone-dependent. We swept a broader range on construction data,
+retained $\{5\times10^{-4},10^{-3},2\times10^{-3}\}$ because it contained a
+useful concentration of high-quality seeds, and froze that band before test
+evaluation; the per-scale profiles are in
+Table~\ref{tab:seed_profiling_details}.
+
+\paragraph{Hidden-Prefix construction.}
+To test whether construction requires labels or discrete answer identities, we
+remove final-answer tokens, keep the first 64 reasoning tokens, and record the
+$\ell_2$-normalized final-layer state at the prefix endpoint. For each
+question, Hidden-Prefix clusters the 500-agent pool with $k$-means ($k=4$, 20
+restarts) in cosine geometry and selects four agents to maximize
+inverse-support representation-cluster coverage. Neither answer identity nor
+correctness enters selection.
+
+Selection uses 200 construction questions and evaluation uses a disjoint
+300-question MMLU-Redux test set. We fix one Hidden-Prefix society and one
+TopAcc society and evaluate each with 10 paired generation seeds, temperature
+$0.7$, top-$p=0.95$, four agents, five verification-prompt rounds, an
+800-character peer context, and the same vote-then-judge finalizer.
+
+\begin{table}[H]
+\centering
+\caption{Fixed-society Qwen3-4B MMLU-Redux results. Hidden-Prefix and TopAcc
+report mean $\pm$ SD across 10 paired generation seeds; AC-Greedy and
+SC-Greedy are the submitted fixed runs and are included only as reference
+points.}
+\label{tab:hidden_prefix_construction}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcrrr}
+\toprule
+Selector & Construction signal & Requires & R0 hit@4 & R0 vote & R5 final \\
+\midrule
+AC-Greedy & Correct-answer coverage & Labels & 84.67 & 74.67 & 75.67 \\
+SC-Greedy & Answer-cluster coverage & Clusters & 82.00 & 68.67 & 75.33 \\
+Hidden-Prefix & Representation-cluster coverage & Neither & $84.30\pm0.69$ & $75.07\pm1.03$ & $77.00\pm1.25$ \\
+TopAcc & Individual accuracy & Labels & $83.60\pm0.62$ & $73.93\pm1.07$ & $75.40\pm0.80$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+Hidden-Prefix reaches 84.30 hit@4 without labels or answer identities, within
+0.37 points of supervised AC-Greedy. Against its paired TopAcc control, it
+improves R0 vote by 1.13 points (95\% CI $[0.20,2.07]$) and R5 final accuracy
+by 1.60 points ($[0.32,2.88]$); a two-way seed-and-question interval for the
+final gain is $[0.07,3.10]$. This establishes an answer-string-free
+construction route on a multiple-choice task. It does not yet validate
+semantic equivalence classes or evaluation for open-ended generation.

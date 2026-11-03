@@ -1,0 +1,262 @@
+{
+  "scope": "offline lineage/visibility/interface/length checks only",
+  "new_api_calls": 0,
+  "cases": [
+    {
+      "case_id": "004-age-10",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    },
+    {
+      "case_id": "004-age-09",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    },
+    {
+      "case_id": "009-beds-11",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    },
+    {
+      "case_id": "009-beds-06",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    },
+    {
+      "case_id": "011-time-18",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    },
+    {
+      "case_id": "011-time-24",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    },
+    {
+      "case_id": "023-road-89",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    },
+    {
+      "case_id": "023-road-95",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    },
+    {
+      "case_id": "023-booking-89",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    },
+    {
+      "case_id": "023-booking-95",
+      "actual_target_and_checker_inputs_verified": true,
+      "first_pair_only_draft_visibility_differs": true,
+      "source_access_matches_original": true,
+      "real_extract_carrier_replayed": true,
+      "new_method_semantics_not_tested": true
+    }
+  ],
+  "unique_local_carrier_responses": 9,
+  "unmodified_modern_final_replays": [
+    {
+      "file": "runs/evidence-first-live-20261025-r1/018.raw.txt",
+      "sha256": "e91fb51cb9d102f2a781b16aa275fd5e3d64a69a4b5af7577803a1534fe4a6b2",
+      "choice": "O1",
+      "annotation_issues": [
+        {
+          "field": "extra_fields",
+          "issue": "retained_separately",
+          "names": [
+            "used_contributions"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "runs/evidence-first-live-20261025-r1/036.raw.txt",
+      "sha256": "2d49b616e81775e7c3dafc9c101d206172ed3105d2e9a8436ebb06829e445522",
+      "choice": "O1",
+      "annotation_issues": [
+        {
+          "field": "extra_fields",
+          "issue": "retained_separately",
+          "names": [
+            "used_contributions"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "runs/evidence-first-live-20261025-r1/063.raw.txt",
+      "sha256": "809a826fbb913e475b5920d67629961278f9f1bb2c8cf0e3fb1405be4555b1ba",
+      "choice": "O1",
+      "annotation_issues": []
+    }
+  ],
+  "malformed_local_rejections": 9,
+  "malformed_final_rejections": 7,
+  "legacy_draft_rejections": 10,
+  "valid_unknown_and_optional_metadata_supported": true,
+  "length_estimates": [
+    {
+      "case_id": "004-age-10",
+      "local_visible": 1428,
+      "local_isolated": 1242,
+      "final_real_carrier": 4716,
+      "final_synthetic_stress": 6116
+    },
+    {
+      "case_id": "004-age-09",
+      "local_visible": 1377,
+      "local_isolated": 1242,
+      "final_real_carrier": 6167,
+      "final_synthetic_stress": 7567
+    },
+    {
+      "case_id": "009-beds-11",
+      "local_visible": 1491,
+      "local_isolated": 1222,
+      "final_real_carrier": 5752,
+      "final_synthetic_stress": 7192
+    },
+    {
+      "case_id": "009-beds-06",
+      "local_visible": 1421,
+      "local_isolated": 1222,
+      "final_real_carrier": 5252,
+      "final_synthetic_stress": 6662
+    },
+    {
+      "case_id": "011-time-18",
+      "local_visible": 1463,
+      "local_isolated": 1211,
+      "final_real_carrier": 5703,
+      "final_synthetic_stress": 7133
+    },
+    {
+      "case_id": "011-time-24",
+      "local_visible": 1466,
+      "local_isolated": 1211,
+      "final_real_carrier": 3829,
+      "final_synthetic_stress": 5269
+    },
+    {
+      "case_id": "023-road-89",
+      "local_visible": 1474,
+      "local_isolated": 1201,
+      "final_real_carrier": 3954,
+      "final_synthetic_stress": 5394
+    },
+    {
+      "case_id": "023-road-95",
+      "local_visible": 1383,
+      "local_isolated": 1201,
+      "final_real_carrier": 7053,
+      "final_synthetic_stress": 8493
+    },
+    {
+      "case_id": "023-booking-89",
+      "local_visible": 1496,
+      "local_isolated": 1223,
+      "final_real_carrier": 3982,
+      "final_synthetic_stress": 5412
+    },
+    {
+      "case_id": "023-booking-95",
+      "local_visible": 1405,
+      "local_isolated": 1223,
+      "final_real_carrier": 7076,
+      "final_synthetic_stress": 8506
+    }
+  ],
+  "max_input_estimate": 8506,
+  "scheduled_stress_input_estimate": 128907,
+  "source_hashes_verified": true,
+  "schedule_requests": 32,
+  "source_quality": [
+    {
+      "case_id": "004-age-10",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    },
+    {
+      "case_id": "004-age-09",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    },
+    {
+      "case_id": "009-beds-11",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    },
+    {
+      "case_id": "009-beds-06",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    },
+    {
+      "case_id": "011-time-18",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    },
+    {
+      "case_id": "011-time-24",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    },
+    {
+      "case_id": "023-road-89",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    },
+    {
+      "case_id": "023-road-95",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    },
+    {
+      "case_id": "023-booking-89",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    },
+    {
+      "case_id": "023-booking-95",
+      "unicode_replacement_characters_in_task_sources": 0,
+      "policy": "Historical source encoding artifacts retained verbatim; no silent repair or new interpretation."
+    }
+  ],
+  "checker_sha256": "4b6e1f40c357dc3ef7ab3656ba1b9f20f7780543a95c93f53bd59199be04678e",
+  "not_established": [
+    "No local or final output generated by the new method.",
+    "No live dependency runner, transport, runtime budget gate or launch freeze prepared.",
+    "No semantic success or autonomous target-selection result.",
+    "Synthetic stress is not a bound for every possible future response."
+  ]
+}

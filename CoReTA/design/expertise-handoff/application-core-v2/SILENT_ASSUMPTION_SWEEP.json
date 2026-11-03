@@ -1,0 +1,57 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "review_method": "Read-only source inspection. No tests, model calls, or network access performed by this reviewer.",
+  "project_root": "C:/Users/QVQ/Documents/ChatGPT/agent-research/CoReTA",
+  "undeclared": [],
+  "stale_rows": [],
+  "original_undeclared": [
+    {
+      "site": "src/coreta/application_v2/contracts.py:25; src/coreta/application_v2/state.py:25",
+      "decision": "Bindings permit visible W/Q/V references, while dependency propagation follows only direct U bindings.",
+      "why_it_matters": "A reference to conversational context does not carry application dependencies through that context. The original SPEC listed C/S/T/U without declaring this additional boundary.",
+      "class": "semantic",
+      "resolution": "Declared in A16 and aligned in SPEC and APPLY instructions. Inspected; resolved as a documented prototype boundary."
+    },
+    {
+      "site": "src/coreta/application_v2/state.py:100",
+      "decision": "The original pending-review handling checked whether V appeared in bindings or excluded, but did not constrain the application location using review.target_refs.",
+      "why_it_matters": "Accepted feedback explicitly targeting one U could be handled through an unrelated application.",
+      "class": "semantic",
+      "resolution": "A17 now declares the distinction between a unique current U target and broader review targets. The inspected guard requires accepted feedback about one current U to update or retire that U."
+    },
+    {
+      "site": "src/coreta/application_v2/state.py:150",
+      "decision": "The single explicit-missing limit counts every nonterminal U with missing, including applications excluded from the candidate and unrelated to a pending request.",
+      "why_it_matters": "Exclusion alone does not release the slot for another missing input; the old application must be resolved or retired.",
+      "class": "semantic",
+      "resolution": "Declared in A18 and the APPLY instructions. Inspected; resolved as a documented global bound."
+    }
+  ],
+  "concrete_defects": [
+    {
+      "site": "src/coreta/application_v2/state.py:100",
+      "original_defect": "Retiring the application targeted by a pending reply did not satisfy the required reply-reference check. A retirement-only response failed unless reply references were also bound or excluded.",
+      "impact": "The advertised path-retirement action was rejected as a reference error or forced an unnecessary rejection of the reply.",
+      "resolution": "A15 declares that targeted retirement handles the handoff. Current path_retired bypasses the generic reference requirement when the requested U is retired.",
+      "status": "addressed_by_source_inspection"
+    },
+    {
+      "site": "src/coreta/application_v2/state.py:112",
+      "original_defect": "all_rejected originally tested only whether every expected reply reference appeared in excluded. A C appearing in both bindings and excluded could therefore bypass the original-application requirement.",
+      "impact": "Partial acceptance could be represented as complete rejection, allowing use of a reply in an unrelated application.",
+      "resolution": "A15 declares partial-use handling. Current all_rejected additionally requires no expected reference in binding_refs.",
+      "status": "addressed_by_source_inspection"
+    },
+    {
+      "site": "src/coreta/application_v2/state.py:102",
+      "original_defect": "After adding the unique-review-target guard, retiring that targeted U alone still failed the generic pending-reference check because path_retired initially applied only to replies.",
+      "impact": "Accepting review feedback by abandoning its targeted application required an unnecessary V rejection or a new application.",
+      "resolution": "Current code computes the unique current review target before the generic check and allows its retirement to handle the pending review.",
+      "status": "addressed_by_source_inspection"
+    }
+  ],
+  "semantic_undeclared": 0,
+  "verdict": "no_additional_findings",
+  "limits": "This verdict concerns the inspected assumptions and reported paths after the revisions. It does not establish implementation correctness, model capability, or mechanism effectiveness. Scripted fixture success is offline engineering evidence only."
+}

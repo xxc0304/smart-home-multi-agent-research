@@ -1,0 +1,74 @@
+We repeat the three main-table methods involved in the coverage comparison---
+Vanilla Debate, SC-Greedy, and AC-Greedy---for five matched generation runs on
+both backbones and all eight benchmark columns. The original full test sets,
+model, society, prompts, and finalizer remain fixed. For this robustness
+experiment only, all three methods use temperature $0.7$ and top-$p=0.95$; the
+generation seed varies across runs and is shared across methods within each
+run. This common stochastic configuration differs from the submitted
+configuration in Table~\ref{tab:main_results}, where thicket agents use
+deterministic decoding and all methods use one fixed global seed.
+
+Table~\ref{tab:stochastic_robustness} reports mean $\pm$ standard deviation
+across the five runs. We compute the eight-column average within each run
+before summarizing across runs. Paired 95\% confidence intervals and two-sided
+$p$-values use paired $t$-tests on these five run-level averages. Thus, the
+intervals measure sensitivity to generation randomness under stochastic
+decoding; they do not include uncertainty from resampling test questions.
+
+\begin{table*}[t]
+\centering
+\caption{Five-run stochastic robustness under a common decoding configuration.
+Panel (a) reports mean $\pm$ SD across five generation seeds; bold marks the
+highest mean within each backbone and column, not statistical significance.
+Panel (b) reports paired comparisons of the five matched run-level
+eight-column averages. Effects and confidence intervals are in percentage
+points. Comparisons near the nominal $p=.05$ threshold should be interpreted
+cautiously.}
+\label{tab:stochastic_robustness}
+\vspace{0.3em}
+\textbf{(a) Per-benchmark accuracy and eight-column average.}\\[0.25em]
+\tiny
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Backbone & Method & AMC12 & MATH500 & GPQA & Chem. & CS & Med. & Moral & Acct. & 8-col. Avg \\
+\midrule
+\multirow{3}{*}{Qwen3-4B}
+ & Vanilla Debate & \textbf{92.56 $\pm$ 0.21} & 91.40 $\pm$ 0.55 & 50.40 $\pm$ 1.01 & \textbf{71.00 $\pm$ 3.65} & 81.00 $\pm$ 1.49 & 83.33 $\pm$ 0.00 & 67.67 $\pm$ 1.49 & 76.33 $\pm$ 1.39 & 76.71 $\pm$ 1.10 \\
+ & SC-Greedy & \textbf{92.56 $\pm$ 0.17} & \textbf{92.27 $\pm$ 0.43} & 51.62 $\pm$ 0.48 & 70.33 $\pm$ 3.80 & 84.00 $\pm$ 0.91 & \textbf{86.00 $\pm$ 0.91} & 69.67 $\pm$ 1.39 & 76.33 $\pm$ 2.17 & 77.85 $\pm$ 1.19 \\
+ & AC-Greedy & 92.21 $\pm$ 0.23 & 91.93 $\pm$ 0.49 & \textbf{52.20 $\pm$ 0.90} & 70.00 $\pm$ 1.18 & \textbf{84.33 $\pm$ 2.24} & 84.67 $\pm$ 1.39 & \textbf{73.00 $\pm$ 1.39} & \textbf{77.00 $\pm$ 1.39} & \textbf{78.17 $\pm$ 1.08} \\
+\midrule
+\multirow{3}{*}{OLMo3-7B}
+ & Vanilla Debate & \textbf{86.82 $\pm$ 0.68} & 85.80 $\pm$ 1.02 & 35.90 $\pm$ 0.24 & 60.67 $\pm$ 2.24 & 71.67 $\pm$ 4.08 & 72.67 $\pm$ 0.91 & 28.67 $\pm$ 3.80 & 57.00 $\pm$ 1.83 & 62.40 $\pm$ 1.72 \\
+ & SC-Greedy & 86.60 $\pm$ 0.59 & 85.60 $\pm$ 0.86 & \textbf{36.99 $\pm$ 1.78} & 59.00 $\pm$ 1.90 & 74.33 $\pm$ 2.24 & 74.33 $\pm$ 0.91 & 32.67 $\pm$ 4.35 & 57.33 $\pm$ 1.90 & 63.36 $\pm$ 1.69 \\
+ & AC-Greedy & 86.39 $\pm$ 0.89 & \textbf{86.13 $\pm$ 0.38} & 36.71 $\pm$ 0.87 & \textbf{62.33 $\pm$ 1.49} & \textbf{77.33 $\pm$ 1.90} & \textbf{75.00 $\pm$ 1.18} & \textbf{33.00 $\pm$ 3.61} & \textbf{58.33 $\pm$ 2.04} & \textbf{64.40 $\pm$ 1.39} \\
+\bottomrule
+\end{tabular}%
+}
+
+\vspace{0.7em}
+\textbf{(b) Paired comparisons of run-level averages.}\\[0.25em]
+\scriptsize
+\begin{tabular}{llrrr}
+\toprule
+Backbone & Comparison & $\Delta$ Avg & Paired 95\% CI & $p$-value \\
+\midrule
+\multirow{3}{*}{Qwen3-4B}
+ & SC-Greedy $-$ Vanilla Debate & $+1.135$ & $[0.599, 1.671]$ & $0.0042$ \\
+ & AC-Greedy $-$ Vanilla Debate & $+1.455$ & $[0.005, 2.905]$ & $0.0495$ \\
+ & AC-Greedy $-$ SC-Greedy & $+0.320$ & $[-1.225, 1.865]$ & $0.5961$ \\
+\midrule
+\multirow{3}{*}{OLMo3-7B}
+ & SC-Greedy $-$ Vanilla Debate & $+0.960$ & $[0.022, 1.898]$ & $0.0468$ \\
+ & AC-Greedy $-$ Vanilla Debate & $+2.005$ & $[1.320, 2.691]$ & $0.0012$ \\
+ & AC-Greedy $-$ SC-Greedy & $+1.045$ & $[0.209, 1.881]$ & $0.0256$ \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Both coverage-selected methods have higher aggregate accuracy than Vanilla
+Debate on both backbones in these matched runs. All four comparisons against
+Vanilla Debate have nominal $p<.05$, although the Qwen AC-Greedy interval and
+the OLMo SC-Greedy interval lie close to zero. AC-Greedy and SC-Greedy are not
+distinguishable on Qwen3-4B, while AC-Greedy has the higher run-level average
+on OLMo3-7B.

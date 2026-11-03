@@ -1,0 +1,79 @@
+{
+  "scope": "Local source-binding modification and offline validation only",
+  "protocol_variant": "task_audit_binding_v2",
+  "new_test_methods": 22,
+  "full_test_executions": 172,
+  "external_model_requests": 0,
+  "live_math140_regression_executed": false,
+  "commands": [
+    {
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "arguments": [
+        "-m",
+        "coreta.run_task_audit_binding",
+        "--help"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "arguments": [
+        "-m",
+        "coreta.run_task_audit_binding",
+        "--task",
+        "runs/math140-task-audit-20261020/4276ec64c178dafa/public_task.json",
+        "--output",
+        "engineering/source-binding-no-live-not-created"
+      ],
+      "exit_code": 2,
+      "expected": 2,
+      "pass": true
+    }
+  ],
+  "frozen_v1_source_hashes_match": {
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\revision.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\closure.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\closure_feedback.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\closure_diff.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\closure_format.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\task_audit.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\run_task_audit.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\model_client.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\schemas.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\state.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\scoring.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\config\\deepseek_flash_closure.json": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\task_audit_prompts.json": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\task_audit.schema.json": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\v0.3\\coreta.schema.json": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-expanded-screen-20261019\\public\\4276ec64c178dafa.json": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\tokenizer-v4.1-flash-1017\\tokenizer.json": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\tools\\math140_task_audit_regression.py": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-expanded-screen-20261019\\evaluation\\math_gold.json": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\engineering\\SCORING_IMAGE_20261019.txt": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\math140-task-audit-20261020\\draft-bank\\4950b6f5b953401707f029c5f785b54314c57413048cb86e53231f63ed7c184e.json": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\math140-task-audit-20261020\\draft-bank\\5a50f9cc4ea45f33ececab34cca13c91fdc52ca02eb084999fbb1a90b41af3b3.json": true,
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\math140-task-audit-20261020\\draft-bank\\5b7fe2344a5ebac8b01feb31af74151656151738ab0b9f327a02a5caa914b9c5.json": true
+  },
+  "new_source_sha256": {
+    "src/coreta/task_audit_binding.py": "6efc69e552284dbf371529d0b93ab87a05043de95c19ecd3cbf7acf7d4ec6fb7",
+    "src/coreta/run_task_audit_binding.py": "52f50c3f83800b1e8f98834aa58fac1efb99605a149cba99ffc5288364b19f0f",
+    "design/source_binding_prompts.json": "3e035d254fbeecbbb352925eef4adae7ff12c38fd5b71c8975b52a39282ddd8c",
+    "design/source_binding.schema.json": "d8667f74a08f9b5ce15083a49c415c21a821a890f97fbc9e4d4893803867909a",
+    "tests/test_source_binding.py": "f3176d3c448b8d6c14bdc7834b2a9e3ae14bcda115142c49cdc7b1ca87a5c607",
+    "tools/replay_source_bindings.py": "e3b6a4657acb9fc8c6a199892a433b6f0c0e82311eb9bf4434ac8b9e6d2a1aee"
+  }
+}

@@ -1,0 +1,5 @@
+# Local-work handoff prototype
+
+Target: remove the observed separation between already computable local work and later manual input wiring. Inputs: the completed v2 batch's actual contributions and existing bounded arithmetic engine. Outputs: a versioned atomic work interface, inherited-condition/dependency tests, historical task traces and a design review. Base commit: `00338a49953246eaeff582e1a16f4c2959b77374`; dirty working tree contains unrelated prior research. Review only this stage's listed files.
+
+Success: `python tools/check_local_work_handoff.py --output runs/local-work-handoff-check-20261027-v1` builds local producer results from original model-emitted calculations and permits an explicitly selected cross-member composition in the existing three waves. This is an engineering trace, not a new model result or repaired old experiment. Keep old files/results unchanged. No paid requests or new batch authorization in this stage. Scope: bounded numeric work only; no automatic semantic routing, no forced adoption, no extra review turns or training.

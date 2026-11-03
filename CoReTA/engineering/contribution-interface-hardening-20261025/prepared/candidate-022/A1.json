@@ -1,0 +1,56 @@
+{
+  "member": "A1",
+  "task": {
+    "task_id": "candidate-screening-022",
+    "scenario": "You and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive.",
+    "shared_information": [
+      "A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather.",
+      "Supply records say that Retreat Camp offers food, water, and sleeping bags for four people.",
+      "The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple.",
+      "The Rescue Outpost's exterior was recently checked and found structurally sound."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Retreat Camp"
+      },
+      {
+        "id": "option_2",
+        "text": "Rescue Outpost"
+      },
+      {
+        "id": "option_3",
+        "text": "Main Base"
+      }
+    ],
+    "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+  },
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "You and three other participants are scientists at an Antarctic research station. A massive, fast-moving storm is approaching. You must rapidly decide, as a group, which facility to seek shelter in for the next 48 hours. You have snow vehicles and limited time to reach only one location before the blizzard begins. Your three choices:\n- Main Base: The largest facility, but farther away.\n- Retreat Camp: A small, nearby camp rated for storms.\n- Rescue Outpost: Smaller, medium distance, typically used for emergencies.\nWhichever location you pick, you'll be unable to contact others until the storm passes. Supplies, infrastructure, and route safety may differ. Only one option will keep you safe and supplied until rescue teams arrive."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "A radio update confirms Retreat Camp is the closest shelter and is built to withstand severe weather."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Supply records say that Retreat Camp offers food, water, and sleeping bags for four people."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "The snow vehicle has just enough fuel to reach any of the three locations before the storm hits, but not to try multiple."
+    },
+    {
+      "ref": "PUBLIC.4",
+      "content": "The Rescue Outpost's exterior was recently checked and found structurally sound."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "S01",
+      "content": "The most recent supply delivery to Retreat Camp was delayed, so the promised food and water may not be there."
+    }
+  ]
+}

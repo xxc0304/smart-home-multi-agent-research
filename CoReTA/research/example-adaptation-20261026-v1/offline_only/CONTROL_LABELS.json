@@ -1,0 +1,41 @@
+{
+  "control-storage": {
+    "choice": "option_2",
+    "action": "update",
+    "finding": "supported",
+    "basis": {
+      "usable": [
+        16,
+        20
+      ],
+      "minimum": 18
+    }
+  },
+  "control-parallel": {
+    "choice": "option_1",
+    "action": "retain",
+    "finding": "unsupported",
+    "basis": {
+      "duration": 35,
+      "deadline": 40
+    }
+  },
+  "control-edition": {
+    "choice": "option_1",
+    "action": "retain",
+    "finding": "out_of_scope",
+    "basis": "edition 2 rule does not apply to edition 1"
+  },
+  "control-window": {
+    "choice": "option_2",
+    "action": "update",
+    "finding": "supported",
+    "basis": {
+      "ruvo_segments": [
+        2,
+        4
+      ],
+      "required_continuous": 6
+    }
+  }
+}

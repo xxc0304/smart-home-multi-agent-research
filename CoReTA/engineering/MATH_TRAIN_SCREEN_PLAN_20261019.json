@@ -1,0 +1,117 @@
+{
+  "purpose": "train-only model difficulty screening, no collaboration",
+  "tasks": [
+    {
+      "task_id": "math_train/algebra/397",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\c51b980cdab8b496.json",
+      "job_id": "c51b980cdab8b496",
+      "sha256": "3ffda54fd43ec8db25b2cf84e18375107b9ff099c53336e0d5c9892cc4d9fc74"
+    },
+    {
+      "task_id": "math_train/algebra/1558",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\0040f4a966c9b89d.json",
+      "job_id": "0040f4a966c9b89d",
+      "sha256": "5a50979d874065201694b9370d8d0391f2df2d8290ebabcd9388f0339bfb74f6"
+    },
+    {
+      "task_id": "math_train/algebra/87",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\ec264346e8e72489.json",
+      "job_id": "ec264346e8e72489",
+      "sha256": "15e23cbfd329c32536ea1b30c8bbdef4294df59b32973bc80a628416fbf903e2"
+    },
+    {
+      "task_id": "math_train/intermediate_algebra/143",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\0647e6d2592edbf4.json",
+      "job_id": "0647e6d2592edbf4",
+      "sha256": "35c1186689b15b715a90d2fd197682b2fc03be7198cf14a2c2358ecd2f76a457"
+    },
+    {
+      "task_id": "math_train/intermediate_algebra/332",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\48e1dece7b3948c4.json",
+      "job_id": "48e1dece7b3948c4",
+      "sha256": "8a885bfd80a3f55ba4c89afd8550d819ac37acf46ae81687e42969ed395e6783"
+    },
+    {
+      "task_id": "math_train/intermediate_algebra/393",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\9ba99da031c838c8.json",
+      "job_id": "9ba99da031c838c8",
+      "sha256": "b71cd668c52231bff56ddf0694c02fd0f9abefc1b118f4a32809f3be8b0d8a2b"
+    },
+    {
+      "task_id": "math_train/number_theory/641",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\d8c9fce5752c0d4e.json",
+      "job_id": "d8c9fce5752c0d4e",
+      "sha256": "aa76f5edb31be5ffea3608c9e3fdd88369b56a0658477a252a241d79a11f8ef6"
+    },
+    {
+      "task_id": "math_train/number_theory/762",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\f96a70df3819d4d9.json",
+      "job_id": "f96a70df3819d4d9",
+      "sha256": "6181f275537eaf0dbfbbe83a3ae9790a985e5e9bfa5247135e0192d36f67cee8"
+    },
+    {
+      "task_id": "math_train/number_theory/498",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\7dc9b3eb08768e90.json",
+      "job_id": "7dc9b3eb08768e90",
+      "sha256": "af3cfe711ed55355473a0c014b693e66cccd314d185b0b42594351cfca43db9f"
+    },
+    {
+      "task_id": "math_train/counting_and_probability/226",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\7172ba837c6b5140.json",
+      "job_id": "7172ba837c6b5140",
+      "sha256": "4612d59c63326ed4de9b4b4e235778fad51d9e587330c0919649d61439c98bda"
+    },
+    {
+      "task_id": "math_train/counting_and_probability/705",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\a69cd41b67962f7b.json",
+      "job_id": "a69cd41b67962f7b",
+      "sha256": "ac40daf8dce55e54265c3f83e2cc88d533616f1fb4638b9eb43c43d4d1f4e4ab"
+    },
+    {
+      "task_id": "math_train/counting_and_probability/674",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\45b4d1e9fc62222a.json",
+      "job_id": "45b4d1e9fc62222a",
+      "sha256": "f577a2ee96a293c6c2bf96d9cb0d692d1918f1781daa9f278a4c06fb379e6a4c"
+    }
+  ],
+  "normal_call_cap": 36,
+  "selection": "3 Level-5 per four subjects, fixed hash order, text diagrams retained unless external asy/image/tikz; exclude normalized formal500 and prior development prompts",
+  "failure_policy": "retain incomplete; no auto rerun, replacement, limit changes or stopping on first success",
+  "review": "uniform whole-pool contract review; retain all scores, do not select by complementarity or later outcomes",
+  "source_hashes": {
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\closure.py": "cf73a83e23cb3c76565d9e9b6c810c49c09c3fc84923a149db2acb2de89ed2c4",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\run_closure.py": "3df1eae6bee058dfb32d9a1169cbc1479950d95ffba007ee7c678f98274e6e27",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\revision.py": "e2e0a0134e61f947c4bf8216c3cfeaa11f828932aceafebab186de50f2282321",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\model_client.py": "5da91ab801ff8aa0c7bc26d3653d151be2dd0957f70c9331c970080e583088a3",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\schemas.py": "95362e9c7dd007171bb8e0008a84642de66d1df9fb8f7817438bf9db6b93d51a",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\state.py": "23171f392cf782de4ba8bd1407f971b1dbcc4840d37650e69cbb8b61374de346",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\scoring.py": "dea1cfc0d3b8cd8158cd582a97b8612bdd22ae4fcf47cbe73a7845ec362ff413",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\config\\deepseek_flash_closure.json": "a7b73ce2e7235fafc1fd5c3b6f5f10d14ccffbb18becf5fd2724304437edb026",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\closure_prompts.json": "ec31174de32da0aad4a859d400fab75f3275ceb3176330e545442a52191bbafe",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\v0.3\\coreta.schema.json": "963552ce9c8463d17191645dbe90c07b5c0873a3a409c18bad4aab6182d15c69",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\tokenizer-v4.1-flash-1017\\tokenizer.json": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\math500-test.jsonl": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\engineering\\SCORING_IMAGE_20261019.txt": "609aed7e1372676b60925c98647852c2e776ae5c4dfd8c7ebf874f0ac4e0eaad",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\math-train-21a5633\\algebra.parquet": "73347f5b55869f21ff094361025dbd12d291e971aa4d72142eacee10438e449f",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\math-train-21a5633\\counting_and_probability.parquet": "d37ae017930df41678edee50dcde18c17fb06afaff9eb505c1b95f1002bfcb31",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\math-train-21a5633\\intermediate_algebra.parquet": "0c87f3798ebdfb915b1f9b6fc13c1a8d064c3cb91631ccbe85b83ed5d71150f6",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\math-train-21a5633\\manifest.json": "5c2159beb6eb0dd0234acbccae4cd6a7262c04bd22c9b056382ab55f9b079832",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\math-train-21a5633\\number_theory.parquet": "81c08649149b39811f2d1d7ddf5dfccf6c4c8044a2e169cfb24db09160c941f4",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\0040f4a966c9b89d.json": "5a50979d874065201694b9370d8d0391f2df2d8290ebabcd9388f0339bfb74f6",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\0647e6d2592edbf4.json": "35c1186689b15b715a90d2fd197682b2fc03be7198cf14a2c2358ecd2f76a457",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\45b4d1e9fc62222a.json": "f577a2ee96a293c6c2bf96d9cb0d692d1918f1781daa9f278a4c06fb379e6a4c",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\48e1dece7b3948c4.json": "8a885bfd80a3f55ba4c89afd8550d819ac37acf46ae81687e42969ed395e6783",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\7172ba837c6b5140.json": "4612d59c63326ed4de9b4b4e235778fad51d9e587330c0919649d61439c98bda",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\7dc9b3eb08768e90.json": "af3cfe711ed55355473a0c014b693e66cccd314d185b0b42594351cfca43db9f",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\9ba99da031c838c8.json": "b71cd668c52231bff56ddf0694c02fd0f9abefc1b118f4a32809f3be8b0d8a2b",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\a69cd41b67962f7b.json": "ac40daf8dce55e54265c3f83e2cc88d533616f1fb4638b9eb43c43d4d1f4e4ab",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\c51b980cdab8b496.json": "3ffda54fd43ec8db25b2cf84e18375107b9ff099c53336e0d5c9892cc4d9fc74",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\d8c9fce5752c0d4e.json": "aa76f5edb31be5ffea3608c9e3fdd88369b56a0658477a252a241d79a11f8ef6",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\ec264346e8e72489.json": "15e23cbfd329c32536ea1b30c8bbdef4294df59b32973bc80a628416fbf903e2",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\public\\f96a70df3819d4d9.json": "6181f275537eaf0dbfbbe83a3ae9790a985e5e9bfa5247135e0192d36f67cee8",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\evaluation\\math_gold.json": "b4822ac72926b3db8096eca49a1e26853ddfcf46bef29feb3ce73f45ff594719",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\evaluation\\review.json": "fdbd80c29f45b425ea18544e791ce660fb5bee5ecaf11cede3163c293a7b2633",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\math-train-screen-20261019\\tasks.json": "8cdc44c7f231aa9b062dab022df264c4d1ce9c80171a983c05afda18e377daf4",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\tools\\math_train_screen.py": "88da8db41a6b21ba8bdd24ff1b463fa2ef856992c6b4a37b7d9c2ba028258e27"
+  }
+}

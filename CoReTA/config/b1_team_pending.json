@@ -1,0 +1,33 @@
+{
+  "fixture": false,
+  "reviewed_for_run": false,
+  "model_path": null,
+  "revision": null,
+  "dtype": null,
+  "quantization": null,
+  "device": null,
+  "max_length": null,
+  "template_kwargs": null,
+  "wall_seconds": null,
+  "target_modules": null,
+  "gradient_accumulation_steps": null,
+  "gradient_checkpointing": null,
+  "r": 8,
+  "alpha": 16,
+  "learning_rate": 2e-05,
+  "epochs": 1,
+  "seed": 20261102,
+  "generation": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "top_k": 0
+  },
+  "purpose": "expert_training",
+  "expert_actor": "M1",
+  "adapter_path": null,
+  "expert_C_score": null,
+  "baseline_C_score": null,
+  "answer_tokens": 64,
+  "work_tokens": 512
+}

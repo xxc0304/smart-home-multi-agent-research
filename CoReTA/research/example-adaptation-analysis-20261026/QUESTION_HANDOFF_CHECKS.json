@@ -1,0 +1,70 @@
+{
+  "status": "passed_local_only",
+  "new_api_calls": 0,
+  "enabled_in_frozen_runs": false,
+  "checks": [
+    {
+      "case_id": "004-age-10",
+      "receiver": "A1",
+      "original_question_addressee": "A2",
+      "roundtrip_lossless": true,
+      "facts_and_findings_unchanged": true
+    },
+    {
+      "case_id": "004-age-09",
+      "receiver": "A1",
+      "original_question_addressee": "A2",
+      "roundtrip_lossless": true,
+      "facts_and_findings_unchanged": true
+    },
+    {
+      "case_id": "009-beds-11",
+      "receiver": "A2",
+      "original_question_addressee": "A4",
+      "roundtrip_lossless": true,
+      "facts_and_findings_unchanged": true
+    },
+    {
+      "case_id": "009-beds-06",
+      "receiver": "A1",
+      "original_question_addressee": "A4",
+      "roundtrip_lossless": true,
+      "facts_and_findings_unchanged": true
+    },
+    {
+      "case_id": "011-time-18",
+      "receiver": "A1",
+      "original_question_addressee": "A2",
+      "roundtrip_lossless": true,
+      "facts_and_findings_unchanged": true
+    },
+    {
+      "case_id": "011-time-24",
+      "receiver": "A2",
+      "original_question_addressee": "A2",
+      "roundtrip_lossless": true,
+      "facts_and_findings_unchanged": true
+    },
+    {
+      "case_id": "023-road-89",
+      "receiver": "A1",
+      "original_question_addressee": "A1",
+      "roundtrip_lossless": true,
+      "facts_and_findings_unchanged": true
+    },
+    {
+      "case_id": "023-road-95",
+      "receiver": "A2",
+      "original_question_addressee": "A1",
+      "roundtrip_lossless": true,
+      "facts_and_findings_unchanged": true
+    }
+  ],
+  "guidance": "prior_local_question records a question addressed to addressed_member at an earlier stage. Words such as \"you\" and \"your sources\" inside that question refer to addressed_member, not to the current receiver. The current task is still to decide using all evidence actually provided in this receiver packet. A question's addressee does not restrict the receiver to that member's originals or certify any finding as true. ",
+  "fix_module_sha256": "297e1152666793eda03767669b2dbe3a39eaa67b14c741cf53e7c871f2565564",
+  "limitations": [
+    "No evidence this alone improves model answers.",
+    "Does not change source reliability or require adoption.",
+    "Not a substitute for re-review and a new freeze before any future paid run."
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "kind": "offline_evidence_visibility_diagnostic",
+  "http_calls": 0,
+  "human_chosen_target": true,
+  "original_private_materials_shared": false,
+  "original_artifacts_modified": false,
+  "inputs": [
+    {
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "checker": "A2",
+      "direct_original_refs": [
+        "S02",
+        "T"
+      ],
+      "key_sentence_visible_in_packet_fields": [
+        "CURRENT_WORK",
+        "PUBLIC_EVIDENCE",
+        "CANDIDATES",
+        "BEFORE",
+        "TARGET_OFFER",
+        "DIFF"
+      ],
+      "human_selected_public_excerpts": [
+        {
+          "version": "W4",
+          "author": "A1",
+          "field": "work_text",
+          "access": "visible_public_report_not_S01_original",
+          "text": "My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction."
+        },
+        {
+          "version": "W6",
+          "author": "A1",
+          "field": "work_text",
+          "access": "visible_public_report_not_S01_original",
+          "text": "Second, the plume: W5's 'Pine is reported in the northward plume path per S01' upgraded an inference to a reported fact. My own direct original S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified), and Cedar is south, hence relatively less exposed (also inference, not verified clear)."
+        }
+      ],
+      "safety_control": {
+        "version": "W4",
+        "text": "it is not in the reported northward plume path",
+        "object": "Cedar Station",
+        "source": "exact substring of same BEFORE work_text",
+        "visible": true
+      }
+    },
+    {
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "checker": "A3",
+      "direct_original_refs": [
+        "S03",
+        "T"
+      ],
+      "key_sentence_visible_in_packet_fields": [
+        "CURRENT_WORK",
+        "PUBLIC_EVIDENCE",
+        "CANDIDATES",
+        "BEFORE",
+        "TARGET_OFFER",
+        "DIFF"
+      ],
+      "human_selected_public_excerpts": [
+        {
+          "version": "W4",
+          "author": "A1",
+          "field": "work_text",
+          "access": "visible_public_report_not_S01_original",
+          "text": "My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction."
+        },
+        {
+          "version": "W6",
+          "author": "A1",
+          "field": "work_text",
+          "access": "visible_public_report_not_S01_original",
+          "text": "Second, the plume: W5's 'Pine is reported in the northward plume path per S01' upgraded an inference to a reported fact. My own direct original S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified), and Cedar is south, hence relatively less exposed (also inference, not verified clear)."
+        }
+      ],
+      "safety_control": {
+        "version": "W4",
+        "text": "it is not in the reported northward plume path",
+        "object": "Cedar Station",
+        "source": "exact substring of same BEFORE work_text",
+        "visible": true
+      }
+    },
+    {
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "checker": "A2",
+      "direct_original_refs": [
+        "S02",
+        "T"
+      ],
+      "key_sentence_visible_in_packet_fields": [
+        "CURRENT_WORK",
+        "CANDIDATES",
+        "BEFORE",
+        "DIFF"
+      ],
+      "human_selected_public_excerpts": [
+        {
+          "version": "W4",
+          "author": "A1",
+          "field": "work_text",
+          "access": "visible_public_report_not_S01_original",
+          "text": "My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction."
+        },
+        {
+          "version": "W6",
+          "author": "A1",
+          "field": "work_text",
+          "access": "visible_public_report_not_S01_original",
+          "text": "Pine Retreat (option_3) is rejected on my own direct original S01 (radio advisory: cloud drifting north). I state this as an inference, per O5/O3: Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact, and Cedar being south likewise means only that Cedar is not reported in the northward drift (inference, not verified safety)."
+        }
+      ],
+      "safety_control": {
+        "version": "W4",
+        "text": "it is not in the reported northward plume path",
+        "object": "Cedar Station",
+        "source": "exact substring of same BEFORE work_text",
+        "visible": true
+      }
+    },
+    {
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "checker": "A3",
+      "direct_original_refs": [
+        "S03",
+        "T"
+      ],
+      "key_sentence_visible_in_packet_fields": [
+        "CURRENT_WORK",
+        "CANDIDATES",
+        "BEFORE",
+        "DIFF"
+      ],
+      "human_selected_public_excerpts": [
+        {
+          "version": "W4",
+          "author": "A1",
+          "field": "work_text",
+          "access": "visible_public_report_not_S01_original",
+          "text": "My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction."
+        },
+        {
+          "version": "W6",
+          "author": "A1",
+          "field": "work_text",
+          "access": "visible_public_report_not_S01_original",
+          "text": "Pine Retreat (option_3) is rejected on my own direct original S01 (radio advisory: cloud drifting north). I state this as an inference, per O5/O3: Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact, and Cedar being south likewise means only that Cedar is not reported in the northward drift (inference, not verified safety)."
+        }
+      ],
+      "safety_control": {
+        "version": "W4",
+        "text": "it is not in the reported northward plume path",
+        "object": "Cedar Station",
+        "source": "exact substring of same BEFORE work_text",
+        "visible": true
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 17,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 18,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 19,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 20,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 21,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 22,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 23,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 24,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 25,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 26,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 27,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 28,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 29,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 30,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 31,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 32,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "contains_danger_word_lexical_only_not_semantic_score": false,
+      "explicit_Pine_danger_report_discussed_manual": false
+    }
+  ],
+  "interpretation_limit": "Visibility and output omission do not prove an attention or retrieval cause."
+}

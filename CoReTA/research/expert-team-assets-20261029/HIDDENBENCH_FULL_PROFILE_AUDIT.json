@@ -1,0 +1,798 @@
+[
+  {
+    "source_url": "https://huggingface.co/datasets/YuxuanLi1225/HiddenBench-results/resolve/main/paper/full_profile/full_profile_gemini-2.5-pro.json",
+    "file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\external\\hiddenbench-results-20261029\\full_profile_gemini-2.5-pro.json",
+    "bytes": 7172497,
+    "run_count": 650,
+    "unique_scenarios": 65,
+    "round_count_distribution": {
+      "1": 650
+    },
+    "all_members_special_in_every_run": true,
+    "run_keys": [
+      "final_votes",
+      "initial_votes",
+      "majority_vote",
+      "model",
+      "num_agents",
+      "num_special",
+      "rounds",
+      "scenario",
+      "timestamp"
+    ],
+    "condition_metadata": [
+      {
+        "condition_id": 1,
+        "model": "gemini-2.5-pro",
+        "percentage_special": 1.0,
+        "timestamp": "2025-09-18T13:43:58.012534",
+        "summary_statistics": {
+          "total_runs": 650,
+          "avg_num_agents": 3.8923076923076922,
+          "avg_num_special": 3.8923076923076922,
+          "scenario_stats": {
+            "evacuation_west_city": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "evacuation_north_hill": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "evacuation_east_town": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "toma_butera_2009": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "baker_2010": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "schulz_hardt_mojzisch_2012": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "Stasser_Stewart_1992": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "graetz_et_al_1998": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "critical_hospital_transfer": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_supply_drop": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_conference_relocation": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "evacuate_park_dilemma": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Laboratory Theft Deduction": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "lunch_group_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "artifact_safe_haven": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Crisis Backup Decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "scientists_animal_base_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "choosing_base_camp": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "city_storm_shelter_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "meteor_shower_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_transportation_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Antarctic Storm Safe Haven": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "community_banquet_venue_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Critical Data Backup Site Selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "select_emergency_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "manuscript_flood_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "research_station_site_selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Rescue the Lost Researchers": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Safe Shelter Selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "the_lead_investor_decision": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "weather_sensor_deployment": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "critical_vaccine_route": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Critical Sample Transfer": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "Safe Haven After the Spill": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "the_safe_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "datacenter_emergency_migration": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_warehouse_selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "storm_recovery_clinic_site_selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_aircraft_landing_site": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_hospital_transfer": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Space Evacuation Decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "safe_haven_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "The Artifact Delivery": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Choosing the Safe Offsite Venue": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Safe Lab Choice After Earthquake": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_evacuation_center_choice": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Find the Missing Prototype": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "missing_lab_sample": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "choosing_the_safe_field_station": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "secure_meeting_room_decision": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "emergency_supply_distribution": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "mountain_storm_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "sensor_placement_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "island_research_base_choice": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_drone_delivery": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Secure the Masterpiece": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "archaeological_dig_site": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "secure_negotiation_site_selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "last_minute_move": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "The Elusive Bird Sighting": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "power_outage_island": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "company_acquisition_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Emergency Event Relocation": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Office Outbreak Mystery": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Missing Medicine Delivery": {
+              "total_runs": 10,
+              "num_agents": 4
+            }
+          }
+        }
+      }
+    ],
+    "first_run": {
+      "scenario": "evacuation_west_city",
+      "model": "gemini-2.5-pro",
+      "num_agents": 4,
+      "num_special": 4,
+      "initial_votes": [
+        {
+          "agent": "Person 1",
+          "vote": "West City",
+          "rationale": "The routes to North Hill are blocked by a mudslide and closed trails, and the tunnel to East Town is blocked by a stuck truck. Therefore, the only accessible and safe route is the bridge to West City."
+        },
+        {
+          "agent": "Person 2",
+          "vote": "West City",
+          "rationale": "The routes to both North Hill and East Town are blocked. A mudslide covers the driveway to North Hill, and the tunnel to East Town is obstructed by a stuck truck. Therefore, West City is our only accessible evacuation option."
+        },
+        {
+          "agent": "Person 3",
+          "vote": "West City",
+          "rationale": "Based on the information, the routes to both East Town and North Hill are blocked by a fire and a mudslide, respectively. Therefore, West City is the only accessible evacuation route."
+        },
+        {
+          "agent": "Person 4",
+          "vote": "West City",
+          "rationale": "The routes to North Hill and East Town are blocked by a mudslide and a stuck truck in the tunnel, respectively. The bridge to West City is the only remaining safe and accessible evacuation route."
+        }
+      ],
+      "rounds": [
+        {
+          "round": 1,
+          "messages": [
+            {
+              "agent": "Person 1",
+              "prompt": "Your initial vote was: West City\nYour initial rationale was: The routes to North Hill are blocked by a mudslide and closed trails, and the tunnel to East Town is blocked by a stuck truck. Therefore, the only accessible and safe route is the bridge to West City.\n\nYou are the first to speak.",
+              "response": "Hello everyone. Based on the information I've received, the routes to both North Hill and East Town are blocked, so West City appears to be our only accessible evacuation route."
+            },
+            {
+              "agent": "Person 2",
+              "prompt": "Your initial vote was: West City\nYour initial rationale was: The routes to both North Hill and East Town are blocked. A mudslide covers the driveway to North Hill, and the tunnel to East Town is obstructed by a stuck truck. Therefore, West City is our only accessible evacuation option.\n\nPrevious messages from other people:\nPerson 1: Hello everyone. Based on the information I've received, the routes to both North Hill and East Town are blocked, so West City appears to be our only accessible evacuation route.\nIt's your turn to speak. ",
+              "response": "I agree completely. With the mudslide blocking North Hill and the truck stuck in the tunnel to East Town, West City is our only accessible route."
+            },
+            {
+              "agent": "Person 3",
+              "prompt": "Your initial vote was: West City\nYour initial rationale was: Based on the information, the routes to both East Town and North Hill are blocked by a fire and a mudslide, respectively. Therefore, West City is the only accessible evacuation route.\n\nPrevious messages from other people:\nPerson 1: Hello everyone. Based on the information I've received, the routes to both North Hill and East Town are blocked, so West City appears to be our only accessible evacuation route.\nPerson 2: I agree completely. With the mudslide blocking North Hill and the truck stuck in the tunnel to East Town, West City is our only accessible route.\nIt's your turn to speak. ",
+              "response": "It appears we are all in agreement. With the other routes being impassable due to the fire and mudslide, West City is our only safe option."
+            },
+            {
+              "agent": "Person 4",
+              "prompt": "Your initial vote was: West City\nYour initial rationale was: The routes to North Hill and East Town are blocked by a mudslide and a stuck truck in the tunnel, respectively. The bridge to West City is the only remaining safe and accessible evacuation route.\n\nPrevious messages from other people:\nPerson 1: Hello everyone. Based on the information I've received, the routes to both North Hill and East Town are blocked, so West City appears to be our only accessible evacuation route.\nPerson 2: I agree completely. With the mudslide blocking North Hill and the truck stuck in the tunnel to East Town, West City is our only accessible route.\nPerson 3: It appears we are all in agreement. With the other routes being impassable due to the fire and mudslide, West City is our only safe option.\nIt's your turn to speak. ",
+              "response": "It seems we are all in complete agreement. Since the routes to North Hill and East Town are impassable, West City is our only safe evacuation point."
+            }
+          ],
+          "votes": [
+            {
+              "agent": "Person 1",
+              "vote": "West City",
+              "rationale": "It seems we are all in agreement. The information clearly indicates that the routes to North Hill and East Town are blocked, making West City the only viable evacuation point."
+            },
+            {
+              "agent": "Person 2",
+              "vote": "West City",
+              "rationale": "We are all in agreement. The paths to North Hill and East Town are definitively blocked by a mudslide and a stuck truck, respectively. Therefore, West City is our only remaining safe and accessible option."
+            },
+            {
+              "agent": "Person 3",
+              "vote": "West City",
+              "rationale": "We have a clear and unanimous consensus. The routes to East Town and North Hill are definitively blocked by a fire and a mudslide, respectively. Therefore, West City is the only safe and accessible evacuation route available to us."
+            },
+            {
+              "agent": "Person 4",
+              "vote": "West City",
+              "rationale": "We have reached a unanimous decision. The routes to North Hill and East Town are definitively blocked by a mudslide and a stuck truck in the tunnel, respectively. This leaves West City, accessible via the bridge, as our only safe and logical evacuation route."
+            }
+          ]
+        }
+      ],
+      "final_votes": [
+        {
+          "agent": "Person 1",
+          "vote": "West City",
+          "rationale": "It seems we are all in agreement. The information clearly indicates that the routes to North Hill and East Town are blocked, making West City the only viable evacuation point."
+        },
+        {
+          "agent": "Person 2",
+          "vote": "West City",
+          "rationale": "We are all in agreement. The paths to North Hill and East Town are definitively blocked by a mudslide and a stuck truck, respectively. Therefore, West City is our only remaining safe and accessible option."
+        },
+        {
+          "agent": "Person 3",
+          "vote": "West City",
+          "rationale": "We have a clear and unanimous consensus. The routes to East Town and North Hill are definitively blocked by a fire and a mudslide, respectively. Therefore, West City is the only safe and accessible evacuation route available to us."
+        },
+        {
+          "agent": "Person 4",
+          "vote": "West City",
+          "rationale": "We have reached a unanimous decision. The routes to North Hill and East Town are definitively blocked by a mudslide and a stuck truck in the tunnel, respectively. This leaves West City, accessible via the bridge, as our only safe and logical evacuation route."
+        }
+      ],
+      "majority_vote": "West City",
+      "timestamp": "2025-09-18T13:43:58.013168"
+    }
+  },
+  {
+    "source_url": "https://huggingface.co/datasets/YuxuanLi1225/HiddenBench-results/resolve/main/paper/full_profile/full_profile_gpt-4.1.json",
+    "file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\external\\hiddenbench-results-20261029\\full_profile_gpt-4.1.json",
+    "bytes": 7806139,
+    "run_count": 650,
+    "unique_scenarios": 65,
+    "round_count_distribution": {
+      "1": 650
+    },
+    "all_members_special_in_every_run": true,
+    "run_keys": [
+      "final_votes",
+      "initial_votes",
+      "majority_vote",
+      "model",
+      "num_agents",
+      "num_special",
+      "rounds",
+      "scenario",
+      "timestamp"
+    ],
+    "condition_metadata": [
+      {
+        "condition_id": 1,
+        "model": "gpt-4.1",
+        "percentage_special": 1.0,
+        "timestamp": "2025-09-15T16:46:50.008500",
+        "summary_statistics": {
+          "total_runs": 650,
+          "avg_num_agents": 3.8923076923076922,
+          "avg_num_special": 3.8923076923076922,
+          "scenario_stats": {
+            "evacuation_west_city": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "evacuation_north_hill": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "evacuation_east_town": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "toma_butera_2009": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "baker_2010": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "schulz_hardt_mojzisch_2012": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "graetz_et_al_1998": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Stasser_Stewart_1992": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "critical_hospital_transfer": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_supply_drop": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_conference_relocation": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "evacuate_park_dilemma": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Laboratory Theft Deduction": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "lunch_group_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "artifact_safe_haven": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Crisis Backup Decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "scientists_animal_base_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "choosing_base_camp": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "city_storm_shelter_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "meteor_shower_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_transportation_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Antarctic Storm Safe Haven": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "community_banquet_venue_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Critical Data Backup Site Selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "select_emergency_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "manuscript_flood_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "research_station_site_selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Rescue the Lost Researchers": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Safe Shelter Selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "the_lead_investor_decision": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "weather_sensor_deployment": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "critical_vaccine_route": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Critical Sample Transfer": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "Safe Haven After the Spill": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "the_safe_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "datacenter_emergency_migration": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_warehouse_selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "storm_recovery_clinic_site_selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_aircraft_landing_site": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_hospital_transfer": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Space Evacuation Decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "safe_haven_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "The Artifact Delivery": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Choosing the Safe Offsite Venue": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Safe Lab Choice After Earthquake": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_evacuation_center_choice": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Find the Missing Prototype": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "missing_lab_sample": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "choosing_the_safe_field_station": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "secure_meeting_room_decision": {
+              "total_runs": 10,
+              "num_agents": 3
+            },
+            "emergency_supply_distribution": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "mountain_storm_shelter": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "sensor_placement_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "island_research_base_choice": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "emergency_drone_delivery": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Secure the Masterpiece": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "archaeological_dig_site": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "secure_negotiation_site_selection": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "last_minute_move": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "The Elusive Bird Sighting": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "power_outage_island": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "company_acquisition_decision": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Emergency Event Relocation": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Office Outbreak Mystery": {
+              "total_runs": 10,
+              "num_agents": 4
+            },
+            "Missing Medicine Delivery": {
+              "total_runs": 10,
+              "num_agents": 4
+            }
+          }
+        }
+      }
+    ],
+    "first_run": {
+      "scenario": "evacuation_west_city",
+      "model": "gpt-4.1",
+      "num_agents": 4,
+      "num_special": 4,
+      "initial_votes": [
+        {
+          "agent": "Person 1",
+          "vote": "West City",
+          "rationale": "The bridge to West City is still accessible as the river hasn't flooded it, while both the driveway and walking trails to North Hill are blocked, and the tunnel to East Town is blocked by the supply truck. West City hotels are prepared to accommodate evacuees."
+        },
+        {
+          "agent": "Person 2",
+          "vote": "West City",
+          "rationale": "East Town's tunnel is blocked by a fire, North Hill's access is cut off by a mudslide and the trails are closed, but the bridge to West City remains open and hotels are prepared for evacuees."
+        },
+        {
+          "agent": "Person 3",
+          "vote": "West City",
+          "rationale": "The tunnel to East Town is blocked by a stuck supply truck and a massive fire, and the driveway plus walking trails to North Hill are inaccessible due to a mudslide and fallen trees. The route to West City is still open since the river level is below the bridge and hotels there are ready to accept evacuees, making it the only accessible and safe option."
+        },
+        {
+          "agent": "Person 4",
+          "vote": "West City",
+          "rationale": "The driveway and trails to North Hill are inaccessible due to mudslides and fallen trees, and the tunnel to East Town is blocked by fire and a stuck truck, leaving the bridge to West City as the only viable route despite limited medical supplies."
+        }
+      ],
+      "rounds": [
+        {
+          "round": 1,
+          "messages": [
+            {
+              "agent": "Person 1",
+              "prompt": "Your initial vote was: West City\nYour initial rationale was: The bridge to West City is still accessible as the river hasn't flooded it, while both the driveway and walking trails to North Hill are blocked, and the tunnel to East Town is blocked by the supply truck. West City hotels are prepared to accommodate evacuees.\n\nYou are the first to speak.",
+              "response": "Given that both routes to North Hill are blocked and the tunnel to East Town is obstructed by the stuck supply truck, I recommend we evacuate to West City since the bridge remains accessible and hotels are ready for us."
+            },
+            {
+              "agent": "Person 2",
+              "prompt": "Your initial vote was: West City\nYour initial rationale was: East Town's tunnel is blocked by a fire, North Hill's access is cut off by a mudslide and the trails are closed, but the bridge to West City remains open and hotels are prepared for evacuees.\n\nPrevious messages from other people:\nPerson 1: Given that both routes to North Hill are blocked and the tunnel to East Town is obstructed by the stuck supply truck, I recommend we evacuate to West City since the bridge remains accessible and hotels are ready for us.\nIt's your turn to speak. ",
+              "response": "I agree—both North Hill and East Town are inaccessible due to the mudslide, fallen trees, and fire, but the bridge to West City is currently safe, so evacuating to West City is the best option."
+            },
+            {
+              "agent": "Person 3",
+              "prompt": "Your initial vote was: West City\nYour initial rationale was: The tunnel to East Town is blocked by a stuck supply truck and a massive fire, and the driveway plus walking trails to North Hill are inaccessible due to a mudslide and fallen trees. The route to West City is still open since the river level is below the bridge and hotels there are ready to accept evacuees, making it the only accessible and safe option.\n\nPrevious messages from other people:\nPerson 1: Given that both routes to North Hill are blocked and the tunnel to East Town is obstructed by the stuck supply truck, I recommend we evacuate to West City since the bridge remains accessible and hotels are ready for us.\nPerson 2: I agree—both North Hill and East Town are inaccessible due to the mudslide, fallen trees, and fire, but the bridge to West City is currently safe, so evacuating to West City is the best option.\nIt's your turn to speak. ",
+              "response": "I agree with both of you—West City is the safest and only accessible option right now, given all routes to North Hill and East Town are blocked, and the bridge is still passable. Let’s confirm West City as our evacuation destination."
+            },
+            {
+              "agent": "Person 4",
+              "prompt": "Your initial vote was: West City\nYour initial rationale was: The driveway and trails to North Hill are inaccessible due to mudslides and fallen trees, and the tunnel to East Town is blocked by fire and a stuck truck, leaving the bridge to West City as the only viable route despite limited medical supplies.\n\nPrevious messages from other people:\nPerson 1: Given that both routes to North Hill are blocked and the tunnel to East Town is obstructed by the stuck supply truck, I recommend we evacuate to West City since the bridge remains accessible and hotels are ready for us.\nPerson 2: I agree—both North Hill and East Town are inaccessible due to the mudslide, fallen trees, and fire, but the bridge to West City is currently safe, so evacuating to West City is the best option.\nPerson 3: I agree with both of you—West City is the safest and only accessible option right now, given all routes to North Hill and East Town are blocked, and the bridge is still passable. Let’s confirm West City as our evacuation destination.\nIt's your turn to speak. ",
+              "response": "I completely agree—West City is the only safe and accessible evacuation option at this moment, so let’s proceed with evacuating there."
+            }
+          ],
+          "votes": [
+            {
+              "agent": "Person 1",
+              "vote": "West City",
+              "rationale": "West City is the only accessible evacuation site—all routes to North Hill are blocked by mudslide and fallen trees, and the tunnel to East Town is blocked by the stuck supply truck and fire risk. The bridge to West City is currently safe, and hotels there are prepared for evacuees."
+            },
+            {
+              "agent": "Person 2",
+              "vote": "West City",
+              "rationale": "West City is the only evacuation point that remains accessible—the bridge is still open, while North Hill and East Town are blocked by mudslides, trail closures, and a fire, making West City the safest and only viable route for evacuation."
+            },
+            {
+              "agent": "Person 3",
+              "vote": "West City",
+              "rationale": "West City is the only accessible option since the tunnel to East Town is blocked by a stuck truck and fire, and both the driveway and walking trails to North Hill are closed due to a mudslide and fallen trees. The bridge to West City is still safe, and accommodations are prepared for evacuees."
+            },
+            {
+              "agent": "Person 4",
+              "vote": "West City",
+              "rationale": "All routes to North Hill and East Town are blocked due to mudslides, fallen trees, fire, and a stuck truck, leaving the bridge to West City as the only accessible evacuation route. Hotels there are ready to receive evacuees, making it the safest and most viable choice."
+            }
+          ]
+        }
+      ],
+      "final_votes": [
+        {
+          "agent": "Person 1",
+          "vote": "West City",
+          "rationale": "West City is the only accessible evacuation site—all routes to North Hill are blocked by mudslide and fallen trees, and the tunnel to East Town is blocked by the stuck supply truck and fire risk. The bridge to West City is currently safe, and hotels there are prepared for evacuees."
+        },
+        {
+          "agent": "Person 2",
+          "vote": "West City",
+          "rationale": "West City is the only evacuation point that remains accessible—the bridge is still open, while North Hill and East Town are blocked by mudslides, trail closures, and a fire, making West City the safest and only viable route for evacuation."
+        },
+        {
+          "agent": "Person 3",
+          "vote": "West City",
+          "rationale": "West City is the only accessible option since the tunnel to East Town is blocked by a stuck truck and fire, and both the driveway and walking trails to North Hill are closed due to a mudslide and fallen trees. The bridge to West City is still safe, and accommodations are prepared for evacuees."
+        },
+        {
+          "agent": "Person 4",
+          "vote": "West City",
+          "rationale": "All routes to North Hill and East Town are blocked due to mudslides, fallen trees, fire, and a stuck truck, leaving the bridge to West City as the only accessible evacuation route. Hotels there are ready to receive evacuees, making it the safest and most viable choice."
+        }
+      ],
+      "majority_vote": "West City",
+      "timestamp": "2025-09-15T16:46:50.031583"
+    }
+  }
+]

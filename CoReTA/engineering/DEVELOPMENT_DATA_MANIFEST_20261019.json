@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-10-18T17:18:43.486295+00:00",
+  "sources": {
+    "gsm8k": {
+      "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/train-00000-of-00001.parquet",
+      "file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\gsm8k-train.parquet",
+      "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+      "rows": 7473
+    },
+    "mbpp": {
+      "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/sanitized/train-00000-of-00001.parquet",
+      "file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\mbpp-sanitized-train.parquet",
+      "sha256": "d95f8ad6d2fff08fe4826122d6e3e31f75716825d0c5c340d297aca5e9e0de0e",
+      "rows": 120
+    },
+    "math500": {
+      "url": "https://huggingface.co/datasets/HuggingFaceH4/MATH-500/resolve/6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be/test.jsonl",
+      "file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\math500-test.jsonl",
+      "sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132",
+      "rows": 500
+    },
+    "humaneval": {
+      "url": "https://github.com/evalplus/humanevalplus_release/releases/download/v0.1.10/HumanEvalPlus.jsonl.gz",
+      "file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\source\\HumanEvalPlus-v0.1.10.jsonl.gz",
+      "sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+      "rows": 164
+    }
+  },
+  "selection_prefix": "coreta-dev-v1",
+  "counts": {
+    "gsm8k": 50,
+    "mbpp": 50
+  },
+  "pilot_counts": {
+    "gsm8k": 10,
+    "mbpp": 10
+  },
+  "skipped": [],
+  "task_index_sha256": "6bf00186c6e06d26a45238b9816b8dac536da8abd9f8234199bd813386a8bd1a",
+  "evaluation_files": {
+    "math_gold.json": "e974f167c7d60d0c3baa69c27072ba1e90893ef73371914fa5d7caa86c62c3c3",
+    "mbpp_tests.json": "c34bcaac2df04769ee14daa5afe29bc429047e746bc02472fef9ee161035c961"
+  },
+  "dedup": "NFKC plus whitespace; source public prompts checked against all MATH-500/HumanEval prompts",
+  "model_calls": 0,
+  "evaluation_scores": null
+}

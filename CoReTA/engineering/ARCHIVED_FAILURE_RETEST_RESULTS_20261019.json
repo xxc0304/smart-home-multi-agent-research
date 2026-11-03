@@ -1,0 +1,132 @@
+[
+  {
+    "task_id": "mbpp/train/756",
+    "run_id": "coreta-revision-1ddc048f4b1d",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "import re\n\n\ndef text_match_zero_one(text):\n    \"\"\"Return True if *text* contains an 'a' followed by one or more 'b's.\n\n    The pattern ``ab+`` matches a literal 'a' followed by at least one 'b'\n    anywhere in the string (re.search, not fullmatch), case-sensitively.\n    \"\"\"\n    return re.search(r'ab+', text) is not None",
+    "prefinal_artifact": "import re\n\n\ndef text_match_zero_one(text):\n    \"\"\"Return True if *text* contains an 'a' followed by one or more 'b's.\n\n    The pattern ``ab+`` matches a literal 'a' followed by at least one 'b'\n    anywhere in the string (re.search, not fullmatch).\n    \"\"\"\n    return re.search(r'ab+', text) is not None",
+    "finalizer_changed": true,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 8,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "0168853753d5c4972c914d277a2befd7a73e19d5f6805218877fa5ee61592b32",
+      "5c9999bb5a0629672011560b0fe887c683274c56870b4ea44a688c85634a1fe5",
+      "07ae0e78b29bf177f021e52ae176b2e3468d69f14f2836399965902b9e1d3f24"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "mbpp/train/756",
+    "run_id": "coreta-revision-d27f7972490c",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "import re\n\n\ndef text_match_zero_one(text):\n    \"\"\"Return True if *text* contains an 'a' followed by one or more 'b's.\n\n    The pattern ``ab+`` matches a literal 'a' followed by at least one 'b'\n    anywhere in the string (re.search, not fullmatch). Returns a bool.\n    \"\"\"\n    return bool(re.search(r'ab+', text))\n",
+    "prefinal_artifact": "import re\n\n\ndef text_match_zero_one(text):\n    \"\"\"Return True if *text* contains an 'a' followed by one or more 'b's.\n\n    ``ab+`` matches a literal 'a' followed by at least one 'b' anywhere in\n    the string (re.search, not fullmatch). Returns a bool.\n    \"\"\"\n    return bool(re.search(r'ab+', text))\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "0168853753d5c4972c914d277a2befd7a73e19d5f6805218877fa5ee61592b32",
+      "5c9999bb5a0629672011560b0fe887c683274c56870b4ea44a688c85634a1fe5",
+      "07ae0e78b29bf177f021e52ae176b2e3468d69f14f2836399965902b9e1d3f24"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/756",
+    "run_id": "coreta-revision-8c1d4221e1f4",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "import re\n\n\ndef text_match_zero_one(text):\n    \"\"\"Return True if *text* contains an 'a' followed by one or more 'b's.\"\"\"\n    return bool(re.search(r'ab+', text))",
+    "prefinal_artifact": "import re\n\n\ndef text_match_zero_one(text):\n    \"\"\"Return True if *text* contains 'a' followed by one or more 'b's.\n\n    The pattern used is ``ab+``, which matches an 'a' followed by at least\n    one 'b' anywhere in the string.\n    \"\"\"\n    return bool(re.search(r'ab+', text))",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "0168853753d5c4972c914d277a2befd7a73e19d5f6805218877fa5ee61592b32",
+      "5c9999bb5a0629672011560b0fe887c683274c56870b4ea44a688c85634a1fe5",
+      "07ae0e78b29bf177f021e52ae176b2e3468d69f14f2836399965902b9e1d3f24"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/756",
+    "run_id": "coreta-revision-b3716c0edaed",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "import re\n\n\ndef text_match_zero_one(text):\n    \"\"\"Return True if *text* contains an 'a' followed by one or more 'b's.\n\n    The pattern r'ab+' matches a literal 'a' immediately followed by at\n    least one 'b'. re.search is used so the match may occur anywhere in\n    the string, consistent with the 'has an a followed by ...' wording.\n    \"\"\"\n    return bool(re.search(r'ab+', text))",
+    "prefinal_artifact": "import re\n\n\ndef text_match_zero_one(text):\n    \"\"\"Return True if *text* contains an 'a' followed by one or more 'b's.\n\n    Uses re.search with pattern r'ab+', so the match may start anywhere in\n    the string, and requires at least one 'b' immediately after the 'a'.\n    \"\"\"\n    return bool(re.search(r'ab+', text))",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "0168853753d5c4972c914d277a2befd7a73e19d5f6805218877fa5ee61592b32",
+      "5c9999bb5a0629672011560b0fe887c683274c56870b4ea44a688c85634a1fe5",
+      "07ae0e78b29bf177f021e52ae176b2e3468d69f14f2836399965902b9e1d3f24"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  }
+]

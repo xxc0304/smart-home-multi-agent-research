@@ -1,0 +1,76 @@
+{
+  "task": {
+    "task_id": "hb-imp-confirm-008",
+    "scenario": "You are participating in a study, acting as an investigator in a murder case. Your goal is to figure out who killed Mr. Guion, a well-known car company owner.\nThe Incident:\nMr. Guion was found dead behind his house on a Saturday morning. It appears he was hit with a crowbar and then fell down the stairs. The autopsy shows he died from the fall sometime between 6:30 and 7:00 AM.\nYou will work with other investigators (other participants) to decide who to prosecute. There are three suspects:\n- Eddie Sullivan: A handyman who worked for Guion.\n- Billy Prentice: The yardman at Guion's estate.\n- Mickey Malone: A car parts supplier and Guion's golfing buddy.\nOnly one person committed the crime.\n- If you identify the correct person, you earn $1.\n- If everyone agrees on the correct person, you each earn $2 total.\n- You don't know when the discussion will end, so decide carefully.",
+    "shared_information": [
+      "Eddie said he was dismantling a shed around Guion's house from 6:00 AM.",
+      "Eddie knew Guion left home for golf around 6:30 AM.",
+      "The crowbar belongs to Eddie, but Billy's fingerprints were partially on its handle.",
+      "Mickey knew Guion's house well, as he often picked Guion up for golf.",
+      "Mickey said he left his house to pick Guion up for golf, but turned down and went to a café instead.",
+      "Guion informed Mickey of his decision to possibly stop supporting Mickey's business the day before.",
+      "Eddie said he heard Billy's car leave Guion's house around 7:00 AM.",
+      "Billy said Eddie's tools were usually locked up, but the crowbar was oddly left out."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Eddie Sullivan"
+      },
+      {
+        "id": "option_2",
+        "text": "Billy Prentice"
+      },
+      {
+        "id": "option_3",
+        "text": "Mickey Malone"
+      }
+    ],
+    "instruction": "Follow the decision requirement in the task and explain genuine unresolved conditions."
+  },
+  "member": "A3",
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "You are participating in a study, acting as an investigator in a murder case. Your goal is to figure out who killed Mr. Guion, a well-known car company owner.\nThe Incident:\nMr. Guion was found dead behind his house on a Saturday morning. It appears he was hit with a crowbar and then fell down the stairs. The autopsy shows he died from the fall sometime between 6:30 and 7:00 AM.\nYou will work with other investigators (other participants) to decide who to prosecute. There are three suspects:\n- Eddie Sullivan: A handyman who worked for Guion.\n- Billy Prentice: The yardman at Guion's estate.\n- Mickey Malone: A car parts supplier and Guion's golfing buddy.\nOnly one person committed the crime.\n- If you identify the correct person, you earn $1.\n- If everyone agrees on the correct person, you each earn $2 total.\n- You don't know when the discussion will end, so decide carefully."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "Eddie said he was dismantling a shed around Guion's house from 6:00 AM."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Eddie knew Guion left home for golf around 6:30 AM."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "The crowbar belongs to Eddie, but Billy's fingerprints were partially on its handle."
+    },
+    {
+      "ref": "PUBLIC.4",
+      "content": "Mickey knew Guion's house well, as he often picked Guion up for golf."
+    },
+    {
+      "ref": "PUBLIC.5",
+      "content": "Mickey said he left his house to pick Guion up for golf, but turned down and went to a café instead."
+    },
+    {
+      "ref": "PUBLIC.6",
+      "content": "Guion informed Mickey of his decision to possibly stop supporting Mickey's business the day before."
+    },
+    {
+      "ref": "PUBLIC.7",
+      "content": "Eddie said he heard Billy's car leave Guion's house around 7:00 AM."
+    },
+    {
+      "ref": "PUBLIC.8",
+      "content": "Billy said Eddie's tools were usually locked up, but the crowbar was oddly left out."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "PRIVATE.A3",
+      "content": "Billy needed some money for some purposes a week before. A golfing friend remembered seeing Mickey at the golf course sometime after 7:00 AM. Guion had recently fired Eddie's daughter after insulting her, which left Eddie furious, according to another employee."
+    }
+  ]
+}

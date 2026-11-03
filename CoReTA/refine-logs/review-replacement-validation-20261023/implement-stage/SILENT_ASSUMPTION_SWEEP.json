@@ -1,0 +1,19 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "verdict": "provisional_no_findings",
+  "undeclared": [],
+  "stale_rows": [],
+  "defects": [],
+  "semantic_undeclared": 0,
+  "review_scope": "Bounded development diagnostic implementation and declared assumptions; no efficacy assessment.",
+  "declared_semantics_audit": [
+    {"rows": ["R01", "R02"], "result": "Consistent", "evidence": "All eight frozen A payloads equal their historical request payloads. All eight B payloads equal A with exactly the approved stage-duty replacement. Packet, schema, remaining instructions and generation parameters are preserved."},
+    {"rows": ["R03"], "result": "Consistent", "evidence": "The frozen manifest contains 32 calls: each of eight inputs has A/B conditions with repeats 1 and 2. Condition order alternates as declared. Each request reloads its fixed payload; generated responses never enter subsequent requests. Logical seeds 17/18 are logged without being sent."},
+    {"rows": ["R04"], "result": "Consistent", "evidence": "Prepared transport retries are zero; no format-repair or resume path exists. Each payload requests at most 3072 output tokens. The runner checks attempt and output reservation limits and stops on the first caught error. Raw responses and available usage are logged before response-status or schema rejection; unavailable usage is counted separately."},
+    {"rows": ["R05"], "result": "Consistent with the pending manual evaluation", "evidence": "The pre-run rubric separates detection, access errors, false criticism and evidence alignment; preserves uncertainty and missing outcomes; and identifies correlated observations. No automatic success scorer or online gold loading is introduced."},
+    {"rows": ["R06", "R07"], "result": "Consistent", "evidence": "Prepared configuration uses the declared official endpoint, model, temperature, reasoning setting and tokenizer. All recorded source and payload hashes match current files. Direct sources remain A2/S02, A1/S01 or A3/S03 as appropriate; 034 reviewers receive no new S01 original. The probe invokes neither TRY nor CHOOSE."}
+  ],
+  "verification": {"mode": "Read-only source, artifact and equality inspection", "prepared_directory": "runs/review-replacement-prepared-20261023-r1", "source_or_payload_hash_mismatches": 0, "historical_payload_matches": 8, "exact_candidate_intervention_matches": 8, "maximum_recorded_input_estimate": 20559, "configured_input_limit": 32768, "real_model_calls_made": 0, "files_modified": 0, "tests_rerun": false},
+  "limitations": ["This same-family review is provisional and does not establish reviewer efficacy.", "Live outcomes and the manual semantic audit remain pending."]
+}

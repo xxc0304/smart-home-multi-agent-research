@@ -1,0 +1,1052 @@
+[
+  {
+    "task_id": "mbpp/train/730",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-b29118e273ba:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "algorithm correctness for ordinary list inputs",
+          "claim": "The implementation correctly removes consecutive duplicates while preserving order and non-consecutive repeats.",
+          "reason": "Trace: [] returns []; [1] returns [1]; [1,1,2,2,1] yields [1,2,1] because each item is appended exactly when result is empty or differs from result[-1]. This matches the stated behavior.",
+          "evidence_refs": [
+            "coreta-b29118e273ba:e0000#s3",
+            "coreta-b29118e273ba:e0000#s4"
+          ]
+        },
+        {
+          "scope": "input mutation and signature",
+          "claim": "The function has the required single positional argument and does not mutate the input.",
+          "reason": "It only iterates over lst and appends to a new local result list; no assignment or mutation of lst occurs. The parameter name differs from the prompt's entry_point but that is irrelevant to positional calling.",
+          "evidence_refs": [
+            "coreta-b29118e273ba:e0000#s1",
+            "coreta-b29118e273ba:e0000#s2"
+          ]
+        }
+      ],
+      "scope_limit": "Reviewed by inspection only; no code was executed. Checked ordinary list behavior and the equality-based comparison. Did not assess unhashable/odd equality semantics, generators, or performance beyond the evident O(n) iteration."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "Current candidate is a correct, minimal implementation matching the prompt; review e0003 confirms correctness by inspection and no open issues remain. No further work turns needed."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-b29118e273ba:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-b29118e273ba:e0000#s3",
+        "coreta-b29118e273ba:e0000#s4",
+        "v0:s3",
+        "v0:s4"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "A2's review (e0003) supports the current approach: it traces [] -> [], [1] -> [1], and [1,1,2,2,1] -> [1,2,1], confirming s3/s4 behavior, and confirms the single positional argument with no input mutation. No concrete objection raised; no change to artifact or steps needed, so changed_step_ids is empty."
+    }
+  },
+  {
+    "task_id": "mbpp/train/607",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-36f64daaa3ed:e0000",
+      "verdict": "unresolved",
+      "findings": [
+        {
+          "scope": "argument order and no-match return value",
+          "claim": "The implementation's argument order (text, pattern) and no-match sentinel (None, -1, -1) are plausible but unverified against the task's expected interface.",
+          "reason": "The prompt only says 'find_literals with 2 positional arguments' and does not name or order them. The MBPP-style reference for this task typically uses (text, pattern) and returns (None, -1, -1) on no match, but that is outside the supplied public task text. The code is internally consistent: re.search(pattern, text) matches the declared parameter order, and match.group(0)/start()/end() correctly implement first-match extraction with an exclusive end index. No concrete implementation defect is demonstrable from the prompt alone, but the interface conventions are assumptions, not verified requirements.",
+          "evidence_refs": [
+            "coreta-36f64daaa3ed:e0000#s2",
+            "coreta-36f64daaa3ed:e0000#s3",
+            "coreta-36f64daaa3ed:e0000#s4"
+          ]
+        },
+        {
+          "scope": "end index semantics",
+          "claim": "Using match.end() gives an exclusive end index; the prompt's 'end index' is ambiguous about inclusivity.",
+          "reason": "For example, re.search('b','abc') yields group 'b', start 1, end 2. If hidden tests expect an inclusive end (1), this fails; if exclusive (2), it passes. The exclusive choice is standard Python but unconfirmed by the prompt.",
+          "evidence_refs": [
+            "coreta-36f64daaa3ed:e0000#s5",
+            "coreta-36f64daaa3ed:e0000#s6"
+          ]
+        }
+      ],
+      "scope_limit": "Reviewed only the supplied artifact and prompt text; no execution was possible. Checks were limited to local reasoning about re.search semantics and interface conventions. Could not verify hidden-test expectations for argument order, no-match return value, or inclusive vs. exclusive end index."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The implementation is internally consistent and correct per standard Python re semantics; the only remaining uncertainty (argument order, no-match sentinel, exclusive end index) is unresolvable from the supplied prompt text alone, and review e0003 confirmed no demonstrable defect. No further local work can reduce this ambiguity, and no work turns remain to justify another helper round-trip."
+    },
+    "lead_open_issues": [
+      "The prompt does not specify behavior on no match or whether the end index is inclusive; the implementation uses (None, -1, -1) and an exclusive end index.",
+      "Argument order (text, pattern) is assumed; the prompt does not state which positional argument comes first."
+    ],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-36f64daaa3ed:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-36f64daaa3ed:e0000#s2",
+        "coreta-36f64daaa3ed:e0000#s3",
+        "coreta-36f64daaa3ed:e0000#s4",
+        "coreta-36f64daaa3ed:e0000#s5",
+        "coreta-36f64daaa3ed:e0000#s6"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "unresolved",
+      "reason": "Review e0003 examined argument order, no-match sentinel, and end-index semantics. It explicitly found no concrete implementation defect, only that these conventions are unverified against hidden tests. Since it adds support without changing the solution, changed_step_ids is empty. The review's scope_limit (no execution, prompt ambiguity) leaves the interface assumptions genuinely unresolved, so the outcome is 'unresolved' rather than 'resolved'."
+    }
+  },
+  {
+    "task_id": "mbpp/train/745",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-fedf37c03fdb:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "divisible_by_digits implementation over positive ranges",
+          "claim": "The loop, digit extraction, and all(...) divisibility test match the stated task for ordinary positive inputs.",
+          "reason": "range(startnum, endnum+1) is inclusive. For num>0, str(abs(num)) yields its decimal digits; all(d != 0 and num % d == 0 for d in digits) keeps num exactly when every digit is nonzero and divides num. Example: startnum=1,endnum=15: 1..9 pass; 10 fails due to 0; 11 fails (11%1 ok, 11%1 ok — actually passes); 12 passes (12%1,12%2); 13 fails (13%3); 14 fails; 15 passes. Behavior is consistent with the usual 'divisible by every digit' definition, with zero-containing numbers excluded.",
+          "evidence_refs": [
+            "coreta-fedf37c03fdb:e0000#s1",
+            "coreta-fedf37c03fdb:e0000#s2",
+            "coreta-fedf37c03fdb:e0000#s3",
+            "coreta-fedf37c03fdb:e0000#s4"
+          ]
+        },
+        {
+          "scope": "zero and negative inputs",
+          "claim": "The code does not crash on 0 or negative numbers, but the task does not specify their intended treatment, so no defect can be established from them.",
+          "reason": "For num=0, abs(0)='0', d=0, and d != 0 is false, so 0 is excluded. For negative num, digits come from abs(num) and num % d is 0 or negative-zero; Python's modulo with positive d gives 0 when divisible, so divisibility semantics are preserved, though whether negatives should be returned is unspecified. These are interpretation choices, not demonstrated contradictions of the prompt.",
+          "evidence_refs": [
+            "coreta-fedf37c03fdb:e0000#s2",
+            "coreta-fedf37c03fdb:e0000#s3"
+          ]
+        }
+      ],
+      "scope_limit": "Reviewed the function text statically against the prompt and reasoned about small example inputs; did not execute code, consult the linked exercise, or verify hidden tests. The claim that zero-containing numbers should be excluded is an interpretation of 'every digit' consistent with the draft and reference candidate, not independently proven by the prompt."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The candidate implements the requested two-argument function with inclusive range, digit extraction, and all-digit divisibility; review e0003 supports the logic for ordinary positive inputs and no concrete defect was raised. Remaining ambiguity (0/negative) is unspecified by the prompt and noted as an open issue, so further turns are unlikely to improve the result."
+    },
+    "lead_open_issues": [
+      "Task does not specify treatment of 0 or negative inputs; current code excludes 0 and applies abs-based divisibility to negatives."
+    ],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-fedf37c03fdb:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-fedf37c03fdb:e0000",
+        "coreta-fedf37c03fdb:e0000#s1",
+        "coreta-fedf37c03fdb:e0000#s2",
+        "coreta-fedf37c03fdb:e0000#s3",
+        "coreta-fedf37c03fdb:e0000#s4"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 statically supports the existing loop/digit-extraction/all() logic for positive ranges and notes the example 1..15 behavior (e.g., 12 and 15 pass, 10 excluded, 13 fails). Its scope_limit explicitly states no execution or hidden-test verification, and it treats zero/negative handling as unspecified interpretation, so no code or step change is warranted. Steps s1-s4 retain support; an open issue records the 0/negative ambiguity."
+    }
+  },
+  {
+    "task_id": "gsm8k/train/3003",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-62c047a69e02:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Equation setup and solution (s1-s6)",
+          "claim": "The translation and algebra yield x = 5 feet for mid-May.",
+          "reason": "Let x be mid-May depth. Mid-June is x+10; mid-July is 3(x+10). Setting 3(x+10)=45 gives x+10=15 and x=5. A local check confirms consistency: mid-June = 5+10 = 15, and 3×15 = 45. No unsupported assumption or arithmetic error found in the supplied reasoning.",
+          "evidence_refs": [
+            "coreta-62c047a69e02:e0000#s2",
+            "coreta-62c047a69e02:e0000#s3",
+            "coreta-62c047a69e02:e0000#s4",
+            "coreta-62c047a69e02:e0000#s5",
+            "coreta-62c047a69e02:e0000#s6"
+          ]
+        }
+      ],
+      "scope_limit": "I checked only the arithmetic and equation translation against the stated word problem; I did not execute code or consult any external reference. 'Supported' reflects this limited local verification, not a proof that every phrasing or interpretation of 'three times deeper' is addressed."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The candidate is complete: the equation 3(x+10)=45 solves to x=5, and the review independently confirms the algebra and consistency check. No unresolved gaps remain."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-62c047a69e02:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "v0:s1",
+        "v0:s2",
+        "v0:s3",
+        "v0:s4",
+        "v0:s5",
+        "v0:s6"
+      ],
+      "changed_step_ids": [
+        "s6"
+      ],
+      "application_outcome": "resolved",
+      "reason": "A2's review (e0003) verifies the equation translation and arithmetic for s2-s6 and adds a consistency check (mid-June 15, 3×15=45). It does not overturn any step; I accepted it and folded the check into s6, leaving s1-s5 unchanged. The review's stated scope limit (not addressing alternative readings of 'three times deeper') is noted but not a concrete objection to the standard interpretation, so no open issue is warranted."
+    }
+  },
+  {
+    "task_id": "mbpp/train/615",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-47f7c0d7fbfd:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Core algorithm: average_tuple over non-empty numeric inner tuples",
+          "claim": "The list comprehension [sum(t)/len(t) for t in tuples] computes the arithmetic mean per inner tuple and returns them in input order, matching the task's stated behavior.",
+          "reason": "For example, average_tuple(((1,2,3),(4,6))) yields [2.0, 5.0]: sum(1,2,3)=6, len=3, 6/3=2.0; sum(4,6)=10, len=2, 10/2=5.0. The order is preserved because the comprehension iterates left to right. This is a local reasoning check, not an execution.",
+          "evidence_refs": [
+            "coreta-47f7c0d7fbfd:e0000#s1",
+            "coreta-47f7c0d7fbfd:e0000#s2",
+            "coreta-47f7c0d7fbfd:e0000#s3",
+            "coreta-47f7c0d7fbfd:e0000#s4"
+          ]
+        },
+        {
+          "scope": "Empty inner tuple edge case",
+          "claim": "The subject correctly flags that an empty inner tuple raises ZeroDivisionError and marks the handling as unresolved rather than claiming correctness.",
+          "reason": "len(()) is 0, so sum(())/len(()) is 0/0 and raises ZeroDivisionError in Python. The prompt does not specify empty-input behavior, so leaving it unhandled is a documented limitation, not a contradiction of the stated task.",
+          "evidence_refs": [
+            "coreta-47f7c0d7fbfd:e0000#s5"
+          ]
+        }
+      ],
+      "scope_limit": "Reviewed the artifact text and step claims by local reasoning only; no code was executed. Did not verify behavior for non-numeric elements, empty outer input (returns [] correctly by comprehension), or hidden test expectations beyond the prompt text."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The artifact matches the task: it returns per-inner-tuple averages as a list in input order. All core steps are supported and the only open issue (empty inner tuples) is unspecified by the prompt. No further work turns are needed."
+    },
+    "lead_open_issues": [
+      "Behavior for empty inner tuples is undefined (ZeroDivisionError); no error handling added since the prompt does not specify it.",
+      "Non-numeric elements are not handled; assumes numeric tuples."
+    ],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-47f7c0d7fbfd:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-47f7c0d7fbfd:e0000#s1",
+        "coreta-47f7c0d7fbfd:e0000#s2",
+        "coreta-47f7c0d7fbfd:e0000#s3",
+        "coreta-47f7c0d7fbfd:e0000#s4",
+        "coreta-47f7c0d7fbfd:e0000#s5"
+      ],
+      "changed_step_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 supports the existing algorithm with a concrete worked example (((1,2,3),(4,6)) -> [2.0,5.0]) and confirms the empty-tuple ZeroDivisionError is a documented limitation rather than a defect against the prompt. No artifact change needed; added e0003 as supporting basis for s2-s4 and s5, and noted the non-numeric assumption in open issues."
+    }
+  },
+  {
+    "task_id": "mbpp/train/799",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-1cce5e0d6922:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "left_rotate implementation and step s5 (d=0 case)",
+          "claim": "The implementation correctly performs a 32-bit left rotation for nonnegative d, including d=0 and d multiples of 32.",
+          "reason": "After d %= 32, d is in 0..31. n is masked to 32 bits, so n >> (32-d) is nonnegative and yields only the wrapped high bits; n << d is masked at the end. For d=0: n>>32 = 0 for 0<=n<=0xFFFFFFFF, so result = n. Example: n=0x80000001, d=1 gives ((0x100000002)|(0x40000000)) & 0xFFFFFFFF = 0x40000000, correct. Example: n=0x12345678, d=8 gives 0x34567812. No Python shift-by-negative or shift-by-32 error occurs because d=0 gives shift 32 (allowed in Python) and d>0 gives 1..31.",
+          "evidence_refs": [
+            "coreta-1cce5e0d6922:e0000#s1",
+            "coreta-1cce5e0d6922:e0000#s5"
+          ]
+        },
+        {
+          "scope": "negative d handling (not specified by task)",
+          "claim": "Behavior for negative d is not established by the task, but the code does not crash: Python's %= yields a nonnegative residue, effectively rotating right for negative d.",
+          "reason": "For d=-1, d %= 32 yields 31, so the function computes a 31-bit left rotation, equivalent to a 1-bit right rotation. The task only says rotate left by d bits and does not state whether d may be negative, so this is a semantic ambiguity rather than a demonstrated defect.",
+          "evidence_refs": [
+            "coreta-1cce5e0d6922:e0000#s1"
+          ]
+        }
+      ],
+      "scope_limit": "Reviewed the code statically against the prompt; did not execute it. Checked representative values (d=0,1,8,32, negative d) by hand. Did not verify the hidden test suite or whether the task expects signed 32-bit results, negative rotation counts, or a particular handling of n outside the low 32 bits."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The implementation is correct for the specified 32-bit left rotate for nonnegative d, d=0 and multiples of 32 verified by hand. The only ambiguity (negative d) is outside the task's stated scope. No remaining local gap worth a work turn; finish."
+    },
+    "lead_open_issues": [
+      "Negative d behavior is unspecified by the task; Python's %= yields a nonnegative residue, effectively rotating right for negative d."
+    ],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-1cce5e0d6922:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-1cce5e0d6922:e0000#s1",
+        "coreta-1cce5e0d6922:e0000#s5"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "A2's review (e0003) statically confirms the current implementation for nonnegative d including d=0 and multiples of 32, with hand-checked examples consistent with steps s1-s5. No code change needed; only added basis_refs and noted the negative-d ambiguity as an open issue. The review did not execute code, so this is a static assessment, not external validation."
+    }
+  },
+  {
+    "task_id": "mbpp/train/763",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-7bec6cb20f4d:e0000",
+      "verdict": "defect",
+      "findings": [
+        {
+          "scope": "signature / second positional argument semantics",
+          "claim": "The subject assumes n is a count and slices arr[:n], but the task prompt gives no semantics for n and the linked GeeksforGeeks problem typically uses n as the array length with arr already containing exactly n elements.",
+          "reason": "The public task only says 'Implement Python function find_min_diff with 2 positional arguments'; it never defines n. The subject's own open_issues admits this ambiguity. If a harness calls find_min_diff(arr, len(arr)), the slice arr[:n] is harmless because it keeps all elements, so the common convention would still work. However, if the harness passes n as the array length while arr has extra trailing elements, or passes a different second value (e.g., a sentinel or default), the slice changes behavior silently. More concretely, if n is None the subject uses all of arr, which is an extra non-required convention. This is an unresolved interface assumption, not a proven failure on the conventional call, but it is a concrete unsupported assumption that should be flagged rather than treated as matching the spec.",
+          "evidence_refs": [
+            "coreta-7bec6cb20f4d:e0000",
+            "v0:s1"
+          ]
+        },
+        {
+          "scope": "correctness of adjacent-difference scan",
+          "claim": "For n >= 2 the core algorithm (sort, then min of consecutive differences) is correct for the minimum absolute difference; the loop bounds and initialization are consistent.",
+          "reason": "After sorting vals ascending, for any i < j, vals[j]-vals[i] = sum of consecutive gaps from i to j-1, which is >= each individual gap, in particular >= vals[i+1]-vals[i]. So the minimum pairwise difference equals the minimum consecutive gap. Initialization vals[1]-vals[0] and loop range(1, len(vals)-1) covering gaps vals[i+1]-vals[i] for i=1..len-2 covers all gaps exactly once. Example: arr=[5,1,9,3], n=4 -> sorted [1,3,5,9], gaps 2,2,4 -> returns 2, correct. Edge: len(vals)==2 -> min_diff=vals[1]-vals[0], loop empty, returns the single gap, correct.",
+          "evidence_refs": [
+            "coreta-7bec6cb20f4d:e0000#s3",
+            "coreta-7bec6cb20f4d:e0000#s4",
+            "coreta-7bec6cb20f4d:e0000#s5",
+            "coreta-7bec6cb20f4d:e0000#s6"
+          ]
+        },
+        {
+          "scope": "input validation / edge behavior",
+          "claim": "The subject raises ValueError for fewer than two considered elements, whereas the sibling draft returns None; the task does not specify either, so this is an unverified behavioral choice that could fail a harness expecting a value or a different exception.",
+          "reason": "The prompt only asks for the minimum difference between any two elements. For arrays with fewer than two elements there is no pair, and the expected behavior (None, 0, error, or something else) is undefined by the task. Raising ValueError is defensible but is an assumption; a test harness might instead expect None (as in the A2 draft) or might never test this case. Also, arr=None raising ValueError is an added convention not requested. These do not break the conventional n>=2 case but are unsupported assumptions to note.",
+          "evidence_refs": [
+            "coreta-7bec6cb20f4d:e0000#s1",
+            "coreta-7bec6cb20f4d:e0000#s2",
+            "coreta-7bec6cb20f4d:e0002#s1"
+          ]
+        }
+      ],
+      "scope_limit": "Reasoned statically about the code and the prompt text; did not execute the function. The main defect is the undefined second-argument semantics (n as count vs. length vs. other), which the subject itself lists as an open issue. The adjacent-gap algorithm is locally verified by explicit reasoning on small examples; no test harness behavior was observed."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The core algorithm is verified correct and the conventional two-positional-argument call works; remaining issues (undefined meaning of n, edge-case return convention) cannot be resolved from the prompt alone and do not justify further revision. No execution tools are available to test a harness, so finishing with the supported artifact is appropriate."
+    },
+    "lead_open_issues": [
+      "The prompt does not define the second argument n; implementation assumes it is the count of elements to consider (arr[:n]). With the conventional call find_min_diff(arr, len(arr)) the slice is harmless, but other semantics are unsupported.",
+      "Edge behavior for fewer than two considered elements (ValueError) and arr=None (ValueError) is an unverified convention; some harnesses may expect None or another value."
+    ],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-7bec6cb20f4d:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-7bec6cb20f4d:e0000",
+        "v0:s1",
+        "v0:s2",
+        "v0:s3",
+        "v0:s4",
+        "v0:s5",
+        "v0:s6"
+      ],
+      "changed_step_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "application_outcome": "unresolved",
+      "reason": "Review e0003 statically verifies the adjacent-gap algorithm (sorting, initialization, loop bounds, len==2 edge) against v0:s3-s6 and finds it correct, so s3-s6 are marked supported with e0003 as basis. It flags the undefined semantics of n and the ValueError-vs-None edge behavior; these are genuine unsupported interface assumptions rather than proven defects, so s1 and s2 are marked disputed and the open_issues are updated. No code change is warranted because the conventional call find_min_diff(arr, len(arr)) works; the residual ambiguity is not resolvable from the prompt text alone."
+    }
+  },
+  {
+    "task_id": "gsm8k/train/3076",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-bd936673a551:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Age-gap setup and equation (s1–s4)",
+          "claim": "The constant age difference is 24−20=4 years, so R=e+4; the condition e=R/2 gives 2e=e+4, hence e=4.",
+          "reason": "The age gap is invariant over time, and the stated equation correctly encodes 'Emily is half Rachel's age.' Solving 2e=e+4 yields e=4 by subtracting e from both sides. Local arithmetic checks out.",
+          "evidence_refs": [
+            "coreta-bd936673a551:e0000#s1",
+            "coreta-bd936673a551:e0000#s2",
+            "coreta-bd936673a551:e0000#s3",
+            "coreta-bd936673a551:e0000#s4"
+          ]
+        },
+        {
+          "scope": "Final answer and verification (s5–s6)",
+          "claim": "Rachel's age is 4+4=8, and 4 is half of 8.",
+          "reason": "Substituting e=4 into R=e+4 gives R=8; the verification 4=8/2 confirms the condition. The boxed answer 8 is consistent.",
+          "evidence_refs": [
+            "coreta-bd936673a551:e0000#s5",
+            "coreta-bd936673a551:e0000#s6"
+          ]
+        }
+      ],
+      "scope_limit": "I checked only the arithmetic and logical consistency of the supplied solution; I did not execute code or consult external references. This does not prove correctness beyond the modeled assumptions (constant age gap, simultaneous ages)."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The current solution is complete, arithmetically correct, and independently confirmed by review e0003. No open issues remain, and no further work turn is needed."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-bd936673a551:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-bd936673a551:e0000#s1",
+        "coreta-bd936673a551:e0000#s2",
+        "coreta-bd936673a551:e0000#s3",
+        "coreta-bd936673a551:e0000#s4",
+        "coreta-bd936673a551:e0000#s5",
+        "coreta-bd936673a551:e0000#s6"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 confirms the arithmetic and logical consistency of the current solution: age gap 24-20=4, condition e=(e+4)/2 gives e=4, Rachel=8, verified by 4=8/2. It adds support to s1-s6 without identifying any error, so no step text changes. The review's scope limit is noted: it does not prove correctness beyond the modeled assumptions, but the model is appropriate for this age problem."
+    }
+  },
+  {
+    "task_id": "mbpp/train/620",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-627834165be1:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Correctness of DP for largest pairwise-divisible subset",
+          "claim": "The algorithm returns the correct maximum size for the stated problem, including duplicates and unsorted inputs.",
+          "reason": "After sorting, any valid pairwise-divisible subset S can be ordered as a chain: for any two elements a<=b in S, divisibility of the pair forces a|b (b%a==0), since b%a==0 is the only possible direction. Thus S is a chain under divisibility, and the DP that extends dp[j] when nums[i]%nums[j]==0 finds the longest such chain. Conversely, any chain produced by the DP is pairwise divisible by transitivity: if earlier elements divide later ones along the chain, every pair divides. Duplicates are handled because equal values satisfy x%x==0 and can extend the chain. Empty input returns 0.",
+          "evidence_refs": [
+            "coreta-627834165be1:e0000#s4",
+            "coreta-627834165be1:e0000#s5",
+            "coreta-627834165be1:e0000#s6"
+          ]
+        },
+        {
+          "scope": "Step s2 wording about a DAG ordered by value",
+          "claim": "The wording 'divisibility relations form a DAG ordered by value' is slightly imprecise for equal values but does not affect correctness.",
+          "reason": "Equal values can divide each other, creating cycles if modeled as distinct nodes, but sorting places them in a fixed order and the DP uses only j<i, so equal values are treated as a chain rather than a cycle. This is a documentation nuance, not an implementation defect.",
+          "evidence_refs": [
+            "coreta-627834165be1:e0000#s2",
+            "coreta-627834165be1:e0000#s4"
+          ]
+        }
+      ],
+      "scope_limit": "I reasoned locally about the algorithm and example cases (empty input, duplicates, unsorted input, chains such as [1,2,4,8]) without executing code. I did not run tests or verify against a reference answer; the verdict is limited to the correctness argument above."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The candidate is complete and correct: all three drafts agree, review e0003 supports correctness including duplicates, unsorted input, and empty input, and the only documentation nuance (s2) has been repaired. No further work turns are needed."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-627834165be1:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-627834165be1:e0000#s2",
+        "coreta-627834165be1:e0000#s5",
+        "coreta-627834165be1:e0000#s6",
+        "v0:s2",
+        "v0:s5"
+      ],
+      "changed_step_ids": [
+        "s2",
+        "s5"
+      ],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 confirms the DP correctness and flags that s2's 'DAG ordered by value' wording is imprecise for equal values. I accepted that nuance: s2 now states divisors precede multiples and equal values are ordered by index so j<i avoids cycles. s5 now states the two-direction argument (sorted a<=b forces b%a==0) plus transitivity, making the chain/subsets equivalence explicit. Artifact unchanged; it was already correct."
+    }
+  },
+  {
+    "task_id": "gsm8k/train/1988",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-76654b550960:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "steps s1-s4 and final arithmetic",
+          "claim": "The solution correctly computes Jackson's final value as $2000, Brandon's as $100, and the difference as $1900.",
+          "reason": "Local arithmetic check: Jackson 500 × 4 = 2000. Brandon's value reduced to 20% of initial means 500 × 0.20 = 100. Difference 2000 − 100 = 1900. The wording 'reduced to 20% of the initial value' supports using 20% of $500 rather than a 20% loss. No unsupported assumptions or calculation errors found in these steps.",
+          "evidence_refs": [
+            "coreta-76654b550960:e0000#s2",
+            "coreta-76654b550960:e0000#s3",
+            "coreta-76654b550960:e0000#s4"
+          ]
+        },
+        {
+          "scope": "final answer formatting",
+          "claim": "The boxed answer $1900 matches the requested quantity ('how much more money does Jackson have than Brandon now').",
+          "reason": "The question asks for the difference between the two final values. The artifact computes exactly that difference and boxes 1900, consistent with the preceding steps.",
+          "evidence_refs": [
+            "coreta-76654b550960:e0000#s4",
+            "coreta-76654b550960:e0000#s5"
+          ]
+        }
+      ],
+      "scope_limit": "I performed only a local arithmetic and wording check against the public task; I did not execute code or verify against any external reference answer. Absence of detected defects is not a proof of correctness."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The candidate is complete and internally consistent: both investments start at $500, Jackson ends at $2000, Brandon at $100, and the difference is $1900. The independent review e0003 confirmed the arithmetic and interpretation with no open issues, so no further work is needed."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-76654b550960:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "v0:s2",
+        "v0:s3",
+        "v0:s4",
+        "v0:s5"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "A2's review (e0003) locally verified the arithmetic and wording: Jackson 500×4=2000, Brandon 500×0.20=100, difference 1900, and confirmed 'reduced to 20% of the initial value' means 20% of $500. It found no defects. This supports existing steps s2-s5 without requiring textual changes, so changed_step_ids is empty; basis_refs on s2-s5 now cite the review as supporting evidence."
+    }
+  },
+  {
+    "task_id": "gsm8k/train/3018",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-ab7e8857c4fa:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Arithmetic and interpretation of the two-week water total",
+          "claim": "The subject's answer 160 ounces follows from the task data: 3 doses/day × 4 oz = 12 oz/day; week 1 = 84 oz; week 2 = 84 − 2×4 = 76 oz; total 84+76 = 160 oz.",
+          "reason": "Local calculation checks: 4×3=12; 12×7=84; 2 missed doses cost 2×4=8 oz, so 84−8=76; 84+76=160. The interpretation that 'forgot twice on one day' means two missed doses on a single day, leaving the other six days at full adherence, is the natural reading of the prompt. No unsupported assumption or arithmetic error found in this check.",
+          "evidence_refs": [
+            "coreta-ab7e8857c4fa:e0000#s1",
+            "coreta-ab7e8857c4fa:e0000#s2",
+            "coreta-ab7e8857c4fa:e0000#s3",
+            "coreta-ab7e8857c4fa:e0000#s4",
+            "coreta-ab7e8857c4fa:e0000#s5"
+          ]
+        }
+      ],
+      "scope_limit": "Checked only the stated arithmetic and the straightforward reading of 'forgot twice on one day.' Did not execute code or consult any external reference answer; ambiguity in the phrase (e.g., forgetting a whole day's doses) was considered but the subject's reading is reasonable and consistent."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The candidate is fully supported: all steps are verified arithmetic, the interpretation is confirmed by the independent review, and the final answer is 160 ounces. No open issues remain."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-ab7e8857c4fa:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "v0:s1",
+        "v0:s2",
+        "v0:s3",
+        "v0:s4",
+        "v0:s5"
+      ],
+      "changed_step_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 independently rechecks the arithmetic (4×3=12; 12×7=84; 84−2×4=76; 84+76=160) and confirms the natural reading that 'forgot twice on one day' means two missed doses on a single day. No errors found and no text changes needed; I only attached the review as supporting basis_refs to steps s1–s5, whose content is unchanged. The arithmetic and interpretation are consistent with A0, A1, and A2 drafts."
+    }
+  },
+  {
+    "task_id": "gsm8k/train/5366",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-71b535e775bb:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Arithmetic and interpretation of the task",
+          "claim": "The subject correctly adds the three gift counts and concludes 21 gifts.",
+          "reason": "The prompt states Emilio gave 11, Jorge gave 6, and Pedro gave 4. These are disjoint contributions to a single total, so addition is appropriate: 11 + 6 = 17, and 17 + 4 = 21. The boxed answer matches this calculation. I found no unsupported assumption, counterexample, or implementation error in the supplied text.",
+          "evidence_refs": [
+            "coreta-71b535e775bb:e0000#s1",
+            "coreta-71b535e775bb:e0000#s2",
+            "coreta-71b535e775bb:e0000#s3",
+            "coreta-71b535e775bb:e0000#s4",
+            "coreta-71b535e775bb:e0000#s5"
+          ]
+        }
+      ],
+      "scope_limit": "This is a local audit of the supplied text against the prompt only; I did not execute code or consult external references. 'Supported' reflects that the arithmetic and reasoning are consistent with the prompt, not a formal proof of all possible interpretations."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The candidate is complete and correct: 11 + 6 + 4 = 21, and review e0003 found no issue. No remaining work turns are needed."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-71b535e775bb:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "v0:s1",
+        "v0:s2",
+        "v0:s3",
+        "v0:s4",
+        "v0:s5"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 independently audits the current candidate against the prompt and confirms each step: amounts (s1), additive interpretation of disjoint gifts (s2), 11+6=17 (s3), 17+4=21 (s4), and conclusion 21 (s5). It adds support without identifying any error, so no step text changes are needed; only s5's basis_refs now cite the review event. The arithmetic is correct and the answer is final."
+    }
+  },
+  {
+    "task_id": "mbpp/train/732",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-504ac2c7e846:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "replace_specialchar implementation and step claims s1-s5",
+          "claim": "The function meets the public task: it accepts one positional argument and replaces every space, comma, and dot with a colon.",
+          "reason": "The signature replace_specialchar(s) matches the required one positional argument. Chained str.replace calls target ' ', ',', and '.' respectively. Because the replacement ':' differs from all three targets, a later replace cannot re-match text inserted by an earlier one, so order does not matter. Local examples: 'a b,c.d' -> 'a:b:c:d'; '...' -> ':::'; ' , . ' -> '::::'; ',' -> ':'; '' -> ''. Edge case: non-string input would raise AttributeError, but the task is string-oriented and does not require coercion. No counterexample to the stated replacement behavior was found by inspection.",
+          "evidence_refs": [
+            "coreta-504ac2c7e846:e0000",
+            "coreta-504ac2c7e846:e0000#s1",
+            "coreta-504ac2c7e846:e0000#s2",
+            "coreta-504ac2c7e846:e0000#s3",
+            "coreta-504ac2c7e846:e0000#s4",
+            "coreta-504ac2c7e846:e0000#s5"
+          ]
+        }
+      ],
+      "scope_limit": "Reviewed by static inspection only; no code was executed. I checked the signature, replacement targets, order-independence reasoning, and a few hand-evaluated string examples. I did not run tests or verify behavior for non-string inputs or exotic string subclasses."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The current candidate is a minimal, correct implementation of the public task and is supported by A2's static review e0003, including hand-evaluated examples. No open issues remain and no further work is needed."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-504ac2c7e846:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-504ac2c7e846:e0000",
+        "v0:s1",
+        "v0:s2",
+        "v0:s3",
+        "v0:s4",
+        "v0:s5"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "A2's review e0003 supports the current candidate (e0000) and its steps s1-s5, confirming the one-positional-argument signature, the three replacement targets, order-independence because ':' is not a target character, and hand-evaluated examples ('a b,c.d' -> 'a:b:c:d', '...' -> ':::', '' -> ''). No counterexample or concrete objection was raised. The review adds support without changing the solution, so no step text or status changes; the static-only scope limit (no execution, non-string inputs untested) is acceptable because the task is string-oriented. Outcome assessed as resolved for the stated replacement behavior."
+    }
+  },
+  {
+    "task_id": "gsm8k/train/6742",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-99bbdfd46060:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Arithmetic and interpretation of the two doublings",
+          "claim": "The computation 4 → 8 → 16 inches is consistent with the prompt's two stated doublings.",
+          "reason": "The prompt gives an initial length of 4 inches. It says the kitten doubled in length over the next two weeks, yielding 4 × 2 = 8 inches. It then says the length doubled again by 4 months old, yielding 8 × 2 = 16 inches. The subject's arithmetic follows these explicit operations, and no additional operation is needed. The final statement that 16 inches is the current length is a reasonable reading of the sequence, though the prompt does not explicitly state the kitten's age at the time of the question.",
+          "evidence_refs": [
+            "coreta-99bbdfd46060:e0000#s2",
+            "coreta-99bbdfd46060:e0000#s3"
+          ]
+        }
+      ],
+      "scope_limit": "I checked only the arithmetic and the direct interpretation of the two doublings. I did not use external references or run any code, and I did not independently verify any assumption about the kitten's age when 'current length' is asked."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The solution is complete and arithmetically verified: 4 inches doubled twice is 16 inches. The supplied review e0003 confirms both doublings, and no open issues remain."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-99bbdfd46060:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-99bbdfd46060:e0000#s2",
+        "coreta-99bbdfd46060:e0000#s3",
+        "v0:s2",
+        "v0:s3"
+      ],
+      "changed_step_ids": [
+        "s2",
+        "s3"
+      ],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 supports the arithmetic of the two doublings (4→8→16) and cites e0000#s2 and e0000#s3 as evidence. I accepted it and added e0003 as a supporting basis_ref on s2 and s3; the step text is unchanged. The review's scope note (age at question time not explicitly stated) does not affect the computation, since the prompt's last stated length is after the second doubling."
+    }
+  },
+  {
+    "task_id": "gsm8k/train/5134",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-3cc01d2d28ef:e0000",
+      "verdict": "defect",
+      "findings": [
+        {
+          "scope": "Arithmetic in s2-s4 and final answer",
+          "claim": "The fractional arithmetic is correct, but the problem's numbers are inconsistent with integer car counts, so the boxed exact fraction 16981/17 is not a legitimate answer for a GSM8K-style problem.",
+          "reason": "Jared = 300 = 0.85·A gives A = 30000/85 = 6000/17 ≈ 352.94, which is not a whole number. Alfred = A − 7 = 5881/17 ≈ 345.94, also non-integer. The total 300 + 6000/17 + 5881/17 = 16981/17 ≈ 998.88. Since car counts must be integers, the given data cannot be simultaneously true as stated. The subject acknowledges this but still presents 16981/17 as the final boxed answer, which is not a defensible answer under the problem's own constraints.",
+          "evidence_refs": [
+            "coreta-3cc01d2d28ef:e0000#s2",
+            "coreta-3cc01d2d28ef:e0000#s3",
+            "coreta-3cc01d2d28ef:e0000#s4"
+          ]
+        },
+        {
+          "scope": "Interpretation of '15% fewer'",
+          "claim": "The subject assumes 'Jared counted 15% fewer cars than his sister Ann' means Jared = 0.85·Ann. This is the natural reading, but the resulting non-integer counts indicate either a misread of the problem or that the intended solution uses a different relationship (e.g., Ann counted 15% fewer than Jared, or Jared's 300 is 15% more than Ann).",
+          "reason": "If instead Jared = 1.15·Ann, then Ann = 300/1.15 = 6000/23 ≈ 260.87, still non-integer. If Ann = 0.85·Jared = 255, then Alfred = 248, total = 803, which is a clean integer and matches 'Jared counted 15% fewer than Ann' only if the comparison direction is reversed. The subject does not explore these alternatives and simply reports a non-integer result.",
+          "evidence_refs": [
+            "coreta-3cc01d2d28ef:e0000#s1",
+            "coreta-3cc01d2d28ef:e0000#s5"
+          ]
+        }
+      ],
+      "scope_limit": "I checked the arithmetic of the given equations and tested the integer-consistency constraint and one alternative reading. I did not execute code or access external references. The exact intended answer of the original problem is not determined here; the finding is that the subject's boxed fractional answer is not a valid whole-number car count and that the subject does not resolve the inconsistency."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The solution is complete under the literal reading: equations, exact arithmetic, and the inconsistency are documented, and the reviewer's alternative was evaluated and rejected on a concrete directional objection. No further work turns are needed."
+    },
+    "lead_open_issues": [
+      "The data yield non-integer car counts (Ann ≈ 352.94, Alfred ≈ 345.94), so the exact total 16981/17 is not a whole number; the problem's numbers appear internally inconsistent."
+    ],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-3cc01d2d28ef:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-3cc01d2d28ef:e0000#s1",
+        "coreta-3cc01d2d28ef:e0000#s2",
+        "coreta-3cc01d2d28ef:e0000#s3",
+        "coreta-3cc01d2d28ef:e0000#s4",
+        "coreta-3cc01d2d28ef:e0000#s5",
+        "v0:s1",
+        "v0:s2",
+        "v0:s3"
+      ],
+      "changed_step_ids": [
+        "s5",
+        "s6"
+      ],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 correctly confirms the arithmetic in v0:s2-s4 and the integer-inconsistency finding (now s5, promoted from candidate to supported, citing e0003). Its second finding tests an alternative reading; I checked it: Ann = 0.85·Jared = 255 with Alfred = 248 gives total 803, but this reverses the stated direction ('Jared counted 15% fewer than Ann'), so the alternative is rejected and the literal answer 16981/17 ≈ 999 is retained. New step s6 records this rejection explicitly. The review does not determine an intended integer answer, which remains an open issue."
+    }
+  },
+  {
+    "task_id": "gsm8k/train/6388",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-9d1168ca600a:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Algebraic model and solution (s1-s6)",
+          "claim": "Letting x be the initial count, the final count is (x-6)+(x-6)/2=(3/2)(x-6), and setting this equal to 24 gives x=22.",
+          "reason": "The wording 'buys another half the amount of soda cans he had left' is reasonably modeled as adding half of the post-Jeff-removal remainder. The algebra is valid: (3/2)(x-6)=24; multiplying by 2/3 gives x-6=16; adding 6 gives x=22. No arithmetic or equation-solving error is present.",
+          "evidence_refs": [
+            "coreta-9d1168ca600a:e0000#s3",
+            "coreta-9d1168ca600a:e0000#s4",
+            "coreta-9d1168ca600a:e0000#s5",
+            "coreta-9d1168ca600a:e0000#s6"
+          ]
+        },
+        {
+          "scope": "Verification (s7)",
+          "claim": "Substituting x=22 reproduces the stated final total of 24.",
+          "reason": "22-6=16 remain after Jeff's removal; half of 16 is 8; 16+8=24. This directly confirms the candidate answer under the adopted interpretation.",
+          "evidence_refs": [
+            "coreta-9d1168ca600a:e0000#s7"
+          ]
+        }
+      ],
+      "scope_limit": "Checked only the arithmetic, the equation-solving, and the substitution check against the public prompt. The main interpretive assumption is that 'buys another half the amount he had left' means adding half of the post-removal remainder; this reading is natural and consistent with the final total, but the audit did not independently establish that no alternative reading was intended."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The candidate is a complete, internally checked solution: (3/2)(x-6)=24 gives x=22, and the verification 22-6=16, 16+8=24 matches the prompt. Independent review e0003 found no arithmetic or modeling error under the natural reading, and no open issues remain. Further help or checking would not add substantive value."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-9d1168ca600a:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-9d1168ca600a:e0000#s3",
+        "coreta-9d1168ca600a:e0000#s4",
+        "coreta-9d1168ca600a:e0000#s5",
+        "coreta-9d1168ca600a:e0000#s6",
+        "coreta-9d1168ca600a:e0000#s7"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 audits the algebraic model (s3-s6) and the substitution check (s7) of candidate e0000 and finds no arithmetic or equation-solving error; it confirms that 22-6=16 and 16+8=24. It also explicitly notes its interpretive scope limit: 'buys another half the amount he had left' is read as adding half the post-removal remainder, a natural reading consistent with the final total. Since this is corroborating support rather than a correction, the solution is retained unchanged; the review's basis is recorded in s3-s7 basis_refs. No step is overturned."
+    }
+  },
+  {
+    "task_id": "mbpp/train/756",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-3489dea3f42d:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "regex semantics and return type",
+          "claim": "Pattern r'ab+' with re.search correctly matches an 'a' followed by one or more 'b's anywhere in the string, and bool() yields True/False.",
+          "reason": "'+' requires at least one preceding 'b', so 'ab' matches but 'a' and 'ac' do not; re.search scans the whole string so 'xabbbz' matches. bool(None) is False and bool(match) is True. This is a local semantic check, not execution.",
+          "evidence_refs": [
+            "coreta-3489dea3f42d:e0000#s3",
+            "coreta-3489dea3f42d:e0000#s4",
+            "coreta-3489dea3f42d:e0000#s5"
+          ]
+        },
+        {
+          "scope": "interface contract",
+          "claim": "The function takes one positional argument as required and returns a boolean, which is consistent with typical expected outputs for this exercise.",
+          "reason": "Definition is text_match_zero_one(text), matching the one-positional-argument requirement. The task prompt does not explicitly specify return type; bool is a reasonable and common interpretation, though returning the match object (as in the alternate draft) could also satisfy a loosely specified checker. No concrete defect found.",
+          "evidence_refs": [
+            "coreta-3489dea3f42d:e0000#s2"
+          ]
+        }
+      ],
+      "scope_limit": "Reviewed only the supplied code text and task prompt via local reasoning about regex semantics and Python types. I did not execute code, nor did I verify against the external w3resource page or any hidden test suite, so return-type expectations remain inferred rather than confirmed."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The candidate is complete and internally verified: pattern r'ab+' with re.search correctly implements 'a' followed by one or more 'b's, and the function signature matches the one-positional-argument requirement. Review e0003 found no defect and only flagged an inferred return-type expectation, which is a reasonable convention. No further work is warranted."
+    },
+    "lead_open_issues": [
+      "Return type is not explicitly specified by the prompt; bool is a reasonable interpretation, though returning the match object could also satisfy a loose checker."
+    ],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-3489dea3f42d:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-3489dea3f42d:e0000",
+        "coreta-3489dea3f42d:e0000#s2",
+        "coreta-3489dea3f42d:e0000#s3",
+        "coreta-3489dea3f42d:e0000#s4",
+        "coreta-3489dea3f42d:e0000#s5"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 supports the existing regex semantics (s3, s4) and bool return (s5) via local reasoning: '+' requires at least one b, re.search scans anywhere, and bool(None)/bool(match) yield False/True. It also confirms the one-positional-argument interface (s2). No concrete defect found, so the code is retained unchanged. The review's scope_limit notes it did not execute code or check the external source, so return-type expectation is recorded as a minor open issue rather than a defect."
+    }
+  },
+  {
+    "task_id": "mbpp/train/802",
+    "status": "degraded",
+    "bootstrap_review": {
+      "subject_id": "coreta-da56edb57dfb:e0000",
+      "verdict": "unresolved",
+      "findings": [
+        {
+          "scope": "count_rotation correctness for duplicates and the arr[lo] < arr[hi] early break",
+          "claim": "The algorithm is plausible for distinct elements, but the interaction of the early break with duplicates and with the stated rotation-count semantics is not established.",
+          "reason": "The early break at arr[lo] < arr[hi] returns lo as the minimum index. For distinct rotated arrays this is consistent with standard minimum-index search. With duplicates, however, the minimum value may occur at multiple indices; the task's intended 'number of rotations' for a non-decreasing array with duplicates is ambiguous (e.g., [1,1,2,1] or [2,1,1,2] can be viewed as rotations of a sorted array at different offsets). The code returns the first index of the minimum found by the search, which may not match a judge's expected rotation count. Also, the equality branch hi -= 1 can discard the true minimum index when arr[mid]==arr[hi] but the minimum lies in the discarded right portion with a smaller value to the left—though in a valid rotated non-decreasing array this is generally safe, I have not proven it for all duplicate cases.",
+          "evidence_refs": [
+            "coreta-da56edb57dfb:e0000#s3",
+            "coreta-da56edb57dfb:e0000#s6",
+            "coreta-da56edb57dfb:e0000#s7"
+          ]
+        },
+        {
+          "scope": "empty and single-element input",
+          "claim": "Empty input returns 0 and single-element input returns 0; these are consistent with zero rotations.",
+          "reason": "n==0 returns 0 explicitly; for n==1, lo=hi=0 so the loop is skipped and 0 is returned. This matches the natural rotation count for a one-element array.",
+          "evidence_refs": [
+            "coreta-da56edb57dfb:e0000#s2",
+            "coreta-da56edb57dfb:e0000#s7"
+          ]
+        }
+      ],
+      "scope_limit": "I reasoned by hand about small examples and the algorithm's invariants; I did not execute code. The main uncertainty is the task's intended handling of duplicate values and the exact expected rotation count, which the public prompt does not specify. I did not verify against the referenced GeeksforGeeks article or any test cases."
+    },
+    "lead_decision": null,
+    "lead_open_issues": null,
+    "application": null
+  },
+  {
+    "task_id": "gsm8k/train/1299",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-01f53692d6a6:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Daily computations and total",
+          "claim": "The sequential calculations and final sum are arithmetically consistent with the prompt.",
+          "reason": "Tuesday is explicitly 25. Wednesday is three times the prior day: 3×25=75. Thursday is one-fifth of the prior day: 75/5=15. Friday is 10 fewer than Thursday: 15−10=5. The total is 25+75+15+5=120. Each operation matches the stated day-to-day relation, and the addition checks out locally.",
+          "evidence_refs": [
+            "coreta-01f53692d6a6:e0000#s1",
+            "coreta-01f53692d6a6:e0000#s2",
+            "coreta-01f53692d6a6:e0000#s3",
+            "coreta-01f53692d6a6:e0000#s4",
+            "coreta-01f53692d6a6:e0000#s5"
+          ]
+        }
+      ],
+      "scope_limit": "I checked only the arithmetic and interpretation of the stated day-to-day relations; I did not execute code or consult any external reference answer. This is not a proof of correctness beyond the supplied prompt."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "The solution is complete and internally verified: 25 + 75 + 15 + 5 = 120, with each step matching the prompt's stated relations. Review e0003 supports all steps and no open issues remain."
+    },
+    "lead_open_issues": [],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-01f53692d6a6:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "coreta-01f53692d6a6:e0000#s1",
+        "coreta-01f53692d6a6:e0000#s2",
+        "coreta-01f53692d6a6:e0000#s3",
+        "coreta-01f53692d6a6:e0000#s4",
+        "coreta-01f53692d6a6:e0000#s5"
+      ],
+      "changed_step_ids": [],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 confirms the arithmetic and day-to-day interpretation of steps s1-s5 against the prompt, citing the original step refs. It adds support without changing the solution, so no step text changes; basis_refs now cite the review. The review's scope limit (no external answer consulted) is acknowledged."
+    }
+  },
+  {
+    "task_id": "gsm8k/train/6205",
+    "status": "completed",
+    "bootstrap_review": {
+      "subject_id": "coreta-5f4fddc2a378:e0000",
+      "verdict": "supported",
+      "findings": [
+        {
+          "scope": "Arithmetic and interpretation of the word problem (steps s2-s6)",
+          "claim": "The solution computes 40 kept, 60 contacted, 30 responders, and 70 remaining, with no arithmetic error.",
+          "reason": "Local checks: 0.40×100=40; 100−40=60; 0.50×60=30; 60−30=30 removed; 40+30=70. The prose says he keeps 40% and contacts the rest, then removes everyone who did not respond. Under the natural reading, the initially kept 40 are not contacted and are not removed, so the final total is 40+30=70. The steps are internally consistent and the boxed answer matches the computed total.",
+          "evidence_refs": [
+            "coreta-5f4fddc2a378:e0000#s2",
+            "coreta-5f4fddc2a378:e0000#s3",
+            "coreta-5f4fddc2a378:e0000#s4",
+            "coreta-5f4fddc2a378:e0000#s5",
+            "coreta-5f4fddc2a378:e0000#s6"
+          ]
+        }
+      ],
+      "scope_limit": "I checked only the arithmetic and the natural-language interpretation of this single word problem; I did not execute code or consult any reference answer. The main interpretive assumption is that the 40% Mark 'keeps' are retained and not subject to the responder-removal step; the problem wording supports this reading but is somewhat ambiguous, so this is not a proof of correctness beyond that reading."
+    },
+    "lead_decision": {
+      "action": "FINISH",
+      "recipient": null,
+      "request": null,
+      "reason": "Solution is complete and verified: 40 kept + 30 responders = 70, with the only caveat being a minor wording interpretation already noted. No further work needed."
+    },
+    "lead_open_issues": [
+      "Interpretation assumes the initially kept 40 are not subject to the responder-removal step; wording supports this but is somewhat ambiguous."
+    ],
+    "application": {
+      "request_id": null,
+      "contribution_id": null,
+      "review_id": "coreta-5f4fddc2a378:e0003",
+      "disposition": "accepted",
+      "before_refs": [
+        "v0:s2",
+        "v0:s3",
+        "v0:s4",
+        "v0:s5",
+        "v0:s6"
+      ],
+      "changed_step_ids": [
+        "s6"
+      ],
+      "application_outcome": "resolved",
+      "reason": "Review e0003 independently rechecks arithmetic (40, 60, 30, 70) and endorses the natural reading that the kept 40 are retained and not removed. It adds support rather than changing the computation. I recorded the review as basis for s6 and noted the interpretive ambiguity as an open issue. No arithmetic or step changes needed."
+    }
+  }
+]

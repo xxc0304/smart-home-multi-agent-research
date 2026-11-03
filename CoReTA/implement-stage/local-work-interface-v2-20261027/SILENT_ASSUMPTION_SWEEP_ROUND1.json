@@ -1,0 +1,21 @@
+{
+  "undeclared": [
+    {
+      "site": "src/coreta/local_work/comparison_v2.py:96-113 (originally reviewed version)",
+      "decision": "Treat an existing W reference or any C-prefixed reference as final result use without requiring delivery_mode=explicit_result_reference.",
+      "why_it_matters": "WorkSession.deliver retains unavailable result_id values while delivering the explicit fallback answer. Consequently, a waiting W could receive work-owner credit, and a nonexistent C could be classified as calculator use. A07 does not declare attempted or rejected references as successful structural use. The fix subsequently observed in the shared checkout correctly classified waiting W1 and nonexistent C99 as explicit_answer.",
+      "class": "semantic"
+    },
+    {
+      "site": "src/coreta/local_work/comparison_v2.py:82-86; tools/check_local_work_interface_v2.py:43-45",
+      "decision": "Send a newly introduced nested oneOf constraint to the configured provider while relying on local JSON Schema validation and payload construction as the available compatibility evidence.",
+      "why_it_matters": "The local test establishes Draft 2020-12 validity, and the checker establishes serialization and input size. Neither establishes that the provider accepts or enforces this new schema construct. This is an undeclared interface assumption that should remain explicitly unverified before any live batch; it is not evidence of an API failure.",
+      "class": "interface"
+    }
+  ],
+  "stale_rows": [],
+  "semantic_undeclared": 1,
+  "verdict": "gaps",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

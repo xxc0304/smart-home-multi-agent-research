@@ -1,0 +1,33 @@
+{
+  "undeclared": [
+    {
+      "site": "CoReTA/src/coreta/workboard/runtime.py:190-199",
+      "decision": "收尾来源检查者只从 attempted 中的 O 编号寻找；合法申报但此前未进入 TRY 的公开 offer，以及生成收尾版本时申报的非编辑成员初稿 W 来源，都不会参与选择。",
+      "why_it_matters": "SPEC §8 和 INTERFACE §3.4 要求根据 FINALIZE 申报的真实来源选择非编辑提供者，没有把来源限定为此前被试用的 offer。FINALIZE 可以读取全部公开贡献与候选，因此这条路径会存在：实际使用 A3 的未入选贡献，却回退到 A1 检查来源。最小修改是按已有公开来源的作者与发生顺序解析申报来源，保留直接复用非编辑原稿时优先原作者的规则；无需增加来源图。",
+      "class": "semantic"
+    },
+    {
+      "site": "CoReTA/src/coreta/workboard/runtime.py:94-108,201-210",
+      "decision": "FINALIZE 的 declared_sources 用于日志和检查者选择，却没有作为本次收尾申报传入最终检查包。reuse 保持候选不可变，因此检查者看到的 Work.declared_sources 是候选创建时的旧记录。",
+      "why_it_matters": "INTERFACE 要求最终检查核对实际版本、申报应用及可见来源绑定。在 reuse 路径上，本次决定检查者身份的来源与检查者实际看到的来源可能不同；use_record 是自由文本，不能保证包含完整申报编号。最小修改是把 FINALIZE 的 declared_sources 单独传入最终检查包，明确区分本次申报与不可变候选原有来源。",
+      "class": "semantic"
+    },
+    {
+      "site": "CoReTA/src/coreta/workboard/runtime.py:50-77,99-108",
+      "decision": "候选区仅对 OBSERVE、TRY、FINALIZE 展开；检查包中的公开证据只包括 offer，未提供这些 offer 引用的其他公开候选原文。",
+      "why_it_matters": "SPEC §5 明确原生候选区对全队可读，并允许引用未进入当前路径的初稿。例如 offer 引用 W3，而前后版本为 W2/W4 时，检查者只能看到 offer 自报摘录，无法读取已经公开的 W3；程序也没有提供补读接口。这缩小了设计规定的检查输入。最小修改是在检查包中提供被引用的公开候选原文，或直接提供现有候选区，同时继续排除 use_record 成功声明和本轮另一检查。",
+      "class": "interface"
+    },
+    {
+      "site": "CoReTA/src/coreta/workboard/contracts.py:40-46; CoReTA/src/coreta/workboard/runtime.py:201-214",
+      "decision": "FINALIZE 的 reuse candidate_id 枚举包含所有候选，包括 deliverable_shape=false 的局部成果；动作校验也接受这种复用。",
+      "why_it_matters": "SPEC §8 将 FINALIZE 的复用动作限定为已有完整候选；没有完整候选时允许生成新的尽力版本。局部初稿是当前实现明确支持的正常输入，因此该分支会接受设计未允许的收尾动作，随后退回 F 或报 NO_DELIVERABLE。最小修改是仅在 FINALIZE 的 reuse 枚举中保留形状可交付候选；new 仍可产生形状不完整的尽力成果。",
+      "class": "interface"
+    }
+  ],
+  "stale_rows": [],
+  "semantic_undeclared": 2,
+  "verdict": "gaps",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

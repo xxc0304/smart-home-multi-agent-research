@@ -1,0 +1,5 @@
+# Natural handoff pilot preparation
+
+Target: prepare the bounded natural-generation test requested after the handoff design audit. Inputs: the same four development tasks and two-member source allocations from the completed v2 batch; new HandoffFlow; prior full real replies and explicitly scripted receipts for local qualification only. Outputs: separately versioned runner/checker/process audit, frozen runtime cases and offline references, experiment review and budget/authorization gates.
+
+Base commit: `00338a49953246eaeff582e1a16f4c2959b77374`; extensive unrelated dirty work exists. Success command: `python tools/check_local_work_handoff_batch.py --data runs/local-work-v2-mixed-data-20261027-v2 --output runs/local-work-handoff-batch-check-20261027-v1`. The three arms each have the same seven response positions; four tasks, one repeat, at most84 paid calls. No paid calls in preparation. Preserve all completed prior batches, do not silently reuse their authorizations. API execution needs this frozen batch's explicit grant after scientific/technical gates pass.

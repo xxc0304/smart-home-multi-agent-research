@@ -1,0 +1,56 @@
+{
+  "member": "A2",
+  "task": {
+    "task_id": "candidate-screening-023",
+    "scenario": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions.",
+    "shared_information": [
+      "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests.",
+      "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking.",
+      "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food).",
+      "All three venues are within a 15-minute drive for most community members."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Lakeview Resort"
+      },
+      {
+        "id": "option_2",
+        "text": "Heritage Public Library"
+      },
+      {
+        "id": "option_3",
+        "text": "Grand Oak Hotel"
+      }
+    ],
+    "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+  },
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food)."
+    },
+    {
+      "ref": "PUBLIC.4",
+      "content": "All three venues are within a 15-minute drive for most community members."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "S02",
+      "content": "Grand Oak Hotel’s event calendar shows 'unavailable' online, but the events manager reports a scheduling software failure that blocks new bookings from appearing; last-minute bookings can be accepted by phone this week."
+    }
+  ]
+}

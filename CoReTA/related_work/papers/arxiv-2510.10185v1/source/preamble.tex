@@ -1,0 +1,275 @@
+% 1. BASIC PAGE AND FONT SETTINGS
+% -----------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[letterpaper, margin=1in, top=1.2in, bottom=1.2in]{geometry}
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{microtype}
+
+% 2. CORE & UTILITY PACKAGES
+% -----------------------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage{pifont} % For \ding
+\usepackage{fontawesome5}
+\usepackage{nicefrac}
+
+% 3. TABLES & FIGURES
+% -----------------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{arydshln}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+
+% 4. ALGORITHMS & CODE LISTINGS
+% -----------------------------------------------------------------
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{fvextra} % For verbatim environments
+
+% 5. STYLING & LAYOUT
+% -----------------------------------------------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+
+% 6. HYPERREF (load last for best compatibility)
+% -----------------------------------------------------------------
+\usepackage{hyperref}
+\usepackage{cleveref}
+\crefname{figure}{Figure}{Figures.}
+\crefname{table}{Table}{Tables.}
+\crefname{section}{Section}{Sections.}
+\crefname{equation}{Equation.}{Equations.}
+\crefname{algorithm}{Algorithm}{Algorithms.}
+
+% =================================================================
+% PACKAGE AND STYLE CONFIGURATIONS
+% =================================================================
+
+% --- Color Definitions ---
+\definecolor{darkblue}{RGB}{0, 51, 102}
+\definecolor{lightbluebg}{RGB}{245, 248, 252}
+\definecolor{blueframe}{RGB}{90, 150, 200}
+\definecolor{dividercolor}{RGB}{200, 210, 220}
+\definecolor{yellowtext}{RGB}{68,132,243}
+\definecolor{yellowred}{RGB}{50,167,82}
+\definecolor{yellowblue}{RGB}{251,191,5}
+\definecolor{darkgreen}{rgb}{0,0.4,0}
+\definecolor{maroon}{HTML}{A00000}
+\definecolor{gray}{rgb}{0.5, 0.5, 0.5}
+\definecolor{chocolate}{HTML}{D2691E}
+\definecolor{indigo}{HTML}{4B0082}
+\definecolor{violet}{HTML}{4B2E83}
+\definecolor{lightgreen}{HTML}{E0FBE0}
+\definecolor{lightred}{HTML}{FBE0E0}
+\definecolor{cadmiumgreen}{rgb}{0.0, 0.42, 0.24}
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+\definecolor{lightgray}{rgb}{0.9, 0.9, 0.9}
+
+% --- Hyperref Setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    citecolor=darkgreen,
+    urlcolor=darkblue
+}
+
+% --- Titlesec Setup ---
+\titleformat{\section}{\sffamily\Large\bfseries\color{darkblue}}{\thesection}{1em}{}
+\titleformat{\subsection}{\sffamily\large\bfseries\color{darkblue}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\sffamily\normalsize\bfseries\color{darkblue}}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]{\sffamily\normalsize\bfseries}{}{0em}{}[]
+\titlespacing{\paragraph}{0pt}{0.5ex plus 0.2ex minus 0.1ex}{0.5em}
+
+% --- Authblk Setup ---
+\renewcommand\Authfont{\sffamily\normalsize\bfseries}
+\renewcommand\Affilfont{\sffamily\small\itshape\mdseries}
+\setlength{\affilsep}{0.3em}
+\renewcommand\Authands{, }
+
+% --- Header/Footer Setup ---
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+% --- List Setup ---
+\setlist[enumerate,itemize]{topsep=0pt, itemsep=0pt, leftmargin=*, after=\leavevmode}
+\setlist[enumerate,1]{label=(\arabic*)}
+
+% --- Caption Setup ---
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period,
+  skip=5pt
+}
+
+% =================================================================
+% CUSTOM COMMANDS AND ENVIRONMENTS
+% =================================================================
+
+% --- Custom Commands ---
+\newcommand{\TextCircle}[1][0.7]{\tikz[baseline=(char.base)]\node[shape=circle,draw=black,inner sep=1.5pt,line width=0.5pt,fill=yellowtext,text=white,scale=#1] (char) {T};\hspace{-1pt}}
+\newcommand{\ImageCircle}[1][0.76]{\tikz[baseline=(char.base)]\node[shape=circle,draw=black,inner sep=1.5pt,line width=0.5pt,fill=yellowred,text=white,scale=#1] (char) {I};\hspace{-1pt}}
+\newcommand{\stddev}[1]{\textcolor{gray}{\scalebox{.8}{$\pm$#1}}}
+\newcommand{\circlednum}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw=teal,fill=teal!15,inner sep=1pt,text=teal!90!black] (char) {#1};}}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+% --- Custom Verbatim Environment ---
+\DefineVerbatimEnvironment{VerbatimWrap}{Verbatim}{
+    breaklines=true,
+    breakindent=0pt,
+    breaksymbol={},
+    fontsize=\scriptsize,
+}
+
+% --- Custom Framed Environment ---
+\mdfdefinestyle{customstyle}{
+    linecolor=cyan!70,
+    linewidth=3pt,
+    innerleftmargin=5pt,
+    topline=false,
+    rightline=false,
+    bottomline=false,
+    leftline=true,
+    innerrightmargin=5pt,
+    innertopmargin=5pt,
+    innerbottommargin=5pt,
+    backgroundcolor=cyan!8,
+}
+\newenvironment{custommdframed}{\begin{mdframed}[style=customstyle]\footnotesize}{\end{mdframed}}
+
+% --- Custom tcolorbox for prompts ---
+\newtcolorbox{prompt}[1]{
+    colback=lightbluebg!30!white,
+    colframe=blueframe,
+    breakable,
+    title=\textit{#1}
+}
+
+\makeatletter
+% --- Metadata storage ---
+\def\@title{}
+\def\@abstract{}
+\def\@keywords{}
+\def\@codelink{}
+\def\@datasetlink{}
+\def\@projectlink{}
+\def\@footnotemarkers{}
+
+% --- User command definitions ---
+\renewcommand{\title}[1]{\def\@title{#1}}
+\renewcommand{\abstract}[1]{\def\@abstract{#1}}
+\newcommand{\keywords}[1]{\def\@keywords{#1}}
+\newcommand{\codelink}[1]{\def\@codelink{#1}}
+\newcommand{\datasetlink}[1]{\def\@datasetlink{#1}}
+\newcommand{\projectlink}[1]{\def\@projectlink{#1}}
+\newcommand{\footnotemarkers}[1]{\def\@footnotemarkers{#1}}
+
+% --- First page style with footnotes ---
+\fancypagestyle{firstpage}{
+  \fancyhf{}
+  \fancyfoot[L]{\rule{0.333\textwidth}{0.4pt}\\[2pt]\footnotesize \@footnotemarkers}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% --- Core \maketitle command redefinition ---
+\renewcommand{\maketitle}{%
+  \thispagestyle{firstpage}%
+  \begin{tcolorbox}[
+    breakable,
+    colback=lightbluebg,
+    colframe=blueframe,
+    arc=3mm,
+    boxrule=0.5pt,
+    left=12pt,
+    right=12pt,
+    top=12pt,
+    bottom=12pt,
+    width=\textwidth,
+    boxsep=5pt
+  ]
+    % --- Title ---
+    \noindent
+    {\sffamily\Large\bfseries\color{darkblue}\@title\par}
+    \vspace{0.6em}
+    % --- Authors and affiliations ---
+    \noindent
+    \parbox{\textwidth}{\@author}\par
+    \vspace{1.2ex}
+    % --- Divider after affiliations ---
+    {\color{dividercolor}\rule{\linewidth}{0.5pt}}\par
+    \vspace{1.2ex}
+    % --- Abstract ---
+    \ifx\@abstract\@empty\else
+      \noindent\parbox{\textwidth}{%
+        {\sffamily\bfseries Abstract:}\quad \@abstract%
+      }\par
+      \vspace{1ex} % <-- Increased and harmonized the spacing here
+    \fi
+    % --- Keywords ---
+    \ifx\@keywords\@empty\else
+      \noindent\parbox{\textwidth}{%
+        {\sffamily\bfseries Keywords:}\quad \@keywords%
+      }\par
+      \vspace{1.5ex} % <-- Also adjusted this for consistency before the final links
+    \fi
+    % --- Links section (Code/Dataset/Project) ---
+    \ifx\@codelink\@empty
+      \ifx\@datasetlink\@empty
+        \ifx\@projectlink\@empty
+        \else
+          \vspace{-1.1em}
+          {\color{dividercolor}\rule{\linewidth}{0.5pt}}
+          \vspace{-0.6em}
+          \centering
+          \sffamily\small
+          \href{\@projectlink}{\faGlobe\ Project Page}
+          \par
+        \fi
+      \else
+        \vspace{-1.1em}
+        {\color{dividercolor}\rule{\linewidth}{0.5pt}}
+        \vspace{-0.6em}
+        \centering
+        \sffamily\small
+        \ifx\@projectlink\@empty\else
+          \href{\@projectlink}{\faGlobe\ Project Page}\hspace{1.5em}
+        \fi
+        \href{\@datasetlink}{\faDatabase\ Dataset}
+        \par
+      \fi
+    \else
+      \vspace{-1.1em}
+      {\color{dividercolor}\rule{\linewidth}{0.5pt}}
+      \vspace{-0.6em}
+      \centering
+      \sffamily\small
+      \href{\@codelink}{\faGithub\ Code}%
+      \ifx\@datasetlink\@empty\else
+        \hspace{1.5em}\href{\@datasetlink}{\faDatabase\ Dataset}%
+      \fi
+      \ifx\@projectlink\@empty\else
+        \hspace{1.5em}\href{\@projectlink}{\faGlobe\ Project Page}%
+      \fi
+      \par
+    \fi
+  \end{tcolorbox}
+}
+\makeatother

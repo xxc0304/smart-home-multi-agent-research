@@ -1,0 +1,291 @@
+{
+  "case_id": "011-time-24",
+  "kind": "historical_development_regression",
+  "packet": {
+    "task": {
+      "task_id": "candidate-screening-011",
+      "scenario": "You are on a committee responsible for an emergency scientific conference that suddenly lost its main venue due to a water pipe burst. You must relocate all attendees within the next two hours—if you can't agree, the event will be canceled. Three possible venues are nearby: City Library, Community Center, and School Gym. Each venue has different facilities and issues. The weather is turning hot and humid, and power outages have recently impacted the area. Your job is to pick the only venue that will safely accommodate all attendees for the full day of events without significant risks.",
+      "shared_information": [
+        "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power.",
+        "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave.",
+        "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet.",
+        "Temperatures are expected to exceed 37°C (99°F) in the afternoon. Organizers worry about heat stress if backup power fails."
+      ],
+      "choices": [
+        {
+          "id": "option_1",
+          "text": "School Gym"
+        },
+        {
+          "id": "option_2",
+          "text": "Community Center"
+        },
+        {
+          "id": "option_3",
+          "text": "City Library"
+        }
+      ],
+      "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+    },
+    "member": "A2",
+    "public_sources": [
+      {
+        "ref": "TASK",
+        "content": "You are on a committee responsible for an emergency scientific conference that suddenly lost its main venue due to a water pipe burst. You must relocate all attendees within the next two hours—if you can't agree, the event will be canceled. Three possible venues are nearby: City Library, Community Center, and School Gym. Each venue has different facilities and issues. The weather is turning hot and humid, and power outages have recently impacted the area. Your job is to pick the only venue that will safely accommodate all attendees for the full day of events without significant risks."
+      },
+      {
+        "ref": "PUBLIC.1",
+        "content": "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power."
+      },
+      {
+        "ref": "PUBLIC.2",
+        "content": "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave."
+      },
+      {
+        "ref": "PUBLIC.3",
+        "content": "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet."
+      },
+      {
+        "ref": "PUBLIC.4",
+        "content": "Temperatures are expected to exceed 37°C (99°F) in the afternoon. Organizers worry about heat stress if backup power fails."
+      }
+    ],
+    "own_sources": [
+      {
+        "ref": "S02",
+        "content": "The School Gym's restrooms are being restored right now. The on-site janitor confirms that at least two working restrooms (with ventilation and water) will be available within an hour."
+      }
+    ],
+    "shared_contributions": {
+      "A1": {
+        "text": "Screening evidence: The City Library's generator is privately reported to hold only 2 hours of fuel with no refueling possible, which conflicts with the requirement to support a full day of events—especially given heat-stress concerns if backup power fails. Community Center and School Gym have unresolved facility/readiness details. Mandatory task requirement encoded: full-duration safe support; no final option selected.",
+        "facts": [
+          {
+            "candidate": "City Library",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S01",
+            "quote": "their backup generator only has enough fuel for 2 hours and cannot be refueled due to a citywide gasoline shortage"
+          },
+          {
+            "candidate": "City Library",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "claims to be ready; it also has a known backup generator for power"
+          },
+          {
+            "candidate": "Community Center",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.2",
+            "quote": "the staff report it's fully accessible and already evacuated in advance of the heat wave"
+          },
+          {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "A city maintenance team is on its way but hasn't arrived yet"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "full_duration_supported",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "safely accommodate all attendees for the full day of events without significant risks"
+          }
+        ],
+        "caveats": [
+          "The City Library's 2-hour generator limit is from a private source; it directly bears on full-day power needs under heat and outage risk.",
+          "Community Center accessibility/evacuation status does not by itself establish full-day capacity or power resilience.",
+          "School Gym restroom issues and unarrived maintenance team leave readiness and safety unresolved.",
+          "No venue is confirmed safe for the full duration on the available evidence; this is a screening output, not a final choice."
+        ],
+        "solution": null
+      },
+      "A2": {
+        "text": "No venue is confirmed by my evidence as fully safe for the full-day task. School Gym has AC but restrooms were uncertain; my source S02 says at least two working restrooms should be available within an hour, which may fit the two-hour relocation window but does not establish full-duration support. City Library claims readiness and has a generator, yet no source confirms generator capacity for heat/power failure or full-day support. Community Center is accessible and evacuated, but size adequacy and full-duration readiness are unconfirmed.",
+        "facts": [
+          {
+            "candidate": "School Gym",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "The on-site janitor confirms that at least two working restrooms (with ventilation and water) will be available within an hour."
+          },
+          {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "The School Gym's restrooms are being restored right now."
+          },
+          {
+            "candidate": "City Library",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "claims to be ready"
+          },
+          {
+            "candidate": "City Library",
+            "field": "full_duration_supported",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "it also has a known backup generator for power."
+          },
+          {
+            "candidate": "Community Center",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.2",
+            "quote": "the staff report it's fully accessible and already evacuated in advance of the heat wave."
+          },
+          {
+            "candidate": "Community Center",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "PUBLIC.2",
+            "quote": "The Community Center is slightly smaller but centrally located"
+          }
+        ],
+        "conditions": [],
+        "caveats": [
+          "No source confirms any venue can accommodate all attendees for the full day without significant risks.",
+          "School Gym restroom restoration is in progress; availability within an hour is a janitor's statement, not confirmation of completion or full-day adequacy.",
+          "City Library's 'claims to be ready' is not independent confirmation; backup generator capacity and heat-stress resilience are unverified.",
+          "Community Center's 'slightly smaller' size may not accommodate all attendees; accessibility and evacuation status do not confirm capacity or full-duration support.",
+          "No final option is selected because no candidate is established as the single safe venue on current evidence."
+        ],
+        "solution": null
+      },
+      "A3": {
+        "text": "I cannot pick a final venue. My own source shows the Community Center is unsafe for a full-day event due to a chemical leak discovered today, so its accessibility and pre-evacuation do not establish safety. City Library has a known backup generator but no confirmed readiness for the heat/power risk; School Gym's restroom issues and unarrived maintenance team remain unresolved. These conflicts should be flagged, not resolved as certainties.",
+        "facts": [
+          {
+            "candidate": "Community Center",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "The Community Center basement has had a chemical leak that was just discovered today; the evacuation was for this, and it's only safe for short visits, not day-long events."
+          },
+          {
+            "candidate": "Community Center",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S03",
+            "quote": "it's only safe for short visits, not day-long events."
+          },
+          {
+            "candidate": "City Library",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power."
+          },
+          {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet."
+          }
+        ],
+        "conditions": [
+          {
+            "field": "safe_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks."
+          },
+          {
+            "field": "full_duration_supported",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "safely accommodate all attendees for the full day of events"
+          }
+        ],
+        "caveats": [
+          "The Community Center's public description (fully accessible, already evacuated) does not override my private source that the evacuation was due to a chemical leak and it is only safe for short visits.",
+          "City Library's 'claims to be ready' is not confirmed readiness for the heat/power scenario; backup generator ownership alone does not prove adequate full-duration support.",
+          "School Gym has AC, but possible restroom issues and an unarrived maintenance team leave readiness and safety unresolved.",
+          "The task requires choosing the only safe venue; my evidence rules out Community Center but does not confirm either remaining venue, so the final choice is unresolved."
+        ],
+        "solution": null
+      },
+      "A4": {
+        "text": "I cannot select a final option. My own source only confirms College Hall (not among the choices) is flooded and unavailable. Public evidence favors City Library on power readiness (backup generator) but does not confirm full-duration support; Community Center's accessibility/evacuation status is noted but its size sufficiency and heat resilience are unconfirmed; School Gym has unresolved restroom issues and an unarrived maintenance team. No option is established as safe for all attendees for the full day without significant risks.",
+        "facts": [
+          {
+            "candidate": "City Library",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "claims to be ready"
+          },
+          {
+            "candidate": "City Library",
+            "field": "full_duration_supported",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "it also has a known backup generator for power"
+          },
+          {
+            "candidate": "Community Center",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.2",
+            "quote": "the staff report it's fully accessible and already evacuated in advance of the heat wave"
+          },
+          {
+            "candidate": "School Gym",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "there may be issues with the restrooms"
+          },
+          {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "A city maintenance team is on its way but hasn't arrived yet"
+          },
+          {
+            "candidate": "College Hall",
+            "field": "ready_for_task",
+            "value": false,
+            "source": "S04",
+            "quote": "flooded this morning and is closed for at least a week, so it's not available"
+          }
+        ],
+        "conditions": [],
+        "caveats": [
+          "Heat above 37°C and recent power outages raise heat-stress risk if backup power fails (PUBLIC.4); City Library's generator existence does not prove full-day adequacy.",
+          "Community Center is 'slightly smaller'; whether it fits all attendees is unknown.",
+          "School Gym restroom problems are only possible ('may be'), not confirmed, but maintenance has not arrived.",
+          "No venue is confirmed safe for the full day; the two-hour relocation deadline and cancellation risk remain unresolved.",
+          "My own source concerns College Hall, which is not among the three options."
+        ],
+        "solution": null
+      }
+    },
+    "execution_report": null,
+    "historical_author": "A2",
+    "historical_work": {
+      "reason": "Screening only; no venue is confirmed fully safe for the full-day task. City Library has a backup generator but A1's private report (S01) of only 2 hours of fuel with no refueling undermines full-duration power support under heat/outage risk; 'claims to be ready' is not independent readiness. Community Center is ruled out by A3's private source S03: a chemical leak discovered today and 'only safe for short visits, not day-long events' (also contradicts the public evacuation framing). School Gym has AC and my source S02 indicates at least two working restrooms should be available within an hour, which may fit the two-hour window but does not establish full-day safety; restroom restoration is in progress and maintenance is unarrived. A4's source concerns College Hall, which is not an option. If forced to pick the least-disqualified remaining venue, School Gym (option_1) is the residual candidate, but this is not a confirmed safe choice; the committee should verify restroom completion, capacity, and power/heat resilience before committing.",
+      "artifact": "option_1",
+      "solution": null
+    },
+    "local_question": "What timing and certainty do your sources give for School Gym restroom availability relative to the relocation window? Distinguish current state, expected future state, and confirmation.",
+    "local_reconstruction": {
+      "author": "A2",
+      "text": "My source S02 gives a near-term, partly conditional timing: \"The School Gym's restrooms are being restored right now\" and \"The on-site janitor confirms that at least two working restrooms (with ventilation and water) will be available within an hour.\" Relative to the two-hour relocation window, that projects availability inside the window, but it is an expected future state, not a currently verified one. Current state: restrooms are under restoration and not yet reported usable. Confirmation: the janitor's statement is a single on-site report, not independent verification; it covers at least two restrooms with ventilation and water, not the full restroom facility or full-day reliability. The public record (PUBLIC.3) adds that the gym office says \"there may be issues with the restrooms\" and that a city maintenance team \"is on its way but hasn't arrived yet,\" so the restoration's completion remains uncertain until observed. My sources do not establish full-day restroom or overall venue safety, and the historical work's option_1 preference is unverified historical reasoning, not confirmation."
+    }
+  }
+}

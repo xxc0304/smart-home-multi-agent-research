@@ -1,0 +1,32 @@
+{
+  "status": "ready_for_six_cell_development_pilot_not_started",
+  "purpose": "development_pilot_not_confirmatory_experiment",
+  "task_id": "moon-survival/dev-001",
+  "model_settings_source": "CoReTA/config/deepseek_flash_inspection.json",
+  "repetitions_per_cell": 1,
+  "task_ordinal": 1,
+  "driver": "A2",
+  "agents": ["A1", "A2", "A3"],
+  "conditions": ["concentrated_A1", "distributed_r0"],
+  "runs": [
+    {"order": 1, "condition": "concentrated_A1", "system": "independent"},
+    {"order": 2, "condition": "distributed_r0", "system": "independent"},
+    {"order": 3, "condition": "concentrated_A1", "system": "ordinary_discussion"},
+    {"order": 4, "condition": "concentrated_A1", "system": "coreta"},
+    {"order": 5, "condition": "distributed_r0", "system": "coreta"},
+    {"order": 6, "condition": "distributed_r0", "system": "ordinary_discussion"}
+  ],
+  "planned_first_attempts_without_extra_interventions_or_retries": 36,
+  "max_network_attempts_per_run": 20,
+  "max_network_attempts_for_six_runs": 120,
+  "compatibility_checks": "Separate development records, excluded from capability comparisons",
+  "source_version_policy": "Use format-readiness freeze hashes; do not mix versions",
+  "input_counting": "Same pinned local DeepSeek tokenizer estimate plus 256 allowance for all systems; limit remains 32768",
+  "readiness_report": "CoReTA/engineering/handoff-v1/FORMAT_READINESS_20261021.md",
+  "primary_metrics": ["final_L1_error", "complete_ranking_correct", "delivery_failure"],
+  "engineering_records": ["format_recoveries", "response_status", "stop_reason", "attempts", "usage", "input_count_mode"],
+  "process_checks": ["knowledge_exposed", "knowledge_actually_used", "valid_contribution_lost", "erroneous_contribution_adopted"],
+  "not_reported_in_first_pilot": ["automated_all_initial_wrong_recovery_rate", "paired_retention_or_degradation_rate", "mechanism_causality", "equal_cost_superiority", "cross_task_generalization"],
+  "stop_batch_if": ["common_API_schema_rejection", "repeated_final_output_contract_failure", "shared_context_budget_failure"],
+  "real_model_runs_started": false
+}

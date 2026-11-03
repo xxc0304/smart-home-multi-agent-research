@@ -1,0 +1,1038 @@
+{
+  "scope": "four pre-TRY snapshots, no future evidence",
+  "new_model_requests": 0,
+  "source_hashes": {
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\workboard-d0-natural-live-20261022-r2\\hb-dev-004-r1-c1\\v3_continuation\\requests.jsonl": "080f3a7971ec4b7f722b0d9817e05ea6e7d797590dd3b17c6044b8db92ab0c9d",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\task-packs\\hiddenbench-workboard-dev-v1\\hb-dev-004\\packets\\distributed\\A1.json": "09cccc927533a625614d1df208d8ec931ec153a9d712af4f78c3318ae3ae62d5",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\workboard-d0-natural-live-20261022-r2\\hb-dev-004-r1-c1\\d0_continuation\\requests.jsonl": "e2a66af9dca66de1201b36e5557f86df153d8da46f3925bf8d96d975f4ac4c07",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\workboard-d0-natural-live-20261022-r2\\hb-dev-034-r1-c2\\v3_continuation\\requests.jsonl": "9ae24812db3a6a50116d470d4e58a487665ae59002c13ec78e25715cefd0466b",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\task-packs\\hiddenbench-workboard-dev-v1\\hb-dev-034\\packets\\distributed\\A3.json": "4b33d6e20425ccbc440aac78f52f87499cf6324e39bb5f2e0f04096c2f0bce2e",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\workboard-d0-natural-live-20261022-r2\\hb-dev-034-r1-c2\\d0_continuation\\requests.jsonl": "a181faf98ef01bb10aaf420f2a73c27d837b861197bc956605a3a8a6632c4b37"
+  },
+  "rows": [
+    {
+      "history": "hb-dev-004-r1-c1",
+      "variant": "v3_continuation",
+      "request_line": 4,
+      "editor": "A3",
+      "provider": "A2",
+      "auditor": "A1",
+      "selected_offer": {
+        "ref": "O4",
+        "author": "A2",
+        "base_version": "W3",
+        "target": "W4:work_text:L1",
+        "knowledge": "A fact from my directly read original S02 that bears on W4's Mr. Z reading: S02 says the guilty person's inexperience caused the inability to avoid the collision and that he/she did not see others approaching. Mr. Z has held a license for 5 years and his speeding is deliberate risk-taking, not inexperience; whereas a 17-year-old son (if driving) matches inexperience, and Mrs. Y (1-year license) matches it best. So S02's inexperience clue does not support Mr. Z as W4 asserts ('majority of jointly reported clues... converge on Mr. Z'); it weakens Mr. Z relative to the son. Also, W4 treats O2's under-30 clue as excluding Mr. X (53), which is correct, but under-30 leaves both the son (17) and Mrs. Y (27) live, so it does not select Mr. Z. This is my own original, directly verified by me; S01/S03 remain known to me only via O1/W3/W4 reports.",
+        "support": [
+          {
+            "ref": "S02",
+            "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "W4",
+            "excerpt": "Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h."
+          }
+        ],
+        "proposed_use": "In W4's work_text, record that S02's 'inexperience' clause (direct original, verified by A2) counts against Mr. Z (5 years' license, deliberate speeding) and in favor of an inexperienced under-30 driver; do not list inexperience as part of a 'majority of clues converging on Mr. Z'. Combined with O1's car-driver/alcohol report, this should push W4 away from option_1 and back toward a car occupant under 30 (the son, if he was driving, or Mrs. Y), leaving the son-as-driver question as the key unresolved limit rather than resolved in Mr. Z's favor."
+      },
+      "public_offer_ids_at_time": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "field_projection_not_approved_input": {
+        "TASK": {
+          "task_id": "hb-dev-004",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are participating in a study, acting as an investigator working on a traffic accident. The collision took place at the St. Georges intersection, on Monday at 7 p.m. The road is narrow and poorly lit. Two cars and one motorcycle are involved.\nYour Task:\nYou will discuss with other participants, who are also acting as investigators, to decide who to prosecute. You have four suspects:\n- Mr. X\n- Mr. X's son\n- Mrs. Y\n- Mr. Z\nThere is only one true perpetrator. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+          "shared_information": [
+            "In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.",
+            "In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.",
+            "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Mr. Z"
+            },
+            {
+              "id": "option_2",
+              "text": "Mrs. Y"
+            },
+            {
+              "id": "option_3",
+              "text": "Mr. X's son"
+            },
+            {
+              "id": "option_4",
+              "text": "Mr. X"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          }
+        ],
+        "PUBLIC_EXCERPTS": [
+          {
+            "carrier": "O1",
+            "author": "A1",
+            "support_index": 0,
+            "reported_ref": "S01",
+            "text": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O1",
+            "author": "A1",
+            "support_index": 1,
+            "reported_ref": "W3",
+            "text": "The 110 km/h detail is the only tension: the son was a passenger in the car, not explicitly the driver, but the material says the guilty person was driving at 110 km/h — this could refer to the son driving the first car while the drunk father sat beside him",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "S02",
+            "text": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W3",
+            "text": "Using my private material S03: the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible for the accident.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A2",
+            "support_index": 2,
+            "reported_ref": "W1",
+            "text": "From my private material S01 (direct original), the guilty person was driving a car and had a blood alcohol level of 1.5, and admitted being inattentive.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A1",
+            "support_index": 0,
+            "reported_ref": "S01",
+            "text": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A1",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "The tension is that O1 reports the guilty person driving a car with high alcohol, which fits Mr. X, not Mr. Z; however O1 itself notes S01 gives no name, age, or speed, and the under-30 clue from S02 conflicts with Mr. X (53). Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A1",
+            "support_index": 2,
+            "reported_ref": "T",
+            "text": "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "S02",
+            "text": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h.",
+            "access": "published_excerpt_not_original_access"
+          }
+        ]
+      },
+      "omitted_public_content": [
+        {
+          "ref": "O1",
+          "knowledge": "A fact from my directly read original S01 that bears on W3's speed/driver tension: the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision. This is a car-driver, alcohol-impairment profile, not a speeding-motorcyclist profile, so it favors a car occupant (Mr. X or Mrs. Y) over Mr. Z and does not support the 110 km/h motorcycle reading. It also does not by itself confirm the son was driving: S01 gives no name, age, or speed, so W3's inference that the son drove the car remains unverified. Basis is indirect for W3's purposes: S01 is my own original, but W3's author cannot read it directly; treat this as a peer report of my original, not as W3's own verification.",
+          "proposed_use": "In W3's work_text, record this as peer-reported evidence from A1's S01 (not directly verified by A3): the perpetrator is a car driver with high alcohol and inattention. Use it to downgrade the 110 km/h clue as a reason to favor Mr. Z and to flag that the son-as-driver reading still needs support from S02/S03, since S01 does not identify the driver by name or age. This may move W3 toward option_4 (Mr. X), who is the car occupant explicitly noted as having drunk spirits, while keeping the son hypothesis open pending a driver-identity clue."
+        },
+        {
+          "ref": "O2",
+          "knowledge": "A3's S03-based inference that the driver was male and that the father is indirectly responsible is compatible with S02's age/inexperience/not-seeing clues only for a driver under 30. Mr. X (53) is excluded by S02, so W1's option_4 conflicts with S02. Among under-30 males, Mr. Z (28, 5 years' license, speeding) fits 'driving at 110 km/h' but not 'inexperience' as well as a 17-year-old would; importantly, S02's 'inexperience' and 'didn't see others' fit Mrs. Y (27, 1 year license, damaged lights) but she is female, contradicting S03's 'guilty person is a man'. Thus the combined S02+S03 clues favor a young male driver; A3 should reconcile the 110 km/h clue rather than treating it as a mere tension. Note S02 is my direct original; S01/S03 are only known through W1/W3 reports.",
+          "proposed_use": "Treat S02 as a hard constraint: the perpetrator is under 30, so option_4 (Mr. X, 53) should be ruled out in W1 and W3's reasoning. Re-examine whether the male-driver clue in S03 plus the under-30 clue can be jointly satisfied by Mr. Z (28, speeding 110 km/h) rather than Mr. X's son, since the son is described as a passenger and no fact says he drove; if A3 cannot resolve this, flag the S03 110 km/h clue as pointing to Mr. Z and reconsider option_1 versus option_3 before convergence."
+        },
+        {
+          "ref": "O3",
+          "knowledge": "A directly read fact from my original S01 that bears on W4's weighing: S01 says 'The guilty person is driving a car' and 'the guilty car owner' had 1.5 alcohol. This is not merely an alcohol/inattention profile; it is an explicit vehicle-class constraint (car, not motorcycle) plus an owner-driver match. W4 treats the S01 clue as a 'tension' to be outweighed by a 'majority of jointly reported clues', but the vehicle-class constraint directly contradicts Mr. Z, who per the task is on a motorcycle. The only two car occupants are Mr. X and Mrs. Y (the son is described as a passenger; no fact says he drove). So S01 narrows the field to car occupants and is evidence against option_1, not neutral background. Note: this is my own original S01; W4's author cannot read it directly, and I cannot verify S02/S03 originals, so I do not assert the final answer.",
+          "proposed_use": "In W4's work_text, record S01 as a hard vehicle-class constraint (car driver, car owner) rather than a soft 'tension': it excludes Mr. Z (motorcyclist) from the perpetrator role and restricts the field to car occupants (Mr. X or Mrs. Y). Reconcile this with the reported S02 under-30 clue (which excludes Mr. X, 53) and S03's 'male' clue (which excludes Mrs. Y) — the three clues cannot all be satisfied by one named suspect unless the son-as-driver reading is revived, so W4 should flag the residual contradiction explicitly and not claim a 'majority' convergence on Mr. Z. This does not decide the answer; it corrects W4's weighting of the S01 clue."
+        },
+        {
+          "ref": "O4",
+          "knowledge": "A fact from my directly read original S02 that bears on W4's Mr. Z reading: S02 says the guilty person's inexperience caused the inability to avoid the collision and that he/she did not see others approaching. Mr. Z has held a license for 5 years and his speeding is deliberate risk-taking, not inexperience; whereas a 17-year-old son (if driving) matches inexperience, and Mrs. Y (1-year license) matches it best. So S02's inexperience clue does not support Mr. Z as W4 asserts ('majority of jointly reported clues... converge on Mr. Z'); it weakens Mr. Z relative to the son. Also, W4 treats O2's under-30 clue as excluding Mr. X (53), which is correct, but under-30 leaves both the son (17) and Mrs. Y (27) live, so it does not select Mr. Z. This is my own original, directly verified by me; S01/S03 remain known to me only via O1/W3/W4 reports.",
+          "proposed_use": "In W4's work_text, record that S02's 'inexperience' clause (direct original, verified by A2) counts against Mr. Z (5 years' license, deliberate speeding) and in favor of an inexperienced under-30 driver; do not list inexperience as part of a 'majority of clues converging on Mr. Z'. Combined with O1's car-driver/alcohol report, this should push W4 away from option_1 and back toward a car occupant under 30 (the son, if he was driving, or Mrs. Y), leaving the son-as-driver question as the key unresolved limit rather than resolved in Mr. Z's favor."
+        }
+      ],
+      "literal_visibility_probes": {
+        "making Pine Retreat dangerous": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        },
+        "less than 30 years old": {
+          "in_projection": true,
+          "in_visible_work_history": false
+        },
+        "guilty person is a man": {
+          "in_projection": true,
+          "in_visible_work_history": true
+        },
+        "son is described as a passenger": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        }
+      },
+      "has_autonomous_claim_list": false,
+      "readiness": "not_ready_semantic_coverage_unverified"
+    },
+    {
+      "history": "hb-dev-004-r1-c1",
+      "variant": "d0_continuation",
+      "request_line": 4,
+      "editor": "A3",
+      "provider": "A2",
+      "auditor": "A1",
+      "selected_offer": {
+        "ref": "O4",
+        "author": "A2",
+        "base_version": "W4",
+        "target": "W4:work_text:L1",
+        "knowledge": "A concrete counterexample to W4's weighting of the vehicle clue: W4 treats O1's 'guilty person is driving a car' as a mere 'tension' outweighed by other clues, but on W4's own reported premises it is a direct contradiction, not a soft tension. W4's S03 (as W4 reports it) says the guilty person drove at 110 km/h and W4 matches this to Mr. Z's motorcycle speeding on N13; O1 reports the guilty person was driving a car with 1.5 alcohol. A person cannot be both the car driver and the motorcyclist, so if O1's report is accurate, the 110 km/h clue cannot be Mr. Z's motorcycle speed and W4's central link to Mr. Z collapses. W4 also asserts 'a majority of jointly reported clues converge on Mr. Z', but the count is: under-30 (O2) fits Z, son, and Y equally; male (S03) fits Z and son; 110 km/h (S03) fits Z only if it is motorcycle speed, which O1 contradicts; car driver + 1.5 alcohol + inattention (O1) fits none of Z's task facts and is the only clue with no Z support. So the majority claim depends on double-counting one contested clue (110 km/h) while discounting the single most specific clue (car + alcohol). Also, W4's reading of 'his father is indirectly responsible' for Mr. Z (sick father's urgent request) is weaker than the son reading W3 gave, because S03's phrasing implies the father's own conduct caused the accident indirectly, which matches Mr. X's drinking (the father), not a father who merely asked his son to hurry. Distinguishing test for Q1: ask A1 whether S01's excerpt names a vehicle type beyond 'car' and whether it excludes a motorcycle; if S01 says 'car' and the guilty person is the car owner with 1.5 alcohol, then Mr. Z is excluded by vehicle and the realistic candidates are Mr. X (drinking, car owner) or his son (under 30, male, father indirectly responsible). W4 should at minimum record that its option_1 rests on rejecting O1's vehicle clue, not on a majority of clues, and flag option_3/option_4 as the live alternatives.",
+        "support": [
+          {
+            "ref": "O1",
+            "excerpt": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          },
+          {
+            "ref": "W4",
+            "excerpt": "Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h."
+          },
+          {
+            "ref": "W4",
+            "excerpt": "Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1."
+          },
+          {
+            "ref": "T",
+            "excerpt": "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          }
+        ],
+        "proposed_use": "In W4's work_text, replace the 'majority of jointly reported clues' justification with an explicit statement that option_1 requires rejecting O1's car-driver/1.5-alcohol clue as inaccurate, since a car driver cannot be the motorcyclist. Either (a) keep option_1 but downgrade confidence and list option_3/option_4 as live alternatives pending A1's confirmation of S01's vehicle wording, or (b) if A1 confirms S01 says 'car' with no motorcycle, shift toward option_3 (son: under 30, male, father indirectly responsible) or option_4 (Mr. X: car owner, drinking). This does not resolve Q1 by itself; it exposes that W4's current basis is internally inconsistent, which is the check Q1 asks for.",
+        "responds_to": "Q1"
+      },
+      "public_offer_ids_at_time": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "field_projection_not_approved_input": {
+        "TASK": {
+          "task_id": "hb-dev-004",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are participating in a study, acting as an investigator working on a traffic accident. The collision took place at the St. Georges intersection, on Monday at 7 p.m. The road is narrow and poorly lit. Two cars and one motorcycle are involved.\nYour Task:\nYou will discuss with other participants, who are also acting as investigators, to decide who to prosecute. You have four suspects:\n- Mr. X\n- Mr. X's son\n- Mrs. Y\n- Mr. Z\nThere is only one true perpetrator. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+          "shared_information": [
+            "In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.",
+            "In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.",
+            "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Mr. Z"
+            },
+            {
+              "id": "option_2",
+              "text": "Mrs. Y"
+            },
+            {
+              "id": "option_3",
+              "text": "Mr. X's son"
+            },
+            {
+              "id": "option_4",
+              "text": "Mr. X"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          }
+        ],
+        "PUBLIC_EXCERPTS": [
+          {
+            "carrier": "O1",
+            "author": "A1",
+            "support_index": 0,
+            "reported_ref": "S01",
+            "text": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O1",
+            "author": "A1",
+            "support_index": 1,
+            "reported_ref": "W3",
+            "text": "The 110 km/h detail is the only tension: the son was a passenger in the car, not explicitly the driver, but the material says the guilty person was driving at 110 km/h — this could refer to the son driving the first car while the drunk father sat beside him",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "S02",
+            "text": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W3",
+            "text": "Using my private material S03: the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible for the accident.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A2",
+            "support_index": 2,
+            "reported_ref": "W1",
+            "text": "From my private material S01 (direct original), the guilty person was driving a car and had a blood alcohol level of 1.5, and admitted being inattentive.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A1",
+            "support_index": 0,
+            "reported_ref": "S01",
+            "text": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A1",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A1",
+            "support_index": 2,
+            "reported_ref": "T",
+            "text": "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "O1",
+            "text": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A2",
+            "support_index": 2,
+            "reported_ref": "W4",
+            "text": "Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A2",
+            "support_index": 3,
+            "reported_ref": "T",
+            "text": "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road.",
+            "access": "published_excerpt_not_original_access"
+          }
+        ]
+      },
+      "omitted_public_content": [
+        {
+          "ref": "O1",
+          "knowledge": "A fact from my directly read original S01 that bears on W3's speed/driver tension: the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision. This is a car-driver, alcohol-impairment profile, not a speeding-motorcyclist profile, so it favors a car occupant (Mr. X or Mrs. Y) over Mr. Z and does not support the 110 km/h motorcycle reading. It also does not by itself confirm the son was driving: S01 gives no name, age, or speed, so W3's inference that the son drove the car remains unverified. Basis is indirect for W3's purposes: S01 is my own original, but W3's author cannot read it directly; treat this as a peer report of my original, not as W3's own verification.",
+          "proposed_use": "In W3's work_text, record this as peer-reported evidence from A1's S01 (not directly verified by A3): the perpetrator is a car driver with high alcohol and inattention. Use it to downgrade the 110 km/h clue as a reason to favor Mr. Z and to flag that the son-as-driver reading still needs support from S02/S03, since S01 does not identify the driver by name or age. This may move W3 toward option_4 (Mr. X), who is the car occupant explicitly noted as having drunk spirits, while keeping the son hypothesis open pending a driver-identity clue."
+        },
+        {
+          "ref": "O2",
+          "knowledge": "A3's S03-based inference that the driver was male and that the father is indirectly responsible is compatible with S02's age/inexperience/not-seeing clues only for a driver under 30. Mr. X (53) is excluded by S02, so W1's option_4 conflicts with S02. Among under-30 males, Mr. Z (28, 5 years' license, speeding) fits 'driving at 110 km/h' but not 'inexperience' as well as a 17-year-old would; importantly, S02's 'inexperience' and 'didn't see others' fit Mrs. Y (27, 1 year license, damaged lights) but she is female, contradicting S03's 'guilty person is a man'. Thus the combined S02+S03 clues favor a young male driver; A3 should reconcile the 110 km/h clue rather than treating it as a mere tension. Note S02 is my direct original; S01/S03 are only known through W1/W3 reports.",
+          "proposed_use": "Treat S02 as a hard constraint: the perpetrator is under 30, so option_4 (Mr. X, 53) should be ruled out in W1 and W3's reasoning. Re-examine whether the male-driver clue in S03 plus the under-30 clue can be jointly satisfied by Mr. Z (28, speeding 110 km/h) rather than Mr. X's son, since the son is described as a passenger and no fact says he drove; if A3 cannot resolve this, flag the S03 110 km/h clue as pointing to Mr. Z and reconsider option_1 versus option_3 before convergence."
+        },
+        {
+          "ref": "O3",
+          "knowledge": "A2's CHECK_EFFECT flags a real inconsistency, and I can add a directly-read fact from my own original S01 that sharpens it without resolving the underlying conflict. S01 says the guilty person was 'driving a car' and the 'guilty car owner' had 1.5 alcohol. This is a vehicle-type constraint, not merely an alcohol-impairment profile: the perpetrator was in a car, whereas the task places Mr. Z on a motorcycle. So the S01 clue is not a neutral 'tension' that can be outweighed by a majority count; it affirmatively counts against option_1. Two further points: (a) S01 does NOT name the driver, give an age, or give a speed, so it equally fails to single out Mr. X; it only rules out the motorcyclist. (b) W4's 'father indirectly responsible' reading for Mr. Z (sick father's urgent request) is a reinterpretation not stated in any material I can read, and A2 correctly notes it is weaker than the son reading. Combined with the under-30 clue (reported via O2) excluding Mr. X (53), the field narrows to a car occupant under 30 who is male — i.e., the son (17) or Mrs. Y (27, but female per reported S03). That is a conditional narrowing, not a final answer, since I cannot read S02/S03 originals. Limit: I read only T and S01 directly; S02/S03 are known to me only through O2/W4 reports, and I make no claim about ground truth.",
+          "proposed_use": "In W4's work_text and open_points, upgrade the S01 car/alcohol item from an 'unresolved tension' to an explicit vehicle-type constraint that counts against option_1 (Mr. Z rode a motorcycle per T). Record that S01 gives no name/age/speed, so it does not itself select Mr. X. Re-examine whether the joint constraint set (car occupant + under 30 + male) favors the son over Mr. Z, and flag that W4's 'father indirectly responsible' reading for Mr. Z is interpretive and unsupported by S01. If A3 cannot resolve it, mark the option_1 choice as a coordination move rather than a factually best-supported one."
+        },
+        {
+          "ref": "O4",
+          "knowledge": "A concrete counterexample to W4's weighting of the vehicle clue: W4 treats O1's 'guilty person is driving a car' as a mere 'tension' outweighed by other clues, but on W4's own reported premises it is a direct contradiction, not a soft tension. W4's S03 (as W4 reports it) says the guilty person drove at 110 km/h and W4 matches this to Mr. Z's motorcycle speeding on N13; O1 reports the guilty person was driving a car with 1.5 alcohol. A person cannot be both the car driver and the motorcyclist, so if O1's report is accurate, the 110 km/h clue cannot be Mr. Z's motorcycle speed and W4's central link to Mr. Z collapses. W4 also asserts 'a majority of jointly reported clues converge on Mr. Z', but the count is: under-30 (O2) fits Z, son, and Y equally; male (S03) fits Z and son; 110 km/h (S03) fits Z only if it is motorcycle speed, which O1 contradicts; car driver + 1.5 alcohol + inattention (O1) fits none of Z's task facts and is the only clue with no Z support. So the majority claim depends on double-counting one contested clue (110 km/h) while discounting the single most specific clue (car + alcohol). Also, W4's reading of 'his father is indirectly responsible' for Mr. Z (sick father's urgent request) is weaker than the son reading W3 gave, because S03's phrasing implies the father's own conduct caused the accident indirectly, which matches Mr. X's drinking (the father), not a father who merely asked his son to hurry. Distinguishing test for Q1: ask A1 whether S01's excerpt names a vehicle type beyond 'car' and whether it excludes a motorcycle; if S01 says 'car' and the guilty person is the car owner with 1.5 alcohol, then Mr. Z is excluded by vehicle and the realistic candidates are Mr. X (drinking, car owner) or his son (under 30, male, father indirectly responsible). W4 should at minimum record that its option_1 rests on rejecting O1's vehicle clue, not on a majority of clues, and flag option_3/option_4 as the live alternatives.",
+          "proposed_use": "In W4's work_text, replace the 'majority of jointly reported clues' justification with an explicit statement that option_1 requires rejecting O1's car-driver/1.5-alcohol clue as inaccurate, since a car driver cannot be the motorcyclist. Either (a) keep option_1 but downgrade confidence and list option_3/option_4 as live alternatives pending A1's confirmation of S01's vehicle wording, or (b) if A1 confirms S01 says 'car' with no motorcycle, shift toward option_3 (son: under 30, male, father indirectly responsible) or option_4 (Mr. X: car owner, drinking). This does not resolve Q1 by itself; it exposes that W4's current basis is internally inconsistent, which is the check Q1 asks for."
+        }
+      ],
+      "literal_visibility_probes": {
+        "making Pine Retreat dangerous": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        },
+        "less than 30 years old": {
+          "in_projection": true,
+          "in_visible_work_history": false
+        },
+        "guilty person is a man": {
+          "in_projection": true,
+          "in_visible_work_history": true
+        },
+        "son is described as a passenger": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        }
+      },
+      "has_autonomous_claim_list": false,
+      "readiness": "not_ready_semantic_coverage_unverified"
+    },
+    {
+      "history": "hb-dev-034-r1-c2",
+      "variant": "v3_continuation",
+      "request_line": 4,
+      "editor": "A1",
+      "provider": "A2",
+      "auditor": "A3",
+      "selected_offer": {
+        "ref": "O5",
+        "author": "A2",
+        "base_version": "W4",
+        "target": "W5:work_text:L1",
+        "knowledge": "I hold the directly read original S02, and W5 (like W4) still describes the washout as 'the only road to Maple Lodge' being washed out but then hedges it as possibly covering 'only the main road' — an internal tension worth resolving in the wording. S02 says the *only road* is impassable and the site is inaccessible by car or foot; it does not say 'main road,' and it does not affirmatively exclude an alternate route. The precise record should be: 'per S02, the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed.' Separately, W5's phrasing 'Pine is reported in the northward plume path per S01' upgrades an inference (northward drift + Pine is north) into a reported fact — the same over-claim A2's CHECK_EFFECT flagged against W5. S01 (as I can only see it via W4/W5 peer reports) supports 'cloud drifting north,' not 'Pine is in the plume.' W5 should restore W4's inference framing and keep the W2 rebuttal basis rather than dropping it.",
+        "support": [
+          {
+            "ref": "S02",
+            "excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+          },
+          {
+            "ref": "W5",
+            "excerpt": "the Maple washout (O1, peer-reported) may be stale or cover only the main road"
+          },
+          {
+            "ref": "W5",
+            "excerpt": "Pine is reported in the northward plume path per S01"
+          },
+          {
+            "ref": "W4",
+            "excerpt": "My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous"
+          }
+        ],
+        "proposed_use": "Revise W5's work_text/limits: (1) state the washout evidence precisely as 'per S02 the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed' rather than 'may cover only the main road'; (2) soften 'Pine is reported in the northward plume path per S01' back to 'S01 reports a northward drift and Pine is north, so Pine is likely in the plume path (inference, not verified)'; (3) keep the W2 'farther from spill' rebuttal basis in the text so the reason for rejecting Pine remains visible. Artifact stays option_2; do not strengthen the washout beyond what S02 supports."
+      },
+      "public_offer_ids_at_time": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6"
+      ],
+      "field_projection_not_approved_input": {
+        "TASK": {
+          "task_id": "hb-dev-034",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are part of a university field team conducting research in a rural region. Suddenly, a chemical spill at a manufacturing plant several miles away has triggered a region-wide alert. Everyone on your team must decide together where to relocate for safety and communication with authorities. You have very little time. There are three potential locations:\n- Maple Lodge (a youth camp to the east)\n- Pine Retreat (a cabin complex to the north)\n- Cedar Station (an old ranger station to the south)\nAll locations are usually reachable in under an hour. Your goal: choose the only safe and reachable location, maximizing your team’s safety and your ability to coordinate with emergency services.",
+          "shared_information": [
+            "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents.",
+            "Pine Retreat is farther from the spill than where you currently are.",
+            "Cedar Station is an older building, less commonly used, but the route to it is familiar to everyone on the team.",
+            "Maps indicate that all sites should have food and water supplies for at least 24 hours."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Maple Lodge"
+            },
+            {
+              "id": "option_2",
+              "text": "Cedar Station"
+            },
+            {
+              "id": "option_3",
+              "text": "Pine Retreat"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A3",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S03",
+            "content": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+          }
+        ],
+        "PUBLIC_EXCERPTS": [
+          {
+            "carrier": "O1",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "S02",
+            "text": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O1",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W1",
+            "text": "route reachability for Maple Lodge is only generally asserted (under an hour, usual conditions).",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A3",
+            "support_index": 0,
+            "reported_ref": "W2",
+            "text": "my directly accessible material S02 (emergency traffic updates) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A3",
+            "support_index": 1,
+            "reported_ref": "W2",
+            "text": "Pine Retreat (option_3) is reported farther from the spill than our current position, which reduces exposure relative to staying put, and no reachability problem for it is known to me",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A3",
+            "support_index": 2,
+            "reported_ref": "T",
+            "text": "All locations are usually reachable in under an hour.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "S02",
+            "text": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A2",
+            "support_index": 2,
+            "reported_ref": "W4",
+            "text": "Cedar Station is therefore the best remaining option: it is not in the reported northward plume path",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A2",
+            "support_index": 3,
+            "reported_ref": "W4",
+            "text": "I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A3",
+            "support_index": 0,
+            "reported_ref": "S03",
+            "text": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A3",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "Cedar Station's structural safety, contamination status, and communication capability are unstated",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O5",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "S02",
+            "text": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O5",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W5",
+            "text": "the Maple washout (O1, peer-reported) may be stale or cover only the main road",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O5",
+            "author": "A2",
+            "support_index": 2,
+            "reported_ref": "W5",
+            "text": "Pine is reported in the northward plume path per S01",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O5",
+            "author": "A2",
+            "support_index": 3,
+            "reported_ref": "W4",
+            "text": "My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O6",
+            "author": "A3",
+            "support_index": 0,
+            "reported_ref": "W4",
+            "text": "My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O6",
+            "author": "A3",
+            "support_index": 1,
+            "reported_ref": "W5",
+            "text": "Pine is reported in the northward plume path per S01",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O6",
+            "author": "A3",
+            "support_index": 2,
+            "reported_ref": "W5",
+            "text": "with reported 24h supplies and now a reported (unverified) communication capability",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O6",
+            "author": "A3",
+            "support_index": 3,
+            "reported_ref": "S03",
+            "text": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O6",
+            "author": "A3",
+            "support_index": 4,
+            "reported_ref": "T",
+            "text": "All locations are usually reachable in under an hour.",
+            "access": "published_excerpt_not_original_access"
+          }
+        ]
+      },
+      "omitted_public_content": [
+        {
+          "ref": "O1",
+          "knowledge": "W1 picks option_1 (Maple Lodge) but its own limits section concedes route reachability to Maple Lodge is unconfirmed. My directly read original S02 (emergency traffic update) reports the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This directly contradicts W1's decisive premise and means the option_1 artifact should be reconsidered; the reachability failure is more specific and recent than the general 'usually under an hour' statement. Note this is my own original, not a verification of peers' S01/S03 claims.",
+          "proposed_use": "W1 should treat Maple Lodge's access as failed (not merely unconfirmed) and revise its artifact away from option_1, weighing Pine Retreat vs Cedar Station on the remaining shared facts; W1 should also record S02 as a consulted source."
+        },
+        {
+          "ref": "O2",
+          "knowledge": "A2's rejection of Maple Lodge rests on S02 (a road washout making Maple Lodge inaccessible). This is a peer-reported claim I cannot verify, but it is a specific, recent access constraint that directly conflicts with the task's shared fact that 'all locations are usually reachable in under an hour.' W2 should therefore treat the washout as the pivotal, contested fact: if true, option_1 fails the reachability requirement and the choice should shift; if stale or partial (e.g., only the main road, with an alternate route), option_1 remains viable. This is a concrete test A2 could state: confirm whether the washout affects the only route or whether any alternate access to Maple Lodge exists before ruling it out. Note also that W2's fallback to Pine Retreat is undermined by A1's S01 north-drift advisory (peer-reported, unverified), which would put Pine Retreat in the plume path; W2 should acknowledge that tension rather than treating Pine as 'not contradicted.'",
+          "proposed_use": "Revise W2's work_text to (1) flag the washout as a single, unverified report that contradicts the task's stated general reachability, (2) state the concrete check needed (only route vs. alternate access), and (3) note that A1's north-drift advisory, if credited, weakens the Pine Retreat fallback, so the decision may hinge on resolving the Maple Lodge access question rather than on Pine's distance."
+        },
+        {
+          "ref": "O3",
+          "knowledge": "I hold the directly read original S02, so I can confirm the washout report's exact scope and word the record accordingly. S02 states the *only* road to Maple Lodge is washed out and the site is inaccessible by car or foot; it does not mention an alternate route, but it also does not affirmatively rule one out. W4's open point 'whether an alternate route exists is unknown' is therefore accurate and should be kept, while the work_text's framing of the washout as decisive should not be strengthened further — the source supports 'only road impassable', not 'no possible access'. Separately, W4's reasoning that Cedar Station 'is not in the reported northward plume path' is an inference from S01 (northward drift), not a verified fact; W4 already concedes Cedar's contamination status is unstated, and the CHECK_EFFECT counterexample (washout may cover only the main road, leaving Maple the only chemical-incident-designated site) remains the main live risk. Also, W4's declared_sources (O1, S01, T, W1) omit W2, which its work_text explicitly credits/rebuts on 'farther from spill', so the declaration is incomplete relative to the text.",
+          "proposed_use": "Keep the washout open point but restate the evidence precisely as 'the only road is impassable per S02; no alternate route is mentioned, and none is confirmed to exist' — do not upgrade it to 'no access possible'. Soften the Cedar claim from 'is not in the plume path' to 'is south, and S01 reports a northward drift, so Cedar is not reported to be in the plume path (inference, not verified)'. Add W2 to declared_sources since the work_text rebuts W2's reasoning, and keep the CHECK_EFFECT counterexample (washout scope / alternate route) as the top unresolved limit."
+        },
+        {
+          "ref": "O4",
+          "knowledge": "W4 lists Cedar Station's 'communication capability' as unstated, but my directly read original S03 (a team member's recollection) reports Cedar Station has a functional landline, backup generator, and emergency broadcast radio. Since the task's stated goal is maximizing 'ability to coordinate with emergency services,' this is a directly relevant criterion that Cedar satisfies and that neither Maple Lodge nor Pine Retreat is reported to satisfy. This strengthens W4's option_2 conclusion rather than changing it, and it closes one of W4's listed open points. Limit: S03 is a recollection, not an on-site verification, and I am the source agent, so I can confirm only that this is what S03 says, not that the equipment is currently functional.",
+          "proposed_use": "Revise W4's work_text and open_points: replace 'Cedar Station's communication capability is unstated' with a note that per S03 (A3's recollection, indirect/unverified) Cedar has a landline, backup generator, and emergency broadcast radio, which directly serves the task's coordination-with-authorities goal and further supports option_2. Keep the caveat that this is a recollection, not confirmed on-site. Do not change the artifact (option_2); also declare S03 (via this offer) if relied upon."
+        },
+        {
+          "ref": "O5",
+          "knowledge": "I hold the directly read original S02, and W5 (like W4) still describes the washout as 'the only road to Maple Lodge' being washed out but then hedges it as possibly covering 'only the main road' — an internal tension worth resolving in the wording. S02 says the *only road* is impassable and the site is inaccessible by car or foot; it does not say 'main road,' and it does not affirmatively exclude an alternate route. The precise record should be: 'per S02, the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed.' Separately, W5's phrasing 'Pine is reported in the northward plume path per S01' upgrades an inference (northward drift + Pine is north) into a reported fact — the same over-claim A2's CHECK_EFFECT flagged against W5. S01 (as I can only see it via W4/W5 peer reports) supports 'cloud drifting north,' not 'Pine is in the plume.' W5 should restore W4's inference framing and keep the W2 rebuttal basis rather than dropping it.",
+          "proposed_use": "Revise W5's work_text/limits: (1) state the washout evidence precisely as 'per S02 the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed' rather than 'may cover only the main road'; (2) soften 'Pine is reported in the northward plume path per S01' back to 'S01 reports a northward drift and Pine is north, so Pine is likely in the plume path (inference, not verified)'; (3) keep the W2 'farther from spill' rebuttal basis in the text so the reason for rejecting Pine remains visible. Artifact stays option_2; do not strengthen the washout beyond what S02 supports."
+        },
+        {
+          "ref": "O6",
+          "knowledge": "W5's claim that 'Pine is reported in the northward plume path per S01' overstates the evidence, and I can point to the exact wording it should restore. My directly read original S03 contains only a recollection about Cedar Station's communications equipment; it says nothing about wind, plume paths, or Pine Retreat, so it cannot support the plume claim either. The only basis for the plume claim in the visible record is W4's own phrasing, which describes S01 as reporting a 'northward-drifting cloud' and then infers Pine (north) is in the plume path. A northward drift advisory establishes direction of drift, not that a site several miles north is inside the plume; likewise Cedar being south is an inference of relative safety, not verified clear. W5 also drops W4's explicit rebuttal of W2's 'farther from spill' reasoning, which was the stated basis for rejecting Pine; without it the reader loses why distance alone was insufficient. This is a text/evidence-strength issue, not an artifact error: option_2 remains defensible as best-remaining (Maple access reportedly failed, Pine north of a northward-drifting cloud, Cedar south with familiar route, supplies, and a recollected comms capability).",
+          "proposed_use": "Revise W5's work_text to restore W4's precise framing: S01 reports a northward-drifting cloud (single private source, unverified by others), from which it is inferred — not reported — that Pine Retreat (north) is at greater plume risk and Cedar (south) is relatively less exposed; explicitly retain the rebuttal of W2's 'farther from spill' argument (distance without wind direction does not establish safety). Keep the S03 caveat that the comms equipment is a recollection, not confirmed functional, and note S03 says nothing about plume direction. Do not change the artifact (option_2). Keep open the washout-scope/alternate-route question and Cedar's structural/contamination status as the top unresolved limits."
+        }
+      ],
+      "literal_visibility_probes": {
+        "making Pine Retreat dangerous": {
+          "in_projection": true,
+          "in_visible_work_history": true
+        },
+        "less than 30 years old": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        },
+        "guilty person is a man": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        },
+        "son is described as a passenger": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        }
+      },
+      "has_autonomous_claim_list": false,
+      "readiness": "not_ready_semantic_coverage_unverified"
+    },
+    {
+      "history": "hb-dev-034-r1-c2",
+      "variant": "d0_continuation",
+      "request_line": 4,
+      "editor": "A1",
+      "provider": "A2",
+      "auditor": "A3",
+      "selected_offer": {
+        "ref": "O5",
+        "author": "A2",
+        "base_version": "W4",
+        "target": "W4:work_text:L1",
+        "knowledge": "I hold S02 as a directly read original, so I can answer Q1's scope question from the original itself rather than from O1's report. S02 states the *only* road to Maple Lodge has been washed out this morning, making it inaccessible by car or foot. It does not mention any alternate route, and it does not affirmatively state that none exists — so the correct framing is 'the sole named route is impassable; no alternate access is mentioned or confirmed,' not 'no access possible' and not 'access merely unconfirmed.' Two consequences for W4: (1) W4's open point 'whether an alternate route exists is unknown' is accurate and should be kept, while its work_text framing should not be strengthened beyond 'only road impassable'; (2) W4's declared_sources (O1, S01, T, W1) omit W2 even though the work_text explicitly engages and rebuts W2's 'farther from spill' reasoning — that carrier is used and should be declared. Separately, W4's 'Cedar is not in the reported northward plume path' is an inference from S01's northward drift, not a verified plume-clearance fact, and should be worded as such. This does not change the artifact (option_2 remains defensible); it corrects evidence strength and declaration completeness. Limit: I can confirm only what S02 says; I have no direct access to S01 or S03.",
+        "support": [
+          {
+            "ref": "S02",
+            "excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+          },
+          {
+            "ref": "W4",
+            "excerpt": "O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot."
+          },
+          {
+            "ref": "W4",
+            "excerpt": "Cedar Station is therefore the best remaining option: it is not in the reported northward plume path"
+          },
+          {
+            "ref": "W4",
+            "excerpt": "I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction."
+          }
+        ],
+        "proposed_use": "In W4's work_text, restate the evidence precisely as 'S02 (directly read by A2, reported to me via O1) says the only road to Maple Lodge is impassable; no alternate route is mentioned, and none is confirmed to exist' — keep the alternate-route open point but do not upgrade to 'no access possible.' Soften 'Cedar is not in the reported northward plume path' to 'Cedar is south, and S01 reports northward drift, so Cedar is not reported to be in the plume path (inference, not verified).' Add W2 to declared_sources since the text rebuts W2's reasoning. Keep the washout-scope/alternate-route question as the top unresolved limit. Do not change the artifact (option_2).",
+        "responds_to": "Q1"
+      },
+      "public_offer_ids_at_time": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6"
+      ],
+      "field_projection_not_approved_input": {
+        "TASK": {
+          "task_id": "hb-dev-034",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are part of a university field team conducting research in a rural region. Suddenly, a chemical spill at a manufacturing plant several miles away has triggered a region-wide alert. Everyone on your team must decide together where to relocate for safety and communication with authorities. You have very little time. There are three potential locations:\n- Maple Lodge (a youth camp to the east)\n- Pine Retreat (a cabin complex to the north)\n- Cedar Station (an old ranger station to the south)\nAll locations are usually reachable in under an hour. Your goal: choose the only safe and reachable location, maximizing your team’s safety and your ability to coordinate with emergency services.",
+          "shared_information": [
+            "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents.",
+            "Pine Retreat is farther from the spill than where you currently are.",
+            "Cedar Station is an older building, less commonly used, but the route to it is familiar to everyone on the team.",
+            "Maps indicate that all sites should have food and water supplies for at least 24 hours."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Maple Lodge"
+            },
+            {
+              "id": "option_2",
+              "text": "Cedar Station"
+            },
+            {
+              "id": "option_3",
+              "text": "Pine Retreat"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A3",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S03",
+            "content": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+          }
+        ],
+        "PUBLIC_EXCERPTS": [
+          {
+            "carrier": "O1",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "S02",
+            "text": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O1",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W1",
+            "text": "route reachability for Maple Lodge is only generally asserted (under an hour, usual conditions).",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A3",
+            "support_index": 0,
+            "reported_ref": "W2",
+            "text": "my directly accessible material S02 (emergency traffic updates) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A3",
+            "support_index": 1,
+            "reported_ref": "W2",
+            "text": "Pine Retreat (option_3) is reported farther from the spill than our current position, which reduces exposure relative to staying put, and no reachability problem for it is known to me",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O2",
+            "author": "A3",
+            "support_index": 2,
+            "reported_ref": "T",
+            "text": "All locations are usually reachable in under an hour.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "S02",
+            "text": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A2",
+            "support_index": 2,
+            "reported_ref": "W4",
+            "text": "Cedar Station is therefore the best remaining option: it is not in the reported northward plume path",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O3",
+            "author": "A2",
+            "support_index": 3,
+            "reported_ref": "W4",
+            "text": "I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A3",
+            "support_index": 0,
+            "reported_ref": "S03",
+            "text": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O4",
+            "author": "A3",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "Cedar Station's structural safety, contamination status, and communication capability are unstated",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O5",
+            "author": "A2",
+            "support_index": 0,
+            "reported_ref": "S02",
+            "text": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O5",
+            "author": "A2",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O5",
+            "author": "A2",
+            "support_index": 2,
+            "reported_ref": "W4",
+            "text": "Cedar Station is therefore the best remaining option: it is not in the reported northward plume path",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O5",
+            "author": "A2",
+            "support_index": 3,
+            "reported_ref": "W4",
+            "text": "I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O6",
+            "author": "A3",
+            "support_index": 0,
+            "reported_ref": "S03",
+            "text": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O6",
+            "author": "A3",
+            "support_index": 1,
+            "reported_ref": "W4",
+            "text": "A3's S03 (Cedar landline/generator/radio) is only known via W3 and unverified; if true it would strengthen Cedar.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O6",
+            "author": "A3",
+            "support_index": 2,
+            "reported_ref": "O3",
+            "text": "S02 states the *only* road to Maple Lodge is washed out and the site is inaccessible by car or foot; it does not mention an alternate route, but it also does not affirmatively rule one out.",
+            "access": "published_excerpt_not_original_access"
+          },
+          {
+            "carrier": "O6",
+            "author": "A3",
+            "support_index": 3,
+            "reported_ref": "W4",
+            "text": "Cedar Station's structural safety, contamination status, and communication capability are unstated",
+            "access": "published_excerpt_not_original_access"
+          }
+        ]
+      },
+      "omitted_public_content": [
+        {
+          "ref": "O1",
+          "knowledge": "W1 picks option_1 (Maple Lodge) but its own limits section concedes route reachability to Maple Lodge is unconfirmed. My directly read original S02 (emergency traffic update) reports the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This directly contradicts W1's decisive premise and means the option_1 artifact should be reconsidered; the reachability failure is more specific and recent than the general 'usually under an hour' statement. Note this is my own original, not a verification of peers' S01/S03 claims.",
+          "proposed_use": "W1 should treat Maple Lodge's access as failed (not merely unconfirmed) and revise its artifact away from option_1, weighing Pine Retreat vs Cedar Station on the remaining shared facts; W1 should also record S02 as a consulted source."
+        },
+        {
+          "ref": "O2",
+          "knowledge": "A2's rejection of Maple Lodge rests on S02 (a road washout making Maple Lodge inaccessible). This is a peer-reported claim I cannot verify, but it is a specific, recent access constraint that directly conflicts with the task's shared fact that 'all locations are usually reachable in under an hour.' W2 should therefore treat the washout as the pivotal, contested fact: if true, option_1 fails the reachability requirement and the choice should shift; if stale or partial (e.g., only the main road, with an alternate route), option_1 remains viable. This is a concrete test A2 could state: confirm whether the washout affects the only route or whether any alternate access to Maple Lodge exists before ruling it out. Note also that W2's fallback to Pine Retreat is undermined by A1's S01 north-drift advisory (peer-reported, unverified), which would put Pine Retreat in the plume path; W2 should acknowledge that tension rather than treating Pine as 'not contradicted.'",
+          "proposed_use": "Revise W2's work_text to (1) flag the washout as a single, unverified report that contradicts the task's stated general reachability, (2) state the concrete check needed (only route vs. alternate access), and (3) note that A1's north-drift advisory, if credited, weakens the Pine Retreat fallback, so the decision may hinge on resolving the Maple Lodge access question rather than on Pine's distance."
+        },
+        {
+          "ref": "O3",
+          "knowledge": "I hold the directly read original S02, so I can confirm the washout report's exact scope and word the record accordingly. S02 states the *only* road to Maple Lodge is washed out and the site is inaccessible by car or foot; it does not mention an alternate route, but it also does not affirmatively rule one out. W4's open point 'whether an alternate route exists is unknown' is therefore accurate and should be kept, while the work_text's framing of the washout as decisive should not be strengthened further — the source supports 'only road impassable', not 'no possible access'. Separately, W4's reasoning that Cedar Station 'is not in the reported northward plume path' is an inference from S01 (northward drift), not a verified fact; W4 already concedes Cedar's contamination status is unstated, and the CHECK_EFFECT counterexample (washout may cover only the main road, leaving Maple the only chemical-incident-designated site) remains the main live risk. Also, W4's declared_sources (O1, S01, T, W1) omit W2, which its work_text explicitly credits/rebuts on 'farther from spill', so the declaration is incomplete relative to the text.",
+          "proposed_use": "Keep the washout open point but restate the evidence precisely as 'the only road is impassable per S02; no alternate route is mentioned, and none is confirmed to exist' — do not upgrade it to 'no access possible'. Soften the Cedar claim from 'is not in the plume path' to 'is south, and S01 reports a northward drift, so Cedar is not reported to be in the plume path (inference, not verified)'. Add W2 to declared_sources since the work_text rebuts W2's reasoning, and keep the CHECK_EFFECT counterexample (washout scope / alternate route) as the top unresolved limit."
+        },
+        {
+          "ref": "O4",
+          "knowledge": "W4 lists Cedar Station's 'communication capability' as unstated, but my directly read original S03 (a team member's recollection) reports Cedar Station has a functional landline, backup generator, and emergency broadcast radio. Since the task's stated goal is maximizing 'ability to coordinate with emergency services,' this is a directly relevant criterion that Cedar satisfies and that neither Maple Lodge nor Pine Retreat is reported to satisfy. This strengthens W4's option_2 conclusion rather than changing it, and it closes one of W4's listed open points. Limit: S03 is a recollection, not an on-site verification, and I am the source agent, so I can confirm only that this is what S03 says, not that the equipment is currently functional.",
+          "proposed_use": "Revise W4's work_text and open_points: replace 'Cedar Station's communication capability is unstated' with a note that per S03 (A3's recollection, indirect/unverified) Cedar has a landline, backup generator, and emergency broadcast radio, which directly serves the task's coordination-with-authorities goal and further supports option_2. Keep the caveat that this is a recollection, not confirmed on-site. Do not change the artifact (option_2); also declare S03 (via this offer) if relied upon."
+        },
+        {
+          "ref": "O5",
+          "knowledge": "I hold S02 as a directly read original, so I can answer Q1's scope question from the original itself rather than from O1's report. S02 states the *only* road to Maple Lodge has been washed out this morning, making it inaccessible by car or foot. It does not mention any alternate route, and it does not affirmatively state that none exists — so the correct framing is 'the sole named route is impassable; no alternate access is mentioned or confirmed,' not 'no access possible' and not 'access merely unconfirmed.' Two consequences for W4: (1) W4's open point 'whether an alternate route exists is unknown' is accurate and should be kept, while its work_text framing should not be strengthened beyond 'only road impassable'; (2) W4's declared_sources (O1, S01, T, W1) omit W2 even though the work_text explicitly engages and rebuts W2's 'farther from spill' reasoning — that carrier is used and should be declared. Separately, W4's 'Cedar is not in the reported northward plume path' is an inference from S01's northward drift, not a verified plume-clearance fact, and should be worded as such. This does not change the artifact (option_2 remains defensible); it corrects evidence strength and declaration completeness. Limit: I can confirm only what S02 says; I have no direct access to S01 or S03.",
+          "proposed_use": "In W4's work_text, restate the evidence precisely as 'S02 (directly read by A2, reported to me via O1) says the only road to Maple Lodge is impassable; no alternate route is mentioned, and none is confirmed to exist' — keep the alternate-route open point but do not upgrade to 'no access possible.' Soften 'Cedar is not in the reported northward plume path' to 'Cedar is south, and S01 reports northward drift, so Cedar is not reported to be in the plume path (inference, not verified).' Add W2 to declared_sources since the text rebuts W2's reasoning. Keep the washout-scope/alternate-route question as the top unresolved limit. Do not change the artifact (option_2)."
+        },
+        {
+          "ref": "O6",
+          "knowledge": "I hold S03 directly (my only original besides T), and it is a team member's recollection, not an on-site check. Relevant to Q1 only indirectly: S03 says nothing about roads or the Maple Lodge washout, so it cannot resolve whether the washout covers Maple's sole route. But it does bear on the framing Q1 feeds: W4's open point 'A3's S03 (Cedar landline/generator/radio) is only known via W3 and unverified; if true it would strengthen Cedar' can now be updated to what S03 actually says — Cedar reportedly has a functional landline, backup generator, and emergency broadcast radio. I can confirm only the recollection's content, not current functionality. This does not change option_2, but it removes the 'unstated communication capability' caveat from W4's limits while keeping the on-site-verification caveat. On Q1 itself: my reading of Q1's refs (O1/O3) is that S02 is reported as 'the only road ... washed out ... inaccessible by car or foot' with no alternate route mentioned and none affirmatively ruled out, so the honest framing is 'sole route reported impassable; alternate access neither mentioned nor excluded' — neither decisive proof of no access nor grounds to keep Maple viable without checking. Only A2 can restate S02's exact scope.",
+          "proposed_use": "In W4, replace the open point 'S03 ... only known via W3 and unverified; if true it would strengthen Cedar' with: per S03 (A3's recollection, indirect/unverified) Cedar reportedly has a landline, backup generator, and emergency broadcast radio, directly serving the coordination goal — functionality not confirmed on-site. Keep the artifact option_2 and the Maple washout open point, but word it per O3 as 'sole road reported impassable; alternate access neither mentioned nor excluded' rather than treating it as proof of no access. Q1's scope question still needs A2 to restate S02; S03 cannot answer it."
+        }
+      ],
+      "literal_visibility_probes": {
+        "making Pine Retreat dangerous": {
+          "in_projection": false,
+          "in_visible_work_history": true
+        },
+        "less than 30 years old": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        },
+        "guilty person is a man": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        },
+        "son is described as a passenger": {
+          "in_projection": false,
+          "in_visible_work_history": false
+        }
+      },
+      "has_autonomous_claim_list": false,
+      "readiness": "not_ready_semantic_coverage_unverified"
+    }
+  ]
+}

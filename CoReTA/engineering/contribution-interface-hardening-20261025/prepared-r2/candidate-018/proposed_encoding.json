@@ -1,0 +1,19 @@
+{
+  "fields": [
+    "safe_for_task",
+    "accessible_for_task",
+    "full_duration_supported"
+  ],
+  "field_meanings": {
+    "safe_for_task": "Safe for the particular people, objects, activities and time window stated in the task; a possible risk is not automatically a confirmed prohibition.",
+    "accessible_for_task": "At least one usable access or transport method exists for the stated group or cargo within the task time window; one blocked route does not prove all routes blocked.",
+    "full_duration_supported": "Can support the stated use for its required duration; do not invent a duration or equate temporary backup with adequate full-duration support."
+  },
+  "value_types": [
+    "boolean",
+    "null"
+  ],
+  "field_values_provided_by_host": false,
+  "field_requirements_provided_by_host": false,
+  "note": "Manual task vocabulary supplied equally to both arms; representation-assisted screening, not automatic schema discovery."
+}

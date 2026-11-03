@@ -1,0 +1,852 @@
+[
+  {
+    "task_id": "gsm8k/train/6913",
+    "system": "static_debate",
+    "job_id": "78f6b96fe78abd87",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 10,
+    "http_attempts": 10,
+    "format_repairs": 0,
+    "draft_hashes": [
+      "05895eeb2424cc5b25b140f3bf69d9059cec48a5b2933ed94fe0dc2ef4423774",
+      "dfc3ce77d63c94dd8d04c574c920245653780b07d29370984b5f14d005329ed6",
+      "061cda0f4cd63e448928c706995483890934a97709de9091ac059b1fb6522a65"
+    ],
+    "cached_drafts": 0,
+    "final_code_ast_differs_from_drafts": null,
+    "actions": [],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "issues": {},
+    "errors": [],
+    "max_sent_input_estimate": 6051,
+    "reported_usage": [
+      {
+        "input_tokens": 1073,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 431,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1504
+      },
+      {
+        "input_tokens": 1073,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 515,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1588
+      },
+      {
+        "input_tokens": 1073,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 449,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1522
+      },
+      {
+        "input_tokens": 3143,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 476,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3619
+      },
+      {
+        "input_tokens": 3143,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 517,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3660
+      },
+      {
+        "input_tokens": 3143,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 479,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3622
+      },
+      {
+        "input_tokens": 3246,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 518,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3764
+      },
+      {
+        "input_tokens": 3246,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 521,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3767
+      },
+      {
+        "input_tokens": 3246,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 476,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3722
+      },
+      {
+        "input_tokens": 5558,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 293,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5851
+      }
+    ],
+    "commit_changes": []
+  },
+  {
+    "task_id": "gsm8k/train/6913",
+    "system": "coreta_revision",
+    "job_id": "2267ed95f2fbeb62",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 8,
+    "http_attempts": 5,
+    "format_repairs": 0,
+    "draft_hashes": [
+      "05895eeb2424cc5b25b140f3bf69d9059cec48a5b2933ed94fe0dc2ef4423774",
+      "dfc3ce77d63c94dd8d04c574c920245653780b07d29370984b5f14d005329ed6",
+      "061cda0f4cd63e448928c706995483890934a97709de9091ac059b1fb6522a65"
+    ],
+    "cached_drafts": 3,
+    "final_code_ast_differs_from_drafts": null,
+    "actions": [
+      "FINISH_COMPLETE"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "issues": {},
+    "errors": [],
+    "max_sent_input_estimate": 7396,
+    "reported_usage": [
+      {
+        "input_tokens": 4067,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 698,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4765
+      },
+      {
+        "input_tokens": 4130,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 487,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4617
+      },
+      {
+        "input_tokens": 4821,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 831,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5652
+      },
+      {
+        "input_tokens": 7084,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 1237,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 8321
+      },
+      {
+        "input_tokens": 5135,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 350,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5485
+      }
+    ],
+    "commit_changes": [
+      {
+        "artifact_changed": true,
+        "changed_steps": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ]
+      },
+      {
+        "artifact_changed": true,
+        "changed_steps": [
+          "s5"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": "gsm8k/train/6913",
+    "system": "independent_aggregate",
+    "job_id": "8a84cc6e39327099",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 4,
+    "http_attempts": 1,
+    "format_repairs": 0,
+    "draft_hashes": [
+      "05895eeb2424cc5b25b140f3bf69d9059cec48a5b2933ed94fe0dc2ef4423774",
+      "dfc3ce77d63c94dd8d04c574c920245653780b07d29370984b5f14d005329ed6",
+      "061cda0f4cd63e448928c706995483890934a97709de9091ac059b1fb6522a65"
+    ],
+    "cached_drafts": 3,
+    "final_code_ast_differs_from_drafts": null,
+    "actions": [],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "issues": {},
+    "errors": [],
+    "max_sent_input_estimate": 5403,
+    "reported_usage": [
+      {
+        "input_tokens": 4920,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 318,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5238
+      }
+    ],
+    "commit_changes": []
+  },
+  {
+    "task_id": "gsm8k/train/6913",
+    "system": "independent_refine",
+    "job_id": "100b3ae54f323d41",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 10,
+    "http_attempts": 7,
+    "format_repairs": 0,
+    "draft_hashes": [
+      "05895eeb2424cc5b25b140f3bf69d9059cec48a5b2933ed94fe0dc2ef4423774",
+      "dfc3ce77d63c94dd8d04c574c920245653780b07d29370984b5f14d005329ed6",
+      "061cda0f4cd63e448928c706995483890934a97709de9091ac059b1fb6522a65"
+    ],
+    "cached_drafts": 3,
+    "final_code_ast_differs_from_drafts": null,
+    "actions": [],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "issues": {},
+    "errors": [],
+    "max_sent_input_estimate": 6293,
+    "reported_usage": [
+      {
+        "input_tokens": 1763,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 614,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2377
+      },
+      {
+        "input_tokens": 1826,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 516,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2342
+      },
+      {
+        "input_tokens": 1760,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 459,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2219
+      },
+      {
+        "input_tokens": 1948,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 614,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2562
+      },
+      {
+        "input_tokens": 1829,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 516,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2345
+      },
+      {
+        "input_tokens": 1772,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 460,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2232
+      },
+      {
+        "input_tokens": 5786,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 298,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 6084
+      }
+    ],
+    "commit_changes": []
+  },
+  {
+    "task_id": "mbpp/train/736",
+    "system": "coreta_revision",
+    "job_id": "2f6034bc96b29c0d",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 8,
+    "http_attempts": 9,
+    "format_repairs": 1,
+    "draft_hashes": [
+      "488d8abd18fbdb275680b8b5a86f93ce3c0adff87855a793e5a5043f73dc8b9a",
+      "bb649f49c06582bae22896c1de18b07b4a17ce7e4ad50970977fe8a238cb86d1",
+      "b4e3faff25dde560a71b7c43556715e94e706ab486a9aada26573aa71c79f98e"
+    ],
+    "cached_drafts": 0,
+    "final_code_ast_differs_from_drafts": {
+      "A0": false,
+      "A1": true,
+      "A2": true
+    },
+    "actions": [
+      "FINISH_COMPLETE"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "issues": {},
+    "errors": [],
+    "max_sent_input_estimate": 8689,
+    "reported_usage": [
+      {
+        "input_tokens": 1015,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 661,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1676
+      },
+      {
+        "input_tokens": 1015,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 561,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1576
+      },
+      {
+        "input_tokens": 1015,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 663,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1678
+      },
+      {
+        "input_tokens": 4713,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 1123,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5836
+      },
+      {
+        "input_tokens": 4977,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 773,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5750
+      },
+      {
+        "input_tokens": 5951,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 953,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 6904
+      },
+      {
+        "input_tokens": 6934,
+        "input_tokens_details": {
+          "cached_tokens": 5248
+        },
+        "output_tokens": 958,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 7892
+      },
+      {
+        "input_tokens": 8338,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 1845,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 10183
+      },
+      {
+        "input_tokens": 6540,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 218,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 6758
+      }
+    ],
+    "commit_changes": [
+      {
+        "artifact_changed": true,
+        "changed_steps": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "artifact_changed": false,
+        "changed_steps": [
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": "mbpp/train/736",
+    "system": "independent_refine",
+    "job_id": "848e8b7b5ca8367b",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 10,
+    "http_attempts": 7,
+    "format_repairs": 0,
+    "draft_hashes": [
+      "488d8abd18fbdb275680b8b5a86f93ce3c0adff87855a793e5a5043f73dc8b9a",
+      "bb649f49c06582bae22896c1de18b07b4a17ce7e4ad50970977fe8a238cb86d1",
+      "b4e3faff25dde560a71b7c43556715e94e706ab486a9aada26573aa71c79f98e"
+    ],
+    "cached_drafts": 3,
+    "final_code_ast_differs_from_drafts": {
+      "A0": false,
+      "A1": true,
+      "A2": true
+    },
+    "actions": [],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "issues": {},
+    "errors": [],
+    "max_sent_input_estimate": 7541,
+    "reported_usage": [
+      {
+        "input_tokens": 1902,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 769,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2671
+      },
+      {
+        "input_tokens": 1802,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 684,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2486
+      },
+      {
+        "input_tokens": 1924,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 781,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2705
+      },
+      {
+        "input_tokens": 2012,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 769,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2781
+      },
+      {
+        "input_tokens": 1927,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 684,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2611
+      },
+      {
+        "input_tokens": 2044,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 792,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2836
+      },
+      {
+        "input_tokens": 6952,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 333,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 7285
+      }
+    ],
+    "commit_changes": []
+  },
+  {
+    "task_id": "mbpp/train/736",
+    "system": "independent_aggregate",
+    "job_id": "208f161c964927d7",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 4,
+    "http_attempts": 1,
+    "format_repairs": 0,
+    "draft_hashes": [
+      "488d8abd18fbdb275680b8b5a86f93ce3c0adff87855a793e5a5043f73dc8b9a",
+      "bb649f49c06582bae22896c1de18b07b4a17ce7e4ad50970977fe8a238cb86d1",
+      "b4e3faff25dde560a71b7c43556715e94e706ab486a9aada26573aa71c79f98e"
+    ],
+    "cached_drafts": 3,
+    "final_code_ast_differs_from_drafts": {
+      "A0": false,
+      "A1": true,
+      "A2": true
+    },
+    "actions": [],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "issues": {},
+    "errors": [],
+    "max_sent_input_estimate": 6556,
+    "reported_usage": [
+      {
+        "input_tokens": 6018,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 270,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 6288
+      }
+    ],
+    "commit_changes": []
+  },
+  {
+    "task_id": "mbpp/train/736",
+    "system": "static_debate",
+    "job_id": "0619bec14ba82bb7",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 10,
+    "http_attempts": 7,
+    "format_repairs": 0,
+    "draft_hashes": [
+      "488d8abd18fbdb275680b8b5a86f93ce3c0adff87855a793e5a5043f73dc8b9a",
+      "bb649f49c06582bae22896c1de18b07b4a17ce7e4ad50970977fe8a238cb86d1",
+      "b4e3faff25dde560a71b7c43556715e94e706ab486a9aada26573aa71c79f98e"
+    ],
+    "cached_drafts": 3,
+    "final_code_ast_differs_from_drafts": {
+      "A0": false,
+      "A1": true,
+      "A2": true
+    },
+    "actions": [],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "issues": {},
+    "errors": [],
+    "max_sent_input_estimate": 8668,
+    "reported_usage": [
+      {
+        "input_tokens": 3565,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 921,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4486
+      },
+      {
+        "input_tokens": 3565,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 1056,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4621
+      },
+      {
+        "input_tokens": 3565,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 939,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4504
+      },
+      {
+        "input_tokens": 4602,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 1017,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5619
+      },
+      {
+        "input_tokens": 4602,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 1161,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5763
+      },
+      {
+        "input_tokens": 4602,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 939,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5541
+      },
+      {
+        "input_tokens": 8072,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 373,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 8445
+      }
+    ],
+    "commit_changes": []
+  }
+]

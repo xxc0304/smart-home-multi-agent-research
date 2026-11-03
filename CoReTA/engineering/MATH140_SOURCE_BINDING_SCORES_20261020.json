@@ -1,0 +1,44 @@
+{
+  "task_id": "math_train/intermediate_algebra/140",
+  "initial_scores": [
+    0,
+    0,
+    0
+  ],
+  "final_score": 1,
+  "score_detail": {
+    "task_id": "math_train/intermediate_algebra/140",
+    "status": "scored",
+    "score": 1,
+    "attempts": 1,
+    "diagnostic_only": false,
+    "math_verify_version": "0.9.0"
+  },
+  "status": "degraded",
+  "stop_reason": "runtime_error",
+  "review_status": "unreviewed",
+  "normal_calls": 7,
+  "http_attempts": 6,
+  "format_repairs": 2,
+  "audit_record_count": 0,
+  "errors": [
+    {
+      "code": "REFERENCE_ERROR",
+      "detail": "Closure must respond to every original audit record ID"
+    }
+  ],
+  "stages": [
+    "draft",
+    "draft",
+    "draft",
+    "task_facts",
+    "synthesize",
+    "build"
+  ],
+  "source_hashes_match": true,
+  "scope": "One seen all-initial-fail engineering regression; no new-task effectiveness estimate",
+  "source_bindings_complete": true,
+  "declared_check_item_count": 15,
+  "pipeline_completed": false,
+  "mechanism_evaluable": false
+}

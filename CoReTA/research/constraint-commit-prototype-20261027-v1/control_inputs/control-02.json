@@ -1,0 +1,89 @@
+{
+  "context": {
+    "task": {
+      "task_type": "choice",
+      "scenario": "Choose one vehicle for a load of 10 units. The load must fit. Use available information and state any uncertainty.",
+      "choices": [
+        {
+          "id": "option_1",
+          "text": "Luma"
+        },
+        {
+          "id": "option_2",
+          "text": "Neri"
+        },
+        {
+          "id": "option_3",
+          "text": "Vela"
+        }
+      ],
+      "instruction": "Choose the best supported vehicle.",
+      "task_id": "control-02"
+    },
+    "member": "A1",
+    "public_sources": [
+      {
+        "ref": "TASK",
+        "content": "Choose one vehicle for a load of 10 units. The load must fit. Use available information and state any uncertainty."
+      },
+      {
+        "ref": "PUBLIC.1",
+        "content": "Capacity readings: Luma 6, Neri 12, Vela 8."
+      }
+    ],
+    "own_sources": [
+      {
+        "ref": "S01",
+        "content": "A typical delivery carries 8 units. This is a usual load, not a vehicle capacity limit."
+      }
+    ],
+    "shared_contributions": {
+      "A1": {
+        "text": "Local interpretation of supplied information.",
+        "facts": [
+          {
+            "candidate": "option_1",
+            "field": "capacity",
+            "value": 6,
+            "source": "PUBLIC.1",
+            "quote": "Luma 6"
+          },
+          {
+            "candidate": "option_2",
+            "field": "capacity",
+            "value": 12,
+            "source": "PUBLIC.1",
+            "quote": "Neri 12"
+          },
+          {
+            "candidate": "option_3",
+            "field": "capacity",
+            "value": 8,
+            "source": "PUBLIC.1",
+            "quote": "Vela 8"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "capacity",
+            "op": "ge",
+            "value": 10,
+            "source": "TASK",
+            "quote": "load of 10 units"
+          },
+          {
+            "field": "capacity",
+            "op": "le",
+            "value": 8,
+            "source": "S01",
+            "quote": "A typical delivery carries 8 units."
+          }
+        ],
+        "caveats": []
+      }
+    }
+  },
+  "field_types": {
+    "capacity": "number"
+  }
+}

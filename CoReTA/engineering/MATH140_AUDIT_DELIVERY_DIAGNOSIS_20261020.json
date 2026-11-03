@@ -1,0 +1,54 @@
+{
+  "frozen_files": 34,
+  "hashes_match": true,
+  "draft_migration_payloads_unchanged": true,
+  "inspect_attempts": [
+    {
+      "status": "incomplete",
+      "incomplete_details": {
+        "reason": "max_output_tokens"
+      },
+      "usage": {
+        "input_tokens": 14049,
+        "input_tokens_details": {
+          "cached_tokens": 768
+        },
+        "output_tokens": 4096,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18145
+      }
+    },
+    {
+      "status": "incomplete",
+      "incomplete_details": {
+        "reason": "max_output_tokens"
+      },
+      "usage": {
+        "input_tokens": 14090,
+        "input_tokens_details": {
+          "cached_tokens": 12288
+        },
+        "output_tokens": 4096,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18186
+      }
+    }
+  ],
+  "apply_budgets": [
+    {
+      "attempt": 0,
+      "estimated_input_count": 13087,
+      "configured_limit": 32768,
+      "lossless_material": true,
+      "previous_output_included": false,
+      "repair_reserve_tokens": 4096
+    }
+  ],
+  "audit_record_count": 0,
+  "second_apply_reached": false,
+  "scope": "Seen-task engineering regression only; incomplete inspection text is not an accepted audit or completed proof."
+}

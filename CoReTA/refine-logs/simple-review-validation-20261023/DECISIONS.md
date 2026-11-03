@@ -1,0 +1,15 @@
+# Plain review diagnostic decisions
+
+2026-10-23. ASK=never, implementation assurance=draft. Existing task IDs004/034, histories v3/D0 are development data only. This phase first corrects004 manual interpretation, then prepares a small instruction-package comparison. No main runtime change.
+
+P01 semantic: Re-audit all16 prior004 outputs, preserving original labels separately. Under complete candidate/same culprit/ordinary vehicle-class assumptions, car+under30+male supports son; private S03 may supply speed. Shared text need not name driver/speed. Owner/alcohol ambiguity, unsupported causal story, false statements about lost limits and access errors remain separate. Do not demand a review have no issues just because artifact matches gold.
+
+P02 semantic: C=current complete review instruction package, exact prior32-probe B payload. S=plain generic role-appropriate review prefix, replacing entire pre-PACKET instruction block only. Packet and OUTPUT_SCHEMA suffix unchanged byte-for-byte, as are config, member/source access, artifact/history,3072output cap. This jointly simplifies source/provenance/focus and base review guidance; it cannot isolate a particular warning sentence. Full packet metadata/history remain, so this does not test complete removal of all protocol effects.
+
+P03 semantic: Eight fixed requests(two task IDs×two histories×two reviewer roles)×C/S×two repeats=32real attempts maximum,98304outputtokens. Re-run both conditions; previous outputs not reused as C results. Same stateless independent checking, alternating condition order per historical unit/repeat, logical17/18 not sent as samplingseed. No new task/benchmark generalization, no claim of answer improvement; no TRY/CHOOSE.
+
+P04 interface: Reuse previous tools/workboard_review_probe.py runner unmodified (supports fixed32requests and strict3072budget). New prepare CLI emits compatible manifest/call rows with conditions C/S and new kind. Hash dependencies and frozen payloads; first transport/incomplete/schema/unknownusage error stops all, no repairs/retries/resume. Existing officialDeepSeek config and pinned tokenizer only; credentials not stored. Prior specific32/24 approvals refer to prior completed batches; any new live action subject to current explicit authorization/approval.
+
+P05 semantic: Before new calls, freeze rubric including034 report loss vs exact plume geometry/Cedar caution,004 joint-constraint acceptance vs source ambiguity, identity/access confusion and unsupported criticisms. Manual quote-based output audit with mixed/uncertain labels; labels are not automatic keyword scores. Preserve positive/no-issue observations and avoid selecting only detected errors. Stage=issue alone is not success. Treat lower token cost as descriptive, not proof of equal-quality efficiency.
+
+Build acceptance: old C exact priorB; S only pre-PACKET changes, eight packets preserve identity/materials; no task-specific advice in generic prefix;32calls independent and stop-on-firsterror; stale preparation blocked. Independent same-family assumption review provisional before live.

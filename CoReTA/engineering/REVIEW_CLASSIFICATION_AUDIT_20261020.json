@@ -1,0 +1,44 @@
+{
+  "scope": "Offline contract audit, no response rewriting, no new state transition",
+  "source": "engineering\\ALIGNED_REVIEW_COMPONENT_RESULT_20261020.json",
+  "rows": [
+    {
+      "issue": "I1",
+      "actual_status": "open",
+      "actual_errors": [
+        "Revised-object version use must be explained"
+      ],
+      "label_only_counterfactual_would_remove_all_reported_errors": true,
+      "counterfactual_is_not_a_success_result": true
+    },
+    {
+      "issue": "I2",
+      "actual_status": "open",
+      "actual_errors": [
+        "Repair path mismatch"
+      ],
+      "label_only_counterfactual_would_remove_all_reported_errors": true,
+      "counterfactual_is_not_a_success_result": true
+    },
+    {
+      "issue": "I3",
+      "actual_status": "open",
+      "actual_errors": [
+        "Repair path mismatch"
+      ],
+      "label_only_counterfactual_would_remove_all_reported_errors": true,
+      "counterfactual_is_not_a_success_result": true
+    },
+    {
+      "issue": "I4",
+      "actual_status": "open",
+      "actual_errors": [
+        "Revised-object version use must be explained"
+      ],
+      "label_only_counterfactual_would_remove_all_reported_errors": true,
+      "counterfactual_is_not_a_success_result": true
+    }
+  ],
+  "semantic_false_checks_known_in_I2": true,
+  "external_api_requests": 0
+}

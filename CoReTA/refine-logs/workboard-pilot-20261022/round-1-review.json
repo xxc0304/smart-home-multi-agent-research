@@ -1,0 +1,47 @@
+{
+  "verdict": "REVISE",
+  "blocking_findings": [
+    {
+      "id": "B1",
+      "site": ["CoReTA/src/coreta/workboard/baseline.py:47-55", "CoReTA/src/coreta/workboard/artifacts.py:49-52", "CoReTA/src/coreta/workboard/runtime.py:59-61", "CoReTA/src/coreta/workboard/baseline.py:77-78"],
+      "finding": "普通讨论的全文实际重复展开，与 A30 和冻结协议不符。CANDIDATES 中每个 Work 的 locations 再复制一次 artifact/work_text；CURRENT_WORK 另含整份候选，FINALIZE 的 FALLBACK 又含整份候选。DISCUSSION 虽然已改为索引，这些副本仍会实际进入请求。",
+      "why_blocking": "这会消耗普通讨论的 32768 输入额度，增加其在六轮完成前因上下文超限而整批停止的机会。属于当前请求构造路径上的真实偏差，无需假定模型会写满输出上限。",
+      "minimal_fix": "只在 DiscussionRunner.packet 的 DISCUSS/FINALIZE 投影中去除候选的 locations 副本，把 CURRENT_WORK/FALLBACK 改为指向 CANDIDATES 的 W 编号；保留每份完整原生回答及所有历史，不摘要、不减少讨论轮次。同步把该基线包的 reserved_closure_calls 改为实际的 1。"
+    }
+  ],
+  "nonblocking_limits": [
+    {
+      "site": "CoReTA/tools/workboard_pilot.py:123-142；CoReTA/tools/score_workboard_pilot.py:30-37",
+      "finding": "共同 INITIAL 的原始请求、响应及用量均有日志，但 pair_report 只导出调用数，评分报告也不带 initial usage 或未知用量数。",
+      "required_before_interpretation": "成本报告须从 initial/responses.jsonl 合并共同初答成本，每对只计一次，并单列未知消耗；当前方法单元 usage 仅代表初答后的消耗，不能直接称整个试跑成本。",
+      "blocking_for_launch": false
+    },
+    {
+      "site": "CoReTA/src/coreta/handoff/gateway.py:28-34；CoReTA/src/coreta/model_client.py:74-75；CoReTA/src/coreta/workboard/gateway.py:41-46",
+      "finding": "缺失用量会按 USAGE_UNKNOWN 停止，停批约束成立；但 uncertain_usage_attempts 只累计传输错误。收到响应而缺失或不完整 usage 时，该计数仍可能为 0。",
+      "required_before_interpretation": "报告缺用量时根据真实 HTTP 次数与完整 usage 记录单列未知次数，或明确该字段仅表示传输失败未知量，不能解释为所有用量均已知。",
+      "blocking_for_launch": false
+    },
+    {
+      "site": "CoReTA/src/coreta/workboard/runtime.py:152-242；CoReTA/tools/score_workboard_pilot.py:50-60",
+      "finding": "主动贡献、真实候选试用、提供者用法检查、另一成员后果检查及版本选择均落在执行路径上。检查输入在调用前分别构造，后果检查不读取本次 USE_RECORD 或另一检查结果。模型自报、合法引用、事件数量和 no_issue_found 均不能替代后续人工语义核验。",
+      "blocking_for_launch": false
+    },
+    {
+      "site": "CoReTA/tools/workboard_pilot.py:27-47；CoReTA/src/coreta/workboard/runtime.py:124-137；CoReTA/src/coreta/workboard/baseline.py:57-84",
+      "finding": "缓存配对、A2/A3 编辑者、顺序平衡、同资料权限和两法后续 25 HTTP/61440 输出上限均与协议一致；普通讨论确为六轮四人同步快照原生重解加一次 FINALIZE，没有额外工作板检查。上限相同不代表实际消耗相同。",
+      "blocking_for_launch": false
+    },
+    {
+      "site": "CoReTA/tools/workboard_pilot.py:102-172；CoReTA/runs/workboard-pilot-offline-20261022-r1/summary.json；CoReTA/runs/workboard-v3-copy-live-20261022-network/compatibility.json",
+      "finding": "执行前快照检查、零重试、首技术异常停批和新目录约束成立；已读到最新异常分支将悬挂 running 状态改为 interrupted/implementation_error。196 项离线记录和 12 项真实复制记录是工程与接口证据，不是能力结果，也不保证自然长上下文一定成功。",
+      "blocking_for_launch": false
+    }
+  ],
+  "undeclared_assumptions": [
+    {"site": "CoReTA/src/coreta/workboard/baseline.py:47-55", "class": "semantic", "decision": "普通讨论继承工作板候选中的逐行内容副本与完整当前稿/回退稿副本。", "ledger_status": "与 A30 声明不符；由 B1 的最小投影修复解决。"},
+    {"site": "CoReTA/src/coreta/workboard/runtime.py:55-56", "class": "interface", "decision": "普通讨论向模型声明 reserved_closure_calls=4，实际仅保留一次 FINALIZE。", "ledger_status": "与 A24/A25 的实际机会不一致；由 B1 一并修正为 1。"}
+  ],
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

@@ -1,0 +1,91 @@
+{
+  "status": "offline_replay_passed",
+  "new_api_calls": 0,
+  "full_real_final_bodies": 3,
+  "full_real_contribution_pools": 3,
+  "paired_input_and_report_equality": true,
+  "request_counts": [
+    {
+      "case": "004-identity",
+      "method": "report_reference",
+      "input_estimate": 9581
+    },
+    {
+      "case": "004-identity",
+      "method": "constraint_commit",
+      "input_estimate": 9654
+    },
+    {
+      "case": "011-time-supported",
+      "method": "report_reference",
+      "input_estimate": 7025
+    },
+    {
+      "case": "011-time-supported",
+      "method": "constraint_commit",
+      "input_estimate": 7098
+    },
+    {
+      "case": "023-notice",
+      "method": "report_reference",
+      "input_estimate": 8119
+    },
+    {
+      "case": "023-notice",
+      "method": "constraint_commit",
+      "input_estimate": 8192
+    }
+  ],
+  "results": [
+    {
+      "case_id": "004-identity",
+      "model_choice": "option_4",
+      "reference_delivery": "option_4",
+      "constraint_delivery": "option_3",
+      "remaining": [
+        "option_3"
+      ],
+      "mode": "deterministic_replay_of_old_outputs_not_new_model_experiment"
+    },
+    {
+      "case_id": "011-time-supported",
+      "model_choice": "option_1",
+      "reference_delivery": "option_1",
+      "constraint_delivery": null,
+      "remaining": [],
+      "mode": "deterministic_replay_of_old_outputs_not_new_model_experiment"
+    },
+    {
+      "case_id": "023-notice",
+      "model_choice": "option_1",
+      "reference_delivery": "option_1",
+      "constraint_delivery": "option_3",
+      "remaining": [
+        "option_3"
+      ],
+      "mode": "deterministic_replay_of_old_outputs_not_new_model_experiment"
+    }
+  ],
+  "source_lineage": [
+    {
+      "case_path": "runs/inference-link-prepared-20261027-r3/cases/004-identity.json",
+      "case_sha256": "1416795a8c03a936a30df8c0ba246b9f0d6a3f110ff9680377314ca6a10f3425",
+      "raw_path": "runs/example-adaptation-live-20261026-r1/038.raw.txt",
+      "raw_sha256": "4c5914d8481e87c0cd92bf09fd8f0fe476d272f26810069f6826d79acf8a4ad9"
+    },
+    {
+      "case_path": "runs/inference-link-prepared-20261027-r3/cases/011-time-supported.json",
+      "case_sha256": "e4e94c8512be9d2cb1b3d70363f4d4b199ecc0c02ead82fe6ffcdd924fc29fa0",
+      "raw_path": "runs/example-adaptation-live-20261026-r1/049.raw.txt",
+      "raw_sha256": "3c66a2c84577cd5d09c56c806e578f213fdcb3999e333c59a297426dfc610577"
+    },
+    {
+      "case_path": "runs/inference-link-prepared-20261027-r3/cases/023-notice.json",
+      "case_sha256": "119dd08208f1ac31a54fb0eefc875ae4fe86b8b1d380248d202b765da4410018",
+      "raw_path": "runs/example-adaptation-live-20261026-r1/019.raw.txt",
+      "raw_sha256": "ce10194b5e6981ab9818a6dec8c1d2612763ea2eda71b587efaa25d7413efcd0"
+    }
+  ],
+  "mechanical_control": "Manual A4.F1 withdrawal/restoration only; not generated correction or a paid result.",
+  "limitation": "Historical finals were not generated under this new prompt and had no updates. This is not a comparative model-effect estimate or live preflight."
+}

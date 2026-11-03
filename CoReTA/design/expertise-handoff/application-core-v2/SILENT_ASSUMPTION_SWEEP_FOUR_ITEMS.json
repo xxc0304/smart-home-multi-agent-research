@@ -1,0 +1,46 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "verdict": "reported_findings_resolved_on_source_inspection",
+  "scope": "Follow-up limited to F1–F4.",
+  "original_findings": ["F1", "F2", "F3", "F4"],
+  "semantic_undeclared": 0,
+  "resolved_findings": [
+    {
+      "id": "F1",
+      "resolution": "A26 explicitly declares maximal-L1 delivery penalties and scoring of interrupted ordinary-discussion fallback artifacts. Score output now preserves stop_reason, protocol_error, and artifact_role.",
+      "sources": [
+        "design/expertise-handoff/application-core-v2/ASSUMPTIONS.md:32",
+        "src/coreta/application_v2/ranking.py:27",
+        "tests/test_application_ranking.py:192",
+        "tests/test_application_ranking.py:200"
+      ]
+    },
+    {
+      "id": "F2",
+      "resolution": "CoReTA now has an empty expected independent-member list. Independent and ordinary-discussion runs retain requested or full-roster expectations. The supplied pre-fix log records the original mismatch.",
+      "sources": [
+        "src/coreta/application_v2/ranking.py:22",
+        "tests/test_application_ranking.py:194",
+        "runs/application-v2-four-item-20261021/score-defect-before-fix.log:9"
+      ]
+    },
+    {
+      "id": "F3",
+      "resolution": "A25 now limits directory suppression to four-item calibration, explicitly preserves fifteen-item prompts, and places the four-attempt cap at the CLI entry.",
+      "sources": [
+        "design/expertise-handoff/application-core-v2/ASSUMPTIONS.md:31"
+      ]
+    },
+    {
+      "id": "F4",
+      "resolution": "The preparation document now identifies the pending-adaptation section as historical and directs current implementation status to the adapter report.",
+      "sources": [
+        "design/expertise-handoff/application-core-v2/DEVELOPMENT_TASK_PREPARATION_20261021.md:5"
+      ]
+    }
+  ],
+  "unresolved_findings": [],
+  "outstanding_findings": [],
+  "limitations": "No edits or tests were performed. Test definitions and the existing failure log were inspected only. This follow-up does not establish overall implementation correctness or method effectiveness."
+}

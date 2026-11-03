@@ -1,0 +1,409 @@
+{
+  "date": "2026-10-30",
+  "source": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\research\\expert-team-assets-20261029\\CASE_SEED_8.json",
+  "case_units": 8,
+  "unique_tasks": 7,
+  "literal_evidence_events": 29,
+  "new_model_calls": 0,
+  "scope": "Literal/source-layer checks plus explicitly authored interpretations; not mechanism prevalence or causal estimation",
+  "cases": [
+    {
+      "id": "C01",
+      "task": "030",
+      "observations": [
+        {
+          "slot": 2,
+          "seed_pointer": "/cases/0/records/1/packet/information_available/3/content",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/002.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 2,
+          "matched_fragment": "co-investor partnership",
+          "excerpt": "Skylake Ventures just finalized a co-investor partnership with a well-known angel group yesterday, meeting their usual requirements for a deal of this size.",
+          "observation": "原始私有资料支持共同投资条件已满足"
+        },
+        {
+          "slot": 10,
+          "seed_pointer": "/cases/0/records/9/packet/messages_from_other_participants/0/text",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 10,
+          "matched_fragment": "PRIVATE.A2 resolves",
+          "excerpt": "PRIVATE.A2 resolves Skylake's only stated blocker: its finalized co-investor partnership satisfies the reputable co-investor requirement for a deal this size. Peak's 3-d",
+          "observation": "接收者确实收到了该条件已满足的报告"
+        },
+        {
+          "slot": 10,
+          "seed_pointer": "/cases/0/records/9/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 10,
+          "matched_fragment": "cannot be credited",
+          "excerpt": "act; A3 correctly notes A2's PRIVATE.A2 is absent from the packet and cannot be credited. On available facts, Skylake's co-investor requirement is unresolved, Northstar has late-pullout and committee-timing risk, while Peak's stated 3-day",
+          "observation": "接收者称原始私有资料不在本包，拒绝计入"
+        },
+        {
+          "slot": 13,
+          "seed_pointer": "/cases/0/records/12/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/013.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 13,
+          "matched_fragment": "within 12 hours",
+          "excerpt": "ecution on hold, no new investments processed. Northstar cannot close within 12 hours: investment committee meets monthly, next in three weeks, and has late-pullout risk. Skylake's co-investor condition is satisfied by its finalized an",
+          "observation": "答对分支也把选择期限推成成交期限，需单独核忠实性"
+        }
+      ],
+      "checks": {},
+      "finding": "资料不在直接来源栏，被当成不可用",
+      "interpretation_boundary": "披露真实资料与汇总观点的协议同时改变；12小时语义也不稳。不能归因为专家身份或从众。",
+      "expertise": "Information-distribution advantage; no calibrated stable ability expert",
+      "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+    },
+    {
+      "id": "C02",
+      "task": "033",
+      "observations": [
+        {
+          "slot": 17,
+          "seed_pointer": "/cases/1/records/0/packet/information_available/3/content",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/017.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 17,
+          "matched_fragment": "main highway",
+          "excerpt": "The main highway to Gemini is temporarily closed for repairs; only emergency vehicles are allowed through, but your sample transport van does not qualify as such.",
+          "observation": "原始资料只指主公路"
+        },
+        {
+          "slot": 17,
+          "seed_pointer": "/cases/1/records/0/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/017.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 17,
+          "matched_fragment": "only viable route",
+          "excerpt": "Gemini is likely unreachable because the only viable route is closed to non-emergency vans, making the six-hour deadline unreliable despite its strong capability. Atlas offers proven reliability with senior t",
+          "observation": "发送者将主公路扩大为唯一可行道路"
+        },
+        {
+          "slot": 21,
+          "seed_pointer": "/cases/1/records/4/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/021.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 21,
+          "matched_fragment": "unsupported",
+          "excerpt": "sufficient backup power (PRIVATE.A2), and A1's route-closure claim is unsupported. Nova lacks emergency-transfer experience. Gemini remains the strongest choice.",
+          "observation": "接收者拒绝道路封闭报告，包含支持性与可信度争议"
+        },
+        {
+          "slot": 23,
+          "seed_pointer": "/cases/1/records/6/row/answer/reasoning",
+          "raw_path": "runs/imp-adaptation-live-20261026-r1/023.raw.txt",
+          "request_file": "runs/imp-adaptation-live-20261026-r1/requests.jsonl",
+          "request_line": 23,
+          "matched_fragment": "Nova",
+          "excerpt": " leaves insufficient backup power for a highly heat-sensitive sample. Nova has fully restored functionality, all equipment and staff available for rapid intake, and its renovation supports immediate processing; its limited e",
+          "observation": "完整资料分支选中新参考候选，不等于所有理由均忠实"
+        }
+      ],
+      "checks": {},
+      "finding": "信息组合产生原初答没有的正确候选",
+      "interpretation_boundary": "发送者也存在范围扩大；原始资料路由不是单纯改善说服，不能将0对1解释为单因素效果。",
+      "expertise": "Information-distribution advantage; no calibrated stable ability expert",
+      "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+    },
+    {
+      "id": "C03",
+      "task": "007",
+      "observations": [
+        {
+          "slot": 55,
+          "seed_pointer": "/cases/2/records/17/packet/information_available/18/content",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 55,
+          "matched_fragment": "Cape Industries: (h) N",
+          "excerpt": "Cape Industries: (h) N",
+          "observation": "接收者自己的资料已明确Cape成本条件失败"
+        },
+        {
+          "slot": 55,
+          "seed_pointer": "/cases/2/records/17/packet/messages_from_other_participants/0/text",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 55,
+          "matched_fragment": "A2/A3's claims",
+          "excerpt": "ts, Cape's profile is strongest and consistent with the prior answer; A2/A3's claims about Cape failing (h) and Starlight satisfying (f)/(i) are unsupported by the provided checklist data.",
+          "observation": "A1消息反称已有失败信息不受资料支持"
+        },
+        {
+          "slot": 55,
+          "seed_pointer": "/cases/2/records/17/row/answer/reasoning",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 55,
+          "matched_fragment": "Cape fails (h) cost",
+          "excerpt": "e RFP's emphasis on those make Cape's profile more complete. However, Cape fails (h) cost and (f) weight, central criteria. Starlight's unknowns leave genuine gaps. Given one best choice and coordination value, I follow A1's stronger-suppo",
+          "observation": "接收者仍承认成本失败"
+        },
+        {
+          "slot": 55,
+          "seed_pointer": "/cases/2/records/17/row/answer/reasoning",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 55,
+          "matched_fragment": "I follow A1",
+          "excerpt": "wns leave genuine gaps. Given one best choice and coordination value, I follow A1's stronger-supported reading: Cape.",
+          "observation": "输出明示追随，但仍不能从自述建立因果机制"
+        }
+      ],
+      "checks": {},
+      "finding": "事实已承认但终答未依此处理，含明示意见依赖",
+      "interpretation_boundary": "普通终票2:2、评分0.5；缺少固定消息的反事实和无消息对照，不能确定从众因果。",
+      "expertise": "Information-distribution advantage; no calibrated stable ability expert",
+      "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+    },
+    {
+      "id": "C04",
+      "task": "008",
+      "observations": [
+        {
+          "slot": 29,
+          "seed_pointer": "/cases/3/records/7/row/answer/choice",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/029.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 29,
+          "matched_fragment": "option_1",
+          "excerpt": "option_1",
+          "observation": "A2中间答案命中参考"
+        },
+        {
+          "slot": 32,
+          "seed_pointer": "/cases/3/records/10/row/answer/choice",
+          "raw_path": "runs/imp-confirmation-live-20261026-r1/032.raw.txt",
+          "request_file": "runs/imp-confirmation-live-20261026-r1/requests.jsonl",
+          "request_line": 32,
+          "matched_fragment": "option_3",
+          "excerpt": "option_3",
+          "observation": "相同原始资料下A2改为非参考答案"
+        }
+      ],
+      "checks": {
+        "different_packet_keys": [
+          "previous_answer"
+        ],
+        "peer_messages_are_source_records": true
+      },
+      "finding": "没有他人推荐也能从对改错",
+      "interpretation_boundary": "自身previous_answer变化、再次生成及推理波动仍未分离；不是所有错误都能由社会影响解释。",
+      "expertise": "Information-distribution advantage; no calibrated stable ability expert",
+      "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+    },
+    {
+      "id": "C05",
+      "task": "004",
+      "observations": [
+        {
+          "slot": 3,
+          "seed_pointer": "/cases/4/records/2/packet/own_sources/0/content",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/003.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 3,
+          "matched_fragment": "less than 30",
+          "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others appr",
+          "observation": "局部持有者直接看到年龄限制"
+        },
+        {
+          "slot": 4,
+          "seed_pointer": "/cases/4/records/3/packet/local_reconstruction/text",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 4,
+          "matched_fragment": "less than 30",
+          "excerpt": "My own source S02 states: \"The guilty person is less than 30 years old.\" This is a reported constraint from my source, not an independently confirmed fact, and it is an age restriction only. It also adds inexpe",
+          "observation": "限制也确实进入终答接收者输入"
+        },
+        {
+          "slot": 4,
+          "seed_pointer": "/cases/4/records/3/packet/historical_work/reason",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 4,
+          "matched_fragment": "passenger",
+          "excerpt": "ement excludes Mr. Z (motorcycle). Mr. X's son is described only as a passenger returning home with his father, so he is unlikely to be the car driver. Among the car drivers, Mr. X is the one explicitly described as having drunk ",
+          "observation": "乘客说法已出现在旧稿，不能说由本轮接收者首次创造"
+        },
+        {
+          "slot": 4,
+          "seed_pointer": "/cases/4/records/3/row/answer/reasoning",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 4,
+          "matched_fragment": "cannot override",
+          "excerpt": "int comes from a different member's source and is not established; it cannot override the more specific vehicle/alcohol profile in A1's own source. The unresolved limits are that no public source gives a numeric 1.5 reading or an expli",
+          "observation": "终答承认年龄冲突却优先自身车辆/酒精推断"
+        }
+      ],
+      "checks": {
+        "passenger_explicit_in_original_public_sources": false,
+        "passenger_already_in_shared_structured_facts": true
+      },
+      "finding": "收到且承认限制，并未保证正确应用",
+      "interpretation_boundary": "乘客字段在上游共享稿/旧稿已存在；不能简单归责为接收者新编造，也不构成稳定专家证据。",
+      "expertise": "Source-holder/local reconstruction; historical draft is not an independent baseline for this run",
+      "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+    },
+    {
+      "id": "C06",
+      "task": "023",
+      "observations": [
+        {
+          "slot": 27,
+          "seed_pointer": "/cases/5/records/2/packet/own_sources/0/content",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/027.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 27,
+          "matched_fragment": "only access road",
+          "excerpt": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend.",
+          "observation": "原始地理范围限定为唯一通路"
+        },
+        {
+          "slot": 27,
+          "seed_pointer": "/cases/5/records/2/row/answer/text",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/027.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 27,
+          "matched_fragment": "expectation",
+          "excerpt": "d following this week's storm; the weekend closure is described as an expectation, not a confirmed fact for Saturday night. S01 does not state an alternative route exists or that the venue itself is closed or unavailable, and no so",
+          "observation": "局部稿保留预计持续关闭的时间不确定性"
+        },
+        {
+          "slot": 26,
+          "seed_pointer": "/cases/5/records/1/row/answer/reasoning",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/026.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 26,
+          "matched_fragment": "categorical obstacle",
+          "excerpt": " explicitly calls it the only access road, so the access problem is a categorical obstacle for the scheduled time, not merely a risk. Catering and this-Saturday availability at Lakeview are also unconfirmed. Heritage Public Library has an u",
+          "observation": "参考命中分支将预计关闭表述为确定障碍"
+        },
+        {
+          "slot": 28,
+          "seed_pointer": "/cases/5/records/3/row/answer/reasoning",
+          "raw_path": "runs/local-reconstruction-live-20261026-r1/028.raw.txt",
+          "request_file": "runs/local-reconstruction-live-20261026-r1/requests.jsonl",
+          "request_line": 28,
+          "matched_fragment": "alternative route",
+          "excerpt": " and it does not establish that the venue itself is closed or that no alternative route exists. This narrows but does not overturn the historical work's tentative selection of Lakeview. Recomputing: Lakeview has documented capacity for 1",
+          "observation": "另一分支对唯一通路与替代通路作不同应用"
+        }
+      ],
+      "checks": {},
+      "finding": "地理范围与时间不确定性被不同处理",
+      "interpretation_boundary": "局部稿内容和历史可见性同时变化，且答对分支有强于原文的时间表述；无单因素因果结论。",
+      "expertise": "Source-holder/local reconstruction; historical draft is not an independent baseline for this run",
+      "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+    },
+    {
+      "id": "C07",
+      "task": "019",
+      "observations": [
+        {
+          "round": 2,
+          "message_index": 0,
+          "agent": "Person 1",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+          "original_pointer": "/conditions/0/runs/104/rounds/1/messages/0/response",
+          "matched_fragment": "blocked South Street",
+          "excerpt": "While Greenfield High School is the best-equipped shelter, the blocked South Street access raises serious concern about whether residents can get there in time; unless we confirm safe routes to Greenfield, Blue River, despite its dra",
+          "observation": "成员明确报告阻断"
+        },
+        {
+          "round": 2,
+          "message_index": 1,
+          "agent": "Person 2",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+          "original_pointer": "/conditions/0/runs/104/rounds/1/messages/1/prompt",
+          "matched_fragment": "blocked South Street",
+          "excerpt": "son 1: While Greenfield High School is the best-equipped shelter, the blocked South Street access raises serious concern about whether residents can get there in time; unless we confirm safe routes to Greenfield, Blue River, despite its dra",
+          "observation": "下一成员输入含该消息，不是只有说出而无法证明收到"
+        },
+        {
+          "round": 2,
+          "message_index": 1,
+          "agent": "Person 2",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+          "original_pointer": "/conditions/0/runs/104/rounds/1/messages/1/response",
+          "matched_fragment": "South Street remains open",
+          "excerpt": "Given South Street remains open to vehicles and Greenfield High School is the only shelter with proven safety and supplies, we should instruct all residents with vehicle access to g",
+          "observation": "下一成员仍称开放"
+        },
+        {
+          "round": 3,
+          "message_index": 0,
+          "agent": "Person 1",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json",
+          "original_pointer": "/conditions/0/runs/104/rounds/2/messages/0/response",
+          "matched_fragment": "South Street confirmed open",
+          "excerpt": "With South Street confirmed open, I agree that all residents should be directed to Greenfield High School immediately, using available vehicles, and we should rapidly coordinate ride",
+          "observation": "原报告者随后也采纳开放说法"
+        }
+      ],
+      "checks": {},
+      "finding": "受阻说法实际进入下一成员收件后被开放说法覆盖",
+      "interpretation_boundary": "初始没有正确选票，隐藏信息随机分配原映射未发布，不能称正确专家少数被压倒。",
+      "expertise": "Distributed information; exact original agent assignment/system inputs not fully logged",
+      "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+    },
+    {
+      "id": "C08",
+      "task": "019",
+      "observations": [
+        {
+          "round": 3,
+          "message_index": 3,
+          "agent": "Person 4",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+          "original_pointer": "/conditions/0/runs/100/rounds/2/messages/3/response",
+          "matched_fragment": "I am contacting",
+          "excerpt": "Excellent, we have a clear consensus. I am contacting the Emergency Operations Center right now to get that single, verified report for us.",
+          "observation": "先提出并声称发起核验"
+        },
+        {
+          "round": 5,
+          "message_index": 3,
+          "agent": "Person 4",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+          "original_pointer": "/conditions/0/runs/100/rounds/4/messages/3/response",
+          "matched_fragment": "unified report",
+          "excerpt": "Okay, I have the EOC's unified report: Greenfield High is completely inaccessible due to flooding, and Blue River's generators have failed, making it unsafe. They confirm Oakridge Library",
+          "observation": "后声称已经收到EOC报告"
+        },
+        {
+          "round": 6,
+          "message_index": 0,
+          "agent": "Person 1",
+          "original_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json",
+          "original_pointer": "/conditions/0/runs/100/rounds/5/messages/0/response",
+          "matched_fragment": "Oakridge Library",
+          "excerpt": "Thank you for that definitive report. Oakridge Library is our only safe and accessible shelter; we must issue the directive for all residents to go there immediately.",
+          "observation": "后续成员采用该结论"
+        }
+      ],
+      "checks": {
+        "released_run_keys": [
+          "final_votes",
+          "initial_votes",
+          "majority_vote",
+          "model",
+          "num_agents",
+          "num_special",
+          "rounds",
+          "scenario",
+          "timestamp"
+        ]
+      },
+      "finding": "同伴声称取得外部核验，后续按其统一行动且答对",
+      "interpretation_boundary": "当前发布文件无独立工具回执字段；不确认真实核验，也不证明现实运行绝无外部工具。",
+      "expertise": "Distributed information; exact original agent assignment/system inputs not fully logged",
+      "annotation_status": "Assistant evidence review, not independent human/blind annotation"
+    }
+  ]
+}

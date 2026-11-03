@@ -1,0 +1,2818 @@
+{
+  "kind": "offline function dependency check, not model intervention or new team performance experiment",
+  "network_requests": 0,
+  "rounds_reproduced": 20,
+  "private_encoding_deletions": 80,
+  "text_deliberately_unchanged_because_executor_does_not_read_it": true,
+  "rows": [
+    {
+      "case": "candidate-010",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse A",
+            "field": "distribution_possible",
+            "value": false,
+            "source": "S01",
+            "quote": "The bridge near Warehouse A has completely collapsed in the flooding, making it impossible for trucks to move supplies out from there."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-010",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse A",
+            "field": "accessible_for_task",
+            "value": true,
+            "source": "S02",
+            "quote": "making landing physically possible but resupply distribution impossible"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse A",
+            "field": "distribution_possible",
+            "value": false,
+            "source": "S02",
+            "quote": "making landing physically possible but resupply distribution impossible"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-010",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse C",
+            "field": "accessible_for_task",
+            "value": true,
+            "source": "S03",
+            "quote": "elevated service roads leading to the temporary shelters have just been confirmed as open by emergency agencies"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse C",
+            "field": "distribution_possible",
+            "value": true,
+            "source": "S03",
+            "quote": "elevated service roads leading to the temporary shelters have just been confirmed as open by emergency agencies"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-010",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse B",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S04",
+            "quote": "sensors are detecting rising levels of noxious gases (risk of poisoning for those unloading/unpacking the plane)"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-010",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse A",
+            "field": "distribution_possible",
+            "value": false,
+            "source": "S01",
+            "quote": "The bridge near Warehouse A has completely collapsed in the flooding, making it impossible for trucks to move supplies out from there."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-010",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_3",
+            "field": "distribution_possible",
+            "value": false,
+            "source": "S02",
+            "quote": "making landing physically possible but resupply distribution impossible"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_3",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S02",
+            "quote": "standing water and large debris still blocking the main approach to Warehouse A"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-010",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse C",
+            "field": "distribution_possible",
+            "value": true,
+            "source": "S03",
+            "quote": "elevated service roads leading to the temporary shelters have just been confirmed as open by emergency agencies"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse C",
+            "field": "accessible_for_task",
+            "value": null,
+            "source": "S03",
+            "quote": "Although Warehouse C is farthest from the airstrip"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-010",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Warehouse B",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S04",
+            "quote": "after the flood, sensors are detecting rising levels of noxious gases (risk of poisoning for those unloading/unpacking the plane)"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "City Library",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S01",
+            "quote": "backup generator only has enough fuel for 2 hours and cannot be refueled due to a citywide gasoline shortage"
+          }
+        }
+      ],
+      "original_not_excluded": [],
+      "removed_private_encoding_not_excluded": [
+        "option_3"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "at least two working restrooms (with ventilation and water) will be available within an hour"
+          }
+        }
+      ],
+      "original_not_excluded": [],
+      "removed_private_encoding_not_excluded": [],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Community Center",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "it's only safe for short visits, not day-long events"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Community Center",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S03",
+            "quote": "it's only safe for short visits, not day-long events"
+          }
+        }
+      ],
+      "original_not_excluded": [],
+      "removed_private_encoding_not_excluded": [
+        "option_2"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [],
+      "original_not_excluded": [],
+      "removed_private_encoding_not_excluded": [],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "City Library",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S01",
+            "quote": "their backup generator only has enough fuel for 2 hours and cannot be refueled due to a citywide gasoline shortage"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_3"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "School Gym",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "The on-site janitor confirms that at least two working restrooms (with ventilation and water) will be available within an hour."
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "The School Gym's restrooms are being restored right now."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Community Center",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "The Community Center basement has had a chemical leak that was just discovered today; the evacuation was for this, and it's only safe for short visits, not day-long events."
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Community Center",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S03",
+            "quote": "it's only safe for short visits, not day-long events."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-011",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "College Hall",
+            "field": "ready_for_task",
+            "value": false,
+            "source": "S04",
+            "quote": "flooded this morning and is closed for at least a week, so it's not available"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "accessible_for_task",
+            "value": true,
+            "source": "S01",
+            "quote": "a secure evidence room—separate from the public shelter area—remains unused and can be made accessible for artifact storage immediately."
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "ready_for_task",
+            "value": true,
+            "source": "S01",
+            "quote": "a secure evidence room—separate from the public shelter area—remains unused and can be made accessible for artifact storage immediately."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "safe_for_task",
+          "values": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "safe_for_task",
+          "values": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_2",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S02",
+            "quote": "The University Library's 24/7 security detail will be off-site for a mandatory citywide training drill tonight, and only basic staff will remain during the night."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "safe_for_task",
+          "values": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      ],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "University Library",
+            "field": "accessible_for_task",
+            "value": null,
+            "source": "S03",
+            "quote": "The road to the University Library is blocked by downed trees from the storm and will not be open for at least another 24 hours."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "safe_for_task",
+          "values": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "safe_for_task",
+          "values": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_3",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S04",
+            "quote": "Power company officials confirm that the City Bank's backup generator is due for repairs and has not functioned during recent outages."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "safe_for_task",
+          "values": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "safe_for_task",
+          "values": [
+            true,
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "S01",
+            "quote": "a secure evidence room—separate from the public shelter area—remains unused and can be made accessible for artifact storage immediately."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "University Library",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "The University Library's 24/7 security detail will be off-site for a mandatory citywide training drill tonight, and only basic staff will remain during the night."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "University Library",
+            "field": "accessible_for_task",
+            "value": null,
+            "source": "S03",
+            "quote": "The road to the University Library is blocked by downed trees from the storm and will not be open for at least another 24 hours."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-015",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "City Bank",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S04",
+            "quote": "backup generator is due for repairs and has not functioned during recent outages"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Camp Meadow",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S01",
+            "quote": "Wind speed projections for Camp Meadow have been revised upwards—tents there may not withstand the forecasted gale."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Camp Pinecone",
+            "field": "full_duration_supported",
+            "value": null,
+            "source": "S02",
+            "quote": "only Camp Pinecone currently has emergency food rations stored"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Camp Summit",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S03",
+            "quote": "The glacier overlooking Camp Summit was reported by the last survey team to have developed new cracks, making sudden avalanches possible if temperatures rise."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "Bears in the region have moved further upriver for the season, and no recent sightings have been reported at Camp Pinecone in the last two months."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Camp Meadow",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S01",
+            "quote": "Wind speed projections for Camp Meadow have been revised upwards—tents there may not withstand the forecasted gale."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Camp Pinecone",
+            "field": "full_duration_supported",
+            "value": null,
+            "source": "S02",
+            "quote": "only Camp Pinecone currently has emergency food rations stored"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Camp Summit",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S03",
+            "quote": "The glacier overlooking Camp Summit was reported by the last survey team to have developed new cracks, making sudden avalanches possible if temperatures rise."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-018",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Camp Pinecone",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "no recent sightings have been reported at Camp Pinecone in the last two months"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Shelter Alpha",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S01",
+            "quote": "after the leak patch, full pressure tests were completed and results were 'excellent'"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Shelter Beta",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "Sensors detected faint seismic vibrations beneath Shelter Beta, possibly indicating underground instability, but the report says 'requires further investigation.'"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Beta",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S03",
+            "quote": "oxygen alarm system is overdue for maintenance"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Gamma",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "there was a recall notice for a faulty emergency ventilation back-up, and the needed replacement has not yet been delivered"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Shelter Alpha",
+            "field": "safe_for_task",
+            "value": true,
+            "source": "S01",
+            "quote": "full pressure tests were completed and results were 'excellent'"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Shelter Beta",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "faint seismic vibrations beneath Shelter Beta, possibly indicating underground instability, but the report says 'requires further investigation.'"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-020",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Shelter Gamma",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "there was a recall notice for a faulty emergency ventilation back-up, and the needed replacement has not yet been delivered"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Shelter Gamma",
+            "field": "full_duration_supported",
+            "value": null,
+            "source": "S04",
+            "quote": "the needed replacement has not yet been delivered"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Aurora Train Station",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S01",
+            "quote": "Local authorities just suspended all trains to Aurora after a landslide covered the main track last night."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Aurora Train Station",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S02",
+            "quote": "A wildlife alert just closed the main access road to Aurora for emergency protection. No vehicle is permitted through until the alert is lifted."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_2",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "The bus route to Borealis has been rerouted due to a bridge closure, with all arrivals delayed until the next day."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Celestia Airstrip",
+            "field": "ready_for_task",
+            "value": true,
+            "source": "S04",
+            "quote": "Celestia Airstrip completed emergency upgrades this week: it’s now able to service large groups and deliver supplies quickly."
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Celestia Airstrip",
+            "field": "accessible_for_task",
+            "value": true,
+            "source": "S04",
+            "quote": "it’s now able to service large groups and deliver supplies quickly. A mobile shelter and food stocks are on site."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Aurora Train Station",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S01",
+            "quote": "Local authorities just suspended all trains to Aurora after a landslide covered the main track last night."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_3",
+            "field": "accessible_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "A wildlife alert just closed the main access road to Aurora for emergency protection. No vehicle is permitted through until the alert is lifted."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Borealis Bus Terminal",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "The bus route to Borealis has been rerouted due to a bridge closure, with all arrivals delayed until the next day."
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Borealis Bus Terminal",
+            "field": "ready_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "with all arrivals delayed until the next day"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-021",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Celestia Airstrip",
+            "field": "ready_for_task",
+            "value": true,
+            "source": "S04",
+            "quote": "Celestia Airstrip completed emergency upgrades this week: it’s now able to service large groups and deliver supplies quickly."
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Celestia Airstrip",
+            "field": "accessible_for_task",
+            "value": true,
+            "source": "S04",
+            "quote": "it’s now able to service large groups and deliver supplies quickly. A mobile shelter and food stocks are on site."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_3",
+            "field": "full_duration_supported",
+            "value": null,
+            "source": "S02",
+            "quote": "Main Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_2",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "accessible_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Main Base",
+            "field": "full_duration_supported",
+            "value": true,
+            "source": "S02",
+            "quote": "Main Base appears to have uninterrupted generator power, working communications, and fully stocked rations according to a direct radio call just before the storm warning."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_2",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "The snow route to Rescue Outpost is fully snowed in since the last storm; the path isn't navigable even with the vehicle."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-022",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "accessible_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "the ice bridge leading to Retreat Camp has collapsed, making it dangerous to reach by foot or vehicle"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "making it dangerous to reach by foot or vehicle"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_2",
+          "field": "accessible_for_task",
+          "values": [
+            true,
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Lakeview Resort",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S01",
+            "quote": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_3"
+      ],
+      "changed": true,
+      "original_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Grand Oak Hotel",
+            "field": "ready_for_task",
+            "value": true,
+            "source": "S02",
+            "quote": "last-minute bookings can be accepted by phone this week"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [],
+      "changed": true,
+      "original_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": false,
+            "source": "S03",
+            "quote": "now only sealed, pre-packaged snacks are allowed in the meeting hall, with no catering permitted"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_2",
+        "option_3"
+      ],
+      "changed": true,
+      "original_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [],
+      "original_not_excluded": [
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Lakeview Resort",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S01",
+            "quote": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_3"
+      ],
+      "changed": true,
+      "original_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Grand Oak Hotel",
+            "field": "ready_for_task",
+            "value": true,
+            "source": "S02",
+            "quote": "last-minute bookings can be accepted by phone this week"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Grand Oak Hotel",
+            "field": "accessible_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "the events manager reports a scheduling software failure that blocks new bookings from appearing"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [],
+      "changed": true,
+      "original_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": false,
+            "source": "S03",
+            "quote": "only sealed, pre-packaged snacks are allowed in the meeting hall, with no catering permitted"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_2",
+        "option_3"
+      ],
+      "changed": true,
+      "original_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-023",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [],
+      "original_not_excluded": [
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false,
+            false
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_2",
+            "field": "accessible_for_task",
+            "value": null,
+            "source": "S01",
+            "quote": "lightning knocked down a major power line, blocking road access to the Hilltop Chapel"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_3",
+            "field": "safe_for_task",
+            "value": true,
+            "source": "S02",
+            "quote": "the records vault doors were certified for watertight integrity after inspection last week"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_3",
+            "field": "ready_for_task",
+            "value": true,
+            "source": "S02",
+            "quote": "has been completely cleared out for recent renovations"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S03",
+            "quote": "heavy rainfall causes water to accumulate on the roof, risking collapse of the upper vaults due to overloaded drainage systems"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "S03",
+            "quote": "Structural engineers just discovered a design flaw in the University Science Library"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_2",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "water expected to reach Hilltop Chapel’s base within the next four hours if the rain continues"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_2",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S01",
+            "quote": "Emergency vehicles are unable to reach the chapel for now."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_1",
+          "field": "safe_for_task",
+          "values": [
+            null,
+            true,
+            false,
+            true
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_1",
+          "field": "safe_for_task",
+          "values": [
+            null,
+            true,
+            false,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_3",
+            "field": "safe_for_task",
+            "value": true,
+            "source": "S02",
+            "quote": "the records vault doors were certified for watertight integrity after inspection last week"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_3",
+            "field": "ready_for_task",
+            "value": true,
+            "source": "S02",
+            "quote": "the records vault doors were certified for watertight integrity after inspection last week"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_1",
+          "field": "safe_for_task",
+          "values": [
+            null,
+            true,
+            false,
+            true
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_1",
+          "field": "safe_for_task",
+          "values": [
+            null,
+            true,
+            false,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "heavy rainfall causes water to accumulate on the roof, risking collapse of the upper vaults due to overloaded drainage systems"
+          }
+        },
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_1",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "S03",
+            "quote": "Structural engineers just discovered a design flaw in the University Science Library"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_1",
+          "field": "safe_for_task",
+          "values": [
+            null,
+            true,
+            false,
+            true
+          ]
+        }
+      ],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-026",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "option_2",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "water expected to reach Hilltop Chapel’s base within the next four hours if the rain continues"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "changed": false,
+      "original_conflicts": [
+        {
+          "candidate": "option_1",
+          "field": "safe_for_task",
+          "values": [
+            null,
+            true,
+            false,
+            true
+          ]
+        }
+      ],
+      "altered_conflicts": [
+        {
+          "candidate": "option_1",
+          "field": "safe_for_task",
+          "values": [
+            null,
+            true,
+            false,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 1,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Pine Ridge",
+            "field": "accessible_for_task",
+            "value": true,
+            "source": "S01",
+            "quote": "The only reliable access road to Pine Ridge has been repaired and upgraded recently for forestry vehicles, making it usable year-round for trucks as long as landslides are monitored."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 1,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Copper Lake",
+            "field": "heavy_infrastructure_supported",
+            "value": false,
+            "source": "S02",
+            "quote": "Copper Lake's soil cannot support buildings taller than 1 story or heavy equipment without major reinforcement, due to deep unstable clay layers."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 1,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Maple Valley",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "Maple Valley sits directly atop a recently discovered major earthquake fault line, with significant tremors expected in the next decade."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_3"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 1,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Maple Valley",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "the local community near Maple Valley is organizing protests against any new large-scale construction, as the valley is a designated cultural heritage landscape."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 2,
+      "owner": "A1",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Pine Ridge",
+            "field": "accessible_for_task",
+            "value": true,
+            "source": "S01",
+            "quote": "making it usable year-round for trucks as long as landslides are monitored"
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 2,
+      "owner": "A2",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Copper Lake",
+            "field": "heavy_infrastructure_supported",
+            "value": false,
+            "source": "S02",
+            "quote": "Copper Lake's soil cannot support buildings taller than 1 story or heavy equipment without major reinforcement, due to deep unstable clay layers."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_2"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 2,
+      "owner": "A3",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Maple Valley",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "Maple Valley sits directly atop a recently discovered major earthquake fault line, with significant tremors expected in the next decade."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1",
+        "option_3"
+      ],
+      "changed": true,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    },
+    {
+      "case": "candidate-027",
+      "repeat": 2,
+      "owner": "A4",
+      "removed": [
+        {
+          "section": "facts",
+          "item": {
+            "candidate": "Maple Valley",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "S04",
+            "quote": "the local community near Maple Valley is organizing protests against any new large-scale construction, as the valley is a designated cultural heritage landscape."
+          }
+        }
+      ],
+      "original_not_excluded": [
+        "option_1"
+      ],
+      "removed_private_encoding_not_excluded": [
+        "option_1"
+      ],
+      "changed": false,
+      "original_conflicts": [],
+      "altered_conflicts": []
+    }
+  ]
+}

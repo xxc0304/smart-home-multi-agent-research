@@ -1,0 +1,145 @@
+{
+  "score": {
+    "task_id": "math_train/intermediate_algebra/140",
+    "initial_scores": [
+      0,
+      0,
+      0
+    ],
+    "final_score": 1,
+    "score_detail": {
+      "task_id": "math_train/intermediate_algebra/140",
+      "status": "scored",
+      "score": 1,
+      "attempts": 1,
+      "diagnostic_only": false,
+      "math_verify_version": "0.9.0"
+    },
+    "status": "degraded",
+    "stop_reason": "runtime_error",
+    "review_status": "unreviewed",
+    "normal_calls": 7,
+    "http_attempts": 6,
+    "format_repairs": 2,
+    "audit_record_count": 0,
+    "errors": [
+      {
+        "code": "REFERENCE_ERROR",
+        "detail": "Closure must respond to every original audit record ID"
+      }
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "task_facts",
+      "synthesize",
+      "build"
+    ],
+    "source_hashes_match": true,
+    "scope": "One seen all-initial-fail engineering regression; no new-task effectiveness estimate",
+    "source_bindings_complete": true,
+    "declared_check_item_count": 15,
+    "pipeline_completed": false,
+    "mechanism_evaluable": false
+  },
+  "binding_fact_count": 5,
+  "binding_attempt": 1,
+  "pending_fact_ids": [],
+  "delivered_equals_synthesis": true,
+  "audit_ledger_exists": false,
+  "apply_failures": [
+    {
+      "attempt": 0,
+      "detail": "Closure must respond to every original audit record ID",
+      "proposals": [
+        {
+          "issue_id": "i0001",
+          "submitted_evidence_record_ids": [
+            "coreta-source-binding-f3015460a319:e0000",
+            "coreta-source-binding-f3015460a319:e0004",
+            "coreta-source-binding-f3015460a319:e0005"
+          ],
+          "expected_evidence_record_ids": []
+        },
+        {
+          "issue_id": "i0002",
+          "submitted_evidence_record_ids": [
+            "coreta-source-binding-f3015460a319:e0001",
+            "coreta-source-binding-f3015460a319:e0004",
+            "coreta-source-binding-f3015460a319:e0005"
+          ],
+          "expected_evidence_record_ids": []
+        },
+        {
+          "issue_id": "i0003",
+          "submitted_evidence_record_ids": [
+            "coreta-source-binding-f3015460a319:e0002",
+            "coreta-source-binding-f3015460a319:e0004",
+            "coreta-source-binding-f3015460a319:e0005"
+          ],
+          "expected_evidence_record_ids": []
+        },
+        {
+          "issue_id": "i0004",
+          "submitted_evidence_record_ids": [
+            "coreta-source-binding-f3015460a319:e0003",
+            "coreta-source-binding-f3015460a319:e0004",
+            "coreta-source-binding-f3015460a319:e0005"
+          ],
+          "expected_evidence_record_ids": []
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "detail": "Closure must respond to every original audit record ID",
+      "proposals": [
+        {
+          "issue_id": "i0001",
+          "submitted_evidence_record_ids": [
+            "coreta-source-binding-f3015460a319:e0000",
+            "coreta-source-binding-f3015460a319:e0004",
+            "coreta-source-binding-f3015460a319:e0005"
+          ],
+          "expected_evidence_record_ids": []
+        },
+        {
+          "issue_id": "i0002",
+          "submitted_evidence_record_ids": [
+            "coreta-source-binding-f3015460a319:e0001",
+            "coreta-source-binding-f3015460a319:e0004",
+            "coreta-source-binding-f3015460a319:e0005"
+          ],
+          "expected_evidence_record_ids": []
+        },
+        {
+          "issue_id": "i0003",
+          "submitted_evidence_record_ids": [
+            "coreta-source-binding-f3015460a319:e0002",
+            "coreta-source-binding-f3015460a319:e0004",
+            "coreta-source-binding-f3015460a319:e0005"
+          ],
+          "expected_evidence_record_ids": []
+        },
+        {
+          "issue_id": "i0004",
+          "submitted_evidence_record_ids": [
+            "coreta-source-binding-f3015460a319:e0003",
+            "coreta-source-binding-f3015460a319:e0004",
+            "coreta-source-binding-f3015460a319:e0005"
+          ],
+          "expected_evidence_record_ids": []
+        }
+      ]
+    }
+  ],
+  "offline_math_counterexample": {
+    "polynomial": "x-x^3-(3/2)*(xy-x^2*y)",
+    "satisfies_all_eight_given_points": true,
+    "at_gold_point": "0",
+    "at_swapped_point": "-264/361",
+    "at_minus1_minus1": "-3"
+  },
+  "interpretation": "Answer hit at synthesis; no completed U/C or audit-ledger evidence; not a validated complementary recovery."
+}

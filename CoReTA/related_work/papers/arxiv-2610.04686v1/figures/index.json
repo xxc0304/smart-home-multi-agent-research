@@ -1,0 +1,485 @@
+[
+ {
+  "kind": "figure",
+  "num": "1",
+  "page": 2,
+  "caption": "Figure 1: Overview of the supply-readout view. Transparent regions denote questions for which individual sampled agents can surface the correct answer; solid regions denote questions recovered by the final readout. Top: Overlapping sampled agents provide redundant proposal coverage, so majority vote keeps a small shared region and can reinforce a repeated wrong answer. Bottom: Diverse agents provide complementary proposal coverage; after debate, LVD uses verification-aware evidence to recover a surfaced correct minority answer.",
+  "file": "figures/fig-01.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.197,
+   0.087,
+   0.803,
+   0.354
+  ],
+  "label": "fig:teaser",
+  "source_files": [
+   "figures/Teaser_May_7.pdf"
+  ],
+  "tex_line": 71,
+  "refs": [
+   "§1 Introduction (L95)"
+  ]
+ },
+ {
+  "kind": "figure",
+  "num": "2",
+  "page": 4,
+  "caption": "Figure 2: Motivating observations. (a) Qwen2.5-3B-Instruct shows null-like debate dynamics with little gain over vote, while Qwen3-4B-Instruct shows positive gain across rounds. (b) Under the same neural-thicket supply regime, Debate readout improves over vote, while the proposal-hit upper bound remains higher, indicating recoverable headroom. (c) Final debate lift is positively correlated with initial proposal-hit headroom, suggesting that debate is supply-constrained. Together, these observations motivate a supply-readout account: debate helps when correct minority proposals are surfaced and the readout can recover them through verification-aware dynamics.",
+  "file": "figures/fig-02.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.087,
+   0.828,
+   0.223
+  ],
+  "label": "fig:motivating_observations",
+  "source_files": [
+   "figures/motivating_observations.pdf"
+  ],
+  "tex_line": 214,
+  "refs": [
+   "§2.1 Proposal Setup and the Martingale Null (L206)",
+   "§2.1 Proposal Setup and the Martingale Null (L260)",
+   "§2.1 Proposal Setup and the Martingale Null (L265)",
+   "§A.1 Implementation Details for \\figreffig:mo (L1040)"
+  ]
+ },
+ {
+  "kind": "figure",
+  "num": "3",
+  "page": 9,
+  "caption": "Figure 3: Label-based five-round dynamics. Solid lines show round-level accuracy before finalization; dashed hollow legend entries marked “Oracle” show proposal-hit coverage. Later rounds can improve vote accuracy while reducing answer diversity, so final gains depend on recovering correct proposals before coverage collapses. The label-free counterpart is in Fig. 4.",
+  "file": "figures/fig-03.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.087,
+   0.828,
+   0.235
+  ],
+  "label": "fig:r5_debate_dynamics_label_based",
+  "source_files": [
+   "figures/r5_debate_dynamics_label_based.pdf"
+  ],
+  "tex_line": 872,
+  "refs": [
+   "§5 Experiments (L885)",
+   "§A.12 Complete Round-Level Statistics (L1891)",
+   "§A.12 Complete Round-Level Statistics (L1899)"
+  ]
+ },
+ {
+  "kind": "figure",
+  "num": "4",
+  "page": 23,
+  "caption": "Figure 4: Label-free five-round dynamics. This appendix counterpart to Fig. 3 shows methods that do not use labeled training diagnostics for society selection. Solid lines show round-level majority- vote accuracy before finalization; dashed hollow legend entries marked “Oracle” show proposal-hit coverage.",
+  "file": "figures/fig-04.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.087,
+   0.828,
+   0.235
+  ],
+  "label": "fig:r5_debate_dynamics_label_free",
+  "source_files": [
+   "figures/r5_debate_dynamics_label_free.pdf"
+  ],
+  "tex_line": 1887,
+  "refs": [
+   "§5 Experiments (L879)",
+   "§A.12 Complete Round-Level Statistics (L1900)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "1",
+  "page": 7,
+  "caption": "Table 1: Accuracy (%) on Qwen3-4B-Instruct and OLMo-3-7B-Instruct under a unified computation budget. SC and Neural thicket vote rows use vote20; debate rows use round-3 (R3) majority vote from matched five-round, four-agent traces. MMLU-Redux is split into five 60-example subjects. Avg is the unweighted mean over the eight displayed columns, and Avg Ranking is the mean within-block method rank. Boldface and underline denote the best and second-best result per column within each method block and model. Gray rows mark our proposed agent pool construction methods.",
+  "file": "figures/tab-01.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.175,
+   0.18,
+   0.825,
+   0.453
+  ],
+  "label": "tab:main_results, tab:call_aligned_r3, tab:olmo_main_r3_call_aligned",
+  "source_files": [],
+  "tex_line": 571,
+  "refs": [
+   "§5 Experiments (L771)",
+   "§5 Experiments (L782)",
+   "§A.5 Five-Run Stochastic Robustness (L1184)",
+   "§A.10 Dynamics and Conversion Controls (L1688)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "2",
+  "page": 8,
+  "caption": "Table 2: AMC12-selected seed transfer to MMLU-Redux. Init, R3, and R5 report pre-debate, round-3, and round-5 metrics over the same four agents. Final is the R5 vote-then-judge readout; Lift is Final minus Init Vote. Values are percentages except N. Gray rows mark our greedy construction methods.",
+  "file": "figures/tab-02.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.178,
+   0.138,
+   0.825,
+   0.293
+  ],
+  "label": "tab:amc12_mmlu_transfer_r5",
+  "source_files": [],
+  "tex_line": 803,
+  "refs": [
+   "§5 Experiments (L862)",
+   "§A.11 Secondary Construction and Transfer Diag (L1720)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "3",
+  "page": 10,
+  "caption": "Table 3: Controlled fixed-proposal evidence for verification-aware readout. Trace effect is the answer- margin shift from an original correct peer response relative to neutral context; c W is its median equivalent controlled support over recovery cases. T −F is the gold-margin difference between answer-stripped correct and wrong rationales. ∆Acc is correct-support accuracy minus neutral accuracy at d = 3. All entries use the main readout configuration; secondary configuration controls are reported in the appendix.",
+  "file": "figures/tab-03.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.181,
+   0.828,
+   0.265
+  ],
+  "label": "tab:lvd_controlled_probes",
+  "source_files": [],
+  "tex_line": 941,
+  "refs": [
+   "§5 Experiments (L937)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "4",
+  "page": 14,
+  "caption": "Table 4: Compute used by the reported experiment families. Profiling times vary with dataset size and output length; downstream times vary with the backbone, dataset, and number of debate rounds.",
+  "file": "figures/tab-04.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.429,
+   0.829,
+   0.589
+  ],
+  "label": "tab:compute_resources",
+  "source_files": [],
+  "tex_line": 1094,
+  "refs": [
+   "§A.3 Compute Resources (L1090)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "5",
+  "page": 15,
+  "caption": "Table 5: Licenses and stated terms for existing model and dataset assets.",
+  "file": "figures/tab-05.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.405,
+   0.829,
+   0.618
+  ],
+  "label": "tab:asset_licenses",
+  "source_files": [],
+  "tex_line": 1142,
+  "refs": [
+   "§A.4 Existing-Asset Licenses (L1138)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "6",
+  "page": 15,
+  "caption": "Table 6: Five-run stochastic robustness under a common decoding configuration. Panel (a) reports mean ± SD across five generation seeds; bold marks the highest mean within each backbone and column, not statistical significance. Panel (b) reports paired comparisons of the five matched run-level eight-column averages. Effects and confidence intervals are in percentage points. Comparisons near the nominal p = .05 threshold should be interpreted cautiously. (a) Per-benchmark accuracy and eight-column average.",
+  "file": "figures/tab-06.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.184,
+   0.828,
+   0.367
+  ],
+  "label": "tab:stochastic_robustness",
+  "source_files": [],
+  "tex_line": 1194,
+  "refs": [
+   "§A.5 Five-Run Stochastic Robustness (L1187)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "7",
+  "page": 16,
+  "caption": "Table 7: Seed-quality diagnostics for the main-table backbones. Values are percentages on the profiling split. Base ref. is the same-split unperturbed pass@1 reference. The Used column marks scales retained for downstream construction.",
+  "file": "figures/tab-07.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.175,
+   0.134,
+   0.825,
+   0.443
+  ],
+  "label": "tab:seed_profiling_details",
+  "source_files": [],
+  "tex_line": 1286,
+  "refs": [
+   "§A.7 Seed Profiling Details (L1267)",
+   "§A.11 Secondary Construction and Transfer Diag (L1836)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "8",
+  "page": 18,
+  "caption": "Table 8: Original peer-response effects and equivalent conclusion-only support over recovery cases. Trace effects are means with 95% confidence intervals; c W is the median interpolated equivalent support. The final column reports the correct-support minus wrong-support answer margin under the Verify prompt at each dose.",
+  "file": "figures/tab-08.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.347,
+   0.828,
+   0.431
+  ],
+  "label": "tab:lvd_equivalent_support_full",
+  "source_files": [],
+  "tex_line": 1440,
+  "refs": []
+ },
+ {
+  "kind": "table",
+  "num": "9",
+  "page": 18,
+  "caption": "Table 9: Truth sensitivity of answer-stripped trace rationales. Entries are mean margin changes with 95% confidence intervals, shown as Standard / Verify.",
+  "file": "figures/tab-09.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.49,
+   0.828,
+   0.574
+  ],
+  "label": "tab:lvd_answer_stripped_full",
+  "source_files": [],
+  "tex_line": 1466,
+  "refs": []
+ },
+ {
+  "kind": "table",
+  "num": "10",
+  "page": 18,
+  "caption": "Table 10: Free-generation accuracy after three peer messages. Each entry evaluates the same 50 questions. Correct support is bolded.",
+  "file": "figures/tab-10.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.633,
+   0.828,
+   0.773
+  ],
+  "label": "tab:lvd_free_generation_full",
+  "source_files": [],
+  "tex_line": 1495,
+  "refs": []
+ },
+ {
+  "kind": "table",
+  "num": "11",
+  "page": 19,
+  "caption": "Table 11: Round-level prompt-style dynamics averaged over the 15 matched dataset-method cells. R0 is identical because both controls use the same seed answers before debate. ∆is Standard minus Verify. All values are percentages.",
+  "file": "figures/tab-11.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.225,
+   0.136,
+   0.771,
+   0.246
+  ],
+  "label": "tab:r5_prompt_style_dynamics",
+  "source_files": [],
+  "tex_line": 1555,
+  "refs": [
+   "§A.9 Controlled Readout Probe Details (L1528)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "12",
+  "page": 19,
+  "caption": "Table 12: Prompt-style control for the five-round new-seed debate runs. Verify Final is the completed verify_then_answer debate prompt; Standard Final repeats the same datasets, seed banks, verifier settings, and vote_then_judge_tiebreak finalizer with the normal standard debate prompt. ∆ is Standard Final minus Verify Final. All accuracy values are percentages.",
+  "file": "figures/tab-12.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.317,
+   0.825,
+   0.572
+  ],
+  "label": "tab:r5_prompt_style_control",
+  "source_files": [],
+  "tex_line": 1577,
+  "refs": [
+   "§A.9 Controlled Readout Probe Details (L1529)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "13",
+  "page": 20,
+  "caption": "Table 13: Immediate-finalizer and interaction control. Panel (a) compares the R0 and R5 states by method. The final column is R5 Vote+Judge minus R0 Vote+Judge; confidence intervals resample questions within each benchmark before recomputing the unweighted macro average. Panel (b) applies the same finalizer at every saved stage and averages over all four societies and five benchmarks. All accuracy, hit, gain, tie, and unanimity values are percentages.",
+  "file": "figures/tab-13.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.296,
+   0.828,
+   0.476
+  ],
+  "label": "tab:immediate_finalizer_control",
+  "source_files": [],
+  "tex_line": 1632,
+  "refs": []
+ },
+ {
+  "kind": "table",
+  "num": "14",
+  "page": 20,
+  "caption": "Table 14: Association between initial headroom H = P0 −V0 and final lift G = F −V0 on the two backbones. The MMLU row reports a 95% paired question-bootstrap interval for Pearson r.",
+  "file": "figures/tab-14.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.253,
+   0.712,
+   0.747,
+   0.771
+  ],
+  "label": "tab:backbone_headroom_conversion",
+  "source_files": [],
+  "tex_line": 1691,
+  "refs": []
+ },
+ {
+  "kind": "table",
+  "num": "15",
+  "page": 21,
+  "caption": "Table 15: AMC12-to-MMLU-Redux transfer decomposition. Recovery rate is conditional on R0 headroom; the contribution columns are unconditional percentage points.",
+  "file": "figures/tab-15.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.224,
+   0.828,
+   0.302
+  ],
+  "label": "tab:transfer_decomposition",
+  "source_files": [],
+  "tex_line": 1726,
+  "refs": []
+ },
+ {
+  "kind": "table",
+  "num": "16",
+  "page": 21,
+  "caption": "Table 16: Complementarity and held-out coverage on Qwen3-4B MATH500. Panel (a) uses the 200-question construction split. Panel (b) freezes each four-agent society and evaluates cumulative R0 proposal-hit coverage on 300 held-out questions; agents are listed in selection order, and tied construction accuracies share the minimum rank.",
+  "file": "figures/tab-16.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.595,
+   0.828,
+   0.754
+  ],
+  "label": "tab:complementary_coverage",
+  "source_files": [],
+  "tex_line": 1762,
+  "refs": []
+ },
+ {
+  "kind": "table",
+  "num": "17",
+  "page": 22,
+  "caption": "Table 17: Sensitivity to candidate-pool size N and construction-set size m. Each arrow follows the increasing values shown in the column header.",
+  "file": "figures/tab-17.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.123,
+   0.828,
+   0.186
+  ],
+  "label": "tab:construction_sensitivity",
+  "source_files": [],
+  "tex_line": 1811,
+  "refs": [
+   "§A.11 Secondary Construction and Transfer Diag (L1808)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "18",
+  "page": 22,
+  "caption": "Table 18: Fixed-society Qwen3-4B MMLU-Redux results. Hidden-Prefix and TopAcc report mean ± SD across 10 paired generation seeds; AC-Greedy and SC-Greedy are the submitted fixed runs and are included only as reference points.",
+  "file": "figures/tab-18.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.498,
+   0.828,
+   0.579
+  ],
+  "label": "tab:hidden_prefix_construction",
+  "source_files": [],
+  "tex_line": 1853,
+  "refs": []
+ },
+ {
+  "kind": "table",
+  "num": "19",
+  "page": 24,
+  "caption": "Table 19: Round-level recovery diagnostics averaged over the five benchmarks. For each round, Vote and Hit are the round-specific majority-vote and proposal-hit accuracies, while Final is the end-of-run vote_then_judge_tiebreak accuracy. We define H = P −V , G = D−V , ρ = G/H, R = Pr(D = 1 | P = 1, V = 0), I = Pr(D = 1 | P = 0, V = 0), and L = Pr(D = 0 | V = 1), where D is the final decision. All values except ρ are percentages; averages are unweighted over benchmarks.",
+  "file": "figures/tab-19.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.175,
+   0.825,
+   0.521
+  ],
+  "label": "tab:round_recovery_diagnostics",
+  "source_files": [],
+  "tex_line": 1949,
+  "refs": [
+   "§A.12.1 Average Recovery Diagnostics (L1999)"
+  ]
+ },
+ {
+  "kind": "table",
+  "num": "20",
+  "page": 25,
+  "caption": "Table 20: Five-round debate results for the new seed teams. Final is accuracy after vote_then_judge_tiebreak; Lift is Final minus Init Vote. Bold marks the best final accuracy within each dataset. Average rows report the unweighted mean across the five benchmarks.",
+  "file": "figures/tab-20.png",
+  "mode": "裁剪",
+  "bbox": [
+   0.172,
+   0.136,
+   0.825,
+   0.371
+  ],
+  "label": "tab:r5_new_seed_debate",
+  "source_files": [],
+  "tex_line": 2014,
+  "refs": [
+   "§A.12.2 Five-Round New-Seed Debate Results (L2052)"
+  ]
+ }
+]

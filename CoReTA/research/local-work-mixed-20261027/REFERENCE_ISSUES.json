@@ -1,0 +1,29 @@
+{
+  "created": "2026-10-27",
+  "stage": "post_run_source_verification",
+  "issues": [
+    {
+      "task_uid": "281ec4c8-1632-40e9-bdf2-8ceac4303d61",
+      "case_id": "diagnostic-01",
+      "batch": "local-work-calibration-live-20261027-v1",
+      "upstream_answer": 1.73,
+      "upstream_derivation": "1.71+0.02",
+      "source_supported_answer": 1.10,
+      "status": "reference_conflicts_with_fiscal_quarter_and_primary_source",
+      "evidence": [
+        "Original table is unchanged: December 31 FY2019 diluted EPS is 1.08; June 30 is 1.71.",
+        "Original paragraph P3 specifies a Q2 EPS decrease of 0.02.",
+        "Microsoft FY19 Q2 announcement identifies December 31 2018 as quarter end and reports adjusted EPS of 1.10."
+      ],
+      "primary_sources": [
+        "https://www.microsoft.com/en-us/investor/earnings/fy-2019-q2/press-release-webcast",
+        "https://www.microsoft.com/investor/reports/ar19/index.html"
+      ],
+      "handling": "Preserve raw official scoring and this case's inclusion; report semantic conflict separately. Do not use its official win/loss as method efficacy evidence. Check this registry before future preparation.",
+      "upstream_data_changed": false,
+      "frozen_inputs_changed": false,
+      "official_scores_changed": false,
+      "extra_model_calls": 0
+    }
+  ]
+}

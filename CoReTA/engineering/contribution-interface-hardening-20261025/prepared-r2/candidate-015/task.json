@@ -1,0 +1,24 @@
+{
+  "task_id": "candidate-screening-015",
+  "scenario": "A priceless ancient artifact has just been unearthed in your city. Authorities task your team with deciding where to safely store it for 24 hours until the national museum can collect it. The city is experiencing rising river levels after days of storms, and several neighborhoods have intermittent power outages. You must quickly agree on the safest location for the artifact. The options are:\n- City Bank: Modern steel vault, backup generator, but in an area at risk for power outages and flooding.\n- University Library: Centrally located, 24/7 security, and not known to flood.\n- Downtown Police Station: High security, but rumored to be crowded due to emergency shelter duties.",
+  "shared_information": [
+    "The University Library is built on higher ground and has never experienced flooding, making it a trusted location for safe storage of rare books and documents.",
+    "The City Bank's vault is rated for both fire and water, and a backup generator was recently installed.",
+    "The Downtown Police Station is acting as a temporary shelter and has significantly more traffic than usual, including people seeking refuge from flooded homes."
+  ],
+  "choices": [
+    {
+      "id": "option_1",
+      "text": "Downtown Police Station"
+    },
+    {
+      "id": "option_2",
+      "text": "University Library"
+    },
+    {
+      "id": "option_3",
+      "text": "City Bank"
+    }
+  ],
+  "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+}

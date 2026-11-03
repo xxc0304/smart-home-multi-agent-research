@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-01",
+  "scope": "OFFLINE_IMPLEMENTATION_AND_RANDOM_TINY_CPU_ONLY",
+  "final_command": ".venv-expert/Scripts/python.exe -m unittest discover -s tests -p 'test_b[01]*.py' -v",
+  "exit_code": 0,
+  "n_tests": 31,
+  "b1_tests": 22,
+  "b0_regression_tests": 9,
+  "log": "TEST_LOG.txt",
+  "D_input_prefix": 32,
+  "D_dependency_groups": 29,
+  "expected_requests_at_32": 1664,
+  "real_task_training_runs": 0,
+  "real_task_team_responses": 0,
+  "C_H_question_target_files_read": false,
+  "D_target_files_read": false,
+  "stage_verdict": "PASS_OFFLINE_SCOPE",
+  "actual_runtime": "BLOCKED_HARDWARE_AND_REAL_EXPERT_NOT_VERIFIED",
+  "review_rounds": 2,
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "post_round2_fixes": "executor-fixed and regression-verified; not freshly re-swept; CUDA measurement untested"
+}

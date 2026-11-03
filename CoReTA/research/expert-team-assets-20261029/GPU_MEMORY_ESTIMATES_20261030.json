@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-30",
+  "status": "ANALYTICAL_ESTIMATES_NOT_HARDWARE_BENCHMARK",
+  "assumptions": [
+    "Qwen3 dense GQA",
+    "one active sequence",
+    "FP16 KV",
+    "no CUDA/workspace/activation/quantization metadata included"
+  ],
+  "weights": [
+    {
+      "model": "3B_generic",
+      "params_B": 3,
+      "fp16_weights_decimal_GB": 6,
+      "ideal_4bit_weights_decimal_GB": 1.5
+    },
+    {
+      "model": "Qwen3-4B",
+      "params_B": 4,
+      "fp16_weights_decimal_GB": 8,
+      "ideal_4bit_weights_decimal_GB": 2.0
+    },
+    {
+      "model": "Qwen3-8B",
+      "params_B": 8.2,
+      "fp16_weights_decimal_GB": 16.4,
+      "ideal_4bit_weights_decimal_GB": 4.1
+    },
+    {
+      "model": "Qwen3-14B",
+      "params_B": 14.8,
+      "fp16_weights_decimal_GB": 29.6,
+      "ideal_4bit_weights_decimal_GB": 7.4
+    },
+    {
+      "model": "Qwen3-32B",
+      "params_B": 32.8,
+      "fp16_weights_decimal_GB": 65.6,
+      "ideal_4bit_weights_decimal_GB": 16.4
+    }
+  ],
+  "qwen3_4b_8b_KV_GiB": {
+    "4096": 0.5625,
+    "8192": 1.125,
+    "16384": 2.25,
+    "32768": 4.5
+  },
+  "actual_gpu_runs": 0
+}

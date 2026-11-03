@@ -1,0 +1,56 @@
+{
+  "member": "A3",
+  "task": {
+    "task_id": "candidate-screening-011",
+    "scenario": "You are on a committee responsible for an emergency scientific conference that suddenly lost its main venue due to a water pipe burst. You must relocate all attendees within the next two hours—if you can't agree, the event will be canceled. Three possible venues are nearby: City Library, Community Center, and School Gym. Each venue has different facilities and issues. The weather is turning hot and humid, and power outages have recently impacted the area. Your job is to pick the only venue that will safely accommodate all attendees for the full day of events without significant risks.",
+    "shared_information": [
+      "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power.",
+      "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave.",
+      "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet.",
+      "Temperatures are expected to exceed 37°C (99°F) in the afternoon. Organizers worry about heat stress if backup power fails."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "School Gym"
+      },
+      {
+        "id": "option_2",
+        "text": "Community Center"
+      },
+      {
+        "id": "option_3",
+        "text": "City Library"
+      }
+    ],
+    "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+  },
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "You are on a committee responsible for an emergency scientific conference that suddenly lost its main venue due to a water pipe burst. You must relocate all attendees within the next two hours—if you can't agree, the event will be canceled. Three possible venues are nearby: City Library, Community Center, and School Gym. Each venue has different facilities and issues. The weather is turning hot and humid, and power outages have recently impacted the area. Your job is to pick the only venue that will safely accommodate all attendees for the full day of events without significant risks."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet."
+    },
+    {
+      "ref": "PUBLIC.4",
+      "content": "Temperatures are expected to exceed 37°C (99°F) in the afternoon. Organizers worry about heat stress if backup power fails."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "S03",
+      "content": "The Community Center basement has had a chemical leak that was just discovered today; the evacuation was for this, and it's only safe for short visits, not day-long events."
+    }
+  ]
+}

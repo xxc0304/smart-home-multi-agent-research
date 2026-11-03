@@ -1,0 +1,23 @@
+{
+  "status": "manual arithmetic illustration of recorded formulas, not a model experiment",
+  "new_api_calls": 0,
+  "automated_test_generation": false,
+  "actual_system_input_intervention": false,
+  "basis": "Question asks average of five individual fiscal-year values; relation inferred from this task interpretation, not official answer",
+  "recorded_formula_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/03-A2.json",
+  "evidence_sha256": "f8dd8cdef3de2e52c289fd32dc2958a3a97b5c5a0c56435617aa399fc270abe9",
+  "transformation": "Increase only FY2019 Total equity by100 in both formulas",
+  "before": {
+    "five_year_mean": "659439.4",
+    "recorded_W3_miscomposition": "690221.04"
+  },
+  "after": {
+    "five_year_mean": "659459.4",
+    "recorded_W3_miscomposition": "690253.04"
+  },
+  "delta": {
+    "required_by_five_year_mean": 20,
+    "recorded_miscomposition": 32
+  },
+  "limit": "Demonstrates a discriminating mathematical relation only. Does not show automatic task parsing, source binding, test construction, model repair or quality gain."
+}

@@ -1,0 +1,37 @@
+{
+  "task_id": "math_train/intermediate_algebra/140",
+  "initial_scores": [
+    0,
+    0,
+    0
+  ],
+  "final_score": 0,
+  "score_detail": {
+    "task_id": "math_train/intermediate_algebra/140",
+    "status": "scored",
+    "score": 0,
+    "attempts": 1,
+    "diagnostic_only": false,
+    "math_verify_version": "0.9.0"
+  },
+  "status": "degraded",
+  "stop_reason": "runtime_error",
+  "review_status": "unreviewed",
+  "normal_calls": 4,
+  "http_attempts": 2,
+  "format_repairs": 1,
+  "audit_record_count": 0,
+  "errors": [
+    {
+      "code": "REFERENCE_ERROR",
+      "detail": "TaskFact F01 quote does not match public task"
+    }
+  ],
+  "stages": [
+    "draft",
+    "draft",
+    "draft"
+  ],
+  "source_hashes_match": true,
+  "scope": "One seen all-initial-fail engineering regression; no new-task effectiveness estimate"
+}

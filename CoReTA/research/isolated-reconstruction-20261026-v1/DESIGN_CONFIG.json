@@ -1,0 +1,246 @@
+{
+  "status": "offline_spec_no_live_runner_or_authorization",
+  "max_proposed_requests": 32,
+  "output_cap_per_request": 1536,
+  "max_total_output_tokens": 49152,
+  "max_input_tokens_per_request": 16384,
+  "max_total_input_tokens": 524288,
+  "retries": 0,
+  "no_auto_expand": true,
+  "repeats_per_historical_case": 1,
+  "native_tasks": 4,
+  "scheduled_historical_cases": 8,
+  "walkthrough_only_cases": 2,
+  "schedule": [
+    {
+      "case_id": "004-age-10",
+      "method": "visible_draft",
+      "stage": "local",
+      "unit": "004-age-10-visible_draft",
+      "depends_on": null
+    },
+    {
+      "case_id": "004-age-10",
+      "method": "visible_draft",
+      "stage": "final",
+      "unit": "004-age-10-visible_draft",
+      "depends_on": "004-age-10-visible_draft-local"
+    },
+    {
+      "case_id": "004-age-10",
+      "method": "isolated_rebuild",
+      "stage": "local",
+      "unit": "004-age-10-isolated_rebuild",
+      "depends_on": null
+    },
+    {
+      "case_id": "004-age-10",
+      "method": "isolated_rebuild",
+      "stage": "final",
+      "unit": "004-age-10-isolated_rebuild",
+      "depends_on": "004-age-10-isolated_rebuild-local"
+    },
+    {
+      "case_id": "004-age-09",
+      "method": "isolated_rebuild",
+      "stage": "local",
+      "unit": "004-age-09-isolated_rebuild",
+      "depends_on": null
+    },
+    {
+      "case_id": "004-age-09",
+      "method": "isolated_rebuild",
+      "stage": "final",
+      "unit": "004-age-09-isolated_rebuild",
+      "depends_on": "004-age-09-isolated_rebuild-local"
+    },
+    {
+      "case_id": "004-age-09",
+      "method": "visible_draft",
+      "stage": "local",
+      "unit": "004-age-09-visible_draft",
+      "depends_on": null
+    },
+    {
+      "case_id": "004-age-09",
+      "method": "visible_draft",
+      "stage": "final",
+      "unit": "004-age-09-visible_draft",
+      "depends_on": "004-age-09-visible_draft-local"
+    },
+    {
+      "case_id": "009-beds-11",
+      "method": "visible_draft",
+      "stage": "local",
+      "unit": "009-beds-11-visible_draft",
+      "depends_on": null
+    },
+    {
+      "case_id": "009-beds-11",
+      "method": "visible_draft",
+      "stage": "final",
+      "unit": "009-beds-11-visible_draft",
+      "depends_on": "009-beds-11-visible_draft-local"
+    },
+    {
+      "case_id": "009-beds-11",
+      "method": "isolated_rebuild",
+      "stage": "local",
+      "unit": "009-beds-11-isolated_rebuild",
+      "depends_on": null
+    },
+    {
+      "case_id": "009-beds-11",
+      "method": "isolated_rebuild",
+      "stage": "final",
+      "unit": "009-beds-11-isolated_rebuild",
+      "depends_on": "009-beds-11-isolated_rebuild-local"
+    },
+    {
+      "case_id": "009-beds-06",
+      "method": "isolated_rebuild",
+      "stage": "local",
+      "unit": "009-beds-06-isolated_rebuild",
+      "depends_on": null
+    },
+    {
+      "case_id": "009-beds-06",
+      "method": "isolated_rebuild",
+      "stage": "final",
+      "unit": "009-beds-06-isolated_rebuild",
+      "depends_on": "009-beds-06-isolated_rebuild-local"
+    },
+    {
+      "case_id": "009-beds-06",
+      "method": "visible_draft",
+      "stage": "local",
+      "unit": "009-beds-06-visible_draft",
+      "depends_on": null
+    },
+    {
+      "case_id": "009-beds-06",
+      "method": "visible_draft",
+      "stage": "final",
+      "unit": "009-beds-06-visible_draft",
+      "depends_on": "009-beds-06-visible_draft-local"
+    },
+    {
+      "case_id": "011-time-18",
+      "method": "visible_draft",
+      "stage": "local",
+      "unit": "011-time-18-visible_draft",
+      "depends_on": null
+    },
+    {
+      "case_id": "011-time-18",
+      "method": "visible_draft",
+      "stage": "final",
+      "unit": "011-time-18-visible_draft",
+      "depends_on": "011-time-18-visible_draft-local"
+    },
+    {
+      "case_id": "011-time-18",
+      "method": "isolated_rebuild",
+      "stage": "local",
+      "unit": "011-time-18-isolated_rebuild",
+      "depends_on": null
+    },
+    {
+      "case_id": "011-time-18",
+      "method": "isolated_rebuild",
+      "stage": "final",
+      "unit": "011-time-18-isolated_rebuild",
+      "depends_on": "011-time-18-isolated_rebuild-local"
+    },
+    {
+      "case_id": "011-time-24",
+      "method": "isolated_rebuild",
+      "stage": "local",
+      "unit": "011-time-24-isolated_rebuild",
+      "depends_on": null
+    },
+    {
+      "case_id": "011-time-24",
+      "method": "isolated_rebuild",
+      "stage": "final",
+      "unit": "011-time-24-isolated_rebuild",
+      "depends_on": "011-time-24-isolated_rebuild-local"
+    },
+    {
+      "case_id": "011-time-24",
+      "method": "visible_draft",
+      "stage": "local",
+      "unit": "011-time-24-visible_draft",
+      "depends_on": null
+    },
+    {
+      "case_id": "011-time-24",
+      "method": "visible_draft",
+      "stage": "final",
+      "unit": "011-time-24-visible_draft",
+      "depends_on": "011-time-24-visible_draft-local"
+    },
+    {
+      "case_id": "023-road-89",
+      "method": "visible_draft",
+      "stage": "local",
+      "unit": "023-road-89-visible_draft",
+      "depends_on": null
+    },
+    {
+      "case_id": "023-road-89",
+      "method": "visible_draft",
+      "stage": "final",
+      "unit": "023-road-89-visible_draft",
+      "depends_on": "023-road-89-visible_draft-local"
+    },
+    {
+      "case_id": "023-road-89",
+      "method": "isolated_rebuild",
+      "stage": "local",
+      "unit": "023-road-89-isolated_rebuild",
+      "depends_on": null
+    },
+    {
+      "case_id": "023-road-89",
+      "method": "isolated_rebuild",
+      "stage": "final",
+      "unit": "023-road-89-isolated_rebuild",
+      "depends_on": "023-road-89-isolated_rebuild-local"
+    },
+    {
+      "case_id": "023-road-95",
+      "method": "isolated_rebuild",
+      "stage": "local",
+      "unit": "023-road-95-isolated_rebuild",
+      "depends_on": null
+    },
+    {
+      "case_id": "023-road-95",
+      "method": "isolated_rebuild",
+      "stage": "final",
+      "unit": "023-road-95-isolated_rebuild",
+      "depends_on": "023-road-95-isolated_rebuild-local"
+    },
+    {
+      "case_id": "023-road-95",
+      "method": "visible_draft",
+      "stage": "local",
+      "unit": "023-road-95-visible_draft",
+      "depends_on": null
+    },
+    {
+      "case_id": "023-road-95",
+      "method": "visible_draft",
+      "stage": "final",
+      "unit": "023-road-95-visible_draft",
+      "depends_on": "023-road-95-visible_draft-local"
+    }
+  ],
+  "failure_policy": {
+    "local_unreadable": "quarantine and block dependent final; other independent units may continue",
+    "two_consecutive_unreadable": "stop",
+    "transport_or_usage_or_budget_error": "stop"
+  },
+  "scope": "analyst-targeted local-component diagnosis, not full architecture or new-instance confirmation"
+}

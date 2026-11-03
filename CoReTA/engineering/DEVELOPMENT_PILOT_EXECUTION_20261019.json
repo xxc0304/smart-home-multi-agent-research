@@ -1,0 +1,43 @@
+{
+  "statuses": {
+    "completed": 59,
+    "degraded": 1
+  },
+  "normal_deployment_calls_including_cached": 400,
+  "format_repairs": 4,
+  "http_attempts": 284,
+  "usage": {
+    "input_tokens": 771385,
+    "output_tokens": 144999,
+    "total_tokens": 916384
+  },
+  "noncompleted_responses": [
+    {
+      "task_id": "gsm8k/train/5134",
+      "system": "coreta",
+      "attempt": 3,
+      "status": "incomplete",
+      "details": {
+        "reason": "max_output_tokens"
+      }
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "system": "coreta",
+      "attempt": 5,
+      "status": "incomplete",
+      "details": {
+        "reason": "max_output_tokens"
+      }
+    }
+  ],
+  "started_at": "2026-10-19T02:30:18.075762+00:00",
+  "last_event_at": "2026-10-19T02:44:50.260349+00:00",
+  "input_estimate_min_margin_observed": 318,
+  "finish_with_open_issues": 8,
+  "bootstrap_review_verdicts": {
+    "supported": 16,
+    "unresolved": 2,
+    "defect": 2
+  }
+}

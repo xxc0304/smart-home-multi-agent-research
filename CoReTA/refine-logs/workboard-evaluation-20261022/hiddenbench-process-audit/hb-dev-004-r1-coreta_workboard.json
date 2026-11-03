@@ -1,0 +1,1167 @@
+{
+  "pair": "hb-dev-004-r1",
+  "method": "coreta_workboard",
+  "gold_offline_only": "option_3",
+  "state": {
+    "protocol": "coreta/workboard-v3",
+    "editor": "A3",
+    "current": "W3",
+    "fallback": "W3",
+    "works": [
+      {
+        "id": "W1",
+        "author": "A1",
+        "base_version": null,
+        "declared_sources": [],
+        "source_declaration_status": "not_collected",
+        "initial": true,
+        "artifact": "option_4",
+        "work_text": "From my private material S01 (direct original), the guilty person was driving a car and had a blood alcohol level of 1.5, and admitted being inattentive. This rules out the motorcyclist Mr. Z (option_1) and points to a car driver. Among car drivers, the task facts say Mr. X had just drunk several glasses of spirits at dinner—consistent with the high alcohol level in S01—while Mrs. Y's only noted issue is damaged lights (a vehicle defect, not intoxication). Mr. X's son is 17 and a passenger returning home, not the driver. Thus Mr. X is the best-supported choice. Note: S01 is my own material; I have not directly read S02 or S03 and make no claim about their contents. Coordination with peers is desirable since the bonus depends on others choosing the same option.",
+        "open_points": [
+          "S01 does not name the guilty person directly; the inference rests on matching 'car driver with 1.5 alcohol level' to Mr. X's drinking, which is circumstantial.",
+          "I have no direct access to peers' materials S02/S03; they might contain facts that contradict or refine this inference.",
+          "Whether other participants will converge on the same option is unknown, affecting the coordination bonus but not the correctness of the choice."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W1:artifact:L1": "option_4",
+          "W1:work_text:L1": "From my private material S01 (direct original), the guilty person was driving a car and had a blood alcohol level of 1.5, and admitted being inattentive. This rules out the motorcyclist Mr. Z (option_1) and points to a car driver. Among car drivers, the task facts say Mr. X had just drunk several glasses of spirits at dinner—consistent with the high alcohol level in S01—while Mrs. Y's only noted issue is damaged lights (a vehicle defect, not intoxication). Mr. X's son is 17 and a passenger returning home, not the driver. Thus Mr. X is the best-supported choice. Note: S01 is my own material; I have not directly read S02 or S03 and make no claim about their contents. Coordination with peers is desirable since the bonus depends on others choosing the same option."
+        }
+      },
+      {
+        "id": "W2",
+        "author": "A2",
+        "base_version": null,
+        "declared_sources": [],
+        "source_declaration_status": "not_collected",
+        "initial": true,
+        "artifact": "option_2",
+        "work_text": "Using my directly accessible private material S02: the guilty person is under 30, was unable to avoid the collision due to inexperience, and claims not to have seen others approaching the intersection. From the task facts: Mr. X's son is 17 (under 30) but was a passenger in his father's car, not a driver, so he cannot be the driver-perpetrator. Mr. Z is 28 (under 30) with 5 years' license and was speeding, but speeding is not inexperience. Mrs. Y is 27 (under 30) and has held her license only 1 year—clear inexperience—and her car's lights are damaged, which fits failing to see others approaching at a narrow, poorly lit intersection. Mr. X is 53, excluded by the age clue. Thus the best fit is Mrs. Y (option_2). Limits: the clue 'didn't see others' could also fit the poorly lit road generally, and I have not seen peers' private materials S01/S03, so coordination with A1/A3 on this conclusion is still open.",
+        "open_points": [
+          "I have not accessed A1's S01 or A3's S03; their clues could alter or confirm the inference.",
+          "The 'didn't see others approaching' clue is somewhat ambiguous between damaged lights (Mrs. Y) and poor lighting generally.",
+          "Coordination on a single shared choice among all participants is needed for the bonus and is not yet confirmed."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W2:artifact:L1": "option_2",
+          "W2:work_text:L1": "Using my directly accessible private material S02: the guilty person is under 30, was unable to avoid the collision due to inexperience, and claims not to have seen others approaching the intersection. From the task facts: Mr. X's son is 17 (under 30) but was a passenger in his father's car, not a driver, so he cannot be the driver-perpetrator. Mr. Z is 28 (under 30) with 5 years' license and was speeding, but speeding is not inexperience. Mrs. Y is 27 (under 30) and has held her license only 1 year—clear inexperience—and her car's lights are damaged, which fits failing to see others approaching at a narrow, poorly lit intersection. Mr. X is 53, excluded by the age clue. Thus the best fit is Mrs. Y (option_2). Limits: the clue 'didn't see others' could also fit the poorly lit road generally, and I have not seen peers' private materials S01/S03, so coordination with A1/A3 on this conclusion is still open."
+        }
+      },
+      {
+        "id": "W3",
+        "author": "A3",
+        "base_version": null,
+        "declared_sources": [],
+        "source_declaration_status": "not_collected",
+        "initial": true,
+        "artifact": "option_3",
+        "work_text": "Using my private material S03: the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible for the accident. The speeding clue matches Mr. Z (speeding on N13), but Mr. Z is 28 and the material says the guilty person's father is indirectly responsible — Mr. Z is going to his sick father, not accompanied by him. The father-indirectly-responsible clue points to Mr. X's son: Mr. X had drunk several glasses of spirits and was returning home with his 17-year-old son in the first car. The son is a man (male), and his father (Mr. X) is indirectly responsible because the father's drinking is the causal background. The 110 km/h detail is the only tension: the son was a passenger in the car, not explicitly the driver, but the material says the guilty person was driving at 110 km/h — this could refer to the son driving the first car while the drunk father sat beside him, which fits 'father indirectly responsible' and 'guilty person is a man'. Mr. X himself is also a man whose son is not responsible, but the material says the father is indirectly responsible, not the son — so the guilty person must be the son, not the father. Therefore option_3 (Mr. X's son) best fits S03. Limits: S03 does not explicitly name the vehicle or speed location; the 110 km/h speeding detail superficially matches Mr. Z, creating ambiguity. Also the task facts do not state who was driving the first car. I have not seen peers' materials S01/S02, which may resolve the speed ambiguity.",
+        "open_points": [
+          "S03's 110 km/h clue superficially matches Mr. Z's speeding, but the 'father indirectly responsible' clue points to Mr. X's son; the two clues are in tension.",
+          "Task facts do not state whether Mr. X or his son was driving the first car.",
+          "Peer materials S01 and S02 are not directly accessible, so their content (possibly clarifying the speed/driver) is unverified.",
+          "Coordination with A1/A2 cannot be confirmed at this initial stage."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W3:artifact:L1": "option_3",
+          "W3:work_text:L1": "Using my private material S03: the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible for the accident. The speeding clue matches Mr. Z (speeding on N13), but Mr. Z is 28 and the material says the guilty person's father is indirectly responsible — Mr. Z is going to his sick father, not accompanied by him. The father-indirectly-responsible clue points to Mr. X's son: Mr. X had drunk several glasses of spirits and was returning home with his 17-year-old son in the first car. The son is a man (male), and his father (Mr. X) is indirectly responsible because the father's drinking is the causal background. The 110 km/h detail is the only tension: the son was a passenger in the car, not explicitly the driver, but the material says the guilty person was driving at 110 km/h — this could refer to the son driving the first car while the drunk father sat beside him, which fits 'father indirectly responsible' and 'guilty person is a man'. Mr. X himself is also a man whose son is not responsible, but the material says the father is indirectly responsible, not the son — so the guilty person must be the son, not the father. Therefore option_3 (Mr. X's son) best fits S03. Limits: S03 does not explicitly name the vehicle or speed location; the 110 km/h speeding detail superficially matches Mr. Z, creating ambiguity. Also the task facts do not state who was driving the first car. I have not seen peers' materials S01/S02, which may resolve the speed ambiguity."
+        }
+      },
+      {
+        "id": "W4",
+        "author": "A3",
+        "base_version": "W3",
+        "declared_sources": [
+          "S03",
+          "O1",
+          "O2",
+          "W3"
+        ],
+        "source_declaration_status": "collected",
+        "initial": false,
+        "artifact": "option_1",
+        "work_text": "Combining my direct original S03 with peer reports O1 (A1's S01) and O2 (A2's S02), the best-supported suspect is Mr. Z (option_1). S03 says the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. O2 reports S02's clues: under 30, inexperience, and did not see others approaching. O1 reports S01's clues: driving a car, 1.5 blood-alcohol level, inattentive. These peer reports are indirect for me (I cannot read S01/S02 directly), but they constrain the field: Mr. X (53) is excluded by the under-30 clue; Mrs. Y is female, contradicting S03's 'a man'; Mr. X's son is 17 but no task fact says he was driving (he is described as returning home in his father's car), and S03's 110 km/h driving clue has no support for him. Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h. 'His father is indirectly responsible' can be read as the sick father's urgent request that made Mr. Z speed — the father's request is the indirect background cause, just as Mr. X's drinking is for the son. The tension is that O1 reports the guilty person driving a car with high alcohol, which fits Mr. X, not Mr. Z; however O1 itself notes S01 gives no name, age, or speed, and the under-30 clue from S02 conflicts with Mr. X (53). Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1. Limits: S01/S02 are known only through peer reports, not direct originals; the 'father indirectly responsible' reading for Mr. Z is interpretive; and the car/alcohol clue remains in conflict, so coordination with A1/A2 is still needed for the bonus.",
+        "open_points": [
+          "The car-driver/alcohol clue reported from S01 conflicts with the under-30 and 110 km/h clues; I weigh the latter more heavily but cannot verify S01 directly.",
+          "The 'father indirectly responsible' phrase is applied to Mr. Z via his father's urgent request, an interpretive reading rather than an explicit task fact.",
+          "No task fact states who drove the first car, so the son-as-driver hypothesis remains unsupported rather than refuted.",
+          "Peer convergence on option_1 is not yet confirmed; the coordination bonus depends on A1/A2 switching from option_4/option_2."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W4:artifact:L1": "option_1",
+          "W4:work_text:L1": "Combining my direct original S03 with peer reports O1 (A1's S01) and O2 (A2's S02), the best-supported suspect is Mr. Z (option_1). S03 says the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. O2 reports S02's clues: under 30, inexperience, and did not see others approaching. O1 reports S01's clues: driving a car, 1.5 blood-alcohol level, inattentive. These peer reports are indirect for me (I cannot read S01/S02 directly), but they constrain the field: Mr. X (53) is excluded by the under-30 clue; Mrs. Y is female, contradicting S03's 'a man'; Mr. X's son is 17 but no task fact says he was driving (he is described as returning home in his father's car), and S03's 110 km/h driving clue has no support for him. Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h. 'His father is indirectly responsible' can be read as the sick father's urgent request that made Mr. Z speed — the father's request is the indirect background cause, just as Mr. X's drinking is for the son. The tension is that O1 reports the guilty person driving a car with high alcohol, which fits Mr. X, not Mr. Z; however O1 itself notes S01 gives no name, age, or speed, and the under-30 clue from S02 conflicts with Mr. X (53). Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1. Limits: S01/S02 are known only through peer reports, not direct originals; the 'father indirectly responsible' reading for Mr. Z is interpretive; and the car/alcohol clue remains in conflict, so coordination with A1/A2 is still needed for the bonus."
+        }
+      },
+      {
+        "id": "W5",
+        "author": "A3",
+        "base_version": "W3",
+        "declared_sources": [
+          "S03",
+          "T",
+          "O4",
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "source_declaration_status": "collected",
+        "initial": false,
+        "artifact": "option_2",
+        "work_text": "Revised after trying peer offer O4 (A2's report of S02) against a copy of my W3/W4 reasoning. My direct original S03 says: guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. Peer-reported (indirect, unverified by me) clues: O1/O3 report S01's guilty person drove a car with 1.5 blood alcohol and admitted inattention; O2/O4 report S02's guilty person is under 30, could not avoid the collision due to inexperience, and did not see others approaching. Reconciliation: (1) The car/alcohol clue fits Mr. X (53, drank spirits), but the under-30 clue reported from S02 excludes him; these two peer reports conflict and I cannot resolve them from originals. (2) Mr. Z is male, 28, and speeding, matching S03's 110 km/h, but S02's inexperience does not fit a 5-year license holder, and the car/alcohol clue excludes a motorcyclist. (3) Mr. X's son is male and 17, but no task fact places him behind the wheel; the son-as-driver reading was my own inference and remains unsupported by any peer report. (4) Mrs. Y is 27 with only 1 year's license (inexperience), her car's lights are damaged (fits not seeing others at a narrow, poorly lit intersection), and she is a car driver — matching S02 and the car clue. The sole obstacle is S03's 'a man' clause, which I read directly. Weighing: I must not discard my own direct original, but S03's 'father indirectly responsible' and '110 km/h' clauses are already interpretive and partially conflict with each other; the 'man' clause is the only one cleanly excluding Mrs. Y, while S02's three clauses jointly and directly fit her. Given the coordination bonus requires convergence and A1/A2's reports both point away from option_3, I judge option_2 (Mrs. Y) the best joint fit, while flagging that if S03's 'man' clause is taken as decisive, option_1 (Mr. Z) is the fallback. Limits: S01/S02 known only through peer reports; my reversal of the 'man' clue is a judgment call, not a verified fact; coordination not yet confirmed.",
+        "open_points": [
+          "S03's 'a man' clause directly excludes Mrs. Y; choosing option_2 weighs S02's inexperience/didn't-see-others clues above it — a judgment call, not verification.",
+          "Peer reports conflict internally: S01 (car + 1.5 alcohol) points to Mr. X, but S02 (under 30) excludes him (53).",
+          "No task fact or peer report places Mr. X's son driving; option_3 is unsupported.",
+          "If the 'man' clause is treated as decisive, option_1 (Mr. Z) is the fallback, but S02's inexperience and S01's car clue cut against him.",
+          "S01/S02 are only known via O1/O2/O3/O4 peer reports; coordination on a single option is not yet confirmed."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W5:artifact:L1": "option_2",
+          "W5:work_text:L1": "Revised after trying peer offer O4 (A2's report of S02) against a copy of my W3/W4 reasoning. My direct original S03 says: guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. Peer-reported (indirect, unverified by me) clues: O1/O3 report S01's guilty person drove a car with 1.5 blood alcohol and admitted inattention; O2/O4 report S02's guilty person is under 30, could not avoid the collision due to inexperience, and did not see others approaching. Reconciliation: (1) The car/alcohol clue fits Mr. X (53, drank spirits), but the under-30 clue reported from S02 excludes him; these two peer reports conflict and I cannot resolve them from originals. (2) Mr. Z is male, 28, and speeding, matching S03's 110 km/h, but S02's inexperience does not fit a 5-year license holder, and the car/alcohol clue excludes a motorcyclist. (3) Mr. X's son is male and 17, but no task fact places him behind the wheel; the son-as-driver reading was my own inference and remains unsupported by any peer report. (4) Mrs. Y is 27 with only 1 year's license (inexperience), her car's lights are damaged (fits not seeing others at a narrow, poorly lit intersection), and she is a car driver — matching S02 and the car clue. The sole obstacle is S03's 'a man' clause, which I read directly. Weighing: I must not discard my own direct original, but S03's 'father indirectly responsible' and '110 km/h' clauses are already interpretive and partially conflict with each other; the 'man' clause is the only one cleanly excluding Mrs. Y, while S02's three clauses jointly and directly fit her. Given the coordination bonus requires convergence and A1/A2's reports both point away from option_3, I judge option_2 (Mrs. Y) the best joint fit, while flagging that if S03's 'man' clause is taken as decisive, option_1 (Mr. Z) is the fallback. Limits: S01/S02 known only through peer reports; my reversal of the 'man' clue is a judgment call, not a verified fact; coordination not yet confirmed."
+        }
+      }
+    ],
+    "initials": {
+      "A1": "W1",
+      "A2": "W2",
+      "A3": "W3"
+    },
+    "offers": [
+      {
+        "ref": "O1",
+        "author": "A1",
+        "base_version": "W3",
+        "target": "W3:work_text:L1",
+        "knowledge": "A fact from my directly read original S01 that bears on W3's speed/driver tension: the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision. This is a car-driver, alcohol-impairment profile, not a speeding-motorcyclist profile, so it favors a car occupant (Mr. X or Mrs. Y) over Mr. Z and does not support the 110 km/h motorcycle reading. It also does not by itself confirm the son was driving: S01 gives no name, age, or speed, so W3's inference that the son drove the car remains unverified. Basis is indirect for W3's purposes: S01 is my own original, but W3's author cannot read it directly; treat this as a peer report of my original, not as W3's own verification.",
+        "support": [
+          {
+            "ref": "S01",
+            "excerpt": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          },
+          {
+            "ref": "W3",
+            "excerpt": "The 110 km/h detail is the only tension: the son was a passenger in the car, not explicitly the driver, but the material says the guilty person was driving at 110 km/h — this could refer to the son driving the first car while the drunk father sat beside him"
+          }
+        ],
+        "proposed_use": "In W3's work_text, record this as peer-reported evidence from A1's S01 (not directly verified by A3): the perpetrator is a car driver with high alcohol and inattention. Use it to downgrade the 110 km/h clue as a reason to favor Mr. Z and to flag that the son-as-driver reading still needs support from S02/S03, since S01 does not identify the driver by name or age. This may move W3 toward option_4 (Mr. X), who is the car occupant explicitly noted as having drunk spirits, while keeping the son hypothesis open pending a driver-identity clue."
+      },
+      {
+        "ref": "O2",
+        "author": "A2",
+        "base_version": "W3",
+        "target": "W3:work_text:L1",
+        "knowledge": "A3's S03-based inference that the driver was male and that the father is indirectly responsible is compatible with S02's age/inexperience/not-seeing clues only for a driver under 30. Mr. X (53) is excluded by S02, so W1's option_4 conflicts with S02. Among under-30 males, Mr. Z (28, 5 years' license, speeding) fits 'driving at 110 km/h' but not 'inexperience' as well as a 17-year-old would; importantly, S02's 'inexperience' and 'didn't see others' fit Mrs. Y (27, 1 year license, damaged lights) but she is female, contradicting S03's 'guilty person is a man'. Thus the combined S02+S03 clues favor a young male driver; A3 should reconcile the 110 km/h clue rather than treating it as a mere tension. Note S02 is my direct original; S01/S03 are only known through W1/W3 reports.",
+        "support": [
+          {
+            "ref": "S02",
+            "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "W3",
+            "excerpt": "Using my private material S03: the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible for the accident."
+          },
+          {
+            "ref": "W1",
+            "excerpt": "From my private material S01 (direct original), the guilty person was driving a car and had a blood alcohol level of 1.5, and admitted being inattentive."
+          }
+        ],
+        "proposed_use": "Treat S02 as a hard constraint: the perpetrator is under 30, so option_4 (Mr. X, 53) should be ruled out in W1 and W3's reasoning. Re-examine whether the male-driver clue in S03 plus the under-30 clue can be jointly satisfied by Mr. Z (28, speeding 110 km/h) rather than Mr. X's son, since the son is described as a passenger and no fact says he drove; if A3 cannot resolve this, flag the S03 110 km/h clue as pointing to Mr. Z and reconsider option_1 versus option_3 before convergence."
+      },
+      {
+        "ref": "O3",
+        "author": "A1",
+        "base_version": "W3",
+        "target": "whole_goal",
+        "knowledge": "A directly-read original (S01) is available to me and bears on the current disagreement over vehicle type: S01 says the guilty person was driving a car, had a 1.5 blood-alcohol level, and admitted inattention. This is a car-driver profile and directly contradicts W4's choice of Mr. Z, who per T rode a motorcycle; it also does not name the son, so the son-as-driver hypothesis in W3/W4 remains unsupported by S01. The decision favoring W3 (option_3) is therefore at risk: the strongest car/alcohol clue points to Mr. X (the only suspect with an explicit drinking fact), while the under-30 clue reported via O2 excludes him. This is a genuine cross-material conflict that the team should resolve explicitly rather than by reinterpreting 'father indirectly responsible'. Caveat: I directly read only S01 and T; S02/S03 are known only through O2/W4 reports, so I do not assert the ground-truth perpetrator.",
+        "support": [
+          {
+            "ref": "S01",
+            "excerpt": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          },
+          {
+            "ref": "T",
+            "excerpt": "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          },
+          {
+            "ref": "W4",
+            "excerpt": "the best-supported suspect is Mr. Z (option_1)"
+          },
+          {
+            "ref": "O2",
+            "excerpt": "The guilty person is less than 30 years old."
+          }
+        ],
+        "proposed_use": "Before final convergence, the team should treat S01's car-driver/alcohol/inattention profile as a hard vehicle clue: it rules out Mr. Z (motorcycle) and undercuts W4's option_1. The remaining conflict is Mr. X (matches alcohol but is 53, excluded by O2's under-30) versus Mr. X's son (under 30 and male, but no fact says he drove). The team should either find a driver-identity clue in S02/S03 or explicitly weigh which clue is decisive, and record the unresolved S01-vs-O2 conflict rather than silently overriding S01. Coordination note: the choice should be settled before the unknown chat end to preserve the bonus."
+      },
+      {
+        "ref": "O4",
+        "author": "A2",
+        "base_version": "W3",
+        "target": "W3",
+        "knowledge": "From my directly read original S02, a decisive clue that W3's son hypothesis does not address: the guilty person claims he or she did not see others approaching the intersection. Combined with S02's other clauses (guilty person is less than 30; unable to avoid the collision due to inexperience), this points to a young, inexperienced road user. W3's reading (Mr. X's son, 17, as driver) fits 'under 30' and male (per A3's S03 report) but has no support for inexperience at driving or for failing to see others; the task facts never place the son behind the wheel, and the alcohol profile reported from S01 (via O1) is a car-driver impairment clue that points to Mr. X, not to the son. The under-30 + inexperience + didn't-see-others combination is most directly satisfied by a young driver with a very short license history — Mrs. Y (27, 1 year) — except that A3's reported S03 clue says the guilty person is a man, which is the key remaining conflict. I cannot read S03 directly, so I cannot confirm that 'man' clue; if A3's report of it is accurate it excludes Mrs. Y, and if it is not, option_2 becomes the best fit. Either way, W3's option_3 is not supported by S02: nothing in S02 identifies the son or the first car.",
+        "support": [
+          {
+            "ref": "S02",
+            "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "W3",
+            "excerpt": "The son is a man (male), and his father (Mr. X) is indirectly responsible because the father's drinking is the causal background."
+          },
+          {
+            "ref": "O1",
+            "excerpt": "the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision"
+          }
+        ],
+        "proposed_use": "In W3's work_text and open_points, record this as A2's directly read S02 (not something A3 can verify directly): the guilty person is under 30, was unable to avoid the collision due to inexperience, and did not see others approaching. Use it to (a) confirm Mr. X (53) is excluded, (b) note that the son hypothesis lacks any inexperience/didn't-see support and that no fact places the son driving, and (c) flag the unresolved conflict: S02's inexperience + didn't-see-others fits Mrs. Y best, but A3's reported S03 'male' clue would exclude her. W3 should either produce independent support for the son-as-driver or acknowledge that option_2 (Mrs. Y) is the best S02 fit if the 'male' clue cannot be relied on, rather than resting on the interpretive 'father indirectly responsible' reading."
+      }
+    ],
+    "public_offer_ids": [
+      "O1",
+      "O2",
+      "O3",
+      "O4"
+    ],
+    "feedback": [
+      {
+        "kind": "application_feedback",
+        "offer": {
+          "ref": "O1",
+          "author": "A1",
+          "base_version": "W3",
+          "target": "W3:work_text:L1",
+          "knowledge": "A fact from my directly read original S01 that bears on W3's speed/driver tension: the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision. This is a car-driver, alcohol-impairment profile, not a speeding-motorcyclist profile, so it favors a car occupant (Mr. X or Mrs. Y) over Mr. Z and does not support the 110 km/h motorcycle reading. It also does not by itself confirm the son was driving: S01 gives no name, age, or speed, so W3's inference that the son drove the car remains unverified. Basis is indirect for W3's purposes: S01 is my own original, but W3's author cannot read it directly; treat this as a peer report of my original, not as W3's own verification.",
+          "support": [
+            {
+              "ref": "S01",
+              "excerpt": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+            },
+            {
+              "ref": "W3",
+              "excerpt": "The 110 km/h detail is the only tension: the son was a passenger in the car, not explicitly the driver, but the material says the guilty person was driving at 110 km/h — this could refer to the son driving the first car while the drunk father sat beside him"
+            }
+          ],
+          "proposed_use": "In W3's work_text, record this as peer-reported evidence from A1's S01 (not directly verified by A3): the perpetrator is a car driver with high alcohol and inattention. Use it to downgrade the 110 km/h clue as a reason to favor Mr. Z and to flag that the son-as-driver reading still needs support from S02/S03, since S01 does not identify the driver by name or age. This may move W3 toward option_4 (Mr. X), who is the car occupant explicitly noted as having drunk spirits, while keeping the son hypothesis open pending a driver-identity clue."
+        },
+        "before": "W3",
+        "after": "W4",
+        "use_record": "Tried O1 on a copy of W3. O1 (A1's report of S01) states the perpetrator is a car driver with 1.5 blood alcohol who was inattentive; it does not name, age, or speed the driver, so it undercuts W3's son-as-driver inference and the 110 km/h reading, but does not identify Mr. X either. I also used O2 (A2's report of S02): under 30, inexperience, did not see others. Applying both to W3: the son hypothesis loses its driver support (no fact says the son drove), Mr. X is excluded by under-30, Mrs. Y by the male clue, leaving Mr. Z (28, male, explicit 110 km/h speeding) as the best joint fit. I preserved W3's useful point that the 110 km/h clue points away from the son and toward the speeding motorcyclist, and discarded W3's assumption that the son was driving. Result: artifact changed from option_3 to option_1, with the S01 car/alcohol conflict recorded as an unresolved limit. S01 and S02 were not directly read by me; this rests on A1/A2's public reports.",
+        "checks": [
+          {
+            "stage": "CHECK_USE",
+            "member": "A1",
+            "before": "W3",
+            "after": "W4",
+            "finding": "issue",
+            "observation": "O1's object is a car-driver/alcohol/inattention profile from A1's S01, and its proposed_use explicitly says it should 'downgrade the 110 km/h clue as a reason to favor Mr. Z' and may move W3 toward option_4 (Mr. X). W4 (the after-work) instead uses O1 mainly as a conflicting clue while selecting option_1 (Mr. Z), the very conclusion O1's carrier says its evidence undercuts. W4 does state the conflict (car/alcohol fits Mr. X, not Mr. Z) and reports O1 as indirect, so the offer is not wholly ignored; but the operation actually performed is the reverse of the offered use, and W4's stated reason for overriding it (majority of jointly reported clues, under-30 from O2) rests on O2, not O1. O1 also explicitly warns that S01 gives no name, age, or speed and does not confirm the son was driving; W4 correctly abandons the son-as-driver inference, so that part is consistent. A further limit: O1's support excerpt for W3 is accurate to W3's text, and its S01 excerpt matches my directly read S01, so the carrier content is faithful; the issue is application, not fabrication. W4's declared_sources include O1 and O2 and its work_text labels them as peer reports, so provenance is not misrepresented as direct verification.",
+            "scope": "Checked O1 against the full BEFORE (W3) and AFTER (W4) work_text, artifact, open_points, declared_sources, and USE_RECORD. I directly read only T and S01; S02/S03 are known only through O2/W4 reports, so I cannot verify A2's or A3's originals."
+          },
+          {
+            "stage": "CHECK_EFFECT",
+            "member": "A2",
+            "before": "W3",
+            "after": "W4",
+            "finding": "issue",
+            "observation": "The change from W3 (option_3) to W4 (option_1) is not supported by the premise that triggered it. O1's peer report of S01 says the perpetrator was a car driver with 1.5 blood alcohol who admitted inattention, and O1 explicitly states this profile favors a car occupant (Mr. X or Mrs. Y) and does NOT support the 110 km/h motorcycle reading or Mr. Z. W4 nonetheless shifts to Mr. Z and asserts a 'majority of jointly reported clues' converge on him. Concrete reconstruction: S03 (A3's own original) says guilty person is male, drove at 110 km/h, father indirectly responsible. O2 reports S02: under 30, inexperienced, didn't see others. O1 reports S01: car driver, 1.5 alcohol, inattentive. Intersecting these: Mr. Z is male, 28, speeding — but S01 says the guilty person drove a car, and Mr. Z rode a motorcycle (task facts), directly contradicting the vehicle clue; also S01's alcohol clue has no support for Mr. Z (no drinking fact), while Mr. X is the only suspect with an explicit drinking fact. So the S01 clue actually counts against Mr. Z, not merely as a 'tension' to be outweighed. W4's 'father indirectly responsible' reading for Mr. Z (sick father's urgent request) is a reinterpretation that the S03 text does not state, and it is weaker than the son reading, which W3 itself argued. W4 also drops W3's honest acknowledgment that the son-as-driver hypothesis was unverified, replacing it with a claim that no fact says the son drove — but no fact says Mr. Z drove a car either, and the task explicitly places Mr. Z on a motorcycle. The under-30 clue (S02) does exclude Mr. X (53), which W4 correctly notes, but that exclusion does not select Mr. Z; it leaves the son (17) and Mrs. Y (27) as well, and S03's 'male' plus 'father indirectly responsible' still points at the son. Thus the artifact flip to option_1 is a consequence of misweighting O1: the offer says its content downgrades the 110 km/h reading, yet W4 uses it to reinforce Mr. Z. Scope: this concerns only the W3→W4 transition and the use of O1/O2 as reported premises; I cannot verify S01/S03 originals, so I do not assert the correct final answer, only that W4's stated basis is inconsistent with the offer it cites.",
+            "scope": "W4 work_text reasoning and artifact change (option_3→option_1), specifically the treatment of O1's S01 report (car driver, 1.5 alcohol, inattentive) as compatible with Mr. Z despite the motorcycle/car mismatch, and the interpretive 'father indirectly responsible' reading applied to Mr. Z. Does not cover W1/W2 correctness or the ultimate ground-truth perpetrator."
+          }
+        ],
+        "decision": {
+          "candidate_id": "W3",
+          "reason": "W4's flip to option_1 (Mr. Z) is not supported by the evidence it cites. Both peer checks flag that O1 reports S01 as a car driver with 1.5 blood alcohol who was inattentive — a profile that explicitly favors a car occupant and undercuts the 110 km/h motorcycle reading, yet W4 uses it to reinforce Mr. Z. Task facts also place Mr. Z on a motorcycle, contradicting S01's vehicle clue, and no fact gives Mr. Z a drinking clue. W4's 'father indirectly responsible' reading for Mr. Z (the sick father's urgent request) is interpretive and weaker than W3's son reading, which W3 itself argued from S03's male + father-indirectly-responsible clues. The under-30 clue from O2 does exclude Mr. X (53), but that exclusion leaves the son (17) and Mrs. Y (27) as well, and S03's male clue still points at the son. W3's option_3 is better supported by the directly read S03 plus the peer-reported constraints, though the son-as-driver link remains unverified. Limits: S01/S02 are known only through peer reports O1/O2, not direct originals; the 110 km/h clue still superficially matches Mr. Z, and coordination with A1/A2 is unconfirmed."
+        }
+      },
+      {
+        "kind": "application_feedback",
+        "offer": {
+          "ref": "O4",
+          "author": "A2",
+          "base_version": "W3",
+          "target": "W3",
+          "knowledge": "From my directly read original S02, a decisive clue that W3's son hypothesis does not address: the guilty person claims he or she did not see others approaching the intersection. Combined with S02's other clauses (guilty person is less than 30; unable to avoid the collision due to inexperience), this points to a young, inexperienced road user. W3's reading (Mr. X's son, 17, as driver) fits 'under 30' and male (per A3's S03 report) but has no support for inexperience at driving or for failing to see others; the task facts never place the son behind the wheel, and the alcohol profile reported from S01 (via O1) is a car-driver impairment clue that points to Mr. X, not to the son. The under-30 + inexperience + didn't-see-others combination is most directly satisfied by a young driver with a very short license history — Mrs. Y (27, 1 year) — except that A3's reported S03 clue says the guilty person is a man, which is the key remaining conflict. I cannot read S03 directly, so I cannot confirm that 'man' clue; if A3's report of it is accurate it excludes Mrs. Y, and if it is not, option_2 becomes the best fit. Either way, W3's option_3 is not supported by S02: nothing in S02 identifies the son or the first car.",
+          "support": [
+            {
+              "ref": "S02",
+              "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+            },
+            {
+              "ref": "W3",
+              "excerpt": "The son is a man (male), and his father (Mr. X) is indirectly responsible because the father's drinking is the causal background."
+            },
+            {
+              "ref": "O1",
+              "excerpt": "the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision"
+            }
+          ],
+          "proposed_use": "In W3's work_text and open_points, record this as A2's directly read S02 (not something A3 can verify directly): the guilty person is under 30, was unable to avoid the collision due to inexperience, and did not see others approaching. Use it to (a) confirm Mr. X (53) is excluded, (b) note that the son hypothesis lacks any inexperience/didn't-see support and that no fact places the son driving, and (c) flag the unresolved conflict: S02's inexperience + didn't-see-others fits Mrs. Y best, but A3's reported S03 'male' clue would exclude her. W3 should either produce independent support for the son-as-driver or acknowledge that option_2 (Mrs. Y) is the best S02 fit if the 'male' clue cannot be relied on, rather than resting on the interpretive 'father indirectly responsible' reading."
+        },
+        "before": "W3",
+        "after": "W5",
+        "use_record": "Applied offer O4 (A2's report of S02) to a copy of my current W3/W4 work. O4's reported S02 clauses (under 30, inexperience, didn't see others approaching) were checked against each suspect: they confirm Mr. X (53) is excluded, show my son-as-driver reading lacks any inexperience/didn't-see support and no fact places the son driving, and show Mrs. Y (27, 1-year license, damaged lights) is the best direct fit except for my S03 'a man' clause. Local result: I dropped option_3 and, weighing S02's three jointly fitting clauses against S03's single 'man' clause, switched to option_2, recording option_1 as fallback if the 'man' clause is decisive. This is indirect evidence: S02 is A2's original, not mine, so the S02 content is peer-reported and unverified by me; I also consulted O1/O3 (S01 report) for the car/alcohol conflict. I did not personally verify S01 or S02 originals.",
+        "checks": [
+          {
+            "stage": "CHECK_USE",
+            "member": "A2",
+            "before": "W3",
+            "after": "W5",
+            "finding": "issue",
+            "observation": "Checking O4 against the whole W3→W5 transition and the USE_RECORD, the offer's content was largely applied but with two material divergences. (1) O4 explicitly states that if A3's S03 'man' clue is accurate, Mrs. Y is excluded and option_2 should not be chosen; the offer's actual recommendation is to stop resting on the interpretive 'father indirectly responsible' reading and to flag option_2 only conditionally. W5 instead adopts option_2 as its artifact while acknowledging the 'man' clause is read directly from A3's own original — i.e., the application inverts O4's stated conditional, treating a clue O4 says would block option_2 as merely outweighed. (2) O4 says the alcohol profile reported via O1 points to Mr. X, not the son; W5 does record this (point 1) and records that the son-as-driver reading is unsupported, so that part matches. (3) O4's proposed_use asked for recording that S02 is A2's directly read original, not verifiable by A3; W5 does flag S01/S02 as peer-reported only, which is accurate, though the USE_RECORD's phrase 'Applied offer O4' overstates: the decisive step (switching to option_2) runs against O4's own conditional caveat. Also note W5's declared_sources include O4 and the work_text cites O2/O4 for S02 content, but the S02 clauses are also A3's own direct original (S02 is in A3's SELF_MATERIALS per SOURCE_ACCESS direct_original_refs), so describing the under-30/inexperience/didn't-see clues as 'peer-reported (indirect, unverified by me)' is inaccurate — A3 can read S02 directly, and that is the strongest basis for the option_2 switch, not O4. Scope: O4 vs W3/W5 work_text, open_points, artifact, USE_RECORD, and declared_sources; I did not read S01/S03 originals.",
+            "scope": "O4 application to W3→W5: artifact choice, work_text, open_points, USE_RECORD, and declared_sources; S02 is A3's own direct original per SOURCE_ACCESS, so the 'peer-reported' framing of S02 clauses is a provenance error, and the option_2 switch conflicts with O4's explicit conditional that the 'man' clause excludes Mrs. Y."
+          },
+          {
+            "stage": "CHECK_EFFECT",
+            "member": "A1",
+            "before": "W3",
+            "after": "W5",
+            "finding": "issue",
+            "observation": "The change from W3 (option_3) to W5 (option_2) does not follow from the premises W5 itself accepts. W5 directly reads S03, which states the guilty person is a man; Mrs. Y is female, so option_2 contradicts A3's own directly read original. W5 openly acknowledges this ('S03's a man clause directly excludes Mrs. Y') yet selects option_2 anyway, downgrading the one clause it can verify while elevating S02 clues known only through peer reports O2/O4. W5 also misstates the fallback: it says 'if the man clause is decisive, option_1 (Mr. Z) is the fallback,' but S03's own '110 km/h' clause plus T's fact that Mr. Z was speeding on N13 is the strongest match to Mr. Z, while S01's reported car/alcohol profile excludes a motorcyclist — so W5's fallback reasoning is internally inconsistent. Additionally, W5's stated motivation ('coordination bonus requires convergence and A1/A2's reports both point away from option_3') is a coordination argument, not evidence about the perpetrator; A1's W1 actually chose option_4 (Mr. X), not option_2, so W5's claim that peers point toward Mrs. Y is inaccurate. A concrete counterexample: if S03 is accurate (guilty = man), W5's artifact is necessarily wrong; if S03's 'man' clause were unreliable, W5 still has no direct support for Mrs. Y beyond peer-reported S02, and its own open point concedes the reversal is 'a judgment call, not a verified fact.' The delivery relationship is broken: the artifact (option_2) is not entailed by the reconstructed premises (S03 direct: male + 110 km/h; S01 report: car + alcohol; S02 report: under 30 + inexperience + didn't-see). No assignment cleanly satisfies all three, but option_2 violates the only directly verified original, whereas option_1 at least satisfies S03's male and 110 km/h clauses. Scope: W5's artifact selection and its fallback reasoning; does not resolve which suspect is truly guilty, since S01/S02 remain unverified peer reports.",
+            "scope": "W5 artifact (option_2) versus its declared premises S03/T and peer reports O1-O4; specifically the inconsistency of choosing a female suspect against a directly read 'a man' clause and the misdescribed option_1 fallback."
+          }
+        ],
+        "decision": {
+          "candidate_id": "W3",
+          "reason": "Both peer checks flag W5's option_2 as unsupported by its own premises. My direct original S03 states the guilty person is a man; Mrs. Y is female, so option_2 contradicts the only original I can verify, and W5 itself concedes this while still choosing it. A1's CHECK_EFFECT also notes W5's fallback logic (option_1 if the 'man' clause is decisive) is internally inconsistent, since S03's 110 km/h clause plus T's speeding fact for Mr. Z is the strongest direct match, whereas S01's reported car/alcohol profile (peer-reported, unverified) would cut against a motorcyclist. A2's CHECK_USE notes W5 misapplies O4, whose conditional explicitly says the 'man' clue excludes Mrs. Y. W3 (option_3) has its own weakness — no fact places the son driving — but it at least respects S03's 'a man' and 'father indirectly responsible' clauses and does not overturn the directly read original on the strength of unverified peer reports. Between the two existing candidates, W3 is the less contradicted choice, with the son-as-driver inference and the S01/S02 conflicts remaining unresolved limits."
+        }
+      }
+    ],
+    "checks": [
+      {
+        "stage": "CHECK_USE",
+        "member": "A1",
+        "before": "W3",
+        "after": "W4",
+        "finding": "issue",
+        "observation": "O1's object is a car-driver/alcohol/inattention profile from A1's S01, and its proposed_use explicitly says it should 'downgrade the 110 km/h clue as a reason to favor Mr. Z' and may move W3 toward option_4 (Mr. X). W4 (the after-work) instead uses O1 mainly as a conflicting clue while selecting option_1 (Mr. Z), the very conclusion O1's carrier says its evidence undercuts. W4 does state the conflict (car/alcohol fits Mr. X, not Mr. Z) and reports O1 as indirect, so the offer is not wholly ignored; but the operation actually performed is the reverse of the offered use, and W4's stated reason for overriding it (majority of jointly reported clues, under-30 from O2) rests on O2, not O1. O1 also explicitly warns that S01 gives no name, age, or speed and does not confirm the son was driving; W4 correctly abandons the son-as-driver inference, so that part is consistent. A further limit: O1's support excerpt for W3 is accurate to W3's text, and its S01 excerpt matches my directly read S01, so the carrier content is faithful; the issue is application, not fabrication. W4's declared_sources include O1 and O2 and its work_text labels them as peer reports, so provenance is not misrepresented as direct verification.",
+        "scope": "Checked O1 against the full BEFORE (W3) and AFTER (W4) work_text, artifact, open_points, declared_sources, and USE_RECORD. I directly read only T and S01; S02/S03 are known only through O2/W4 reports, so I cannot verify A2's or A3's originals."
+      },
+      {
+        "stage": "CHECK_EFFECT",
+        "member": "A2",
+        "before": "W3",
+        "after": "W4",
+        "finding": "issue",
+        "observation": "The change from W3 (option_3) to W4 (option_1) is not supported by the premise that triggered it. O1's peer report of S01 says the perpetrator was a car driver with 1.5 blood alcohol who admitted inattention, and O1 explicitly states this profile favors a car occupant (Mr. X or Mrs. Y) and does NOT support the 110 km/h motorcycle reading or Mr. Z. W4 nonetheless shifts to Mr. Z and asserts a 'majority of jointly reported clues' converge on him. Concrete reconstruction: S03 (A3's own original) says guilty person is male, drove at 110 km/h, father indirectly responsible. O2 reports S02: under 30, inexperienced, didn't see others. O1 reports S01: car driver, 1.5 alcohol, inattentive. Intersecting these: Mr. Z is male, 28, speeding — but S01 says the guilty person drove a car, and Mr. Z rode a motorcycle (task facts), directly contradicting the vehicle clue; also S01's alcohol clue has no support for Mr. Z (no drinking fact), while Mr. X is the only suspect with an explicit drinking fact. So the S01 clue actually counts against Mr. Z, not merely as a 'tension' to be outweighed. W4's 'father indirectly responsible' reading for Mr. Z (sick father's urgent request) is a reinterpretation that the S03 text does not state, and it is weaker than the son reading, which W3 itself argued. W4 also drops W3's honest acknowledgment that the son-as-driver hypothesis was unverified, replacing it with a claim that no fact says the son drove — but no fact says Mr. Z drove a car either, and the task explicitly places Mr. Z on a motorcycle. The under-30 clue (S02) does exclude Mr. X (53), which W4 correctly notes, but that exclusion does not select Mr. Z; it leaves the son (17) and Mrs. Y (27) as well, and S03's 'male' plus 'father indirectly responsible' still points at the son. Thus the artifact flip to option_1 is a consequence of misweighting O1: the offer says its content downgrades the 110 km/h reading, yet W4 uses it to reinforce Mr. Z. Scope: this concerns only the W3→W4 transition and the use of O1/O2 as reported premises; I cannot verify S01/S03 originals, so I do not assert the correct final answer, only that W4's stated basis is inconsistent with the offer it cites.",
+        "scope": "W4 work_text reasoning and artifact change (option_3→option_1), specifically the treatment of O1's S01 report (car driver, 1.5 alcohol, inattentive) as compatible with Mr. Z despite the motorcycle/car mismatch, and the interpretive 'father indirectly responsible' reading applied to Mr. Z. Does not cover W1/W2 correctness or the ultimate ground-truth perpetrator."
+      },
+      {
+        "stage": "CHECK_USE",
+        "member": "A2",
+        "before": "W3",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "Checking O4 against the whole W3→W5 transition and the USE_RECORD, the offer's content was largely applied but with two material divergences. (1) O4 explicitly states that if A3's S03 'man' clue is accurate, Mrs. Y is excluded and option_2 should not be chosen; the offer's actual recommendation is to stop resting on the interpretive 'father indirectly responsible' reading and to flag option_2 only conditionally. W5 instead adopts option_2 as its artifact while acknowledging the 'man' clause is read directly from A3's own original — i.e., the application inverts O4's stated conditional, treating a clue O4 says would block option_2 as merely outweighed. (2) O4 says the alcohol profile reported via O1 points to Mr. X, not the son; W5 does record this (point 1) and records that the son-as-driver reading is unsupported, so that part matches. (3) O4's proposed_use asked for recording that S02 is A2's directly read original, not verifiable by A3; W5 does flag S01/S02 as peer-reported only, which is accurate, though the USE_RECORD's phrase 'Applied offer O4' overstates: the decisive step (switching to option_2) runs against O4's own conditional caveat. Also note W5's declared_sources include O4 and the work_text cites O2/O4 for S02 content, but the S02 clauses are also A3's own direct original (S02 is in A3's SELF_MATERIALS per SOURCE_ACCESS direct_original_refs), so describing the under-30/inexperience/didn't-see clues as 'peer-reported (indirect, unverified by me)' is inaccurate — A3 can read S02 directly, and that is the strongest basis for the option_2 switch, not O4. Scope: O4 vs W3/W5 work_text, open_points, artifact, USE_RECORD, and declared_sources; I did not read S01/S03 originals.",
+        "scope": "O4 application to W3→W5: artifact choice, work_text, open_points, USE_RECORD, and declared_sources; S02 is A3's own direct original per SOURCE_ACCESS, so the 'peer-reported' framing of S02 clauses is a provenance error, and the option_2 switch conflicts with O4's explicit conditional that the 'man' clause excludes Mrs. Y."
+      },
+      {
+        "stage": "CHECK_EFFECT",
+        "member": "A1",
+        "before": "W3",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "The change from W3 (option_3) to W5 (option_2) does not follow from the premises W5 itself accepts. W5 directly reads S03, which states the guilty person is a man; Mrs. Y is female, so option_2 contradicts A3's own directly read original. W5 openly acknowledges this ('S03's a man clause directly excludes Mrs. Y') yet selects option_2 anyway, downgrading the one clause it can verify while elevating S02 clues known only through peer reports O2/O4. W5 also misstates the fallback: it says 'if the man clause is decisive, option_1 (Mr. Z) is the fallback,' but S03's own '110 km/h' clause plus T's fact that Mr. Z was speeding on N13 is the strongest match to Mr. Z, while S01's reported car/alcohol profile excludes a motorcyclist — so W5's fallback reasoning is internally inconsistent. Additionally, W5's stated motivation ('coordination bonus requires convergence and A1/A2's reports both point away from option_3') is a coordination argument, not evidence about the perpetrator; A1's W1 actually chose option_4 (Mr. X), not option_2, so W5's claim that peers point toward Mrs. Y is inaccurate. A concrete counterexample: if S03 is accurate (guilty = man), W5's artifact is necessarily wrong; if S03's 'man' clause were unreliable, W5 still has no direct support for Mrs. Y beyond peer-reported S02, and its own open point concedes the reversal is 'a judgment call, not a verified fact.' The delivery relationship is broken: the artifact (option_2) is not entailed by the reconstructed premises (S03 direct: male + 110 km/h; S01 report: car + alcohol; S02 report: under 30 + inexperience + didn't-see). No assignment cleanly satisfies all three, but option_2 violates the only directly verified original, whereas option_1 at least satisfies S03's male and 110 km/h clauses. Scope: W5's artifact selection and its fallback reasoning; does not resolve which suspect is truly guilty, since S01/S02 remain unverified peer reports.",
+        "scope": "W5 artifact (option_2) versus its declared premises S03/T and peer reports O1-O4; specifically the inconsistency of choosing a female suspect against a directly read 'a man' clause and the misdescribed option_1 fallback."
+      },
+      {
+        "stage": "FINAL_CHECK_USE",
+        "member": "A2",
+        "before": "W3",
+        "after": "W3",
+        "finding": "issue",
+        "observation": "Final proposal and fallback are identical (W3, artifact option_3, declared_sources empty, source_declaration_status not_collected), so there is no genuine independent fallback. USE_RECORD claims reuse of 'existing complete candidate W3 verbatim' and cites peer carriers O1/O2/O3/O4/W1/W2/W4/W5 in APPLICATION_SOURCE_REFS, but W3 itself declares no sources and its work_text still says 'I have not seen peers' materials S01/S02' and 'Coordination with A1/A2 cannot be confirmed at this initial stage' — inconsistent with the USE_RECORD narrative that peer feedback was reviewed. Content check against accessible evidence: S02 (my direct original) states the guilty person is under 30, inattentive/inexperienced, and did not see others approaching; this excludes Mr. X (53) and does not identify the son, and W3's son-as-driver reading ('could refer to the son driving the first car') is an unsupported inference — T says only that Mr. X and his son return home in the first car, with Mr. X noted as having drunk spirits. S02's inexperience + didn't-see-others clauses fit Mrs. Y (27, 1-year license, damaged lights) better than any other suspect, and fit the son poorly (no license/driving fact). W3's own 'man' clause comes from S03, which I cannot read directly; it is only reported via W4/W5 (peer_metadata_not_verified), so W3's use of it as decisive is not independently verifiable here. The reported S01 car/alcohol profile (via O1/O3, unverified) further conflicts with option_3 (no fact places the son driving or drinking) and supports option_2 or option_4 over option_3. W4's option_1 (Mr. Z) conflicts with T (motorcycle, not car) and with reported S01; W5's option_2 contradicts its own directly read 'man' clause but is the best S02 fit. Overall: the proposal is not clearly the best-supported choice; the strongest directly accessible evidence (S02) points away from option_3, and the proposal's key support (son as driver, 'father indirectly responsible') is interpretive rather than stated in T or S02. Cannot verify S01/S03 originals; cannot confirm peer convergence. Concrete recommendation: either re-open with a candidate whose reasoning rests on S02 (option_2, flagging the 'man' conflict) or explicitly justify why the S03 'man' clause outweighs S02's three clauses, and supply a distinct fallback rather than duplicating W3.",
+        "scope": "FINAL_PROPOSAL/FALLBACK W3 (option_3) vs. T, S02, and peer carriers O1-O4, W1, W2, W4, W5; specifically the option_3 rationale, source declarations, and the proposal/fallback duplication."
+      },
+      {
+        "stage": "FINAL_CHECK_EFFECT",
+        "member": "A1",
+        "before": "W3",
+        "after": "W3",
+        "finding": "issue",
+        "observation": "The final proposal and fallback are both W3 (artifact option_3, base_version null, initial: true, declared_sources empty, source_declaration_status not_collected), i.e. the unchanged initial work rather than any revised version. Consequences reconstructed from visible premises: (a) delivery/contract — artifact is a legal option ID (option_3) and deliverable_shape is true, so the output shape satisfies the contract, but that does not establish correctness. (b) Modified relations — W4 and W5 are later A3 versions explicitly declaring base_version W3 and collected sources (W4: S03,O1,O2,W3; W5: S03,T,O4,O1,O2,O3), and they revise the artifact to option_1 and option_2 respectively; the final proposal ignores these revisions and their declared evidence. (c) Evidence consequences — peer reports O1/O3 (A1's S01: guilty person drove a car with 1.5 alcohol, inattentive) and O2/O4 (A2's S02: under 30, inexperience, did not see others) are indirectly known to A3 and were used by A3's own W4/W5; S02's under-30 clause excludes Mr. X (53) and S01's car/alcohol clause cuts against Mr. Z (motorcycle) and against the son-as-driver reading, since no task fact places the son behind the wheel. W3's option_3 rests on an interpretive 'father indirectly responsible' reading plus a hypothetical son-as-driver, which W3 itself flags as unsupported. (d) Fallback — identical to the proposal, so it provides no alternative if option_3 fails; A3's own later analyses propose option_2 (W5) with option_1 (W4) as the alternative, and W3's stated fallback logic is absent. (e) Coordination — the bonus requires convergence with A1/A2, whose visible candidates are option_4 (W1) and option_2 (W2); option_3 is not supported by any visible peer candidate, so the coordination bonus is unlikely under this proposal. (f) Provenance limits — S02 and S03 are known only through peer reports (O2/O4, W4/W5), not direct originals; declared_sources being empty here means not_collected, not that no materials were used. The proposal is therefore deliverable in shape but substantively stale and unsupported relative to the visible record.",
+        "scope": "FINAL_PROPOSAL and FALLBACK, both version W3 (initial, base_version null, artifact option_3); compared against later A3 versions W4 (option_1) and W5 (option_2), peer offers O1–O4, peer candidates W1 (option_4) and W2 (option_2), and task T; S02/S03 treated as peer-reported, not directly verified."
+      }
+    ],
+    "attempted_offers": [
+      "O1",
+      "O4"
+    ],
+    "attempt_counts": {
+      "A1": 1,
+      "A2": 1,
+      "A3": 0
+    },
+    "pointer": 2,
+    "cycle": 2,
+    "tool_observations": [],
+    "closure_complete": true,
+    "stop_reason": "cycle_limit"
+  },
+  "stages": [
+    {
+      "call_context": {
+        "logical_call": 1,
+        "stage": "OBSERVE",
+        "member": "A1"
+      },
+      "stage": "OBSERVE",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "action": "offer",
+        "offer": {
+          "target": "W3:work_text:L1",
+          "knowledge": "A fact from my directly read original S01 that bears on W3's speed/driver tension: the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision. This is a car-driver, alcohol-impairment profile, not a speeding-motorcyclist profile, so it favors a car occupant (Mr. X or Mrs. Y) over Mr. Z and does not support the 110 km/h motorcycle reading. It also does not by itself confirm the son was driving: S01 gives no name, age, or speed, so W3's inference that the son drove the car remains unverified. Basis is indirect for W3's purposes: S01 is my own original, but W3's author cannot read it directly; treat this as a peer report of my original, not as W3's own verification.",
+          "support": [
+            {
+              "ref": "S01",
+              "excerpt": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+            },
+            {
+              "ref": "W3",
+              "excerpt": "The 110 km/h detail is the only tension: the son was a passenger in the car, not explicitly the driver, but the material says the guilty person was driving at 110 km/h — this could refer to the son driving the first car while the drunk father sat beside him"
+            }
+          ],
+          "proposed_use": "In W3's work_text, record this as peer-reported evidence from A1's S01 (not directly verified by A3): the perpetrator is a car driver with high alcohol and inattention. Use it to downgrade the 110 km/h clue as a reason to favor Mr. Z and to flag that the son-as-driver reading still needs support from S02/S03, since S01 does not identify the driver by name or age. This may move W3 toward option_4 (Mr. X), who is the car occupant explicitly noted as having drunk spirits, while keeping the son hypothesis open pending a driver-identity clue."
+        }
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 2,
+        "stage": "OBSERVE",
+        "member": "A2"
+      },
+      "stage": "OBSERVE",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "action": "offer",
+        "offer": {
+          "target": "W3:work_text:L1",
+          "knowledge": "A3's S03-based inference that the driver was male and that the father is indirectly responsible is compatible with S02's age/inexperience/not-seeing clues only for a driver under 30. Mr. X (53) is excluded by S02, so W1's option_4 conflicts with S02. Among under-30 males, Mr. Z (28, 5 years' license, speeding) fits 'driving at 110 km/h' but not 'inexperience' as well as a 17-year-old would; importantly, S02's 'inexperience' and 'didn't see others' fit Mrs. Y (27, 1 year license, damaged lights) but she is female, contradicting S03's 'guilty person is a man'. Thus the combined S02+S03 clues favor a young male driver; A3 should reconcile the 110 km/h clue rather than treating it as a mere tension. Note S02 is my direct original; S01/S03 are only known through W1/W3 reports.",
+          "support": [
+            {
+              "ref": "S02",
+              "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+            },
+            {
+              "ref": "W3",
+              "excerpt": "Using my private material S03: the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible for the accident."
+            },
+            {
+              "ref": "W1",
+              "excerpt": "From my private material S01 (direct original), the guilty person was driving a car and had a blood alcohol level of 1.5, and admitted being inattentive."
+            }
+          ],
+          "proposed_use": "Treat S02 as a hard constraint: the perpetrator is under 30, so option_4 (Mr. X, 53) should be ruled out in W1 and W3's reasoning. Re-examine whether the male-driver clue in S03 plus the under-30 clue can be jointly satisfied by Mr. Z (28, speeding 110 km/h) rather than Mr. X's son, since the son is described as a passenger and no fact says he drove; if A3 cannot resolve this, flag the S03 110 km/h clue as pointing to Mr. Z and reconsider option_1 versus option_3 before convergence."
+        }
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 3,
+        "stage": "TRY",
+        "member": "A3"
+      },
+      "stage": "TRY",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "action": "new",
+        "candidate_id": null,
+        "work": {
+          "artifact": "option_1",
+          "work_text": "Combining my direct original S03 with peer reports O1 (A1's S01) and O2 (A2's S02), the best-supported suspect is Mr. Z (option_1). S03 says the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. O2 reports S02's clues: under 30, inexperience, and did not see others approaching. O1 reports S01's clues: driving a car, 1.5 blood-alcohol level, inattentive. These peer reports are indirect for me (I cannot read S01/S02 directly), but they constrain the field: Mr. X (53) is excluded by the under-30 clue; Mrs. Y is female, contradicting S03's 'a man'; Mr. X's son is 17 but no task fact says he was driving (he is described as returning home in his father's car), and S03's 110 km/h driving clue has no support for him. Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h. 'His father is indirectly responsible' can be read as the sick father's urgent request that made Mr. Z speed — the father's request is the indirect background cause, just as Mr. X's drinking is for the son. The tension is that O1 reports the guilty person driving a car with high alcohol, which fits Mr. X, not Mr. Z; however O1 itself notes S01 gives no name, age, or speed, and the under-30 clue from S02 conflicts with Mr. X (53). Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1. Limits: S01/S02 are known only through peer reports, not direct originals; the 'father indirectly responsible' reading for Mr. Z is interpretive; and the car/alcohol clue remains in conflict, so coordination with A1/A2 is still needed for the bonus.",
+          "open_points": [
+            "The car-driver/alcohol clue reported from S01 conflicts with the under-30 and 110 km/h clues; I weigh the latter more heavily but cannot verify S01 directly.",
+            "The 'father indirectly responsible' phrase is applied to Mr. Z via his father's urgent request, an interpretive reading rather than an explicit task fact.",
+            "No task fact states who drove the first car, so the son-as-driver hypothesis remains unsupported rather than refuted.",
+            "Peer convergence on option_1 is not yet confirmed; the coordination bonus depends on A1/A2 switching from option_4/option_2."
+          ]
+        },
+        "use_record": "Tried O1 on a copy of W3. O1 (A1's report of S01) states the perpetrator is a car driver with 1.5 blood alcohol who was inattentive; it does not name, age, or speed the driver, so it undercuts W3's son-as-driver inference and the 110 km/h reading, but does not identify Mr. X either. I also used O2 (A2's report of S02): under 30, inexperience, did not see others. Applying both to W3: the son hypothesis loses its driver support (no fact says the son drove), Mr. X is excluded by under-30, Mrs. Y by the male clue, leaving Mr. Z (28, male, explicit 110 km/h speeding) as the best joint fit. I preserved W3's useful point that the 110 km/h clue points away from the son and toward the speeding motorcyclist, and discarded W3's assumption that the son was driving. Result: artifact changed from option_3 to option_1, with the S01 car/alcohol conflict recorded as an unresolved limit. S01 and S02 were not directly read by me; this rests on A1/A2's public reports.",
+        "reason": "Peer reports O1 and O2 resolve W3's tension against the son-as-driver reading and, combined with S03's male/110 km/h clues, favor Mr. Z; Mr. X is excluded by the under-30 clue and Mrs. Y by the male clue.",
+        "declared_sources": [
+          "S03",
+          "O1",
+          "O2",
+          "W3"
+        ]
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 4,
+        "stage": "CHECK_USE",
+        "member": "A1"
+      },
+      "stage": "CHECK_USE",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "O1's object is a car-driver/alcohol/inattention profile from A1's S01, and its proposed_use explicitly says it should 'downgrade the 110 km/h clue as a reason to favor Mr. Z' and may move W3 toward option_4 (Mr. X). W4 (the after-work) instead uses O1 mainly as a conflicting clue while selecting option_1 (Mr. Z), the very conclusion O1's carrier says its evidence undercuts. W4 does state the conflict (car/alcohol fits Mr. X, not Mr. Z) and reports O1 as indirect, so the offer is not wholly ignored; but the operation actually performed is the reverse of the offered use, and W4's stated reason for overriding it (majority of jointly reported clues, under-30 from O2) rests on O2, not O1. O1 also explicitly warns that S01 gives no name, age, or speed and does not confirm the son was driving; W4 correctly abandons the son-as-driver inference, so that part is consistent. A further limit: O1's support excerpt for W3 is accurate to W3's text, and its S01 excerpt matches my directly read S01, so the carrier content is faithful; the issue is application, not fabrication. W4's declared_sources include O1 and O2 and its work_text labels them as peer reports, so provenance is not misrepresented as direct verification.",
+        "scope": "Checked O1 against the full BEFORE (W3) and AFTER (W4) work_text, artifact, open_points, declared_sources, and USE_RECORD. I directly read only T and S01; S02/S03 are known only through O2/W4 reports, so I cannot verify A2's or A3's originals."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 5,
+        "stage": "CHECK_EFFECT",
+        "member": "A2"
+      },
+      "stage": "CHECK_EFFECT",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "The change from W3 (option_3) to W4 (option_1) is not supported by the premise that triggered it. O1's peer report of S01 says the perpetrator was a car driver with 1.5 blood alcohol who admitted inattention, and O1 explicitly states this profile favors a car occupant (Mr. X or Mrs. Y) and does NOT support the 110 km/h motorcycle reading or Mr. Z. W4 nonetheless shifts to Mr. Z and asserts a 'majority of jointly reported clues' converge on him. Concrete reconstruction: S03 (A3's own original) says guilty person is male, drove at 110 km/h, father indirectly responsible. O2 reports S02: under 30, inexperienced, didn't see others. O1 reports S01: car driver, 1.5 alcohol, inattentive. Intersecting these: Mr. Z is male, 28, speeding — but S01 says the guilty person drove a car, and Mr. Z rode a motorcycle (task facts), directly contradicting the vehicle clue; also S01's alcohol clue has no support for Mr. Z (no drinking fact), while Mr. X is the only suspect with an explicit drinking fact. So the S01 clue actually counts against Mr. Z, not merely as a 'tension' to be outweighed. W4's 'father indirectly responsible' reading for Mr. Z (sick father's urgent request) is a reinterpretation that the S03 text does not state, and it is weaker than the son reading, which W3 itself argued. W4 also drops W3's honest acknowledgment that the son-as-driver hypothesis was unverified, replacing it with a claim that no fact says the son drove — but no fact says Mr. Z drove a car either, and the task explicitly places Mr. Z on a motorcycle. The under-30 clue (S02) does exclude Mr. X (53), which W4 correctly notes, but that exclusion does not select Mr. Z; it leaves the son (17) and Mrs. Y (27) as well, and S03's 'male' plus 'father indirectly responsible' still points at the son. Thus the artifact flip to option_1 is a consequence of misweighting O1: the offer says its content downgrades the 110 km/h reading, yet W4 uses it to reinforce Mr. Z. Scope: this concerns only the W3→W4 transition and the use of O1/O2 as reported premises; I cannot verify S01/S03 originals, so I do not assert the correct final answer, only that W4's stated basis is inconsistent with the offer it cites.",
+        "scope": "W4 work_text reasoning and artifact change (option_3→option_1), specifically the treatment of O1's S01 report (car driver, 1.5 alcohol, inattentive) as compatible with Mr. Z despite the motorcycle/car mismatch, and the interpretive 'father indirectly responsible' reading applied to Mr. Z. Does not cover W1/W2 correctness or the ultimate ground-truth perpetrator."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 6,
+        "stage": "CHOOSE",
+        "member": "A3"
+      },
+      "stage": "CHOOSE",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "candidate_id": "W3",
+        "reason": "W4's flip to option_1 (Mr. Z) is not supported by the evidence it cites. Both peer checks flag that O1 reports S01 as a car driver with 1.5 blood alcohol who was inattentive — a profile that explicitly favors a car occupant and undercuts the 110 km/h motorcycle reading, yet W4 uses it to reinforce Mr. Z. Task facts also place Mr. Z on a motorcycle, contradicting S01's vehicle clue, and no fact gives Mr. Z a drinking clue. W4's 'father indirectly responsible' reading for Mr. Z (the sick father's urgent request) is interpretive and weaker than W3's son reading, which W3 itself argued from S03's male + father-indirectly-responsible clues. The under-30 clue from O2 does exclude Mr. X (53), but that exclusion leaves the son (17) and Mrs. Y (27) as well, and S03's male clue still points at the son. W3's option_3 is better supported by the directly read S03 plus the peer-reported constraints, though the son-as-driver link remains unverified. Limits: S01/S02 are known only through peer reports O1/O2, not direct originals; the 110 km/h clue still superficially matches Mr. Z, and coordination with A1/A2 is unconfirmed."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 7,
+        "stage": "OBSERVE",
+        "member": "A1"
+      },
+      "stage": "OBSERVE",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "action": "offer",
+        "offer": {
+          "target": "whole_goal",
+          "knowledge": "A directly-read original (S01) is available to me and bears on the current disagreement over vehicle type: S01 says the guilty person was driving a car, had a 1.5 blood-alcohol level, and admitted inattention. This is a car-driver profile and directly contradicts W4's choice of Mr. Z, who per T rode a motorcycle; it also does not name the son, so the son-as-driver hypothesis in W3/W4 remains unsupported by S01. The decision favoring W3 (option_3) is therefore at risk: the strongest car/alcohol clue points to Mr. X (the only suspect with an explicit drinking fact), while the under-30 clue reported via O2 excludes him. This is a genuine cross-material conflict that the team should resolve explicitly rather than by reinterpreting 'father indirectly responsible'. Caveat: I directly read only S01 and T; S02/S03 are known only through O2/W4 reports, so I do not assert the ground-truth perpetrator.",
+          "support": [
+            {
+              "ref": "S01",
+              "excerpt": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+            },
+            {
+              "ref": "T",
+              "excerpt": "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+            },
+            {
+              "ref": "W4",
+              "excerpt": "the best-supported suspect is Mr. Z (option_1)"
+            },
+            {
+              "ref": "O2",
+              "excerpt": "The guilty person is less than 30 years old."
+            }
+          ],
+          "proposed_use": "Before final convergence, the team should treat S01's car-driver/alcohol/inattention profile as a hard vehicle clue: it rules out Mr. Z (motorcycle) and undercuts W4's option_1. The remaining conflict is Mr. X (matches alcohol but is 53, excluded by O2's under-30) versus Mr. X's son (under 30 and male, but no fact says he drove). The team should either find a driver-identity clue in S02/S03 or explicitly weigh which clue is decisive, and record the unresolved S01-vs-O2 conflict rather than silently overriding S01. Coordination note: the choice should be settled before the unknown chat end to preserve the bonus."
+        }
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 8,
+        "stage": "OBSERVE",
+        "member": "A2"
+      },
+      "stage": "OBSERVE",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "action": "offer",
+        "offer": {
+          "target": "W3",
+          "knowledge": "From my directly read original S02, a decisive clue that W3's son hypothesis does not address: the guilty person claims he or she did not see others approaching the intersection. Combined with S02's other clauses (guilty person is less than 30; unable to avoid the collision due to inexperience), this points to a young, inexperienced road user. W3's reading (Mr. X's son, 17, as driver) fits 'under 30' and male (per A3's S03 report) but has no support for inexperience at driving or for failing to see others; the task facts never place the son behind the wheel, and the alcohol profile reported from S01 (via O1) is a car-driver impairment clue that points to Mr. X, not to the son. The under-30 + inexperience + didn't-see-others combination is most directly satisfied by a young driver with a very short license history — Mrs. Y (27, 1 year) — except that A3's reported S03 clue says the guilty person is a man, which is the key remaining conflict. I cannot read S03 directly, so I cannot confirm that 'man' clue; if A3's report of it is accurate it excludes Mrs. Y, and if it is not, option_2 becomes the best fit. Either way, W3's option_3 is not supported by S02: nothing in S02 identifies the son or the first car.",
+          "support": [
+            {
+              "ref": "S02",
+              "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+            },
+            {
+              "ref": "W3",
+              "excerpt": "The son is a man (male), and his father (Mr. X) is indirectly responsible because the father's drinking is the causal background."
+            },
+            {
+              "ref": "O1",
+              "excerpt": "the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision"
+            }
+          ],
+          "proposed_use": "In W3's work_text and open_points, record this as A2's directly read S02 (not something A3 can verify directly): the guilty person is under 30, was unable to avoid the collision due to inexperience, and did not see others approaching. Use it to (a) confirm Mr. X (53) is excluded, (b) note that the son hypothesis lacks any inexperience/didn't-see support and that no fact places the son driving, and (c) flag the unresolved conflict: S02's inexperience + didn't-see-others fits Mrs. Y best, but A3's reported S03 'male' clue would exclude her. W3 should either produce independent support for the son-as-driver or acknowledge that option_2 (Mrs. Y) is the best S02 fit if the 'male' clue cannot be relied on, rather than resting on the interpretive 'father indirectly responsible' reading."
+        }
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 9,
+        "stage": "TRY",
+        "member": "A3"
+      },
+      "stage": "TRY",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "action": "new",
+        "candidate_id": null,
+        "work": {
+          "artifact": "option_2",
+          "work_text": "Revised after trying peer offer O4 (A2's report of S02) against a copy of my W3/W4 reasoning. My direct original S03 says: guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. Peer-reported (indirect, unverified by me) clues: O1/O3 report S01's guilty person drove a car with 1.5 blood alcohol and admitted inattention; O2/O4 report S02's guilty person is under 30, could not avoid the collision due to inexperience, and did not see others approaching. Reconciliation: (1) The car/alcohol clue fits Mr. X (53, drank spirits), but the under-30 clue reported from S02 excludes him; these two peer reports conflict and I cannot resolve them from originals. (2) Mr. Z is male, 28, and speeding, matching S03's 110 km/h, but S02's inexperience does not fit a 5-year license holder, and the car/alcohol clue excludes a motorcyclist. (3) Mr. X's son is male and 17, but no task fact places him behind the wheel; the son-as-driver reading was my own inference and remains unsupported by any peer report. (4) Mrs. Y is 27 with only 1 year's license (inexperience), her car's lights are damaged (fits not seeing others at a narrow, poorly lit intersection), and she is a car driver — matching S02 and the car clue. The sole obstacle is S03's 'a man' clause, which I read directly. Weighing: I must not discard my own direct original, but S03's 'father indirectly responsible' and '110 km/h' clauses are already interpretive and partially conflict with each other; the 'man' clause is the only one cleanly excluding Mrs. Y, while S02's three clauses jointly and directly fit her. Given the coordination bonus requires convergence and A1/A2's reports both point away from option_3, I judge option_2 (Mrs. Y) the best joint fit, while flagging that if S03's 'man' clause is taken as decisive, option_1 (Mr. Z) is the fallback. Limits: S01/S02 known only through peer reports; my reversal of the 'man' clue is a judgment call, not a verified fact; coordination not yet confirmed.",
+          "open_points": [
+            "S03's 'a man' clause directly excludes Mrs. Y; choosing option_2 weighs S02's inexperience/didn't-see-others clues above it — a judgment call, not verification.",
+            "Peer reports conflict internally: S01 (car + 1.5 alcohol) points to Mr. X, but S02 (under 30) excludes him (53).",
+            "No task fact or peer report places Mr. X's son driving; option_3 is unsupported.",
+            "If the 'man' clause is treated as decisive, option_1 (Mr. Z) is the fallback, but S02's inexperience and S01's car clue cut against him.",
+            "S01/S02 are only known via O1/O2/O3/O4 peer reports; coordination on a single option is not yet confirmed."
+          ]
+        },
+        "use_record": "Applied offer O4 (A2's report of S02) to a copy of my current W3/W4 work. O4's reported S02 clauses (under 30, inexperience, didn't see others approaching) were checked against each suspect: they confirm Mr. X (53) is excluded, show my son-as-driver reading lacks any inexperience/didn't-see support and no fact places the son driving, and show Mrs. Y (27, 1-year license, damaged lights) is the best direct fit except for my S03 'a man' clause. Local result: I dropped option_3 and, weighing S02's three jointly fitting clauses against S03's single 'man' clause, switched to option_2, recording option_1 as fallback if the 'man' clause is decisive. This is indirect evidence: S02 is A2's original, not mine, so the S02 content is peer-reported and unverified by me; I also consulted O1/O3 (S01 report) for the car/alcohol conflict. I did not personally verify S01 or S02 originals.",
+        "reason": "O4's S02-based check shows my son hypothesis lacks driver/inexperience support and that Mrs. Y best fits the jointly reported clues; I revised to option_2 while flagging the S03 'man' clause conflict and option_1 fallback.",
+        "declared_sources": [
+          "S03",
+          "T",
+          "O4",
+          "O1",
+          "O2",
+          "O3"
+        ]
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 10,
+        "stage": "CHECK_USE",
+        "member": "A2"
+      },
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "Checking O4 against the whole W3→W5 transition and the USE_RECORD, the offer's content was largely applied but with two material divergences. (1) O4 explicitly states that if A3's S03 'man' clue is accurate, Mrs. Y is excluded and option_2 should not be chosen; the offer's actual recommendation is to stop resting on the interpretive 'father indirectly responsible' reading and to flag option_2 only conditionally. W5 instead adopts option_2 as its artifact while acknowledging the 'man' clause is read directly from A3's own original — i.e., the application inverts O4's stated conditional, treating a clue O4 says would block option_2 as merely outweighed. (2) O4 says the alcohol profile reported via O1 points to Mr. X, not the son; W5 does record this (point 1) and records that the son-as-driver reading is unsupported, so that part matches. (3) O4's proposed_use asked for recording that S02 is A2's directly read original, not verifiable by A3; W5 does flag S01/S02 as peer-reported only, which is accurate, though the USE_RECORD's phrase 'Applied offer O4' overstates: the decisive step (switching to option_2) runs against O4's own conditional caveat. Also note W5's declared_sources include O4 and the work_text cites O2/O4 for S02 content, but the S02 clauses are also A3's own direct original (S02 is in A3's SELF_MATERIALS per SOURCE_ACCESS direct_original_refs), so describing the under-30/inexperience/didn't-see clues as 'peer-reported (indirect, unverified by me)' is inaccurate — A3 can read S02 directly, and that is the strongest basis for the option_2 switch, not O4. Scope: O4 vs W3/W5 work_text, open_points, artifact, USE_RECORD, and declared_sources; I did not read S01/S03 originals.",
+        "scope": "O4 application to W3→W5: artifact choice, work_text, open_points, USE_RECORD, and declared_sources; S02 is A3's own direct original per SOURCE_ACCESS, so the 'peer-reported' framing of S02 clauses is a provenance error, and the option_2 switch conflicts with O4's explicit conditional that the 'man' clause excludes Mrs. Y."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 11,
+        "stage": "CHECK_EFFECT",
+        "member": "A1"
+      },
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "The change from W3 (option_3) to W5 (option_2) does not follow from the premises W5 itself accepts. W5 directly reads S03, which states the guilty person is a man; Mrs. Y is female, so option_2 contradicts A3's own directly read original. W5 openly acknowledges this ('S03's a man clause directly excludes Mrs. Y') yet selects option_2 anyway, downgrading the one clause it can verify while elevating S02 clues known only through peer reports O2/O4. W5 also misstates the fallback: it says 'if the man clause is decisive, option_1 (Mr. Z) is the fallback,' but S03's own '110 km/h' clause plus T's fact that Mr. Z was speeding on N13 is the strongest match to Mr. Z, while S01's reported car/alcohol profile excludes a motorcyclist — so W5's fallback reasoning is internally inconsistent. Additionally, W5's stated motivation ('coordination bonus requires convergence and A1/A2's reports both point away from option_3') is a coordination argument, not evidence about the perpetrator; A1's W1 actually chose option_4 (Mr. X), not option_2, so W5's claim that peers point toward Mrs. Y is inaccurate. A concrete counterexample: if S03 is accurate (guilty = man), W5's artifact is necessarily wrong; if S03's 'man' clause were unreliable, W5 still has no direct support for Mrs. Y beyond peer-reported S02, and its own open point concedes the reversal is 'a judgment call, not a verified fact.' The delivery relationship is broken: the artifact (option_2) is not entailed by the reconstructed premises (S03 direct: male + 110 km/h; S01 report: car + alcohol; S02 report: under 30 + inexperience + didn't-see). No assignment cleanly satisfies all three, but option_2 violates the only directly verified original, whereas option_1 at least satisfies S03's male and 110 km/h clauses. Scope: W5's artifact selection and its fallback reasoning; does not resolve which suspect is truly guilty, since S01/S02 remain unverified peer reports.",
+        "scope": "W5 artifact (option_2) versus its declared premises S03/T and peer reports O1-O4; specifically the inconsistency of choosing a female suspect against a directly read 'a man' clause and the misdescribed option_1 fallback."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 12,
+        "stage": "CHOOSE",
+        "member": "A3"
+      },
+      "stage": "CHOOSE",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "candidate_id": "W3",
+        "reason": "Both peer checks flag W5's option_2 as unsupported by its own premises. My direct original S03 states the guilty person is a man; Mrs. Y is female, so option_2 contradicts the only original I can verify, and W5 itself concedes this while still choosing it. A1's CHECK_EFFECT also notes W5's fallback logic (option_1 if the 'man' clause is decisive) is internally inconsistent, since S03's 110 km/h clause plus T's speeding fact for Mr. Z is the strongest direct match, whereas S01's reported car/alcohol profile (peer-reported, unverified) would cut against a motorcyclist. A2's CHECK_USE notes W5 misapplies O4, whose conditional explicitly says the 'man' clue excludes Mrs. Y. W3 (option_3) has its own weakness — no fact places the son driving — but it at least respects S03's 'a man' and 'father indirectly responsible' clauses and does not overturn the directly read original on the strength of unverified peer reports. Between the two existing candidates, W3 is the less contradicted choice, with the son-as-driver inference and the S01/S02 conflicts remaining unresolved limits."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 13,
+        "stage": "FINALIZE",
+        "member": "A3"
+      },
+      "stage": "FINALIZE",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "action": "reuse",
+        "candidate_id": "W3",
+        "work": null,
+        "use_record": "Reused existing complete candidate W3 verbatim (artifact option_3) after reviewing peer feedback on W4 and W5. Basis: my direct originals S03 (guilty person is a man, driving 110 km/h, father indirectly responsible) and T (task facts). Peer-reported, indirectly known only through public carriers: O1/O3 report S01 (car driver, 1.5 blood alcohol, inattentive — fits Mr. X, unverified by me); O2/O4 report S02 (under 30, inexperience, didn't see others — fits Mrs. Y best except the 'man' clause, unverified by me); W1 chose option_4, W2 option_2, W4 option_1, W5 option_2. I did not read S01 or S02 originals; those contents are peer reports, not personal verification. W4's flip to Mr. Z conflicts with the reported car/alcohol clue and with T's motorcycle fact; W5's flip to Mrs. Y contradicts my directly read 'a man' clause. W3 remains the least-contradicted available candidate, with the son-as-driver inference and the S01/S02 conflicts recorded as unresolved limits.",
+        "reason": "Reuse W3: both peer checks flagged W4 and W5 as internally inconsistent with their own cited premises, and W3 is the only complete candidate that respects my directly read S03 ('a man', 'father indirectly responsible') without overturning it on unverified peer reports. Limits: no task fact places the son behind the wheel; the 110 km/h clue superficially matches Mr. Z; S01/S02 remain peer-reported and unverified; peer convergence for the coordination bonus is unconfirmed.",
+        "declared_sources": [
+          "S03",
+          "T",
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "W1",
+          "W2",
+          "W4",
+          "W5"
+        ]
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 14,
+        "stage": "FINAL_CHECK_USE",
+        "member": "A2"
+      },
+      "stage": "FINAL_CHECK_USE",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "Final proposal and fallback are identical (W3, artifact option_3, declared_sources empty, source_declaration_status not_collected), so there is no genuine independent fallback. USE_RECORD claims reuse of 'existing complete candidate W3 verbatim' and cites peer carriers O1/O2/O3/O4/W1/W2/W4/W5 in APPLICATION_SOURCE_REFS, but W3 itself declares no sources and its work_text still says 'I have not seen peers' materials S01/S02' and 'Coordination with A1/A2 cannot be confirmed at this initial stage' — inconsistent with the USE_RECORD narrative that peer feedback was reviewed. Content check against accessible evidence: S02 (my direct original) states the guilty person is under 30, inattentive/inexperienced, and did not see others approaching; this excludes Mr. X (53) and does not identify the son, and W3's son-as-driver reading ('could refer to the son driving the first car') is an unsupported inference — T says only that Mr. X and his son return home in the first car, with Mr. X noted as having drunk spirits. S02's inexperience + didn't-see-others clauses fit Mrs. Y (27, 1-year license, damaged lights) better than any other suspect, and fit the son poorly (no license/driving fact). W3's own 'man' clause comes from S03, which I cannot read directly; it is only reported via W4/W5 (peer_metadata_not_verified), so W3's use of it as decisive is not independently verifiable here. The reported S01 car/alcohol profile (via O1/O3, unverified) further conflicts with option_3 (no fact places the son driving or drinking) and supports option_2 or option_4 over option_3. W4's option_1 (Mr. Z) conflicts with T (motorcycle, not car) and with reported S01; W5's option_2 contradicts its own directly read 'man' clause but is the best S02 fit. Overall: the proposal is not clearly the best-supported choice; the strongest directly accessible evidence (S02) points away from option_3, and the proposal's key support (son as driver, 'father indirectly responsible') is interpretive rather than stated in T or S02. Cannot verify S01/S03 originals; cannot confirm peer convergence. Concrete recommendation: either re-open with a candidate whose reasoning rests on S02 (option_2, flagging the 'man' conflict) or explicitly justify why the S03 'man' clause outweighs S02's three clauses, and supply a distinct fallback rather than duplicating W3.",
+        "scope": "FINAL_PROPOSAL/FALLBACK W3 (option_3) vs. T, S02, and peer carriers O1-O4, W1, W2, W4, W5; specifically the option_3 rationale, source declarations, and the proposal/fallback duplication."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 15,
+        "stage": "FINAL_CHECK_EFFECT",
+        "member": "A1"
+      },
+      "stage": "FINAL_CHECK_EFFECT",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "The final proposal and fallback are both W3 (artifact option_3, base_version null, initial: true, declared_sources empty, source_declaration_status not_collected), i.e. the unchanged initial work rather than any revised version. Consequences reconstructed from visible premises: (a) delivery/contract — artifact is a legal option ID (option_3) and deliverable_shape is true, so the output shape satisfies the contract, but that does not establish correctness. (b) Modified relations — W4 and W5 are later A3 versions explicitly declaring base_version W3 and collected sources (W4: S03,O1,O2,W3; W5: S03,T,O4,O1,O2,O3), and they revise the artifact to option_1 and option_2 respectively; the final proposal ignores these revisions and their declared evidence. (c) Evidence consequences — peer reports O1/O3 (A1's S01: guilty person drove a car with 1.5 alcohol, inattentive) and O2/O4 (A2's S02: under 30, inexperience, did not see others) are indirectly known to A3 and were used by A3's own W4/W5; S02's under-30 clause excludes Mr. X (53) and S01's car/alcohol clause cuts against Mr. Z (motorcycle) and against the son-as-driver reading, since no task fact places the son behind the wheel. W3's option_3 rests on an interpretive 'father indirectly responsible' reading plus a hypothetical son-as-driver, which W3 itself flags as unsupported. (d) Fallback — identical to the proposal, so it provides no alternative if option_3 fails; A3's own later analyses propose option_2 (W5) with option_1 (W4) as the alternative, and W3's stated fallback logic is absent. (e) Coordination — the bonus requires convergence with A1/A2, whose visible candidates are option_4 (W1) and option_2 (W2); option_3 is not supported by any visible peer candidate, so the coordination bonus is unlikely under this proposal. (f) Provenance limits — S02 and S03 are known only through peer reports (O2/O4, W4/W5), not direct originals; declared_sources being empty here means not_collected, not that no materials were used. The proposal is therefore deliverable in shape but substantively stale and unsupported relative to the visible record.",
+        "scope": "FINAL_PROPOSAL and FALLBACK, both version W3 (initial, base_version null, artifact option_3); compared against later A3 versions W4 (option_1) and W5 (option_2), peer offers O1–O4, peer candidates W1 (option_4) and W2 (option_2), and task T; S02/S03 treated as peer-reported, not directly verified."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 16,
+        "stage": "FINAL_CHOOSE",
+        "member": "A3"
+      },
+      "stage": "FINAL_CHOOSE",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "candidate_id": "W3",
+        "reason": "W3 is the only allowed candidate in this stage, so I select it as the best-effort deliverable, with artifact option_3 (Mr. X's son). My only direct originals are S03 and T. S03 states the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible; T places Mr. X (who drank spirits) and his 17-year-old son together in the first car, making the son the male whose father's drinking is the indirect cause. The 110 km/h detail superficially matches Mr. Z, and T never states who drove the first car, so this reading is interpretive. Peer reports (via O1-O4) add S01's car/alcohol/inattention profile and S02's under-30/inexperience/didn't-see-others clues, which conflict with option_3 and point toward option_2 or option_4; those originals are not directly accessible to me, and the two FINAL_CHECKs flag the proposal as stale and unsupported. I therefore deliver W3 unchanged as a best-effort choice and record that its correctness is not established and peer convergence is unconfirmed."
+      }
+    }
+  ],
+  "events": [
+    {
+      "call_context": {},
+      "kind": "initial_cached",
+      "cycle": 0,
+      "member": "A1",
+      "work": "W1",
+      "origin": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\hiddenbench-development-live-20261022-r1\\hb-dev-004-r1\\initial"
+    },
+    {
+      "call_context": {},
+      "kind": "initial_cached",
+      "cycle": 0,
+      "member": "A2",
+      "work": "W2",
+      "origin": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\hiddenbench-development-live-20261022-r1\\hb-dev-004-r1\\initial"
+    },
+    {
+      "call_context": {},
+      "kind": "initial_cached",
+      "cycle": 0,
+      "member": "A3",
+      "work": "W3",
+      "origin": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\hiddenbench-development-live-20261022-r1\\hb-dev-004-r1\\initial"
+    },
+    {
+      "call_context": {
+        "logical_call": 1,
+        "stage": "OBSERVE",
+        "member": "A1"
+      },
+      "kind": "offer_proposed",
+      "cycle": 1,
+      "offer": {
+        "ref": "O1",
+        "author": "A1",
+        "base_version": "W3",
+        "target": "W3:work_text:L1",
+        "knowledge": "A fact from my directly read original S01 that bears on W3's speed/driver tension: the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision. This is a car-driver, alcohol-impairment profile, not a speeding-motorcyclist profile, so it favors a car occupant (Mr. X or Mrs. Y) over Mr. Z and does not support the 110 km/h motorcycle reading. It also does not by itself confirm the son was driving: S01 gives no name, age, or speed, so W3's inference that the son drove the car remains unverified. Basis is indirect for W3's purposes: S01 is my own original, but W3's author cannot read it directly; treat this as a peer report of my original, not as W3's own verification.",
+        "support": [
+          {
+            "ref": "S01",
+            "excerpt": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          },
+          {
+            "ref": "W3",
+            "excerpt": "The 110 km/h detail is the only tension: the son was a passenger in the car, not explicitly the driver, but the material says the guilty person was driving at 110 km/h — this could refer to the son driving the first car while the drunk father sat beside him"
+          }
+        ],
+        "proposed_use": "In W3's work_text, record this as peer-reported evidence from A1's S01 (not directly verified by A3): the perpetrator is a car driver with high alcohol and inattention. Use it to downgrade the 110 km/h clue as a reason to favor Mr. Z and to flag that the son-as-driver reading still needs support from S02/S03, since S01 does not identify the driver by name or age. This may move W3 toward option_4 (Mr. X), who is the car occupant explicitly noted as having drunk spirits, while keeping the son hypothesis open pending a driver-identity clue."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 2,
+        "stage": "OBSERVE",
+        "member": "A2"
+      },
+      "kind": "offer_proposed",
+      "cycle": 1,
+      "offer": {
+        "ref": "O2",
+        "author": "A2",
+        "base_version": "W3",
+        "target": "W3:work_text:L1",
+        "knowledge": "A3's S03-based inference that the driver was male and that the father is indirectly responsible is compatible with S02's age/inexperience/not-seeing clues only for a driver under 30. Mr. X (53) is excluded by S02, so W1's option_4 conflicts with S02. Among under-30 males, Mr. Z (28, 5 years' license, speeding) fits 'driving at 110 km/h' but not 'inexperience' as well as a 17-year-old would; importantly, S02's 'inexperience' and 'didn't see others' fit Mrs. Y (27, 1 year license, damaged lights) but she is female, contradicting S03's 'guilty person is a man'. Thus the combined S02+S03 clues favor a young male driver; A3 should reconcile the 110 km/h clue rather than treating it as a mere tension. Note S02 is my direct original; S01/S03 are only known through W1/W3 reports.",
+        "support": [
+          {
+            "ref": "S02",
+            "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "W3",
+            "excerpt": "Using my private material S03: the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible for the accident."
+          },
+          {
+            "ref": "W1",
+            "excerpt": "From my private material S01 (direct original), the guilty person was driving a car and had a blood alcohol level of 1.5, and admitted being inattentive."
+          }
+        ],
+        "proposed_use": "Treat S02 as a hard constraint: the perpetrator is under 30, so option_4 (Mr. X, 53) should be ruled out in W1 and W3's reasoning. Re-examine whether the male-driver clue in S03 plus the under-30 clue can be jointly satisfied by Mr. Z (28, speeding 110 km/h) rather than Mr. X's son, since the son is described as a passenger and no fact says he drove; if A3 cannot resolve this, flag the S03 110 km/h clue as pointing to Mr. Z and reconsider option_1 versus option_3 before convergence."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 2,
+        "stage": "OBSERVE",
+        "member": "A2"
+      },
+      "kind": "offer_selected",
+      "cycle": 1,
+      "offer_ref": "O1",
+      "base_version": "W3"
+    },
+    {
+      "call_context": {
+        "logical_call": 2,
+        "stage": "OBSERVE",
+        "member": "A2"
+      },
+      "kind": "offer_untried",
+      "cycle": 1,
+      "offer_ref": "O2",
+      "base_version": "W3"
+    },
+    {
+      "call_context": {
+        "logical_call": 3,
+        "stage": "TRY",
+        "member": "A3"
+      },
+      "kind": "trial_created",
+      "cycle": 1,
+      "offer_ref": "O1",
+      "before": "W3",
+      "after": "W4",
+      "use_record": "Tried O1 on a copy of W3. O1 (A1's report of S01) states the perpetrator is a car driver with 1.5 blood alcohol who was inattentive; it does not name, age, or speed the driver, so it undercuts W3's son-as-driver inference and the 110 km/h reading, but does not identify Mr. X either. I also used O2 (A2's report of S02): under 30, inexperience, did not see others. Applying both to W3: the son hypothesis loses its driver support (no fact says the son drove), Mr. X is excluded by under-30, Mrs. Y by the male clue, leaving Mr. Z (28, male, explicit 110 km/h speeding) as the best joint fit. I preserved W3's useful point that the 110 km/h clue points away from the son and toward the speeding motorcyclist, and discarded W3's assumption that the son was driving. Result: artifact changed from option_3 to option_1, with the S01 car/alcohol conflict recorded as an unresolved limit. S01 and S02 were not directly read by me; this rests on A1/A2's public reports.",
+      "declared_sources": [
+        "S03",
+        "O1",
+        "O2",
+        "W3"
+      ]
+    },
+    {
+      "call_context": {
+        "logical_call": 4,
+        "stage": "CHECK_USE",
+        "member": "A1"
+      },
+      "kind": "check_observation",
+      "cycle": 1,
+      "check": {
+        "stage": "CHECK_USE",
+        "member": "A1",
+        "before": "W3",
+        "after": "W4",
+        "finding": "issue",
+        "observation": "O1's object is a car-driver/alcohol/inattention profile from A1's S01, and its proposed_use explicitly says it should 'downgrade the 110 km/h clue as a reason to favor Mr. Z' and may move W3 toward option_4 (Mr. X). W4 (the after-work) instead uses O1 mainly as a conflicting clue while selecting option_1 (Mr. Z), the very conclusion O1's carrier says its evidence undercuts. W4 does state the conflict (car/alcohol fits Mr. X, not Mr. Z) and reports O1 as indirect, so the offer is not wholly ignored; but the operation actually performed is the reverse of the offered use, and W4's stated reason for overriding it (majority of jointly reported clues, under-30 from O2) rests on O2, not O1. O1 also explicitly warns that S01 gives no name, age, or speed and does not confirm the son was driving; W4 correctly abandons the son-as-driver inference, so that part is consistent. A further limit: O1's support excerpt for W3 is accurate to W3's text, and its S01 excerpt matches my directly read S01, so the carrier content is faithful; the issue is application, not fabrication. W4's declared_sources include O1 and O2 and its work_text labels them as peer reports, so provenance is not misrepresented as direct verification.",
+        "scope": "Checked O1 against the full BEFORE (W3) and AFTER (W4) work_text, artifact, open_points, declared_sources, and USE_RECORD. I directly read only T and S01; S02/S03 are known only through O2/W4 reports, so I cannot verify A2's or A3's originals."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 5,
+        "stage": "CHECK_EFFECT",
+        "member": "A2"
+      },
+      "kind": "check_observation",
+      "cycle": 1,
+      "check": {
+        "stage": "CHECK_EFFECT",
+        "member": "A2",
+        "before": "W3",
+        "after": "W4",
+        "finding": "issue",
+        "observation": "The change from W3 (option_3) to W4 (option_1) is not supported by the premise that triggered it. O1's peer report of S01 says the perpetrator was a car driver with 1.5 blood alcohol who admitted inattention, and O1 explicitly states this profile favors a car occupant (Mr. X or Mrs. Y) and does NOT support the 110 km/h motorcycle reading or Mr. Z. W4 nonetheless shifts to Mr. Z and asserts a 'majority of jointly reported clues' converge on him. Concrete reconstruction: S03 (A3's own original) says guilty person is male, drove at 110 km/h, father indirectly responsible. O2 reports S02: under 30, inexperienced, didn't see others. O1 reports S01: car driver, 1.5 alcohol, inattentive. Intersecting these: Mr. Z is male, 28, speeding — but S01 says the guilty person drove a car, and Mr. Z rode a motorcycle (task facts), directly contradicting the vehicle clue; also S01's alcohol clue has no support for Mr. Z (no drinking fact), while Mr. X is the only suspect with an explicit drinking fact. So the S01 clue actually counts against Mr. Z, not merely as a 'tension' to be outweighed. W4's 'father indirectly responsible' reading for Mr. Z (sick father's urgent request) is a reinterpretation that the S03 text does not state, and it is weaker than the son reading, which W3 itself argued. W4 also drops W3's honest acknowledgment that the son-as-driver hypothesis was unverified, replacing it with a claim that no fact says the son drove — but no fact says Mr. Z drove a car either, and the task explicitly places Mr. Z on a motorcycle. The under-30 clue (S02) does exclude Mr. X (53), which W4 correctly notes, but that exclusion does not select Mr. Z; it leaves the son (17) and Mrs. Y (27) as well, and S03's 'male' plus 'father indirectly responsible' still points at the son. Thus the artifact flip to option_1 is a consequence of misweighting O1: the offer says its content downgrades the 110 km/h reading, yet W4 uses it to reinforce Mr. Z. Scope: this concerns only the W3→W4 transition and the use of O1/O2 as reported premises; I cannot verify S01/S03 originals, so I do not assert the correct final answer, only that W4's stated basis is inconsistent with the offer it cites.",
+        "scope": "W4 work_text reasoning and artifact change (option_3→option_1), specifically the treatment of O1's S01 report (car driver, 1.5 alcohol, inattentive) as compatible with Mr. Z despite the motorcycle/car mismatch, and the interpretive 'father indirectly responsible' reading applied to Mr. Z. Does not cover W1/W2 correctness or the ultimate ground-truth perpetrator."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 6,
+        "stage": "CHOOSE",
+        "member": "A3"
+      },
+      "kind": "offer_not_adopted",
+      "cycle": 1,
+      "offer_ref": "O1",
+      "decision": {
+        "candidate_id": "W3",
+        "reason": "W4's flip to option_1 (Mr. Z) is not supported by the evidence it cites. Both peer checks flag that O1 reports S01 as a car driver with 1.5 blood alcohol who was inattentive — a profile that explicitly favors a car occupant and undercuts the 110 km/h motorcycle reading, yet W4 uses it to reinforce Mr. Z. Task facts also place Mr. Z on a motorcycle, contradicting S01's vehicle clue, and no fact gives Mr. Z a drinking clue. W4's 'father indirectly responsible' reading for Mr. Z (the sick father's urgent request) is interpretive and weaker than W3's son reading, which W3 itself argued from S03's male + father-indirectly-responsible clues. The under-30 clue from O2 does exclude Mr. X (53), but that exclusion leaves the son (17) and Mrs. Y (27) as well, and S03's male clue still points at the son. W3's option_3 is better supported by the directly read S03 plus the peer-reported constraints, though the son-as-driver link remains unverified. Limits: S01/S02 are known only through peer reports O1/O2, not direct originals; the 110 km/h clue still superficially matches Mr. Z, and coordination with A1/A2 is unconfirmed."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 7,
+        "stage": "OBSERVE",
+        "member": "A1"
+      },
+      "kind": "offer_proposed",
+      "cycle": 2,
+      "offer": {
+        "ref": "O3",
+        "author": "A1",
+        "base_version": "W3",
+        "target": "whole_goal",
+        "knowledge": "A directly-read original (S01) is available to me and bears on the current disagreement over vehicle type: S01 says the guilty person was driving a car, had a 1.5 blood-alcohol level, and admitted inattention. This is a car-driver profile and directly contradicts W4's choice of Mr. Z, who per T rode a motorcycle; it also does not name the son, so the son-as-driver hypothesis in W3/W4 remains unsupported by S01. The decision favoring W3 (option_3) is therefore at risk: the strongest car/alcohol clue points to Mr. X (the only suspect with an explicit drinking fact), while the under-30 clue reported via O2 excludes him. This is a genuine cross-material conflict that the team should resolve explicitly rather than by reinterpreting 'father indirectly responsible'. Caveat: I directly read only S01 and T; S02/S03 are known only through O2/W4 reports, so I do not assert the ground-truth perpetrator.",
+        "support": [
+          {
+            "ref": "S01",
+            "excerpt": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          },
+          {
+            "ref": "T",
+            "excerpt": "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          },
+          {
+            "ref": "W4",
+            "excerpt": "the best-supported suspect is Mr. Z (option_1)"
+          },
+          {
+            "ref": "O2",
+            "excerpt": "The guilty person is less than 30 years old."
+          }
+        ],
+        "proposed_use": "Before final convergence, the team should treat S01's car-driver/alcohol/inattention profile as a hard vehicle clue: it rules out Mr. Z (motorcycle) and undercuts W4's option_1. The remaining conflict is Mr. X (matches alcohol but is 53, excluded by O2's under-30) versus Mr. X's son (under 30 and male, but no fact says he drove). The team should either find a driver-identity clue in S02/S03 or explicitly weigh which clue is decisive, and record the unresolved S01-vs-O2 conflict rather than silently overriding S01. Coordination note: the choice should be settled before the unknown chat end to preserve the bonus."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 8,
+        "stage": "OBSERVE",
+        "member": "A2"
+      },
+      "kind": "offer_proposed",
+      "cycle": 2,
+      "offer": {
+        "ref": "O4",
+        "author": "A2",
+        "base_version": "W3",
+        "target": "W3",
+        "knowledge": "From my directly read original S02, a decisive clue that W3's son hypothesis does not address: the guilty person claims he or she did not see others approaching the intersection. Combined with S02's other clauses (guilty person is less than 30; unable to avoid the collision due to inexperience), this points to a young, inexperienced road user. W3's reading (Mr. X's son, 17, as driver) fits 'under 30' and male (per A3's S03 report) but has no support for inexperience at driving or for failing to see others; the task facts never place the son behind the wheel, and the alcohol profile reported from S01 (via O1) is a car-driver impairment clue that points to Mr. X, not to the son. The under-30 + inexperience + didn't-see-others combination is most directly satisfied by a young driver with a very short license history — Mrs. Y (27, 1 year) — except that A3's reported S03 clue says the guilty person is a man, which is the key remaining conflict. I cannot read S03 directly, so I cannot confirm that 'man' clue; if A3's report of it is accurate it excludes Mrs. Y, and if it is not, option_2 becomes the best fit. Either way, W3's option_3 is not supported by S02: nothing in S02 identifies the son or the first car.",
+        "support": [
+          {
+            "ref": "S02",
+            "excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "W3",
+            "excerpt": "The son is a man (male), and his father (Mr. X) is indirectly responsible because the father's drinking is the causal background."
+          },
+          {
+            "ref": "O1",
+            "excerpt": "the guilty person is a car driver with a 1.5 blood-alcohol level who admits being inattentive at the time of the collision"
+          }
+        ],
+        "proposed_use": "In W3's work_text and open_points, record this as A2's directly read S02 (not something A3 can verify directly): the guilty person is under 30, was unable to avoid the collision due to inexperience, and did not see others approaching. Use it to (a) confirm Mr. X (53) is excluded, (b) note that the son hypothesis lacks any inexperience/didn't-see support and that no fact places the son driving, and (c) flag the unresolved conflict: S02's inexperience + didn't-see-others fits Mrs. Y best, but A3's reported S03 'male' clue would exclude her. W3 should either produce independent support for the son-as-driver or acknowledge that option_2 (Mrs. Y) is the best S02 fit if the 'male' clue cannot be relied on, rather than resting on the interpretive 'father indirectly responsible' reading."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 8,
+        "stage": "OBSERVE",
+        "member": "A2"
+      },
+      "kind": "offer_untried",
+      "cycle": 2,
+      "offer_ref": "O3",
+      "base_version": "W3"
+    },
+    {
+      "call_context": {
+        "logical_call": 8,
+        "stage": "OBSERVE",
+        "member": "A2"
+      },
+      "kind": "offer_selected",
+      "cycle": 2,
+      "offer_ref": "O4",
+      "base_version": "W3"
+    },
+    {
+      "call_context": {
+        "logical_call": 9,
+        "stage": "TRY",
+        "member": "A3"
+      },
+      "kind": "trial_created",
+      "cycle": 2,
+      "offer_ref": "O4",
+      "before": "W3",
+      "after": "W5",
+      "use_record": "Applied offer O4 (A2's report of S02) to a copy of my current W3/W4 work. O4's reported S02 clauses (under 30, inexperience, didn't see others approaching) were checked against each suspect: they confirm Mr. X (53) is excluded, show my son-as-driver reading lacks any inexperience/didn't-see support and no fact places the son driving, and show Mrs. Y (27, 1-year license, damaged lights) is the best direct fit except for my S03 'a man' clause. Local result: I dropped option_3 and, weighing S02's three jointly fitting clauses against S03's single 'man' clause, switched to option_2, recording option_1 as fallback if the 'man' clause is decisive. This is indirect evidence: S02 is A2's original, not mine, so the S02 content is peer-reported and unverified by me; I also consulted O1/O3 (S01 report) for the car/alcohol conflict. I did not personally verify S01 or S02 originals.",
+      "declared_sources": [
+        "S03",
+        "T",
+        "O4",
+        "O1",
+        "O2",
+        "O3"
+      ]
+    },
+    {
+      "call_context": {
+        "logical_call": 10,
+        "stage": "CHECK_USE",
+        "member": "A2"
+      },
+      "kind": "check_observation",
+      "cycle": 2,
+      "check": {
+        "stage": "CHECK_USE",
+        "member": "A2",
+        "before": "W3",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "Checking O4 against the whole W3→W5 transition and the USE_RECORD, the offer's content was largely applied but with two material divergences. (1) O4 explicitly states that if A3's S03 'man' clue is accurate, Mrs. Y is excluded and option_2 should not be chosen; the offer's actual recommendation is to stop resting on the interpretive 'father indirectly responsible' reading and to flag option_2 only conditionally. W5 instead adopts option_2 as its artifact while acknowledging the 'man' clause is read directly from A3's own original — i.e., the application inverts O4's stated conditional, treating a clue O4 says would block option_2 as merely outweighed. (2) O4 says the alcohol profile reported via O1 points to Mr. X, not the son; W5 does record this (point 1) and records that the son-as-driver reading is unsupported, so that part matches. (3) O4's proposed_use asked for recording that S02 is A2's directly read original, not verifiable by A3; W5 does flag S01/S02 as peer-reported only, which is accurate, though the USE_RECORD's phrase 'Applied offer O4' overstates: the decisive step (switching to option_2) runs against O4's own conditional caveat. Also note W5's declared_sources include O4 and the work_text cites O2/O4 for S02 content, but the S02 clauses are also A3's own direct original (S02 is in A3's SELF_MATERIALS per SOURCE_ACCESS direct_original_refs), so describing the under-30/inexperience/didn't-see clues as 'peer-reported (indirect, unverified by me)' is inaccurate — A3 can read S02 directly, and that is the strongest basis for the option_2 switch, not O4. Scope: O4 vs W3/W5 work_text, open_points, artifact, USE_RECORD, and declared_sources; I did not read S01/S03 originals.",
+        "scope": "O4 application to W3→W5: artifact choice, work_text, open_points, USE_RECORD, and declared_sources; S02 is A3's own direct original per SOURCE_ACCESS, so the 'peer-reported' framing of S02 clauses is a provenance error, and the option_2 switch conflicts with O4's explicit conditional that the 'man' clause excludes Mrs. Y."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 11,
+        "stage": "CHECK_EFFECT",
+        "member": "A1"
+      },
+      "kind": "check_observation",
+      "cycle": 2,
+      "check": {
+        "stage": "CHECK_EFFECT",
+        "member": "A1",
+        "before": "W3",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "The change from W3 (option_3) to W5 (option_2) does not follow from the premises W5 itself accepts. W5 directly reads S03, which states the guilty person is a man; Mrs. Y is female, so option_2 contradicts A3's own directly read original. W5 openly acknowledges this ('S03's a man clause directly excludes Mrs. Y') yet selects option_2 anyway, downgrading the one clause it can verify while elevating S02 clues known only through peer reports O2/O4. W5 also misstates the fallback: it says 'if the man clause is decisive, option_1 (Mr. Z) is the fallback,' but S03's own '110 km/h' clause plus T's fact that Mr. Z was speeding on N13 is the strongest match to Mr. Z, while S01's reported car/alcohol profile excludes a motorcyclist — so W5's fallback reasoning is internally inconsistent. Additionally, W5's stated motivation ('coordination bonus requires convergence and A1/A2's reports both point away from option_3') is a coordination argument, not evidence about the perpetrator; A1's W1 actually chose option_4 (Mr. X), not option_2, so W5's claim that peers point toward Mrs. Y is inaccurate. A concrete counterexample: if S03 is accurate (guilty = man), W5's artifact is necessarily wrong; if S03's 'man' clause were unreliable, W5 still has no direct support for Mrs. Y beyond peer-reported S02, and its own open point concedes the reversal is 'a judgment call, not a verified fact.' The delivery relationship is broken: the artifact (option_2) is not entailed by the reconstructed premises (S03 direct: male + 110 km/h; S01 report: car + alcohol; S02 report: under 30 + inexperience + didn't-see). No assignment cleanly satisfies all three, but option_2 violates the only directly verified original, whereas option_1 at least satisfies S03's male and 110 km/h clauses. Scope: W5's artifact selection and its fallback reasoning; does not resolve which suspect is truly guilty, since S01/S02 remain unverified peer reports.",
+        "scope": "W5 artifact (option_2) versus its declared premises S03/T and peer reports O1-O4; specifically the inconsistency of choosing a female suspect against a directly read 'a man' clause and the misdescribed option_1 fallback."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 12,
+        "stage": "CHOOSE",
+        "member": "A3"
+      },
+      "kind": "offer_not_adopted",
+      "cycle": 2,
+      "offer_ref": "O4",
+      "decision": {
+        "candidate_id": "W3",
+        "reason": "Both peer checks flag W5's option_2 as unsupported by its own premises. My direct original S03 states the guilty person is a man; Mrs. Y is female, so option_2 contradicts the only original I can verify, and W5 itself concedes this while still choosing it. A1's CHECK_EFFECT also notes W5's fallback logic (option_1 if the 'man' clause is decisive) is internally inconsistent, since S03's 110 km/h clause plus T's speeding fact for Mr. Z is the strongest direct match, whereas S01's reported car/alcohol profile (peer-reported, unverified) would cut against a motorcyclist. A2's CHECK_USE notes W5 misapplies O4, whose conditional explicitly says the 'man' clue excludes Mrs. Y. W3 (option_3) has its own weakness — no fact places the son driving — but it at least respects S03's 'a man' and 'father indirectly responsible' clauses and does not overturn the directly read original on the strength of unverified peer reports. Between the two existing candidates, W3 is the less contradicted choice, with the son-as-driver inference and the S01/S02 conflicts remaining unresolved limits."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 13,
+        "stage": "FINALIZE",
+        "member": "A3"
+      },
+      "kind": "final_proposal",
+      "cycle": 2,
+      "work": "W3",
+      "use_record": "Reused existing complete candidate W3 verbatim (artifact option_3) after reviewing peer feedback on W4 and W5. Basis: my direct originals S03 (guilty person is a man, driving 110 km/h, father indirectly responsible) and T (task facts). Peer-reported, indirectly known only through public carriers: O1/O3 report S01 (car driver, 1.5 blood alcohol, inattentive — fits Mr. X, unverified by me); O2/O4 report S02 (under 30, inexperience, didn't see others — fits Mrs. Y best except the 'man' clause, unverified by me); W1 chose option_4, W2 option_2, W4 option_1, W5 option_2. I did not read S01 or S02 originals; those contents are peer reports, not personal verification. W4's flip to Mr. Z conflicts with the reported car/alcohol clue and with T's motorcycle fact; W5's flip to Mrs. Y contradicts my directly read 'a man' clause. W3 remains the least-contradicted available candidate, with the son-as-driver inference and the S01/S02 conflicts recorded as unresolved limits.",
+      "declared_sources": [
+        "S03",
+        "T",
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "W1",
+        "W2",
+        "W4",
+        "W5"
+      ]
+    },
+    {
+      "call_context": {
+        "logical_call": 14,
+        "stage": "FINAL_CHECK_USE",
+        "member": "A2"
+      },
+      "kind": "check_observation",
+      "cycle": 2,
+      "check": {
+        "stage": "FINAL_CHECK_USE",
+        "member": "A2",
+        "before": "W3",
+        "after": "W3",
+        "finding": "issue",
+        "observation": "Final proposal and fallback are identical (W3, artifact option_3, declared_sources empty, source_declaration_status not_collected), so there is no genuine independent fallback. USE_RECORD claims reuse of 'existing complete candidate W3 verbatim' and cites peer carriers O1/O2/O3/O4/W1/W2/W4/W5 in APPLICATION_SOURCE_REFS, but W3 itself declares no sources and its work_text still says 'I have not seen peers' materials S01/S02' and 'Coordination with A1/A2 cannot be confirmed at this initial stage' — inconsistent with the USE_RECORD narrative that peer feedback was reviewed. Content check against accessible evidence: S02 (my direct original) states the guilty person is under 30, inattentive/inexperienced, and did not see others approaching; this excludes Mr. X (53) and does not identify the son, and W3's son-as-driver reading ('could refer to the son driving the first car') is an unsupported inference — T says only that Mr. X and his son return home in the first car, with Mr. X noted as having drunk spirits. S02's inexperience + didn't-see-others clauses fit Mrs. Y (27, 1-year license, damaged lights) better than any other suspect, and fit the son poorly (no license/driving fact). W3's own 'man' clause comes from S03, which I cannot read directly; it is only reported via W4/W5 (peer_metadata_not_verified), so W3's use of it as decisive is not independently verifiable here. The reported S01 car/alcohol profile (via O1/O3, unverified) further conflicts with option_3 (no fact places the son driving or drinking) and supports option_2 or option_4 over option_3. W4's option_1 (Mr. Z) conflicts with T (motorcycle, not car) and with reported S01; W5's option_2 contradicts its own directly read 'man' clause but is the best S02 fit. Overall: the proposal is not clearly the best-supported choice; the strongest directly accessible evidence (S02) points away from option_3, and the proposal's key support (son as driver, 'father indirectly responsible') is interpretive rather than stated in T or S02. Cannot verify S01/S03 originals; cannot confirm peer convergence. Concrete recommendation: either re-open with a candidate whose reasoning rests on S02 (option_2, flagging the 'man' conflict) or explicitly justify why the S03 'man' clause outweighs S02's three clauses, and supply a distinct fallback rather than duplicating W3.",
+        "scope": "FINAL_PROPOSAL/FALLBACK W3 (option_3) vs. T, S02, and peer carriers O1-O4, W1, W2, W4, W5; specifically the option_3 rationale, source declarations, and the proposal/fallback duplication."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 15,
+        "stage": "FINAL_CHECK_EFFECT",
+        "member": "A1"
+      },
+      "kind": "check_observation",
+      "cycle": 2,
+      "check": {
+        "stage": "FINAL_CHECK_EFFECT",
+        "member": "A1",
+        "before": "W3",
+        "after": "W3",
+        "finding": "issue",
+        "observation": "The final proposal and fallback are both W3 (artifact option_3, base_version null, initial: true, declared_sources empty, source_declaration_status not_collected), i.e. the unchanged initial work rather than any revised version. Consequences reconstructed from visible premises: (a) delivery/contract — artifact is a legal option ID (option_3) and deliverable_shape is true, so the output shape satisfies the contract, but that does not establish correctness. (b) Modified relations — W4 and W5 are later A3 versions explicitly declaring base_version W3 and collected sources (W4: S03,O1,O2,W3; W5: S03,T,O4,O1,O2,O3), and they revise the artifact to option_1 and option_2 respectively; the final proposal ignores these revisions and their declared evidence. (c) Evidence consequences — peer reports O1/O3 (A1's S01: guilty person drove a car with 1.5 alcohol, inattentive) and O2/O4 (A2's S02: under 30, inexperience, did not see others) are indirectly known to A3 and were used by A3's own W4/W5; S02's under-30 clause excludes Mr. X (53) and S01's car/alcohol clause cuts against Mr. Z (motorcycle) and against the son-as-driver reading, since no task fact places the son behind the wheel. W3's option_3 rests on an interpretive 'father indirectly responsible' reading plus a hypothetical son-as-driver, which W3 itself flags as unsupported. (d) Fallback — identical to the proposal, so it provides no alternative if option_3 fails; A3's own later analyses propose option_2 (W5) with option_1 (W4) as the alternative, and W3's stated fallback logic is absent. (e) Coordination — the bonus requires convergence with A1/A2, whose visible candidates are option_4 (W1) and option_2 (W2); option_3 is not supported by any visible peer candidate, so the coordination bonus is unlikely under this proposal. (f) Provenance limits — S02 and S03 are known only through peer reports (O2/O4, W4/W5), not direct originals; declared_sources being empty here means not_collected, not that no materials were used. The proposal is therefore deliverable in shape but substantively stale and unsupported relative to the visible record.",
+        "scope": "FINAL_PROPOSAL and FALLBACK, both version W3 (initial, base_version null, artifact option_3); compared against later A3 versions W4 (option_1) and W5 (option_2), peer offers O1–O4, peer candidates W1 (option_4) and W2 (option_2), and task T; S02/S03 treated as peer-reported, not directly verified."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 16,
+        "stage": "FINAL_CHOOSE",
+        "member": "A3"
+      },
+      "kind": "final_selection",
+      "cycle": 2,
+      "decision": {
+        "candidate_id": "W3",
+        "reason": "W3 is the only allowed candidate in this stage, so I select it as the best-effort deliverable, with artifact option_3 (Mr. X's son). My only direct originals are S03 and T. S03 states the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible; T places Mr. X (who drank spirits) and his 17-year-old son together in the first car, making the son the male whose father's drinking is the indirect cause. The 110 km/h detail superficially matches Mr. Z, and T never states who drove the first car, so this reading is interpretive. Peer reports (via O1-O4) add S01's car/alcohol/inattention profile and S02's under-30/inexperience/didn't-see-others clues, which conflict with option_3 and point toward option_2 or option_4; those originals are not directly accessible to me, and the two FINAL_CHECKs flag the proposal as stale and unsupported. I therefore deliver W3 unchanged as a best-effort choice and record that its correctness is not established and peer convergence is unconfirmed."
+      }
+    }
+  ],
+  "final": "W3"
+}

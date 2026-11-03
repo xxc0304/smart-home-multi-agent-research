@@ -1,0 +1,455 @@
+[
+  {
+    "task_id": "gsm8k/train/5134",
+    "run_id": "coreta-revision-a8348dd213b8",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Let J, A, F be the counts for Jared, Ann, and Alfred.\n\nGiven: J = 300, and Jared counted 15% fewer than Ann, so\nJ = (1 − 0.15)A = 0.85A = (17/20)A.\nThus A = 300 · 20/17 = 6000/17.\n\nAnn counted 7 more than Alfred: A = F + 7, so\nF = A − 7 = 6000/17 − 119/17 = 5881/17.\n\nTotal T = J + A + F = 300 + 6000/17 + 5881/17\n= 5100/17 + 11881/17 = 16981/17 ≈ 998.88.\n\nThis literal reading gives non-integer car counts, so the stated numbers are not whole-number consistent. A natural integer-consistent repair is to read the comparison from Jared's count as the base (Ann counted 15% more than Jared): A = 300·1.15 = 345, F = 345 − 7 = 338, and T = 300 + 345 + 338 = 983.\n\nUnder the literal wording the exact total is \\boxed{\\frac{16981}{17}\\approx 998.88}; under the integer-consistent intended reading the total is \\boxed{983}.",
+    "prefinal_artifact": "Let J, A, F denote the numbers Jared, Ann, and Alfred counted. We are given J = 300 and that Jared counted 15% fewer than Ann, so J = 0.85·A = (17/20)A. Thus A = 300·(20/17) = 6000/17. Ann counted 7 more than Alfred, so F = A − 7 = 6000/17 − 119/17 = 5881/17. Total = J + A + F = 300 + 6000/17 + 5881/17 = 5100/17 + 11881/17 = 16981/17 ≈ 998.88. This literal interpretation gives non-integer car counts, which is impossible for actual cars. A common intended reading in such word problems is that 300 is the reference and the percentage applies to Jared's count: Ann counted 15% more than Jared, so A = 300·1.15 = 345 (integer), and Alfred counted 7 fewer than Ann, so F = 345 − 7 = 338. Total = 300 + 345 + 338 = 983. Under the literal wording, the answer is \\boxed{\\frac{16981}{17}\\approx 998.88}; under the integer-consistent intended reading, the answer is \\boxed{983}.",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 10,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "f35fc93f8c4bd4b104658d1edb484ea29929fd49485825d19d50706e72a38041",
+      "239386f5b5e443dd09d8eb7c558eeb85ac626a2d3b716e90b80e61c87275f9f3",
+      "67b46f04a23bf64f74c76372d48fd60c78a7f8a9800965a8c93da8c1786ba866"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/5134",
+    "run_id": "coreta-revision-5918a6eb4f46",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Let J, A, F denote the counts by Jared, Ann, and Alfred. Given J = 300.\n\n\"Jared counted 15% fewer cars than Ann\" means J = A − 0.15A = 0.85A = (17/20)A. Thus A = 300·(20/17) = 6000/17 ≈ 352.94.\n\n\"Ann counted 7 more cars than Alfred\" means A = F + 7, so F = A − 7 = 6000/17 − 119/17 = 5881/17 ≈ 345.94.\n\nTotal T = J + A + F = 300 + 6000/17 + 5881/17 = 5100/17 + 11881/17 = 16981/17 ≈ 998.88.\n\nCheck: A − J = 6000/17 − 5100/17 = 900/17, and 15% of A = (3/20)(6000/17) = 900/17 ✓. Also A − F = 7 ✓.\n\nThe algebra under the literal reading is exact. The only anomaly is that A and F are not whole numbers, which is impossible for literal car counts; this reflects inconsistent problem data rather than an arithmetic error. The mathematically faithful answer is the exact fraction. The alternative reading \"15 fewer cars\" (Ann = 315, Alfred = 308, total 923) is not supported by the text's \"15% fewer\" and is not adopted.\n\n\\boxed{\\dfrac{16981}{17}\\approx 998.88\\text{ cars (about }999\\text{ rounded)}}",
+    "prefinal_artifact": "Let J, A, F be the counts by Jared, Ann, and Alfred. Given J = 300.\n\n\"Jared counted 15% fewer cars than Ann\" means J = A − 0.15A = 0.85A = (17/20)A. Hence A = 300·(20/17) = 6000/17 ≈ 352.94.\n\n\"Ann counted 7 more cars than Alfred\" means A = F + 7, so F = A − 7 = 6000/17 − 119/17 = 5881/17 ≈ 345.94.\n\nTotal T = J + A + F = 300 + 6000/17 + 5881/17 = 5100/17 + 11881/17 = 16981/17 ≈ 998.88.\n\nCheck: A − J = 6000/17 − 5100/17 = 900/17, and 15% of A = (3/20)(6000/17) = 900/17 ✓. Also A − F = 7 ✓.\n\nThe algebra under the literal reading is exact. The only anomaly is that A and F are not whole numbers, which is impossible for a literal car count; this reflects inconsistent problem data rather than an arithmetic error. The mathematically faithful answer is the exact fraction. The alternative reading \"15 fewer cars\" (Ann = 315, Alfred = 308, total 923) is not supported by the text's \"15% fewer\" and is not adopted.\n\n\\boxed{\\dfrac{16981}{17}\\approx 998.88\\text{ cars (about }999\\text{ rounded)}}",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "f35fc93f8c4bd4b104658d1edb484ea29929fd49485825d19d50706e72a38041",
+      "239386f5b5e443dd09d8eb7c558eeb85ac626a2d3b716e90b80e61c87275f9f3",
+      "67b46f04a23bf64f74c76372d48fd60c78a7f8a9800965a8c93da8c1786ba866"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/5134",
+    "run_id": "coreta-revision-73fd0d11a23e",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Let J, A, and F denote the numbers of cars counted by Jared, Ann, and Alfred.\n\nJared counted 15% fewer than Ann, so J = A − 0.15A = 0.85A = (17/20)A. Given J = 300, (17/20)A = 300, so A = 300·20/17 = 6000/17.\n\nAnn counted 7 more than Alfred, so A = F + 7, hence F = A − 7 = 6000/17 − 119/17 = 5881/17.\n\nTotal: T = J + A + F = 300 + 6000/17 + 5881/17 = 5100/17 + 11881/17 = 16981/17.\n\nCross-check: T = J + A + (A − 7) = 293 + 2A = 293 + 12000/17 = 4981/17 + 12000/17 = 16981/17. Division check: 16981 = 17·998 + 15, so 16981/17 = 998 + 15/17 ≈ 998.88.\n\nNote: 17A = 6000 has no integer solution (6000 = 17·352 + 16), so the literal percentage data are not integer-consistent. The exact literal total is retained; the unsupported '15 fewer cars' variant (923) is not adopted.\n\n\\boxed{\\dfrac{16981}{17}\\approx 998.88}",
+    "prefinal_artifact": "Let J, A, and F be the counts by Jared, Ann, and Alfred. Jared counted 15% fewer cars than Ann, so J = A − 0.15A = 0.85A = (17/20)A. With J = 300, (17/20)A = 300, so A = 300·20/17 = 6000/17 ≈ 352.94. Ann counted 7 more than Alfred, so A = F + 7, hence F = A − 7 = 6000/17 − 119/17 = 5881/17 ≈ 345.94. Total T = J + A + F = 300 + 6000/17 + 5881/17 = 5100/17 + 11881/17 = 16981/17 ≈ 998.88. Cross-check: T = J + A + (A − 7) = 293 + 2A = 293 + 12000/17 = 4981/17 + 12000/17 = 16981/17, matching. Division check: 17·998 = 16966, remainder 15, so 16981/17 = 998 + 15/17 ≈ 998.882. Literal boxed answer: \\boxed{\\frac{16981}{17}\\approx 998.88}. Note: this literal reading gives non-integer car counts (17A = 6000 has no integer solution since 6000 = 17·352 + 16), so the stated numbers are not integer-consistent; the computation above is the exact result under the standard meaning of '15% fewer'. The alternative reading '15 fewer cars' (giving 923) is a text alteration and is not adopted.",
+    "finalizer_changed": true,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 5,
+    "issues": {
+      "i0001": {
+        "description": "The literal standard reading (Jared = 0.85·Ann) yields non-integer counts Ann = 6000/17 and Alfred = 5881/17, so the stated numbers are not integer-consistent. The exact literal total 16981/17 ≈ 998.88 is retained; no alternative reading is adopted because the text explicitly says '15% fewer'.",
+        "blocking": false,
+        "target_refs": [
+          "v0:s6",
+          "coreta-revision-73fd0d11a23e:e0000#s6",
+          "coreta-revision-73fd0d11a23e:e0002#s5"
+        ],
+        "existing_issue_id": null,
+        "issue_id": "i0001",
+        "status": "open",
+        "source_event_id": "coreta-revision-73fd0d11a23e:e0003",
+        "version": 0,
+        "handling_events": [
+          {
+            "version": 2,
+            "issue_id": "i0001",
+            "status": "open",
+            "reason": "Retained: the integrality obstruction is real and inspectable (17A = 6000 has no integer solution since 6000 = 17·352 + 16), so the literal reading cannot yield whole car counts. The candidate reports the exact literal total 16981/17 ≈ 998.88 and explicitly declines the unsupported '15 fewer' variant (923). This is a task-data inconsistency, not a computational error; it is non-blocking because the literal answer is fully determined and verified. The cross-check T = 293 + 2A from e0004 is now integrated into s5, and e0005's independent trace confirms it.",
+            "evidence_refs": [
+              "coreta-revision-73fd0d11a23e:e0000#s6",
+              "coreta-revision-73fd0d11a23e:e0002#s5",
+              "coreta-revision-73fd0d11a23e:e0004",
+              "coreta-revision-73fd0d11a23e:e0005"
+            ],
+            "changed_step_ids": [
+              "s3",
+              "s5",
+              "s6"
+            ]
+          }
+        ],
+        "related_events": [
+          {
+            "event_id": "coreta-revision-73fd0d11a23e:e0005",
+            "description": "The literal standard reading forces non-integer counts (Ann = 6000/17, Alfred = 5881/17) and total 16981/17 ≈ 998.88, while GSM8K-style tasks conventionally expect a whole-number answer. The candidate's exact arithmetic is correct, but it does not resolve whether the intended answer is the literal fraction or an integer under a different reading; the alternative '15 fewer' reading (923) is a text alteration and is correctly not adopted. This remains an open inconsistency in the task data.",
+            "blocking": false,
+            "target_refs": [
+              "v1:s6",
+              "coreta-revision-73fd0d11a23e:e0000#s6",
+              "coreta-revision-73fd0d11a23e:e0002#s5"
+            ],
+            "existing_issue_id": "i0001"
+          }
+        ]
+      }
+    },
+    "errors": [],
+    "draft_hashes": [
+      "f35fc93f8c4bd4b104658d1edb484ea29929fd49485825d19d50706e72a38041",
+      "239386f5b5e443dd09d8eb7c558eeb85ac626a2d3b716e90b80e61c87275f9f3",
+      "67b46f04a23bf64f74c76372d48fd60c78a7f8a9800965a8c93da8c1786ba866"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "gsm8k/train/5134",
+    "run_id": "coreta-revision-b06dc3ca2442",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Let J, A, and F denote the numbers counted by Jared, Ann, and Alfred.\n\nGiven J = 300. Jared counted 15% fewer than Ann, so\nJ = A − 0.15A = 0.85A = (17/20)A.\nThus\nA = 300·(20/17) = 6000/17 ≈ 352.94.\n\nAnn counted 7 more than Alfred, so A = F + 7, hence\nF = A − 7 = 6000/17 − 119/17 = 5881/17 ≈ 345.94.\n\nThe total is\nT = J + A + F = 300 + 6000/17 + 5881/17\n  = 5100/17 + 11881/17 = 16981/17 ≈ 998.88.\n\nCheck: 0.85·(6000/17) = (17/20)(6000/17) = 300 = J, and A − F = 7. The algebra is consistent, but the resulting individual counts are not integers, so the literal percentage data are not perfectly integer-consistent. Taking the standard literal reading and rounding to a whole number of cars gives approximately 999 cars.\n\n\\boxed{\\frac{16981}{17}\\approx 998.88\\text{ cars (about }999\\text{ cars)}}",
+    "prefinal_artifact": "Jared counted 15% fewer cars than Ann, so Jared = 0.85·Ann. Given Jared = 300, Ann = 300/0.85 = 30000/85 = 6000/17 ≈ 352.94. Ann counted 7 more than Alfred, so Alfred = Ann − 7 = 6000/17 − 119/17 = 5881/17 ≈ 345.94. Total = Jared + Ann + Alfred = 300 + 6000/17 + 5881/17 = 5100/17 + 11881/17 = 16981/17 ≈ 998.88. This is not an integer, which signals that the intended reading may differ. Rechecking: '15% fewer cars' means Jared = 0.85 Ann, giving non-integer Ann for Jared = 300. The literal computation yields 16981/17 ≈ 998.88 cars, which is impossible as a count. A standard contest interpretation may treat 300 as the base such that Ann = 300/0.85; however, since car counts must be integers, the problem as stated is internally inconsistent. Boxed literal answer: \\boxed{\\frac{16981}{17}\\approx 998.88}; if an integer is required, no valid integer solution exists under the stated percentages.",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "f35fc93f8c4bd4b104658d1edb484ea29929fd49485825d19d50706e72a38041",
+      "239386f5b5e443dd09d8eb7c558eeb85ac626a2d3b716e90b80e61c87275f9f3",
+      "67b46f04a23bf64f74c76372d48fd60c78a7f8a9800965a8c93da8c1786ba866"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/615",
+    "run_id": "coreta-revision-67835f7c1ac6",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def average_tuple(tuples):\n    return [sum(t) / len(t) for t in tuples]\n",
+    "prefinal_artifact": "def average_tuple(tuples):\n    return [sum(t) / len(t) for t in tuples]",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 10,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "ab7676e175bb8dc40e2ff173fc1777518cf95ecee0b42018c3a26fea0a8ab754",
+      "0264f28197117c7f3b203fe25d1ef0c7ef21770643565e9facf9716f48d6e4f3",
+      "13951efd3fef19a8d8ca29a477f2fd106ccb17b795ff8f37257aa1e57c7bd6da"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/615",
+    "run_id": "coreta-revision-3f979c4614e6",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def average_tuple(tuples):\n    \"\"\"Return a list containing the arithmetic mean of each inner tuple.\"\"\"\n    return [sum(t) / len(t) for t in tuples]\n",
+    "prefinal_artifact": "def average_tuple(tuples):\n    \"\"\"Return a list containing the arithmetic mean of each inner tuple.\"\"\"\n    return [sum(t) / len(t) for t in tuples]\n",
+    "finalizer_changed": false,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "ab7676e175bb8dc40e2ff173fc1777518cf95ecee0b42018c3a26fea0a8ab754",
+      "0264f28197117c7f3b203fe25d1ef0c7ef21770643565e9facf9716f48d6e4f3",
+      "13951efd3fef19a8d8ca29a477f2fd106ccb17b795ff8f37257aa1e57c7bd6da"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/615",
+    "run_id": "coreta-revision-53711762151a",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def average_tuple(tuples):\n    return [sum(t) / len(t) for t in tuples]\n",
+    "prefinal_artifact": "def average_tuple(tuples):\n    return [sum(t) / len(t) for t in tuples]",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "ab7676e175bb8dc40e2ff173fc1777518cf95ecee0b42018c3a26fea0a8ab754",
+      "0264f28197117c7f3b203fe25d1ef0c7ef21770643565e9facf9716f48d6e4f3",
+      "13951efd3fef19a8d8ca29a477f2fd106ccb17b795ff8f37257aa1e57c7bd6da"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/615",
+    "run_id": "coreta-revision-09d095e55aad",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def average_tuple(tuples):\n    \"\"\"Return a list containing the arithmetic mean of each inner tuple.\"\"\"\n    return [sum(t) / len(t) for t in tuples]\n",
+    "prefinal_artifact": "def average_tuple(tuples):\n    \"\"\"Return a list containing the arithmetic mean of each inner tuple.\"\"\"\n    return [sum(t) / len(t) for t in tuples]\n",
+    "finalizer_changed": false,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 5,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "ab7676e175bb8dc40e2ff173fc1777518cf95ecee0b42018c3a26fea0a8ab754",
+      "0264f28197117c7f3b203fe25d1ef0c7ef21770643565e9facf9716f48d6e4f3",
+      "13951efd3fef19a8d8ca29a477f2fd106ccb17b795ff8f37257aa1e57c7bd6da"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "mbpp/train/802",
+    "run_id": "coreta-revision-199268576b24",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def count_rotation(arr):\n    \"\"\"Return the number of left rotations of a sorted array that produced arr.\n\n    The rotation count equals the index of the minimum element of the rotated\n    sorted array. Binary search on arr[mid] vs arr[hi]: O(log n) for distinct\n    elements; the equality branch keeps it correct for duplicates (worst case\n    O(n)). Empty input returns 0 as a defensive convention.\n    \"\"\"\n    n = len(arr)\n    if n == 0:\n        return 0\n\n    lo, hi = 0, n - 1\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if arr[mid] > arr[hi]:\n            # Minimum lies strictly to the right of mid.\n            lo = mid + 1\n        elif arr[mid] < arr[hi]:\n            # Minimum is at mid or to its left.\n            hi = mid\n        else:\n            # arr[mid] == arr[hi]: cannot decide; shrink hi safely.\n            hi -= 1\n    return lo\n",
+    "prefinal_artifact": "def count_rotation(arr):\n    \"\"\"Return the number of left rotations of a sorted array that produced arr.\n\n    The rotation count equals the index of the minimum element of the rotated\n    sorted array.  Binary search on arr[mid] vs arr[hi]: O(log n) for\n    distinct elements; the equality branch keeps it correct for duplicates\n    (worst case O(n)).  Empty input returns 0 as a defensive convention.\n    \"\"\"\n    n = len(arr)\n    if n == 0:\n        return 0\n\n    lo, hi = 0, n - 1\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if arr[mid] > arr[hi]:\n            # Minimum lies strictly to the right of mid.\n            lo = mid + 1\n        elif arr[mid] < arr[hi]:\n            # Minimum is at mid or to its left.\n            hi = mid\n        else:\n            # arr[mid] == arr[hi]: cannot decide; shrink hi safely.\n            hi -= 1\n    return lo\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 10,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "561e0caf59ab19e11fe2c324dc0fd08b441c07d01550bb192ca1214bee81f38e",
+      "f81ad135dbd0cb4776e918bad54880cf43a74963b62b9235c73ca082486bde6b",
+      "4faedd6e929baa2925d6dfbfd2f8c511c1c8cdf34bc66d5d288ec6a15790a0f3"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/802",
+    "run_id": "coreta-revision-3c517d99e0fb",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "degraded",
+    "stop_reason": "runtime_error",
+    "artifact": "def count_rotation(arr):\n    \"\"\"Return the number of left rotations of a non-decreasing sorted array\n    that produced arr; this equals the index of the minimum element.\n\n    Empty input returns 0 as a defensive convention.\n    \"\"\"\n    n = len(arr)\n    if n == 0:\n        return 0\n\n    lo, hi = 0, n - 1\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if arr[mid] > arr[hi]:\n            # Minimum lies strictly to the right of mid.\n            lo = mid + 1\n        elif arr[mid] < arr[hi]:\n            # Minimum lies at mid or to its left.\n            hi = mid\n        else:\n            # arr[mid] == arr[hi]: cannot decide; shrink hi safely.\n            hi -= 1\n    return lo\n",
+    "prefinal_artifact": "def count_rotation(arr):\n    \"\"\"Return the number of left rotations of a non-decreasing sorted array\n    that produced arr; this equals the index of the minimum element.\n\n    Empty input returns 0 as a defensive convention.\n    \"\"\"\n    n = len(arr)\n    if n == 0:\n        return 0\n\n    lo, hi = 0, n - 1\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if arr[mid] > arr[hi]:\n            # Minimum lies strictly to the right of mid.\n            lo = mid + 1\n        elif arr[mid] < arr[hi]:\n            # Minimum lies at mid or to its left.\n            hi = mid\n        else:\n            # arr[mid] == arr[hi]: cannot decide; shrink hi safely.\n            hi -= 1\n    return lo\n",
+    "finalizer_changed": false,
+    "normal_calls": 6,
+    "format_repairs": 1,
+    "http_attempts": 4,
+    "issues": {
+      "i0001": {
+        "description": "A2's draft (e0002) is incorrect for non-decreasing arrays containing duplicates: it breaks early whenever arr[lo] <= arr[hi] and compares arr[mid] only with arr[lo], so [2,2,2,0,2] returns 0 instead of 3. It also overstates complexity as O(log n). The merged candidate uses the compare-with-right-endpoint approach (A0/A1) instead; no further action needed unless a different convention for duplicate rotation counting is required.",
+        "blocking": false,
+        "target_refs": [
+          "coreta-revision-3c517d99e0fb:e0002",
+          "coreta-revision-3c517d99e0fb:e0002#s2",
+          "coreta-revision-3c517d99e0fb:e0002#s3"
+        ],
+        "existing_issue_id": null,
+        "issue_id": "i0001",
+        "status": "open",
+        "source_event_id": "coreta-revision-3c517d99e0fb:e0003",
+        "version": 0,
+        "handling_events": []
+      }
+    },
+    "errors": [
+      {
+        "code": "REFERENCE_ERROR",
+        "detail": "basis_refs contains an invisible reference"
+      }
+    ],
+    "draft_hashes": [
+      "561e0caf59ab19e11fe2c324dc0fd08b441c07d01550bb192ca1214bee81f38e",
+      "f81ad135dbd0cb4776e918bad54880cf43a74963b62b9235c73ca082486bde6b",
+      "4faedd6e929baa2925d6dfbfd2f8c511c1c8cdf34bc66d5d288ec6a15790a0f3"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/802",
+    "run_id": "coreta-revision-1db1e262b5ed",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def count_rotation(arr):\n    \"\"\"Return the number of left rotations of a sorted array that produced arr.\n\n    The rotation count equals the index of the minimum element in the rotated\n    non-decreasing sorted array. Binary search is used: O(log n) time for\n    distinct elements, O(n) worst case with duplicates, O(1) space.\n\n    Examples:\n        count_rotation([15, 18, 2, 3, 6, 12]) -> 2\n        count_rotation([7, 9, 11, 12, 5]) -> 4\n        count_rotation([1, 2, 3, 4]) -> 0\n        count_rotation([]) -> 0\n    \"\"\"\n    n = len(arr)\n    if n == 0:\n        return 0\n\n    lo, hi = 0, n - 1\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if arr[mid] > arr[hi]:\n            # Minimum lies strictly to the right of mid.\n            lo = mid + 1\n        elif arr[mid] < arr[hi]:\n            # Minimum lies at mid or to its left.\n            hi = mid\n        else:\n            # arr[mid] == arr[hi]: arr[hi] is duplicated at mid, discard it.\n            hi -= 1\n    return lo\n",
+    "prefinal_artifact": "def count_rotation(arr):\n    \"\"\"Return the number of rotations required to generate a sorted array.\n\n    For a non-decreasing sorted array left-rotated by k positions, the\n    rotation count equals the index of the minimum element. If the array is\n    already sorted (no rotation), the answer is 0. Duplicates are handled.\n\n    Examples:\n        count_rotation([15, 18, 2, 3, 6, 12]) -> 2\n        count_rotation([7, 9, 11, 12, 5]) -> 4\n        count_rotation([1, 2, 3, 4]) -> 0\n        count_rotation([]) -> 0\n    \"\"\"\n    n = len(arr)\n    if n == 0:\n        return 0\n\n    lo, hi = 0, n - 1\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if arr[mid] > arr[hi]:\n            lo = mid + 1\n        elif arr[mid] < arr[hi]:\n            hi = mid\n        else:\n            hi -= 1\n    return lo\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "561e0caf59ab19e11fe2c324dc0fd08b441c07d01550bb192ca1214bee81f38e",
+      "f81ad135dbd0cb4776e918bad54880cf43a74963b62b9235c73ca082486bde6b",
+      "4faedd6e929baa2925d6dfbfd2f8c511c1c8cdf34bc66d5d288ec6a15790a0f3"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/802",
+    "run_id": "coreta-revision-7d347be08c38",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def count_rotation(arr):\n    \"\"\"Return the number of left rotations of a sorted array that produced arr.\n\n    The rotation count equals the index of the minimum element in a rotated\n    non-decreasing sorted array. Uses binary search: O(log n) for distinct\n    elements, O(n) worst case with duplicates.\n    \"\"\"\n    n = len(arr)\n    if n == 0:\n        return 0\n\n    lo, hi = 0, n - 1\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if arr[mid] > arr[hi]:\n            # Minimum lies strictly to the right of mid.\n            lo = mid + 1\n        elif arr[mid] < arr[hi]:\n            # Minimum lies at mid or to its left.\n            hi = mid\n        else:\n            # arr[mid] == arr[hi]: cannot decide; shrink hi safely.\n            hi -= 1\n    return lo\n",
+    "prefinal_artifact": "def count_rotation(arr):\n    \"\"\"Return the number of left rotations of a sorted array that produced arr.\n\n    This equals the index of the minimum element in a rotated sorted array\n    (assuming the array was formed by rotating a non-decreasing sorted array).\n    \"\"\"\n    n = len(arr)\n    if n == 0:\n        return 0\n\n    # Binary search for the index of the minimum element.\n    lo, hi = 0, n - 1\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if arr[mid] > arr[hi]:\n            # Minimum lies in the right half (mid excluded).\n            lo = mid + 1\n        elif arr[mid] < arr[hi]:\n            # Minimum lies in the left half (mid included).\n            hi = mid\n        else:\n            # Duplicates: can't decide, shrink the right boundary.\n            hi -= 1\n    return lo\n",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "561e0caf59ab19e11fe2c324dc0fd08b441c07d01550bb192ca1214bee81f38e",
+      "f81ad135dbd0cb4776e918bad54880cf43a74963b62b9235c73ca082486bde6b",
+      "4faedd6e929baa2925d6dfbfd2f8c511c1c8cdf34bc66d5d288ec6a15790a0f3"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  }
+]

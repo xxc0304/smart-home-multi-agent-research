@@ -1,0 +1,536 @@
+{
+  "kind": "revised_manual004_audit",
+  "labeler": "executor_not_independent_output_readjudication",
+  "scope": "prior32probe004subset_only_not_new_model_results",
+  "note": "A=old duties; B=replacement duties of prior run, not upcoming C/S conditions.",
+  "summary": {
+    "A": {
+      "outputs": 8,
+      "false_criticism_definite": 6,
+      "false_criticism_uncertain": 0,
+      "joint_inference_wrongly_rejected": 4,
+      "joint_rejection_uncertain": 1
+    },
+    "B": {
+      "outputs": 8,
+      "false_criticism_definite": 6,
+      "false_criticism_uncertain": 1,
+      "joint_inference_wrongly_rejected": 6,
+      "joint_rejection_uncertain": 1
+    }
+  },
+  "rows": [
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 1,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_USE",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "Directly reads S02/T; recognizes car exclusion and records indirect S01/S03.",
+      "observation_verbatim": "Checked O4 (A2's report of S02) against the whole before/after work and the use_record. O4's object is S02's inexperience/no-seeing clause; the operation is to record it as counting against Mr. Z and in favor of an inexperienced under-30 driver. W5 does exactly this: it drops 'inexperience' from the pro-Z majority, notes Mr. Z's 5-year license and deliberate speeding, and shifts back toward a car occupant under 30. O4's condition (S01 car/alcohol report plus S02 inexperience pushes W4 away from option_1) is also reflected: W5 cites O1/O3 for the car-driver/vehicle-class constraint. W5 does not overclaim that O4 resolves the son-as-driver question; it keeps that as an explicit limit, matching O4's proposed_use. One caveat: W5 says 'excludes the motorcyclist Mr. Z' on the basis of O1/O3, which is a peer report I cannot verify from S01 directly; W5's own limits section correctly flags S01/S02 as known only through peer reports, so the provenance is disclosed rather than misrepresented. No misattribution, no unstated reliance, and the artifact option_3 is consistent with the reasoning. Access limits: I directly read only S02 and T; O1/O3/W4 are public reports, and S01/S03 originals were not directly accessible to me, so I cannot confirm that A1's and A3's excerpts faithfully reproduce their originals.",
+      "scope_verbatim": "Use-check of O4 against W3→W5 (artifact, full work_text, open_points, declared_sources, use_record); direct access limited to S02 and T, with S01/S03 known only via O1/O3/W4/W5 reports.",
+      "usage": {
+        "input_tokens": 13115,
+        "input_tokens_details": {
+          "cached_tokens": 12928
+        },
+        "output_tokens": 405,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13520
+      },
+      "prior_false_criticism": "no",
+      "joint_constraint_erroneously_rejected": "no",
+      "regrade_evidence_note": "Accepts car constraint and option3; records access limits. Repeating draft unresolved speed is overcautious but not itself an objection to joint reasoning."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 2,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Criticizes reverting because option_3 was already W3, as though this invalidates rejection of public W4. A candidate can be reconsidered without the selected before option changing. Other driver/speed concerns are legitimate.",
+      "observation_verbatim": "Applying O4 to W4 does not produce W5 as stated. W5 claims the S01 report 'excludes the motorcyclist Mr. Z' and that S01's car-vehicle constraint plus S02's inexperience clause 'outweigh' the 110 km/h clue, then concludes option_3 (Mr. X's son). But this reconstruction requires an unstated premise: that the son was driving the first car. Neither T nor S03 states this; T only says Mr. X and his son 'return home' in the first car, and W5 itself lists 'no task fact states the son was driving' as an open limit. So the delivery chain is: S01(car driver, 1.5 alcohol, inattentive) + S02(under 30, inexperienced, didn't see others) + S03(male, 110 km/h, father indirectly responsible) -> son. The son satisfies 'male' and 'under 30', but 'car driver' and '110 km/h' are only satisfied if he drove; if he was a passenger, S01's car-driver constraint actually points to Mr. X (53, drunk) or Mrs. Y (27, damaged lights), and S03's 'male' rules out Mrs. Y, leaving Mr. X—whom S02's under-30 excludes. This is a genuine multi-constraint contradiction that W5 papers over by asserting the son-as-driver hypothesis as if it reconciled the clues, while simultaneously flagging it as unsupported. W5's phrase 'jointly fit Mr. X's son if he was driving' is conditional, yet the conclusion treats the fit as established. A concrete counterexample: if Mr. X drove (plausible—he is the licensed 30-year driver and owner), then S01 fits Mr. X, S03's 'father indirectly responsible' fits no one cleanly (Mr. X's father is not involved), and the son hypothesis collapses; option_4 would then be better supported by S01 than option_3. Also W5's claim that S01 'excludes the motorcyclist Mr. Z' is sound as a vehicle-class reading, but W5 then uses it to exclude Z while retaining S03's 110 km/h—which is the single clue that pointed to Z—without resolving why a car driver would be at 110 km/h at a narrow, poorly lit intersection. The weighing is asserted ('outweigh') rather than derived. Additionally, W5's revert to option_3 conflicts with the fact that option_3 was already A3's initial answer (W3); the 'trial of O4' therefore does not change A3's position, so the framing 'W4's option_1 is weakened and I revert' overstates the evidential shift—O4 only removes inexperience as support for Z, it does not affirmatively support the son. Scope: this concerns W5's work_text and artifact reasoning only; I did not verify S01/S02/S03 originals (S02/S03 accessible only via peer reports O2/O4, W4/W5), and I make no claim about the true perpetrator. No tool execution was performed.",
+      "scope_verbatim": "W5:work_text:L1 and W5:artifact:L1 (A3's post-O4 revision), evaluated against T, S01 (direct original), and peer reports O1-O4/W4; does not assess W1/W2 or the correctness of option_3 versus other options.",
+      "usage": {
+        "input_tokens": 12918,
+        "input_tokens_details": {
+          "cached_tokens": 12672
+        },
+        "output_tokens": 748,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13666
+      },
+      "prior_false_criticism": "yes",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Calls son-driver an unsupported premise and joint constraints contradictory; shared omission is not counterevidence. Also criticizes reversion merely because initial option already3."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 3,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Correct A2/S02 identity and car constraint; calls a disclosed conditional joint-fit an overreach. Whether this is excessive criticism is ambiguous.",
+      "observation_verbatim": "I am A2; my directly readable originals are S02 and T. I cannot read S03, S01, or W4's original, so my checks of AFTER rely on the visible public carriers O1/O3 (reports of S01), O4 (my own S02, which I can confirm from S02 directly), and W4 as quoted in the packet. Decisive alignment on the target offer O4: AFTER's claim that 'O4 reports S02 says the collision was caused by inexperience and failure to see others' is accurate — my S02 states exactly 'Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection.' AFTER's use of this to say S02 does not support Mr. Z (5 years' license, deliberate speeding) is a reasonable inference, not a quotation error, and it correctly discards W4's 'majority of clues converge on Mr. Z' framing. AFTER also correctly limits S01/S02 to peer-report status and flags that no task fact says the son was driving. The concrete issue is a generalization beyond the supported claim: AFTER's step (3) states 'Under-30 (S02 report) plus male (S03) plus car driver (S01 report) plus father indirectly responsible (S03) jointly fit Mr. X's son if he was driving the first car.' My S02 says only under-30/inexperience/didn't-see; it says nothing about maleness, car-driving, or a father. The 'male' and 'father indirectly responsible' elements are attributed to S03, which I cannot read; O1/O3 report S01 as 'driving a car ... 1.5 alcohol ... inattentive' but give no name or age. So the son-as-driver fit is an inference stacked on unverified peer reports plus an assumption (son driving) that T does not state — AFTER does label this a limit, which mitigates but does not remove the overreach in the body text. Additionally, AFTER says 'Mrs. Y is excluded by S03's \"a man\"' — that exclusion depends entirely on the unverified S03 report relayed via W4/W5, not on anything I can confirm; it should be marked as peer-reported rather than asserted. Also, AFTER's claim that S01 'excludes the motorcyclist Mr. Z' rests on O1/O3's report of S01's 'driving a car' clause; that is consistent with the visible excerpt but remains indirect for A3. Net: the O4 adoption itself is faithful to my S02, but AFTER generalizes the S02 constraint into a joint-fit conclusion that requires unverified S03/S01 content and an unstated son-as-driver premise; the artifact option_3 is a defensible choice but is presented with more certainty than the visible evidence supports.",
+      "scope_verbatim": "Checked AFTER (W5) against my direct original S02 and T, and against the visible public carriers O1, O3, O4, and W4; S01 and S03 originals are inaccessible to me, so those elements are assessed only for consistency with peer reports, not verified.",
+      "usage": {
+        "input_tokens": 13268,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 691,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13959
+      },
+      "prior_false_criticism": "uncertain",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Explicitly says son joint fit is overreach because own S02 lacks male/car/father; attributed other-source facts can be combined. Owner ambiguity remains separate."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 4,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Correct A1/S01 identity and explicit car constraint. Flags driver premise with qualification; alleged loss of speed-location limit is partly covered by residual open point.",
+      "observation_verbatim": "I am A1; my direct originals are S01 and T. S01 says 'The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision.' BEFORE W3's decisive claim was that S03's 'father indirectly responsible' plus 'a man' pointed to Mr. X's son, with the 110 km/h detail and the son-as-driver question flagged as tensions. AFTER W5 keeps option_3 but strengthens the car-driver report into an exclusion: '(2) O1/O3 report S01 says the guilty person is a car driver/car owner with 1.5 alcohol, inattentive — this excludes the motorcyclist Mr. Z.' This is supported: S01 explicitly gives a car driver/car owner, and T places Mr. Z on a motorcycle, so the vehicle-class exclusion is a legitimate inference from my original. The O4 use is also roughly faithful: O4 reports S02's inexperience clause and warns it counts against Mr. Z; W5 records it as a peer report and does not claim direct verification of S02. However W5 overstates the result: 'Under-30 (S02 report) plus male (S03) plus car driver (S01 report) plus father indirectly responsible (S03) jointly fit Mr. X's son if he was driving the first car.' S01 gives no name, age, or driver identity beyond 'car owner' with 1.5 alcohol, and T does not state who drove the first car; the son-as-driver step is an added inference, not a joint fit from the reports. W5 does flag this in its limits ('no task fact states the son was driving'), so the text is internally qualified, but the reasoning clause reads stronger than the evidence. Also the AFTER drops the BEFORE's explicit statement that S03's 110 km/h has no named vehicle/speed location, replacing it with a weighing judgment; that is a loss of an explicit reported limit, though the new open point still notes the 110 km/h match. The artifact remains option_3, unchanged; the changed reasoning moves from S03-only to cross-report weighing, and the car-driver exclusion of Mr. Z is the decisive supported change. Limits: I cannot read S02 or S03 originals, so the under-30, inexperience, male, and 110 km/h clauses are known only through O2/O4 and W3/W4/W5 reports; I cannot verify whether S03 actually says 110 km/h or 'father indirectly responsible'.",
+      "scope_verbatim": "Comparison of W3 (BEFORE) to W5 (AFTER) against O4, O1, O3, T, and my direct S01; focused on the car-driver exclusion of Mr. Z, the son-as-driver strengthening, and retention of the 110 km/h limit.",
+      "usage": {
+        "input_tokens": 13008,
+        "input_tokens_details": {
+          "cached_tokens": 128
+        },
+        "output_tokens": 636,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13644
+      },
+      "prior_false_criticism": "uncertain",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Says son-driver is added inference, not joint fit, because T does not specify; overlooks combined car/age/male constraints."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 5,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_USE",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "A2/S02 direct, expressly accepts car constraint; flags rather than denies son-driver inference.",
+      "observation_verbatim": "I am A2, and my directly readable originals are S02 and T (not S03, which is A3's material). The revision W5 changes A3's artifact from W4's option_1 back to option_3 and replaces W4's pro-Mr.-Z reasoning. Decisive alignment: A3's W4 asserted \"the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z\"; my own original S02 states \"Due to inexperience, the guilty person wasn't able to avoid the collision\" and \"The guilty person is less than 30 years old.\" W5's AFTER correctly records that \"Mr. Z has 5 years' license and is deliberately speeding, which is not inexperience; so S02 does not support Mr. Z as W4 claimed\" — this matches my original S02 content and my O4 report, and it narrows rather than generalizes the inexperience claim. W5 also keeps the supported content W4 had (under-30 excludes Mr. X at 53; 'a man' from S03 excludes Mrs. Y) and retains the residual 110 km/h tension rather than dropping it. Boundary: W5's car-driver/1.5-alcohol claim rests on peer reports O1/O3 of S01, which I cannot read; I can only note it is consistent with the visible O1/O3 excerpts, not verified from the original. Likewise W5's \"father indirectly responsible\" gloss on S03 is A3's own original and interpretive; I cannot check S03. The son-as-driver premise remains an inference that no visible task fact (T) confirms — T only says Mr. X and his son \"return home\" in the first car — and W5 flags this as a limit rather than asserting it as fact. The artifact remains a single option ID (option_3), satisfying the output contract. Within my checked scope (S02/T originals plus visible O1/O3/O4/W4), I find no concrete misattribution or unsupported generalization in W5; the remaining ambiguities are openly disclosed.",
+      "scope_verbatim": "W5 work_text and artifact, checked against my direct originals S02 and T and visible public reports O1, O3, O4, W4; S01 and S03 originals not accessible to me, so their reported content is assessed only for consistency with the visible carriers.",
+      "usage": {
+        "input_tokens": 13268,
+        "input_tokens_details": {
+          "cached_tokens": 13056
+        },
+        "output_tokens": 534,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13802
+      },
+      "prior_false_criticism": "no",
+      "joint_constraint_erroneously_rejected": "no",
+      "regrade_evidence_note": "Accepts result and no unsupported generalization; repeats unnecessary driver/speed caution but does not reject inference."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 6,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Correctly identifies W3→W5 and car constraint; alleges A2's recorded current position conflicts with reconsideration, but contribution reconsideration is not necessarily a new final preference.",
+      "observation_verbatim": "BEFORE (W3) argued only from S03 and explicitly said 'I have not seen peers' materials S01/S02, which may resolve the speed ambiguity.' AFTER (W5) cites O4/A2's report of S02 ('less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection.') and O1/O3's report of S01 ('The guilty person is driving a car... 1.5 level of alcohol... inattentive'). The decisive changed relation — S02's inexperience clause counting against Mr. Z (5 years' license, deliberate speeding) and S01's car-vehicle constraint excluding the motorcyclist — is correctly reported as peer-reported, and W5 labels S01/S02 as 'known only through peer reports (O1/O2/O3/O4), not direct originals,' which is a faithful access caveat. The artifact stays option_3, consistent with W3. However, there is an unsupported strengthening in the claim that these clues 'jointly fit Mr. X's son if he was driving the first car': the son-as-driver premise is not in T or any reported source, and S02's inexperience clause equally fits Mrs. Y (27, 1-year license), who is excluded only by S03's 'a man.' W5 presents the son fit as a joint convergence while itself conceding 'no task fact states the son was driving,' so the conclusion is a weighing judgment, not a demonstrated fit. Also minor: W5 says 'A2 currently favors option_2,' which matches W2 but conflicts with O2/O4's framing that A2 was pressing toward reconsidering option_1 vs option_3; this is a downstream characterization that is not clearly supported by the public reports. I cannot verify S02/S03 originals, so I cannot adjudicate the underlying facts, only the reasoning fidelity.",
+      "scope_verbatim": "Comparison of W3 (initial, option_3) to W5 (revision, option_3) against the O4 target offer and O1/O3 reports, checking source-access labeling, unsupported strengthening of the son-as-driver fit, and downstream peer-position claims.",
+      "usage": {
+        "input_tokens": 13008,
+        "input_tokens_details": {
+          "cached_tokens": 12800
+        },
+        "output_tokens": 488,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13496
+      },
+      "prior_false_criticism": "uncertain",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Says son-driver not in any source and hence unsupported strengthening despite citing all joint constraints. Gender excludes Y; not a reason to invalidate combination."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 7,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_USE",
+      "finding": "no_issue_found",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "no",
+      "manual_evidence_note": "Checks its S02 directly; maintains separate peer-report limits and disclosed uncertainty.",
+      "observation_verbatim": "O4 is A2's report of its own direct original S02, and the excerpt ('less than 30 years old; due to inexperience wasn't able to avoid the collision; claims did not see others approaching') matches my own directly read S02 verbatim, so the carrier's content is corroborated by my original access. The offer's object (S02's inexperience clause) and operation (weaken Mr. Z, who has 5 years' license and is deliberately speeding; under-30 does not select Mr. Z since son 17 and Mrs. Y 27 also qualify) are correctly reflected in W5: W5 uses O4 to drop 'inexperience' from the pro-Z majority and to weaken W4's option_1, and it separately keeps the under-30 exclusion of Mr. X (53) while noting Mrs. Y is excluded only by S03's 'a man' — consistent with O4's point that under-30 alone leaves son and Mrs. Y live. W5 does not overclaim: it labels S01/S02 as known only via peer reports, marks the son-as-driver reading as an inference, and flags the 110 km/h clue as the residual tension rather than claiming O4 resolves it. W5's 'car driver' constraint is attributed to O1/O3 (S01), not to O4, so there is no misattribution. Limits: I cannot read S01/S03 originals; O4's incidental claims about S01/S03 ('S01/S03 remain known to me only via reports') are peer statements I did not rely on; and W5's weighing of the car-vehicle constraint over the 110 km/h clue remains a judgment, not something O4 establishes.",
+      "scope_verbatim": "Checked O4 against the entire BEFORE (W3) and AFTER (W5) work and the USE_RECORD: object (S02 inexperience/no-seeing clause), conditions (Mr. Z's 5-year license and deliberate speeding; under-30 not selecting Mr. Z), and operation (remove inexperience from pro-Z majority, weaken option_1, leave son-vs-Mrs.-Y open). Verified O4's S02 excerpt against my directly read S02; S01/S03 claims in O4 not independently verifiable by me.",
+      "usage": {
+        "input_tokens": 13115,
+        "input_tokens_details": {
+          "cached_tokens": 12928
+        },
+        "output_tokens": 498,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13613
+      },
+      "prior_false_criticism": "no",
+      "joint_constraint_erroneously_rejected": "no",
+      "regrade_evidence_note": "Accepts application/result, notes source scope; does not demand rejection of combined result."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 8,
+      "input_id": "hb-dev-004-r1-c1--v3_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Claims W5 drops Mrs.Y without argument; W5 explicitly says Mrs.Y is excluded by S03's 'a man'. Legitimate driver/owner uncertainty also present.",
+      "observation_verbatim": "Applying O4 (A2's report of S02) to W4 is described correctly in W5 in one respect: O4 does say inexperience counts against Mr. Z and that under-30 alone does not select Mr. Z. But W5 overstates the consequence and misreports the delivery relationship. O4 explicitly leaves Mrs. Y as the best inexperience fit (1-year license, damaged lights) and only conditionally favors the son ('if driving'); it does not endorse the son. W5 then uses O4 to 'revert to option_3' while silently discarding O4's strongest single-match point for Mrs. Y, and it treats O1/O3 (S01 car-driver/alcohol) as excluding Mr. Z without noting the same car-driver constraint excludes the son-as-passenger unless the unsupported son-as-driver inference is granted. Concretely: W5's chain requires (a) son was driving (no task fact), (b) son was doing 110 km/h (no support; S03's speed matches only Mr. Z's explicit task fact), and (c) the alcohol/inattention profile belongs to the son rather than Mr. X, though S01's owner-driver/alcohol match fits Mr. X directly and the son is never said to have drunk. So the 'joint fit' is assembled by selectively weighting clues; the same evidence set is at least as consistent with option_2 (Mrs. Y: under 30, inexperience, failed to see others, car driver) once S03's 'a man' is the only exclusion, and W5 does not address whether 'a man' in S03 is reliable versus the peer-reported S02. Also W5's stated basis is indirect for S01/S02 (correctly flagged), yet the artifact shifts from option_3 to option_3 via option_1 with a claimed 'weakening' of W4 that rests on O4's inexperience clause alone, while O4's own proposed_use said this should push toward 'the son, if he was driving, or Mrs. Y' — W5 drops the Mrs. Y branch without argument. This is a weighing/derivation defect, not a proven wrong answer; the unresolved limits (son-as-driver, 110 km/h, alcohol attribution) remain genuinely open and W5's confidence in option_3 is not supported by the cited reports.",
+      "scope_verbatim": "W5 work_text reasoning and artifact (option_3), specifically the use of O4/O1/O3 to reject option_1 and endorse option_3; does not assess W1, W2, or the underlying truth of S01/S02/S03.",
+      "usage": {
+        "input_tokens": 12918,
+        "input_tokens_details": {
+          "cached_tokens": 12672
+        },
+        "output_tokens": 570,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 13488
+      },
+      "prior_false_criticism": "yes",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Declares no support for son110kmh because shared explicit speeding onlyZ, and says Y branch dropped without argument despite male exclusion."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 9,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "uncertain",
+      "manual_evidence_note": "A2/T/S02 identity correct; accepts vehicle repair; separates inference from direct source text.",
+      "observation_verbatim": "I am A2 and can directly read only T and S02. The change W4→W5 is mostly a correct, well-scoped repair of the earlier misweighting: W4's claim that a 'majority of jointly reported clues ... converge on Mr. Z' treated the 110 km/h clue as independent support even though O1/O3 report S01's guilty person as 'driving a car' while T places Mr. Z 'On the motorcycle', and W5 explicitly withdraws that basis ('my majority of clues justification double-counted the contested speed clue') and keeps the 110 km/h cost as unresolved. That aligns with my own original S02 ('The guilty person is less than 30 years old... Due to inexperience, the guilty person wasn't able to avoid the collision'), which excludes Mr. X (53) as W5 states. However, W5 overstates one point: it says S03's 'his father is indirectly responsible' 'fits the son far better' and that 'S03 says the father is responsible, not the son — so the guilty person is the son.' I cannot read S03; this is A3's own original, and the offered S03 wording (reported via W3/W4) is only that the father is indirectly responsible, which does not by itself establish the son was the driver. W5 does flag 'no task fact says he drove' in open_points, so the limit is disclosed, but the work_text's confident 'so the guilty person is the son' is an inference beyond the cited clues, not a directly verified fact. Also, W5 attributes the car-driver report to 'O1/O3' — both are A1 carriers of the same S01, so citing both does not add independent corroboration; it is one original reported twice. No fabricated quotation or provenance misrepresentation found: W5 labels S01/S02 as peer reports and does not claim direct verification. Net: the revision fixes the decisive weighting error and honestly records the residual 110 km/h conflict, but its 'son' conclusion is stated more strongly than the visible evidence supports.",
+      "scope_verbatim": "Checked the W4→W5 transition against T and my direct original S02, plus the public carriers O1, O3 (A1's S01 reports) and the reported S03 wording in W3/W4/W5. I did not read S01 or S03 directly, so I make no claim about their exact text or about ground truth; I assess only whether W5's stated reasoning is consistent with the visible reports and my own S02.",
+      "usage": {
+        "input_tokens": 17862,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 549,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18411
+      },
+      "prior_false_criticism": "no",
+      "joint_constraint_erroneously_rejected": "uncertain",
+      "regrade_evidence_note": "Validly says father-indirect phrase alone does not establish driver and causal drinking gloss interpretive; also ends by calling overall son conclusion overstrong. Narrow vs global critique unclear."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "B",
+      "repeat": 1,
+      "logical_call": 10,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "A1 knows S01 directly and cites it; criticism of 'excluded' despite conditional peer-report boundary may be excessive, but not labeled definite.",
+      "observation_verbatim": "I directly read T and S01; S03 is known to me only through W4/W5 reports, so I cannot verify A3's original. The decisive change W4→W5 is the withdrawal of option_1 and the switch to option_3, driven by O4's counterexample. O4's core point is sound on the reported premises: W4 matched S03's 110 km/h to Mr. Z's motorcycle speeding, while O1 reports the perpetrator was 'driving a car' with 1.5 alcohol; a car driver cannot be the motorcyclist, so W4's 'majority of jointly reported clues' did double-count a contested clue. W5 records this correctly and, importantly, does not overclaim: it labels S01/S02 as peer reports, keeps the 110 km/h clue for the son as a genuine unresolved conflict, and drops the unsupported sick-father reading for Z. However, two overstrengthenings remain. (1) W5 says 'Mr. Z is excluded by the car-driver report (O1/O3) and lacks any alcohol fact.' The exclusion is conditional on the accuracy of a peer report I cannot verify against A3's own S03, and W5 elsewhere concedes S01 is only indirectly known; 'excluded' is stronger than the evidence W5 actually holds. (2) W5 states S03 says 'his father is indirectly responsible... so the guilty person is the son, not Mr. X' and that the father's drinking 'is the indirect cause.' That is an interpretation of S03, not a quote I can check; it also silently assumes the son (not the father) was driving the first car, which T does not state and which W4 itself flagged as unsupported. W5 does list 'no task fact says he drove' under the 110 km/h open point, but the main text still presents the son as the residual fit without flagging that the son-as-driver premise is itself unverified. Also, W5's open point 'if A1 reports S01's vehicle wording excludes a car occupant under 30' is not a live distinguishing test: S01's excerpt (which I read directly) says 'driving a car' and names no age, so it neither excludes nor selects a car occupant under 30; the check as phrased cannot discriminate. Net: the artifact flip is better grounded than W4's option_1 because O4's vehicle contradiction is real, but W5 overstates 'excluded' for Z and treats an interpretive S03 reading (father-responsible → son) as if it settled the choice, leaving the son-as-driver premise unverified in the body text.",
+      "scope_verbatim": "Checked the W4→W5 transition against T and my directly read S01, O4's counterexample, and the reported S03/S02 excerpts in W4/W5/O1/O2/O3. Does not verify S03 or S02 originals, does not adjudicate the true perpetrator, and does not assess W1/W2.",
+      "usage": {
+        "input_tokens": 17507,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 649,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18156
+      },
+      "prior_false_criticism": "uncertain",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Objects son driver not stated in T and Z exclusion too firm despite direct car evidence. Validly notes father-causal gloss and unhelpful future check separately."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 11,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Claims O3 does not supply the car-versus-motorcycle confirmation. O3 explicitly states car-type constraint affirmatively counts against option_1 and rules out the motorcyclist.",
+      "observation_verbatim": "Checking the target offer O4 (A2) against the whole BEFORE (W4) and AFTER (W5) work and the USE_RECORD: O4's operation is correctly applied. W4's 'majority of jointly reported clues' justification is withdrawn in W5, and W5 explicitly states that the car-driver report (O1/O3) contradicts the motorcyclist Z, that the 110 km/h clue cannot be Z's motorcycle speed if the S01 report is accurate, and that option_1 required rejecting the vehicle clue. O4's proposed option (a) (keep option_1, downgrade confidence) was not taken; option (b) (shift to option_3/option_4) was taken as option_3, with option_4 rejected because the under-30 report excludes Mr. X (53) — a defensible reading of O4's own alternatives. However, two application problems remain. First, O4's 'distinguishing test' asked A1 to confirm S01's vehicle wording and whether it excludes a motorcycle; W5 cites O3 as supplying that answer, but O3 is a later public offer whose support excerpt is A1's own S01 excerpt, and W5 does not record A1's answer to the specific 'does S01 exclude a motorcycle' question — O3 says S01 'does not exclude a car occupant' and gives no name/age/speed, which is weaker than O4's test required. Second, W5's re-weighting says 'Mr. Z is excluded by the car-driver report (O1/O3)' while simultaneously flagging that S01/S02 are only peer-reported; the exclusion of Z is therefore conditional on an unverified report, and W5's open_points do record this limit, so it is disclosed rather than hidden. W5 also honestly records the residual 110 km/h conflict for the son instead of explaining it away, which matches O4's demand not to double-count that clue. Provenance is not misrepresented: W5 labels O1/O3 and O2 as peer reports and keeps S03 as its own original. One inconsistency: W5's declared_sources include W4 and W3, and the work_text says it applies O4 and O3, but O4 itself is listed in declared_sources while O3 is also listed — both are cited correctly. Net: O4's object (the double-counted majority claim and car-vs-motorcycle contradiction) is addressed and the artifact moved consistently with O4's alternative (b); the residual issue is that the vehicle-wording confirmation O4 requested is only partially supplied and the Z exclusion rests on unverified peer reports, which W5 discloses.",
+      "scope_verbatim": "Checked O4 against W4 (BEFORE) and W5 (AFTER): artifact, full work_text, open_points, declared_sources, and the USE_RECORD's account of applying O4 and O3. I directly read only T and S02; S01/S03 are known only through O1/O3 and W4/W5 reports, so I cannot verify A1's S01 wording or A3's S03 original, and I make no claim about the correct final answer.",
+      "usage": {
+        "input_tokens": 17709,
+        "input_tokens_details": {
+          "cached_tokens": 17536
+        },
+        "output_tokens": 683,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18392
+      },
+      "prior_false_criticism": "yes",
+      "joint_constraint_erroneously_rejected": "no",
+      "regrade_evidence_note": "No clear rejection of joint fit, but falsely claims car-versus-motorcycle answer only partially supplied when O3 directly gives the constraint."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "A",
+      "repeat": 1,
+      "logical_call": 12,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Correct A1/S01 boundary. Owner/alcohol ambiguity real; treating indirect father responsibility as pointing toward father rather than son may misread the relation, but mixed judgment retained uncertain.",
+      "observation_verbatim": "The W4→W5 repair does apply O4's core point (withdrawing the 'majority of clues' justification and the option_1 basis), but the resulting option_3 selection over-reads the peer reports it cites. Concrete reconstruction from the premises W5 itself states: S01 (via O1/O3) says guilty person is 'driving a car', car owner with 1.5 alcohol, inattentive; S02 (via O2) says under 30, inexperienced, didn't see others; S03 (own) says male, 110 km/h, father indirectly responsible. W5 excludes Mr. X by under-30, Mrs. Y by male, Mr. Z by car-driver, leaving the son. But this intersection assumes all three reports are simultaneously accurate: S01's 'car owner with 1.5 alcohol' most naturally matches Mr. X (the only suspect with an explicit drinking fact), and S02's under-30 excludes him — so S01 and S02 are in direct tension on the same person, not jointly satisfiable by the son (no task fact gives the son any alcohol, and the 'car owner' is the father, not the 17-year-old). W5 resolves this tension silently by dropping the alcohol/'owner' part of S01 and keeping only 'driving a car', then assigning that car to the son with no supporting fact. That is the same kind of unsupported driver-identity inference W5 criticizes in W4, just relocated from Z to the son. Also, W5's central new claim — 'S03 says the father is responsible, not the son — so the guilty person is the son, not Mr. X' — is a non sequitur: if the father is responsible, that points toward the father (Mr. X), not away from him; W5 uses the phrase both to select the son and to rule out the father. The 110 km/h clue is honestly flagged as unresolved, which is good, but it is the one clue that under W5's own reading fits no remaining candidate, so W5's 'best-supported' status is weaker than stated. The Q1 check ('ask A1 whether S01 names a vehicle type or driver age') was in fact already answered by O3 (S01 says 'car', no name/age/speed), yet W5 still lists it as an open condition, so the focus question is effectively resolved but not dispositioned. Scope: I directly read only T and S01; S02/S03 are known to me only through O2/W4/W5 reports, so I do not assert the ground-truth perpetrator — only that W5's stated basis (joint satisfiability of S01+S02+S03 by the son, and the father-responsibility inference) is internally inconsistent and that the option_1→option_3 flip rests on an unverified driver-identity assumption.",
+      "scope_verbatim": "W4→W5 transition: artifact change option_1→option_3, the re-weighting paragraph, the 'father indirectly responsible' inference, and the open_points; checked against O1, O2, O3, O4, T, and the Q1 focus question. Does not cover W1/W2 correctness or ultimate ground truth.",
+      "usage": {
+        "input_tokens": 17417,
+        "input_tokens_details": {
+          "cached_tokens": 17280
+        },
+        "output_tokens": 694,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18111
+      },
+      "prior_false_criticism": "uncertain",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Treats car-owner alcohol as driver identity, then calls joint car/age/male constraints inconsistent and son assignment unsupported. Actual owner/driver wording ambiguous, not proof combination fails."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 13,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "yes",
+      "false_criticism": "yes",
+      "manual_evidence_note": "A2 calls A3-authored W5's 'My direct original S03' a provenance defect because A2 cannot access S03; confuses work author and checker.",
+      "observation_verbatim": "Checking O4 against the whole BEFORE (W4) and AFTER (W5): O4's object is W4's 'majority of jointly reported clues' justification and its treatment of the car-driver clue as a soft tension. W5 does adopt O4's central operation: it withdraws the option_1 basis, states that a car driver cannot be the motorcyclist Z, says the majority claim double-counted the contested 110 km/h clue, and shifts to option_3. O4's proposed option_4 alternative was not adopted, but W5 explains why (under-30 report excludes Mr. X, 53), which is a reasoned rejection rather than a misapplication. However, W5's work_text contains a provenance/attribution problem in its opening sentence: it says 'My direct original S03 says: the guilty person is a man, his father is indirectly responsible for the accident, and he was driving at 110 km/h.' My SELF_MATERIALS S02 (direct original) contains only: under 30, inexperience, did not see others approaching. It says nothing about male, father responsibility, or 110 km/h. Those S03 contents are known to me only through W3/W4/W5 public reports, not as a direct original. W5's declared_sources does list S03, but my SOURCE_ACCESS lists S03 only as a peer-reported original via W4/W5, so W5 attributes to a direct original content that I cannot verify and that my own direct material does not contain. A second, smaller point: W5 asserts 'S03 says the father is responsible, not the son — so the guilty person is the son, not Mr. X.' That inference is interpretive and slightly strained; 'his father is indirectly responsible' does not by itself entail the guilty person is the son rather than the father. W5 does flag the remaining 110 km/h cost honestly, and it correctly labels O1/O3 and O2 as peer reports. So O4's requested correction is substantively applied; the residual issue is W5's mislabeling of S03-derived content as directly read and its strong inference from 'father indirectly responsible'.",
+      "scope_verbatim": "Checked O4's object, conditions, and proposed operation against the full BEFORE W4 and AFTER W5 work_text, artifact, open_points, declared_sources, and USE_RECORD, plus my own SELF_MATERIALS S02 and the DIRECTORY/SOURCE_ACCESS metadata. I directly read only T and S02; S01/S03 are known to me only through peer public reports (O1/O3, W3/W4/W5), so I cannot verify their originals and make no claim about ground truth. This does not re-adjudicate Q1's answer, only whether O4 was correctly interpreted and applied.",
+      "usage": {
+        "input_tokens": 17709,
+        "input_tokens_details": {
+          "cached_tokens": 17536
+        },
+        "output_tokens": 603,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18312
+      },
+      "prior_false_criticism": "yes",
+      "joint_constraint_erroneously_rejected": "uncertain",
+      "regrade_evidence_note": "Father-indirect phrase alone warrants interpretation caution; does not clearly isolate joint fit. Definite false author/access criticism remains: A2 cannot readS03 so criticizes A3 claiming ownS03."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "A",
+      "repeat": 2,
+      "logical_call": 14,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Says W5 silently drops uncertainty that son drove; AFTER open point explicitly says 'no task fact says he drove or sped'. Other driver-identity concerns valid.",
+      "observation_verbatim": "W5's revision does apply O4's core point (withdrawing the 'majority of clues' count and treating the car-driver report as counting against Mr. Z), but its re-weighting contains a concrete inconsistency that the changed step does not fix: it treats the S01 car-driver clue as excluding Mr. Z while simultaneously excluding the only two remaining car occupants. W5 says 'Mr. X (53) is excluded by the under-30 report (O2); Mrs. Y (27) is excluded by S03's \"a man\"... that leaves Mr. X's son (17, male, under 30, in his father's car).' But S01 (per O1/O3) is a car-driver clue, and T only says the son 'returns home' in the first car with his father — no task fact states the son was driving, which W4 itself noted and W5 now silently drops. So the same standard W5 uses to exclude Mr. Z (S01 says car driver, Z is a motorcyclist) also weakens the son, since the son is not shown to be a driver at all. The choice of option_3 therefore rests on a vehicle/driver premise (son drove the first car) that is not in T and is not supplied by any peer report; the peer reports only say the guilty person drove a car. A concrete competing reconstruction: if S01 is accurate (car driver, 1.5 alcohol, inattentive) and Mr. X is the suspect with the explicit drinking fact, then Mr. X is the best car-driver/alcohol fit, and the only reason W5 rejects him is the under-30 report from O2 — a peer report W5 cannot verify. So W5's stated basis is internally in tension: it relies on S01's vehicle clue to exclude Z, on O2 to exclude X, and on S03's 'male' to exclude Y, yet the residual candidate (son) is not established as a driver by any directly read fact. Additionally, W5 records the 110 km/h clue as 'unexplained for the son' but does not note that its own S03 original says the guilty person 'was driving at 110 km/h', which is a driving fact the son lacks, not merely a speed mismatch. The artifact flip to option_3 is thus a defensible-but-conditional narrowing, not the factually forced conclusion W5's phrasing ('that leaves Mr. X's son') implies. Scope: I directly read only T and S01; S02/S03 are known to me only via O2/W4/W5 reports, so I do not assert the ground-truth perpetrator, only that W5's exclusion chain is not fully supported by its stated premises.",
+      "scope_verbatim": "W4→W5 transition: the re-weighting in W5's work_text that excludes X (via O2), Y (via S03), and Z (via S01 car-driver) and lands on the son, plus the open_points. Checks whether the son-as-driver premise is supported by T or any peer report, and whether the 110 km/h clue is correctly characterized. Does not assess W1/W2 correctness or the ultimate ground truth; S02/S03 originals not directly accessible to me.",
+      "usage": {
+        "input_tokens": 17417,
+        "input_tokens_details": {
+          "cached_tokens": 17280
+        },
+        "output_tokens": 701,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18118
+      },
+      "prior_false_criticism": "yes",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Rejects son-driver because not independently stated, then falsely says driver limitation dropped; exact AFTER open point says no task fact he drove or sped."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 15,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_USE",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Says AFTER no longer records son not shown driving, only unexplained speed; same open point explicitly records both.",
+      "observation_verbatim": "I am A2; I can directly read T and S02 only. O4 (my own offer) and O3 are public reports. Decisive check of O4's application: O4's explicit content is that W4's 'majority of jointly reported clues' claim double-counts the contested 110 km/h clue and discounts the car+alcohol clue, so 'option_1 requires rejecting O1's car-driver/1.5-alcohol clue as inaccurate'; it proposes (a) keep option_1 with downgraded confidence and option_3/option_4 as live alternatives, or (b) shift toward option_3 or option_4. AFTER (W5) does accept this: it says 'a car driver cannot be the motorcyclist Mr. Z ... I therefore withdraw the option_1 basis' and shifts to option_3, preserving the under-30 exclusion of Mr. X and the 'male' exclusion of Mrs. Y. That is a faithful application of O4's core operation, and W5 correctly labels S01/S02 as peer-reported. However, W5 over-reads the scope of what was actually established. First, it states 'S03 says the father is responsible, not the son — so the guilty person is the son, not Mr. X'; my S02 only supports 'less than 30 years old', 'inexperience', and 'did not see others approaching' — it does not identify the father as the responsible party, so the son-vs-father disambiguation rests on S03 (which I cannot read) plus inference, not on my original. Second, W5's re-weighting treats 'Mr. Z is excluded by the car-driver report (O1/O3)' as settled, but O1/O3 are unverified excerpts whose S01 is inaccessible to me; W5 does flag this as a limit, so the provenance is disclosed, but the exclusion is stated more firmly than the indirect basis warrants. Third, W5 drops W4's open point that no task fact says who drove the first car and replaces it with 'the son (17, male, under 30, in his father's car)' — the son-as-driver point is still unstated in T (T says only that father and son 'return home' in the first car), and W5's own open_points no longer records that the son is not shown driving, only that the 110 km/h clue is unexplained. So the revision fixes the internal inconsistency O4 identified but converts an indirect, conditional narrowing into a firmer son conclusion than the visible carriers support, and removes a still-valid open point.",
+      "scope_verbatim": "Checked O4's application against BEFORE (W4) and AFTER (W5) work_text, artifact, open_points, and declared_sources, using T and S02 directly and O1/O3/O4/W4/W5 as public reports. I did not read S01 or S03 originals and make no claim about the ground-truth perpetrator or about W1/W2/W3.",
+      "usage": {
+        "input_tokens": 17862,
+        "input_tokens_details": {
+          "cached_tokens": 17664
+        },
+        "output_tokens": 647,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18509
+      },
+      "prior_false_criticism": "yes",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Treats valid joint result as beyond scope of ownS02 plus inaccessible reports; falsely says driver limit removed although retained. Father-alone argument may still need qualification."
+    },
+    {
+      "task": "hb-dev-004-r1-c1",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "condition": "B",
+      "repeat": 2,
+      "logical_call": 16,
+      "input_id": "hb-dev-004-r1-c1--d0_continuation--CHECK_EFFECT",
+      "finding": "issue",
+      "pine_report_loss_detected": "not_applicable",
+      "vehicle_constraint_preserved": "yes",
+      "access_error": "no",
+      "false_criticism": "yes",
+      "manual_evidence_note": "Says W5 loses explicit driver limitation; AFTER open point retains 'no task fact says he drove or sped'. Car constraint is acknowledged.",
+      "observation_verbatim": "The W4→W5 revision correctly adopts O4's core counterexample: W4's 'majority of jointly reported clues' claim double-counted the contested 110 km/h clue, since a car driver cannot be the motorcyclist (T places Mr. Z on a motorcycle). W5 explicitly withdraws the option_1 basis and records the 110 km/h clue as a genuine residual conflict rather than explaining it away — this is a faithful, cautious change. However, two problems remain. (1) W5's stated re-weighting says 'Mr. Z is excluded by the car-driver report (O1/O3)', but O1/O3 are peer reports of A1's S01, not originals A3 can read; W5 does label them 'indirect for me', so provenance is not misrepresented, but the exclusion of Mr. Z rests entirely on an unverified peer report, and the original S01 (which I directly read) does say 'driving a car' and 'guilty car owner' with 1.5 alcohol — so the vehicle constraint itself is well-grounded in the original, even if A3 cannot verify it directly. (2) More substantively, W5's claim that 'S03 says the father is responsible, not the son — so the guilty person is the son, not Mr. X' is a non sequitur: if the father is responsible, that points toward Mr. X as the culpable party, not away from him. The son reading requires that the son was driving, which no task fact supports (W3 itself flagged this, and W4 correctly noted it). W5 nonetheless selects option_3 on the strength of that inference while recording the 110 km/h clue as unresolved — an asymmetric treatment: the son-as-driver inference is accepted without support while the 110 km/h clue is held against Mr. Z. Also, W5 drops W4's explicit note that 'no task fact states who drove the first car' and replaces it with a weaker open point, losing an explicit reported limitation. The change from option_1 to option_3 is thus a plausible response to O4's counterexample, but its positive justification (father-responsible ⇒ son) is not supported by the quoted S03 text and the son-as-driver premise remains unverified.",
+      "scope_verbatim": "Checked W4→W5 work_text, artifact, open_points, and declared_sources against O4's counterexample, O1/O3's reported S01 content, O2's reported S02 content, and my directly read T and S01. I cannot verify S02/S03 originals; I do not assert the correct final answer, only that W5's stated basis for option_3 contains an unsupported inference and loses an explicit limitation W4 had recorded.",
+      "usage": {
+        "input_tokens": 17507,
+        "input_tokens_details": {
+          "cached_tokens": 17280
+        },
+        "output_tokens": 593,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 18100
+      },
+      "prior_false_criticism": "yes",
+      "joint_constraint_erroneously_rejected": "yes",
+      "regrade_evidence_note": "Says son-driver no source support; implies father responsibility points toX while ignoring indirect relation. Falsely says draft dropped driver limitation though open point retained."
+    }
+  ]
+}

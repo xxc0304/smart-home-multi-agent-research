@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "assessments": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "C1": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "supported",
+                "conflict",
+                "unresolved"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "O1",
+                  "O2",
+                  "O3",
+                  "O4",
+                  "O5",
+                  "O6",
+                  "S03",
+                  "T",
+                  "W1",
+                  "W2",
+                  "W3",
+                  "W4",
+                  "W5"
+                ]
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "status",
+            "reason",
+            "evidence_refs"
+          ]
+        }
+      },
+      "required": [
+        "C1"
+      ]
+    },
+    "limits": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "assessments",
+    "limits"
+  ]
+}

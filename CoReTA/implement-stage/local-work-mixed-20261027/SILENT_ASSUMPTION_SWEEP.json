@@ -1,0 +1,40 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "round_2": {
+    "assurance": "same-family provisional",
+    "resolved": [
+      {"finding": "Blank-answer nonanswer counting", "evidence": "Whitespace answer remains unchanged and completed; scorer now reports nonanswer=true and EM=0. Numeric zero remains an answer. Consistent with M-021."},
+      {"finding": "Unreadable response file handling", "evidence": "UTF-16 reproduction returns technical_incomplete, saves both wave requests, preserves exact undecodable bytes and read error, processes the valid sibling, and creates no subsequent-wave requests. Consistent with M-009/M-022."},
+      {"finding": "Supplied provenance recording", "evidence": "Caller label survives replay into summary with caller_declared_not_certified; omitted label becomes unverified file replay. Engineering smoke explicitly supplies an engineering label. Consistent with M-017."}
+    ],
+    "validation": {"targeted_tests_passed": 4, "current_preparation_audit": "39 tests passed; zero model calls; zero natural new-schema generations", "M-020": "Malformed optional reference and extra annotations retain the valid explicit answer."},
+    "undeclared": [], "stale_rows": [], "semantic_undeclared": 0, "verdict": "clean"
+  },
+  "round_1": {
+    "undeclared": [
+      {
+        "site": "tools/score_local_work_mixed.py:25; src/coreta/local_work/evaluation.py:30",
+        "decision": "Only JSON null counts as a semantic nonanswer; empty or whitespace-only answer strings count as answered.",
+        "why_it_matters": "Reproduced with answer='   ', scale='', and nonblank reasoning: ComparisonFlow completes, official EM is 0, but nonanswer=false. This silently changes the nonanswer metric promised by M-013 and understates missing answers.",
+        "class": "semantic"
+      },
+      {
+        "site": "src/coreta/local_work/comparison.py:220-227",
+        "decision": "Response files must decode as UTF-8; a decoding failure escapes replay entirely. Requests are saved one at a time immediately before reading each response.",
+        "why_it_matters": "Reproduced using UTF-16 00-A1.raw.txt and valid UTF-8 00-A2.raw.txt: UnicodeDecodeError escapes; output contains only requests/00-A1.json, with no A2 request, EVENTS.json, or SUMMARY.json. This currently violates M-009's complete-wave request saving and valid same-wave sibling preservation.",
+        "class": "interface"
+      }
+    ],
+    "stale_rows": [
+      {
+        "row": "M-017",
+        "site": "src/coreta/local_work/comparison.py:209,213",
+        "statement": "File replay records supplied provenance.",
+        "observed": "replay_files accepts no provenance argument and summary always emits the fixed string 'file replay; source authenticity not inferred by host'. Supplied provenance is not recorded. Existing engineered artifacts are separately labelled; this finding does not claim contamination of NO_RESULTS.json."
+      }
+    ],
+    "semantic_undeclared": 1,
+    "verdict": "gaps"
+  }
+}

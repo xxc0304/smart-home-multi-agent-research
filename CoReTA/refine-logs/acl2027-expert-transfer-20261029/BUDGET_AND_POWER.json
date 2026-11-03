@@ -1,0 +1,107 @@
+{
+  "scope": "planning_arithmetic_not_experimental_results",
+  "assumptions": "two-sided .05, approximate 80pct power, q=.30; no cluster inflation; D balanced for interaction; FX=8 is a planning assumption",
+  "days_from_20261029_to_20270104": 67,
+  "power": [
+    {
+      "effective_independent_items": 240,
+      "discordance_assumption": 0.3,
+      "overall_difference_approx_mde_pp": 9.9,
+      "balanced_two_strata_difference_approx_mde_pp": 19.8
+    },
+    {
+      "effective_independent_items": 600,
+      "discordance_assumption": 0.3,
+      "overall_difference_approx_mde_pp": 6.26,
+      "balanced_two_strata_difference_approx_mde_pp": 12.52
+    },
+    {
+      "effective_independent_items": 1000,
+      "discordance_assumption": 0.3,
+      "overall_difference_approx_mde_pp": 4.85,
+      "balanced_two_strata_difference_approx_mde_pp": 9.7
+    }
+  ],
+  "interaction_effective_n_for_10pp": 941,
+  "interaction_effective_n_for_8pp": 1470,
+  "budgets": [
+    {
+      "tier": "A",
+      "estimated_calls": 2200,
+      "million_input_output_tokens": [
+        7.7,
+        1.98
+      ],
+      "prices": [
+        {
+          "assumed_usd_per_million_in_out": [
+            1.2,
+            4.0
+          ],
+          "usd_with_35pct_reserve": 23.17,
+          "cny_at_planning_rate_8": 185.33
+        },
+        {
+          "assumed_usd_per_million_in_out": [
+            2.0,
+            6.0
+          ],
+          "usd_with_35pct_reserve": 36.83,
+          "cny_at_planning_rate_8": 294.62
+        }
+      ]
+    },
+    {
+      "tier": "low",
+      "estimated_calls": 32000,
+      "million_input_output_tokens": [
+        112.0,
+        28.8
+      ],
+      "prices": [
+        {
+          "assumed_usd_per_million_in_out": [
+            1.2,
+            4.0
+          ],
+          "usd_with_35pct_reserve": 336.96,
+          "cny_at_planning_rate_8": 2695.68
+        },
+        {
+          "assumed_usd_per_million_in_out": [
+            2.0,
+            6.0
+          ],
+          "usd_with_35pct_reserve": 535.68,
+          "cny_at_planning_rate_8": 4285.44
+        }
+      ]
+    },
+    {
+      "tier": "full_600_raw_items_scenario",
+      "estimated_calls": 70000,
+      "million_input_output_tokens": [
+        350.0,
+        98.0
+      ],
+      "prices": [
+        {
+          "assumed_usd_per_million_in_out": [
+            1.2,
+            4.0
+          ],
+          "usd_with_35pct_reserve": 1096.2,
+          "cny_at_planning_rate_8": 8769.6
+        },
+        {
+          "assumed_usd_per_million_in_out": [
+            2.0,
+            6.0
+          ],
+          "usd_with_35pct_reserve": 1738.8,
+          "cny_at_planning_rate_8": 13910.4
+        }
+      ]
+    }
+  ]
+}

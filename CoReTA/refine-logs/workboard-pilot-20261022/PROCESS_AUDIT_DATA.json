@@ -1,0 +1,2380 @@
+{
+  "kind": "posthoc_process_comparison_not_independent_tasks",
+  "network_requests": 0,
+  "gold_sha256": "6dd2db0234d5703ffb972c64543e3733083c13d42bc43b788a20ec48f9a27480",
+  "pairs": [
+    {
+      "version": "r2",
+      "pair": "distributed-r1",
+      "methods": {
+        "ordinary_discussion": {
+          "folder": "runs\\workboard-pilot-live-20261022-r2\\distributed-r1\\ordinary_discussion",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W26",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 5,
+          "first_editor_correct_creation_call": 6,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 1,
+              "stage": "DISCUSS",
+              "id": "W5",
+              "author": "A1",
+              "l1": 6
+            },
+            {
+              "call": 2,
+              "stage": "DISCUSS",
+              "id": "W6",
+              "author": "A2",
+              "l1": 6
+            },
+            {
+              "call": 3,
+              "stage": "DISCUSS",
+              "id": "W7",
+              "author": "A3",
+              "l1": 6
+            },
+            {
+              "call": 4,
+              "stage": "DISCUSS",
+              "id": "W8",
+              "author": "A4",
+              "l1": 8
+            },
+            {
+              "call": 5,
+              "stage": "DISCUSS",
+              "id": "W9",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 6,
+              "stage": "DISCUSS",
+              "id": "W10",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 7,
+              "stage": "DISCUSS",
+              "id": "W11",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 8,
+              "stage": "DISCUSS",
+              "id": "W12",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 9,
+              "stage": "DISCUSS",
+              "id": "W13",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 10,
+              "stage": "DISCUSS",
+              "id": "W14",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "DISCUSS",
+              "id": "W15",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 12,
+              "stage": "DISCUSS",
+              "id": "W16",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 13,
+              "stage": "DISCUSS",
+              "id": "W17",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 14,
+              "stage": "DISCUSS",
+              "id": "W18",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 15,
+              "stage": "DISCUSS",
+              "id": "W19",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 16,
+              "stage": "DISCUSS",
+              "id": "W20",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 17,
+              "stage": "DISCUSS",
+              "id": "W21",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "DISCUSS",
+              "id": "W22",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 19,
+              "stage": "DISCUSS",
+              "id": "W23",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 20,
+              "stage": "DISCUSS",
+              "id": "W24",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 21,
+              "stage": "DISCUSS",
+              "id": "W25",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "DISCUSS",
+              "id": "W26",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 23,
+              "stage": "DISCUSS",
+              "id": "W27",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 24,
+              "stage": "DISCUSS",
+              "id": "W28",
+              "author": "A4",
+              "l1": 0
+            }
+          ],
+          "trials": [],
+          "input_tokens": 241820,
+          "output_tokens": 12954,
+          "http": 25
+        },
+        "coreta_workboard": {
+          "folder": "runs\\workboard-pilot-live-20261022-r2\\distributed-r1\\coreta_workboard",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W6",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 11,
+          "first_editor_correct_creation_call": 11,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 4,
+              "stage": "TRY",
+              "id": "W5",
+              "author": "A2",
+              "l1": 6
+            },
+            {
+              "call": 11,
+              "stage": "TRY",
+              "id": "W6",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "TRY",
+              "id": "W7",
+              "author": "A2",
+              "l1": 0
+            }
+          ],
+          "trials": [
+            {
+              "before": "W2",
+              "after": "W5",
+              "offer_ref": "O2",
+              "before_l1": 8,
+              "after_l1": 6,
+              "use_record": "Tried O2 on a copy of W2: recomputed D from shared facts (0 - 1 + 0 + 1 = 0) plus A4's private facts (S01 0, S05 0, S14 +1, S16 +1) = +2, confirming O2's arithmetic correction and that D > C (+1). Local result: O2's D correction is sound and adopted, but its proposed ranking A > B > D > C is rejected because it omits A1's four A negatives (A = 0) and my four B negatives (B = -1); the resulting full ranking is D > C > A > B.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A3",
+                  "finding": "issue",
+                  "observation": "O2's core arithmetic claim checks out against the task text (T): D's shared facts sum to 0, not -1, and with A4's reported private facts (S01 0, S05 0, S14 +1, S16 +1) D = +2, so D > C (+1). However, the offer's proposed_use ranking 'A(4) > B(3) > D(2) > C(1)' is not supported by the full before/after work: it uses A's shared-only baseline of +4 and B's shared-only baseline of +3, ignoring A1's four A negatives (O1: S02, S04, S09, S13, each -1 → A = 0) and A2's four B negatives (W2: S03, S08, S10, S12, each -1 → B = -1). O2 itself flags 'pending peer evidence,' so the ranking is explicitly provisional, but as written it contradicts the actual totals once all declared evidence is applied (D +2 > C +1 > A 0 > B -1). A secondary defect: O2's parenthetical '(Note also W2 makes the same slip, stating D's baseline as 0 correctly but W4 does not.)' is self-contradictory and inaccurate about W2 — W2 states D = 0 correctly, so the only 'slip' is W4's. The use_record confirms O2's D correction was adopted while its ranking was rejected, consistent with this assessment. Limits: I can directly verify only my own SELF_MATERIALS (S06, S07, S11, S15, all neutral for C); A1's S02/S04/S09/S13 and A4's S01/S05/S14/S16 are known only via unverified public excerpts (O1, O3), and A2's B negatives only via W2's text."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A4",
+                  "finding": "issue",
+                  "observation": "W5's work_text correctly reconstructs the delivery relationship: O2's core correction (D's shared baseline = 0 - 1 + 0 + 1 = 0, plus private S01 0, S05 0, S14 +1, S16 +1 gives D = +2, above C = +1) is verified, and W5 rightly rejects O2's proposed order A(4) > B(3) > D(2) > C(1) as stale because it omits A1's four private negatives for A (A = +4 - 4 = 0) and A2's own four negatives for B (B = +3 - 4 = -1). But the delivered artifact does not match this reconstruction: W5's artifact array is [\"Candidate B\", \"Candidate D\", \"Candidate A\", \"Candidate C\"], i.e., B first, while the work_text's own computed totals give D (+2) > C (+1) > A (0) > B (-1). The correct order implied by W5's arithmetic is D > C > A > B, so the artifact is internally inconsistent with its stated totals — B is placed 1st though it has the lowest total (-1), and D (+2) is placed 2nd. Concrete check: totals D=2, C=1, A=0, B=-1; sorting descending yields [Candidate D, Candidate C, Candidate A, Candidate B], not the artifact's [B, D, A, C]. Note also O2's aside that W2 'makes the same slip' is indeed false (W2 states D = 0 correctly), which W5 captures; that part is fine. Scope: W5's artifact ranking field only; the work_text totals and O2 verification are consistent with the visible premises (A=0, B=-1, C=+1, D=+2), but C's neutrality and A's negatives rest on unverified public excerpts (W3/O1), and no tool observation was supplied."
+                }
+              ]
+            },
+            {
+              "before": "W5",
+              "after": "W6",
+              "offer_ref": "O6",
+              "before_l1": 6,
+              "after_l1": 0,
+              "use_record": "Applied O6 to a copy of W5: kept W5's work_text totals unchanged and replaced the artifact array [Candidate B, Candidate D, Candidate A, Candidate C] with [Candidate D, Candidate C, Candidate A, Candidate B]. Local result: artifact now matches the work_text ranking D(+2) > C(+1) > A(0) > B(-1); output contract satisfied with all four exact names once.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A4",
+                  "finding": "no_issue_found",
+                  "observation": "O6's stated defect is confirmed in W5: the artifact array was [Candidate B, Candidate D, Candidate A, Candidate C] while W5's own work_text concludes D (+2) > C (+1) > A (0) > B (-1), so the artifact contradicted the analysis. The before/after comparison shows W6 changed only the artifact ordering (to D, C, A, B) and rewrote the work_text/open_points while preserving the same totals; the use_record matches this, and the output contract (all four exact names once) is satisfied. Checking the operation itself against my own SELF_MATERIALS (S01, S05, S14, S16): D's shared facts are 0, -1, 0, +1 = 0, and my private facts add 0, 0, +1, +1 = +2, so D = +2, consistent with the reordering rationale. Limits: I can verify only D's private facts directly; A's and B's private valences and C's neutrality come from unverified public excerpts (O1, W3) and A2's self-report, so the absolute correctness of the full ordering D > C > A > B is not independently confirmable from my materials. The offer's claim that this is the 'sole fixable defect' is also beyond what I can verify, since I cannot audit peers' private fact sets for double counting."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "The artifact reordering (W5 [B,D,A,C] -> W6 [D,C,A,B]) correctly fixes the internal inconsistency: W5's own totals D(+2) > C(+1) > A(0) > B(-1) sort to exactly W6's array, so the delivery relationship between stated totals and delivered order now holds. However, the reconstructed totals themselves are not fully sound. A's total of 0 depends on the unverified excerpt O1 (four A negatives) rather than directly accessible SELF_MATERIALS — A1's actual S02/S04/S09/S13 excerpts in the packet do match O1 (all negative), so this holds on available evidence but remains an unverified-excerpt dependency. C's total of +1 rests entirely on W3's self-report that S06/S07/S11/S15 are all neutral; A3's actual materials are not visible to A1/A2, so C's +1 is an unverified assumption, and if any of those four facts were positive, C could exceed D (+2) only if at least two were positive — a genuine ranking-flip counterexample: if S06 and S07 were +1 each, C=+3 > D=+2, reversing the top. B's -1 is verified from own SELF_MATERIALS (four negatives), and D's +2 is verified (shared 0 + S14/S16 positives, S01/S05 neutral), so the D > C > A > B order is conditionally correct but not robust to unverified C evidence. Also note W6 dropped the explicit 'four neutral private facts (W3)' caveat specificity but the open point retains it. Scope: artifact ordering fix is correct and complete for the stated totals; the residual risk is that C's neutrality and A's negatives are sourced from unverified public excerpts, not directly accessible originals."
+                }
+              ]
+            },
+            {
+              "before": "W6",
+              "after": "W7",
+              "offer_ref": "O7",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Applied O7 to a copy of W6. O7's counterexample is arithmetically valid: C = +1 + sum of A3's four private facts; with two positives C = +3 > D = +2, so the D > C order is conditional. I adopted O7's proposed conditional framing and flip threshold in the work_text and open_points, while keeping the artifact [D, C, A, B] unchanged (O7 explicitly permits this if the neutrality report is accepted). I also folded in O9's auditability point listing D's full private set (S01 0, S05 0, S14 +1, S16 +1). Note: I did not adopt O8's claim that C's neutrality is verified from directly accessible originals, since A3's S06/S07/S11/S15 are not in my SELF_MATERIALS and remain known only through the unverified public excerpt W3; O7's caveat therefore stands. No totals or artifact ordering changed from W6.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "O7's core arithmetic checks out against the actual before/after work: C's shared baseline is +1 and C's total is +1 + sum(S06,S07,S11,S15), so two positive facts yield C=+3 > D=+2, and the flip threshold O7 states (one positive ties, two overtake) is correct. The use_record accurately says the artifact was left as [D,C,A,B] and only the work_text/open_points were made conditional. However, O7's proposed_use says 'flag the C/D order as unresolved pending A3's originals' unless the committee accepts W3's neutrality report; W7's work_text and open_points still assert the delivered order 'holds on W3's reported neutrality' and retain the artifact unchanged, so the conditional is stated but the uncertainty is not carried into the artifact. A second, concrete defect: O7's own support excerpt from W3 ('all neutral (0), so C's total remains +1') and the use_record's note that S06/S07/S11/S15 'remain known only through the unverified public excerpt W3' are consistent with the access limits I face, but W7's work_text now attributes the four C facts to 'A3's four private facts' and lists their refs as if directly known, while never stating that A1 cannot access those originals — a provenance overstatement that O7 itself did not claim. Third, O7's range claim 'up to +5 if all positive' is arithmetically right but W7 only records the +3 counterexample and the tie/overtake thresholds, not the upper bound, so the range is only partially adopted. Finally, O7's premise that C's +1 'rests entirely on W3's self-report' is accurate, but W7's work_text still presents D=+2 as verified while D's +2 depends on S01/S05/S14/S16, which are not in my SELF_MATERIALS either — W7 labels these 'verified' without noting they are known only via the public offer O9, an asymmetry in what is treated as verified versus conditional."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A3",
+                  "finding": "issue",
+                  "observation": "The change W6→W7 leaves the artifact [D, C, A, B] and the totals unchanged; it only adds a conditional caveat on C. But the premise it adopts (O7) is itself misdirected for this agent: A2's SELF_MATERIALS (S06, S07, S11, S15) are NOT accessible to A2 — they belong to A3. More importantly, the caveat is internally inconsistent with the actual accessible evidence and the ranking it defends. Reconstructing the delivery relationship: A2's own verified facts give B = +3 shared + 4 negatives = -1 (verified). D = 0 shared + S01 0 + S05 0 + S14 +1 + S16 +1 = +2 (verified from A4's materials). C's shared baseline = +1; A3's four private facts (S06 Networking, S07 Creativity, S11 Initiative, S15 Decision-making) are all neutral per A3's own SELF_MATERIALS, so C = +1 (this is verified by A3's originals, not merely W3's unverified report). A's four negatives (S02, S04, S09, S13) are O1's unverified excerpt, so A = 0 is conditional. The correct order on verified evidence is D (+2) > C (+1) > A (0, conditional) > B (-1). W7's artifact matches this, but its work_text now wrongly asserts C's +1 is conditional on \"W3's unverified report\" and invents a flip threshold (two positive C facts → C = +3 > D), when A3's own S06/S07/S11/S15 are directly neutral. Concrete counterexample to W7's stated reasoning: W7 says \"the delivered order D > C > A > B therefore holds on W3's reported neutrality of C's facts\" — but the neutrality is not merely reported, it is verified from A3's SELF_MATERIALS; conversely W7's own flip scenario (S06 and S07 both +1 → C=+3) is ruled out by those originals. Also W7's claim that A \"remains below C unless nearly all are non-negative\" is imprecise: A would need at least 2 of 4 negatives neutralized to reach +2 (tie D) and 3 to exceed. Scope: W7:work_text:L1 and W7:open_points (C-conditional framing and flip threshold); artifact itself is correct."
+                }
+              ]
+            }
+          ],
+          "input_tokens": 274563,
+          "output_tokens": 11708,
+          "http": 25
+        }
+      }
+    },
+    {
+      "version": "r2",
+      "pair": "concentrated-r1",
+      "methods": {
+        "ordinary_discussion": {
+          "folder": "runs\\workboard-pilot-live-20261022-r2\\concentrated-r1\\ordinary_discussion",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W26",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 1,
+          "first_editor_correct_creation_call": 6,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 1,
+              "stage": "DISCUSS",
+              "id": "W5",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 2,
+              "stage": "DISCUSS",
+              "id": "W6",
+              "author": "A2",
+              "l1": 8
+            },
+            {
+              "call": 3,
+              "stage": "DISCUSS",
+              "id": "W7",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 4,
+              "stage": "DISCUSS",
+              "id": "W8",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 5,
+              "stage": "DISCUSS",
+              "id": "W9",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 6,
+              "stage": "DISCUSS",
+              "id": "W10",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 7,
+              "stage": "DISCUSS",
+              "id": "W11",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 8,
+              "stage": "DISCUSS",
+              "id": "W12",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 9,
+              "stage": "DISCUSS",
+              "id": "W13",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 10,
+              "stage": "DISCUSS",
+              "id": "W14",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "DISCUSS",
+              "id": "W15",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 12,
+              "stage": "DISCUSS",
+              "id": "W16",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 13,
+              "stage": "DISCUSS",
+              "id": "W17",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 14,
+              "stage": "DISCUSS",
+              "id": "W18",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 15,
+              "stage": "DISCUSS",
+              "id": "W19",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 16,
+              "stage": "DISCUSS",
+              "id": "W20",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 17,
+              "stage": "DISCUSS",
+              "id": "W21",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "DISCUSS",
+              "id": "W22",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 19,
+              "stage": "DISCUSS",
+              "id": "W23",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 20,
+              "stage": "DISCUSS",
+              "id": "W24",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 21,
+              "stage": "DISCUSS",
+              "id": "W25",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "DISCUSS",
+              "id": "W26",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 23,
+              "stage": "DISCUSS",
+              "id": "W27",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 24,
+              "stage": "DISCUSS",
+              "id": "W28",
+              "author": "A4",
+              "l1": 0
+            }
+          ],
+          "trials": [],
+          "input_tokens": 221985,
+          "output_tokens": 12486,
+          "http": 25
+        },
+        "coreta_workboard": {
+          "folder": "runs\\workboard-pilot-live-20261022-r2\\concentrated-r1\\coreta_workboard",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W7",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 4,
+          "first_editor_correct_creation_call": 4,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 4,
+              "stage": "TRY",
+              "id": "W5",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "TRY",
+              "id": "W6",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "TRY",
+              "id": "W7",
+              "author": "A2",
+              "l1": 0
+            }
+          ],
+          "trials": [
+            {
+              "before": "W2",
+              "after": "W5",
+              "offer_ref": "O2",
+              "before_l1": 8,
+              "after_l1": 0,
+              "use_record": "Tried O2 on a copy of current work W2. O2 targets W1:artifact:L1, so it does not directly apply to W2; W2's artifact [A, B, C, D] is consistent with W2's own shared-facts-only totals (A=+4, B=+3, C=+1, D=0), so no change to W2 follows from O2. I did verify O2's substantive claim against the visible W1 text: W1:work_text:L11 computes A=0 and B=-1 and states the order D(+2), C(+1), A(0), B(-1); W1:work_text:L13 states the final ranking D, C, A, B; but W1:artifact:L3/L4 lists B third and A fourth. The contradiction in W1 is real. Local result: I produced a new work whose artifact is [Candidate D, Candidate C, Candidate A, Candidate B], matching W1's own corrected arithmetic, while noting the private-fact valences are W1-reported (not independently read by me) and that shared-facts-only would give A, B, C, D.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A3",
+                  "finding": "no_issue_found",
+                  "observation": "O2 targets W1:artifact:L1 and its substance is verifiable from visible W1 text: W1:work_text:L11 computes A=0, B=-1 and states the order D(+2), C(+1), A(0), B(-1); L13 states 'Final ranking: Candidate D, Candidate C, Candidate A, Candidate B'; yet W1:artifact:L3/L4 lists Candidate B third and Candidate A fourth. O2's proposed replacement (D, C, A, B) matches W1's own stated totals. Applied to W2/W5, the offer is not a fix to W2 itself (W2's artifact [A,B,C,D] is internally consistent with its shared-facts-only totals), and the use_record correctly notes this. W5's resulting artifact [D, C, A, B] adopts the full-evidence ordering; the work_text labels the private-fact valences as W1-reported rather than independently read, which is accurate since A3 has no SELF_MATERIALS and cannot read S01-S16 originals. One limit: O2's underlying private-fact valences (A=0, B=-1, C=+1, D=+2) are only as reliable as W1's report; they cannot be independently confirmed from A3's accessible materials, so W5's full-evidence ranking is contingent on W1's arithmetic being correct. No condition or operation in O2 is misapplied."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A4",
+                  "finding": "issue",
+                  "observation": "O2's target is W1:artifact:L1, yet the application uses it to change W2→W5's artifact from [A,B,C,D] to [D,C,A,B]. O2's proposed replacement is justified only under W1's full-evidence totals (A=0, B=-1, C=+1, D=+2) derived from A1's private S01-S16 facts, which are not in W5's declared sources and which W5 itself admits are unverified. W5's own shared-facts-only arithmetic (A=+4, B=+3, C=+1, D=0) yields the order A,B,C,D — i.e., the original W2 artifact — so the changed artifact contradicts the very totals W5 computes and reports. Concretely: W5 says 'W2's artifact [A, B, C, D] is internally consistent, so O2 supplies no correction to W2' and 'O2 is therefore not adopted as a fix to W2,' yet the artifact is changed to D,C,A,B. Counterexample/scope: under W5's stated shared-facts totals, A(+4) > B(+3) > C(+1) > D(0); the new artifact puts D first and B last, inverting every pairwise comparison. The only way [D,C,A,B] is correct is by importing W1's unverified private facts, which the declared sources do not include as originals (SELF_MATERIALS empty for A2). Also note O2 itself is internally inconsistent in framing: it says 'W1's final artifact contradicts its own corrected arithmetic' — W1's work_text L13 already states D,C,A,B, while W1's artifact lists B before A — so the genuine defect is in W1's artifact, not W2's; propagating the fix onto W2 is a misdirected application."
+                }
+              ]
+            },
+            {
+              "before": "W5",
+              "after": "W6",
+              "offer_ref": "O6",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Applied O6 to a copy of W5. O6's claim: W5's artifact [D,C,A,B] rests on private-fact valences not in W5's declared sources and not directly read by A2, while W5's own shared-facts totals give A,B,C,D; O6 proposes annotating the artifact with explicit provenance, citing O1's excerpts for the private valences rather than W1's arithmetic alone. Operation: rewrote W5's work_text to (1) state unambiguously that the delivered artifact [D,C,A,B] rests on full-evidence totals A=0, B=-1, C=+1, D=+2, (2) drop the misleading 'O2 supplies no correction / not adopted' framing, (3) explicitly mark the shared-facts-only order A,B,C,D as superseded, and (4) attribute the private valences to W1's report corroborated by O1/O4 excerpts (A: 4 negatives; B: 4 negatives; D: 2 positives + 2 neutrals; C: 4 neutrals), noting they are excerpts, not my direct reading. Local result: artifact unchanged [D,C,A,B]; recomputed totals confirm D(+2) > C(+1) > A(0) > B(-1); provenance ambiguity O6 identified is resolved in the text and open_points.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A4",
+                  "finding": "no_issue_found",
+                  "observation": "Checked O6 against the full before/after (W5→W6) and the use_record. O6's object is W5:work_text:L1, and its claim matches W5's actual text: W5 states 'I do not have direct access to A1's S01-S16 originals... unverified by me' and lists shared-facts-only totals A=+4, B=+3, C=+1, D=0, yet its artifact is [D,C,A,B]. W5's declared_sources (O2, W1, W2, T) indeed omit S01-S16. The operation in W6 is proportionate and accurate: work_text now explicitly states the artifact rests on full-evidence totals (A=0, B=-1, C=+1, D=+2), marks the shared-facts-only order superseded, drops the 'O2 supplies no correction / not adopted' framing, and attributes private valences to W1's report plus O1/O4 excerpts with an explicit caveat that these are excerpts, not direct reading. The artifact is unchanged [D,C,A,B], consistent with the recomputed totals. The use_record faithfully describes this. Limits of my access: I hold no SELF_MATERIALS, so I cannot verify the S01-S16 originals myself; I can only confirm that O6's characterization of W5's provenance gap and W6's corrective annotation are internally consistent with the visible texts. One residual point: W6 cites O1/O4 excerpts as corroboration, and those are unverified public-offer excerpts, but W6 explicitly labels them as such, so no misrepresentation occurs."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "The artifact [D, C, A, B] is unchanged from W5, so the ranking itself is consistent with the full-evidence totals (A=0, B=-1, C=+1, D=+2), which recompute correctly from the shared facts plus the S01-S16 valences (A: four -1; B: four -1; C: four 0; D: +1,+1,0,0). The change only re-annotates provenance. However, W6's provenance claim is overstated: it says the private valences are 'corroborated by the excerpts quoted in O1 and O4,' but O1/O4 are unverified public offers, not SELF_MATERIALS originals, and A2's own SELF_MATERIALS is empty. The declared sources (O6, O1, O2, W1, W2, W5, T) still contain no direct S01-S16 originals, so the totals rest on second-hand excerpts while W6's open_points correctly retains that caveat — creating mild tension between the text's 'corroborated' framing and the open_point's 'not directly readable.' Scope: provenance wording only; the delivered order D, C, A, B matches the full-evidence arithmetic and is not contradicted by the shared-facts-only subtotal, which W6 explicitly supersedes."
+                }
+              ]
+            },
+            {
+              "before": "W6",
+              "after": "W7",
+              "offer_ref": "O7",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Tried O7 on a copy of W6. Conditions: my SELF_MATERIALS are empty; O1/O4 are unverified public-offer excerpts, not S01-S16 originals. Operation: rewrote W6:work_text:L1's provenance sentence, replacing 'corroborated by the excerpts quoted in O1 and O4' with 'reported by W1 and repeated in unverified public excerpts (O1/O4), tracing to a single source (A1's S01-S16 report), not independently verified,' and updated open_point 1 to match; kept the full-evidence arithmetic and the artifact [D, C, A, B] unchanged. Local result: text and open_points are now consistent (no 'corroborated' overstatement), totals recomputed as D=+2, C=+1, A=0, B=-1, and the ranking D > C > A > B is preserved.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A1",
+                  "finding": "no_issue_found",
+                  "observation": "O7 targets W6:work_text:L1's provenance sentence ('corroborated by the excerpts quoted in O1 and O4'). The before/after work confirms W6:work_text:L1 contains that exact phrasing, and W6's own open_point 1 already concedes the valences are 'not directly readable by me... rather than being my own direct reading of the originals' — so the 'corroborated' framing does conflict with W6's caveat. The operation was narrowly applied: W7's work_text replaces 'corroborated' with 'reported by W1 and repeated in unverified public excerpts (O1/O4), tracing to a single source,' and open_point 1 was updated to match; the artifact [D, C, A, B] and the arithmetic (A=+4-4=0, B=+3-4=-1, C=+1+0=+1, D=0+2=+2) are unchanged, consistent with O7's proposed_use ('keep the artifact unchanged'). My SELF_MATERIALS include S01-S16 originals, and they match the valences W7 relies on (A: S02/S04/S09/S13 all negative; B: S03/S08/S10/S12 all negative; D: S14/S16 positive, S01/S05 neutral; C: S06/S07/S11/S15 neutral), so the totals D=+2 > C=+1 > A=0 > B=-1 are consistent with the originals, not just W1's report. Limit: I can verify the S01-S16 originals but not what A2 could read, and O1/O4 remain unverified excerpts as W7 now states; O7's characterization of O1 as folding in W1's arithmetic is consistent with O1's quoted text. No double counting or fact duplication observed in W7's arithmetic."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A3",
+                  "finding": "no_issue_found",
+                  "observation": "Reconstructed the delivery relationship affected by O7: W6's artifact [D, C, A, B] rests on full-evidence totals D=+2, C=+1, A=0, B=-1, computed as shared (A+4, B+3, C+1, D0) plus private (A four negatives, B four negatives, C four neutrals, D two positives). Recomputing pairwise: D(2)>C(1)>A(0)>B(-1), so the artifact order is consistent with the arithmetic; the shared-facts-only order A(+4)>B(+3)>C(+1)>D(0) is correctly labeled superseded. The change W6→W7 only edits provenance wording: it removes the 'corroborated by O1 and O4' claim and states the valences trace to A1's single S01-S16 report (via W1 and restatements in O1/O4). This is consistent with W6's own open_point 1 and with O7's concrete test: stripping O1/O4 leaves the totals resting solely on W1's report, which W7 now states explicitly. No arithmetic or ordering consequence follows from the edit, and the artifact is unchanged. Scope caveat: I cannot verify the S01-S16 originals (SELF_MATERIALS empty, A1's materials not directly accessible), so the totals are only conditionally correct given A1's reported valences; the A-vs-B gap of 1 point remains fragile, and no tool execution was performed. This check covers the O7-affected provenance step only, not overall correctness of the private-fact data."
+                }
+              ]
+            }
+          ],
+          "input_tokens": 326946,
+          "output_tokens": 13342,
+          "http": 25
+        }
+      }
+    },
+    {
+      "version": "r3",
+      "pair": "distributed-r1",
+      "methods": {
+        "ordinary_discussion": {
+          "folder": "runs\\workboard-pilot-live-20261022-r3\\distributed-r1\\ordinary_discussion",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W26",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 5,
+          "first_editor_correct_creation_call": 6,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 1,
+              "stage": "DISCUSS",
+              "id": "W5",
+              "author": "A1",
+              "l1": 8
+            },
+            {
+              "call": 2,
+              "stage": "DISCUSS",
+              "id": "W6",
+              "author": "A2",
+              "l1": 8
+            },
+            {
+              "call": 3,
+              "stage": "DISCUSS",
+              "id": "W7",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 4,
+              "stage": "DISCUSS",
+              "id": "W8",
+              "author": "A4",
+              "l1": 8
+            },
+            {
+              "call": 5,
+              "stage": "DISCUSS",
+              "id": "W9",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 6,
+              "stage": "DISCUSS",
+              "id": "W10",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 7,
+              "stage": "DISCUSS",
+              "id": "W11",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 8,
+              "stage": "DISCUSS",
+              "id": "W12",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 9,
+              "stage": "DISCUSS",
+              "id": "W13",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 10,
+              "stage": "DISCUSS",
+              "id": "W14",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "DISCUSS",
+              "id": "W15",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 12,
+              "stage": "DISCUSS",
+              "id": "W16",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 13,
+              "stage": "DISCUSS",
+              "id": "W17",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 14,
+              "stage": "DISCUSS",
+              "id": "W18",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 15,
+              "stage": "DISCUSS",
+              "id": "W19",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 16,
+              "stage": "DISCUSS",
+              "id": "W20",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 17,
+              "stage": "DISCUSS",
+              "id": "W21",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "DISCUSS",
+              "id": "W22",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 19,
+              "stage": "DISCUSS",
+              "id": "W23",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 20,
+              "stage": "DISCUSS",
+              "id": "W24",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 21,
+              "stage": "DISCUSS",
+              "id": "W25",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "DISCUSS",
+              "id": "W26",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 23,
+              "stage": "DISCUSS",
+              "id": "W27",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 24,
+              "stage": "DISCUSS",
+              "id": "W28",
+              "author": "A4",
+              "l1": 0
+            }
+          ],
+          "trials": [],
+          "input_tokens": 248941,
+          "output_tokens": 12937,
+          "http": 25
+        },
+        "coreta_workboard": {
+          "folder": "runs\\workboard-pilot-live-20261022-r3\\distributed-r1\\coreta_workboard",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W7",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 11,
+          "first_editor_correct_creation_call": 11,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 4,
+              "stage": "TRY",
+              "id": "W5",
+              "author": "A2",
+              "l1": 4
+            },
+            {
+              "call": 11,
+              "stage": "TRY",
+              "id": "W6",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "TRY",
+              "id": "W7",
+              "author": "A2",
+              "l1": 0
+            }
+          ],
+          "trials": [
+            {
+              "before": "W2",
+              "after": "W5",
+              "offer_ref": "O2",
+              "before_l1": 8,
+              "after_l1": 4,
+              "use_record": "Applied O2's correction on a copy of my work W2: O2 pointed out C's shared total is +1 (T: +1-1+0+1), not the +2 that W4 used; my own W2 already had C = +1, so this confirms C = +1 and I discard W4's inflated value. I also incorporated O1 (A's four negatives -> A = 0) and O3 (D's net +2). Recomputing totals gives D (+2) > C (+1) > A (0) > B (-1), changing my prior A > B > C > D order. Limit: A and D private facts are peer-reported via O1/O3, not personally verified from originals.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A3",
+                  "finding": "issue",
+                  "observation": "O2's correction is accurate against T: C = +1 (leadership +1, speaking -1, involvement 0, problem-solving +1), so W4's C = +2 is a miscount. However, O2's target is W4, not my work W2, and my W2 already had C = +1, so O2 changes nothing in my before/after. In my W5 I did apply O2 in effect only as confirmation of C = +1, which is consistent. A more consequential issue is in my own W5: it declares sources T, S03, S08, S10, S12, O1, O2, O3, but S03/S08/S10/S12 are A2's own private originals, which I (A3) cannot directly read; per SOURCE_ACCESS these are peer_metadata_not_verified, and W5 presents B's four negatives as 'my direct originals' without flagging that limit. Also, W5's ranking D (+2) > C (+1) > A (0) > B (-1) depends on O1's reported A = 0 and O3's reported D = +2, both unverified excerpts; W5 does note this limitation for A and D, but its declared_sources list treats O1/O3 as adequate carriers without marking them as unverified reports. Separately, O2's proposed use (fixing W4) is correct on its own target, but it does not support any change to my W2/W5 artifact."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A4",
+                  "finding": "issue",
+                  "observation": "Reconstructing the delivery relationship: O2 (A3) reports a correction to W4's C arithmetic (C shared = +1, not +2) and proposes re-ranking W4 as A(+4) > B(+3) > D(+2) > C(+1). Applying this consequence to the actual artifact W5, which cites O2: W5's stated totals are D(+2) > C(+1) > A(0) > B(-1), but its artifact order is [A, D, C, B] — i.e., A (0) is placed first, above D (+2) and C (+1), contradicting its own stated values. The correct order under those totals is D > C > A > B. So the change's consequence (D should outrank C, and A at 0 should fall below both) was not carried into the artifact at position 1: A remains first despite its own recomputed total of 0. Additionally, W5's 'no ties remain ... except none' is awkward but not an error; the substantive defect is the artifact/valuation mismatch at rank 1 (A vs D/C). Counterexample to W5's claim of consistency: if A = 0 while D = +2 and C = +1, any order placing A first violates the task's 'rank by total valence' rule. Scope: W5's artifact ordering (positions 1–3) and work_text final sentence; W5's D = +2 arithmetic itself is consistent with the O3 report, and the B = -1 figure is internally consistent. Limits: O1/O3 values are peer-reported, not directly verified; my direct originals (S01, S05, S14, S16) confirm only D's facts (two neutrals, two positives => +2), which supports D above C and A under the adopted totals."
+                }
+              ]
+            },
+            {
+              "before": "W5",
+              "after": "W6",
+              "offer_ref": "O6",
+              "before_l1": 4,
+              "after_l1": 0,
+              "use_record": "Applied O6 (A4's offer targeting W5:artifact:L1) to a copy of W5. O6 asserts W5's artifact [A, D, C, B] contradicts W5's own computed totals (D +2 > C +1 > A 0 > B -1) and should be re-sorted to D > C > A > B. I checked this against T (rank by total valence) and W5's own work_text, which indeed states D (+2) > C (+1) > A (0) > B (-1) while the artifact lists A first. Operation: replaced artifact with [Candidate D, Candidate C, Candidate A, Candidate B], keeping W5's work_text totals and peer-report caveats intact. Local result: artifact now matches stated totals and the task's ranking rule. O6's support for D = +2 cites S14/S16 (peer-reported via O3, not directly accessible to me), so I preserved the existing caveat that A's and D's private additions are peer-reported rather than personally verified.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A4",
+                  "finding": "no_issue_found",
+                  "observation": "Checked O6 against the whole before/after work and the use_record. O6's claim is that W5's artifact [A, D, C, B] contradicts W5's own stated totals (D +2 > C +1 > A 0 > B -1) and should be re-sorted to D > C > A > B under T's rank-by-valence rule. W5:work_text:L1 does state exactly that ordering, while W5:artifact:L1 places Candidate A first, so the defect is real and the operation (replace artifact with [Candidate D, Candidate C, Candidate A, Candidate B], keep totals and caveats) matches the offer and the task rule. W6's artifact now matches its work_text, and the peer-report caveat for A and D is preserved. Limits: O6's D = +2 rests on S14/S16/S01/S05, which I read directly (S14 positive, S16 positive, S01 neutral, S05 neutral), so D = 0 shared + 2 = +2 is consistent with my own originals; but A = 0 rests on O1/W1, a peer report of A1's originals S02/S04/S09/S13 that I cannot read, so the A placement (third) remains indirect. O6's characterization of A as 'cannot be ranked first' is therefore only as strong as O1, and W6 correctly keeps that caveat. The remaining ordering C (+1) > A (0) > B (-1) depends on A2's own originals for B, which I also cannot read; B's -1 is peer-reported to me via W5/W6. No double counting is visible: shared A/B/C/D attributes and the added private attributes are distinct names. The only residual concern is that W6 declares O6/O4/O5 as sources in addition to W5, but the substantive content is unchanged from W5 except the artifact order, which is what the use_record describes."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A1",
+                  "finding": "no_issue_found",
+                  "observation": "Reconstructing the delivery relationship affected by O6 (target W5:artifact:L1): W5's stated totals were D +2 > C +1 > A 0 > B -1, but its artifact was [A, D, C, B], placing A (0) first — an internal inconsistency with T's rank-by-valence rule. W6 applies exactly that re-sort to [D, C, A, B], which matches the stated totals and the corrected artifact. Checking the underlying arithmetic against T's shared facts: A = +4 shared, minus four peer-reported negatives (O1/W1) = 0; B = +3 shared, minus four direct negatives = -1; C = +1 shared (T: +1-1+0+1), private facts neutral = +1; D = 0 shared, plus two positives (peer-reported via O3) = +2. Ordering D(+2) > C(+1) > A(0) > B(-1) is consistent. The change is confined to artifact order and a minor open_points wording fix; no new arithmetic error is introduced. Caveats retained: A's and D's private additions are peer-reported (O1, O3, O6), not directly verified by A2, and the source list now also cites O4/O5/O6/W5 as the re-sort justification, which is appropriate provenance for a correction. No counterexample found within the visible premises."
+                }
+              ]
+            },
+            {
+              "before": "W6",
+              "after": "W7",
+              "offer_ref": "O7",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Tried O7 (A1's peer report targeting W6:work_text:L1) on a copy of current work W6. O7's substantive claim is that W6's B provenance label is actually correct (S03/S08/S10/S12 are my own direct originals per the directory, confirmed by SOURCE_ACCESS.direct_original_refs), that the tie-break open point is accurate, and that the one refinement is to mark C's neutral private facts as peer-reported via A3 (O2/W3) alongside the existing A (O1) and D (O3) caveats, with no valence or rank changes. I applied this on the copy: kept artifact [D, C, A, B] and all totals (A 0, B -1, C +1, D +2) unchanged, and added a confidence-level sentence distinguishing B (own originals), D (peer-reported via O3/O9), C (peer-reported via O2/W3), and A (peer-reported via O1/W1, most fragile). I also cross-checked O8/O9, which reach the same conclusion (no arithmetic change, only caveat strengthening). Local result: no ranking change; provenance labeling refined. Limits: I cannot directly read S01/S02/S04/S05/S06/S07/S09/S11/S13/S14/S16, so peer-reported totals remain indirect.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A1",
+                  "finding": "no_issue_found",
+                  "observation": "Checked O7 against the whole before/after work (W6 vs W7) and my USE_RECORD. O7's substantive content is accurate: it says W6's attribution of B's four negatives to A2's own originals S03/S08/S10/S12 is correct (consistent with SOURCE_ACCESS.direct_original_refs, which lists my direct originals as T, S02, S04, S09, S13 — note S03/S08/S10/S12 are not in my direct set, so their valence content is peer-reported to me via W5/W6/W7, and O7's claim that A2 'does directly hold' them is a peer report I cannot verify from originals; the directory in my packet does list them as A2's materials, so this is consistent but not personally verified). O7's proposed refinement — label C's neutral private facts as peer-reported via A3 (O2/W3) alongside the A and D caveats — is actually reflected in W7: the open_points now say C's facts are 'peer-reported via A3 (O2/W3, per O7/O8)' and the work_text adds a confidence-level sentence naming A (O1/W1), C (O2/W3), D (O3/O9), B (own originals). O7's claim that no arithmetic or rank change is needed holds: W7 keeps artifact [D, C, A, B] and totals A 0, B -1, C +1, D +2, matching W6. O7's statement that the tie-break open point is accurate also holds (totals are distinct). O8 and O9 reach the same conclusion and are likewise consistent with W7. No defect found in the offer's object, conditions, or operation. Limits: I cannot directly read S01/S05/S06/S07/S11/S14/S16 or S03/S08/S10/S12, so the peer-reported totals for A, C, D, and B remain indirect; only T and S02/S04/S09/S13 are directly verified by me."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A3",
+                  "finding": "no_issue_found",
+                  "observation": "Reconstructed the delivery relationship affected by O7 (target W6:work_text:L1, base W6 -> W7): O7's only substantive request is to relabel C's private facts as peer-reported via A3 (O2/W3) and to keep artifact [D, C, A, B], B=-1, and the no-ties claim unchanged. Comparing BEFORE W6 with AFTER W7: the artifact is byte-identical [Candidate D, Candidate C, Candidate A, Candidate B]; the work_text now adds the no-double-counting clause for B's four negatives (distinct from B's shared speaking-neutral and event-planning-positive facts), adds the confidence-level sentence labeling C=+1 as peer-reported via A3 (O2/W3, per O7/O8) alongside the existing A (O1) and D (O3/O9) caveats, and adds the fragility note that A=0 could rise to +1 on a single misreported negative and outrank C. open_points C now reads 'peer-reported via A3 (O2/W3, per O7/O8)... not directly verified by me', matching O7's proposed_use; the tie-break line now enumerates D +2, C +1, A 0, B -1 as distinct. All requested changes are present and no valence total or ordering changed, so the change is consistent with its stated purpose. Arithmetic recheck against T: shared A=+4, B=+3, C=+1, D=0; W7's B=+3-4=-1, A=+4-4=0, D=0+2=+2, C=+1, giving D > C > A > B, which matches the delivered artifact order. Scope/limits: I can directly read only T and S06/S07/S11/S15 (all neutral, confirming C's private facts are neutral and C=+1); A=0 and D=+2 rest on peer-reported originals (S02/S04/S09/S13 via O1/W1; S01/S05/S14/S16 via O3/O9) that I cannot verify, and B's four negatives (S03/S08/S10/S12) are reported via W5/W6/W7 metadata, not directly read by me. The ordering is thus conditionally correct under the adopted peer-reported totals; A's third place is the most fragile, as W7 itself now notes. No tool execution was performed."
+                }
+              ]
+            }
+          ],
+          "input_tokens": 336472,
+          "output_tokens": 12637,
+          "http": 25
+        }
+      }
+    },
+    {
+      "version": "r3",
+      "pair": "concentrated-r1",
+      "methods": {
+        "ordinary_discussion": {
+          "folder": "runs\\workboard-pilot-live-20261022-r3\\concentrated-r1\\ordinary_discussion",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W26",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 1,
+          "first_editor_correct_creation_call": 6,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 1,
+              "stage": "DISCUSS",
+              "id": "W5",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 2,
+              "stage": "DISCUSS",
+              "id": "W6",
+              "author": "A2",
+              "l1": 8
+            },
+            {
+              "call": 3,
+              "stage": "DISCUSS",
+              "id": "W7",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 4,
+              "stage": "DISCUSS",
+              "id": "W8",
+              "author": "A4",
+              "l1": 8
+            },
+            {
+              "call": 5,
+              "stage": "DISCUSS",
+              "id": "W9",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 6,
+              "stage": "DISCUSS",
+              "id": "W10",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 7,
+              "stage": "DISCUSS",
+              "id": "W11",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 8,
+              "stage": "DISCUSS",
+              "id": "W12",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 9,
+              "stage": "DISCUSS",
+              "id": "W13",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 10,
+              "stage": "DISCUSS",
+              "id": "W14",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "DISCUSS",
+              "id": "W15",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 12,
+              "stage": "DISCUSS",
+              "id": "W16",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 13,
+              "stage": "DISCUSS",
+              "id": "W17",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 14,
+              "stage": "DISCUSS",
+              "id": "W18",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 15,
+              "stage": "DISCUSS",
+              "id": "W19",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 16,
+              "stage": "DISCUSS",
+              "id": "W20",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 17,
+              "stage": "DISCUSS",
+              "id": "W21",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "DISCUSS",
+              "id": "W22",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 19,
+              "stage": "DISCUSS",
+              "id": "W23",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 20,
+              "stage": "DISCUSS",
+              "id": "W24",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 21,
+              "stage": "DISCUSS",
+              "id": "W25",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "DISCUSS",
+              "id": "W26",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 23,
+              "stage": "DISCUSS",
+              "id": "W27",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 24,
+              "stage": "DISCUSS",
+              "id": "W28",
+              "author": "A4",
+              "l1": 0
+            }
+          ],
+          "trials": [],
+          "input_tokens": 263014,
+          "output_tokens": 13924,
+          "http": 25
+        },
+        "coreta_workboard": {
+          "folder": "runs\\workboard-pilot-live-20261022-r3\\concentrated-r1\\coreta_workboard",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W7",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 4,
+          "first_editor_correct_creation_call": 4,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 4,
+              "stage": "TRY",
+              "id": "W5",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "TRY",
+              "id": "W6",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "TRY",
+              "id": "W7",
+              "author": "A2",
+              "l1": 0
+            }
+          ],
+          "trials": [
+            {
+              "before": "W2",
+              "after": "W5",
+              "offer_ref": "O2",
+              "before_l1": 8,
+              "after_l1": 0,
+              "use_record": "Trial of O2 (A3's offer, target W1) on a copy of my current work W2. I read O2's claim that W1's artifact (D, C, B, A) contradicts W1's own work_text (D, C, A, B) and checked it against the visible W1 carrier: W1:work_text:L13 states A=0, B=-1, C=+1, D=+2 and concludes D, C, A, B, while W1:artifact:L3/L4 list B then A. The inconsistency is confirmed from W1's public text plus the valence rule in T. Applying the correction locally, the order under W1's reported totals becomes D > C > A > B, which I adopted; I did not adopt the erroneous artifact order. I also used W1's reported per-candidate totals (with its private S01-S16 facts) as indirect peer-reported evidence, flagged as unverified. O2's own caveat that private originals are unverifiable is preserved.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A3",
+                  "finding": "no_issue_found",
+                  "observation": "Checked O2 (A3's offer about W1) against the full before/after work and use_record. Object/conditions/operation match: W1:work_text:L13 states A=0, B=-1, C=+1, D=+2 and concludes 'Candidate D, Candidate C, Candidate A, Candidate B', while W1:artifact:L3/L4 list 'Candidate B' then 'Candidate A'. Under the T valence rule A(0)>B(-1), so the artifact order is indeed inconsistent, as O2 claims. The after work W5 adopts the corrected order D, C, A, B and cites W1 and O2, with declared_sources T, W1, O2 consistent with APPLICATION_SOURCE_REFS. W5 correctly flags that A1's S01-S16 private contents are only peer-reported via W1 and unverified; O2's own caveat about not verifying private originals is preserved. Minor limit: O2's claim is about W1's internal consistency, not the truth of W1's private scores, and W5's ranking depends on those unverified reported totals—but W5 states this limitation explicitly. I have no direct access to S01-S16 originals, so I cannot verify the private fact contents; my check covers only the internal-inconsistency claim and its use in W5."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A4",
+                  "finding": "issue",
+                  "observation": "W5 changes the artifact from A>B>C>D to D>C>A>B, justified by adopting A1's W1-reported private totals (D=+2, C=+1, A=0, B=-1). Reconstructing that delivery: W1's own work_text states A=0 and B=-1, so A outranks B; but W1's artifact lists B third and A fourth. W5 correctly detects and repairs this via O2, and its new artifact (D, C, A, B) is consistent with W1's reported totals, so the changed step's consequence for the ranking is coherent. However, W5's declared_sources includes 'W1' and 'O2' as public carriers and T as direct original; it treats W1's private-fact contents as peer-reported and provisional, which is appropriate, but it also inherits an unverified premise: the private fact names/values (S01-S16) cannot be checked against originals by A2, and W5's open_points does flag this. A concrete residual defect: W5 says 'O2 (A3) independently notes' the inconsistency, but O2 is a public offer excerpt and A2 cannot verify A3's independent check beyond the carrier; the word 'independently' overstates verification. Also W5's claim that private fact names have 'no overlap with shared facts' is itself only reported by W1, not verifiable from T. Scope: the artifact order D, C, A, B is internally consistent with W1's reported totals and fixes W1's array-vs-text contradiction; the remaining limits are provenance overstatement and unverifiable private contents, not an arithmetic or ordering error in W5's own reconstruction."
+                }
+              ]
+            },
+            {
+              "before": "W5",
+              "after": "W6",
+              "offer_ref": "O6",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Tried O6 (A4) on a copy of W5. Operation: in W5:work_text:L3, replaced the phrase 'O2 (A3) independently notes' with wording attributing the inconsistency to W1's own text (W1:work_text conclusion vs W1:artifact:L3/L4) plus the T valence rule, and noted O2 merely 'also reports' the same inconsistency. Also flagged the 'no overlap with shared facts' claim as W1-reported and unverified, per O5/O6. Local result: artifact order D, C, A, B unchanged; provenance claims tightened. Arithmetic preserved from W5 (D+2, C+1, A=0, B=-1) as reported via W1.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A4",
+                  "finding": "no_issue_found",
+                  "observation": "Checked O6's proposed use against the full W5→W6 diff and use_record. W5:work_text:L3 said 'O2 (A3) independently notes...'; W6:L3 now grounds the W1 artifact/work_text contradiction in W1's own text (W1:work_text concluding D,C,A,B vs W1:artifact:L3/L4 listing B then A) plus the T valence rule, and describes O2 only as 'also reports' the same inconsistency, explicitly disclaiming verified independent corroboration. This matches O6's proposed use (replace 'independently notes' with 'also reports'/drop 'independently'). It also addresses O5's request to flag the no-overlap claim as W1-reported/unverified, which W6:L3 and open_points now do. The artifact order D, C, A, B is unchanged, and the reported totals (D+2, C+1, A=0, B=-1) are preserved. O6's support excerpts are consistent with the W1 carrier text I can see. Limits: I can read only T and public report carriers; O2 and W1 are peer reports, and A1's originals S01-S16 remain unverified by me, so I cannot confirm the private fact contents or the no-overlap claim — W6 itself now labels these as unverified, which is appropriate. No remaining provenance overstatement found in W6."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A1",
+                  "finding": "no_issue_found",
+                  "observation": "The O6-driven edit (W5 -> W6) targets only provenance wording and leaves the ranking untouched. Reconstructing the delivery relationship: the artifact array is unchanged [D, C, A, B]; the work_text now drops 'independently notes' in favor of 'A3's public offer O2 also reports the same inconsistency' and explicitly disclaims it as verified corroboration. This correctly implements O6's proposed use. The substantive check still holds: W1's own work_text states A=0, B=-1, C=+1, D=+2 and concludes D, C, A, B, while W1:artifact lists B third and A fourth; under T's valence rule A(0) > B(-1), so D > C > A > B is the consistent order, matching W6's artifact. The no-overlap claim is now correctly flagged as W1-reported only, and O4's provider-side verification is properly noted as a peer report of its own originals, not something A2 can check. The shared-facts-only fallback (A > B > C > D) and the caveat that private contents are unverified are preserved. One residual limit: the private totals (A=-4, B=-4, C=0, D=+2) and the disjointness of private vs. shared fact names remain unverified from originals by A2, so the D, C, A, B ordering rests on W1's report and could revert if those reported totals are wrong; W6 acknowledges this."
+                }
+              ]
+            },
+            {
+              "before": "W6",
+              "after": "W7",
+              "offer_ref": "O7",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Tried O7 (A1's provider-side verification offer) on a copy of W6. O7 reports that A1's own originals S01-S16 have private fact names disjoint from the shared T facts and private totals A=-4, B=-4, C=0, D=+2, confirming W6's reported figures and no-overlap premise. I cannot read S01-S16, so I did not upgrade provenance to direct verification; instead I kept 'reported via W1' and added that the name-disjointness is partially checkable by comparing O7/W1's reported names against T's seven shared fact names. I also applied O8's point (via its carrier content, which I could partly check against T): replaced the vague fallback with the exact shared-only order A(+4) > B(+3) > C(+1) > D(0), and clarified (per O9-style precision, checkable from W1's own text) that only W1's artifact, not its work_text, is defective. Artifact unchanged: D, C, A, B.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "Checking O7 against the before/after work and use_record: O7's core content (provider-side verification of S01-S16 totals A=-4, B=-4, C=0, D=+2 and no fact-name overlap with T) is correctly not upgraded to direct verification in W7; W7 keeps provenance as 'reported via W1' and explicitly labels O4/O7 as peer reports of A1's own originals that A2 cannot check. That framing is accurate. However, W7's work_text:L3 says the no-overlap check compares 'the private fact names reported in W1 and in A1's offer O7 against the seven shared T fact names.' I can verify the T side from my direct original: T lists exactly seven fact names (leadership experience, public speaking ability, campus involvement, student advocacy record, event planning experience, problem-solving ability). The private name list is only available to me via O7/W1 as a public report, so the comparison is only as reliable as those reported names; W7 does say 'partially checkable,' which is appropriately hedged. A residual imprecision: W7 lists O4 and O7 in declared_sources and cites O4's provider-side claims in work_text, but O4 is not in APPLICATION_SOURCE_REFS (which lists T, W1, O2, O7, O8, O9); O4 is referenced in the text without being declared, a provenance-declaration gap. Also the use_record attributes the O9-style precision point to 'O9-style' rather than declaring O9 (O9 is declared in sources, so this is minor). The ranking D, C, A, B is unaffected and consistent with the reported totals. Scope limited: I cannot read S01-S16 originals, so I cannot confirm the private totals or name disjointness beyond what O7/W1 report."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A3",
+                  "finding": "no_issue_found",
+                  "observation": "The W6→W7 edit only changes provenance/precision wording; the artifact order is unchanged (D, C, A, B), so the delivery relationship is unaffected. Reconstructing the ranking: shared facts (T, direct original) give A=+4, B=+3, C=+1, D=0. W1 (public report) adds private totals A=-4, B=-4, C=0, D=+2, yielding A=0, B=-1, C=+1, D=+2 → D > C > A > B, which matches W7's artifact. The changed step's consequence for the goal is nil. The edits are all improvements: (1) W6's vague 'could revert toward A > B > C > D' is replaced by the exact shared-only order A(+4) > B(+3) > C(+1) > D(0), which is arithmetically correct; (2) the no-overlap caveat is refined to a name-list comparison against T's seven fact names — a check I can partially perform, since O7's reported names (conflict resolution, time management, work ethic, vision, communication, adaptability, commitment, crisis handling, networking, creativity, initiative, decision-making, interpersonal, dedication, fundraising, reliability) indeed match none of T's seven names; (3) the W1 artifact/work_text framing is corrected to say only the artifact array (B third, A fourth) deviates, which W1's own work_text:L13 confirms; (4) O7's provider-side claims are kept as peer-reported, not upgraded to direct verification. Declared sources (T, W1, O2, O7, O8, O9) all correspond to carriers actually used in the text. Residual limits: the private valence values remain unverified by me (S01-S16 are peer-reported via W1/O7, not accessible originals), and the no-overlap check verifies only reported names, not that no other unseen facts exist; but these limits are already disclosed in W7's open_points and do not create a defect in the artifact or its stated derivation."
+                }
+              ]
+            }
+          ],
+          "input_tokens": 336142,
+          "output_tokens": 12053,
+          "http": 25
+        }
+      }
+    },
+    {
+      "version": "r3",
+      "pair": "distributed-r2",
+      "methods": {
+        "ordinary_discussion": {
+          "folder": "runs\\workboard-pilot-live-20261022-r3\\distributed-r2\\ordinary_discussion",
+          "editor": "A3",
+          "final_l1": 0,
+          "final_work": "W29",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 5,
+          "first_editor_correct_creation_call": 7,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 1,
+              "stage": "DISCUSS",
+              "id": "W5",
+              "author": "A1",
+              "l1": 8
+            },
+            {
+              "call": 2,
+              "stage": "DISCUSS",
+              "id": "W6",
+              "author": "A2",
+              "l1": 6
+            },
+            {
+              "call": 3,
+              "stage": "DISCUSS",
+              "id": "W7",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 4,
+              "stage": "DISCUSS",
+              "id": "W8",
+              "author": "A4",
+              "l1": 8
+            },
+            {
+              "call": 5,
+              "stage": "DISCUSS",
+              "id": "W9",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 6,
+              "stage": "DISCUSS",
+              "id": "W10",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 7,
+              "stage": "DISCUSS",
+              "id": "W11",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 8,
+              "stage": "DISCUSS",
+              "id": "W12",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 9,
+              "stage": "DISCUSS",
+              "id": "W13",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 10,
+              "stage": "DISCUSS",
+              "id": "W14",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "DISCUSS",
+              "id": "W15",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 12,
+              "stage": "DISCUSS",
+              "id": "W16",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 13,
+              "stage": "DISCUSS",
+              "id": "W17",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 14,
+              "stage": "DISCUSS",
+              "id": "W18",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 15,
+              "stage": "DISCUSS",
+              "id": "W19",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 16,
+              "stage": "DISCUSS",
+              "id": "W20",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 17,
+              "stage": "DISCUSS",
+              "id": "W21",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "DISCUSS",
+              "id": "W22",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 19,
+              "stage": "DISCUSS",
+              "id": "W23",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 20,
+              "stage": "DISCUSS",
+              "id": "W24",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 21,
+              "stage": "DISCUSS",
+              "id": "W25",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "DISCUSS",
+              "id": "W26",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 23,
+              "stage": "DISCUSS",
+              "id": "W27",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 24,
+              "stage": "DISCUSS",
+              "id": "W28",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 25,
+              "stage": "FINALIZE",
+              "id": "W29",
+              "author": "A3",
+              "l1": 0
+            }
+          ],
+          "trials": [],
+          "input_tokens": 273593,
+          "output_tokens": 15136,
+          "http": 25
+        },
+        "coreta_workboard": {
+          "folder": "runs\\workboard-pilot-live-20261022-r3\\distributed-r2\\coreta_workboard",
+          "editor": "A3",
+          "final_l1": 0,
+          "final_work": "W7",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 11,
+          "first_editor_correct_creation_call": 11,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 4,
+              "stage": "TRY",
+              "id": "W5",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 11,
+              "stage": "TRY",
+              "id": "W6",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "TRY",
+              "id": "W7",
+              "author": "A3",
+              "l1": 0
+            }
+          ],
+          "trials": [
+            {
+              "before": "W3",
+              "after": "W5",
+              "offer_ref": "O3",
+              "before_l1": 8,
+              "after_l1": 8,
+              "use_record": "Trialed O3 (A4's offer) on a copy of current W3. Conditions: O3 reports A4's directly-read D facts (S01 neutral, S05 neutral, S14 +1, S16 +1) via public carrier O3; I could not read those originals. Operation: corrected D's shared total from W3's erroneous 0 to the task's actual 0-1+0+1=0 (W3's arithmetic was right at 0; note A2's O2 claim that D's shared sum is -1 is an arithmetic slip), then added O3's reported +2, giving D=+2. Local result: D rises from last to first among currently reported totals. Also incorporated O1 (A -> 0) and O2 (B -> -1) from their public carriers, yielding D(+2) > C(+1) > A(0) > B(-1). Adopted O3's core claim (D=+2) but discarded its proposed ordering A>B>D>C, since O1/O2 reports lower A and B below D.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A4",
+                  "finding": "issue",
+                  "observation": "I am A4, the provider of O3, so I can verify my own originals: S01 (D interpersonal, neutral), S05 (D dedication, neutral), S14 (D fundraising, positive), S16 (D reliability, positive) are all directly read and match O3's excerpts. O3's core claim (D = shared 0 + private +2 = +2) is sound and was correctly adopted in W5's work_text. However, W5's AFTER artifact contradicts its own work_text: artifact is [Candidate A, Candidate B, Candidate D, Candidate C] (A 1st, B 2nd), while work_text concludes D(+2) > C(+1) > A(0) > B(-1). So the deliverable ranking does not reflect the computed totals. Also, W5's declared_sources include S01/S05/S14/S16? No — it lists T, S06, S07, S11, S15, O1, O2, O3, W3, which is appropriate (O3 is the carrier it used, not my originals). Separately, O3's proposed_use ordering A>B>D>C is stale relative to O1/O2 and was rightly discarded by W5. Note my verification is limited to D's four facts; I cannot verify O1's A negatives or O2's B negatives (S02/S03/S04/S08/S09/S10/S12/S13 are not my originals)."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "W5's work_text sums correctly (A=0, B=-1, C=+1, D=+2) and states 'Ranking: D (+2) > C (+1) > A (0) > B (-1)', but W5's artifact is [Candidate A, Candidate B, Candidate D, Candidate C], i.e., A > B > D > C. The artifact is not merely stale relative to W3 either: W3 had C 3rd and D 4th, while W5 moved D to 3rd and C to 4th, so the change altered the bottom pair but left the top two exactly as before, contradicting W5's own stated order. Concrete reconstruction of the delivery consequence: the ranking deliverable is the artifact array, so a consumer reading W5:artifact:L1-L4 receives D last, whereas the derived totals put D first; A and B are reported as 0 and -1 but delivered as 1st and 2nd. A minimal correct artifact would be [Candidate D, Candidate C, Candidate A, Candidate B]. Scope: W5's artifact vs. its work_text totals (W5:artifact:L1-L4, W5:work_text:L1); the underlying valence arithmetic itself is consistent with O1/O2/O3 as reported (peer-reported, not directly verified by me for S01/S03/S05/S08/S10/S12/S14/S16)."
+                }
+              ]
+            },
+            {
+              "before": "W5",
+              "after": "W6",
+              "offer_ref": "O4",
+              "before_l1": 8,
+              "after_l1": 0,
+              "use_record": "Applied O4 (A1's public offer) to a copy of my current work W5. Object: W5's artifact array [Candidate A, Candidate B, Candidate D, Candidate C] versus its own work_text totals D +2 > C +1 > A 0 > B -1. Operation: replaced the artifact with [Candidate D, Candidate C, Candidate A, Candidate B] so the deliverable matches the computed order, keeping the work_text and caveats. Local result: internal inconsistency resolved; I independently confirmed from T (directly read) that D's shared facts sum to 0, so I accepted O4's correction and rejected O2's claim that D's shared sum is -1. I did not treat O4's citation of S02 or O3's citation of S01/S05/S14/S16 as personally verified; those valences remain peer-reported via O1/O3. Also noted O5 (A2) as provider-confirmed B = -1 but treated it as a report, not my own verification.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A1",
+                  "finding": "no_issue_found",
+                  "observation": "Checked O4 against the full before/after work (W5 -> W6) and the use_record. O4's object is correct: W5's artifact [Candidate A, Candidate B, Candidate D, Candidate C] did contradict its work_text totals D +2 > C +1 > A 0 > B -1, and W6's artifact [Candidate D, Candidate C, Candidate A, Candidate B] now matches those totals. O4's proposed operation (replace artifact, keep work_text and caveats) was followed, and W6 additionally notes O5 as provider-asserted B=-1 and rejects O2's D=-1 arithmetic slip, consistent with T (directly read) where D = 0-1+0+1 = 0. O4's support excerpts match W5's actual text. Limits: my access is to T and my own S02/S04/S09/S13; O4's citations of S02 (A1's original) are not personally verified by me, and D=+2 (O3), B=-1 (O2/O5) and C's neutrals (S06/S07/S11/S15 via W5) remain peer-reported valences I cannot check against originals, so the totals are provisional on those reports. No double-counting observed: private labels (conflict resolution, time management, work ethic, vision; communication skills, adaptability, commitment, crisis handling; interpersonal, dedication, fundraising, reliability; networking, creativity, initiative, decision-making) are distinct from shared labels."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A2",
+                  "finding": "no_issue_found",
+                  "observation": "Reconstructed the delivery relationship affected by O4: W5's work_text computes D=+2 > C=+1 > A=0 > B=-1, but W5's artifact was [A, B, D, C], delivering the two lowest totals first and the highest third — the reverse of the stated order. O4's proposed fix [D, C, A, B] matches the stated totals, and AFTER (W6) adopts exactly that array, so the artifact now agrees with the work_text ranking. Checked the changed step's consequence for each candidate: D shared = 0-1+0+1 = 0 (T directly read confirms leadership 0, speaking -1, involvement 0, event planning +1), plus O3-reported +2 => +2, consistent with W6's first place. C = +1 (shared) with four neutral private facts => +1, second. A = +4-4 = 0 via O1-reported negatives, third. B = +3-4 = -1 via O2/O5-reported negatives, fourth. W6 also correctly rejects O2's arithmetic slip that D's shared sum is -1 (T sums to 0), and its caveats properly mark A/B/D totals as peer-reported rather than personally verified. No double counting: private labels (Conflict resolution, Communication skills, Interpersonal skills, Networking, etc.) are distinct from shared labels. Scope: this checks only internal consistency of W6's artifact against its computed totals and the arithmetic of the shared D facts; it does not confirm the peer-reported valences for A (O1), B (O2/O5), or D (O3), whose originals are not directly accessible to me, so the ranking remains provisional on those reports. O6 (A4) makes the same correction and is consistent. No counterexample found within this scope."
+                }
+              ]
+            },
+            {
+              "before": "W6",
+              "after": "W7",
+              "offer_ref": "O8",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Tried O8 (A4's provider verification) on a copy of W6. Actual object: O8 is a public_report carrier; I cannot read its cited originals S01/S05/S14/S16. Operation: (1) checked O8's arithmetic claim against T directly (D shared = 0-1+0+1 = 0) and against my own directly read C materials — consistent; (2) confirmed O8 does not change any total or the artifact [D, C, A, B], matching W6; (3) adopted only its precision refinement: rewrote the provenance/caveat so D's +2 and A's 0 are described as provider-confirmed (A4 via O3/O8; A1 via O1/O7) while B's -1 is provider-asserted (A2 via O2/O5), and all remain unread originals from my position. Local result: totals and ranking unchanged (D +2 > C +1 > A 0 > B -1); only the provenance wording and the A open point were adjusted. Partial adoption: I did not treat provider self-verification as my own verification of the originals.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A4",
+                  "finding": "no_issue_found",
+                  "observation": "Checked O8 against W6 (before), W7 (after), and the USE_RECORD. O8 is a public_report carrier; I cannot read its cited originals S01/S05/S14/S16, so its claim that D's private facts are 0,0,+1,+1 is provider-asserted only, not personally verified. Its one verifiable component is the D shared baseline, which I confirmed directly against T: 0-1+0+1 = 0, matching W6/W7 and contradicting O2's -1 slip. O8 proposes no change to totals or artifact [D, C, A, B]; W7 keeps these identical, which is consistent. The only substantive adoption is a provenance-wording refinement: W7 now labels D's +2 and A's 0 as provider-confirmed and B's -1 as provider-asserted, while still stating the originals are unread from A3's position. That matches the actual access situation (O8's self-verification does not transfer to A3) and does not overclaim. The USE_RECORD accurately describes this partial adoption and does not treat provider self-verification as personal verification. I also rechecked the arithmetic and no-double-counting condition: D's private labels (Interpersonal, Dedication, Fundraising, Reliability) are distinct from shared D labels (Leadership, Public speaking, Campus involvement, Event planning), and the totals D +2 > C +1 > A 0 > B -1 follow. Residual limits: A's 0, B's -1, and D's +2 all rest on peer-reported valences whose originals I cannot read; if O1/O7 were wrong, A (+4) would lead, and if O2/O5 were wrong, B (+3) would lead. The ranking remains provisional. No issue with the application of O8."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A1",
+                  "finding": "no_issue_found",
+                  "observation": "Reconstructed the delivery relationship affected by O8: W6 -> W7 changes only work_text/open_points, not the artifact. W6 artifact [D, C, A, B] already matches W6's computed totals D +2 > C +1 > A 0 > B -1, and W7 keeps that identical array, so the ranking delivered to consumers is unchanged and remains consistent with the stated values. Recomputing from T directly: A=+4, B=+3, C=+1, D=0; my own S06/S07/S11/S15 are neutral so C stays +1; O1/O7 report A -4 -> 0; O2/O5 report B -4 -> -1; O3/O8 report D +2 -> +2. Order D(+2)>C(+1)>A(0)>B(-1) holds and the array order matches. O8's requested change is purely provenance wording: distinguishing D's +2 (provider-verified by A4's originals via O3/O8) and A's 0 (provider-confirmed by A1 via O1/O7) from B's -1 (provider-asserted by A2 via O2/O5), which W7's new provenance note and open_points do. W7 correctly retains the caveat that A3 cannot read those originals and that if O1/O7 or O2/O5 were wrong, A(+4) or B(+3) would lead. O2's D=-1 arithmetic slip is correctly rejected (T sums D to 0). No double counting: all private labels distinct from shared labels. Limits: A, B, D valences are peer-reported carriers I cannot verify against originals (SOURCE_ACCESS marks S01/S03/S05/S08/S10/S12/S14/S16 as peer metadata, not verified); no tool runner was supplied, so this is a reasoning check only, not proof of overall correctness. One minor residual: W7's caveat sentence still lumps A, B, D as 'peer-reported valences' while its own provenance note refines them, a slight internal tension but not a ranking or arithmetic error."
+                }
+              ]
+            }
+          ],
+          "input_tokens": 363580,
+          "output_tokens": 12886,
+          "http": 25
+        }
+      }
+    },
+    {
+      "version": "r3",
+      "pair": "concentrated-r2",
+      "methods": {
+        "ordinary_discussion": {
+          "folder": "runs\\workboard-pilot-live-20261022-r3\\concentrated-r2\\ordinary_discussion",
+          "editor": "A3",
+          "final_l1": 8,
+          "final_work": "W27",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 1,
+          "first_editor_correct_creation_call": null,
+          "correct_candidate_available_but_final_wrong": true,
+          "creations": [
+            {
+              "call": 1,
+              "stage": "DISCUSS",
+              "id": "W5",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 2,
+              "stage": "DISCUSS",
+              "id": "W6",
+              "author": "A2",
+              "l1": 8
+            },
+            {
+              "call": 3,
+              "stage": "DISCUSS",
+              "id": "W7",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 4,
+              "stage": "DISCUSS",
+              "id": "W8",
+              "author": "A4",
+              "l1": 8
+            },
+            {
+              "call": 5,
+              "stage": "DISCUSS",
+              "id": "W9",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 6,
+              "stage": "DISCUSS",
+              "id": "W10",
+              "author": "A2",
+              "l1": 8
+            },
+            {
+              "call": 7,
+              "stage": "DISCUSS",
+              "id": "W11",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 8,
+              "stage": "DISCUSS",
+              "id": "W12",
+              "author": "A4",
+              "l1": 8
+            },
+            {
+              "call": 9,
+              "stage": "DISCUSS",
+              "id": "W13",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 10,
+              "stage": "DISCUSS",
+              "id": "W14",
+              "author": "A2",
+              "l1": 8
+            },
+            {
+              "call": 11,
+              "stage": "DISCUSS",
+              "id": "W15",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 12,
+              "stage": "DISCUSS",
+              "id": "W16",
+              "author": "A4",
+              "l1": 8
+            },
+            {
+              "call": 13,
+              "stage": "DISCUSS",
+              "id": "W17",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 14,
+              "stage": "DISCUSS",
+              "id": "W18",
+              "author": "A2",
+              "l1": 8
+            },
+            {
+              "call": 15,
+              "stage": "DISCUSS",
+              "id": "W19",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 16,
+              "stage": "DISCUSS",
+              "id": "W20",
+              "author": "A4",
+              "l1": 8
+            },
+            {
+              "call": 17,
+              "stage": "DISCUSS",
+              "id": "W21",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "DISCUSS",
+              "id": "W22",
+              "author": "A2",
+              "l1": 8
+            },
+            {
+              "call": 19,
+              "stage": "DISCUSS",
+              "id": "W23",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 20,
+              "stage": "DISCUSS",
+              "id": "W24",
+              "author": "A4",
+              "l1": 8
+            },
+            {
+              "call": 21,
+              "stage": "DISCUSS",
+              "id": "W25",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "DISCUSS",
+              "id": "W26",
+              "author": "A2",
+              "l1": 8
+            },
+            {
+              "call": 23,
+              "stage": "DISCUSS",
+              "id": "W27",
+              "author": "A3",
+              "l1": 8
+            },
+            {
+              "call": 24,
+              "stage": "DISCUSS",
+              "id": "W28",
+              "author": "A4",
+              "l1": 8
+            }
+          ],
+          "trials": [],
+          "input_tokens": 245670,
+          "output_tokens": 12792,
+          "http": 25
+        },
+        "coreta_workboard": {
+          "folder": "runs\\workboard-pilot-live-20261022-r3\\concentrated-r2\\coreta_workboard",
+          "editor": "A3",
+          "final_l1": 0,
+          "final_work": "W7",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 4,
+          "first_editor_correct_creation_call": 4,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 4,
+              "stage": "TRY",
+              "id": "W5",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "TRY",
+              "id": "W6",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "TRY",
+              "id": "W7",
+              "author": "A3",
+              "l1": 0
+            }
+          ],
+          "trials": [
+            {
+              "before": "W3",
+              "after": "W5",
+              "offer_ref": "O3",
+              "before_l1": 8,
+              "after_l1": 0,
+              "use_record": "Applied O3 (A4's public offer) to a copy of my current work W3. O3's knowledge claims W1's artifact (C, B, D, A) contradicts W1's work_text totals (D=+2, C=+1, A=0, B=-1). I checked the directly readable W1 public report and confirmed the inconsistency: W1:work_text:L11 states 'Final order: Candidate D (+2), Candidate C (+1), Candidate A (0), Candidate B (-1)' while W1:artifact lists C, B, D, A. I therefore changed my artifact from [A, B, C, D] to [D, C, A, B] and updated work_text to distinguish my directly computed shared-fact scores (A=+4, B=+3, C=+1, D=0) from the peer-reported private-fact adjustments (A=-4, B=-4, C=0, D=+2). Limitation: the private-fact valences come from A1's S01-S16, which I cannot read; I rely on W1's and O3's reports and mark them unverified. If those facts do not hold, the ranking reverts to A, B, C, D.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A4",
+                  "finding": "issue",
+                  "observation": "O3's core claim is verifiable within W1's directly readable public report: W1:work_text:L11 states 'Final order: Candidate D (+2), Candidate C (+1), Candidate A (0), Candidate B (−1)' and 'D is +2, C is +1, so D ranks above C,' while W1:artifact lists [Candidate C, Candidate B, Candidate D, Candidate A] — a genuine internal inconsistency, so O3's proposed reorder to D, C, A, B is consistent with W1's own arithmetic. However, O3's framing that the correction follows from W1's 'computed totals' glosses over that those totals (A=0, B=−1, C=+1, D=+2) depend entirely on A1's private S01–S16 valences (A −4, B −4, C 0, D +2), which neither O3 nor I can read; O3 does flag this caveat. Turning to W5's actual use: W5 applies O3 to change its own artifact from [A, B, C, D] to [D, C, A, B], but O3's target was W1:artifact, not W3/W5, and O3's proposal is about reconciling W1, not about re-ranking W3. W5's work_text and USE_RECORD do correctly attribute the private valences as peer-reported and unverified, and do preserve the shared-fact fallback order A, B, C, D, so the provenance labeling is honest. The residual concern is that W5's declared_sources includes W1 and T (both legitimately used) plus O3, and its ranking shift rests on W1's reported private facts rather than on anything W5 verified; the work_text states this limitation, so the record is transparent though the adopted ranking remains unverified. Scope: W5 artifact/work_text, USE_RECORD, and O3's claims against W1's public text only; S01–S16 contents were not accessible to me and are not personally verified."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "The change from W3 to W5 alters the deliverable ranking from [A, B, C, D] to [D, C, A, B], but the stated justification does not support this revision. W5's own directly accessible originals (T plus S01–S16) actually do support D=+2, C=+1, A=0, B=−1: A = +4 shared − 4 private (S02, S04, S09, S13) = 0; B = +3 shared − 4 private (S03, S08, S10, S12) = −1; C = +1 shared + 0 private (S06, S07, S11, S15) = +1; D = 0 shared + 2 private (S14, S16; S01, S05 neutral) = +2. So the new array order is arithmetically correct under the full known evidence. However, W5 attributes those private valences to 'peer-reported' sources (W1 and O3) and says it 'cannot directly read' S01–S16, which contradicts SOURCE_ACCESS: S01–S16 are listed as direct_original_refs for this agent. The provenance description is therefore false/inconsistent — the agent does have direct access to these originals. Additionally, O3's target is W1:artifact:L1 and its proposed_use is to replace W1's artifact; W5 repurposes that correction to justify changing its own W3 artifact, which is a scope drift, though the resulting order happens to coincide with the correct full-evidence order. The core ranking is right but the work_text misdescribes the basis (claiming the decisive private facts are unverifiable peer reports when they are the agent's own directly accessible originals), and it presents the shared-fact-only order [A, B, C, D] as a live fallback even though the agent's own direct materials rule it out."
+                }
+              ]
+            },
+            {
+              "before": "W5",
+              "after": "W6",
+              "offer_ref": "O4",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Tried O4 (A1) on a copy of W5. Operation: reworded W5:work_text:L1 to attribute the private valences (A -4, B -4, C 0, D +2) to W1's itemized work_text and O1 rather than to O3, listed the specific S-refs per candidate, kept the order D, C, A, B, and demoted the shared-fact-only fallback to a hypothetical. Local result: O4's claim that S01-S16 are 'this agent's own directly accessible originals' is false for me—SOURCE_ACCESS lists only T as a direct original for A3, so I did NOT adopt the 'my own originals' framing; I retained the peer-reported caveat (consistent with O5 and O6, which also treat the valences as peer-reported). O4's substantive correction—that O3 disclaims access and O1 is the proper carrier, and that the shared-fact-only fallback should be demoted—was adopted. Also incorporated O6's point that O1 carries the no-double-counting assurance. Ranking unchanged: D, C, A, B.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "Checking O4's proposed use against the actual W5→W6 change: the core provenance correction was applied (private valences now attributed to W1's itemized work_text and O1, O3 dropped as carrier, no-double-counting assurance from O1 recorded, shared-fact-only order demoted to hypothetical), and the ranking D, C, A, B is unchanged. However, two parts of O4's proposed use were not adopted and are not fully flagged. (1) O4 asked W5 to state the private valences come from 'the agent's own directly accessible S01-S16'; W6 instead retains the peer-reported caveat, which is correct given SOURCE_ACCESS lists S01-S16 as direct originals for A1, not for A3 — the use_record explains this, so this is a justified non-adoption, not an error. (2) O4's substantive arithmetic (A -4, B -4, C 0, D +2; totals D=+2, C=+1, A=0, B=-1) is reproduced in W6, but it rests on S-refs I cannot read as originals; W6 correctly labels these peer-reported. The remaining defect is in W6's declared_sources/open_points: it cites O4 and O6 as the sources of the 'provenance corrections' but does not cite O5, which independently raised the same O1-carrier point; this is a minor omission, not a contradiction. Also, W6's open_points still say the D>C>A>B order 'depends on A1's private facts S01-S16 as reported by W1 and O1' — consistent with the peer-reported framing in the work_text, so no internal inconsistency. No double-counting: the four A negatives, four B negatives, four C neutrals, and D's two positives/two neutrals are distinct facts, and shared facts are counted once, matching T's arithmetic. Net: O4's proposed use was substantially and correctly applied; the only residual is the uncited O5 corroboration and the (correctly rejected) 'own originals' framing."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A2",
+                  "finding": "issue",
+                  "observation": "The W5→W6 change is provenance-only (artifact stays [D, C, A, B]), and the ranking itself is arithmetically consistent: shared T gives A=+4, B=+3, C=+1, D=0; adding the reported private valences (A -4, B -4, C 0, D +2) gives A=0, B=-1, C=+1, D=+2, i.e., D>C>A>B. This also correctly repairs W1's internal inconsistency (W1's work_text concludes D(+2), C(+1), A(0), B(-1) but its artifact lists C, B, D, A). However, W6 overclaims its evidentiary basis in a checkable way. It states 'O1 (A1) confirms these are distinct facts and that no double-counting affects the result' and that W1's work_text 'itemizes private valences.' O1 does assert distinctness/no-double-counting, but O1 is A1's own report about A1's own S01–S16 originals; from W6's (A3's) position this is a peer report, not direct confirmation. SOURCE_ACCESS for this agent lists only T as a direct original; S02/S03/S14/S16 are 'peer_metadata_not_verified' via O1/O4. So the phrase 'confirms' overstates what A3 can verify. Second, W6 adopts O4's framing that the private valences are 'the agent's own directly accessible originals' — but that is true only for A1, not for A3; W6 correctly retains the caveat 'I cannot directly read S01-S16,' yet the surrounding text still leans on O4's access claim. Third, the demotion of the shared-fact-only order to 'a hypothetical ... not an equally supported alternative' is defensible only if the peer-reported private facts are accepted; since A3 cannot verify them, presenting A,B,C,D as merely hypothetical slightly understates the residual uncertainty (though the task instruction 'do not assume unseen evidence is absent' does support weighting the reported facts). Concrete counterexample to the 'confirms' claim: if any of the four A negatives or four B negatives were actually duplicate facts (e.g., S02 conflict resolution and S09 work ethic describing the same underlying trait), the -4 adjustments would shrink and A could rise above C, flipping the order — and A3 has no direct way to rule this out from T alone. The ranking D, C, A, B is the best-supported order given reported evidence, but W6's language should say O1 'reports' rather than 'confirms' distinctness, and should keep both orders as evidence-conditioned rather than declaring the shared-fact order ruled out."
+                }
+              ]
+            },
+            {
+              "before": "W6",
+              "after": "W7",
+              "offer_ref": "O8",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Tried O8 (A2) on a copy of my current W6 work_text. Operation: changed the phrase 'O1 (A1) confirms these are distinct facts and that no double-counting affects the result' to 'O1 (A1) reports that these are distinct facts and that no double-counting affects the result; this is peer-reported and unverified by me', and added an open point noting the load-bearing risk of duplicate negatives. O8's core claim checks out against my SOURCE_ACCESS: only T is a direct original, so O1 can only report, not confirm, distinctness; A1's O4 also concedes it cannot verify internal access claims beyond the SOURCE_ACCESS listing. Local result: artifact order [D, C, A, B] and all arithmetic unchanged; only the provenance verb and caveat tightened. I did not adopt O8's implication that S02/S03/S14/S16 are 'peer_metadata_not_verified via O1/O4' as anything beyond a navigation note; the valences remain peer-reported, not verified.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A2",
+                  "finding": "no_issue_found",
+                  "observation": "O8's proposed operation was applied faithfully and only where it applies. W6:work_text:L1 contained the exact phrase 'O1 (A1) confirms these are distinct facts and that no double-counting affects the result'; W7 changes 'confirms' to 'reports' and appends 'this is peer-reported and unverified by me, since SOURCE_ACCESS lists only T as a direct original and S01-S16 are peer metadata.' This is consistent with my SOURCE_ACCESS (direct_original_refs = [T] only; S02/S03/S14/S16 listed as peer_metadata_not_verified), so 'confirm' was indeed an overstatement and the downgrade is warranted. O8's load-bearing-risk point (duplicate A/B negatives would shrink the -4 and could let A(0) overtake C(+1)) is reflected in the new open point; the arithmetic in the work_text (A=0, B=-1, C=+1, D=+2) and the artifact [D, C, A, B] are unchanged, matching O8's stated 'no change to the artifact order'. W6's original declared_sources were T, W1, O1, O4, O6; W7 adds O8, which is the offer actually used, so the declaration matches the use_record. One limit: O8 also asserts O4 'concedes it cannot verify its internal access claims'; I read that O4 text as a public report (O4 itself is A1's offer about its own originals), so I treat it as peer-reported corroboration, not independent proof — W7's wording keeps the caveat explicit rather than claiming verification, so this does not create a defect. I cannot verify the S01-S16 contents themselves (no direct access), and W7 correctly does not claim to."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A4",
+                  "finding": "no_issue_found",
+                  "observation": "Reconstructed the delivery relationship affected by O8: W6's work_text asserted 'O1 (A1) confirms these are distinct facts and that no double-counting affects the result.' W7 changes this to 'O1 (A1) reports...; this is peer-reported and unverified by me, since SOURCE_ACCESS lists only T as a direct original and S01-S16 are peer metadata.' This matches the visible SOURCE_ACCESS (direct_original_refs = [T]; S02/S03/S14/S16 listed as peer_metadata_not_verified via O1/O4/O7), so the 'reports not confirms' rewrite is correct and the caveat is accurate. Checking the changed step's consequence for the goal: the arithmetic and ranking are untouched by the edit. Shared T totals remain A=+4, B=+3, C=+1, D=0; applying the reported private adjustments (A -4, B -4, C 0, D +2) gives A=0, B=-1, C=+1, D=+2, i.e., order D, C, A, B, which is exactly W7's artifact array. The load-bearing caveat added to open_points is also sound: if any of A's four negatives were duplicates, A's adjustment would shrink (e.g., a single duplicate makes A=-3, total +1, tying C and potentially reordering), so the distinctness assurance genuinely matters — consistent with W7's framing. Declared_sources now include O8, matching the carrier actually used. One minor residual (not an error in the changed step): O8's text says the 'peer-reported and unverified' caveat 'already appears later in the same line' of W6, whereas W6 phrased it as 'adopted as peer-reported, not personally verified' — W7's rewrite is slightly more explicit, which is an improvement, not a defect. No ranking or arithmetic inconsistency introduced."
+                }
+              ]
+            }
+          ],
+          "input_tokens": 331094,
+          "output_tokens": 13343,
+          "http": 25
+        }
+      }
+    },
+    {
+      "version": "historical",
+      "pair": "historical-r1",
+      "methods": {
+        "ordinary_discussion": {
+          "folder": "runs\\workboard-historical-live-20261022-r1\\historical-r1\\ordinary_discussion",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W26",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 5,
+          "first_editor_correct_creation_call": 6,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 1,
+              "stage": "DISCUSS",
+              "id": "W5",
+              "author": "A1",
+              "l1": 4
+            },
+            {
+              "call": 2,
+              "stage": "DISCUSS",
+              "id": "W6",
+              "author": "A2",
+              "l1": 4
+            },
+            {
+              "call": 3,
+              "stage": "DISCUSS",
+              "id": "W7",
+              "author": "A3",
+              "l1": 4
+            },
+            {
+              "call": 4,
+              "stage": "DISCUSS",
+              "id": "W8",
+              "author": "A4",
+              "l1": 2
+            },
+            {
+              "call": 5,
+              "stage": "DISCUSS",
+              "id": "W9",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 6,
+              "stage": "DISCUSS",
+              "id": "W10",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 7,
+              "stage": "DISCUSS",
+              "id": "W11",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 8,
+              "stage": "DISCUSS",
+              "id": "W12",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 9,
+              "stage": "DISCUSS",
+              "id": "W13",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 10,
+              "stage": "DISCUSS",
+              "id": "W14",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "DISCUSS",
+              "id": "W15",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 12,
+              "stage": "DISCUSS",
+              "id": "W16",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 13,
+              "stage": "DISCUSS",
+              "id": "W17",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 14,
+              "stage": "DISCUSS",
+              "id": "W18",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 15,
+              "stage": "DISCUSS",
+              "id": "W19",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 16,
+              "stage": "DISCUSS",
+              "id": "W20",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 17,
+              "stage": "DISCUSS",
+              "id": "W21",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "DISCUSS",
+              "id": "W22",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 19,
+              "stage": "DISCUSS",
+              "id": "W23",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 20,
+              "stage": "DISCUSS",
+              "id": "W24",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 21,
+              "stage": "DISCUSS",
+              "id": "W25",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "DISCUSS",
+              "id": "W26",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 23,
+              "stage": "DISCUSS",
+              "id": "W27",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 24,
+              "stage": "DISCUSS",
+              "id": "W28",
+              "author": "A4",
+              "l1": 0
+            }
+          ],
+          "trials": [],
+          "input_tokens": 265811,
+          "output_tokens": 15541,
+          "http": 25
+        },
+        "coreta_workboard": {
+          "folder": "runs\\workboard-historical-live-20261022-r1\\historical-r1\\coreta_workboard",
+          "editor": "A2",
+          "final_l1": 0,
+          "final_work": "W8",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 11,
+          "first_editor_correct_creation_call": 11,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 4,
+              "stage": "TRY",
+              "id": "W5",
+              "author": "A2",
+              "l1": 2
+            },
+            {
+              "call": 11,
+              "stage": "TRY",
+              "id": "W6",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "TRY",
+              "id": "W7",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "FINALIZE",
+              "id": "W8",
+              "author": "A2",
+              "l1": 0
+            }
+          ],
+          "trials": [
+            {
+              "before": "W2",
+              "after": "W5",
+              "offer_ref": "O2",
+              "before_l1": 8,
+              "after_l1": 2,
+              "use_record": "Applied O2's counterexample to a copy of W2: O2 shows W1's Candidate A private subtotal of -5 is inconsistent with four listed negative facts (sum -4), yielding A=0 not -1. I recomputed all candidates from T's shared valences plus the private facts relayed in O1/O3: A=4-4=0, B=3-4=-1, C=1+0=1, D=0+2=2 (correcting W1's D shared subtotal of -1 to 0). Resulting ranking D>C>A>B, revising W2's shared-only A>B>C>D. Partial adoption: O2's A=0 correction retained; O2's claim that A ties with nothing holds, but its C/D tie is broken by D's two positive private facts. Private-fact basis is indirect (peer reports), not verified from originals.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A3",
+                  "finding": "issue",
+                  "observation": "O2's arithmetic correction is valid: W1 lists four negative private facts for A (S02, S04, S09, S13), which sum to -4, not the reported -5, so with T's shared valences (1+1+1+1=4) A's total is 0, not -1. This is consistent with the AFTER work (W5), which adopts A=0. However, O2's proposed re-ranking ('C/D tie > A > B') is not fully applied in W5: W5 computes D=2 (0 shared + 2 positive private) versus C=1, yielding D>C>A>B, and explicitly breaks the C/D tie. O2's claim that C and D remain tied at +1 rests on A1's reported private valences (S06/S07/S11/S15 neutral for C; S01/S05 neutral, S14/S16 positive for D), which O2 cannot inspect directly; W5's D=2 depends on those same indirect reports. So the correction is applied but the resulting order differs from O2's proposal, and the private-fact basis remains unverified from originals. Also note W5's declared_sources include O2 whereas its work_text cites only O1/O3/W1; the O2 use (A subtotal correction) is nonetheless reflected in the recomputation."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A4",
+                  "finding": "issue",
+                  "observation": "W5's artifact [C, D, A, B] contradicts its own recomputed totals. Using the peer-reported facts (O1/O3/W1, indirect, unverified originals): A = 4 shared + 4 negatives = 0; B = 3 shared + 4 negatives = -1; C = 1 shared + 4 neutrals = 1; D = 0 shared + 2 neutrals + 2 positives = 2. That yields D(2) > C(1) > A(0) > B(-1), i.e. [D, C, A, B]. W5's work_text states 'order D>C>A>B' and 'No ties remain (D=2, C=1, A=0, B=-1)', yet its artifact lists C first and D second—an internal contradiction between the stated values and the delivered order. The text then inconsistently calls C>D 'also defensible if tie-break or weighting differs,' though no tie exists under its own totals. Also, W5's claim that O2 was used is unsupported: O2 concerns only A's subtotal and does not change D's ranking, and W5 does not cite it in original source references. Corrected artifact should be [D, C, A, B] under the stated totals (or, if only A1's reported totals are trusted without recomputation, A=-1, B=-1, C=1, D=1 gives [C, D, A, B]—W5 mixes both regimes). Scope: W5 artifact ordering vs. its own arithmetic; private S-ref valences remain peer-reported and unverified."
+                }
+              ]
+            },
+            {
+              "before": "W5",
+              "after": "W6",
+              "offer_ref": "O6",
+              "before_l1": 2,
+              "after_l1": 0,
+              "use_record": "Applied O6 (A4) to W5:work_text:L1 on a copy of W5. O6 notes W5's artifact [C,D,A,B] contradicts its own stated totals D=2>C=1>A=0>B=-1, and that D's shared subtotal should be recomputed from T (0,-1,0,1 → 0) rather than W1's reported -1. I verified T directly: D's shared valences are Neutral, Negative, Neutral, Positive = 0; adding private +2 gives D=2. I changed artifact to [D, C, A, B], stated the D computation explicitly, noted the divergence from W1's reported -1 (which would give D=1 and a C/D tie), and dropped the unsupported 'C>D also defensible' hedge. Corroborated by O4/O5 (same defect and fix) and O1/O3 (private fact valences). Residual caveat kept: private S-refs are peer-reported, not independently verified.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A4",
+                  "finding": "no_issue_found",
+                  "observation": "Checked O6 (A4) against the before/after work and use_record. O6's core claim is correct: W5's artifact [C,D,A,B] contradicted its own stated totals D=2>C=1>A=0>B=-1. I verified T directly: Candidate D's shared valences are Neutral(0), Negative(-1), Neutral(0), Positive(+1) = 0, so W5's '0+2=2' is right and W1's reported D shared subtotal of -1 is the erroneous figure. W6 implements O6's proposed fix: artifact changed to [D,C,A,B], D's shared computation shown explicitly from T, the divergence from W1's -1 flagged (D=1, C/D tie), and the 'C>D also defensible' hedge dropped. O6's secondary framing ('double-counts the shared evidence') is loose but its own text self-corrects, and the concrete fix it proposes was applied faithfully. One limitation: O6's support excerpt from W1 and the S-ref valences are peer-reported, not directly accessible to me; I could only verify the T-derived shared subtotals. No defect in W6's application of O6 found."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "The change from W5 to W6 correctly makes the artifact [D, C, A, B] match the stated totals (D=2 > C=1 > A=0 > B=-1), and correctly drops the C>D hedge. Directly from T, shared valences are A=4, B=3, C=1, D=0-1+0+1=0; adding peer-reported private facts (A -4, B -4, C 0, D +2) gives D=2, C=1, A=0, B=-1, so the artifact order is now consistent with the arithmetic. However, the work_text still contains a provenance overstatement: it lists declared_sources including O4/O5/O6 and W5, and asserts 'A1 reports confirmation of its own originals' in the Needs line, but a recipient (A2) does not gain original access to S01-S16; those remain peer-reported. This is a minor attribution/provenance issue, not a ranking error. Also note W6's declared_sources omits O2 (which W5 cited) while the text says 'O1/O3/O4/O5/O6' — consistent with the omission, so no contradiction there. The core ranking and arithmetic are correct; the residual defect is the unverified provenance phrasing 'A1 reports confirmation' and the continued listing of O4/O5/O6 as if they independently support the private facts when they only relay W1/A1."
+                }
+              ]
+            },
+            {
+              "before": "W6",
+              "after": "W7",
+              "offer_ref": "O7",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Applied O7 (A1, target W6:work_text:L2) to a copy of W6. O7 confirms from its directly held S01-S16 originals the private valences I had only indirectly (A: four negatives; B: four negatives; C: four neutrals; D: two neutrals + two positives) and flags that my evidence line treated O1/O3/O4/O5/O6 as if independent corroborators when they merely relay A1's single source. Operation: kept W6's artifact [D, C, A, B] and totals (D=2, C=1, A=0, B=-1) unchanged, and rewrote the provenance to state the private facts originate solely from A1's S01-S16 (A1's own check), with all other carriers being relay reports. Also incorporated O2's correction of W1's -5 subtotal for A. Local result: artifact and arithmetic unchanged; provenance now accurate. Limits: I still cannot read S01-S16, so the valences remain peer-reported from my side, not personally verified; O7's excerpts are unverified reports of A1's originals.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "O7's substantive content is applied correctly: W7 keeps artifact [D, C, A, B] and totals D=2 > C=1 > A=0 > B=-1, and rewrites provenance so private facts are attributed to a single source (A1's S01-S16) rather than to O1/O3/O4/O5/O6 as independent corroborators. That matches O7's proposed_use. However, W7's provenance line overreaches relative to what the carrier supports. W7:work_text:L2 lists 'O1/O2/O3/O4/O5/O6/O7/O9' as peer reports relaying A1's S-refs, but O8 and O9 are not in APPLICATION_SOURCE_REFS (which declares T, O1-O7, W1); O9 is a public offer I never declared, and O8 is absent entirely. Also the new line 'A1 states in O4/O7 that it holds these originals directly and checked them' is an indirect report of A1's self-check, correctly hedged, but W7 does not note that O7's excerpts are unverified reports of A1's originals — the USE_RECORD does state this limit, so the artifact text and use_record are slightly out of sync. Finally, the 'single source' framing is accurate as to origin but W7 still counts O1-O7 individually in the reference list without marking O2's role (W1's -5 correction) distinctly, though O2 is now included, which matches O8's request. Net: ranking and arithmetic correct; provenance improved but contains undeclared carriers (O8/O9) and a minor text/use_record mismatch."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A3",
+                  "finding": "issue",
+                  "observation": "The change from W6 to W7 is a provenance/attribution edit responding to O7 (and O8/O9), and the ranking consequence is nil: artifact stays [D, C, A, B], totals stay A=4-4=0, B=3-4=-1, C=1+0=1, D=0+2=2, so D(2) > C(1) > A(0) > B(-1). Reconstructing D from T directly: 0-1+0+1=0 shared, plus peer-reported private +2 (S01/S05 neutral, S14/S16 positive) = 2, consistent with the stated order; the earlier W1 raw figure of -1 would give D=1 and a C/D tie, which W7 correctly flags as a conditional. So the delivery relationship (ranking vs. stated values) is coherent. Defects are confined to provenance bookkeeping: (1) W7:work_text:L2 and L3 attribute private facts to a list including O9 and O7, but APPLICATION_SOURCE_REFS and declared_sources omit O9; O9 is a real public report (A4) that W7 apparently used, so the evidence-statement list is broader than the declared source set — an internal mismatch. (2) W7:work_text:L2 cites O2/O7/O9 as 'relaying the single source A1's S-refs', but O2 (A3) and O5 are A3/A4 analyses of W1, not relaying A1 originals; grouping them as relay carriers of A1's S-refs overstates their status, though W7's core claim (one underlying source, not independent corroboration) is correct. (3) The A=0 recomputation is now credited to O2, which is accurate (O2 flagged W1's -5 vs four negatives). None of these alter the ranking; they are attribution consistency issues within the changed lines."
+                }
+              ]
+            }
+          ],
+          "input_tokens": 383129,
+          "output_tokens": 14972,
+          "http": 25
+        }
+      }
+    },
+    {
+      "version": "historical",
+      "pair": "historical-r2",
+      "methods": {
+        "ordinary_discussion": {
+          "folder": "runs\\workboard-historical-live-20261022-r1\\historical-r2\\ordinary_discussion",
+          "editor": "A3",
+          "final_l1": 0,
+          "final_work": "W27",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 2,
+          "first_editor_correct_creation_call": 7,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 1,
+              "stage": "DISCUSS",
+              "id": "W5",
+              "author": "A1",
+              "l1": 2
+            },
+            {
+              "call": 2,
+              "stage": "DISCUSS",
+              "id": "W6",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 3,
+              "stage": "DISCUSS",
+              "id": "W7",
+              "author": "A3",
+              "l1": 4
+            },
+            {
+              "call": 4,
+              "stage": "DISCUSS",
+              "id": "W8",
+              "author": "A4",
+              "l1": 4
+            },
+            {
+              "call": 5,
+              "stage": "DISCUSS",
+              "id": "W9",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 6,
+              "stage": "DISCUSS",
+              "id": "W10",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 7,
+              "stage": "DISCUSS",
+              "id": "W11",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 8,
+              "stage": "DISCUSS",
+              "id": "W12",
+              "author": "A4",
+              "l1": 2
+            },
+            {
+              "call": 9,
+              "stage": "DISCUSS",
+              "id": "W13",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 10,
+              "stage": "DISCUSS",
+              "id": "W14",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "DISCUSS",
+              "id": "W15",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 12,
+              "stage": "DISCUSS",
+              "id": "W16",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 13,
+              "stage": "DISCUSS",
+              "id": "W17",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 14,
+              "stage": "DISCUSS",
+              "id": "W18",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 15,
+              "stage": "DISCUSS",
+              "id": "W19",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 16,
+              "stage": "DISCUSS",
+              "id": "W20",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 17,
+              "stage": "DISCUSS",
+              "id": "W21",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "DISCUSS",
+              "id": "W22",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 19,
+              "stage": "DISCUSS",
+              "id": "W23",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 20,
+              "stage": "DISCUSS",
+              "id": "W24",
+              "author": "A4",
+              "l1": 0
+            },
+            {
+              "call": 21,
+              "stage": "DISCUSS",
+              "id": "W25",
+              "author": "A1",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "DISCUSS",
+              "id": "W26",
+              "author": "A2",
+              "l1": 0
+            },
+            {
+              "call": 23,
+              "stage": "DISCUSS",
+              "id": "W27",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 24,
+              "stage": "DISCUSS",
+              "id": "W28",
+              "author": "A4",
+              "l1": 0
+            }
+          ],
+          "trials": [],
+          "input_tokens": 237196,
+          "output_tokens": 13188,
+          "http": 25
+        },
+        "coreta_workboard": {
+          "folder": "runs\\workboard-historical-live-20261022-r1\\historical-r2\\coreta_workboard",
+          "editor": "A3",
+          "final_l1": 0,
+          "final_work": "W8",
+          "any_correct_initial": false,
+          "first_correct_creation_call": 4,
+          "first_editor_correct_creation_call": 4,
+          "correct_candidate_available_but_final_wrong": false,
+          "creations": [
+            {
+              "call": 4,
+              "stage": "TRY",
+              "id": "W5",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 11,
+              "stage": "TRY",
+              "id": "W6",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 18,
+              "stage": "TRY",
+              "id": "W7",
+              "author": "A3",
+              "l1": 0
+            },
+            {
+              "call": 22,
+              "stage": "FINALIZE",
+              "id": "W8",
+              "author": "A3",
+              "l1": 0
+            }
+          ],
+          "trials": [
+            {
+              "before": "W3",
+              "after": "W5",
+              "offer_ref": "O3",
+              "before_l1": 8,
+              "after_l1": 0,
+              "use_record": "Tried O3 on a copy of my W3. O3 claims D's shared subtotal is 0, not -1; I recomputed directly from T: Leadership Neutral 0, Public speaking Negative -1, Campus involvement Neutral 0, Event planning Positive +1 = 0. Confirmed O3's correction. Applied it: D's shared subtotal = 0. Combined with A1's peer-reported private facts (via O1/O2/W1), D total = 2, C = 1, A = 0 (four negatives, not O1's stated -5), B = -1, yielding D>C>A>B. Partial adoption: accepted O3's arithmetic correction; did not adopt O3's claim that A and B tie at -1, because O1's own enumerated A facts sum to -4, not -5.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A4",
+                  "finding": "issue",
+                  "observation": "O3's arithmetic correction is valid and is properly used in my W5: recomputing D's shared facts directly from T (Leadership Neutral 0, Public speaking Negative -1, Campus involvement Neutral 0, Event planning Positive +1) gives 0, not the -1 W1 reports at W1:work_text:L19, so D's total with the peer-reported private +2 is 2. W5 adopts this and the resulting D>C>A>B artifact reflects it. However, W5 over-attributes: it says the private-fact valences come 'from A1's public report (W1 via O1/O2/O3)', implying O3 carries the A/B/C private facts. O3 actually carries only the D shared-subtotal correction and explicitly flags that A and B tie at -1 in W1's accounting; the A/B/C private facts appear in O1 (and O2's relay of W1), not O3. W5's partial non-adoption of O3's A/B tie is internally justified (O1's four enumerated A negatives sum to -4, not the -5 O1 states), but the citation grouping is imprecise. Also, O3's proposed re-rank 'A>B>D>C' with A=B=-1 depends on the unverified -5 subtotal; W5 correctly declines that part, but should note O3's tie claim is thereby superseded rather than silently dropped. Limit: S01-S16 are A1's originals and are not directly accessible to me; only T and the public carriers O1/O2/O3/W1/W3 were read."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A1",
+                  "finding": "issue",
+                  "observation": "W5's ranking D(2)>C(1)>A(0)>B(-1) is arithmetically consistent with the enumerated private facts, but it rests on an unsupported resolution of a real discrepancy. O1 states A's private subtotal is -5 while listing four negative facts (S02, S04, S09, S13) that sum to -4; W5 silently adopts -4, making A=0 and A>B, whereas O1's own stated subtotal gives A=-1, tying B at -1 (as O1 itself says). The ranking's A/B ordering therefore hinges on an unverified choice between two peer-reported numbers, and W5 correctly flags this in open_points but still delivers a definite order. Additionally, W5's artifact puts A above B in a case where its own evidence statement admits the ordering is unresolved; if O1's -5 subtotal reflects a fifth unlisted private fact (not counted per 'do not count the same fact twice'), A's correct total is -1 and A/B tie. Also note the shared-only D subtotal correction (0, not -1) is confirmed against T, so the D-above-C ordering is sound on the shared facts; the vulnerability is confined to the A/B positions and the reliance on unverified relays of S01-S16. Scope: W5 artifact positions 3-4 (A vs B) and the private-fact totals for A and B; D>C ordering and shared subtotals are unaffected."
+                }
+              ]
+            },
+            {
+              "before": "W5",
+              "after": "W6",
+              "offer_ref": "O4",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Applied O4 (A1's holder verification) to a copy of W5: kept artifact D>C>A>B and totals D=2, C=1, A=0, B=-1; updated work_text to credit A1's verification of S01-S16 rather than treating private facts as unverified, and to record that the -5 A subtotal in O1/W1 is A1-confirmed as an arithmetic error (four A negatives = -4). I did not fully drop the caveat as O4 proposed: O5/O6 flag that -5 was reported by multiple carriers, so I retained a narrowed residual-risk condition (a fifth unlisted A fact would tie A/B at -1) while affirming D>C is robust. Local result: ranking unchanged; evidence statement strengthened and residual risk scoped. Basis is peer-reported (O1/O4/W1), not direct access to S01-S16.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A1",
+                  "finding": "no_issue_found",
+                  "observation": "Checked O4 against the whole W5→W6 diff and use_record. O4 (A1, holder) claims S01–S16 valences are verified, that there are no other private facts, and that the -5 A subtotal was an arithmetic error, so A=0 and A>B. W6 correctly adopts the artifact D>C>A>B and totals D=2, C=1, A=0, B=-1, credits A1's verification rather than O3, and keeps the declared attribution honest ('relayed via O1/O4, not directly readable by me'). I independently summed my own S01–S16: A has four negatives (S02,S04,S09,S13) = -4; B has four negatives (S03,S08,S10,S12) = -4; C has four neutrals (S06,S07,S11,S15) = 0; D has two neutrals (S01,S05) and two positives (S14,S16) = +2. Shared sums from T: A=4, B=3, C=1, D=0, so totals A=0, B=-1, C=1, D=2 — matching O4 and W6. No double counting: W6 uses each shared fact once and each private fact once; the -5 figure is not added on top of the -4 enumeration. W6 did not fully follow O4's proposed_use (it kept a narrowed residual condition and shared-only fallback rather than dropping them), but that is a conservative deviation, not a misapplication — the evidence statement accurately notes O1/O2/W1 report -5 while O4 attributes it to arithmetic error, and flags that a fifth unlisted A fact would tie A/B at -1. That caveat is reasonable given O5/O6; it does not alter the artifact. One minor imprecision: W6:work_text:L7 says 'three peer carriers conflict: O1/W1 state -5, O2 relays -5' — W1 and O1 are the same author's claim, so counting them as separate corroborating carriers slightly overstates independent support, but W6 uses this only to justify the residual caveat, not to change scores. Limits: I cannot read S01–S16 originals; my check of the private valences is against my own SELF_MATERIALS excerpts, which match O4's excerpts, and against the public carriers O1/O4/W1, not against A1's originals directly. The D shared subtotal correction (0, not -1) is directly verifiable from T and is correct in W6."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A2",
+                  "finding": "issue",
+                  "observation": "Reconstructing the changed step (adopting O4's A=0 over the -5 figure) against the delivery relationship: O4 is A1's self-verification claim, which I cannot read from originals, so W6's A=0 is still a peer report, not a direct check. W6's own text concedes this (\"not personally verified from originals\") yet the artifact commits to a definite A>B order (A=0 > B=-1) while simultaneously flagging that a fifth unlisted A fact would make A=-1 and tie B. This is internally inconsistent with the residual open point: the artifact asserts a strict order that the stated conditions admit may be a tie. Concretely, under the still-live -5 reading (O1/W1, O2) A=-1=B, so the W6:artifact:L3-L4 ordering is not forced by the visible premises; only D(2)>C(1) is robust (D shared=0 confirmed from T; C=1). Also note W6 attributes the D shared correction to O3 while declaring O3 as a source — fine — but the artifact's definite A-above-B placement overstates what O4 (a peer report the author cannot verify) establishes. The change from W5 to W6 improves attribution and evidence caveats but does not resolve the A/B ordering the artifact asserts; a safer artifact would mark A/B as tied pending A1's exhaustiveness confirmation, or state A's total as the interval [-1,0]."
+                }
+              ]
+            },
+            {
+              "before": "W6",
+              "after": "W7",
+              "offer_ref": "O8",
+              "before_l1": 0,
+              "after_l1": 0,
+              "use_record": "Applied O8 to a copy of W6: replaced L7's phrase 'three peer carriers conflict: O1/W1 state -5, O2 relays -5' with the framing that the -5 is a single carrier's figure (A1's earlier W1/O1) echoed by O2's relay, versus A1's later holder verification (O4) affirming -4/A=0. Verified from the visible O2 text that it explicitly derives -5 from W1, so it is a relay, not independent corroboration. Kept artifact D>C>A>B and all totals unchanged; narrowed the residual caveat to a note. I did not read S01-S16 originals; the private valences remain A1's reported claims.",
+              "checks": [
+                {
+                  "stage": "CHECK_USE",
+                  "member": "A2",
+                  "finding": "issue",
+                  "observation": "O8 was substantively applied: W7:work_text:L7 now frames -5 as A1's earlier single-carrier figure echoed by O2's relay (not independent corroboration), against O4's retraction to -4/A=0, and the open_point was narrowed to a note. I checked O2's visible text; it explicitly derives -5 from W1, consistent with O8's claim. Artifact D>C>A>B and all totals unchanged, as O8 proposed. However, W7:work_text:L9's 'Original source references' list adds \"O8\" and \"O9\", but O9 is not in declared_sources (declared: T, O1, O2, O3, O4, O8, W1, W6). O9 appears to have been drawn on implicitly (its single-source framing overlaps) yet is neither declared nor cited in the body; this is a provenance inconsistency between the source-reference line and the declared/used sources. Also note W7's conditions still say private valences are not personally verified — accurate for the author, but O4/O7/O8/O9 remain peer reports, not originals I can read."
+                },
+                {
+                  "stage": "CHECK_EFFECT",
+                  "member": "A4",
+                  "finding": "no_issue_found",
+                  "observation": "The change from W6 to W7 is confined to the evidence-statement framing at work_text:L7, the open_points wording, and the added source refs (O8, O9). The delivery relationship is unaffected: the artifact remains [D, C, A, B] and the totals (D=2, C=1, A=0, B=-1) are unchanged. Reconstructing the changed step's consequence: W6 claimed 'three peer carriers conflict: O1/W1 state -5, O2 relays -5.' W7 instead says the -5 is 'a single carrier's claim (A1's earlier W1/O1), echoed by O2's relay... not independent corroboration,' against A1's later O4 retraction to -4. This is a correct provenance reconstruction: O1 and W1 share author A1 (same claim), and O2's own text says 'W1 (A1) publicly reports... based on A1's public report, not on direct access,' so O2 is a relay, not independent corroboration. Thus the -5 figure has one independent source, and W7's reframing is supported by the cited carriers. The consequence for the goal is neutral-to-strengthening: A=0 still follows from the four enumerated A negatives summing to -4, and A>B remains conditional on A1's exhaustiveness claim, which W7 preserves in Conditions and Needs. One residual point worth noting (not a delivery-breaking error): W7's 'Original source references' list includes 'O9', but O9 is not in W7's declared_sources (which lists O8 only), and W7's text attributes the O6 hypothesis but does not cite O9; this is a minor citation-list inconsistency rather than a change to the ranking or its stated basis. Also, W7 keeps the residual 'fifth unlisted A fact' caveat rather than narrowing it, which is conservative but consistent with the instruction not to assume unseen evidence is absent. No counterexample found in which the changed step alters the artifact or the derived ordering under the stated premises; scope is limited to the evidence-statement provenance claim and citation list, since S01-S16 remain peer-reported and not directly verified by this author."
+                }
+              ]
+            }
+          ],
+          "input_tokens": 382302,
+          "output_tokens": 14434,
+          "http": 25
+        }
+      }
+    }
+  ]
+}

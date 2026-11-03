@@ -1,0 +1,96 @@
+For the answer-stripped rationale intervention, let $T$, $F$, and $N$ denote
+the correct-rationale, wrong-rationale, and neutral contexts. We measure the
+gold answer against all wrong-answer probability mass,
+\[
+m_a(x)=\log p(y_g\mid x)-\log\sum_{y\ne y_g}p(y\mid x).
+\]
+The correct-over-wrong gap is $m_a(T)-m_a(F)$. We also report the
+help-over-harm asymmetry
+\[
+A=[m_a(T)-m_a(N)]-[m_a(N)-m_a(F)],
+\]
+which tests whether the helpful shift from correct reasoning exceeds the
+reverse harmful shift from wrong reasoning.
+
+\begin{table}[H]
+\centering
+\caption{Original peer-response effects and equivalent conclusion-only support
+over recovery cases. Trace effects are means with 95\% confidence intervals;
+$\widehat W$ is the median interpolated equivalent support. The final column
+reports the correct-support minus wrong-support answer margin under the Verify
+prompt at each dose.}
+\label{tab:lvd_equivalent_support_full}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccc}
+\toprule
+\textbf{Backbone} & \textbf{Dataset}
+& $\boldsymbol{\Delta m_{\mathrm{trace}}}$ \textbf{[95\% CI]}
+& \textbf{Median $\boldsymbol{\widehat W}$}
+& \textbf{Correct$-$wrong margin, $\boldsymbol{d=1/2/3}$} \\
+\midrule
+Qwen3-4B & GPQA       & 8.15 [4.96, 11.41]  & 2.23 & 2.59 / 5.94 / 13.63 \\
+Qwen3-4B & MMLU-Redux & 11.40 [9.02, 13.97] & $>3$ & 1.03 / 5.36 / 11.76 \\
+OLMo3-7B & GPQA       & 4.57 [3.65, 5.50]   & 1.92 & 3.33 / 5.06 / 5.79 \\
+OLMo3-7B & MMLU-Redux & 5.47 [4.52, 6.43]   & $>3$ & 3.59 / 5.18 / 5.53 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Truth sensitivity of answer-stripped trace rationales. Entries are
+mean margin changes with 95\% confidence intervals, shown as Standard / Verify.}
+\label{tab:lvd_answer_stripped_full}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcc}
+\toprule
+\textbf{Backbone / dataset} & \textbf{Help-over-harm asymmetry $\boldsymbol{A}$}
+& \textbf{Correct-over-wrong gap $\boldsymbol{T-F}$} \\
+\midrule
+Qwen3-4B / GPQA
+& 7.34 [2.14, 12.45] / 6.84 [1.29, 12.33]
+& 1.90 [.54, 3.39] / 4.59 [2.45, 6.96] \\
+Qwen3-4B / MMLU-Redux
+& 8.70 [3.50, 13.72] / 6.36 [2.34, 10.42]
+& 5.98 [3.78, 8.32] / 5.50 [3.46, 7.69] \\
+OLMo3-7B / GPQA
+& 1.92 [.46, 3.35] / 1.39 [.17, 2.58]
+& 1.70 [1.16, 2.31] / 2.01 [1.35, 2.77] \\
+OLMo3-7B / MMLU-Redux
+& 2.84 [.87, 4.85] / 2.24 [.78, 3.78]
+& 1.93 [1.26, 2.63] / 2.10 [1.41, 2.83] \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Free-generation accuracy after three peer messages. Each entry
+evaluates the same 50 questions. Correct support is bolded.}
+\label{tab:lvd_free_generation_full}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrr}
+\toprule
+\textbf{Backbone} & \textbf{Dataset} & \textbf{Prompt}
+& \textbf{Neutral} & \textbf{Correct support}
+& \textbf{Answer withheld} & \textbf{Shuffled rationale} \\
+\midrule
+Qwen3-4B & GPQA       & Standard & .32 & \textbf{.50} & .32 & .28 \\
+Qwen3-4B & GPQA       & Verify   & .32 & \textbf{.46} & .34 & .14 \\
+Qwen3-4B & MMLU-Redux & Standard & .28 & \textbf{.58} & .26 & .28 \\
+Qwen3-4B & MMLU-Redux & Verify   & .38 & \textbf{.42} & .32 & .26 \\
+OLMo3-7B & GPQA       & Standard & .30 & \textbf{.80} & .30 & .30 \\
+OLMo3-7B & GPQA       & Verify   & .30 & \textbf{.86} & .30 & .30 \\
+OLMo3-7B & MMLU-Redux & Standard & .30 & \textbf{.80} & .30 & .28 \\
+OLMo3-7B & MMLU-Redux & Verify   & .30 & \textbf{.88} & .30 & .20 \\
+\midrule
+\textbf{Average} & & & .313 & \textbf{.663} & .305 & .255 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

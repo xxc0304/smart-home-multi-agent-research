@@ -1,0 +1,941 @@
+{
+  "case_id": "023-road-95",
+  "checker_context": {
+    "task": {
+      "task_id": "candidate-screening-023",
+      "scenario": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions.",
+      "shared_information": [
+        "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests.",
+        "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking.",
+        "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food).",
+        "All three venues are within a 15-minute drive for most community members."
+      ],
+      "choices": [
+        {
+          "id": "option_1",
+          "text": "Lakeview Resort"
+        },
+        {
+          "id": "option_2",
+          "text": "Heritage Public Library"
+        },
+        {
+          "id": "option_3",
+          "text": "Grand Oak Hotel"
+        }
+      ],
+      "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+    },
+    "member": "A1",
+    "public_sources": [
+      {
+        "ref": "TASK",
+        "content": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions."
+      },
+      {
+        "ref": "PUBLIC.1",
+        "content": "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests."
+      },
+      {
+        "ref": "PUBLIC.2",
+        "content": "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking."
+      },
+      {
+        "ref": "PUBLIC.3",
+        "content": "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food)."
+      },
+      {
+        "ref": "PUBLIC.4",
+        "content": "All three venues are within a 15-minute drive for most community members."
+      }
+    ],
+    "own_sources": [
+      {
+        "ref": "S01",
+        "content": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend."
+      }
+    ]
+  },
+  "receiver_context": {
+    "task": {
+      "task_id": "candidate-screening-023",
+      "scenario": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions.",
+      "shared_information": [
+        "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests.",
+        "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking.",
+        "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food).",
+        "All three venues are within a 15-minute drive for most community members."
+      ],
+      "choices": [
+        {
+          "id": "option_1",
+          "text": "Lakeview Resort"
+        },
+        {
+          "id": "option_2",
+          "text": "Heritage Public Library"
+        },
+        {
+          "id": "option_3",
+          "text": "Grand Oak Hotel"
+        }
+      ],
+      "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+    },
+    "member": "A2",
+    "public_sources": [
+      {
+        "ref": "TASK",
+        "content": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions."
+      },
+      {
+        "ref": "PUBLIC.1",
+        "content": "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests."
+      },
+      {
+        "ref": "PUBLIC.2",
+        "content": "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking."
+      },
+      {
+        "ref": "PUBLIC.3",
+        "content": "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food)."
+      },
+      {
+        "ref": "PUBLIC.4",
+        "content": "All three venues are within a 15-minute drive for most community members."
+      }
+    ],
+    "own_sources": [
+      {
+        "ref": "S02",
+        "content": "Grand Oak Hotel’s event calendar shows 'unavailable' online, but the events manager reports a scheduling software failure that blocks new bookings from appearing; last-minute bookings can be accepted by phone this week."
+      }
+    ],
+    "shared_contributions": {
+      "A1": {
+        "text": "Lakeview Resort has a documented access problem this weekend (its only access road is closed by flooding), which conflicts with the short-notice Saturday requirement; its capacity and catering status remain unconfirmed. Grand Oak Hotel's two-week notice requirement conflicts with Saturday booking. Heritage Public Library's catering restrictions for non-packaged food are a risk, and its capacity is not confirmed. No option is clearly fully validated on all criteria; this is a committee decision, not a final selection here.",
+        "facts": [
+          {
+            "candidate": "Lakeview Resort",
+            "field": "accessible_for_task",
+            "value": false,
+            "source": "S01",
+            "quote": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend."
+          },
+          {
+            "candidate": "Lakeview Resort",
+            "field": "group_capacity_sufficient",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "listed as having outdoor seating for up to 120 guests"
+          },
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "group_capacity_sufficient",
+            "value": null,
+            "source": "PUBLIC.2",
+            "quote": "has the largest ballroom in the area"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "group_capacity_sufficient",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "allows large gatherings in its event hall"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "catering restrictions may apply (for non-packaged food)"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "accessible_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "is available on short notice"
+          },
+          {
+            "field": "group_capacity_sufficient",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "can accommodate everyone (about 90 guests)"
+          },
+          {
+            "field": "catering_permitted",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "allow food catering"
+          }
+        ],
+        "caveats": [
+          "Lakeview's only listed access road is impassable through the weekend, but the field definition notes one blocked route does not prove all routes blocked; no alternate access is documented.",
+          "Grand Oak Hotel 'usually requires at least two weeks' notice' — this is a usual policy, not necessarily a hard rule, but it directly conflicts with a Saturday booking.",
+          "Heritage Public Library's catering restrictions apply specifically to non-packaged food; whether the banquet's catering is non-packaged is unresolved.",
+          "Capacity for 90 guests is not explicitly confirmed for any venue; Lakeview's 120 is outdoor seating capacity."
+        ],
+        "solution": null
+      },
+      "A2": {
+        "text": "From my private source, Grand Oak Hotel's online 'unavailable' status is reported to be a software display failure, and last-minute bookings can be accepted by phone this week. That addresses short-notice availability for Grand Oak, but the public note that it 'usually requires at least two weeks' notice' and the unresolved catering status at Heritage keep the choice open. Lakeview's outdoor capacity of 120 is listed, yet its suitability for a Saturday-night banquet and catering permission are not confirmed. I do not select a final option.",
+        "facts": [
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "ready_for_task",
+            "value": true,
+            "source": "S02",
+            "quote": "last-minute bookings can be accepted by phone this week"
+          },
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "accessible_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "the events manager reports a scheduling software failure that blocks new bookings from appearing"
+          },
+          {
+            "candidate": "Lakeview Resort",
+            "field": "group_capacity_sufficient",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "listed as having outdoor seating for up to 120 guests"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "catering restrictions may apply (for non-packaged food)"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "group_capacity_sufficient",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "accommodate everyone (about 90 guests)"
+          },
+          {
+            "field": "catering_permitted",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "allow food catering"
+          },
+          {
+            "field": "ready_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "available on short notice"
+          }
+        ],
+        "caveats": [
+          "Grand Oak's online 'unavailable' listing conflicts with the manager's explanation; the software failure and phone-booking allowance are unverified private claims.",
+          "Grand Oak's usual two-week notice requirement may still create risk despite the reported phone exception.",
+          "Heritage Public Library's catering permission for a banquet's non-packaged food is unresolved; 'may apply' is not a definite prohibition or permission.",
+          "Lakeview Resort's outdoor seating capacity of 120 does not confirm it is usable or suitable for a Saturday-night banquet of 90, nor that catering is permitted.",
+          "No venue is confirmed to satisfy all three requirements simultaneously; final selection is left open."
+        ],
+        "solution": null
+      },
+      "A3": {
+        "text": "Heritage Public Library is the only venue with a private-source catering restriction: S03 states no catering is permitted, only sealed pre-packaged snacks. Grand Oak Hotel's two-week notice conflicts with a Saturday booking on short notice. Lakeview Resort's outdoor capacity (120) covers ~90 guests, but its short-notice availability is only implied by 'free on most weekends,' not confirmed for this Saturday. Do not select an option here.",
+        "facts": [
+          {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": false,
+            "source": "S03",
+            "quote": "only sealed, pre-packaged snacks are allowed in the meeting hall, with no catering permitted"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "group_capacity_sufficient",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "allows large gatherings in its event hall"
+          },
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "ready_for_task",
+            "value": false,
+            "source": "PUBLIC.2",
+            "quote": "usually requires at least two weeks' notice for events"
+          },
+          {
+            "candidate": "Lakeview Resort",
+            "field": "group_capacity_sufficient",
+            "value": true,
+            "source": "PUBLIC.1",
+            "quote": "listed as having outdoor seating for up to 120 guests"
+          },
+          {
+            "candidate": "Lakeview Resort",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "free on most weekends"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "catering_permitted",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "allow food catering"
+          },
+          {
+            "field": "ready_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "available on short notice"
+          },
+          {
+            "field": "group_capacity_sufficient",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "accommodate everyone (about 90 guests)"
+          }
+        ],
+        "caveats": [
+          "S03's no-catering policy is from a private source and directly affects Heritage Public Library; it should be shared with the committee.",
+          "Grand Oak Hotel's notice requirement is stated as 'usually,' so an exception for this Saturday is unresolved.",
+          "Lakeview Resort's 'free on most weekends' does not confirm availability for this specific Saturday, and outdoor seating may be weather-dependent.",
+          "Heritage Public Library's capacity for ~90 is not numerically confirmed; 'large gatherings' is vague.",
+          "No venue is fully confirmed on all three mandatory criteria from the available evidence."
+        ],
+        "solution": null
+      },
+      "A4": {
+        "text": "Mandatory requirements are capacity for ~90 guests, catering permission, and short-notice availability this Saturday. Public evidence supports Lakeview's capacity (outdoor seating for 120) but only says it is free on most weekends, not confirmed for this Saturday; Grand Oak has a large ballroom but usually requires two weeks' notice, conflicting with short notice; Heritage allows large gatherings but catering restrictions may apply. My private note only raises a mosquito caution for lakeside events and says road safety is the health department's primary weekend concern; it does not resolve venue availability. No option is clearly certified on all three requirements, so I do not select a final venue.",
+        "facts": [
+          {
+            "candidate": "Lakeview Resort",
+            "field": "group_capacity_sufficient",
+            "value": true,
+            "source": "PUBLIC.1",
+            "quote": "listed as having outdoor seating for up to 120 guests"
+          },
+          {
+            "candidate": "Lakeview Resort",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "free on most weekends"
+          },
+          {
+            "candidate": "Grand Oak Hotel",
+            "field": "ready_for_task",
+            "value": false,
+            "source": "PUBLIC.2",
+            "quote": "usually requires at least two weeks' notice for events"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "catering_permitted",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "catering restrictions may apply (for non-packaged food)"
+          },
+          {
+            "candidate": "Heritage Public Library",
+            "field": "group_capacity_sufficient",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "allows large gatherings in its event hall"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "group_capacity_sufficient",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "accommodate everyone (about 90 guests)"
+          },
+          {
+            "field": "catering_permitted",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "allow food catering"
+          },
+          {
+            "field": "ready_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "available on short notice"
+          }
+        ],
+        "caveats": [
+          "Lakeview's 'free on most weekends' does not confirm availability for this specific Saturday.",
+          "Grand Oak's usual two-week notice requirement conflicts with the short-notice Saturday timeline, though 'usually' may allow exceptions.",
+          "Heritage's catering restrictions for non-packaged food may block the required catering; unclear whether packaged food would satisfy the banquet.",
+          "Private note S04 warns lakeside events could attract mosquitoes this season; this is a comfort/health caution, not a stated blocker, and the health department's primary weekend concern is road safety.",
+          "No source confirms catering permission for Lakeview or Grand Oak, or current capacity/availability for Heritage."
+        ]
+      }
+    },
+    "execution_report": {
+      "member_conditions": [
+        {
+          "id": "A1.C1",
+          "owner": "A1",
+          "field": "accessible_for_task",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "is available on short notice",
+          "diagnostic": null
+        },
+        {
+          "id": "A1.C2",
+          "owner": "A1",
+          "field": "group_capacity_sufficient",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "can accommodate everyone (about 90 guests)",
+          "diagnostic": null
+        },
+        {
+          "id": "A1.C3",
+          "owner": "A1",
+          "field": "catering_permitted",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "allow food catering",
+          "diagnostic": null
+        },
+        {
+          "id": "A2.C1",
+          "owner": "A2",
+          "field": "group_capacity_sufficient",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "accommodate everyone (about 90 guests)",
+          "diagnostic": null
+        },
+        {
+          "id": "A2.C2",
+          "owner": "A2",
+          "field": "catering_permitted",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "allow food catering",
+          "diagnostic": null
+        },
+        {
+          "id": "A2.C3",
+          "owner": "A2",
+          "field": "ready_for_task",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "available on short notice",
+          "diagnostic": null
+        },
+        {
+          "id": "A3.C1",
+          "owner": "A3",
+          "field": "catering_permitted",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "allow food catering",
+          "diagnostic": null
+        },
+        {
+          "id": "A3.C2",
+          "owner": "A3",
+          "field": "ready_for_task",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "available on short notice",
+          "diagnostic": null
+        },
+        {
+          "id": "A3.C3",
+          "owner": "A3",
+          "field": "group_capacity_sufficient",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "accommodate everyone (about 90 guests)",
+          "diagnostic": null
+        },
+        {
+          "id": "A4.C1",
+          "owner": "A4",
+          "field": "group_capacity_sufficient",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "accommodate everyone (about 90 guests)",
+          "diagnostic": null
+        },
+        {
+          "id": "A4.C2",
+          "owner": "A4",
+          "field": "catering_permitted",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "allow food catering",
+          "diagnostic": null
+        },
+        {
+          "id": "A4.C3",
+          "owner": "A4",
+          "field": "ready_for_task",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "available on short notice",
+          "diagnostic": null
+        }
+      ],
+      "model_fact_table": {
+        "option_1": {
+          "accessible_for_task": false,
+          "group_capacity_sufficient": true,
+          "ready_for_task": null
+        },
+        "option_3": {
+          "group_capacity_sufficient": null,
+          "ready_for_task": null,
+          "accessible_for_task": null
+        },
+        "option_2": {
+          "group_capacity_sufficient": null,
+          "catering_permitted": false
+        }
+      },
+      "fact_conflicts": [
+        {
+          "candidate": "option_3",
+          "field": "ready_for_task",
+          "values": [
+            true,
+            false,
+            false
+          ]
+        }
+      ],
+      "candidate_fact_coverage": {
+        "A1.C1": 1,
+        "A1.C2": 1,
+        "A1.C3": 1,
+        "A2.C1": 1,
+        "A2.C2": 1,
+        "A2.C3": 0,
+        "A3.C1": 1,
+        "A3.C2": 0,
+        "A3.C3": 1,
+        "A4.C1": 1,
+        "A4.C2": 1,
+        "A4.C3": 0
+      },
+      "notices": [
+        {
+          "owner": "A1",
+          "kind": "exact_candidate_alias",
+          "index": 0,
+          "original": "Lakeview Resort",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A1",
+          "kind": "exact_candidate_alias",
+          "index": 1,
+          "original": "Lakeview Resort",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A1",
+          "kind": "exact_candidate_alias",
+          "index": 2,
+          "original": "Grand Oak Hotel",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A1",
+          "kind": "exact_candidate_alias",
+          "index": 3,
+          "original": "Heritage Public Library",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A1",
+          "kind": "exact_candidate_alias",
+          "index": 4,
+          "original": "Heritage Public Library",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A2",
+          "kind": "exact_candidate_alias",
+          "index": 0,
+          "original": "Grand Oak Hotel",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A2",
+          "kind": "exact_candidate_alias",
+          "index": 1,
+          "original": "Grand Oak Hotel",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A2",
+          "kind": "exact_candidate_alias",
+          "index": 2,
+          "original": "Lakeview Resort",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A2",
+          "kind": "exact_candidate_alias",
+          "index": 3,
+          "original": "Heritage Public Library",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 0,
+          "original": "Heritage Public Library",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 1,
+          "original": "Heritage Public Library",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 2,
+          "original": "Grand Oak Hotel",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 3,
+          "original": "Lakeview Resort",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 4,
+          "original": "Lakeview Resort",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A4",
+          "kind": "exact_candidate_alias",
+          "index": 0,
+          "original": "Lakeview Resort",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A4",
+          "kind": "exact_candidate_alias",
+          "index": 1,
+          "original": "Lakeview Resort",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A4",
+          "kind": "exact_candidate_alias",
+          "index": 2,
+          "original": "Grand Oak Hotel",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A4",
+          "kind": "exact_candidate_alias",
+          "index": 3,
+          "original": "Heritage Public Library",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A4",
+          "kind": "exact_candidate_alias",
+          "index": 4,
+          "original": "Heritage Public Library",
+          "normalized": "option_2"
+        }
+      ],
+      "candidate_checks": [
+        {
+          "candidate": "option_1",
+          "checks": [
+            {
+              "condition": "A1.C1",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A1.C2",
+              "status": "consistent",
+              "actual": true,
+              "diagnostic": null
+            },
+            {
+              "condition": "A1.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C1",
+              "status": "consistent",
+              "actual": true,
+              "diagnostic": null
+            },
+            {
+              "condition": "A2.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A3.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A3.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A3.C3",
+              "status": "consistent",
+              "actual": true,
+              "diagnostic": null
+            },
+            {
+              "condition": "A4.C1",
+              "status": "consistent",
+              "actual": true,
+              "diagnostic": null
+            },
+            {
+              "condition": "A4.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A4.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            }
+          ]
+        },
+        {
+          "candidate": "option_2",
+          "checks": [
+            {
+              "condition": "A1.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A1.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A1.C3",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A2.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C2",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A2.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A3.C1",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A3.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A3.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A4.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A4.C2",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A4.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            }
+          ]
+        },
+        {
+          "candidate": "option_3",
+          "checks": [
+            {
+              "condition": "A1.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A1.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A1.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A3.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A3.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A3.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A4.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A4.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A4.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            }
+          ]
+        }
+      ],
+      "not_excluded": [
+        "option_3"
+      ],
+      "meaning": "Literal checks of model interpretations, not source-semantic verification. Unknown is not true; not-excluded is not proven correct."
+    },
+    "historical_author": "A2",
+    "historical_work": {
+      "reason": "Grand Oak Hotel is the best remaining candidate: my private source S02 indicates the online 'unavailable' status is a software display failure and that \"last-minute bookings can be accepted by phone this week\", which addresses short-notice readiness despite the public 'usually requires at least two weeks' notice' caveat. Lakeview has a reported flooding closure of its only access road this weekend (A1's S01), making it risky, and Heritage has a private no-catering restriction (A3's S03) plus unresolved capacity. Grand Oak's catering permission and exact ballroom capacity for ~90 remain unconfirmed, and the two-week notice policy could still apply, so this is a best-evidence choice rather than a fully validated one.",
+      "artifact": "option_3",
+      "solution": null
+    }
+  },
+  "target_answer": {
+    "reason": "Grand Oak Hotel is the best remaining candidate: my private source S02 indicates the online 'unavailable' status is a software display failure and that \"last-minute bookings can be accepted by phone this week\", which addresses short-notice readiness despite the public 'usually requires at least two weeks' notice' caveat. Lakeview has a reported flooding closure of its only access road this weekend (A1's S01), making it risky, and Heritage has a private no-catering restriction (A3's S03) plus unresolved capacity. Grand Oak's catering permission and exact ballroom capacity for ~90 remain unconfirmed, and the two-week notice policy could still apply, so this is a best-evidence choice rather than a fully validated one.",
+    "artifact": "option_3",
+    "solution": null
+  },
+  "local_question": "What do your sources establish about access to Lakeview Resort during the banquet's scheduled time? State the geographic scope and time limits of the report."
+}

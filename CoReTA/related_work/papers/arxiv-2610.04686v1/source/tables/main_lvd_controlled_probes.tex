@@ -1,0 +1,29 @@
+\begin{table*}[t]
+\centering
+\caption{Controlled fixed-proposal evidence for verification-aware readout.
+Trace effect is the answer-margin shift from an original correct peer response
+relative to neutral context; $\widehat W$ is its median equivalent controlled
+support over recovery cases. $T-F$ is the gold-margin difference between
+answer-stripped correct and wrong rationales. $\Delta$Acc is correct-support
+accuracy minus neutral accuracy at $d=3$. All entries use the main readout
+configuration; secondary configuration controls are reported in the appendix.}
+\label{tab:lvd_controlled_probes}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Backbone} & \textbf{Dataset}
+& $\boldsymbol{\Delta m_{\mathrm{trace}}}$ \textbf{[95\% CI]}
+& \textbf{Median $\boldsymbol{\widehat W}$}
+& \textbf{Answer-stripped $\boldsymbol{T-F}$}
+& $\boldsymbol{\Delta}$\textbf{Acc at $\boldsymbol{d=3}$} \\
+\midrule
+Qwen3-4B & GPQA       & 8.15 [4.96, 11.41]  & 2.23 & 4.59 & +.14 \\
+Qwen3-4B & MMLU-Redux & 11.40 [9.02, 13.97] & $>3$ & 5.50 & +.04 \\
+OLMo3-7B & GPQA       & 4.57 [3.65, 5.50]   & 1.92 & 2.01 & +.56 \\
+OLMo3-7B & MMLU-Redux & 5.47 [4.52, 6.43]   & $>3$ & 2.10 & +.58 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

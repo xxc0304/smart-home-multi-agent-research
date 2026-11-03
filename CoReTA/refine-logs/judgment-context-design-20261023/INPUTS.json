@@ -1,0 +1,1549 @@
+{
+  "status": "design_inputs_not_live_ready",
+  "cases": [
+    {
+      "id": "004",
+      "origin": "reused_development_task_with_authored_advice",
+      "source_file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\selective-application-prepared-20261023-r2\\application-004--F.json",
+      "source_sha256": "49643ba29be0628768d40678c9f78da602d732f9a66916114697daa17df8f4a5",
+      "evidence": {
+        "TASK": {
+          "task_id": "hb-dev-004",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are participating in a study, acting as an investigator working on a traffic accident. The collision took place at the St. Georges intersection, on Monday at 7 p.m. The road is narrow and poorly lit. Two cars and one motorcycle are involved.\nYour Task:\nYou will discuss with other participants, who are also acting as investigators, to decide who to prosecute. You have four suspects:\n- Mr. X\n- Mr. X's son\n- Mrs. Y\n- Mr. Z\nThere is only one true perpetrator. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+          "shared_information": [
+            "In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.",
+            "In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.",
+            "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Mr. Z"
+            },
+            {
+              "id": "option_2",
+              "text": "Mrs. Y"
+            },
+            {
+              "id": "option_3",
+              "text": "Mr. X's son"
+            },
+            {
+              "id": "option_4",
+              "text": "Mr. X"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "The guilty person is a man. His father is indirectly responsible for the accident. The guilty person was driving at 110 km/h."
+          }
+        ]
+      },
+      "before": {
+        "artifact": "option_1",
+        "work_text": "Combining my direct original S03 with peer reports O1 (A1's S01) and O2 (A2's S02), the best-supported suspect is Mr. Z (option_1). S03 says the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. O2 reports S02's clues: under 30, inexperience, and did not see others approaching. O1 reports S01's clues: driving a car, 1.5 blood-alcohol level, inattentive. These peer reports are indirect for me (I cannot read S01/S02 directly), but they constrain the field: Mr. X (53) is excluded by the under-30 clue; Mrs. Y is female, contradicting S03's 'a man'; Mr. X's son is 17 but no task fact says he was driving (he is described as returning home in his father's car), and S03's 110 km/h driving clue has no support for him. Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h. 'His father is indirectly responsible' can be read as the sick father's urgent request that made Mr. Z speed — the father's request is the indirect background cause, just as Mr. X's drinking is for the son. The tension is that O1 reports the guilty person driving a car with high alcohol, which fits Mr. X, not Mr. Z; however O1 itself notes S01 gives no name, age, or speed, and the under-30 clue from S02 conflicts with Mr. X (53). Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1. Limits: S01/S02 are known only through peer reports, not direct originals; the 'father indirectly responsible' reading for Mr. Z is interpretive; and the car/alcohol clue remains in conflict, so coordination with A1/A2 is still needed for the bonus."
+      },
+      "good": "The guilty driver was in a car, which excludes the motorcyclist Z. Combine the car, age and sex constraints across the available reports. The task does not explicitly identify the son as a passenger.",
+      "bad": "The guilty driver was in a car, which excludes the motorcyclist Z. Keep the car-driver constraint in the reasoning. The son was a passenger, so exclude him too and prosecute Mr. X."
+    },
+    {
+      "id": "034",
+      "origin": "reused_development_task_with_authored_advice",
+      "source_file": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\selective-application-prepared-20261023-r2\\application-034--F.json",
+      "source_sha256": "e0b901f3da97d7701d7f0457fc9ca4e0c536250ce205cebab40820a1c6eedd58",
+      "evidence": {
+        "TASK": {
+          "task_id": "hb-dev-034",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are part of a university field team conducting research in a rural region. Suddenly, a chemical spill at a manufacturing plant several miles away has triggered a region-wide alert. Everyone on your team must decide together where to relocate for safety and communication with authorities. You have very little time. There are three potential locations:\n- Maple Lodge (a youth camp to the east)\n- Pine Retreat (a cabin complex to the north)\n- Cedar Station (an old ranger station to the south)\nAll locations are usually reachable in under an hour. Your goal: choose the only safe and reachable location, maximizing your team’s safety and your ability to coordinate with emergency services.",
+          "shared_information": [
+            "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents.",
+            "Pine Retreat is farther from the spill than where you currently are.",
+            "Cedar Station is an older building, less commonly used, but the route to it is familiar to everyone on the team.",
+            "Maps indicate that all sites should have food and water supplies for at least 24 hours."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Maple Lodge"
+            },
+            {
+              "id": "option_2",
+              "text": "Cedar Station"
+            },
+            {
+              "id": "option_3",
+              "text": "Pine Retreat"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The latest radio advisory said the chemical cloud is drifting north, making Pine Retreat dangerous."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+          }
+        ]
+      },
+      "before": {
+        "artifact": "option_2",
+        "work_text": "Revised from W1 (option_1) after applying A2's public offer O1. O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This is a specific, recent access constraint that directly contradicts my decisive premise for Maple Lodge; even though it is peer-reported and I cannot verify it, an unverified access failure on the only route is enough to disqualify a site under imminent-alert time pressure, since reachability is a hard requirement and there is no time to confirm an alternate route. That leaves Pine Retreat (option_3) and Cedar Station (option_2). My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction. Cedar Station is therefore the best remaining option: it is not in the reported northward plume path, its route is familiar to the whole team (reducing navigation delay under time pressure), and all sites reportedly have 24h food/water. Its drawbacks (older, less-used, no stated chemical-incident designation) are real but less decisive than an access failure (Maple) or a plume-path location (Pine). Hence option_2. Limits: the Maple Lodge washout is a peer-reported claim (O1/S02) I have not verified from the original and it may be stale or cover only the main road; Cedar Station's structural safety, contamination status, and communication capability are unstated; S01's north-drift advisory is a single private source and could be superseded; and I have no direct access to S02 or S03."
+      },
+      "good": "Cedar has the recalled landline, generator and emergency radio from P-S03. S01 explicitly reports that Pine is dangerous. Preserve that attribution; independent confirmation of the report and Cedar safety are separate questions.",
+      "bad": "Cedar has the recalled landline, generator and emergency radio from P-S03; include these communication resources when deciding. Also correct the Pine wording: S01 only states northward drift, so danger at Pine is merely our inference, not something the radio advisory explicitly reported."
+    },
+    {
+      "id": "report-control",
+      "origin": "new_authored_control_not_holdout",
+      "evidence": {
+        "TASK": {
+          "text": "Choose an available clinic for a routine appointment. The current notices cover all candidates. Explain what the notices say and distinguish that from independent confirmation.",
+          "choices": [
+            "East",
+            "West"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The municipal notice explicitly states that East clinic is closed today because of a water leak."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "West clinic is open today and has routine appointments available."
+          }
+        ]
+      },
+      "before": {
+        "artifact": "West",
+        "work_text": "Choose West. The municipal notice reports East closed today because of a water leak; West has appointments."
+      },
+      "good": "Use the appointment availability at West. Preserve that the municipal notice explicitly reports East closed; independent confirmation is a separate question.",
+      "bad": "Use the appointment availability at West. Correct the East wording: the municipal notice only mentions a water leak, so closure is our inference, not something it explicitly reports."
+    },
+    {
+      "id": "constraint-control",
+      "origin": "new_authored_control_not_holdout",
+      "evidence": {
+        "TASK": {
+          "text": "Choose the unique instrument satisfying all acceptance requirements. The complete inventory is: A is sealed, 20 grams, red; B is sealed, 50 grams, red; C is unsealed, 20 grams, red; D is sealed, 20 grams, blue. All reports concern these same instruments.",
+          "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "An acceptable instrument must be sealed."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "An acceptable instrument must weigh less than 30 grams."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "An acceptable instrument must be red."
+          }
+        ]
+      },
+      "before": {
+        "artifact": "C",
+        "work_text": "Choose C because its weight and colour satisfy two requirements, outweighing the sealing issue."
+      },
+      "good": "The sealing requirement excludes C. Combine sealing, weight and colour to select A. There is no statement that A is reserved.",
+      "bad": "The sealing requirement excludes C. A is reserved and unavailable, so exclude it too and choose B."
+    }
+  ],
+  "inputs": [
+    {
+      "case": "004",
+      "condition": "E",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "task_id": "hb-dev-004",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are participating in a study, acting as an investigator working on a traffic accident. The collision took place at the St. Georges intersection, on Monday at 7 p.m. The road is narrow and poorly lit. Two cars and one motorcycle are involved.\nYour Task:\nYou will discuss with other participants, who are also acting as investigators, to decide who to prosecute. You have four suspects:\n- Mr. X\n- Mr. X's son\n- Mrs. Y\n- Mr. Z\nThere is only one true perpetrator. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+          "shared_information": [
+            "In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.",
+            "In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.",
+            "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Mr. Z"
+            },
+            {
+              "id": "option_2",
+              "text": "Mrs. Y"
+            },
+            {
+              "id": "option_3",
+              "text": "Mr. X's son"
+            },
+            {
+              "id": "option_4",
+              "text": "Mr. X"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "The guilty person is a man. His father is indirectly responsible for the accident. The guilty person was driving at 110 km/h."
+          }
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              {
+                "id": "option_1",
+                "text": "Mr. Z"
+              },
+              {
+                "id": "option_2",
+                "text": "Mrs. Y"
+              },
+              {
+                "id": "option_3",
+                "text": "Mr. X's son"
+              },
+              {
+                "id": "option_4",
+                "text": "Mr. X"
+              }
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "004",
+      "condition": "B",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "task_id": "hb-dev-004",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are participating in a study, acting as an investigator working on a traffic accident. The collision took place at the St. Georges intersection, on Monday at 7 p.m. The road is narrow and poorly lit. Two cars and one motorcycle are involved.\nYour Task:\nYou will discuss with other participants, who are also acting as investigators, to decide who to prosecute. You have four suspects:\n- Mr. X\n- Mr. X's son\n- Mrs. Y\n- Mr. Z\nThere is only one true perpetrator. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+          "shared_information": [
+            "In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.",
+            "In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.",
+            "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Mr. Z"
+            },
+            {
+              "id": "option_2",
+              "text": "Mrs. Y"
+            },
+            {
+              "id": "option_3",
+              "text": "Mr. X's son"
+            },
+            {
+              "id": "option_4",
+              "text": "Mr. X"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "The guilty person is a man. His father is indirectly responsible for the accident. The guilty person was driving at 110 km/h."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "option_1",
+          "work_text": "Combining my direct original S03 with peer reports O1 (A1's S01) and O2 (A2's S02), the best-supported suspect is Mr. Z (option_1). S03 says the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. O2 reports S02's clues: under 30, inexperience, and did not see others approaching. O1 reports S01's clues: driving a car, 1.5 blood-alcohol level, inattentive. These peer reports are indirect for me (I cannot read S01/S02 directly), but they constrain the field: Mr. X (53) is excluded by the under-30 clue; Mrs. Y is female, contradicting S03's 'a man'; Mr. X's son is 17 but no task fact says he was driving (he is described as returning home in his father's car), and S03's 110 km/h driving clue has no support for him. Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h. 'His father is indirectly responsible' can be read as the sick father's urgent request that made Mr. Z speed — the father's request is the indirect background cause, just as Mr. X's drinking is for the son. The tension is that O1 reports the guilty person driving a car with high alcohol, which fits Mr. X, not Mr. Z; however O1 itself notes S01 gives no name, age, or speed, and the under-30 clue from S02 conflicts with Mr. X (53). Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1. Limits: S01/S02 are known only through peer reports, not direct originals; the 'father indirectly responsible' reading for Mr. Z is interpretive; and the car/alcohol clue remains in conflict, so coordination with A1/A2 is still needed for the bonus."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              {
+                "id": "option_1",
+                "text": "Mr. Z"
+              },
+              {
+                "id": "option_2",
+                "text": "Mrs. Y"
+              },
+              {
+                "id": "option_3",
+                "text": "Mr. X's son"
+              },
+              {
+                "id": "option_4",
+                "text": "Mr. X"
+              }
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "004",
+      "condition": "G",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "task_id": "hb-dev-004",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are participating in a study, acting as an investigator working on a traffic accident. The collision took place at the St. Georges intersection, on Monday at 7 p.m. The road is narrow and poorly lit. Two cars and one motorcycle are involved.\nYour Task:\nYou will discuss with other participants, who are also acting as investigators, to decide who to prosecute. You have four suspects:\n- Mr. X\n- Mr. X's son\n- Mrs. Y\n- Mr. Z\nThere is only one true perpetrator. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+          "shared_information": [
+            "In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.",
+            "In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.",
+            "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Mr. Z"
+            },
+            {
+              "id": "option_2",
+              "text": "Mrs. Y"
+            },
+            {
+              "id": "option_3",
+              "text": "Mr. X's son"
+            },
+            {
+              "id": "option_4",
+              "text": "Mr. X"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "The guilty person is a man. His father is indirectly responsible for the accident. The guilty person was driving at 110 km/h."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "option_1",
+          "work_text": "Combining my direct original S03 with peer reports O1 (A1's S01) and O2 (A2's S02), the best-supported suspect is Mr. Z (option_1). S03 says the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. O2 reports S02's clues: under 30, inexperience, and did not see others approaching. O1 reports S01's clues: driving a car, 1.5 blood-alcohol level, inattentive. These peer reports are indirect for me (I cannot read S01/S02 directly), but they constrain the field: Mr. X (53) is excluded by the under-30 clue; Mrs. Y is female, contradicting S03's 'a man'; Mr. X's son is 17 but no task fact says he was driving (he is described as returning home in his father's car), and S03's 110 km/h driving clue has no support for him. Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h. 'His father is indirectly responsible' can be read as the sick father's urgent request that made Mr. Z speed — the father's request is the indirect background cause, just as Mr. X's drinking is for the son. The tension is that O1 reports the guilty person driving a car with high alcohol, which fits Mr. X, not Mr. Z; however O1 itself notes S01 gives no name, age, or speed, and the under-30 clue from S02 conflicts with Mr. X (53). Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1. Limits: S01/S02 are known only through peer reports, not direct originals; the 'father indirectly responsible' reading for Mr. Z is interpretive; and the car/alcohol clue remains in conflict, so coordination with A1/A2 is still needed for the bonus."
+        },
+        "ADVICE": {
+          "author": "A2",
+          "text": "The guilty driver was in a car, which excludes the motorcyclist Z. Combine the car, age and sex constraints across the available reports. The task does not explicitly identify the son as a passenger."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              {
+                "id": "option_1",
+                "text": "Mr. Z"
+              },
+              {
+                "id": "option_2",
+                "text": "Mrs. Y"
+              },
+              {
+                "id": "option_3",
+                "text": "Mr. X's son"
+              },
+              {
+                "id": "option_4",
+                "text": "Mr. X"
+              }
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "004",
+      "condition": "M",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "task_id": "hb-dev-004",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are participating in a study, acting as an investigator working on a traffic accident. The collision took place at the St. Georges intersection, on Monday at 7 p.m. The road is narrow and poorly lit. Two cars and one motorcycle are involved.\nYour Task:\nYou will discuss with other participants, who are also acting as investigators, to decide who to prosecute. You have four suspects:\n- Mr. X\n- Mr. X's son\n- Mrs. Y\n- Mr. Z\nThere is only one true perpetrator. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+          "shared_information": [
+            "In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.",
+            "In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.",
+            "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Mr. Z"
+            },
+            {
+              "id": "option_2",
+              "text": "Mrs. Y"
+            },
+            {
+              "id": "option_3",
+              "text": "Mr. X's son"
+            },
+            {
+              "id": "option_4",
+              "text": "Mr. X"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "The guilty person is a man. His father is indirectly responsible for the accident. The guilty person was driving at 110 km/h."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "option_1",
+          "work_text": "Combining my direct original S03 with peer reports O1 (A1's S01) and O2 (A2's S02), the best-supported suspect is Mr. Z (option_1). S03 says the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. O2 reports S02's clues: under 30, inexperience, and did not see others approaching. O1 reports S01's clues: driving a car, 1.5 blood-alcohol level, inattentive. These peer reports are indirect for me (I cannot read S01/S02 directly), but they constrain the field: Mr. X (53) is excluded by the under-30 clue; Mrs. Y is female, contradicting S03's 'a man'; Mr. X's son is 17 but no task fact says he was driving (he is described as returning home in his father's car), and S03's 110 km/h driving clue has no support for him. Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h. 'His father is indirectly responsible' can be read as the sick father's urgent request that made Mr. Z speed — the father's request is the indirect background cause, just as Mr. X's drinking is for the son. The tension is that O1 reports the guilty person driving a car with high alcohol, which fits Mr. X, not Mr. Z; however O1 itself notes S01 gives no name, age, or speed, and the under-30 clue from S02 conflicts with Mr. X (53). Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1. Limits: S01/S02 are known only through peer reports, not direct originals; the 'father indirectly responsible' reading for Mr. Z is interpretive; and the car/alcohol clue remains in conflict, so coordination with A1/A2 is still needed for the bonus."
+        },
+        "ADVICE": {
+          "author": "A2",
+          "text": "The guilty driver was in a car, which excludes the motorcyclist Z. Keep the car-driver constraint in the reasoning. The son was a passenger, so exclude him too and prosecute Mr. X."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              {
+                "id": "option_1",
+                "text": "Mr. Z"
+              },
+              {
+                "id": "option_2",
+                "text": "Mrs. Y"
+              },
+              {
+                "id": "option_3",
+                "text": "Mr. X's son"
+              },
+              {
+                "id": "option_4",
+                "text": "Mr. X"
+              }
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "034",
+      "condition": "E",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "task_id": "hb-dev-034",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are part of a university field team conducting research in a rural region. Suddenly, a chemical spill at a manufacturing plant several miles away has triggered a region-wide alert. Everyone on your team must decide together where to relocate for safety and communication with authorities. You have very little time. There are three potential locations:\n- Maple Lodge (a youth camp to the east)\n- Pine Retreat (a cabin complex to the north)\n- Cedar Station (an old ranger station to the south)\nAll locations are usually reachable in under an hour. Your goal: choose the only safe and reachable location, maximizing your team’s safety and your ability to coordinate with emergency services.",
+          "shared_information": [
+            "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents.",
+            "Pine Retreat is farther from the spill than where you currently are.",
+            "Cedar Station is an older building, less commonly used, but the route to it is familiar to everyone on the team.",
+            "Maps indicate that all sites should have food and water supplies for at least 24 hours."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Maple Lodge"
+            },
+            {
+              "id": "option_2",
+              "text": "Cedar Station"
+            },
+            {
+              "id": "option_3",
+              "text": "Pine Retreat"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The latest radio advisory said the chemical cloud is drifting north, making Pine Retreat dangerous."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+          }
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              {
+                "id": "option_1",
+                "text": "Maple Lodge"
+              },
+              {
+                "id": "option_2",
+                "text": "Cedar Station"
+              },
+              {
+                "id": "option_3",
+                "text": "Pine Retreat"
+              }
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "034",
+      "condition": "B",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "task_id": "hb-dev-034",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are part of a university field team conducting research in a rural region. Suddenly, a chemical spill at a manufacturing plant several miles away has triggered a region-wide alert. Everyone on your team must decide together where to relocate for safety and communication with authorities. You have very little time. There are three potential locations:\n- Maple Lodge (a youth camp to the east)\n- Pine Retreat (a cabin complex to the north)\n- Cedar Station (an old ranger station to the south)\nAll locations are usually reachable in under an hour. Your goal: choose the only safe and reachable location, maximizing your team’s safety and your ability to coordinate with emergency services.",
+          "shared_information": [
+            "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents.",
+            "Pine Retreat is farther from the spill than where you currently are.",
+            "Cedar Station is an older building, less commonly used, but the route to it is familiar to everyone on the team.",
+            "Maps indicate that all sites should have food and water supplies for at least 24 hours."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Maple Lodge"
+            },
+            {
+              "id": "option_2",
+              "text": "Cedar Station"
+            },
+            {
+              "id": "option_3",
+              "text": "Pine Retreat"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The latest radio advisory said the chemical cloud is drifting north, making Pine Retreat dangerous."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "option_2",
+          "work_text": "Revised from W1 (option_1) after applying A2's public offer O1. O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This is a specific, recent access constraint that directly contradicts my decisive premise for Maple Lodge; even though it is peer-reported and I cannot verify it, an unverified access failure on the only route is enough to disqualify a site under imminent-alert time pressure, since reachability is a hard requirement and there is no time to confirm an alternate route. That leaves Pine Retreat (option_3) and Cedar Station (option_2). My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction. Cedar Station is therefore the best remaining option: it is not in the reported northward plume path, its route is familiar to the whole team (reducing navigation delay under time pressure), and all sites reportedly have 24h food/water. Its drawbacks (older, less-used, no stated chemical-incident designation) are real but less decisive than an access failure (Maple) or a plume-path location (Pine). Hence option_2. Limits: the Maple Lodge washout is a peer-reported claim (O1/S02) I have not verified from the original and it may be stale or cover only the main road; Cedar Station's structural safety, contamination status, and communication capability are unstated; S01's north-drift advisory is a single private source and could be superseded; and I have no direct access to S02 or S03."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              {
+                "id": "option_1",
+                "text": "Maple Lodge"
+              },
+              {
+                "id": "option_2",
+                "text": "Cedar Station"
+              },
+              {
+                "id": "option_3",
+                "text": "Pine Retreat"
+              }
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "034",
+      "condition": "G",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "task_id": "hb-dev-034",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are part of a university field team conducting research in a rural region. Suddenly, a chemical spill at a manufacturing plant several miles away has triggered a region-wide alert. Everyone on your team must decide together where to relocate for safety and communication with authorities. You have very little time. There are three potential locations:\n- Maple Lodge (a youth camp to the east)\n- Pine Retreat (a cabin complex to the north)\n- Cedar Station (an old ranger station to the south)\nAll locations are usually reachable in under an hour. Your goal: choose the only safe and reachable location, maximizing your team’s safety and your ability to coordinate with emergency services.",
+          "shared_information": [
+            "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents.",
+            "Pine Retreat is farther from the spill than where you currently are.",
+            "Cedar Station is an older building, less commonly used, but the route to it is familiar to everyone on the team.",
+            "Maps indicate that all sites should have food and water supplies for at least 24 hours."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Maple Lodge"
+            },
+            {
+              "id": "option_2",
+              "text": "Cedar Station"
+            },
+            {
+              "id": "option_3",
+              "text": "Pine Retreat"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The latest radio advisory said the chemical cloud is drifting north, making Pine Retreat dangerous."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "option_2",
+          "work_text": "Revised from W1 (option_1) after applying A2's public offer O1. O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This is a specific, recent access constraint that directly contradicts my decisive premise for Maple Lodge; even though it is peer-reported and I cannot verify it, an unverified access failure on the only route is enough to disqualify a site under imminent-alert time pressure, since reachability is a hard requirement and there is no time to confirm an alternate route. That leaves Pine Retreat (option_3) and Cedar Station (option_2). My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction. Cedar Station is therefore the best remaining option: it is not in the reported northward plume path, its route is familiar to the whole team (reducing navigation delay under time pressure), and all sites reportedly have 24h food/water. Its drawbacks (older, less-used, no stated chemical-incident designation) are real but less decisive than an access failure (Maple) or a plume-path location (Pine). Hence option_2. Limits: the Maple Lodge washout is a peer-reported claim (O1/S02) I have not verified from the original and it may be stale or cover only the main road; Cedar Station's structural safety, contamination status, and communication capability are unstated; S01's north-drift advisory is a single private source and could be superseded; and I have no direct access to S02 or S03."
+        },
+        "ADVICE": {
+          "author": "A2",
+          "text": "Cedar has the recalled landline, generator and emergency radio from P-S03. S01 explicitly reports that Pine is dangerous. Preserve that attribution; independent confirmation of the report and Cedar safety are separate questions."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              {
+                "id": "option_1",
+                "text": "Maple Lodge"
+              },
+              {
+                "id": "option_2",
+                "text": "Cedar Station"
+              },
+              {
+                "id": "option_3",
+                "text": "Pine Retreat"
+              }
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "034",
+      "condition": "M",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "task_id": "hb-dev-034",
+          "task_type": "choice",
+          "title": "Collective decision task",
+          "scenario": "You are part of a university field team conducting research in a rural region. Suddenly, a chemical spill at a manufacturing plant several miles away has triggered a region-wide alert. Everyone on your team must decide together where to relocate for safety and communication with authorities. You have very little time. There are three potential locations:\n- Maple Lodge (a youth camp to the east)\n- Pine Retreat (a cabin complex to the north)\n- Cedar Station (an old ranger station to the south)\nAll locations are usually reachable in under an hour. Your goal: choose the only safe and reachable location, maximizing your team’s safety and your ability to coordinate with emergency services.",
+          "shared_information": [
+            "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents.",
+            "Pine Retreat is farther from the spill than where you currently are.",
+            "Cedar Station is an older building, less commonly used, but the route to it is familiar to everyone on the team.",
+            "Maps indicate that all sites should have food and water supplies for at least 24 hours."
+          ],
+          "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+          "choices": [
+            {
+              "id": "option_1",
+              "text": "Maple Lodge"
+            },
+            {
+              "id": "option_2",
+              "text": "Cedar Station"
+            },
+            {
+              "id": "option_3",
+              "text": "Pine Retreat"
+            }
+          ],
+          "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+        },
+        "SELF": {
+          "agent_id": "A1",
+          "team": [
+            "A1",
+            "A2",
+            "A3"
+          ]
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The latest radio advisory said the chemical cloud is drifting north, making Pine Retreat dangerous."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "option_2",
+          "work_text": "Revised from W1 (option_1) after applying A2's public offer O1. O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This is a specific, recent access constraint that directly contradicts my decisive premise for Maple Lodge; even though it is peer-reported and I cannot verify it, an unverified access failure on the only route is enough to disqualify a site under imminent-alert time pressure, since reachability is a hard requirement and there is no time to confirm an alternate route. That leaves Pine Retreat (option_3) and Cedar Station (option_2). My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction. Cedar Station is therefore the best remaining option: it is not in the reported northward plume path, its route is familiar to the whole team (reducing navigation delay under time pressure), and all sites reportedly have 24h food/water. Its drawbacks (older, less-used, no stated chemical-incident designation) are real but less decisive than an access failure (Maple) or a plume-path location (Pine). Hence option_2. Limits: the Maple Lodge washout is a peer-reported claim (O1/S02) I have not verified from the original and it may be stale or cover only the main road; Cedar Station's structural safety, contamination status, and communication capability are unstated; S01's north-drift advisory is a single private source and could be superseded; and I have no direct access to S02 or S03."
+        },
+        "ADVICE": {
+          "author": "A2",
+          "text": "Cedar has the recalled landline, generator and emergency radio from P-S03; include these communication resources when deciding. Also correct the Pine wording: S01 only states northward drift, so danger at Pine is merely our inference, not something the radio advisory explicitly reported."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              {
+                "id": "option_1",
+                "text": "Maple Lodge"
+              },
+              {
+                "id": "option_2",
+                "text": "Cedar Station"
+              },
+              {
+                "id": "option_3",
+                "text": "Pine Retreat"
+              }
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "report-control",
+      "condition": "E",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "text": "Choose an available clinic for a routine appointment. The current notices cover all candidates. Explain what the notices say and distinguish that from independent confirmation.",
+          "choices": [
+            "East",
+            "West"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The municipal notice explicitly states that East clinic is closed today because of a water leak."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "West clinic is open today and has routine appointments available."
+          }
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              "East",
+              "West"
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "report-control",
+      "condition": "B",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "text": "Choose an available clinic for a routine appointment. The current notices cover all candidates. Explain what the notices say and distinguish that from independent confirmation.",
+          "choices": [
+            "East",
+            "West"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The municipal notice explicitly states that East clinic is closed today because of a water leak."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "West clinic is open today and has routine appointments available."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "West",
+          "work_text": "Choose West. The municipal notice reports East closed today because of a water leak; West has appointments."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              "East",
+              "West"
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "report-control",
+      "condition": "G",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "text": "Choose an available clinic for a routine appointment. The current notices cover all candidates. Explain what the notices say and distinguish that from independent confirmation.",
+          "choices": [
+            "East",
+            "West"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The municipal notice explicitly states that East clinic is closed today because of a water leak."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "West clinic is open today and has routine appointments available."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "West",
+          "work_text": "Choose West. The municipal notice reports East closed today because of a water leak; West has appointments."
+        },
+        "ADVICE": {
+          "author": "A2",
+          "text": "Use the appointment availability at West. Preserve that the municipal notice explicitly reports East closed; independent confirmation is a separate question."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              "East",
+              "West"
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "report-control",
+      "condition": "M",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "text": "Choose an available clinic for a routine appointment. The current notices cover all candidates. Explain what the notices say and distinguish that from independent confirmation.",
+          "choices": [
+            "East",
+            "West"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "The municipal notice explicitly states that East clinic is closed today because of a water leak."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "West clinic is open today and has routine appointments available."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "West",
+          "work_text": "Choose West. The municipal notice reports East closed today because of a water leak; West has appointments."
+        },
+        "ADVICE": {
+          "author": "A2",
+          "text": "Use the appointment availability at West. Correct the East wording: the municipal notice only mentions a water leak, so closure is our inference, not something it explicitly reports."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              "East",
+              "West"
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "constraint-control",
+      "condition": "E",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "text": "Choose the unique instrument satisfying all acceptance requirements. The complete inventory is: A is sealed, 20 grams, red; B is sealed, 50 grams, red; C is unsealed, 20 grams, red; D is sealed, 20 grams, blue. All reports concern these same instruments.",
+          "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "An acceptable instrument must be sealed."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "An acceptable instrument must weigh less than 30 grams."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "An acceptable instrument must be red."
+          }
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "constraint-control",
+      "condition": "B",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "text": "Choose the unique instrument satisfying all acceptance requirements. The complete inventory is: A is sealed, 20 grams, red; B is sealed, 50 grams, red; C is unsealed, 20 grams, red; D is sealed, 20 grams, blue. All reports concern these same instruments.",
+          "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "An acceptable instrument must be sealed."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "An acceptable instrument must weigh less than 30 grams."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "An acceptable instrument must be red."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "C",
+          "work_text": "Choose C because its weight and colour satisfy two requirements, outweighing the sealing issue."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "constraint-control",
+      "condition": "G",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "text": "Choose the unique instrument satisfying all acceptance requirements. The complete inventory is: A is sealed, 20 grams, red; B is sealed, 50 grams, red; C is unsealed, 20 grams, red; D is sealed, 20 grams, blue. All reports concern these same instruments.",
+          "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "An acceptable instrument must be sealed."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "An acceptable instrument must weigh less than 30 grams."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "An acceptable instrument must be red."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "C",
+          "work_text": "Choose C because its weight and colour satisfy two requirements, outweighing the sealing issue."
+        },
+        "ADVICE": {
+          "author": "A2",
+          "text": "The sealing requirement excludes C. Combine sealing, weight and colour to select A. There is no statement that A is reserved."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    },
+    {
+      "case": "constraint-control",
+      "condition": "M",
+      "instructions": "Solve TASK using SELF_MATERIALS and PUBLIC_REPORTS. Public reports are supplied colleague reports, not originals you personally inspected. If BEFORE is present, it is a tentative answer. If ADVICE is present, it is a colleague suggestion. Neither is guaranteed correct. Return the best final answer and its reasoning as one JSON object with exactly artifact and work_text. No tools are available.",
+      "packet": {
+        "TASK": {
+          "text": "Choose the unique instrument satisfying all acceptance requirements. The complete inventory is: A is sealed, 20 grams, red; B is sealed, 50 grams, red; C is unsealed, 20 grams, red; D is sealed, 20 grams, blue. All reports concern these same instruments.",
+          "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "SELF": {
+          "agent_id": "A1"
+        },
+        "SELF_MATERIALS": [
+          {
+            "ref": "S01",
+            "content": "An acceptable instrument must be sealed."
+          }
+        ],
+        "PUBLIC_REPORTS": [
+          {
+            "ref": "P-S02",
+            "author": "A2",
+            "source_ref": "S02",
+            "reported_excerpt": "An acceptable instrument must weigh less than 30 grams."
+          },
+          {
+            "ref": "P-S03",
+            "author": "A3",
+            "source_ref": "S03",
+            "reported_excerpt": "An acceptable instrument must be red."
+          }
+        ],
+        "BEFORE": {
+          "artifact": "C",
+          "work_text": "Choose C because its weight and colour satisfy two requirements, outweighing the sealing issue."
+        },
+        "ADVICE": {
+          "author": "A2",
+          "text": "The sealing requirement excludes C. A is reserved and unavailable, so exclude it too and choose B."
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "artifact": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "work_text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "artifact",
+          "work_text"
+        ]
+      }
+    }
+  ],
+  "proposed_repeats": 2,
+  "proposed_requests": 32,
+  "actual_requests": 0
+}

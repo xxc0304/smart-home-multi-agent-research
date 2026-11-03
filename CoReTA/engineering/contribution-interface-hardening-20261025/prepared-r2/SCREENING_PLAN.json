@@ -1,0 +1,59 @@
+{
+  "research_question": "Does literal execution of member-proposed local conditions improve final choice beyond the same structured contributions, on fresh compatible tasks?",
+  "scope": "representation-assisted component screening; not full CoReTA, unrestricted dialogue, broad generalization or automatic schema discovery",
+  "tasks": [
+    10,
+    11,
+    15,
+    18,
+    20,
+    21,
+    22,
+    23,
+    26,
+    27
+  ],
+  "repeats_per_task": 2,
+  "native_members": 4,
+  "extraction_calls": 80,
+  "integration_calls": 40,
+  "max_calls": 120,
+  "max_output_per_call": 3072,
+  "max_total_output_tokens": 368640,
+  "max_input_per_call": 32768,
+  "provider": "https://api.deepseek.com/responses",
+  "model": "deepseek-flash",
+  "temperature": 0.7,
+  "seed_actually_sent": false,
+  "retry_count": 0,
+  "stop_rule": "First technical failure stops entire batch; preserve raw response, consumed budget and all uncompleted roster rows. No automatic resume, replacement or expansion.",
+  "control": "Identical task, recipient, shared generated contributions, field vocabulary and common prompt within each pair. Executed arm alone receives literal report; actual input budget differs and must be reported. Repeat1 A1 text then executed; repeat2 A2 executed then text.",
+  "prompt_policy": "No semantic prompt correction relative to previous transfer pilot; retain source-skepticism risk in both arms. Only task vocabulary and batch scheduling expanded.",
+  "primary_metrics": [
+    "official option accuracy per arm over 20 outputs",
+    "paired wins/losses/ties",
+    "per-task result distribution over two repeats, task-averaged difference"
+  ],
+  "secondary_metrics": [
+    "requirement coverage and empty condition counts",
+    "source-to-fact semantic errors",
+    "actual application of decisive colleague contribution",
+    "incorrect exclusion or misleading report",
+    "technical failures and all token costs with extraction shared"
+  ],
+  "analysis_policy": "20 repetitions are clustered within 10 tasks, not 20 independent tasks. Report exact counts; no paper-level stable-superiority claim. Review all final reasons and decisive encoding chains, not just winning cases. Native irrelevant/redundant source remains.",
+  "decisions": {
+    "net_positive_across_multiple_tasks": "Promising screening signal only; next compare to similar-budget ordinary checklist/summary, before larger claims.",
+    "mostly_ties": "Review baseline ceiling and whether execution changes decisions; no automatic harder-task search.",
+    "encoding_errors_dominate": "Prioritize source-to-representation issue, not added coordination.",
+    "net_negative": "Pause expansion and inspect harmful exclusions or report influence.",
+    "technical_stop": "Incomplete pilot only; diagnose separately and review new batch before any paid rerun."
+  },
+  "selection_and_holdout": "First compatible ascending IDs10..27 using content-only manual exclusions; selected tasks move from evaluation pool to development, not final held-out evidence.",
+  "estimated_usage_from_previous_batch": {
+    "input_tokens": 281110,
+    "output_tokens": 52390,
+    "basis": "5x prior 24-call transfer batch; approximate, not cap or price quote"
+  },
+  "authorization": "Not yet authorized for this new 120-call batch; local preparation only."
+}

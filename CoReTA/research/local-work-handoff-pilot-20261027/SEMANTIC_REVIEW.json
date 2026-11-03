@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-27",
+  "batch": "local-work-handoff-pilot-live-20261027-v1",
+  "reviewer": "local executor reading original messages, receipts, requests and final deliveries",
+  "rubric": "frozen offline/PROCESS_GUIDE.md",
+  "automated_semantic_judge": false,
+  "rows": [
+    {
+      "flow_id": "dependent-01-local_work",
+      "first_turn_members": [
+        {"actor": "A1", "usable_numeric_partial": true, "ready_receipt": "W1", "value": 63.1509},
+        {"actor": "A2", "usable_numeric_partial": true, "ready_receipt": "W2", "value": 35.114}
+      ],
+      "correct_cross_member_combination": true,
+      "combination_wave": 1,
+      "final_adopts_correct_combination": true,
+      "final_result_id": "W3",
+      "route": "W1 plus W2, explicit cross-member graph rendered",
+      "evidence": "EVENTS wave0 A1/A2 actual formulas; wave1 A1/A2 select W1/W2; final references W3",
+      "qualification": "Initial A1 overreaches by saying only stock-settled has a value table; next wave corrects scope to both categories. W1 period label says fiscal year ended while the underlying balance is as of that date. Numeric/object selection and final total are correct; this is not perfect semantic metadata."
+    },
+    {
+      "flow_id": "dependent-01-ordinary",
+      "first_turn_members": [
+        {"actor": "A1", "usable_numeric_partial": true, "ready_receipt": "W1", "value": 63.1509},
+        {"actor": "A2", "usable_numeric_partial": true, "ready_receipt": "W2", "value": 35.114}
+      ],
+      "correct_cross_member_combination": true,
+      "combination_wave": 1,
+      "final_adopts_correct_combination": true,
+      "final_result_id": "W4",
+      "route": "W1 plus W2, explicit cross-member graph rendered",
+      "evidence": "wave1 A1 accepts combination W3; wave2 A1 W4 repeats valid combination; final W4",
+      "qualification": "A2 wave1 composition rejected by declared unit/period mismatch (as-of versus fiscal-year label). After feedback, A2 wave2 re-derives its cash portion from original T2 while retaining W1. Final chosen A1 path was valid numerically; no claim that period semantics were automatically reconciled."
+    },
+    {
+      "flow_id": "dependent-01-discussion",
+      "first_turn_members": [
+        {"actor": "A1", "usable_numeric_partial": true, "ready_receipt": null, "receipt_metric_applicable": false},
+        {"actor": "A2", "usable_numeric_partial": true, "ready_receipt": null, "receipt_metric_applicable": false}
+      ],
+      "correct_cross_member_combination": true,
+      "combination_wave": 1,
+      "final_adopts_correct_combination": true,
+      "route": "Original source disclosure and correct combination in messages/calculator C6",
+      "evidence": "wave0 local products, wave1/2 full two-category sum, final C6",
+      "qualification": "No W capability by design; lack of receipts is not scored as failed knowledge use."
+    },
+    {
+      "flow_id": "dependent-02-ordinary",
+      "first_turn_members": [
+        {"actor": "A1", "usable_numeric_partial": true, "ready_receipt": "W1", "value": 7251},
+        {"actor": "A2", "usable_numeric_partial": true, "ready_receipt": "W2", "value": 12806}
+      ],
+      "correct_cross_member_combination": true,
+      "combination_wave": 1,
+      "final_adopts_correct_combination": true,
+      "final_result_id": "W3",
+      "route": "A2 waiting ratio revised to use W1/W2; final W3 revision2",
+      "evidence": "wave0 both local totals ready; A1 attempted same-wave new W1 reference rejected; wave1 A2 revises waiting ratio with visible W1/W2; final",
+      "qualification": "The initial same-wave reference rejection is preserved, not silently repaired."
+    },
+    {
+      "flow_id": "dependent-02-local_work",
+      "first_turn_members": [
+        {"actor": "A1", "usable_numeric_partial": true, "ready_receipt": "W1", "value": 7251},
+        {"actor": "A2", "usable_numeric_partial": false, "ready_receipt": null, "value": null}
+      ],
+      "correct_cross_member_combination": true,
+      "combination_wave": 1,
+      "final_adopts_correct_combination": true,
+      "final_result_id": "W5",
+      "route": "A2 consumes A1 W1 and computes its own 2018 denominator from original T2 as inline values",
+      "evidence": "wave0 A2 says whole ratio impossible and submits no calculation/receipt; wave1 A2 computes own total and ratio using W1; final W5",
+      "qualification": "First-turn local contribution discovery still failed once despite sufficient local data. The final cross-member graph legitimately has W1/W5, not both independent subtotal receipts."
+    },
+    {
+      "flow_id": "dependent-02-discussion",
+      "first_turn_members": [
+        {"actor": "A1", "usable_numeric_partial": true, "ready_receipt": null, "receipt_metric_applicable": false},
+        {"actor": "A2", "usable_numeric_partial": true, "ready_receipt": null, "receipt_metric_applicable": false}
+      ],
+      "correct_cross_member_combination": true,
+      "combination_wave": 1,
+      "final_adopts_correct_combination": true,
+      "route": "Local numeric totals in messages; shared originals; final calculator C13",
+      "evidence": "wave0 7251 and12806 in original member messages; wave1 requested ratio; final C13",
+      "qualification": "Source redistribution and recalculation are legitimate complementary information use."
+    }
+  ],
+  "summary": {
+    "discussion": {"first_turn_member_opportunities": 4, "usable_numeric_partials": 4, "ready_receipt_metric": "not applicable: no W tool", "planned_dependent_flows": 2, "evaluable": 2, "correct_combination_and_final_adoption": 2, "uncertain": 0, "technical_missing": 0},
+    "ordinary": {"first_turn_member_opportunities": 4, "usable_numeric_partials": 4, "ready_receipt_partials": 4, "planned_dependent_flows": 2, "evaluable": 2, "correct_combination_and_final_adoption": 2, "explicit_final_cross_member_graph": 2, "uncertain": 0, "technical_missing": 0},
+    "local_work": {"first_turn_member_opportunities": 4, "usable_numeric_partials": 3, "ready_receipt_partials": 3, "planned_dependent_flows": 2, "evaluable": 2, "correct_combination_and_final_adoption": 2, "explicit_final_cross_member_graph": 2, "uncertain": 0, "technical_missing": 0}
+  },
+  "interpretation": "Natural graph handoff is observed. Numeric/task-relevant combination is confirmed locally; metadata and understanding are not universally correct. No final-quality advantage over discussion or independent benefit of organizational guidance is established."
+}

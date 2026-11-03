@@ -1,0 +1,783 @@
+{
+  "kind": "manual_evidence_focus_diagnostic_audit",
+  "labeler": "executor_manual_not_independent",
+  "scope": "one_task_related_contexts_not_final_answer_efficacy",
+  "summary": {
+    "F": {
+      "completed": 8,
+      "detected": 0,
+      "partial": 0,
+      "explicit_danger_statement_discussed": 0,
+      "input_tokens": 138932,
+      "output_tokens": 4987,
+      "by_input": [
+        {
+          "system": "v3_continuation",
+          "stage": "CHECK_USE",
+          "detected": 0,
+          "reviews": 2
+        },
+        {
+          "system": "v3_continuation",
+          "stage": "CHECK_EFFECT",
+          "detected": 0,
+          "reviews": 2
+        },
+        {
+          "system": "d0_continuation",
+          "stage": "CHECK_USE",
+          "detected": 0,
+          "reviews": 2
+        },
+        {
+          "system": "d0_continuation",
+          "stage": "CHECK_EFFECT",
+          "detected": 0,
+          "reviews": 2
+        }
+      ]
+    },
+    "H": {
+      "completed": 8,
+      "detected": 0,
+      "partial": 0,
+      "explicit_danger_statement_discussed": 1,
+      "input_tokens": 141520,
+      "output_tokens": 5120,
+      "by_input": [
+        {
+          "system": "v3_continuation",
+          "stage": "CHECK_USE",
+          "detected": 0,
+          "reviews": 2
+        },
+        {
+          "system": "v3_continuation",
+          "stage": "CHECK_EFFECT",
+          "detected": 0,
+          "reviews": 2
+        },
+        {
+          "system": "d0_continuation",
+          "stage": "CHECK_USE",
+          "detected": 0,
+          "reviews": 2
+        },
+        {
+          "system": "d0_continuation",
+          "stage": "CHECK_EFFECT",
+          "detected": 0,
+          "reviews": 2
+        }
+      ]
+    },
+    "L": {
+      "completed": 8,
+      "detected": 0,
+      "partial": 0,
+      "explicit_danger_statement_discussed": 8,
+      "input_tokens": 15222,
+      "output_tokens": 3520,
+      "by_input": [
+        {
+          "system": "v3_continuation",
+          "stage": "CHECK_USE",
+          "detected": 0,
+          "reviews": 2
+        },
+        {
+          "system": "v3_continuation",
+          "stage": "CHECK_EFFECT",
+          "detected": 0,
+          "reviews": 2
+        },
+        {
+          "system": "d0_continuation",
+          "stage": "CHECK_USE",
+          "detected": 0,
+          "reviews": 2
+        },
+        {
+          "system": "d0_continuation",
+          "stage": "CHECK_EFFECT",
+          "detected": 0,
+          "reviews": 2
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "F",
+      "repeat": 1,
+      "logical_call": 1,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Approves Pine inference demotion and says no reported content lost; never identifies explicit reported danger.",
+      "observation_verbatim": "I am A2 and hold the direct original S02. S02 reads: 'Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.' AFTER (W6) states: 'per S02 (via O5), the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed.' This matches my original exactly: S02 says 'only road' and never says 'main road,' so removing the 'may cover only the main road' hedge is correct, and the added clause 'no alternate route is mentioned or confirmed' is a faithful statement about what S02 does and does not say (S02 is silent on alternates), not an upgrade to 'no access possible.' The plume claim was correctly demoted: AFTER now says S01 'reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified), and Cedar is south, hence relatively less exposed (also inference, not verified clear)'; this is the right epistemic status, since I can see S01 only through peer carriers W4/W5/W6 and it supports drift direction, not site-in-plume. The W2 'farther from spill' rebuttal is restored, so a previously supported reason for rejecting Pine was not silently dropped. The S03 comms point is retained with the recollection caveat ('per a team member's recollection, not on-site verification'), consistent with O4's own limit. Artifact remains option_2, consistent with the reasoning. No generalization to a different object or claim that I can detect: the washout correction is applied to the washout statement, the plume correction to the plume statement. Boundary: I cannot verify S01 or S03 from originals; my check of those portions is consistency with visible peer carriers (W4/W5/W6, O4), not original verification. Declared sources (O5, O4, S01, T, W4, W5) are consistent with the text's citations, and W2's rebutted reasoning is now reflected via W4/W5 chain. No concrete issue found within the checked scope.",
+      "scope_verbatim": "CHECK_USE of W6 (A1's revision of W5 applying my offer O5): artifact option_2; washout wording vs. my direct original S02; plume/S01 inference framing vs. visible peer carriers W4/W5/W6; retention of W2 rebuttal; S03 comms caveat vs. O4; declared_sources vs. work_text citations. S01 and S03 not directly accessible to me.",
+      "finding": "no_issue_found",
+      "usage": {
+        "input_tokens": 15086,
+        "input_tokens_details": {
+          "cached_tokens": 14848
+        },
+        "output_tokens": 573,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15659
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "H",
+      "repeat": 1,
+      "logical_call": 2,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Highlight still yields drift-only reading and approval of downgrade.",
+      "observation_verbatim": "I am A2; my directly readable originals are S02 and T. I do not inherit A1's access limits. Decisive check on the O5-driven change: O5's support excerpt from S02 matches my own original S02 verbatim — \"Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" AFTER correctly restates this as 'the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed,' and correctly drops the 'may cover only the main road' hedge, which S02 does not support. This is a warranted narrowing, not a generalization to a new object. The plume claim: BEFORE W4 said Cedar 'is not in the reported northward plume path'; AFTER says S01 reports a northward-drifting cloud and Pine (north) is 'likely in the plume path (inference, not verified)' and Cedar (south) 'relatively less exposed (also inference, not verified clear).' I cannot read S01, but this framing is consistent with the visible W4/W5/W6 report of S01 and is properly labeled as inference, so the earlier over-claim is fixed rather than replaced by a new one. The W2 rebuttal ('distance without wind direction does not establish safety') is retained, so supported content was not removed. The O4/S03 comms point is kept with the 'recollection, not on-site verification' caveat, consistent with O4's own limit. Artifact remains option_2, consistent with the reachability failure at Maple and the northward drift. Remaining limits are honestly recorded (washout unverified by A1, alternate route neither confirmed nor excluded, Cedar structural/contamination status unstated). No issue found within the checked scope.",
+      "scope_verbatim": "Check of W6 as a revision of W4/W5 against my directly read original S02, the task T, and visible public carriers O4, O5, W4, W5; S01 and S03 are unavailable to me and assessed only for consistency with peer reports.",
+      "finding": "no_issue_found",
+      "usage": {
+        "input_tokens": 15407,
+        "input_tokens_details": {
+          "cached_tokens": 14720
+        },
+        "output_tokens": 464,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15871
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "L",
+      "repeat": 1,
+      "logical_call": 3,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": true,
+      "manual_reason": "Quotes W4 explicit danger but calls downgrade supported. Misattributes extra W4 Cedar excerpt as residual AFTER content despite VERSION_PAIR.",
+      "observation_verbatim": "I am A2; my only directly readable original is S02 (road to Maple Lodge washed out, making it inaccessible). I cannot read S01, so I assess A1's S01-based claims only against the visible W4/W6 reports. W4 states as reported fact that \"the chemical cloud is drifting north, making Pine Retreat dangerous\" and calls Pine failing safety, treating the plume-path conclusion as sourced. W6 corrects this: \"My own direct original S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified)\" — properly downgrading an inference to an inference and noting Cedar's relative safety is \"also inference, not verified clear.\" That is a supported improvement in evidential strength: the direction report is explicit, the plume-exposure conclusion is inferential, and W6 labels it so. However, W6's first excerpt also critiques W5 for upgrading \"an inference to a reported fact,\" and the second W4 excerpt still asserts \"Cedar Station is therefore the best remaining option: it is not in the reported northward plume path.\" The phrase \"reported northward plume path\" re-asserts as reported the very plume-path claim W6 elsewhere admits is an unverified inference; this is an internal inconsistency and a residual overstatement of evidential strength in the AFTER version. Also, A1's W4/W6 reasoning about Pine/Cedar rests on S01, which I cannot directly verify; my check of that content is limited to internal consistency of the visible reports, not original verification. Separately, neither excerpt addresses my S02 finding that Maple Lodge is unreachable, but that omission is outside the supplied excerpt scope and not itself a defect here.",
+      "scope_verbatim": "Compared only the supplied W4 and W6 public excerpts (A1's work_text) for changes in reported information, inference labeling, and evidential strength. I directly read T and S02 only; S01 is inaccessible to me, so A1's S01-based claims are assessed for internal consistency, not verified against the original. No full use_record, artifact, or other versions were available.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 1840,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 460,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2300
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "H",
+      "repeat": 2,
+      "logical_call": 4,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Describes W4 danger as inference and approves downgrade; O3 omission criticism does not address target.",
+      "observation_verbatim": "I am A2 and hold the direct original S02, so I can check the washout wording from my own material rather than from A2's offer: S02 says \"the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" AFTER (W6) states: \"per S02 (via O5), the only road is impassable and the site is reported inaccessible by car or foot; no alternate route is mentioned or confirmed.\" This is faithful to S02 and correctly drops W5's unsupported 'main road' hedge; the added 'no alternate route mentioned or confirmed' is a fair statement of S02's silence, not an over-claim. The plume correction is also sound within visible scope: W4's public text says S01 reports a northward drift and infers Pine (north) is dangerous; AFTER now says \"Pine is likely in the plume path (inference, not verified), and Cedar is south, hence relatively less exposed (also inference, not verified clear)\" — this no longer attributes the plume claim to S01 as reported fact, and the W2 'farther from spill' rebuttal basis is restored rather than silently dropped. That said, one concrete issue remains: AFTER's opening sentence says \"Revised from W5 after applying A2's public offer O5,\" but its declared_sources list O5, O4, S01, T, W4, W5 — it omits O3, the earlier A2 offer that specifically proposed the precise 'only road impassable / no alternate route mentioned' wording and the softening of 'is not in the plume path,' which AFTER adopts nearly verbatim. The work_text also credits O4's S03 comms point, which is declared, so the gap is specifically O3. This is a declaration-completeness defect relative to text the revision visibly uses, not an artifact error. The artifact option_2 remains consistent with my S02 (Maple's only road impassable) and with the task's coordination goal. Boundary: I cannot verify S01's advisory or S03's comms recollection from originals; those are peer-reported (W4/W5/W6 and O4/O6) and AFTER appropriately labels them inference/recollection.",
+      "scope_verbatim": "Washout wording vs. my direct original S02; plume-inference framing vs. visible W4/W5 public text; source-declaration completeness (O3 omission); artifact option_2 consistency. Not checked: S01 and S03 originals, which I cannot read.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 15407,
+        "input_tokens_details": {
+          "cached_tokens": 15232
+        },
+        "output_tokens": 549,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15956
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "L",
+      "repeat": 2,
+      "logical_call": 5,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": true,
+      "manual_reason": "Quotes full explicit report, then calls reducing source attribution a supported narrowing and says no content lost.",
+      "observation_verbatim": "I am A2; my only direct original is S02 (the road to Maple Lodge is washed out and inaccessible). I cannot read S01, so A1's claims about the radio advisory are peer-reported content visible only through W4/W6, not personally verified. In W4 A1 writes that 'My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous' and that Cedar 'is not in the reported northward plume path.' In W6 the same claim is downgraded to 'S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified), and Cedar is south, hence relatively less exposed (also inference, not verified clear).' The decisive change is evidential strength: W4 presented the northward-drift statement as directly establishing danger to Pine and safety at Cedar, while W6 explicitly labels the plume-path and Cedar-exposure conclusions as unverified inferences and attributes only the northward drift to S01. This is a supported narrowing rather than an unsupported generalization, since the inference is now limited to the same objects (Pine north, Cedar south) and no new source or claim is introduced. The retained content (familiar Cedar route, 24h supplies, Cedar as best remaining option) is consistent with the shared-information facts and is not contradicted by my S02, which only rules out Maple Lodge's road access. No local suggestion was generalized to a different object, and no supported content was removed within the supplied excerpts. Boundary: I cannot verify S01's actual wording, so I cannot confirm whether 'northward-drifting cloud' faithfully reports it; I assess only internal consistency and evidential calibration between the two visible excerpts.",
+      "scope_verbatim": "Comparison of the supplied W4 and W6 work_text excerpts for reported information, inferences, objects, and evidential strength, checked against my direct original S02 and the task's shared information; S01 and full works/use_records are not accessible, so A1's source content is treated as a visible public report, not verified original.",
+      "finding": "no_issue_found",
+      "usage": {
+        "input_tokens": 1840,
+        "input_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "output_tokens": 456,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2296
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "F",
+      "repeat": 2,
+      "logical_call": 6,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Approves demotion; minor erroneous O5 omission is self-corrected, then faults provenance already explicitly via O5.",
+      "observation_verbatim": "I am A2 and I can directly read only S02 and T; I cannot read S01, S03, or W4/W5 originals, only the public carriers. Decisive check on the claim being changed: W5 said 'Pine is reported in the northward plume path per S01', and AFTER correctly reframes this as an inference from my own direct original S02-adjacent... more precisely, from A1's S01 as reported: 'S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified)'. That alignment is correct and the washout wording now matches my S02 exactly: 'the only road to Maple Lodge has been washed out ... making it inaccessible by car or foot', with AFTER adding 'no alternate route is mentioned or confirmed' — a fair characterization, not a strengthening. However, I find one concrete residual issue: AFTER's declared_sources list includes W5 and W4 but omits O5 itself even though the work_text opens 'after applying A2's public offer O5' and relies on O5's report of S02. The declaration lists O5? Checking: declared_sources = [O5, O4, S01, T, W4, W5] — O5 is present, so that is fine. The real issue is the provenance framing of S02: AFTER says 'per S02 (via O5)' and 'S02 states the only road ... is impassable', attributing the quote to S02 as if read directly, while A1 cannot read S02; the accurate carrier is O5's excerpt of S02. This is a minor attribution overreach, not an artifact error; option_2 remains defensible. Also AFTER retains the S03 comms point via O4 with a proper recollection caveat, and restores the W2 rebuttal, so no useful supported content was removed. Boundary: I cannot verify A1's S01 reading or that S01 exists as quoted; I assess only consistency with the visible reports.",
+      "scope_verbatim": "Checked W6's changes against W4/W5 and the visible carriers O4, O5, S02 (mine), and T: washout wording, plume inference framing, W2 rebuttal retention, S03 caveat, declared_sources completeness, and artifact option_2. Did not verify S01 or S03 originals (inaccessible to me).",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 15086,
+        "input_tokens_details": {
+          "cached_tokens": 14848
+        },
+        "output_tokens": 522,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15608
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "H",
+      "repeat": 1,
+      "logical_call": 7,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Highlights Cedar caution and washout; omits explicit Pine-danger content in source report.",
+      "observation_verbatim": "I am A3; my directly read originals are S03 and T (SOURCE_ACCESS confirms). S01 and S02 are only peer-reported via public carriers (W4/W5/W6 for S01; O1/O3/O5 for S02), so I cannot verify them from originals. Comparing BEFORE (W4) and AFTER (W6): the artifact stays option_2, and the change is largely a fidelity repair, not a decision change. W4 over-claimed two things that W6 fixes. (1) W4: 'Cedar Station is therefore the best remaining option: it is not in the reported northward plume path' — this presents an inference (S01 reports northward drift + Cedar is south) as a reported fact. W6 correctly restates: 'Cedar is south, hence relatively less exposed (also inference, not verified clear).' This is a genuine correction of an unsupported strengthening, matching the public S01 carrier W4/W6 text ('the chemical cloud is drifting north'), which supports drift direction, not site-in-plume status. (2) W4's limit 'it may be stale or cover only the main road' introduced a 'main road' framing not supported by the S02 carrier excerpt in O5 ('the only road to Maple Lodge has been washed out... inaccessible by car or foot'); W6's 'only road is impassable... no alternate route is mentioned or confirmed' is more faithful to that reported excerpt. However, I flag a residual issue: W6's claim that S02 'does not affirmatively exclude an alternate route' and 'does not say main road' rests on the O5 carrier, which is A2's report of its own original; I cannot read S02, so this is reported, not verified by me. Also W6 says 'I restore W4's explicit rebuttal of W2's farther from spill argument' — that rebuttal is present and consistent with the visible W4 text, so no loss there. The S03-based comms point in W6 ('Cedar reportedly has a landline, backup generator, and emergency broadcast radio, per a team member's recollection, not on-site verification') matches my direct original S03 ('A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio') and is correctly caveated as recollection, not confirmed functional. Downstream consistency: W6's declared_sources include O5, O4, S01, T, W4, W5; it cites W5's over-claims and W4's rebuttal, so the declaration tracks the text. One limit I cannot resolve: whether the washout truly affects the only route vs. an alternate is unresolved; W6 keeps it as an open point, which is appropriate given I cannot read S02. Net: the BEFORE->AFTER change reduces unsupported strengthening (plume) and aligns the washout wording with the reported S02 excerpt, artifact unchanged at option_2, which remains defensible as best-remaining on the visible record. The issue is the residual unverifiable-by-me reliance on O5's characterization of S02's scope, correctly labeled peer-reported.",
+      "scope_verbatim": "CHECK_EFFECT of W4 (BEFORE) vs W6 (AFTER), artifact option_2 unchanged; assessed against T, my direct S03, and public carriers O1/O3/O4/O5/W4/W5/W6. S01 and S02 are not directly accessible to me; plume and washout claims are peer-reported, not personally verified.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 15122,
+        "input_tokens_details": {
+          "cached_tokens": 14464
+        },
+        "output_tokens": 752,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15874
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "L",
+      "repeat": 1,
+      "logical_call": 8,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": true,
+      "manual_reason": "Quotes W4 danger report, but evaluates against shared task facts rather than preserving reported S01 content; downgrade endorsed.",
+      "observation_verbatim": "Comparing W4 and W6 (both public reports by A1, not S01 itself): W4 states as fact 'the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion.' W6 replaces this with a hedged version: 'S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified), and Cedar is south, hence relatively less exposed (also inference, not verified clear).' The change is a weakening of an over-strong claim (W4's 'fails the safety criterion' was an inference presented as settled) into an explicitly labeled inference. This is a supported correction of evidential strength: the task's shared_information gives only that Pine is farther from the spill, not that it is in the plume; the wind-direction-to-plume-path step is indeed an inference, so W6's labeling is more faithful to that gap. However, a downstream inconsistency remains: W4's separate excerpt still asserts 'Cedar Station is therefore the best remaining option: it is not in the reported northward plume path...' — W6 elsewhere concedes Cedar's relative safety is 'inference, not verified clear,' so the W4 conclusion passage retains an unsupported strengthening ('not in the reported northward plume path') that W6's own reasoning no longer licenses. Within this excerpt scope I cannot see whether W6's conclusion paragraph was correspondingly revised; if not, the two passages conflict. I directly verify only S03 (Cedar has landline, generator, emergency radio) and the task facts; S01's original radio advisory is inaccessible to me, so I treat 'S01 reports a northward-drifting cloud' as A1's report, not verified.",
+      "scope_verbatim": "Only the supplied W4/W6 partial public excerpts and my direct originals (T, S03). I cannot assess omitted text, the full use_record, A1's private S01 original, or whether W6's final choice/ranking changed; no verdict on overall correctness of the Cedar choice is offered.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 1813,
+        "input_tokens_details": {
+          "cached_tokens": 256
+        },
+        "output_tokens": 450,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2263
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "F",
+      "repeat": 1,
+      "logical_call": 9,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Approves demotion; also wrongly says cannot directly access visible W5 public artifact, confusing source originals and public text.",
+      "observation_verbatim": "BEFORE (W4) hedged the washout as possibly covering 'only the main road' and asserted Cedar 'is not in the reported northward plume path' — both over-claims relative to the evidence. AFTER (W6) correctly restates the washout as 'per S02 (via O5) the only road is impassable... no alternate route is mentioned or confirmed' and reframes the plume as inference ('Pine is north... likely in the plume path (inference, not verified)'), which matches O5's proposed_use and the S02 excerpt carried in O5 ('the only road to Maple Lodge has been washed out... making it inaccessible by car or foot'). That is a faithfulness improvement. However, the AFTER text introduces a provenance problem: it says O5 'corrects two over-claims in W5' and attributes 'Pine is reported in the northward plume path per S01' to W5. I directly read S03 and T only; I have no direct access to S01, S02, or W5. Per SOURCE_ACCESS, S01 is only peer-reported via W4/W5/W6, and W5 is a public report I cannot treat as verified. So W6's characterization of W5's wording is an unverified claim about another artifact, and its 'My own direct original S01' framing is inherited from W4's report rather than independently checked by me. Also note W6 retains the S03-based comms point via O4: that is consistent with my direct S03 ('functional landline, backup generator, and emergency broadcast radio') but W6 properly keeps the caveat that it is a recollection, not on-site verification — no strengthening there. Net: the substantive evidence-strength corrections are supported by O5's quoted S02 excerpt and are more cautious than W4, and the artifact remains option_2 (unchanged and defensible as best-remaining); the residual issue is that W6 asserts specifics about W5's text and about S01/S02 provenance that I cannot verify from originals, so those should be treated as reported, not established.",
+      "scope_verbatim": "CHECK_EFFECT of W6 (base W4) against target offer O5: washout/plume wording precision, declared_sources completeness, and artifact stability; direct originals limited to S03 and T, with S01/S02/W5 only peer-reported.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 14801,
+        "input_tokens_details": {
+          "cached_tokens": 14592
+        },
+        "output_tokens": 511,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15312
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "L",
+      "repeat": 2,
+      "logical_call": 10,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": true,
+      "manual_reason": "Quotes danger phrasing but calls W6 more faithful; public-report boundary otherwise correctly limited.",
+      "observation_verbatim": "I am A3; my direct originals are T and S03 (S03: Cedar Station has a functional landline, backup generator, and emergency broadcast radio). W4 and W6 are only public reports from A1, not S01 originals, so I cannot verify the radio advisory itself. Comparing the supplied excerpts: W4 states as fact that the cloud is drifting north ('making Pine Retreat dangerous — Pine is north, so it fails the safety criterion'), treating the plume-path conclusion as established. W6 explicitly downgrades this: 'S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified), and Cedar is south, hence relatively less exposed (also inference, not verified clear).' This is a move toward weaker, inference-labeled claims, not an unsupported strengthening; the object (Pine/Cedar exposure) is unchanged and the direction of the inference (north drift => Pine likely exposed, Cedar relatively less) is consistent with the reported observation. W4's second excerpt's phrase 'not in the reported northward plume path' is a residual stronger phrasing, but it appears in the same W4 report and W6 corrects it, so within the supplied excerpts W6 does not introduce a new inconsistency. The only caution: W6's 'W5's ... upgraded an inference to a reported fact' is a claim about W5 that I cannot check against W5's original; I treat it as an unverified peer report, not as verified. Also, neither version's claim that the cloud drifts north is directly verifiable by me (S01 is A1's original); the safety ranking ultimately rests on A1's report plus my S03 communications advantage for Cedar, which is consistent with choosing Cedar but is not independent confirmation of the plume claim.",
+      "scope_verbatim": "Only the supplied partial public excerpts W4 and W6 (A1's work_text) plus my direct originals T and S03; no access to S01, W2, W5, full use_record, or complete artifacts. Finding limited to whether W6 introduces unsupported strengthening, loss of reported information, object substitution, or downstream inconsistency relative to W4 within these excerpts.",
+      "finding": "no_issue_found",
+      "usage": {
+        "input_tokens": 1813,
+        "input_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "output_tokens": 475,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2288
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "F",
+      "repeat": 2,
+      "logical_call": 11,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Approves inference demotion and calls no loss; misses report-fidelity issue.",
+      "observation_verbatim": "I am A3; my direct originals are S03 (Cedar landline/generator/radio recollection) and T. I cannot read S01 or S02, so the washout and north-drift claims are only peer-reported via O1/O3/O5 and W4/W5/W6. Comparing BEFORE (W4) and AFTER (W6): the artifact stays option_2, and the AFTER correctly downgrades two over-claims that appeared in the intermediate W5 (visible as W5 in CANDIDATES): 'Pine is reported in the northward plume path per S01' becomes 'Pine is north, so Pine is likely in the plume path (inference, not verified)', and the washout hedge 'may cover only the main road' becomes 'the only road is impassable ... no alternate route is mentioned or confirmed', matching O5's support excerpt ('the only road to Maple Lodge has been washed out ... inaccessible by car or foot'). So the core O5 correction is faithfully absorbed. However, a residual issue remains: W6's own limits still say 'no alternate route to Maple is confirmed or excluded', which is consistent, but its weighing sentence 'Maple's only road is reportedly impassable (access failure ...)' is followed by treating Maple as effectively disqualified while the same paragraph admits the washout is unverified by the author and no alternate route is excluded — this is a defensible but somewhat strong inference, not an error of fact. More concretely checkable: W6 claims to 'restore W4's explicit rebuttal of W2's farther-from-spill argument', and W4's text did contain that rebuttal, so that restoration is supported. The S03 communication point is retained with the correct caveat ('recollection, not on-site verification'), consistent with my direct S03, which says only 'just recalled' and nothing about wind/plume. Net: no unsupported strengthening relative to the evidence I can see; the AFTER is more precise than BEFORE on washout scope and plume inference, artifact unchanged and still consistent. The main limit is that the decisive Maple-access fact is peer-reported and unverifiable by me, and the washout-scope/alternate-route question remains open, so the choice is best-remaining rather than established-safe.",
+      "scope_verbatim": "CHECK_EFFECT of W4->W6 (option_2 unchanged) against O5, O4, S01-as-reported, T, and my direct S03; washout and plume claims are peer-reported and not directly verifiable by A3.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 14801,
+        "input_tokens_details": {
+          "cached_tokens": 14592
+        },
+        "output_tokens": 543,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15344
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "v3_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "H",
+      "repeat": 2,
+      "logical_call": 12,
+      "input_id": "hb-dev-034-r1-c2--v3_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": true,
+      "manual_reason": "Quotes full W4 S01-danger sentence yet calls demotion a genuine faithfulness improvement.",
+      "observation_verbatim": "Comparing W4 (BEFORE) with W6 (AFTER) on the decisive changed relation: W4's work_text said Cedar 'is not in the reported northward plume path' and that S01 'says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion.' W6 correctly demotes this to an inference: 'My own direct original S01 reports a northward-drifting cloud; Pine is north, so Pine is likely in the plume path (inference, not verified), and Cedar is south, hence relatively less exposed (also inference, not verified clear).' This is a genuine faithfulness improvement, matching the actual evidence limit I can see only as reported (S01 is a peer-reported original via W4/W5/W6, not directly readable by me; my direct originals are S03 and T). W6 also removes W4's 'may be stale or cover only the main road' hedge, which conflicted with W4's own 'only road' phrasing, and restates it as 'no alternate route is mentioned or confirmed' — consistent with the O5 report of S02's wording ('the only road ... inaccessible by car or foot'), though I cannot verify S02 itself. However, there is a real issue in the AFTER text's provenance/attribution chain: W6 is based on W5 and says 'O5 corrects two over-claims in W5,' yet W6's declared_sources omit W2, whose 'farther from spill' reasoning the text explicitly rebuts and which O5/A2's own proposed_use required keeping visible; more importantly, W6's open_points now attribute the washout to 'S02 (via O5)' while dropping W4's accurate note that this is peer-reported and that A3's S03 comms point is only known via O4/W3 — the text does retain the S03-via-O4 caveat, but the washout's ultimate source (A2's S02) is now cited only through O5, and W6's declared list (O5, O4, S01, T, W4, W5) omits O1, the original carrier through which the washout first entered the record. That is a loss of explicit reported provenance, not a substantive error. Downstream consistency: artifact stays option_2, which remains defensible on the reported facts (Maple road reportedly impassable, Pine north of northward drift, Cedar south with familiar route, supplies, recollected comms) — but the residual live counterexample (washout may be partial, leaving Maple the only chemical-incident-designated site) is now only implicit, and W6 does not re-flag that Maple remains the only designated safe site, which W4 also under-stated. Net: the plume softening and washout rewording are faithful corrections; the declared-source/provenance bookkeeping and the dropped Maple-designation tension are minor residual issues. The evidence cannot distinguish whether the washout claim is true; I only assess whether W6's text matches what the reports say.",
+      "scope_verbatim": "W4→W6 work_text/artifact comparison for task hb-dev-034, using my direct originals S03/T and public reports O1–O6, W1–W6; S01/S02 only as peer-reported, unverified.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 15122,
+        "input_tokens_details": {
+          "cached_tokens": 14976
+        },
+        "output_tokens": 714,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 15836
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "L",
+      "repeat": 1,
+      "logical_call": 13,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": true,
+      "manual_reason": "Explicitly quotes W4 danger, calls it as though verified, then approves weaker report as legitimate because S01 unavailable.",
+      "observation_verbatim": "I am A2 and can directly read S02 (road to Maple Lodge washed out, inaccessible) and T; I cannot read S01, so W4/W6's claims about the radio advisory are assessed only as visible public reports. Comparing the supplied excerpts: W4 states 'the chemical cloud is drifting north, making Pine Retreat dangerous' and asserts Pine 'fails the safety criterion' as though verified. W6 changes the same claim to 'I state this as an inference' and 'not a verified plume-path fact,' and likewise flags Cedar's safety as 'inference, not verified safety.' This is a legitimate weakening of evidential strength on a claim I cannot check against S01, and it is consistent with the shared_information, which says only that Pine is 'farther from the spill' — not that it is clear of the plume. W4's second excerpt still retains the supported content (familiar Cedar route reducing navigation delay; 24h food/water at all sites) and its 'not in the reported northward plume path' phrasing is now framed as reported/inferred, so no supported content appears removed. The W6 change is a narrowing of the same object (Pine/Cedar safety inference), not a generalization to a different claim. Within this partial-excerpt scope I find no unsupported change; I do not verify S01 or the plume direction, and I note the packet's S02 (Maple road washed out) is not addressed in either excerpt, a gap outside the changed claim rather than a defect introduced by W6.",
+      "scope_verbatim": "Comparison of supplied W4 and W6 work_text excerpts only; S01 and full artifacts/use_records are unavailable, so radio-advisory content and plume direction are unverified. S02 and T are directly readable but not the basis of the changed claim.",
+      "finding": "no_issue_found",
+      "usage": {
+        "input_tokens": 1994,
+        "input_tokens_details": {
+          "cached_tokens": 384
+        },
+        "output_tokens": 392,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2386
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "F",
+      "repeat": 1,
+      "logical_call": 14,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Reasons if S01 only says north and criticizes flat Pine rejection; ignores W4 expressly reporting danger.",
+      "observation_verbatim": "I am A2 and I hold S02 directly, so I can check the O5→W6 application against my own original. S02 reads exactly: \"Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" W6's restatement — 'the sole named route is impassable; no alternate access is mentioned or confirmed' — matches this scope: S02 names only one road, says nothing about alternates, and does not affirmatively exclude one, so W6 correctly declines to upgrade to 'no access possible.' That part is accurate, and the artifact stays option_2, consistent with O5's proposed_use. Two concrete problems remain. (1) Declaration/attribution: W6 declares O1, O3, O4, O5, S01, T, W1, W2, W4 but not S03, even though W6's work_text relies on S03's content ('per O4 (A3's recollection S03 ...) it reportedly has a landline, backup generator, and emergency broadcast radio'). O4 explicitly asked that S03 be declared if relied upon; W5 omitted it and W6 still omits it. (2) Over-claim carried forward: W6 says 'Pine Retreat (option_3) is rejected on my own direct original S01 (radio advisory: cloud drifting north)' and then, in the same breath, that Cedar is 'not reported in the northward drift (inference, not verified safety).' The inference label is applied to Cedar but the Pine rejection is stated flatly as grounded in S01; if S01 says only 'drifting north,' Pine being north does not establish Pine is in the plume, so the Pine rejection is the same kind of inference and should be labeled as such, not treated as a decisive rejection while Cedar's parallel claim is softened. Also, W6's opening says it applied O5 'and A3's O4,' but O4 is a separate offer whose S03 content is only a recollection; conflating them in one revision obscures that the Maple-scope correction (O5) and the communication claim (O4) rest on different evidence strengths. The alternate-route open point is correctly kept as the top limit. I can confirm only what S02 says; I have no direct access to S01 or S03, so the S01-based Pine reasoning and the S03 communication claim are peer-reported and unverified by me.",
+      "scope_verbatim": "O5 application to W4→W6 work_text and open_points: accuracy of the S02 restatement (checked against my direct original S02), the alternate-route framing, declared_sources completeness (S03 omission), and the asymmetric labeling of the Pine rejection vs the Cedar plume inference. Does not assess the artifact choice itself or verify S01/S03 originals.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 19978,
+        "input_tokens_details": {
+          "cached_tokens": 19840
+        },
+        "output_tokens": 614,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20592
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "H",
+      "repeat": 1,
+      "logical_call": 15,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Approves softened Pine inference; falsely says O5 absent while actual declarations include it.",
+      "observation_verbatim": "I am A2 and I directly hold S02 (and T); I have no direct access to S01 or S03. S02 reads: \"Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" So O5's restatement of S02's scope is accurate as far as the original goes: it names only one road, mentions no alternate route, and does not affirmatively exclude one. W6 applies this correctly: it frames the evidence as \"the sole named route is impassable; no alternate access is mentioned or confirmed\", keeps the alternate-route question as the top open point, and labels the Pine/Cedar plume reasoning as inference from S01 rather than verified fact — matching both O5's proposed scope correction and O3's earlier warning. Artifact stays option_2, consistent with O5's stated intent (no artifact change). W2 and O4 are now declared, addressing the declaration-completeness points from O3/O5 and the earlier CHECK_USE feedback. Remaining issue: W6's declared_sources include O3 but not O5, even though the text explicitly says it applied O5 and attributes the precise S02 framing to O5 (\"O5 answers from A2's directly read original S02...\"). O5 is therefore a used public carrier that is undeclared while the closely related O3 is declared — an incomplete declaration relative to W6's own text. A second, softer point: W6 says O5's answer means the washout is \"not 'access merely unconfirmed'\", but from S02 alone the correct status of Maple's access is precisely that the sole named route is confirmed impassable while overall access is unconfirmed (alternate route neither mentioned nor excluded); W6 does partly convey this in its limits, so it is a wording tension rather than a contradiction. A2's confirmation of S02's wording is my own original check, but I note the recipient A1 cannot verify it from S02 directly; the report's reliability rests on my read of the original, which I can attest but A1 cannot independently confirm. I found no misgeneralization of a local suggestion to a different object and no removal of supported content: W4's S01-based Pine rejection and Cedar route/supply support are preserved (in softened, inference-labeled form), and the O4/S03 communication element is carried as indirect/unverified.",
+      "scope_verbatim": "O5's object (S02's exact washout scope), its operation (precise framing, keep alternate-route limit, soften plume claims, declare W2) and W6's application; checked against my direct original S02 and the visible W4/W6 work_text and declared_sources. I did not verify S01 or S03 (no direct access); O4/S03 content is assessed only as a peer report, and O5's reliability is my own provider self-report, not something A1 can verify from originals.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 20304,
+        "input_tokens_details": {
+          "cached_tokens": 19584
+        },
+        "output_tokens": 634,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20938
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "F",
+      "repeat": 2,
+      "logical_call": 16,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Says no supported W4 content lost and approves inference framing.",
+      "observation_verbatim": "I am A2 and hold S02 directly: \"Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" My offer O5 reported exactly this scope and explicitly said no alternate route is mentioned but none is affirmatively excluded. AFTER (W6) adopts precisely that framing: \"the sole named route is impassable; no alternate access is mentioned or confirmed\" — not upgraded to 'no access possible', and not left as 'access merely unconfirmed'. O5's two secondary suggestions are also applied: the alternate-route question is kept as the top open point, and W2 is added to declared_sources (O1, O3, O4, O5, S01, T, W1, W2, W4) since the text engages W2's 'farther from spill' reasoning. The plume claim is downgraded to an inference: \"Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact, and Cedar being south likewise means only that Cedar is not reported in the northward drift (inference, not verified safety)\", matching O5/O3's correction. The artifact remains option_2, consistent with O5's 'do not change the artifact'. O4's S03 content is incorporated with the recollection/indirect caveat preserved ('narrows, but does not close, the communication gap'). Limits of my check: I cannot read S01 or S03, so I cannot verify the north-drift advisory or Cedar's equipment; my confirmation of S02's wording is a provider self-report and does not give A1 original access. The residual judgment — treating a single unverified access report as decisive under time pressure — is disclosed in W6's limits, so it is a stated trade-off rather than a misattribution. No generalization of a local suggestion to a different object was found, and no supported W4 content was lost: the S01-based Pine rejection, Cedar's familiar route, and 24h supplies are all retained.",
+      "scope_verbatim": "O5's object (S02's exact washout scope), operation (reword framing, keep alternate-route open point, soften plume claims to inference, add W2 to declarations), and result (W4→W6, artifact unchanged at option_2), plus the O4/S03 incorporation. Checked against my directly read S02 and the full W4/W6 work_text, open_points, declared_sources and use_record. Does not verify S01, S03, or the correctness of option_2 itself.",
+      "finding": "no_issue_found",
+      "usage": {
+        "input_tokens": 19978,
+        "input_tokens_details": {
+          "cached_tokens": 19840
+        },
+        "output_tokens": 562,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20540
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "H",
+      "repeat": 2,
+      "logical_call": 17,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Says inference is correct strength for a source I cannot read, conflating original verification with fidelity to public report.",
+      "observation_verbatim": "I am A2. I directly hold S02 (and T); I do not hold S01 or S03. The application of O5 (my own offer) to W4→W6 is largely faithful to what S02 actually says: S02 reads 'Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.' W6 restates this as 'the sole named route is impassable; no alternate access is mentioned or confirmed' and keeps the alternate-route question as the top open point — this matches S02's scope (no alternate route mentioned, none affirmatively excluded), so I do not find the washout framing overstated. W6 also correctly converts the Pine/Cedar plume claims into labeled inferences from S01's drift direction, which is the right strength for a source I cannot read. Two concrete issues remain. (1) Declaration: W6's declared_sources are [O1, O3, O4, O5, S01, T, W1, W2, W4], but W6 relies on S03's content (Cedar landline/generator/radio, via O4) while S03 itself is not declared; O4 is declared, which partially covers it, but the text says 'per O4 (A3's recollection S03...)' — declaring O4 is defensible as the carrier actually used, so this is a minor gap, not a misattribution. (2) The more substantive point: W6 attributes to Q1 a scope answer and credits O5 as answering it, but Q1's own framing ('no alternate access') presupposed a conclusion S02 does not support; W6 handles this well by refusing to upgrade to 'no access possible.' On the artifact, W6 keeps option_2, and its stated basis is consistent with S02: the only named route to Maple is impassable, so preferring a site not reported blocked is a defensible judgment under time pressure. I do not see a case where W6 claims I verified S03 or S01 — it explicitly says 'I have no direct access to S02 or S03' and labels O5/S02 as indirect, which is accurate (I am the S02 holder; A1 is not). The residual concern is the same one I raised in O5: 'Cedar is not reported in the northward drift (inference, not verified safety)' is correctly hedged, but W6 still treats the S01 advisory as sufficient to reject Pine while treating the Maple washout as sufficient to reject Maple — both single-source adverse reports applied symmetrically, which is at least internally consistent, though neither is verified by A1. Net: the revision is a genuine improvement in evidence-strength precision over W4 and does not misrepresent S02's scope; the main remaining defect is the undeclared S03 reliance (mitigated by declaring O4) and the unverified single-source basis for both exclusions, which W6 discloses.",
+      "scope_verbatim": "O5 application to W4→W6: S02's exact scope (I directly read S02), the 'sole route impassable / no alternate mentioned' framing, the inference-labeling of Pine/Cedar plume claims, declared_sources completeness (S03 via O4), and artifact option_2. I did not read S01 or S03; those are assessed only as peer-reported via W6/O4.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 20304,
+        "input_tokens_details": {
+          "cached_tokens": 20096
+        },
+        "output_tokens": 725,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 21029
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_USE",
+      "member": "A2",
+      "condition": "L",
+      "repeat": 2,
+      "logical_call": 18,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_USE",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": true,
+      "manual_reason": "Quotes old danger statement and approves downgrade; wrongly treats Cedar route/supply absence from partial excerpt and omitted Maple discussion as revision defects.",
+      "observation_verbatim": "I am A2; my only directly readable original is S02 (road to Maple Lodge washed out, inaccessible by car or foot), plus T. I cannot read S01, so W4/W6 are assessed only as visible public reports. The W4→W6 change is an evidential-strength calibration of the same claim: W4 says the cloud \"is drifting north, making Pine Retreat dangerous\" and asserts Pine \"fails the safety criterion\"; W6 says the same S01-based rejection but reframes it as \"an inference ... not a verified plume-path fact,\" and notes Cedar being south \"means only that Cedar is not reported in the northward drift (inference, not verified safety).\" That narrowing is a supported improvement in epistemic labeling, not a change of object: the rejected option (Pine/option_3) and the reasoning link (Pine is north) are preserved. However, W6's excerpt drops the Cedar-selection content present in W4 (familiar route reducing navigation delay; all sites have 24h food/water), which is supported by T's shared_information and is directly relevant to the task's reachability/coordination criteria. Also, neither W4 nor W6 addresses S02: Maple Lodge is on the evacuation plan as safe (T), but my direct original S02 reports its only road washed out, making it inaccessible. W6's calibration of S01-based inferences does not cover this decisive reachability conflict, and W4's \"best remaining option\" framing for Cedar implicitly assumes Maple is unavailable without stating that basis. Within the visible excerpts, the inference-labeling improvement is sound but the removal of supported Cedar rationale and the unaddressed S02 access limit leave the decision basis incomplete. I cannot verify S01's content from originals; my S02 point rests on my own direct original.",
+      "scope_verbatim": "Compared only the supplied W4 and W6 work_text excerpts (both A1-authored, public reports, not S01 originals) against T and my direct original S02. Did not assess omitted offers, full use_record, artifacts, or other versions; no claim about S01's actual wording beyond what W4/W6 report.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 1994,
+        "input_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "output_tokens": 465,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2459
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "F",
+      "repeat": 1,
+      "logical_call": 19,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Says genuine softening from W4 Cedar claim, never distinguishes explicit Pine report.",
+      "observation_verbatim": "I am A3; my direct originals are S03 and T. I cannot read S01 or S02, so the washout scope and the north-drift advisory are only known to me through public reports (O1/O3/O5 and W4/W5/W6). Checking the O5 application (W4→W6): the offer's core content is applied faithfully. W6 restates the washout as \"the sole named route is impassable; no alternate access is mentioned or confirmed\" and explicitly rejects both \"no access possible\" and \"access merely unconfirmed\" — matching O5's proposed framing and its support excerpt (\"the only road to Maple Lodge has been washed out ... making it inaccessible by car or foot\"). W6 also keeps the alternate-route question as the top open point and adds W2 to declared_sources, as O5 asked, and the artifact stays option_2, which O5 did not seek to change. The plume wording is also corrected: W6 says Pine is \"not reported to be clear of the plume\" and that Cedar \"is not reported in the northward drift (inference, not verified safety),\" which is a genuine softening from W4's \"it is not in the reported northward plume path.\" So the target correction largely succeeds. Two residual issues remain. (1) Unsupported strengthening in the limits: W6's limits say \"if the washout covers only the main road and an alternate exists, Maple (the only chemical-incident-designated site) would need re-weighing.\" The phrase \"only the main road\" implies a distinction between a main road and some other road, but S02 as reported says the *only* road was washed out; O5 expressly warns not to upgrade beyond \"only road impassable.\" This is a small reintroduction of the very framing O5 corrected, though it appears only in the limits, not the decisive reasoning. (2) Reported information carried but re-attributed: W6 credits Cedar's landline/generator/radio to \"O4 (A3's recollection S03, indirect/unverified).\" O4 is a public offer; S03 is my direct original, and I can confirm its content is \"A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio\" — a recollection, not on-site verification, so W6's functionality caveat is accurate. But W6's declared_sources list O4 and not S03, even though W6 relies on S03's content as relayed; the declaration is consistent with the access rule (cite the public carrier used) but W6 does not state that S03 itself is held by A3 and unverified by A1, which it does elsewhere. A third, minor point: W6's open_points still say \"No confirmation of current road conditions to Cedar Station beyond the general 'usually under an hour',\" which is consistent with T and not a defect. None of these change the artifact: option_2 remains defensible because Maple's sole named route is reported impassable, Pine is north under a reported northward drift, and Cedar is south with a familiar route and reported (unverified) communications. The decisive relation — a specific recent sole-route washout outweighing a general reachability statement — is preserved, and W6 correctly labels it indirect knowledge via O1/O5. Limits of my check: I cannot verify S02 or S01 from originals, so I cannot confirm the washout's true scope or the advisory's currency; I judge only whether W6's text is faithful to what the public reports say, and whether it over- or under-claims relative to them.",
+      "scope_verbatim": "W4→W6 application of O5 (and O4) on W6:work_text:L1 and open_points, checked against O5's proposed_use and support excerpts, O3, O4, my direct original S03, and T. Focuses on the washout-scope framing, the plume-inference wording, declared_sources completeness, and whether the artifact option_2 remains supported. Does not verify S01/S02 originals (no direct access) or assess W1–W3/W5 artifacts independently.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 19601,
+        "input_tokens_details": {
+          "cached_tokens": 19456
+        },
+        "output_tokens": 892,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20493
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "H",
+      "repeat": 1,
+      "logical_call": 20,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Approves Pine inference framing; does not use appended explicit report as counterevidence.",
+      "observation_verbatim": "I am A3 and hold S03 and T directly; S01, S02 and W2 are only peer-reported to me, so I cannot authenticate O5's restatement of S02. Checking the actual W4→W6 change against O5's proposed_use: the four proposed corrections are mostly carried out. (1) Washout framing: W4 said 'an unverified access failure on the only route is enough to disqualify'; W6 says 'the sole named route is impassable; no alternate access is mentioned or confirmed — not no access possible, and not access merely unconfirmed', and keeps the alternate-route open point as the top limit. That matches O5's requested wording and does not strengthen it. (2) Plume wording: W4 asserted Cedar 'is not in the reported northward plume path' (a factual claim); W6 says 'Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact, and Cedar being south likewise means only that Cedar is not reported in the northward drift (inference, not verified safety)'. This is a correct softening to inference and is not an unsupported strengthening. (3) Declaration: W6 adds W2 (and W4, O3, O5) to declared_sources, so the W2 carrier it rebuts is now declared, resolving the gap O3/O5 flagged. (4) O4/S03: W6 says Cedar 'reportedly has a landline, backup generator, and emergency broadcast radio — which narrows, but does not close, the communication gap, since functionality is unconfirmed on-site'. This matches my own S03 original ('A team member just recalled... functional landline, backup generator, and emergency broadcast radio') as a recollection only, and correctly avoids claiming current functionality; it also fixes W5's overstatement that the gap was 'closed'. The artifact stays option_2, consistent with O5's 'do not change the artifact'. Two residual issues, neither reversing the choice: (a) W6 keeps the phrase 'Pine Retreat (option_3) is rejected on my own direct original S01 (radio advisory: cloud drifting north)' immediately before conceding it is only an inference; 'rejected on' reads slightly stronger than the inference-only basis, though the following sentence supplies the caveat. (b) More substantively, the decision still rests on treating a single, indirectly known adverse report (S02 via O1/O5) as sufficient to set aside the task's shared fact that Maple Lodge is the chemical-incident-designated safe site and that all sites are 'usually reachable in under an hour'; W6 now discloses this precisely and lists the alternate-route counterexample as the top limit, so it is a disclosed judgment under time pressure rather than a misattribution. I cannot verify S02's exact scope myself; only A2's direct reading supports the 'sole named route' wording, and I note that as an indirect basis, not personal verification.",
+      "scope_verbatim": "W4→W6 application of O5 (responding to Q1), plus the carried-over O4/S03 point: washout-scope wording, plume-inference softening, declared_sources completeness (W2 added), S03 communication caveat, artifact unchanged (option_2). Checked against O5's proposed_use, the W4 and W6 work_text/open_points, and my direct original S03; S01/S02 remain peer-reported and unverified by me.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 19927,
+        "input_tokens_details": {
+          "cached_tokens": 19200
+        },
+        "output_tokens": 744,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20671
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "L",
+      "repeat": 1,
+      "logical_call": 21,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": true,
+      "manual_reason": "Mentions W4 dangerous statement but says it merely treats drift as verified plume-path fact and no reported information lost.",
+      "observation_verbatim": "Comparing the supplied W4 and W6 excerpts, W4 states Pine Retreat is dangerous because 'the chemical cloud is drifting north' and asserts Pine 'fails the safety criterion,' treating the northward drift as a verified plume-path fact. W6 retains the same directional inference from the same attributed source (S01 radio advisory: cloud drifting north) but explicitly downgrades it: 'I state this as an inference... this is not a verified plume-path fact,' and likewise notes Cedar being south 'means only that Cedar is not reported in the northward drift (inference, not verified safety).' This is a reduction in evidential strength, not an unsupported strengthening, and the directional object (north) is unchanged, so the object of inference is not altered. The second W4 excerpt's Cedar rationale ('not in the reported northward plume path,' familiar route, 24h supplies) is not contradicted by W6; W6's added caution is consistent with it. I directly access only T and S03; S01 is not in my direct originals, so I cannot verify whether the radio advisory actually says the cloud drifts north — I only observe that both versions attribute it to S01 consistently. Within the supplied excerpts, no unsupported strengthening, loss of reported information, or object substitution is detectable. Limit: W6's excerpt does not show its final option selection, so I cannot confirm downstream consistency of the choice, only that the reasoning excerpts do not conflict.",
+      "scope_verbatim": "Partial public work_text excerpts for W4 and W6 (author A1), plus T and S03 as my direct originals. S01 is not directly accessible to me; I did not assess omitted offers, full use_records, or the complete artifacts. Finding is limited to the supplied excerpt text and does not presume either version true.",
+      "finding": "no_issue_found",
+      "usage": {
+        "input_tokens": 1964,
+        "input_tokens_details": {
+          "cached_tokens": 384
+        },
+        "output_tokens": 390,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2354
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "H",
+      "repeat": 2,
+      "logical_call": 22,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Only evaluates Cedar softening and source-declaration matters; misses Pine report loss.",
+      "observation_verbatim": "I am A3; my direct originals are S03 and T. I cannot read S01 or S02, so the washout and north-drift claims are only peer-reported to me (via W4/W6, O1/O3/O5). Comparing before/after on the object O5 targets (W4's framing of S02's scope and declaration completeness): W4 said 'an unverified access failure on the only route is enough to disqualify a site ... no time to confirm an alternate route'; W6 correctly restates this as 'the sole named route is impassable; no alternate access is mentioned or confirmed' and keeps the alternate-route question as the top limit — this matches O5's report (which I cannot verify from S02) and is a more cautious, not stronger, claim. W6 also correctly softens the Cedar claim to an inference ('Cedar is not reported in the northward drift (inference, not verified safety)'), fixing the overstatement in W4 ('it is not in the reported northward plume path'). W2 is now declared, resolving the O3/O5 declaration gap. However, two residual issues: (1) W6's declared_sources include O4 (and its text relies on S03's content) but not S03 itself, even though O4's proposed_use said to declare S03 if relied upon — the same omission A3 flagged in W5; (2) W6's text says the washout is 'indirect knowledge (S02 via O1/O5)' but O5 in fact reports A2 directly read S02, so 'indirect' is accurate for A1's access yet the citation set is slightly imprecise (O3 also carries the same S02 excerpt and is declared, so this is minor). The artifact remains option_2, unchanged and defensible. My own S03 ('A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio') is a recollection, not on-site verification; W6's caveat that functionality is unconfirmed is faithful to it. I cannot judge whether S02 says what O1/O5 report; A2 is the only holder.",
+      "scope_verbatim": "W4→W6 work_text and open_points on the S02-scope framing (O5's target), the Cedar plume inference, and declared_sources completeness; checked against O5's report, T, and my direct original S03. Does not verify S01/S02 originals, which I cannot read.",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 19927,
+        "input_tokens_details": {
+          "cached_tokens": 19712
+        },
+        "output_tokens": 538,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20465
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "L",
+      "repeat": 2,
+      "logical_call": 23,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": true,
+      "manual_reason": "Quotes exact full old S01-danger sentence, then says shared information does not certify danger so demotion more faithful.",
+      "observation_verbatim": "Comparing the supplied W4 and W6 excerpts (both public reports authored by A1, not S01 originals), the decisive change is in evidential strength, not the object or conclusion. W4 asserts \"My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion.\" W6 retains the same directional premise (\"radio advisory: cloud drifting north\") but reframes the conclusion: \"Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact, and Cedar being south likewise means only that Cedar is not reported in the northward drift (inference, not verified safety).\" This is a cautious weakening consistent with the task's own framing (only listed facts, unresolved limits stated): the shared information does not directly certify Pine's danger or Cedar's safety, so W6's explicit labeling of the inference is more faithful than W4's \"fails the safety criterion\"/\"making Pine Retreat dangerous\" phrasing, which overstates what a drift-direction advisory establishes. The W4 excerpt also credits S01 over W2's \"farther from spill\" reasoning; W6 drops that comparative claim but does not contradict it or lose explicit reported information about the shared facts (familiar Cedar route, 24h supplies) — those are simply outside this excerpt pair. The downstream choice of Cedar (option_2) is unchanged and remains consistent with the weakened inference. I cannot verify S01's actual content or A1's full work_text; within the supplied excerpts I find no unsupported strengthening, no shift to an unsupported object, and no downstream inconsistency introduced by W6.",
+      "scope_verbatim": "Limited to the two supplied public W4/W6 work_text excerpts (A1) and T/S03 as directly accessible; S01 and W2 originals were not read, so the accuracy of the quoted radio advisory and the completeness of either version's reasoning cannot be assessed.",
+      "finding": "no_issue_found",
+      "usage": {
+        "input_tokens": 1964,
+        "input_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "output_tokens": 432,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2396
+      }
+    },
+    {
+      "task": "hb-dev-034-r1-c2",
+      "system": "d0_continuation",
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "condition": "F",
+      "repeat": 2,
+      "logical_call": 24,
+      "input_id": "hb-dev-034-r1-c2--d0_continuation--CHECK_EFFECT",
+      "primary_report_loss_detected": "no",
+      "partial_recognition": false,
+      "old_explicit_danger_statement_discussed_manual": false,
+      "manual_reason": "Approves inference downgrade and falsely says O4 absent despite its presence in declared_sources.",
+      "observation_verbatim": "I hold S03 and T directly; I cannot read S01 or S02, so the washout scope is known to me only through A2's public reports O1/O3/O5. Comparing W4→W6 on the O5-affected elements: (1) Evidence strength on the washout is corrected in the right direction. W4 said 'an unverified access failure on the only route is enough to disqualify' and 'there is no time to confirm an alternate route'; W6 restates it as 'the sole named route is impassable; no alternate access is mentioned or confirmed — not \"no access possible\", and not \"access merely unconfirmed\"' and keeps the alternate-route question as the top open point. That matches what O5 reports S02 says (no alternate mentioned, none affirmatively excluded), and since I cannot read S02 I can only credit this as A2's reported restatement, not verify it. (2) The plume claims are downgraded to inferences, which is a fidelity improvement over W4's flat 'it is not in the reported northward plume path': W6 says Pine 'is not reported to be clear of the plume' and Cedar 'is not reported in the northward drift (inference, not verified safety)'. This is consistent with S01 being a drift advisory, not a plume map. (3) Declaration completeness is improved: W2 is now declared, which W4 omitted despite rebutting W2's 'farther from spill' reasoning (the gap O3/O5 flagged). (4) S03 handling is accurate to my original: W6 says Cedar 'reportedly has a landline, backup generator, and emergency broadcast radio — which narrows, but does not close, the communication gap, since functionality is unconfirmed on-site', and the open point says 'reported only via A3's recollection (S03, through O4), not confirmed on-site or currently functional'. S03 literally reads 'A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio' — a recollection, so W6's caveat is correct and it does not overclaim. Remaining issue: W6's declared_sources include O3 and W4 but not O4, even though the work_text explicitly says it is 'Revised from W4 after applying ... A3's O4' and relies on O4's report of S03. That is an incomplete declaration relative to the text, the same class of defect O3/O5 raised about W2 in W4 — so the fix is partial rather than complete. Also, W6's artifact (option_2) is unchanged and remains defensible on the stated evidence: Maple's sole named route is reported blocked, Pine sits north of a reported northward drift, and Cedar is south with a familiar route; but the decisive weight still rests on a peer-reported washout I cannot verify, and the counterexample in the prior CHECK_EFFECT (washout covers only the main road, Maple remains the only chemical-incident-designated site) is correctly retained as the top limit rather than resolved. Net: the changed reasoning is more cautious and better sourced than W4, with one residual declaration gap (O4 omitted) and no artifact change; I cannot verify S02/S01 from originals.",
+      "scope_verbatim": "W4→W6 work_text, open_points and declared_sources, checked against O5's proposed use, O4's content, my direct original S03, and T. Does not assess W1/W2/W3/W5 artifacts independently and does not verify S01 or S02 originals (no direct access).",
+      "finding": "issue",
+      "usage": {
+        "input_tokens": 19601,
+        "input_tokens_details": {
+          "cached_tokens": 19456
+        },
+        "output_tokens": 770,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 20371
+      }
+    }
+  ]
+}

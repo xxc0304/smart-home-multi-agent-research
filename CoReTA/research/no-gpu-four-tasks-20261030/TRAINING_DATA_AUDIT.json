@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-30",
+  "evidence_type": "OFFLINE_DATA_AUDIT_NOT_MODEL_RESULTS",
+  "roles": {
+    "train": {
+      "n": 1800,
+      "unique_normalized_questions": 1800,
+      "duplicated_question_extra_rows": 0,
+      "unique_answer_strings": 525,
+      "max_answer_repetition": 26,
+      "support_occurrences": 3978,
+      "unique_support_texts": 2155,
+      "largest_support_text_frequencies": [
+        23,
+        22,
+        21,
+        17,
+        16,
+        16,
+        16,
+        15,
+        15,
+        15
+      ],
+      "prompt_tokens_without_chat_template": {
+        "n": 1800,
+        "min": 1486,
+        "median": 2771.0,
+        "p95": 3730,
+        "max": 7319
+      },
+      "supervised_completion_tokens_without_chat_template": {
+        "n": 1800,
+        "min": 16,
+        "median": 20.0,
+        "p95": 27,
+        "max": 36
+      },
+      "all_input_paragraphs_preserved": true,
+      "gold_fields_excluded_from_prompt": true,
+      "assistant_supervision_contains_no_synthetic_reasoning": true,
+      "first_three_ids": [
+        "2hop__641879_47353",
+        "2hop__179444_140822",
+        "2hop__73879_439537"
+      ]
+    },
+    "validation": {
+      "n": 200,
+      "unique_normalized_questions": 200,
+      "duplicated_question_extra_rows": 0,
+      "unique_answer_strings": 59,
+      "max_answer_repetition": 13,
+      "support_occurrences": 425,
+      "unique_support_texts": 253,
+      "largest_support_text_frequencies": [
+        13,
+        13,
+        13,
+        10,
+        9,
+        8,
+        8,
+        7,
+        7,
+        7
+      ],
+      "prompt_tokens_without_chat_template": {
+        "n": 200,
+        "min": 1907,
+        "median": 2861.5,
+        "p95": 3891,
+        "max": 5005
+      },
+      "supervised_completion_tokens_without_chat_template": {
+        "n": 200,
+        "min": 17,
+        "median": 19.5,
+        "p95": 25,
+        "max": 33
+      },
+      "all_input_paragraphs_preserved": true,
+      "gold_fields_excluded_from_prompt": true,
+      "assistant_supervision_contains_no_synthetic_reasoning": true,
+      "first_three_ids": [
+        "2hop__142515_31413",
+        "2hop__14120_89145",
+        "2hop__558996_529125"
+      ]
+    }
+  },
+  "existing_hard_components": {
+    "components": 453,
+    "largest_10": [
+      38,
+      31,
+      28,
+      26,
+      25,
+      24,
+      24,
+      24,
+      23,
+      23
+    ],
+    "singletons": 191
+  },
+  "strict_components": {
+    "n": 248,
+    "largest": 1207
+  },
+  "strict_largest_fraction": 0.6035,
+  "source_split_report": "data/expert-training-20261030-v1/SPLIT_REPORT.json",
+  "model_calls": 0,
+  "training_runs": 0,
+  "limits": [
+    "Exact repetition is not semantic duplication or full memorization testing.",
+    "Gold metadata audits confirm boundaries, not that every annotation is semantically correct.",
+    "Token counts omit actual chat template, hidden reasoning and discussion.",
+    "No trainer is connected; assistant-only loss masking remains unverified.",
+    "Task skill, openness to discussion and useful sharing require real held-out outputs."
+  ]
+}

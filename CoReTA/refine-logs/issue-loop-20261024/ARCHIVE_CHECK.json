@@ -1,0 +1,85 @@
+{
+  "kind": "offline_archive_fact_checks_not_model_replay",
+  "network_requests": 0,
+  "source": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\grounded-three-arm-pilot-live-20261024-r1\\hb-dev-005-r1",
+  "checks": {
+    "005_checker_is_A3_author_is_A2": true,
+    "005_checker_has_S03_but_author_has_S02": true,
+    "005_application_refs_do_not_claim_S03": true,
+    "005_W5_declares_its_author_did_not_read_peer_originals": true,
+    "005_W6_mentions_O5_but_omits_declaration": true,
+    "005_W7_adds_O5_declaration": true,
+    "005_W7_still_selects_option_2": true,
+    "runtime_helper_distinguishes_checker_and_work_author": true,
+    "runtime_helper_identifies_current_application_actor": true,
+    "runtime_helper_preserves_private_materials_and_legal_citations": true
+  },
+  "passed": true,
+  "runtime_helper_context_preview": {
+    "CHECKER_ACCESS": {
+      "agent_id": "A3",
+      "direct_original_refs": [
+        "S03",
+        "T"
+      ],
+      "public_report_refs": [
+        "O1",
+        "O2",
+        "O3",
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5"
+      ],
+      "reported_originals": [
+        {
+          "reported_ref": "S01",
+          "via_public_refs": [
+            "O1"
+          ],
+          "status": "peer_metadata_not_verified"
+        },
+        {
+          "reported_ref": "S02",
+          "via_public_refs": [
+            "W5"
+          ],
+          "status": "peer_metadata_not_verified"
+        },
+        {
+          "reported_ref": "S04",
+          "via_public_refs": [
+            "O3"
+          ],
+          "status": "peer_metadata_not_verified"
+        }
+      ],
+      "uncollected_declaration_meaning": "not_collected means this stage did not ask for source declarations; an empty list does not mean the author used no materials. Collected declarations are claims, not verification."
+    },
+    "WORK_AUTHOR_ACCESS": {
+      "W2": {
+        "author": "A2",
+        "available_original_refs": [
+          "S02",
+          "T"
+        ]
+      },
+      "W5": {
+        "author": "A2",
+        "available_original_refs": [
+          "S02",
+          "T"
+        ]
+      }
+    },
+    "APPLICATION_ACTOR_ACCESS": {
+      "agent_id": "A2",
+      "available_original_refs": [
+        "S02",
+        "T"
+      ]
+    }
+  },
+  "limits": "Verifies stored facts only. Does not prove the new prompt reduces false positives or improves answers."
+}

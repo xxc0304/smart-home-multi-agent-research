@@ -1,0 +1,42 @@
+[
+  {
+    "scenario": "replacement still depends on old G",
+    "change": "dependency=still_used",
+    "expected": "open"
+  },
+  {
+    "scenario": "replacement produces nonzero value",
+    "change": "current observed_value=1, outcome=counterexample",
+    "expected": "open"
+  },
+  {
+    "scenario": "old observation corrected but marked supported",
+    "change": "fresh exact observation differs from original but assessment=supported without explanation",
+    "expected": "open pending clarification"
+  },
+  {
+    "scenario": "original object unavailable",
+    "change": "historical case definition missing",
+    "expected": "preflight blocks call; no invented observation"
+  },
+  {
+    "scenario": "missing required original case",
+    "change": "original_case_reviews=[]",
+    "expected": "I1 open; preserve other independently valid issues"
+  },
+  {
+    "scenario": "checker equals builder",
+    "change": "checker=A1",
+    "expected": "preflight blocks call"
+  },
+  {
+    "scenario": "same-object repair interpreted as whole-object removal",
+    "change": "resolution=same_object_repaired, dependency=still_used",
+    "expected": "do not demand removal of F; must explain use of revised version; ambiguity stays unresolved"
+  },
+  {
+    "scenario": "new contradiction on closing issue",
+    "change": "new_findings related_issue_handle=I1 with valid current counterexample",
+    "expected": "I1 open even if review says resolved"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "fields": [
+    "safe_for_task",
+    "accessible_for_task",
+    "ready_for_task"
+  ],
+  "field_meanings": {
+    "safe_for_task": "Safe for the particular people, objects, activities and time window stated in the task; a possible risk is not automatically a confirmed prohibition.",
+    "accessible_for_task": "At least one usable access or transport method exists for the stated group or cargo within the task time window; one blocked route does not prove all routes blocked.",
+    "ready_for_task": "Currently ready, or explicitly ready by the required start, for the stated use; reputation, equipment ownership or beginning preparation alone does not confirm readiness."
+  },
+  "value_types": [
+    "boolean",
+    "null"
+  ],
+  "field_values_provided_by_host": false,
+  "field_requirements_provided_by_host": false,
+  "note": "Manual task vocabulary supplied equally to both arms; representation-assisted screening, not automatic schema discovery."
+}

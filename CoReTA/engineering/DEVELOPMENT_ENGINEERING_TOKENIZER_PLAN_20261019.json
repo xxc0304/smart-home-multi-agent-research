@@ -1,0 +1,186 @@
+{
+  "version": "coreta-batch/1",
+  "input_counting": {
+    "mode": "local_tokenizer_estimate",
+    "tokenizer": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\tokenizer-v4.1-flash-1017\\tokenizer.json",
+    "sha256": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b"
+  },
+  "split": "engineering",
+  "bundle": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019",
+  "config": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\config\\deepseek_flash.json",
+  "design_root": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\v0.3",
+  "source_hashes": {
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\config\\deepseek_flash.json": "e8b175e535373c3c401d630b14ed78fd156f39d4e7ab9c23071243c28981393a",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\v0.3\\coreta.schema.json": "963552ce9c8463d17191645dbe90c07b5c0873a3a409c18bad4aab6182d15c69",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\v0.3\\PROMPTS.md": "3d55704794deb40bd5d3b89fb8eecde6af16042edaad00b4009a1beba946eaec",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\manifest.json": "9d122673b353b3c34e8348cd73385ab3c9ded452f075a5225c81645fc8590d31"
+  },
+  "task_count": 6,
+  "job_count": 18,
+  "jobs": [
+    {
+      "job_id": "bd822c5d54e77b9bff1f",
+      "task_id": "gsm8k/train/6388",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\d4ab1a9fb822556e.json",
+      "task_sha256": "8dc8df593c1bf1c7029690b33bfad33f5dd9b9e576120fbd1ed267b06d527e4c",
+      "system": "static_debate",
+      "seed": 17
+    },
+    {
+      "job_id": "ddacbd4e12c4419476b6",
+      "task_id": "gsm8k/train/6388",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\d4ab1a9fb822556e.json",
+      "task_sha256": "8dc8df593c1bf1c7029690b33bfad33f5dd9b9e576120fbd1ed267b06d527e4c",
+      "system": "coreta",
+      "seed": 17
+    },
+    {
+      "job_id": "e310f702bf9dc5e49e6c",
+      "task_id": "gsm8k/train/6388",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\d4ab1a9fb822556e.json",
+      "task_sha256": "8dc8df593c1bf1c7029690b33bfad33f5dd9b9e576120fbd1ed267b06d527e4c",
+      "system": "independent_aggregate",
+      "seed": 17
+    },
+    {
+      "job_id": "1efc739f094e54fd6d65",
+      "task_id": "gsm8k/train/3018",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\3addab55972fc0bf.json",
+      "task_sha256": "3989ea3c7bcf2b01de9c4b8f8f42ac51146eb43a625d61819e0229fc4e9fdcdf",
+      "system": "independent_aggregate",
+      "seed": 17
+    },
+    {
+      "job_id": "0f3894c0859d99175093",
+      "task_id": "gsm8k/train/3018",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\3addab55972fc0bf.json",
+      "task_sha256": "3989ea3c7bcf2b01de9c4b8f8f42ac51146eb43a625d61819e0229fc4e9fdcdf",
+      "system": "static_debate",
+      "seed": 17
+    },
+    {
+      "job_id": "98b315b54c857341e50a",
+      "task_id": "gsm8k/train/3018",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\3addab55972fc0bf.json",
+      "task_sha256": "3989ea3c7bcf2b01de9c4b8f8f42ac51146eb43a625d61819e0229fc4e9fdcdf",
+      "system": "coreta",
+      "seed": 17
+    },
+    {
+      "job_id": "ef2c29b38227877c5959",
+      "task_id": "gsm8k/train/1299",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\9f8f6d56844ebcf2.json",
+      "task_sha256": "72b677de3584837af62dc9fb27daddf3b387982b71bf2f6d191269ce599977eb",
+      "system": "coreta",
+      "seed": 17
+    },
+    {
+      "job_id": "3b5920523ffb761b0d75",
+      "task_id": "gsm8k/train/1299",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\9f8f6d56844ebcf2.json",
+      "task_sha256": "72b677de3584837af62dc9fb27daddf3b387982b71bf2f6d191269ce599977eb",
+      "system": "independent_aggregate",
+      "seed": 17
+    },
+    {
+      "job_id": "9156ad81f8aa90066796",
+      "task_id": "gsm8k/train/1299",
+      "family": "gsm8k",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\9f8f6d56844ebcf2.json",
+      "task_sha256": "72b677de3584837af62dc9fb27daddf3b387982b71bf2f6d191269ce599977eb",
+      "system": "static_debate",
+      "seed": 17
+    },
+    {
+      "job_id": "466cd8bdb4dbdb860d1f",
+      "task_id": "mbpp/train/802",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a6207bc5735be1d3.json",
+      "task_sha256": "a86adb23cee7b54f7444c9dc6d3db8c1620b62573ddb5e99faac44171811e524",
+      "system": "static_debate",
+      "seed": 17
+    },
+    {
+      "job_id": "ab810b1d8fd498263248",
+      "task_id": "mbpp/train/802",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a6207bc5735be1d3.json",
+      "task_sha256": "a86adb23cee7b54f7444c9dc6d3db8c1620b62573ddb5e99faac44171811e524",
+      "system": "independent_aggregate",
+      "seed": 17
+    },
+    {
+      "job_id": "ea835e1e920b0cdf854b",
+      "task_id": "mbpp/train/802",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\a6207bc5735be1d3.json",
+      "task_sha256": "a86adb23cee7b54f7444c9dc6d3db8c1620b62573ddb5e99faac44171811e524",
+      "system": "coreta",
+      "seed": 17
+    },
+    {
+      "job_id": "9069197d23fb67bba679",
+      "task_id": "mbpp/train/615",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\fe7734dbe7e75390.json",
+      "task_sha256": "67f89b3d12e10b6000845487d5464c21bb9b1ff5c3fa0f8dc213154043a4cbd0",
+      "system": "independent_aggregate",
+      "seed": 17
+    },
+    {
+      "job_id": "52ba8ae4aa0be0be3a89",
+      "task_id": "mbpp/train/615",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\fe7734dbe7e75390.json",
+      "task_sha256": "67f89b3d12e10b6000845487d5464c21bb9b1ff5c3fa0f8dc213154043a4cbd0",
+      "system": "coreta",
+      "seed": 17
+    },
+    {
+      "job_id": "046227f7cd3b8e7710bd",
+      "task_id": "mbpp/train/615",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\fe7734dbe7e75390.json",
+      "task_sha256": "67f89b3d12e10b6000845487d5464c21bb9b1ff5c3fa0f8dc213154043a4cbd0",
+      "system": "static_debate",
+      "seed": 17
+    },
+    {
+      "job_id": "45596b2579bc4db69ee2",
+      "task_id": "mbpp/train/607",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\d7a940bde07eca39.json",
+      "task_sha256": "f77d0fb3ef6a77141dd863c3f2a2f26b211549f1b772e579f45b35c5accca1f2",
+      "system": "coreta",
+      "seed": 17
+    },
+    {
+      "job_id": "30afde55b12666756565",
+      "task_id": "mbpp/train/607",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\d7a940bde07eca39.json",
+      "task_sha256": "f77d0fb3ef6a77141dd863c3f2a2f26b211549f1b772e579f45b35c5accca1f2",
+      "system": "independent_aggregate",
+      "seed": 17
+    },
+    {
+      "job_id": "65de97ea2cf331b7b422",
+      "task_id": "mbpp/train/607",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\d7a940bde07eca39.json",
+      "task_sha256": "f77d0fb3ef6a77141dd863c3f2a2f26b211549f1b772e579f45b35c5accca1f2",
+      "system": "static_debate",
+      "seed": 17
+    }
+  ],
+  "normal_call_upper_bound": 156,
+  "model_calls_executed": 0
+}

@@ -1,0 +1,2267 @@
+{
+  "scope": "Offline source binding only. Explicit old-to-new schema migration, not a new model trajectory.",
+  "external_model_requests": 0,
+  "original_frozen_files_unchanged": true,
+  "legacy_atomicity_or_semantics_validated": false,
+  "attempts": [
+    {
+      "original_attempt": 0,
+      "migration": {
+        "migrated": [
+          {
+            "fact_id": "F01",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 4,
+              "end": 152,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F01:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F02",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 165,
+              "end": 194,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F02:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F03",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 195,
+              "end": 231,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F03:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F04",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 232,
+              "end": 258,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F04:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F05",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 259,
+              "end": 270,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F05:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F06",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 275,
+              "end": 335,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F06:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F07",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 341,
+              "end": 361,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F07:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F08",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 363,
+              "end": 381,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F08:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F09",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 4,
+              "end": 152,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F09:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F10",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 275,
+              "end": 335,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F10:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          }
+        ],
+        "excluded": [
+          {
+            "original_fact": {
+              "fact_id": "F11",
+              "source_locator": {
+                "kind": "json_pointer",
+                "start": 0,
+                "end": 0,
+                "pointer": "/MATERIAL/task/task_type"
+              },
+              "quoted_text": "math",
+              "normalized_fact": "The task type is math.",
+              "kind": "domain",
+              "coverage_status": "complete_for_explicit_list"
+            },
+            "reason": "No exact supported public source mapping; task metadata and null entry points are not extracted."
+          },
+          {
+            "original_fact": {
+              "fact_id": "F12",
+              "source_locator": {
+                "kind": "json_pointer",
+                "start": 0,
+                "end": 0,
+                "pointer": "/MATERIAL/task/entry_point"
+              },
+              "quoted_text": "null",
+              "normalized_fact": "No code entry point is specified.",
+              "kind": "domain",
+              "coverage_status": "complete_for_explicit_list"
+            },
+            "reason": "No exact supported public source mapping; task metadata and null entry points are not extracted."
+          }
+        ]
+      },
+      "raw_quotes_changed": false,
+      "source_fact_count": 10,
+      "bound_fact_count": 9,
+      "pending_fact_ids": [
+        "F02"
+      ],
+      "state": {
+        "original_payload": {
+          "facts": [
+            {
+              "fact_id": "F01",
+              "source_id": "prompt",
+              "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+              "normalized_fact": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9.",
+              "kind": "domain",
+              "check_items": [
+                {
+                  "item_id": "F01:legacy",
+                  "description": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9."
+                }
+              ]
+            },
+            {
+              "fact_id": "F02",
+              "source_id": "prompt",
+              "quoted_text": "p(0,0) =p(1,0) = p( - 1,0)",
+              "normalized_fact": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F02:legacy",
+                  "description": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0."
+                }
+              ]
+            },
+            {
+              "fact_id": "F03",
+              "source_id": "prompt",
+              "quoted_text": "= p(0,1) = p(0, - 1)",
+              "normalized_fact": "Constraint: p(0,1)=0 and p(0,-1)=0.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F03:legacy",
+                  "description": "Constraint: p(0,1)=0 and p(0,-1)=0."
+                }
+              ]
+            },
+            {
+              "fact_id": "F04",
+              "source_id": "prompt",
+              "quoted_text": "= p(1,1) = p(1, - 1)",
+              "normalized_fact": "Constraint: p(1,1)=0 and p(1,-1)=0.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F04:legacy",
+                  "description": "Constraint: p(1,1)=0 and p(1,-1)=0."
+                }
+              ]
+            },
+            {
+              "fact_id": "F05",
+              "source_id": "prompt",
+              "quoted_text": "= p(2,2) = 0.",
+              "normalized_fact": "Constraint: p(2,2)=0.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F05:legacy",
+                  "description": "Constraint: p(2,2)=0."
+                }
+              ]
+            },
+            {
+              "fact_id": "F06",
+              "source_id": "prompt",
+              "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+              "normalized_fact": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F06:legacy",
+                  "description": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints."
+                }
+              ]
+            },
+            {
+              "fact_id": "F07",
+              "source_id": "prompt",
+              "quoted_text": "where $r$ and $s$ are not integers.",
+              "normalized_fact": "The coordinates r and s of the target point are not integers.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F07:legacy",
+                  "description": "The coordinates r and s of the target point are not integers."
+                }
+              ]
+            },
+            {
+              "fact_id": "F08",
+              "source_id": "prompt",
+              "quoted_text": "Find the point $(r,s).$",
+              "normalized_fact": "Objective: determine the point (r,s).",
+              "kind": "objective",
+              "check_items": [
+                {
+                  "item_id": "F08:legacy",
+                  "description": "Objective: determine the point (r,s)."
+                }
+              ]
+            },
+            {
+              "fact_id": "F09",
+              "source_id": "prompt",
+              "quoted_text": "a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3",
+              "normalized_fact": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex.",
+              "kind": "ambiguity",
+              "check_items": [
+                {
+                  "item_id": "F09:legacy",
+                  "description": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex."
+                }
+              ]
+            },
+            {
+              "fact_id": "F10",
+              "source_id": "prompt",
+              "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+              "normalized_fact": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted.",
+              "kind": "ambiguity",
+              "check_items": [
+                {
+                  "item_id": "F10:legacy",
+                  "description": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted."
+                }
+              ]
+            }
+          ],
+          "coverage_status": "partial"
+        },
+        "current_facts": [
+          {
+            "fact_id": "F01",
+            "source_id": "prompt",
+            "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+            "normalized_fact": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9.",
+            "kind": "domain",
+            "check_items": [
+              {
+                "item_id": "F01:legacy",
+                "description": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9."
+              }
+            ]
+          },
+          {
+            "fact_id": "F02",
+            "source_id": "prompt",
+            "quoted_text": "p(0,0) =p(1,0) = p( - 1,0)",
+            "normalized_fact": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F02:legacy",
+                "description": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0."
+              }
+            ]
+          },
+          {
+            "fact_id": "F03",
+            "source_id": "prompt",
+            "quoted_text": "= p(0,1) = p(0, - 1)",
+            "normalized_fact": "Constraint: p(0,1)=0 and p(0,-1)=0.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F03:legacy",
+                "description": "Constraint: p(0,1)=0 and p(0,-1)=0."
+              }
+            ]
+          },
+          {
+            "fact_id": "F04",
+            "source_id": "prompt",
+            "quoted_text": "= p(1,1) = p(1, - 1)",
+            "normalized_fact": "Constraint: p(1,1)=0 and p(1,-1)=0.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F04:legacy",
+                "description": "Constraint: p(1,1)=0 and p(1,-1)=0."
+              }
+            ]
+          },
+          {
+            "fact_id": "F05",
+            "source_id": "prompt",
+            "quoted_text": "= p(2,2) = 0.",
+            "normalized_fact": "Constraint: p(2,2)=0.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F05:legacy",
+                "description": "Constraint: p(2,2)=0."
+              }
+            ]
+          },
+          {
+            "fact_id": "F06",
+            "source_id": "prompt",
+            "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+            "normalized_fact": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F06:legacy",
+                "description": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints."
+              }
+            ]
+          },
+          {
+            "fact_id": "F07",
+            "source_id": "prompt",
+            "quoted_text": "where $r$ and $s$ are not integers.",
+            "normalized_fact": "The coordinates r and s of the target point are not integers.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F07:legacy",
+                "description": "The coordinates r and s of the target point are not integers."
+              }
+            ]
+          },
+          {
+            "fact_id": "F08",
+            "source_id": "prompt",
+            "quoted_text": "Find the point $(r,s).$",
+            "normalized_fact": "Objective: determine the point (r,s).",
+            "kind": "objective",
+            "check_items": [
+              {
+                "item_id": "F08:legacy",
+                "description": "Objective: determine the point (r,s)."
+              }
+            ]
+          },
+          {
+            "fact_id": "F09",
+            "source_id": "prompt",
+            "quoted_text": "a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3",
+            "normalized_fact": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex.",
+            "kind": "ambiguity",
+            "check_items": [
+              {
+                "item_id": "F09:legacy",
+                "description": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex."
+              }
+            ]
+          },
+          {
+            "fact_id": "F10",
+            "source_id": "prompt",
+            "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+            "normalized_fact": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted.",
+            "kind": "ambiguity",
+            "check_items": [
+              {
+                "item_id": "F10:legacy",
+                "description": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted."
+              }
+            ]
+          }
+        ],
+        "bindings": {
+          "F01": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 6,
+                "end": 97
+              }
+            ],
+            "start": 6,
+            "end": 97
+          },
+          "F02": {
+            "status": "unmatched",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 0,
+            "candidate_spans": []
+          },
+          "F03": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 155,
+                "end": 175
+              }
+            ],
+            "start": 155,
+            "end": 175
+          },
+          "F04": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 175,
+                "end": 195
+              }
+            ],
+            "start": 175,
+            "end": 195
+          },
+          "F05": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 196,
+                "end": 209
+              }
+            ],
+            "start": 196,
+            "end": 209
+          },
+          "F06": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 222,
+                "end": 294
+              }
+            ],
+            "start": 222,
+            "end": 294
+          },
+          "F07": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 296,
+                "end": 331
+              }
+            ],
+            "start": 296,
+            "end": 331
+          },
+          "F08": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 333,
+                "end": 356
+              }
+            ],
+            "start": 333,
+            "end": 356
+          },
+          "F09": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 15,
+                "end": 96
+              }
+            ],
+            "start": 15,
+            "end": 96
+          },
+          "F10": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 222,
+                "end": 294
+              }
+            ],
+            "start": 222,
+            "end": 294
+          }
+        },
+        "pending_fact_ids": [
+          "F02"
+        ],
+        "semantic_status": "model_asserted",
+        "history": [
+          {
+            "original_payload": {
+              "facts": [
+                {
+                  "fact_id": "F01",
+                  "source_id": "prompt",
+                  "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+                  "normalized_fact": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9.",
+                  "kind": "domain",
+                  "check_items": [
+                    {
+                      "item_id": "F01:legacy",
+                      "description": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F02",
+                  "source_id": "prompt",
+                  "quoted_text": "p(0,0) =p(1,0) = p( - 1,0)",
+                  "normalized_fact": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F02:legacy",
+                      "description": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F03",
+                  "source_id": "prompt",
+                  "quoted_text": "= p(0,1) = p(0, - 1)",
+                  "normalized_fact": "Constraint: p(0,1)=0 and p(0,-1)=0.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F03:legacy",
+                      "description": "Constraint: p(0,1)=0 and p(0,-1)=0."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F04",
+                  "source_id": "prompt",
+                  "quoted_text": "= p(1,1) = p(1, - 1)",
+                  "normalized_fact": "Constraint: p(1,1)=0 and p(1,-1)=0.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F04:legacy",
+                      "description": "Constraint: p(1,1)=0 and p(1,-1)=0."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F05",
+                  "source_id": "prompt",
+                  "quoted_text": "= p(2,2) = 0.",
+                  "normalized_fact": "Constraint: p(2,2)=0.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F05:legacy",
+                      "description": "Constraint: p(2,2)=0."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F06",
+                  "source_id": "prompt",
+                  "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+                  "normalized_fact": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F06:legacy",
+                      "description": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F07",
+                  "source_id": "prompt",
+                  "quoted_text": "where $r$ and $s$ are not integers.",
+                  "normalized_fact": "The coordinates r and s of the target point are not integers.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F07:legacy",
+                      "description": "The coordinates r and s of the target point are not integers."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F08",
+                  "source_id": "prompt",
+                  "quoted_text": "Find the point $(r,s).$",
+                  "normalized_fact": "Objective: determine the point (r,s).",
+                  "kind": "objective",
+                  "check_items": [
+                    {
+                      "item_id": "F08:legacy",
+                      "description": "Objective: determine the point (r,s)."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F09",
+                  "source_id": "prompt",
+                  "quoted_text": "a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3",
+                  "normalized_fact": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex.",
+                  "kind": "ambiguity",
+                  "check_items": [
+                    {
+                      "item_id": "F09:legacy",
+                      "description": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F10",
+                  "source_id": "prompt",
+                  "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+                  "normalized_fact": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted.",
+                  "kind": "ambiguity",
+                  "check_items": [
+                    {
+                      "item_id": "F10:legacy",
+                      "description": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted."
+                    }
+                  ]
+                }
+              ],
+              "coverage_status": "partial"
+            },
+            "current_facts": [
+              {
+                "fact_id": "F01",
+                "source_id": "prompt",
+                "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+                "normalized_fact": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9.",
+                "kind": "domain",
+                "check_items": [
+                  {
+                    "item_id": "F01:legacy",
+                    "description": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F02",
+                "source_id": "prompt",
+                "quoted_text": "p(0,0) =p(1,0) = p( - 1,0)",
+                "normalized_fact": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F02:legacy",
+                    "description": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F03",
+                "source_id": "prompt",
+                "quoted_text": "= p(0,1) = p(0, - 1)",
+                "normalized_fact": "Constraint: p(0,1)=0 and p(0,-1)=0.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F03:legacy",
+                    "description": "Constraint: p(0,1)=0 and p(0,-1)=0."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F04",
+                "source_id": "prompt",
+                "quoted_text": "= p(1,1) = p(1, - 1)",
+                "normalized_fact": "Constraint: p(1,1)=0 and p(1,-1)=0.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F04:legacy",
+                    "description": "Constraint: p(1,1)=0 and p(1,-1)=0."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F05",
+                "source_id": "prompt",
+                "quoted_text": "= p(2,2) = 0.",
+                "normalized_fact": "Constraint: p(2,2)=0.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F05:legacy",
+                    "description": "Constraint: p(2,2)=0."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F06",
+                "source_id": "prompt",
+                "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+                "normalized_fact": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F06:legacy",
+                    "description": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F07",
+                "source_id": "prompt",
+                "quoted_text": "where $r$ and $s$ are not integers.",
+                "normalized_fact": "The coordinates r and s of the target point are not integers.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F07:legacy",
+                    "description": "The coordinates r and s of the target point are not integers."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F08",
+                "source_id": "prompt",
+                "quoted_text": "Find the point $(r,s).$",
+                "normalized_fact": "Objective: determine the point (r,s).",
+                "kind": "objective",
+                "check_items": [
+                  {
+                    "item_id": "F08:legacy",
+                    "description": "Objective: determine the point (r,s)."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F09",
+                "source_id": "prompt",
+                "quoted_text": "a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3",
+                "normalized_fact": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex.",
+                "kind": "ambiguity",
+                "check_items": [
+                  {
+                    "item_id": "F09:legacy",
+                    "description": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F10",
+                "source_id": "prompt",
+                "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+                "normalized_fact": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted.",
+                "kind": "ambiguity",
+                "check_items": [
+                  {
+                    "item_id": "F10:legacy",
+                    "description": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted."
+                  }
+                ]
+              }
+            ],
+            "bindings": {
+              "F01": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 6,
+                    "end": 97
+                  }
+                ],
+                "start": 6,
+                "end": 97
+              },
+              "F02": {
+                "status": "unmatched",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 0,
+                "candidate_spans": []
+              },
+              "F03": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 155,
+                    "end": 175
+                  }
+                ],
+                "start": 155,
+                "end": 175
+              },
+              "F04": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 175,
+                    "end": 195
+                  }
+                ],
+                "start": 175,
+                "end": 195
+              },
+              "F05": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 196,
+                    "end": 209
+                  }
+                ],
+                "start": 196,
+                "end": 209
+              },
+              "F06": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 222,
+                    "end": 294
+                  }
+                ],
+                "start": 222,
+                "end": 294
+              },
+              "F07": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 296,
+                    "end": 331
+                  }
+                ],
+                "start": 296,
+                "end": 331
+              },
+              "F08": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 333,
+                    "end": 356
+                  }
+                ],
+                "start": 333,
+                "end": 356
+              },
+              "F09": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 15,
+                    "end": 96
+                  }
+                ],
+                "start": 15,
+                "end": 96
+              },
+              "F10": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 222,
+                    "end": 294
+                  }
+                ],
+                "start": 222,
+                "end": 294
+              }
+            },
+            "pending_fact_ids": [
+              "F02"
+            ],
+            "semantic_status": "model_asserted"
+          }
+        ]
+      }
+    },
+    {
+      "original_attempt": 1,
+      "migration": {
+        "migrated": [
+          {
+            "fact_id": "F01",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 4,
+              "end": 152,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F01:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F02",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 165,
+              "end": 194,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F02:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F03",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 195,
+              "end": 231,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F03:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F04",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 232,
+              "end": 258,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F04:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F05",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 259,
+              "end": 270,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F05:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F06",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 275,
+              "end": 335,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F06:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F07",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 341,
+              "end": 361,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F07:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F08",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 363,
+              "end": 381,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F08:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F09",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 4,
+              "end": 152,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F09:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          },
+          {
+            "fact_id": "F10",
+            "original_source_locator": {
+              "kind": "prompt_span",
+              "start": 275,
+              "end": 335,
+              "pointer": ""
+            },
+            "new_source_id": "prompt",
+            "added_item_id": "F10:legacy",
+            "atomicity": "not_established; legacy grouping retained for binding-only replay"
+          }
+        ],
+        "excluded": [
+          {
+            "original_fact": {
+              "fact_id": "F11",
+              "source_locator": {
+                "kind": "json_pointer",
+                "start": 0,
+                "end": 0,
+                "pointer": "/MATERIAL/task/task_type"
+              },
+              "quoted_text": "math",
+              "normalized_fact": "The task type is math.",
+              "kind": "domain",
+              "coverage_status": "complete_for_explicit_list"
+            },
+            "reason": "No exact supported public source mapping; task metadata and null entry points are not extracted."
+          },
+          {
+            "original_fact": {
+              "fact_id": "F12",
+              "source_locator": {
+                "kind": "json_pointer",
+                "start": 0,
+                "end": 0,
+                "pointer": "/MATERIAL/task/entry_point"
+              },
+              "quoted_text": "null",
+              "normalized_fact": "No code entry point is specified.",
+              "kind": "domain",
+              "coverage_status": "complete_for_explicit_list"
+            },
+            "reason": "No exact supported public source mapping; task metadata and null entry points are not extracted."
+          }
+        ]
+      },
+      "raw_quotes_changed": false,
+      "source_fact_count": 10,
+      "bound_fact_count": 10,
+      "pending_fact_ids": [],
+      "state": {
+        "original_payload": {
+          "facts": [
+            {
+              "fact_id": "F01",
+              "source_id": "prompt",
+              "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+              "normalized_fact": "p is defined as the general polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9.",
+              "kind": "domain",
+              "check_items": [
+                {
+                  "item_id": "F01:legacy",
+                  "description": "p is defined as the general polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9."
+                }
+              ]
+            },
+            {
+              "fact_id": "F02",
+              "source_id": "prompt",
+              "quoted_text": "p(0,0) &=p(1,0) = p( - 1,0)",
+              "normalized_fact": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F02:legacy",
+                  "description": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0."
+                }
+              ]
+            },
+            {
+              "fact_id": "F03",
+              "source_id": "prompt",
+              "quoted_text": "= p(0,1) = p(0, - 1)",
+              "normalized_fact": "Constraint: p(0,1)=0 and p(0,-1)=0.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F03:legacy",
+                  "description": "Constraint: p(0,1)=0 and p(0,-1)=0."
+                }
+              ]
+            },
+            {
+              "fact_id": "F04",
+              "source_id": "prompt",
+              "quoted_text": "= p(1,1) = p(1, - 1)",
+              "normalized_fact": "Constraint: p(1,1)=0 and p(1,-1)=0.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F04:legacy",
+                  "description": "Constraint: p(1,1)=0 and p(1,-1)=0."
+                }
+              ]
+            },
+            {
+              "fact_id": "F05",
+              "source_id": "prompt",
+              "quoted_text": "= p(2,2) = 0.",
+              "normalized_fact": "Constraint: p(2,2)=0.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F05:legacy",
+                  "description": "Constraint: p(2,2)=0."
+                }
+              ]
+            },
+            {
+              "fact_id": "F06",
+              "source_id": "prompt",
+              "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+              "normalized_fact": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F06:legacy",
+                  "description": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints."
+                }
+              ]
+            },
+            {
+              "fact_id": "F07",
+              "source_id": "prompt",
+              "quoted_text": "where $r$ and $s$ are not integers.",
+              "normalized_fact": "The coordinates r and s of the target point are not integers.",
+              "kind": "constraint",
+              "check_items": [
+                {
+                  "item_id": "F07:legacy",
+                  "description": "The coordinates r and s of the target point are not integers."
+                }
+              ]
+            },
+            {
+              "fact_id": "F08",
+              "source_id": "prompt",
+              "quoted_text": "Find the point $(r,s).$",
+              "normalized_fact": "Objective: determine the point (r,s).",
+              "kind": "objective",
+              "check_items": [
+                {
+                  "item_id": "F08:legacy",
+                  "description": "Objective: determine the point (r,s)."
+                }
+              ]
+            },
+            {
+              "fact_id": "F09",
+              "source_id": "prompt",
+              "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+              "normalized_fact": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex.",
+              "kind": "ambiguity",
+              "check_items": [
+                {
+                  "item_id": "F09:legacy",
+                  "description": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex."
+                }
+              ]
+            },
+            {
+              "fact_id": "F10",
+              "source_id": "prompt",
+              "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+              "normalized_fact": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted.",
+              "kind": "ambiguity",
+              "check_items": [
+                {
+                  "item_id": "F10:legacy",
+                  "description": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted."
+                }
+              ]
+            }
+          ],
+          "coverage_status": "partial"
+        },
+        "current_facts": [
+          {
+            "fact_id": "F01",
+            "source_id": "prompt",
+            "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+            "normalized_fact": "p is defined as the general polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9.",
+            "kind": "domain",
+            "check_items": [
+              {
+                "item_id": "F01:legacy",
+                "description": "p is defined as the general polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9."
+              }
+            ]
+          },
+          {
+            "fact_id": "F02",
+            "source_id": "prompt",
+            "quoted_text": "p(0,0) &=p(1,0) = p( - 1,0)",
+            "normalized_fact": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F02:legacy",
+                "description": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0."
+              }
+            ]
+          },
+          {
+            "fact_id": "F03",
+            "source_id": "prompt",
+            "quoted_text": "= p(0,1) = p(0, - 1)",
+            "normalized_fact": "Constraint: p(0,1)=0 and p(0,-1)=0.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F03:legacy",
+                "description": "Constraint: p(0,1)=0 and p(0,-1)=0."
+              }
+            ]
+          },
+          {
+            "fact_id": "F04",
+            "source_id": "prompt",
+            "quoted_text": "= p(1,1) = p(1, - 1)",
+            "normalized_fact": "Constraint: p(1,1)=0 and p(1,-1)=0.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F04:legacy",
+                "description": "Constraint: p(1,1)=0 and p(1,-1)=0."
+              }
+            ]
+          },
+          {
+            "fact_id": "F05",
+            "source_id": "prompt",
+            "quoted_text": "= p(2,2) = 0.",
+            "normalized_fact": "Constraint: p(2,2)=0.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F05:legacy",
+                "description": "Constraint: p(2,2)=0."
+              }
+            ]
+          },
+          {
+            "fact_id": "F06",
+            "source_id": "prompt",
+            "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+            "normalized_fact": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F06:legacy",
+                "description": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints."
+              }
+            ]
+          },
+          {
+            "fact_id": "F07",
+            "source_id": "prompt",
+            "quoted_text": "where $r$ and $s$ are not integers.",
+            "normalized_fact": "The coordinates r and s of the target point are not integers.",
+            "kind": "constraint",
+            "check_items": [
+              {
+                "item_id": "F07:legacy",
+                "description": "The coordinates r and s of the target point are not integers."
+              }
+            ]
+          },
+          {
+            "fact_id": "F08",
+            "source_id": "prompt",
+            "quoted_text": "Find the point $(r,s).$",
+            "normalized_fact": "Objective: determine the point (r,s).",
+            "kind": "objective",
+            "check_items": [
+              {
+                "item_id": "F08:legacy",
+                "description": "Objective: determine the point (r,s)."
+              }
+            ]
+          },
+          {
+            "fact_id": "F09",
+            "source_id": "prompt",
+            "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+            "normalized_fact": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex.",
+            "kind": "ambiguity",
+            "check_items": [
+              {
+                "item_id": "F09:legacy",
+                "description": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex."
+              }
+            ]
+          },
+          {
+            "fact_id": "F10",
+            "source_id": "prompt",
+            "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+            "normalized_fact": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted.",
+            "kind": "ambiguity",
+            "check_items": [
+              {
+                "item_id": "F10:legacy",
+                "description": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted."
+              }
+            ]
+          }
+        ],
+        "bindings": {
+          "F01": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 6,
+                "end": 97
+              }
+            ],
+            "start": 6,
+            "end": 97
+          },
+          "F02": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 127,
+                "end": 154
+              }
+            ],
+            "start": 127,
+            "end": 154
+          },
+          "F03": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 155,
+                "end": 175
+              }
+            ],
+            "start": 155,
+            "end": 175
+          },
+          "F04": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 175,
+                "end": 195
+              }
+            ],
+            "start": 175,
+            "end": 195
+          },
+          "F05": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 196,
+                "end": 209
+              }
+            ],
+            "start": 196,
+            "end": 209
+          },
+          "F06": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 222,
+                "end": 294
+              }
+            ],
+            "start": 222,
+            "end": 294
+          },
+          "F07": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 296,
+                "end": 331
+              }
+            ],
+            "start": 296,
+            "end": 331
+          },
+          "F08": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 333,
+                "end": 356
+              }
+            ],
+            "start": 333,
+            "end": 356
+          },
+          "F09": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 6,
+                "end": 97
+              }
+            ],
+            "start": 6,
+            "end": 97
+          },
+          "F10": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "match_count": 1,
+            "candidate_spans": [
+              {
+                "start": 222,
+                "end": 294
+              }
+            ],
+            "start": 222,
+            "end": 294
+          }
+        },
+        "pending_fact_ids": [],
+        "semantic_status": "model_asserted",
+        "history": [
+          {
+            "original_payload": {
+              "facts": [
+                {
+                  "fact_id": "F01",
+                  "source_id": "prompt",
+                  "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+                  "normalized_fact": "p is defined as the general polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9.",
+                  "kind": "domain",
+                  "check_items": [
+                    {
+                      "item_id": "F01:legacy",
+                      "description": "p is defined as the general polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F02",
+                  "source_id": "prompt",
+                  "quoted_text": "p(0,0) &=p(1,0) = p( - 1,0)",
+                  "normalized_fact": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F02:legacy",
+                      "description": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F03",
+                  "source_id": "prompt",
+                  "quoted_text": "= p(0,1) = p(0, - 1)",
+                  "normalized_fact": "Constraint: p(0,1)=0 and p(0,-1)=0.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F03:legacy",
+                      "description": "Constraint: p(0,1)=0 and p(0,-1)=0."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F04",
+                  "source_id": "prompt",
+                  "quoted_text": "= p(1,1) = p(1, - 1)",
+                  "normalized_fact": "Constraint: p(1,1)=0 and p(1,-1)=0.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F04:legacy",
+                      "description": "Constraint: p(1,1)=0 and p(1,-1)=0."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F05",
+                  "source_id": "prompt",
+                  "quoted_text": "= p(2,2) = 0.",
+                  "normalized_fact": "Constraint: p(2,2)=0.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F05:legacy",
+                      "description": "Constraint: p(2,2)=0."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F06",
+                  "source_id": "prompt",
+                  "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+                  "normalized_fact": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F06:legacy",
+                      "description": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F07",
+                  "source_id": "prompt",
+                  "quoted_text": "where $r$ and $s$ are not integers.",
+                  "normalized_fact": "The coordinates r and s of the target point are not integers.",
+                  "kind": "constraint",
+                  "check_items": [
+                    {
+                      "item_id": "F07:legacy",
+                      "description": "The coordinates r and s of the target point are not integers."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F08",
+                  "source_id": "prompt",
+                  "quoted_text": "Find the point $(r,s).$",
+                  "normalized_fact": "Objective: determine the point (r,s).",
+                  "kind": "objective",
+                  "check_items": [
+                    {
+                      "item_id": "F08:legacy",
+                      "description": "Objective: determine the point (r,s)."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F09",
+                  "source_id": "prompt",
+                  "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+                  "normalized_fact": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex.",
+                  "kind": "ambiguity",
+                  "check_items": [
+                    {
+                      "item_id": "F09:legacy",
+                      "description": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex."
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F10",
+                  "source_id": "prompt",
+                  "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+                  "normalized_fact": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted.",
+                  "kind": "ambiguity",
+                  "check_items": [
+                    {
+                      "item_id": "F10:legacy",
+                      "description": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted."
+                    }
+                  ]
+                }
+              ],
+              "coverage_status": "partial"
+            },
+            "current_facts": [
+              {
+                "fact_id": "F01",
+                "source_id": "prompt",
+                "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+                "normalized_fact": "p is defined as the general polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9.",
+                "kind": "domain",
+                "check_items": [
+                  {
+                    "item_id": "F01:legacy",
+                    "description": "p is defined as the general polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F02",
+                "source_id": "prompt",
+                "quoted_text": "p(0,0) &=p(1,0) = p( - 1,0)",
+                "normalized_fact": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F02:legacy",
+                    "description": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F03",
+                "source_id": "prompt",
+                "quoted_text": "= p(0,1) = p(0, - 1)",
+                "normalized_fact": "Constraint: p(0,1)=0 and p(0,-1)=0.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F03:legacy",
+                    "description": "Constraint: p(0,1)=0 and p(0,-1)=0."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F04",
+                "source_id": "prompt",
+                "quoted_text": "= p(1,1) = p(1, - 1)",
+                "normalized_fact": "Constraint: p(1,1)=0 and p(1,-1)=0.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F04:legacy",
+                    "description": "Constraint: p(1,1)=0 and p(1,-1)=0."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F05",
+                "source_id": "prompt",
+                "quoted_text": "= p(2,2) = 0.",
+                "normalized_fact": "Constraint: p(2,2)=0.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F05:legacy",
+                    "description": "Constraint: p(2,2)=0."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F06",
+                "source_id": "prompt",
+                "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+                "normalized_fact": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F06:legacy",
+                    "description": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F07",
+                "source_id": "prompt",
+                "quoted_text": "where $r$ and $s$ are not integers.",
+                "normalized_fact": "The coordinates r and s of the target point are not integers.",
+                "kind": "constraint",
+                "check_items": [
+                  {
+                    "item_id": "F07:legacy",
+                    "description": "The coordinates r and s of the target point are not integers."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F08",
+                "source_id": "prompt",
+                "quoted_text": "Find the point $(r,s).$",
+                "normalized_fact": "Objective: determine the point (r,s).",
+                "kind": "objective",
+                "check_items": [
+                  {
+                    "item_id": "F08:legacy",
+                    "description": "Objective: determine the point (r,s)."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F09",
+                "source_id": "prompt",
+                "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+                "normalized_fact": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex.",
+                "kind": "ambiguity",
+                "check_items": [
+                  {
+                    "item_id": "F09:legacy",
+                    "description": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex."
+                  }
+                ]
+              },
+              {
+                "fact_id": "F10",
+                "source_id": "prompt",
+                "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+                "normalized_fact": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted.",
+                "kind": "ambiguity",
+                "check_items": [
+                  {
+                    "item_id": "F10:legacy",
+                    "description": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted."
+                  }
+                ]
+              }
+            ],
+            "bindings": {
+              "F01": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 6,
+                    "end": 97
+                  }
+                ],
+                "start": 6,
+                "end": 97
+              },
+              "F02": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 127,
+                    "end": 154
+                  }
+                ],
+                "start": 127,
+                "end": 154
+              },
+              "F03": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 155,
+                    "end": 175
+                  }
+                ],
+                "start": 155,
+                "end": 175
+              },
+              "F04": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 175,
+                    "end": 195
+                  }
+                ],
+                "start": 175,
+                "end": 195
+              },
+              "F05": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 196,
+                    "end": 209
+                  }
+                ],
+                "start": 196,
+                "end": 209
+              },
+              "F06": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 222,
+                    "end": 294
+                  }
+                ],
+                "start": 222,
+                "end": 294
+              },
+              "F07": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 296,
+                    "end": 331
+                  }
+                ],
+                "start": 296,
+                "end": 331
+              },
+              "F08": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 333,
+                    "end": 356
+                  }
+                ],
+                "start": 333,
+                "end": 356
+              },
+              "F09": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 6,
+                    "end": 97
+                  }
+                ],
+                "start": 6,
+                "end": 97
+              },
+              "F10": {
+                "status": "unique_exact",
+                "source_id": "prompt",
+                "public_field": "/prompt",
+                "coordinate_space": "source_unicode_codepoints",
+                "match_count": 1,
+                "candidate_spans": [
+                  {
+                    "start": 222,
+                    "end": 294
+                  }
+                ],
+                "start": 222,
+                "end": 294
+              }
+            },
+            "pending_fact_ids": [],
+            "semantic_status": "model_asserted"
+          }
+        ]
+      }
+    }
+  ],
+  "incremental_repair": {
+    "patch_from_second_saved_response": {
+      "replacements": [
+        {
+          "fact_id": "F02",
+          "source_id": "prompt",
+          "quoted_text": "p(0,0) &=p(1,0) = p( - 1,0)"
+        }
+      ]
+    },
+    "locked_facts_unchanged": true,
+    "final_bound_fact_count": 10,
+    "pending_fact_ids": [],
+    "bound_payload": {
+      "facts": [
+        {
+          "fact_id": "F01",
+          "source_id": "prompt",
+          "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+          "normalized_fact": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9.",
+          "kind": "domain",
+          "check_items": [
+            {
+              "item_id": "F01:legacy",
+              "description": "p is defined as the general real-coefficient polynomial of total degree at most 3 in x and y, with ten coefficients a_0 through a_9."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 6,
+            "end": 97
+          },
+          "semantic_status": "model_asserted"
+        },
+        {
+          "fact_id": "F02",
+          "source_id": "prompt",
+          "quoted_text": "p(0,0) &=p(1,0) = p( - 1,0)",
+          "normalized_fact": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0.",
+          "kind": "constraint",
+          "check_items": [
+            {
+              "item_id": "F02:legacy",
+              "description": "Constraint: p(0,0)=0, p(1,0)=0, and p(-1,0)=0."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 127,
+            "end": 154
+          },
+          "semantic_status": "model_asserted"
+        },
+        {
+          "fact_id": "F03",
+          "source_id": "prompt",
+          "quoted_text": "= p(0,1) = p(0, - 1)",
+          "normalized_fact": "Constraint: p(0,1)=0 and p(0,-1)=0.",
+          "kind": "constraint",
+          "check_items": [
+            {
+              "item_id": "F03:legacy",
+              "description": "Constraint: p(0,1)=0 and p(0,-1)=0."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 155,
+            "end": 175
+          },
+          "semantic_status": "model_asserted"
+        },
+        {
+          "fact_id": "F04",
+          "source_id": "prompt",
+          "quoted_text": "= p(1,1) = p(1, - 1)",
+          "normalized_fact": "Constraint: p(1,1)=0 and p(1,-1)=0.",
+          "kind": "constraint",
+          "check_items": [
+            {
+              "item_id": "F04:legacy",
+              "description": "Constraint: p(1,1)=0 and p(1,-1)=0."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 175,
+            "end": 195
+          },
+          "semantic_status": "model_asserted"
+        },
+        {
+          "fact_id": "F05",
+          "source_id": "prompt",
+          "quoted_text": "= p(2,2) = 0.",
+          "normalized_fact": "Constraint: p(2,2)=0.",
+          "kind": "constraint",
+          "check_items": [
+            {
+              "item_id": "F05:legacy",
+              "description": "Constraint: p(2,2)=0."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 196,
+            "end": 209
+          },
+          "semantic_status": "model_asserted"
+        },
+        {
+          "fact_id": "F06",
+          "source_id": "prompt",
+          "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+          "normalized_fact": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints.",
+          "kind": "constraint",
+          "check_items": [
+            {
+              "item_id": "F06:legacy",
+              "description": "The target point (r,s) must satisfy p(r,s)=0 simultaneously for every polynomial p meeting all the listed vanishing constraints."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 222,
+            "end": 294
+          },
+          "semantic_status": "model_asserted"
+        },
+        {
+          "fact_id": "F07",
+          "source_id": "prompt",
+          "quoted_text": "where $r$ and $s$ are not integers.",
+          "normalized_fact": "The coordinates r and s of the target point are not integers.",
+          "kind": "constraint",
+          "check_items": [
+            {
+              "item_id": "F07:legacy",
+              "description": "The coordinates r and s of the target point are not integers."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 296,
+            "end": 331
+          },
+          "semantic_status": "model_asserted"
+        },
+        {
+          "fact_id": "F08",
+          "source_id": "prompt",
+          "quoted_text": "Find the point $(r,s).$",
+          "normalized_fact": "Objective: determine the point (r,s).",
+          "kind": "objective",
+          "check_items": [
+            {
+              "item_id": "F08:legacy",
+              "description": "Objective: determine the point (r,s)."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 333,
+            "end": 356
+          },
+          "semantic_status": "model_asserted"
+        },
+        {
+          "fact_id": "F09",
+          "source_id": "prompt",
+          "quoted_text": "a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3",
+          "normalized_fact": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex.",
+          "kind": "ambiguity",
+          "check_items": [
+            {
+              "item_id": "F09:legacy",
+              "description": "The coefficient field is not explicitly stated; the coefficients are not explicitly declared real or complex."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 15,
+            "end": 96
+          },
+          "semantic_status": "model_asserted"
+        },
+        {
+          "fact_id": "F10",
+          "source_id": "prompt",
+          "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+          "normalized_fact": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted.",
+          "kind": "ambiguity",
+          "check_items": [
+            {
+              "item_id": "F10:legacy",
+              "description": "Existence of the point is asserted; uniqueness of the point is not explicitly asserted."
+            }
+          ],
+          "source_binding": {
+            "status": "unique_exact",
+            "source_id": "prompt",
+            "public_field": "/prompt",
+            "coordinate_space": "source_unicode_codepoints",
+            "start": 222,
+            "end": 294
+          },
+          "semantic_status": "model_asserted"
+        }
+      ],
+      "coverage_status": "partial",
+      "binding_status": "all_sources_bound",
+      "semantic_status": "model_asserted"
+    }
+  }
+}

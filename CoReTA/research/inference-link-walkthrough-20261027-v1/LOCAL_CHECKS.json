@@ -1,0 +1,39 @@
+{
+  "new_api_calls": 0,
+  "cases": 3,
+  "exact_target_spans": 3,
+  "matched_first_packets": 3,
+  "source_anchors_checked": 7,
+  "real_carrier_replays": [
+    {
+      "case_id": "004-identity",
+      "carrier_path": "runs/candidate-004-probe-live-20261025-r2/07.raw.txt",
+      "carrier_sha256": "83ce36220b73fb3b3fae583b4c9c8a8ca931ed05ea9b141761c8c309623f6d59",
+      "kind": "real EXTRACT text carrier, not a real inference-link review"
+    },
+    {
+      "case_id": "023-notice",
+      "carrier_path": "runs/candidate-screening-probe-live-20261025-r1/85.raw.txt",
+      "carrier_sha256": "3826fd71222663f938ff083334bd8cd3d6e61766a3196b768c42d59d8ebd6285",
+      "kind": "real EXTRACT text carrier, not a real inference-link review"
+    },
+    {
+      "case_id": "011-time-supported",
+      "carrier_path": "runs/candidate-screening-probe-live-20261025-r1/14.raw.txt",
+      "carrier_sha256": "a810584f5617f3859f299b9b172aeaeee1184db5a663779f2787d184bdbad659",
+      "kind": "real EXTRACT text carrier, not a real inference-link review"
+    }
+  ],
+  "explicit_question_addressee": true,
+  "max_first_input_estimate": 6367,
+  "boundaries_not_scheduled": 2,
+  "not_established": [
+    "No generated model review or repair.",
+    "No autonomous target/evidence selection.",
+    "No live runner, launch manifest, transport failure gate, budget freeze or authorization."
+  ],
+  "request_label_isolation_checks": 6,
+  "core_boundary_rejections": 5,
+  "unknown_text_valid": true,
+  "optional_metadata_not_forwarded": true
+}

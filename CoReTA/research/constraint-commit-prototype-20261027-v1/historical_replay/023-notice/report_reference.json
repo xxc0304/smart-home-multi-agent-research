@@ -1,0 +1,1212 @@
+{
+  "model_answer": {
+    "choice": "option_1",
+    "reasoning": "The task requires a venue for ~90 guests, catering allowed, and short-notice Saturday availability. Lakeview: PUBLIC.1 confirms outdoor seating for up to 120 (capacity sufficient); S01 (my own source) reports its only access road is closed by flooding and expected impassable through the weekend, which covers Saturday night, so access is a serious concern. However, S01 speaks only to that access road and does not establish that the resort itself is closed, unavailable, or without any alternative arrangement; the local reconstruction correctly notes the geographic scope (the single access road) and time limit (through the weekend). Grand Oak: PUBLIC.2 says it usually requires two weeks' notice, directly conflicting with short notice, and its capacity is only qualitative ('largest ballroom'). Heritage: PUBLIC.3 says catering restrictions may apply to non-packaged food, leaving catering unresolved; A3's private no-catering claim is not my own inspected evidence. No venue is fully confirmed on all criteria, so any choice is tentative. Lakeview is the best supported: it has confirmed numeric capacity, no categorical restriction stated in the public evidence, and the only defect is a single-source access report that does not itself prove the venue is unusable. Grand Oak's notice requirement is a categorical scheduling conflict, and Heritage's catering uncertainty strikes at a core requirement. I therefore retain the historical tentative choice of Lakeview, narrowed to a conditional pick pending confirmation of road access, this-Saturday availability, and catering permission.",
+    "annotation_issues": [],
+    "extra_annotations": {}
+  },
+  "action": {
+    "status": "not_proposed"
+  },
+  "delivery": {
+    "mode": "report_reference",
+    "version": 1,
+    "choice": "option_1",
+    "model_choice": "option_1",
+    "model_reasoning": "The task requires a venue for ~90 guests, catering allowed, and short-notice Saturday availability. Lakeview: PUBLIC.1 confirms outdoor seating for up to 120 (capacity sufficient); S01 (my own source) reports its only access road is closed by flooding and expected impassable through the weekend, which covers Saturday night, so access is a serious concern. However, S01 speaks only to that access road and does not establish that the resort itself is closed, unavailable, or without any alternative arrangement; the local reconstruction correctly notes the geographic scope (the single access road) and time limit (through the weekend). Grand Oak: PUBLIC.2 says it usually requires two weeks' notice, directly conflicting with short notice, and its capacity is only qualitative ('largest ballroom'). Heritage: PUBLIC.3 says catering restrictions may apply to non-packaged food, leaving catering unresolved; A3's private no-catering claim is not my own inspected evidence. No venue is fully confirmed on all criteria, so any choice is tentative. Lakeview is the best supported: it has confirmed numeric capacity, no categorical restriction stated in the public evidence, and the only defect is a single-source access report that does not itself prove the venue is unusable. Grand Oak's notice requirement is a categorical scheduling conflict, and Heritage's catering uncertainty strikes at a core requirement. I therefore retain the historical tentative choice of Lakeview, narrowed to a conditional pick pending confirmation of road access, this-Saturday availability, and catering permission.",
+    "selector": "model_proposal",
+    "host_changed_choice": false,
+    "not_excluded": [
+      "option_3"
+    ],
+    "exclusion_trace": [
+      {
+        "candidate": "option_1",
+        "violations": [
+          {
+            "condition": "A1.C1",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null,
+            "premise": {
+              "id": "A1.C1",
+              "owner": "A1",
+              "value": true,
+              "source": "TASK",
+              "field": "accessible_for_task",
+              "op": "eq",
+              "quote": "available on short notice",
+              "diagnostic": null
+            }
+          }
+        ]
+      },
+      {
+        "candidate": "option_2",
+        "violations": [
+          {
+            "condition": "A1.C2",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null,
+            "premise": {
+              "id": "A1.C2",
+              "owner": "A1",
+              "value": true,
+              "source": "TASK",
+              "field": "catering_permitted",
+              "op": "eq",
+              "quote": "allow food catering",
+              "diagnostic": null
+            }
+          },
+          {
+            "condition": "A2.C2",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null,
+            "premise": {
+              "id": "A2.C2",
+              "owner": "A2",
+              "value": true,
+              "source": "TASK",
+              "field": "catering_permitted",
+              "op": "eq",
+              "quote": "allow food catering",
+              "diagnostic": null
+            }
+          },
+          {
+            "condition": "A3.C2",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null,
+            "premise": {
+              "id": "A3.C2",
+              "owner": "A3",
+              "value": true,
+              "source": "TASK",
+              "field": "catering_permitted",
+              "op": "eq",
+              "quote": "allow food catering",
+              "diagnostic": null
+            }
+          },
+          {
+            "condition": "A4.C2",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null,
+            "premise": {
+              "id": "A4.C2",
+              "owner": "A4",
+              "value": true,
+              "source": "TASK",
+              "field": "catering_permitted",
+              "op": "eq",
+              "quote": "allow food catering",
+              "diagnostic": null
+            }
+          }
+        ]
+      }
+    ],
+    "unresolved": false,
+    "feasibility": "not_certified",
+    "interpretation": "Conditional on the current model encodings; not a guarantee of task correctness.",
+    "reasoning_source": "model"
+  },
+  "state_events": [],
+  "report": {
+    "version": 1,
+    "member_conditions": [
+      {
+        "id": "A1.C1",
+        "owner": "A1",
+        "value": true,
+        "source": "TASK",
+        "field": "accessible_for_task",
+        "op": "eq",
+        "quote": "available on short notice",
+        "diagnostic": null
+      },
+      {
+        "id": "A1.C2",
+        "owner": "A1",
+        "value": true,
+        "source": "TASK",
+        "field": "catering_permitted",
+        "op": "eq",
+        "quote": "allow food catering",
+        "diagnostic": null
+      },
+      {
+        "id": "A1.C3",
+        "owner": "A1",
+        "value": true,
+        "source": "TASK",
+        "field": "group_capacity_sufficient",
+        "op": "eq",
+        "quote": "accommodate everyone (about 90 guests)",
+        "diagnostic": null
+      },
+      {
+        "id": "A2.C1",
+        "owner": "A2",
+        "value": true,
+        "source": "TASK",
+        "field": "group_capacity_sufficient",
+        "op": "eq",
+        "quote": "accommodate everyone (about 90 guests)",
+        "diagnostic": null
+      },
+      {
+        "id": "A2.C2",
+        "owner": "A2",
+        "value": true,
+        "source": "TASK",
+        "field": "catering_permitted",
+        "op": "eq",
+        "quote": "allow food catering",
+        "diagnostic": null
+      },
+      {
+        "id": "A2.C3",
+        "owner": "A2",
+        "value": true,
+        "source": "TASK",
+        "field": "ready_for_task",
+        "op": "eq",
+        "quote": "available on short notice",
+        "diagnostic": null
+      },
+      {
+        "id": "A3.C1",
+        "owner": "A3",
+        "value": true,
+        "source": "TASK",
+        "field": "group_capacity_sufficient",
+        "op": "eq",
+        "quote": "accommodate everyone (about 90 guests)",
+        "diagnostic": null
+      },
+      {
+        "id": "A3.C2",
+        "owner": "A3",
+        "value": true,
+        "source": "TASK",
+        "field": "catering_permitted",
+        "op": "eq",
+        "quote": "allow food catering",
+        "diagnostic": null
+      },
+      {
+        "id": "A3.C3",
+        "owner": "A3",
+        "value": true,
+        "source": "TASK",
+        "field": "ready_for_task",
+        "op": "eq",
+        "quote": "available on short notice",
+        "diagnostic": null
+      },
+      {
+        "id": "A4.C1",
+        "owner": "A4",
+        "value": true,
+        "source": "TASK",
+        "field": "group_capacity_sufficient",
+        "op": "eq",
+        "quote": "accommodate everyone (about 90 guests)",
+        "diagnostic": null
+      },
+      {
+        "id": "A4.C2",
+        "owner": "A4",
+        "value": true,
+        "source": "TASK",
+        "field": "catering_permitted",
+        "op": "eq",
+        "quote": "allow food catering",
+        "diagnostic": null
+      },
+      {
+        "id": "A4.C3",
+        "owner": "A4",
+        "value": true,
+        "source": "TASK",
+        "field": "ready_for_task",
+        "op": "eq",
+        "quote": "available on short notice",
+        "diagnostic": null
+      }
+    ],
+    "model_fact_table": {
+      "option_1": {
+        "group_capacity_sufficient": true,
+        "accessible_for_task": false,
+        "ready_for_task": null
+      },
+      "option_3": {
+        "group_capacity_sufficient": true,
+        "ready_for_task": null
+      },
+      "option_2": {
+        "catering_permitted": false
+      }
+    },
+    "fact_conflicts": [
+      {
+        "candidate": "option_3",
+        "field": "ready_for_task",
+        "values": [
+          true,
+          false
+        ]
+      }
+    ],
+    "candidate_fact_coverage": {
+      "A1.C1": 1,
+      "A1.C2": 1,
+      "A1.C3": 2,
+      "A2.C1": 2,
+      "A2.C2": 1,
+      "A2.C3": 0,
+      "A3.C1": 2,
+      "A3.C2": 1,
+      "A3.C3": 0,
+      "A4.C1": 2,
+      "A4.C2": 1,
+      "A4.C3": 0
+    },
+    "notices": [],
+    "candidate_checks": [
+      {
+        "candidate": "option_1",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null
+          },
+          {
+            "condition": "A1.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A1.C3",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A2.C1",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A2.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C1",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A4.C1",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A4.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A4.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          }
+        ]
+      },
+      {
+        "candidate": "option_2",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A1.C2",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null
+          },
+          {
+            "condition": "A1.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C2",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null
+          },
+          {
+            "condition": "A2.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C2",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A4.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A4.C2",
+            "status": "violates",
+            "actual": false,
+            "diagnostic": null
+          },
+          {
+            "condition": "A4.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          }
+        ]
+      },
+      {
+        "candidate": "option_3",
+        "checks": [
+          {
+            "condition": "A1.C1",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A1.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A1.C3",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A2.C1",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A2.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A2.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C1",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A3.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A3.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A4.C1",
+            "status": "consistent",
+            "actual": true,
+            "diagnostic": null
+          },
+          {
+            "condition": "A4.C2",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          },
+          {
+            "condition": "A4.C3",
+            "status": "unknown",
+            "actual": null,
+            "diagnostic": "missing_or_conflicting_candidate_fact"
+          }
+        ]
+      }
+    ],
+    "not_excluded": [
+      "option_3"
+    ],
+    "meaning": "Literal checks of model interpretations, not source-semantic verification. Unknown is not true; not-excluded is not proven correct.",
+    "admission": [
+      {
+        "id": "A1.F1",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Lakeview Resort",
+            "after": "option_1"
+          }
+        ]
+      },
+      {
+        "id": "A1.F2",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Lakeview Resort",
+            "after": "option_1"
+          }
+        ]
+      },
+      {
+        "id": "A1.F3",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Grand Oak Hotel",
+            "after": "option_3"
+          }
+        ]
+      },
+      {
+        "id": "A1.F4",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Heritage Public Library",
+            "after": "option_2"
+          }
+        ]
+      },
+      {
+        "id": "A1.C1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.C2",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A1.C3",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.F1",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Grand Oak Hotel",
+            "after": "option_3"
+          }
+        ]
+      },
+      {
+        "id": "A2.F2",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Lakeview Resort",
+            "after": "option_1"
+          }
+        ]
+      },
+      {
+        "id": "A2.F3",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Grand Oak Hotel",
+            "after": "option_3"
+          }
+        ]
+      },
+      {
+        "id": "A2.F4",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Heritage Public Library",
+            "after": "option_2"
+          }
+        ]
+      },
+      {
+        "id": "A2.C1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.C2",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A2.C3",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.F1",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Lakeview Resort",
+            "after": "option_1"
+          }
+        ]
+      },
+      {
+        "id": "A3.F2",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Lakeview Resort",
+            "after": "option_1"
+          }
+        ]
+      },
+      {
+        "id": "A3.F3",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Grand Oak Hotel",
+            "after": "option_3"
+          }
+        ]
+      },
+      {
+        "id": "A3.F4",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Grand Oak Hotel",
+            "after": "option_3"
+          }
+        ]
+      },
+      {
+        "id": "A3.F5",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Heritage Public Library",
+            "after": "option_2"
+          }
+        ]
+      },
+      {
+        "id": "A3.C1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.C2",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A3.C3",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A4.F1",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Lakeview Resort",
+            "after": "option_1"
+          }
+        ]
+      },
+      {
+        "id": "A4.F2",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Grand Oak Hotel",
+            "after": "option_3"
+          }
+        ]
+      },
+      {
+        "id": "A4.F3",
+        "status": "mechanically_admitted",
+        "normalizations": [
+          {
+            "kind": "exact_candidate_alias",
+            "before": "Heritage Public Library",
+            "after": "option_2"
+          }
+        ]
+      },
+      {
+        "id": "A4.C1",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A4.C2",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      },
+      {
+        "id": "A4.C3",
+        "status": "mechanically_admitted",
+        "normalizations": []
+      }
+    ],
+    "entries": [
+      {
+        "id": "A1.F1",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.1",
+          "field": "group_capacity_sufficient",
+          "quote": "listed as having outdoor seating for up to 120 guests",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F2",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": false,
+          "source": "S01",
+          "field": "accessible_for_task",
+          "quote": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend.",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F3",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.2",
+          "field": "group_capacity_sufficient",
+          "quote": "has the largest ballroom in the area",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.F4",
+        "owner": "A1",
+        "section": "facts",
+        "value": {
+          "value": null,
+          "source": "PUBLIC.3",
+          "field": "catering_permitted",
+          "quote": "catering restrictions may apply (for non-packaged food)",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.C1",
+        "owner": "A1",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "accessible_for_task",
+          "op": "eq",
+          "quote": "available on short notice"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.C2",
+        "owner": "A1",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "catering_permitted",
+          "op": "eq",
+          "quote": "allow food catering"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A1.C3",
+        "owner": "A1",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "group_capacity_sufficient",
+          "op": "eq",
+          "quote": "accommodate everyone (about 90 guests)"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F1",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "S02",
+          "field": "ready_for_task",
+          "quote": "last-minute bookings can be accepted by phone this week",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F2",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.1",
+          "field": "group_capacity_sufficient",
+          "quote": "listed as having outdoor seating for up to 120 guests",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F3",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.2",
+          "field": "group_capacity_sufficient",
+          "quote": "has the largest ballroom in the area",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.F4",
+        "owner": "A2",
+        "section": "facts",
+        "value": {
+          "value": null,
+          "source": "PUBLIC.3",
+          "field": "catering_permitted",
+          "quote": "catering restrictions may apply (for non-packaged food)",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.C1",
+        "owner": "A2",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "group_capacity_sufficient",
+          "op": "eq",
+          "quote": "accommodate everyone (about 90 guests)"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.C2",
+        "owner": "A2",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "catering_permitted",
+          "op": "eq",
+          "quote": "allow food catering"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A2.C3",
+        "owner": "A2",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "ready_for_task",
+          "op": "eq",
+          "quote": "available on short notice"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F1",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.1",
+          "field": "group_capacity_sufficient",
+          "quote": "listed as having outdoor seating for up to 120 guests",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F2",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": null,
+          "source": "PUBLIC.1",
+          "field": "ready_for_task",
+          "quote": "free on most weekends",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F3",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.2",
+          "field": "group_capacity_sufficient",
+          "quote": "has the largest ballroom in the area",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F4",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": false,
+          "source": "PUBLIC.2",
+          "field": "ready_for_task",
+          "quote": "usually requires at least two weeks' notice for events",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.F5",
+        "owner": "A3",
+        "section": "facts",
+        "value": {
+          "value": false,
+          "source": "S03",
+          "field": "catering_permitted",
+          "quote": "now only sealed, pre-packaged snacks are allowed in the meeting hall, with no catering permitted",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.C1",
+        "owner": "A3",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "group_capacity_sufficient",
+          "op": "eq",
+          "quote": "accommodate everyone (about 90 guests)"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.C2",
+        "owner": "A3",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "catering_permitted",
+          "op": "eq",
+          "quote": "allow food catering"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A3.C3",
+        "owner": "A3",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "ready_for_task",
+          "op": "eq",
+          "quote": "available on short notice"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A4.F1",
+        "owner": "A4",
+        "section": "facts",
+        "value": {
+          "value": true,
+          "source": "PUBLIC.1",
+          "field": "group_capacity_sufficient",
+          "quote": "listed as having outdoor seating for up to 120 guests",
+          "candidate": "option_1"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A4.F2",
+        "owner": "A4",
+        "section": "facts",
+        "value": {
+          "value": null,
+          "source": "PUBLIC.2",
+          "field": "group_capacity_sufficient",
+          "quote": "has the largest ballroom in the area",
+          "candidate": "option_3"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A4.F3",
+        "owner": "A4",
+        "section": "facts",
+        "value": {
+          "value": null,
+          "source": "PUBLIC.3",
+          "field": "catering_permitted",
+          "quote": "catering restrictions may apply (for non-packaged food)",
+          "candidate": "option_2"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A4.C1",
+        "owner": "A4",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "group_capacity_sufficient",
+          "op": "eq",
+          "quote": "accommodate everyone (about 90 guests)"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A4.C2",
+        "owner": "A4",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "catering_permitted",
+          "op": "eq",
+          "quote": "allow food catering"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      },
+      {
+        "id": "A4.C3",
+        "owner": "A4",
+        "section": "conditions",
+        "value": {
+          "value": true,
+          "source": "TASK",
+          "field": "ready_for_task",
+          "op": "eq",
+          "quote": "available on short notice"
+        },
+        "status": "active",
+        "truth_status": "model_declared_not_semantically_verified"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "owner": "public",
+        "source": "TASK",
+        "text": "You are a member of a committee planning your community's annual banquet, which needs to be held this Saturday night due to scheduling conflicts. Your goal is to choose a venue that can accommodate everyone (about 90 guests), allow food catering, and is available on short notice. Three venues are under consideration:\n\n- Lakeview Resort: By the lakeside with outdoor seating for 120.\n- Grand Oak Hotel: Downtown, with a large ballroom.\n- Heritage Public Library: Spacious meeting hall, central location.\n\nYou intend to decide quickly and secure the booking together. Each person receives one unique piece of information about venue availability or restrictions.",
+        "access": "visible_public_original"
+      },
+      {
+        "id": "E2",
+        "owner": "public",
+        "source": "PUBLIC.1",
+        "text": "Lakeview Resort has a history of providing excellent service and is free on most weekends, and is listed as having outdoor seating for up to 120 guests.",
+        "access": "visible_public_original"
+      },
+      {
+        "id": "E3",
+        "owner": "public",
+        "source": "PUBLIC.2",
+        "text": "Grand Oak Hotel usually requires at least two weeks' notice for events but has the largest ballroom in the area and easy parking.",
+        "access": "visible_public_original"
+      },
+      {
+        "id": "E4",
+        "owner": "public",
+        "source": "PUBLIC.3",
+        "text": "Heritage Public Library allows large gatherings in its event hall, but catering restrictions may apply (for non-packaged food).",
+        "access": "visible_public_original"
+      },
+      {
+        "id": "E5",
+        "owner": "public",
+        "source": "PUBLIC.4",
+        "text": "All three venues are within a 15-minute drive for most community members.",
+        "access": "visible_public_original"
+      },
+      {
+        "id": "E6",
+        "owner": "A1",
+        "source": "S01",
+        "text": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend.",
+        "access": "receiver_visible_original"
+      },
+      {
+        "id": "E7",
+        "owner": "A2",
+        "source": "S02",
+        "text": "last-minute bookings can be accepted by phone this week",
+        "access": "already_shared_quotes_not_full_original"
+      },
+      {
+        "id": "E8",
+        "owner": "A3",
+        "source": "S03",
+        "text": "now only sealed, pre-packaged snacks are allowed in the meeting hall, with no catering permitted",
+        "access": "already_shared_quotes_not_full_original"
+      }
+    ],
+    "semantics": "Active means current model-declared interpretation, not independently verified truth."
+  }
+}

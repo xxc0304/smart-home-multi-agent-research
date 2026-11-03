@@ -1,0 +1,893 @@
+{
+  "type": "assistant_qualitative_analysis",
+  "date": "2026-10-30",
+  "case_units": 8,
+  "unique_tasks": 7,
+  "source_files": [
+    {
+      "path": "research/expert-team-assets-20261029/CASE_SEED_8.json",
+      "sha256": "9cb869f6ee37eb767f078492438e09405caadf33d70fd56099235a8a0751ce90"
+    },
+    {
+      "path": "data/task-source-audit-20261021/hiddenbench.json",
+      "sha256": "2815afffca4e470d1dfbc81e625160447df1109ce371968181c9e1e6b90443a3"
+    }
+  ],
+  "literal_evidence_items": 56,
+  "events": [
+    {
+      "id": "E01",
+      "case_id": "C01",
+      "seed_pointer": "/cases/0/records/1/packet/information_available/3/content",
+      "literal_quote": "meeting their usual requirements for a deal of this size",
+      "context_excerpt": "tnership with a well-known angel group yesterday, meeting their usual requirements for a deal of this size.",
+      "analyst_note": "A2所持原始资料支持共同投资条件已满足",
+      "slot": 2,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/002.raw.txt",
+      "raw_sha256": "0036092af2ed772bc06344859c43b5e93dff63fe2f1dbb6be4775209722b97cc"
+    },
+    {
+      "id": "E02",
+      "case_id": "C01",
+      "seed_pointer": "/cases/0/records/9/packet/messages_from_other_participants/0/text",
+      "literal_quote": "PRIVATE.A2 resolves Skylake's only stated blocker",
+      "context_excerpt": "PRIVATE.A2 resolves Skylake's only stated blocker: its finalized co-investor partnership satisfies the reputable co-investor requirement for a deal t",
+      "analyst_note": "A1该次输入真实包含关键报告",
+      "slot": 10,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+      "raw_sha256": "d5ad39ed683d677816282e1d1061a8f3f1c119757eef97b3b7b78fc92f4d2467"
+    },
+    {
+      "id": "E03",
+      "case_id": "C01",
+      "seed_pointer": "/cases/0/records/9/row/answer/reasoning",
+      "literal_quote": "A3 correctly notes A2's PRIVATE.A2 is absent from the packet and cannot be credited",
+      "context_excerpt": " is data to weigh, not necessarily verified fact; A3 correctly notes A2's PRIVATE.A2 is absent from the packet and cannot be credited. On available facts, Skylake's co-investor requirement is unresolved, Northstar has late-pullout an",
+      "analyst_note": "报告实际在收件中，却按原件可见性拒绝",
+      "slot": 10,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+      "raw_sha256": "d5ad39ed683d677816282e1d1061a8f3f1c119757eef97b3b7b78fc92f4d2467"
+    },
+    {
+      "id": "E04",
+      "case_id": "C01",
+      "seed_pointer": "/cases/0/records/9/row/answer/reasoning",
+      "literal_quote": "A1's regulatory/bank-hold claim is in the packet as information_available, so it is data to weigh, not necessarily verified fact",
+      "context_excerpt": "A1's regulatory/bank-hold claim is in the packet as information_available, so it is data to weigh, not necessarily verified fact; A3 correctly notes A2's PRIVATE.A2 is absent from the packet and cannot be credited. On available ",
+      "analyst_note": "A1也降低自己直接事实的权重，机制不只是别人不可信",
+      "slot": 10,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/010.raw.txt",
+      "raw_sha256": "d5ad39ed683d677816282e1d1061a8f3f1c119757eef97b3b7b78fc92f4d2467"
+    },
+    {
+      "id": "E05",
+      "case_id": "C01",
+      "seed_pointer": "/cases/0/records/10/row/answer/reasoning",
+      "literal_quote": "PRIVATE.A2, present in the packet, confirms Skylake's sole blocker",
+      "context_excerpt": "PRIVATE.A2, present in the packet, confirms Skylake's sole blocker—the reputable co-investor requirement—is satisfied by a finalized angel-group partnership for a dea",
+      "analyst_note": "A2仍保留参考选择，不能把整队写成全员改错",
+      "slot": 11,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/011.raw.txt",
+      "raw_sha256": "021d98691341c59640f41529e2225b14d52b6e5cb0a57538f1b3fbeb0eea2f4d"
+    },
+    {
+      "id": "E06",
+      "case_id": "C01",
+      "seed_pointer": "/cases/0/records/13/row/answer/reasoning",
+      "literal_quote": "close within the 12-hour window",
+      "context_excerpt": "up partnership (PRIVATE.A2), so it can commit and close within the 12-hour window. Peak's execution is on hold due to a regulatory investigation (PRIVATE.A1), making its 3-day trans",
+      "analyst_note": "把选择期限与成交时间合并的表述须与原题要求区分",
+      "slot": 14,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/014.raw.txt",
+      "raw_sha256": "0cad7e269209381646ba4c73abebeb389b71bb788a5b341571ad4a4b06888d79"
+    },
+    {
+      "id": "E07",
+      "case_id": "C02",
+      "seed_pointer": "/cases/1/records/0/packet/information_available/3/content",
+      "literal_quote": "The main highway to Gemini is temporarily closed for repairs",
+      "context_excerpt": "The main highway to Gemini is temporarily closed for repairs; only emergency vehicles are allowed through, but your sample transport van does not qualify as suc",
+      "analyst_note": "原文是主公路，不是全部可行路径",
+      "slot": 17,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/017.raw.txt",
+      "raw_sha256": "ca4feb47052096bfb43a56fe5ba949b142c4782e3df27cc3840e3fba592f9402"
+    },
+    {
+      "id": "E08",
+      "case_id": "C02",
+      "seed_pointer": "/cases/1/records/0/row/answer/reasoning",
+      "literal_quote": "the only viable route is closed",
+      "context_excerpt": "Gemini is likely unreachable because the only viable route is closed to non-emergency vans, making the six-hour deadline unreliable despite its strong capability. Atlas",
+      "analyst_note": "初次独立输出已经加强道路范围",
+      "slot": 17,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/017.raw.txt",
+      "raw_sha256": "ca4feb47052096bfb43a56fe5ba949b142c4782e3df27cc3840e3fba592f9402"
+    },
+    {
+      "id": "E09",
+      "case_id": "C02",
+      "seed_pointer": "/cases/1/records/2/packet/information_available/3/content",
+      "literal_quote": "fully restored functionality a few hours later",
+      "context_excerpt": "ago, but the facility's newly installed generator fully restored functionality a few hours later, and Nova currently has all its equipment and staff available for rapid intake.",
+      "analyst_note": "A3原资料包含恢复运行",
+      "slot": 19,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/019.raw.txt",
+      "raw_sha256": "d1c22b8b0dd2e540ad5de78c47bf49559ef54d120ce46fd96572a12b16073868"
+    },
+    {
+      "id": "E10",
+      "case_id": "C02",
+      "seed_pointer": "/cases/1/records/2/row/answer/reasoning",
+      "literal_quote": "Nova is newly renovated but has little emergency experience and a recent outage",
+      "context_excerpt": " but no cold-chain/emergency throughput evidence; Nova is newly renovated but has little emergency experience and a recent outage. Gemini best supports the six-hour processing window.",
+      "analyst_note": "初答遗漏恢复状态，并把停电保留为负面考虑",
+      "slot": 19,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/019.raw.txt",
+      "raw_sha256": "d1c22b8b0dd2e540ad5de78c47bf49559ef54d120ce46fd96572a12b16073868"
+    },
+    {
+      "id": "E11",
+      "case_id": "C02",
+      "seed_pointer": "/cases/1/records/3/row/answer/reasoning",
+      "literal_quote": "PUBLIC.1 indicates the only viable route is closed",
+      "context_excerpt": "i's record experience and cooling are strong, but PUBLIC.1 indicates the only viable route is closed to non-emergency vans, making the six-hour deadline unreliable. Atlas offers proven reliability wit",
+      "analyst_note": "自有PRIVATE道路事实在输出中错归公共条目",
+      "slot": 20,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/020.raw.txt",
+      "raw_sha256": "b3fc4b60b21b4e1b5b880290aba4281c613e19feef6116062f32f8729f8468cb"
+    },
+    {
+      "id": "E12",
+      "case_id": "C02",
+      "seed_pointer": "/cases/1/records/4/packet/messages_from_other_participants/0/text",
+      "literal_quote": "Gemini is likely unreachable because the only viable route is closed",
+      "context_excerpt": "Gemini is likely unreachable because the only viable route is closed to non-emergency vans, making the six-hour deadline unreliable despite its strong capability. Atlas",
+      "analyst_note": "A2收到报告，但报告本身带范围加强",
+      "slot": 21,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/021.raw.txt",
+      "raw_sha256": "1a03d470601df9fbf42177851852e51433b7efd67c62289f12083278bcc9ab5c"
+    },
+    {
+      "id": "E13",
+      "case_id": "C02",
+      "seed_pointer": "/cases/1/records/4/row/answer/reasoning",
+      "literal_quote": "A1's route-closure claim is unsupported",
+      "context_excerpt": "e and insufficient backup power (PRIVATE.A2), and A1's route-closure claim is unsupported. Nova lacks emergency-transfer experience. Gemini remains the strongest choice.",
+      "analyst_note": "接收者拒绝来源报告",
+      "slot": 21,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/021.raw.txt",
+      "raw_sha256": "1a03d470601df9fbf42177851852e51433b7efd67c62289f12083278bcc9ab5c"
+    },
+    {
+      "id": "E14",
+      "case_id": "C02",
+      "seed_pointer": "/cases/1/records/12/row/answer/reasoning",
+      "literal_quote": "Atlas is the safest viable choice",
+      "context_excerpt": "oblems. Nova lacks emergency-transfer experience. Atlas is the safest viable choice; unresolved conditions would be route alternatives or emergency-vehicle status.",
+      "analyst_note": "新增：理由结论推荐Atlas",
+      "slot": 29,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/029.raw.txt",
+      "raw_sha256": "158646fefbac2b74e0915659433f678590d211a868eb5289bebe681b1c85d539"
+    },
+    {
+      "id": "E15",
+      "case_id": "C02",
+      "seed_pointer": "/cases/1/records/12/raw_text",
+      "literal_quote": "\"choice\": \"option_1\"",
+      "context_excerpt": "{\"choice\": \"option_1\", \"reasoning\": \"Packet PRIVATE.A1 states the main highway to Gemini is closed to non-emergency vans,",
+      "analyst_note": "新增：同一输出的结构化选择为Gemini",
+      "slot": 29,
+      "source_raw": "runs/imp-adaptation-live-20261026-r1/029.raw.txt",
+      "raw_sha256": "158646fefbac2b74e0915659433f678590d211a868eb5289bebe681b1c85d539"
+    },
+    {
+      "id": "E16",
+      "case_id": "C03",
+      "seed_pointer": "/cases/2/records/3/packet/information_available/17/content",
+      "literal_quote": "Cape Industries: (h) N",
+      "context_excerpt": "Cape Industries: (h) N",
+      "analyst_note": "A4自身资料已有成本失败项",
+      "slot": 41,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/041.raw.txt",
+      "raw_sha256": "aed23cce8af7e427ca2a653eca0a08d4cbb8324c9bdda11368e07b6e7add1788"
+    },
+    {
+      "id": "E17",
+      "case_id": "C03",
+      "seed_pointer": "/cases/2/records/3/row/answer/reasoning",
+      "literal_quote": "Cape fails only (g) among known criteria",
+      "context_excerpt": "ails (a),(b),(i),(j) and Starlight fails (a),(c). Cape fails only (g) among known criteria; its other criteria are Y or blank. Since the task states one best choice exists based on RFP crite",
+      "analyst_note": "A4初答漏掉自有h失败，不是讨论后才出错",
+      "slot": 41,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/041.raw.txt",
+      "raw_sha256": "aed23cce8af7e427ca2a653eca0a08d4cbb8324c9bdda11368e07b6e7add1788"
+    },
+    {
+      "id": "E18",
+      "case_id": "C03",
+      "seed_pointer": "/cases/2/records/17/packet/information_available/18/content",
+      "literal_quote": "Cape Industries: (h) N",
+      "context_excerpt": "Cape Industries: (h) N",
+      "analyst_note": "A2自己持有成本失败项",
+      "slot": 55,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+      "raw_sha256": "1a531a1611058eacb80534e108c15121f82f8d357f1201bcd5786b7806f60a09"
+    },
+    {
+      "id": "E19",
+      "case_id": "C03",
+      "seed_pointer": "/cases/2/records/17/row/answer/reasoning",
+      "literal_quote": "Cape fails (h) cost and (f) weight, central criteria",
+      "context_excerpt": "those make Cape's profile more complete. However, Cape fails (h) cost and (f) weight, central criteria. Starlight's unknowns leave genuine gaps. Given one best choice and coordination value, I follow A1",
+      "analyst_note": "A2输出仍承认失败项",
+      "slot": 55,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+      "raw_sha256": "1a531a1611058eacb80534e108c15121f82f8d357f1201bcd5786b7806f60a09"
+    },
+    {
+      "id": "E20",
+      "case_id": "C03",
+      "seed_pointer": "/cases/2/records/17/row/answer/reasoning",
+      "literal_quote": "I follow A1's stronger-supported reading: Cape",
+      "context_excerpt": "ps. Given one best choice and coordination value, I follow A1's stronger-supported reading: Cape.",
+      "analyst_note": "A2追随A1，而非简单服从多数",
+      "slot": 55,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/055.raw.txt",
+      "raw_sha256": "1a531a1611058eacb80534e108c15121f82f8d357f1201bcd5786b7806f60a09"
+    },
+    {
+      "id": "E21",
+      "case_id": "C03",
+      "seed_pointer": "/cases/2/records/18/row/answer/reasoning",
+      "literal_quote": "A1's claim that Starlight's (f)/(i) data is unsupported is false",
+      "context_excerpt": " on cost, manufacturing, or computer performance. A1's claim that Starlight's (f)/(i) data is unsupported is false—the packet lists them. Starlight has the fewest disqualifying failures and best overall profile, an",
+      "analyst_note": "A3明确反驳且保留参考答案，构成反例",
+      "slot": 56,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/056.raw.txt",
+      "raw_sha256": "adeb6827f7620a844f9aa4a51fa9b60ef21f9341532567761326cc0f65e1e8c1"
+    },
+    {
+      "id": "E22",
+      "case_id": "C03",
+      "seed_pointer": "/cases/2/records/7/row/answer/reasoning",
+      "literal_quote": "Choosing Starlight maximizes coordination and correctness",
+      "context_excerpt": " and the other participants' messages support it. Choosing Starlight maximizes coordination and correctness.",
+      "analyst_note": "A4从错误初答改向参考答案，同伴可有益",
+      "slot": 45,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/045.raw.txt",
+      "raw_sha256": "695e06a9910c4badd182f481c92bbb912064f0f182afdde7b14ee2285af2c381"
+    },
+    {
+      "id": "E23",
+      "case_id": "C04",
+      "seed_pointer": "/cases/3/records/7/row/answer/reasoning",
+      "literal_quote": "Eddie's alibi is unverified",
+      "context_excerpt": "Eddie's alibi is unverified (nobody saw him working), he knew Guion's 6:30 departure, his crowbar was the weapon, and he had st",
+      "analyst_note": "A2在原件路由第一轮形成参考候选",
+      "slot": 29,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/029.raw.txt",
+      "raw_sha256": "e94b522e97473ea06e80d493e1c13cf9fe3430d341b420c5a38e692a114f4ad6"
+    },
+    {
+      "id": "E24",
+      "case_id": "C04",
+      "seed_pointer": "/cases/3/records/10/row/answer/reasoning",
+      "literal_quote": "Mickey had motive",
+      "context_excerpt": "Mickey had motive (Guion might stop supporting his business), lied about going to pick Guion up (turned to a café ins",
+      "analyst_note": "A2下一轮由参考候选回到Mickey",
+      "slot": 32,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/032.raw.txt",
+      "raw_sha256": "d2a850ff2297e8de197028d3e1700a1bab47ea70839cfb82e8f4ad0cd4912266"
+    },
+    {
+      "id": "E25",
+      "case_id": "C04",
+      "seed_pointer": "/cases/3/records/10/row/answer/reasoning",
+      "literal_quote": "lied about going to pick Guion up",
+      "context_excerpt": "otive (Guion might stop supporting his business), lied about going to pick Guion up (turned to a café instead), and knew the house. His café alibi 6:30-6:45 doesn't cover the 6:30-7:0",
+      "analyst_note": "推断中的说谎被当确定前提，原文仅说改变行程",
+      "slot": 32,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/032.raw.txt",
+      "raw_sha256": "d2a850ff2297e8de197028d3e1700a1bab47ea70839cfb82e8f4ad0cd4912266"
+    },
+    {
+      "id": "E26",
+      "case_id": "C04",
+      "seed_pointer": "/cases/3/records/15/row/answer/reasoning",
+      "literal_quote": "Mickey best fits means, motive, and opportunity",
+      "context_excerpt": " but is weaker, and no one witnessed him working. Mickey best fits means, motive, and opportunity.",
+      "analyst_note": "全信息单体也输出非参考候选",
+      "slot": 37,
+      "source_raw": "runs/imp-confirmation-live-20261026-r1/037.raw.txt",
+      "raw_sha256": "f2e14811e1ffee46f408555c87429ffa74791cfd2cbff0e93075a7b062044a8f"
+    },
+    {
+      "id": "E27",
+      "case_id": "C05",
+      "seed_pointer": "/cases/4/records/2/packet/own_sources/0/content",
+      "literal_quote": "The guilty person is less than 30 years old",
+      "context_excerpt": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claim",
+      "analyst_note": "有效年龄约束的直接来源",
+      "slot": 3,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/003.raw.txt",
+      "raw_sha256": "5475004b2e6e550a5b78a155a997fd9cb261f42eecbb7ac6ce126c75f4caba42"
+    },
+    {
+      "id": "E28",
+      "case_id": "C05",
+      "seed_pointer": "/cases/4/records/0/row/answer/text",
+      "literal_quote": "Mr. X (53) is excluded by the age restriction",
+      "context_excerpt": "re Mr. Z (28), Mrs. Y (27), and Mr. X's son (17); Mr. X (53) is excluded by the age restriction. This is only an age-compatibility filter, not a determination of responsibility: S02 does not name",
+      "analyst_note": "局部稿正确给出排除后果",
+      "slot": 1,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/001.raw.txt",
+      "raw_sha256": "ba2ce7fdd59b024148337f1e466b0843f2a3f14d1613a6c8a71c7d2187df3ded"
+    },
+    {
+      "id": "E29",
+      "case_id": "C05",
+      "seed_pointer": "/cases/4/records/3/packet/local_reconstruction/text",
+      "literal_quote": "Mr. X is 53 (incompatible)",
+      "context_excerpt": " Applying the age restriction to the listed ages: Mr. X is 53 (incompatible), Mrs. Y is 27 (compatible), Mr. X's son is 17 (compatible), and Mr. Z is 28 (compatible). So S02 na",
+      "analyst_note": "排除后果真实进入最终接收者输入",
+      "slot": 4,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+      "raw_sha256": "e57e23c1b5ebc97825176d8ac5749ba8f108e7c188b09ece8689ff1b94aad4c3"
+    },
+    {
+      "id": "E30",
+      "case_id": "C05",
+      "seed_pointer": "/cases/4/records/3/row/answer/reasoning",
+      "literal_quote": "A2 itself concedes age compatibility is not evidence of guilt",
+      "context_excerpt": " is a fallible finding, not a certified fact, and A2 itself concedes age compatibility is not evidence of guilt. Comparing it with the historical work: A1's S01 gives a different and more discriminating profile—",
+      "analyst_note": "把局部约束不足以定案作为弱化它的理由",
+      "slot": 4,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+      "raw_sha256": "e57e23c1b5ebc97825176d8ac5749ba8f108e7c188b09ece8689ff1b94aad4c3"
+    },
+    {
+      "id": "E31",
+      "case_id": "C05",
+      "seed_pointer": "/cases/4/records/3/row/answer/reasoning",
+      "literal_quote": "A2's age constraint would also exclude Mr. X (53)",
+      "context_excerpt": "ion; no public fact attributes alcohol to Mrs. Y. A2's age constraint would also exclude Mr. X (53), but that constraint comes from a different member's source and is not established; it cannot overr",
+      "analyst_note": "最终输出明确承认对所选对象的排除",
+      "slot": 4,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+      "raw_sha256": "e57e23c1b5ebc97825176d8ac5749ba8f108e7c188b09ece8689ff1b94aad4c3"
+    },
+    {
+      "id": "E32",
+      "case_id": "C05",
+      "seed_pointer": "/cases/4/records/3/row/answer/reasoning",
+      "literal_quote": "it cannot override the more specific vehicle/alcohol profile",
+      "context_excerpt": "different member's source and is not established; it cannot override the more specific vehicle/alcohol profile in A1's own source. The unresolved limits are that no public source gives a numeric 1.5 reading or ",
+      "analyst_note": "按来源和叙事具体性排序，而未兑现排除约束",
+      "slot": 4,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+      "raw_sha256": "e57e23c1b5ebc97825176d8ac5749ba8f108e7c188b09ece8689ff1b94aad4c3"
+    },
+    {
+      "id": "E33",
+      "case_id": "C05",
+      "seed_pointer": "/cases/4/records/3/packet/historical_work/reason",
+      "literal_quote": "described only as a passenger",
+      "context_excerpt": "ement excludes Mr. Z (motorcycle). Mr. X's son is described only as a passenger returning home with his father, so he is unlikely to be the car driver. Among the car drivers, Mr. ",
+      "analyst_note": "乘客假设在历史稿中已存在",
+      "slot": 4,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+      "raw_sha256": "e57e23c1b5ebc97825176d8ac5749ba8f108e7c188b09ece8689ff1b94aad4c3"
+    },
+    {
+      "id": "E34",
+      "case_id": "C05",
+      "seed_pointer": "/cases/4/records/3/packet/shared_contributions/A3/facts/5/value",
+      "literal_quote": "passenger",
+      "context_excerpt": "passenger",
+      "analyst_note": "结构化字段也含该推断，不只是自由文本",
+      "slot": 4,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+      "raw_sha256": "e57e23c1b5ebc97825176d8ac5749ba8f108e7c188b09ece8689ff1b94aad4c3"
+    },
+    {
+      "id": "E35",
+      "case_id": "C05",
+      "seed_pointer": "/cases/4/records/3/request_payload/instructions",
+      "literal_quote": "Shared contributions and execution reports are fallible reports",
+      "context_excerpt": "d own_sources define your direct original access. Shared contributions and execution reports are fallible reports, not additional private-original access or truth oracles. local_reconstruction is a fallible findin",
+      "analyst_note": "当前实验提示显式区分原件与他人报告；解释须考虑协议设计",
+      "slot": 4,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/004.raw.txt",
+      "raw_sha256": "e57e23c1b5ebc97825176d8ac5749ba8f108e7c188b09ece8689ff1b94aad4c3"
+    },
+    {
+      "id": "E36",
+      "case_id": "C06",
+      "seed_pointer": "/cases/5/records/2/packet/own_sources/0/content",
+      "literal_quote": "The only access road to Lakeview Resort is closed",
+      "context_excerpt": "The only access road to Lakeview Resort is closed due to flooding after this week’s storm and is expected to remain impassable through the weekend.",
+      "analyst_note": "唯一通路范围是直接来源事实",
+      "slot": 27,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/027.raw.txt",
+      "raw_sha256": "61e9f9bf379a1845442a981fbdb2418e914a2f6e017b35ae38fc8c8c1f8cd71a"
+    },
+    {
+      "id": "E37",
+      "case_id": "C06",
+      "seed_pointer": "/cases/5/records/0/row/answer/text",
+      "literal_quote": "The historical_work's suggestion that \"one blocked route does not prove all routes blocked\" is not supported by S01's wording",
+      "context_excerpt": " that this road is expected to remain impassable. The historical_work's suggestion that \"one blocked route does not prove all routes blocked\" is not supported by S01's wording, which identifies this as the only access road; that is an inference, not an established fact. PUBL",
+      "analyst_note": "可见旧稿的局部重建直接指出旧推断问题",
+      "slot": 25,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/025.raw.txt",
+      "raw_sha256": "b4d8133ed2d4c091362d45a53baf008552e39541c825b5e75e1463ade0bcfc38"
+    },
+    {
+      "id": "E38",
+      "case_id": "C06",
+      "seed_pointer": "/cases/5/records/2/row/answer/text",
+      "literal_quote": "not a confirmed, region-wide, or venue-wide closure",
+      "context_excerpt": "oblem for Lakeview during the banquet window, but not a confirmed, region-wide, or venue-wide closure.",
+      "analyst_note": "隔离局部稿主要报告范围和不确定性",
+      "slot": 27,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/027.raw.txt",
+      "raw_sha256": "61e9f9bf379a1845442a981fbdb2418e914a2f6e017b35ae38fc8c8c1f8cd71a"
+    },
+    {
+      "id": "E39",
+      "case_id": "C06",
+      "seed_pointer": "/cases/5/records/1/row/answer/reasoning",
+      "literal_quote": "historical_work's caveat that 'one blocked route does not prove all routes blocked' is unsupported",
+      "context_excerpt": "ent. The local reconstruction correctly notes the historical_work's caveat that 'one blocked route does not prove all routes blocked' is unsupported: S01 explicitly calls it the only access road, so the access problem is a categorical obstacle for ",
+      "analyst_note": "参考命中分支明确重算旧推断",
+      "slot": 26,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/026.raw.txt",
+      "raw_sha256": "a820235e1c786b2a779c15649d7c682856e8a55baf425043144e38ae6f9e5855"
+    },
+    {
+      "id": "E40",
+      "case_id": "C06",
+      "seed_pointer": "/cases/5/records/1/row/answer/reasoning",
+      "literal_quote": "categorical obstacle for the scheduled time",
+      "context_excerpt": " the only access road, so the access problem is a categorical obstacle for the scheduled time, not merely a risk. Catering and this-Saturday availability at Lakeview are also unconfirmed. Herit",
+      "analyst_note": "其时间确定性表述比expected更强",
+      "slot": 26,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/026.raw.txt",
+      "raw_sha256": "a820235e1c786b2a779c15649d7c682856e8a55baf425043144e38ae6f9e5855"
+    },
+    {
+      "id": "E41",
+      "case_id": "C06",
+      "seed_pointer": "/cases/5/records/3/row/answer/reasoning",
+      "literal_quote": "it does not establish that the venue itself is closed or that no alternative route exists",
+      "context_excerpt": "tion rather than a confirmed Saturday status, and it does not establish that the venue itself is closed or that no alternative route exists. This narrows but does not overturn the historical work's tentative selection of Lakeview. Recomput",
+      "analyst_note": "另一分支再次把唯一通路淡化成可能另有路径",
+      "slot": 28,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/028.raw.txt",
+      "raw_sha256": "fe3add8003f2e9f3a5659cc68bd747020fd1d8ac0f7f63aabfb46d48d1b27cde"
+    },
+    {
+      "id": "E42",
+      "case_id": "C06",
+      "seed_pointer": "/cases/5/records/3/row/answer/reasoning",
+      "literal_quote": "does not overturn the historical work's tentative selection of Lakeview",
+      "context_excerpt": "hat no alternative route exists. This narrows but does not overturn the historical work's tentative selection of Lakeview. Recomputing: Lakeview has documented capacity for 120 (exceeding ~90), while Grand Oak's usual two",
+      "analyst_note": "仍保留旧稿选项，旧稿在最终两分支均可见",
+      "slot": 28,
+      "source_raw": "runs/local-reconstruction-live-20261026-r1/028.raw.txt",
+      "raw_sha256": "fe3add8003f2e9f3a5659cc68bd747020fd1d8ac0f7f63aabfb46d48d1b27cde"
+    },
+    {
+      "id": "E43",
+      "case_id": "C07",
+      "seed_pointer": "/cases/6/run/rounds/1/messages/0/response",
+      "literal_quote": "the blocked South Street access",
+      "context_excerpt": "enfield High School is the best-equipped shelter, the blocked South Street access raises serious concern about whether residents can get there in time; unless we confirm safe routes",
+      "analyst_note": "正确的受阻陈述出现在公开对话",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json"
+    },
+    {
+      "id": "E44",
+      "case_id": "C07",
+      "seed_pointer": "/cases/6/run/rounds/1/messages/1/prompt",
+      "literal_quote": "the blocked South Street access",
+      "context_excerpt": "enfield High School is the best-equipped shelter, the blocked South Street access raises serious concern about whether residents can get there in time; unless we confirm safe routes",
+      "analyst_note": "该句真实进入下一成员prompt",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json"
+    },
+    {
+      "id": "E45",
+      "case_id": "C07",
+      "seed_pointer": "/cases/6/run/rounds/1/messages/1/response",
+      "literal_quote": "South Street remains open to vehicles",
+      "context_excerpt": "Given South Street remains open to vehicles and Greenfield High School is the only shelter with proven safety and supplies, we should instruct ",
+      "analyst_note": "收到后仍给相反陈述",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json"
+    },
+    {
+      "id": "E46",
+      "case_id": "C07",
+      "seed_pointer": "/cases/6/run/rounds/1/messages/3/response",
+      "literal_quote": "South Street is confirmed open",
+      "context_excerpt": "Since South Street is confirmed open and Greenfield High School is fully stocked and structurally sound, it is the safest choice—residen",
+      "analyst_note": "后续陈述使用confirmed语气",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json"
+    },
+    {
+      "id": "E47",
+      "case_id": "C07",
+      "seed_pointer": "/cases/6/run/rounds/2/messages/0/response",
+      "literal_quote": "With South Street confirmed open",
+      "context_excerpt": "With South Street confirmed open, I agree that all residents should be directed to Greenfield High School immediately, using availab",
+      "analyst_note": "原阻断报告者后续也改为开放",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gpt-4.1.json"
+    },
+    {
+      "id": "E48",
+      "case_id": "C08",
+      "seed_pointer": "/cases/7/run/rounds/0/messages/1/response",
+      "literal_quote": "Fact 3 explicitly states its basement has flooded",
+      "context_excerpt": "roblem, we cannot direct residents to Blue River. Fact 3 explicitly states its basement has flooded and its generators are inoperable, making it a death trap, not a shelter.",
+      "analyst_note": "同名编号指向Blue River洪水事实",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    },
+    {
+      "id": "E49",
+      "case_id": "C08",
+      "seed_pointer": "/cases/7/run/rounds/0/messages/2/response",
+      "literal_quote": "Fact 3 refers to Oakridge Library's incomplete roof",
+      "context_excerpt": "I must correct the record, as Fact 3 refers to Oakridge Library's incomplete roof, not Blue River. Based on the confirmed facts, Greenfield is inaccessible and Oakridge is structura",
+      "analyst_note": "另一个成员把同名编号用于屋顶旧信息",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    },
+    {
+      "id": "E50",
+      "case_id": "C08",
+      "seed_pointer": "/cases/7/run/rounds/0/messages/3/response",
+      "literal_quote": "Fact 3, which explicitly confirms Oakridge Library's new roof is structurally sound and safe",
+      "context_excerpt": "ccessible due to flooding, but we are overlooking Fact 3, which explicitly confirms Oakridge Library's new roof is structurally sound and safe. It is the only verified safe and accessible shelter, and we must direct residents there immediatel",
+      "analyst_note": "又一同名编号指向屋顶通过检查",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    },
+    {
+      "id": "E51",
+      "case_id": "C08",
+      "seed_pointer": "/cases/7/run/rounds/0/messages/3/response",
+      "literal_quote": "we must direct residents there immediately",
+      "context_excerpt": "he only verified safe and accessible shelter, and we must direct residents there immediately.",
+      "analyst_note": "参考候选在第1轮已由Person4提出，早于EOC声明",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    },
+    {
+      "id": "E52",
+      "case_id": "C08",
+      "seed_pointer": "/cases/7/run/rounds/1/messages/1/response",
+      "literal_quote": "Blue River Community Center's basement flooded an hour ago",
+      "context_excerpt": "ferent Fact 3. My information explicitly states, \"Blue River Community Center's basement flooded an hour ago, and now the backup generators are submerged and inoperable,\" which makes it the most dangerous and",
+      "analyst_note": "成员进一步给出原句，而不是所有事实都未共享",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    },
+    {
+      "id": "E53",
+      "case_id": "C08",
+      "seed_pointer": "/cases/7/run/rounds/1/messages/2/response",
+      "literal_quote": "different, dangerously conflicting sets of information",
+      "context_excerpt": "It is clear we are all operating from different, dangerously conflicting sets of information, particularly regarding Fact 3. We cannot make a decision until we get a single, verified report fr",
+      "analyst_note": "不同材料被统称危险冲突，需区分事实是否真互斥",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    },
+    {
+      "id": "E54",
+      "case_id": "C08",
+      "seed_pointer": "/cases/7/run/rounds/2/messages/3/response",
+      "literal_quote": "I am contacting the Emergency Operations Center",
+      "context_excerpt": "Excellent, we have a clear consensus. I am contacting the Emergency Operations Center right now to get that single, verified report for us.",
+      "analyst_note": "声称发起外部核验",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    },
+    {
+      "id": "E55",
+      "case_id": "C08",
+      "seed_pointer": "/cases/7/run/rounds/4/messages/3/response",
+      "literal_quote": "I have the EOC's unified report",
+      "context_excerpt": "Okay, I have the EOC's unified report: Greenfield High is completely inaccessible due to flooding, and Blue River's generators have faile",
+      "analyst_note": "声称收到报告，发布记录无单独工具回执字段",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    },
+    {
+      "id": "E56",
+      "case_id": "C08",
+      "seed_pointer": "/cases/7/run/rounds/5/messages/0/response",
+      "literal_quote": "Thank you for that definitive report",
+      "context_excerpt": "Thank you for that definitive report. Oakridge Library is our only safe and accessible shelter; we must issue the directive for all resi",
+      "analyst_note": "成员将该声明作为definitive依据",
+      "source_file": "research/expertise-literature-survey-20261028/hidden_generated_gemini-2.5-pro.json"
+    }
+  ],
+  "structural_comparisons": {
+    "C05": {
+      "slots": [
+        2,
+        4
+      ],
+      "packet_different_keys": [
+        "local_reconstruction"
+      ],
+      "request_payload_different_keys": [
+        "instructions"
+      ],
+      "instruction_prefix_same": true,
+      "history_present_in_both": true,
+      "history_same": true
+    },
+    "C06": {
+      "slots": [
+        26,
+        28
+      ],
+      "packet_different_keys": [
+        "local_reconstruction"
+      ],
+      "request_payload_different_keys": [
+        "instructions"
+      ],
+      "instruction_prefix_same": true,
+      "history_present_in_both": true,
+      "history_same": true
+    },
+    "C04": {
+      "slots": [
+        29,
+        32
+      ],
+      "packet_different_keys": [
+        "previous_answer"
+      ],
+      "request_payload_different_keys": [
+        "instructions"
+      ],
+      "instruction_prefix_same": true,
+      "history_present_in_both": false,
+      "history_same": true,
+      "messages_source_only": true
+    }
+  },
+  "reference_choice_transitions": {
+    "C01": {
+      "reference_option": "option_2",
+      "member_matches": {
+        "shared_r0": {
+          "n": 3,
+          "matching_reference": 1,
+          "choices": [
+            null,
+            "option_2",
+            "option_1"
+          ]
+        },
+        "imp_r1": {
+          "n": 3,
+          "matching_reference": 3,
+          "choices": [
+            "option_2",
+            "option_2",
+            "option_2"
+          ]
+        },
+        "standard_r1": {
+          "n": 3,
+          "matching_reference": 2,
+          "choices": [
+            "option_2",
+            "option_2",
+            "option_1"
+          ]
+        },
+        "standard_r2": {
+          "n": 3,
+          "matching_reference": 1,
+          "choices": [
+            "option_1",
+            "option_2",
+            "option_1"
+          ]
+        },
+        "imp_r2": {
+          "n": 3,
+          "matching_reference": 3,
+          "choices": [
+            "option_2",
+            "option_2",
+            "option_2"
+          ]
+        },
+        "full_information_r0": {
+          "n": 1,
+          "matching_reference": 1,
+          "choices": [
+            "option_2"
+          ]
+        }
+      }
+    },
+    "C02": {
+      "reference_option": "option_3",
+      "member_matches": {
+        "shared_r0": {
+          "n": 3,
+          "matching_reference": 0,
+          "choices": [
+            "option_2",
+            "option_1",
+            "option_1"
+          ]
+        },
+        "standard_r1": {
+          "n": 3,
+          "matching_reference": 0,
+          "choices": [
+            "option_2",
+            "option_1",
+            "option_1"
+          ]
+        },
+        "imp_r1": {
+          "n": 3,
+          "matching_reference": 3,
+          "choices": [
+            "option_3",
+            "option_3",
+            "option_3"
+          ]
+        },
+        "imp_r2": {
+          "n": 3,
+          "matching_reference": 3,
+          "choices": [
+            "option_3",
+            "option_3",
+            "option_3"
+          ]
+        },
+        "standard_r2": {
+          "n": 3,
+          "matching_reference": 0,
+          "choices": [
+            "option_1",
+            "option_1",
+            "option_1"
+          ]
+        },
+        "full_information_r0": {
+          "n": 1,
+          "matching_reference": 1,
+          "choices": [
+            "option_3"
+          ]
+        }
+      }
+    },
+    "C03": {
+      "reference_option": "option_2",
+      "member_matches": {
+        "shared_r0": {
+          "n": 4,
+          "matching_reference": 2,
+          "choices": [
+            "option_3",
+            "option_2",
+            "option_2",
+            "option_3"
+          ]
+        },
+        "standard_r1": {
+          "n": 4,
+          "matching_reference": 3,
+          "choices": [
+            "option_3",
+            "option_2",
+            "option_2",
+            "option_2"
+          ]
+        },
+        "imp_r1": {
+          "n": 4,
+          "matching_reference": 4,
+          "choices": [
+            "option_2",
+            "option_2",
+            "option_2",
+            "option_2"
+          ]
+        },
+        "imp_r2": {
+          "n": 4,
+          "matching_reference": 4,
+          "choices": [
+            "option_2",
+            "option_2",
+            "option_2",
+            "option_2"
+          ]
+        },
+        "standard_r2": {
+          "n": 4,
+          "matching_reference": 2,
+          "choices": [
+            "option_3",
+            "option_3",
+            "option_2",
+            "option_2"
+          ]
+        },
+        "full_information_r0": {
+          "n": 1,
+          "matching_reference": 1,
+          "choices": [
+            "option_2"
+          ]
+        }
+      }
+    },
+    "C04": {
+      "reference_option": "option_1",
+      "member_matches": {
+        "shared_r0": {
+          "n": 3,
+          "matching_reference": 1,
+          "choices": [
+            "option_3",
+            "option_2",
+            "option_1"
+          ]
+        },
+        "standard_r1": {
+          "n": 3,
+          "matching_reference": 0,
+          "choices": [
+            "option_3",
+            "option_3",
+            "option_3"
+          ]
+        },
+        "imp_r1": {
+          "n": 3,
+          "matching_reference": 1,
+          "choices": [
+            "option_3",
+            "option_1",
+            "option_3"
+          ]
+        },
+        "imp_r2": {
+          "n": 3,
+          "matching_reference": 0,
+          "choices": [
+            "option_3",
+            "option_3",
+            "option_3"
+          ]
+        },
+        "standard_r2": {
+          "n": 3,
+          "matching_reference": 0,
+          "choices": [
+            "option_3",
+            "option_3",
+            "option_3"
+          ]
+        },
+        "full_information_r0": {
+          "n": 1,
+          "matching_reference": 0,
+          "choices": [
+            "option_3"
+          ]
+        }
+      }
+    }
+  },
+  "new_model_calls": 0,
+  "human_annotations": 0,
+  "scope": "Literal checks and declared assistant interpretations; not human independent labels, prevalence or causal effects."
+}

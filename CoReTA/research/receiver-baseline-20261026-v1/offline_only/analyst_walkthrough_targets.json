@@ -1,0 +1,22 @@
+[
+  {
+    "task": "010",
+    "analyst_design_issue": "C道路信息已提供却称未建立",
+    "analyst_design_target": "Check supplied C road evidence before claiming absence; do not infer all risks resolved."
+  },
+  {
+    "task": "023",
+    "analyst_design_issue": "唯一道路及预订例外被弱化",
+    "analyst_design_target": "Preserve only-road scope and distinguish usual booking policy from a specific exception; retain actual uncertainties."
+  },
+  {
+    "task": "027",
+    "analyst_design_issue": "旧通路描述盖过有条件的新更新",
+    "analyst_design_target": "Compare old and updated road evidence while retaining the monitoring condition; risk ranking remains contestable."
+  },
+  {
+    "task": "011",
+    "analyst_design_issue": "错误的当前状态编码导致排除",
+    "analyst_design_target": "Question the ready=false abstraction against restoration and task windows; do not force agreement with the report."
+  }
+]

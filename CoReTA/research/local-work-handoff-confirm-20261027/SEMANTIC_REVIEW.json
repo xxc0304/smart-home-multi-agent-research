@@ -1,0 +1,3289 @@
+{
+  "review_type": "executor post-run nonblind manual semantic review with source extraction; no model judge",
+  "method_changed": false,
+  "new_api_requests": 0,
+  "scoring_policy": "Original upstream EM/scale unchanged; no exclusion or ambiguity rescore",
+  "metric_distinction": "A valid numeric partial in text/C is distinct from a ready W receipt. Discussion has no W interface. Structural graph is not semantic success.",
+  "summary": {
+    "discussion": {
+      "planned_dependency_flows": 4,
+      "evaluable_dependency_flows": 4,
+      "technical_missing": 0,
+      "first_wave_member_opportunities": 8,
+      "manual_correct_numeric_partial_any_available_channel": 8,
+      "ready_work_receipt_members": null,
+      "structural_cross_member_final_graphs": 0,
+      "confirmed_official_target_correct_combination_and_adoption": 2,
+      "official_target_not_matched_with_grain_ambiguity": 2
+    },
+    "ordinary": {
+      "planned_dependency_flows": 4,
+      "evaluable_dependency_flows": 4,
+      "technical_missing": 0,
+      "first_wave_member_opportunities": 8,
+      "manual_correct_numeric_partial_any_available_channel": 6,
+      "ready_work_receipt_members": 6,
+      "structural_cross_member_final_graphs": 2,
+      "confirmed_official_target_correct_combination_and_adoption": 2,
+      "official_target_not_matched_with_grain_ambiguity": 2
+    },
+    "local_work": {
+      "planned_dependency_flows": 4,
+      "evaluable_dependency_flows": 4,
+      "technical_missing": 0,
+      "first_wave_member_opportunities": 8,
+      "manual_correct_numeric_partial_any_available_channel": 8,
+      "ready_work_receipt_members": 5,
+      "structural_cross_member_final_graphs": 2,
+      "confirmed_official_target_correct_combination_and_adoption": 2,
+      "official_target_not_matched_with_grain_ambiguity": 2
+    }
+  },
+  "dependency_flows": [
+    {
+      "flow_id": "dependent-01-discussion-r1",
+      "case_id": "dependent-01",
+      "arm": "discussion",
+      "repeat": 1,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "T1 only shows the four 2019 quarterly dividends (273, 273, 274, 273 million), totaling 1093 million. The 2018 dividend rows are missing from the provided table, so the average across 2018 and 2019 cannot be computed yet. If the question intends the average quarterly total amount, the 2019 average is 1093/4 = 273.25 million; but a true 2018–2019 average requires the 2018 total amount (or each 2018 quarterly amount). Please supply the 2018 dividend rows.",
+          "calculations": [
+            {
+              "expression": "273+273+274+273",
+              "values": {}
+            },
+            {
+              "expression": "1093/4",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [],
+          "accepted_work_snapshots_after_first_wave": {},
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r1/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The visible table (T2) contains only 2018 quarterly dividends (total amounts in millions): 586, 584, 588, 586. The 2019 dividend rows are not present in the visible source rows, so the average total dividend value across 2018 and 2019 cannot be computed from the available evidence. If the question instead means the average of the 2018 quarterly totals, that is (586+584+588+586)/4 = 586 million. Please confirm whether 2019 rows are missing or whether the intended calculation is 2018-only.",
+          "calculations": [
+            {
+              "expression": "(586+584+588+586)/4",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [],
+          "accepted_work_snapshots_after_first_wave": {},
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r1/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "The question asks for the average total dividend value for 2018 and 2019. Summing 2019 quarterly total amounts (T1: 273+273+274+273 = 1093 million) and 2018 quarterly total amounts (T2: 586+584+588+586 = 2344 million) gives a combined total of 3437 million. Averaging the two annual totals: (1093+2344)/2 = 1718.5 million, about $1.72 billion per year. This matches calculator result C12. (The alternative per-quarter average would be 3437/8 = 429.625 million, but the natural reading referencing the two years is the annual average.)",
+          "result_id": "C12"
+        },
+        "delivered": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "The question asks for the average total dividend value for 2018 and 2019. Summing 2019 quarterly total amounts (T1: 273+273+274+273 = 1093 million) and 2018 quarterly total amounts (T2: 586+584+588+586 = 2344 million) gives a combined total of 3437 million. Averaging the two annual totals: (1093+2344)/2 = 1718.5 million, about $1.72 billion per year. This matches calculator result C12. (The alternative per-quarter average would be 3437/8 = 429.625 million, but the natural reading referencing the two years is the annual average.)",
+          "result_id": "C12"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C12",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "final_work_values": {},
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r1/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r1/requests/03-A1.json",
+      "structural_cross_member_final_graph": false,
+      "manual_official_target_correct_combination_and_final_adoption": false,
+      "manual_official_target_classification": "not_matched; annual-total mean versus official per-payment mean; grain ambiguity",
+      "first_correct_numeric_integration_wave": null,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-01-discussion-r2",
+      "case_id": "dependent-01",
+      "arm": "discussion",
+      "repeat": 2,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "T1 only shows 2019 dividends (four quarterly payments: $273M, $273M, $274M, $273M = $1,093M total for 2019). No 2018 dividend rows are present in the visible sources, so the 2018 total cannot be determined from the provided packet. The average total amount for 2018 and 2019 requires the 2018 total; if 2018 data were available, the average would be (2018 total + 1093)/2. Please provide the 2018 dividend table rows.",
+          "calculations": [
+            {
+              "expression": "273+273+274+273",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [],
+          "accepted_work_snapshots_after_first_wave": {},
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r2/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The table T2 only shows 2018 dividend declarations (four quarterly payments: 586, 584, 588, 586 million). No 2019 rows are present in the provided source, so the 2019 total is missing. Using only the 2018 data, the total is 2344 million and the average per quarter is 586 million. I cannot compute a 2018–2019 average without the 2019 total amount; please provide the 2019 dividend rows.",
+          "calculations": [
+            {
+              "expression": "586+584+588+586",
+              "values": {}
+            },
+            {
+              "expression": "2344/4",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [],
+          "accepted_work_snapshots_after_first_wave": {},
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r2/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "2019 quarterly total amounts from T1 sum to 273+273+274+273 = $1,093 million. 2018 quarterly total amounts from T2 sum to 586+584+588+586 = $2,344 million. The average of the two annual totals is (2,344+1,093)/2 = $1,718.5 million, matching accepted calculation C13 (and C10).",
+          "result_id": "C13"
+        },
+        "delivered": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "2019 quarterly total amounts from T1 sum to 273+273+274+273 = $1,093 million. 2018 quarterly total amounts from T2 sum to 586+584+588+586 = $2,344 million. The average of the two annual totals is (2,344+1,093)/2 = $1,718.5 million, matching accepted calculation C13 (and C10).",
+          "result_id": "C13"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C13",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "final_work_values": {},
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r2/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-discussion-r2/requests/03-A1.json",
+      "structural_cross_member_final_graph": false,
+      "manual_official_target_correct_combination_and_final_adoption": false,
+      "manual_official_target_classification": "not_matched; annual-total mean versus official per-payment mean; grain ambiguity",
+      "first_correct_numeric_integration_wave": null,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-01-ordinary-r1",
+      "case_id": "dependent-01",
+      "arm": "ordinary",
+      "repeat": 1,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "T1 only shows 2019 quarterly dividends (273+273+274+273 = $1,093 million). The 2018 dividend totals are not present in the visible sources (P2 states the table covers 2019 and 2018, but T1's rows are all 2019), so the average across 2018 and 2019 cannot be computed without the 2018 total.",
+          "calculations": [
+            {
+              "expression": "273+273+274+273",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "2019 total dividend amount",
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "USD millions",
+                "period": "2019"
+              },
+              "expression": "q1+q2+q3+q4",
+              "inputs": [
+                {
+                  "name": "q1",
+                  "value": 273,
+                  "metadata": {
+                    "subject": "Q1 2019 dividend total",
+                    "unit": "USD millions",
+                    "period": "2019 Q1"
+                  }
+                },
+                {
+                  "name": "q2",
+                  "value": 273,
+                  "metadata": {
+                    "subject": "Q2 2019 dividend total",
+                    "unit": "USD millions",
+                    "period": "2019 Q2"
+                  }
+                },
+                {
+                  "name": "q3",
+                  "value": 274,
+                  "metadata": {
+                    "subject": "Q3 2019 dividend total",
+                    "unit": "USD millions",
+                    "period": "2019 Q3"
+                  }
+                },
+                {
+                  "name": "q4",
+                  "value": 273,
+                  "metadata": {
+                    "subject": "Q4 2019 dividend total",
+                    "unit": "USD millions",
+                    "period": "2019 Q4"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "P2"
+              ],
+              "conditions": [
+                "Assumes the four disclosed 2019 quarterly payments (273, 273, 274, 273) are the complete 2019 total",
+                "2018 total dividend amount is not available in the visible sources"
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W1": {
+              "status": "ready",
+              "value": 1093.0,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "USD millions",
+                "period": "2019"
+              },
+              "conditions": [
+                "2018 total dividend amount is not available in the visible sources",
+                "Assumes the four disclosed 2019 quarterly payments (273, 273, 274, 273) are the complete 2019 total"
+              ],
+              "sources": [
+                "P2",
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r1/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The table (T2) provides total dividend amounts only for 2018 (four quarterly declarations: 586, 584, 588, 586 million). No 2019 total-amount rows are visible in the provided sources (P3 only mentions a February 2020 declaration), so the average for 2018 and 2019 cannot be computed from the given evidence. I can compute the 2018 total and average per declaration as an interim result, but the cross-year average requires 2019 totals that are not present.",
+          "calculations": [
+            {
+              "expression": "586+584+588+586",
+              "values": {}
+            },
+            {
+              "expression": "(586+584+588+586)/4",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "2018 total and per-declaration average of total dividend amount",
+              "metadata": {
+                "subject": "total amount of dividends declared in 2018",
+                "unit": "millions of dollars",
+                "period": "2018"
+              },
+              "expression": "a+b+c+d",
+              "inputs": [
+                {
+                  "name": "a",
+                  "value": 586,
+                  "metadata": {
+                    "subject": "total dividend amount, Nov 14 2018 declaration",
+                    "unit": "millions of dollars",
+                    "period": "2018"
+                  }
+                },
+                {
+                  "name": "b",
+                  "value": 584,
+                  "metadata": {
+                    "subject": "total dividend amount, Aug 21 2018 declaration",
+                    "unit": "millions of dollars",
+                    "period": "2018"
+                  }
+                },
+                {
+                  "name": "c",
+                  "value": 588,
+                  "metadata": {
+                    "subject": "total dividend amount, May 23 2018 declaration",
+                    "unit": "millions of dollars",
+                    "period": "2018"
+                  }
+                },
+                {
+                  "name": "d",
+                  "value": 586,
+                  "metadata": {
+                    "subject": "total dividend amount, Feb 21 2018 declaration",
+                    "unit": "millions of dollars",
+                    "period": "2018"
+                  }
+                }
+              ],
+              "basis": [
+                "T2"
+              ],
+              "conditions": [
+                "Amounts are in millions as stated in the table header",
+                "Only 2018 declarations are present; 2019 total-amount rows are not in the provided sources"
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W2": {
+              "status": "ready",
+              "value": 2344.0,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "total amount of dividends declared in 2018",
+                "unit": "millions of dollars",
+                "period": "2018"
+              },
+              "conditions": [
+                "Amounts are in millions as stated in the table header",
+                "Only 2018 declarations are present; 2019 total-amount rows are not in the provided sources"
+              ],
+              "sources": [
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r1/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "2019 total dividend amount from T1: 273+273+274+273 = 1,093 ($M). 2018 total from T2: 586+584+588+586 = 2,344 ($M). Average = (1,093+2,344)/2 = 1,718.5 million USD. W4 is the accepted cross-year average result built from W1 (2019) and W2 (2018).",
+          "result_id": "W4"
+        },
+        "delivered": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "2019 total dividend amount from T1: 273+273+274+273 = 1,093 ($M). 2018 total from T2: 586+584+588+586 = 2,344 ($M). Average = (1,093+2,344)/2 = 1,718.5 million USD. W4 is the accepted cross-year average result built from W1 (2019) and W2 (2018).",
+          "result_id": "W4"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "2018 total dividend amount is not available in the visible sources",
+          "Amounts are in millions as stated in the table header",
+          "Assumes the four disclosed 2019 quarterly payments (273, 273, 274, 273) are the complete 2019 total",
+          "Assumes the four quarterly declarations in each year are the complete annual totals",
+          "Both totals are in millions of dollars",
+          "Only 2018 declarations are present; 2019 total-amount rows are not in the provided sources",
+          "W2's condition that 2019 rows are absent is superseded by T1, which supplies all four 2019 quarterly totals"
+        ],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W4",
+        "work_ids": [
+          "W1",
+          "W2",
+          "W4"
+        ],
+        "owners": [
+          "A1",
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "final_work_values": {
+        "W1": {
+          "status": "ready",
+          "value": 1093.0,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "total dividend amount",
+            "unit": "USD millions",
+            "period": "2019"
+          },
+          "conditions": [
+            "2018 total dividend amount is not available in the visible sources",
+            "Assumes the four disclosed 2019 quarterly payments (273, 273, 274, 273) are the complete 2019 total"
+          ],
+          "sources": [
+            "P2",
+            "T1"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W2": {
+          "status": "ready",
+          "value": 2344.0,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "total amount of dividends declared in 2018",
+            "unit": "millions of dollars",
+            "period": "2018"
+          },
+          "conditions": [
+            "Amounts are in millions as stated in the table header",
+            "Only 2018 declarations are present; 2019 total-amount rows are not in the provided sources"
+          ],
+          "sources": [
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W3": {
+          "status": "ready",
+          "value": 1718.5,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "average total amount of dividends (2018 and 2019)",
+            "unit": "USD millions",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "2018 total dividend amount is not available in the visible sources",
+            "2018 total uses the four quarterly total-amount rows in T2 (586, 584, 588, 586)",
+            "2019 total uses the four quarterly total-amount rows in T1 (273, 273, 274, 273)",
+            "Amounts are in millions as stated in the table header",
+            "Assumes the four disclosed 2019 quarterly payments (273, 273, 274, 273) are the complete 2019 total",
+            "Both totals are in millions of dollars",
+            "Only 2018 declarations are present; 2019 total-amount rows are not in the provided sources"
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W4": {
+          "status": "ready",
+          "value": 1718.5,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "average total amount of dividend value",
+            "unit": "USD millions",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "2018 total dividend amount is not available in the visible sources",
+            "Amounts are in millions as stated in the table header",
+            "Assumes the four disclosed 2019 quarterly payments (273, 273, 274, 273) are the complete 2019 total",
+            "Assumes the four quarterly declarations in each year are the complete annual totals",
+            "Both totals are in millions of dollars",
+            "Only 2018 declarations are present; 2019 total-amount rows are not in the provided sources",
+            "W2's condition that 2019 rows are absent is superseded by T1, which supplies all four 2019 quarterly totals"
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W5": {
+          "status": "ready",
+          "value": 1718.5,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "average total amount of dividends (2018 and 2019)",
+            "unit": "USD millions",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "2018 total dividend amount is not available in the visible sources",
+            "2018 total uses the four quarterly total-amount rows in T2 (586, 584, 588, 586)",
+            "2019 total uses the four quarterly total-amount rows in T1 (273, 273, 274, 273)",
+            "Amounts are in millions as stated in the table header",
+            "Assumes the four disclosed 2019 quarterly payments (273, 273, 274, 273) are the complete 2019 total",
+            "Assumes the four disclosed quarterly rows per year are the complete annual totals",
+            "Both totals are in millions of dollars",
+            "Only 2018 declarations are present; 2019 total-amount rows are not in the provided sources"
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        }
+      },
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r1/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r1/requests/03-A1.json",
+      "structural_cross_member_final_graph": true,
+      "manual_official_target_correct_combination_and_final_adoption": false,
+      "manual_official_target_classification": "not_matched; annual-total mean versus official per-payment mean; grain ambiguity",
+      "first_correct_numeric_integration_wave": null,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-01-ordinary-r2",
+      "case_id": "dependent-01",
+      "arm": "ordinary",
+      "repeat": 2,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "The provided table T1 only shows 2019 quarterly dividend totals (273, 273, 274, 273 in millions); it has no 2018 dividend rows despite P2 stating dividends for 2019 and 2018. Thus the 2018 total amount is not available in the visible sources, so the average across 2018 and 2019 cannot be computed without guessing. I can compute the 2019 total and note the missing 2018 quantity.",
+          "calculations": [
+            {
+              "expression": "273+273+274+273",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "2019 total dividend amount",
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "USD millions",
+                "period": "2019"
+              },
+              "expression": "q1+q2+q3+q4",
+              "inputs": [
+                {
+                  "name": "q1",
+                  "value": 273
+                },
+                {
+                  "name": "q2",
+                  "value": 273
+                },
+                {
+                  "name": "q3",
+                  "value": 274
+                },
+                {
+                  "name": "q4",
+                  "value": 273
+                }
+              ],
+              "basis": [
+                "T1",
+                "P2"
+              ],
+              "conditions": [
+                "T1 lists four 2019 dividend declarations; the 2018 dividend rows are not present in the visible sources."
+              ]
+            },
+            {
+              "target": "average total dividend amount for 2018 and 2019",
+              "metadata": {
+                "subject": "average annual total dividend amount",
+                "unit": "USD millions",
+                "period": "2018-2019"
+              },
+              "expression": "(total_2019+total_2018)/2",
+              "inputs": [
+                {
+                  "name": "total_2019",
+                  "result_id": "W1",
+                  "metadata": {
+                    "subject": "total dividend amount",
+                    "unit": "USD millions",
+                    "period": "2019"
+                  }
+                },
+                {
+                  "name": "total_2018",
+                  "metadata": {
+                    "subject": "total dividend amount",
+                    "unit": "USD millions",
+                    "period": "2018"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "Requires the 2018 total dividend amount, which is not present in the visible source T1; P2 indicates 2018 dividends were declared but does not supply amounts."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W1": {
+              "status": "ready",
+              "value": 1093.0,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "USD millions",
+                "period": "2019"
+              },
+              "conditions": [
+                "T1 lists four 2019 dividend declarations; the 2018 dividend rows are not present in the visible sources."
+              ],
+              "sources": [
+                "P2",
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r2/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The table (T2) lists only 2018 dividends payable in 2018 (four quarters: 586, 584, 588, 586 million), but the question asks for the average total dividend value for 2018 and 2019. The 2019 dividend rows are not present in the provided sources; P2 states the board declared dividends payable in 2019 and 2018 but the 2019 amounts are missing from the packet. I can compute the 2018 total but cannot compute a 2018-and-2019 average without the 2019 total.",
+          "calculations": [
+            {
+              "expression": "586+584+588+586",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "total_dividends_2018",
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "millions USD",
+                "period": "2018"
+              },
+              "expression": "q1+q2+q3+q4",
+              "inputs": [
+                {
+                  "name": "q1",
+                  "value": 586,
+                  "metadata": {
+                    "subject": "dividend declared Feb 21, 2018",
+                    "unit": "millions USD",
+                    "period": "2018-Q1"
+                  }
+                },
+                {
+                  "name": "q2",
+                  "value": 588,
+                  "metadata": {
+                    "subject": "dividend declared May 23, 2018",
+                    "unit": "millions USD",
+                    "period": "2018-Q2"
+                  }
+                },
+                {
+                  "name": "q3",
+                  "value": 584,
+                  "metadata": {
+                    "subject": "dividend declared Aug 21, 2018",
+                    "unit": "millions USD",
+                    "period": "2018-Q3"
+                  }
+                },
+                {
+                  "name": "q4",
+                  "value": 586,
+                  "metadata": {
+                    "subject": "dividend declared Nov 14, 2018",
+                    "unit": "millions USD",
+                    "period": "2018-Q4"
+                  }
+                }
+              ],
+              "basis": [
+                "T2"
+              ],
+              "conditions": [
+                "Only 2018 rows are available in T2; 2019 dividend rows are absent from the packet."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W2": {
+              "status": "ready",
+              "value": 2344.0,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "millions USD",
+                "period": "2018"
+              },
+              "conditions": [
+                "Only 2018 rows are available in T2; 2019 dividend rows are absent from the packet."
+              ],
+              "sources": [
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r2/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "2019 total dividends = 273+273+274+273 = 1,093 million USD (T1). 2018 total dividends = 586+588+584+586 = 2,344 million USD (T2). Average = (1,093+2,344)/2 = 1,718.5 million USD. T1 and T2 together cover both years as described in P2, so the average is computable.",
+          "result_id": "W4"
+        },
+        "delivered": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "2019 total dividends = 273+273+274+273 = 1,093 million USD (T1). 2018 total dividends = 586+588+584+586 = 2,344 million USD (T2). Average = (1,093+2,344)/2 = 1,718.5 million USD. T1 and T2 together cover both years as described in P2, so the average is computable.",
+          "result_id": "W4"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "2018 total sums four 2018 declarations from T2 (586, 588, 584, 586 million USD).",
+          "2019 total sums four 2019 declarations from T1 (273, 273, 274, 273 million USD).",
+          "Average is the simple mean of the two annual totals.",
+          "Only 2018 rows are available in T2; 2019 dividend rows are absent from the packet.",
+          "P2 states the board declared dividends payable in 2019 and 2018, supporting combining both annual totals.",
+          "T1 lists four 2019 dividend declarations; the 2018 dividend rows are not present in the visible sources."
+        ],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W4",
+        "work_ids": [
+          "W1",
+          "W2",
+          "W4"
+        ],
+        "owners": [
+          "A1",
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "final_work_values": {
+        "W1": {
+          "status": "ready",
+          "value": 1093.0,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "total dividend amount",
+            "unit": "USD millions",
+            "period": "2019"
+          },
+          "conditions": [
+            "T1 lists four 2019 dividend declarations; the 2018 dividend rows are not present in the visible sources."
+          ],
+          "sources": [
+            "P2",
+            "T1"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W2": {
+          "status": "ready",
+          "value": 2344.0,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "total dividend amount",
+            "unit": "millions USD",
+            "period": "2018"
+          },
+          "conditions": [
+            "Only 2018 rows are available in T2; 2019 dividend rows are absent from the packet."
+          ],
+          "sources": [
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W3": {
+          "status": "ready",
+          "value": 1718.5,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "average annual total dividend amount",
+            "unit": "USD millions",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "2018 total is the sum of four quarterly dividends declared in 2018 per T2 (586, 588, 584, 586 million USD).",
+            "2019 total is the sum of four quarterly dividends declared in 2019 per T1 (273, 273, 274, 273 million USD).",
+            "Average is the simple mean of the two annual totals, as the question asks for the average total amount for 2018 and 2019.",
+            "Only 2018 rows are available in T2; 2019 dividend rows are absent from the packet.",
+            "T1 lists four 2019 dividend declarations; the 2018 dividend rows are not present in the visible sources."
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W4": {
+          "status": "ready",
+          "value": 1718.5,
+          "missing": [],
+          "revision": 2,
+          "metadata": {
+            "subject": "average total dividend amount",
+            "unit": "millions USD",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "2018 total sums four 2018 declarations from T2 (586, 588, 584, 586 million USD).",
+            "2019 total sums four 2019 declarations from T1 (273, 273, 274, 273 million USD).",
+            "Average is the simple mean of the two annual totals.",
+            "Only 2018 rows are available in T2; 2019 dividend rows are absent from the packet.",
+            "P2 states the board declared dividends payable in 2019 and 2018, supporting combining both annual totals.",
+            "T1 lists four 2019 dividend declarations; the 2018 dividend rows are not present in the visible sources."
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        }
+      },
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r2/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-ordinary-r2/requests/03-A1.json",
+      "structural_cross_member_final_graph": true,
+      "manual_official_target_correct_combination_and_final_adoption": false,
+      "manual_official_target_classification": "not_matched; annual-total mean versus official per-payment mean; grain ambiguity",
+      "first_correct_numeric_integration_wave": null,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-01-local_work-r1",
+      "case_id": "dependent-01",
+      "arm": "local_work",
+      "repeat": 1,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "The visible T1 table only lists 2019 dividend declarations (four quarterly payments totaling 273+273+274+273 = $1,093 million). No 2018 total amount is present in the provided sources, so the average across 2018 and 2019 cannot be fully computed. I can register the 2019 total and the partial average expression awaiting the 2018 total.",
+          "calculations": [],
+          "submitted_receipts": [
+            {
+              "target": "2019 total dividend amount",
+              "metadata": {
+                "subject": "total dividends declared",
+                "unit": "USD millions",
+                "period": "2019"
+              },
+              "expression": "q1+q2+q3+q4",
+              "inputs": [
+                {
+                  "name": "q1",
+                  "value": 273
+                },
+                {
+                  "name": "q2",
+                  "value": 273
+                },
+                {
+                  "name": "q3",
+                  "value": 274
+                },
+                {
+                  "name": "q4",
+                  "value": 273
+                }
+              ],
+              "basis": [
+                "T1"
+              ],
+              "conditions": [
+                "T1 table header states Total Amount is in millions",
+                "Only 2019 rows are visible in T1; 2018 amounts are not provided"
+              ]
+            },
+            {
+              "target": "average total dividend amount for 2018 and 2019",
+              "metadata": {
+                "subject": "average annual total dividends declared",
+                "unit": "USD millions",
+                "period": "2018-2019"
+              },
+              "expression": "(a2018+a2019)/2",
+              "inputs": [
+                {
+                  "name": "a2018",
+                  "metadata": {
+                    "subject": "total dividends declared",
+                    "unit": "USD millions",
+                    "period": "2018"
+                  }
+                },
+                {
+                  "name": "a2019",
+                  "result_id": "W1"
+                }
+              ],
+              "basis": [
+                "T1",
+                "TASK"
+              ],
+              "conditions": [
+                "Requires 2018 total dividend amount, which is absent from the visible sources",
+                "2019 amount from T1 (four quarterly declarations)"
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W1": {
+              "status": "ready",
+              "value": 1093.0,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "total dividends declared",
+                "unit": "USD millions",
+                "period": "2019"
+              },
+              "conditions": [
+                "Only 2019 rows are visible in T1; 2018 amounts are not provided",
+                "T1 table header states Total Amount is in millions"
+              ],
+              "sources": [
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r1/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The provided table T2 lists only four 2018 quarterly dividends (586, 584, 588, 586 million); no 2019 total-amount data is present, so the 2018 sum can be computed but the requested 2018–2019 average cannot be completed without the 2019 figures.",
+          "calculations": [
+            {
+              "expression": "586+584+588+586",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "2018 total dividend amount",
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "USD millions",
+                "period": "2018"
+              },
+              "expression": "q1+q2+q3+q4",
+              "inputs": [
+                {
+                  "name": "q1",
+                  "value": 586,
+                  "metadata": {
+                    "subject": "dividend total amount, Q1 2018",
+                    "unit": "USD millions",
+                    "period": "2018 Q1"
+                  }
+                },
+                {
+                  "name": "q2",
+                  "value": 584,
+                  "metadata": {
+                    "subject": "dividend total amount, Q2 2018",
+                    "unit": "USD millions",
+                    "period": "2018 Q2"
+                  }
+                },
+                {
+                  "name": "q3",
+                  "value": 588,
+                  "metadata": {
+                    "subject": "dividend total amount, Q3 2018",
+                    "unit": "USD millions",
+                    "period": "2018 Q3"
+                  }
+                },
+                {
+                  "name": "q4",
+                  "value": 586,
+                  "metadata": {
+                    "subject": "dividend total amount, Q4 2018",
+                    "unit": "USD millions",
+                    "period": "2018 Q4"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "P2"
+              ],
+              "conditions": [
+                "T2 lists only 2018 dividends; 2019 total-amount values are absent from the provided sources",
+                "Amounts are in millions of USD as stated in T2"
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W2": {
+              "status": "ready",
+              "value": 2344.0,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "USD millions",
+                "period": "2018"
+              },
+              "conditions": [
+                "Amounts are in millions of USD as stated in T2",
+                "T2 lists only 2018 dividends; 2019 total-amount values are absent from the provided sources"
+              ],
+              "sources": [
+                "P2",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r1/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "2019 total from T1: 273+273+274+273 = 1,093 (USD millions). 2018 total from T2: 586+584+588+586 = 2,344 (USD millions). Average annual total = (1,093+2,344)/2 = 1,718.5, i.e., $1,718.5 million. Supported by W3/W4 and calculator C6.",
+          "result_id": "W3"
+        },
+        "delivered": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "2019 total from T1: 273+273+274+273 = 1,093 (USD millions). 2018 total from T2: 586+584+588+586 = 2,344 (USD millions). Average annual total = (1,093+2,344)/2 = 1,718.5, i.e., $1,718.5 million. Supported by W3/W4 and calculator C6.",
+          "result_id": "W3"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "Amounts are in USD millions per the table headers",
+          "Amounts are in millions of USD as stated in T2",
+          "Annual totals are sums of the four quarterly total amounts as reported in T1 (2019) and T2 (2018)",
+          "Average is the arithmetic mean of the two annual totals",
+          "Only 2019 rows are visible in T1; 2018 amounts are not provided",
+          "T1 table header states Total Amount is in millions",
+          "T2 lists only 2018 dividends; 2019 total-amount values are absent from the provided sources"
+        ],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W3",
+        "work_ids": [
+          "W1",
+          "W2",
+          "W3"
+        ],
+        "owners": [
+          "A1",
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "final_work_values": {
+        "W1": {
+          "status": "ready",
+          "value": 1093.0,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "total dividends declared",
+            "unit": "USD millions",
+            "period": "2019"
+          },
+          "conditions": [
+            "Only 2019 rows are visible in T1; 2018 amounts are not provided",
+            "T1 table header states Total Amount is in millions"
+          ],
+          "sources": [
+            "T1"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W2": {
+          "status": "ready",
+          "value": 2344.0,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "total dividend amount",
+            "unit": "USD millions",
+            "period": "2018"
+          },
+          "conditions": [
+            "Amounts are in millions of USD as stated in T2",
+            "T2 lists only 2018 dividends; 2019 total-amount values are absent from the provided sources"
+          ],
+          "sources": [
+            "P2",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W3": {
+          "status": "ready",
+          "value": 1718.5,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "average annual total dividends declared",
+            "unit": "USD millions",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "Amounts are in USD millions per the table headers",
+            "Amounts are in millions of USD as stated in T2",
+            "Annual totals are sums of the four quarterly total amounts as reported in T1 (2019) and T2 (2018)",
+            "Average is the arithmetic mean of the two annual totals",
+            "Only 2019 rows are visible in T1; 2018 amounts are not provided",
+            "T1 table header states Total Amount is in millions",
+            "T2 lists only 2018 dividends; 2019 total-amount values are absent from the provided sources"
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W4": {
+          "status": "ready",
+          "value": 1718.5,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "average total dividends declared",
+            "unit": "USD millions",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "Amounts are in millions of USD as stated in T2",
+            "Amounts are in millions of USD as stated in the table headers",
+            "Average is the simple mean of the two annual totals",
+            "Only 2019 rows are visible in T1; 2018 amounts are not provided",
+            "T1 supplies only 2019 quarterly total amounts; T2 supplies only 2018 quarterly total amounts",
+            "T1 table header states Total Amount is in millions",
+            "T2 lists only 2018 dividends; 2019 total-amount values are absent from the provided sources"
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        }
+      },
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r1/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r1/requests/03-A1.json",
+      "structural_cross_member_final_graph": true,
+      "manual_official_target_correct_combination_and_final_adoption": false,
+      "manual_official_target_classification": "not_matched; annual-total mean versus official per-payment mean; grain ambiguity",
+      "first_correct_numeric_integration_wave": null,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-01-local_work-r2",
+      "case_id": "dependent-01",
+      "arm": "local_work",
+      "repeat": 2,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "T1 only shows 2019 dividends (four quarterly payments totaling $1,093 million). No 2018 dividend amounts are visible in the provided sources, so the average for 2018 and 2019 cannot be computed from this packet alone. I can register the 2019 total and the formula requiring the 2018 total as an unresolved input.",
+          "calculations": [],
+          "submitted_receipts": [
+            {
+              "target": "2019 total dividend amount",
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "USD millions",
+                "period": "2019"
+              },
+              "expression": "q1+q2+q3+q4",
+              "inputs": [
+                {
+                  "name": "q1",
+                  "value": 273
+                },
+                {
+                  "name": "q2",
+                  "value": 274
+                },
+                {
+                  "name": "q3",
+                  "value": 273
+                },
+                {
+                  "name": "q4",
+                  "value": 273
+                }
+              ],
+              "basis": [
+                "T1"
+              ],
+              "conditions": [
+                "T1 rows cover declarations dated March 1, May 23, August 22, and November 21, 2019; all are payable in 2019.",
+                "Amounts are in millions of dollars."
+              ]
+            },
+            {
+              "target": "average total dividend amount for 2018 and 2019",
+              "metadata": {
+                "subject": "average total dividend amount",
+                "unit": "USD millions",
+                "period": "2018-2019"
+              },
+              "expression": "(d2018+d2019)/2",
+              "inputs": [
+                {
+                  "name": "d2018",
+                  "metadata": {
+                    "subject": "total dividend amount",
+                    "unit": "USD millions",
+                    "period": "2018"
+                  }
+                },
+                {
+                  "name": "d2019",
+                  "value": 1093
+                }
+              ],
+              "basis": [
+                "T1",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "2018 total dividend amount is not present in the provided sources; it must be supplied from the full dividend table.",
+                "Assumes the question asks for the simple average of the two annual total dividend amounts."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W1": {
+              "status": "ready",
+              "value": 1093.0,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "USD millions",
+                "period": "2019"
+              },
+              "conditions": [
+                "Amounts are in millions of dollars.",
+                "T1 rows cover declarations dated March 1, May 23, August 22, and November 21, 2019; all are payable in 2019."
+              ],
+              "sources": [
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W2": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "d2018",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "average total dividend amount",
+                "unit": "USD millions",
+                "period": "2018-2019"
+              },
+              "conditions": [
+                "2018 total dividend amount is not present in the provided sources; it must be supplied from the full dividend table.",
+                "Assumes the question asks for the simple average of the two annual total dividend amounts."
+              ],
+              "sources": [
+                "P2",
+                "T1",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r2/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The visible table T2 only contains 2018 dividend declarations (four quarterly totals: 586, 584, 588, 586 million). No 2019 dividend total amounts are present in the provided sources, so the average across 2018 and 2019 cannot be fully computed. I can compute the 2018 total and its per-quarter average, and declare the 2019 total as an unresolved input.",
+          "calculations": [
+            {
+              "expression": "586+584+588+586",
+              "values": {}
+            },
+            {
+              "expression": "(586+584+588+586)/4",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "2018 total dividend amount",
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "millions USD",
+                "period": "2018"
+              },
+              "expression": "q1+q2+q3+q4",
+              "inputs": [
+                {
+                  "name": "q1",
+                  "value": 586,
+                  "metadata": {
+                    "subject": "dividend total amount (Feb 21, 2018 declaration)",
+                    "unit": "millions USD",
+                    "period": "2018"
+                  }
+                },
+                {
+                  "name": "q2",
+                  "value": 584,
+                  "metadata": {
+                    "subject": "dividend total amount (Aug 21, 2018 declaration)",
+                    "unit": "millions USD",
+                    "period": "2018"
+                  }
+                },
+                {
+                  "name": "q3",
+                  "value": 588,
+                  "metadata": {
+                    "subject": "dividend total amount (May 23, 2018 declaration)",
+                    "unit": "millions USD",
+                    "period": "2018"
+                  }
+                },
+                {
+                  "name": "q4",
+                  "value": 586,
+                  "metadata": {
+                    "subject": "dividend total amount (Nov 14, 2018 declaration)",
+                    "unit": "millions USD",
+                    "period": "2018"
+                  }
+                }
+              ],
+              "basis": [
+                "T2"
+              ],
+              "conditions": [
+                "T2 lists dividends declared in 2018; amounts are in millions as stated in the table header."
+              ]
+            },
+            {
+              "target": "average total dividend amount for 2018 and 2019",
+              "metadata": {
+                "subject": "average total dividend amount",
+                "unit": "millions USD",
+                "period": "2018-2019"
+              },
+              "expression": "(total_2018+total_2019)/2",
+              "inputs": [
+                {
+                  "name": "total_2018",
+                  "value": 2344,
+                  "metadata": {
+                    "subject": "total dividend amount",
+                    "unit": "millions USD",
+                    "period": "2018"
+                  }
+                },
+                {
+                  "name": "total_2019",
+                  "metadata": {
+                    "subject": "total dividend amount",
+                    "unit": "millions USD",
+                    "period": "2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "2019 total dividend amount is not present in the visible sources and remains unresolved.",
+                "Average is arithmetic mean of the two annual totals."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W3": {
+              "status": "ready",
+              "value": 2344.0,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "total dividend amount",
+                "unit": "millions USD",
+                "period": "2018"
+              },
+              "conditions": [
+                "T2 lists dividends declared in 2018; amounts are in millions as stated in the table header."
+              ],
+              "sources": [
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            },
+            "W4": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "total_2019",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "average total dividend amount",
+                "unit": "millions USD",
+                "period": "2018-2019"
+              },
+              "conditions": [
+                "2019 total dividend amount is not present in the visible sources and remains unresolved.",
+                "Average is arithmetic mean of the two annual totals."
+              ],
+              "sources": [
+                "P2",
+                "T2",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r2/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "The question asks for the average of total dividend amounts for 2018 and 2019. From T2, the four 2018 quarterly total amounts are 586, 584, 588, and 586 million, summing to 2,344 million. From T1, the four 2019 quarterly total amounts are 273, 274, 273, and 273 million, summing to 1,093 million. The simple average is (2,344 + 1,093) / 2 = 1,718.5 million USD. This matches W4 (and W5/C3/C4), which correctly bind the 2018 and 2019 annual totals in USD millions.",
+          "result_id": "W4"
+        },
+        "delivered": {
+          "answer": 1718.5,
+          "scale": "million",
+          "reasoning": "The question asks for the average of total dividend amounts for 2018 and 2019. From T2, the four 2018 quarterly total amounts are 586, 584, 588, and 586 million, summing to 2,344 million. From T1, the four 2019 quarterly total amounts are 273, 274, 273, and 273 million, summing to 1,093 million. The simple average is (2,344 + 1,093) / 2 = 1,718.5 million USD. This matches W4 (and W5/C3/C4), which correctly bind the 2018 and 2019 annual totals in USD millions.",
+          "result_id": "W4"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "Amounts are in millions of dollars.",
+          "Assumes the question asks for the simple arithmetic mean of the two annual total dividend amounts.",
+          "Both annual totals are in millions of dollars, so the average is in USD millions.",
+          "T1 rows cover declarations dated March 1, May 23, August 22, and November 21, 2019; all are payable in 2019.",
+          "T2 lists dividends declared in 2018; amounts are in millions as stated in the table header.",
+          "W3 sums the four 2018 quarterly total amounts (586, 584, 588, 586) from T2; W1 sums the four 2019 quarterly total amounts (273, 274, 273, 273) from T1."
+        ],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W4",
+        "work_ids": [
+          "W1",
+          "W3",
+          "W4"
+        ],
+        "owners": [
+          "A1",
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "final_work_values": {
+        "W1": {
+          "status": "ready",
+          "value": 1093.0,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "total dividend amount",
+            "unit": "USD millions",
+            "period": "2019"
+          },
+          "conditions": [
+            "Amounts are in millions of dollars.",
+            "T1 rows cover declarations dated March 1, May 23, August 22, and November 21, 2019; all are payable in 2019."
+          ],
+          "sources": [
+            "T1"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W2": {
+          "status": "waiting",
+          "value": null,
+          "missing": [
+            {
+              "input": "d2018",
+              "reason": "missing_binding"
+            }
+          ],
+          "revision": 1,
+          "metadata": {
+            "subject": "average total dividend amount",
+            "unit": "USD millions",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "2018 total dividend amount is not present in the provided sources; it must be supplied from the full dividend table.",
+            "Assumes the question asks for the simple average of the two annual total dividend amounts."
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W3": {
+          "status": "ready",
+          "value": 2344.0,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "total dividend amount",
+            "unit": "millions USD",
+            "period": "2018"
+          },
+          "conditions": [
+            "T2 lists dividends declared in 2018; amounts are in millions as stated in the table header."
+          ],
+          "sources": [
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W4": {
+          "status": "ready",
+          "value": 1718.5,
+          "missing": [],
+          "revision": 2,
+          "metadata": {
+            "subject": "average total dividend amount",
+            "unit": "USD millions",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "Amounts are in millions of dollars.",
+            "Assumes the question asks for the simple arithmetic mean of the two annual total dividend amounts.",
+            "Both annual totals are in millions of dollars, so the average is in USD millions.",
+            "T1 rows cover declarations dated March 1, May 23, August 22, and November 21, 2019; all are payable in 2019.",
+            "T2 lists dividends declared in 2018; amounts are in millions as stated in the table header.",
+            "W3 sums the four 2018 quarterly total amounts (586, 584, 588, 586) from T2; W1 sums the four 2019 quarterly total amounts (273, 274, 273, 273) from T1."
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W5": {
+          "status": "ready",
+          "value": 1718.5,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "average total dividend amount",
+            "unit": "USD millions",
+            "period": "2018-2019"
+          },
+          "conditions": [
+            "Amounts are in millions of dollars.",
+            "Assumes the question asks for the simple arithmetic mean of the two annual total dividend amounts.",
+            "Both annual totals are in millions of dollars, so the average is in USD millions.",
+            "T1 rows cover declarations dated March 1, May 23, August 22, and November 21, 2019; all are payable in 2019.",
+            "T2 lists dividends declared in 2018; amounts are in millions as stated in the table header.",
+            "W3 sums the four 2018 quarterly total amounts (586, 584, 588, 586) from T2; W1 sums the four 2019 quarterly total amounts (273, 274, 273, 273) from T1."
+          ],
+          "sources": [
+            "P2",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        }
+      },
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r2/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-01-local_work-r2/requests/03-A1.json",
+      "structural_cross_member_final_graph": true,
+      "manual_official_target_correct_combination_and_final_adoption": false,
+      "manual_official_target_classification": "not_matched; annual-total mean versus official per-payment mean; grain ambiguity",
+      "first_correct_numeric_integration_wave": null,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-02-discussion-r1",
+      "case_id": "dependent-02",
+      "arm": "discussion",
+      "repeat": 1,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "The available data only provides Total equity for 2019 ($565,467 thousand) and 2018 ($907,320 thousand); values for 2017, 2016, and 2015 are not present in the visible sources, so the 2015–2019 average cannot be fully computed. If only 2018–2019 were intended, the average would be ($565,467 + $907,320) / 2 = $736,393.5 thousand. Please provide the 2015–2017 Total equity figures to compute the requested five-year average.",
+          "calculations": [
+            {
+              "expression": "(565467+907320)/2",
+              "values": {
+                "a": 565467,
+                "b": 907320
+              }
+            }
+          ],
+          "submitted_receipts": [],
+          "accepted_work_snapshots_after_first_wave": {},
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "T0 confirms the fiscal-year columns include 2019, 2018, 2017, 2016, and 2015 (U.S. $ in thousands). T2 supplies Total equity for 2017, 2016, and 2015: $902,693, $731,663, and $190,054 thousand, respectively. Total equity for 2019 and 2018 is not present in the visible sources, so the five-year average cannot yet be computed. If T2's upstream table (uid 0b8a85b3-3cbb-4e2e-985e-fe13543f2bc5) contains the 2019 and 2018 Total equity rows, those values are needed; otherwise the question should be scoped to 2015–2017, whose average is the calculation shown (sum $1,824,410 thousand / 3 = $608,136.67 thousand).",
+          "calculations": [
+            {
+              "expression": "(902693+731663+190054)/3",
+              "values": {
+                "902693": 902693,
+                "731663": 731663,
+                "190054": 190054
+              }
+            }
+          ],
+          "submitted_receipts": [],
+          "accepted_work_snapshots_after_first_wave": {},
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): 2019 = 565,467 (T1), 2018 = 907,320 (T1), 2017 = 902,693 (T2), 2016 = 731,663 (T2), 2015 = 190,054 (T2); column alignment confirmed by T0. Sum = 3,297,197 thousand; average = 3,297,197 / 5 = 659,439.4 thousand, i.e., about $659.4 million. 2017 and 2018 are as adjusted per IFRS 15 (P2). Result C1 matches this calculation.",
+          "result_id": "C1"
+        },
+        "delivered": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): 2019 = 565,467 (T1), 2018 = 907,320 (T1), 2017 = 902,693 (T2), 2016 = 731,663 (T2), 2015 = 190,054 (T2); column alignment confirmed by T0. Sum = 3,297,197 thousand; average = 3,297,197 / 5 = 659,439.4 thousand, i.e., about $659.4 million. 2017 and 2018 are as adjusted per IFRS 15 (P2). Result C1 matches this calculation.",
+          "result_id": "C1"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C1",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "final_work_values": {},
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r1/requests/03-A2.json",
+      "structural_cross_member_final_graph": false,
+      "manual_official_target_correct_combination_and_final_adoption": true,
+      "manual_official_target_classification": "confirmed numeric five-year mean; explanation errors separately noted",
+      "first_correct_numeric_integration_wave": 1,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-02-discussion-r2",
+      "case_id": "dependent-02",
+      "arm": "discussion",
+      "repeat": 2,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "The provided sources only give Total equity for 2019 ($565,467 thousand) and 2018 ($907,320 thousand). T0 shows the column headers for fiscal years 2019–2015, but no Total equity values for 2017, 2016, or 2015 are present in the packet. Therefore the average for 2015–2019 cannot be computed from the visible data alone. If only 2019 and 2018 are averaged: (565,467 + 907,320) / 2 = 736,393.5 thousand (≈ $736.394 million). Please supply the 2017, 2016, and 2015 Total equity figures to compute the requested five-year average.",
+          "calculations": [
+            {
+              "expression": "(565467+907320)/2",
+              "values": {
+                "565467": 565467,
+                "907320": 907320
+              }
+            }
+          ],
+          "submitted_receipts": [],
+          "accepted_work_snapshots_after_first_wave": {},
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r2/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The provided table (T2) covers only fiscal years 2015–2017 for Total equity: 2015 = $190,054; 2016 = $731,663; 2017 = $902,693 (U.S. $ in thousands, as of June 30). Fiscal years 2018 and 2019 appear only as column headers in T0, with no corresponding Total equity values available in the packet. Therefore the average for 2015–2019 cannot be fully computed from the visible data. Partial average for 2015–2017 = (190,054 + 731,663 + 902,693) / 3 = 1,824,410 / 3 = $608,136.67 thousand. To complete the 2015–2019 average, the 2018 and 2019 Total equity figures are needed.",
+          "calculations": [
+            {
+              "expression": "(190054 + 731663 + 902693) / 3",
+              "values": {
+                "a": 190054,
+                "b": 731663,
+                "c": 902693
+              }
+            }
+          ],
+          "submitted_receipts": [],
+          "accepted_work_snapshots_after_first_wave": {},
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r2/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands) from T1 and T2: 2019 = 565,467; 2018 = 907,320; 2017 = 902,693; 2016 = 731,663; 2015 = 190,054. Sum = 3,297,197; average = 3,297,197 / 5 = 659,439.4 thousand (≈ $659.44 million). 2017 and 2018 are *As Adjusted for IFRS 15 retrospective adoption (P2), consistent for the five-year average. C3 matches this calculation.",
+          "result_id": "C3"
+        },
+        "delivered": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands) from T1 and T2: 2019 = 565,467; 2018 = 907,320; 2017 = 902,693; 2016 = 731,663; 2015 = 190,054. Sum = 3,297,197; average = 3,297,197 / 5 = 659,439.4 thousand (≈ $659.44 million). 2017 and 2018 are *As Adjusted for IFRS 15 retrospective adoption (P2), consistent for the five-year average. C3 matches this calculation.",
+          "result_id": "C3"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "calculator_reference",
+        "result_id": "C3",
+        "work_ids": [],
+        "owners": [],
+        "interpretation": "No explicit work-graph credit; semantic use may still exist in text"
+      },
+      "final_work_values": {},
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r2/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-discussion-r2/requests/03-A2.json",
+      "structural_cross_member_final_graph": false,
+      "manual_official_target_correct_combination_and_final_adoption": true,
+      "manual_official_target_classification": "confirmed numeric five-year mean; explanation errors separately noted",
+      "first_correct_numeric_integration_wave": 1,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-02-ordinary-r1",
+      "case_id": "dependent-02",
+      "arm": "ordinary",
+      "repeat": 1,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "The provided sources only give Total equity for 2019 ($565,467 thousand) and 2018 ($907,320 thousand); values for 2015–2017 are not present in the visible table content. Therefore the 2015–2019 average cannot be computed from these sources without guessing missing years.",
+          "calculations": [],
+          "submitted_receipts": [
+            {
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "metadata": {
+                    "subject": "Total equity, FY2015",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "metadata": {
+                    "subject": "Total equity, FY2016",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "metadata": {
+                    "subject": "Total equity, FY2017",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity, FY2018",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity, FY2019",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "FY2018 and FY2019 figures are from the consolidated statements of financial position; FY2018 is marked *As Adjusted under IFRS 15 full retrospective adoption.",
+                "Total equity for FY2015, FY2016, and FY2017 is not visible in the provided table content and must be supplied from the original filing."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W1": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "e2015",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2016",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2017",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "Average Total equity, fiscal years 2015–2019",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2019"
+              },
+              "conditions": [
+                "FY2018 and FY2019 figures are from the consolidated statements of financial position; FY2018 is marked *As Adjusted under IFRS 15 full retrospective adoption.",
+                "Total equity for FY2015, FY2016, and FY2017 is not visible in the provided table content and must be supplied from the original filing."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": false,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The table T2 provides Total equity for 2017 ($902,693), 2016 ($731,663), and 2015 ($190,054), but the header T0 shows the full fiscal-year range 2019–2015; values for 2019 and 2018 are not visible in the provided sources, so the five-year average cannot be computed from the disclosed data. I can only compute the three-year average (2015–2017).",
+          "calculations": [
+            {
+              "expression": "(902693+731663+190054)/3",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "average Total equity, fiscal years 2015-2017",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015-FY2017"
+              },
+              "expression": "(e2017+e2016+e2015)/3",
+              "inputs": [
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0"
+              ],
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W2": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015-FY2017"
+              },
+              "conditions": [
+                "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+              ],
+              "sources": [
+                "T0",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): FY2015 $190,054 (T2), FY2016 $731,663 (T2), FY2017 $902,693 (T2, *As Adjusted), FY2018 $907,320 (T1, *As Adjusted), FY2019 $565,467 (T1). Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches W1/W4 and calculator C5; W2's three-year average (608,136.67) covers only FY2015–FY2017 and its wave-1 reuse was misstated.",
+          "result_id": "W1"
+        },
+        "delivered": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): FY2015 $190,054 (T2), FY2016 $731,663 (T2), FY2017 $902,693 (T2, *As Adjusted), FY2018 $907,320 (T1, *As Adjusted), FY2019 $565,467 (T1). Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches W1/W4 and calculator C5; W2's three-year average (608,136.67) covers only FY2015–FY2017 and its wave-1 reuse was misstated.",
+          "result_id": "W1"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "All figures are Total equity as of June 30, in U.S. $ thousands.",
+          "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+        ],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W1",
+        "work_ids": [
+          "W1"
+        ],
+        "owners": [
+          "A1"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "final_work_values": {
+        "W1": {
+          "status": "ready",
+          "value": 659439.4,
+          "missing": [],
+          "revision": 2,
+          "metadata": {
+            "subject": "Average Total equity, fiscal years 2015–2019",
+            "unit": "U.S. $ in thousands",
+            "period": "FY2015–FY2019"
+          },
+          "conditions": [
+            "All figures are Total equity as of June 30, in U.S. $ thousands.",
+            "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T1",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W2": {
+          "status": "ready",
+          "value": 608136.6666666666,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "FY2015-FY2017"
+          },
+          "conditions": [
+            "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017."
+          ],
+          "sources": [
+            "T0",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W3": {
+          "status": "ready",
+          "value": 659439.3999999999,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "Average Total equity, fiscal years 2015–2019",
+            "unit": "U.S. $ in thousands",
+            "period": "FY2015–FY2019"
+          },
+          "conditions": [
+            "2019 and 2018 Total equity values are not present in the provided sources; this average covers only 2015-2017.",
+            "FY2018 Total equity is marked *As Adjusted for the full retrospective adoption of IFRS 15 (P2).",
+            "FY2019 and FY2018 values are from the consolidated statements of financial position (T1).",
+            "W2 covers FY2015–FY2017 only; it is multiplied by 3 to recover the three-year sum."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T1",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W4": {
+          "status": "ready",
+          "value": 659439.4,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "Average Total equity, fiscal years 2015–2019",
+            "unit": "U.S. $ in thousands",
+            "period": "FY2015–FY2019"
+          },
+          "conditions": [
+            "All figures are Total equity as of June 30, in U.S. $ thousands.",
+            "FY2018 and FY2017 are marked *As Adjusted under IFRS 15 full retrospective adoption (P2)."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T1",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        }
+      },
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r1/requests/03-A2.json",
+      "structural_cross_member_final_graph": false,
+      "manual_official_target_correct_combination_and_final_adoption": true,
+      "manual_official_target_classification": "confirmed numeric five-year mean; explanation errors separately noted",
+      "first_correct_numeric_integration_wave": 1,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-02-ordinary-r2",
+      "case_id": "dependent-02",
+      "arm": "ordinary",
+      "repeat": 2,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "The provided sources only contain Total equity for fiscal years 2019 ($565,467 thousand) and 2018 ($907,320 thousand); T0 confirms the table spans 2015–2019 but the 2015, 2016, and 2017 Total equity values are not present in the visible data. Therefore the average for 2015–2019 cannot be computed from the cited evidence without guessing missing values.",
+          "calculations": [],
+          "submitted_receipts": [
+            {
+              "target": "average_total_equity_2015_2019",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015-2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  },
+                  "value": null
+                },
+                {
+                  "name": "e2016",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016"
+                  },
+                  "value": null
+                },
+                {
+                  "name": "e2017",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017"
+                  },
+                  "value": null
+                },
+                {
+                  "name": "e2018",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018"
+                  },
+                  "value": 907320
+                },
+                {
+                  "name": "e2019",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  },
+                  "value": 565467
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "P1",
+                "P2",
+                "TASK"
+              ],
+              "conditions": [
+                "Total equity for fiscal years 2015, 2016, and 2017 is not visible in the provided sources and must not be guessed.",
+                "2018 figure is marked *As Adjusted per T1/T0.",
+                "Values are in U.S. $ in thousands."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W1": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "e2015",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2016",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2017",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015-2019"
+              },
+              "conditions": [
+                "2018 figure is marked *As Adjusted per T1/T0.",
+                "Total equity for fiscal years 2015, 2016, and 2017 is not visible in the provided sources and must not be guessed.",
+                "Values are in U.S. $ in thousands."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": false,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r2/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The packet's table T2 only provides Total equity for 2017, 2016, and 2015 ($902,693; $731,663; $190,054 thousand). The header T0 shows columns for 2019 and 2018 exist in the underlying statement, but their Total equity values are not present in any visible source. Therefore the 2015–2019 average cannot be computed from the disclosed data; the 2015–2017 average is shown as a partial calculation only.",
+          "calculations": [
+            {
+              "expression": "(902693+731663+190054)/3",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "Average Total equity, fiscal 2015–2017 (partial; 2018–2019 unavailable)",
+              "metadata": {
+                "subject": "Average Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2017"
+              },
+              "expression": "(e2017+e2016+e2015)/3",
+              "inputs": [
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2017"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2016"
+                  }
+                },
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "FY2015"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "Values are as of June 30 for each fiscal year.",
+                "2016 and 2017 are marked *As Adjusted per T0/P2 (IFRS 15 retrospective adoption).",
+                "2018 and 2019 Total equity values are not visible in the packet, so the FY2015–FY2019 average cannot be determined."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W2": {
+              "status": "ready",
+              "value": 608136.6666666666,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Average Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "FY2015–FY2017"
+              },
+              "conditions": [
+                "2016 and 2017 are marked *As Adjusted per T0/P2 (IFRS 15 retrospective adoption).",
+                "2018 and 2019 Total equity values are not visible in the packet, so the FY2015–FY2019 average cannot be determined.",
+                "Values are as of June 30 for each fiscal year."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T2"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r2/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands, as of June 30): FY2015 $190,054 (T2), FY2016 $731,663 (T2), FY2017 $902,693 (T2), FY2018 $907,320 (T1, *As Adjusted), FY2019 $565,467 (T1). Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches accepted W4 and calculation C4. A2's claim that 2018/2019 values are absent is incorrect since T1 contains them; the 2015–2017-only average (C1) does not answer the question.",
+          "result_id": "W4"
+        },
+        "delivered": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands, as of June 30): FY2015 $190,054 (T2), FY2016 $731,663 (T2), FY2017 $902,693 (T2), FY2018 $907,320 (T1, *As Adjusted), FY2019 $565,467 (T1). Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches accepted W4 and calculation C4. A2's claim that 2018/2019 values are absent is incorrect since T1 contains them; the 2015–2017-only average (C1) does not answer the question.",
+          "result_id": "W4"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "2016 and 2017 are marked *As Adjusted per T0/P2 (IFRS 15 retrospective adoption); 2018 is marked *As Adjusted per T1/T0.",
+          "Values are as of June 30 for each fiscal year.",
+          "Values are in U.S. $ in thousands."
+        ],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W4",
+        "work_ids": [
+          "W4"
+        ],
+        "owners": [
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "final_work_values": {
+        "W1": {
+          "status": "ready",
+          "value": 659439.4,
+          "missing": [],
+          "revision": 3,
+          "metadata": {
+            "subject": "Average Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal years 2015-2019"
+          },
+          "conditions": [
+            "2016 and 2017 are marked *As Adjusted per T0/P2 (IFRS 15 retrospective adoption); 2018 is marked *As Adjusted per T1/T0.",
+            "Values are as of June 30 for each fiscal year.",
+            "Values are in U.S. $ in thousands."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W2": {
+          "status": "ready",
+          "value": 608136.6666666666,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "Average Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "FY2015–FY2017"
+          },
+          "conditions": [
+            "2016 and 2017 are marked *As Adjusted per T0/P2 (IFRS 15 retrospective adoption).",
+            "2018 and 2019 Total equity values are not visible in the packet, so the FY2015–FY2019 average cannot be determined.",
+            "Values are as of June 30 for each fiscal year."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T2"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W3": {
+          "status": "ready",
+          "value": 608136.6666666666,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "Average Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "FY2015–FY2017"
+          },
+          "conditions": [
+            "2016 and 2017 Total equity are marked *As Adjusted per T0/P2 (IFRS 15 retrospective adoption).",
+            "2016 and 2017 are marked *As Adjusted per T0/P2 (IFRS 15 retrospective adoption).",
+            "2018 and 2019 Total equity values are not visible in the packet, so the FY2015–FY2019 average cannot be determined.",
+            "Computed average = (902,693 + 731,663 + 190,054)/3 = 608,136.67 thousand, inherited from W2.",
+            "Total equity for FY2018 and FY2019 is not visible in any provided source, so the requested FY2015–FY2019 average cannot be determined from the disclosed data.",
+            "Values are as of June 30 for each fiscal year."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W4": {
+          "status": "ready",
+          "value": 659439.4,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "Average Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal years 2015-2019"
+          },
+          "conditions": [
+            "2016 and 2017 are marked *As Adjusted per T0/P2 (IFRS 15 retrospective adoption); 2018 is marked *As Adjusted per T1/T0.",
+            "Values are as of June 30 for each fiscal year.",
+            "Values are in U.S. $ in thousands."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        }
+      },
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r2/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-ordinary-r2/requests/03-A2.json",
+      "structural_cross_member_final_graph": false,
+      "manual_official_target_correct_combination_and_final_adoption": true,
+      "manual_official_target_classification": "confirmed numeric five-year mean; explanation errors separately noted",
+      "first_correct_numeric_integration_wave": 1,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-02-local_work-r1",
+      "case_id": "dependent-02",
+      "arm": "local_work",
+      "repeat": 1,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "The visible sources only provide Total equity for fiscal 2019 ($565,467 thousand) and 2018 ($907,320 thousand). The table header T0 lists 2015–2017 columns, but no Total equity values for 2015, 2016, or 2017 appear in the provided table content (T1 only has 2019 and 2018 columns). Therefore the 2015–2019 five-year average cannot be computed from the visible originals; those three year values are genuinely absent. I can publish the partial two-year average as reusable work while leaving the full-period calculation open.",
+          "calculations": [
+            {
+              "expression": "(565467+907320)/2",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "average_total_equity_2018_2019_partial",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+              },
+              "expression": "(e2019+e2018)/2",
+              "inputs": [
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2019"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal 2018 (as adjusted)"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "P1",
+                "P2"
+              ],
+              "conditions": [
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average.",
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W1": {
+              "status": "ready",
+              "value": 736393.5,
+              "missing": [],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+              },
+              "conditions": [
+                "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+                "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average."
+              ],
+              "sources": [
+                "P1",
+                "P2",
+                "T0",
+                "T1"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": true,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The provided table T2 gives Total equity for 2017, 2016, and 2015 only ($902,693; $731,663; $190,054 thousand). The header T0 shows columns for 2019 and 2018, but no Total equity values for those years are present in the packet, so the 2015–2019 five-year average cannot be computed from the visible sources. I can publish only the partial 3-year average explicitly supported by T2, while leaving 2018 and 2019 Total equity as genuinely absent inputs.",
+          "calculations": [
+            {
+              "expression": "(902693+731663+190054)/3",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "Average Total equity, fiscal 2015–2019",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0",
+                "TASK"
+              ],
+              "conditions": [
+                "Total equity values for 2015, 2016, and 2017 are from T2; 2016 and 2017 are labeled *As Adjusted per T0/P2 (IFRS 15 retrospective adoption).",
+                "Total equity for fiscal 2018 and 2019 is not present in the visible packet sources; the five-year average remains unresolved until those values are supplied.",
+                "Partial three-year (2015–2017) average is 608,136.667 thousand, not the requested five-year average."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W2": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "e2018",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2019",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019"
+              },
+              "conditions": [
+                "Partial three-year (2015–2017) average is 608,136.667 thousand, not the requested five-year average.",
+                "Total equity for fiscal 2018 and 2019 is not present in the visible packet sources; the five-year average remains unresolved until those values are supplied.",
+                "Total equity values for 2015, 2016, and 2017 are from T2; 2016 and 2017 are labeled *As Adjusted per T0/P2 (IFRS 15 retrospective adoption)."
+              ],
+              "sources": [
+                "T0",
+                "T2",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): 2015 = 190,054; 2016 = 731,663 (as adjusted); 2017 = 902,693 (as adjusted) from T2; 2018 = 907,320 (as adjusted) and 2019 = 565,467 from T1. Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches the accepted W2 receipt and calculation C7. Note 2016–2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+          "result_id": "W2"
+        },
+        "delivered": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity values (U.S. $ in thousands): 2015 = 190,054; 2016 = 731,663 (as adjusted); 2017 = 902,693 (as adjusted) from T2; 2018 = 907,320 (as adjusted) and 2019 = 565,467 from T1. Sum = 3,297,197; divided by 5 = 659,439.4 thousand. This matches the accepted W2 receipt and calculation C7. Note 2016–2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+          "result_id": "W2"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2019 and 2015 are unadjusted.",
+          "Values are in U.S. $ in thousands; the average is 659,439.4 thousand, not a dollar-level figure."
+        ],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W2",
+        "work_ids": [
+          "W2"
+        ],
+        "owners": [
+          "A2"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "final_work_values": {
+        "W1": {
+          "status": "ready",
+          "value": 736393.5,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal 2018-2019 (partial; 2015-2017 absent)"
+          },
+          "conditions": [
+            "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+            "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T1"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W2": {
+          "status": "ready",
+          "value": 659439.4,
+          "missing": [],
+          "revision": 2,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal years 2015–2019"
+          },
+          "conditions": [
+            "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2019 and 2015 are unadjusted.",
+            "Values are in U.S. $ in thousands; the average is 659,439.4 thousand, not a dollar-level figure."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W3": {
+          "status": "ready",
+          "value": 690221.04,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal years 2015–2019"
+          },
+          "conditions": [
+            "2016, 2017, and 2018 are '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2019 and 2015 are unadjusted.",
+            "2018 is '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption; 2016 and 2017 are also labeled *As Adjusted in T0/P2.",
+            "2018 is marked '*As Adjusted' per T0/P2 for retrospective IFRS 15 adoption.",
+            "Consumes A1's W1 (2018–2019 two-year average = 736,393.5) and A2's W2 (2015–2017 three-year average = 608,136.6667); each is multiplied by its year count to recover the five-year sum before dividing by 5.",
+            "Only 2019 and 2018 Total equity values are visible; 2015, 2016, and 2017 Total equity values are not present in the provided sources, so this is not the requested 2015-2019 five-year average.",
+            "Result 659,439.4 thousand is the requested average Total equity for fiscal years 2015–2019.",
+            "Values are in U.S. $ in thousands; the average is 659,439.4 thousand, not a dollar-level figure."
+          ],
+          "sources": [
+            "P1",
+            "P2",
+            "T0",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        }
+      },
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/03-A2.json",
+      "structural_cross_member_final_graph": false,
+      "manual_official_target_correct_combination_and_final_adoption": true,
+      "manual_official_target_classification": "confirmed numeric five-year mean; explanation errors separately noted",
+      "first_correct_numeric_integration_wave": 1,
+      "technical_missing": false
+    },
+    {
+      "flow_id": "dependent-02-local_work-r2",
+      "case_id": "dependent-02",
+      "arm": "local_work",
+      "repeat": 2,
+      "initial_member_opportunities": [
+        {
+          "actor": "A1",
+          "wave": 0,
+          "message": "The visible sources only provide Total equity for 2019 ($565,467 thousand) and 2018 ($907,320 thousand). The 2015–2017 Total equity values are not present in the provided table content (T0 only supplies year headers), so the five-year average cannot be computed from the visible evidence. I can compute the two-year average of the available values: (565,467 + 907,320)/2 = 736,393.5 thousand, but the requested 2015–2019 average requires the missing 2015, 2016, and 2017 Total equity figures.",
+          "calculations": [
+            {
+              "expression": "(565467+907320)/2",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "Average Total equity, fiscal years 2015–2019",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019 average"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "value": 907320,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "value": 565467,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T1",
+                "T0",
+                "TASK"
+              ],
+              "conditions": [
+                "2018 figure is labeled *As Adjusted per T1/T0/P2.",
+                "2015, 2016, and 2017 Total equity values are not visible in the provided sources and remain unresolved."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W1": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "e2015",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2016",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2017",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015–2019 average"
+              },
+              "conditions": [
+                "2015, 2016, and 2017 Total equity values are not visible in the provided sources and remain unresolved.",
+                "2018 figure is labeled *As Adjusted per T1/T0/P2."
+              ],
+              "sources": [
+                "T0",
+                "T1",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r2/requests/01-A1.json"
+        },
+        {
+          "actor": "A2",
+          "wave": 0,
+          "message": "The packet provides Total equity for 2017, 2016, and 2015 from T2, but does not provide Total equity for 2019 or 2018 (T0 only supplies column headers). Therefore the 2015–2019 average cannot be computed from the visible sources; I can only register the sum of the three known values, leaving 2018 and 2019 equity as explicitly absent inputs.",
+          "calculations": [
+            {
+              "expression": "190054+731663+902693",
+              "values": {}
+            }
+          ],
+          "submitted_receipts": [
+            {
+              "target": "Average Total equity, fiscal years 2015-2019",
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015-2019"
+              },
+              "expression": "(e2015+e2016+e2017+e2018+e2019)/5",
+              "inputs": [
+                {
+                  "name": "e2015",
+                  "value": 190054,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2015"
+                  }
+                },
+                {
+                  "name": "e2016",
+                  "value": 731663,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2016"
+                  }
+                },
+                {
+                  "name": "e2017",
+                  "value": 902693,
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2017"
+                  }
+                },
+                {
+                  "name": "e2018",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2018"
+                  }
+                },
+                {
+                  "name": "e2019",
+                  "metadata": {
+                    "subject": "Total equity",
+                    "unit": "U.S. $ in thousands",
+                    "period": "fiscal year 2019"
+                  }
+                }
+              ],
+              "basis": [
+                "T2",
+                "T0",
+                "TASK"
+              ],
+              "conditions": [
+                "Total equity values for 2018 and 2019 are not present in the supplied sources.",
+                "T2 figures are as of June 30 and stated in U.S. $ in thousands.",
+                "2017 and 2016 are marked *As Adjusted per T2/T0; P2 notes retrospective IFRS 15 adoption."
+              ]
+            }
+          ],
+          "accepted_work_snapshots_after_first_wave": {
+            "W2": {
+              "status": "waiting",
+              "value": null,
+              "missing": [
+                {
+                  "input": "e2018",
+                  "reason": "missing_binding"
+                },
+                {
+                  "input": "e2019",
+                  "reason": "missing_binding"
+                }
+              ],
+              "revision": 1,
+              "metadata": {
+                "subject": "Total equity",
+                "unit": "U.S. $ in thousands",
+                "period": "fiscal years 2015-2019"
+              },
+              "conditions": [
+                "2017 and 2016 are marked *As Adjusted per T2/T0; P2 notes retrospective IFRS 15 adoption.",
+                "T2 figures are as of June 30 and stated in U.S. $ in thousands.",
+                "Total equity values for 2018 and 2019 are not present in the supplied sources."
+              ],
+              "sources": [
+                "T0",
+                "T2",
+                "TASK"
+              ],
+              "truth_status": "model_declared_not_semantically_verified"
+            }
+          },
+          "manual_correct_numeric_partial_in_message_calculator_or_work": true,
+          "ready_work_receipt_exists": false,
+          "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r2/EVENTS.json",
+          "snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r2/requests/01-A1.json"
+        }
+      ],
+      "final": {
+        "model_answer": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity (U.S. $ in thousands, as of June 30): 2015 $190,054 and 2016 $731,663 and 2017 $902,693 from T2; 2018 $907,320 and 2019 $565,467 from T1. Sum = 3,297,197; divided by 5 = 659,439.4 thousand. 2016–2018 are *As Adjusted per T0/P2 (retrospective IFRS 15 adoption). W1/W3 and calculation C3/C4/C5 all support this value.",
+          "result_id": "W1"
+        },
+        "delivered": {
+          "answer": 659439.4,
+          "scale": "thousand",
+          "reasoning": "Total equity (U.S. $ in thousands, as of June 30): 2015 $190,054 and 2016 $731,663 and 2017 $902,693 from T2; 2018 $907,320 and 2019 $565,467 from T1. Sum = 3,297,197; divided by 5 = 659,439.4 thousand. 2016–2018 are *As Adjusted per T0/P2 (retrospective IFRS 15 adoption). W1/W3 and calculation C3/C4/C5 all support this value.",
+          "result_id": "W1"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "2016 and 2017 figures are labeled *As Adjusted per T2/T0; P2 notes retrospective IFRS 15 adoption.",
+          "2018 figure is labeled *As Adjusted per T1/T0/P2.",
+          "T2 figures are as of June 30 and stated in U.S. $ in thousands."
+        ],
+        "notices": []
+      },
+      "final_use": {
+        "kind": "explicit_work_graph",
+        "result_id": "W1",
+        "work_ids": [
+          "W1"
+        ],
+        "owners": [
+          "A1"
+        ],
+        "interpretation": "Structural dependency only; not proof of semantic correctness or necessity"
+      },
+      "final_work_values": {
+        "W1": {
+          "status": "ready",
+          "value": 659439.4,
+          "missing": [],
+          "revision": 2,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal years 2015–2019 average"
+          },
+          "conditions": [
+            "2016 and 2017 figures are labeled *As Adjusted per T2/T0; P2 notes retrospective IFRS 15 adoption.",
+            "2018 figure is labeled *As Adjusted per T1/T0/P2.",
+            "T2 figures are as of June 30 and stated in U.S. $ in thousands."
+          ],
+          "sources": [
+            "P2",
+            "T0",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W2": {
+          "status": "waiting",
+          "value": null,
+          "missing": [
+            {
+              "input": "e2018",
+              "reason": "missing_binding"
+            },
+            {
+              "input": "e2019",
+              "reason": "missing_binding"
+            }
+          ],
+          "revision": 1,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal years 2015-2019"
+          },
+          "conditions": [
+            "2017 and 2016 are marked *As Adjusted per T2/T0; P2 notes retrospective IFRS 15 adoption.",
+            "T2 figures are as of June 30 and stated in U.S. $ in thousands.",
+            "Total equity values for 2018 and 2019 are not present in the supplied sources."
+          ],
+          "sources": [
+            "T0",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        },
+        "W3": {
+          "status": "ready",
+          "value": 659439.4,
+          "missing": [],
+          "revision": 1,
+          "metadata": {
+            "subject": "Total equity",
+            "unit": "U.S. $ in thousands",
+            "period": "fiscal years 2015–2019 average"
+          },
+          "conditions": [
+            "2018 (T1) and 2017/2016 (T2) Total equity are labeled *As Adjusted per T0/P2 for the retrospective adoption of IFRS 15.",
+            "Figures are as of June 30 and stated in U.S. $ in thousands."
+          ],
+          "sources": [
+            "P2",
+            "T0",
+            "T1",
+            "T2",
+            "TASK"
+          ],
+          "truth_status": "model_declared_not_semantically_verified"
+        }
+      },
+      "final_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r2/SUMMARY.json",
+      "final_snapshot_evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r2/requests/03-A2.json",
+      "structural_cross_member_final_graph": false,
+      "manual_official_target_correct_combination_and_final_adoption": true,
+      "manual_official_target_classification": "confirmed numeric five-year mean; explanation errors separately noted",
+      "first_correct_numeric_integration_wave": 1,
+      "technical_missing": false
+    }
+  ],
+  "ordinary_sign_cases": [
+    {
+      "repeat": 1,
+      "final": {
+        "model_answer": {
+          "answer": -1.92,
+          "scale": "",
+          "reasoning": "T1 reports Granted weighted-average grant-date fair value of $14.66 per share and Vested of $12.74 per share. Taking the question's order (vested minus granted): 12.74 - 14.66 = -$1.92 per share (magnitude $1.92). This matches W3 (vested minus granted = -1.92) and calculator C4; W1 gives the absolute magnitude 1.92 with granted-minus-vested sign convention.",
+          "result_id": "W3"
+        },
+        "delivered": {
+          "answer": -1.92,
+          "scale": "",
+          "reasoning": "T1 reports Granted weighted-average grant-date fair value of $14.66 per share and Vested of $12.74 per share. Taking the question's order (vested minus granted): 12.74 - 14.66 = -$1.92 per share (magnitude $1.92). This matches W3 (vested minus granted = -1.92) and calculator C4; W1 gives the absolute magnitude 1.92 with granted-minus-vested sign convention.",
+          "result_id": "W3"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "Difference computed as vested minus granted, yielding -1.92; absolute difference is 1.92",
+          "Values are per-share weighted-average grant-date fair values from the restricted-share activity table in T1"
+        ],
+        "notices": []
+      },
+      "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-local_work-r1/SUMMARY.json",
+      "manual_interpretation": "Model explicitly chose vested minus granted; no host overwrite. Official answer +1.92. Direction ambiguity was recorded before running."
+    },
+    {
+      "repeat": 2,
+      "final": {
+        "model_answer": {
+          "answer": -1.92,
+          "scale": "",
+          "reasoning": "From table T1, the Granted Weighted-Average Grant-Date Fair Value is $14.66 per share and the Vested value is $12.74 per share. Computing vested minus granted: 12.74 - 14.66 = -1.92 USD per share, meaning vested was $1.92 lower than granted. Result W1 directly supports this computation from T1.",
+          "result_id": "W1"
+        },
+        "delivered": {
+          "answer": -1.92,
+          "scale": "",
+          "reasoning": "From table T1, the Granted Weighted-Average Grant-Date Fair Value is $14.66 per share and the Vested value is $12.74 per share. Computing vested minus granted: 12.74 - 14.66 = -1.92 USD per share, meaning vested was $1.92 lower than granted. Result W1 directly supports this computation from T1.",
+          "result_id": "W1"
+        },
+        "delivery_mode": "explicit_result_reference",
+        "conditions": [
+          "Difference computed as vested minus granted, yielding a negative value indicating vested was lower",
+          "Values are per-share weighted-average grant-date fair values from the stock option activity table"
+        ],
+        "notices": []
+      },
+      "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/ordinary-01-local_work-r2/SUMMARY.json",
+      "manual_interpretation": "Model explicitly chose vested minus granted; no host overwrite. Official answer +1.92. Direction ambiguity was recorded before running."
+    }
+  ],
+  "critical_misapplication": {
+    "flow_id": "dependent-02-local_work-r1",
+    "sequence": [
+      "wave0 A2 message/C supports three-year partial 608136.6667, but W2 actually declares full five-year work and is waiting",
+      "wave1 A1 creates W3 treating W2 as a three-year average; W3 waits because W2 waits",
+      "wave1 A2 tries to bind W1 two-year average into individual annual inputs; period mismatch rejects this revision",
+      "wave2 A2 revises W2 from original five-year values to ready 659439.4; W3 recomputes to 690221.04 under its mistaken three-year interpretation",
+      "final A2 selects correct W2=659439.4; wrong W3 remains ready and is not finally adopted"
+    ],
+    "interpretation": "Mechanical dependency and arithmetic work; model confuses claimed partial work with actual receipt semantics. No evidence that check-back repaired W3.",
+    "evidence": "runs/local-work-handoff-confirm-live-20261027-v1/flows/dependent-02-local_work-r1/requests/03-A2.json"
+  },
+  "reference_preflight_gap": "Dividend reference arithmetic was checked but annual versus payment grain ambiguity was not sufficiently surfaced before launch. Ordinary sign direction boundary was already recorded."
+}

@@ -1,0 +1,19 @@
+{
+  "fields": [
+    "safe_for_task",
+    "ready_for_task",
+    "full_duration_supported"
+  ],
+  "field_meanings": {
+    "safe_for_task": "Safe for the particular people, objects, activities and time window stated in the task; a possible risk is not automatically a confirmed prohibition.",
+    "ready_for_task": "Currently ready, or explicitly ready by the required start, for the stated use; reputation, equipment ownership or beginning preparation alone does not confirm readiness.",
+    "full_duration_supported": "Can support the stated use for its required duration; do not invent a duration or equate temporary backup with adequate full-duration support."
+  },
+  "value_types": [
+    "boolean",
+    "null"
+  ],
+  "field_values_provided_by_host": false,
+  "field_requirements_provided_by_host": false,
+  "note": "Manual task vocabulary supplied equally to both arms; representation-assisted screening, not automatic schema discovery."
+}

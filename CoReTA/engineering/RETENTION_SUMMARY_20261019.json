@@ -1,0 +1,33 @@
+{
+  "groups": {
+    "mixed": {
+      "count": 9,
+      "passed": 9,
+      "score_errors": 0
+    },
+    "all_pass": {
+      "count": 21,
+      "passed": 21,
+      "score_errors": 0
+    },
+    "seen_recovery_regression": {
+      "count": 1,
+      "passed": 0,
+      "score_errors": 0
+    }
+  },
+  "retention_losses": [],
+  "recovered_seen_regressions": [],
+  "normal_calls": 217,
+  "http_attempts": 133,
+  "format_repairs": 9,
+  "degraded": [
+    "math_train/number_theory/592",
+    "math_train/intermediate_algebra/156",
+    "math_train/intermediate_algebra/1262",
+    "math_train/counting_and_probability/525",
+    "math_train/number_theory/643",
+    "math_train/intermediate_algebra/140"
+  ],
+  "scope": "30 retention tasks and 1 seen MATH140 engineering regression; not fresh generalization evidence"
+}

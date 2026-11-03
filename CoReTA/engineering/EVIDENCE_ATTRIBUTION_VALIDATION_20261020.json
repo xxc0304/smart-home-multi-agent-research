@@ -1,0 +1,56 @@
+{
+  "variant": "task_audit_attribution_v7",
+  "external_api_requests": 0,
+  "new_test_methods": 8,
+  "tests_executed": 208,
+  "tests_passed": 208,
+  "real_mixed_output_rejected_without_migration": true,
+  "positive_fixture": "Explicit human split and bridge; not model-generated, not a new success result",
+  "historical_payload_and_effective_outcome_preserved": true,
+  "semantic_dependency_removal": "model_asserted; not mechanically proven",
+  "frozen_plans": [
+    {
+      "plan": "MATH140_AUDIT_DELIVERY_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_CLOSURE_REFERENCE_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_CORRECT_REPAIR_REVIEW_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_CORRECT_REPAIR_REVIEW_V2_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_CORRECT_REPAIR_REVIEW_V3_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_INSPECTION_COMPONENT_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_INSPECTION_RECOVERY_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_SOURCE_BINDING_PLAN_20261020.json",
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_TASK_AUDIT_PLAN_20261020.json",
+      "all_match": true
+    }
+  ],
+  "new_source_hashes": {
+    "src/coreta/evidence_attribution.py": "08d4cf40be1c22075196d1d5dd8718071890e7b8155837ec55a1ca647738d9d5",
+    "src/coreta/run_evidence_attribution.py": "36c4108a65c331561c0b1318b7f0830b3205987d7e4e8f35aebcd0d9c4ac5788",
+    "tests/test_evidence_attribution.py": "be77a4dae3bc9ff7f7d5f53539b7e27efe9b5b9ce9ce462396dd24713c9a56f4",
+    "design/evidence_attribution.schema.json": "2db79eee33448cd361e348794dddc6644b950ec48ec9472e1904be1cd1aa7608",
+    "design/EVIDENCE_ATTRIBUTION_DESIGN_20261020.md": "36d2a3bbfda7049cc6d154b225d0191ca560629165f28e7b91b06a6c1c61cfc4"
+  }
+}

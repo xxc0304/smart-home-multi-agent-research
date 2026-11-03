@@ -1,0 +1,44 @@
+{
+  "http_attempts": 1,
+  "repairs_used": 0,
+  "provider_usage": {
+    "input_tokens": 21102,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 2653,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 23755
+  },
+  "source_hashes_match": true,
+  "global_errors": [],
+  "status_by_issue": {
+    "I1": "open",
+    "I2": "open",
+    "I3": "open",
+    "I4": "open"
+  },
+  "errors_by_issue": {
+    "I1": [
+      "Revised-object version use must be explained"
+    ],
+    "I2": [
+      "Repair path mismatch"
+    ],
+    "I3": [
+      "Repair path mismatch"
+    ],
+    "I4": [
+      "Revised-object version use must be explained"
+    ]
+  },
+  "scalar_and_historical_assessment_improved_in_this_trial": true,
+  "classification_gate_remains": true,
+  "offline_semantic_errors": [
+    "I2 p1 at x=y must equal0; observed says -1/sqrt2 while reason corrects itself to0.",
+    "I2 q all given points check says vanishes/match while reason computes q(-1,0)=-6, so false."
+  ],
+  "conclusion": "Not a valid closure or full task success. One component trial, no causal stability claim."
+}

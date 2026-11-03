@@ -1,0 +1,41 @@
+{
+  "scope": "Standalone component only; not end-to-end task success",
+  "http_attempts": 1,
+  "format_repairs": 0,
+  "provider_output_tokens": 2183,
+  "schema_and_packet_identity_pass": true,
+  "issue_statuses": {
+    "I1": "open",
+    "I2": "open",
+    "I3": "open",
+    "I4": "open"
+  },
+  "issues": {
+    "I1": [
+      "Current evidence failed or incomplete",
+      "Changed historical finding needs rebuttal or unresolved explanation"
+    ],
+    "I2": [
+      "Current evidence failed or incomplete",
+      "Affected task constraints not covered"
+    ],
+    "I3": [
+      "Current evidence failed or incomplete",
+      "Affected task constraints not covered"
+    ],
+    "I4": [
+      "Current evidence failed or incomplete"
+    ]
+  },
+  "historical_observation_values_H1_to_H4_match_original": true,
+  "historical_assessment_semantics_misaligned": true,
+  "contract_gaps": [
+    "Instructions say original observation/objection ambiguously, while projection expects support of the old observation, not old candidate claim.",
+    "Canonical numeric-only scalar requirement was in local code/design but absent from provider instructions and conditional schema.",
+    "No-original-record issues require generic T1 full prompt by mapper fallback, despite output citing narrower public-item handles; this is a handle coverage artifact, not demonstrated semantic omission.",
+    "Current_checks mixes refutation of rejected old answers with checking current candidate; counterexample target must be unambiguous."
+  ],
+  "offline_math_note": "For p2=2x-2x^3-3xy+3x^2y at (2/3,2/3), true value8/27; response20/27 is wrong, though both nonzero.",
+  "frozen_hashes_match": true,
+  "old_results_relabelled": false
+}

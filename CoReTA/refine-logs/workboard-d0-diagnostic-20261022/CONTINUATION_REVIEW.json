@@ -1,0 +1,36 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "verdict": "provisional_no_remaining_findings",
+  "review_mode": "independent_static_only",
+  "undeclared": [],
+  "stale_rows": [],
+  "defects": [],
+  "semantic_undeclared": 0,
+  "resolved_during_review": [
+    {
+      "site": "src/coreta/workboard_d0/continuation.py:71",
+      "finding": "原实现把 v3 的 OBSERVE 请求也提前整轮构造，改变了后续观察者看到的剩余调用额度，与原 v3 不一致。",
+      "resolution": "已直接重读修订代码：v3 在每次调用前构造，D0 保持整轮预构造；CONTINUATION_DECISIONS.md 的 L09 已声明。"
+    }
+  ],
+  "observations": [
+    {
+      "area": "冻结恢复与首步",
+      "detail": "公开作品、贡献、先前反馈、编辑者、尝试次数和轮转指针来自冻结材料。首步完整 payload 在网络调用前与冻结 request 比较，不一致抛出 INPUT_ERROR。实际18个冻结快照的 BEFORE 均为完整产物，满足恢复器的入口约束。"
+    },
+    {
+      "area": "角色、预算及来源权限",
+      "detail": "贡献选择和两位检查者继续复用原运行器；完整路径为 N+4 次调用，输出上限计算与阶段上限一致。成员私有资料从各自冻结包读取，引用 schema 继续限制为当前可见原件及公开载体。"
+    },
+    {
+      "area": "周期与交付",
+      "detail": "后续周期保留 OBSERVE、TRY、CHECK_USE、CHECK_EFFECT、CHOOSE；没有追加固定收尾。all-pass/unable 正常提前结束。部分产物选择后使用 Board.promote 维护的最近完整已选版本，并记录 fallback；剩余 pending 焦点转为 deferred。"
+    },
+    {
+      "area": "停批与结果含义",
+      "detail": "所复用 Gateway 的格式、来源引用、服务、额度和用量 ProtocolError 会转为单元 interrupted，批次随后停止，后续单元保持 not_started。单元结果包含 not_end_to_end、not_certified，以及 live_natural/scripted_engineering_only 标记；准备清单明确限定为选定开发案例。"
+    }
+  ],
+  "limits": "本次未改文件、未运行测试或真实服务，未把既有离线检查结果当作审查依据。未发现阻止当前两快照自然检查的剩余具体缺陷；这不构成实现正确性或机制效果的认证。"
+}

@@ -1,0 +1,67 @@
+{
+  "version": "archived-failure-retest/1",
+  "purpose": "old interface-error task, diagnostic subset",
+  "selection": "only archived task with observed member interface failures selected for original-contract retest; three contract-questioned whole-team failures not silently treated as model failures",
+  "limitations": "task756 also does not explicitly specify bool; original assertions retained; A0 already passed; not an all-wrong recovery test",
+  "tasks": [
+    {
+      "task_id": "mbpp/train/756",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\bdb9e5ea4d6d9355.json",
+      "sha256": "4558c8a4acd0cec54ba0fb5d07b2496483645cac85cbbc5b37c1a888ce5a7e9e"
+    }
+  ],
+  "jobs": [
+    {
+      "task_id": "mbpp/train/756",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\bdb9e5ea4d6d9355.json",
+      "sha256": "4558c8a4acd0cec54ba0fb5d07b2496483645cac85cbbc5b37c1a888ce5a7e9e",
+      "system": "coreta_revision",
+      "seed": 17,
+      "job_id": "911420e111f6e6a1"
+    },
+    {
+      "task_id": "mbpp/train/756",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\bdb9e5ea4d6d9355.json",
+      "sha256": "4558c8a4acd0cec54ba0fb5d07b2496483645cac85cbbc5b37c1a888ce5a7e9e",
+      "system": "static_debate",
+      "seed": 17,
+      "job_id": "0ecc4d71f6809f2c"
+    },
+    {
+      "task_id": "mbpp/train/756",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\bdb9e5ea4d6d9355.json",
+      "sha256": "4558c8a4acd0cec54ba0fb5d07b2496483645cac85cbbc5b37c1a888ce5a7e9e",
+      "system": "independent_aggregate",
+      "seed": 17,
+      "job_id": "324ea29f3013d5db"
+    },
+    {
+      "task_id": "mbpp/train/756",
+      "family": "mbpp",
+      "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\development-20261019\\public\\bdb9e5ea4d6d9355.json",
+      "sha256": "4558c8a4acd0cec54ba0fb5d07b2496483645cac85cbbc5b37c1a888ce5a7e9e",
+      "system": "independent_refine",
+      "seed": 17,
+      "job_id": "7275ee51f73a22c8"
+    }
+  ],
+  "output": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\archived-failure-retest-20261019",
+  "normal_call_upper_bound": 38,
+  "source_hashes": {
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\revision.py": "5d14789e94bc6e673fe04d40845d31b3bad8426a6229ae554ceb9243d4ea7fd1",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\run_revision.py": "380d27cdd658224a63dc45826c622d2bf4d4c2751c8be344cf8d0b2cc1f0283e",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\model_client.py": "5da91ab801ff8aa0c7bc26d3653d151be2dd0957f70c9331c970080e583088a3",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\schemas.py": "b29cfd895afa443d59296687dee6ae17d6174a6e4d4cbf4b8790dcaea7a5486d",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\state.py": "e47e8c801cbba4f30dbd8aeead00705ee77db4a9eb7e339d8b6019b6176a0aec",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\revision_prompts.json": "c6ef7fbdb6de03f047a3507ccdb8efd2650a4f892f1316fd658fb4093e94b6dc",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\v0.3\\coreta.schema.json": "963552ce9c8463d17191645dbe90c07b5c0873a3a409c18bad4aab6182d15c69",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\config\\deepseek_flash.json": "e8b175e535373c3c401d630b14ed78fd156f39d4e7ab9c23071243c28981393a",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\tokenizer-v4.1-flash-1017\\tokenizer.json": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\tools\\retest_archived_failures.py": "c3fbddabba81d27b6ed292afdf80e22b8bdf6cc8f03b54766041144b791a2ec0",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\tools\\revision_pilot.py": "5321044ef451706c83d1fc313859683530d167ac757b63336e0eb5d0394786ef"
+  }
+}

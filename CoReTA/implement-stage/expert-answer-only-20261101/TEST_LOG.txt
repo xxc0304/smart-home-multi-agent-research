@@ -1,0 +1,55 @@
+{'loss': '2.279', 'grad_norm': '0.4312', 'learning_rate': '0.001', 'epoch': '0.5'}
+{'loss': '2.342', 'grad_norm': '0.6443', 'learning_rate': '0.001', 'epoch': '1'}
+{'train_runtime': '0.0106', 'train_samples_per_second': '189.1', 'train_steps_per_second': '189.1', 'train_loss': '2.31', 'epoch': '1'}
+
+test_alias_and_normalization_without_schema (test_b0_expert.AnswerChecks.test_alias_and_normalization_without_schema) ... ok
+test_no_gold_search_in_explanation (test_b0_expert.AnswerChecks.test_no_gold_search_in_explanation) ... ok
+test_pending_config_cannot_run (test_b0_expert.AnswerChecks.test_pending_config_cannot_run) ... ok
+test_V_selection_ties_and_no_C_selection (test_b0_expert.EvaluationChecks.test_V_selection_ties_and_no_C_selection) ... ok
+test_group_weights_and_mapping (test_b0_expert.EvaluationChecks.test_group_weights_and_mapping) ... ok
+test_paired_stats_fixture_and_missing_denominator (test_b0_expert.EvaluationChecks.test_paired_stats_fixture_and_missing_denominator) ... ok
+test_mask_padding_and_overlength (test_b0_expert.TrainingChecks.test_mask_padding_and_overlength) ... 
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|��������������������| 1/1 [00:00<00:00,  7.92it/s]
+Writing model shards: 100%|��������������������| 1/1 [00:00<00:00,  7.92it/s]
+ok
+test_real_cpu_adapter_update_and_reload (test_b0_expert.TrainingChecks.test_real_cpu_adapter_update_and_reload) ... 
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|��������������������| 1/1 [00:00<00:00, 661.67it/s]
+
+Loading weights:   0%|          | 0/12 [00:00<?, ?it/s]
+Loading weights: 100%|��������������������| 12/12 [00:00<?, ?it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+                                     
+
+ 50%|����������     | 1/2 [00:00<00:00, 132.28it/s]
+                                              
+
+100%|��������������������| 2/2 [00:00<00:00, 189.06it/s]
+                                              
+
+100%|��������������������| 2/2 [00:00<00:00, 189.06it/s]
+100%|��������������������| 2/2 [00:00<00:00, 165.39it/s]
+
+Loading weights:   0%|          | 0/12 [00:00<?, ?it/s]
+Loading weights: 100%|��������������������| 12/12 [00:00<00:00, 7941.25it/s]
+
+Loading weights:   0%|          | 0/12 [00:00<?, ?it/s]
+Loading weights: 100%|��������������������| 12/12 [00:00<00:00, 7929.99it/s]
+ok
+test_timeout_retains_partial_status (test_b0_expert.TrainingChecks.test_timeout_retains_partial_status) ... 
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|��������������������| 1/1 [00:00<00:00, 660.83it/s]
+
+Loading weights:   0%|          | 0/12 [00:00<?, ?it/s]
+Loading weights: 100%|��������������������| 12/12 [00:00<00:00, 7936.24it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 7.084s
+
+OK

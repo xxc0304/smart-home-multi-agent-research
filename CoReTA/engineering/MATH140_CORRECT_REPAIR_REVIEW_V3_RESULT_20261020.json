@@ -1,0 +1,30 @@
+{
+  "scope": "Independent review of offline-committed original correct repair; engineering continuation, not original end-to-end success",
+  "error": null,
+  "complete_output_received": true,
+  "logical_calls": 1,
+  "http_attempts": 1,
+  "format_repairs": 0,
+  "audit_records": 2,
+  "valid_audit_records": 2,
+  "audit_outcomes": [
+    {
+      "record_id": "correct-repair-review:e0000:a01",
+      "outcome": "finding_open",
+      "validation_errors": []
+    },
+    {
+      "record_id": "correct-repair-review:e0000:a02",
+      "outcome": "not_refuted_within_recorded_scope",
+      "validation_errors": []
+    }
+  ],
+  "frozen_hashes_match": true,
+  "task_success_evaluated": false,
+  "issue_statuses": {
+    "i0001": "open",
+    "i0002": "addressed",
+    "i0003": "addressed",
+    "i0004": "addressed"
+  }
+}

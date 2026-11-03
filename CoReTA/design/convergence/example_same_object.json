@@ -1,0 +1,92 @@
+{
+  "fixture_kind": "Human-authored design example; not model or implementation evidence",
+  "scenario": "same_object",
+  "input_packet": {
+    "packet_id": "PROGRAM_ASSIGNED",
+    "candidate_identity": {
+      "version": 2,
+      "hash": "PROGRAM_COMPUTED"
+    },
+    "roles": {
+      "integrator": "A0",
+      "builder": "A1",
+      "checker": "A2"
+    },
+    "task": {
+      "text": "Find a polynomial F with F(1)=0.",
+      "sources": {
+        "T1": "F(1)=0"
+      }
+    },
+    "current_targets": {
+      "C1": {
+        "definition": "F_v2(x)=x-1",
+        "candidate_version": 2
+      }
+    },
+    "issues": {
+      "I1": {
+        "closure_path": "repair",
+        "acceptance_condition": "Verify current F(1)=0 and explain original objection.",
+        "required_case_handles": [
+          "H1"
+        ],
+        "historical_cases": {
+          "H1": {
+            "source_record_id": "PROGRAM_STORED_RECORD",
+            "audited_version": 1,
+            "definition": "F_v1(x)=x-2",
+            "input": "x=1",
+            "quantity": "F_old(1)",
+            "expected_value": "0",
+            "old_observed_value": "-1"
+          }
+        },
+        "current_target_handles": [
+          "C1"
+        ]
+      }
+    }
+  },
+  "model_output_example": {
+    "issue_reviews": {
+      "I1": {
+        "original_case_reviews": [
+          {
+            "case_handle": "H1",
+            "observed_value": "-1",
+            "original_assessment": "supported",
+            "reason": "F_v1(x)=x-2 evaluated at x=1 gives -1"
+          }
+        ],
+        "current_checks": [
+          {
+            "target_handle": "C1",
+            "task_refs": [
+              "T1"
+            ],
+            "input": "x=1",
+            "quantity": "F_v2(x)=x-1 at x=1",
+            "expected_value": "0",
+            "observed_value": "0",
+            "comparison_kind": "exact_equality",
+            "outcome": "match",
+            "reason": "F_v2(x)=x-1 at x=1 = 0"
+          }
+        ],
+        "resolution": "same_object_repaired",
+        "dependency": "not_applicable",
+        "verdict": "resolved",
+        "reason": "F_v1(x)=x-2 fails at 1; revised F_v2(x)=x-1 has value0. Old failure is preserved and current repaired definition is tested."
+      }
+    },
+    "new_findings": []
+  },
+  "expected_state": {
+    "I1": "addressed",
+    "historical_old_observed_preserved": "-1",
+    "new_observation_appended": "-1",
+    "current_candidate_changed": true,
+    "program_proves_semantic_correctness": false
+  }
+}

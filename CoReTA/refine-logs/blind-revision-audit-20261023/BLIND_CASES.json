@@ -1,0 +1,453 @@
+{
+  "kind": "masked_conditions_not_fully_anonymized_text",
+  "selection": "purposive_diagnostic_not_random_sample",
+  "cases": [
+    {
+      "case": "CASE-01",
+      "task": {
+        "task_id": "hb-dev-034",
+        "task_type": "choice",
+        "title": "Collective decision task",
+        "scenario": "You are part of a university field team conducting research in a rural region. Suddenly, a chemical spill at a manufacturing plant several miles away has triggered a region-wide alert. Everyone on your team must decide together where to relocate for safety and communication with authorities. You have very little time. There are three potential locations:\n- Maple Lodge (a youth camp to the east)\n- Pine Retreat (a cabin complex to the north)\n- Cedar Station (an old ranger station to the south)\nAll locations are usually reachable in under an hour. Your goal: choose the only safe and reachable location, maximizing your team’s safety and your ability to coordinate with emergency services.",
+        "shared_information": [
+          "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents.",
+          "Pine Retreat is farther from the spill than where you currently are.",
+          "Cedar Station is an older building, less commonly used, but the route to it is familiar to everyone on the team.",
+          "Maps indicate that all sites should have food and water supplies for at least 24 hours."
+        ],
+        "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+        "choices": [
+          {
+            "id": "option_1",
+            "text": "Maple Lodge"
+          },
+          {
+            "id": "option_2",
+            "text": "Cedar Station"
+          },
+          {
+            "id": "option_3",
+            "text": "Pine Retreat"
+          }
+        ],
+        "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+      },
+      "materials": [
+        {
+          "holder": "A1",
+          "materials": [
+            {
+              "ref": "S01",
+              "content": "The latest radio advisory said the chemical cloud is drifting north, making Pine Retreat dangerous."
+            }
+          ]
+        },
+        {
+          "holder": "A2",
+          "materials": [
+            {
+              "ref": "S02",
+              "content": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+            }
+          ]
+        },
+        {
+          "holder": "A3",
+          "materials": [
+            {
+              "ref": "S03",
+              "content": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+            }
+          ]
+        }
+      ],
+      "before": {
+        "author": "A1",
+        "artifact": "option_2",
+        "work_text": "Revised from W1 (option_1) after applying A2's public offer O1. O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This is a specific, recent access constraint that directly contradicts my decisive premise for Maple Lodge; even though it is peer-reported and I cannot verify it, an unverified access failure on the only route is enough to disqualify a site under imminent-alert time pressure, since reachability is a hard requirement and there is no time to confirm an alternate route. That leaves Pine Retreat (option_3) and Cedar Station (option_2). My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction. Cedar Station is therefore the best remaining option: it is not in the reported northward plume path, its route is familiar to the whole team (reducing navigation delay under time pressure), and all sites reportedly have 24h food/water. Its drawbacks (older, less-used, no stated chemical-incident designation) are real but less decisive than an access failure (Maple) or a plume-path location (Pine). Hence option_2. Limits: the Maple Lodge washout is a peer-reported claim (O1/S02) I have not verified from the original and it may be stale or cover only the main road; Cedar Station's structural safety, contamination status, and communication capability are unstated; S01's north-drift advisory is a single private source and could be superseded; and I have no direct access to S02 or S03.",
+        "open_points": [
+          "Maple Lodge washout (O1/S02) is peer-reported, unverified; whether an alternate route exists is unknown.",
+          "Cedar Station's structural safety, contamination status, and emergency-communication capability are unstated.",
+          "S01 north-drift advisory is a single source and time-sensitive; if it changed, Pine Retreat would need re-weighing.",
+          "A3's S03 (Cedar landline/generator/radio) is only known via W3 and unverified; if true it would strengthen Cedar.",
+          "No confirmation of current road conditions to Cedar Station beyond the general 'usually under an hour'."
+        ]
+      },
+      "after": {
+        "author": "A1",
+        "artifact": "option_2",
+        "work_text": "Revised from W4 after applying A2's public offer O5 (which responds to my focus question Q1) and A3's O4. Q1 asked whether S02's washout covers only Maple Lodge's sole route with no alternate access. O5 answers from A2's directly read original S02 (which I still cannot read myself): S02 says the only road to Maple Lodge was washed out this morning, making it inaccessible by car or foot; it mentions no alternate route and does not affirmatively exclude one. So the precise framing is 'the sole named route is impassable; no alternate access is mentioned or confirmed' — not 'no access possible', and not 'access merely unconfirmed'. I keep the alternate-route question as the top unresolved limit. Q1's answer does not change my artifact: under imminent-alert time pressure, a specific recent report that the one named route is impassable is enough to prefer a site whose route is not reported blocked. Pine Retreat (option_3) is rejected on my own direct original S01 (radio advisory: cloud drifting north). I state this as an inference, per O5/O3: Pine is north, so it is not reported to be clear of the plume — this is not a verified plume-path fact, and Cedar being south likewise means only that Cedar is not reported in the northward drift (inference, not verified safety). I also preserve my rebuttal of W2's 'farther from spill' reasoning, which ignores wind direction; since the text engages W2, W2 is now declared. Cedar Station (option_2) remains the best remaining option: its route is familiar to the whole team, all sites reportedly have 24h food/water, and per O4 (A3's recollection S03, indirect/unverified) it reportedly has a landline, backup generator, and emergency broadcast radio — which narrows, but does not close, the communication gap, since functionality is unconfirmed on-site. Hence option_2. Limits: the Maple washout is indirect knowledge (S02 via O1/O5); no alternate route is mentioned but none is excluded, so if the washout covers only the main road and an alternate exists, Maple (the only chemical-incident-designated site) would need re-weighing; Cedar's structural safety and contamination status remain unstated; S01 is a single private source and could be superseded; S03 is a recollection and the equipment may not be functional; I have no direct access to S02 or S03.",
+        "open_points": [
+          "Top limit: S02 (via O1/O5) reports the sole named road to Maple Lodge impassable; no alternate route is mentioned or confirmed to exist — if one exists, Maple's chemical-incident designation would make it competitive again.",
+          "Cedar Station's structural safety and contamination status remain unstated.",
+          "Cedar's communication assets are reported only via A3's recollection (S03, through O4), not confirmed on-site or currently functional.",
+          "S01 north-drift advisory is a single source and time-sensitive; the plume-clearance of Cedar and plume-exposure of Pine are inferences from drift direction, not verified.",
+          "No confirmation of current road conditions to Cedar Station beyond the general 'usually under an hour'."
+        ]
+      },
+      "audit_access": "Auditor sees all listed originals; actual members only their own. No gold supplied."
+    },
+    {
+      "case": "CASE-02",
+      "task": {
+        "task_id": "hb-dev-001",
+        "task_type": "choice",
+        "title": "Collective decision task",
+        "scenario": "You are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.",
+        "shared_information": [
+          "The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.",
+          "The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.",
+          "The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.",
+          "The river level is still below the bridge to West City."
+        ],
+        "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+        "choices": [
+          {
+            "id": "option_1",
+            "text": "East Town"
+          },
+          {
+            "id": "option_2",
+            "text": "North Hill"
+          },
+          {
+            "id": "option_3",
+            "text": "West City"
+          }
+        ],
+        "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+      },
+      "materials": [
+        {
+          "holder": "A1",
+          "materials": [
+            {
+              "ref": "S01",
+              "content": "The supply truck headed to the village from East Town was stuck in the tunnel."
+            }
+          ]
+        },
+        {
+          "holder": "A2",
+          "materials": [
+            {
+              "ref": "S02",
+              "content": "A massive fire has blocked the supply truck and all other traffic."
+            }
+          ]
+        },
+        {
+          "holder": "A3",
+          "materials": [
+            {
+              "ref": "S03",
+              "content": "The walking trails have been closed since last weekend due to fallen trees."
+            }
+          ]
+        },
+        {
+          "holder": "A4",
+          "materials": [
+            {
+              "ref": "S04",
+              "content": "A mudslide just occurred, covering the driveway to North Hill."
+            }
+          ]
+        }
+      ],
+      "before": {
+        "author": "A2",
+        "artifact": "option_1",
+        "work_text": "Third revision (W5 → this draft), applying A4's O6 critique and A1's O4 symmetry point to my own W5 text. My direct originals remain T and S02. O6 (A4's offer) notes that its original S04 says only that a mudslide 'covered the driveway to North Hill' — not that the driveway is impassable or the school/supplies destroyed; I cannot read S04, so I accept the hedged reading: the driveway is reportedly covered by a mudslide of unstated depth, passability unknown. I therefore withdraw W5's phrases 'both North Hill access modes are therefore reported compromised' and the 'two reported failures' tally. The corrected North Hill picture: one peer-reported, plausibly durable closure (walking trails closed since last weekend due to fallen trees, via O2/O5, which I cannot verify) plus one covering event of unknown severity (driveway, via O3/O6). O4 and O5 also correctly flag that my S02 fire ('blocked the supply truck and all other traffic') has no stated location, so it cannot be counted one-sidedly against North Hill; applied symmetrically it is at least as worrying for the East Town tunnel, since S01 reports the supply truck came from East Town. I accordingly drop S02 from the route tally entirely and treat it as a location-unspecified hazard affecting all road routes. Leveled comparison on access alone: North Hill has a confirmed-by-peer trail closure and a driveway of unknown passability; East Town has a stuck truck in the tunnel (via O1/O4), which is congestion, not a reported closure; West City's bridge is currently above water per T but flood-prone if rain resumes. Access alone is therefore roughly a tie between East Town and North Hill, with West City carrying bridge risk. The remaining decisive difference is care capacity, which comes from T directly, not from peers: East Town's mayor offers accommodation with volunteers to assist evacuees — the only option with explicit assistance for elderly people and children — while West City's hotels lack medical supplies and North Hill offers supplies and gym space but no reported assistance staff, and its walking route for non-drivers is closed. Coordination also favors East Town: W3 and W4 already hold option_1, so converging there maximizes the chance of the all-correct bonus. I keep option_1, but on care-capacity and coordination grounds plus a leveled access read, not on an inflated North Hill failure count. Limits: S01, S03, S04 are known only through peer offers O1–O6 and are unverified; the tunnel's current passability and the driveway's passability after the mudslide are both unknown; S02's fire location is unspecified; convergence of all four leaders is unconfirmed.",
+        "open_points": [
+          "S01, S03, S04 are known only via peer offers O1–O6; none verified by me directly.",
+          "East Town tunnel passability now (congestion vs. blockage) is unknown; S02's fire location relative to tunnel/bridge is unspecified and is now treated as a symmetric, non-decisive hazard.",
+          "North Hill driveway passability after the reported mudslide is unknown (covering event of unstated depth).",
+          "Whether all four leaders converge on East Town, and thus the $2 bonus, is unconfirmed.",
+          "East Town's volunteer/medical capacity is asserted by T but its adequacy for all vulnerable villagers is unquantified."
+        ]
+      },
+      "after": {
+        "author": "A2",
+        "artifact": "option_1",
+        "work_text": "Fourth revision (W6 → this draft), applying A1's O7 symmetry critique to my own W6 text. My direct originals remain T and S02. O7 (A1's offer) correctly notes that W6's access paragraph was still asymmetric: it called the North Hill trail closure 'confirmed-by-peer' while calling the East Town tunnel report merely 'congestion, not a reported closure,' even though both are peer reports I cannot personally verify. A1, who holds S01 as a direct original, reports it says only that the supply truck 'was stuck in the tunnel' — not that the tunnel is blocked, and not that it is open. I therefore restate the access comparison symmetrically: North Hill has a peer-reported trail closure (via O2/O5, unverified by me) plus a peer-reported driveway covering event of unknown depth (via O3/O6, unverified by me); East Town has a peer-reported stuck-vehicle event of unknown duration (via O1/O4/O7, unverified by me). Both routes' current passability is unknown; access alone does not separate East Town from North Hill. West City's bridge is currently above water per T but is flood-prone if rain resumes, and its hotels lack medical supplies. My own S02 fire ('blocked the supply truck and all other traffic') has no stated location, so I continue to treat it as a symmetric, non-decisive hazard across road routes rather than counting it against any one option. The decision therefore rests on two things I can state without an access ranking: (1) care capacity from T directly — East Town's mayor offers accommodation with volunteers to assist evacuees, the only option with explicit assistance for elderly people and children, while West City lacks medical supplies and North Hill offers supplies and gym space but no reported assistance staff and its walking route for non-drivers is reportedly closed; and (2) coordination — W3 and W4 already hold option_1, so converging there maximizes the chance of the all-correct bonus. I keep option_1. Limits: S01, S03, S04 are known to me only through peer offers (O1–O7) and are unverified by me; I accept A1's report of S01's wording as peer-reported, not personally checked. The tunnel's current passability, the driveway's passability after the reported mudslide, and the trail closure's practical effect on non-drivers are all unknown; S02's fire location is unspecified; convergence of all four leaders is unconfirmed; and East Town's volunteer capacity, while asserted by T, is unquantified.",
+        "open_points": [
+          "S01, S03, S04 are known only via peer offers O1–O7; none verified by me directly (A1 reports holding S01, A3 reports holding S03, A4 reports holding S04, but I cannot read them).",
+          "East Town tunnel passability now (stuck vehicle vs. blockage) is unknown; the report does not establish the tunnel is open either.",
+          "North Hill driveway passability after the reported mudslide is unknown (covering event of unstated depth); trail closure is peer-reported only.",
+          "S02's fire location relative to tunnel/bridge routes is unspecified; treated as a symmetric, non-decisive hazard.",
+          "Whether all four leaders converge on East Town, and thus the $2 bonus, is unconfirmed.",
+          "East Town's volunteer/medical capacity is asserted by T but its adequacy for all vulnerable villagers is unquantified."
+        ]
+      },
+      "audit_access": "Auditor sees all listed originals; actual members only their own. No gold supplied."
+    },
+    {
+      "case": "CASE-03",
+      "task": {
+        "task_id": "hb-dev-001",
+        "task_type": "choice",
+        "title": "Collective decision task",
+        "scenario": "You are participating in a study, acting as a community leader of a small village surrounded by mountains and rivers. Most villagers own cars, but there are also elderly people and children who may need additional assistance when walking. Earlier today, heavy rain began to fall, and the local government issued a warning about a potential disaster.\nHours ago, you requested relief supplies, but the supply truck has yet to arrive. Now, the rain has temporarily stopped, giving you and the other three community leaders a short window to decide on the safest evacuation route before the rain resumes. You don’t know how much time you have left to make this critical decision.\nYour Task:\nYou will discuss with three other participants, who are also acting as community leaders, to decide where to evacuate. You have three options:\n- West City: Accessible through a bridge over the river.\n- East Town: Accessible through a tunnel on middle ground.\n- North Hill: Accessible through a driveway and walking trails.\nUsually, it takes the same time to reach all three places by car, but some routes may be inaccessible now.\nThere is only one correct evacuation location. After the discussion:\n- If you choose the correct location, you will earn $1.\n- If all other participants also choose the correct location, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. The chat will at most take 15 minutes. However, the exact time when the chat will end is unknown.",
+        "shared_information": [
+          "The local government announced that hotels in West City are prepared to accommodate evacuees. While these hotels are fully stocked with food, they may lack medical supplies.",
+          "The mayor of East Town has offered accommodations for any evacuees. She also ensures that volunteers are available to assist them.",
+          "The school at North Hill can serve as a temporary evacuation center, providing a two-week supply of essentials and sleeping space in the gym.",
+          "The river level is still below the bridge to West City."
+        ],
+        "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+        "choices": [
+          {
+            "id": "option_1",
+            "text": "East Town"
+          },
+          {
+            "id": "option_2",
+            "text": "North Hill"
+          },
+          {
+            "id": "option_3",
+            "text": "West City"
+          }
+        ],
+        "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+      },
+      "materials": [
+        {
+          "holder": "A1",
+          "materials": [
+            {
+              "ref": "S01",
+              "content": "The supply truck headed to the village from East Town was stuck in the tunnel."
+            }
+          ]
+        },
+        {
+          "holder": "A2",
+          "materials": [
+            {
+              "ref": "S02",
+              "content": "A massive fire has blocked the supply truck and all other traffic."
+            }
+          ]
+        },
+        {
+          "holder": "A3",
+          "materials": [
+            {
+              "ref": "S03",
+              "content": "The walking trails have been closed since last weekend due to fallen trees."
+            }
+          ]
+        },
+        {
+          "holder": "A4",
+          "materials": [
+            {
+              "ref": "S04",
+              "content": "A mudslide just occurred, covering the driveway to North Hill."
+            }
+          ]
+        }
+      ],
+      "before": {
+        "author": "A3",
+        "artifact": "option_3",
+        "work_text": "Revised assessment after applying peer reports to my initial W3 (option_1, East Town). My only directly read originals remain the task (T) and my private material S03 (walking trails closed since last weekend due to fallen trees, which already undermined North Hill). Applied peer reports, used as unverified public carriers, not personally verified originals: O1 (A1's report) says A1's private material S01 states the supply truck from East Town was stuck in the tunnel — this removes the 'usable tunnel route' premise on which my initial East Town choice rested, which my own open_points had flagged as decisive if contradicted. O3 (A4's report) says A4's private material S04 states a mudslide just covered the driveway to North Hill — combined with my S03 trail closure, North Hill's named access routes (driveway and walking trails) are both reported compromised, which is especially bad for elderly people and children. O2 (A2's report) adds that A2's S02 reports a massive fire blocking the supply truck and all other traffic (general, not route-specific) and argues West City's bridge is the only route without a reported obstruction. From T: the river level is still below the bridge to West City, so the bridge is currently passable; West City hotels are stocked with food but may lack medical supplies. Weighing: East Town is undermined by a reported tunnel blockage, North Hill by a reported driveway mudslide plus my own trail closure, while West City's bridge is reported passable now, with the medical-supply gap as a real but manageable concern (relief supplies were requested; volunteers/medical can be sought). I therefore revise to West City (option_3). Limits: the tunnel and mudslide claims are peer-reported via O1/O2/O3 and I have no direct access to S01/S02/S04; the bridge could be threatened if rain resumes and the river rises; the medical-supply gap is unresolved; and coordination is not yet confirmed — the bonus requires all four leaders to choose the same correct location, so I should share this reasoning and seek convergence.",
+        "open_points": [
+          "Tunnel blockage (S01) and North Hill driveway mudslide (S04) are peer-reported through O1/O2/O3, not directly read originals; confidence is moderate, not verified.",
+          "West City's medical-supply gap remains unresolved for elderly evacuees; relief supplies have not arrived.",
+          "The bridge is passable only while the river stays below it; resumed rain could change this, and timing is unknown.",
+          "Coordination not yet confirmed: W1 and W2 still select North Hill (option_2); convergence on option_3 is needed for the bonus and should be pursued in discussion.",
+          "The task stipulates a unique correct location but does not state the decision rule linking the facts to it, so this remains a best inference."
+        ]
+      },
+      "after": {
+        "author": "A3",
+        "artifact": "option_3",
+        "work_text": "Revised assessment (post-feedback) building on my W5. Directly read originals remain T and my private S03 (walking trails closed since last weekend due to fallen trees — already undermining North Hill's named access). Peer reports used as unverified public carriers, not personally verified originals: O1/O4 (A1) report that A1's S01 states the supply truck from East Town was stuck in the tunnel — per O4's correction I now phrase this as the tunnel route being currently blocked/unreliable (a truck was stuck there), not as a definitive removal of a usable tunnel route; a stuck truck could be temporary, so East Town cannot be relied on without confirmation. O3 (A4) reports A4's S04 states a mudslide just covered the driveway to North Hill — combined with my S03 trail closure, North Hill's named access routes (driveway and walking trails) are both reported compromised, especially bad for elderly people and children. O2 reports A2's S02 describes a massive fire blocking the supply truck and all other traffic; per O5's correction I do NOT treat S02 as showing West City's bridge is the only unobstructed route — the fire is not route-specific and could also affect the road approach to the bridge. West City's bridge passability rests on T's river-level fact (still below the bridge), not on absence of road obstruction. Weighing: East Town is undermined by a reported tunnel blockage (caveat: possibly temporary), North Hill by a reported driveway mudslide plus my own trail closure, while West City's bridge crossing is currently not flooded per T, with the medical-supply gap a real but manageable concern. I therefore keep West City (option_3). Limits: tunnel and mudslide claims are peer-reported via O1/O3/O4 and I have no direct access to S01/S04; the tunnel blockage may be temporary; the bridge approach could be affected by the general traffic blockage and by resumed rain raising the river; the medical-supply gap is unresolved; coordination not yet confirmed — W1 and W2 still select North Hill, so convergence on option_3 must be pursued in discussion.",
+        "open_points": [
+          "Tunnel blockage (S01) is peer-reported via O1/O4, not a directly read original; per O4 it may be temporary (a truck was stuck), so East Town should be re-checked rather than treated as definitively ruled out.",
+          "North Hill driveway mudslide (S04) is peer-reported via O3, not directly read; combined with my own S03 trail closure it is the strongest route concern for North Hill.",
+          "Per O5, S02's general fire/traffic blockage is not route-specific and cannot confirm West City's bridge as unobstructed; the bridge approach itself is unverified.",
+          "West City's medical-supply gap remains unresolved for elderly evacuees; relief supplies have not arrived.",
+          "The bridge is passable only while the river stays below it; resumed rain could change this, and timing is unknown.",
+          "Coordination not yet confirmed: W1 and W2 still select North Hill (option_2); convergence on option_3 is needed for the bonus.",
+          "The task stipulates a unique correct location but does not state the decision rule linking the facts to it, so this remains a best inference."
+        ]
+      },
+      "audit_access": "Auditor sees all listed originals; actual members only their own. No gold supplied."
+    },
+    {
+      "case": "CASE-04",
+      "task": {
+        "task_id": "hb-dev-050",
+        "task_type": "choice",
+        "title": "Collective decision task",
+        "scenario": "You are members of a company’s crisis management team. A critical, confidential meeting must take place in the next hour to approve a response to a possible data breach. Three conference rooms are available: Alpha, Beta, and Gamma. Only one room meets all safety and security requirements for such a high-stakes meeting. After the group discussion, you must jointly select the correct room; using the wrong room could lead to leakage or disrupt the decision-making process. Your performance will affect your bonus.",
+        "shared_information": [
+          "Conference Room Alpha is next to a construction site, so there might be noise disturbances, and the security team noted occasional disruptions.",
+          "Conference Room Beta was recently upgraded with soundproofing and was cleared by the IT team for secure devices. The IT team noted a scheduled system upgrade in the area, but it should be complete before your meeting.",
+          "Conference Room Gamma is the farthest from the main entrance and is often overlooked by staff; the security team hasn't finished their full review of the new locks on its doors."
+        ],
+        "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+        "choices": [
+          {
+            "id": "option_1",
+            "text": "Conference Room Beta"
+          },
+          {
+            "id": "option_2",
+            "text": "Conference Room Alpha"
+          },
+          {
+            "id": "option_3",
+            "text": "Conference Room Gamma"
+          }
+        ],
+        "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+      },
+      "materials": [
+        {
+          "holder": "A1",
+          "materials": [
+            {
+              "ref": "S01",
+              "content": "A security audit report (just released) confirms that Conference Room Gamma’s new locks have been installed and tested – it's currently the most secure room in the building."
+            }
+          ]
+        },
+        {
+          "holder": "A2",
+          "materials": [
+            {
+              "ref": "S02",
+              "content": "The building’s fire alarm system is being tested in the zone containing Conference Room Beta at exactly the meeting's starting time, which may require immediate evacuation."
+            }
+          ]
+        },
+        {
+          "holder": "A3",
+          "materials": [
+            {
+              "ref": "S03",
+              "content": "An urgent email from facilities says the Wi-Fi in Conference Room Alpha is unreliable today and IT can't guarantee stable video conferencing."
+            }
+          ]
+        }
+      ],
+      "before": {
+        "author": "A2",
+        "artifact": "option_1",
+        "work_text": "Task facts: Alpha has construction noise and security-noted disruptions; Beta is soundproofed and IT-cleared for secure devices, with a scheduled upgrade expected to finish before the meeting; Gamma has an unfinished security review of its new locks, so compliance cannot be confirmed. Beta is the only room affirmatively cleared on the key dimensions (acoustic confidentiality and secure devices). My private material S02 (direct original) adds that fire-alarm testing in Beta's zone occurs at exactly the meeting start and may require immediate evacuation; this is a real operational risk, but it is a scheduled, checkable event rather than a defect in the room's security suitability, so the plan is to confirm the test window with facilities and hold Gamma as a fallback only if the locks get signed off in time. Peer reports (O1, O2) are indirect and not verified from originals: O1 reports A1's S01 audit saying Gamma's new locks are installed/tested and Gamma is 'the most secure room in the building,' which would narrow the lock concern but does not address Beta's soundproofing/IT-clearance advantages or the other requirement dimensions; O2 reports A3's S03 that Alpha's Wi-Fi is unreliable today, reinforcing Alpha's disqualification. Neither peer report resolves the Beta alarm-test conflict, which remains mine to flag. I therefore select Beta, contingent on confirming the alarm-test schedule before the meeting. Limits: I have no direct access to S01/S03; peer-reported content is indirect and treated as report, not verified original. The alarm-test conflict and Gamma's lock sign-off are unresolved and should be checked with facilities/security.",
+        "open_points": [
+          "S02 indicates fire-alarm testing in Beta's zone at the exact meeting start; confirm the test window or prepare an evacuation/relocation contingency.",
+          "Gamma's lock review is incomplete per task facts; peer-reported S01 (via O1) claims locks are tested and Gamma is most secure, but this is indirect and does not resolve the full requirement set.",
+          "Alpha is disqualified by construction noise and security disruptions, reinforced by peer-reported S03 Wi-Fi failure (indirect, via O2).",
+          "Beta's scheduled system upgrade is only 'should be complete' before the meeting; re-verify completion.",
+          "Peer materials S01/S03 were not directly accessible; any reliance is indirect and cannot be treated as verified from originals."
+        ]
+      },
+      "after": {
+        "author": "A2",
+        "artifact": "option_1",
+        "work_text": "Task facts: Alpha has construction noise and security-noted disruptions; Beta is soundproofed and IT-cleared for secure devices, with a scheduled area upgrade expected to finish before the meeting; Gamma has an unfinished security review of its new locks, so compliance cannot be confirmed. Beta is the only room affirmatively cleared on the key dimensions (acoustic confidentiality and secure devices). My private material S02 (direct original) adds that fire-alarm testing in Beta's zone occurs at exactly the meeting start and may require immediate evacuation. I tried peer offer O3 (A1) on a copy of W4: O3 correctly notes my rationale ('scheduled, checkable, not a defect') is not a principled tiebreaker versus Gamma's lock gap, and asks for an explicit decision rule. I adopt that: the concrete check is whether facilities can move the Beta-zone alarm test outside the meeting hour. If yes, keep option_1. If the test still runs at meeting start, Beta's operational risk is unresolved and Gamma becomes a live fallback only if security signs off the new locks within the hour (S01 reportedly shows installed/tested, but I cannot verify S01 directly; only via O1/O3). I do not adopt O3's suggestion to flip unconditionally to option_3, because the task facts still affirmatively clear Beta on soundproofing and IT, while Gamma's full review is unfinished per the shared facts; a conditional flip suffices. Peer reports O1 (A1's S01: Gamma locks installed/tested, 'most secure room') and O2 (A3's S03: Alpha Wi-Fi unreliable) are indirect and not verified from originals; they narrow but do not resolve the Gamma lock concern or the Beta alarm conflict. Limits: no direct access to S01/S03; alarm-test rescheduling and Gamma lock sign-off are unresolved and must be confirmed with facilities/security before the meeting.",
+        "open_points": [
+          "Decision rule to state to the team: if facilities can move the Beta-zone alarm test outside the meeting hour, keep option_1; if it still runs at meeting start, Gamma becomes a live fallback conditional on security signing off the new locks within the hour.",
+          "S02 (direct original) fire-alarm testing at Beta's exact meeting start may force immediate evacuation; a one-hour crisis meeting cannot be relocated mid-decision, so 'confirming' the window is only a mitigation if the test can be moved.",
+          "Gamma's lock review is incomplete per task facts; peer-reported S01 (via O1/O3) says locks installed/tested and Gamma 'most secure,' but this is indirect and covers only the lock sub-issue, not the full requirement set.",
+          "Alpha is disqualified by construction noise and security disruptions, reinforced by peer-reported S03 Wi-Fi failure (indirect, via O2).",
+          "Beta's scheduled system upgrade is only 'should be complete' before the meeting; re-verify completion.",
+          "S01/S03 were not directly accessible; all reliance on them is indirect report, not verified original."
+        ]
+      },
+      "audit_access": "Auditor sees all listed originals; actual members only their own. No gold supplied."
+    },
+    {
+      "case": "CASE-05",
+      "task": {
+        "task_id": "hb-dev-004",
+        "task_type": "choice",
+        "title": "Collective decision task",
+        "scenario": "You are participating in a study, acting as an investigator working on a traffic accident. The collision took place at the St. Georges intersection, on Monday at 7 p.m. The road is narrow and poorly lit. Two cars and one motorcycle are involved.\nYour Task:\nYou will discuss with other participants, who are also acting as investigators, to decide who to prosecute. You have four suspects:\n- Mr. X\n- Mr. X's son\n- Mrs. Y\n- Mr. Z\nThere is only one true perpetrator. After the discussion:\n- If you choose the correct person, you will earn $1.\n- If all other participants also choose the correct one, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+        "shared_information": [
+          "In the first car, Mr. X—who is 53 years old and has held a driving license for 30 years—and his 17-year-old son return home. The father had just drunk several glasses of spirits during a dinner with his friends.",
+          "In the second car, Mrs. Y, 27 years old and having held a driving license for only 1 year, is going shopping. Her car's lights are damaged.",
+          "On the motorcycle, Mr. Z, 28 years old, who has held a driving license for 5 years, is going to meet his sick father who asked him to come rapidly. He is speeding on the N13 road."
+        ],
+        "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+        "choices": [
+          {
+            "id": "option_1",
+            "text": "Mr. Z"
+          },
+          {
+            "id": "option_2",
+            "text": "Mrs. Y"
+          },
+          {
+            "id": "option_3",
+            "text": "Mr. X's son"
+          },
+          {
+            "id": "option_4",
+            "text": "Mr. X"
+          }
+        ],
+        "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+      },
+      "materials": [
+        {
+          "holder": "A1",
+          "materials": [
+            {
+              "ref": "S01",
+              "content": "The guilty person is driving a car. During police inspection, the guilty car owner was discovered to have a 1.5 level of alcohol. The guilty person admits that he was inattentive at the time of the collision."
+            }
+          ]
+        },
+        {
+          "holder": "A2",
+          "materials": [
+            {
+              "ref": "S02",
+              "content": "The guilty person is less than 30 years old. Due to inexperience, the guilty person wasn't able to avoid the collision. The guilty person claims that he or she did not see others approaching the intersection."
+            }
+          ]
+        },
+        {
+          "holder": "A3",
+          "materials": [
+            {
+              "ref": "S03",
+              "content": "The guilty person is a man. His father is indirectly responsible for the accident. The guilty person was driving at 110 km/h."
+            }
+          ]
+        }
+      ],
+      "before": {
+        "author": "A3",
+        "artifact": "option_3",
+        "work_text": "Using my private material S03: the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible for the accident. The speeding clue matches Mr. Z (speeding on N13), but Mr. Z is 28 and the material says the guilty person's father is indirectly responsible — Mr. Z is going to his sick father, not accompanied by him. The father-indirectly-responsible clue points to Mr. X's son: Mr. X had drunk several glasses of spirits and was returning home with his 17-year-old son in the first car. The son is a man (male), and his father (Mr. X) is indirectly responsible because the father's drinking is the causal background. The 110 km/h detail is the only tension: the son was a passenger in the car, not explicitly the driver, but the material says the guilty person was driving at 110 km/h — this could refer to the son driving the first car while the drunk father sat beside him, which fits 'father indirectly responsible' and 'guilty person is a man'. Mr. X himself is also a man whose son is not responsible, but the material says the father is indirectly responsible, not the son — so the guilty person must be the son, not the father. Therefore option_3 (Mr. X's son) best fits S03. Limits: S03 does not explicitly name the vehicle or speed location; the 110 km/h speeding detail superficially matches Mr. Z, creating ambiguity. Also the task facts do not state who was driving the first car. I have not seen peers' materials S01/S02, which may resolve the speed ambiguity.",
+        "open_points": [
+          "S03's 110 km/h clue superficially matches Mr. Z's speeding, but the 'father indirectly responsible' clue points to Mr. X's son; the two clues are in tension.",
+          "Task facts do not state whether Mr. X or his son was driving the first car.",
+          "Peer materials S01 and S02 are not directly accessible, so their content (possibly clarifying the speed/driver) is unverified.",
+          "Coordination with A1/A2 cannot be confirmed at this initial stage."
+        ]
+      },
+      "after": {
+        "author": "A3",
+        "artifact": "option_1",
+        "work_text": "Combining my direct original S03 with peer reports O1 (A1's S01) and O2 (A2's S02), the best-supported suspect is Mr. Z (option_1). S03 says the guilty person is a man, was driving at 110 km/h, and his father is indirectly responsible. O2 reports S02's clues: under 30, inexperience, and did not see others approaching. O1 reports S01's clues: driving a car, 1.5 blood-alcohol level, inattentive. These peer reports are indirect for me (I cannot read S01/S02 directly), but they constrain the field: Mr. X (53) is excluded by the under-30 clue; Mrs. Y is female, contradicting S03's 'a man'; Mr. X's son is 17 but no task fact says he was driving (he is described as returning home in his father's car), and S03's 110 km/h driving clue has no support for him. Mr. Z is 28 (under 30), male, and is the only suspect whose task facts explicitly include speeding (on N13), matching S03's 110 km/h. 'His father is indirectly responsible' can be read as the sick father's urgent request that made Mr. Z speed — the father's request is the indirect background cause, just as Mr. X's drinking is for the son. The tension is that O1 reports the guilty person driving a car with high alcohol, which fits Mr. X, not Mr. Z; however O1 itself notes S01 gives no name, age, or speed, and the under-30 clue from S02 conflicts with Mr. X (53). Since the majority of jointly reported clues (male, under 30, speeding 110 km/h, driver who failed to avoid the collision) converge on Mr. Z, I choose option_1. Limits: S01/S02 are known only through peer reports, not direct originals; the 'father indirectly responsible' reading for Mr. Z is interpretive; and the car/alcohol clue remains in conflict, so coordination with A1/A2 is still needed for the bonus.",
+        "open_points": [
+          "The car-driver/alcohol clue reported from S01 conflicts with the under-30 and 110 km/h clues; I weigh the latter more heavily but cannot verify S01 directly.",
+          "The 'father indirectly responsible' phrase is applied to Mr. Z via his father's urgent request, an interpretive reading rather than an explicit task fact.",
+          "No task fact states who drove the first car, so the son-as-driver hypothesis remains unsupported rather than refuted.",
+          "Peer convergence on option_1 is not yet confirmed; the coordination bonus depends on A1/A2 switching from option_4/option_2."
+        ]
+      },
+      "audit_access": "Auditor sees all listed originals; actual members only their own. No gold supplied."
+    }
+  ]
+}

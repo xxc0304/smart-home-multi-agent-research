@@ -1,0 +1,5 @@
+# Local-work interface v2
+
+Target: repair observed optional-tool feedback and interface ambiguity, then prepare a small mixed-task comparison that can distinguish work continuation from direct calculation. Inputs: the completed 42-response calibration, unchanged TAT-QA training originals, current engine and comparison flow. Outputs: versioned flow, regression/replay reports, task-fit review and an experiment review. Base commit: `00338a49953246eaeff582e1a16f4c2959b77374`; working tree already contains substantial unrelated work. Scope is the listed files, not the entire diff against that commit.
+
+Success: `python tools/check_local_work_interface_v2.py --output runs/local-work-interface-v2-check-20261027` completes offline, verifies the 42 real replies, preserves their answers and rejections, and tests newly visible feedback and scale guidance. Select actual benchmark tasks by source dependency, never observed candidate success. No paid calls in this implementation step; a separately frozen, reviewed batch and specific authorization precede any new live run. Previous frozen code, sources and scores stay unchanged.

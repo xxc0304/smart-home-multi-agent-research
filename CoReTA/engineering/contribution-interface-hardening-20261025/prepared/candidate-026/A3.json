@@ -1,0 +1,51 @@
+{
+  "member": "A3",
+  "task": {
+    "task_id": "candidate-screening-026",
+    "scenario": "Your town is facing historic, fast-rising river floods. You are part of a committee charged with relocating priceless ancient manuscripts from the museum’s basement to one of three possible emergency shelters with minimal time to spare. The town government, museum staff, and local emergency planners are all providing updates. Each location is typically secure, but the floodwaters are rising rapidly and unforeseen risks may emerge. After you vote, the manuscripts will be moved to the chosen shelter immediately. Only the correct location will guarantee their survival.",
+    "shared_information": [
+      "The University Science Library (USL) was built last year with reinforced walls and sealed vaults located on the second floor, well above possible flood water levels.",
+      "The Hilltop Chapel, at the town’s highest point, has been designated a refuge for emergencies in the past, including prior floods.",
+      "Town Hall has a climate-controlled records vault on the main floor and is connected to the town’s emergency power grid."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "University Science Library (USL)"
+      },
+      {
+        "id": "option_2",
+        "text": "Hilltop Chapel"
+      },
+      {
+        "id": "option_3",
+        "text": "Town Hall"
+      }
+    ],
+    "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+  },
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "Your town is facing historic, fast-rising river floods. You are part of a committee charged with relocating priceless ancient manuscripts from the museum’s basement to one of three possible emergency shelters with minimal time to spare. The town government, museum staff, and local emergency planners are all providing updates. Each location is typically secure, but the floodwaters are rising rapidly and unforeseen risks may emerge. After you vote, the manuscripts will be moved to the chosen shelter immediately. Only the correct location will guarantee their survival."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "The University Science Library (USL) was built last year with reinforced walls and sealed vaults located on the second floor, well above possible flood water levels."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "The Hilltop Chapel, at the town’s highest point, has been designated a refuge for emergencies in the past, including prior floods."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "Town Hall has a climate-controlled records vault on the main floor and is connected to the town’s emergency power grid."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "S03",
+      "content": "Structural engineers just discovered a design flaw in the University Science Library: heavy rainfall causes water to accumulate on the roof, risking collapse of the upper vaults due to overloaded drainage systems."
+    }
+  ]
+}

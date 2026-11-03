@@ -1,0 +1,49 @@
+{
+  "scope": "Inspection component replay only; fixed seen public candidate, not end-to-end task success",
+  "error": null,
+  "complete_output_received": true,
+  "logical_calls": 1,
+  "http_attempts": 2,
+  "format_repairs": 1,
+  "audit_records": 5,
+  "valid_audit_records": 0,
+  "audit_outcomes": [
+    {
+      "record_id": "inspection-component:e0000:a01",
+      "outcome": "finding_open",
+      "validation_errors": [
+        "evidence_refs contains invisible references ['coreta-source-binding-9460bd9a423a:e0000#s3']. Visible step references from the same source: {}. Re-read REFERENCE_INDEX and cite the visible source that actually supports the statement. These are not automatic replacements. The same step id in another event is a different source; do not drop a dependency merely to pass reference validation."
+      ]
+    },
+    {
+      "record_id": "inspection-component:e0000:a02",
+      "outcome": "not_refuted_within_recorded_scope",
+      "validation_errors": [
+        "evidence_refs contains invisible references ['coreta-source-binding-9460bd9a423a:e0000#s3']. Visible step references from the same source: {}. Re-read REFERENCE_INDEX and cite the visible source that actually supports the statement. These are not automatic replacements. The same step id in another event is a different source; do not drop a dependency merely to pass reference validation."
+      ]
+    },
+    {
+      "record_id": "inspection-component:e0000:a03",
+      "outcome": "finding_open",
+      "validation_errors": [
+        "evidence_refs contains invisible references ['coreta-source-binding-9460bd9a423a:e0000#s3']. Visible step references from the same source: {}. Re-read REFERENCE_INDEX and cite the visible source that actually supports the statement. These are not automatic replacements. The same step id in another event is a different source; do not drop a dependency merely to pass reference validation."
+      ]
+    },
+    {
+      "record_id": "inspection-component:e0000:a04",
+      "outcome": "finding_open",
+      "validation_errors": [
+        "evidence_refs contains invisible references ['coreta-source-binding-9460bd9a423a:e0000#s3']. Visible step references from the same source: {}. Re-read REFERENCE_INDEX and cite the visible source that actually supports the statement. These are not automatic replacements. The same step id in another event is a different source; do not drop a dependency merely to pass reference validation."
+      ]
+    },
+    {
+      "record_id": "inspection-component:e0000:a05",
+      "outcome": "finding_open",
+      "validation_errors": [
+        "evidence_refs contains invisible references ['coreta-source-binding-9460bd9a423a:e0000#s3']. Visible step references from the same source: {}. Re-read REFERENCE_INDEX and cite the visible source that actually supports the statement. These are not automatic replacements. The same step id in another event is a different source; do not drop a dependency merely to pass reference validation."
+      ]
+    }
+  ],
+  "frozen_hashes_match": true,
+  "task_success_evaluated": false
+}

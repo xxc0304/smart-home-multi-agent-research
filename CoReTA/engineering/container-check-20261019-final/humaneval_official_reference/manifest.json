@@ -1,0 +1,43 @@
+{
+  "image": "sha256:841f8763c03c5cc688a811a90e13e82541d3350cdaccf3bba64aefb627be5cf6",
+  "samples_sha256": "af17639c63bc482a991d3ef08e053742ec6c0891934b0d04ff5c47e92c02db30",
+  "mother_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+  "subset_sha256": "2a55053590f0fca5aeb898740301f3cf5a7d40e4cff91bda99598fcd68106057",
+  "task_ids": [
+    "HumanEval/0",
+    "HumanEval/1"
+  ],
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--pull=never",
+    "--name",
+    "coreta-score-00dab5686a4b",
+    "--platform",
+    "linux/amd64",
+    "--network=none",
+    "--read-only",
+    "--user",
+    "65532:65532",
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges",
+    "--pids-limit=256",
+    "--memory=4g",
+    "--cpus=2",
+    "--tmpfs",
+    "/tmp:rw,size=1073741824,mode=1777",
+    "--env",
+    "HOME=/tmp",
+    "--env",
+    "XDG_CACHE_HOME=/tmp/cache",
+    "--mount",
+    "type=bind,source=C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\engineering\\container-check-20261019-final\\humaneval_official_reference\\input,target=/input,readonly",
+    "--mount",
+    "type=bind,source=C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\engineering\\container-check-20261019-final\\humaneval_official_reference\\output,target=/output",
+    "sha256:841f8763c03c5cc688a811a90e13e82541d3350cdaccf3bba64aefb627be5cf6",
+    "python",
+    "/opt/coreta-scoring-worker.py",
+    "humaneval"
+  ]
+}

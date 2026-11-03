@@ -1,0 +1,66 @@
+{
+  "undeclared": [
+    {
+      "site": "tools/b1_controls.py:29-34,58-59,93,98,133,166-176",
+      "decision": "The first-round history contains prefix-stripped initial answers, while the documented private and public histories contain the original submitted short answers. That parsed value is also fed through the B0 prefix cleaner a second time in scoring and voting.",
+      "why_it_matters": "This changes both what the agents see and what counts as correct. An offline fixture with raw 'Answer: Answer: 1900' and gold '1900' gives B1 member EM=1, while the B0 scorer on that exact raw answer gives EM=0. Keep raw text for history and apply the existing B0 rule once on the scoring/voting path.",
+      "class": "semantic"
+    },
+    {
+      "site": "config/b1_team_pending.json:26; tools/b1_controls.py:22-30,63-71",
+      "decision": "The default expert occupies the same visible actor slot M1 across all development items. Only presentation and speaking order vary.",
+      "why_it_matters": "The revealed member label, actor seed, and hidden-arm sender name are tied to that slot. This selection is reasonable but absent from the fixed-expert and order rows.",
+      "class": "semantic"
+    },
+    {
+      "site": "tools/b1_runtime.py:17,58-60,123-125",
+      "decision": "The local checkpoint's other generation settings are inherited. In particular top_k remains active by default (the bundled Transformers library supplies 50 unless the checkpoint changes it).",
+      "why_it_matters": "Temperature and top_p alone do not determine the sampled answer distribution. Explicitly choose a top_k or record the effective checkpoint setting used for the frozen policy.",
+      "class": "semantic"
+    },
+    {
+      "site": "tools/b1_controls.py:207-229; refine-logs/expert-mechanism-pilot-20261030/B1_EVALUATION_AND_BATCH_PLAN.md §§2,4",
+      "decision": "Batch-level diagnostic output is a subset of the evaluation plan. It omits member/initial and expert F1 summaries, non-expert transition rates and their conditional denominators, explicit retention rates, actual readout loss, and the item-level sensitivity interval beside the clustered contrast.",
+      "why_it_matters": "The raw per-item scores mostly support these calculations, but the advertised summary is insufficient for the planned expert/non-expert comparison and uncertainty readout. Emit the agreed summaries or explicitly record which ones are deferred and which denominators are used.",
+      "class": "interface"
+    },
+    {
+      "site": "tools/b1_runtime.py:121-132,226-230; refine-logs/expert-mechanism-pilot-20261030/B1_EVALUATION_AND_BATCH_PLAN.md §§3,5",
+      "decision": "Batch cost logging has generation latency, token counts and total elapsed time, but the CUDA run cannot report peak allocated GPU memory for the D8 hardware/cost gate.",
+      "why_it_matters": "The accepted resource staging uses the early batch to record peak VRAM before deciding whether D32 fits. A CPU fixture may record null/unavailable; CUDA runs need the measured figure or an explicitly documented external measurement.",
+      "class": "interface"
+    },
+    {
+      "site": "tools/b1_runtime.py:204-211; refine-logs/expert-mechanism-pilot-20261030/B1_EVALUATION_AND_BATCH_PLAN.md §6",
+      "decision": "Every backend exception other than OOM is item/arm-local. A shared broken chat template that raises on every request is tried again on every remaining item.",
+      "why_it_matters": "The plan calls for stopping the affected batch on a wrong template or systemic failures. A broken template is a configuration failure, whereas a single long prompt can be specific to one arm. Document and implement the split.",
+      "class": "interface"
+    }
+  ],
+  "stale_rows": [
+    {
+      "id": "A18",
+      "site": "tools/b1_runtime.py:74-80; tools/b0_expert.py:27-36; tools/b0_training.py:211-223; tests/test_b1_runtime.py:76-89",
+      "mismatch": "Real B0 C scores preserve the C input's frozen SPLIT_MANIFEST order, but the B1 gate requires literal list equality with C_GROUPS.expected_ids, which B0 built by sorting IDs. Comparing only existing metadata shows exactly the same 160 IDs in a different order (first frozen ID 3hop1__81424_42691_217606 versus sorted 2hop__102788_36414). Thus even a genuinely qualified real B0 export cannot pass. Check membership against group metadata and keep the paired B/E check. The fixture must use the actual frozen order."
+    },
+    {
+      "id": "A13/A16",
+      "site": "tools/b1_experiment.py:18-22,44-50; tools/b1_runtime.py:151-169",
+      "mismatch": "A real `run --n 8` or `--n 32` with no predecessor starts a fresh batch; even `--n 32 --resume-from <one>` is accepted. This can regenerate earlier items or skip the required timing/technical stage in an otherwise ordinary invocation. Enforce the declared 1/2→8→32 staging for this protocol or explicitly document a different separately registered schedule."
+    },
+    {
+      "id": "A17",
+      "site": "tools/b1_runtime.py:24-36,39-50; research/musique-data-preparation-20261030/build_pack.py:136-154",
+      "mismatch": "The prefix loader calls json.loads on every D input record, and score does the same on every D label record even for n=1. Output selection is correct, but the claimed prefix-only D label access is not. The pack exporter already writes these files in frozen manifest order. Read and verify just the first n input/score lines, retaining the full index lookup for relationship metadata."
+    },
+    {
+      "id": "A05",
+      "site": "tools/b1_runtime.py:54-60; tools/b1_controls.py:21-30,67-70",
+      "mismatch": "The registered first-pass generation seed is 20261102, but the real execution gate accepts any integer seed. This is stricter for the decoder policy than for a seed choice that changes the realized outputs. Validate the registered seed for this stage or identify the explicit separate registration required to run a different one."
+    }
+  ],
+  "semantic_undeclared": 3,
+  "verdict": "gaps",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

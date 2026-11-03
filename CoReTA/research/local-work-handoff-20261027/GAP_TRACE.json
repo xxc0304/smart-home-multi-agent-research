@@ -1,0 +1,290 @@
+{
+  "kind": "actual_prior_model_output_inspection_not_new_generation",
+  "model_calls": 0,
+  "rows": [
+    {
+      "case_id": "dependent-01",
+      "actor": "A1",
+      "wave": 0,
+      "work": [
+        {
+          "replaces": null,
+          "expected_revision": null,
+          "target": "total_price_nonvested_share_units",
+          "metadata": {
+            "subject": "nonvested share units total grant-date fair value",
+            "unit": "USD millions",
+            "period": "as of May 26, 2019"
+          },
+          "value": null,
+          "expression": "units * fair_value_per_unit",
+          "inputs": [
+            {
+              "name": "units",
+              "metadata": {
+                "subject": "nonvested share units outstanding",
+                "unit": "millions of units",
+                "period": "as of May 26, 2019"
+              }
+            },
+            {
+              "name": "fair_value_per_unit",
+              "metadata": {
+                "subject": "weighted average grant-date fair value per nonvested share unit",
+                "unit": "USD per unit",
+                "period": "as of May 26, 2019"
+              }
+            }
+          ],
+          "basis": [
+            "T1"
+          ],
+          "conditions": [
+            "Assumes 'total price' means units outstanding multiplied by weighted average grant-date fair value per unit; the table does not state an aggregate total price directly."
+          ]
+        }
+      ],
+      "actual_model_calculations": [
+        {
+          "expression": "1.81*34.89",
+          "values": {},
+          "computed": 63.1509
+        }
+      ],
+      "message": "The nonvested share units total 1.81 million units at May 26, 2019, with a weighted average grant-date fair value of $34.89 per unit (T1). The 'total price' is therefore 1.81 × $34.89, which I compute below; note the table reports fair value per unit, not a directly stated aggregate price."
+    },
+    {
+      "case_id": "dependent-01",
+      "actor": "A2",
+      "wave": 0,
+      "work": [
+        {
+          "replaces": null,
+          "expected_revision": null,
+          "target": "Total price of nonvested share units at May 26, 2019",
+          "metadata": {
+            "subject": "Nonvested cash-settled share units",
+            "unit": "USD millions",
+            "period": "As of May 26, 2019"
+          },
+          "value": null,
+          "expression": "units * fair_value",
+          "inputs": [
+            {
+              "name": "units",
+              "metadata": {
+                "subject": "Nonvested share units",
+                "unit": "millions of units",
+                "period": "As of May 26, 2019"
+              }
+            },
+            {
+              "name": "fair_value",
+              "metadata": {
+                "subject": "Weighted average grant-date fair value per nonvested share unit",
+                "unit": "USD per unit",
+                "period": "As of May 26, 2019"
+              }
+            }
+          ],
+          "basis": [
+            "T2"
+          ],
+          "conditions": [
+            "Assumes total price means aggregate fair value of nonvested share units (units outstanding × weighted-average grant-date fair value) from the cash-settled share units rollforward table."
+          ]
+        }
+      ],
+      "actual_model_calculations": [
+        {
+          "expression": "units*fair_value",
+          "values": {
+            "units": 0.97,
+            "fair_value": 36.2
+          },
+          "computed": 35.114
+        }
+      ],
+      "message": "The table T2 gives nonvested share units at May 26, 2019 of 0.97 million units with a weighted-average grant-date fair value of $36.20. The total price (aggregate fair value) of nonvested share units is therefore 0.97 × $36.20 million. I set up the multiplication with both inputs sourced from T2."
+    },
+    {
+      "case_id": "dependent-02",
+      "actor": "A1",
+      "wave": 0,
+      "work": [
+        {
+          "replaces": null,
+          "expected_revision": null,
+          "target": "2019 CNBU+MBU combined operating income",
+          "metadata": {
+            "subject": "CNBU and MBU total operating income",
+            "unit": "USD millions",
+            "period": "2019"
+          },
+          "value": null,
+          "expression": "c + m",
+          "inputs": [
+            {
+              "name": "c",
+              "metadata": {
+                "subject": "CNBU operating income",
+                "unit": "USD millions",
+                "period": "2019"
+              }
+            },
+            {
+              "name": "m",
+              "metadata": {
+                "subject": "MBU operating income",
+                "unit": "USD millions",
+                "period": "2019"
+              }
+            }
+          ],
+          "basis": [
+            "T1"
+          ],
+          "conditions": [
+            "CNBU and MBU operating income figures are taken from the operating income by business unit table; 2019 columns."
+          ]
+        },
+        {
+          "replaces": null,
+          "expected_revision": null,
+          "target": "ratio of 2019 to 2018 CNBU+MBU total operating income",
+          "metadata": {
+            "subject": "ratio of CNBU and MBU total operating income 2019 to 2018",
+            "unit": "ratio",
+            "period": "2019 vs 2018"
+          },
+          "value": null,
+          "expression": "a / b",
+          "inputs": [
+            {
+              "name": "a",
+              "metadata": {
+                "subject": "CNBU and MBU total operating income",
+                "unit": "USD millions",
+                "period": "2019"
+              }
+            },
+            {
+              "name": "b",
+              "metadata": {
+                "subject": "CNBU and MBU total operating income",
+                "unit": "USD millions",
+                "period": "2018"
+              }
+            }
+          ],
+          "basis": [
+            "T1",
+            "TASK"
+          ],
+          "conditions": [
+            "2018 CNBU and MBU operating income values are not disclosed in the supplied sources; denominator remains unresolved."
+          ]
+        }
+      ],
+      "actual_model_calculations": [
+        {
+          "expression": "4645 + 2606",
+          "values": {},
+          "computed": 7251.0
+        }
+      ],
+      "message": "T1 provides 2019 CNBU ($4,645) and MBU ($2,606) operating income, but the 2018 CNBU and MBU operating income values are not present in any supplied source (P3/P4 only describe direction of change). I can compute the 2019 combined total, but the 2018 denominator remains an open input."
+    },
+    {
+      "case_id": "dependent-02",
+      "actor": "A2",
+      "wave": 0,
+      "work": [
+        {
+          "replaces": null,
+          "expected_revision": null,
+          "target": "2018 combined CNBU and MBU operating income",
+          "metadata": {
+            "subject": "CNBU and MBU total operating income",
+            "unit": "USD millions",
+            "period": "2018"
+          },
+          "value": null,
+          "expression": "cnbu_2018+mbu_2018",
+          "inputs": [
+            {
+              "name": "cnbu_2018",
+              "metadata": {
+                "subject": "CNBU operating income",
+                "unit": "USD millions",
+                "period": "2018"
+              }
+            },
+            {
+              "name": "mbu_2018",
+              "metadata": {
+                "subject": "MBU operating income",
+                "unit": "USD millions",
+                "period": "2018"
+              }
+            }
+          ],
+          "basis": [
+            "T2"
+          ],
+          "conditions": [
+            "Values taken from the 2018 column of the operating income by business unit table"
+          ]
+        },
+        {
+          "replaces": null,
+          "expected_revision": null,
+          "target": "ratio of 2019 combined CNBU+MBU operating income to 2018 combined",
+          "metadata": {
+            "subject": "CNBU and MBU total operating income ratio (2019 to 2018)",
+            "unit": "ratio",
+            "period": "2019 vs 2018"
+          },
+          "value": null,
+          "expression": "combined_2019/combined_2018",
+          "inputs": [
+            {
+              "name": "combined_2019",
+              "metadata": {
+                "subject": "CNBU and MBU total operating income",
+                "unit": "USD millions",
+                "period": "2019"
+              }
+            },
+            {
+              "name": "combined_2018",
+              "metadata": {
+                "subject": "CNBU and MBU total operating income",
+                "unit": "USD millions",
+                "period": "2018"
+              }
+            }
+          ],
+          "basis": [
+            "T2",
+            "P3",
+            "TASK"
+          ],
+          "conditions": [
+            "2019 CNBU and MBU operating income figures are not provided in the visible sources"
+          ]
+        }
+      ],
+      "actual_model_calculations": [
+        {
+          "expression": "9773+3033",
+          "values": {},
+          "computed": 12806.0
+        }
+      ],
+      "message": "The supplied table T2 shows 2018 and 2017 operating income by business unit, not 2019 figures. For 2019, only qualitative statements (P3) are given; no 2019 CNBU or MBU operating income values are present. I can record the 2018 combined CNBU+MBU amount (9,773 + 3,033 = 12,806) and leave the 2019 combined amount as an open input needed for the ratio."
+    }
+  ],
+  "finding": "First-turn local arithmetic is already computable; W representation separately leaves its operands unbound",
+  "boundary": "This inspection does not infer the correct task answer or repair the prior outputs"
+}

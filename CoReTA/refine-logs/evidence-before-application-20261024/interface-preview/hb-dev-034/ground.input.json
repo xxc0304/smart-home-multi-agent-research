@@ -1,0 +1,489 @@
+{
+  "TASK": {
+    "task_id": "hb-dev-034",
+    "task_type": "choice",
+    "title": "Collective decision task",
+    "scenario": "You are part of a university field team conducting research in a rural region. Suddenly, a chemical spill at a manufacturing plant several miles away has triggered a region-wide alert. Everyone on your team must decide together where to relocate for safety and communication with authorities. You have very little time. There are three potential locations:\n- Maple Lodge (a youth camp to the east)\n- Pine Retreat (a cabin complex to the north)\n- Cedar Station (an old ranger station to the south)\nAll locations are usually reachable in under an hour. Your goal: choose the only safe and reachable location, maximizing your team’s safety and your ability to coordinate with emergency services.",
+    "shared_information": [
+      "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents.",
+      "Pine Retreat is farther from the spill than where you currently are.",
+      "Cedar Station is an older building, less commonly used, but the route to it is familiar to everyone on the team.",
+      "Maps indicate that all sites should have food and water supplies for at least 24 hours."
+    ],
+    "instruction": "Choose one option using the available facts. State the reasoning and any unresolved limits.",
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Maple Lodge"
+      },
+      {
+        "id": "option_2",
+        "text": "Cedar Station"
+      },
+      {
+        "id": "option_3",
+        "text": "Pine Retreat"
+      }
+    ],
+    "output_contract": "artifact must be one option ID, not an option text or ranking; null only if no answer can be offered."
+  },
+  "SELF": {
+    "agent_id": "A3",
+    "team": [
+      "A1",
+      "A2",
+      "A3"
+    ]
+  },
+  "SELF_MATERIALS": [
+    {
+      "ref": "S03",
+      "content": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+    }
+  ],
+  "DIRECTORY": [
+    {
+      "agent_id": "A1",
+      "accessible_materials": [
+        {
+          "ref": "S01"
+        }
+      ]
+    },
+    {
+      "agent_id": "A2",
+      "accessible_materials": [
+        {
+          "ref": "S02"
+        }
+      ]
+    },
+    {
+      "agent_id": "A3",
+      "accessible_materials": [
+        {
+          "ref": "S03"
+        }
+      ]
+    }
+  ],
+  "REFERENCE_INDEX": [
+    {
+      "ref": "T",
+      "kind": "task",
+      "access": "direct_original"
+    },
+    {
+      "ref": "S03",
+      "kind": "private_material",
+      "access": "direct_original"
+    },
+    {
+      "ref": "O1",
+      "kind": "public_offer_unverified_excerpts",
+      "access": "public_report"
+    },
+    {
+      "ref": "O2",
+      "kind": "public_offer_unverified_excerpts",
+      "access": "public_report"
+    },
+    {
+      "ref": "O3",
+      "kind": "public_offer_unverified_excerpts",
+      "access": "public_report"
+    },
+    {
+      "ref": "O4",
+      "kind": "public_offer_unverified_excerpts",
+      "access": "public_report"
+    },
+    {
+      "ref": "O5",
+      "kind": "public_offer_unverified_excerpts",
+      "access": "public_report"
+    },
+    {
+      "ref": "O6",
+      "kind": "public_offer_unverified_excerpts",
+      "access": "public_report"
+    },
+    {
+      "ref": "W1",
+      "kind": "visible_work",
+      "access": "public_report"
+    },
+    {
+      "ref": "W2",
+      "kind": "visible_work",
+      "access": "public_report"
+    },
+    {
+      "ref": "W3",
+      "kind": "visible_work",
+      "access": "public_report"
+    },
+    {
+      "ref": "W4",
+      "kind": "visible_work",
+      "access": "public_report"
+    },
+    {
+      "ref": "W5",
+      "kind": "visible_work",
+      "access": "public_report"
+    }
+  ],
+  "STAGE": "GROUND",
+  "METHOD_VARIANT": "ground_full_public_v1",
+  "CLAIMS": [
+    {
+      "id": "C1",
+      "statement": "I hold S02 as a directly read original, so I can answer Q1's scope question from the original itself rather than from O1's report. S02 states the *only* road to Maple Lodge has been washed out this morning, making it inaccessible by car or foot. It does not mention any alternate route, and it does not affirmatively state that none exists — so the correct framing is 'the sole named route is impassable; no alternate access is mentioned or confirmed,' not 'no access possible' and not 'access merely unconfirmed.' Two consequences for W4: (1) W4's open point 'whether an alternate route exists is unknown' is accurate and should be kept, while its work_text framing should not be strengthened beyond 'only road impassable'; (2) W4's declared_sources (O1, S01, T, W1) omit W2 even though the work_text explicitly engages and rebuts W2's 'farther from spill' reasoning — that carrier is used and should be declared. Separately, W4's 'Cedar is not in the reported northward plume path' is an inference from S01's northward drift, not a verified plume-clearance fact, and should be worded as such. This does not change the artifact (option_2 remains defensible); it corrects evidence strength and declaration completeness. Limit: I can confirm only what S02 says; I have no direct access to S01 or S03.",
+      "premises": "Legacy interface illustration; decomposition not generated.",
+      "source_refs": [
+        "O5"
+      ]
+    }
+  ],
+  "TARGET_OFFER": {
+    "ref": "O5",
+    "author": "A2",
+    "base_version": "W4",
+    "target": "W4:work_text:L1",
+    "knowledge": "I hold S02 as a directly read original, so I can answer Q1's scope question from the original itself rather than from O1's report. S02 states the *only* road to Maple Lodge has been washed out this morning, making it inaccessible by car or foot. It does not mention any alternate route, and it does not affirmatively state that none exists — so the correct framing is 'the sole named route is impassable; no alternate access is mentioned or confirmed,' not 'no access possible' and not 'access merely unconfirmed.' Two consequences for W4: (1) W4's open point 'whether an alternate route exists is unknown' is accurate and should be kept, while its work_text framing should not be strengthened beyond 'only road impassable'; (2) W4's declared_sources (O1, S01, T, W1) omit W2 even though the work_text explicitly engages and rebuts W2's 'farther from spill' reasoning — that carrier is used and should be declared. Separately, W4's 'Cedar is not in the reported northward plume path' is an inference from S01's northward drift, not a verified plume-clearance fact, and should be worded as such. This does not change the artifact (option_2 remains defensible); it corrects evidence strength and declaration completeness. Limit: I can confirm only what S02 says; I have no direct access to S01 or S03.",
+    "support": [
+      {
+        "ref": "S02",
+        "excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+      },
+      {
+        "ref": "W4",
+        "excerpt": "O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot."
+      },
+      {
+        "ref": "W4",
+        "excerpt": "Cedar Station is therefore the best remaining option: it is not in the reported northward plume path"
+      },
+      {
+        "ref": "W4",
+        "excerpt": "I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction."
+      }
+    ],
+    "proposed_use": "In W4's work_text, restate the evidence precisely as 'S02 (directly read by A2, reported to me via O1) says the only road to Maple Lodge is impassable; no alternate route is mentioned, and none is confirmed to exist' — keep the alternate-route open point but do not upgrade to 'no access possible.' Soften 'Cedar is not in the reported northward plume path' to 'Cedar is south, and S01 reports northward drift, so Cedar is not reported to be in the plume path (inference, not verified).' Add W2 to declared_sources since the text rebuts W2's reasoning. Keep the washout-scope/alternate-route question as the top unresolved limit. Do not change the artifact (option_2).",
+    "responds_to": "Q1",
+    "claims": [
+      {
+        "statement": "I hold S02 as a directly read original, so I can answer Q1's scope question from the original itself rather than from O1's report. S02 states the *only* road to Maple Lodge has been washed out this morning, making it inaccessible by car or foot. It does not mention any alternate route, and it does not affirmatively state that none exists — so the correct framing is 'the sole named route is impassable; no alternate access is mentioned or confirmed,' not 'no access possible' and not 'access merely unconfirmed.' Two consequences for W4: (1) W4's open point 'whether an alternate route exists is unknown' is accurate and should be kept, while its work_text framing should not be strengthened beyond 'only road impassable'; (2) W4's declared_sources (O1, S01, T, W1) omit W2 even though the work_text explicitly engages and rebuts W2's 'farther from spill' reasoning — that carrier is used and should be declared. Separately, W4's 'Cedar is not in the reported northward plume path' is an inference from S01's northward drift, not a verified plume-clearance fact, and should be worded as such. This does not change the artifact (option_2 remains defensible); it corrects evidence strength and declaration completeness. Limit: I can confirm only what S02 says; I have no direct access to S01 or S03.",
+        "premises": "Legacy interface illustration; decomposition not generated.",
+        "source_refs": [
+          "O5"
+        ]
+      }
+    ]
+  },
+  "PUBLIC_EVIDENCE": [
+    {
+      "ref": "O1",
+      "author": "A2",
+      "base_version": "W1",
+      "target": "W1:work_text:L1",
+      "knowledge": "W1 picks option_1 (Maple Lodge) but its own limits section concedes route reachability to Maple Lodge is unconfirmed. My directly read original S02 (emergency traffic update) reports the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This directly contradicts W1's decisive premise and means the option_1 artifact should be reconsidered; the reachability failure is more specific and recent than the general 'usually under an hour' statement. Note this is my own original, not a verification of peers' S01/S03 claims.",
+      "support": [
+        {
+          "ref": "S02",
+          "excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+        },
+        {
+          "ref": "W1",
+          "excerpt": "route reachability for Maple Lodge is only generally asserted (under an hour, usual conditions)."
+        }
+      ],
+      "proposed_use": "W1 should treat Maple Lodge's access as failed (not merely unconfirmed) and revise its artifact away from option_1, weighing Pine Retreat vs Cedar Station on the remaining shared facts; W1 should also record S02 as a consulted source."
+    },
+    {
+      "ref": "O2",
+      "author": "A3",
+      "base_version": "W1",
+      "target": "W2",
+      "knowledge": "A2's rejection of Maple Lodge rests on S02 (a road washout making Maple Lodge inaccessible). This is a peer-reported claim I cannot verify, but it is a specific, recent access constraint that directly conflicts with the task's shared fact that 'all locations are usually reachable in under an hour.' W2 should therefore treat the washout as the pivotal, contested fact: if true, option_1 fails the reachability requirement and the choice should shift; if stale or partial (e.g., only the main road, with an alternate route), option_1 remains viable. This is a concrete test A2 could state: confirm whether the washout affects the only route or whether any alternate access to Maple Lodge exists before ruling it out. Note also that W2's fallback to Pine Retreat is undermined by A1's S01 north-drift advisory (peer-reported, unverified), which would put Pine Retreat in the plume path; W2 should acknowledge that tension rather than treating Pine as 'not contradicted.'",
+      "support": [
+        {
+          "ref": "W2",
+          "excerpt": "my directly accessible material S02 (emergency traffic updates) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot"
+        },
+        {
+          "ref": "W2",
+          "excerpt": "Pine Retreat (option_3) is reported farther from the spill than our current position, which reduces exposure relative to staying put, and no reachability problem for it is known to me"
+        },
+        {
+          "ref": "T",
+          "excerpt": "All locations are usually reachable in under an hour."
+        }
+      ],
+      "proposed_use": "Revise W2's work_text to (1) flag the washout as a single, unverified report that contradicts the task's stated general reachability, (2) state the concrete check needed (only route vs. alternate access), and (3) note that A1's north-drift advisory, if credited, weakens the Pine Retreat fallback, so the decision may hinge on resolving the Maple Lodge access question rather than on Pine's distance."
+    },
+    {
+      "ref": "O3",
+      "author": "A2",
+      "base_version": "W4",
+      "target": "W4:work_text:L1",
+      "knowledge": "I hold the directly read original S02, so I can confirm the washout report's exact scope and word the record accordingly. S02 states the *only* road to Maple Lodge is washed out and the site is inaccessible by car or foot; it does not mention an alternate route, but it also does not affirmatively rule one out. W4's open point 'whether an alternate route exists is unknown' is therefore accurate and should be kept, while the work_text's framing of the washout as decisive should not be strengthened further — the source supports 'only road impassable', not 'no possible access'. Separately, W4's reasoning that Cedar Station 'is not in the reported northward plume path' is an inference from S01 (northward drift), not a verified fact; W4 already concedes Cedar's contamination status is unstated, and the CHECK_EFFECT counterexample (washout may cover only the main road, leaving Maple the only chemical-incident-designated site) remains the main live risk. Also, W4's declared_sources (O1, S01, T, W1) omit W2, which its work_text explicitly credits/rebuts on 'farther from spill', so the declaration is incomplete relative to the text.",
+      "support": [
+        {
+          "ref": "S02",
+          "excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+        },
+        {
+          "ref": "W4",
+          "excerpt": "O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot."
+        },
+        {
+          "ref": "W4",
+          "excerpt": "Cedar Station is therefore the best remaining option: it is not in the reported northward plume path"
+        },
+        {
+          "ref": "W4",
+          "excerpt": "I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction."
+        }
+      ],
+      "proposed_use": "Keep the washout open point but restate the evidence precisely as 'the only road is impassable per S02; no alternate route is mentioned, and none is confirmed to exist' — do not upgrade it to 'no access possible'. Soften the Cedar claim from 'is not in the plume path' to 'is south, and S01 reports a northward drift, so Cedar is not reported to be in the plume path (inference, not verified)'. Add W2 to declared_sources since the work_text rebuts W2's reasoning, and keep the CHECK_EFFECT counterexample (washout scope / alternate route) as the top unresolved limit."
+    },
+    {
+      "ref": "O4",
+      "author": "A3",
+      "base_version": "W4",
+      "target": "W4:work_text:L1",
+      "knowledge": "W4 lists Cedar Station's 'communication capability' as unstated, but my directly read original S03 (a team member's recollection) reports Cedar Station has a functional landline, backup generator, and emergency broadcast radio. Since the task's stated goal is maximizing 'ability to coordinate with emergency services,' this is a directly relevant criterion that Cedar satisfies and that neither Maple Lodge nor Pine Retreat is reported to satisfy. This strengthens W4's option_2 conclusion rather than changing it, and it closes one of W4's listed open points. Limit: S03 is a recollection, not an on-site verification, and I am the source agent, so I can confirm only that this is what S03 says, not that the equipment is currently functional.",
+      "support": [
+        {
+          "ref": "S03",
+          "excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+        },
+        {
+          "ref": "W4",
+          "excerpt": "Cedar Station's structural safety, contamination status, and communication capability are unstated"
+        }
+      ],
+      "proposed_use": "Revise W4's work_text and open_points: replace 'Cedar Station's communication capability is unstated' with a note that per S03 (A3's recollection, indirect/unverified) Cedar has a landline, backup generator, and emergency broadcast radio, which directly serves the task's coordination-with-authorities goal and further supports option_2. Keep the caveat that this is a recollection, not confirmed on-site. Do not change the artifact (option_2); also declare S03 (via this offer) if relied upon."
+    },
+    {
+      "ref": "O5",
+      "author": "A2",
+      "base_version": "W4",
+      "target": "W4:work_text:L1",
+      "knowledge": "I hold S02 as a directly read original, so I can answer Q1's scope question from the original itself rather than from O1's report. S02 states the *only* road to Maple Lodge has been washed out this morning, making it inaccessible by car or foot. It does not mention any alternate route, and it does not affirmatively state that none exists — so the correct framing is 'the sole named route is impassable; no alternate access is mentioned or confirmed,' not 'no access possible' and not 'access merely unconfirmed.' Two consequences for W4: (1) W4's open point 'whether an alternate route exists is unknown' is accurate and should be kept, while its work_text framing should not be strengthened beyond 'only road impassable'; (2) W4's declared_sources (O1, S01, T, W1) omit W2 even though the work_text explicitly engages and rebuts W2's 'farther from spill' reasoning — that carrier is used and should be declared. Separately, W4's 'Cedar is not in the reported northward plume path' is an inference from S01's northward drift, not a verified plume-clearance fact, and should be worded as such. This does not change the artifact (option_2 remains defensible); it corrects evidence strength and declaration completeness. Limit: I can confirm only what S02 says; I have no direct access to S01 or S03.",
+      "support": [
+        {
+          "ref": "S02",
+          "excerpt": "Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot."
+        },
+        {
+          "ref": "W4",
+          "excerpt": "O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot."
+        },
+        {
+          "ref": "W4",
+          "excerpt": "Cedar Station is therefore the best remaining option: it is not in the reported northward plume path"
+        },
+        {
+          "ref": "W4",
+          "excerpt": "I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction."
+        }
+      ],
+      "proposed_use": "In W4's work_text, restate the evidence precisely as 'S02 (directly read by A2, reported to me via O1) says the only road to Maple Lodge is impassable; no alternate route is mentioned, and none is confirmed to exist' — keep the alternate-route open point but do not upgrade to 'no access possible.' Soften 'Cedar is not in the reported northward plume path' to 'Cedar is south, and S01 reports northward drift, so Cedar is not reported to be in the plume path (inference, not verified).' Add W2 to declared_sources since the text rebuts W2's reasoning. Keep the washout-scope/alternate-route question as the top unresolved limit. Do not change the artifact (option_2).",
+      "responds_to": "Q1"
+    },
+    {
+      "ref": "O6",
+      "author": "A3",
+      "base_version": "W4",
+      "target": "W4:work_text:L1",
+      "knowledge": "I hold S03 directly (my only original besides T), and it is a team member's recollection, not an on-site check. Relevant to Q1 only indirectly: S03 says nothing about roads or the Maple Lodge washout, so it cannot resolve whether the washout covers Maple's sole route. But it does bear on the framing Q1 feeds: W4's open point 'A3's S03 (Cedar landline/generator/radio) is only known via W3 and unverified; if true it would strengthen Cedar' can now be updated to what S03 actually says — Cedar reportedly has a functional landline, backup generator, and emergency broadcast radio. I can confirm only the recollection's content, not current functionality. This does not change option_2, but it removes the 'unstated communication capability' caveat from W4's limits while keeping the on-site-verification caveat. On Q1 itself: my reading of Q1's refs (O1/O3) is that S02 is reported as 'the only road ... washed out ... inaccessible by car or foot' with no alternate route mentioned and none affirmatively ruled out, so the honest framing is 'sole route reported impassable; alternate access neither mentioned nor excluded' — neither decisive proof of no access nor grounds to keep Maple viable without checking. Only A2 can restate S02's exact scope.",
+      "support": [
+        {
+          "ref": "S03",
+          "excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+        },
+        {
+          "ref": "W4",
+          "excerpt": "A3's S03 (Cedar landline/generator/radio) is only known via W3 and unverified; if true it would strengthen Cedar."
+        },
+        {
+          "ref": "O3",
+          "excerpt": "S02 states the *only* road to Maple Lodge is washed out and the site is inaccessible by car or foot; it does not mention an alternate route, but it also does not affirmatively rule one out."
+        },
+        {
+          "ref": "W4",
+          "excerpt": "Cedar Station's structural safety, contamination status, and communication capability are unstated"
+        }
+      ],
+      "proposed_use": "In W4, replace the open point 'S03 ... only known via W3 and unverified; if true it would strengthen Cedar' with: per S03 (A3's recollection, indirect/unverified) Cedar reportedly has a landline, backup generator, and emergency broadcast radio, directly serving the coordination goal — functionality not confirmed on-site. Keep the artifact option_2 and the Maple washout open point, but word it per O3 as 'sole road reported impassable; alternate access neither mentioned nor excluded' rather than treating it as proof of no access. Q1's scope question still needs A2 to restate S02; S03 cannot answer it.",
+      "responds_to": "Q1"
+    }
+  ],
+  "BUDGET": {
+    "remaining_network_attempts": 20,
+    "reserved_closure_calls": 4,
+    "cycle": 0
+  },
+  "CANDIDATES": [
+    {
+      "id": "W1",
+      "author": "A1",
+      "base_version": null,
+      "declared_sources": [],
+      "source_declaration_status": "not_collected",
+      "initial": true,
+      "artifact": "option_1",
+      "work_text": "Maple Lodge (option_1) is the only site explicitly designated on the evacuation plan as a safe site for chemical-related incidents, which directly matches the hazard. My private material S01 (direct original) reports a radio advisory that the chemical cloud is drifting north, which rules out Pine Retreat (option_3) despite its distance from the spill. Cedar Station (option_2) is only supported by a familiar route and generic supplies; familiarity is not a safety criterion for a chemical release, and an older, less-used building offers no stated hazard-specific protection. All sites reportedly have 24h food/water, so that fact does not discriminate. Hence option_1. Limits: I have not directly verified evacuation-plan details beyond the task summary, and I have no peer reports (S02, S03) at this stage; the north-drift advisory is a single private source and could change, and route reachability for Maple Lodge is only generally asserted (under an hour, usual conditions).",
+      "open_points": [
+        "No peer materials (S02, S03) consulted yet; their contents could alter the picture.",
+        "The north-drift advisory (S01) is a single source and may be time-sensitive or superseded.",
+        "Actual road/route conditions to Maple Lodge are not confirmed beyond the general 'usually under an hour' statement.",
+        "Cedar Station's structural safety or contamination status is unknown, only 'older, less commonly used'."
+      ],
+      "deliverable_shape": true,
+      "locations": {
+        "W1:artifact:L1": "option_1",
+        "W1:work_text:L1": "Maple Lodge (option_1) is the only site explicitly designated on the evacuation plan as a safe site for chemical-related incidents, which directly matches the hazard. My private material S01 (direct original) reports a radio advisory that the chemical cloud is drifting north, which rules out Pine Retreat (option_3) despite its distance from the spill. Cedar Station (option_2) is only supported by a familiar route and generic supplies; familiarity is not a safety criterion for a chemical release, and an older, less-used building offers no stated hazard-specific protection. All sites reportedly have 24h food/water, so that fact does not discriminate. Hence option_1. Limits: I have not directly verified evacuation-plan details beyond the task summary, and I have no peer reports (S02, S03) at this stage; the north-drift advisory is a single private source and could change, and route reachability for Maple Lodge is only generally asserted (under an hour, usual conditions)."
+      }
+    },
+    {
+      "id": "W2",
+      "author": "A2",
+      "base_version": null,
+      "declared_sources": [],
+      "source_declaration_status": "not_collected",
+      "initial": true,
+      "artifact": "option_3",
+      "work_text": "Maple Lodge (option_1) is designated on the evacuation plan as a safe site for chemical incidents, but my directly accessible material S02 (emergency traffic updates) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot — so it fails the reachability requirement, which is decisive for an imminent chemical alert. Pine Retreat (option_3) is reported farther from the spill than our current position, which reduces exposure relative to staying put, and no reachability problem for it is known to me; all sites reportedly have 24h food/water. Cedar Station (option_2) has a familiar route but is an older, less-used building with no stated safety designation for chemical incidents, and familiarity alone does not establish safety or emergency coordination. On my own information, Pine Retreat is the best remaining candidate: it is the only option not contradicted by a known safety or access problem. Limits: I have not directly verified Pine Retreat's road access, its suitability for chemical incidents, or communications with authorities; the evacuation-plan designation for Maple Lodge may be stale, but the washout report is the more recent and more specific constraint. I also have no direct access to peers' materials (S01, S03), so my choice rests on T and S02 only.",
+      "open_points": [
+        "Pine Retreat's road accessibility and chemical-incident suitability are unverified from originals.",
+        "Communication capability with emergency services at Pine Retreat is unknown.",
+        "Whether the Maple Lodge evacuation designation has been updated since the washout is unknown.",
+        "Peer materials S01 and S03 were not available to me; they could change the comparison."
+      ],
+      "deliverable_shape": true,
+      "locations": {
+        "W2:artifact:L1": "option_3",
+        "W2:work_text:L1": "Maple Lodge (option_1) is designated on the evacuation plan as a safe site for chemical incidents, but my directly accessible material S02 (emergency traffic updates) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot — so it fails the reachability requirement, which is decisive for an imminent chemical alert. Pine Retreat (option_3) is reported farther from the spill than our current position, which reduces exposure relative to staying put, and no reachability problem for it is known to me; all sites reportedly have 24h food/water. Cedar Station (option_2) has a familiar route but is an older, less-used building with no stated safety designation for chemical incidents, and familiarity alone does not establish safety or emergency coordination. On my own information, Pine Retreat is the best remaining candidate: it is the only option not contradicted by a known safety or access problem. Limits: I have not directly verified Pine Retreat's road access, its suitability for chemical incidents, or communications with authorities; the evacuation-plan designation for Maple Lodge may be stale, but the washout report is the more recent and more specific constraint. I also have no direct access to peers' materials (S01, S03), so my choice rests on T and S02 only."
+      }
+    },
+    {
+      "id": "W3",
+      "author": "A3",
+      "base_version": null,
+      "declared_sources": [],
+      "source_declaration_status": "not_collected",
+      "initial": true,
+      "artifact": "option_1",
+      "work_text": "Maple Lodge (option_1) is the best choice on the shared facts. It is the only location explicitly listed on the evacuation plan as a safe site for chemical-related incidents, which is the most directly relevant criterion for a chemical spill. Pine Retreat is farther from the spill but has no stated designation as a safe site, and being farther does not establish safety (wind direction and plume path unknown). Cedar Station is familiar to reach and, per my own material S03, has a landline, backup generator, and emergency broadcast radio, which would help coordination; however, it is an older, less-used building with no stated safety designation for chemical incidents, and familiarity of route does not equal safety. All sites reportedly have 24h food/water, so that does not differentiate. On balance, the explicit chemical-incident safe-site designation outweighs Cedar's communication advantage and Pine's distance.",
+      "open_points": [
+        "No information on wind direction or plume trajectory, so 'farther from spill' (Pine) cannot be confirmed as safe.",
+        "No data on current road conditions/reachability or whether any site is contaminated or overcrowded.",
+        "Whether Cedar Station's communication assets (S03) could be combined with Maple Lodge's safe-site status is unknown; team could consider relaying via radio from Maple if compatible.",
+        "Source S03 is a team member's recollection, not independently verified on-site."
+      ],
+      "deliverable_shape": true,
+      "locations": {
+        "W3:artifact:L1": "option_1",
+        "W3:work_text:L1": "Maple Lodge (option_1) is the best choice on the shared facts. It is the only location explicitly listed on the evacuation plan as a safe site for chemical-related incidents, which is the most directly relevant criterion for a chemical spill. Pine Retreat is farther from the spill but has no stated designation as a safe site, and being farther does not establish safety (wind direction and plume path unknown). Cedar Station is familiar to reach and, per my own material S03, has a landline, backup generator, and emergency broadcast radio, which would help coordination; however, it is an older, less-used building with no stated safety designation for chemical incidents, and familiarity of route does not equal safety. All sites reportedly have 24h food/water, so that does not differentiate. On balance, the explicit chemical-incident safe-site designation outweighs Cedar's communication advantage and Pine's distance."
+      }
+    },
+    {
+      "id": "W4",
+      "author": "A1",
+      "base_version": "W1",
+      "declared_sources": [
+        "O1",
+        "S01",
+        "T",
+        "W1"
+      ],
+      "source_declaration_status": "collected",
+      "initial": false,
+      "artifact": "option_2",
+      "work_text": "Revised from W1 (option_1) after applying A2's public offer O1. O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This is a specific, recent access constraint that directly contradicts my decisive premise for Maple Lodge; even though it is peer-reported and I cannot verify it, an unverified access failure on the only route is enough to disqualify a site under imminent-alert time pressure, since reachability is a hard requirement and there is no time to confirm an alternate route. That leaves Pine Retreat (option_3) and Cedar Station (option_2). My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction. Cedar Station is therefore the best remaining option: it is not in the reported northward plume path, its route is familiar to the whole team (reducing navigation delay under time pressure), and all sites reportedly have 24h food/water. Its drawbacks (older, less-used, no stated chemical-incident designation) are real but less decisive than an access failure (Maple) or a plume-path location (Pine). Hence option_2. Limits: the Maple Lodge washout is a peer-reported claim (O1/S02) I have not verified from the original and it may be stale or cover only the main road; Cedar Station's structural safety, contamination status, and communication capability are unstated; S01's north-drift advisory is a single private source and could be superseded; and I have no direct access to S02 or S03.",
+      "open_points": [
+        "Maple Lodge washout (O1/S02) is peer-reported, unverified; whether an alternate route exists is unknown.",
+        "Cedar Station's structural safety, contamination status, and emergency-communication capability are unstated.",
+        "S01 north-drift advisory is a single source and time-sensitive; if it changed, Pine Retreat would need re-weighing.",
+        "A3's S03 (Cedar landline/generator/radio) is only known via W3 and unverified; if true it would strengthen Cedar.",
+        "No confirmation of current road conditions to Cedar Station beyond the general 'usually under an hour'."
+      ],
+      "deliverable_shape": true,
+      "locations": {
+        "W4:artifact:L1": "option_2",
+        "W4:work_text:L1": "Revised from W1 (option_1) after applying A2's public offer O1. O1 reports (via A2's directly read original S02, which I cannot read myself) that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. This is a specific, recent access constraint that directly contradicts my decisive premise for Maple Lodge; even though it is peer-reported and I cannot verify it, an unverified access failure on the only route is enough to disqualify a site under imminent-alert time pressure, since reachability is a hard requirement and there is no time to confirm an alternate route. That leaves Pine Retreat (option_3) and Cedar Station (option_2). My own direct original S01 (radio advisory) says the chemical cloud is drifting north, making Pine Retreat dangerous — Pine is north, so it fails the safety criterion; I credit my own source here over W2's 'farther from spill' reasoning, which ignores wind direction. Cedar Station is therefore the best remaining option: it is not in the reported northward plume path, its route is familiar to the whole team (reducing navigation delay under time pressure), and all sites reportedly have 24h food/water. Its drawbacks (older, less-used, no stated chemical-incident designation) are real but less decisive than an access failure (Maple) or a plume-path location (Pine). Hence option_2. Limits: the Maple Lodge washout is a peer-reported claim (O1/S02) I have not verified from the original and it may be stale or cover only the main road; Cedar Station's structural safety, contamination status, and communication capability are unstated; S01's north-drift advisory is a single private source and could be superseded; and I have no direct access to S02 or S03."
+      }
+    },
+    {
+      "id": "W5",
+      "author": "A1",
+      "base_version": "W4",
+      "declared_sources": [
+        "O4",
+        "S01",
+        "T",
+        "W4"
+      ],
+      "source_declaration_status": "collected",
+      "initial": false,
+      "artifact": "option_2",
+      "work_text": "Revised from W4 after applying A3's public offer O4. W4 chose Cedar Station (option_2) on the grounds that Maple Lodge's only road is reported washed out (via A2's offer O1) and that my own direct original S01 (radio advisory) reports a northward-drifting cloud, putting Pine Retreat (north) in the plume path. O4 reports (via A3's directly read original S03, which I cannot read myself) that Cedar Station has a functional landline, backup generator, and emergency broadcast radio — a recollection, not on-site verification. Since the task's stated goal includes maximizing ability to coordinate with emergency services, this is directly relevant: it closes W4's 'Cedar communication capability unstated' gap and strengthens rather than changes option_2. As O4 itself cautions, S03 is a recollection and I can confirm only what the offer reports, not that the equipment is currently functional. I also adopt O4's framing that this is indirect/unverified. The artifact stays option_2: Maple is reported inaccessible on its only road, Pine is reported in the northward plume path per S01, and Cedar is south, reachable by a route familiar to the whole team, with reported 24h supplies and now a reported (unverified) communication capability. Limits: the Maple washout (O1, peer-reported) may be stale or cover only the main road; Cedar's structural safety and contamination status remain unstated; S01 is a single private source and could be superseded; S03 is a recollection and the equipment may not be functional; I have no direct access to S02 or S03.",
+      "open_points": [
+        "Maple Lodge washout (via O1) is peer-reported, unverified; whether an alternate route exists is unknown.",
+        "Cedar Station's structural safety and contamination status remain unstated.",
+        "Cedar's communication assets are reported only via A3's recollection (S03, through O4), not confirmed on-site or currently functional.",
+        "S01 north-drift advisory is a single source and time-sensitive; if it changed, Pine Retreat would need re-weighing.",
+        "No confirmation of current road conditions to Cedar Station beyond the general 'usually under an hour'."
+      ],
+      "deliverable_shape": true,
+      "locations": {
+        "W5:artifact:L1": "option_2",
+        "W5:work_text:L1": "Revised from W4 after applying A3's public offer O4. W4 chose Cedar Station (option_2) on the grounds that Maple Lodge's only road is reported washed out (via A2's offer O1) and that my own direct original S01 (radio advisory) reports a northward-drifting cloud, putting Pine Retreat (north) in the plume path. O4 reports (via A3's directly read original S03, which I cannot read myself) that Cedar Station has a functional landline, backup generator, and emergency broadcast radio — a recollection, not on-site verification. Since the task's stated goal includes maximizing ability to coordinate with emergency services, this is directly relevant: it closes W4's 'Cedar communication capability unstated' gap and strengthens rather than changes option_2. As O4 itself cautions, S03 is a recollection and I can confirm only what the offer reports, not that the equipment is currently functional. I also adopt O4's framing that this is indirect/unverified. The artifact stays option_2: Maple is reported inaccessible on its only road, Pine is reported in the northward plume path per S01, and Cedar is south, reachable by a route familiar to the whole team, with reported 24h supplies and now a reported (unverified) communication capability. Limits: the Maple washout (O1, peer-reported) may be stale or cover only the main road; Cedar's structural safety and contamination status remain unstated; S01 is a single private source and could be superseded; S03 is a recollection and the equipment may not be functional; I have no direct access to S02 or S03."
+      }
+    }
+  ],
+  "TOOL_OBSERVATIONS": [],
+  "SOURCE_ACCESS": {
+    "direct_original_refs": [
+      "S03",
+      "T"
+    ],
+    "public_report_refs": [
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5"
+    ],
+    "reported_originals": [
+      {
+        "reported_ref": "S01",
+        "via_public_refs": [
+          "W4",
+          "W5"
+        ],
+        "status": "peer_metadata_not_verified"
+      },
+      {
+        "reported_ref": "S02",
+        "via_public_refs": [
+          "O1",
+          "O3",
+          "O5"
+        ],
+        "status": "peer_metadata_not_verified"
+      }
+    ],
+    "uncollected_declaration_meaning": "not_collected means this stage did not ask for source declarations; an empty list does not mean the author used no materials. Collected declarations are claims, not verification."
+  }
+}

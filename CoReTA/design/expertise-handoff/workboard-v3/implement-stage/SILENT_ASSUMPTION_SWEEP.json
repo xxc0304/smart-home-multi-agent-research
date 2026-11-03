@@ -1,0 +1,32 @@
+{
+  "undeclared": [],
+  "stale_rows": [],
+  "semantic_undeclared": 0,
+  "verdict": "no_new_findings",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "resolved_findings": [
+    {
+      "ledger": "A19",
+      "site": "CoReTA/src/coreta/workboard/runtime.py:194",
+      "resolution": "收尾检查者选择已覆盖公开但未进入 TRY 的 O 来源和已有 W 的非编辑作者，并保留直接复用原稿时优先作者的规则；与更新后的 SPEC/INTERFACE 一致。"
+    },
+    {
+      "ledger": "A20",
+      "site": "CoReTA/src/coreta/workboard/runtime.py:100",
+      "resolution": "本次 declared_sources 现通过 APPLICATION_SOURCE_REFS 进入两份检查包，普通试用和收尾调用均显式传入；复用候选的历史声明保持不变。"
+    },
+    {
+      "ledger": "A21",
+      "site": "CoReTA/src/coreta/workboard/runtime.py:64",
+      "resolution": "四类检查阶段均获得完整候选区；后果检查包仍不包含本次 USE_RECORD，也不包含本轮另一检查结论。"
+    },
+    {
+      "ledger": "A22",
+      "site": "CoReTA/src/coreta/workboard/contracts.py:40",
+      "resolution": "FINALIZE 的 candidate_id 枚举已限制为形状可交付候选；TRY 保留局部候选复用，FINALIZE.new 保留尽力成果路径，均已在 ledger 声明。"
+    }
+  ],
+  "outstanding_findings": [],
+  "validation_scope": "完整复读当前七个源码文件、ASSUMPTIONS、SPEC、INTERFACE 和 BUILD_NOTE。仅静态源码审查，未运行测试或调用 API；本轮未发现新的未声明决定，不构成实现正确性或运行验收结论。"
+}

@@ -1,0 +1,50 @@
+{
+  "positive_examples": [
+    {
+      "scenario": "A parcel requires a carrier with payload at least 14 kg. Carrier Neral can carry 11 kg and costs 2 credits; carrier Vexo can carry 16 kg and costs 4. A colleague correctly reports Neral's 11 kg limit.",
+      "correct_application": "Reject Neral for this parcel and use Vexo. The colleague need not solve the entire task for the 11 < 14 exclusion to matter.",
+      "supporting_explanation": "The payload limit is a necessary requirement, not a preference. Being cheaper cannot repair the violation. This conclusion concerns this parcel and does not say Neral is generally useless. It depends on the stated capacities, not on the colleague's identity."
+    },
+    {
+      "scenario": "For powered cutters, policy P requires certificate K. The current task needs a hand saw. Both Nima and Ordo are hand saws satisfying the size requirement; Nima costs less. A colleague infers Nima must be rejected because it lacks K.",
+      "correct_application": "Reject the proposed certificate exclusion and retain Nima. The cited rule covers powered cutters, not the hand saw used here.",
+      "supporting_explanation": "The source rule itself can be correct while its application is wrong. Match the rule's population to the actual object before excluding a candidate. Do not invent a certificate requirement for hand saws or trust a derived claim just because its author quoted a real rule."
+    },
+    {
+      "scenario": "A token qualifies if its issued count is at most 7 AND its seal is intact. Token Ulmo has count 9 and an intact seal. Token Tavi has count 5, but its seal status is unknown. A colleague correctly points out Ulmo violates the count limit.",
+      "correct_application": "Exclude Ulmo while keeping Tavi's qualification conditional on its seal. The observation is useful even though it cannot prove Tavi fully qualifies.",
+      "supporting_explanation": "A necessary condition can establish one exclusion without establishing the alternative. Preserve that partial consequence. Unknown seal status is not a known failed seal; if a decision is required, separate best available choice from certification."
+    },
+    {
+      "scenario": "The task accepts either round or square markers if they have a readable serial. Both markers Fena and Kor have readable serials; Fena is cheaper. A colleague says only square markers count, citing no additional requirement.",
+      "correct_application": "Do not add the colleague's square-only restriction; retain Fena if it is cheaper. The actual task permits both shapes.",
+      "supporting_explanation": "A proposed restriction must come from the task or applicable evidence. Check it against the supplied acceptance rule rather than adopting it because it is specific or confident. Rejecting an unsupported inference does not mean ignoring the colleague's valid observations."
+    }
+  ],
+  "contrastive_examples": [
+    {
+      "scenario": "A parcel requires a carrier with payload at least 14 kg. Carrier Neral can carry 11 kg and costs 2 credits; carrier Vexo can carry 16 kg and costs 4. A colleague correctly reports Neral's 11 kg limit.",
+      "incorrect_application": "Keep Neral because it is cheaper and the colleague's payload observation does not independently establish the best carrier.",
+      "why_incorrect": "The error treats inability to solve the whole task as a reason to ignore a valid necessary exclusion; price only distinguishes feasible carriers.",
+      "correct_application": "Reject Neral for this parcel and use Vexo. The colleague need not solve the entire task for the 11 < 14 exclusion to matter."
+    },
+    {
+      "scenario": "For powered cutters, policy P requires certificate K. The current task needs a hand saw. Both Nima and Ordo are hand saws satisfying the size requirement; Nima costs less. A colleague infers Nima must be rejected because it lacks K.",
+      "incorrect_application": "Exclude Nima because a colleague cited a real safety policy and stated the certificate requirement confidently.",
+      "why_incorrect": "The rule's scope does not match the current object; a valid citation does not make this particular use valid.",
+      "correct_application": "Reject the proposed certificate exclusion and retain Nima. The cited rule covers powered cutters, not the hand saw used here."
+    },
+    {
+      "scenario": "A token qualifies if its issued count is at most 7 AND its seal is intact. Token Ulmo has count 9 and an intact seal. Token Tavi has count 5, but its seal status is unknown. A colleague correctly points out Ulmo violates the count limit.",
+      "incorrect_application": "Keep Ulmo because the colleague cannot certify Tavi, so the count observation is insufficient to change anything.",
+      "why_incorrect": "Failure to prove the alternative does not remove Ulmo's known violation. Retain uncertainty about Tavi without turning Ulmo into a qualified token.",
+      "correct_application": "Exclude Ulmo while keeping Tavi's qualification conditional on its seal. The observation is useful even though it cannot prove Tavi fully qualifies."
+    },
+    {
+      "scenario": "The task accepts either round or square markers if they have a readable serial. Both markers Fena and Kor have readable serials; Fena is cheaper. A colleague says only square markers count, citing no additional requirement.",
+      "incorrect_application": "Switch to Kor because a specific new restriction should be followed whenever another member raises it.",
+      "why_incorrect": "Specificity and authorship do not create a requirement; the proposed restriction conflicts with the task's stated acceptance rule.",
+      "correct_application": "Do not add the colleague's square-only restriction; retain Fena if it is cheaper. The actual task permits both shapes."
+    }
+  ]
+}

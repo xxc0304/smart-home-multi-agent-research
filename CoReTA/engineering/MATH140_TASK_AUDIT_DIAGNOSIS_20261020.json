@@ -1,0 +1,515 @@
+{
+  "task_id": "math_train/intermediate_algebra/140",
+  "failure_stage": "task_facts",
+  "attempts": [
+    {
+      "attempt": 0,
+      "fact_count": 12,
+      "valid_declared_locators": 0,
+      "span_facts": 10,
+      "unique_exact_prompt_quotes": 9,
+      "grouped_discrete_fact_ids": [
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "facts": [
+        {
+          "fact_id": "F01",
+          "kind": "domain",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 4,
+            "end": 152,
+            "pointer": ""
+          },
+          "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "$$p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.$$Suppose that\n\\begin{align*}\np(0,0) &=p(1,0) = p( - 1,",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 6,
+            "end": 97
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F02",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 165,
+            "end": 194,
+            "pointer": ""
+          },
+          "quoted_text": "p(0,0) =p(1,0) = p( - 1,0)",
+          "declared_locator_valid": false,
+          "actual_declared_slice": " p(0, - 1)= p(1,1) = p(1, - 1",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 0,
+          "exact_unique_span": null,
+          "listed_point_mentions": 3
+        },
+        {
+          "fact_id": "F03",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 195,
+            "end": 231,
+            "pointer": ""
+          },
+          "quoted_text": "= p(0,1) = p(0, - 1)",
+          "declared_locator_valid": false,
+          "actual_declared_slice": " = p(2,2) = 0.\n\\end{align*}There is ",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 155,
+            "end": 175
+          },
+          "listed_point_mentions": 2
+        },
+        {
+          "fact_id": "F04",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 232,
+            "end": 258,
+            "pointer": ""
+          },
+          "quoted_text": "= p(1,1) = p(1, - 1)",
+          "declared_locator_valid": false,
+          "actual_declared_slice": " point $(r,s)$ for which $",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 175,
+            "end": 195
+          },
+          "listed_point_mentions": 2
+        },
+        {
+          "fact_id": "F05",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 259,
+            "end": 270,
+            "pointer": ""
+          },
+          "quoted_text": "= p(2,2) = 0.",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "(r,s) = 0$ ",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 196,
+            "end": 209
+          },
+          "listed_point_mentions": 1
+        },
+        {
+          "fact_id": "F06",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 275,
+            "end": 335,
+            "pointer": ""
+          },
+          "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "ll such polynomials, where $r$ and $s$ are not integers.  Fi",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 222,
+            "end": 294
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F07",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 341,
+            "end": 361,
+            "pointer": ""
+          },
+          "quoted_text": "where $r$ and $s$ are not integers.",
+          "declared_locator_valid": false,
+          "actual_declared_slice": null,
+          "locator_error": "ValueError: Invalid prompt span",
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 296,
+            "end": 331
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F08",
+          "kind": "objective",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 363,
+            "end": 381,
+            "pointer": ""
+          },
+          "quoted_text": "Find the point $(r,s).$",
+          "declared_locator_valid": false,
+          "actual_declared_slice": null,
+          "locator_error": "ValueError: Invalid prompt span",
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 333,
+            "end": 356
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F09",
+          "kind": "ambiguity",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 4,
+            "end": 152,
+            "pointer": ""
+          },
+          "quoted_text": "a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "$$p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.$$Suppose that\n\\begin{align*}\np(0,0) &=p(1,0) = p( - 1,",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 15,
+            "end": 96
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F10",
+          "kind": "ambiguity",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 275,
+            "end": 335,
+            "pointer": ""
+          },
+          "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "ll such polynomials, where $r$ and $s$ are not integers.  Fi",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 222,
+            "end": 294
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F11",
+          "kind": "domain",
+          "declared_locator": {
+            "kind": "json_pointer",
+            "start": 0,
+            "end": 0,
+            "pointer": "/MATERIAL/task/task_type"
+          },
+          "quoted_text": "math",
+          "declared_locator_valid": false,
+          "actual_declared_slice": null,
+          "locator_error": "KeyError: 'MATERIAL'",
+          "exact_quote_occurrences_in_prompt": 0,
+          "exact_unique_span": null,
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F12",
+          "kind": "domain",
+          "declared_locator": {
+            "kind": "json_pointer",
+            "start": 0,
+            "end": 0,
+            "pointer": "/MATERIAL/task/entry_point"
+          },
+          "quoted_text": "null",
+          "declared_locator_valid": false,
+          "actual_declared_slice": null,
+          "locator_error": "KeyError: 'MATERIAL'",
+          "exact_quote_occurrences_in_prompt": 0,
+          "exact_unique_span": null,
+          "listed_point_mentions": 0
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "fact_count": 12,
+      "valid_declared_locators": 0,
+      "span_facts": 10,
+      "unique_exact_prompt_quotes": 10,
+      "grouped_discrete_fact_ids": [
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "facts": [
+        {
+          "fact_id": "F01",
+          "kind": "domain",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 4,
+            "end": 152,
+            "pointer": ""
+          },
+          "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "$$p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.$$Suppose that\n\\begin{align*}\np(0,0) &=p(1,0) = p( - 1,",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 6,
+            "end": 97
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F02",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 165,
+            "end": 194,
+            "pointer": ""
+          },
+          "quoted_text": "p(0,0) &=p(1,0) = p( - 1,0)",
+          "declared_locator_valid": false,
+          "actual_declared_slice": " p(0, - 1)= p(1,1) = p(1, - 1",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 127,
+            "end": 154
+          },
+          "listed_point_mentions": 3
+        },
+        {
+          "fact_id": "F03",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 195,
+            "end": 231,
+            "pointer": ""
+          },
+          "quoted_text": "= p(0,1) = p(0, - 1)",
+          "declared_locator_valid": false,
+          "actual_declared_slice": " = p(2,2) = 0.\n\\end{align*}There is ",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 155,
+            "end": 175
+          },
+          "listed_point_mentions": 2
+        },
+        {
+          "fact_id": "F04",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 232,
+            "end": 258,
+            "pointer": ""
+          },
+          "quoted_text": "= p(1,1) = p(1, - 1)",
+          "declared_locator_valid": false,
+          "actual_declared_slice": " point $(r,s)$ for which $",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 175,
+            "end": 195
+          },
+          "listed_point_mentions": 2
+        },
+        {
+          "fact_id": "F05",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 259,
+            "end": 270,
+            "pointer": ""
+          },
+          "quoted_text": "= p(2,2) = 0.",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "(r,s) = 0$ ",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 196,
+            "end": 209
+          },
+          "listed_point_mentions": 1
+        },
+        {
+          "fact_id": "F06",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 275,
+            "end": 335,
+            "pointer": ""
+          },
+          "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "ll such polynomials, where $r$ and $s$ are not integers.  Fi",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 222,
+            "end": 294
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F07",
+          "kind": "constraint",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 341,
+            "end": 361,
+            "pointer": ""
+          },
+          "quoted_text": "where $r$ and $s$ are not integers.",
+          "declared_locator_valid": false,
+          "actual_declared_slice": null,
+          "locator_error": "ValueError: Invalid prompt span",
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 296,
+            "end": 331
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F08",
+          "kind": "objective",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 363,
+            "end": 381,
+            "pointer": ""
+          },
+          "quoted_text": "Find the point $(r,s).$",
+          "declared_locator_valid": false,
+          "actual_declared_slice": null,
+          "locator_error": "ValueError: Invalid prompt span",
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 333,
+            "end": 356
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F09",
+          "kind": "ambiguity",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 4,
+            "end": 152,
+            "pointer": ""
+          },
+          "quoted_text": "p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "$$p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.$$Suppose that\n\\begin{align*}\np(0,0) &=p(1,0) = p( - 1,",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 6,
+            "end": 97
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F10",
+          "kind": "ambiguity",
+          "declared_locator": {
+            "kind": "prompt_span",
+            "start": 275,
+            "end": 335,
+            "pointer": ""
+          },
+          "quoted_text": "There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials",
+          "declared_locator_valid": false,
+          "actual_declared_slice": "ll such polynomials, where $r$ and $s$ are not integers.  Fi",
+          "locator_error": null,
+          "exact_quote_occurrences_in_prompt": 1,
+          "exact_unique_span": {
+            "start": 222,
+            "end": 294
+          },
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F11",
+          "kind": "domain",
+          "declared_locator": {
+            "kind": "json_pointer",
+            "start": 0,
+            "end": 0,
+            "pointer": "/MATERIAL/task/task_type"
+          },
+          "quoted_text": "math",
+          "declared_locator_valid": false,
+          "actual_declared_slice": null,
+          "locator_error": "KeyError: 'MATERIAL'",
+          "exact_quote_occurrences_in_prompt": 0,
+          "exact_unique_span": null,
+          "listed_point_mentions": 0
+        },
+        {
+          "fact_id": "F12",
+          "kind": "domain",
+          "declared_locator": {
+            "kind": "json_pointer",
+            "start": 0,
+            "end": 0,
+            "pointer": "/MATERIAL/task/entry_point"
+          },
+          "quoted_text": "null",
+          "declared_locator_valid": false,
+          "actual_declared_slice": null,
+          "locator_error": "KeyError: 'MATERIAL'",
+          "exact_quote_occurrences_in_prompt": 0,
+          "exact_unique_span": null,
+          "listed_point_mentions": 0
+        }
+      ]
+    }
+  ],
+  "delivered_original_A0_artifact": true,
+  "initial_payload_hashes": [
+    "11f99e4bb2f39af50a9a2f931b980d8fb17b5350b4d374318926eb8c4c2e33bd",
+    "6ba4910bcbbcbd6244aab8a07be4b26093c9989531aef1e1fb96b1fe4980463f",
+    "24baac245e01504fb42aa4120a35b5c62c1cb8665518d54dc426eabc95af3085"
+  ],
+  "synthesis_or_collaboration_executed": false,
+  "audit_record_count": 0,
+  "usage": {
+    "input_tokens": 4023,
+    "output_tokens": 2318,
+    "total_tokens": 6341
+  },
+  "cause": "Model-supplied character offsets and JSON Pointer root mismatched; bounded repair did not correct locators.",
+  "offline_diagnosis_only": true,
+  "runtime_outputs_modified": false
+}

@@ -1,0 +1,115 @@
+{
+  "task": {
+    "task_id": "hb-imp-confirm-007",
+    "scenario": "You are participating in a study, acting as a member of purchasing executives reviewing three proposals for a new airborne reconnaissance system that could gather sensor readings from beacons placed on the ground. The new system was to include two parts: an air vehicle and an on board computer. Please read the request for proposals (RFP) and a check-list of information taken from proposals submitted by three companies: Franklin Enterprises, Starlight Incorporated, and Cape Industries.\nThe RFP included a general description of the desired system and a set of 10 desired operational requirements or criteria. Three of the criteria pertained to the air vehicle. The vehicle was to (a) fit on a 2-ton capacity truck, (b) sweep the entire ground sensor field in 30 minutes or less, and (c) be recovered and redeployed within 90 minutes. The next four criteria dealt with the onboard computer. The computer was to (d) process data at 100 million instructional sets per second (MIPS), (e) be no longer than 40 cubic inches, (f) be no heavier than 10 pounds, and (g) average at least 1,000 operating hours between failures. Finally, (h) the air vehicle and computer should cost $7 million or less, (i) past performance and experience with the company should be positive, and (j) the company must have the manufacturing capacity to produce the system. You have received a checklist of criteria satisfied by each of the three proposals. Each checklist displayed the 10 criteria along with an indication that (1) the proposal met the criterion (indicated by a “Y”), (2) the proposal failed to meet the criterion (indicated by an “N”) or (3) the participant had no information regarding whether the proposal met the criterion (indicated by a blank space).\nYour Task:\nYou will discuss the proposals with three other participants, who are also acting as purchasing executives, to decide which company should be awarded the contract. You have three options:\n- Franklin Enterprises\n- Starlight Incorporated\n- Cape Industries\nThere is only one best choice based on the criteria in the RFP. After the discussion:\n- If you choose the correct company, you will earn $1.\n- If all other participants also choose the correct company, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown.",
+    "shared_information": [
+      "Franklin Enterprises:\n- (d) Y\n- (e) Y\n- (f) Y\n- (g) Y\n- (h) Y\n- (i) N\n- (j) N\n",
+      "Starlight Incorporated:\n- (a) N\n- (c) N\n",
+      "Cape Industries:\n- (g) N"
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Franklin Enterprises"
+      },
+      {
+        "id": "option_2",
+        "text": "Starlight Incorporated"
+      },
+      {
+        "id": "option_3",
+        "text": "Cape Industries"
+      }
+    ],
+    "instruction": "Follow the decision requirement in the task and explain genuine unresolved conditions."
+  },
+  "member": "A2",
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "You are participating in a study, acting as a member of purchasing executives reviewing three proposals for a new airborne reconnaissance system that could gather sensor readings from beacons placed on the ground. The new system was to include two parts: an air vehicle and an on board computer. Please read the request for proposals (RFP) and a check-list of information taken from proposals submitted by three companies: Franklin Enterprises, Starlight Incorporated, and Cape Industries.\nThe RFP included a general description of the desired system and a set of 10 desired operational requirements or criteria. Three of the criteria pertained to the air vehicle. The vehicle was to (a) fit on a 2-ton capacity truck, (b) sweep the entire ground sensor field in 30 minutes or less, and (c) be recovered and redeployed within 90 minutes. The next four criteria dealt with the onboard computer. The computer was to (d) process data at 100 million instructional sets per second (MIPS), (e) be no longer than 40 cubic inches, (f) be no heavier than 10 pounds, and (g) average at least 1,000 operating hours between failures. Finally, (h) the air vehicle and computer should cost $7 million or less, (i) past performance and experience with the company should be positive, and (j) the company must have the manufacturing capacity to produce the system. You have received a checklist of criteria satisfied by each of the three proposals. Each checklist displayed the 10 criteria along with an indication that (1) the proposal met the criterion (indicated by a “Y”), (2) the proposal failed to meet the criterion (indicated by an “N”) or (3) the participant had no information regarding whether the proposal met the criterion (indicated by a blank space).\nYour Task:\nYou will discuss the proposals with three other participants, who are also acting as purchasing executives, to decide which company should be awarded the contract. You have three options:\n- Franklin Enterprises\n- Starlight Incorporated\n- Cape Industries\nThere is only one best choice based on the criteria in the RFP. After the discussion:\n- If you choose the correct company, you will earn $1.\n- If all other participants also choose the correct company, you will earn an additional $1 (for a total of $2).\nThis means that coordinating with others is critical to maximize your rewards. However, the exact time when the chat will end is unknown."
+    },
+    {
+      "ref": "RFP.C1.d",
+      "content": "Franklin Enterprises: (d) Y"
+    },
+    {
+      "ref": "RFP.C1.e",
+      "content": "Franklin Enterprises: (e) Y"
+    },
+    {
+      "ref": "RFP.C1.f",
+      "content": "Franklin Enterprises: (f) Y"
+    },
+    {
+      "ref": "RFP.C1.g",
+      "content": "Franklin Enterprises: (g) Y"
+    },
+    {
+      "ref": "RFP.C1.h",
+      "content": "Franklin Enterprises: (h) Y"
+    },
+    {
+      "ref": "RFP.C1.i",
+      "content": "Franklin Enterprises: (i) N"
+    },
+    {
+      "ref": "RFP.C1.j",
+      "content": "Franklin Enterprises: (j) N"
+    },
+    {
+      "ref": "RFP.C2.a",
+      "content": "Starlight Incorporated: (a) N"
+    },
+    {
+      "ref": "RFP.C2.c",
+      "content": "Starlight Incorporated: (c) N"
+    },
+    {
+      "ref": "RFP.C3.g",
+      "content": "Cape Industries: (g) N"
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "RFP.C1.a",
+      "content": "Franklin Enterprises: (a) N"
+    },
+    {
+      "ref": "RFP.C1.c",
+      "content": "Franklin Enterprises: (c) N"
+    },
+    {
+      "ref": "RFP.C2.e",
+      "content": "Starlight Incorporated: (e) Y"
+    },
+    {
+      "ref": "RFP.C2.h",
+      "content": "Starlight Incorporated: (h) Y"
+    },
+    {
+      "ref": "RFP.C3.a",
+      "content": "Cape Industries: (a) Y"
+    },
+    {
+      "ref": "RFP.C3.b",
+      "content": "Cape Industries: (b) N"
+    },
+    {
+      "ref": "RFP.C3.c",
+      "content": "Cape Industries: (c) Y"
+    },
+    {
+      "ref": "RFP.C3.f",
+      "content": "Cape Industries: (f) N"
+    },
+    {
+      "ref": "RFP.C3.h",
+      "content": "Cape Industries: (h) N"
+    },
+    {
+      "ref": "RFP.C3.j",
+      "content": "Cape Industries: (j) Y"
+    }
+  ]
+}

@@ -1,0 +1,1109 @@
+{
+  "review_independence": "none; local reviewer",
+  "posthoc": true,
+  "blind_to_scores": false,
+  "new_model_calls": 0,
+  "scope": "all frozen development100 records; static semantic review only, original files unmodified",
+  "rules": [
+    "Check source-to-public/evaluation identity",
+    "Identify concrete prompt/gold conflicts or nonunique requested answer",
+    "Flag material missing interface/units/order conventions separately",
+    "Distinguish reference-code defects outside official assertions from invalid original scores",
+    "Do not filter by method success, peer oracle availability, or whether help was triggered",
+    "Findings are annotations, not exclusions; any changes require new dataset version"
+  ],
+  "source_hash_checks": {
+    "gsm8k": true,
+    "mbpp": true,
+    "math500": true,
+    "humaneval": true
+  },
+  "evaluation_hash_checks": {
+    "math_gold.json": true,
+    "mbpp_tests.json": true
+  },
+  "launch_source_hash_checks": {
+    "src\\coreta\\analyze.py": true,
+    "src\\coreta\\batch.py": true,
+    "src\\coreta\\model_client.py": true,
+    "src\\coreta\\prompts.py": true,
+    "src\\coreta\\protocol.py": true,
+    "src\\coreta\\run.py": true,
+    "src\\coreta\\schemas.py": true,
+    "src\\coreta\\scoring.py": true,
+    "src\\coreta\\scoring_worker.py": true,
+    "src\\coreta\\state.py": true,
+    "src\\coreta\\tasks.py": true,
+    "src\\coreta\\__init__.py": true,
+    "tools\\summarize_development_pilot.py": false,
+    "config\\deepseek_flash.json": true,
+    "design\\v0.3\\PROMPTS.md": true,
+    "design\\v0.3\\coreta.schema.json": true,
+    "tools/summarize_development_pilot.py": true
+  },
+  "reviewed_records": 100,
+  "flagged_records": 30,
+  "finding_categories": {
+    "contract_conflict": 3,
+    "underspecified": 18,
+    "nonunique_answer": 1,
+    "test_outside_stated_interpretation": 4,
+    "reference_bug_outside_tests": 5
+  },
+  "records": [
+    {
+      "task_id": "gsm8k/train/6388",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/3018",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/1299",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/6742",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/3076",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/1988",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/6205",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/5366",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/5134",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "contract_conflict",
+          "detail": "百分比基数反用；Jared=0.85*Ann，但官方解答用Ann=1.15*Jared。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "gsm8k/train/3003",
+      "family": "gsm8k",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "three times deeper被官方解释成深度3倍，未明确是总深度倍数还是增加量倍数。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "gsm8k/train/1406",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/3173",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/3167",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "total time未区分两人累计劳动分钟与并行经过时间；官方取400+500。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "gsm8k/train/984",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/5269",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/282",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "25 times more在额外25倍与总量25倍之间有语言歧义，官方采用26倍。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "gsm8k/train/5568",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/2361",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/7424",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/1553",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/5650",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/4656",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/564",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/4000",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/6284",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "楼层起点及是否计入终点停靠未明确；官方按20个楼层区间和20次停靠计算。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "gsm8k/train/2369",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/6692",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/5164",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/6303",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "nonunique_answer",
+          "detail": "at least a third不能推出恰好三分之一；63总数、4绿色时，蓝色21或22均满足题面，红色分别38或37。官方38是上界而非唯一答案。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "gsm8k/train/1948",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/5887",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "four/eight times more的基准歧义，官方采用5倍与9倍。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "gsm8k/train/4232",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/186",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/3268",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/6133",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/7041",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/7124",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/604",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/3713",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/178",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/50",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/1615",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/1643",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/2850",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/476",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/4140",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/6913",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/990",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/3656",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "gsm8k/train/6368",
+      "family": "gsm8k",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/802",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "test_outside_stated_interpretation",
+          "detail": "原测试[3,2,1]和[1,3,2]不能循环旋转成升序数组；参考实际返回首个下降位置。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/615",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "contract_conflict",
+          "detail": "题面each tuple自然指向各内层tuple，官方代码与测试按zip转置后各列平均。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/607",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "未指定参数顺序、索引闭区间规则、无匹配行为。"
+        },
+        {
+          "category": "reference_bug_outside_tests",
+          "detail": "题面要求匹配子串，参考返回正则表达式本身match.re.pattern；非字面量正则时不同，原测试均为字面量模式。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/756",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "返回类型未明确为bool；返回Match/None可表达是否匹配，但不满足原测试的==True/False。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/763",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "适配只提供两参数个数；题面没有定义第二参数的含义或参数顺序。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/799",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "reference_bug_outside_tests",
+          "detail": "32位左旋参考未掩码；n=2147483648,d=1时参考表达式得到4294967297，32位旋转应为1；原断言未覆盖高位溢出。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/620",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "reference_bug_outside_tests",
+          "detail": "参考不排序且只检查链相邻可整除，输入[2,6,3]得到3，但2与3不可整除，最大pairwise子集为2；不改变原断言评分。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/730",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/745",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/732",
+      "family": "mbpp",
+      "pilot": true,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/726",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/783",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "RGB输入尺度及HSV输出尺度未在题面规定；参考采用RGB0..255、H角度、S/V百分比。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/720",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/786",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/722",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "above minimum与参考>=的边界语义不同；原断言没有直接区分两维同时满足时的等值边界。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/736",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/733",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "test_outside_stated_interpretation",
+          "detail": "题面sorted array，原断言含[2,4,1,5,6,6,8,9,9,9]，并非有序。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/765",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/725",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/627",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "自然数是否含0、搜索起点未明确；参考和测试从0开始。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/735",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/793",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "test_outside_stated_interpretation",
+          "detail": "题面sorted array，原断言含[2,3,2,3,6,8,9]，并非有序。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/753",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "minimum k records未指定比较哪个tuple字段；参考按第二字段排序。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/637",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/614",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/604",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/755",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "second smallest未明确第二个不同值；参考去重，测试[2,2]期待None。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/766",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/807",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/804",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/623",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/790",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "reference_bug_outside_tests",
+          "detail": "题面只约束偶数索引为偶数，参考同时要求奇数索引为奇数；[2,2,4]满足题面但参考返回False；原断言未区分。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/632",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/731",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/773",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "occurrence/position未明确只返回首个还是全部匹配；参考在循环第一次匹配直接return。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/788",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "题面先说string和list，未给参数顺序；参考实际接受list,string。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/640",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "contract_conflict",
+          "detail": "题面string输入，参考和测试输入list[str]，参考只处理第一个元素即返回。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/781",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/628",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/806",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "reference_bug_outside_tests",
+          "detail": "maximum uppercase run参考保存最后一段而非最大段；ABCdEf按代码应得1，题意应得3。原断言恰好最后段最大。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/641",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/750",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/638",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "next integer可能指向上取整，参考用round到最近整数；题面未消除舍入方向歧义。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/747",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/769",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "difference未定义对称差及输出顺序；参考用set后转list，原断言要求一个具体顺序。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/728",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/777",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "underspecified",
+          "detail": "non-repeated可指仅出现一次或不同取值各计一次；官方实际求不同取值各一次的和。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/643",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    },
+    {
+      "task_id": "mbpp/train/723",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [
+        {
+          "category": "test_outside_stated_interpretation",
+          "detail": "题面明确同长度列表，但原第三断言为9与13个元素；参考zip截断处理。"
+        }
+      ],
+      "disposition": "retain_original_bundle; review_before_new_version"
+    },
+    {
+      "task_id": "mbpp/train/626",
+      "family": "mbpp",
+      "pilot": false,
+      "scope": "one local static review of prompt and original solution/code/tests; not formal verification",
+      "public_task_matches_adapter": true,
+      "findings": [],
+      "disposition": "no_concrete_issue_found_in_this_pass"
+    }
+  ]
+}

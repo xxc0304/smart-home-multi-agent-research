@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-30",
+  "scope": "8 purposively selected primary papers; not population survey",
+  "skill": "aris:research-lit",
+  "sources": [
+    "project notes and catalog",
+    "official ACL PDFs",
+    "arXiv original HTML",
+    "local WDH LaTeX"
+  ],
+  "arxiv_helper": "resolved; socket WinError10013; fallback web completed",
+  "model_runs": 0,
+  "entries": [
+    {
+      "key": "hold-experts-back",
+      "title": "Multi-Agent Teams Hold Experts Back",
+      "authors": "Pappu et al.",
+      "year": 2026,
+      "status": "arXiv v4; 本轮不另核录用状态",
+      "url": "https://arxiv.org/html/2602.01011v4",
+      "models": [
+        "Claude 3.5 Haiku",
+        "GPT-4o-mini",
+        "frontier heterogeneous API teams"
+      ],
+      "protocol": "心理任务控制信息优势；四轮顺序讨论；ML采用逐题oracle专家",
+      "finding": "廉价API与前沿模型两层均分析专家优势未兑现；不能把mini/Haiku当已知4B",
+      "checked": "§3.1–3.3、§4及附录A",
+      "limit": "不是Qwen4B/8B同底座训练专家验证"
+    },
+    {
+      "key": "pbt",
+      "title": "Teaching Models to Balance Resisting and Accepting Persuasion",
+      "authors": "Stengel-Eskin, Hase and Bansal",
+      "year": 2025,
+      "status": "NAACL 2025 long",
+      "url": "https://aclanthology.org/2025.naacl-long.412.pdf",
+      "models": [
+        "Mistral-7B",
+        "Llama-3.1-8B",
+        "Llama-3.1-70B"
+      ],
+      "protocol": "偏好训练与双模型讨论，含8B+70B顺序比较",
+      "finding": "7–8B可生成说服训练数据；强弱团队顺序影响结果，PBT改善选择性修订",
+      "checked": "摘要、正文模型/团队实验、Fig3、附录A/B",
+      "limit": "强弱团队主实例含70B，不是全8B团队均验证"
+    },
+    {
+      "key": "talk-cheap",
+      "title": "Talk Isn’t Always Cheap: Understanding Failure Modes in Multi-Agent Debate",
+      "authors": "Wynn, Satija and Hadfield",
+      "year": 2025,
+      "status": "使用arXiv v2；本轮不核workshop接收",
+      "url": "https://arxiv.org/html/2509.05396v2",
+      "models": [
+        "Llama-3.1-8B-Instruct",
+        "Mistral-7B-Instruct-v0.2",
+        "GPT-4o-mini"
+      ],
+      "protocol": "两轮辩论，初答投票对照，异构/同构团队",
+      "finding": "观测讨论后退步、正确转错误及模型/任务依赖",
+      "checked": "§3–6，尤其4.2/5/6",
+      "limit": "能力强弱与LoRA专家不同；API模型参数未披露"
+    },
+    {
+      "key": "icr",
+      "title": "Beyond Final Accuracy: Auditing Communication in LLM Multi-Agent Systems",
+      "authors": "Li et al.",
+      "year": 2026,
+      "status": "arXiv 2610.01042v1",
+      "url": "https://arxiv.org/html/2610.01042v1",
+      "models": [
+        "Qwen3-4B",
+        "Qwen3-8B"
+      ],
+      "protocol": "三份冻结初答，单跳接收修订；4B四主基准，8B两基准补充",
+      "finding": "4B MedQA Full Text纠错80.17%，正确保持42.24%；8B也有纠错/保持变化",
+      "checked": "§4.1–4.4、附录A.1/J及准确率估计范围",
+      "limit": "单跳非完整专家团队；BF16、thinking on、生成上限16384，不是本地4bit短输出；全题准确率含未观测假设"
+    },
+    {
+      "key": "when-debate-helps",
+      "title": "When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning",
+      "authors": "Zhao et al.",
+      "year": 2026,
+      "status": "使用arXiv 2610.04686v1；作者标注会议未于本轮独立核实",
+      "url": "https://arxiv.org/html/2610.04686v1",
+      "models": [
+        "Qwen3-4B-Instruct (作者命名)",
+        "OLMo-3-7B-Instruct"
+      ],
+      "protocol": "四成员五轮轨迹，区分R3投票/五轮finalizer；构造集选择与固定候选干预",
+      "finding": "小模型存在候选供给、正确少数及验证读出差异，收益不在所有任务一致",
+      "checked": "§5、Table1、附录A.5/A.9–A.12；本地LaTeX交叉核验",
+      "limit": "权重扰动选队不是本项目任务LoRA专家；主要样本不含MuSiQue"
+    },
+    {
+      "key": "free-mad",
+      "title": "Free-MAD: Consensus-Free Multi-Agent Debate",
+      "authors": "Cui et al.",
+      "year": 2026,
+      "status": "Findings ACL 2026",
+      "url": "https://aclanthology.org/2026.findings-acl.1600.pdf",
+      "models": [
+        "Qwen1.5-7B-Chat + Qwen2.5-72B-Instruct",
+        "Qwen1.5-7B-Chat + DeepSeek-V3 (AIME)"
+      ],
+      "protocol": "反从众提示、全轨迹计分；主比较含异构强模型",
+      "finding": "八基准报道方法增益，证明小模型可参与但不证明全小模型相同效果",
+      "checked": "正式PDF§5.1/结果及附录配置",
+      "limit": "引言提Llama8B等不能误当其全部实验模型；不是纯7B实验"
+    },
+    {
+      "key": "sdrl",
+      "title": "Learning from Self-Debate: Preparing Reasoning Models for Multi-Agent Debate",
+      "authors": "Liu et al.",
+      "year": 2026,
+      "status": "arXiv 2601.22297v2",
+      "url": "https://arxiv.org/html/2601.22297v2",
+      "models": [
+        "Qwen2.5-3B",
+        "Qwen3-4B-Base",
+        "Qwen3-8B-Base"
+      ],
+      "protocol": "数学RL与自辩训练；主评估五成员一轮同步辩论，另有扩展",
+      "finding": "4B/8B训练后辩论可有收益；8B基线辩论平均低于初答投票，训练后可改善",
+      "checked": "§5.1–5.4、Table1/2",
+      "limit": "经RL训练不是开箱即用；Base不是适合直接聊天的Instruct检查点；论文计算不代表双2080Ti成本"
+    },
+    {
+      "key": "cosir",
+      "title": "Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards",
+      "authors": "Chen et al.",
+      "year": 2026,
+      "status": "arXiv 2610.17893v1",
+      "url": "https://arxiv.org/html/2610.17893v1",
+      "models": [
+        "Qwen3-4B",
+        "Qwen3-8B",
+        "Gemma-3-4B-it"
+      ],
+      "protocol": "信息共享/请求/应用奖励自博弈；HiddenBench/HotpotQA派生SplitQA等迁移；四成员五轮顺序讨论",
+      "finding": "报告分享与响应变化；SplitQA相对Base提升4B为0.36pp、8B为2.50pp，收益有边界",
+      "checked": "§4、Table1/2、附录F.7/G/H",
+      "limit": "分散信息+协作训练，不是已校准能力专家；训练硬件H100/Gaudi2；SplitQA不是MuSiQue；0.36pp非已证显著"
+    }
+  ]
+}

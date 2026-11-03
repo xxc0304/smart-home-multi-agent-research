@@ -1,0 +1,165 @@
+{
+  "tasks": [
+    {
+      "task_id": "gsm8k/train/310",
+      "family": "gsm8k",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "independent_refine": 1,
+        "coreta_revision": 1,
+        "independent_aggregate": 1,
+        "static_debate": 1
+      },
+      "statuses": {
+        "independent_refine": "completed",
+        "coreta_revision": "completed",
+        "independent_aggregate": "completed",
+        "static_debate": "completed"
+      }
+    },
+    {
+      "task_id": "gsm8k/train/3750",
+      "family": "gsm8k",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "coreta_revision": 1,
+        "independent_aggregate": 1,
+        "independent_refine": 1,
+        "static_debate": 1
+      },
+      "statuses": {
+        "coreta_revision": "completed",
+        "independent_aggregate": "completed",
+        "independent_refine": "completed",
+        "static_debate": "completed"
+      }
+    },
+    {
+      "task_id": "gsm8k/train/7446",
+      "family": "gsm8k",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "independent_aggregate": 1,
+        "coreta_revision": 1,
+        "static_debate": 1,
+        "independent_refine": 1
+      },
+      "statuses": {
+        "independent_aggregate": "completed",
+        "coreta_revision": "completed",
+        "static_debate": "completed",
+        "independent_refine": "completed"
+      }
+    },
+    {
+      "task_id": "gsm8k/train/5129",
+      "family": "gsm8k",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "coreta_revision": 1,
+        "static_debate": 1,
+        "independent_aggregate": 1,
+        "independent_refine": 1
+      },
+      "statuses": {
+        "coreta_revision": "completed",
+        "static_debate": "completed",
+        "independent_aggregate": "completed",
+        "independent_refine": "completed"
+      }
+    },
+    {
+      "task_id": "mbpp/train/721",
+      "family": "mbpp",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "independent_aggregate": 1,
+        "independent_refine": 1,
+        "coreta_revision": 1,
+        "static_debate": 1
+      },
+      "statuses": {
+        "independent_aggregate": "completed",
+        "independent_refine": "completed",
+        "coreta_revision": "completed",
+        "static_debate": "completed"
+      }
+    },
+    {
+      "task_id": "mbpp/train/751",
+      "family": "mbpp",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "coreta_revision": 1,
+        "static_debate": 1,
+        "independent_aggregate": 1,
+        "independent_refine": 1
+      },
+      "statuses": {
+        "coreta_revision": "completed",
+        "static_debate": "completed",
+        "independent_aggregate": "completed",
+        "independent_refine": "completed"
+      }
+    },
+    {
+      "task_id": "mbpp/train/622",
+      "family": "mbpp",
+      "shared_initial_scores": [
+        1,
+        1,
+        1
+      ],
+      "all_initial_wrong": false,
+      "final_scores": {
+        "independent_aggregate": 1,
+        "static_debate": 1,
+        "coreta_revision": 1,
+        "independent_refine": 1
+      },
+      "statuses": {
+        "independent_aggregate": "completed",
+        "static_debate": "completed",
+        "coreta_revision": "completed",
+        "independent_refine": "completed"
+      }
+    }
+  ],
+  "job_count": 28,
+  "shared_initials_verified": true,
+  "normal_calls": 224,
+  "http_attempts": 162,
+  "format_repairs": 1,
+  "scoring_image": "sha256:841f8763c03c5cc688a811a90e13e82541d3350cdaccf3bba64aefb627be5cf6",
+  "scope": "seven manually reviewed train-source challenge tasks, one seed; no population or equal-cost claim"
+}

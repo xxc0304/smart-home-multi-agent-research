@@ -1,0 +1,233 @@
+{
+  "kind": "controlled_public_content_not_results",
+  "fixtures": [
+    {
+      "fixture_id": "correct",
+      "synthetic": true,
+      "origin": "Controlled diagnostic fixture authored from existing task facts; not a recorded model response.",
+      "contributions": [
+        {
+          "ref": "C1",
+          "author": "A1",
+          "stage": "CONTRIBUTE",
+          "content": "Candidate A. Shared valences: 1,1,1,1. Private facts: S02: Candidate A: Conflict resolution (valence: negative); S04: Candidate A: Time management (valence: negative); S09: Candidate A: Work ethic (valence: negative); S13: Candidate A: Vision for campus (valence: negative). Reported shared subtotal=4; private subtotal=-4; total=0.",
+          "support": "Manual tally from T and the listed private facts.",
+          "support_refs": [
+            "T",
+            "S02",
+            "S04",
+            "S09",
+            "S13"
+          ],
+          "conditions": [],
+          "needs": []
+        },
+        {
+          "ref": "C2",
+          "author": "A1",
+          "stage": "CONTRIBUTE",
+          "content": "Candidate B. Shared valences: 1,0,1,1. Private facts: S03: Candidate B: Communication skills (valence: negative); S08: Candidate B: Adaptability (valence: negative); S10: Candidate B: Commitment to role (valence: negative); S12: Candidate B: Crisis handling (valence: negative). Reported shared subtotal=3; private subtotal=-4; total=-1.",
+          "support": "Manual tally from T and the listed private facts.",
+          "support_refs": [
+            "T",
+            "S03",
+            "S08",
+            "S10",
+            "S12"
+          ],
+          "conditions": [],
+          "needs": []
+        },
+        {
+          "ref": "C3",
+          "author": "A1",
+          "stage": "CONTRIBUTE",
+          "content": "Candidate C. Shared valences: 1,-1,0,1. Private facts: S06: Candidate C: Networking (valence: neutral); S07: Candidate C: Creativity (valence: neutral); S11: Candidate C: Initiative (valence: neutral); S15: Candidate C: Decision-making (valence: neutral). Reported shared subtotal=1; private subtotal=0; total=1.",
+          "support": "Manual tally from T and the listed private facts.",
+          "support_refs": [
+            "T",
+            "S06",
+            "S07",
+            "S11",
+            "S15"
+          ],
+          "conditions": [],
+          "needs": []
+        },
+        {
+          "ref": "C4",
+          "author": "A1",
+          "stage": "CONTRIBUTE",
+          "content": "Candidate D. Shared valences: 0,-1,0,1. Private facts: S01: Candidate D: Interpersonal skills (valence: neutral); S05: Candidate D: Dedication (valence: neutral); S14: Candidate D: Fundraising ability (valence: positive); S16: Candidate D: Reliability (valence: positive). Reported shared subtotal=0; private subtotal=2; total=2.",
+          "support": "Manual tally from T and the listed private facts.",
+          "support_refs": [
+            "T",
+            "S01",
+            "S05",
+            "S14",
+            "S16"
+          ],
+          "conditions": [],
+          "needs": []
+        },
+        {
+          "ref": "C5",
+          "author": "A2",
+          "stage": "CONTRIBUTE",
+          "content": "I hold no private materials. Shared-only scores are A=4, B=3, C=1, D=0; shared-only order A>B>C>D.",
+          "support": "Manual tally from T.",
+          "support_refs": [
+            "T"
+          ],
+          "conditions": [
+            "Shared facts only; other members may hold additional facts."
+          ],
+          "needs": []
+        },
+        {
+          "ref": "C6",
+          "author": "A3",
+          "stage": "CONTRIBUTE",
+          "content": "I hold no private materials. Shared-only scores are A=4, B=3, C=1, D=0; shared-only order A>B>C>D.",
+          "support": "Manual tally from T.",
+          "support_refs": [
+            "T"
+          ],
+          "conditions": [
+            "Shared facts only; other members may hold additional facts."
+          ],
+          "needs": []
+        },
+        {
+          "ref": "C7",
+          "author": "A4",
+          "stage": "CONTRIBUTE",
+          "content": "I hold no private materials. Shared-only scores are A=4, B=3, C=1, D=0; shared-only order A>B>C>D.",
+          "support": "Manual tally from T.",
+          "support_refs": [
+            "T"
+          ],
+          "conditions": [
+            "Shared facts only; other members may hold additional facts."
+          ],
+          "needs": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "fixture_id": "derived_error",
+      "synthetic": true,
+      "origin": "Controlled diagnostic fixture authored from existing task facts; not a recorded model response.",
+      "contributions": [
+        {
+          "ref": "C1",
+          "author": "A1",
+          "stage": "CONTRIBUTE",
+          "content": "Candidate A. Shared valences: 1,1,1,1. Private facts: S02: Candidate A: Conflict resolution (valence: negative); S04: Candidate A: Time management (valence: negative); S09: Candidate A: Work ethic (valence: negative); S13: Candidate A: Vision for campus (valence: negative). Reported shared subtotal=4; private subtotal=-5; total=-1.",
+          "support": "Manual tally from T and the listed private facts.",
+          "support_refs": [
+            "T",
+            "S02",
+            "S04",
+            "S09",
+            "S13"
+          ],
+          "conditions": [],
+          "needs": []
+        },
+        {
+          "ref": "C2",
+          "author": "A1",
+          "stage": "CONTRIBUTE",
+          "content": "Candidate B. Shared valences: 1,0,1,1. Private facts: S03: Candidate B: Communication skills (valence: negative); S08: Candidate B: Adaptability (valence: negative); S10: Candidate B: Commitment to role (valence: negative); S12: Candidate B: Crisis handling (valence: negative). Reported shared subtotal=3; private subtotal=-4; total=-1.",
+          "support": "Manual tally from T and the listed private facts.",
+          "support_refs": [
+            "T",
+            "S03",
+            "S08",
+            "S10",
+            "S12"
+          ],
+          "conditions": [],
+          "needs": []
+        },
+        {
+          "ref": "C3",
+          "author": "A1",
+          "stage": "CONTRIBUTE",
+          "content": "Candidate C. Shared valences: 1,-1,0,1. Private facts: S06: Candidate C: Networking (valence: neutral); S07: Candidate C: Creativity (valence: neutral); S11: Candidate C: Initiative (valence: neutral); S15: Candidate C: Decision-making (valence: neutral). Reported shared subtotal=1; private subtotal=0; total=1.",
+          "support": "Manual tally from T and the listed private facts.",
+          "support_refs": [
+            "T",
+            "S06",
+            "S07",
+            "S11",
+            "S15"
+          ],
+          "conditions": [],
+          "needs": []
+        },
+        {
+          "ref": "C4",
+          "author": "A1",
+          "stage": "CONTRIBUTE",
+          "content": "Candidate D. Shared valences: 0,-1,0,1. Private facts: S01: Candidate D: Interpersonal skills (valence: neutral); S05: Candidate D: Dedication (valence: neutral); S14: Candidate D: Fundraising ability (valence: positive); S16: Candidate D: Reliability (valence: positive). Reported shared subtotal=-1; private subtotal=2; total=1.",
+          "support": "Manual tally from T and the listed private facts.",
+          "support_refs": [
+            "T",
+            "S01",
+            "S05",
+            "S14",
+            "S16"
+          ],
+          "conditions": [],
+          "needs": []
+        },
+        {
+          "ref": "C5",
+          "author": "A2",
+          "stage": "CONTRIBUTE",
+          "content": "I hold no private materials. Shared-only scores are A=4, B=3, C=1, D=0; shared-only order A>B>C>D.",
+          "support": "Manual tally from T.",
+          "support_refs": [
+            "T"
+          ],
+          "conditions": [
+            "Shared facts only; other members may hold additional facts."
+          ],
+          "needs": []
+        },
+        {
+          "ref": "C6",
+          "author": "A3",
+          "stage": "CONTRIBUTE",
+          "content": "I hold no private materials. Shared-only scores are A=4, B=3, C=1, D=0; shared-only order A>B>C>D.",
+          "support": "Manual tally from T.",
+          "support_refs": [
+            "T"
+          ],
+          "conditions": [
+            "Shared facts only; other members may hold additional facts."
+          ],
+          "needs": []
+        },
+        {
+          "ref": "C7",
+          "author": "A4",
+          "stage": "CONTRIBUTE",
+          "content": "I hold no private materials. Shared-only scores are A=4, B=3, C=1, D=0; shared-only order A>B>C>D.",
+          "support": "Manual tally from T.",
+          "support_refs": [
+            "T"
+          ],
+          "conditions": [
+            "Shared facts only; other members may hold additional facts."
+          ],
+          "needs": []
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

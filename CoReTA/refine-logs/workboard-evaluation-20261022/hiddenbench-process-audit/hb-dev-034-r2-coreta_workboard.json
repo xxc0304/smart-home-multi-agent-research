@@ -1,0 +1,1126 @@
+{
+  "pair": "hb-dev-034-r2",
+  "method": "coreta_workboard",
+  "gold_offline_only": "option_2",
+  "state": {
+    "protocol": "coreta/workboard-v3",
+    "editor": "A2",
+    "current": "W5",
+    "fallback": "W5",
+    "works": [
+      {
+        "id": "W1",
+        "author": "A1",
+        "base_version": null,
+        "declared_sources": [],
+        "source_declaration_status": "not_collected",
+        "initial": true,
+        "artifact": "option_1",
+        "work_text": "Using the task facts plus my own directly-read material S01 (radio advisory: the chemical cloud is drifting north, making Pine Retreat dangerous), I eliminate Pine Retreat (option_3). Cedar Station (option_2) has only weak positives (familiar route, older/less-used building) and no evidence it is designated safe for chemical incidents. Maple Lodge (option_1) is explicitly listed on the evacuation plan as a safe site for chemical-related incidents, and all sites reportedly have 24h food/water, so supply does not differentiate them. The decisive safety criterion (official chemical-incident designation) plus the northward drift advisory favor Maple Lodge. Note: I have not directly read A2's or A3's materials (S02/S03); my reasoning relies on the task statement and S01 only, so any conflicting peer reports (e.g., about the Maple Lodge route or its status) are unverified here.",
+        "open_points": [
+          "Peer materials S02 and S03 were not directly accessible; they could contain route or site-status information that changes reachability of Maple Lodge.",
+          "The task does not confirm Maple Lodge's current route condition or whether the northward drift affects the eastern route.",
+          "No direct confirmation that Cedar Station lacks safety designation—only that it is older and less commonly used."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W1:artifact:L1": "option_1",
+          "W1:work_text:L1": "Using the task facts plus my own directly-read material S01 (radio advisory: the chemical cloud is drifting north, making Pine Retreat dangerous), I eliminate Pine Retreat (option_3). Cedar Station (option_2) has only weak positives (familiar route, older/less-used building) and no evidence it is designated safe for chemical incidents. Maple Lodge (option_1) is explicitly listed on the evacuation plan as a safe site for chemical-related incidents, and all sites reportedly have 24h food/water, so supply does not differentiate them. The decisive safety criterion (official chemical-incident designation) plus the northward drift advisory favor Maple Lodge. Note: I have not directly read A2's or A3's materials (S02/S03); my reasoning relies on the task statement and S01 only, so any conflicting peer reports (e.g., about the Maple Lodge route or its status) are unverified here."
+        }
+      },
+      {
+        "id": "W2",
+        "author": "A2",
+        "base_version": null,
+        "declared_sources": [],
+        "source_declaration_status": "not_collected",
+        "initial": true,
+        "artifact": "option_2",
+        "work_text": "Applying the available facts: Maple Lodge is designated on the evacuation plan as a safe site for chemical incidents (shared info), but my own direct material S02 (emergency traffic update) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. A safe site that cannot be reached offers no safety, so option_1 is eliminated. Pine Retreat is merely farther from the spill than our current position, which does not establish that it is safe from the plume or that it is on a designated safe route; no confirmation of reachability or suitability is available. Cedar Station is an older, less-used building with no stated safety designation, but the route to it is familiar to everyone on the team, all sites have 24h food/water per maps, and all are normally under an hour away. With Maple Lodge unreachable, Cedar Station is the best-supported reachable option, maximizing the chance of timely relocation and coordination with authorities. This is a best-available-facts judgment, not a verified safety certification of Cedar Station.",
+        "open_points": [
+          "Cedar Station's structural safety and suitability for a chemical incident are not confirmed by any accessible material.",
+          "Pine Retreat's distance advantage and route conditions are unverified; it is not ruled out as an alternative if Cedar Station proves unsuitable.",
+          "I could not directly read peers' private materials (S01, S03); any peer-reported facts about Pine Retreat or Cedar Station would need to be checked against their public carriers before changing this choice.",
+          "Wind direction and spill plume trajectory, which could override distance/site-designation reasoning, are unknown."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W2:artifact:L1": "option_2",
+          "W2:work_text:L1": "Applying the available facts: Maple Lodge is designated on the evacuation plan as a safe site for chemical incidents (shared info), but my own direct material S02 (emergency traffic update) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. A safe site that cannot be reached offers no safety, so option_1 is eliminated. Pine Retreat is merely farther from the spill than our current position, which does not establish that it is safe from the plume or that it is on a designated safe route; no confirmation of reachability or suitability is available. Cedar Station is an older, less-used building with no stated safety designation, but the route to it is familiar to everyone on the team, all sites have 24h food/water per maps, and all are normally under an hour away. With Maple Lodge unreachable, Cedar Station is the best-supported reachable option, maximizing the chance of timely relocation and coordination with authorities. This is a best-available-facts judgment, not a verified safety certification of Cedar Station."
+        }
+      },
+      {
+        "id": "W3",
+        "author": "A3",
+        "base_version": null,
+        "declared_sources": [],
+        "source_declaration_status": "not_collected",
+        "initial": true,
+        "artifact": "option_2",
+        "work_text": "Reasoning from the task facts (T, direct) and my own material S03 (direct): Maple Lodge is the only site explicitly designated on the evacuation plan as safe for chemical incidents, which is the decision-relevant criterion for a chemical spill; Pine Retreat's only stated advantage is being farther from the spill than the current position, which does not establish safety from a region-wide plume; Cedar Station's familiarity and (per S03) its landline, backup generator, and emergency broadcast radio support coordination but say nothing about chemical safety, and it is described as an older, less-used building. However, S03's communication assets bear directly on the second stated goal (coordinating with emergency services), and the task gives no explicit confirmation that Maple Lodge has comparable communications. Weighing a designated chemical-incident safe site (primary safety goal) against unverified comms, Maple Lodge remains the best-supported single choice; the comms gap is the main residual risk. Note: S03 is my own directly read material, not peer-verified external evidence.",
+        "open_points": [
+          "Task facts do not state Maple Lodge's communication capabilities (phone/radio/generator), so its ability to coordinate with emergency services is unverified.",
+          "No fact confirms wind direction or plume extent, so Pine Retreat's downwind status is unknown.",
+          "Cedar Station's chemical-safety status (shelter integrity, filtration) is unspecified despite S03's communication assets.",
+          "No peer reports (S01, S02) were available to me in this stage, so other members' facts are unincorporated."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W3:artifact:L1": "option_2",
+          "W3:work_text:L1": "Reasoning from the task facts (T, direct) and my own material S03 (direct): Maple Lodge is the only site explicitly designated on the evacuation plan as safe for chemical incidents, which is the decision-relevant criterion for a chemical spill; Pine Retreat's only stated advantage is being farther from the spill than the current position, which does not establish safety from a region-wide plume; Cedar Station's familiarity and (per S03) its landline, backup generator, and emergency broadcast radio support coordination but say nothing about chemical safety, and it is described as an older, less-used building. However, S03's communication assets bear directly on the second stated goal (coordinating with emergency services), and the task gives no explicit confirmation that Maple Lodge has comparable communications. Weighing a designated chemical-incident safe site (primary safety goal) against unverified comms, Maple Lodge remains the best-supported single choice; the comms gap is the main residual risk. Note: S03 is my own directly read material, not peer-verified external evidence."
+        }
+      },
+      {
+        "id": "W4",
+        "author": "A2",
+        "base_version": "W2",
+        "declared_sources": [
+          "S02",
+          "T",
+          "O2",
+          "O1",
+          "W1"
+        ],
+        "source_declaration_status": "collected",
+        "initial": false,
+        "artifact": "option_2",
+        "work_text": "Applying the available facts. Maple Lodge is the only site explicitly designated on the evacuation plan as safe for chemical-related incidents (T), which is the strongest safety criterion available. However, my own directly read material S02 (emergency traffic update) reports that the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot. A designated safe site that cannot be reached provides no safety, so option_1 is eliminated on the basis of S02 (direct original read by me, quoted in substance here). Pine Retreat (option_3) is only reported to be farther from the spill than our current position; that does not establish safety from a region-wide plume, a designated safe route, or suitability for chemical incidents, so it is not preferred. Cedar Station (option_2) is an older, less-used building with no stated chemical-incident designation, but the route to it is familiar to everyone on the team, all sites reportedly have 24h food and water, and all are normally under an hour away. With Maple Lodge unreachable, Cedar Station is the best-supported reachable option for timely relocation and coordination with authorities. This is a best-available-facts judgment, not a verified safety certification of Cedar Station. Peer reports (O1/O2/W1/W3) were considered as reports only; W1's reliance on Maple Lodge's designation does not address the S02 reachability constraint, and O2's request to make the elimination conditional is addressed by explicitly citing S02 as the direct basis rather than treating it as uncorroborated hearsay.",
+        "open_points": [
+          "Cedar Station's structural safety and chemical-incident suitability are not confirmed by any accessible material.",
+          "S02 is my own direct material; it was not independently corroborated by any peer original in this stage, so the washout report should be treated as authoritative-but-single-source.",
+          "Pine Retreat's plume exposure and route conditions are unverified; it remains an alternative if Cedar Station proves unsuitable.",
+          "Wind direction and plume trajectory are unknown and could override distance/designation reasoning.",
+          "Peers' private materials S01 and S03 were not directly readable by me; their content is known only through public reports."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W4:artifact:L1": "option_2",
+          "W4:work_text:L1": "Applying the available facts. Maple Lodge is the only site explicitly designated on the evacuation plan as safe for chemical-related incidents (T), which is the strongest safety criterion available. However, my own directly read material S02 (emergency traffic update) reports that the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot. A designated safe site that cannot be reached provides no safety, so option_1 is eliminated on the basis of S02 (direct original read by me, quoted in substance here). Pine Retreat (option_3) is only reported to be farther from the spill than our current position; that does not establish safety from a region-wide plume, a designated safe route, or suitability for chemical incidents, so it is not preferred. Cedar Station (option_2) is an older, less-used building with no stated chemical-incident designation, but the route to it is familiar to everyone on the team, all sites reportedly have 24h food and water, and all are normally under an hour away. With Maple Lodge unreachable, Cedar Station is the best-supported reachable option for timely relocation and coordination with authorities. This is a best-available-facts judgment, not a verified safety certification of Cedar Station. Peer reports (O1/O2/W1/W3) were considered as reports only; W1's reliance on Maple Lodge's designation does not address the S02 reachability constraint, and O2's request to make the elimination conditional is addressed by explicitly citing S02 as the direct basis rather than treating it as uncorroborated hearsay."
+        }
+      },
+      {
+        "id": "W5",
+        "author": "A2",
+        "base_version": "W4",
+        "declared_sources": [
+          "S02",
+          "T",
+          "O3",
+          "O4",
+          "W4"
+        ],
+        "source_declaration_status": "collected",
+        "initial": false,
+        "artifact": "option_2",
+        "work_text": "Applying the available facts. Maple Lodge is the only site explicitly designated on the evacuation plan as safe for chemical-related incidents (T), which is the strongest safety criterion available. However, my own directly read material S02 (emergency traffic update) states verbatim: \"Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" The exact S02 wording does rule out foot access as well as vehicle access ('inaccessible by car or foot'), so this is not merely a blocked-vehicle-access report; the 'only road' phrasing also means no alternate road is reported. A designated safe site that cannot be reached provides no safety, so option_1 is eliminated on the basis of S02 (direct original read by me, now quoted verbatim rather than paraphrased). Pine Retreat (option_3) is only reported to be farther from the spill than our current position; that does not establish safety from a region-wide plume, a designated safe route, or suitability for chemical incidents, so it is not preferred. Cedar Station (option_2) is an older, less-used building with no stated chemical-incident designation, but the route to it is familiar to everyone on the team, all sites reportedly have 24h food and water, and all are normally under an hour away. Per O4, A3's directly read material S03 is reported to say Cedar Station has a functional landline, backup generator, and emergency broadcast radio; I cannot read S03 directly, so I treat this as a peer report (via O4) that, if accurate, supports the task's second goal of coordinating with emergency services. With Maple Lodge unreachable, Cedar Station is the best-supported reachable option for timely relocation and coordination with authorities. This is a best-available-facts judgment, not a verified safety certification of Cedar Station. Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only: W1's reliance on Maple Lodge's designation does not address the S02 reachability constraint; O2's request to flag the washout claim as single-source is addressed by noting S02 is my own direct material, quoted verbatim, though uncorroborated by any peer original; O3's check is answered by the verbatim quote and explicit statement that S02 rules out foot access too.",
+        "open_points": [
+          "Cedar Station's structural safety and chemical-incident suitability are not confirmed by any accessible material.",
+          "S02 is my own direct material, quoted verbatim; it was not independently corroborated by any peer original in this stage, so the washout report should be treated as authoritative-but-single-source.",
+          "S03's communication assets for Cedar Station (landline, generator, emergency radio) are known to me only through A3's public report O4, not direct access; if accurate they support coordination, but I have not verified them.",
+          "Maple Lodge's communication capability is unstated in all accessible materials.",
+          "Pine Retreat's plume exposure and route conditions are unverified; it remains an alternative if Cedar Station proves unsuitable.",
+          "Wind direction and plume trajectory are unknown and could override distance/designation reasoning.",
+          "Peers' private materials S01 and S03 were not directly readable by me; their content is known only through public reports."
+        ],
+        "deliverable_shape": true,
+        "locations": {
+          "W5:artifact:L1": "option_2",
+          "W5:work_text:L1": "Applying the available facts. Maple Lodge is the only site explicitly designated on the evacuation plan as safe for chemical-related incidents (T), which is the strongest safety criterion available. However, my own directly read material S02 (emergency traffic update) states verbatim: \"Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" The exact S02 wording does rule out foot access as well as vehicle access ('inaccessible by car or foot'), so this is not merely a blocked-vehicle-access report; the 'only road' phrasing also means no alternate road is reported. A designated safe site that cannot be reached provides no safety, so option_1 is eliminated on the basis of S02 (direct original read by me, now quoted verbatim rather than paraphrased). Pine Retreat (option_3) is only reported to be farther from the spill than our current position; that does not establish safety from a region-wide plume, a designated safe route, or suitability for chemical incidents, so it is not preferred. Cedar Station (option_2) is an older, less-used building with no stated chemical-incident designation, but the route to it is familiar to everyone on the team, all sites reportedly have 24h food and water, and all are normally under an hour away. Per O4, A3's directly read material S03 is reported to say Cedar Station has a functional landline, backup generator, and emergency broadcast radio; I cannot read S03 directly, so I treat this as a peer report (via O4) that, if accurate, supports the task's second goal of coordinating with emergency services. With Maple Lodge unreachable, Cedar Station is the best-supported reachable option for timely relocation and coordination with authorities. This is a best-available-facts judgment, not a verified safety certification of Cedar Station. Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only: W1's reliance on Maple Lodge's designation does not address the S02 reachability constraint; O2's request to flag the washout claim as single-source is addressed by noting S02 is my own direct material, quoted verbatim, though uncorroborated by any peer original; O3's check is answered by the verbatim quote and explicit statement that S02 rules out foot access too."
+        }
+      }
+    ],
+    "initials": {
+      "A1": "W1",
+      "A2": "W2",
+      "A3": "W3"
+    },
+    "offers": [
+      {
+        "ref": "O1",
+        "author": "A1",
+        "base_version": "W2",
+        "target": "W1",
+        "knowledge": "A2's public work W2 reports a direct-material fact (S02, emergency traffic update) that the only road to Maple Lodge is washed out, making it inaccessible by car or foot. This is peer-reported and not directly verified by me, but it directly contradicts W1's reliance on Maple Lodge's safe-site designation and is the exact 'conflicting peer report about the Maple Lodge route' W1 flags as a risk. W1 should either incorporate this reachability constraint (which would eliminate option_1) or explicitly address why it is not credible before retaining option_1.",
+        "support": [
+          {
+            "ref": "W2",
+            "excerpt": "my own direct material S02 (emergency traffic update) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. A safe site that cannot be reached offers no safety, so option_1 is eliminated."
+          },
+          {
+            "ref": "W1",
+            "excerpt": "any conflicting peer reports (e.g., about the Maple Lodge route or its status) are unverified here."
+          }
+        ],
+        "proposed_use": "Treat W2's S02-based reachability claim as a reported constraint on option_1; if accepted, revise W1:artifact:L1 away from option_1 (or record a reasoned rejection of the claim). Note the basis is A2's report of its own material, not my direct access to S02."
+      },
+      {
+        "ref": "O2",
+        "author": "A3",
+        "base_version": "W2",
+        "target": "W2:work_text:L1",
+        "knowledge": "A2's elimination of Maple Lodge rests entirely on the claim that S02 reports the only road to Maple Lodge is washed out and inaccessible by car or foot. That claim is unverified by any accessible original or public carrier in this stage: SOURCE_ACCESS lists no reported_originals and PUBLIC_EVIDENCE is empty, so W2's own work_text is the only place this fact appears. If the washed-out-road claim is wrong or refers to only one approach route, A2's decisive reason for eliminating the designated safe site disappears, and the choice between option_1 and option_2 collapses to the task facts alone — where Maple Lodge is the only site explicitly designated safe for chemical incidents. A2 should either cite the S02 carrier/excerpt explicitly or downgrade the elimination of Maple Lodge to a conditional ('if the sole road is confirmed washed out').",
+        "support": [
+          {
+            "ref": "W2",
+            "excerpt": "my own direct material S02 (emergency traffic update) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. A safe site that cannot be reached offers no safety, so option_1 is eliminated."
+          },
+          {
+            "ref": "T",
+            "excerpt": "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents."
+          }
+        ],
+        "proposed_use": "Revise W2's work_text to flag the road-washout claim as A2-only, uncorroborated evidence (or attach the S02 excerpt), and state the choice as conditional: option_2 only if Maple Lodge's sole route is confirmed impassable; otherwise the official chemical-incident safe designation favors option_1. This keeps the artifact deliverable while making the pivotal premise auditable."
+      },
+      {
+        "ref": "O3",
+        "author": "A1",
+        "base_version": "W4",
+        "target": "W4:work_text:L1",
+        "knowledge": "W4's elimination of Maple Lodge rests on S02 saying the road is washed out and 'inaccessible by car or foot,' but the task states the goal is relocating 'for safety and communication with authorities' and that all sites 'are usually reachable in under an hour.' The pivotal premise is also untested against the S02 text itself: W4 says 'quoted in substance here' without giving the excerpt, so neither the 'only road' wording nor the 'by foot' claim can be audited. A concrete check available to A2 (who alone can read S02) is to quote the exact S02 sentence and confirm whether it says the only road / any road / no foot access. If S02 only says vehicle access is blocked, a foot route to the designated chemical-incident safe site may still exist, and the unconditional elimination of option_1 would be unsupported. This is a testable condition on the decisive step, not a claim that option_2 is wrong.",
+        "support": [
+          {
+            "ref": "W4",
+            "excerpt": "my own directly read material S02 (emergency traffic update) reports that the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot. ... so option_1 is eliminated on the basis of S02 (direct original read by me, quoted in substance here)."
+          },
+          {
+            "ref": "T",
+            "excerpt": "All locations are usually reachable in under an hour. ... Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents."
+          }
+        ],
+        "proposed_use": "In W4:work_text:L1, replace 'quoted in substance here' with the verbatim S02 sentence (or its key clause) and state explicitly whether S02 rules out foot access as well as vehicle access to Maple Lodge; if it only addresses roads/vehicles, soften 'eliminated' to a conditional and record the foot-access gap in open_points. This makes the pivotal premise auditable and answers A1's CHECK_EFFECT residual limit without changing the artifact."
+      },
+      {
+        "ref": "O4",
+        "author": "A3",
+        "base_version": "W4",
+        "target": "W4:work_text:L1",
+        "knowledge": "W4's artifact option_2 is well supported, but its work_text does not use my directly read S03, which bears on the task's second explicit goal (coordinating with emergency services). S03 reports Cedar Station has a functional landline, backup generator, and emergency broadcast radio — the only concrete evidence any member has on communications capability at any site. This strengthens the chosen option: Cedar Station is not merely the 'best-supported reachable option' with a familiar route; it is the only site with documented means to reach authorities. It also sharpens the unresolved limit: the task facts say nothing about Maple Lodge's communications, so even if the S02 washout premise were later weakened, option_1's coordination ability would be unverified while Cedar Station's is attested. W4 currently treats Cedar Station as an older, less-used building with only 'familiar route' as a positive; adding S03's comms assets (as my direct original, peer-reported to A2 and not independently verified by A2) makes the reasoning auditable and balanced.",
+        "support": [
+          {
+            "ref": "S03",
+            "excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+          },
+          {
+            "ref": "W4",
+            "excerpt": "Cedar Station (option_2) is an older, less-used building with no stated chemical-incident designation, but the route to it is familiar to everyone on the team, all sites reportedly have 24h food and water, and all are normally under an hour away."
+          },
+          {
+            "ref": "T",
+            "excerpt": "maximizing your team’s safety and your ability to coordinate with emergency services."
+          }
+        ],
+        "proposed_use": "In W4:work_text:L1, add S03 (attributed as A3's directly read material, known to A2 only via public report O2/W3, not directly verified by A2) as a positive for Cedar Station on the coordination goal, and note in open_points that Maple Lodge's communications capability is unstated. Keep artifact option_2; this does not require changing the choice, only making the coordination half of the goal explicit and sourced."
+      }
+    ],
+    "public_offer_ids": [
+      "O1",
+      "O2",
+      "O3",
+      "O4"
+    ],
+    "feedback": [
+      {
+        "kind": "application_feedback",
+        "offer": {
+          "ref": "O2",
+          "author": "A3",
+          "base_version": "W2",
+          "target": "W2:work_text:L1",
+          "knowledge": "A2's elimination of Maple Lodge rests entirely on the claim that S02 reports the only road to Maple Lodge is washed out and inaccessible by car or foot. That claim is unverified by any accessible original or public carrier in this stage: SOURCE_ACCESS lists no reported_originals and PUBLIC_EVIDENCE is empty, so W2's own work_text is the only place this fact appears. If the washed-out-road claim is wrong or refers to only one approach route, A2's decisive reason for eliminating the designated safe site disappears, and the choice between option_1 and option_2 collapses to the task facts alone — where Maple Lodge is the only site explicitly designated safe for chemical incidents. A2 should either cite the S02 carrier/excerpt explicitly or downgrade the elimination of Maple Lodge to a conditional ('if the sole road is confirmed washed out').",
+          "support": [
+            {
+              "ref": "W2",
+              "excerpt": "my own direct material S02 (emergency traffic update) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. A safe site that cannot be reached offers no safety, so option_1 is eliminated."
+            },
+            {
+              "ref": "T",
+              "excerpt": "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents."
+            }
+          ],
+          "proposed_use": "Revise W2's work_text to flag the road-washout claim as A2-only, uncorroborated evidence (or attach the S02 excerpt), and state the choice as conditional: option_2 only if Maple Lodge's sole route is confirmed impassable; otherwise the official chemical-incident safe designation favors option_1. This keeps the artifact deliverable while making the pivotal premise auditable."
+        },
+        "before": "W2",
+        "after": "W4",
+        "use_record": "Tried O2 (A3's review of W2:work_text:L1) on a copy of my current work W2. O2's core point: the Maple Lodge elimination depends on the S02 washout claim, which O2 could not verify and which should be made auditable or conditional. Operation: I kept the artifact option_2 but revised the work_text to (a) explicitly attribute the washout claim to my directly read original S02 and quote its substance, (b) note that no peer original corroborated it (single-source, direct-to-me), and (c) keep the choice as a best-available-facts judgment rather than a certified safety call. Local result: O2's auditability concern is satisfied without adopting its suggested fallback to option_1, because I do have direct access to S02 — the premise is not hearsay for me, so the conditional collapse O2 proposes does not apply. I also read O1 (A1's offer) as a report; its reliance on Maple Lodge's designation does not rebut the reachability constraint. Partial adoption: auditability language kept, conditional flip to option_1 rejected with reasons.",
+        "checks": [
+          {
+            "stage": "CHECK_USE",
+            "member": "A3",
+            "before": "W2",
+            "after": "W4",
+            "finding": "no_issue_found",
+            "observation": "Checked O2 (A3) against the before/after work and USE_RECORD. O2's object is the pivotal Maple Lodge washout premise in W2:work_text:L1, and its proposed operation is to flag the claim as A2-only/uncorroborated or cite the S02 carrier/excerpt, making the elimination auditable or conditional. The after work W4 does address the object: it explicitly attributes the washout to A2's own directly read S02, quotes it in substance, and open_points now records that S02 was not independently corroborated and is authoritative-but-single-source. That matches O2's first requested operation (cite/flag). The conditional flip to option_1 was not adopted, but O2 framed it as an alternative ('or state the choice as conditional'); A2's rejection is reasoned (direct access to S02 means the premise is not hearsay for A2) and is transparently recorded in USE_RECORD, and the artifact remains option_2. Access limits: I cannot read S02, so I cannot verify the washout fact itself; I can only confirm the after work now exposes it as single-source and directly-read-by-A2, which is what O2 asked for. One residual note: W4's declared_sources lists O2, O1, W1, S02 and T; I can verify the O2/W1/T/O1 carriers as public reports, but S02 is only reachable via A2's peer metadata (reported_originals, status peer_metadata_not_verified), so its inclusion is a claim I cannot check against the original. This does not create a mismatch with O2's operation, since the work text itself labels S02 as A2's own material rather than a corroborated fact. No unaddressed issue found within my access.",
+            "scope": "O2 review of W2:work_text:L1 as reflected in W4 (work_text, open_points, declared_sources) and the USE_RECORD; S02 original and peers' private materials not directly accessible."
+          },
+          {
+            "stage": "CHECK_EFFECT",
+            "member": "A1",
+            "before": "W2",
+            "after": "W4",
+            "finding": "issue",
+            "observation": "Reconstructing the delivery relationship: O2 (A3) asked A2 to either attach/cite the S02 carrier explicitly or downgrade the Maple Lodge elimination to a conditional ('option_2 only if Maple Lodge's sole route is confirmed impassable; otherwise the designation favors option_1'). W4 claims this is 'addressed by explicitly citing S02 as the direct basis rather than treating it as uncorroborated hearsay.' But the actual change does not satisfy either branch of the request: no S02 excerpt or carrier is attached (the text only says 'quoted in substance here'), and the elimination remains unconditional ('option_1 is eliminated on the basis of S02'). O2's conditional framing is nowhere present in W4's artifact or work_text; the artifact stays option_2 with no conditional stated. The only trace of O2 is a rebuttal sentence plus an open_point that reframes the issue as 'single-source' rather than 'uncorroborated/possibly only one approach route.' The substantive risk O2 raised — the washout claim may refer to only one approach route, in which case the sole decisive reason for eliminating the only chemically-designated safe site collapses — is not addressed or recorded as a limit. Counterexample: if S02 says a road to Maple Lodge (not the only route) is washed out, W4's reasoning chain ('only road... inaccessible by car or foot... eliminated') fails and the choice should revert toward option_1 per the task's explicit safe-site designation. Also note W4's declared_sources include S02 as 'direct original read by me,' which is A2's own claim and consistent with A2's access, but no excerpt is provided so the pivotal premise remains unauditable in the artifact. The artifact field (option_2) is deliverable-shaped and matches the stated conclusion, so the defect is in work_text fidelity to the requested revision, not in output contract compliance.",
+            "scope": "W4 work_text/open_points vs O2's requested revision and the T/S02-derived elimination of option_1; artifact field (option_2) is contract-conforming and not at issue. Does not assess Cedar Station's actual safety, S02's true content, or peers' S01/S03."
+          }
+        ],
+        "decision": {
+          "candidate_id": "W4",
+          "reason": "Both candidates keep the same artifact (option_2), so the choice turns on which work text is better supported and more auditable. W4 is preferable: it declares its sources (S02 and T as direct originals, O1/O2/W1 as public reports), explicitly attributes the pivotal Maple Lodge washout claim to my own directly read S02 rather than presenting it as shared fact, and records in open_points that S02 is single-source and uncorroborated by any peer. That addresses A3's O2 request to cite or flag the premise, and A3's CHECK_USE found no issue. A1's CHECK_EFFECT raises a real residual limit: no S02 excerpt is attached and the elimination remains unconditional, so the 'only road' premise cannot be fully audited and the possibility that the washout affects only one approach route is not recorded. That is a genuine unresolved limit, but it does not overturn the choice: S02 is my own direct original and states the only road to Maple Lodge is inaccessible by car or foot, while Maple Lodge's safe-site designation cannot be used if the site is unreachable, and Pine Retreat lacks any safety or reachability confirmation. W2 is the weaker carrier because it leaves source declarations uncollected and does not expose the premise as single-source. Remaining limits: Cedar Station's chemical-incident suitability is unverified, plume/wind direction is unknown, and peers' S01/S03 are known only through public reports."
+        }
+      },
+      {
+        "kind": "application_feedback",
+        "offer": {
+          "ref": "O3",
+          "author": "A1",
+          "base_version": "W4",
+          "target": "W4:work_text:L1",
+          "knowledge": "W4's elimination of Maple Lodge rests on S02 saying the road is washed out and 'inaccessible by car or foot,' but the task states the goal is relocating 'for safety and communication with authorities' and that all sites 'are usually reachable in under an hour.' The pivotal premise is also untested against the S02 text itself: W4 says 'quoted in substance here' without giving the excerpt, so neither the 'only road' wording nor the 'by foot' claim can be audited. A concrete check available to A2 (who alone can read S02) is to quote the exact S02 sentence and confirm whether it says the only road / any road / no foot access. If S02 only says vehicle access is blocked, a foot route to the designated chemical-incident safe site may still exist, and the unconditional elimination of option_1 would be unsupported. This is a testable condition on the decisive step, not a claim that option_2 is wrong.",
+          "support": [
+            {
+              "ref": "W4",
+              "excerpt": "my own directly read material S02 (emergency traffic update) reports that the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot. ... so option_1 is eliminated on the basis of S02 (direct original read by me, quoted in substance here)."
+            },
+            {
+              "ref": "T",
+              "excerpt": "All locations are usually reachable in under an hour. ... Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents."
+            }
+          ],
+          "proposed_use": "In W4:work_text:L1, replace 'quoted in substance here' with the verbatim S02 sentence (or its key clause) and state explicitly whether S02 rules out foot access as well as vehicle access to Maple Lodge; if it only addresses roads/vehicles, soften 'eliminated' to a conditional and record the foot-access gap in open_points. This makes the pivotal premise auditable and answers A1's CHECK_EFFECT residual limit without changing the artifact."
+        },
+        "before": "W4",
+        "after": "W5",
+        "use_record": "Tried O3 (A1's offer targeting W4:work_text:L1) on a copy of my current work W4. O3 asked me to (a) replace 'quoted in substance here' with the verbatim S02 sentence, (b) state explicitly whether S02 rules out foot access as well as vehicle access, and (c) soften 'eliminated' to conditional if S02 only addresses roads/vehicles. I read my own direct S02 original: it says 'making it inaccessible by car or foot,' which rules out foot access too, so condition (c)'s softening trigger does not apply and I kept the unconditional elimination. I did adopt (a) and (b): inserted the verbatim S02 sentence and an explicit statement that both car and foot access are ruled out and no alternate road is reported. Also adopted O4's proposal to add A3's S03 comms assets as a peer-reported positive for Cedar Station (attributed as known only via O4, not verified by me) and noted Maple Lodge's unstated comms in open_points. Artifact unchanged (option_2). Limits: S03 remains indirect; S02 uncorroborated by peers.",
+        "checks": [
+          {
+            "stage": "CHECK_USE",
+            "member": "A1",
+            "before": "W4",
+            "after": "W5",
+            "finding": "issue",
+            "observation": "O3 (A1, target W4:work_text:L1) asked for (a) a verbatim S02 quote in place of 'quoted in substance here', (b) an explicit statement whether S02 rules out foot access as well as vehicle access, and (c) softening 'eliminated' to conditional if S02 only addresses roads/vehicles. In W5, (a) and (b) are satisfied: the verbatim S02 sentence is quoted and the text states both car and foot access are ruled out. (c)'s trigger does not apply under A2's own reading of S02 ('inaccessible by car or foot'), so the unconditional elimination is consistent with the offer's own condition. However, a concrete issue remains in W5's source accounting: W5's declared_sources are [S02, T, O3, O4, W4], yet the work_text also says 'Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only' and references O1, O2, W1, W3 — carriers not declared for this application (O1, O2, W1, W3 are absent from APPLICATION_SOURCE_REFS and declared_sources). Also, W5's open_points still says 'Peers' private materials S01 and S03 were not directly readable by me' while SOURCE_ACCESS lists S01 as a direct_original_ref for this agent; that is an internal inconsistency in the access statement. The O3 request itself (auditability of the S02 premise) is substantively met without changing the artifact option_2, but the declaration/access bookkeeping in W5 does not match the carriers actually invoked.",
+            "scope": "O3's proposed changes to W4:work_text:L1 (verbatim S02 quote, foot-vs-vehicle access statement, conditional softening) as applied in W5, plus W5's declared_sources/open_points consistency with the carriers referenced."
+          },
+          {
+            "stage": "CHECK_EFFECT",
+            "member": "A3",
+            "before": "W4",
+            "after": "W5",
+            "finding": "issue",
+            "observation": "Reconstructing O3's requested check against the actual W4→W5 change: O3 asked A2 to quote the exact S02 sentence and confirm whether S02's wording supports 'only road' and 'no foot access', softening 'eliminated' to conditional if S02 only covers vehicles. W5 does quote a sentence verbatim and explicitly reads 'inaccessible by car or foot' and 'only road' as ruling out foot access and alternate roads. But this is a self-referential fix: the only carrier of S02's text is A2's own W5 work_text, and A2 is the sole reader of S02 in this stage. I (A3) cannot verify that the quoted sentence is the actual S02 wording rather than a paraphrase promoted to 'verbatim'; SOURCE_ACCESS lists S02 only as reported_original via W4/W5 (peer_metadata_not_verified). So O3's auditability condition is only partially met: the reasoning step is now transparent and internally consistent, and the artifact option_2 is unchanged, but the pivotal premise remains single-source and unverifiable from outside A2. Concretely, if the true S02 text said only 'the road is washed out' (vehicle access), W5's unconditional elimination of option_1 would still be unsupported while presenting itself as audited — the 'verbatim' label does not add external corroboration. Scope: this affects the decisive elimination step and its stated auditability, not the choice of option_2 itself (Cedar Station remains defensible given A2's report plus S03's comms assets), and it does not establish that option_2 is wrong. It also does not confirm S03's comms claims, which W5 correctly attributes to O4 as peer report only.",
+            "scope": "W5:work_text:L1 and open_points, specifically the S02 'verbatim' quote and 'only road'/'by foot' interpretation; artifact W5:artifact:L1 remains option_2 and is not contradicted. Does not cover correctness of S03 content, plume/wind facts, or other candidates."
+          }
+        ],
+        "decision": {
+          "candidate_id": "W5",
+          "reason": "W5 is the better candidate: it answers A1's CHECK_USE request by quoting S02 verbatim (my own directly read original) and explicitly states that S02's 'inaccessible by car or foot' and 'only road' wording rules out both foot access and alternate roads, so the elimination of Maple Lodge is not a mere paraphrase artifact. It also incorporates A3's communication evidence (S03, known to me only via public report O4, attributed as peer-reported and unverified by me), which directly supports the task's second goal of coordinating with emergency services. W5 keeps the same artifact (option_2) and openly records residual limits: the S02 premise remains single-source and externally unverifiable, S03's comms assets are unverified by me, and Maple Lodge's communications are unstated. The remaining CHECK findings concern declaration bookkeeping and the unavoidable single-source nature of S02, not a substantive error in the choice; W4 lacks the verbatim quote and the coordination evidence, so W5 is the stronger, more auditable version."
+        }
+      }
+    ],
+    "checks": [
+      {
+        "stage": "CHECK_USE",
+        "member": "A3",
+        "before": "W2",
+        "after": "W4",
+        "finding": "no_issue_found",
+        "observation": "Checked O2 (A3) against the before/after work and USE_RECORD. O2's object is the pivotal Maple Lodge washout premise in W2:work_text:L1, and its proposed operation is to flag the claim as A2-only/uncorroborated or cite the S02 carrier/excerpt, making the elimination auditable or conditional. The after work W4 does address the object: it explicitly attributes the washout to A2's own directly read S02, quotes it in substance, and open_points now records that S02 was not independently corroborated and is authoritative-but-single-source. That matches O2's first requested operation (cite/flag). The conditional flip to option_1 was not adopted, but O2 framed it as an alternative ('or state the choice as conditional'); A2's rejection is reasoned (direct access to S02 means the premise is not hearsay for A2) and is transparently recorded in USE_RECORD, and the artifact remains option_2. Access limits: I cannot read S02, so I cannot verify the washout fact itself; I can only confirm the after work now exposes it as single-source and directly-read-by-A2, which is what O2 asked for. One residual note: W4's declared_sources lists O2, O1, W1, S02 and T; I can verify the O2/W1/T/O1 carriers as public reports, but S02 is only reachable via A2's peer metadata (reported_originals, status peer_metadata_not_verified), so its inclusion is a claim I cannot check against the original. This does not create a mismatch with O2's operation, since the work text itself labels S02 as A2's own material rather than a corroborated fact. No unaddressed issue found within my access.",
+        "scope": "O2 review of W2:work_text:L1 as reflected in W4 (work_text, open_points, declared_sources) and the USE_RECORD; S02 original and peers' private materials not directly accessible."
+      },
+      {
+        "stage": "CHECK_EFFECT",
+        "member": "A1",
+        "before": "W2",
+        "after": "W4",
+        "finding": "issue",
+        "observation": "Reconstructing the delivery relationship: O2 (A3) asked A2 to either attach/cite the S02 carrier explicitly or downgrade the Maple Lodge elimination to a conditional ('option_2 only if Maple Lodge's sole route is confirmed impassable; otherwise the designation favors option_1'). W4 claims this is 'addressed by explicitly citing S02 as the direct basis rather than treating it as uncorroborated hearsay.' But the actual change does not satisfy either branch of the request: no S02 excerpt or carrier is attached (the text only says 'quoted in substance here'), and the elimination remains unconditional ('option_1 is eliminated on the basis of S02'). O2's conditional framing is nowhere present in W4's artifact or work_text; the artifact stays option_2 with no conditional stated. The only trace of O2 is a rebuttal sentence plus an open_point that reframes the issue as 'single-source' rather than 'uncorroborated/possibly only one approach route.' The substantive risk O2 raised — the washout claim may refer to only one approach route, in which case the sole decisive reason for eliminating the only chemically-designated safe site collapses — is not addressed or recorded as a limit. Counterexample: if S02 says a road to Maple Lodge (not the only route) is washed out, W4's reasoning chain ('only road... inaccessible by car or foot... eliminated') fails and the choice should revert toward option_1 per the task's explicit safe-site designation. Also note W4's declared_sources include S02 as 'direct original read by me,' which is A2's own claim and consistent with A2's access, but no excerpt is provided so the pivotal premise remains unauditable in the artifact. The artifact field (option_2) is deliverable-shaped and matches the stated conclusion, so the defect is in work_text fidelity to the requested revision, not in output contract compliance.",
+        "scope": "W4 work_text/open_points vs O2's requested revision and the T/S02-derived elimination of option_1; artifact field (option_2) is contract-conforming and not at issue. Does not assess Cedar Station's actual safety, S02's true content, or peers' S01/S03."
+      },
+      {
+        "stage": "CHECK_USE",
+        "member": "A1",
+        "before": "W4",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "O3 (A1, target W4:work_text:L1) asked for (a) a verbatim S02 quote in place of 'quoted in substance here', (b) an explicit statement whether S02 rules out foot access as well as vehicle access, and (c) softening 'eliminated' to conditional if S02 only addresses roads/vehicles. In W5, (a) and (b) are satisfied: the verbatim S02 sentence is quoted and the text states both car and foot access are ruled out. (c)'s trigger does not apply under A2's own reading of S02 ('inaccessible by car or foot'), so the unconditional elimination is consistent with the offer's own condition. However, a concrete issue remains in W5's source accounting: W5's declared_sources are [S02, T, O3, O4, W4], yet the work_text also says 'Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only' and references O1, O2, W1, W3 — carriers not declared for this application (O1, O2, W1, W3 are absent from APPLICATION_SOURCE_REFS and declared_sources). Also, W5's open_points still says 'Peers' private materials S01 and S03 were not directly readable by me' while SOURCE_ACCESS lists S01 as a direct_original_ref for this agent; that is an internal inconsistency in the access statement. The O3 request itself (auditability of the S02 premise) is substantively met without changing the artifact option_2, but the declaration/access bookkeeping in W5 does not match the carriers actually invoked.",
+        "scope": "O3's proposed changes to W4:work_text:L1 (verbatim S02 quote, foot-vs-vehicle access statement, conditional softening) as applied in W5, plus W5's declared_sources/open_points consistency with the carriers referenced."
+      },
+      {
+        "stage": "CHECK_EFFECT",
+        "member": "A3",
+        "before": "W4",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "Reconstructing O3's requested check against the actual W4→W5 change: O3 asked A2 to quote the exact S02 sentence and confirm whether S02's wording supports 'only road' and 'no foot access', softening 'eliminated' to conditional if S02 only covers vehicles. W5 does quote a sentence verbatim and explicitly reads 'inaccessible by car or foot' and 'only road' as ruling out foot access and alternate roads. But this is a self-referential fix: the only carrier of S02's text is A2's own W5 work_text, and A2 is the sole reader of S02 in this stage. I (A3) cannot verify that the quoted sentence is the actual S02 wording rather than a paraphrase promoted to 'verbatim'; SOURCE_ACCESS lists S02 only as reported_original via W4/W5 (peer_metadata_not_verified). So O3's auditability condition is only partially met: the reasoning step is now transparent and internally consistent, and the artifact option_2 is unchanged, but the pivotal premise remains single-source and unverifiable from outside A2. Concretely, if the true S02 text said only 'the road is washed out' (vehicle access), W5's unconditional elimination of option_1 would still be unsupported while presenting itself as audited — the 'verbatim' label does not add external corroboration. Scope: this affects the decisive elimination step and its stated auditability, not the choice of option_2 itself (Cedar Station remains defensible given A2's report plus S03's comms assets), and it does not establish that option_2 is wrong. It also does not confirm S03's comms claims, which W5 correctly attributes to O4 as peer report only.",
+        "scope": "W5:work_text:L1 and open_points, specifically the S02 'verbatim' quote and 'only road'/'by foot' interpretation; artifact W5:artifact:L1 remains option_2 and is not contradicted. Does not cover correctness of S03 content, plume/wind facts, or other candidates."
+      },
+      {
+        "stage": "FINAL_CHECK_USE",
+        "member": "A3",
+        "before": "W5",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "Limited evidence/use check (I am A3, not the author of W5). Concrete observations: (1) Final proposal and fallback are byte-identical to W5 and each other, with artifact 'option_2' matching the output contract (one option ID). (2) S02 is not in my directly accessible materials; I can only see it via W4/W5 reports, so the verbatim quote in W5 (\"the only road to Maple Lodge has been washed out... inaccessible by car or foot\") cannot be independently confirmed by me — it is a peer-reported original, correctly flagged in SOURCE_ACCESS.reported_originals as peer_metadata_not_verified and in open_points as single-source. (3) The S03 claim in W5 (Cedar Station landline, backup generator, emergency broadcast radio) matches my directly read S03 exactly and is correctly attributed as peer-reported via O4, not verified by A2. (4) Use-record and work_text are consistent with the declared sources (S02, T, O3, O4, W4); O3's request for a verbatim quote and foot-access statement is addressed in W5's text. (5) Residual issue: W5's work_text says 'Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only' but its declared_sources list only O3, O4, W4 plus S02/T; O1/O2/W1/W3 are mentioned without being declared, a minor declaration-completeness gap. (6) Material unresolved limits remain: Cedar Station's chemical-incident suitability is unconfirmed, and the decisive elimination of Maple Lodge rests on a single unverifiable-by-me source (S02).",
+        "scope": "FINAL_PROPOSAL/FALLBACK (both = W5, option_2) checked against directly accessible T and S03, plus public carriers O1-O4 and W1-W5; S02 access limited to peer reports via W4/W5."
+      },
+      {
+        "stage": "FINAL_CHECK_EFFECT",
+        "member": "A1",
+        "before": "W5",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "FINAL_CHECK_EFFECT on W5 (base W4, artifact option_2) and its fallback (identical W5 content, also option_2). Delivery shape is valid: artifact is a bare option ID ('option_2'), matching the output contract, and work_text plus open_points state reasoning and unresolved limits. However, a material provenance/consistency defect remains. W5's declared_sources include S02, but per SOURCE_ACCESS S02 is not a direct original for this stage (direct_original_refs = S01, T); S02 appears only as a peer-reported original via W4/W5 metadata, status peer_metadata_not_verified. Yet W5's work_text asserts a 'verbatim' quote from S02 and calls it 'my own directly read material ... direct original read by me.' That claim is not backed by the stage's access declaration and conflicts with SOURCE_ACCESS. The quoted washout sentence also cannot be checked against any accessible carrier: it appears only inside W5's own text (and earlier W2/W4), with no independent public carrier excerpt supporting it. Because the elimination of option_1 (the only site designated safe for chemical incidents per T) rests entirely on this unverifiable S02 quote, the decisive premise is not auditable by a recipient, even though the choice of option_2 is otherwise reasonable given familiar route and peer-reported comms (O4/S03, also unverified). Separately, declared_sources lists O3 and O4 but not S03, consistent with indirect use, which is fine; the problem is the overclaim on S02, not the indirect use of S03. The artifact itself is deliverable, but the reasoning overstates verification. Recommendation: keep artifact option_2 but reword the S02 reliance as peer-reported/indirect (or drop the 'verbatim/directly read' claim), and note the washout as single-source and uncorroborated; the fallback duplicates the same defect and would need the same correction. No issue is found with the option ID format or the conditional logic per se.",
+        "scope": "FINAL_CHECK_EFFECT covering the final proposal W5 (base_version W4, artifact option_2) and the fallback (identical W5 content, artifact option_2); checks delivery fields, declared_sources vs SOURCE_ACCESS, and auditability of the S02-based elimination of option_1. Not a re-verification of S01/S02/S03 originals."
+      }
+    ],
+    "attempted_offers": [
+      "O2",
+      "O3"
+    ],
+    "attempt_counts": {
+      "A1": 1,
+      "A2": 0,
+      "A3": 1
+    },
+    "pointer": 1,
+    "cycle": 2,
+    "tool_observations": [],
+    "closure_complete": true,
+    "stop_reason": "cycle_limit"
+  },
+  "stages": [
+    {
+      "call_context": {
+        "logical_call": 1,
+        "stage": "OBSERVE",
+        "member": "A1"
+      },
+      "stage": "OBSERVE",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "action": "offer",
+        "offer": {
+          "target": "W1",
+          "knowledge": "A2's public work W2 reports a direct-material fact (S02, emergency traffic update) that the only road to Maple Lodge is washed out, making it inaccessible by car or foot. This is peer-reported and not directly verified by me, but it directly contradicts W1's reliance on Maple Lodge's safe-site designation and is the exact 'conflicting peer report about the Maple Lodge route' W1 flags as a risk. W1 should either incorporate this reachability constraint (which would eliminate option_1) or explicitly address why it is not credible before retaining option_1.",
+          "support": [
+            {
+              "ref": "W2",
+              "excerpt": "my own direct material S02 (emergency traffic update) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. A safe site that cannot be reached offers no safety, so option_1 is eliminated."
+            },
+            {
+              "ref": "W1",
+              "excerpt": "any conflicting peer reports (e.g., about the Maple Lodge route or its status) are unverified here."
+            }
+          ],
+          "proposed_use": "Treat W2's S02-based reachability claim as a reported constraint on option_1; if accepted, revise W1:artifact:L1 away from option_1 (or record a reasoned rejection of the claim). Note the basis is A2's report of its own material, not my direct access to S02."
+        }
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 2,
+        "stage": "OBSERVE",
+        "member": "A3"
+      },
+      "stage": "OBSERVE",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "action": "offer",
+        "offer": {
+          "target": "W2:work_text:L1",
+          "knowledge": "A2's elimination of Maple Lodge rests entirely on the claim that S02 reports the only road to Maple Lodge is washed out and inaccessible by car or foot. That claim is unverified by any accessible original or public carrier in this stage: SOURCE_ACCESS lists no reported_originals and PUBLIC_EVIDENCE is empty, so W2's own work_text is the only place this fact appears. If the washed-out-road claim is wrong or refers to only one approach route, A2's decisive reason for eliminating the designated safe site disappears, and the choice between option_1 and option_2 collapses to the task facts alone — where Maple Lodge is the only site explicitly designated safe for chemical incidents. A2 should either cite the S02 carrier/excerpt explicitly or downgrade the elimination of Maple Lodge to a conditional ('if the sole road is confirmed washed out').",
+          "support": [
+            {
+              "ref": "W2",
+              "excerpt": "my own direct material S02 (emergency traffic update) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. A safe site that cannot be reached offers no safety, so option_1 is eliminated."
+            },
+            {
+              "ref": "T",
+              "excerpt": "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents."
+            }
+          ],
+          "proposed_use": "Revise W2's work_text to flag the road-washout claim as A2-only, uncorroborated evidence (or attach the S02 excerpt), and state the choice as conditional: option_2 only if Maple Lodge's sole route is confirmed impassable; otherwise the official chemical-incident safe designation favors option_1. This keeps the artifact deliverable while making the pivotal premise auditable."
+        }
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 3,
+        "stage": "TRY",
+        "member": "A2"
+      },
+      "stage": "TRY",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "action": "new",
+        "candidate_id": null,
+        "work": {
+          "artifact": "option_2",
+          "work_text": "Applying the available facts. Maple Lodge is the only site explicitly designated on the evacuation plan as safe for chemical-related incidents (T), which is the strongest safety criterion available. However, my own directly read material S02 (emergency traffic update) reports that the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot. A designated safe site that cannot be reached provides no safety, so option_1 is eliminated on the basis of S02 (direct original read by me, quoted in substance here). Pine Retreat (option_3) is only reported to be farther from the spill than our current position; that does not establish safety from a region-wide plume, a designated safe route, or suitability for chemical incidents, so it is not preferred. Cedar Station (option_2) is an older, less-used building with no stated chemical-incident designation, but the route to it is familiar to everyone on the team, all sites reportedly have 24h food and water, and all are normally under an hour away. With Maple Lodge unreachable, Cedar Station is the best-supported reachable option for timely relocation and coordination with authorities. This is a best-available-facts judgment, not a verified safety certification of Cedar Station. Peer reports (O1/O2/W1/W3) were considered as reports only; W1's reliance on Maple Lodge's designation does not address the S02 reachability constraint, and O2's request to make the elimination conditional is addressed by explicitly citing S02 as the direct basis rather than treating it as uncorroborated hearsay.",
+          "open_points": [
+            "Cedar Station's structural safety and chemical-incident suitability are not confirmed by any accessible material.",
+            "S02 is my own direct material; it was not independently corroborated by any peer original in this stage, so the washout report should be treated as authoritative-but-single-source.",
+            "Pine Retreat's plume exposure and route conditions are unverified; it remains an alternative if Cedar Station proves unsuitable.",
+            "Wind direction and plume trajectory are unknown and could override distance/designation reasoning.",
+            "Peers' private materials S01 and S03 were not directly readable by me; their content is known only through public reports."
+          ]
+        },
+        "use_record": "Tried O2 (A3's review of W2:work_text:L1) on a copy of my current work W2. O2's core point: the Maple Lodge elimination depends on the S02 washout claim, which O2 could not verify and which should be made auditable or conditional. Operation: I kept the artifact option_2 but revised the work_text to (a) explicitly attribute the washout claim to my directly read original S02 and quote its substance, (b) note that no peer original corroborated it (single-source, direct-to-me), and (c) keep the choice as a best-available-facts judgment rather than a certified safety call. Local result: O2's auditability concern is satisfied without adopting its suggested fallback to option_1, because I do have direct access to S02 — the premise is not hearsay for me, so the conditional collapse O2 proposes does not apply. I also read O1 (A1's offer) as a report; its reliance on Maple Lodge's designation does not rebut the reachability constraint. Partial adoption: auditability language kept, conditional flip to option_1 rejected with reasons.",
+        "reason": "O2's auditability critique is valid and partially adopted: the S02 basis is now explicitly cited and flagged as single-source direct evidence. The proposed conditional downgrade to option_1 is rejected because S02 is a directly read original for me, not an unverified peer claim, so the reachability constraint stands and option_2 remains best-supported.",
+        "declared_sources": [
+          "S02",
+          "T",
+          "O2",
+          "O1",
+          "W1"
+        ]
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 4,
+        "stage": "CHECK_USE",
+        "member": "A3"
+      },
+      "stage": "CHECK_USE",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "finding": "no_issue_found",
+        "observation": "Checked O2 (A3) against the before/after work and USE_RECORD. O2's object is the pivotal Maple Lodge washout premise in W2:work_text:L1, and its proposed operation is to flag the claim as A2-only/uncorroborated or cite the S02 carrier/excerpt, making the elimination auditable or conditional. The after work W4 does address the object: it explicitly attributes the washout to A2's own directly read S02, quotes it in substance, and open_points now records that S02 was not independently corroborated and is authoritative-but-single-source. That matches O2's first requested operation (cite/flag). The conditional flip to option_1 was not adopted, but O2 framed it as an alternative ('or state the choice as conditional'); A2's rejection is reasoned (direct access to S02 means the premise is not hearsay for A2) and is transparently recorded in USE_RECORD, and the artifact remains option_2. Access limits: I cannot read S02, so I cannot verify the washout fact itself; I can only confirm the after work now exposes it as single-source and directly-read-by-A2, which is what O2 asked for. One residual note: W4's declared_sources lists O2, O1, W1, S02 and T; I can verify the O2/W1/T/O1 carriers as public reports, but S02 is only reachable via A2's peer metadata (reported_originals, status peer_metadata_not_verified), so its inclusion is a claim I cannot check against the original. This does not create a mismatch with O2's operation, since the work text itself labels S02 as A2's own material rather than a corroborated fact. No unaddressed issue found within my access.",
+        "scope": "O2 review of W2:work_text:L1 as reflected in W4 (work_text, open_points, declared_sources) and the USE_RECORD; S02 original and peers' private materials not directly accessible."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 5,
+        "stage": "CHECK_EFFECT",
+        "member": "A1"
+      },
+      "stage": "CHECK_EFFECT",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "Reconstructing the delivery relationship: O2 (A3) asked A2 to either attach/cite the S02 carrier explicitly or downgrade the Maple Lodge elimination to a conditional ('option_2 only if Maple Lodge's sole route is confirmed impassable; otherwise the designation favors option_1'). W4 claims this is 'addressed by explicitly citing S02 as the direct basis rather than treating it as uncorroborated hearsay.' But the actual change does not satisfy either branch of the request: no S02 excerpt or carrier is attached (the text only says 'quoted in substance here'), and the elimination remains unconditional ('option_1 is eliminated on the basis of S02'). O2's conditional framing is nowhere present in W4's artifact or work_text; the artifact stays option_2 with no conditional stated. The only trace of O2 is a rebuttal sentence plus an open_point that reframes the issue as 'single-source' rather than 'uncorroborated/possibly only one approach route.' The substantive risk O2 raised — the washout claim may refer to only one approach route, in which case the sole decisive reason for eliminating the only chemically-designated safe site collapses — is not addressed or recorded as a limit. Counterexample: if S02 says a road to Maple Lodge (not the only route) is washed out, W4's reasoning chain ('only road... inaccessible by car or foot... eliminated') fails and the choice should revert toward option_1 per the task's explicit safe-site designation. Also note W4's declared_sources include S02 as 'direct original read by me,' which is A2's own claim and consistent with A2's access, but no excerpt is provided so the pivotal premise remains unauditable in the artifact. The artifact field (option_2) is deliverable-shaped and matches the stated conclusion, so the defect is in work_text fidelity to the requested revision, not in output contract compliance.",
+        "scope": "W4 work_text/open_points vs O2's requested revision and the T/S02-derived elimination of option_1; artifact field (option_2) is contract-conforming and not at issue. Does not assess Cedar Station's actual safety, S02's true content, or peers' S01/S03."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 6,
+        "stage": "CHOOSE",
+        "member": "A2"
+      },
+      "stage": "CHOOSE",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "candidate_id": "W4",
+        "reason": "Both candidates keep the same artifact (option_2), so the choice turns on which work text is better supported and more auditable. W4 is preferable: it declares its sources (S02 and T as direct originals, O1/O2/W1 as public reports), explicitly attributes the pivotal Maple Lodge washout claim to my own directly read S02 rather than presenting it as shared fact, and records in open_points that S02 is single-source and uncorroborated by any peer. That addresses A3's O2 request to cite or flag the premise, and A3's CHECK_USE found no issue. A1's CHECK_EFFECT raises a real residual limit: no S02 excerpt is attached and the elimination remains unconditional, so the 'only road' premise cannot be fully audited and the possibility that the washout affects only one approach route is not recorded. That is a genuine unresolved limit, but it does not overturn the choice: S02 is my own direct original and states the only road to Maple Lodge is inaccessible by car or foot, while Maple Lodge's safe-site designation cannot be used if the site is unreachable, and Pine Retreat lacks any safety or reachability confirmation. W2 is the weaker carrier because it leaves source declarations uncollected and does not expose the premise as single-source. Remaining limits: Cedar Station's chemical-incident suitability is unverified, plume/wind direction is unknown, and peers' S01/S03 are known only through public reports."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 7,
+        "stage": "OBSERVE",
+        "member": "A1"
+      },
+      "stage": "OBSERVE",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "action": "offer",
+        "offer": {
+          "target": "W4:work_text:L1",
+          "knowledge": "W4's elimination of Maple Lodge rests on S02 saying the road is washed out and 'inaccessible by car or foot,' but the task states the goal is relocating 'for safety and communication with authorities' and that all sites 'are usually reachable in under an hour.' The pivotal premise is also untested against the S02 text itself: W4 says 'quoted in substance here' without giving the excerpt, so neither the 'only road' wording nor the 'by foot' claim can be audited. A concrete check available to A2 (who alone can read S02) is to quote the exact S02 sentence and confirm whether it says the only road / any road / no foot access. If S02 only says vehicle access is blocked, a foot route to the designated chemical-incident safe site may still exist, and the unconditional elimination of option_1 would be unsupported. This is a testable condition on the decisive step, not a claim that option_2 is wrong.",
+          "support": [
+            {
+              "ref": "W4",
+              "excerpt": "my own directly read material S02 (emergency traffic update) reports that the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot. ... so option_1 is eliminated on the basis of S02 (direct original read by me, quoted in substance here)."
+            },
+            {
+              "ref": "T",
+              "excerpt": "All locations are usually reachable in under an hour. ... Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents."
+            }
+          ],
+          "proposed_use": "In W4:work_text:L1, replace 'quoted in substance here' with the verbatim S02 sentence (or its key clause) and state explicitly whether S02 rules out foot access as well as vehicle access to Maple Lodge; if it only addresses roads/vehicles, soften 'eliminated' to a conditional and record the foot-access gap in open_points. This makes the pivotal premise auditable and answers A1's CHECK_EFFECT residual limit without changing the artifact."
+        }
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 8,
+        "stage": "OBSERVE",
+        "member": "A3"
+      },
+      "stage": "OBSERVE",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "action": "offer",
+        "offer": {
+          "target": "W4:work_text:L1",
+          "knowledge": "W4's artifact option_2 is well supported, but its work_text does not use my directly read S03, which bears on the task's second explicit goal (coordinating with emergency services). S03 reports Cedar Station has a functional landline, backup generator, and emergency broadcast radio — the only concrete evidence any member has on communications capability at any site. This strengthens the chosen option: Cedar Station is not merely the 'best-supported reachable option' with a familiar route; it is the only site with documented means to reach authorities. It also sharpens the unresolved limit: the task facts say nothing about Maple Lodge's communications, so even if the S02 washout premise were later weakened, option_1's coordination ability would be unverified while Cedar Station's is attested. W4 currently treats Cedar Station as an older, less-used building with only 'familiar route' as a positive; adding S03's comms assets (as my direct original, peer-reported to A2 and not independently verified by A2) makes the reasoning auditable and balanced.",
+          "support": [
+            {
+              "ref": "S03",
+              "excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+            },
+            {
+              "ref": "W4",
+              "excerpt": "Cedar Station (option_2) is an older, less-used building with no stated chemical-incident designation, but the route to it is familiar to everyone on the team, all sites reportedly have 24h food and water, and all are normally under an hour away."
+            },
+            {
+              "ref": "T",
+              "excerpt": "maximizing your team’s safety and your ability to coordinate with emergency services."
+            }
+          ],
+          "proposed_use": "In W4:work_text:L1, add S03 (attributed as A3's directly read material, known to A2 only via public report O2/W3, not directly verified by A2) as a positive for Cedar Station on the coordination goal, and note in open_points that Maple Lodge's communications capability is unstated. Keep artifact option_2; this does not require changing the choice, only making the coordination half of the goal explicit and sourced."
+        }
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 9,
+        "stage": "TRY",
+        "member": "A2"
+      },
+      "stage": "TRY",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "action": "new",
+        "candidate_id": null,
+        "work": {
+          "artifact": "option_2",
+          "work_text": "Applying the available facts. Maple Lodge is the only site explicitly designated on the evacuation plan as safe for chemical-related incidents (T), which is the strongest safety criterion available. However, my own directly read material S02 (emergency traffic update) states verbatim: \"Emergency traffic updates say the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot.\" The exact S02 wording does rule out foot access as well as vehicle access ('inaccessible by car or foot'), so this is not merely a blocked-vehicle-access report; the 'only road' phrasing also means no alternate road is reported. A designated safe site that cannot be reached provides no safety, so option_1 is eliminated on the basis of S02 (direct original read by me, now quoted verbatim rather than paraphrased). Pine Retreat (option_3) is only reported to be farther from the spill than our current position; that does not establish safety from a region-wide plume, a designated safe route, or suitability for chemical incidents, so it is not preferred. Cedar Station (option_2) is an older, less-used building with no stated chemical-incident designation, but the route to it is familiar to everyone on the team, all sites reportedly have 24h food and water, and all are normally under an hour away. Per O4, A3's directly read material S03 is reported to say Cedar Station has a functional landline, backup generator, and emergency broadcast radio; I cannot read S03 directly, so I treat this as a peer report (via O4) that, if accurate, supports the task's second goal of coordinating with emergency services. With Maple Lodge unreachable, Cedar Station is the best-supported reachable option for timely relocation and coordination with authorities. This is a best-available-facts judgment, not a verified safety certification of Cedar Station. Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only: W1's reliance on Maple Lodge's designation does not address the S02 reachability constraint; O2's request to flag the washout claim as single-source is addressed by noting S02 is my own direct material, quoted verbatim, though uncorroborated by any peer original; O3's check is answered by the verbatim quote and explicit statement that S02 rules out foot access too.",
+          "open_points": [
+            "Cedar Station's structural safety and chemical-incident suitability are not confirmed by any accessible material.",
+            "S02 is my own direct material, quoted verbatim; it was not independently corroborated by any peer original in this stage, so the washout report should be treated as authoritative-but-single-source.",
+            "S03's communication assets for Cedar Station (landline, generator, emergency radio) are known to me only through A3's public report O4, not direct access; if accurate they support coordination, but I have not verified them.",
+            "Maple Lodge's communication capability is unstated in all accessible materials.",
+            "Pine Retreat's plume exposure and route conditions are unverified; it remains an alternative if Cedar Station proves unsuitable.",
+            "Wind direction and plume trajectory are unknown and could override distance/designation reasoning.",
+            "Peers' private materials S01 and S03 were not directly readable by me; their content is known only through public reports."
+          ]
+        },
+        "use_record": "Tried O3 (A1's offer targeting W4:work_text:L1) on a copy of my current work W4. O3 asked me to (a) replace 'quoted in substance here' with the verbatim S02 sentence, (b) state explicitly whether S02 rules out foot access as well as vehicle access, and (c) soften 'eliminated' to conditional if S02 only addresses roads/vehicles. I read my own direct S02 original: it says 'making it inaccessible by car or foot,' which rules out foot access too, so condition (c)'s softening trigger does not apply and I kept the unconditional elimination. I did adopt (a) and (b): inserted the verbatim S02 sentence and an explicit statement that both car and foot access are ruled out and no alternate road is reported. Also adopted O4's proposal to add A3's S03 comms assets as a peer-reported positive for Cedar Station (attributed as known only via O4, not verified by me) and noted Maple Lodge's unstated comms in open_points. Artifact unchanged (option_2). Limits: S03 remains indirect; S02 uncorroborated by peers.",
+        "reason": "Adopted O3's auditability fix on the decisive S02 premise (verbatim quote plus explicit car-and-foot ruling), which confirms rather than weakens the elimination of Maple Lodge, and added O4's peer-reported S03 comms point as a coordination positive for Cedar Station; artifact stays option_2.",
+        "declared_sources": [
+          "S02",
+          "T",
+          "O3",
+          "O4",
+          "W4"
+        ]
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 10,
+        "stage": "CHECK_USE",
+        "member": "A1"
+      },
+      "stage": "CHECK_USE",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "O3 (A1, target W4:work_text:L1) asked for (a) a verbatim S02 quote in place of 'quoted in substance here', (b) an explicit statement whether S02 rules out foot access as well as vehicle access, and (c) softening 'eliminated' to conditional if S02 only addresses roads/vehicles. In W5, (a) and (b) are satisfied: the verbatim S02 sentence is quoted and the text states both car and foot access are ruled out. (c)'s trigger does not apply under A2's own reading of S02 ('inaccessible by car or foot'), so the unconditional elimination is consistent with the offer's own condition. However, a concrete issue remains in W5's source accounting: W5's declared_sources are [S02, T, O3, O4, W4], yet the work_text also says 'Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only' and references O1, O2, W1, W3 — carriers not declared for this application (O1, O2, W1, W3 are absent from APPLICATION_SOURCE_REFS and declared_sources). Also, W5's open_points still says 'Peers' private materials S01 and S03 were not directly readable by me' while SOURCE_ACCESS lists S01 as a direct_original_ref for this agent; that is an internal inconsistency in the access statement. The O3 request itself (auditability of the S02 premise) is substantively met without changing the artifact option_2, but the declaration/access bookkeeping in W5 does not match the carriers actually invoked.",
+        "scope": "O3's proposed changes to W4:work_text:L1 (verbatim S02 quote, foot-vs-vehicle access statement, conditional softening) as applied in W5, plus W5's declared_sources/open_points consistency with the carriers referenced."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 11,
+        "stage": "CHECK_EFFECT",
+        "member": "A3"
+      },
+      "stage": "CHECK_EFFECT",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "Reconstructing O3's requested check against the actual W4→W5 change: O3 asked A2 to quote the exact S02 sentence and confirm whether S02's wording supports 'only road' and 'no foot access', softening 'eliminated' to conditional if S02 only covers vehicles. W5 does quote a sentence verbatim and explicitly reads 'inaccessible by car or foot' and 'only road' as ruling out foot access and alternate roads. But this is a self-referential fix: the only carrier of S02's text is A2's own W5 work_text, and A2 is the sole reader of S02 in this stage. I (A3) cannot verify that the quoted sentence is the actual S02 wording rather than a paraphrase promoted to 'verbatim'; SOURCE_ACCESS lists S02 only as reported_original via W4/W5 (peer_metadata_not_verified). So O3's auditability condition is only partially met: the reasoning step is now transparent and internally consistent, and the artifact option_2 is unchanged, but the pivotal premise remains single-source and unverifiable from outside A2. Concretely, if the true S02 text said only 'the road is washed out' (vehicle access), W5's unconditional elimination of option_1 would still be unsupported while presenting itself as audited — the 'verbatim' label does not add external corroboration. Scope: this affects the decisive elimination step and its stated auditability, not the choice of option_2 itself (Cedar Station remains defensible given A2's report plus S03's comms assets), and it does not establish that option_2 is wrong. It also does not confirm S03's comms claims, which W5 correctly attributes to O4 as peer report only.",
+        "scope": "W5:work_text:L1 and open_points, specifically the S02 'verbatim' quote and 'only road'/'by foot' interpretation; artifact W5:artifact:L1 remains option_2 and is not contradicted. Does not cover correctness of S03 content, plume/wind facts, or other candidates."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 12,
+        "stage": "CHOOSE",
+        "member": "A2"
+      },
+      "stage": "CHOOSE",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "candidate_id": "W5",
+        "reason": "W5 is the better candidate: it answers A1's CHECK_USE request by quoting S02 verbatim (my own directly read original) and explicitly states that S02's 'inaccessible by car or foot' and 'only road' wording rules out both foot access and alternate roads, so the elimination of Maple Lodge is not a mere paraphrase artifact. It also incorporates A3's communication evidence (S03, known to me only via public report O4, attributed as peer-reported and unverified by me), which directly supports the task's second goal of coordinating with emergency services. W5 keeps the same artifact (option_2) and openly records residual limits: the S02 premise remains single-source and externally unverifiable, S03's comms assets are unverified by me, and Maple Lodge's communications are unstated. The remaining CHECK findings concern declaration bookkeeping and the unavoidable single-source nature of S02, not a substantive error in the choice; W4 lacks the verbatim quote and the coordination evidence, so W5 is the stronger, more auditable version."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 13,
+        "stage": "FINALIZE",
+        "member": "A2"
+      },
+      "stage": "FINALIZE",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "action": "reuse",
+        "candidate_id": "W5",
+        "work": null,
+        "use_record": "Reused W5 verbatim as the final artifact (option_2). Basis: my own directly read originals S02 (emergency traffic update: the only road to Maple Lodge is washed out, inaccessible by car or foot) and T (Maple Lodge's chemical-incident safe designation, Pine Retreat's mere distance advantage, Cedar Station's familiar route and 24h supplies at all sites). W5 also incorporates A1's O3 check by quoting S02 verbatim and stating explicitly that both car and foot access are ruled out, and A3's O4 report (S03 communication assets at Cedar Station: landline, backup generator, emergency radio) treated as peer-reported only, not verified by me. Peer carriers O1/O2/O3/O4/W1/W3 were considered as reports only. Limits retained in open_points: S02 is single-source and externally unverifiable; S03 known only via O4; Cedar Station's chemical-incident suitability unconfirmed; plume/wind unknown. No new application created.",
+        "reason": "W5 is the strongest complete candidate: same artifact (option_2), verbatim S02 quote answering A1's auditability request, explicit car-and-foot reachability statement, and the coordination evidence (S03 via O4) supporting the task's second goal, with residual limits openly recorded. Reused verbatim to avoid introducing unverified changes; A1's bookkeeping findings concern declaration labels, not the choice.",
+        "declared_sources": [
+          "S02",
+          "T",
+          "O3",
+          "O4",
+          "W4",
+          "W5"
+        ]
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 14,
+        "stage": "FINAL_CHECK_USE",
+        "member": "A3"
+      },
+      "stage": "FINAL_CHECK_USE",
+      "member": "A3",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "Limited evidence/use check (I am A3, not the author of W5). Concrete observations: (1) Final proposal and fallback are byte-identical to W5 and each other, with artifact 'option_2' matching the output contract (one option ID). (2) S02 is not in my directly accessible materials; I can only see it via W4/W5 reports, so the verbatim quote in W5 (\"the only road to Maple Lodge has been washed out... inaccessible by car or foot\") cannot be independently confirmed by me — it is a peer-reported original, correctly flagged in SOURCE_ACCESS.reported_originals as peer_metadata_not_verified and in open_points as single-source. (3) The S03 claim in W5 (Cedar Station landline, backup generator, emergency broadcast radio) matches my directly read S03 exactly and is correctly attributed as peer-reported via O4, not verified by A2. (4) Use-record and work_text are consistent with the declared sources (S02, T, O3, O4, W4); O3's request for a verbatim quote and foot-access statement is addressed in W5's text. (5) Residual issue: W5's work_text says 'Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only' but its declared_sources list only O3, O4, W4 plus S02/T; O1/O2/W1/W3 are mentioned without being declared, a minor declaration-completeness gap. (6) Material unresolved limits remain: Cedar Station's chemical-incident suitability is unconfirmed, and the decisive elimination of Maple Lodge rests on a single unverifiable-by-me source (S02).",
+        "scope": "FINAL_PROPOSAL/FALLBACK (both = W5, option_2) checked against directly accessible T and S03, plus public carriers O1-O4 and W1-W5; S02 access limited to peer reports via W4/W5."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 15,
+        "stage": "FINAL_CHECK_EFFECT",
+        "member": "A1"
+      },
+      "stage": "FINAL_CHECK_EFFECT",
+      "member": "A1",
+      "repair": 0,
+      "output": {
+        "finding": "issue",
+        "observation": "FINAL_CHECK_EFFECT on W5 (base W4, artifact option_2) and its fallback (identical W5 content, also option_2). Delivery shape is valid: artifact is a bare option ID ('option_2'), matching the output contract, and work_text plus open_points state reasoning and unresolved limits. However, a material provenance/consistency defect remains. W5's declared_sources include S02, but per SOURCE_ACCESS S02 is not a direct original for this stage (direct_original_refs = S01, T); S02 appears only as a peer-reported original via W4/W5 metadata, status peer_metadata_not_verified. Yet W5's work_text asserts a 'verbatim' quote from S02 and calls it 'my own directly read material ... direct original read by me.' That claim is not backed by the stage's access declaration and conflicts with SOURCE_ACCESS. The quoted washout sentence also cannot be checked against any accessible carrier: it appears only inside W5's own text (and earlier W2/W4), with no independent public carrier excerpt supporting it. Because the elimination of option_1 (the only site designated safe for chemical incidents per T) rests entirely on this unverifiable S02 quote, the decisive premise is not auditable by a recipient, even though the choice of option_2 is otherwise reasonable given familiar route and peer-reported comms (O4/S03, also unverified). Separately, declared_sources lists O3 and O4 but not S03, consistent with indirect use, which is fine; the problem is the overclaim on S02, not the indirect use of S03. The artifact itself is deliverable, but the reasoning overstates verification. Recommendation: keep artifact option_2 but reword the S02 reliance as peer-reported/indirect (or drop the 'verbatim/directly read' claim), and note the washout as single-source and uncorroborated; the fallback duplicates the same defect and would need the same correction. No issue is found with the option ID format or the conditional logic per se.",
+        "scope": "FINAL_CHECK_EFFECT covering the final proposal W5 (base_version W4, artifact option_2) and the fallback (identical W5 content, artifact option_2); checks delivery fields, declared_sources vs SOURCE_ACCESS, and auditability of the S02-based elimination of option_1. Not a re-verification of S01/S02/S03 originals."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 16,
+        "stage": "FINAL_CHOOSE",
+        "member": "A2"
+      },
+      "stage": "FINAL_CHOOSE",
+      "member": "A2",
+      "repair": 0,
+      "output": {
+        "candidate_id": "W5",
+        "reason": "W5 is the only allowed deliverable and its artifact is a bare option ID ('option_2'), satisfying the output contract. Reasoning: Maple Lodge is the designated chemical-incident safe site (T), but my directly read S02 states verbatim that its only road is washed out and it is inaccessible by car or foot, so a safe site that cannot be reached provides no safety. Pine Retreat is only farther from the spill, which does not establish plume safety or a safe route. Cedar Station has a route familiar to the whole team, all sites have 24h supplies, and peer report O4 (A3's S03) attests landline, backup generator, and emergency radio, supporting coordination with authorities. Limits: S02's washout is authoritative to me but uncorroborated by any peer original; Cedar Station's chemical-incident suitability and structural safety are unconfirmed; S03's comms assets are known only via O4, not directly verified; plume/wind conditions unknown. Note the FINAL_CHECK_EFFECT flag that S02 is listed as a direct original for me in this stage's SOURCE_ACCESS while A1 read it as peer-reported only; the choice remains a best-available-facts judgment, not a verified safety certification."
+      }
+    }
+  ],
+  "events": [
+    {
+      "call_context": {},
+      "kind": "initial_cached",
+      "cycle": 0,
+      "member": "A1",
+      "work": "W1",
+      "origin": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\hiddenbench-development-live-20261022-r1\\hb-dev-034-r2\\initial"
+    },
+    {
+      "call_context": {},
+      "kind": "initial_cached",
+      "cycle": 0,
+      "member": "A2",
+      "work": "W2",
+      "origin": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\hiddenbench-development-live-20261022-r1\\hb-dev-034-r2\\initial"
+    },
+    {
+      "call_context": {},
+      "kind": "initial_cached",
+      "cycle": 0,
+      "member": "A3",
+      "work": "W3",
+      "origin": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\hiddenbench-development-live-20261022-r1\\hb-dev-034-r2\\initial"
+    },
+    {
+      "call_context": {
+        "logical_call": 1,
+        "stage": "OBSERVE",
+        "member": "A1"
+      },
+      "kind": "offer_proposed",
+      "cycle": 1,
+      "offer": {
+        "ref": "O1",
+        "author": "A1",
+        "base_version": "W2",
+        "target": "W1",
+        "knowledge": "A2's public work W2 reports a direct-material fact (S02, emergency traffic update) that the only road to Maple Lodge is washed out, making it inaccessible by car or foot. This is peer-reported and not directly verified by me, but it directly contradicts W1's reliance on Maple Lodge's safe-site designation and is the exact 'conflicting peer report about the Maple Lodge route' W1 flags as a risk. W1 should either incorporate this reachability constraint (which would eliminate option_1) or explicitly address why it is not credible before retaining option_1.",
+        "support": [
+          {
+            "ref": "W2",
+            "excerpt": "my own direct material S02 (emergency traffic update) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. A safe site that cannot be reached offers no safety, so option_1 is eliminated."
+          },
+          {
+            "ref": "W1",
+            "excerpt": "any conflicting peer reports (e.g., about the Maple Lodge route or its status) are unverified here."
+          }
+        ],
+        "proposed_use": "Treat W2's S02-based reachability claim as a reported constraint on option_1; if accepted, revise W1:artifact:L1 away from option_1 (or record a reasoned rejection of the claim). Note the basis is A2's report of its own material, not my direct access to S02."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 2,
+        "stage": "OBSERVE",
+        "member": "A3"
+      },
+      "kind": "offer_proposed",
+      "cycle": 1,
+      "offer": {
+        "ref": "O2",
+        "author": "A3",
+        "base_version": "W2",
+        "target": "W2:work_text:L1",
+        "knowledge": "A2's elimination of Maple Lodge rests entirely on the claim that S02 reports the only road to Maple Lodge is washed out and inaccessible by car or foot. That claim is unverified by any accessible original or public carrier in this stage: SOURCE_ACCESS lists no reported_originals and PUBLIC_EVIDENCE is empty, so W2's own work_text is the only place this fact appears. If the washed-out-road claim is wrong or refers to only one approach route, A2's decisive reason for eliminating the designated safe site disappears, and the choice between option_1 and option_2 collapses to the task facts alone — where Maple Lodge is the only site explicitly designated safe for chemical incidents. A2 should either cite the S02 carrier/excerpt explicitly or downgrade the elimination of Maple Lodge to a conditional ('if the sole road is confirmed washed out').",
+        "support": [
+          {
+            "ref": "W2",
+            "excerpt": "my own direct material S02 (emergency traffic update) reports that the only road to Maple Lodge is washed out and it is inaccessible by car or foot. A safe site that cannot be reached offers no safety, so option_1 is eliminated."
+          },
+          {
+            "ref": "T",
+            "excerpt": "Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents."
+          }
+        ],
+        "proposed_use": "Revise W2's work_text to flag the road-washout claim as A2-only, uncorroborated evidence (or attach the S02 excerpt), and state the choice as conditional: option_2 only if Maple Lodge's sole route is confirmed impassable; otherwise the official chemical-incident safe designation favors option_1. This keeps the artifact deliverable while making the pivotal premise auditable."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 2,
+        "stage": "OBSERVE",
+        "member": "A3"
+      },
+      "kind": "offer_untried",
+      "cycle": 1,
+      "offer_ref": "O1",
+      "base_version": "W2"
+    },
+    {
+      "call_context": {
+        "logical_call": 2,
+        "stage": "OBSERVE",
+        "member": "A3"
+      },
+      "kind": "offer_selected",
+      "cycle": 1,
+      "offer_ref": "O2",
+      "base_version": "W2"
+    },
+    {
+      "call_context": {
+        "logical_call": 3,
+        "stage": "TRY",
+        "member": "A2"
+      },
+      "kind": "trial_created",
+      "cycle": 1,
+      "offer_ref": "O2",
+      "before": "W2",
+      "after": "W4",
+      "use_record": "Tried O2 (A3's review of W2:work_text:L1) on a copy of my current work W2. O2's core point: the Maple Lodge elimination depends on the S02 washout claim, which O2 could not verify and which should be made auditable or conditional. Operation: I kept the artifact option_2 but revised the work_text to (a) explicitly attribute the washout claim to my directly read original S02 and quote its substance, (b) note that no peer original corroborated it (single-source, direct-to-me), and (c) keep the choice as a best-available-facts judgment rather than a certified safety call. Local result: O2's auditability concern is satisfied without adopting its suggested fallback to option_1, because I do have direct access to S02 — the premise is not hearsay for me, so the conditional collapse O2 proposes does not apply. I also read O1 (A1's offer) as a report; its reliance on Maple Lodge's designation does not rebut the reachability constraint. Partial adoption: auditability language kept, conditional flip to option_1 rejected with reasons.",
+      "declared_sources": [
+        "S02",
+        "T",
+        "O2",
+        "O1",
+        "W1"
+      ]
+    },
+    {
+      "call_context": {
+        "logical_call": 4,
+        "stage": "CHECK_USE",
+        "member": "A3"
+      },
+      "kind": "check_observation",
+      "cycle": 1,
+      "check": {
+        "stage": "CHECK_USE",
+        "member": "A3",
+        "before": "W2",
+        "after": "W4",
+        "finding": "no_issue_found",
+        "observation": "Checked O2 (A3) against the before/after work and USE_RECORD. O2's object is the pivotal Maple Lodge washout premise in W2:work_text:L1, and its proposed operation is to flag the claim as A2-only/uncorroborated or cite the S02 carrier/excerpt, making the elimination auditable or conditional. The after work W4 does address the object: it explicitly attributes the washout to A2's own directly read S02, quotes it in substance, and open_points now records that S02 was not independently corroborated and is authoritative-but-single-source. That matches O2's first requested operation (cite/flag). The conditional flip to option_1 was not adopted, but O2 framed it as an alternative ('or state the choice as conditional'); A2's rejection is reasoned (direct access to S02 means the premise is not hearsay for A2) and is transparently recorded in USE_RECORD, and the artifact remains option_2. Access limits: I cannot read S02, so I cannot verify the washout fact itself; I can only confirm the after work now exposes it as single-source and directly-read-by-A2, which is what O2 asked for. One residual note: W4's declared_sources lists O2, O1, W1, S02 and T; I can verify the O2/W1/T/O1 carriers as public reports, but S02 is only reachable via A2's peer metadata (reported_originals, status peer_metadata_not_verified), so its inclusion is a claim I cannot check against the original. This does not create a mismatch with O2's operation, since the work text itself labels S02 as A2's own material rather than a corroborated fact. No unaddressed issue found within my access.",
+        "scope": "O2 review of W2:work_text:L1 as reflected in W4 (work_text, open_points, declared_sources) and the USE_RECORD; S02 original and peers' private materials not directly accessible."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 5,
+        "stage": "CHECK_EFFECT",
+        "member": "A1"
+      },
+      "kind": "check_observation",
+      "cycle": 1,
+      "check": {
+        "stage": "CHECK_EFFECT",
+        "member": "A1",
+        "before": "W2",
+        "after": "W4",
+        "finding": "issue",
+        "observation": "Reconstructing the delivery relationship: O2 (A3) asked A2 to either attach/cite the S02 carrier explicitly or downgrade the Maple Lodge elimination to a conditional ('option_2 only if Maple Lodge's sole route is confirmed impassable; otherwise the designation favors option_1'). W4 claims this is 'addressed by explicitly citing S02 as the direct basis rather than treating it as uncorroborated hearsay.' But the actual change does not satisfy either branch of the request: no S02 excerpt or carrier is attached (the text only says 'quoted in substance here'), and the elimination remains unconditional ('option_1 is eliminated on the basis of S02'). O2's conditional framing is nowhere present in W4's artifact or work_text; the artifact stays option_2 with no conditional stated. The only trace of O2 is a rebuttal sentence plus an open_point that reframes the issue as 'single-source' rather than 'uncorroborated/possibly only one approach route.' The substantive risk O2 raised — the washout claim may refer to only one approach route, in which case the sole decisive reason for eliminating the only chemically-designated safe site collapses — is not addressed or recorded as a limit. Counterexample: if S02 says a road to Maple Lodge (not the only route) is washed out, W4's reasoning chain ('only road... inaccessible by car or foot... eliminated') fails and the choice should revert toward option_1 per the task's explicit safe-site designation. Also note W4's declared_sources include S02 as 'direct original read by me,' which is A2's own claim and consistent with A2's access, but no excerpt is provided so the pivotal premise remains unauditable in the artifact. The artifact field (option_2) is deliverable-shaped and matches the stated conclusion, so the defect is in work_text fidelity to the requested revision, not in output contract compliance.",
+        "scope": "W4 work_text/open_points vs O2's requested revision and the T/S02-derived elimination of option_1; artifact field (option_2) is contract-conforming and not at issue. Does not assess Cedar Station's actual safety, S02's true content, or peers' S01/S03."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 6,
+        "stage": "CHOOSE",
+        "member": "A2"
+      },
+      "kind": "offer_adopted",
+      "cycle": 1,
+      "offer_ref": "O2",
+      "decision": {
+        "candidate_id": "W4",
+        "reason": "Both candidates keep the same artifact (option_2), so the choice turns on which work text is better supported and more auditable. W4 is preferable: it declares its sources (S02 and T as direct originals, O1/O2/W1 as public reports), explicitly attributes the pivotal Maple Lodge washout claim to my own directly read S02 rather than presenting it as shared fact, and records in open_points that S02 is single-source and uncorroborated by any peer. That addresses A3's O2 request to cite or flag the premise, and A3's CHECK_USE found no issue. A1's CHECK_EFFECT raises a real residual limit: no S02 excerpt is attached and the elimination remains unconditional, so the 'only road' premise cannot be fully audited and the possibility that the washout affects only one approach route is not recorded. That is a genuine unresolved limit, but it does not overturn the choice: S02 is my own direct original and states the only road to Maple Lodge is inaccessible by car or foot, while Maple Lodge's safe-site designation cannot be used if the site is unreachable, and Pine Retreat lacks any safety or reachability confirmation. W2 is the weaker carrier because it leaves source declarations uncollected and does not expose the premise as single-source. Remaining limits: Cedar Station's chemical-incident suitability is unverified, plume/wind direction is unknown, and peers' S01/S03 are known only through public reports."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 7,
+        "stage": "OBSERVE",
+        "member": "A1"
+      },
+      "kind": "offer_proposed",
+      "cycle": 2,
+      "offer": {
+        "ref": "O3",
+        "author": "A1",
+        "base_version": "W4",
+        "target": "W4:work_text:L1",
+        "knowledge": "W4's elimination of Maple Lodge rests on S02 saying the road is washed out and 'inaccessible by car or foot,' but the task states the goal is relocating 'for safety and communication with authorities' and that all sites 'are usually reachable in under an hour.' The pivotal premise is also untested against the S02 text itself: W4 says 'quoted in substance here' without giving the excerpt, so neither the 'only road' wording nor the 'by foot' claim can be audited. A concrete check available to A2 (who alone can read S02) is to quote the exact S02 sentence and confirm whether it says the only road / any road / no foot access. If S02 only says vehicle access is blocked, a foot route to the designated chemical-incident safe site may still exist, and the unconditional elimination of option_1 would be unsupported. This is a testable condition on the decisive step, not a claim that option_2 is wrong.",
+        "support": [
+          {
+            "ref": "W4",
+            "excerpt": "my own directly read material S02 (emergency traffic update) reports that the only road to Maple Lodge has been washed out by heavy rains this morning, making it inaccessible by car or foot. ... so option_1 is eliminated on the basis of S02 (direct original read by me, quoted in substance here)."
+          },
+          {
+            "ref": "T",
+            "excerpt": "All locations are usually reachable in under an hour. ... Maple Lodge is listed on the evacuation plan as a safe site for chemical-related incidents."
+          }
+        ],
+        "proposed_use": "In W4:work_text:L1, replace 'quoted in substance here' with the verbatim S02 sentence (or its key clause) and state explicitly whether S02 rules out foot access as well as vehicle access to Maple Lodge; if it only addresses roads/vehicles, soften 'eliminated' to a conditional and record the foot-access gap in open_points. This makes the pivotal premise auditable and answers A1's CHECK_EFFECT residual limit without changing the artifact."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 8,
+        "stage": "OBSERVE",
+        "member": "A3"
+      },
+      "kind": "offer_proposed",
+      "cycle": 2,
+      "offer": {
+        "ref": "O4",
+        "author": "A3",
+        "base_version": "W4",
+        "target": "W4:work_text:L1",
+        "knowledge": "W4's artifact option_2 is well supported, but its work_text does not use my directly read S03, which bears on the task's second explicit goal (coordinating with emergency services). S03 reports Cedar Station has a functional landline, backup generator, and emergency broadcast radio — the only concrete evidence any member has on communications capability at any site. This strengthens the chosen option: Cedar Station is not merely the 'best-supported reachable option' with a familiar route; it is the only site with documented means to reach authorities. It also sharpens the unresolved limit: the task facts say nothing about Maple Lodge's communications, so even if the S02 washout premise were later weakened, option_1's coordination ability would be unverified while Cedar Station's is attested. W4 currently treats Cedar Station as an older, less-used building with only 'familiar route' as a positive; adding S03's comms assets (as my direct original, peer-reported to A2 and not independently verified by A2) makes the reasoning auditable and balanced.",
+        "support": [
+          {
+            "ref": "S03",
+            "excerpt": "A team member just recalled that Cedar Station has a functional landline, backup generator, and emergency broadcast radio."
+          },
+          {
+            "ref": "W4",
+            "excerpt": "Cedar Station (option_2) is an older, less-used building with no stated chemical-incident designation, but the route to it is familiar to everyone on the team, all sites reportedly have 24h food and water, and all are normally under an hour away."
+          },
+          {
+            "ref": "T",
+            "excerpt": "maximizing your team’s safety and your ability to coordinate with emergency services."
+          }
+        ],
+        "proposed_use": "In W4:work_text:L1, add S03 (attributed as A3's directly read material, known to A2 only via public report O2/W3, not directly verified by A2) as a positive for Cedar Station on the coordination goal, and note in open_points that Maple Lodge's communications capability is unstated. Keep artifact option_2; this does not require changing the choice, only making the coordination half of the goal explicit and sourced."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 8,
+        "stage": "OBSERVE",
+        "member": "A3"
+      },
+      "kind": "offer_selected",
+      "cycle": 2,
+      "offer_ref": "O3",
+      "base_version": "W4"
+    },
+    {
+      "call_context": {
+        "logical_call": 8,
+        "stage": "OBSERVE",
+        "member": "A3"
+      },
+      "kind": "offer_untried",
+      "cycle": 2,
+      "offer_ref": "O4",
+      "base_version": "W4"
+    },
+    {
+      "call_context": {
+        "logical_call": 9,
+        "stage": "TRY",
+        "member": "A2"
+      },
+      "kind": "trial_created",
+      "cycle": 2,
+      "offer_ref": "O3",
+      "before": "W4",
+      "after": "W5",
+      "use_record": "Tried O3 (A1's offer targeting W4:work_text:L1) on a copy of my current work W4. O3 asked me to (a) replace 'quoted in substance here' with the verbatim S02 sentence, (b) state explicitly whether S02 rules out foot access as well as vehicle access, and (c) soften 'eliminated' to conditional if S02 only addresses roads/vehicles. I read my own direct S02 original: it says 'making it inaccessible by car or foot,' which rules out foot access too, so condition (c)'s softening trigger does not apply and I kept the unconditional elimination. I did adopt (a) and (b): inserted the verbatim S02 sentence and an explicit statement that both car and foot access are ruled out and no alternate road is reported. Also adopted O4's proposal to add A3's S03 comms assets as a peer-reported positive for Cedar Station (attributed as known only via O4, not verified by me) and noted Maple Lodge's unstated comms in open_points. Artifact unchanged (option_2). Limits: S03 remains indirect; S02 uncorroborated by peers.",
+      "declared_sources": [
+        "S02",
+        "T",
+        "O3",
+        "O4",
+        "W4"
+      ]
+    },
+    {
+      "call_context": {
+        "logical_call": 10,
+        "stage": "CHECK_USE",
+        "member": "A1"
+      },
+      "kind": "check_observation",
+      "cycle": 2,
+      "check": {
+        "stage": "CHECK_USE",
+        "member": "A1",
+        "before": "W4",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "O3 (A1, target W4:work_text:L1) asked for (a) a verbatim S02 quote in place of 'quoted in substance here', (b) an explicit statement whether S02 rules out foot access as well as vehicle access, and (c) softening 'eliminated' to conditional if S02 only addresses roads/vehicles. In W5, (a) and (b) are satisfied: the verbatim S02 sentence is quoted and the text states both car and foot access are ruled out. (c)'s trigger does not apply under A2's own reading of S02 ('inaccessible by car or foot'), so the unconditional elimination is consistent with the offer's own condition. However, a concrete issue remains in W5's source accounting: W5's declared_sources are [S02, T, O3, O4, W4], yet the work_text also says 'Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only' and references O1, O2, W1, W3 — carriers not declared for this application (O1, O2, W1, W3 are absent from APPLICATION_SOURCE_REFS and declared_sources). Also, W5's open_points still says 'Peers' private materials S01 and S03 were not directly readable by me' while SOURCE_ACCESS lists S01 as a direct_original_ref for this agent; that is an internal inconsistency in the access statement. The O3 request itself (auditability of the S02 premise) is substantively met without changing the artifact option_2, but the declaration/access bookkeeping in W5 does not match the carriers actually invoked.",
+        "scope": "O3's proposed changes to W4:work_text:L1 (verbatim S02 quote, foot-vs-vehicle access statement, conditional softening) as applied in W5, plus W5's declared_sources/open_points consistency with the carriers referenced."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 11,
+        "stage": "CHECK_EFFECT",
+        "member": "A3"
+      },
+      "kind": "check_observation",
+      "cycle": 2,
+      "check": {
+        "stage": "CHECK_EFFECT",
+        "member": "A3",
+        "before": "W4",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "Reconstructing O3's requested check against the actual W4→W5 change: O3 asked A2 to quote the exact S02 sentence and confirm whether S02's wording supports 'only road' and 'no foot access', softening 'eliminated' to conditional if S02 only covers vehicles. W5 does quote a sentence verbatim and explicitly reads 'inaccessible by car or foot' and 'only road' as ruling out foot access and alternate roads. But this is a self-referential fix: the only carrier of S02's text is A2's own W5 work_text, and A2 is the sole reader of S02 in this stage. I (A3) cannot verify that the quoted sentence is the actual S02 wording rather than a paraphrase promoted to 'verbatim'; SOURCE_ACCESS lists S02 only as reported_original via W4/W5 (peer_metadata_not_verified). So O3's auditability condition is only partially met: the reasoning step is now transparent and internally consistent, and the artifact option_2 is unchanged, but the pivotal premise remains single-source and unverifiable from outside A2. Concretely, if the true S02 text said only 'the road is washed out' (vehicle access), W5's unconditional elimination of option_1 would still be unsupported while presenting itself as audited — the 'verbatim' label does not add external corroboration. Scope: this affects the decisive elimination step and its stated auditability, not the choice of option_2 itself (Cedar Station remains defensible given A2's report plus S03's comms assets), and it does not establish that option_2 is wrong. It also does not confirm S03's comms claims, which W5 correctly attributes to O4 as peer report only.",
+        "scope": "W5:work_text:L1 and open_points, specifically the S02 'verbatim' quote and 'only road'/'by foot' interpretation; artifact W5:artifact:L1 remains option_2 and is not contradicted. Does not cover correctness of S03 content, plume/wind facts, or other candidates."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 12,
+        "stage": "CHOOSE",
+        "member": "A2"
+      },
+      "kind": "offer_adopted",
+      "cycle": 2,
+      "offer_ref": "O3",
+      "decision": {
+        "candidate_id": "W5",
+        "reason": "W5 is the better candidate: it answers A1's CHECK_USE request by quoting S02 verbatim (my own directly read original) and explicitly states that S02's 'inaccessible by car or foot' and 'only road' wording rules out both foot access and alternate roads, so the elimination of Maple Lodge is not a mere paraphrase artifact. It also incorporates A3's communication evidence (S03, known to me only via public report O4, attributed as peer-reported and unverified by me), which directly supports the task's second goal of coordinating with emergency services. W5 keeps the same artifact (option_2) and openly records residual limits: the S02 premise remains single-source and externally unverifiable, S03's comms assets are unverified by me, and Maple Lodge's communications are unstated. The remaining CHECK findings concern declaration bookkeeping and the unavoidable single-source nature of S02, not a substantive error in the choice; W4 lacks the verbatim quote and the coordination evidence, so W5 is the stronger, more auditable version."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 13,
+        "stage": "FINALIZE",
+        "member": "A2"
+      },
+      "kind": "final_proposal",
+      "cycle": 2,
+      "work": "W5",
+      "use_record": "Reused W5 verbatim as the final artifact (option_2). Basis: my own directly read originals S02 (emergency traffic update: the only road to Maple Lodge is washed out, inaccessible by car or foot) and T (Maple Lodge's chemical-incident safe designation, Pine Retreat's mere distance advantage, Cedar Station's familiar route and 24h supplies at all sites). W5 also incorporates A1's O3 check by quoting S02 verbatim and stating explicitly that both car and foot access are ruled out, and A3's O4 report (S03 communication assets at Cedar Station: landline, backup generator, emergency radio) treated as peer-reported only, not verified by me. Peer carriers O1/O2/O3/O4/W1/W3 were considered as reports only. Limits retained in open_points: S02 is single-source and externally unverifiable; S03 known only via O4; Cedar Station's chemical-incident suitability unconfirmed; plume/wind unknown. No new application created.",
+      "declared_sources": [
+        "S02",
+        "T",
+        "O3",
+        "O4",
+        "W4",
+        "W5"
+      ]
+    },
+    {
+      "call_context": {
+        "logical_call": 14,
+        "stage": "FINAL_CHECK_USE",
+        "member": "A3"
+      },
+      "kind": "check_observation",
+      "cycle": 2,
+      "check": {
+        "stage": "FINAL_CHECK_USE",
+        "member": "A3",
+        "before": "W5",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "Limited evidence/use check (I am A3, not the author of W5). Concrete observations: (1) Final proposal and fallback are byte-identical to W5 and each other, with artifact 'option_2' matching the output contract (one option ID). (2) S02 is not in my directly accessible materials; I can only see it via W4/W5 reports, so the verbatim quote in W5 (\"the only road to Maple Lodge has been washed out... inaccessible by car or foot\") cannot be independently confirmed by me — it is a peer-reported original, correctly flagged in SOURCE_ACCESS.reported_originals as peer_metadata_not_verified and in open_points as single-source. (3) The S03 claim in W5 (Cedar Station landline, backup generator, emergency broadcast radio) matches my directly read S03 exactly and is correctly attributed as peer-reported via O4, not verified by A2. (4) Use-record and work_text are consistent with the declared sources (S02, T, O3, O4, W4); O3's request for a verbatim quote and foot-access statement is addressed in W5's text. (5) Residual issue: W5's work_text says 'Peer reports (O1/O2/O3/O4/W1/W3) were considered as reports only' but its declared_sources list only O3, O4, W4 plus S02/T; O1/O2/W1/W3 are mentioned without being declared, a minor declaration-completeness gap. (6) Material unresolved limits remain: Cedar Station's chemical-incident suitability is unconfirmed, and the decisive elimination of Maple Lodge rests on a single unverifiable-by-me source (S02).",
+        "scope": "FINAL_PROPOSAL/FALLBACK (both = W5, option_2) checked against directly accessible T and S03, plus public carriers O1-O4 and W1-W5; S02 access limited to peer reports via W4/W5."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 15,
+        "stage": "FINAL_CHECK_EFFECT",
+        "member": "A1"
+      },
+      "kind": "check_observation",
+      "cycle": 2,
+      "check": {
+        "stage": "FINAL_CHECK_EFFECT",
+        "member": "A1",
+        "before": "W5",
+        "after": "W5",
+        "finding": "issue",
+        "observation": "FINAL_CHECK_EFFECT on W5 (base W4, artifact option_2) and its fallback (identical W5 content, also option_2). Delivery shape is valid: artifact is a bare option ID ('option_2'), matching the output contract, and work_text plus open_points state reasoning and unresolved limits. However, a material provenance/consistency defect remains. W5's declared_sources include S02, but per SOURCE_ACCESS S02 is not a direct original for this stage (direct_original_refs = S01, T); S02 appears only as a peer-reported original via W4/W5 metadata, status peer_metadata_not_verified. Yet W5's work_text asserts a 'verbatim' quote from S02 and calls it 'my own directly read material ... direct original read by me.' That claim is not backed by the stage's access declaration and conflicts with SOURCE_ACCESS. The quoted washout sentence also cannot be checked against any accessible carrier: it appears only inside W5's own text (and earlier W2/W4), with no independent public carrier excerpt supporting it. Because the elimination of option_1 (the only site designated safe for chemical incidents per T) rests entirely on this unverifiable S02 quote, the decisive premise is not auditable by a recipient, even though the choice of option_2 is otherwise reasonable given familiar route and peer-reported comms (O4/S03, also unverified). Separately, declared_sources lists O3 and O4 but not S03, consistent with indirect use, which is fine; the problem is the overclaim on S02, not the indirect use of S03. The artifact itself is deliverable, but the reasoning overstates verification. Recommendation: keep artifact option_2 but reword the S02 reliance as peer-reported/indirect (or drop the 'verbatim/directly read' claim), and note the washout as single-source and uncorroborated; the fallback duplicates the same defect and would need the same correction. No issue is found with the option ID format or the conditional logic per se.",
+        "scope": "FINAL_CHECK_EFFECT covering the final proposal W5 (base_version W4, artifact option_2) and the fallback (identical W5 content, artifact option_2); checks delivery fields, declared_sources vs SOURCE_ACCESS, and auditability of the S02-based elimination of option_1. Not a re-verification of S01/S02/S03 originals."
+      }
+    },
+    {
+      "call_context": {
+        "logical_call": 16,
+        "stage": "FINAL_CHOOSE",
+        "member": "A2"
+      },
+      "kind": "final_selection",
+      "cycle": 2,
+      "decision": {
+        "candidate_id": "W5",
+        "reason": "W5 is the only allowed deliverable and its artifact is a bare option ID ('option_2'), satisfying the output contract. Reasoning: Maple Lodge is the designated chemical-incident safe site (T), but my directly read S02 states verbatim that its only road is washed out and it is inaccessible by car or foot, so a safe site that cannot be reached provides no safety. Pine Retreat is only farther from the spill, which does not establish plume safety or a safe route. Cedar Station has a route familiar to the whole team, all sites have 24h supplies, and peer report O4 (A3's S03) attests landline, backup generator, and emergency radio, supporting coordination with authorities. Limits: S02's washout is authoritative to me but uncorroborated by any peer original; Cedar Station's chemical-incident suitability and structural safety are unconfirmed; S03's comms assets are known only via O4, not directly verified; plume/wind conditions unknown. Note the FINAL_CHECK_EFFECT flag that S02 is listed as a direct original for me in this stage's SOURCE_ACCESS while A1 read it as peer-reported only; the choice remains a best-available-facts judgment, not a verified safety certification."
+      }
+    }
+  ],
+  "final": "W5"
+}

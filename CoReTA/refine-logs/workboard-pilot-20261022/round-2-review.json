@@ -1,0 +1,19 @@
+{
+  "verdict": "READY_FOR_BOUNDED_PILOT",
+  "scope": "仅学生会长集中/分散 × 两方法 × 两次重复，共 8 个方法单元、最多 216 次 HTTP 的开发行为试跑。",
+  "blocking_findings": [],
+  "resolved_findings": [
+    {"id": "B1", "site": "CoReTA/src/coreta/workboard/baseline.py:47-59", "resolution": "DISCUSS/FINALIZE 的候选已去除 locations；CURRENT_WORK/FALLBACK 仅以编号指向 CANDIDATES；DISCUSSION 保留索引。每份候选正文只展开一次，六轮四人同步讨论和一次 FINALIZE 保持不变。"},
+    {"site": "CoReTA/src/coreta/workboard/baseline.py:49", "resolution": "普通讨论 reserved_closure_calls 已改为 1，与实际收尾调用一致。"},
+    {"site": "CoReTA/tools/workboard_pilot.py:138-147；CoReTA/src/coreta/workboard/runtime.py:263-268；CoReTA/tools/score_workboard_pilot.py:30-49", "resolution": "配对层导出共同初答用量及未知/不完整次数；方法结果单列后续用量及全部未知/不完整次数；评分报告保留两者，未重复计算共同初答。旧 uncertain_usage_attempts 的传输错误含义已在 A31 声明。"}
+  ],
+  "nonblocking_limits": [
+    "A30、A31、A32 与当前源码对应，本次复审未发现关联修复引入新的阻断项。",
+    "此结论通过独立只读源码复核得出；本轮未运行测试、未调用模型。最终版本的离线检查与执行前冻结仍按既定协议完成。",
+    "两法共享调用与输出上限，实际输入、输出和调用消耗可以不同，应按日志报告。",
+    "就绪结论只覆盖本次开发试跑；脚本检查和格式复制不构成能力结果，事件字段也不构成知识有效应用的证据。"
+  ],
+  "undeclared_assumptions": [],
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

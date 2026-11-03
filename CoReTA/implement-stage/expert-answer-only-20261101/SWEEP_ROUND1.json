@@ -1,0 +1,45 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "review_basis": "首轮首次读取的实际未跟踪文件；修订期间观察到的变化另列 resolution_updates。",
+  "undeclared": [
+    {
+      "site": "tools/b0_answers.py:70-84",
+      "decision": "等概率重采样关联组，每次保留抽中组内全部题，并按抽中题数计算整体均值；不是各组均值等权平均。",
+      "why_it_matters": "组大小不同时，两种规则产生不同的区间，可能影响专家资格。首次读取的A05只声明组bootstrap，未声明权重规则。",
+      "class": "semantic"
+    },
+    {
+      "site": "tools/b0_answers.py:122-133; tools/b0_expert.py:65,84-86",
+      "decision": "将select --reports的调用顺序直接解释为训练前登记的候选顺序；程序不读取登记顺序或保存时间。",
+      "why_it_matters": "EM/F1并列时，参数顺序决定入选adapter。README已说明操作合同，但首次读取的A10未声明这个接口责任；无需为此新增登记平台。",
+      "class": "interface"
+    },
+    {
+      "site": "tools/b0_answers.py:96-118",
+      "decision": "自动输出SUPPORTED_TASK_ADVANTAGE的规则是完整真实C比较、EM差为正、组区间下界大于0且没有精度警示；F1不参与资格，未另设实际效应大小要求。",
+      "why_it_matters": "既有B0规格使用了“有实际意义的正差”，代码将自动判定落实为统计支持规则。应在ledger说明该标签的含义及效应大小仍需结合研究用途解释，不必新增数值门槛。",
+      "class": "semantic"
+    }
+  ],
+  "stale_rows": [
+    {
+      "id": "A06/A07",
+      "site": "首次读取版本 tools/b0_training.py:135-138,163-173",
+      "declared": "预算耗尽保留不完整，不宣布资格。",
+      "actual": "预算只在训练step开始检查；最后一步越过预算后，直接保存adapter、写入expert_training来源及COMPLETE，随后可进入真实V/C路径。",
+      "why_it_matters": "真实长训练步可能跨越预算。这会把按声明应中断的训练产物登记为完成候选。",
+      "current_status": "审查期间已观察到修复：当前164-165行在trainer.train()返回后再次检查预算。纯内存控制流探针设置预算10秒、最后一步结束11秒，实际抛出training_wall_budget_exhausted_at_final_step；没有进行模型训练或文件修改。"
+    }
+  ],
+  "semantic_undeclared": 2,
+  "verdict": "gaps",
+  "resolution_updates": [
+    "当前新增A16已覆盖bootstrap权重。",
+    "当前新增A17已覆盖reports顺序合同。",
+    "当前新增A18和final-step检查已处理训练预算边界；上述首轮发现来源应记录为sweep。",
+    "未发现当前训练/V推理将评分gold送入模型或访问H正文的路径。",
+    "技术缺失阻止完整主比较、fixture不授予研究资格、技术短步adapter不能进入真实专家生成，这些检查与主要声明一致。",
+    "本结论为同家族暂定审查，当前修订仍待第二轮核对。"
+  ]
+}

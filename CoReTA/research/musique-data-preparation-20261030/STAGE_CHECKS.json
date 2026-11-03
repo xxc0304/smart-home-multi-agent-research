@@ -1,0 +1,106 @@
+{
+  "status": "PASS_OFFLINE_DATA_AND_SCORER_ONLY",
+  "model_calls": 0,
+  "training_runs": 0,
+  "file_hashes_verified": 10,
+  "rows_verified_against_raw": 4600,
+  "schema_gold_isolation": "allowlisted input keys, exact comparison to raw inputs; targets in separate scoring directory",
+  "cross_role_gold_to_context_overlap_rows": 0,
+  "direct_exposed_dev_in_H": 0,
+  "prior_dev_visible_paragraph_sets_matched_to_official": 30,
+  "official_blacklist_native_source_counts": {
+    "squad2": 1122,
+    "natural_questions": 1202,
+    "zerore": 975,
+    "mlqaen": 128,
+    "trex": 2944
+  },
+  "scoring_checks": {
+    "exact_gold_fixture": {
+      "status": "MATCH_OFFICIAL_AND_EXPECTED",
+      "metrics": {
+        "answer_f1": 1.0,
+        "answer_em": 1.0,
+        "support_f1": 1.0
+      }
+    },
+    "alias_fixture": {
+      "status": "MATCH_OFFICIAL_AND_EXPECTED",
+      "metrics": {
+        "answer_f1": 1.0,
+        "answer_em": 1.0,
+        "support_f1": 1.0
+      }
+    },
+    "wrong_answer_correct_support_fixture": {
+      "status": "MATCH_OFFICIAL_AND_EXPECTED",
+      "metrics": {
+        "answer_f1": 0.0,
+        "answer_em": 0.0,
+        "support_f1": 1.0
+      }
+    },
+    "correct_answer_wrong_support_fixture": {
+      "status": "MATCH_OFFICIAL_AND_EXPECTED",
+      "metrics": {
+        "answer_f1": 1.0,
+        "answer_em": 1.0,
+        "support_f1": 0.0
+      }
+    },
+    "partial_support_fixture": {
+      "status": "MATCH_OFFICIAL_AND_EXPECTED",
+      "metrics": {
+        "answer_f1": 1.0,
+        "answer_em": 1.0,
+        "support_f1": 0.667
+      }
+    },
+    "mixed_macro_and_reordered_ID_join": {
+      "status": "MATCH_EXPECTED",
+      "metrics": {
+        "answer_f1": 0.8,
+        "answer_em": 0.8,
+        "support_f1": 0.733
+      }
+    },
+    "missing_prediction": {
+      "status": "REJECTED_NO_AGGREGATE",
+      "reason": "Missing or extra prediction IDs"
+    },
+    "duplicate_prediction_id": {
+      "status": "REJECTED_NO_AGGREGATE",
+      "reason": "Duplicate prediction IDs"
+    },
+    "out_of_range": {
+      "status": "REJECTED_NO_AGGREGATE",
+      "reason": "Supporting indices must be actual integer paragraph IDs"
+    },
+    "float_index": {
+      "status": "REJECTED_NO_AGGREGATE",
+      "reason": "Supporting indices must be actual integer paragraph IDs"
+    },
+    "bool_index": {
+      "status": "REJECTED_NO_AGGREGATE",
+      "reason": "Supporting indices must be actual integer paragraph IDs"
+    },
+    "string_index": {
+      "status": "REJECTED_NO_AGGREGATE",
+      "reason": "Supporting indices must be actual integer paragraph IDs"
+    },
+    "duplicate_support_index": {
+      "status": "REJECTED_NO_AGGREGATE",
+      "reason": "Duplicate supporting indices"
+    },
+    "extra_prediction_field": {
+      "status": "REJECTED_NO_AGGREGATE",
+      "reason": "Unexpected prediction fields"
+    }
+  },
+  "warning": "ALL scores above are hand-constructed metric fixtures using gold, NOT model predictions or scientific results.",
+  "limits": [
+    "Text can naturally contain answers; gold isolation means no answer labels/decomposition/support flags are exported as extra model fields.",
+    "Neither human annotation agreement nor model-generation end-to-end readiness has been checked.",
+    "Metric parity is against the downloaded official scorer, not against an external evaluator service."
+  ]
+}

@@ -1,0 +1,93 @@
+# 大纲 · When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning
+
+行号指 `paper.tex`。读某一节：`sed -n '起,止p' paper.tex`（或用 Read 的 offset/limit）。
+
+- L19 摘要
+- L43–118 1 Introduction
+- L119–278 2 Setup and Motivating Observations
+  - L126–278 2.1 Proposal Setup and the Martingale Null
+- L279–465 3 Headroom Recovery Theory
+  - L290–353 3.1 Recoverable Headroom and Gain
+  - L354–465 3.2 LVD as Verification-Aware Readout
+- L466–753 4 Theory-Guided System Design
+  - L479–495 4.1 Coverage-Based Society Construction
+  - L496–753 4.2 Answer-Coverage and Support-Coverage Greedy
+- L754–981 5 Experiments
+- L982–1015 6 Related Work
+- L1016–1037 7 Conclusion
+- L1036 —— 附录 ——
+- L1038–2066 A Additional Details
+  - L1040–1062 A.1 Implementation Details for \figreffig:motivatingobservations
+  - L1063–1081 A.2 Evaluation Details
+  - L1082–1134 A.3 Compute Resources
+  - L1135–1174 A.4 Existing-Asset Licenses
+  - L1175–1251 A.5 Five-Run Stochastic Robustness
+  - L1252–1263 A.6 Dataset and Split Details
+  - L1264–1328 A.7 Seed Profiling Details
+  - L1329–1423 A.8 Prompt Templates
+  - L1424–1621 A.9 Controlled Readout Probe Details
+  - L1622–1716 A.10 Dynamics and Conversion Controls
+  - L1717–1883 A.11 Secondary Construction and Transfer Diagnostics
+  - L1884–2066 A.12 Complete Round-Level Statistics
+    - L1947–2011 A.12.1 Average Recovery Diagnostics
+    - L2012–2066 A.12.2 Five-Round New-Seed Debate Results
+- L2067–2349 B Proofs for \secrefsec:headroomlvd
+  - L2070–2114 B.1 Proof of \proprefprop:recoverydamagedecomposition
+  - L2115–2181 B.2 Proof of \lemreflem:verificationweightedconjugacy
+  - L2182–2258 B.3 Proof of \lemreflem:lvdmarginalization
+  - L2259–2328 B.4 Proof of \proprefprop:verificationdirecteddrift
+  - L2329–2349 B.5 Proof of \proprefprop:correctminorityrecovery
+- L2350–2370 C Limitations
+
+## 公式（48 个，按出现顺序；L 后面是所在小节）
+
+- L138 §2.1 Proposal Setup and the Martingale Null：o_{i,t}(x)=\bigl(r_{i,t}(x),a_{i,t}(x)\bigr), \qquad a_{i,t}(x)\in\mathcal Y.
+- L147 §2.1 Proposal Setup and the Martingale Null：C_t^{(k)}=\sum\nolimits_{e_i\in S}\mathbf 1\{a_{i,t}(x)=k\}.
+- L153 §2.1 Proposal Setup and the Martingale Null：y_t^{\mathrm{vote}}(x,S) \in \arg\max_{k\in\mathcal Y} C_t^{(k)}.
+- L167 §2.1 Proposal Setup and the Martingale Null：\mathcal F_{i,t}(x,S)=\{o_{j,t-1}(x):e_j\in\mathcal N(i)\}
+- L171 §2.1 Proposal Setup and the Martingale Null：o_{i,t}(x)=\mathcal D_i(x,\mathcal F_{i,t}(x,S)).
+- L184 §2.1 Proposal Setup and the Martingale Null `eq:dcm_count_update`：\alpha_{t+1}^{(k)}=\alpha_t^{(k)}+C_t^{(k)}.
+- L195 §2.1 Proposal Setup and the Martingale Null `eq:martingale_null`：\mathbb E[Q_{t+1}\mid\mathcal F_t]=Q_t.
+- L297 §3.1 Recoverable Headroom and Gain `eq:vote_proposal_hit`：\begin{aligned} V(x,S)&=\mathbf 1\{\operatorname{Vote}(\mathcal M(x,S))=y^\star\},\\ P(x,S)&=\mathbf 1\{\exist…
+- L307 §3.1 Recoverable Headroom and Gain `eq:headroom`：\mathcal H(S)=\Pr_x(P(x,S)=1,V(x,S)=0).
+- L316 §3.1 Recoverable Headroom and Gain `eq:recovery_damage`：\begin{aligned} R_\eta(S)&=\Pr(D_\eta=1\mid P=1,V=0),\\ I_\eta(S)&=\Pr(D_\eta=1\mid P=0,V=0),\\ L_\eta(S)&=\Pr…
+- L327 §3.1 Recoverable Headroom and Gain `eq:gain_def`：\mathcal G_\eta(S)=\mathbb E[D_\eta(x,S)-V(x,S)].
+- L334 §3.1 Recoverable Headroom and Gain `eq:headroom_decomposition`：\mathcal G_\eta(S) = \mathcal H(S)R_\eta(S) + \Pr(P=0,V=0)I_\eta(S) - \Pr(V=1)L_\eta(S).
+- L379 §3.2 LVD as Verification-Aware Readout `eq:prop_alpha`：\alpha_t^{\mathrm{prop}}(k) = \kappa q_\theta^0(k\mid x)+C_t^{(k)}, \qquad p_{\mathrm{prop}}(y=k\mid x,\mathca…
+- L398 §3.2 LVD as Verification-Aware Readout `eq:lvd_posterior`：\begin{aligned} \alpha_{\mathrm{LVD},\eta}^{(k)} &=\kappa q_\theta^0(k\mid x)+C_t^{(k)}+W_{\eta,t}^{(k)},\\ p_…
+- L428 §3.2 LVD as Verification-Aware Readout `eq:lvd_positive_drift_ratio`：\frac{W_{\eta,t}^{(y^\star)}}{W_{\eta,t}^+} > \frac{\alpha_t^\star}{A_t} = Q_t^{\mathrm{prop}}.
+- L449 §3.2 LVD as Verification-Aware Readout `eq:lvd_recovery_condition`：W_{\eta,t}^{(y^\star)}-W_{\eta,t}^{(y_v)} > \alpha_t^{\mathrm{prop}}(y_v)-\alpha_t^{\mathrm{prop}}(y^\star).
+- L470 §4 Theory-Guided System Design：\mathcal P_{\mathrm{hit}}(S)=\Pr(P(x,S)=1)=\Pr(V=1)+\mathcal H(S),
+- L487 §4.1 Coverage-Based Society Construction `eq:proposal_hit_potential`：\mathcal P_{\mathrm{hit},K}^\star(\gP_N) = \max\nolimits_{S\subseteq \gP_N,\ |S|=K}\Pr(P(x,S)=1).
+- L506 §4.2 Answer-Coverage and Support-Coverage Gre `eq:coverage_objective`：\begin{aligned} S_K &\in \arg\max\nolimits_{S\subseteq\mathcal P,\ |S|=K} \widehat{\mathcal C}_\psi(S),\\ \wid…
+- L521 §4.2 Answer-Coverage and Support-Coverage Gre `eq:greedy_step`：e_m\in\arg\max\nolimits_{e\in\mathcal P\setminus S_{m-1}} \left[\widehat{\mathcal C}_\psi(S_{m-1}\cup\{e\}) -\…
+- L531 §4.2 Answer-Coverage and Support-Coverage Gre `eq:answer_coverage_proxy`：\psi_{\mathrm{AC}}(e,u)=\mathbf 1\{a_e(u)=y^\star(u)\}.
+- L543 §4.2 Answer-Coverage and Support-Coverage Gre：\widehat p_u(c) = \frac{ |\{e\in\mathcal P:c_e(u)=c\}| }{ |\{e\in\mathcal P:e\text{ has a valid extracted answ…
+- L554 §4.2 Answer-Coverage and Support-Coverage Gre `eq:support_coverage_proxy`：\psi_{\mathrm{SC}}(e,u)= \begin{cases} \widehat p_u(c_e(u)), & \text{if }e\text{ has a valid extracted answer}…
+- L913 §5 Experiments：m(x)=\log p(y_g\mid x)-\log p(y_w\mid x).
+- L1276 §A.7 Seed Profiling Details `eq:thicket_eval`：v_m = \frac{1}{|\mathcal D_{\mathrm{train}}|} \sum\nolimits_{(x,y^\star)\in\mathcal D_{\mathrm{train}}} \mathb…
+- L1429 §A.9 Controlled Readout Probe Details：m_a(x)=\log p(y_g\mid x)-\log\sum_{y\ne y_g}p(y\mid x).
+- L1434 §A.9 Controlled Readout Probe Details：A=[m_a(T)-m_a(N)]-[m_a(N)-m_a(F)],
+- L2075 §B.1 Proof of \proprefprop:recoverydamagedeco：\mathcal G_\eta(S)=\mathbb E[D_\eta-V] = \Pr(D_\eta=1,V=0)-\Pr(D_\eta=0,V=1).
+- L2082 §B.1 Proof of \proprefprop:recoverydamagedeco：\Pr(D_\eta=1,V=0) = \Pr(D_\eta=1,P=1,V=0) + \Pr(D_\eta=1,P=0,V=0).
+- L2090 §B.1 Proof of \proprefprop:recoverydamagedeco：\Pr(D_\eta=1,P=1,V=0) = \Pr(P=1,V=0)\Pr(D_\eta=1\mid P=1,V=0) = \mathcal H(S)R_\eta(S),
+- L2098 §B.1 Proof of \proprefprop:recoverydamagedeco：\Pr(D_\eta=1,P=0,V=0) = \Pr(P=0,V=0)I_\eta(S).
+- L2104 §B.1 Proof of \proprefprop:recoverydamagedeco：\Pr(D_\eta=0,V=1) = \Pr(V=1)\Pr(D_\eta=0\mid V=1) = \Pr(V=1)L_\eta(S).
+- L2126 §B.2 Proof of \lemreflem:verificationweighted：p(\mathcal F_t,W_{\eta,t}\mid \pi) \propto \prod_{k\in\mathcal Y_t} \left(\pi^{(k)}\right)^{C_t^{(k)}+W_{\eta,…
+- L2138 §B.2 Proof of \lemreflem:verificationweighted：p(\pi\mid x) \propto \prod_{k\in\mathcal Y_t} \left(\pi^{(k)}\right)^{\alpha_0^{(k)}-1}.
+- L2145 §B.2 Proof of \lemreflem:verificationweighted：\begin{aligned} p(\pi\mid x,\mathcal F_t,W_{\eta,t}) &\propto p(\pi\mid x)\, p(\mathcal F_t,W_{\eta,t}\mid \pi…
+- L2159 §B.2 Proof of \lemreflem:verificationweighted：\alpha_0^{(k)}+C_t^{(k)}+W_{\eta,t}^{(k)} = \kappa q_\theta^0(k\mid x)+C_t^{(k)}+W_{\eta,t}^{(k)}.
+- L2166 §B.2 Proof of \lemreflem:verificationweighted：\mathbb E[\pi^{(k)}\mid x,\mathcal F_t,W_{\eta,t}] = \frac{ \kappa q_\theta^0(k\mid x)+C_t^{(k)}+W_{\eta,t}^{(…
+- L2188 §B.3 Proof of \lemreflem:lvdmarginalization `eq:verification_direction`：q_\eta^v(z\mid x,\mathcal F_t) = \operatorname{softmax}_{z\in\mathcal Y_t} \bigl(a_\eta(z;x,\mathcal F_t)\bigr…
+- L2197 §B.3 Proof of \lemreflem:lvdmarginalization `eq:lvd_conditional`：p_\eta(y=k\mid v=z,x,\mathcal F_t) = \frac{ \kappa q_\theta^0(k\mid x)+C_t^{(k)} +\tau_{\eta,t}\mathbf 1\{z=k\…
+- L2215 §B.3 Proof of \lemreflem:lvdmarginalization：p_\eta(y=k\mid v=z,x,\mathcal F_t) = \frac{ \kappa q_\theta^0(k\mid x)+C_t^{(k)} +\tau_{\eta,t}\mathbf 1\{z=k\…
+- L2226 §B.3 Proof of \lemreflem:lvdmarginalization：\begin{aligned} p_\eta(y=k\mid x,\mathcal F_t) &= \sum_{z\in\mathcal Y_t} q_\eta^v(z\mid x,\mathcal F_t) p_\et…
+- L2252 §B.3 Proof of \lemreflem:lvdmarginalization：W_{\eta,t}^{(k)}=\tau_{\eta,t}q_\eta^v(k\mid x,\mathcal F_t), \qquad W_{\eta,t}^+=\tau_{\eta,t}.
+- L2269 §B.4 Proof of \proprefprop:verificationdirect：\begin{aligned} \widetilde Q_{\eta,t}^{\mathrm{LVD}}-Q_t^{\mathrm{prop}} &= \frac{\alpha_t^\star+W_{\eta,t}^{(…
+- L2297 §B.4 Proof of \proprefprop:verificationdirect：A_tW_{\eta,t}^{(y^\star)} > \alpha_t^\star W_{\eta,t}^+.
+- L2303 §B.4 Proof of \proprefprop:verificationdirect：\frac{W_{\eta,t}^{(y^\star)}}{W_{\eta,t}^+} > \frac{\alpha_t^\star}{A_t} = Q_t^{\mathrm{prop}},
+- L2312 §B.4 Proof of \proprefprop:verificationdirect：\mathbb E\!\left[ \frac{ A_tW_{\eta,t}^{(y^\star)} - \alpha_t^\star W_{\eta,t}^+ }{ A_t(A_t+W_{\eta,t}^+) } \m…
+- L2336 §B.5 Proof of \proprefprop:correctminorityrec：\alpha_t^{\mathrm{prop}}(y^\star)+W_{\eta,t}^{(y^\star)} > \alpha_t^{\mathrm{prop}}(y_v)+W_{\eta,t}^{(y_v)}.
+- L2342 §B.5 Proof of \proprefprop:correctminorityrec：W_{\eta,t}^{(y^\star)}-W_{\eta,t}^{(y_v)} > \alpha_t^{\mathrm{prop}}(y_v)-\alpha_t^{\mathrm{prop}}(y^\star),
+
+图表的页码、caption、在哪节被引用：见 `figures/index.md`。

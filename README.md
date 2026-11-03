@@ -1,3 +1,7 @@
+# 最新接手入口（2026-11-03）
+
+当前进展与实验室3090主机迁移说明见 [LAB_HANDOFF_20261103.md](LAB_HANDOFF_20261103.md)。CoReTA 当前状态以 handoff.md / CURRENT_STATE.md 顶部为准。下方2026-10-18导航为历史记录。
+
 # 项目导航（2026-10-18）
 
 - **当前方法研究：[CoReTA](CoReTA/README.md)**：定向帮助与成员互补推理，架构 v0.2，尚未实现或验证效果。
@@ -57,3 +61,4 @@
 ```powershell
 git clone https://github.com/xxc0304/smart-home-multi-agent-research.git
 ```
+

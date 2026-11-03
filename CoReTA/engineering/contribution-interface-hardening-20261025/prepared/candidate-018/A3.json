@@ -1,0 +1,56 @@
+{
+  "member": "A3",
+  "task": {
+    "task_id": "candidate-screening-018",
+    "scenario": "You are leaders of a multi-national research expedition in a mountainous region planning to set up your central base camp for a two-week mission. There are three candidate spots: Camp Summit (high ground near a glacier), Camp Pinecone (forest edge near a river), and Camp Meadow (open grassland below a ridge). Each has some historical data and rumored risks, but no location is perfect. Your decision must be made within the next hour before dark. Weather, animal activity, equipment delivery, and avalanche danger all affect safety and logistics.",
+    "shared_information": [
+      "Camp Summit is forecasted to have stable weather for the next 72 hours, making it seem the safest immediate location.",
+      "Site managers last week delivered extra cold-weather gear to Camp Summit, so supplies there should be plentiful.",
+      "Camp Pinecone had reports last year of bears near the river in early summer.",
+      "Camp Meadow is expected to get high winds tonight according to regional weather bulletins."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Camp Pinecone"
+      },
+      {
+        "id": "option_2",
+        "text": "Camp Meadow"
+      },
+      {
+        "id": "option_3",
+        "text": "Camp Summit"
+      }
+    ],
+    "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+  },
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "You are leaders of a multi-national research expedition in a mountainous region planning to set up your central base camp for a two-week mission. There are three candidate spots: Camp Summit (high ground near a glacier), Camp Pinecone (forest edge near a river), and Camp Meadow (open grassland below a ridge). Each has some historical data and rumored risks, but no location is perfect. Your decision must be made within the next hour before dark. Weather, animal activity, equipment delivery, and avalanche danger all affect safety and logistics."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "Camp Summit is forecasted to have stable weather for the next 72 hours, making it seem the safest immediate location."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Site managers last week delivered extra cold-weather gear to Camp Summit, so supplies there should be plentiful."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "Camp Pinecone had reports last year of bears near the river in early summer."
+    },
+    {
+      "ref": "PUBLIC.4",
+      "content": "Camp Meadow is expected to get high winds tonight according to regional weather bulletins."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "S03",
+      "content": "The glacier overlooking Camp Summit was reported by the last survey team to have developed new cracks, making sudden avalanches possible if temperatures rise."
+    }
+  ]
+}

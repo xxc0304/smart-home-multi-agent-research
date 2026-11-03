@@ -1,0 +1,29 @@
+{
+  "schema_version": "coreta/0.5-closure",
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "generation": {
+    "reasoning_effort": "none",
+    "temperature": 0.7,
+    "max_input_tokens": 32768,
+    "max_output_tokens": {
+      "draft": 4096,
+      "refine_draft": 4096,
+      "synthesize": 4096,
+      "build": 4096,
+      "work": 4096,
+      "apply": 4096,
+      "inspect": 8192,
+      "final": 4096
+    }
+  },
+  "protocol": {
+    "max_work_turns": 2,
+    "max_format_repairs": 2,
+    "transport_retries_per_request": 0,
+    "request_timeout_seconds": 120,
+    "task_timeout_seconds": 1800
+  }
+}

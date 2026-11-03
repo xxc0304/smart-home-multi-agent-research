@@ -1,0 +1,40 @@
+{
+  "purpose": "seen-task baseline output length calibration; not a capability comparison",
+  "task_id": "mbpp/train/603",
+  "systems": [
+    "static_debate",
+    "independent_aggregate",
+    "independent_refine"
+  ],
+  "normal_call_cap": 24,
+  "draft_bank": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\closure-baseline-calibration-20261019\\draft-bank",
+  "source_draft_payload_hashes": [
+    "7f15aa27fa94a392f9e4ef4c49ea18bad61d9d409a232440e414cd82c6394f0a",
+    "e92966e18e4eec6ce19e308ca833d563d63f687b94f64f6d9a963ac41b1d94e9",
+    "b4cb3d86373d651744b9c1233eb498cb32295c917053b8a9796c9b57ef7fcbb6"
+  ],
+  "source_hashes": {
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\closure.py": "cf73a83e23cb3c76565d9e9b6c810c49c09c3fc84923a149db2acb2de89ed2c4",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\run_closure.py": "3df1eae6bee058dfb32d9a1169cbc1479950d95ffba007ee7c678f98274e6e27",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\revision.py": "e2e0a0134e61f947c4bf8216c3cfeaa11f828932aceafebab186de50f2282321",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\model_client.py": "5da91ab801ff8aa0c7bc26d3653d151be2dd0957f70c9331c970080e583088a3",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\state.py": "23171f392cf782de4ba8bd1407f971b1dbcc4840d37650e69cbb8b61374de346",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\schemas.py": "95362e9c7dd007171bb8e0008a84642de66d1df9fb8f7817438bf9db6b93d51a",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\scoring.py": "dea1cfc0d3b8cd8158cd582a97b8612bdd22ae4fcf47cbe73a7845ec362ff413",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\config\\deepseek_flash_closure.json": "a7b73ce2e7235fafc1fd5c3b6f5f10d14ccffbb18becf5fd2724304437edb026",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\closure_prompts.json": "ec31174de32da0aad4a859d400fab75f3275ceb3176330e545442a52191bbafe",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\v0.3\\coreta.schema.json": "963552ce9c8463d17191645dbe90c07b5c0873a3a409c18bad4aab6182d15c69",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\tokenizer-v4.1-flash-1017\\tokenizer.json": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\difficulty-screen-20261019\\evaluation\\mbpp_tests.json": "8e5b9a4537207c6eebbde60eaac23923bd4d5ca7f549030e57e30e099c317a60",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\engineering\\SCORING_IMAGE_20261019.txt": "609aed7e1372676b60925c98647852c2e776ae5c4dfd8c7ebf874f0ac4e0eaad",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\closure-calibration-20261019\\events.jsonl": "d1f794df76bedd67f1a057fa201157611adb3e45ef2df06bb7ea675d2d900119",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\closure-calibration-20261019\\manifest.json": "ebc051c402d1b9d039b1ebd495a0c62e16483687d225ad08f10fe09a918074eb",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\closure-calibration-20261019\\public_task.json": "1bd8b9d9eb09740ac7dc8922830d31757ec32c121017b543ab113ca7272d8f7c",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\closure-calibration-20261019\\contract_snapshot.json": "9a553bc1abcb7dc70d1462924a5f1c918b7c23744a2d246f181583c9bd68ff3e",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\closure-baseline-calibration-20261019\\draft-bank\\1dc0ff96f39532e3c54eeaf8103fe90d705b4c66a6b79b7ae9af9b5764f04d60.json": "f4a74621245f7ccfd37474011770d95d6ce497003e76a8cbee7a7a70ba0bae54",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\closure-baseline-calibration-20261019\\draft-bank\\2bfa9794bdac9f2f7c759284621582703db6d59527be10ebb5c02e10d5bae53d.json": "ba5c4466bca315b855b339b22d0dbc195341996aaa4fd6e123a24ec05c1046bc",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\closure-baseline-calibration-20261019\\draft-bank\\5cb0ccb527a6ee58a58f1607b3e885ced8b4bd5fc9702a09411e682345deab50.json": "3269907880ca75d5b0463533fdf3de69873a54a5dff32956d58f90ef45562c52",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\tools\\calibrate_closure_baselines.py": "cf8ac88cd2a62eadf6ff7ab27c12c2aeeed532cc8ac3ccc09e613e8758181170"
+  },
+  "failure_policy": "retain failures; no automatic rerun, replacement, configuration changes or capacity increases"
+}

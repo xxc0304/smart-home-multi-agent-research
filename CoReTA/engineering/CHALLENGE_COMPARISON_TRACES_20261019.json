@@ -1,0 +1,943 @@
+[
+  {
+    "task_id": "gsm8k/train/310",
+    "run_id": "coreta-revision-ed99641ad2c9",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Each employee works 25 days × 8 hours/day = 200 hours per month.\n\nWarehouse wages: 4 workers × $15/hour × 200 hours = 4 × $3,000 = $12,000.\nManager wages: 2 managers × $20/hour × 200 hours = 2 × $4,000 = $8,000.\nTotal wages: $12,000 + $8,000 = $20,000.\nFICA taxes: 10% × $20,000 = $2,000.\nTotal owed for wages plus taxes: $20,000 + $2,000 = $22,000.\n\n\\boxed{\\$22{,}000}",
+    "prefinal_artifact": "Each employee works 25 × 8 = 200 hours per month.\n\nWarehouse wages: 4 workers × $15/hour × 200 hours = 4 × $3,000 = $12,000.\nManager wages: 2 managers × $20/hour × 200 hours = 2 × $4,000 = $8,000.\nTotal wages: $12,000 + $8,000 = $20,000.\nFICA taxes: 10% × $20,000 = $2,000.\nTotal owed for wages plus taxes: $20,000 + $2,000 = $22,000.\n\n\\boxed{\\$22{,}000}",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 10,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "6952a85a416720b7a856c6a67259c8b5046c2b41e1dee5c45275741aa6559aa7",
+      "4fc12caf245bec6a630a743b2877c606d9f8e0fa0ce1f4ef53075d555ca3dfb9",
+      "85ab19ed26473d7510f03d26a51e460504bf578872d88cbc3776d758a4652498"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/310",
+    "run_id": "coreta-revision-e7dc68452fd5",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Monthly hours per employee: 25 days × 8 hours/day = 200 hours.\n\nWarehouse wages: 4 workers × $15/hour × 200 hours = 4 × $3,000 = $12,000.\nManager wages: 2 managers × $20/hour × 200 hours = 2 × $4,000 = $8,000.\nTotal wages: $12,000 + $8,000 = $20,000.\nFICA taxes: 10% × $20,000 = $2,000.\nTotal owed for wages and taxes: $20,000 + $2,000 = $22,000.\n\nCross-check via blended rate: combined hourly payroll = 4×$15 + 2×$20 = $60 + $40 = $100/hour; over 200 hours this is $100 × 200 = $20,000; ×1.10 = $22,000, consistent.\n\n\\boxed{\\$22{,}000}",
+    "prefinal_artifact": "Monthly hours per employee: 25 days × 8 hours/day = 200 hours.\n\nWarehouse wages: 4 workers × $15/hour × 200 hours = 4 × $3,000 = $12,000.\nManager wages: 2 managers × $20/hour × 200 hours = 2 × $4,000 = $8,000.\nTotal wages: $12,000 + $8,000 = $20,000.\nFICA taxes: 10% × $20,000 = $2,000.\nTotal owed for wages and taxes: $20,000 + $2,000 = $22,000.\n\nCross-check via blended rate: combined hourly payroll = 4×$15 + 2×$20 = $100/hour; over 200 hours this is $100 × 200 = $20,000; ×1.10 = $22,000, consistent.\n\n\\boxed{\\$22{,}000}",
+    "finalizer_changed": true,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 5,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "6952a85a416720b7a856c6a67259c8b5046c2b41e1dee5c45275741aa6559aa7",
+      "4fc12caf245bec6a630a743b2877c606d9f8e0fa0ce1f4ef53075d555ca3dfb9",
+      "85ab19ed26473d7510f03d26a51e460504bf578872d88cbc3776d758a4652498"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "gsm8k/train/310",
+    "run_id": "coreta-revision-8d11d8226291",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Each employee works 25 × 8 = 200 hours per month.\n\nWarehouse wages: 4 × $15 × 200 = $12,000.\nManager wages: 2 × $20 × 200 = $8,000.\nTotal wages: $12,000 + $8,000 = $20,000.\nFICA taxes: 10% × $20,000 = $2,000.\nTotal owed: $20,000 + $2,000 = $22,000.\n\n\\boxed{\\$22{,}000}",
+    "prefinal_artifact": "Monthly hours per employee: 25 days × 8 hours/day = 200 hours.\n\nWarehouse wages: 4 workers × $15/hour × 200 hours = 4 × $3,000 = $12,000.\nManager wages: 2 managers × $20/hour × 200 hours = 2 × $4,000 = $8,000.\nTotal wages: $12,000 + $8,000 = $20,000.\nFICA taxes: 10% × $20,000 = $2,000.\nTotal owed for wages and taxes: $20,000 + $2,000 = $22,000.\n\n\\boxed{\\$22{,}000}",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "6952a85a416720b7a856c6a67259c8b5046c2b41e1dee5c45275741aa6559aa7",
+      "4fc12caf245bec6a630a743b2877c606d9f8e0fa0ce1f4ef53075d555ca3dfb9",
+      "85ab19ed26473d7510f03d26a51e460504bf578872d88cbc3776d758a4652498"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/310",
+    "run_id": "coreta-revision-5c80b50ca2ef",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Monthly hours per employee: 25 days × 8 hours/day = 200 hours.\n\nWarehouse wages: 4 workers × $15/hour × 200 hours = 4 × $3,000 = $12,000.\nManager wages: 2 managers × $20/hour × 200 hours = 2 × $4,000 = $8,000.\nTotal wages: $12,000 + $8,000 = $20,000.\nFICA taxes: 10% × $20,000 = $2,000.\nTotal owed for wages and taxes: $20,000 + $2,000 = $22,000.\n\n\\boxed{\\$22{,}000}",
+    "prefinal_artifact": "Monthly hours per employee: 25 days × 8 hours/day = 200 hours.\n\nWarehouse wages: 4 workers × $15/hour × 200 hours = 4 × $3,000 = $12,000.\nManager wages: 2 managers × $20/hour × 200 hours = 2 × $4,000 = $8,000.\nTotal wages: $12,000 + $8,000 = $20,000.\nFICA taxes: 10% × $20,000 = $2,000.\nTotal owed for wages and taxes: $20,000 + $2,000 = $22,000.\n\n\\boxed{\\$22{,}000}",
+    "finalizer_changed": false,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "6952a85a416720b7a856c6a67259c8b5046c2b41e1dee5c45275741aa6559aa7",
+      "4fc12caf245bec6a630a743b2877c606d9f8e0fa0ce1f4ef53075d555ca3dfb9",
+      "85ab19ed26473d7510f03d26a51e460504bf578872d88cbc3776d758a4652498"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/3750",
+    "run_id": "coreta-revision-3e171530d75a",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Each doll requires 2 + 3 + 1 + 5 = 11 accessories. At 10 s per accessory, accessory time per doll is 11 × 10 = 110 s. Adding the doll's own 45 s gives 45 + 110 = 155 s per doll. For 12,000 dolls: 12,000 × 155 = 1,860,000 s. Cross-check: doll time = 12,000 × 45 = 540,000 s; accessory time = 12,000 × 11 × 10 = 1,320,000 s; combined = 540,000 + 1,320,000 = 1,860,000 s. Therefore the total combined machine operation time is \\boxed{1,860,000 \\text{ seconds}}.",
+    "prefinal_artifact": "Each doll has 2 + 3 + 1 + 5 = 11 accessories. Accessory time per doll = 11 × 10 = 110 s. Doll time per doll = 45 s. Total per doll = 45 + 110 = 155 s. For 12,000 dolls: 12,000 × 155 = 1,860,000 s. Cross-check by separate totals: doll time = 12,000 × 45 = 540,000 s; accessory time = 12,000 × 11 × 10 = 1,320,000 s; combined = 540,000 + 1,320,000 = 1,860,000 s. Boxed answer: \\boxed{1,860,000 \\text{ seconds}}",
+    "finalizer_changed": true,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 8,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "03f69d670f761189dddc4b3370918a8e230f639b71302423117a47da2ef8e301",
+      "ecd4885d848e996cc2e4501e4158cc48ade445322089be5c1c4f23319609e997",
+      "077b58a9ae6197afb6097f1ce58d74e49510d98c43930cf3d674b2e9f19a6d57"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "gsm8k/train/3750",
+    "run_id": "coreta-revision-f2bb189bece2",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Each doll requires 2+3+1+5 = 11 accessories. Accessory time per doll = 11 × 10 = 110 seconds. Including the doll itself: 45 + 110 = 155 seconds per doll. For 12,000 dolls: 12,000 × 155 = 1,860,000 seconds. Thus the total combined machine operation time is \\boxed{1{,}860{,}000\\text{ seconds}}.",
+    "prefinal_artifact": "Each doll has 2+3+1+5 = 11 accessories. Accessory time per doll = 11 × 10 = 110 s. Doll time per doll = 45 s. Total per doll = 155 s. For 12,000 dolls: 12,000 × 155 = 1,860,000 s. Boxed answer: 1,860,000 seconds.",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "03f69d670f761189dddc4b3370918a8e230f639b71302423117a47da2ef8e301",
+      "ecd4885d848e996cc2e4501e4158cc48ade445322089be5c1c4f23319609e997",
+      "077b58a9ae6197afb6097f1ce58d74e49510d98c43930cf3d674b2e9f19a6d57"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/3750",
+    "run_id": "coreta-revision-ea25b71c3ec3",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Each doll comes with 2 + 3 + 1 + 5 = 11 accessories.\n\nAccessory manufacturing time per doll: 11 × 10 = 110 seconds.\nDoll manufacturing time per doll: 45 seconds.\nTotal time per doll: 45 + 110 = 155 seconds.\n\nFor 12,000 dolls:\n12,000 × 155 = 1,860,000 seconds.\n\nCross-check: doll time = 12,000 × 45 = 540,000 s; accessory time = 12,000 × 110 = 1,320,000 s; sum = 540,000 + 1,320,000 = 1,860,000 s.\n\n\\boxed{1860000\\text{ seconds}}",
+    "prefinal_artifact": "Each doll comes with 2 + 3 + 1 + 5 = 11 accessories. Manufacturing accessories for one doll takes 11 × 10 = 110 seconds. Adding the 45 seconds to make the doll gives 110 + 45 = 155 seconds per doll (with its accessories). For 12,000 dolls, the total time is 12,000 × 155 = 1,860,000 seconds. Equivalently, doll time = 12,000 × 45 = 540,000 s and accessory time = 12,000 × 110 = 1,320,000 s, summing to 1,860,000 s. Boxed answer: \\boxed{1860000} seconds.",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "03f69d670f761189dddc4b3370918a8e230f639b71302423117a47da2ef8e301",
+      "ecd4885d848e996cc2e4501e4158cc48ade445322089be5c1c4f23319609e997",
+      "077b58a9ae6197afb6097f1ce58d74e49510d98c43930cf3d674b2e9f19a6d57"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/3750",
+    "run_id": "coreta-revision-9d8aa3d30c07",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Accessories per doll: 2 shoes + 3 bags + 1 set of cosmetics + 5 hats = 2 + 3 + 1 + 5 = 11 accessories. Accessory time per doll: 11 × 10 = 110 seconds. Doll time per doll: 45 seconds. Combined time per doll: 45 + 110 = 155 seconds. For 12,000 dolls: 12,000 × 155 = 12,000 × 100 + 12,000 × 55 = 1,200,000 + 660,000 = 1,860,000 seconds. Check: doll time = 12,000 × 45 = 540,000 s; accessory time = 12,000 × 110 = 1,320,000 s; total = 540,000 + 1,320,000 = 1,860,000 s. Boxed answer: \\boxed{1{,}860{,}000\\text{ seconds}}.",
+    "prefinal_artifact": "Accessories per doll: 2 shoes + 3 bags + 1 set of cosmetics + 5 hats = 2 + 3 + 1 + 5 = 11 accessories. Accessory time per doll: 11 × 10 = 110 seconds. Doll time per doll: 45 seconds. Combined time per doll: 45 + 110 = 155 seconds. For 12,000 dolls: 12,000 × 155 = 12,000 × 100 + 12,000 × 55 = 1,200,000 + 660,000 = 1,860,000 seconds. Boxed answer: \\boxed{1{,}860{,}000\\text{ seconds}}.",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "03f69d670f761189dddc4b3370918a8e230f639b71302423117a47da2ef8e301",
+      "ecd4885d848e996cc2e4501e4158cc48ade445322089be5c1c4f23319609e997",
+      "077b58a9ae6197afb6097f1ce58d74e49510d98c43930cf3d674b2e9f19a6d57"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/7446",
+    "run_id": "coreta-revision-86377861deed",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Male:female = 3:2 with 1000 students total. Male students = (3/5)×1000 = 600; female students = (2/5)×1000 = 400.\n\nMales who like basketball = (2/3)×600 = 400, so males who do not = 600 − 400 = 200.\nFemales who like basketball = (1/5)×400 = 80, so females who do not = 400 − 80 = 320.\n\nTotal who do not like basketball = 200 + 320 = 520.\nPercent = (520/1000)×100% = 52%.\n\nCheck by weighted fractions: (3/5)(1/3) + (2/5)(4/5) = 1/5 + 8/25 = 5/25 + 8/25 = 13/25 = 0.52 = 52%.\n\n\\boxed{52\\%}",
+    "prefinal_artifact": "Male:female = 3:2 with 1000 students total. Male students = (3/5)×1000 = 600; female students = (2/5)×1000 = 400.\n\nMales who like basketball = (2/3)×600 = 400, so males who do not = 600 − 400 = 200.\nFemales who like basketball = (1/5)×400 = 80, so females who do not = 400 − 80 = 320.\n\nTotal who do not like basketball = 200 + 320 = 520.\nPercent = (520/1000)×100% = 52%.\n\nBoxed answer: 52%",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 4,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "706b97d06193d4f59b7af5af65f7d0986636a4d8f6e02939876533b742caa031",
+      "b6a68551a2beb675d71a56afb7f994b44ddb79b1477a80e820939e4e708fd01d",
+      "51b242b480e6acf00c9a70f4e5b8917c39df60d60e72856ca4778aa40af35752"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/7446",
+    "run_id": "coreta-revision-079f024e2af1",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Male:female = 3:2 with 1000 students total, so males = (3/5)×1000 = 600 and females = (2/5)×1000 = 400.\n\nMales who like basketball = (2/3)×600 = 400, so males who do not = 600 − 400 = 200 (equivalently 600×(1/3) = 200).\nFemales who like basketball = (1/5)×400 = 80, so females who do not = 400 − 80 = 320 (equivalently 400×(4/5) = 320).\n\nTotal who do not like basketball = 200 + 320 = 520.\nPercent = (520/1000)×100% = 52%.\n\nWeighted-fraction check: (3/5)(1/3) + (2/5)(4/5) = 1/5 + 8/25 = 5/25 + 8/25 = 13/25 = 0.52 = 52%.\n\nRatio-only check: let males = 3k, females = 2k. Non-likers = 3k·(1/3) + 2k·(4/5) = k + 8k/5 = 13k/5 out of 5k, giving (13k/5)/(5k) = 13/25 = 52%.\n\nComplement check: likers = (3/5)(2/3) + (2/5)(1/5) = 2/5 + 2/25 = 12/25 = 48%; 100% − 48% = 52%.\n\n\\boxed{52\\%}",
+    "prefinal_artifact": "Male:female = 3:2 with 1000 students total, so males = (3/5)×1000 = 600 and females = (2/5)×1000 = 400.\n\nMales who like basketball = (2/3)×600 = 400, so males who do not = 600 − 400 = 200 (equivalently 600×(1/3) = 200).\nFemales who like basketball = (1/5)×400 = 80, so females who do not = 400 − 80 = 320 (equivalently 400×(4/5) = 320).\n\nTotal who do not like basketball = 200 + 320 = 520.\nPercent = (520/1000)×100% = 52%.\n\nIndependent weighted-fraction check: (3/5)(1/3) + (2/5)(4/5) = 1/5 + 8/25 = 5/25 + 8/25 = 13/25 = 0.52 = 52%.\n\nRatio-only check (no use of the 1000 total): let males = 3k, females = 2k. Male non-likers = 3k·(1/3) = k; female non-likers = 2k·(4/5) = 8k/5. Total non-likers = k + 8k/5 = 13k/5 out of 5k students, giving (13k/5)/(5k) = 13/25 = 52%. Setting k = 200 recovers 600 males, 400 females, and 520 non-likers.\n\nComplement check: likers = (3/5)(2/3) + (2/5)(1/5) = 2/5 + 2/25 = 12/25 = 48%; 100% − 48% = 52%.\n\n\\boxed{52\\%}",
+    "finalizer_changed": true,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 5,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "706b97d06193d4f59b7af5af65f7d0986636a4d8f6e02939876533b742caa031",
+      "b6a68551a2beb675d71a56afb7f994b44ddb79b1477a80e820939e4e708fd01d",
+      "51b242b480e6acf00c9a70f4e5b8917c39df60d60e72856ca4778aa40af35752"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "gsm8k/train/7446",
+    "run_id": "coreta-revision-4f93405c1378",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Male:female = 3:2, total 1000 students. Male students = (3/5)·1000 = 600; female students = (2/5)·1000 = 400.\n\nMales who like basketball = (2/3)·600 = 400, so males who do not = 600 − 400 = 200.\nFemales who like basketball = (1/5)·400 = 80, so females who do not = 400 − 80 = 320.\n\nTotal who do not like basketball = 200 + 320 = 520.\nPercent = (520/1000)·100% = 52%.\n\nEquivalent weighted-fraction check: (3/5)(1/3) + (2/5)(4/5) = 1/5 + 8/25 = 5/25 + 8/25 = 13/25 = 0.52 = 52%.\n\n\\boxed{52\\%}",
+    "prefinal_artifact": "Male:female = 3:2, total 1000 students. Male students = (3/5)·1000 = 600; female students = (2/5)·1000 = 400.\n\nMales who like basketball = (2/3)·600 = 400, so males who do not = 600 − 400 = 200.\nFemales who like basketball = (1/5)·400 = 80, so females who do not = 400 − 80 = 320.\n\nTotal who do not like basketball = 200 + 320 = 520.\nPercent = (520/1000)·100% = 52%.\n\nEquivalent weighted-fraction check: (3/5)(1/3) + (2/5)(4/5) = 1/5 + 8/25 = 5/25 + 8/25 = 13/25 = 0.52 = 52%.\n\n\\boxed{52\\%}",
+    "finalizer_changed": false,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "706b97d06193d4f59b7af5af65f7d0986636a4d8f6e02939876533b742caa031",
+      "b6a68551a2beb675d71a56afb7f994b44ddb79b1477a80e820939e4e708fd01d",
+      "51b242b480e6acf00c9a70f4e5b8917c39df60d60e72856ca4778aa40af35752"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/7446",
+    "run_id": "coreta-revision-e5d8c9383ce3",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Male:female = 3:2 with 1000 students total. The ratio has 3 + 2 = 5 parts, so one part is 1000/5 = 200 students. Males = 3 × 200 = 600; females = 2 × 200 = 400.\n\nMales who like basketball = (2/3) × 600 = 400, so males who do not = 600 − 400 = 200.\nFemales who like basketball = (1/5) × 400 = 80, so females who do not = 400 − 80 = 320.\n\nTotal who do not like basketball = 200 + 320 = 520.\nPercent = (520/1000) × 100% = 52%.\n\nCheck via weighted fractions: (3/5)(1 − 2/3) + (2/5)(1 − 1/5) = (3/5)(1/3) + (2/5)(4/5) = 1/5 + 8/25 = 5/25 + 8/25 = 13/25 = 0.52 = 52%.\n\n\\boxed{52\\%}",
+    "prefinal_artifact": "Ratio male:female = 3:2, total 1000 students.\n\nMales = (3/5)×1000 = 600; females = (2/5)×1000 = 400.\n\nMales who like basketball = (2/3)×600 = 400, so males who do not = 600 − 400 = 200.\nFemales who like basketball = (1/5)×400 = 80, so females who do not = 400 − 80 = 320.\n\nTotal who do not like basketball = 200 + 320 = 520.\nPercent = (520/1000)×100% = 52%.\n\n\\boxed{52\\%}",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "706b97d06193d4f59b7af5af65f7d0986636a4d8f6e02939876533b742caa031",
+      "b6a68551a2beb675d71a56afb7f994b44ddb79b1477a80e820939e4e708fd01d",
+      "51b242b480e6acf00c9a70f4e5b8917c39df60d60e72856ca4778aa40af35752"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/5129",
+    "run_id": "coreta-revision-faed6510df61",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Grapes: 100. Strawberries: (3/5)·100 = 60. Total fruit initially: 100 + 60 = 160. Each friend receives 1/5 of each fruit type, so two friends together receive 2·(1/5) = 2/5 of each type. Karlee therefore keeps 1 − 2/5 = 3/5 of each type. Grapes kept: (3/5)·100 = 60 (equivalently 100 − 40 = 60, since each friend takes 20 grapes). Strawberries kept: (3/5)·60 = 36 (equivalently 60 − 24 = 36, since each friend takes 12 strawberries). Total fruits left: 60 + 36 = 96, equivalently (3/5)·160 = 96. The shortcut is valid because the same retained fraction 3/5 applies to both fruit types, and the per-friend shares (20 grapes, 12 strawberries) are integers, so no rounding is needed. Standard assumption: each friend's share is 1/5 of the original quantity of each fruit type (disjoint shares), not a sequential fraction of a shrinking remainder. \\boxed{96}",
+    "prefinal_artifact": "Grapes: 100. Strawberries: (3/5)·100 = 60. Total fruit initially: 100 + 60 = 160. Each friend receives 1/5 of each fruit type, so two friends together receive 2·(1/5) = 2/5 of each type. Karlee therefore keeps 1 − 2/5 = 3/5 of each type. Grapes kept: (3/5)·100 = 60 (equivalently 100 − 40 = 60, since each friend takes 20 grapes). Strawberries kept: (3/5)·60 = 36 (equivalently 60 − 24 = 36, since each friend takes 12 strawberries). Total fruits left: 60 + 36 = 96, equivalently (3/5)·160 = 96. This shortcut is valid because the same retained fraction 3/5 applies to both fruit types; the discrete shares (20 grapes and 12 strawberries per friend) are integers, so the split is realizable without rounding. Standard assumption: each friend's share is 1/5 of the original quantity of each fruit type (disjoint shares), not a sequential fraction of a shrinking remainder. \\boxed{96}",
+    "finalizer_changed": true,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 8,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "09aac03995cc6999c1f43cef72d7e53f6e219ac41e4cc7153fa851b12ad47c58",
+      "8c4eb765acfb98d43043c16536d2c8361d236ac5e79c5deb35d7c635570adea5",
+      "99818a0245be6ca1476cb9709ac75351ed7ebc5d19f05b91208e365ec6f00684"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "gsm8k/train/5129",
+    "run_id": "coreta-revision-8f3cc0469d3b",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Grapes: 100. Strawberries: (3/5)·100 = 60. Total initially: 100 + 60 = 160. Each of the two friends receives 1/5 of each fruit type, so together they receive 2·(1/5) = 2/5 of each type. Karlee keeps 1 − 2/5 = 3/5 of each type. Grapes kept: (3/5)·100 = 60. Strawberries kept: (3/5)·60 = 36. Total kept: 60 + 36 = 96. Equivalently, (3/5)·160 = 96.\n\n\\boxed{96}",
+    "prefinal_artifact": "Grapes: 100. Strawberries: (3/5)·100 = 60. Total initially: 100 + 60 = 160. Each of the two friends receives 1/5 of each fruit type, so together they receive 2·(1/5) = 2/5 of each type. Karlee keeps 1 − 2/5 = 3/5 of each type. Grapes kept: (3/5)·100 = 60. Strawberries kept: (3/5)·60 = 36. Total kept: 60 + 36 = 96. Equivalently, (3/5)·160 = 96. \\boxed{96}",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "09aac03995cc6999c1f43cef72d7e53f6e219ac41e4cc7153fa851b12ad47c58",
+      "8c4eb765acfb98d43043c16536d2c8361d236ac5e79c5deb35d7c635570adea5",
+      "99818a0245be6ca1476cb9709ac75351ed7ebc5d19f05b91208e365ec6f00684"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/5129",
+    "run_id": "coreta-revision-c8a48a2d5708",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Grapes: 100.\nStrawberries: (3/5) × 100 = 60.\nTotal initially: 100 + 60 = 160.\nEach of 2 friends receives 1/5 of each fruit type, so together they receive 2 × (1/5) = 2/5 of each type.\nKarlee keeps 1 − 2/5 = 3/5 of each type.\nGrapes kept: (3/5) × 100 = 60.\nStrawberries kept: (3/5) × 60 = 36.\nTotal fruits left: 60 + 36 = 96.\nEquivalently, (3/5) × 160 = 96.\n\n\\boxed{96}",
+    "prefinal_artifact": "Grapes: 100. Strawberries: (3/5)×100 = 60. Each friend gets 1/5 of each fruit; with 2 friends, total given away per fruit type is 2/5 of that type. Grapes kept: 100 − (2/5)(100) = 100 − 40 = 60. Strawberries kept: 60 − (2/5)(60) = 60 − 24 = 36. Total fruits left: 60 + 36 = 96. Boxed answer: 96.",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "09aac03995cc6999c1f43cef72d7e53f6e219ac41e4cc7153fa851b12ad47c58",
+      "8c4eb765acfb98d43043c16536d2c8361d236ac5e79c5deb35d7c635570adea5",
+      "99818a0245be6ca1476cb9709ac75351ed7ebc5d19f05b91208e365ec6f00684"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "gsm8k/train/5129",
+    "run_id": "coreta-revision-58eebd2093f9",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "Grapes: 100. Strawberries: (3/5) × 100 = 60. Each of the two friends receives 1/5 of each fruit type, so the fraction of each type given away is 2 × (1/5) = 2/5. Grapes left: 100 − (2/5)(100) = 100 − 40 = 60. Strawberries left: 60 − (2/5)(60) = 60 − 24 = 36. Total fruits left: 60 + 36 = 96. Equivalently, Karlee keeps 3/5 of each fruit, so (3/5)(160) = 96. \\boxed{96}",
+    "prefinal_artifact": "Grapes: 100. Strawberries: (3/5) × 100 = 60. Each of the two friends receives 1/5 of each fruit type, so the fraction of each type given away is 2 × (1/5) = 2/5. Grapes left: 100 − (2/5)(100) = 100 − 40 = 60. Strawberries left: 60 − (2/5)(60) = 60 − 24 = 36. Total fruits left: 60 + 36 = 96. Boxed answer: 96.",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "09aac03995cc6999c1f43cef72d7e53f6e219ac41e4cc7153fa851b12ad47c58",
+      "8c4eb765acfb98d43043c16536d2c8361d236ac5e79c5deb35d7c635570adea5",
+      "99818a0245be6ca1476cb9709ac75351ed7ebc5d19f05b91208e365ec6f00684"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/721",
+    "run_id": "coreta-revision-6336ae7ff8ce",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def maxAverageOfPath(cost):\n    \"\"\"Return the maximum average cell cost over all right/down paths\n    from the top-left to the bottom-right cell of a square matrix.\n\n    Every path in an N x N grid visits exactly 2*N - 1 cells (N-1 rights,\n    N-1 downs, plus the start). Hence maximizing the average is equivalent\n    to maximizing the total cost; the answer is the maximum path sum divided\n    by (2*N - 1).\n    \"\"\"\n    n = len(cost)\n    if n == 0:\n        return 0\n    num_cells = 2 * n - 1\n    dp = [float('-inf')] * n\n    for i in range(n):\n        for j in range(n):\n            if i == 0 and j == 0:\n                dp[j] = cost[0][0]\n            elif i == 0:\n                dp[j] = dp[j - 1] + cost[i][j]\n            elif j == 0:\n                dp[j] = dp[j] + cost[i][j]\n            else:\n                dp[j] = max(dp[j], dp[j - 1]) + cost[i][j]\n    return dp[n - 1] / num_cells\n",
+    "prefinal_artifact": "def maxAverageOfPath(cost):\n    \"\"\"Return the maximum average cell cost over all right/down paths from\n    the top-left to the bottom-right cell of a square matrix.\n\n    Every path in an N x N grid visits exactly 2*N - 1 cells (N-1 rights,\n    N-1 downs, plus the start). Hence maximizing the average is equivalent\n    to maximizing the total cost; the answer is the maximum path sum divided\n    by (2*N - 1).\n    \"\"\"\n    n = len(cost)\n    if n == 0:\n        return 0\n    num_cells = 2 * n - 1\n    dp = [float('-inf')] * n\n    for i in range(n):\n        for j in range(n):\n            if i == 0 and j == 0:\n                dp[j] = cost[0][0]\n            elif i == 0:\n                dp[j] = dp[j - 1] + cost[i][j]\n            elif j == 0:\n                dp[j] = dp[j] + cost[i][j]\n            else:\n                dp[j] = max(dp[j], dp[j - 1]) + cost[i][j]\n    return dp[n - 1] / num_cells\n",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 4,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "85da56a77902ed8b763469da56ca71441e5fdba046dbab35d237f0bf749b802d",
+      "0f3814a429fb7b057c0957ce2d515841f4064bb25ec3b4004a74f1753c3c3314",
+      "83ba35f0b5ddf546c03244e1811cf26bf0123114d2b4503d69ca8c74b9468e03"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/721",
+    "run_id": "coreta-revision-6a5b2ee63bbd",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def maxAverageOfPath(cost):\n    \"\"\"Return the maximum average cell cost over all right/down paths from\n    the top-left to the bottom-right cell of a square matrix.\n\n    Every path in an N x N grid visits exactly 2*N - 1 cells (N-1 rights,\n    N-1 downs, plus the start). Hence maximizing the average is equivalent\n    to maximizing the total cost; the answer is the maximum path sum divided\n    by (2*N - 1).\n    \"\"\"\n    n = len(cost)\n    if n == 0:\n        return 0\n    num_cells = 2 * n - 1\n    dp = [float('-inf')] * n\n    for i in range(n):\n        for j in range(n):\n            if i == 0 and j == 0:\n                dp[j] = cost[0][0]\n            elif i == 0:\n                dp[j] = dp[j - 1] + cost[i][j]\n            elif j == 0:\n                dp[j] = dp[j] + cost[i][j]\n            else:\n                dp[j] = max(dp[j], dp[j - 1]) + cost[i][j]\n    return dp[n - 1] / num_cells\n",
+    "prefinal_artifact": "def maxAverageOfPath(cost):\n    \"\"\"Return the maximum average cell cost over all right/down paths from\n    the top-left to the bottom-right cell of a square matrix.\n\n    Every path in an N x N grid visits exactly 2*N - 1 cells (N-1 rights,\n    N-1 downs, plus the start). Hence maximizing the average is equivalent\n    to maximizing the total cost; the answer is the maximum path sum divided\n    by (2*N - 1).\n    \"\"\"\n    n = len(cost)\n    if n == 0:\n        return 0\n    num_cells = 2 * n - 1\n    dp = [float('-inf')] * n\n    for i in range(n):\n        for j in range(n):\n            if i == 0 and j == 0:\n                dp[j] = cost[0][0]\n            elif i == 0:\n                dp[j] = dp[j - 1] + cost[i][j]\n            elif j == 0:\n                dp[j] = dp[j] + cost[i][j]\n            else:\n                dp[j] = max(dp[j], dp[j - 1]) + cost[i][j]\n    return dp[n - 1] / num_cells\n",
+    "finalizer_changed": false,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "85da56a77902ed8b763469da56ca71441e5fdba046dbab35d237f0bf749b802d",
+      "0f3814a429fb7b057c0957ce2d515841f4064bb25ec3b4004a74f1753c3c3314",
+      "83ba35f0b5ddf546c03244e1811cf26bf0123114d2b4503d69ca8c74b9468e03"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/721",
+    "run_id": "coreta-revision-e21cf39d03f6",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def maxAverageOfPath(cost):\n    \"\"\"Return the maximum average cell cost over all right/down paths from\n    the top-left to the bottom-right cell of a square matrix.\n\n    Every path in an N x N grid visits exactly 2*N - 1 cells (N-1 rights,\n    N-1 downs, plus the start). Hence maximizing the average is equivalent\n    to maximizing the total cost; the answer is the maximum path sum divided\n    by (2*N - 1).\n    \"\"\"\n    n = len(cost)\n    if n == 0:\n        return 0\n    num_cells = 2 * n - 1\n    dp = [0] * n\n    dp[0] = cost[0][0]\n    for j in range(1, n):\n        dp[j] = dp[j - 1] + cost[0][j]\n    for i in range(1, n):\n        dp[0] += cost[i][0]\n        for j in range(1, n):\n            dp[j] = max(dp[j], dp[j - 1]) + cost[i][j]\n    return dp[n - 1] / num_cells\n",
+    "prefinal_artifact": "def maxAverageOfPath(cost):\n    \"\"\"Return the maximum average cell cost over all right/down paths from\n    the top-left to the bottom-right cell of a square matrix.\n\n    Every path in an N x N grid visits exactly 2*N - 1 cells (N-1 rights,\n    N-1 downs, plus the start). Hence maximizing the average is equivalent\n    to maximizing the total cost; the answer is the maximum path sum divided\n    by (2*N - 1).\n    \"\"\"\n    n = len(cost)\n    if n == 0:\n        return 0\n    num_cells = 2 * n - 1\n    dp = [0] * n\n    dp[0] = cost[0][0]\n    for j in range(1, n):\n        dp[j] = dp[j - 1] + cost[0][j]\n    for i in range(1, n):\n        dp[0] += cost[i][0]\n        for j in range(1, n):\n            dp[j] = max(dp[j], dp[j - 1]) + cost[i][j]\n    return dp[n - 1] / num_cells\n",
+    "finalizer_changed": false,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 5,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "85da56a77902ed8b763469da56ca71441e5fdba046dbab35d237f0bf749b802d",
+      "0f3814a429fb7b057c0957ce2d515841f4064bb25ec3b4004a74f1753c3c3314",
+      "83ba35f0b5ddf546c03244e1811cf26bf0123114d2b4503d69ca8c74b9468e03"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "mbpp/train/721",
+    "run_id": "coreta-revision-299aade6c23d",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def maxAverageOfPath(cost):\n    \"\"\"Return the maximum average cell cost over all right/down paths\n    from the top-left cell to the bottom-right cell of a square matrix.\n\n    Every right/down path on an n x n grid visits exactly 2*n - 1 cells,\n    so maximizing the average is equivalent to maximizing the path sum.\n    A rolling one-dimensional DP computes the maximum path sum in\n    O(n^2) time and O(n) space, then divides by 2*n - 1.\n    \"\"\"\n    n = len(cost)\n    if n == 0:\n        return 0\n    # dp[j] = maximum total cost of a path reaching column j of the\n    # current row. Before dp[j] is updated it holds the value from the\n    # row above; dp[j-1] already holds the value from the left.\n    dp = [0] * n\n    dp[0] = cost[0][0]\n    for j in range(1, n):\n        dp[j] = dp[j - 1] + cost[0][j]\n    for i in range(1, n):\n        dp[0] += cost[i][0]\n        for j in range(1, n):\n            dp[j] = max(dp[j], dp[j - 1]) + cost[i][j]\n    return dp[n - 1] / (2 * n - 1)\n",
+    "prefinal_artifact": "def maxAverageOfPath(cost):\n    \"\"\"Return the maximum average cell cost over all right/down paths\n    from the top-left cell to the bottom-right cell of a square matrix.\n\n    Every path in an N x N grid visits exactly 2*N - 1 cells, so the\n    denominator is constant and maximizing the average is equivalent to\n    maximizing the total path sum.\n    \"\"\"\n    n = len(cost)\n    if n == 0:\n        return 0\n    # dp[j] = maximum total cost of a path reaching column j in the\n    # current row.\n    dp = [0] * n\n    dp[0] = cost[0][0]\n    for j in range(1, n):\n        dp[j] = dp[j - 1] + cost[0][j]\n    for i in range(1, n):\n        dp[0] += cost[i][0]\n        for j in range(1, n):\n            dp[j] = max(dp[j], dp[j - 1]) + cost[i][j]\n    return dp[n - 1] / (2 * n - 1)\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "85da56a77902ed8b763469da56ca71441e5fdba046dbab35d237f0bf749b802d",
+      "0f3814a429fb7b057c0957ce2d515841f4064bb25ec3b4004a74f1753c3c3314",
+      "83ba35f0b5ddf546c03244e1811cf26bf0123114d2b4503d69ca8c74b9468e03"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/751",
+    "run_id": "coreta-revision-df34cf36e1e7",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def check_min_heap(arr):\n    \"\"\"Return True if arr (0-indexed level order) satisfies the min-heap property.\"\"\"\n    n = len(arr)\n    for i in range(n):\n        left = 2 * i + 1\n        right = 2 * i + 2\n        if left < n and arr[i] > arr[left]:\n            return False\n        if right < n and arr[i] > arr[right]:\n            return False\n    return True\n",
+    "prefinal_artifact": "def check_min_heap(arr):\n    \"\"\"Return True if arr (0-indexed level order) satisfies the min-heap property.\"\"\"\n    n = len(arr)\n    for i in range(n):\n        left = 2 * i + 1\n        right = 2 * i + 2\n        if left < n and arr[i] > arr[left]:\n            return False\n        if right < n and arr[i] > arr[right]:\n            return False\n    return True\n",
+    "finalizer_changed": false,
+    "normal_calls": 8,
+    "format_repairs": 0,
+    "http_attempts": 8,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "93e3cea891ccf377df4a3954b62f9498fe9d6825e9642030b22ac3e566f24f2b",
+      "bee3a1d3cec2c5cc8e35fdc614d7687c804eca43023c1d042b2f4e9c7f0c2ca4",
+      "f6f1737801113796587f07290d44e56fe80ace6f3098193346029fd529bf482e"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "mbpp/train/751",
+    "run_id": "coreta-revision-55e5aa7f5f43",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def check_min_heap(arr):\n    \"\"\"Return True if arr (level-order) represents a binary min heap.\n\n    Node i has children 2*i + 1 and 2*i + 2.  The array is a min heap iff\n    arr[parent] <= arr[child] for every existing edge.  Empty and\n    single-element arrays are valid heaps; duplicates are allowed.\n    \"\"\"\n    n = len(arr)\n    for i in range(n // 2):\n        left = 2 * i + 1\n        right = 2 * i + 2\n        if arr[i] > arr[left]:\n            return False\n        if right < n and arr[i] > arr[right]:\n            return False\n    return True\n",
+    "prefinal_artifact": "def check_min_heap(arr):\n    \"\"\"Return True if arr (level-order) represents a binary min heap.\n\n    Node i has children 2*i + 1 and 2*i + 2.  The array is a min heap iff\n    arr[parent] <= arr[child] for every existing edge.  Empty and\n    single-element arrays are valid heaps; duplicates are allowed.\n    \"\"\"\n    n = len(arr)\n    for i in range(n):\n        left = 2 * i + 1\n        right = 2 * i + 2\n        if left < n and arr[i] > arr[left]:\n            return False\n        if right < n and arr[i] > arr[right]:\n            return False\n    return True\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "93e3cea891ccf377df4a3954b62f9498fe9d6825e9642030b22ac3e566f24f2b",
+      "bee3a1d3cec2c5cc8e35fdc614d7687c804eca43023c1d042b2f4e9c7f0c2ca4",
+      "f6f1737801113796587f07290d44e56fe80ace6f3098193346029fd529bf482e"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/751",
+    "run_id": "coreta-revision-1b355fe96112",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def check_min_heap(arr):\n    \"\"\"Return True if arr (level-order) satisfies the min-heap property.\"\"\"\n    n = len(arr)\n    for i in range(n):\n        left = 2 * i + 1\n        right = 2 * i + 2\n        if left < n and arr[i] > arr[left]:\n            return False\n        if right < n and arr[i] > arr[right]:\n            return False\n    return True\n",
+    "prefinal_artifact": "def check_min_heap(arr):\n    \"\"\"Return True if arr (level-order) satisfies the min-heap property.\"\"\"\n    n = len(arr)\n    for i in range(n):\n        left = 2 * i + 1\n        right = 2 * i + 2\n        if left < n and arr[i] > arr[left]:\n            return False\n        if right < n and arr[i] > arr[right]:\n            return False\n    return True\n",
+    "finalizer_changed": false,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 1,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "93e3cea891ccf377df4a3954b62f9498fe9d6825e9642030b22ac3e566f24f2b",
+      "bee3a1d3cec2c5cc8e35fdc614d7687c804eca43023c1d042b2f4e9c7f0c2ca4",
+      "f6f1737801113796587f07290d44e56fe80ace6f3098193346029fd529bf482e"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/751",
+    "run_id": "coreta-revision-88e0ec022323",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def check_min_heap(arr):\n    \"\"\"Return True if arr (level-order) satisfies the min-heap property.\"\"\"\n    n = len(arr)\n    for i in range(n):\n        left = 2 * i + 1\n        right = 2 * i + 2\n        if left < n and arr[i] > arr[left]:\n            return False\n        if right < n and arr[i] > arr[right]:\n            return False\n    return True\n",
+    "prefinal_artifact": "def check_min_heap(arr):\n    \"\"\"Return True if arr (level-order) satisfies the min-heap property.\"\"\"\n    n = len(arr)\n    for i in range(n):\n        left = 2 * i + 1\n        right = 2 * i + 2\n        if left < n and arr[i] > arr[left]:\n            return False\n        if right < n and arr[i] > arr[right]:\n            return False\n    return True\n",
+    "finalizer_changed": false,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "93e3cea891ccf377df4a3954b62f9498fe9d6825e9642030b22ac3e566f24f2b",
+      "bee3a1d3cec2c5cc8e35fdc614d7687c804eca43023c1d042b2f4e9c7f0c2ca4",
+      "f6f1737801113796587f07290d44e56fe80ace6f3098193346029fd529bf482e"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/622",
+    "run_id": "coreta-revision-6ea57182dbf0",
+    "system": "independent_aggregate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def get_median(a, b, n):\n    \"\"\"Return the median of two sorted lists a and b of equal size n.\n\n    The merged sorted array has 2*n elements, so the median is the average\n    of the elements at 0-based merged indices n-1 and n. A two-pointer scan\n    tracks only those last two emitted values in O(n) time and O(1) space.\n    \"\"\"\n    if n <= 0:\n        raise ValueError(\"n must be positive: the median of two empty lists is undefined\")\n    i = j = 0\n    prev = curr = None\n    for _ in range(n + 1):\n        prev = curr\n        if i < n and (j >= n or a[i] <= b[j]):\n            curr = a[i]\n            i += 1\n        else:\n            curr = b[j]\n            j += 1\n    return (prev + curr) / 2.0\n",
+    "prefinal_artifact": "def get_median(a, b, n):\n    \"\"\"Return the median of two sorted lists a and b of equal size n.\n\n    The median of the combined 2n elements is the average of the two\n    middle elements (indices n-1 and n of the merged order). This uses\n    a two-pointer merge that stops once the n-th smallest element is found,\n    without building the full merged list.\n    \"\"\"\n    i = j = 0\n    prev = curr = None\n    for _ in range(n + 1):\n        prev = curr\n        if i < n and (j >= n or a[i] <= b[j]):\n            curr = a[i]\n            i += 1\n        else:\n            curr = b[j]\n            j += 1\n    return (prev + curr) / 2.0\n",
+    "finalizer_changed": true,
+    "normal_calls": 4,
+    "format_repairs": 0,
+    "http_attempts": 4,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "5436a1fcc49f73afec7427ef4a2d169a5afb1457595417ded548f77d033d3b4d",
+      "bd1d74cfb4373362df954613c7b5e1d0c7b37237130f574b246abac0bb18435c",
+      "09b0b55531d3c367b86f8e4bf264379dc4f9443ac2db874663e8f7488045eeee"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/622",
+    "run_id": "coreta-revision-de6dbd81a14d",
+    "system": "static_debate",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def get_median(a, b, n):\n    \"\"\"Return the median of two sorted lists a and b of equal size n.\n\n    The combined sorted order has 2*n elements, so the median is the average\n    of the elements at 0-based positions n-1 and n. A two-pointer scan\n    advances only n+1 positions, tracking the last two emitted values, so the\n    function runs in O(n) time and O(1) extra space without mutating inputs.\n    \"\"\"\n    if n <= 0:\n        raise ValueError(\"median is undefined for empty lists\")\n    i = j = 0\n    prev = curr = None\n    for _ in range(n + 1):\n        prev = curr\n        if i < n and (j >= n or a[i] <= b[j]):\n            curr = a[i]\n            i += 1\n        else:\n            curr = b[j]\n            j += 1\n    return (prev + curr) / 2.0\n",
+    "prefinal_artifact": "def get_median(a, b, n):\n    \"\"\"Return the median of two sorted lists a and b of equal size n.\n\n    The merged sorted order has 2*n elements, so the median is the average of\n    the elements at 0-based merged positions n-1 and n. A two-pointer scan\n    advances only n+1 positions while tracking the last two emitted values,\n    giving O(n) time and O(1) extra space without mutating the inputs.\n    \"\"\"\n    if n == 0:\n        raise ValueError(\"median is undefined for empty lists\")\n    i = j = 0\n    prev = curr = None\n    for _ in range(n + 1):\n        prev = curr\n        if i < n and (j >= n or a[i] <= b[j]):\n            curr = a[i]\n            i += 1\n        else:\n            curr = b[j]\n            j += 1\n    return (prev + curr) / 2.0\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "5436a1fcc49f73afec7427ef4a2d169a5afb1457595417ded548f77d033d3b4d",
+      "bd1d74cfb4373362df954613c7b5e1d0c7b37237130f574b246abac0bb18435c",
+      "09b0b55531d3c367b86f8e4bf264379dc4f9443ac2db874663e8f7488045eeee"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  },
+  {
+    "task_id": "mbpp/train/622",
+    "run_id": "coreta-revision-39b27a6fa7f2",
+    "system": "coreta_revision",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def get_median(a, b, n):\n    \"\"\"Return the median of two sorted lists a and b, each of size n.\n\n    The merged order has 2*n elements, so the median is the average of the\n    elements at 0-based positions n-1 and n. A two-pointer scan emits only\n    the first n+1 merged elements, tracking the last two, in O(n) time and\n    O(1) extra space. Inputs are assumed to be non-empty (n >= 1); for n = 0\n    the median is undefined and a ValueError is raised.\n    \"\"\"\n    if n <= 0:\n        raise ValueError(\"get_median requires non-empty lists (n >= 1)\")\n    i = j = 0\n    prev = curr = None\n    for _ in range(n + 1):\n        prev = curr\n        if i < n and (j >= n or a[i] <= b[j]):\n            curr = a[i]\n            i += 1\n        else:\n            curr = b[j]\n            j += 1\n    return (prev + curr) / 2.0\n",
+    "prefinal_artifact": "def get_median(a, b, n):\n    \"\"\"Return the median of two sorted lists a and b, each of size n.\n\n    The merged order has 2*n elements, so the median is the average of the\n    elements at 0-based positions n-1 and n. A two-pointer scan emits only\n    the first n+1 merged elements, tracking the last two, in O(n) time and\n    O(1) extra space. Inputs are assumed to be non-empty (n >= 1); for n = 0\n    the median is undefined and a ValueError is raised.\n    \"\"\"\n    if n <= 0:\n        raise ValueError(\"get_median requires non-empty lists (n >= 1)\")\n    i = j = 0\n    prev = curr = None\n    for _ in range(n + 1):\n        prev = curr\n        if i < n and (j >= n or a[i] <= b[j]):\n            curr = a[i]\n            i += 1\n        else:\n            curr = b[j]\n            j += 1\n    return (prev + curr) / 2.0\n",
+    "finalizer_changed": false,
+    "normal_calls": 8,
+    "format_repairs": 1,
+    "http_attempts": 6,
+    "issues": {
+      "i0001": {
+        "description": "e0000's summary claims 'n=0 returns 0.0/2.0 = 0.0' while its own step s6 correctly notes (None + None) raises TypeError; the summary is factually wrong about the artifact's behavior and should not be carried forward. The best candidate replaces this with an explicit ValueError for n <= 0.",
+        "blocking": false,
+        "target_refs": [
+          "coreta-revision-39b27a6fa7f2:e0000",
+          "coreta-revision-39b27a6fa7f2:e0000#s6"
+        ],
+        "existing_issue_id": null,
+        "issue_id": "i0001",
+        "status": "addressed",
+        "source_event_id": "coreta-revision-39b27a6fa7f2:e0003",
+        "version": 0,
+        "handling_events": [
+          {
+            "version": 2,
+            "issue_id": "i0001",
+            "status": "addressed",
+            "reason": "The issue correctly notes that e0000's summary claims n=0 returns 0.0 while the artifact as written would fail. That draft is superseded: the current candidate carries no such claim, and its own docstring and step s6 state that n <= 0 raises ValueError. A2's inspection (e0005) additionally confirms e0000's n=0 path would raise IndexError (reading b[0] on an empty list), not TypeError or 0.0, so the earlier text is fully retired rather than repeated.",
+            "evidence_refs": [
+              "coreta-revision-39b27a6fa7f2:e0000",
+              "coreta-revision-39b27a6fa7f2:e0000#s6",
+              "coreta-revision-39b27a6fa7f2:e0003#s6",
+              "coreta-revision-39b27a6fa7f2:e0005"
+            ],
+            "changed_step_ids": [
+              "s6"
+            ]
+          }
+        ]
+      }
+    },
+    "errors": [],
+    "draft_hashes": [
+      "5436a1fcc49f73afec7427ef4a2d169a5afb1457595417ded548f77d033d3b4d",
+      "bd1d74cfb4373362df954613c7b5e1d0c7b37237130f574b246abac0bb18435c",
+      "09b0b55531d3c367b86f8e4bf264379dc4f9443ac2db874663e8f7488045eeee"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "synthesize",
+      "build",
+      "inspect",
+      "apply",
+      "final"
+    ],
+    "actions": [
+      "FINISH_COMPLETE"
+    ]
+  },
+  {
+    "task_id": "mbpp/train/622",
+    "run_id": "coreta-revision-c9e1d05eaf40",
+    "system": "independent_refine",
+    "seed": 17,
+    "status": "completed",
+    "stop_reason": "complete",
+    "artifact": "def get_median(a, b, n):\n    \"\"\"Return the median of two sorted lists a and b of equal size n.\n\n    The merged list has 2*n elements, so the median is the average of the\n    elements at merged indices n-1 and n. A two-pointer scan emits the first\n    n+1 values of the merge while tracking only the last two, so no full\n    merged list is built.\n    \"\"\"\n    if n <= 0:\n        return None\n    i = j = 0\n    prev = curr = None\n    for _ in range(n + 1):\n        prev = curr\n        if i < n and (j >= n or a[i] <= b[j]):\n            curr = a[i]\n            i += 1\n        else:\n            curr = b[j]\n            j += 1\n    return (prev + curr) / 2.0\n",
+    "prefinal_artifact": "def get_median(a, b, n):\n    \"\"\"Return the median of two sorted lists a and b of equal size n.\n\n    The combined multiset has 2n elements, so the median is the average of\n    the elements at 0-based sorted positions n-1 and n. A two-pointer scan\n    over the merged order stops after reaching index n, without building the\n    full merged list.\n    \"\"\"\n    if n <= 0:\n        return None\n    i = j = 0\n    prev = curr = None\n    for _ in range(n + 1):\n        prev = curr\n        if i < n and (j >= n or a[i] <= b[j]):\n            curr = a[i]\n            i += 1\n        else:\n            curr = b[j]\n            j += 1\n    return (prev + curr) / 2.0\n",
+    "finalizer_changed": true,
+    "normal_calls": 10,
+    "format_repairs": 0,
+    "http_attempts": 7,
+    "issues": {},
+    "errors": [],
+    "draft_hashes": [
+      "5436a1fcc49f73afec7427ef4a2d169a5afb1457595417ded548f77d033d3b4d",
+      "bd1d74cfb4373362df954613c7b5e1d0c7b37237130f574b246abac0bb18435c",
+      "09b0b55531d3c367b86f8e4bf264379dc4f9443ac2db874663e8f7488045eeee"
+    ],
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "actions": []
+  }
+]

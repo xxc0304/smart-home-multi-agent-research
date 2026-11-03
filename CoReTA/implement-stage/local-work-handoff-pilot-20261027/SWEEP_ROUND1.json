@@ -1,0 +1,27 @@
+{
+  "undeclared": [
+    {
+      "site": "tools/analyze_local_work_handoff_run.py:53-64",
+      "decision": "Receipt owners are inferred only from saved request packets, assuming every accepted receipt appears in a later packet.",
+      "why_it_matters": "Confirmed in memory: after dependent-01 wave 0, accepting wave-1 A1's W3 composition followed by missing A2 preserves W3 and its bindings, but saved packets contain owners only for W1/W2. The audit then raises KeyError for W3 and cannot export the interrupted flow. Existing full and first-wave-incomplete audit fixtures do not cover this case.",
+      "class": "interface"
+    },
+    {
+      "site": "tools/run_local_work_handoff.py:18-28; tools/score_local_work_v2.py:7",
+      "decision": "The release freezes score_local_work_v2.py but excludes its scoring dependency score_local_work_mixed.py and the upstream tatqa_metric.py/tatqa_utils.py files.",
+      "why_it_matters": "These files determine official scores and are loaded from the active checkout. They can change without frozen-source verification detecting the change, so freezing reference bytes alone does not bind the promised unchanged scoring contract.",
+      "class": "interface"
+    },
+    {
+      "site": "implement-stage/local-work-handoff-pilot-20261027/ASSUMPTIONS.md:P03,P08; tools/analyze_local_work_handoff_run.py:58-65",
+      "decision": "Semantic consumption and usable local outputs are named as primary observations without a declared labeling rule or eligible denominator; the implementation currently produces structural trace counts only.",
+      "why_it_matters": "Accepted-work counts include revisions, and member_turns includes scheduled missing events that were never sent: the existing transport_error fixture has one attempted request but two counted member turns. Structural references are correctly distinguished from semantic correctness, but the rule for assessing the promised semantic outcome remains unspecified. Declare descriptive-only scope or freeze the intended labels and denominators before observing natural outputs.",
+      "class": "semantic"
+    }
+  ],
+  "stale_rows": [],
+  "semantic_undeclared": 1,
+  "verdict": "gaps",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

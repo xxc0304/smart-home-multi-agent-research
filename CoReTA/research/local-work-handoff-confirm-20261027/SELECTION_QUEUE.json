@@ -1,0 +1,1091 @@
+{
+  "kind": "pre_model_selection_queue",
+  "dataset_file": "data\\source\\tatqa-20261027\\tatqa_dataset_train.json",
+  "excluded_contexts": [
+    5,
+    6,
+    9,
+    11,
+    12,
+    15,
+    16,
+    25,
+    28,
+    32,
+    36,
+    40,
+    42,
+    47,
+    50,
+    55,
+    65,
+    67,
+    68,
+    75,
+    76,
+    87,
+    93,
+    148,
+    156,
+    166,
+    195,
+    257,
+    277,
+    278,
+    332,
+    349,
+    356,
+    423,
+    429,
+    490,
+    498,
+    511,
+    594,
+    608,
+    610,
+    616,
+    618,
+    623,
+    631,
+    667,
+    691,
+    739,
+    761,
+    783,
+    803,
+    817,
+    826,
+    892,
+    901,
+    965,
+    974,
+    978,
+    1014,
+    1038,
+    1061,
+    1074,
+    1324,
+    1600,
+    1946
+  ],
+  "inspected_contexts_explicit": [
+    5,
+    6,
+    9,
+    11,
+    12,
+    15,
+    16,
+    25,
+    28,
+    36,
+    40,
+    42,
+    47,
+    50,
+    55,
+    65,
+    67,
+    68,
+    75,
+    76,
+    148,
+    156,
+    195,
+    257,
+    277,
+    278,
+    332,
+    349,
+    356,
+    429,
+    490,
+    511,
+    594,
+    610,
+    616,
+    623,
+    631,
+    667,
+    691,
+    761,
+    783,
+    803,
+    817,
+    826,
+    892,
+    901,
+    965,
+    974,
+    978,
+    1014,
+    1038,
+    1061,
+    1074
+  ],
+  "prepared_task_records": [
+    {
+      "path": "runs\\local-work-calibration-prepared-20261027-v1\\cases\\diagnostic-01.json",
+      "context": 32
+    },
+    {
+      "path": "runs\\local-work-calibration-prepared-20261027-v1\\cases\\main-01.json",
+      "context": 498
+    },
+    {
+      "path": "runs\\local-work-calibration-spine-20261027-v1\\cases\\diagnostic-01.json",
+      "context": 32
+    },
+    {
+      "path": "runs\\local-work-calibration-spine-20261027-v1\\cases\\main-01.json",
+      "context": 498
+    },
+    {
+      "path": "runs\\local-work-handoff-pilot-prepared-20261027-v1\\cases\\dependent-01.json",
+      "context": 257
+    },
+    {
+      "path": "runs\\local-work-handoff-pilot-prepared-20261027-v1\\cases\\dependent-02.json",
+      "context": 1038
+    },
+    {
+      "path": "runs\\local-work-handoff-pilot-prepared-20261027-v1\\cases\\ordinary-01.json",
+      "context": 166
+    },
+    {
+      "path": "runs\\local-work-handoff-pilot-prepared-20261027-v1\\cases\\ordinary-02.json",
+      "context": 1324
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-data-20261027-v1\\cases\\dependent-01.json",
+      "context": 257
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-data-20261027-v1\\cases\\dependent-02.json",
+      "context": 1038
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-data-20261027-v1\\cases\\ordinary-01.json",
+      "context": 166
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-data-20261027-v1\\cases\\ordinary-02.json",
+      "context": 1324
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-data-20261027-v2\\cases\\dependent-01.json",
+      "context": 257
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-data-20261027-v2\\cases\\dependent-02.json",
+      "context": 1038
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-data-20261027-v2\\cases\\ordinary-01.json",
+      "context": 166
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-data-20261027-v2\\cases\\ordinary-02.json",
+      "context": 1324
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-prepared-20261027-v1\\cases\\dependent-01.json",
+      "context": 257
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-prepared-20261027-v1\\cases\\dependent-02.json",
+      "context": 1038
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-prepared-20261027-v1\\cases\\ordinary-01.json",
+      "context": 166
+    },
+    {
+      "path": "runs\\local-work-v2-mixed-prepared-20261027-v1\\cases\\ordinary-02.json",
+      "context": 1324
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v1\\fixture_prepared\\cases\\diagnostic-01.json",
+      "context": 32
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v1\\fixture_prepared\\cases\\main-01.json",
+      "context": 498
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v2\\fixture_prepared\\cases\\diagnostic-01.json",
+      "context": 32
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v2\\fixture_prepared\\cases\\main-01.json",
+      "context": 498
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v3\\fixture_prepared\\cases\\diagnostic-01.json",
+      "context": 32
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v3\\fixture_prepared\\cases\\main-01.json",
+      "context": 498
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v4\\fixture_prepared\\cases\\diagnostic-01.json",
+      "context": 32
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v4\\fixture_prepared\\cases\\main-01.json",
+      "context": 498
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v5\\fixture_prepared\\cases\\diagnostic-01.json",
+      "context": 32
+    },
+    {
+      "path": "runs\\local-work-calibration-check-20261027-v5\\fixture_prepared\\cases\\main-01.json",
+      "context": 498
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\diagnostic-01\\runtime.json",
+      "context": 32
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\diagnostic-02\\runtime.json",
+      "context": 55
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-01\\runtime.json",
+      "context": 498
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-02\\runtime.json",
+      "context": 166
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-03\\runtime.json",
+      "context": 423
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-04\\runtime.json",
+      "context": 618
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-05\\runtime.json",
+      "context": 1946
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-06\\runtime.json",
+      "context": 608
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-07\\runtime.json",
+      "context": 1324
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-08\\runtime.json",
+      "context": 332
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-09\\runtime.json",
+      "context": 739
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-10\\runtime.json",
+      "context": 87
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-11\\runtime.json",
+      "context": 93
+    },
+    {
+      "path": "runs\\local-work-mixed-prepared-20261027-v1\\tasks\\main-12\\runtime.json",
+      "context": 1600
+    },
+    {
+      "path": "runs\\local-work-offline-20261027-v1\\tasks\\task-01\\runtime.json",
+      "context": 5
+    },
+    {
+      "path": "runs\\local-work-offline-20261027-v1\\tasks\\task-02\\runtime.json",
+      "context": 6
+    },
+    {
+      "path": "runs\\local-work-offline-20261027-v1\\tasks\\task-03\\runtime.json",
+      "context": 9
+    },
+    {
+      "path": "runs\\local-work-offline-20261027-v1\\tasks\\task-04\\runtime.json",
+      "context": 11
+    },
+    {
+      "path": "runs\\local-work-offline-20261027-v1\\tasks\\task-05\\runtime.json",
+      "context": 12
+    },
+    {
+      "path": "runs\\local-work-offline-20261027-v1\\tasks\\task-06\\runtime.json",
+      "context": 15
+    }
+  ],
+  "ordinary_pool_count": 5365,
+  "dependency_pool_count": 124,
+  "ordinary_seed": 20261028,
+  "dependency_seed": 20261029,
+  "ordinary": [
+    {
+      "context_index": 755,
+      "question_uid": "74961f52-e48e-4580-affa-72d065d9cdbc",
+      "question": "What was the difference between the vested and granted Weighted-Average Grant-Date Fair Value?"
+    },
+    {
+      "context_index": 1072,
+      "question_uid": "87c2e592-4134-4762-aecf-2e365ed2ed68",
+      "question": "What is the percentage change in total deferred tax assets from 2018 to 2019?"
+    }
+  ],
+  "dependency_queue": [
+    {
+      "rank": 1,
+      "context_index": 1081,
+      "question_uid": "4df95db4-e6ff-4fbc-8ad2-bbbd9c980d20",
+      "question": "What are the average net revenues by Americas for Year Ended December 31?"
+    },
+    {
+      "rank": 2,
+      "context_index": 79,
+      "question_uid": "b11bd2c7-36da-437a-af89-face31263fee",
+      "question": "What is the average Rent expense related to build-to-suit facilities between 2015-2019?"
+    },
+    {
+      "rank": 3,
+      "context_index": 106,
+      "question_uid": "d6bb1f03-cc11-4483-9cb6-20c718328e7d",
+      "question": "What is the average total amount of dividend value for 2018 and 2019?"
+    },
+    {
+      "rank": 4,
+      "context_index": 1960,
+      "question_uid": "9907aed5-a213-48ff-930f-c214d5930957",
+      "question": "What is the average total balance from 2017 to 2019?"
+    },
+    {
+      "rank": 5,
+      "context_index": 325,
+      "question_uid": "81e8d79a-6d7f-44aa-b05d-b9eb9fa01456",
+      "question": "What is the average  Total equity  for fiscal years 2015 to 2019?"
+    },
+    {
+      "rank": 6,
+      "context_index": 417,
+      "question_uid": "174e073e-c34b-4a4e-895e-76a505002847",
+      "question": "What is the average Capital expenditures, for the year 2019 to 2018?"
+    },
+    {
+      "rank": 7,
+      "context_index": 417,
+      "question_uid": "31eeb277-b4cd-4d52-a44e-1e65b80d0a65",
+      "question": "What is the average Cash paid for business acquisitions, net of cash acquired, for the year 2019 to 2018?"
+    },
+    {
+      "rank": 8,
+      "context_index": 1706,
+      "question_uid": "946e5a10-c2b3-4e90-852a-70b2ef22de04",
+      "question": "What is the average Number of Securities Underlying Restricted Stock Awards and Restricted Stock Units for those who received it?"
+    },
+    {
+      "rank": 9,
+      "context_index": 1520,
+      "question_uid": "8f9e5f8b-4abc-49d9-812a-27af5692e4e1",
+      "question": "What was the average Foreign currency translation adjustments?"
+    },
+    {
+      "rank": 10,
+      "context_index": 161,
+      "question_uid": "30b5d4be-e894-4820-90cf-9dc920f6146a",
+      "question": "What is the average long term debt payment for each payment period?"
+    },
+    {
+      "rank": 11,
+      "context_index": 201,
+      "question_uid": "72287169-7b48-407c-a501-674ca1fc55fa",
+      "question": "What is the average of Total financing receivables, net?"
+    },
+    {
+      "rank": 12,
+      "context_index": 1806,
+      "question_uid": "0b5a9635-9ba5-4302-b5d9-55a0498eac5b",
+      "question": "What percentage of the total gain in book amount was due to internally generated software?"
+    },
+    {
+      "rank": 13,
+      "context_index": 1659,
+      "question_uid": "5664d076-e426-48fb-a9ab-6c8e462f097d",
+      "question": "What was the average Firm-fixed-price under Solutions, Civil and Health?"
+    },
+    {
+      "rank": 14,
+      "context_index": 1824,
+      "question_uid": "063a359d-697d-4bb6-9d3d-5b904ffb8065",
+      "question": "What is the difference between average service revenue and average other revenue?"
+    },
+    {
+      "rank": 15,
+      "context_index": 1048,
+      "question_uid": "03819e3a-57bf-43a8-a30e-9db772839880",
+      "question": "What is the difference between percentage of total capital commitments and total purchase commitments against total contractual obligations and commitments respectively?"
+    },
+    {
+      "rank": 16,
+      "context_index": 1202,
+      "question_uid": "1078998f-a141-45fc-918e-17ddf1da0d89",
+      "question": "What is the average high closing prices per share of the Company’s common stock reported by NYSE American for fiscal 2018?"
+    },
+    {
+      "rank": 17,
+      "context_index": 1016,
+      "question_uid": "874f9ba2-187d-4528-a4c5-3bd32f1bd021",
+      "question": "What is the total value realized on vesting for stock awards for all named executive officers?"
+    },
+    {
+      "rank": 18,
+      "context_index": 1631,
+      "question_uid": "e1d2dbd6-9869-474a-aedd-84de78962182",
+      "question": "What is the percentage change in the total investment in joint ventures from 2018 to 2019?"
+    },
+    {
+      "rank": 19,
+      "context_index": 2081,
+      "question_uid": "bb2562e8-064d-460b-9f1e-081da68cc693",
+      "question": "What is the change of the percentage change of Total interest expense from 2018 vs. 2017 to 2019 vs. 2018?"
+    },
+    {
+      "rank": 20,
+      "context_index": 1303,
+      "question_uid": "ed480f2f-da8f-41b2-a68e-b837920a8a6f",
+      "question": "What is the change of average net cash flow from operating activities between 2017-2018 and 2018-2019?"
+    },
+    {
+      "rank": 21,
+      "context_index": 1163,
+      "question_uid": "dd026e2a-ea3d-4b89-9c44-ce3f5e6fe99b",
+      "question": "What is the average revenue in 2017?"
+    },
+    {
+      "rank": 22,
+      "context_index": 1646,
+      "question_uid": "71d38023-3e0a-46b4-b4bd-ae1d42538925",
+      "question": "What is the average Selling, general and administrative expenses?"
+    },
+    {
+      "rank": 23,
+      "context_index": 502,
+      "question_uid": "1c95ff79-f0ed-4beb-ac28-2767db384b67",
+      "question": "What is the average revenue from 2015 to t2019?"
+    },
+    {
+      "rank": 24,
+      "context_index": 114,
+      "question_uid": "1ee05281-0e22-4600-9ddc-09ae1aeada6e",
+      "question": "What is the average net income per share for basic shares from 2015 to 2019?"
+    },
+    {
+      "rank": 25,
+      "context_index": 1717,
+      "question_uid": "6240e5c6-6ee2-4bed-8832-229ad106ae90",
+      "question": "What is the ratio (including both short-term and long-term) of the cost from the U.S. Treasury securities to corporate debt securities in 2019?"
+    },
+    {
+      "rank": 26,
+      "context_index": 1939,
+      "question_uid": "4ca1818d-fd87-4d3e-ad55-737b70fad8d1",
+      "question": "What are the average net revenues by Analog MEMS and Sensors Group (AMS)?"
+    },
+    {
+      "rank": 27,
+      "context_index": 1401,
+      "question_uid": "ec247867-4c51-487e-9ac6-c08345870a89",
+      "question": "What was the average corporate expense for both years, 2017 and 2018?"
+    },
+    {
+      "rank": 28,
+      "context_index": 1672,
+      "question_uid": "f637bb11-586c-40b7-8820-6d3f0128f847",
+      "question": "What are the average days in Q1?"
+    },
+    {
+      "rank": 29,
+      "context_index": 1300,
+      "question_uid": "df1b6b63-a3b5-4208-a379-eb41c44c9894",
+      "question": "What was the average operating income for the 3 year period from 2017 to 2019?"
+    },
+    {
+      "rank": 30,
+      "context_index": 1823,
+      "question_uid": "89665846-eb72-450e-aec1-4ca52b3eb700",
+      "question": "What was the total amount paid for the shares during the period from April 28, 2019 to May 25, 2019 and May 26, 2019 to June 22, 2019?"
+    },
+    {
+      "rank": 31,
+      "context_index": 161,
+      "question_uid": "bd85fa1f-d369-484f-8a56-a77b90f02eda",
+      "question": "What is the average finance lease obligation for each payment period?"
+    },
+    {
+      "rank": 32,
+      "context_index": 816,
+      "question_uid": "1d080cb4-a763-4a76-b878-ee5a4c239193",
+      "question": "What is the average total intrinsic value of options exercised during year ended December 31, 2017 to 2019?"
+    },
+    {
+      "rank": 33,
+      "context_index": 8,
+      "question_uid": "c502823a-fa1d-49e3-b14e-6973d72afc2f",
+      "question": "What was the average increase / (decrease) in video service customers between 2018 and 2019?"
+    },
+    {
+      "rank": 34,
+      "context_index": 2184,
+      "question_uid": "ae11e932-5db4-40e7-9035-8dc9146dcc4b",
+      "question": "What is the average net value of the three categories of intangible assets in 2019?"
+    },
+    {
+      "rank": 35,
+      "context_index": 1939,
+      "question_uid": "e1f46bda-bd92-4eb9-8b24-2f6a402d3149",
+      "question": "What are the average net revenues by Automotive and Discrete Group (ADG)?"
+    },
+    {
+      "rank": 36,
+      "context_index": 1833,
+      "question_uid": "2e636e36-583f-4619-b358-feaa222b4218",
+      "question": "What was the average Corporate Expense for both years, 2018 and 2019?"
+    },
+    {
+      "rank": 37,
+      "context_index": 912,
+      "question_uid": "d1fff78b-4c8a-4cd3-bae7-2da8c8a79c04",
+      "question": "What is the total price of shares that were exercised, canceled, or expired?"
+    },
+    {
+      "rank": 38,
+      "context_index": 1000,
+      "question_uid": "fe32e833-5d62-4305-91ad-9b61f1042221",
+      "question": "What is the change in (Loss) income from continuing operations between 2019 and 2017?"
+    },
+    {
+      "rank": 39,
+      "context_index": 2038,
+      "question_uid": "48c08717-aff1-4c48-b23e-81b549f93373",
+      "question": "What is the Value Realized on Vesting of Mark J. Barrenechea expressed as a percentage of total Value Realized on Vesting?"
+    },
+    {
+      "rank": 40,
+      "context_index": 1594,
+      "question_uid": "c87f2df0-bd45-4dd8-af8e-19c81cdb0a1c",
+      "question": "What is the average annual GAAP-based Cloud Services and Subscriptions Gross Profit for the 3 years?"
+    },
+    {
+      "rank": 41,
+      "context_index": 1411,
+      "question_uid": "ba0b99aa-baa5-4ce1-9ccd-b6b0fda316fe",
+      "question": "What is the average annual Total other income (expense), net?"
+    },
+    {
+      "rank": 42,
+      "context_index": 611,
+      "question_uid": "8586536c-389a-4f12-90c2-1aef76782970",
+      "question": "What is the average total assets for the last 5 years, i.e. 2015 to 2019?"
+    },
+    {
+      "rank": 43,
+      "context_index": 1121,
+      "question_uid": "c849defe-e6c3-42cb-a1f2-4d16df11c30f",
+      "question": "What is the average revenue between 2017 to 2019?"
+    },
+    {
+      "rank": 44,
+      "context_index": 1823,
+      "question_uid": "931cf63c-d6c2-41e1-92ca-81e426517861",
+      "question": "What is the average of Average Price Paid per Share in the three period? "
+    },
+    {
+      "rank": 45,
+      "context_index": 411,
+      "question_uid": "72d8637e-ea2a-446f-8732-54c243e60a59",
+      "question": "What is the difference between average EBITDA and average adjusted EBITDA for 2018 and 2019?"
+    },
+    {
+      "rank": 46,
+      "context_index": 1079,
+      "question_uid": "65937d3a-66fb-4b2d-869f-6aab9ef5f576",
+      "question": "What is the total amount of expenses related to the acquisition of Level 3 recorded in 2019?"
+    },
+    {
+      "rank": 47,
+      "context_index": 1894,
+      "question_uid": "ceaf29a2-fe6f-4833-9d05-41a1d6550d4e",
+      "question": "What is Simon Harrison's Total target value expressed as percentage of total target values for all Named Executive Officer?"
+    },
+    {
+      "rank": 48,
+      "context_index": 1948,
+      "question_uid": "e6b992c7-e4c6-4318-ad1d-108e51a61403",
+      "question": "What is the average number of shares purchased in the three months ended December 31, 2019?"
+    },
+    {
+      "rank": 49,
+      "context_index": 2142,
+      "question_uid": "9646fa0b-e37d-46f5-8729-631eae196347",
+      "question": "What was the average income tax (benefit) expense for 2017 and 2018?"
+    },
+    {
+      "rank": 50,
+      "context_index": 2123,
+      "question_uid": "e99b599b-c5c2-4257-b781-bed1cfb5edb6",
+      "question": "What is the  Other comprehensive income (loss) before reclassifications expressed as a percentage of  Balance as of March 29, 2019 for total AOCI?"
+    },
+    {
+      "rank": 51,
+      "context_index": 1164,
+      "question_uid": "4b21d098-ec46-410a-8e9e-b608db7b7bff",
+      "question": "What was the total fair value for all rights granted?"
+    },
+    {
+      "rank": 52,
+      "context_index": 1813,
+      "question_uid": "e6a5ab85-db57-437b-9b24-74d32c90d75e",
+      "question": "What are the average Net revenues?"
+    },
+    {
+      "rank": 53,
+      "context_index": 1022,
+      "question_uid": "42bcad87-2d9d-40fe-a58f-9f3f2b3d34c4",
+      "question": "What is the average Total reclassifications for the period for the 3 years?"
+    },
+    {
+      "rank": 54,
+      "context_index": 382,
+      "question_uid": "aff7781e-c40b-44f3-8a34-a10f09be804a",
+      "question": "What is the average number of shares that the officers acquired on vesting?"
+    },
+    {
+      "rank": 55,
+      "context_index": 903,
+      "question_uid": "2c62e27f-6eea-4317-97a8-d6b483f1915d",
+      "question": "What was the percentage change in the Total amounts reclassified from AOCI between 2018 and 2019?"
+    },
+    {
+      "rank": 56,
+      "context_index": 1939,
+      "question_uid": "7c2a168a-b860-449b-ba0d-b5a5a6d3312e",
+      "question": "What are the average net revenues by Microcontrollers and Digital ICs Group (MDG)?"
+    },
+    {
+      "rank": 57,
+      "context_index": 2155,
+      "question_uid": "8bb54bf1-f6da-41ca-895d-602dbb88cfa3",
+      "question": "What is Accenture's average share price paid per share for June and July of 2019?"
+    },
+    {
+      "rank": 58,
+      "context_index": 167,
+      "question_uid": "7464a12e-0400-4baf-80da-59b1fbe4c5a6",
+      "question": "What is the average total grant value for current executives?"
+    },
+    {
+      "rank": 59,
+      "context_index": 413,
+      "question_uid": "09c7f57f-fd17-4b43-b07e-95a208dad9ad",
+      "question": "What is the average investments for 2017 to 2019?"
+    },
+    {
+      "rank": 60,
+      "context_index": 1894,
+      "question_uid": "02d02c2c-b879-48a8-bce0-57464fd2d982",
+      "question": "What is Mark J. Barrenechea's Total target value expressed as percentage of total target values for all Named Executive Officer?"
+    },
+    {
+      "rank": 61,
+      "context_index": 1618,
+      "question_uid": "0b91259a-c0a1-422f-8d75-b56ebcaed318",
+      "question": "What is the average annual GAAP-based License Gross Profit for the 3 years?"
+    },
+    {
+      "rank": 62,
+      "context_index": 1813,
+      "question_uid": "8d76bb1c-4fa8-44d7-9aae-0748dd0f52a7",
+      "question": "What are the average other revenues?"
+    },
+    {
+      "rank": 63,
+      "context_index": 1594,
+      "question_uid": "f676829c-38b4-4e45-aeb9-72ceee6c7e3a",
+      "question": "What is the average GAAP-based Cloud Services and Subscriptions Gross Margin %?"
+    },
+    {
+      "rank": 64,
+      "context_index": 2136,
+      "question_uid": "ed5f8b78-5e94-4ec2-8c5b-c83fe129bcf2",
+      "question": "What is the average Gross Profit for Fiscal Year Ended April 28, 2018 to Fiscal Year Ended April 27, 2019?"
+    },
+    {
+      "rank": 65,
+      "context_index": 146,
+      "question_uid": "901303bf-36b7-434d-a8fb-f5931e6d2f91",
+      "question": "What was the average operating income for 2015-2019?"
+    },
+    {
+      "rank": 66,
+      "context_index": 1601,
+      "question_uid": "1ce04373-2a23-4deb-a4de-ab5c771d34a9",
+      "question": "What is the total net sales for the year ending 2019?"
+    },
+    {
+      "rank": 67,
+      "context_index": 72,
+      "question_uid": "92f49d29-6f59-4da1-b108-7769683f3f94",
+      "question": "What is the average operating income from 2017 to 2019?"
+    },
+    {
+      "rank": 68,
+      "context_index": 1405,
+      "question_uid": "3ba77e51-c495-4ab8-b916-3bfd7bb19ceb",
+      "question": "What is the average low sale prices for the year 2019?"
+    },
+    {
+      "rank": 69,
+      "context_index": 1081,
+      "question_uid": "e9d3b542-75b1-43f3-87fe-89dec1d9cc42",
+      "question": "What are the average net revenues by EMEA for Year Ended December 31?"
+    },
+    {
+      "rank": 70,
+      "context_index": 1164,
+      "question_uid": "3bace59e-40b0-43d3-a5f4-05f4b04f8ad2",
+      "question": "What was the change in total fair value for rights granted on 2 July 2017 to 2 July 2018?"
+    },
+    {
+      "rank": 71,
+      "context_index": 1147,
+      "question_uid": "2186d95c-4b62-4956-8c32-668e495bd3e8",
+      "question": "What is the average Number of Shares Acquired on Exercise for the 3 officers who received it?"
+    },
+    {
+      "rank": 72,
+      "context_index": 1905,
+      "question_uid": "e480834b-7c2d-4eae-8033-50d43693c363",
+      "question": "What is the average contractual obligation based on the different term periods of the lease?"
+    },
+    {
+      "rank": 73,
+      "context_index": 1368,
+      "question_uid": "3823c86e-0923-425c-bb6f-1160aa31a882",
+      "question": "What is the total revenue earned by the company between 2015 to 2019?"
+    },
+    {
+      "rank": 74,
+      "context_index": 1960,
+      "question_uid": "76f80a7d-734a-425b-a5d5-2e80e6c2ada5",
+      "question": "What is the average total balance from 2017 to 2019?"
+    },
+    {
+      "rank": 75,
+      "context_index": 328,
+      "question_uid": "1eecedb1-7330-442d-82de-e5a337d91438",
+      "question": "What is the difference in the company's total other (income) expense in 2019 under ASC 606 and ASC 605?"
+    },
+    {
+      "rank": 76,
+      "context_index": 1081,
+      "question_uid": "bd4c399a-1e15-4444-b1d1-d83bf9daf1f2",
+      "question": "What are the average net revenues by Asia Pacific for Year Ended December 31?"
+    },
+    {
+      "rank": 77,
+      "context_index": 750,
+      "question_uid": "5ec1dbb6-90f6-4b83-9a1a-fb28ac9d3081",
+      "question": "What was the total percentage increase / (decrease) in the Net income (loss) attributable to common stockholders from March 2019 to December 2019?"
+    },
+    {
+      "rank": 78,
+      "context_index": 1202,
+      "question_uid": "660b7b1d-626d-4892-9ec6-b198fc2410ff",
+      "question": "What is the average high closing prices per share of the Company’s common stock reported by NYSE American for fiscal 2019?"
+    },
+    {
+      "rank": 79,
+      "context_index": 537,
+      "question_uid": "ebc82db9-64f8-4501-83f4-5ff0ad229fc7",
+      "question": "At end of the year March 31 2019, what is the total cumulative percentage shareholding of all the top ten shareholders?"
+    },
+    {
+      "rank": 80,
+      "context_index": 1823,
+      "question_uid": "57a70cb5-54da-448a-a1b9-89482e02ecc3",
+      "question": "What was the average total amount paid for the shares during the period from April 28, 2019 to May 25, 2019 and May 26, 2019 to June 22, 2019?"
+    },
+    {
+      "rank": 81,
+      "context_index": 821,
+      "question_uid": "6e9e8952-eb5b-4b5f-86c7-7b4a9d0e1cd0",
+      "question": "What is the average quarterly Adjustment towards significant financing component for  Three Months Ended June 30 2018 to march 31, 2019?"
+    },
+    {
+      "rank": 82,
+      "context_index": 2129,
+      "question_uid": "6cacd904-5899-437e-bd55-9cf9f801e6fc",
+      "question": "What is the average total interest expense and interest income and other expense, net, in 2018 and 2019?"
+    },
+    {
+      "rank": 83,
+      "context_index": 258,
+      "question_uid": "2671e667-7692-483f-9710-2390e33cbcd2",
+      "question": "What is the change in the average revenue between 2017-2018 and 2018-2019?"
+    },
+    {
+      "rank": 84,
+      "context_index": 325,
+      "question_uid": "e7da0801-6dc4-452c-8a67-8dee69dd8c0c",
+      "question": "What is the average  Cash and cash equivalents for 2015-2019?"
+    },
+    {
+      "rank": 85,
+      "context_index": 1894,
+      "question_uid": "bc9d18cd-d2af-4621-bcdf-b2526038dad9",
+      "question": "What is the average total target value for all Named Executive Officers?"
+    },
+    {
+      "rank": 86,
+      "context_index": 1300,
+      "question_uid": "2855dce3-7cd6-47b0-bcdf-e131f082bf16",
+      "question": "What is the average non-GAAP net income for the 3 year period from 2017 to 2019?"
+    },
+    {
+      "rank": 87,
+      "context_index": 2123,
+      "question_uid": "62d3489a-24b1-47f0-ac12-b63227f1ef24",
+      "question": "What is the average balance as of the end of fiscal years 2017, 2018 and 2019 for Total AOCI?"
+    },
+    {
+      "rank": 88,
+      "context_index": 1803,
+      "question_uid": "0a91c412-ea8e-4f69-a073-2ef3351aaf27",
+      "question": "What is the average cost of revenue from 2015-2019?"
+    },
+    {
+      "rank": 89,
+      "context_index": 1079,
+      "question_uid": "d927d798-a51d-44af-a4e0-5194ca39ca19",
+      "question": "What is the average quarterly amount of expenses related to the acquisition of Level 3 recorded in 2019?"
+    },
+    {
+      "rank": 90,
+      "context_index": 2177,
+      "question_uid": "d19886e0-4e76-4e86-ac9f-881dbd6cafa5",
+      "question": "What was the average revenue from Corporate and Other between 2017 and 2018?"
+    },
+    {
+      "rank": 91,
+      "context_index": 445,
+      "question_uid": "8e4f2b87-6baf-40ca-a8f9-cee8af8993d4",
+      "question": "What is the total price of exercised and expired stocks?"
+    },
+    {
+      "rank": 92,
+      "context_index": 720,
+      "question_uid": "28958656-bd4d-417e-8c1e-3f07488a45aa",
+      "question": "What is the average total cost of revenue between 2017 to 2019?"
+    },
+    {
+      "rank": 93,
+      "context_index": 2142,
+      "question_uid": "35b72aca-0682-4ec2-a19e-deccff13cd8b",
+      "question": "What was the average effective tax rate for 2017 and 2018?"
+    },
+    {
+      "rank": 94,
+      "context_index": 858,
+      "question_uid": "ae8b6244-7b35-41ac-8f06-1a9132d9f2c4",
+      "question": "What is the average value of working capital from 2015 to 2019?"
+    },
+    {
+      "rank": 95,
+      "context_index": 201,
+      "question_uid": "ec568bea-d930-4ffb-b06d-e0ded280164b",
+      "question": "What is the average of Recorded investment?"
+    },
+    {
+      "rank": 96,
+      "context_index": 614,
+      "question_uid": "4ddb80af-2284-4d9c-a567-fe48a9c34186",
+      "question": "What is the average Non-recurring revenue between 2017-2019?"
+    },
+    {
+      "rank": 97,
+      "context_index": 322,
+      "question_uid": "b9936d1c-75a4-4195-a8d5-f074cfeaef4d",
+      "question": "What is the total price of exercised or expired options during the fiscal year 2019?"
+    },
+    {
+      "rank": 98,
+      "context_index": 1535,
+      "question_uid": "0db7ea01-9a6f-4dc3-b77f-2a6807204618",
+      "question": "What was the difference between total provisions (benefits) and net recoveries (write-offs)?"
+    },
+    {
+      "rank": 99,
+      "context_index": 1016,
+      "question_uid": "725c8d4a-e470-4226-8db7-fb5d5e8800a8",
+      "question": "What is the average total value realized on vesting for all named executive officers?"
+    },
+    {
+      "rank": 100,
+      "context_index": 656,
+      "question_uid": "907c4a67-f552-49ae-936b-f18176f286fe",
+      "question": "What is the Weighted average number of Common Shares outstanding, diluted for years 2017, 2018 and 2019?"
+    },
+    {
+      "rank": 101,
+      "context_index": 363,
+      "question_uid": "7579644f-7833-41e4-b7a8-b3488507f0c2",
+      "question": "What is  Interest (income) expressed as a percentage of  Total other (income) expense, net?"
+    },
+    {
+      "rank": 102,
+      "context_index": 1249,
+      "question_uid": "c110f2aa-8bec-4b6e-8899-bb090e36ddff",
+      "question": "What is the average total purchase price amongst the three companies?"
+    },
+    {
+      "rank": 103,
+      "context_index": 580,
+      "question_uid": "af7747f0-ba4b-4a9c-bb2c-c03e2b227868",
+      "question": "How much was the total amount of foreign currency losses, net and interest income across 2018 and 2019?"
+    },
+    {
+      "rank": 104,
+      "context_index": 1698,
+      "question_uid": "0440647a-f2cb-45a3-b022-4b32151292d2",
+      "question": "What is the average annual fiscal year Long-term debt obligations for fiscal year 2020 to 2024?"
+    },
+    {
+      "rank": 105,
+      "context_index": 2013,
+      "question_uid": "eafb8ab3-25ae-4968-be6a-13941ae80c71",
+      "question": "What is the average operating loss for 2018 and 2019?"
+    },
+    {
+      "rank": 106,
+      "context_index": 363,
+      "question_uid": "fd17129c-abe9-4921-b700-c7c76429b11b",
+      "question": "What is the average Other (income) expense, net for 2017 and 2018?"
+    },
+    {
+      "rank": 107,
+      "context_index": 712,
+      "question_uid": "dc0cf4b4-cb13-42b3-8280-06dedbf02128",
+      "question": "What is the average net income from 2015 to 2019?"
+    },
+    {
+      "rank": 108,
+      "context_index": 1774,
+      "question_uid": "33c1bc97-b1f3-494e-9f64-3fbb926d3fae",
+      "question": "What was the average low closing price for 2019?"
+    },
+    {
+      "rank": 109,
+      "context_index": 720,
+      "question_uid": "54cec5f4-0e25-4341-9e05-7aaa16a15762",
+      "question": "What is the average cost of subscription between 2017 to 2019?"
+    },
+    {
+      "rank": 110,
+      "context_index": 1863,
+      "question_uid": "381f3a9e-0a08-456e-a903-6b3598c3cdb4",
+      "question": "What is the total price of exercised and expired options?"
+    },
+    {
+      "rank": 111,
+      "context_index": 213,
+      "question_uid": "6170c86e-c8cd-4302-a5ab-dafefa5230df",
+      "question": "What is the average gross profit between 2017-2019?"
+    },
+    {
+      "rank": 112,
+      "context_index": 1088,
+      "question_uid": "097dbc2c-4b57-41f0-a40f-f7fc56a58f62",
+      "question": "What was the average difference between number of rights in opening and closing balance for both years?"
+    },
+    {
+      "rank": 113,
+      "context_index": 1719,
+      "question_uid": "0ccc56dd-4b11-4c82-88c6-672df70228a2",
+      "question": "What is the total price of stock options exercised or canceled and expired during the period between December 31, 2018, and 2019?"
+    },
+    {
+      "rank": 114,
+      "context_index": 2136,
+      "question_uid": "b9e1b192-46b8-4c38-b0c3-19726aa9f95e",
+      "question": "What is the average Loss from Operations for Fiscal Year Ended April 28, 2018 to Fiscal Year Ended April 27, 2019?"
+    },
+    {
+      "rank": 115,
+      "context_index": 1718,
+      "question_uid": "1afc8348-dfa6-417d-b516-495a25695326",
+      "question": "What was the total value of the changes in principal on the issuance of 2024 Notes, 2026 Notes, 2027 Notes, 2029 Notes, and 2030 Notes?"
+    },
+    {
+      "rank": 116,
+      "context_index": 1813,
+      "question_uid": "e7a908dc-61c2-4299-b591-2fea8736279e",
+      "question": "What are the average Net sales?"
+    },
+    {
+      "rank": 117,
+      "context_index": 417,
+      "question_uid": "77fb6209-0933-4d47-8e1a-10dd336aa019",
+      "question": "What is the average Capitalized software, for the year 2019 to 2018?"
+    },
+    {
+      "rank": 118,
+      "context_index": 750,
+      "question_uid": "8e14050a-c4f5-40c0-8d57-d613830b1698",
+      "question": "What is the average Operating income for each quarter in 2019?"
+    },
+    {
+      "rank": 119,
+      "context_index": 1149,
+      "question_uid": "9fe8a199-0ba1-416c-b5dd-4907624df2e6",
+      "question": "What is the average hardware revenue from 2016 to 2018?"
+    },
+    {
+      "rank": 120,
+      "context_index": 1012,
+      "question_uid": "856c9c4e-9631-4333-8001-bd5f4593dc36",
+      "question": "What is the percentage of the costs incurred by Bell Wireline out of the total BCE operating costs in 2019?"
+    },
+    {
+      "rank": 121,
+      "context_index": 1646,
+      "question_uid": "7d955577-5616-4cc4-9e32-c7c44eb63e0d",
+      "question": "What is the average Research and development expenses?"
+    },
+    {
+      "rank": 122,
+      "context_index": 537,
+      "question_uid": "b881c3f7-4a7e-48c9-b10e-5efe42090615",
+      "question": "At end of the year March 31 2019, how many cumulative shares do the top ten shareholders hold in total?"
+    },
+    {
+      "rank": 123,
+      "context_index": 1144,
+      "question_uid": "3ca599c2-d471-4692-b750-ba1938eac0d6",
+      "question": "What is the average gross profit?"
+    },
+    {
+      "rank": 124,
+      "context_index": 1360,
+      "question_uid": "b0613e53-ccc6-4eef-98bc-b0b54b3b7d9e",
+      "question": "What was the average revenue over the 3 year period from 2017 to 2019?"
+    }
+  ],
+  "model_calls": 0
+}

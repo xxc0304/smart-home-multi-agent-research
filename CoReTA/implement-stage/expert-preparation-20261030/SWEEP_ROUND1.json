@@ -1,0 +1,15 @@
+{
+  "undeclared": [
+    {
+      "site": "tools/expert_discussion_scoring.py:49,62,74-85",
+      "decision": "solo 默认为 None；完全省略无消息对照时，完整团队被标为 COMPLETE_TEAM，并在非 fixture 时启用主比较。显式传入未完成 solo 时，则禁止主汇总。清单未声明这两种缺失情形采用不同资格规则。",
+      "why_it_matters": "这决定哪些观测可以进入主比较。只读复现确认：省略 solo 有 comparisons，传入未完成 solo 则 comparisons=None。代码正确区分 COMPLETE_TEAM 与 COMPLETE_PAIRED，但应在 A-010 明确团队单独汇总的允许范围，以及它不包含无消息对照比较。",
+      "class": "semantic"
+    }
+  ],
+  "stale_rows": [],
+  "semantic_undeclared": 1,
+  "verdict": "gaps",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional"
+}

@@ -1,0 +1,17 @@
+{
+  "purpose": "revision single-task live engineering integration; not capability comparison",
+  "tasks": [
+    "gsm8k/train/6388",
+    "mbpp/train/607"
+  ],
+  "selection": "first engineering math task; first code task after excluding known contract-questioned802 and615",
+  "seed": 17,
+  "normal_call_upper_bound": 28,
+  "excluded_code_tasks": [
+    "mbpp/train/802",
+    "mbpp/train/615"
+  ],
+  "model": "deepseek-flash",
+  "tokenizer_sha256": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+  "note": "no baseline comparison; no E1 overwrite"
+}

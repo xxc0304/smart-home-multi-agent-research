@@ -1,0 +1,43 @@
+{
+  "purpose": "seen-task output-length and protocol calibration, not capability comparison",
+  "task": {
+    "task_id": "mbpp/train/603",
+    "family": "mbpp",
+    "task_path": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\difficulty-screen-20261019\\public\\4b86d7f37c999a04.json",
+    "sha256": "1bd8b9d9eb09740ac7dc8922830d31757ec32c121017b543ab113ca7272d8f7c",
+    "job_id": "4b86d7f37c999a04"
+  },
+  "output": "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\closure-calibration-20261019",
+  "command": [
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\.venv\\Scripts\\python.exe",
+    "-m",
+    "coreta.run_closure",
+    "--task",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\difficulty-screen-20261019\\public\\4b86d7f37c999a04.json",
+    "--output",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\runs\\closure-calibration-20261019",
+    "--tokenizer",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\tokenizer-v4.1-flash-1017\\tokenizer.json",
+    "--live"
+  ],
+  "fresh_initial_drafts": true,
+  "normal_call_cap": 14,
+  "maximum_normal_path": 13,
+  "max_repairs": 2,
+  "max_output_tokens": 4096,
+  "failure_policy": "retain failure, no auto rerun or in-run configuration edits",
+  "source_hashes": {
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\closure.py": "42b143fb86d7b6956faa676486e726092f78fb5769f64bf0825232af0bf13f9b",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\run_closure.py": "3df1eae6bee058dfb32d9a1169cbc1479950d95ffba007ee7c678f98274e6e27",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\revision.py": "e2e0a0134e61f947c4bf8216c3cfeaa11f828932aceafebab186de50f2282321",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\model_client.py": "5da91ab801ff8aa0c7bc26d3653d151be2dd0957f70c9331c970080e583088a3",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\schemas.py": "95362e9c7dd007171bb8e0008a84642de66d1df9fb8f7817438bf9db6b93d51a",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\src\\coreta\\state.py": "23171f392cf782de4ba8bd1407f971b1dbcc4840d37650e69cbb8b61374de346",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\closure_prompts.json": "ec31174de32da0aad4a859d400fab75f3275ceb3176330e545442a52191bbafe",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\v0.3\\coreta.schema.json": "963552ce9c8463d17191645dbe90c07b5c0873a3a409c18bad4aab6182d15c69",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\config\\deepseek_flash_closure.json": "a7b73ce2e7235fafc1fd5c3b6f5f10d14ccffbb18becf5fd2724304437edb026",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\tokenizer-v4.1-flash-1017\\tokenizer.json": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\design\\CLOSURE_REVIEW_SPEC_20261019.md": "3b77f940619979a4642e665baee6e946d7c7090df91bbc7a8e06749f0cfc74e2",
+    "C:\\Users\\QVQ\\Documents\\ChatGPT\\agent-research\\CoReTA\\data\\difficulty-screen-20261019\\public\\4b86d7f37c999a04.json": "1bd8b9d9eb09740ac7dc8922830d31757ec32c121017b543ab113ca7272d8f7c"
+  }
+}

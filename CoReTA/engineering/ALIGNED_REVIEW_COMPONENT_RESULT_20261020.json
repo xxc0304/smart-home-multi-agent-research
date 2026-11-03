@@ -1,0 +1,123 @@
+{
+  "scope": "Standalone component only; not end-to-end task success",
+  "terminal_error": null,
+  "http_attempts": 1,
+  "repairs_used": 0,
+  "response_attempts": 1,
+  "final_projection": {
+    "request_id": "3a9e15a8a7a749ea9073ffa64ee6518b",
+    "global_errors": [],
+    "issues": {
+      "I1": {
+        "status": "open",
+        "errors": [
+          "Revised-object version use must be explained"
+        ],
+        "historical_observations": [
+          {
+            "case_handle": "H1",
+            "old_observed_value": "-1",
+            "fresh_observed_value": "-1",
+            "assessment": "supported",
+            "active_effect": "historical_only"
+          },
+          {
+            "case_handle": "H2",
+            "old_observed_value": "1",
+            "fresh_observed_value": "1",
+            "assessment": "supported",
+            "active_effect": "historical_only"
+          },
+          {
+            "case_handle": "H3",
+            "old_observed_value": "1",
+            "fresh_observed_value": "1",
+            "assessment": "supported",
+            "active_effect": "historical_only"
+          },
+          {
+            "case_handle": "H4",
+            "old_observed_value": "1",
+            "fresh_observed_value": "1",
+            "assessment": "supported",
+            "active_effect": "historical_only"
+          }
+        ],
+        "current_outcomes": [
+          "not_refuted",
+          "not_refuted",
+          "not_refuted",
+          "not_refuted"
+        ],
+        "semantic_assessment": "model_asserted; not mechanically verified",
+        "task_coverage_mode": "original_case_constraints",
+        "task_exhaustiveness_proven": false
+      },
+      "I2": {
+        "status": "open",
+        "errors": [
+          "Repair path mismatch"
+        ],
+        "historical_observations": [],
+        "current_outcomes": [
+          "not_refuted",
+          "not_refuted",
+          "not_refuted"
+        ],
+        "semantic_assessment": "model_asserted; not mechanically verified",
+        "task_coverage_mode": "reviewer_selected",
+        "task_exhaustiveness_proven": false
+      },
+      "I3": {
+        "status": "open",
+        "errors": [
+          "Repair path mismatch"
+        ],
+        "historical_observations": [],
+        "current_outcomes": [
+          "not_refuted"
+        ],
+        "semantic_assessment": "model_asserted; not mechanically verified",
+        "task_coverage_mode": "reviewer_selected",
+        "task_exhaustiveness_proven": false
+      },
+      "I4": {
+        "status": "open",
+        "errors": [
+          "Revised-object version use must be explained"
+        ],
+        "historical_observations": [
+          {
+            "case_handle": "H5",
+            "old_observed_value": "both non-integers",
+            "fresh_observed_value": "both non-integers",
+            "assessment": "supported",
+            "active_effect": "historical_only"
+          },
+          {
+            "case_handle": "H6",
+            "old_observed_value": "(1/√2,-1/√2)",
+            "fresh_observed_value": "(1/sqrt2,-1/sqrt2)",
+            "assessment": "supported",
+            "active_effect": "historical_only"
+          }
+        ],
+        "current_outcomes": [
+          "not_refuted",
+          "not_refuted",
+          "not_refuted",
+          "not_refuted",
+          "not_refuted"
+        ],
+        "semantic_assessment": "model_asserted; not mechanically verified",
+        "task_coverage_mode": "original_case_constraints",
+        "task_exhaustiveness_proven": false
+      }
+    },
+    "new_findings": [],
+    "all_issues_resolved": false,
+    "task_correctness_proven": false
+  },
+  "task_correctness_proven": false,
+  "frozen_hashes_match": true
+}

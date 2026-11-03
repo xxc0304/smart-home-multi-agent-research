@@ -1,0 +1,56 @@
+{
+  "kind": "offline_snapshot_not_paid_manifest",
+  "code_sha256": {
+    "src/coreta/constraint_commit.py": "bf7ac50f70f6eda7e0132bff696fd8774329572dc9592af609b058821bebeb8c",
+    "src/coreta/workboard/candidate_probe.py": "0b469ae4edbfd41fdb5d125276d30f4aceff7b90ac009a047bf387cee8c053c1",
+    "tools/constraint_commit_probe.py": "af15d78fd0dd429edaa77550f9181c8bae3145de9c714c6674d16c613e667cb9",
+    "tools/prepare_constraint_commit_20261027.py": "77d81c5348c707aec0a253c830545002c2bc1c762c16de6d0a92ffc95f5b2d59",
+    "tools/minimal_final_answer_contract.py": "34e73ea30c4e681986cd0ea0729723c345cc5bac08b61bc118fd5373c2d3e552",
+    "tools/local_judgment_frontend.py": "b1a82330b5f6fb6050816a4e01c9ea2762094a9341c2b2df4572099c71c82035",
+    "tests/test_constraint_commit.py": "24e6abd6d7b5f706f3f241694398b4a73dc6fd513c3e68e9c6237f02678c88a4"
+  },
+  "source_lineage": [
+    {
+      "case_path": "runs/inference-link-prepared-20261027-r3/cases/004-identity.json",
+      "case_sha256": "1416795a8c03a936a30df8c0ba246b9f0d6a3f110ff9680377314ca6a10f3425",
+      "raw_path": "runs/example-adaptation-live-20261026-r1/038.raw.txt",
+      "raw_sha256": "4c5914d8481e87c0cd92bf09fd8f0fe476d272f26810069f6826d79acf8a4ad9"
+    },
+    {
+      "case_path": "runs/inference-link-prepared-20261027-r3/cases/011-time-supported.json",
+      "case_sha256": "e4e94c8512be9d2cb1b3d70363f4d4b199ecc0c02ead82fe6ffcdd924fc29fa0",
+      "raw_path": "runs/example-adaptation-live-20261026-r1/049.raw.txt",
+      "raw_sha256": "3c66a2c84577cd5d09c56c806e578f213fdcb3999e333c59a297426dfc610577"
+    },
+    {
+      "case_path": "runs/inference-link-prepared-20261027-r3/cases/023-notice.json",
+      "case_sha256": "119dd08208f1ac31a54fb0eefc875ae4fe86b8b1d380248d202b765da4410018",
+      "raw_path": "runs/example-adaptation-live-20261026-r1/019.raw.txt",
+      "raw_sha256": "ce10194b5e6981ab9818a6dec8c1d2612763ea2eda71b587efaa25d7413efcd0"
+    }
+  ],
+  "files": {
+    "ASSUMPTIONS.md": "fd910b350ac819e362ddbb653362b9f44163aa4bc21239bd7fdd19ce25fb5809",
+    "LOCAL_REPLAY.json": "cbf51eedc0796341bb3f8a6c2e06d41e0d5dfa78bdada6e61ca53c832596466d",
+    "manual_controls/011-withdrawal-and-restoration.json": "a0826bf5298292b745d5f6c7f7faf24d3027753b63f70b5ed9ca94f00c924857",
+    "frozen_source/tests/test_constraint_commit.py": "24e6abd6d7b5f706f3f241694398b4a73dc6fd513c3e68e9c6237f02678c88a4",
+    "frozen_source/tools/constraint_commit_probe.py": "af15d78fd0dd429edaa77550f9181c8bae3145de9c714c6674d16c613e667cb9",
+    "frozen_source/tools/local_judgment_frontend.py": "b1a82330b5f6fb6050816a4e01c9ea2762094a9341c2b2df4572099c71c82035",
+    "frozen_source/tools/minimal_final_answer_contract.py": "34e73ea30c4e681986cd0ea0729723c345cc5bac08b61bc118fd5373c2d3e552",
+    "frozen_source/tools/prepare_constraint_commit_20261027.py": "77d81c5348c707aec0a253c830545002c2bc1c762c16de6d0a92ffc95f5b2d59",
+    "frozen_source/src/coreta/constraint_commit.py": "bf7ac50f70f6eda7e0132bff696fd8774329572dc9592af609b058821bebeb8c",
+    "frozen_source/src/coreta/workboard/candidate_probe.py": "0b469ae4edbfd41fdb5d125276d30f4aceff7b90ac009a047bf387cee8c053c1",
+    "historical_replay/004-identity/constraint_commit.json": "38a0a8f9715b3cd2121a69a84299cbeb2a80a555085ba2c2ad5bfcf9c8511868",
+    "historical_replay/004-identity/report_reference.json": "defa352fd3638e165f68c9e21bae0ea76743d495d31391ac64006e08254edb50",
+    "historical_replay/011-time-supported/constraint_commit.json": "c9490bda06b837bc4e703f5b62bc0513aaa33bcc10f1f29829ecf4857a9678a8",
+    "historical_replay/011-time-supported/report_reference.json": "9e5f2d3a67bac250a89da23c42ffe7f95e3839801d2dbbfdb1772e2f969c88c9",
+    "historical_replay/023-notice/constraint_commit.json": "f32abe675af18ee8386b20d5eb8a6dc2eed153493bf1096b015aaf1b30f0b506",
+    "historical_replay/023-notice/report_reference.json": "cd960751cad3c1608984f3ed915a0a51d05727ce1c451b69cd8422d53c2086e0",
+    "request_examples/004-identity/constraint_commit.json": "0f3c6f625a9c40c24ae735821d1afa4443c46cf129f5427db5f1734f2e7dfe48",
+    "request_examples/004-identity/report_reference.json": "6feb457e039414d11c3ead07c2574d7ea5e39deef17fa61b53efd92721245a68",
+    "request_examples/011-time-supported/constraint_commit.json": "7d9f5edb082c14d22222739c0d64fc834230c6258e623ccd3faa4ff0e0962a3e",
+    "request_examples/011-time-supported/report_reference.json": "fce71925a629ac4391a0c29337ff4b5f54c02bcd43067e8e8d37f3cd68016c7d",
+    "request_examples/023-notice/constraint_commit.json": "070468d5595f2c249f40b6e2a30c35237bcf9f933334320757778d7f06c6851e",
+    "request_examples/023-notice/report_reference.json": "b1452692e3299beb0ac18fa7c34af9fe19a909d9c98f82b011b82a50ee255d21"
+  }
+}

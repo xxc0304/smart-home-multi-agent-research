@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-25",
+  "api_calls": 0,
+  "raw_file_sha256": {
+    "selective_stages": "53399e7d8e5f7919fedac8b5c1ebe77b515b4a2a6e21c65126e063b72094489c",
+    "selective_requests": "8895666adb3be202580723c0ee32d57f393baf803debabc4112e0754f91ba1fe",
+    "context_stages": "d7652413f6c6a11f7de3153423670951bbbc165537b6b0747dc9345d7103b99e",
+    "context_requests": "ff5252bd4dbd9a1e20c970249f202cf843a6ca204395a34a382a4187f4d1b8be"
+  },
+  "selective_annotation_outputs_match_raw": true,
+  "context_counts": {
+    "004": {
+      "E": {
+        "n": 2,
+        "correct": 0
+      },
+      "B": {
+        "n": 2,
+        "correct": 0
+      },
+      "G": {
+        "n": 2,
+        "correct": 2
+      },
+      "M": {
+        "n": 2,
+        "correct": 0
+      }
+    },
+    "034": {
+      "B": {
+        "n": 2,
+        "correct": 2
+      },
+      "G": {
+        "n": 2,
+        "correct": 2
+      },
+      "M": {
+        "n": 2,
+        "correct": 2
+      },
+      "E": {
+        "n": 2,
+        "correct": 2
+      }
+    }
+  },
+  "selective_counts": {
+    "F": {
+      "n": 12,
+      "artifact_correct": 10,
+      "semantic_full_pass": 8,
+      "input_tokens": 9656,
+      "output_tokens": 2849,
+      "cases": {
+        "application-004": {
+          "n": 2,
+          "artifact_correct": 0,
+          "semantic_full_pass": 0,
+          "input_tokens": 3088,
+          "output_tokens": 804
+        },
+        "application-034": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 0,
+          "input_tokens": 2610,
+          "output_tokens": 861
+        },
+        "update-mixed": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1024,
+          "output_tokens": 300
+        },
+        "joint-mixed": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 966,
+          "output_tokens": 271
+        },
+        "all-supported": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 972,
+          "output_tokens": 290
+        },
+        "all-unsupported": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 996,
+          "output_tokens": 323
+        }
+      }
+    },
+    "K": {
+      "n": 12,
+      "artifact_correct": 10,
+      "semantic_full_pass": 8,
+      "input_tokens": 10352,
+      "output_tokens": 2937,
+      "cases": {
+        "application-004": {
+          "n": 2,
+          "artifact_correct": 0,
+          "semantic_full_pass": 0,
+          "input_tokens": 3204,
+          "output_tokens": 746
+        },
+        "application-034": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 0,
+          "input_tokens": 2726,
+          "output_tokens": 891
+        },
+        "update-mixed": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1140,
+          "output_tokens": 341
+        },
+        "joint-mixed": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1082,
+          "output_tokens": 290
+        },
+        "all-supported": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1088,
+          "output_tokens": 346
+        },
+        "all-unsupported": {
+          "n": 2,
+          "artifact_correct": 2,
+          "semantic_full_pass": 2,
+          "input_tokens": 1112,
+          "output_tokens": 323
+        }
+      }
+    }
+  },
+  "historical_scope": "single-receiver capability diagnostics; not evidence ordinary multi-agent baseline fails",
+  "reviewer": "assistant_local_audit_not_independent_human"
+}

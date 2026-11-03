@@ -1,0 +1,36 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "undeclared": [],
+  "stale_rows": [],
+  "semantic_undeclared": 0,
+  "verdict": "clean",
+  "resolved": [
+    {
+      "finding": "组bootstrap权重未声明",
+      "resolution": "A16明确抽组后带入全部题、按抽中题数计算均值，与paired_interval实现一致。"
+    },
+    {
+      "finding": "候选顺序接口责任未声明",
+      "resolution": "A17及README明确调用者按训练前登记顺序传入reports；select_candidate按该顺序处理并列，并限制1–2个候选。"
+    },
+    {
+      "finding": "机器资格规则未完整声明",
+      "resolution": "A19明确完整真实C、EM正差、组区间下界大于0及无精度警示；F1辅助，实际效应价值由人工解释，与compare_runs一致。"
+    },
+    {
+      "finding": "最后训练步超时仍登记COMPLETE",
+      "resolution": "tools/b0_training.py:164-165在训练返回后检查预算，并在保存正式adapter及来源信息前抛出超时。A18声明计算与保存的预算边界，修复与台账一致。"
+    }
+  ],
+  "verification": {
+    "files": "已重新直接读取全部指定文件，包括当前测试文件。",
+    "method": "纯内存控制流探针；未修改文件，未运行实际模型或读取评测题目。",
+    "results": [
+      "预算10秒、最后训练步结束11秒：抛出training_wall_budget_exhausted_at_final_step。",
+      "状态为INTERRUPTED_NOT_CANDIDATE，仅保存partial_adapter_NOT_CANDIDATE，不写正式候选来源。",
+      "两个完全并列的候选选择第一个报告；三个候选被拒绝。"
+    ]
+  },
+  "scope_note": "本轮未发现新的未声明选择、台账冲突或可确认的资格误判路径。clean仅表示本次限定范围内未发现残留问题；同家族审查仍为provisional，不是跨家族认证，也不证明Qwen/GPU兼容或真实专家优势。"
+}

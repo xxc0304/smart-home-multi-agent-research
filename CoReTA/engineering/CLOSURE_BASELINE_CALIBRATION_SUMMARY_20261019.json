@@ -1,0 +1,89 @@
+[
+  {
+    "system": "static_debate",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 10,
+    "http_attempts": 7,
+    "format_repairs": 0,
+    "output_truncations": 0,
+    "max_output_tokens_observed": 994,
+    "score": 0,
+    "score_detail": {
+      "task_id": "mbpp/train/603",
+      "status": "candidate_failed",
+      "score": 0,
+      "error_type": "AssertionError"
+    },
+    "shared_drafts_verified": true,
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "errors": []
+  },
+  {
+    "system": "independent_aggregate",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 4,
+    "http_attempts": 1,
+    "format_repairs": 0,
+    "output_truncations": 0,
+    "max_output_tokens_observed": 1002,
+    "score": 0,
+    "score_detail": {
+      "task_id": "mbpp/train/603",
+      "status": "candidate_failed",
+      "score": 0,
+      "error_type": "AssertionError"
+    },
+    "shared_drafts_verified": true,
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "final"
+    ],
+    "errors": []
+  },
+  {
+    "system": "independent_refine",
+    "status": "completed",
+    "stop_reason": "complete",
+    "normal_calls": 10,
+    "http_attempts": 7,
+    "format_repairs": 0,
+    "output_truncations": 0,
+    "max_output_tokens_observed": 1195,
+    "score": 0,
+    "score_detail": {
+      "task_id": "mbpp/train/603",
+      "status": "candidate_failed",
+      "score": 0,
+      "error_type": "AssertionError"
+    },
+    "shared_drafts_verified": true,
+    "stages": [
+      "draft",
+      "draft",
+      "draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "refine_draft",
+      "final"
+    ],
+    "errors": []
+  }
+]

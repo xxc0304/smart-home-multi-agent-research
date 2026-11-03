@@ -1,0 +1,641 @@
+{
+  "case_id": "011-time-18",
+  "kind": "historical_development_regression",
+  "packet": {
+    "task": {
+      "task_id": "candidate-screening-011",
+      "scenario": "You are on a committee responsible for an emergency scientific conference that suddenly lost its main venue due to a water pipe burst. You must relocate all attendees within the next two hours—if you can't agree, the event will be canceled. Three possible venues are nearby: City Library, Community Center, and School Gym. Each venue has different facilities and issues. The weather is turning hot and humid, and power outages have recently impacted the area. Your job is to pick the only venue that will safely accommodate all attendees for the full day of events without significant risks.",
+      "shared_information": [
+        "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power.",
+        "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave.",
+        "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet.",
+        "Temperatures are expected to exceed 37°C (99°F) in the afternoon. Organizers worry about heat stress if backup power fails."
+      ],
+      "choices": [
+        {
+          "id": "option_1",
+          "text": "School Gym"
+        },
+        {
+          "id": "option_2",
+          "text": "Community Center"
+        },
+        {
+          "id": "option_3",
+          "text": "City Library"
+        }
+      ],
+      "instruction": "Choose one option from the available evidence. Explain limits and unresolved interpretations."
+    },
+    "member": "A1",
+    "public_sources": [
+      {
+        "ref": "TASK",
+        "content": "You are on a committee responsible for an emergency scientific conference that suddenly lost its main venue due to a water pipe burst. You must relocate all attendees within the next two hours—if you can't agree, the event will be canceled. Three possible venues are nearby: City Library, Community Center, and School Gym. Each venue has different facilities and issues. The weather is turning hot and humid, and power outages have recently impacted the area. Your job is to pick the only venue that will safely accommodate all attendees for the full day of events without significant risks."
+      },
+      {
+        "ref": "PUBLIC.1",
+        "content": "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power."
+      },
+      {
+        "ref": "PUBLIC.2",
+        "content": "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave."
+      },
+      {
+        "ref": "PUBLIC.3",
+        "content": "The School Gym has air conditioning, but it's older; the office says there may be issues with the restrooms. A city maintenance team is on its way but hasn't arrived yet."
+      },
+      {
+        "ref": "PUBLIC.4",
+        "content": "Temperatures are expected to exceed 37°C (99°F) in the afternoon. Organizers worry about heat stress if backup power fails."
+      }
+    ],
+    "own_sources": [
+      {
+        "ref": "S01",
+        "content": "Library staff admit privately that their backup generator only has enough fuel for 2 hours and cannot be refueled due to a citywide gasoline shortage."
+      }
+    ],
+    "shared_contributions": {
+      "A1": {
+        "text": "Evidence is insufficient to confirm any venue as fully safe for the full day. The City Library's claimed readiness is undercut by my private source: its backup generator has only 2 hours of fuel and cannot be refueled amid a gasoline shortage, while heat stress risk hinges on backup power failing. Community Center is fully accessible and evacuated but is slightly smaller, with capacity for all attendees unconfirmed. School Gym has AC but unresolved restroom issues and a maintenance team not yet arrived. No option is clearly certified; the Library's short backup endurance is a serious full-duration risk.",
+        "facts": [
+          {
+            "candidate": "City Library",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "claims to be ready"
+          },
+          {
+            "candidate": "City Library",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S01",
+            "quote": "backup generator only has enough fuel for 2 hours and cannot be refueled due to a citywide gasoline shortage"
+          },
+          {
+            "candidate": "Community Center",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.2",
+            "quote": "staff report it's fully accessible and already evacuated in advance of the heat wave"
+          },
+          {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "A city maintenance team is on its way but hasn't arrived yet"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "safe_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks"
+          },
+          {
+            "field": "full_duration_supported",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "safely accommodate all attendees for the full day of events"
+          }
+        ],
+        "caveats": [
+          "Community Center capacity for all attendees is unconfirmed ('slightly smaller').",
+          "School Gym restroom issues and unarrived maintenance team remain unresolved risks.",
+          "Library generator fuel shortage is a private report; public claim of readiness conflicts with full-day power needs.",
+          "No venue is confirmed safe for the full day; selection would rely on unresolved assumptions."
+        ],
+        "solution": null
+      },
+      "A2": {
+        "text": "I do not select a final venue. The public evidence favors the City Library (large room, claims ready, known backup generator), while the School Gym has unresolved restroom issues and the Community Center is smaller with no stated power backup. My private source (S02) only indicates School Gym restrooms may be restored within an hour; it does not confirm readiness at start or safe full-day capacity. Key unknowns: attendee count vs. room capacity, Community Center backup power, and full-duration power for all venues under heat-wave outages.",
+        "facts": [
+          {
+            "candidate": "City Library",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "claims to be ready"
+          },
+          {
+            "candidate": "City Library",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "it also has a known backup generator for power"
+          },
+          {
+            "candidate": "Community Center",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "PUBLIC.2",
+            "quote": "the staff report it's fully accessible and already evacuated in advance of the heat wave"
+          },
+          {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "S02",
+            "quote": "at least two working restrooms (with ventilation and water) will be available within an hour"
+          },
+          {
+            "candidate": "School Gym",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "the office says there may be issues with the restrooms"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "ready_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks"
+          },
+          {
+            "field": "safe_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks"
+          },
+          {
+            "field": "full_duration_supported",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "safely accommodate all attendees for the full day of events without significant risks"
+          }
+        ],
+        "caveats": [
+          "S02 states restroom restoration is expected within an hour, not confirmed at the required start; this is a possible risk, not a confirmed prohibition.",
+          "City Library 'claims to be ready' is a claim, not independently verified readiness.",
+          "No source confirms attendee capacity for any venue, nor full-duration backup power for the Community Center or School Gym.",
+          "Community Center is described as slightly smaller; whether it fits all attendees is unknown."
+        ],
+        "solution": null
+      },
+      "A3": {
+        "text": "Community Center is disqualified by a private discovery of a chemical leak making it unsafe for day-long use; School Gym has unresolved restroom issues and an unarrived maintenance team; City Library has a large room and backup generator but no confirmed full-duration power support. I do not select a final option; City Library is the least-risky candidate pending verification.",
+        "facts": [
+          {
+            "candidate": "Community Center",
+            "field": "safe_for_task",
+            "value": false,
+            "source": "S03",
+            "quote": "it's only safe for short visits, not day-long events"
+          },
+          {
+            "candidate": "Community Center",
+            "field": "full_duration_supported",
+            "value": false,
+            "source": "S03",
+            "quote": "it's only safe for short visits, not day-long events"
+          },
+          {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "A city maintenance team is on its way but hasn't arrived yet"
+          },
+          {
+            "candidate": "School Gym",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "PUBLIC.3",
+            "quote": "there may be issues with the restrooms"
+          },
+          {
+            "candidate": "City Library",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "claims to be ready"
+          },
+          {
+            "candidate": "City Library",
+            "field": "full_duration_supported",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "it also has a known backup generator for power"
+          }
+        ],
+        "conditions": [
+          {
+            "field": "safe_for_task",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks"
+          }
+        ],
+        "caveats": [
+          "Community Center is excluded based on my private source S03; the public statement about accessibility and evacuation does not address the newly discovered chemical leak.",
+          "City Library's 'claims to be ready' is not confirmation, and a backup generator does not establish adequate full-duration support during a heat wave.",
+          "School Gym's restroom issues and unarrived maintenance team leave readiness and safety unknown.",
+          "No venue is confirmed fully safe and ready for the full day; final choice should await verification, especially of City Library power capacity."
+        ]
+      },
+      "A4": {
+        "text": "No venue is fully confirmed safe for the full day from the available evidence. The School Gym has unresolved restroom issues and an unarrived maintenance team; the Community Center's capacity for all attendees and backup power are unstated; the City Library's backup generator is noted but its full-duration support and heat resilience are not confirmed. My own source only confirms College Hall is unavailable.",
+        "facts": [
+          {
+            "candidate": "School Gym",
+            "field": "ready_for_task",
+            "value": false,
+            "source": "PUBLIC.3",
+            "quote": "A city maintenance team is on its way but hasn't arrived yet."
+          },
+          {
+            "candidate": "Community Center",
+            "field": "safe_for_task",
+            "value": null,
+            "source": "PUBLIC.2",
+            "quote": "The Community Center is slightly smaller but centrally located; the staff report it's fully accessible and already evacuated in advance of the heat wave."
+          },
+          {
+            "candidate": "City Library",
+            "field": "ready_for_task",
+            "value": null,
+            "source": "PUBLIC.1",
+            "quote": "The City Library has a large conference room and claims to be ready; it also has a known backup generator for power."
+          }
+        ],
+        "conditions": [],
+        "caveats": [
+          "School Gym restroom issues may not be resolved before the event; maintenance team arrival time is unknown.",
+          "Community Center is 'slightly smaller' than the other venues; whether it accommodates all attendees is unknown.",
+          "Community Center backup power capability during heat-related outages is not stated.",
+          "City Library 'claims to be ready' is self-reported; backup generator existence does not confirm full-day power support or heat resilience.",
+          "Temperatures exceeding 37°C create heat-stress risk if backup power fails; no venue's cooling resilience is fully confirmed.",
+          "Own source S04 only establishes College Hall is unavailable, not the suitability of any listed venue."
+        ],
+        "solution": null
+      }
+    },
+    "execution_report": {
+      "member_conditions": [
+        {
+          "id": "A1.C1",
+          "owner": "A1",
+          "field": "safe_for_task",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks",
+          "diagnostic": null
+        },
+        {
+          "id": "A1.C2",
+          "owner": "A1",
+          "field": "full_duration_supported",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "safely accommodate all attendees for the full day of events",
+          "diagnostic": null
+        },
+        {
+          "id": "A2.C1",
+          "owner": "A2",
+          "field": "ready_for_task",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks",
+          "diagnostic": null
+        },
+        {
+          "id": "A2.C2",
+          "owner": "A2",
+          "field": "safe_for_task",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks",
+          "diagnostic": null
+        },
+        {
+          "id": "A2.C3",
+          "owner": "A2",
+          "field": "full_duration_supported",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "safely accommodate all attendees for the full day of events without significant risks",
+          "diagnostic": null
+        },
+        {
+          "id": "A3.C1",
+          "owner": "A3",
+          "field": "safe_for_task",
+          "op": "eq",
+          "value": true,
+          "source": "TASK",
+          "quote": "pick the only venue that will safely accommodate all attendees for the full day of events without significant risks",
+          "diagnostic": null
+        }
+      ],
+      "model_fact_table": {
+        "option_3": {
+          "ready_for_task": null,
+          "full_duration_supported": false,
+          "safe_for_task": null
+        },
+        "option_2": {
+          "ready_for_task": null,
+          "safe_for_task": false,
+          "full_duration_supported": false
+        },
+        "option_1": {
+          "ready_for_task": false,
+          "safe_for_task": null
+        }
+      },
+      "fact_conflicts": [],
+      "candidate_fact_coverage": {
+        "A1.C1": 1,
+        "A1.C2": 2,
+        "A2.C1": 1,
+        "A2.C2": 1,
+        "A2.C3": 2,
+        "A3.C1": 1
+      },
+      "notices": [
+        {
+          "owner": "A1",
+          "kind": "exact_candidate_alias",
+          "index": 0,
+          "original": "City Library",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A1",
+          "kind": "exact_candidate_alias",
+          "index": 1,
+          "original": "City Library",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A1",
+          "kind": "exact_candidate_alias",
+          "index": 2,
+          "original": "Community Center",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A1",
+          "kind": "exact_candidate_alias",
+          "index": 3,
+          "original": "School Gym",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A2",
+          "kind": "exact_candidate_alias",
+          "index": 0,
+          "original": "City Library",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A2",
+          "kind": "exact_candidate_alias",
+          "index": 1,
+          "original": "City Library",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A2",
+          "kind": "exact_candidate_alias",
+          "index": 2,
+          "original": "Community Center",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A2",
+          "kind": "exact_candidate_alias",
+          "index": 3,
+          "original": "School Gym",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A2",
+          "kind": "exact_candidate_alias",
+          "index": 4,
+          "original": "School Gym",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 0,
+          "original": "Community Center",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 1,
+          "original": "Community Center",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 2,
+          "original": "School Gym",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 3,
+          "original": "School Gym",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 4,
+          "original": "City Library",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A3",
+          "kind": "exact_candidate_alias",
+          "index": 5,
+          "original": "City Library",
+          "normalized": "option_3"
+        },
+        {
+          "owner": "A4",
+          "kind": "exact_candidate_alias",
+          "index": 0,
+          "original": "School Gym",
+          "normalized": "option_1"
+        },
+        {
+          "owner": "A4",
+          "kind": "exact_candidate_alias",
+          "index": 1,
+          "original": "Community Center",
+          "normalized": "option_2"
+        },
+        {
+          "owner": "A4",
+          "kind": "exact_candidate_alias",
+          "index": 2,
+          "original": "City Library",
+          "normalized": "option_3"
+        }
+      ],
+      "candidate_checks": [
+        {
+          "candidate": "option_1",
+          "checks": [
+            {
+              "condition": "A1.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A1.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C1",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A2.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C3",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A3.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            }
+          ]
+        },
+        {
+          "candidate": "option_2",
+          "checks": [
+            {
+              "condition": "A1.C1",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A1.C2",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A2.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C2",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A2.C3",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A3.C1",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            }
+          ]
+        },
+        {
+          "candidate": "option_3",
+          "checks": [
+            {
+              "condition": "A1.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A1.C2",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A2.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C2",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            },
+            {
+              "condition": "A2.C3",
+              "status": "violates",
+              "actual": false,
+              "diagnostic": null
+            },
+            {
+              "condition": "A3.C1",
+              "status": "unknown",
+              "actual": null,
+              "diagnostic": "missing_or_conflicting_candidate_fact"
+            }
+          ]
+        }
+      ],
+      "not_excluded": [],
+      "meaning": "Literal checks of model interpretations, not source-semantic verification. Unknown is not true; not-excluded is not proven correct."
+    },
+    "historical_author": "A1",
+    "historical_work": {
+      "reason": "The task demands a venue safe for all attendees for the full day with no significant risks. Public evidence leaves capacity, cooling, and power unknowns. My private source S01 shows the City Library's backup generator has only 2 hours of fuel and cannot be refueled, making it unsafe for a full day if power fails in >37°C heat. A2's report on School Gym restroom restoration is only expected within an hour, not confirmed, and A3's report of a chemical leak disqualifying the Community Center conflicts with the public accessibility claim and is unverified by me. No option is fully certified; among them, the Library's confirmed short backup endurance is a definite full-day risk, and the Community Center has a reported safety exclusion. The School Gym has air conditioning and the restroom issue is potentially resolvable, but its readiness and restroom functionality at start remain unconfirmed. Given the forced choice and treating unverified exclusions cautiously, the School Gym is the least-risky candidate, while the Library's confirmed fuel limit makes it the weakest for full-duration support.",
+      "artifact": "option_1",
+      "solution": null
+    },
+    "local_question": "What timing and certainty do your sources give for School Gym restroom availability relative to the relocation window? Distinguish current state, expected future state, and confirmation.",
+    "local_reconstruction": {
+      "author": "A2",
+      "text": "My source S02 gives a present-tense process and a near-term expectation, not a confirmed end state: \"The School Gym's restrooms are being restored right now\" (current state: restoration in progress), and \"The on-site janitor confirms that at least two working restrooms (with ventilation and water) will be available within an hour\" (expected future state, reported by the janitor, i.e., attributed confirmation rather than independent verification by me). Relative to the two-hour relocation window, this implies the restrooms are not currently usable but are projected to be functional roughly one hour in, leaving about an hour of margin before the window closes. Certainty is limited: S02 confirms the janitor's assertion, not the actual availability, and it is silent on whether restoration could slip, on restroom capacity for all attendees, and on any other School Gym issues (PUBLIC.3 notes the maintenance team \"hasn't arrived yet\"). This timing does not by itself establish that the School Gym is safe for the full day; it only indicates the restroom problem may be resolved before the relocation deadline."
+    }
+  }
+}

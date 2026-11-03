@@ -1,0 +1,74 @@
+{
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "round_1": {
+    "undeclared": [
+      {
+        "site": "src/coreta/workboard_d0/runtime.py:127-132",
+        "decision": "Every successful TRY creates an application link to the active focus, including reuse and selection of an offer whose responds_to is null. A different selected responds_to also receives a link.",
+        "why_it_matters": "focus_history.applications records contextual association, not evidence that the focus or its response was actually used. The code comment recognizes this distinction, but the ledger does not declare it. An offline reader could mistake this relation for demonstrated focus-to-application progress.",
+        "class": "semantic"
+      }
+    ],
+    "stale_rows": [
+      {
+        "id": "D06",
+        "site": "design/expertise-handoff/workboard-next-proposal/implement-stage/ASSUMPTIONS.md:12; src/coreta/workboard_d0/runtime.py:27-55; src/coreta/workboard/runtime.py:67-75",
+        "declared": "Non-initial D0 packets carry related public works/offers and checks.",
+        "actual": "Historical raw checks are available through FEEDBACK in OBSERVE and FINALIZE, and APPLICATION_FEEDBACK in TRY. CHOOSE and FINAL_CHOOSE receive their current CHECKS. CHECK_USE, CHECK_EFFECT, FINAL_CHECK_USE and FINAL_CHECK_EFFECT receive focus metadata but no historical raw checks.",
+        "why_it_matters": "The row overstates which stages can inspect the observations that originally motivated a focus. The stage-specific visibility should be declared explicitly. The absence of the other checker's current verdict correctly preserves independent checks."
+      }
+    ],
+    "semantic_undeclared": 1,
+    "verdict": "gaps",
+    "defects": [
+      {
+        "site": "src/coreta/workboard_d0/runtime.py:34-44",
+        "description": "Historical work cited by a focus can disappear from later CHOOSE and FINAL_CHOOSE packets because the retained-work set includes origin_work, selected_work and target, but excludes base_work and work IDs in refs.",
+        "trigger": "A permitted cycle selects trial W5 over base W2 and opens a focus with target=whole_goal and refs=[W2]. The focus records origin_work=W5, selected_work=W5 and base_work=W2. A later CHOOSE comparing W5 with W6 includes W5 and W6 but omits W2, while FOCUS_HISTORY still cites W2.",
+        "why_it_matters": "The decision-maker cannot inspect the historical work explicitly cited by its input focus. This conflicts with D06/D07's retained related-work visibility and weakens the declared ability to reassess a question across versions.",
+        "evidence": "Static path inspection only; no tests or live calls were run. Existing historical-retention coverage uses target=AFTER and refs=[T], so it does not exercise this path."
+      }
+    ],
+    "review_independence": "same-family",
+    "acceptance_status": "provisional"
+  },
+  "fixes": [
+    "D11 declares navigation-only application links; relation explicitly separates selected_response from active_context_only.",
+    "D12 adds FOCUS_FEEDBACK with related historical raw checks to every non-initial stage, preserving current-round checker isolation.",
+    "D14 retains cited/base historical work; targeted test first failed with missing W2 before the fix."
+  ],
+  "round_2": {
+    "undeclared": [],
+    "stale_rows": [
+      {
+        "id": "D12",
+        "site": "design/expertise-handoff/workboard-next-proposal/implement-stage/ASSUMPTIONS.md; src/coreta/workboard_d0/runtime.py:34-40",
+        "declared": "FOCUS_FEEDBACK is restricted to rows connected through origin_work, selected_work or focus ID.",
+        "actual": "The work-based filter also includes base_work and the work portions of target and refs. Rows also qualify through offer.responds_to.",
+        "why_it_matters": "The implementation exposes a broader set of historical feedback than D12 describes. Update the row to state the actual selection rule; no implementation change is required by this finding."
+      }
+    ],
+    "semantic_undeclared": 0,
+    "verdict": "gaps",
+    "defects": [],
+    "resolved": [
+      {
+        "finding": "Undeclared application-link meaning",
+        "evidence": "D11 and applications.relation now distinguish active_context_only from selected_response and explicitly deny either as proof of semantic use."
+      },
+      {
+        "finding": "Historical-check visibility overstated by D06",
+        "evidence": "Every non-INITIAL packet now receives FOCUS_FEEDBACK. Both checker packets are still constructed before either current checker response, preserving independence."
+      },
+      {
+        "finding": "Cited historical base work missing from later decisions",
+        "evidence": "The retained-work set now includes base_work and work references from refs and target, intersected with existing board IDs. Later CHOOSE and FINAL_CHOOSE packets therefore retain the cited W2 path identified in round 1."
+      }
+    ],
+    "additional_verification": "D13 matches replay_complete and replay_error in result.json. Static review only; no files were edited and no tests or live calls were run.",
+    "review_independence": "same-family",
+    "acceptance_status": "provisional"
+  },
+  "post_round_2_executor_resolution": "D12 now states the exact after-work/focus_id/offer.responds_to filter. The second-round wording finding is corrected; this final documentation edit was executor-checked, not a third reviewer round. No runtime change after round 2."
+}

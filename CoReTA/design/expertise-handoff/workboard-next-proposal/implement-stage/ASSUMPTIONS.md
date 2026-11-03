@@ -1,0 +1,22 @@
+# D0 Assumption Ledger
+
+ASK mode: never. Existing design authorization permits implementation and offline checks, not a new live experiment.
+
+| ID | Under-determined decision | Chosen | Class | Source |
+|---|---|---|---|---|
+|D01|How to preserve frozen v3|New coreta.workboard_d0 package subclasses existing runner/contracts/prompts; v3 source untouched. D0 result protocol and system distinct.|interface|default|
+|D02|How much workflow to change|Same editor, offer rotation, N−1 cycles, stage output caps and four closure calls. No automatic preference for focus responses. No live runs in this build.|semantic|user|
+|D03|Focus output shape|CHOOSE requires nullable next_check and nullable focus_disposition; next_check uses target/question/check/refs; focused offers require nullable responds_to. Other old stage outputs remain unchanged. IDs allocated by host.|interface|default|
+|D04|Single active focus and older problems|Latest pending focus gets priority; all focus history and raw feedback remain public. Prior pending focuses stay pending, not automatically discarded. Disposition may address only the input active focus; null means no update.|semantic|default|
+|D05|What addressed means|Model report only, never verified. Pending entries become deferred at stopping/interruption; FINAL_CHOOSE may report disposition for its input focus but cannot open a new one. All-pass/unable never marks addressed.|semantic|default|
+|D06|What subsequent stages see|Non-initial D0 packets carry focus history and current focus, related public works/offers and checks. TRY explicitly sees relevant previous application feedback. Shared current-round observation snapshot isolation is retained.|interface|default|
+|D07|Source and target visibility|Focus references are public reports, not grants to originals. Legal source IDs stay member-specific. Targets are enumerated from visible work IDs/locations plus whole_goal. Related prior works remain visible so changed versions can be reconsidered.|semantic|default|
+|D08|Structural validity vs semantic validity|Host validates references, response links and dispositions; does not judge whether a question is useful or answered correctly. No auto-deduplication of natural language questions and no automatic truth metric.|semantic|default|
+|D09|Offline entry point|Replay CLI consumes explicit scripted stage/member/output rows, guards network, produces engineering-only artifacts in a new directory. It does not impersonate a natural model experiment.|interface|default|
+|D10|Accepting remaining focus at closure|Pending focus remains visible to all closure calls; after closure any remaining pending focus is deferred. Error exits defer pending focus even if delivery fails. Source/format errors retain existing stop semantics.|semantic|default|
+|D11|Application link evidence|A successful TRY while a focus is active creates a navigation link even if the selected offer is unrelated or reuses work. Record relation=active_context_only versus selected_response; neither proves correct or actual semantic use. Trials that fail materialization have no such link.|semantic|sweep|
+|D12|Historical checks in later checkers' context|All non-initial stages receive FOCUS_FEEDBACK for rows whose after work belongs to D14's historical work set, whose focus_id belongs to focus history, or whose offer.responds_to belongs to focus history. Current-round checks enter feedback only after both independent checker inputs are formed. TRY retains APPLICATION_FEEDBACK for explicit revision context.|interface|default|
+|D13|Replay exhaustion vs protocol completion|result.status describes protocol delivery; replay_complete and replay_error also appear in result.json, so unused scripted responses cannot look like a complete replay by inspecting result.json alone. Synthetic usage remains labelled.|semantic|default|
+|D14|Which related historical works remain inspectable|Carry origin_work, selected_work, base_work, work part of target and work IDs in focus refs into later packets. Only existing public works are retained; source-original IDs never grant access. Added after reviewer demonstrated missing base work.|interface|sweep|
+
+No submission-readiness or method effectiveness is inferred from scripted acceptance checks. Git commits are deferred: the shared checkout has extensive pre-existing untracked research work; the build records named-file evidence rather than bundling unrelated files into a commit.

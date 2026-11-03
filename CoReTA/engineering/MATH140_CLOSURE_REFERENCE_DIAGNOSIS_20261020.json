@@ -1,0 +1,29 @@
+{
+  "original_input_estimate": 23349,
+  "repair_input_estimate": 27093,
+  "configured_max_input_tokens": 24576,
+  "repair_sent": false,
+  "frozen_hashes_match": true,
+  "initial_hashes_verified_by_driver": true,
+  "delivery_equals_first_apply": true,
+  "audit_outcomes": [
+    {
+      "record_id": "coreta-source-binding-6a3cd0d909ca:e0007:a01",
+      "outcome": "finding_open",
+      "validation_errors": []
+    },
+    {
+      "record_id": "coreta-source-binding-6a3cd0d909ca:e0007:a02",
+      "outcome": "not_refuted_within_recorded_scope",
+      "validation_errors": []
+    },
+    {
+      "record_id": "coreta-source-binding-6a3cd0d909ca:e0007:a03",
+      "outcome": "needs_check",
+      "validation_errors": []
+    }
+  ],
+  "correct_coordinate_in_work": true,
+  "correct_work_committed": false,
+  "reference_visibility_gap": "reference_index indexes event_id and candidate steps, but not record_id; a visible stored audit record cannot currently be used in evidence_refs."
+}

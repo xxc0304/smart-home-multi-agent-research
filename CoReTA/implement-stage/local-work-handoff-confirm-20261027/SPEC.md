@@ -1,0 +1,5 @@
+# Frozen-method new-instance confirmation preparation
+
+Target: retain current handoff architecture/prompts and prepare four previously unused project instances, with three arms and two independent repeats (168 calls maximum). Inputs: public TAT-QA train and recorded prior tasks/inspections; frozen handoff pilot sources. Outputs: deterministic candidate/exclusion ledger, faithful new task packets and frozen offline references, versioned bounded runner/checker/audit/scorer and review. Base commit00338a49953246eaeff582e1a16f4c2959b77374; unrelated dirty tree retained.
+
+No paid calls in this preparation. Select by predeclared source-structure rules, not observed method wins. Ordinary samples and controlled dependencies remain separate. Claim scope is new-instance/process repeatability and initial quality/cost evidence, not population generalization or causal isolation of every suboperation. Preserve all old method/runtime sources, scores and grants. Success command documented after candidate review; no fictitious results. API/data authorization required for final frozen batch.

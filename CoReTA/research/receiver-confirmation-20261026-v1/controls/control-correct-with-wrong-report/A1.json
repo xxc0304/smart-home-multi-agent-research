@@ -1,0 +1,85 @@
+{
+  "task": {
+    "task_id": "control-correct-with-wrong-report",
+    "scenario": "At 16:00 today assign exactly one chamber for eight sealed display pieces. The chamber must hold all eight pieces, be open for this event at 16:00, and have a documented current temperature between 15 and 20 C. Select the best supported eligible chamber; do not invent future repairs.",
+    "shared_information": [
+      "Cedar can hold six pieces. Birch and Elm can each hold eight pieces.",
+      "Readiness and current temperature must be checked against the supplied updates."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Cedar"
+      },
+      {
+        "id": "option_2",
+        "text": "Birch"
+      },
+      {
+        "id": "option_3",
+        "text": "Elm"
+      }
+    ],
+    "instruction": "Follow the decision requirement in the task and explain genuine unresolved conditions."
+  },
+  "member": "A1",
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "At 16:00 today assign exactly one chamber for eight sealed display pieces. The chamber must hold all eight pieces, be open for this event at 16:00, and have a documented current temperature between 15 and 20 C. Select the best supported eligible chamber; do not invent future repairs."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "Cedar can hold six pieces. Birch and Elm can each hold eight pieces."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Readiness and current temperature must be checked against the supplied updates."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "PRIVATE.A1",
+      "content": "Cedar is open at 16:00 with a current temperature of 18 C, but its capacity remains six pieces."
+    }
+  ],
+  "shared_contributions": {
+    "A1": {
+      "text": "Cedar is open at 16:00 with a current temperature of 18 C, but its capacity remains six pieces.",
+      "disclosed_originals": [
+        {
+          "ref": "PRIVATE.A1",
+          "content": "Cedar is open at 16:00 with a current temperature of 18 C, but its capacity remains six pieces."
+        }
+      ]
+    },
+    "A2": {
+      "text": "Birch will not reopen until 16:30 today; its current temperature is 18 C.",
+      "disclosed_originals": [
+        {
+          "ref": "PRIVATE.A2",
+          "content": "Birch will not reopen until 16:30 today; its current temperature is 18 C."
+        }
+      ]
+    },
+    "A3": {
+      "text": "Elm passed its inspection at 15:40 today. It is open for the 16:00 event, holds eight pieces, and its current logged temperature is 18 C.",
+      "disclosed_originals": [
+        {
+          "ref": "PRIVATE.A3",
+          "content": "Elm passed its inspection at 15:40 today. It is open for the 16:00 event, holds eight pieces, and its current logged temperature is 18 C."
+        }
+      ]
+    }
+  },
+  "execution_report": {
+    "origin": "fallible_prior_check",
+    "claim": "Elm is unavailable at 16:00 because its inspection occurred at 15:40.",
+    "ready": false
+  },
+  "historical_work": {
+    "choice": "option_3",
+    "reasoning": "Elm is open for 16:00, has capacity eight and a current 18 C reading. Cedar lacks capacity and Birch opens too late."
+  },
+  "historical_author": "CONTROL_AUTHOR"
+}

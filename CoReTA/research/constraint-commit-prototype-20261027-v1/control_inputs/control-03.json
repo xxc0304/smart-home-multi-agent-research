@@ -1,0 +1,97 @@
+{
+  "context": {
+    "task": {
+      "task_type": "choice",
+      "scenario": "Choose one vehicle for a load of 10 units departing at 09:00. The load must fit and the vehicle must be ready by departure. It is now 08:00.",
+      "choices": [
+        {
+          "id": "option_1",
+          "text": "Luma"
+        },
+        {
+          "id": "option_2",
+          "text": "Neri"
+        },
+        {
+          "id": "option_3",
+          "text": "Vela"
+        }
+      ],
+      "instruction": "Choose the best supported vehicle.",
+      "task_id": "control-03"
+    },
+    "member": "A1",
+    "public_sources": [
+      {
+        "ref": "TASK",
+        "content": "Choose one vehicle for a load of 10 units departing at 09:00. The load must fit and the vehicle must be ready by departure. It is now 08:00."
+      },
+      {
+        "ref": "PUBLIC.1",
+        "content": "Capacity readings: Luma 12, Neri 6, Vela 8."
+      }
+    ],
+    "own_sources": [
+      {
+        "ref": "S01",
+        "content": "Luma is not ready at 08:00. Maintenance is expected to finish by 08:30; completion has not yet been confirmed."
+      }
+    ],
+    "shared_contributions": {
+      "A1": {
+        "text": "Local interpretation of supplied information.",
+        "facts": [
+          {
+            "candidate": "option_1",
+            "field": "capacity",
+            "value": 12,
+            "source": "PUBLIC.1",
+            "quote": "Luma 12"
+          },
+          {
+            "candidate": "option_2",
+            "field": "capacity",
+            "value": 6,
+            "source": "PUBLIC.1",
+            "quote": "Neri 6"
+          },
+          {
+            "candidate": "option_3",
+            "field": "capacity",
+            "value": 8,
+            "source": "PUBLIC.1",
+            "quote": "Vela 8"
+          },
+          {
+            "candidate": "option_1",
+            "field": "ready_for_start",
+            "value": false,
+            "source": "S01",
+            "quote": "Luma is not ready at 08:00."
+          }
+        ],
+        "conditions": [
+          {
+            "field": "capacity",
+            "op": "ge",
+            "value": 10,
+            "source": "TASK",
+            "quote": "load of 10 units"
+          },
+          {
+            "field": "ready_for_start",
+            "op": "eq",
+            "value": true,
+            "source": "TASK",
+            "quote": "must be ready by departure"
+          }
+        ],
+        "caveats": []
+      }
+    }
+  },
+  "field_types": {
+    "capacity": "number",
+    "ready_for_start": "boolean"
+  }
+}

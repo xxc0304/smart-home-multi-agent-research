@@ -1,0 +1,207 @@
+{
+  "scope": "Saved development trajectories only; no independence or effectiveness claim",
+  "runs": [
+    {
+      "name": "task-audit",
+      "status": "degraded",
+      "logical_calls": 4,
+      "http_attempts": 2,
+      "audit_records": 0,
+      "terminal_errors": [
+        {
+          "code": "REFERENCE_ERROR",
+          "detail": "TaskFact F01 quote does not match public task"
+        }
+      ],
+      "validation": [
+        {
+          "stage": "task_facts",
+          "code": "REFERENCE_ERROR",
+          "detail": "TaskFact F01 quote does not match public task"
+        },
+        {
+          "stage": "task_facts",
+          "code": "REFERENCE_ERROR",
+          "detail": "TaskFact F01 quote does not match public task"
+        }
+      ]
+    },
+    {
+      "name": "source-binding",
+      "status": "degraded",
+      "logical_calls": 7,
+      "http_attempts": 6,
+      "audit_records": 0,
+      "terminal_errors": [
+        {
+          "code": "REFERENCE_ERROR",
+          "detail": "Closure must respond to every original audit record ID"
+        }
+      ],
+      "validation": [
+        {
+          "stage": "task_facts",
+          "code": "REFERENCE_ERROR",
+          "detail": "Unresolved source bindings: F2"
+        },
+        {
+          "stage": "apply",
+          "code": "REFERENCE_ERROR",
+          "detail": "Closure must respond to every original audit record ID"
+        },
+        {
+          "stage": "apply",
+          "code": "REFERENCE_ERROR",
+          "detail": "Closure must respond to every original audit record ID"
+        }
+      ]
+    },
+    {
+      "name": "closure-reference",
+      "status": "degraded",
+      "logical_calls": 10,
+      "http_attempts": 8,
+      "audit_records": 3,
+      "terminal_errors": [
+        {
+          "code": "CONTEXT_OVERFLOW",
+          "detail": "Stage input exceeds configured conservative/tokenizer budget"
+        }
+      ],
+      "validation": [
+        {
+          "stage": "task_facts",
+          "code": "REFERENCE_ERROR",
+          "detail": "Unresolved source bindings: f2"
+        },
+        {
+          "stage": "apply",
+          "code": "REFERENCE_ERROR",
+          "detail": "evidence_refs contains invisible references ['coreta-source-binding-6a3cd0d909ca:e0007:a01']. Visible step references from the same source: {}. Re-read REFERENCE_INDEX and cite the visible source that actually supports the statement. These are not automatic replacements. The same step id in another event is a different source; do not drop a dependency merely to pass reference validation."
+        },
+        {
+          "stage": "apply",
+          "code": "CONTEXT_OVERFLOW",
+          "detail": "Stage input exceeds configured conservative/tokenizer budget"
+        }
+      ]
+    },
+    {
+      "name": "audit-delivery",
+      "status": "degraded",
+      "logical_calls": 8,
+      "http_attempts": 6,
+      "audit_records": 0,
+      "terminal_errors": [
+        {
+          "code": "SCHEMA_ERROR",
+          "detail": "output_truncated: shorten repeated explanation, retain complete artifact and decisive reasoning; original output retained"
+        }
+      ],
+      "validation": [
+        {
+          "stage": "inspect",
+          "code": "SCHEMA_ERROR",
+          "detail": "output_truncated: shorten repeated explanation, retain complete artifact and decisive reasoning; original output retained"
+        },
+        {
+          "stage": "inspect",
+          "code": "SCHEMA_ERROR",
+          "detail": "output_truncated: shorten repeated explanation, retain complete artifact and decisive reasoning; original output retained"
+        }
+      ]
+    },
+    {
+      "name": "inspection-recovery",
+      "status": "degraded",
+      "logical_calls": 4,
+      "http_attempts": 2,
+      "audit_records": 0,
+      "terminal_errors": [
+        {
+          "code": "REFERENCE_ERROR",
+          "detail": "Unresolved source bindings: F2"
+        }
+      ],
+      "validation": [
+        {
+          "stage": "task_facts",
+          "code": "INVALID_JSON",
+          "detail": "JSON syntax: Extra data; line=1, column=3486, offset=3485. Repair the syntax and recheck the complete object against OUTPUT_SCHEMA. Keep all substantive observations and objections; do not add fields from another record type."
+        },
+        {
+          "stage": "task_facts",
+          "code": "REFERENCE_ERROR",
+          "detail": "Unresolved source bindings: F2"
+        }
+      ]
+    }
+  ],
+  "schema_inventory": {
+    "TaskFacts": {
+      "root_fields": [
+        "facts",
+        "coverage_status"
+      ],
+      "property_declarations_in_transitive_schema": 10,
+      "schema_chars": 1159
+    },
+    "TaskFactsPatch": {
+      "root_fields": [
+        "replacements"
+      ],
+      "property_declarations_in_transitive_schema": 4,
+      "schema_chars": 564
+    },
+    "ClosureUpdate": {
+      "root_fields": [
+        "candidate",
+        "closure_proposals",
+        "issues",
+        "application",
+        "next"
+      ],
+      "property_declarations_in_transitive_schema": 33,
+      "schema_chars": 3638
+    },
+    "ClosureInspection": {
+      "root_fields": [
+        "checks",
+        "issues",
+        "candidate_version",
+        "candidate_hash",
+        "closure_reviews",
+        "audit_records"
+      ],
+      "property_declarations_in_transitive_schema": 44,
+      "schema_chars": 4750
+    }
+  },
+  "frozen_plans": [
+    {
+      "plan": "MATH140_AUDIT_DELIVERY_PLAN_20261020.json",
+      "files": 34,
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_CLOSURE_REFERENCE_PLAN_20261020.json",
+      "files": 27,
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_INSPECTION_RECOVERY_PLAN_20261020.json",
+      "files": 36,
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_SOURCE_BINDING_PLAN_20261020.json",
+      "files": 25,
+      "all_match": true
+    },
+    {
+      "plan": "MATH140_TASK_AUDIT_PLAN_20261020.json",
+      "files": 23,
+      "all_match": true
+    }
+  ]
+}

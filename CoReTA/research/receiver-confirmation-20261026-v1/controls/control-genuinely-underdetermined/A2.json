@@ -1,0 +1,76 @@
+{
+  "task": {
+    "task_id": "control-genuinely-underdetermined",
+    "scenario": "Assign a sealed batch to a certified machine for processing today. A valid choice requires capacity at least 120 units and a calibration certificate valid today. Do not authorize a machine without evidence that its certificate is valid; if the available records do not establish an eligible choice, report that the choice cannot be determined.",
+    "shared_information": [
+      "Machines Quartz, Topaz and Opal are candidates. Records are complete only for the facts explicitly supplied."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Quartz"
+      },
+      {
+        "id": "option_2",
+        "text": "Topaz"
+      },
+      {
+        "id": "option_3",
+        "text": "Opal"
+      }
+    ],
+    "instruction": "Follow the decision requirement in the task and explain genuine unresolved conditions."
+  },
+  "member": "A2",
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "Assign a sealed batch to a certified machine for processing today. A valid choice requires capacity at least 120 units and a calibration certificate valid today. Do not authorize a machine without evidence that its certificate is valid; if the available records do not establish an eligible choice, report that the choice cannot be determined."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "Machines Quartz, Topaz and Opal are candidates. Records are complete only for the facts explicitly supplied."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "PRIVATE.A2",
+      "content": "Topaz has capacity 150. Its certificate exists, but the supplied record does not show its expiry date or whether it is valid today."
+    }
+  ],
+  "shared_contributions": {
+    "A1": {
+      "text": "Quartz has capacity 110 and a certificate valid today.",
+      "disclosed_originals": [
+        {
+          "ref": "PRIVATE.A1",
+          "content": "Quartz has capacity 110 and a certificate valid today."
+        }
+      ]
+    },
+    "A2": {
+      "text": "Topaz has capacity 150. Its certificate exists, but the supplied record does not show its expiry date or whether it is valid today.",
+      "disclosed_originals": [
+        {
+          "ref": "PRIVATE.A2",
+          "content": "Topaz has capacity 150. Its certificate exists, but the supplied record does not show its expiry date or whether it is valid today."
+        }
+      ]
+    },
+    "A3": {
+      "text": "Opal has capacity 140. Its certificate status for today is absent from all supplied records.",
+      "disclosed_originals": [
+        {
+          "ref": "PRIVATE.A3",
+          "content": "Opal has capacity 140. Its certificate status for today is absent from all supplied records."
+        }
+      ]
+    }
+  },
+  "execution_report": null,
+  "historical_work": {
+    "choice": null,
+    "reasoning": "Quartz lacks capacity. Topaz and Opal have sufficient capacity but their current certificate validity is not established, so no eligible choice can be authorized from these records."
+  },
+  "historical_author": "CONTROL_AUTHOR"
+}

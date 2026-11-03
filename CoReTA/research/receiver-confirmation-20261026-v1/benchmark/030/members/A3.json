@@ -1,0 +1,51 @@
+{
+  "task": {
+    "task_id": "hb-receiver-confirm-030",
+    "scenario": "You are co-founders of a startup that just received three offers from venture capital firms to lead your Series B funding round. Time is tight—you must select a lead investor within 12 hours to avoid losing all momentum. There are three possible firms: Peak Capital, Skylake Ventures, and Northstar Partners. Each seems attractive in its own way, but you only have partial information about their offers and constraints. The correct answer is the one that can definitely close the deal, on time, without unmanageable risk or hidden issues. Your task: discuss all available information to decide which investor you can reliably choose as your lead.",
+    "shared_information": [
+      "Peak Capital is known for closing deals quickly; a partner says they can transfer funds within 3 days if terms are met.",
+      "Skylake Ventures requires at least one reputable co-investor to participate in a round before they can commit any funds.",
+      "Northstar Partners prefers to lead deals where the company has strong IP protection, and they've sometimes pulled out late after legal hiccups."
+    ],
+    "choices": [
+      {
+        "id": "option_1",
+        "text": "Peak Capital"
+      },
+      {
+        "id": "option_2",
+        "text": "Skylake Ventures"
+      },
+      {
+        "id": "option_3",
+        "text": "Northstar Partners"
+      }
+    ],
+    "instruction": "Follow the decision requirement in the task and explain genuine unresolved conditions."
+  },
+  "member": "A3",
+  "public_sources": [
+    {
+      "ref": "TASK",
+      "content": "You are co-founders of a startup that just received three offers from venture capital firms to lead your Series B funding round. Time is tight—you must select a lead investor within 12 hours to avoid losing all momentum. There are three possible firms: Peak Capital, Skylake Ventures, and Northstar Partners. Each seems attractive in its own way, but you only have partial information about their offers and constraints. The correct answer is the one that can definitely close the deal, on time, without unmanageable risk or hidden issues. Your task: discuss all available information to decide which investor you can reliably choose as your lead."
+    },
+    {
+      "ref": "PUBLIC.1",
+      "content": "Peak Capital is known for closing deals quickly; a partner says they can transfer funds within 3 days if terms are met."
+    },
+    {
+      "ref": "PUBLIC.2",
+      "content": "Skylake Ventures requires at least one reputable co-investor to participate in a round before they can commit any funds."
+    },
+    {
+      "ref": "PUBLIC.3",
+      "content": "Northstar Partners prefers to lead deals where the company has strong IP protection, and they've sometimes pulled out late after legal hiccups."
+    }
+  ],
+  "own_sources": [
+    {
+      "ref": "PRIVATE.A3",
+      "content": "Northstar Partners internally reduced their investment committee meeting schedule to once per month due to staff shortage; their next meeting is in three weeks."
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "protocol_variant": "coreta_converged_flow",
+  "status": "degraded",
+  "stop_reason": "runtime_error",
+  "task_id": "math_train/intermediate_algebra/140",
+  "artifact": "Let $V$ be the space of polynomials of total degree $\\le 3$, written in the basis $1,x,y,x^2,xy,y^2,x^3,x^2y,xy^2,y^3$ with coefficients $a_0,\\dots,a_9$. The prompt lists eight distinct points (the chain of equalities contains $p(0,0)$ once): $(0,0),(1,0),(-1,0),(0,1),(0,-1),(1,1),(1,-1),(2,2)$.\n\n**Step 1: reduce the linear conditions.**\n- $(0,0)$: $a_0=0$.\n- $(1,0)$: $a_1+a_3+a_6=0$; $(-1,0)$: $-a_1+a_3-a_6=0$. Adding/subtracting: $a_3=0$, $a_6=-a_1$.\n- $(0,1)$: $a_2+a_5+a_9=0$; $(0,-1)$: $-a_2+a_5-a_9=0$. Adding/subtracting: $a_5=0$, $a_9=-a_2$.\n- $(1,1)$: $a_1+a_2+a_4+a_6+a_7+a_8+a_9=0$ (since $a_3=a_5=0$). Substituting $a_6=-a_1$, $a_9=-a_2$ gives $a_4+a_7+a_8=0$.\n- $(1,-1)$: $-a_4-a_7+a_8=0$ (after cancelling $a_1-a_1$ and $-a_2+a_2$). Adding the last two relations: $2a_8=0$, so $a_8=0$ and $a_7=-a_4$.\n- $(2,2)$: $2a_1+2a_2+4a_4+8a_6+8a_7+8a_9=0$. Substituting $a_6=-a_1$, $a_9=-a_2$, $a_7=-a_4$: $-6a_1-6a_2-4a_4=0$, i.e. $3(a_1+a_2)=-2a_4$.\n\nThus $a_4=-\\tfrac32(a_1+a_2)$, and the admissible space is **2-dimensional**, spanned by\n$$g_1=(x-x^3)+\\tfrac32(xy-x^2y+xy^2),\\qquad g_2=(y-y^3)+\\tfrac32(xy-x^2y+xy^2).$$\n(Any admissible $p$ is $\\alpha g_1+\\beta g_2$.)\n\n**Step 2: base locus.** A common zero satisfies $g_1=g_2=0$. Subtracting,\n$$g_1-g_2=(x-x^3)-(y-y^3)=(x-y)(1-x^2-xy-y^2)=0.$$\n\n*Case $x=y$:* $g_1=x-x^3+\\tfrac32 x^2=x(1+\\tfrac32 x-x^2)=0$, so $x=0$, $x=2$, or $x=-\\tfrac12$. This gives $(0,0)$, $(2,2)$, $(-\\tfrac12,-\\tfrac12)$.\n\n*Case $x^2+xy+y^2=1$:* from $x^2=1-xy-y^2$, $1-x^2=xy+y^2$, so\n$$g_1=x(xy+y^2)+\\tfrac32 xy(1-x+y)=xy\\bigl[(x+y)+\\tfrac32(1-x+y)\\bigr]=xy\\cdot\\tfrac12(3+y-x).$$\nSo $xy=0$ or $x-y=3$.\n- $x=0$: $y^2=1$, giving $(0,\\pm1)$; $y=0$: $x^2=1$, giving $(\\pm1,0)$.\n- $x=y+3$: $x^2+xy+y^2=3y^2+9y+9=1$, so $3y^2+9y+8=0$, discriminant $81-96<0$: no real solutions.\n\nHence the common zeros are $(0,0),(\\pm1,0),(0,\\pm1),(2,2)$ and $(-\\tfrac12,-\\tfrac12)$.\n\n**Step 3: verify the non-integer point.** At $(-\\tfrac12,-\\tfrac12)$: $x-x^3=-\\tfrac12+\\tfrac18=-\\tfrac38$; $xy=\\tfrac14$, $x^2y=-\\tfrac18$, $xy^2=-\\tfrac18$, so $xy-x^2y+xy^2=\\tfrac14+\\tfrac18-\\tfrac18=\\tfrac14$. Thus $g_1=-\\tfrac38+\\tfrac32\\cdot\\tfrac14=0$, and by symmetry $g_2=0$. Since every admissible $p$ is a combination of $g_1,g_2$, $p(-\\tfrac12,-\\tfrac12)=0$ for all such $p$. The coordinates are non-integers, and the enumeration above shows it is the only non-integer common zero.\n\n$$\\boxed{(r,s)=\\left(-\\tfrac12,-\\tfrac12\\right)}$$\n\nFor comparison, the earlier draft answers fail direct substitution: $g_1(\\tfrac12,\\tfrac12)=\\tfrac38+\\tfrac{3}{16}\\ne0$, $g_1(\\tfrac1{\\sqrt2},\\tfrac1{\\sqrt2})=\\tfrac1{2\\sqrt2}+\\tfrac34\\ne0$, and $g_1(\\tfrac23,\\tfrac23)=\\tfrac{10}{27}+\\tfrac23\\ne0$.",
+  "delivery_candidate": {
+    "version": 2,
+    "source_event_id": "converged-flow-20261020:e0006",
+    "candidate": {
+      "artifact": "Let $V$ be the space of polynomials of total degree $\\le 3$, written in the basis $1,x,y,x^2,xy,y^2,x^3,x^2y,xy^2,y^3$ with coefficients $a_0,\\dots,a_9$. The prompt lists eight distinct points (the chain of equalities contains $p(0,0)$ once): $(0,0),(1,0),(-1,0),(0,1),(0,-1),(1,1),(1,-1),(2,2)$.\n\n**Step 1: reduce the linear conditions.**\n- $(0,0)$: $a_0=0$.\n- $(1,0)$: $a_1+a_3+a_6=0$; $(-1,0)$: $-a_1+a_3-a_6=0$. Adding/subtracting: $a_3=0$, $a_6=-a_1$.\n- $(0,1)$: $a_2+a_5+a_9=0$; $(0,-1)$: $-a_2+a_5-a_9=0$. Adding/subtracting: $a_5=0$, $a_9=-a_2$.\n- $(1,1)$: $a_1+a_2+a_4+a_6+a_7+a_8+a_9=0$ (since $a_3=a_5=0$). Substituting $a_6=-a_1$, $a_9=-a_2$ gives $a_4+a_7+a_8=0$.\n- $(1,-1)$: $-a_4-a_7+a_8=0$ (after cancelling $a_1-a_1$ and $-a_2+a_2$). Adding the last two relations: $2a_8=0$, so $a_8=0$ and $a_7=-a_4$.\n- $(2,2)$: $2a_1+2a_2+4a_4+8a_6+8a_7+8a_9=0$. Substituting $a_6=-a_1$, $a_9=-a_2$, $a_7=-a_4$: $-6a_1-6a_2-4a_4=0$, i.e. $3(a_1+a_2)=-2a_4$.\n\nThus $a_4=-\\tfrac32(a_1+a_2)$, and the admissible space is **2-dimensional**, spanned by\n$$g_1=(x-x^3)+\\tfrac32(xy-x^2y+xy^2),\\qquad g_2=(y-y^3)+\\tfrac32(xy-x^2y+xy^2).$$\n(Any admissible $p$ is $\\alpha g_1+\\beta g_2$.)\n\n**Step 2: base locus.** A common zero satisfies $g_1=g_2=0$. Subtracting,\n$$g_1-g_2=(x-x^3)-(y-y^3)=(x-y)(1-x^2-xy-y^2)=0.$$\n\n*Case $x=y$:* $g_1=x-x^3+\\tfrac32 x^2=x(1+\\tfrac32 x-x^2)=0$, so $x=0$, $x=2$, or $x=-\\tfrac12$. This gives $(0,0)$, $(2,2)$, $(-\\tfrac12,-\\tfrac12)$.\n\n*Case $x^2+xy+y^2=1$:* from $x^2=1-xy-y^2$, $1-x^2=xy+y^2$, so\n$$g_1=x(xy+y^2)+\\tfrac32 xy(1-x+y)=xy\\bigl[(x+y)+\\tfrac32(1-x+y)\\bigr]=xy\\cdot\\tfrac12(3+y-x).$$\nSo $xy=0$ or $x-y=3$.\n- $x=0$: $y^2=1$, giving $(0,\\pm1)$; $y=0$: $x^2=1$, giving $(\\pm1,0)$.\n- $x=y+3$: $x^2+xy+y^2=3y^2+9y+9=1$, so $3y^2+9y+8=0$, discriminant $81-96<0$: no real solutions.\n\nHence the common zeros are $(0,0),(\\pm1,0),(0,\\pm1),(2,2)$ and $(-\\tfrac12,-\\tfrac12)$.\n\n**Step 3: verify the non-integer point.** At $(-\\tfrac12,-\\tfrac12)$: $x-x^3=-\\tfrac12+\\tfrac18=-\\tfrac38$; $xy=\\tfrac14$, $x^2y=-\\tfrac18$, $xy^2=-\\tfrac18$, so $xy-x^2y+xy^2=\\tfrac14+\\tfrac18-\\tfrac18=\\tfrac14$. Thus $g_1=-\\tfrac38+\\tfrac32\\cdot\\tfrac14=0$, and by symmetry $g_2=0$. Since every admissible $p$ is a combination of $g_1,g_2$, $p(-\\tfrac12,-\\tfrac12)=0$ for all such $p$. The coordinates are non-integers, and the enumeration above shows it is the only non-integer common zero.\n\n$$\\boxed{(r,s)=\\left(-\\tfrac12,-\\tfrac12\\right)}$$\n\nFor comparison, the earlier draft answers fail direct substitution: $g_1(\\tfrac12,\\tfrac12)=\\tfrac38+\\tfrac{3}{16}\\ne0$, $g_1(\\tfrac1{\\sqrt2},\\tfrac1{\\sqrt2})=\\tfrac1{2\\sqrt2}+\\tfrac34\\ne0$, and $g_1(\\tfrac23,\\tfrac23)=\\tfrac{10}{27}+\\tfrac23\\ne0$.",
+      "summary": "Reducing the eight point conditions gives a 2-dimensional space of admissible cubics spanned by g1=x-x^3+1.5(xy-x^2y+xy^2) and g2=y-y^3+1.5(xy-x^2y+xy^2). The base locus is the integer points (0,0),(±1,0),(0,±1),(2,2) plus the unique non-integer point (-1/2,-1/2), verified by substitution into both generators.",
+      "steps": [
+        {
+          "id": "s1",
+          "text": "Set up the eight vanishing conditions (the prompt's chain contains p(0,0) once) and reduce: a_0=a_3=a_5=a_8=0, a_6=-a_1, a_9=-a_2, a_7=-a_4, with 3(a_1+a_2)=-2a_4.",
+          "basis_refs": [
+            "converged-flow-20261020:e0003",
+            "converged-flow-20261020:e0005"
+          ],
+          "status": "supported"
+        },
+        {
+          "id": "s2",
+          "text": "Hence the admissible space is 2-dimensional, spanned by g_1=(x-x^3)+1.5(xy-x^2y+xy^2) and g_2=(y-y^3)+1.5(xy-x^2y+xy^2).",
+          "basis_refs": [
+            "converged-flow-20261020:e0005"
+          ],
+          "status": "supported"
+        },
+        {
+          "id": "s3",
+          "text": "Common zeros satisfy g_1=g_2=0; subtracting gives (x-y)(1-x^2-xy-y^2)=0.",
+          "basis_refs": [
+            "converged-flow-20261020:e0005"
+          ],
+          "status": "supported"
+        },
+        {
+          "id": "s4",
+          "text": "Case x=y gives x(1+1.5x-x^2)=0, so x=0,2,-1/2; the last gives the non-integer point (-1/2,-1/2).",
+          "basis_refs": [
+            "converged-flow-20261020:e0005"
+          ],
+          "status": "supported"
+        },
+        {
+          "id": "s5",
+          "text": "Case x^2+xy+y^2=1 gives xy(3+y-x)=0, yielding only the integer points (±1,0),(0,±1); x-y=3 has no real solutions.",
+          "basis_refs": [
+            "converged-flow-20261020:e0005"
+          ],
+          "status": "supported"
+        },
+        {
+          "id": "s6",
+          "text": "Direct substitution confirms g_1(-1/2,-1/2)=g_2(-1/2,-1/2)=0, so the required non-integer common zero is (-1/2,-1/2).",
+          "basis_refs": [
+            "converged-flow-20261020:e0005"
+          ],
+          "status": "supported"
+        }
+      ],
+      "open_issues": [
+        "i0001: draft e0000's one-dimensional claim and (1/2,1/2) answer are replaced by the 2-dimensional reduction and (-1/2,-1/2).",
+        "i0002: draft e0001's F_1=F_2=0 requirement and (1/√2,1/√2) answer are replaced by the correct base-locus computation.",
+        "i0003: draft e0002's unshown elimination and (2/3,2/3) answer are replaced by the explicit linear-system solution."
+      ]
+    }
+  },
+  "normal_calls": 8,
+  "http_attempts": 7,
+  "format_repairs": 2,
+  "issues": {
+    "i0001": {
+      "description": "Draft e0000 claims the solution space is one-dimensional and spanned by q=(x-y)(x+y-1)(x+y-2), giving (1/2,1/2). This is wrong: q does not vanish at (2,2) (it gives 0·3·2=0, but its coefficient vector does not satisfy the other conditions consistently—more directly, solving the linear system shows a 2-dimensional space). The claimed point (1/2,1/2) fails substitution into the admissible polynomial x-x^3+1.5(xy-x^2y+xy^2): value 3/8+3/16 ≠ 0. The rank-9 claim and 'one-dimensional' conclusion are unsupported and contradicted by explicit elimination.",
+      "blocking": true,
+      "target_refs": [
+        "converged-flow-20261020:e0000",
+        "converged-flow-20261020:e0000#s3",
+        "v0:s3"
+      ],
+      "existing_issue_id": null,
+      "acceptance_condition": "Replace the one-dimensional claim with the correct 2-dimensional solution space and the answer (-1/2,-1/2), verified by substitution into both generators.",
+      "issue_id": "i0001",
+      "status": "pending_check",
+      "source_event_id": "converged-flow-20261020:e0004",
+      "version": 0,
+      "handling_events": [],
+      "objections": [
+        {
+          "objection_id": "i0001:o1",
+          "event_id": "converged-flow-20261020:e0004",
+          "text": "Draft e0000 claims the solution space is one-dimensional and spanned by q=(x-y)(x+y-1)(x+y-2), giving (1/2,1/2). This is wrong: q does not vanish at (2,2) (it gives 0·3·2=0, but its coefficient vector does not satisfy the other conditions consistently—more directly, solving the linear system shows a 2-dimensional space). The claimed point (1/2,1/2) fails substitution into the admissible polynomial x-x^3+1.5(xy-x^2y+xy^2): value 3/8+3/16 ≠ 0. The rank-9 claim and 'one-dimensional' conclusion are unsupported and contradicted by explicit elimination.",
+          "target_refs": [
+            "converged-flow-20261020:e0000",
+            "converged-flow-20261020:e0000#s3",
+            "v0:s3"
+          ],
+          "acceptance_condition": "Replace the one-dimensional claim with the correct 2-dimensional solution space and the answer (-1/2,-1/2), verified by substitution into both generators."
+        }
+      ]
+    },
+    "i0002": {
+      "description": "Draft e0001 concludes (1/√2,1/√2) by requiring common zeros to satisfy both F_1=(x^2+y^2-1)(x-1) and F_2=xy(x-y). That is invalid: F_1 and F_2 are two particular cubics through eight points, but the admissible cubics through all nine points form a 2-dimensional space, and a common zero of the pencil need not lie on both particular generators. Indeed (1/√2,1/√2) fails substitution into the actual admissible polynomial: g_1 at (1/√2,1/√2) = (1/√2-1/(2√2))+1.5(1/2-1/(2√2)+1/(2√2)) = 1/(2√2)+3/4 ≠ 0. Also the statement 'the conventional intended answer is the positive one' is unsupported.",
+      "blocking": true,
+      "target_refs": [
+        "converged-flow-20261020:e0001",
+        "converged-flow-20261020:e0001#s5",
+        "converged-flow-20261020:e0001#s6"
+      ],
+      "existing_issue_id": null,
+      "acceptance_condition": "Replace the F_1=F_2=0 requirement with the correct base-locus computation for the 2-dimensional admissible space, giving (-1/2,-1/2).",
+      "issue_id": "i0002",
+      "status": "pending_check",
+      "source_event_id": "converged-flow-20261020:e0004",
+      "version": 0,
+      "handling_events": [],
+      "objections": [
+        {
+          "objection_id": "i0002:o1",
+          "event_id": "converged-flow-20261020:e0004",
+          "text": "Draft e0001 concludes (1/√2,1/√2) by requiring common zeros to satisfy both F_1=(x^2+y^2-1)(x-1) and F_2=xy(x-y). That is invalid: F_1 and F_2 are two particular cubics through eight points, but the admissible cubics through all nine points form a 2-dimensional space, and a common zero of the pencil need not lie on both particular generators. Indeed (1/√2,1/√2) fails substitution into the actual admissible polynomial: g_1 at (1/√2,1/√2) = (1/√2-1/(2√2))+1.5(1/2-1/(2√2)+1/(2√2)) = 1/(2√2)+3/4 ≠ 0. Also the statement 'the conventional intended answer is the positive one' is unsupported.",
+          "target_refs": [
+            "converged-flow-20261020:e0001",
+            "converged-flow-20261020:e0001#s5",
+            "converged-flow-20261020:e0001#s6"
+          ],
+          "acceptance_condition": "Replace the F_1=F_2=0 requirement with the correct base-locus computation for the 2-dimensional admissible space, giving (-1/2,-1/2)."
+        }
+      ]
+    },
+    "i0003": {
+      "description": "Draft e0002 asserts (2/3,2/3) via an unshown 'elimination' and an invalid Cayley–Bacharach-style count. No minors or resultant are displayed, and (2/3,2/3) fails substitution: g_1(2/3,2/3) = (2/3-8/27)+1.5(4/9-8/27+8/27) = 10/27+2/3 ≠ 0. The claim that the eight point conditions give a 2-dimensional W is also inconsistent with the actual rank computation (the nine conditions give a 2-dimensional space, so eight conditions give a 3-dimensional space).",
+      "blocking": true,
+      "target_refs": [
+        "converged-flow-20261020:e0002",
+        "converged-flow-20261020:e0002#s3",
+        "converged-flow-20261020:e0002#s4"
+      ],
+      "existing_issue_id": null,
+      "acceptance_condition": "Provide the explicit elimination or replace it with the direct linear-system solution, and report the verified answer (-1/2,-1/2).",
+      "issue_id": "i0003",
+      "status": "pending_check",
+      "source_event_id": "converged-flow-20261020:e0004",
+      "version": 0,
+      "handling_events": [],
+      "objections": [
+        {
+          "objection_id": "i0003:o1",
+          "event_id": "converged-flow-20261020:e0004",
+          "text": "Draft e0002 asserts (2/3,2/3) via an unshown 'elimination' and an invalid Cayley–Bacharach-style count. No minors or resultant are displayed, and (2/3,2/3) fails substitution: g_1(2/3,2/3) = (2/3-8/27)+1.5(4/9-8/27+8/27) = 10/27+2/3 ≠ 0. The claim that the eight point conditions give a 2-dimensional W is also inconsistent with the actual rank computation (the nine conditions give a 2-dimensional space, so eight conditions give a 3-dimensional space).",
+          "target_refs": [
+            "converged-flow-20261020:e0002",
+            "converged-flow-20261020:e0002#s3",
+            "converged-flow-20261020:e0002#s4"
+          ],
+          "acceptance_condition": "Provide the explicit elimination or replace it with the direct linear-system solution, and report the verified answer (-1/2,-1/2)."
+        }
+      ]
+    },
+    "i0004": {
+      "description": "TaskFacts F2 normalizes the prompt as listing eight points, but the public prompt lists nine: (0,0),(1,0),(-1,0),(0,1),(0,-1),(1,1),(1,-1),(2,2) is only eight—the ninth is the leading p(0,0) plus the chain; recounting the quoted text gives exactly the eight points listed. This matches the prompt (nine vanishing statements but (0,0) is one of them; total eight distinct points). No contradiction; the drafts' 'nine conditions' refers to nine equalities including p(0,0)=0. The candidate treats it as eight distinct points with one (0,0) condition, consistent with F2.",
+      "blocking": false,
+      "target_refs": [
+        "converged-flow-20261020:e0003"
+      ],
+      "existing_issue_id": null,
+      "acceptance_condition": "Confirm the count of distinct points is eight and that the candidate's linear system uses exactly those eight points.",
+      "issue_id": "i0004",
+      "status": "open",
+      "source_event_id": "converged-flow-20261020:e0004",
+      "version": 0,
+      "handling_events": [],
+      "objections": [
+        {
+          "objection_id": "i0004:o1",
+          "event_id": "converged-flow-20261020:e0004",
+          "text": "TaskFacts F2 normalizes the prompt as listing eight points, but the public prompt lists nine: (0,0),(1,0),(-1,0),(0,1),(0,-1),(1,1),(1,-1),(2,2) is only eight—the ninth is the leading p(0,0) plus the chain; recounting the quoted text gives exactly the eight points listed. This matches the prompt (nine vanishing statements but (0,0) is one of them; total eight distinct points). No contradiction; the drafts' 'nine conditions' refers to nine equalities including p(0,0)=0. The candidate treats it as eight distinct points with one (0,0) condition, consistent with F2.",
+          "target_refs": [
+            "converged-flow-20261020:e0003"
+          ],
+          "acceptance_condition": "Confirm the count of distinct points is eight and that the candidate's linear system uses exactly those eight points."
+        }
+      ]
+    }
+  },
+  "errors": [
+    {
+      "code": "REPAIR_LIMIT",
+      "detail": "Structural recovery exhausted; all attempts retained"
+    }
+  ],
+  "review_count": 1,
+  "review_status": "unreviewed",
+  "native_evidence_count": 0,
+  "finalizer_changed": false,
+  "semantic_correctness_proven": false,
+  "frozen_hashes_match": true
+}

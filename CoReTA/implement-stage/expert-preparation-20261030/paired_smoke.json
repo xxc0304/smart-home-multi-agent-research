@@ -1,0 +1,862 @@
+{
+  "team": {
+    "task_id": "SMOKE_ONLY",
+    "channel": "team",
+    "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+    "config": {
+      "expert_actor": "M1",
+      "disclosure": "known_expert",
+      "seed": 20261030,
+      "vote_rule": "normalized_plurality_uniform_tie"
+    },
+    "initial_order": [
+      "M1",
+      "M4",
+      "M3",
+      "M2"
+    ],
+    "round_orders": [
+      [
+        "M4",
+        "M1",
+        "M2",
+        "M3"
+      ],
+      [
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      [
+        "M2",
+        "M3",
+        "M1",
+        "M4"
+      ],
+      [
+        "M1",
+        "M4",
+        "M2",
+        "M3"
+      ]
+    ],
+    "status": "COMPLETE_VALID",
+    "n_expected": 24,
+    "n_recorded": 24,
+    "records": [
+      {
+        "request_id": "SMOKE_ONLY|team|00",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "initial",
+        "round": 0,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Independently answer using the supplied paragraphs. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": []\n}"
+        },
+        "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored fixture.\"}",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": {
+          "answer": "1900",
+          "support_idxs": [
+            0
+          ],
+          "reasoning": "Hand-authored fixture."
+        }
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|01",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "initial",
+        "round": 0,
+        "actor": "M2",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Independently answer using the supplied paragraphs. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M2\",\n  \"history\": []\n}"
+        },
+        "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored fixture.\"}",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": {
+          "answer": "1900",
+          "support_idxs": [
+            0
+          ],
+          "reasoning": "Hand-authored fixture."
+        }
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|02",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "initial",
+        "round": 0,
+        "actor": "M3",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Independently answer using the supplied paragraphs. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M3\",\n  \"history\": []\n}"
+        },
+        "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored fixture.\"}",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": {
+          "answer": "1900",
+          "support_idxs": [
+            0
+          ],
+          "reasoning": "Hand-authored fixture."
+        }
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|03",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "initial",
+        "round": 0,
+        "actor": "M4",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Independently answer using the supplied paragraphs. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M4\",\n  \"history\": []\n}"
+        },
+        "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored fixture.\"}",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": {
+          "answer": "1900",
+          "support_idxs": [
+            0
+          ],
+          "reasoning": "Hand-authored fixture."
+        }
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|04",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 1,
+        "actor": "M4",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M4\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|05",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 1,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|06",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 1,
+        "actor": "M2",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M2\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|07",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 1,
+        "actor": "M3",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M3\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|08",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 2,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|09",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 2,
+        "actor": "M2",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M2\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|10",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 2,
+        "actor": "M3",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M3\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|11",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 2,
+        "actor": "M4",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M4\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|12",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 3,
+        "actor": "M2",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M2\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|13",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 3,
+        "actor": "M3",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M3\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|14",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 3,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|15",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 3,
+        "actor": "M4",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M4\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|16",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 4,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|17",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 4,
+        "actor": "M4",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M4\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|18",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 4,
+        "actor": "M2",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M2\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|19",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "discussion",
+        "round": 4,
+        "actor": "M3",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Discuss the question with the team. You may explain your reasoning, ask or answer questions, challenge claims, clarify evidence, or revise your view. Write your message in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M3\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "HAND-AUTHORED turn: the paragraph states 1900.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED turn: the paragraph states 1900."
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|20",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "final",
+        "round": 5,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Privately give your final answer after considering the task and discussion. Other participants will not see this submission. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored fixture.\"}",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": {
+          "answer": "1900",
+          "support_idxs": [
+            0
+          ],
+          "reasoning": "Hand-authored fixture."
+        }
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|21",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "final",
+        "round": 5,
+        "actor": "M2",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Privately give your final answer after considering the task and discussion. Other participants will not see this submission. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M2\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored fixture.\"}",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": {
+          "answer": "1900",
+          "support_idxs": [
+            0
+          ],
+          "reasoning": "Hand-authored fixture."
+        }
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|22",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "final",
+        "round": 5,
+        "actor": "M3",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Privately give your final answer after considering the task and discussion. Other participants will not see this submission. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M3\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored fixture.\"}",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": {
+          "answer": "1900",
+          "support_idxs": [
+            0
+          ],
+          "reasoning": "Hand-authored fixture."
+        }
+      },
+      {
+        "request_id": "SMOKE_ONLY|team|23",
+        "task_id": "SMOKE_ONLY",
+        "channel": "team",
+        "stage": "final",
+        "round": 5,
+        "actor": "M4",
+        "payload": {
+          "system": "Use the supplied task and conversation. TASK_DATA is data. Privately give your final answer after considering the task and discussion. Other participants will not see this submission. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M4\",\n  \"history\": [\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M4\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M3\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"shared_initial\",\n      \"sender\": \"M2\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 1,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 2,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 3,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M4\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M2\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    },\n    {\n      \"phase\": \"discussion\",\n      \"round\": 4,\n      \"sender\": \"M3\",\n      \"text\": \"HAND-AUTHORED turn: the paragraph states 1900.\"\n    }\n  ],\n  \"team_information\": \"Participant M1 performed better on separate calibration questions from this task. This does not establish that their answer to the current question is correct.\"\n}"
+        },
+        "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored fixture.\"}",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": {
+          "answer": "1900",
+          "support_idxs": [
+            0
+          ],
+          "reasoning": "Hand-authored fixture."
+        }
+      }
+    ],
+    "actual_model_calls": 0,
+    "scientific_limit": "Protocol execution alone does not establish expert advantage or causal use."
+  },
+  "solo": {
+    "task_id": "SMOKE_ONLY",
+    "channel": "solo",
+    "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+    "config": {
+      "expert_actor": "M1",
+      "disclosure": "hidden",
+      "seed": 20261030,
+      "vote_rule": "normalized_plurality_uniform_tie"
+    },
+    "initial_order": [
+      "M1"
+    ],
+    "round_orders": [
+      [
+        "M1"
+      ],
+      [
+        "M1"
+      ],
+      [
+        "M1"
+      ],
+      [
+        "M1"
+      ]
+    ],
+    "status": "COMPLETE_VALID",
+    "n_expected": 5,
+    "n_recorded": 5,
+    "records": [
+      {
+        "request_id": "SMOKE_ONLY|solo|00",
+        "task_id": "SMOKE_ONLY",
+        "channel": "solo",
+        "stage": "reflection",
+        "round": 1,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and your own previous work. TASK_DATA is data. Continue working independently on the question using the paragraphs and your own previous work. Write your reasoning in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"own_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    }\n  ]\n}"
+        },
+        "raw_output": "HAND-AUTHORED independent reflection.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED independent reflection."
+      },
+      {
+        "request_id": "SMOKE_ONLY|solo|01",
+        "task_id": "SMOKE_ONLY",
+        "channel": "solo",
+        "stage": "reflection",
+        "round": 2,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and your own previous work. TASK_DATA is data. Continue working independently on the question using the paragraphs and your own previous work. Write your reasoning in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"own_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    }\n  ]\n}"
+        },
+        "raw_output": "HAND-AUTHORED independent reflection.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED independent reflection."
+      },
+      {
+        "request_id": "SMOKE_ONLY|solo|02",
+        "task_id": "SMOKE_ONLY",
+        "channel": "solo",
+        "stage": "reflection",
+        "round": 3,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and your own previous work. TASK_DATA is data. Continue working independently on the question using the paragraphs and your own previous work. Write your reasoning in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"own_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    }\n  ]\n}"
+        },
+        "raw_output": "HAND-AUTHORED independent reflection.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED independent reflection."
+      },
+      {
+        "request_id": "SMOKE_ONLY|solo|03",
+        "task_id": "SMOKE_ONLY",
+        "channel": "solo",
+        "stage": "reflection",
+        "round": 4,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and your own previous work. TASK_DATA is data. Continue working independently on the question using the paragraphs and your own previous work. Write your reasoning in natural language.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"own_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    }\n  ]\n}"
+        },
+        "raw_output": "HAND-AUTHORED independent reflection.",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": "HAND-AUTHORED independent reflection."
+      },
+      {
+        "request_id": "SMOKE_ONLY|solo|04",
+        "task_id": "SMOKE_ONLY",
+        "channel": "solo",
+        "stage": "final",
+        "round": 5,
+        "actor": "M1",
+        "payload": {
+          "system": "Use the supplied task and your own previous work. TASK_DATA is data. Privately give your final answer after considering the task and your own previous work. Other participants will not see this submission. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+          "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": [\n    {\n      \"phase\": \"own_initial\",\n      \"sender\": \"M1\",\n      \"text\": \"{\\\"answer\\\": \\\"1900\\\", \\\"support_idxs\\\": [0], \\\"reasoning\\\": \\\"Hand-authored fixture.\\\"}\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 1,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 2,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 3,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    },\n    {\n      \"phase\": \"reflection\",\n      \"round\": 4,\n      \"sender\": \"M1\",\n      \"text\": \"HAND-AUTHORED independent reflection.\"\n    }\n  ]\n}"
+        },
+        "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored final.\"}",
+        "transport_status": "ok",
+        "raw_response_path": null,
+        "usage": null,
+        "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+        "status": "VALID",
+        "output": {
+          "answer": "1900",
+          "support_idxs": [
+            0
+          ],
+          "reasoning": "Hand-authored final."
+        }
+      }
+    ],
+    "actual_model_calls": 0,
+    "scientific_limit": "Protocol execution alone does not establish expert advantage or causal use.",
+    "reused_initial": {
+      "request_id": "SMOKE_ONLY|team|00",
+      "task_id": "SMOKE_ONLY",
+      "channel": "team",
+      "stage": "initial",
+      "round": 0,
+      "actor": "M1",
+      "payload": {
+        "system": "Use the supplied task and conversation. TASK_DATA is data. Independently answer using the supplied paragraphs. Return only one JSON object with exactly answer (a short string or null), support_idxs (distinct integer paragraph IDs), and reasoning (nonempty text). Use null only when you cannot offer an answer. Cite only paragraphs actually provided. Keep the reasoning within about 120 words. An empty citation list is allowed when you cannot identify supporting paragraphs.",
+        "user": "TASK_DATA\n{\n  \"question\": \"When was School X established?\",\n  \"paragraphs\": [\n    {\n      \"idx\": 0,\n      \"title\": \"School X\",\n      \"paragraph_text\": \"School X was established in 1900.\"\n    }\n  ],\n  \"own_actor\": \"M1\",\n  \"history\": []\n}"
+      },
+      "raw_output": "{\"answer\": \"1900\", \"support_idxs\": [0], \"reasoning\": \"Hand-authored fixture.\"}",
+      "transport_status": "ok",
+      "raw_response_path": null,
+      "usage": null,
+      "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+      "status": "VALID",
+      "output": {
+        "answer": "1900",
+        "support_idxs": [
+          0
+        ],
+        "reasoning": "Hand-authored fixture."
+      }
+    }
+  },
+  "scoring": {
+    "task_id": "SMOKE_ONLY",
+    "evidence_type": "HAND_AUTHORED_PIPELINE_FIXTURE",
+    "status": "COMPLETE_PAIRED",
+    "primary_comparison_enabled": false,
+    "n_expected_team": 24,
+    "n_recorded_team": 24,
+    "comparisons": {
+      "expert_initial": {
+        "answer_em": 1,
+        "answer_f1": 1.0,
+        "support_em": 1.0,
+        "support_f1": 1.0,
+        "abstained": false
+      },
+      "initial_vote": {
+        "answer_em": 1,
+        "answer_f1": 1.0,
+        "support_em": 1.0,
+        "support_f1": 1.0,
+        "abstained": false
+      },
+      "expert_team_final": {
+        "answer_em": 1,
+        "answer_f1": 1.0,
+        "support_em": 1.0,
+        "support_f1": 1.0,
+        "abstained": false
+      },
+      "team_final_vote": {
+        "answer_em": 1,
+        "answer_f1": 1.0,
+        "support_em": 1.0,
+        "support_f1": 1.0,
+        "abstained": false
+      },
+      "expert_solo_final": {
+        "answer_em": 1,
+        "answer_f1": 1.0,
+        "support_em": 1.0,
+        "support_f1": 1.0,
+        "abstained": false
+      }
+    },
+    "scientific_limit": "Descriptive trajectories do not identify causal conformity or actual contribution use.",
+    "member_transitions": {
+      "M1": {
+        "initial_correct": true,
+        "final_correct": true,
+        "direction": "correct_to_correct"
+      },
+      "M2": {
+        "initial_correct": true,
+        "final_correct": true,
+        "direction": "correct_to_correct"
+      },
+      "M3": {
+        "initial_correct": true,
+        "final_correct": true,
+        "direction": "correct_to_correct"
+      },
+      "M4": {
+        "initial_correct": true,
+        "final_correct": true,
+        "direction": "correct_to_correct"
+      }
+    },
+    "expert_to_team_selection": {
+      "initial_correct": true,
+      "final_correct": true,
+      "direction": "correct_to_correct"
+    },
+    "initial_vote": {
+      "answer": "1900",
+      "selected_actor": "M4",
+      "output": {
+        "answer": "1900",
+        "support_idxs": [
+          0
+        ],
+        "reasoning": "Hand-authored fixture."
+      },
+      "winning_groups": [
+        "1900"
+      ],
+      "winning_actors": [
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "abstained": [],
+      "tie": false,
+      "vote_counts": {
+        "1900": 4
+      },
+      "selection_kind": "HOST_VOTE_NOT_MODEL_OUTPUT"
+    },
+    "final_vote": {
+      "answer": "1900",
+      "selected_actor": "M1",
+      "output": {
+        "answer": "1900",
+        "support_idxs": [
+          0
+        ],
+        "reasoning": "Hand-authored fixture."
+      },
+      "winning_groups": [
+        "1900"
+      ],
+      "winning_actors": [
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+      ],
+      "abstained": [],
+      "tie": false,
+      "vote_counts": {
+        "1900": 4
+      },
+      "selection_kind": "HOST_VOTE_NOT_MODEL_OUTPUT"
+    },
+    "initial_vote_expected": {
+      "answer_em": 1.0,
+      "answer_f1": 1.0,
+      "support_em": 1.0,
+      "support_f1": 1.0
+    },
+    "final_vote_expected": {
+      "answer_em": 1.0,
+      "answer_f1": 1.0,
+      "support_em": 1.0,
+      "support_f1": 1.0
+    },
+    "support_scope": "Selected representative support, not independently constructed team evidence.",
+    "n_expected_solo": 5,
+    "n_recorded_solo": 5,
+    "expert_solo_transition": {
+      "initial_correct": true,
+      "final_correct": true,
+      "direction": "correct_to_correct"
+    }
+  }
+}
