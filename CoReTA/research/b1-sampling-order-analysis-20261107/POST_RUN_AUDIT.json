@@ -1,0 +1,364 @@
+{
+  "verdict": "PASS_RECORDS_REQUESTS_AND_SCORE_POINTS",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "new_model_calls": 0,
+  "logical_new_requests": 1200,
+  "shared_new_prefix": 67,
+  "physical_returns": 1133,
+  "initial_source_reuse_verified": 50,
+  "diagonal_inherited_cells": 50,
+  "first_E_censored": 50,
+  "second_E_restored": 50,
+  "official_rows_exact": true,
+  "all_new_tokens_decoded": true,
+  "max_input_plus_cap": 10213,
+  "context": 16384,
+  "output_tokens": 131217,
+  "original_and_new_run_files_unchanged": true,
+  "freeze_unchanged": true,
+  "bootstrap_note": "Stored scoring uses unordered set iteration for bootstrap block order. Independent pack-order replay below; raw scores preserved.",
+  "factorial_interval_replay": {
+    "coverage": {
+      "average_intervention_delta": {
+        "point": 0.0234375,
+        "stored_ci": [
+          0.0,
+          0.0546875
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.0546875
+        ]
+      },
+      "sampling_at_O0": {
+        "point": 0.0,
+        "stored_ci": [
+          0.0,
+          0.0
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "sampling_at_O1": {
+        "point": 0.07291666666666667,
+        "stored_ci": [
+          -0.020833333333333332,
+          0.19791666666666666
+        ],
+        "deterministic_pack_order_ci": [
+          -0.020833333333333332,
+          0.19791666666666666
+        ]
+      },
+      "order_at_S0": {
+        "point": 0.010416666666666666,
+        "stored_ci": [
+          0.0,
+          0.03125
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.03125
+        ]
+      },
+      "order_at_S1": {
+        "point": 0.08333333333333333,
+        "stored_ci": [
+          0.0,
+          0.20833333333333334
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.20833333333333334
+        ]
+      },
+      "sampling_main_on_delta": {
+        "point": 0.036458333333333336,
+        "stored_ci": [
+          -0.010416666666666666,
+          0.09895833333333333
+        ],
+        "deterministic_pack_order_ci": [
+          -0.010416666666666666,
+          0.09895833333333333
+        ]
+      },
+      "order_main_on_delta": {
+        "point": 0.046875,
+        "stored_ci": [
+          0.0,
+          0.109375
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.109375
+        ]
+      },
+      "interaction_on_delta": {
+        "point": 0.07291666666666667,
+        "stored_ci": [
+          -0.020833333333333332,
+          0.19791666666666666
+        ],
+        "deterministic_pack_order_ci": [
+          -0.020833333333333332,
+          0.19791666666666666
+        ]
+      }
+    },
+    "mechanism": {
+      "average_intervention_delta": {
+        "point": 0.0078125,
+        "stored_ci": [
+          0.0,
+          0.0234375
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.0234375
+        ]
+      },
+      "sampling_at_O0": {
+        "point": 0.0,
+        "stored_ci": [
+          0.0,
+          0.0
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "sampling_at_O1": {
+        "point": -0.03125,
+        "stored_ci": [
+          -0.09375,
+          0.0
+        ],
+        "deterministic_pack_order_ci": [
+          -0.09375,
+          0.0
+        ]
+      },
+      "order_at_S0": {
+        "point": 0.03125,
+        "stored_ci": [
+          0.0,
+          0.09375
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.09375
+        ]
+      },
+      "order_at_S1": {
+        "point": 0.0,
+        "stored_ci": [
+          0.0,
+          0.0
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "sampling_main_on_delta": {
+        "point": -0.015625,
+        "stored_ci": [
+          -0.046875,
+          0.0
+        ],
+        "deterministic_pack_order_ci": [
+          -0.046875,
+          0.0
+        ]
+      },
+      "order_main_on_delta": {
+        "point": 0.015625,
+        "stored_ci": [
+          0.0,
+          0.046875
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.046875
+        ]
+      },
+      "interaction_on_delta": {
+        "point": -0.03125,
+        "stored_ci": [
+          -0.09375,
+          0.0
+        ],
+        "deterministic_pack_order_ci": [
+          -0.09375,
+          0.0
+        ]
+      }
+    },
+    "union": {
+      "average_intervention_delta": {
+        "point": 0.0225,
+        "stored_ci": [
+          0.0,
+          0.0525
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.0525
+        ]
+      },
+      "sampling_at_O0": {
+        "point": 0.0,
+        "stored_ci": [
+          0.0,
+          0.0
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "sampling_at_O1": {
+        "point": 0.07,
+        "stored_ci": [
+          -0.02,
+          0.19
+        ],
+        "deterministic_pack_order_ci": [
+          -0.02,
+          0.2
+        ]
+      },
+      "order_at_S0": {
+        "point": 0.01,
+        "stored_ci": [
+          0.0,
+          0.03
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.03
+        ]
+      },
+      "order_at_S1": {
+        "point": 0.08,
+        "stored_ci": [
+          0.0,
+          0.2
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.2
+        ]
+      },
+      "sampling_main_on_delta": {
+        "point": 0.035,
+        "stored_ci": [
+          -0.01,
+          0.095
+        ],
+        "deterministic_pack_order_ci": [
+          -0.01,
+          0.1
+        ]
+      },
+      "order_main_on_delta": {
+        "point": 0.045,
+        "stored_ci": [
+          0.0,
+          0.105
+        ],
+        "deterministic_pack_order_ci": [
+          0.0,
+          0.105
+        ]
+      },
+      "interaction_on_delta": {
+        "point": 0.07,
+        "stored_ci": [
+          -0.02,
+          0.19
+        ],
+        "deterministic_pack_order_ci": [
+          -0.02,
+          0.2
+        ]
+      }
+    }
+  },
+  "original_run_file_hashes": {
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/LENGTHS.json": "04064b0de13558125da220af7af960533e98742529ee493a3494e82db10615b4",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/INPUTS.json": "cce89bb82584ee9fd6ca6962380b3a711f6e620316027a222eb82c381b35cc44",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/STATUS.json": "6c9eae8f86f3a4672f58a5008c92d95c1264c3421d7c9fef8d5f5205596da4fa",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/PID": "52b335f01d6af42f69b915472ef598640b7044f7fb67a79d4ba3635e7283457c",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/config.json": "372045ab9d5c48eb3c8fb8ca0844d3a5c47c466307c65813d716b7d282ae676f",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/run.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/LABELS.json": "3b4f64c4935b5dc63967e462d6b3b173c6bc54343c8c9af7dc3ae04eeb4ba41f",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/scores.json": "a6f5d59a640641984e318049cae6c0a009887c426ee934edca152c55a029823d",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/responses.jsonl": "432e16dbd42c70b6dbb89539296bc2aa2f64a49465a61303f07797f1eb7208c1",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/APPROVAL.json": "42398950595ee7d7e8a5b89ef27f21c063084730ac73958657cf0d2b62977c21",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/PREFLIGHT.json": "1e446db62cf99fd0833414c6cd378ad77cbb8b56e0f17e50de6efe7c6f917b4a",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/ATTEMPTS.jsonl": "1e5e350fc3f19879616ad156cf31ef2b92b43673c35c016f7031d1cdd996ebd5",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/RESULTS.json": "6c9eae8f86f3a4672f58a5008c92d95c1264c3421d7c9fef8d5f5205596da4fa",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/BUDGET.json": "19f0954f5c9feb57baf9f8ee1d26e3d9d0328299ec37704ccdbc012653156f05",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/run.log": "f79aedec85810ef4e209913c7db78400ca97cae179d3adde26250594f805f2ca",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/FREEZE.json": "86e92af0c0967429f9bc54a0c50f1139a921560e516eb393a43c82789e33bc23",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/DIAGONAL_REFERENCES.json": "3c7a3a3153d898eabaa3791de45367fcd8dcf6a8732c6ca0af4ad82944aa5a5d",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/DISPATCHED": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/STARTED": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/076-S1O0.json": "6f4886429c94c2dfa46480bd4b872fe1d2069e64e2c297fa7ba7fc0e60d56fbc",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/034-S1O0.json": "15ce79bd07218e6cccf4403ba151b1dea4354c576eaeeb7c4f8d560ba8d9b740",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/014-S0O1.json": "1666219e2bfe1171c38f0c3ed8dbe6b286d6f63645ad55109c00beaa7a1f3701",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/018-S1O0.json": "1cc70dec0acfae98c5e47462c893d890edf1d4915949b5f34ac6a52ac0638e9a",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/043-S0O1.json": "73c0ad8972501f5ccc13054d7de3fe28b4c7813a5eee8e9a9d0ed1291ebea70a",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/070-S1O0.json": "ac8569564009dcee923ae4959563e170bba22f9e0aff859b98d8379e54b63761",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/031-S0O1.json": "a6d151810efb73d48c12175e3d260b47c9dc26c2f26efdc91ea54a81854e30c1",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/077-S0O1.json": "06e4702e0a2f22984acaa804428bb6f8d88eba6df6aa4183ebcb3fd81359f85e",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/018-S0O1.json": "624034bf75038ff6ef99fb148d3068db9b4fe8c23289f733fc0ac2daa904cfdb",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/019-S0O1.json": "a18624df8f7313f987511c013b8fff8bf9ca08beae19e0c576d4db59d83d3ad9",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/076-S0O1.json": "69860900c9655e655e13223a19bfba8551a5c7300ffe5758fb5e88ec6bc986b9",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/043-S1O0.json": "201d8176c5d1643995460d5be7701758a5b33f87674053266f18c0332ee48a30",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/078-S1O0.json": "e9bab0f0181a66ddd17f852781fb6f2a5bd5b6b73d9e855ba4c2b0c559eb08ad",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/063-S0O1.json": "acba54f9f5f4b5c437a56f0addf2b0cb72e8d4fecb6a014c8c1e426ac5d6bf1e",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/068-S0O1.json": "25c46924a398b7b49ade4e80200ee181d3c7b9d9a8b39eef8b52f6ee82d10033",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/021-S0O1.json": "090cc17406893eb953b2e8464f86a7f4a1d1a0db9e25e49b38888e339cd65823",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/063-S1O0.json": "536c935a89e9147c7adcf8b42f5c500d0b4e0cecdaf8eacc9d24c2a170fa86ca",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/017-S1O0.json": "64f8fe599c5a124fa1cd6e3ce56508236294df794cd685c26ec210ede28ddec3",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/073-S1O0.json": "aec87a7f574b9f77f73f503aa650a88db47b1465e297c31e38d39fb3b8c10d2b",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/027-S1O0.json": "b2f32995b2282fb7431e4868d65e71f3fab6283c0740349833f5060692b3f991",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/062-S0O1.json": "f4822ca1d90d3f4f48524929221196202875484702a995d93d5f2ca1be13bad5",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/017-S0O1.json": "eb0d1a8221a46f1471f4e68cd2245f5af14fd355077a596445229aecc7e7c222",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/014-S1O0.json": "9b79383e71848e6d680774071fac0a0ea752917a68ab4177f399b3ac6256ce37",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/038-S1O0.json": "f2c7035af0aaa1baea59d4f6152794df2d37a52d1574a91829e9426b9b1600a5",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/023-S0O1.json": "61d22478085ebd324490f0d409c66421e8fdc06b7b2f6559842412a0717475c1",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/027-S0O1.json": "031fa62013a822adba168aba3781b1172901fb68c32bad473745cf34edbdad44",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/068-S1O0.json": "7ef41c8b79a8ffb989b7f06dbda15418e0b00115afc0567048d4042769b37dc6",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/030-S0O1.json": "30f0413a149d908b695877e2c3c952b1325f554d749b2139c89a33cfad711abf",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/055-S0O1.json": "40906019b2b158d629bfb1d6e36a668cb1a2fafbc81055da52cc60924e3c2717",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/062-S1O0.json": "266524911e3cb2379edc9f382d73b99e294bb0ca95bccb9c8347ede70f65f3b2",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/078-S0O1.json": "41605c829d33bbcb48dfa427d2b692f6344b7f45728ea6bfa175eaa86e98e006",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/031-S1O0.json": "6d811cb44365b06527f4431c59b3cd2931a9564724d01774b504356ee0898831",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/026-S1O0.json": "3db40074601cd678b7612c8c4aefbb7302f84423fbb07fa768ba8569ada6c261",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/034-S0O1.json": "0e7c665f16e2f3361e645b162e8535c54d2b074d3b0397e556f6af950dde8334",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/000-S0O1.json": "3cf9ebd3edee99fd38cddc7e1c322a58993570237e83c905e2271141f19d810b",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/052-S1O0.json": "46004c12e308694adb9708c8b1e245daf9602a7468bc0fb03d794741aa4ed73e",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/077-S1O0.json": "c753b08bb5cf2ab7ebbc540b046190f6037e0099832652b434d754f706765973",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/023-S1O0.json": "7490c7e537b0e2932c8345ec6f83a1c1d5b2c43914f5032a64431fdd3652ff89",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/000-S1O0.json": "e823a971496914ee68f91d3cc7242d2919c007da14f9fc7de4ab0b1a2f982b13",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/019-S1O0.json": "cebec1abecea710109a67a8ad4c7d9aaf609e45de071a1715079b85d1a877602",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/073-S0O1.json": "af74bdfbf620ddd9404043483d7e5622e986c50c30ad77121afc71cea6af85fd",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/021-S1O0.json": "fc95484b06958ef5730dbec37343c3c1d3c75ab05f38a94c7af82466c2fac110",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/003-S1O0.json": "1682d5ccf735aad9181a039f0e9458d6e8d0c09a540c8bd096efb5eeaf0c7464",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/003-S0O1.json": "9f38825f7e5af43967f234e511991760843bd707559b7da876594e0d3b553da6",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/055-S1O0.json": "26072f89baed38579bd8d60d2f32e7911dfeabafce568fad8c1b80146097fb8e",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/030-S1O0.json": "51dd64b2837872d4d664a3b0ebd6ed5733f649bdb11a69399d352aace8c7dda5",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/070-S0O1.json": "c0a3aae4316cd9a444059ccfb317cac9213310be96e80d364197b6c0f82b91ce",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/052-S0O1.json": "f65bce75d567b51be11e9f411d762428769ed768ab91ce9281878f6e98e1cce5",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/026-S0O1.json": "b8411adbf01b780bd9c696c3a521b548f4cd8e831c83be47fad35373065e0b22",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-sampling-order-cross-20261107-v1/trials/038-S0O1.json": "f02d41296d9688e9704d60c79405be039268d5e6eb545cec34e2b248ebfe9b0b"
+  }
+}

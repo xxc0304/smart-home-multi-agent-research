@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-05",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "sampling_result": "PASS_TECHNICAL_ONLY",
+  "sampling_n": 24,
+  "V16_result": "PASS_TECHNICAL_ONLY",
+  "V16_Unknown": 4,
+  "V8_expert_correct": 6,
+  "V8_base_correct": 3,
+  "V16_reused_identical_requests": true,
+  "first_two_requests_and_raw_outputs_match_strict": true,
+  "strict_V4": {
+    "mode": "team",
+    "n_expected_requests": 312,
+    "n_generated": 2,
+    "n_ok": 1,
+    "fatal": null,
+    "elapsed_seconds": 10.372872106992872,
+    "n_expected_tasks": 6,
+    "n_complete_tasks": 0,
+    "unknown_outputs": 0,
+    "primary_enabled": false,
+    "verdict": "REVISE",
+    "original_scores_unchanged": true
+  },
+  "readable_V5": {
+    "mode": "team",
+    "n_expected_requests": 312,
+    "n_generated": 312,
+    "n_ok": 312,
+    "fatal": null,
+    "elapsed_seconds": 1045.544046023002,
+    "n_expected_tasks": 6,
+    "n_complete_tasks": 6,
+    "unknown_outputs": 5,
+    "primary_enabled": false,
+    "verdict": "PASS_READABLE_EOS_WITH_FORMAT_WARNINGS",
+    "original_scores_unchanged": true,
+    "n_format_warnings": 3
+  },
+  "format_warning_count": 3,
+  "format_warning_by_stage": {
+    "initial": 2,
+    "work": 1,
+    "final": 0
+  },
+  "format_warning_by_actor": {
+    "M1": 0,
+    "M2": 1,
+    "M3": 2,
+    "M4": 0
+  },
+  "actual_word_max": {
+    "initial": 28,
+    "work": 121,
+    "final": 10
+  },
+  "source_old_scores_sha256_unchanged": true,
+  "original32_still_complete28": true,
+  "all_new_trace_replays_identical": true,
+  "all_nonfixture_and_routes_verified": true,
+  "strict_format_all_pass": false,
+  "new_generations_total": 354,
+  "stage": "PASS_READABLE_FLOW_WITH_WARNINGS"
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-04",
+  "scope": "T1 existing 12 event tasks x 4 arms; assistant annotation, not independent adjudication",
+  "paths": 48,
+  "tasks": 12,
+  "work_messages_preserved": 384,
+  "expert_work_full_texts_reviewed": 96,
+  "peer_work_review": "288 bounded head/tail excerpts, 18 additionally full texts (case0 B and case8 B/D); no exhaustive peer semantic annotation claimed",
+  "all_original_event_ids_covered": true,
+  "all_final_refs_and_outputs_match": true,
+  "expert_final_visibility_and_adapter_checks": "PASS",
+  "original_files_unchanged": 35,
+  "original_sha256_unchanged": true,
+  "new_model_generations": 0,
+  "new_C_H_reads": 0,
+  "official_scores_changed": false,
+  "classes": {
+    "CLEAR_ERROR": 10,
+    "SUPPORTED": 24,
+    "EQUIVALENCE_CANDIDATE": 3,
+    "AMBIGUOUS": 12,
+    "UNRESOLVED": 2,
+    "GRANULARITY": 3
+  },
+  "tags": {
+    "PUBLIC_CORRECT_CONTENT": 12,
+    "CORRECT_INITIAL_AVAILABLE": 16,
+    "READOUT_LOSS": 14,
+    "LATE_CORRECT_FINAL": 4,
+    "REASON_FINAL_MISMATCH": 11,
+    "FINALIZATION_REVERSAL": 2
+  },
+  "per_arm": {
+    "A": {
+      "original_em_harm": 4,
+      "confirmed_semantic_harm": 1,
+      "original_em_corrections": 1,
+      "original_readout_loss_paths": 4
+    },
+    "B": {
+      "original_em_harm": 3,
+      "confirmed_semantic_harm": 0,
+      "original_em_corrections": 3,
+      "original_readout_loss_paths": 1
+    },
+    "C": {
+      "original_em_harm": 3,
+      "confirmed_semantic_harm": 1,
+      "original_em_corrections": 2,
+      "original_readout_loss_paths": 6
+    },
+    "D": {
+      "original_em_harm": 2,
+      "confirmed_semantic_harm": 0,
+      "original_em_corrections": 2,
+      "original_readout_loss_paths": 3
+    }
+  },
+  "limitations": [
+    "Not blinded: seven cases previously read",
+    "All expert work texts read; most peer messages reviewed via explicitly omitted head/tail excerpts",
+    "Semantic labels are assistant opinions, not replacement EM or human gold",
+    "12 tasks selected by prior events; path counts not independent items or population rates"
+  ],
+  "stage_verdict": "PASS for bounded expert-centered T1 classification; REVISE for causal/independent-semantic claims"
+}

@@ -1,0 +1,74 @@
+{
+  "result": "PASS",
+  "status": "RUNNING",
+  "snapshot_responses": 42,
+  "snapshot_attempts": 43,
+  "max_input_plus_cap": 3341,
+  "complete_arms_checked": 1,
+  "all_requests_reconstructed": true,
+  "all_output_ids_decoded": true,
+  "source_permissions_checked": true,
+  "fact_selection_requests": [
+    {
+      "task_id": 1,
+      "actor": "M3",
+      "status": "OK",
+      "unknown": [],
+      "selected": [
+        "S01",
+        "S02",
+        "S03",
+        "H03"
+      ],
+      "strict_id_format": true
+    },
+    {
+      "task_id": 1,
+      "actor": "M2",
+      "status": "OK",
+      "unknown": [],
+      "selected": [
+        "S01",
+        "S02",
+        "S03",
+        "H02"
+      ],
+      "strict_id_format": true
+    },
+    {
+      "task_id": 1,
+      "actor": "M1",
+      "status": "OK",
+      "unknown": [],
+      "selected": [
+        "S01",
+        "S02",
+        "S03",
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "strict_id_format": true
+    },
+    {
+      "task_id": 1,
+      "actor": "M4",
+      "status": "OK",
+      "unknown": [],
+      "selected": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "strict_id_format": true
+    }
+  ],
+  "non_eos": 0,
+  "unreadable_finals": 0,
+  "output_tokens": 4885,
+  "generation_seconds": 208.81133852305356,
+  "freeze_unchanged": true,
+  "scope": "assistant provisional audit; not independent human or semantic correctness certification"
+}

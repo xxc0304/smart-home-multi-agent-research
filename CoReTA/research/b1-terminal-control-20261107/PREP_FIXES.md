@@ -1,0 +1,7 @@
+# 本批准备修正
+
+2026-11-07。首次真实prepare由SSH默认/home/xiaoxinchen目录启动，已有C资格manifest中的相对adapter路径被Path.resolve解析到用户主目录，与配置的项目绝对路径不等，validate_runtime按设计拒绝。尚无模型生成，OUT也未创建。
+
+只读核查表明资格路径为runs/b0-first-run-20261103-v2/attempt1/adapter，配置路径是同一项目下的绝对形式，问题是启动工作目录。adapter权重SHA256为2b849ddcfe0afb69362325b1095dc435115bf3002694bb33c955b61f1e4318db，来源为expert_training、technical_steps=null，基模型固定revision。未切换或改写权重，未跳过独立C资格检查。
+
+修正：本批runner显式切换到其解析所得ROOT后再调用原validate_runtime；不修改公共运行器或旧批。修正后重做完整7项fixture/故障检查和实际长度/资格预检，只有通过才冻结和启动。后续后台启动也明确cwd=ROOT。

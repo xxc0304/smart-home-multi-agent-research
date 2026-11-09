@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "old_score_cases": [
+    {
+      "folder": "runs/b1-dev32-final-20261104-v2",
+      "n_traces": 32,
+      "complete": 28,
+      "score_exact_match": true
+    },
+    {
+      "folder": "runs/b1-dev32-20261105-v5/stage32",
+      "n_traces": 32,
+      "complete": 32,
+      "score_exact_match": true
+    },
+    {
+      "folder": "runs/b1-batch2-fullflow-20261105-v1/serial",
+      "n_traces": 8,
+      "complete": 8,
+      "score_exact_match": true
+    },
+    {
+      "folder": "runs/b1-batch2-fullflow-20261105-v1/batch2",
+      "n_traces": 8,
+      "complete": 7,
+      "score_exact_match": true
+    }
+  ],
+  "extra_real_V4_V5_traces": 7,
+  "all_original_files_unchanged": true,
+  "new_model_generations": 0,
+  "new_C_H_reads": false,
+  "scope": "BACKWARD_COMPATIBILITY_NOT_MODEL_QUALITY"
+}

@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETED_WITH_INCOMPLETE_UNITS",
+  "processed_units": 64,
+  "complete_units": 62,
+  "model_calls": 2610,
+  "elapsed_seconds": 13872.855504996958,
+  "failures": [
+    {
+      "unit": 21,
+      "index": 37,
+      "rep": 0,
+      "failures": {
+        "common": {
+          "stage": "initial",
+          "actor": "M2",
+          "status": "OUTPUT_LIMIT"
+        }
+      }
+    },
+    {
+      "unit": 53,
+      "index": 37,
+      "rep": 1,
+      "failures": {
+        "common": {
+          "stage": "initial",
+          "actor": "M4",
+          "status": "OUTPUT_LIMIT"
+        }
+      }
+    }
+  ],
+  "final_audit": {
+    "result": "PASS",
+    "responses_checked": 2610,
+    "generated_calls": 2610,
+    "complete_unit_scores_reconstructed": 64,
+    "non_ok": 2,
+    "max_input_plus_cap": 6783,
+    "freeze_unchanged": true,
+    "full_actual_payload_history_seed_token_adapter_reconstruction": true
+  },
+  "archive_hashes": {
+    "responses": "3355f4665e5ae570deb8b2df9232b822896fafc9f69177e26c824b514d3583d2",
+    "scores": "63055a57d291f5f1d4dd0780daf03636fcfed6a64f4d718f597cedf7e760e8e9"
+  },
+  "remote_hashes_match": true,
+  "scope": "Technical completion verified. Detailed semantic process analysis pending; not method validation."
+}

@@ -1,0 +1,287 @@
+{
+  "scope": "ASSISTANT_SEMANTIC_READING_PROVISIONAL_NOT_INDEPENDENT_HUMAN",
+  "coverage": {
+    "all62_explanations_candidates_and186_revised_answers_read": true,
+    "all25_em_or_gl_answer_difference_units": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      15,
+      17,
+      26,
+      27,
+      29,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      47,
+      49,
+      58,
+      59,
+      60,
+      61,
+      63
+    ],
+    "additional_wrong_control_unit": 39,
+    "full_G_L_reviews_units": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      15,
+      17,
+      26,
+      27,
+      29,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      47,
+      49,
+      58,
+      59,
+      60,
+      61,
+      63
+    ],
+    "full_S_reviews_units": [
+      6,
+      15,
+      26,
+      38,
+      39,
+      47,
+      58,
+      59,
+      60,
+      63
+    ],
+    "full_reviews_read": 186,
+    "total_reviews": 558,
+    "source_scope": "Exact labelled support and review-cited paragraphs read through viewer; all20 passages exported in CASE files but not claiming all full passages independently semantically audited."
+  },
+  "cases": [
+    {
+      "unit": 0,
+      "index": 6,
+      "rep": 0,
+      "stratum": "diagnostic",
+      "label": "TARGET_ENDPOINT_REPLACED_WITH_PARTLY_REASONABLE_EVIDENCE_DOUBT",
+      "note": "Local first two reviewers question explicit reservoir-to-border entailment but then incorrectly replace neighboring county with birthplace county; third supports correct candidate with misnumbered citations. Final Ashtabula."
+    },
+    {
+      "unit": 32,
+      "index": 6,
+      "rep": 1,
+      "stratum": "diagnostic",
+      "label": "TARGET_ENDPOINT_REPLACED",
+      "note": "All local reviewers acknowledge county relation while choosing birthplace county Ashtabula; final same wrong endpoint. Same task as unit0, not independent replication."
+    },
+    {
+      "unit": 1,
+      "index": 42,
+      "rep": 0,
+      "stratum": "background",
+      "label": "GENRE_TARGET_REINTERPRETED",
+      "note": "All local reviewers challenge gangsta rap and favor hip hop; P5 explicitly contrasts gangsta rap with West. Generic reviewers also largely challenge but expert retains correct gangsta rap. Local harm relative to G, no causal majority proof."
+    },
+    {
+      "unit": 33,
+      "index": 42,
+      "rep": 1,
+      "stratum": "background",
+      "label": "GENRE_TARGET_REINTERPRETED_WITH_MIXED_REVIEW",
+      "note": "Local third reviewer labels CHALLENGE while concluding gangsta rap; others favor hip hop. Both G/L finals hip hop. Verdict is not reviewer answer correctness."
+    },
+    {
+      "unit": 27,
+      "index": 0,
+      "rep": 0,
+      "stratum": "background",
+      "label": "TYPE_TO_ENTITY_SUBSTITUTION",
+      "note": "P10 directly calls Wyoming land-grant; local reviewers acknowledge that fact but select University of Wyoming. Generic slot2 still proposes land-grant under CHALLENGE, others favor name. G/L final name, S correct type."
+    },
+    {
+      "unit": 59,
+      "index": 0,
+      "rep": 1,
+      "stratum": "background",
+      "label": "CORRECT_CANDIDATE_BAD_EXPLANATION_AND_REVISION_DRIFT",
+      "note": "Original explanation wrongly types magazine as university though candidate type correct. L/G challenge this then answer university name. S first two reviews correctly support type, third also supports with false quote; S final nevertheless university name. Not all loss uniquely attributable to ordinary reviews."
+    },
+    {
+      "unit": 2,
+      "index": 17,
+      "rep": 0,
+      "stratum": "diagnostic",
+      "label": "BORDER_RELATION_ENDPOINT_SWAPPED",
+      "note": "L reviewers confuse birthplace county with requested neighboring county. G also has three wrong challenges yet final retains Greene; L final Ulster. Original explanation not the later seed Kingston-border misstatement."
+    },
+    {
+      "unit": 34,
+      "index": 17,
+      "rep": 1,
+      "stratum": "diagnostic",
+      "label": "MIXED_LOCAL_SUPPORT_WITH_CITATION_ERROR",
+      "note": "Two L reviews favor Ulster; third supports Greene but repeats incorrect Kingston-border attribution. L final Greene whereas G final Ulster. Correct final is not a clean verified reasoning chain."
+    },
+    {
+      "unit": 4,
+      "index": 49,
+      "rep": 0,
+      "stratum": "diagnostic",
+      "label": "CORRECT_FINAL_DESPITE_WRONG_LOCAL_RECOMMENDATIONS",
+      "note": "All three L reviews wrongly prefer newspaper founding1963 to university1960; L final nevertheless1960, G1963. Cannot credit a correct reviewer correction or automatic majority."
+    },
+    {
+      "unit": 36,
+      "index": 49,
+      "rep": 1,
+      "stratum": "diagnostic",
+      "label": "PUBLICATION_VS_OWNER_DATE_CONFUSION",
+      "note": "Both G/L reviewers repeatedly conflate university and newspaper dates despite explicit P5/P9 distinction. All choose1963 rather than university1960; S retains1960."
+    },
+    {
+      "unit": 5,
+      "index": 43,
+      "rep": 0,
+      "stratum": "diagnostic",
+      "label": "LANGUAGE_TARGET_STRENGTHENED_AND_GENERATION_ERROR",
+      "note": "Renana mother Ruth wrote English-language Householder. L shifts used language to native/spoken language or loses mother identity, yields no information. G reviews uncertain but final Italian unsupported as asked. Rationale is answer-only, no full expert reasoning."
+    },
+    {
+      "unit": 37,
+      "index": 43,
+      "rep": 1,
+      "stratum": "diagnostic",
+      "label": "MOTHER_GRANDMOTHER_OR_WRITTEN_LANGUAGE_LINK_LOST",
+      "note": "L/G reviewers doubt available language link; some identify grandmother Mehraben as mother or ask mother-of-author. L unknown; G retains English despite all UNCERTAIN. Not a token/parser failure."
+    },
+    {
+      "unit": 15,
+      "index": 31,
+      "rep": 0,
+      "stratum": "background",
+      "label": "BOUNDARY_AUTHOR_VS_GUIDE_AND_INCONSISTENT_EXPERT_EXPLANATION",
+      "note": "R1878 correct per frozen target, expert original explanation foregrounds wrong Yale Record1872. G/L reviewers instead ask guide founding and reject newspaper-to-author relationship. Some unsupported1962 from unrelated Notre Dame. S1872; G/Lunknown. Predeclared boundary."
+    },
+    {
+      "unit": 47,
+      "index": 31,
+      "rep": 1,
+      "stratum": "background",
+      "label": "BOUNDARY_POSITIVE_EM_WITHOUT_VALID_RECOMMENDATION",
+      "note": "All L reviews CHALLENGE and suggest unknown/1962, yet final1878 correct; G1962. Only primary-background positive L-G comes from this predeclared boundary case, not observed clean local correction."
+    },
+    {
+      "unit": 29,
+      "index": 54,
+      "rep": 0,
+      "stratum": "background",
+      "label": "PREDECLARED_LABEL_SCOPE_BOUNDARY_WITH_WRONG_REPLACEMENT",
+      "note": "Reprise linked to later album, valid scope concern for song-specific reading, while question asks performer label. L selects Capitol from unrelated MC Hammer or unsupported career assertion; Gunknown. Do not count every scope challenge as wholly false."
+    },
+    {
+      "unit": 61,
+      "index": 54,
+      "rep": 1,
+      "stratum": "background",
+      "label": "PREDECLARED_LABEL_SCOPE_BOUNDARY_AND_WRONG_ENTITY_BINDING",
+      "note": "Same task boundary as29. L slot1/3 explicitly use MC Hammer P4 for Yoakam Capitol while slot2 rejects that substitute; finalCapitol. Gunknown. Original R correctness per official scoring not unqualified semantic certainty."
+    },
+    {
+      "unit": 6,
+      "index": 27,
+      "rep": 0,
+      "stratum": "diagnostic",
+      "label": "ORDINARY_COMPLEMENT_WITH_MIXED_REASONING",
+      "note": "Wrong China bridge candidate. All ordinary prior answers Verrazano. G/L reviews restore USA/Verrazano with some erroneous direct Logan-bridge demands and Americas-country conflation; final correct. Self reviews include country recognition but wrong alternative bridges, final Fourth Nanjing. Sole extra correct unit vs S not due formatting."
+    },
+    {
+      "unit": 38,
+      "index": 27,
+      "rep": 1,
+      "stratum": "diagnostic",
+      "label": "SCOPE_CORRECTION_NOT_UNIQUE_TO_LOCAL",
+      "note": "Golden Gate1937 world-record fact does not establish requested maximum. G/L and S all final Verrazano; ordinary reviews contain useful distinction plus unnecessary direct Logan-bridge demands. S has one valid Verrazano review and other errors."
+    },
+    {
+      "unit": 26,
+      "index": 11,
+      "rep": 0,
+      "stratum": "background",
+      "label": "MIXED_VALID_FACTS_WRONG_RECOMMENDATION",
+      "note": "All L reviews explicitly state adoption2001 but conclude2004 (entry into force), while candidate1949 and expert explanation already2001. Expert final2001. Generic has one2001 and others2004; self all2001. Cannot call this new ordinary knowledge or wholesale review acceptance."
+    },
+    {
+      "unit": 58,
+      "index": 11,
+      "rep": 1,
+      "stratum": "background",
+      "label": "MIXED_VALID_FACTS_WRONG_RECOMMENDATION",
+      "note": "All G/L reviewers say adoption2001 but recommend2004; expert final2001 in all arms. Original explanation already2001 and self reviews correct. Same task as26."
+    },
+    {
+      "unit": 60,
+      "index": 35,
+      "rep": 1,
+      "stratum": "background",
+      "label": "DATE_TARGET_CORRECTION_AVAILABLE_IN_PREFIX",
+      "note": "Region1994 already in expert explanation versus candidate1966. L slot1 recognizes1994 yet says unavailable, slot2 recommends1966, slot3 correctly1994; G similar, S mixed. All finals1994. No unique local increment."
+    },
+    {
+      "unit": 63,
+      "index": 25,
+      "rep": 1,
+      "stratum": "background",
+      "label": "OFFICIAL_EM_ONLY_UNIT_FORMAT",
+      "note": "Self final21 m vs official21; all reviewers support21 meters. Frozen auxiliary alias explicitly accepts21 m, so S loss here is not a semantic reasoning error. G/L21 correct."
+    },
+    {
+      "unit": 17,
+      "index": 33,
+      "rep": 0,
+      "stratum": "background",
+      "label": "INTERMEDIATE_ENTITY_CORRECTED_WITHOUT_REQUIRED_NAME",
+      "note": "Some L/G correctly identify UN or Big Four and source P4 but fail requested dubbed name Four Policemen; LfinalTrusteeshipCouncil vs GAlliedPowers. Different answers remain official0."
+    },
+    {
+      "unit": 49,
+      "index": 33,
+      "rep": 1,
+      "stratum": "background",
+      "label": "INTERMEDIATE_ORGANIZATION_NOT_ANSWER_TARGET",
+      "note": "L corrects UN organization relative to TrusteeshipCouncil but answers UN, not requested label Four Policemen. GStatisticsDivision. Cannot call intermediate local progress final success."
+    },
+    {
+      "unit": 35,
+      "index": 24,
+      "rep": 1,
+      "stratum": "diagnostic",
+      "label": "COUNTRY_REFERENT_AND_EVENT_TARGET_MISREAD",
+      "note": "EU surrounding1995 vs UK referendum2016. Reviewers identify some event mismatch but still choose1995 or claim no decision in passages, missing BrexitP18; GfinalSwissSchengen2005, L1995."
+    },
+    {
+      "unit": 39,
+      "index": 28,
+      "rep": 1,
+      "stratum": "diagnostic",
+      "label": "DETECT_WRONG_ROLE_LINK_BUT_LOSE_REQUESTED_ACTOR",
+      "note": "P17 Ryan playsWarren and Rafe playsHancock. Ordinary reviewers detect mismatch yet propose Hancock instead of actor; S similar, third inventsHenryThomas connection. G/L finalJohnTrumbull, SJohnHancock. Two ordinary independent initials originallyRafe, so correct prior candidate not retained."
+    }
+  ]
+}

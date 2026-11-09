@@ -9,6 +9,8 @@ import time
 from b0_answers import ROOT, read_jsonl, write_json, compare_runs
 from b0_training import require_config, load_tokenizer, load_base
 from b1_controls import Trial, replay, summarize
+from b1_stop_status import termination_status
+from b1_output_contract import LONG_WORK_VERSION
 from expert_mechanism_protocol import ACTORS, validate_task
 from prepare_expert_training import dependency_groups
 
@@ -16,6 +18,16 @@ SOURCE = ROOT / 'data/external/musique-v1.0-20261030'
 SPLIT = ROOT / 'research/musique-data-preparation-20261030/SPLIT_MANIFEST.json'
 C_GROUPS = ROOT / 'implement-stage/expert-answer-only-20261101/C_GROUPS.json'
 POLICY = dict(do_sample=True, temperature=.7, top_p=.95, top_k=0)
+
+
+def trial_parameters(config, task_index):
+    options=dict(expert_actor=config['expert_actor'],seed=config['seed'],
+                 task_index=task_index,fixture=config['fixture'])
+    if config['answer_tokens']!=64 or config.get('answer_suffix',''):
+        options.update(answer_tokens=config['answer_tokens'],answer_suffix=config.get('answer_suffix',''))
+    if config.get('output_contract'):
+        options['output_contract']=config['output_contract']
+    return options
 
 
 def load_json(path):
@@ -67,8 +79,18 @@ def validate_runtime(config):
     require_config(config)
     if config.get('expert_actor') not in ACTORS or type(config.get('seed')) is not int:
         raise ValueError('expert_actor_and_integer_seed_required')
-    if (config.get('generation') != POLICY or config.get('answer_tokens') != 64
-            or config.get('work_tokens') != 512):
+    legacy_answers=config.get('answer_tokens')==64 and not config.get('answer_suffix','')
+    revised_answers=(config.get('answer_tokens')==256 and bool(config.get('answer_suffix'))
+                     and config.get('answer_policy_version')=='B1_SHORT256_SUFFIX_V2')
+    concise=(config.get('output_contract') in ('B1_CONCISE_V4','B1_CONCISE_READABLE_V5')
+             and config.get('answer_policy_version')==config.get('output_contract')
+             and config.get('answer_tokens')==128 and not config.get('answer_suffix',''))
+    long_work=(config.get('output_contract')==LONG_WORK_VERSION
+               and config.get('answer_policy_version')==LONG_WORK_VERSION
+               and config.get('answer_tokens')==256 and bool(config.get('answer_suffix')))
+    if (config.get('generation') != POLICY or not (legacy_answers or revised_answers or concise or long_work)
+            or (config.get('output_contract') and not (concise or long_work))
+            or config.get('work_tokens') != (1024 if long_work else 768 if concise else 512)):
         raise ValueError('B1_decoding_policy_not_matched')
     if not config.get('adapter_path'):
         raise ValueError('adapter_path_required')
@@ -99,8 +121,13 @@ def validate_runtime(config):
         if any(inference[k] != config[k] for k in
                ('revision','dtype','quantization','template_kwargs')):
             raise ValueError('C_runtime_inference_mismatch')
-        if inference['generation'] != dict(do_sample=False, max_new_tokens=64):
+        qualification_cap = config.get('qualification_answer_tokens', 64)
+        if type(qualification_cap) is not int or qualification_cap not in (64, 256):
+            raise ValueError('C_qualification_cap_not_registered')
+        if inference['generation'] != dict(do_sample=False, max_new_tokens=qualification_cap):
             raise ValueError('C_not_answer_only_frozen_policy')
+        if inference.get('evaluation_answer_suffix', '') != config.get('qualification_answer_suffix', ''):
+            raise ValueError('C_qualification_answer_suffix_mismatch')
     if baseline['manifest']['adapter'] is not None or (
             Path(expert['manifest']['adapter']).resolve() != Path(config['adapter_path']).resolve()):
         raise ValueError('C_runtime_adapter_mismatch')
@@ -156,13 +183,16 @@ class LocalBackend:
         tail = y[0,len(ids):].tolist()
         eos = self.generation_config.eos_token_id
         eos = eos if isinstance(eos,list) else [eos if eos is not None else tok.eos_token_id]
+        elapsed=time.monotonic()-started
+        status,reason=termination_status(tail,eos,cap,elapsed,remaining)
         usage=dict(input_tokens=len(ids),output_tokens=len(tail),
-            elapsed_seconds=time.monotonic()-started, adapter_enabled=expert)
+            elapsed_seconds=elapsed, adapter_enabled=expert,
+            finish_reason=reason,output_cap=cap,ended_with_eos=reason=='EOS')
         if config['device'].startswith('cuda'):
             usage['peak_allocated_bytes']=torch.cuda.max_memory_allocated()
             usage['peak_reserved_bytes']=torch.cuda.max_memory_reserved()
         return dict(raw_output=tok.decode(tail, skip_special_tokens=True),
-            status='OK' if tail and tail[-1] in eos else 'OUTPUT_LIMIT',
+            status=status,
             usage=usage)
 
 
@@ -201,9 +231,7 @@ def run_batch(config, tasks, groups, output, *, resume_from=None, fixture_backen
         for i, task_id in enumerate(old_ids):
             trace = load_json(prior/'trials'/f'{i:03d}.json')
             trial = replay(trace)
-            if (not trial.complete or trial.task != tasks[i] or trial.config != dict(
-                    expert_actor=config['expert_actor'],seed=config['seed'],task_index=i,
-                    fixture=config['fixture'])):
+            if (not trial.complete or trial.task != tasks[i] or trial.config != trial_parameters(config,i)):
                 raise ValueError('resume_requires_complete_matching_prefix')
             inherited.append(trial.export())
     output = Path(output)
@@ -211,7 +239,8 @@ def run_batch(config, tasks, groups, output, *, resume_from=None, fixture_backen
     (output/'trials').mkdir()
     journal = output/'responses.jsonl'
     journal.touch()
-    manifest = dict(protocol='B1_TWO_ROUND_FOUR_ARM_V1',config=deepcopy(config),
+    manifest = dict(protocol='B1_TWO_ROUND_FOUR_ARM_V6' if config.get('output_contract')==LONG_WORK_VERSION else 'B1_TWO_ROUND_FOUR_ARM_V5' if config.get('output_contract')=='B1_CONCISE_READABLE_V5' else 'B1_TWO_ROUND_FOUR_ARM_V4' if config.get('output_contract') else 'B1_TWO_ROUND_FOUR_ARM_V2' if config.get('answer_policy_version')
+                    else 'B1_TWO_ROUND_FOUR_ARM_V1',config=deepcopy(config),
         expected_ids=ids,groups=groups,qualification=qualification,
         fixture=config['fixture'],expected_generations=52*len(ids),
         inherited_items=len(inherited),resume_from=str(resume_from) if resume_from else None,
@@ -238,8 +267,7 @@ def run_batch(config, tasks, groups, output, *, resume_from=None, fixture_backen
         for i in range(len(inherited),len(tasks)):
             if time.monotonic()-started >= config['wall_seconds']:
                 break
-            trial = Trial(tasks[i],expert_actor=config['expert_actor'],seed=config['seed'],
-                          task_index=i,fixture=config['fixture'])
+            trial = Trial(tasks[i],**trial_parameters(config,i))
             try:
                 while (request:=trial.next_request()) is not None:
                     remaining = config['wall_seconds']-(time.monotonic()-started)
@@ -295,9 +323,7 @@ def score_batch(directory):
     traces=[load_json(path) for path in sorted((directory/'trials').glob('*.json'))]
     for trace in traces:
         i=manifest['expected_ids'].index(trace['task']['id'])
-        if trace['task'] != tasks[i] or trace['config'] != dict(
-                expert_actor=manifest['config']['expert_actor'],seed=manifest['config']['seed'],
-                task_index=i,fixture=False):
+        if trace['task'] != tasks[i] or trace['config'] != trial_parameters(manifest['config'],i):
             raise ValueError('trace_manifest_or_task_mismatch')
     result=summarize(traces,targets,manifest['expected_ids'],groups)
     write_json(directory/'scores.json',result)

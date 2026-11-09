@@ -1,0 +1,54 @@
+{
+  "status": "COMPLETE",
+  "n_expected": 2,
+  "n_complete": 2,
+  "recorded_generations": 104,
+  "generations_max": 104,
+  "fatal_error": null,
+  "elapsed_seconds": 598.3789902089993,
+  "input_tokens": 346423,
+  "output_tokens": 11770,
+  "max_input_tokens": 4947,
+  "statuses": {
+    "OK": 104
+  },
+  "initial_baseline": {
+    "expert_em": 0.0,
+    "expert_f1": 0.0,
+    "team_expected_em": 0.0,
+    "team_actual_em": 0.0,
+    "team_expected_f1": 0.0,
+    "team_actual_f1": 0.0,
+    "oracle_hit": 0.0
+  },
+  "arms": {
+    "A": {
+      "expected_em": 0.0,
+      "actual_em": 0.0,
+      "expert_em": 0.0,
+      "expert_harm_n": 0,
+      "expert_correction_n": 0
+    },
+    "B": {
+      "expected_em": 0.5,
+      "actual_em": 0.5,
+      "expert_em": 0.5,
+      "expert_harm_n": 0,
+      "expert_correction_n": 1
+    },
+    "C": {
+      "expected_em": 0.5,
+      "actual_em": 0.5,
+      "expert_em": 0.0,
+      "expert_harm_n": 0,
+      "expert_correction_n": 0
+    },
+    "D": {
+      "expected_em": 0.0,
+      "actual_em": 0.0,
+      "expert_em": 0.0,
+      "expert_harm_n": 0,
+      "expert_correction_n": 0
+    }
+  }
+}

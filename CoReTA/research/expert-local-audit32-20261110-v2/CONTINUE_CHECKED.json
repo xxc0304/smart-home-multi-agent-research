@@ -1,0 +1,30 @@
+{
+  "actual_prefix_audit": {
+    "result": "PASS",
+    "responses_checked": 24,
+    "fresh_model_calls": 6,
+    "reused_v1_responses": 18,
+    "unit_scores_reconstructed": 2,
+    "non_ok": 0,
+    "max_input_plus_cap": 3716,
+    "freeze_unchanged": true,
+    "full_actual_payload_history_seed_token_adapter_reconstruction": true
+  },
+  "prefix_review": {
+    "archive_scores_sha256": "a34ec9ebc91a7a1bad425bcef2645317f28c456d37fa44654b4a965008dc4555",
+    "scope": "Two actual frozen units39/0: 18 identical reused reviews and 6 new answer-only revisions; no gain required",
+    "actual_submission": "All six new revisions are whole short answers, no marker guessing or gold extraction",
+    "archive_response_sha256": "4534f19c13fbf5d57708d5969338992fca8365a47eee3da03cf5bce41c2fa39a",
+    "fresh_revisions": 6,
+    "behavior_review": "Read all18 reviews and all6 new revisions. Actor reviewers identify part of Ryan/Warren-Hancock mismatch but still mistake target or hallucinate; local role separation weak. County local third reviewer supports candidate, first two challenge with wrong target. New G/L county revisions choose Ashtabula rather than correct Crawford. These are semantic errors, not technical failures. No claim of reliable verification or fully executed ideal roles.",
+    "actual_responses": 24,
+    "inference_limit": "Short revisions do not reveal per-review acceptance rationale. Only frozen-prefix prompt deployment compared, not complete8-call architecture or heldout novelty validation.",
+    "non_ok": 0,
+    "technical_result": "PASS",
+    "decision": "Continue fixed remaining60 eligible prefixes plus2 inherited missing entries. Stop only predeclared technical/system criteria; do not tune for scores.",
+    "reused_reviews": 18,
+    "allow_continue": true,
+    "source_reuse": "All 18 original review payloads/seeds/caps/raw outputs/usages match v1 exactly; old 6 revisions excluded"
+  },
+  "scope": "Continue remaining 60 eligible frozen prefixes plus 2 inherited missing entries; no positive outcome required; no additional user confirmation."
+}

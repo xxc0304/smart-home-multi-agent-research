@@ -1,0 +1,1655 @@
+PAGE 1
+Findings of the Association for Computational Linguistics: ACL 2026, pages 31977–31997
+July 2-7, 2026 ©2026 Association for Computational Linguistics
+FREE-MAD: Consensus-Free Multi-Agent Debate
+Yu Cui1 Hang Fu1 Haibin Zhang2,3* Licheng Wang1 Cong Zuo1*
+1Beijing Institute of Technology
+2Yangtze Delta Region Institute of Tsinghua University, Zhejiang
+3Jiaxing Key Laboratory of Artificial Intelligence and Cyber Resilience
+cuiyu@bit.edu.cn, bchainzhang@aliyun.com
+Abstract
+Multi-agent debate (MAD) is an emerging ap-
+proach to improving the reasoning capabilities
+of large language models (LLMs). Existing
+MAD methods rely on multiple rounds of inter-
+action among agents to reach consensus, and
+the final output is decided by majority voting in
+the last round. However, this consensus-based
+design faces several limitations. First, multi-
+ple rounds of communication increases token
+overhead and limits scalability. Second, due to
+the inherent conformity of LLMs, agents that
+initially produce correct responses may be influ-
+enced by incorrect ones during the debate pro-
+cess, causing error propagation. Third, majority
+voting introduces randomness and unfairness
+in the decision-making phase, and can degrade
+the reasoning performance. To address these
+issues, we propose FREE-MAD, an alterna-
+tive and novel MAD framework that eliminates
+the need for consensus among agents. FREE-
+MAD introduces a novel score-based decision
+mechanism that evaluates the entire debate tra-
+jectory rather than relying on the last round
+only. This mechanism tracks how each agent’s
+reasoning evolves, enabling more accurate and
+fair outcomes. In addition, FREE-MAD recon-
+structs the debate phase by introducing anti-
+conformity, a mechanism that enables agents
+to mitigate excessive influence from the major-
+ity. Experiments on eight benchmark datasets
+demonstrate that FREE-MAD significantly im-
+proves reasoning performance while requiring
+only a single-round debate and thus reducing
+token costs. We also show that compared to ex-
+isting MAD approaches, FREE-MAD exhibits
+improved robustness in real-world attack sce-
+narios.
+1 Introduction
+Large language models (LLMs), due to their strong
+reasoning capabilities, have been widely applied
+*Corresponding authors.
+in domains such as chatbots (Li et al., 2024a), pro-
+gramming (Yan et al., 2024), healthcare (Liu et al.,
+2024a), and cybersecurity (Zou et al., 2024). Re-
+cent applications of LLM agents (Luo et al., 2025b)
+have placed increasing demands on their reasoning
+performance. To improve the reasoning accuracy of
+LLM agents, many studies have explored training-
+free methods such as Chain-of-Thought (CoT) (Wei
+et al., 2022), self-refinement (Madaan et al., 2023)
+and self-consistency (Wang et al., 2023). However,
+these methods focus on the usage of single LLMs
+and lack collaboration among multiple models. In
+contrast, multi-agent debate (MAD) (Zeng et al.,
+2025; Du et al., 2024; Chan et al., 2024; Liu et al.,
+2025) has emerged as a prominent solution, show-
+ing that multiple agents engaged in multi-round
+interactions can achieve substantially better rea-
+soning performance than a single agent. Indeed,
+MAD has been used in various scenarios such as
+software issue resolution (Li et al., 2025), mathe-
+matical reasoning (Zhang and Xiong, 2025), and
+code summarization (Chun et al., 2025).
+Existing efforts to optimize MAD focus primar-
+ily on the reasoning strategies of individual agents
+during debates (Liu et al., 2025) or improving scal-
+ability (Zeng et al., 2025). Meanwhile, recent
+studies reveal that LLM agents can exhibit con-
+formity (Weng et al., 2025; Zhu et al., 2025; Cho
+et al., 2025), meaning that during multi-agent in-
+teractions, agents tend to favor answers endorsed
+by the majority. In existing MAD frameworks,
+conformity-driven consensus (Sun et al., 2024;
+Zeng et al., 2025; Li et al., 2024b) is employed dur-
+ing the debate process to obtain the correct answer
+as the final decision (Chan et al., 2024). However,
+such consensus reduces reasoning accuracy. The
+consensus-based MAD schemes suffer from the
+Silent Agreement problem (Wang et al., 2025b).
+Even when the agents start with divergent opinions,
+they remain silent during the discussion due to con-
+formity. As a result, the agent group eventually
+31977
+
+PAGE 2
+provides an incorrect answer. More importantly,
+consensus naturally demands more debate rounds,
+increasing token consumption and limiting scala-
+bility.
+To address these limitations, we propose FREE-
+MAD, a consensus-free MAD framework that re-
+constructs both the debate stage and the decision
+stage. In the debate stage, we integrate the con-
+ventional conformity mode as used in prior work
+with a new mode called anti-conformity. In partic-
+ular, the anti-conformity mode leverages CoT to
+encourage agents to identify flaws in the outputs
+from other agents; this situation is in contrast to
+existing approaches that use consensus as an in-
+dicator of correctness. In the decision stage, we
+propose a score-based mechanism that evaluates
+allintermediate outputs across debate rounds, in-
+stead of focusing solely on the final round as in
+traditional MAD frameworks. By tracking changes
+in the reasoning trajectories of all agents, FREE-
+MAD assigns scores to all candidate responses
+without requiring consensus in the debate stage.
+Furthermore, we theoretically formalize the MAD
+protocol, enabling a formal comparison between
+FREE-MAD and existing MAD variants.
+To evaluate FREE-MAD, we have conducted ex-
+tensive experiments on eight benchmark datasets,
+covering knowledge-based reasoning, logical rea-
+soning, and mathematical reasoning with varying
+levels of difficulty. We show that FREE-MAD out-
+paces baseline approaches in terms of reasoning
+accuracy. In particular, FREE-MAD achieves im-
+proved accuracy with fewer debate rounds, thus
+accelerating the debate process while maintain-
+ing strong scalability. Furthermore, we show that
+FREE-MAD exhibits enhanced robustness (Chen
+et al., 2024a) and maintains accurate reasoning
+against attacks (He et al., 2025), where interactions
+among agents might be partially disrupted. We
+summarize our contributions as follows:
+• We propose a novel consensus-free MAD frame-
+work, called FREE-MAD, with dedicated opti-
+mizations in both the debate and decision stages.
+We design a score-based decision mechanism
+that evaluates all intermediate results across de-
+bate rounds, enabling accurate reasoning without
+requiring consensus.
+• We provide a syntax for the MAD protocol and
+perform a formal analysis of FREE-MAD and
+existing mechanisms.
+• We implement FREE-MAD and conduct exten-
+sive experiments on eight benchmarks. We show
+that FREE-MAD outperforms existing protocols
+in terms of reasoning accuracy, scalability, and
+robustness.
+2 Related Work
+MAD Protocol Security. In the debate stage, tra-
+ditional consensus-oriented approaches for agents
+tend to lack robustness in unreliable network envi-
+ronments. Communication attacks (He et al., 2025)
+can force some agents to withdraw from the debate,
+preventing them from receiving others’ responses.
+This delays consensus and increases overhead in
+adaptive schemes (Liang et al., 2024), ultimately
+reducing reasoning accuracy. Another line of work
+allows agents to return both their individual re-
+sponses and a self-assessed confidence score (Chen
+et al., 2024b), which is then used in a weighted
+aggregation of the final result.
+However, due to LLM hallucinations (Ji et al.,
+2023), such confidence may be unreliable. Exist-
+ing decision mechanisms in MAD are inadequate
+for addressing the security risks associated with
+LLM conformity. In real-world deployments, if a
+small subset of agents is compromised via prompt
+injection attacks (Greshake et al., 2023; Liu et al.,
+2024b; Zhan et al., 2025), the system may con-
+verge toward a shared but incorrect answer. When
+decisions are made using mechanisms such as ma-
+jority voting, this can lead to a complete failure of
+the MAD system. Other approaches (Liang et al.,
+2024) use an LLM-as-a-Judge (Zheng et al., 2023)
+framework, where an LLM decides the final out-
+come. This approach can produce biased results
+and is prone to conformity, making it effectively
+equivalent to majority voting. In addition, if the
+LLM is compromised by a prompt injection attack,
+the accuracy of the MAD system’s final output may
+drop significantly.
+Agent Diversity in MAD. In previous studies, al-
+though some MAD frameworks have considered
+heterogeneity and diversity among agents, their ex-
+perimental evaluations were typically conducted
+using LLMs with similar model sizes (Yang et al.,
+2025), such as Llama3.1-8B1, Qwen2.5-7B2, and
+Gemma-2-9B3. This setup significantly limits the
+effectiveness of MAD and, in certain cases, re-
+1https://huggingface.co/meta-llama/Llama-3.1-8B
+2https://huggingface.co/Qwen/Qwen2.5-7B
+3https://huggingface.co/google/gemma-2-9b
+31978
+
+PAGE 3
+sults in worse performance than self-consistency
+approaches.
+In real-world deployments, however, we aim to
+enable collaboration among diverse LLMs, each
+possessing different strengths (Chan et al., 2024;
+Liu et al., 2025), to act as equal peers within a
+MAD framework. Such collaboration is expected
+to outperform the strongest single agent on the
+same task and to solve a broader range of problems
+through cooperation, analogous to human team-
+based collaboration.
+However, when the participating agents in a het-
+erogeneous MAD system exhibit substantial dif-
+ferences in their capabilities, it may lead to signif-
+icant variance in their confidence regarding their
+own responses. As a consequence of conformity
+in LLMs (Weng et al., 2025), agents may tend to
+adopt the outputs of peers, even when those outputs
+are incorrect. While conformity can be beneficial
+in facilitating consensus, it also introduces detri-
+mental effects that require external mitigation.
+MAD Protocols. When MAD was introduced, it
+was intended to improve reasoning by encourag-
+ing LLMs to reach consensus across their answers.
+However, such a consensus cannot be guaranteed
+in theory and is generally achievable only in prac-
+tice (Du et al., 2024). Moreover, consensus be-
+comes easier to achieve when agents adjust their
+trust between self-generated and externally gener-
+ated content, yet this adjustment tends to reduce
+reasoning accuracy. The researchers did not in-
+vestigate the deeper conformity issue that under-
+lies this performance drop. Subsequent studies
+have focused on optimizing the debate stage of
+MAD (Chan et al., 2024; Chen et al., 2024b; Zeng
+et al., 2025; Liang et al., 2024; Liu et al., 2025). In
+these works, consensus is commonly treated as the
+default goal of the debate stage (Li et al., 2024b).
+In this paper, we show that MAD can operate ef-
+fectively without requiring consensus.
+Consensus in MAD. Reaching consensus was the
+fundamental objective when MAD was first pro-
+posed (Du et al., 2024). It is also a necessary con-
+dition for obtaining a correct final answer. To the
+best of our knowledge, all existing MAD meth-
+ods adopt consensus as a core mechanism in their
+underlying design (Li et al., 2024b). Chan et al.
+(2024) does not explicitly require agents to reach
+consensus during the debate stage. However, it
+still applies majority voting in the decision phase,
+which preserves the essential logic of consensus.
+3 Preliminary Analysis
+3.1 MAD Protocol: A Formal Two-Phase
+Decomposition
+To enable a formal analysis, we decompose the
+MAD protocol into two core stages:Debateand
+Decision. The Debate stage internally unfolds over
+R iterative rounds, culminating in a set of final
+answers. Formally, given a set ofN agents denoted
+as{ai}N
+i=1, the protocol is defined as:
+{rR
+i}N
+i=1←Debate({ai}N
+i=1, q, p, R),(1)
+rfinal←Decide({rR
+i}N
+i=1).(2)
+In theDebatestage, all agents engage in a multi-
+round interaction based on a user query q and a
+guiding promptp that specifies how agents should
+debate. The debate unfolds over R rounds. The
+debate begins with an initial step where each agent
+generates a preliminary response toq, which is then
+broadcast to all other agents as an auxiliary context
+(Yang et al., 2025). Subsequently, each agentai it-
+eratively updates its own answerrk
+i overR rounds,
+resulting in a final set of responses{rR
+i}N
+i=1.
+The complete history of utterances up to round
+k−1is denoted as the contextC(k−1). We model
+LLM agents as a probabilistic process to capture
+their generative behavior. In round k, agent ai
+produces its responserk
+i by sampling from a con-
+ditional probability distribution defined over the
+preceding context andp:
+rk
+i ∼Pai(r|C(k−1),p).(3)
+To study the interplay between independent rea-
+soning and conformity, we model the overall prob-
+ability distributionPai with a formulation that sep-
+arates the contributions of the two factors:
+Pai(r|C(k−1),p) = 1
+Z·Pin(r|q,p)
+·exp(β(p)·Scon(r,C (k−1))),
+(4)
+where the independent reasoning distribution
+Pin(r|q,p) mathematically characterizes the
+agent’s intrinsic reasoning ability given the ques-
+tion q and prompt p. This ability excludes peer
+influence. The conformity score Scon(r,C (k−1))
+measures how much a candidate responser aligns
+with peer utterances inC(k−1). Its effect is scaled
+by the conformity parameterβ(p), which is deter-
+mined byp. By default, LLMs exhibit a tendency to
+31979
+
+PAGE 4
+User Query
+Agent 2
+Agent 3
+Agent 1
+Ground Truth Answer
+"C"
+"…Your final answer 
+must be the letter 
+corresponding to the 
+correct option (e.g., 
+A, B, C, D)…"
+Correct Answer
+Wrong Answer
+Correct Answer
+"B"
+"C"
+"C"
+Debate
+Stage
+Initial Answers
+Sample 2
+Sample 3
+Sample 1
+Debate Result
+Majority
+ Voting
+"B B C"
+"B C C"
+"A B C"
+Wrong Answer
+Wrong Answer
+Correct Answer
+"B"
+"C"
+"A"
+Final Answer
+Figure 1: Existing MAD approaches may obtain final answers that are even less accurate than the initial ones.
+conform. We capture this by assumingβdefault>0
+whenp is empty or neutral. If p encourages crit-
+ical reasoning, β(p)can be negative, acting as a
+regularizer that reduces alignment and pushes re-
+sponses towardPin. Conversely, if p encourages
+agreement with majority opinions,β(p)assumes a
+larger positive value, which speeds up convergence
+towards consensus. Finally, the model combines
+all components via an exponential transformation
+and normalizes byZ to ensure a valid probability
+distribution.
+In theDecisionstage, a final output rfinal is
+selected from{rR
+i}N
+i=1, typically through mech-
+anisms such as majority voting. In this work,R ex-
+cludes initial response generation and begins once
+agents start receiving responses from others.
+3.2 Weaknesses of Existing MAD Approaches
+Reasoning Accuracy. MAD approaches (Du
+et al., 2024; Yang et al., 2025; Li et al., 2024b)
+design the decision stage to operate on the final
+round’sN responses in the debate, while overlook-
+ing the remainingR×Nintermediate responses
+that emerged throughout the debate process. This
+omission diminishes the influence of these earlier
+responses on determining rfinal, thereby reducing
+both the accuracy and fairness of the final outcome.
+In consensus-based debates, the process ends once
+the agents reach agreement, even if the answer is
+incorrect (Chen et al., 2024b; Wang et al., 2025b).
+However, Du et al. (2024) has shown that it is
+still possible for the correct answer to emerge dur-
+ing later stages of the debate, even if none of the
+agents initially generates a correct answer. Early
+termination thus reduces MAD’s problem-solving
+accuracy. From empirical observations, we find
+that the initial responses generated independently
+by multiple agents may outperform the debate re-
+sults obtained after applying MAD. As shown in
+Figure 1, applying majority voting directly to initial
+answers can yield the correct result, while debate
+outcomes may be incorrect. We illustrate three
+possibilities. In Sample 1, the agents reach consen-
+sus on an incorrect answer. Sample 2 represents
+the desired outcome, where the correct answer "C"
+holds the majority. Outcomes such as Sample 3
+have received little attention. The set{ri}N
+i=1 con-
+tains entirely distinct outputs, with no repetitions
+or equal counts for multiple answers. Under these
+circumstances, the final answer is determined ei-
+ther by selecting a response at random from the set
+{ri}N
+i=1 or by choosing the first one. Both strate-
+gies substantially degrade the accuracy of MAD.
+Therefore, majority voting is unsuitable for deci-
+sions based on debate outcomes. More robust and
+practical mechanisms are required.
+Robustness. Most existing multi-agent systems
+lack robustness (Chen et al., 2024a; Zhang et al.,
+2024; He et al., 2025). MAD is even more vulner-
+able to attacks (Qi et al., 2025) due to its consen-
+sus mechanism. Researchers (Luo et al., 2025a)
+mainly enhance the robustness of multi-agent sys-
+tems by introducing blockchain and leveraging its
+traditional distributed consensus protocols. How-
+ever, the use of blockchain, including smart con-
+tracts (Li et al., 2023) and consensus execution
+(Zhang et al., 2023; Duan et al., 2018), drastically
+impacts system performance.
+4 Methodology
+In this section, we first formalize FREE-MAD. We
+then present two core techniques: a consensus-free
+debate protocol and a score-based decision mecha-
+nism. Finally, we analyze FREE-MAD in compari-
+son with existing approaches.
+4.1 FREE-MAD
+FREE-MAD focuses on the complete set of out-
+comes generated throughout the entire MAD pro-
+cess, rather than limiting attention to only the final-
+31980
+
+PAGE 5
+round responses, as done in traditional approaches.
+Our proposed debate protocol incorporates all re-
+sponses into the decision-making process. This
+perspective can be formally represented using the
+following matrix formulation:
+Decide[α0,α1,...,αR−1,αR] =
+
+
+r0
+1 r1
+1 ···rR−1
+1 rR
+1
+... ... ... ... ...
+r0
+N r1
+N ···rR−1
+N rR
+N
+
+→rfinal.
+(5)
+The highlighted entries (α0,α1,...,αR−1) rep-
+resent components that were not considered in
+previous MAD approaches. r0
+i denotes the ini-
+tial response generated by agent i. Unlike prior
+MAD frameworks that decouple debate and deci-
+sion stages, FREE-MAD innovatively integrates
+decision-making into the debate phase, resulting in
+a unified process (see Figure 2).
+4.2 Consensus-Free Debate
+The agents in MAD exchange responses and update
+their answers based on a prefix prompt. A common
+prompt is "The responses from other agents are as
+follows" (Du et al., 2024). Due to the conformity
+of LLMs, such prompts often bias the agent toward
+the majority answer. This undermines rigorous rea-
+soning and raises the likelihood that reasoning er-
+rors remain unnoticed. To mitigate this conformity,
+we design an additional CoT-based prompt (see
+Appendix E) appended after the prefix prompt, mo-
+tivated by (Weng et al., 2025). We provide agents
+with a scenario that includes adversarial agents. We
+instruct agents to carefully assess the discrepancies
+between their own answers and those from peers.
+Agents are expected to change their beliefs only
+if there is a clear indication that their own answer
+is incorrect, rather than aiming to reach consensus
+with others. This mechanism is intended to reduce
+the propagation of incorrect answers during the
+MAD process.
+Our structured and critical reasoning prompt
+forms the core mechanism for optimizing the prob-
+abilistic model (Equation 4) and has two main ef-
+fects. First, it improves the quality of the inde-
+pendent reasoning distribution Pin. FREE-MAD
+requires each agent to provide an answer along with
+a detailed reasoning trace, which is incorporated
+into the next-round contextC(k−1). Agentai uses
+this context to analyze peers’ reasoning rather than
+Algorithm 1:MAD Protocol via Score-
+Based Decision
+Input: Answer matrixA∈RN×(R+1)from
+Nagents overRrounds; Task input
+q; WeightsW={wi}4
+i=1; Guiding
+promptp
+Output:Final answer
+1Score dictionaryS←∅
+2fork←0toRdo
+3f= (k+ 1) −1
+4fori←1toNdo
+5ifk̸= 0then
+6Context
+C←responses ink−1
+7r k
+i ←Pai(q,p); UpdateCandA
+withr k
+i
+8ˆr←A[i][k]
+9ifk= 0then
+10S[ˆr]←S[ˆr] +w 1f
+11else
+12r p←A[i][k−1]
+13ifˆr̸=r p then
+14ifr p∈Sthen
+15S[r p]←S[rp]−w2f
+16S[ˆr]←S[ˆr] +w 3f
+17else
+18S[ˆr]←S[ˆr] +w 4f
+19Remove invalid keys fromS.
+20MS←arg max kS[k]
+21if|MS|>1then
+22Randomly chooser final∈MS
+23else
+24r final←MS[0]
+25Returnr final
+just their answers. If the reasoning behind the ma-
+jority answer is flawed,ai’s own critical thinking
+will assign a very low probability to that answer
+inPin. Second, it balances conformity. Even if a
+popular but incorrect answer has a highScon, a low
+Pin keeps its overall probabilityP ai low.
+4.3 Score-Based Decision Mechanism
+Based on the existing MAD framework (Du et al.,
+2024) and formalization of the traditional MAD
+protocol (Subramaniam et al., 2025), we describe
+our protocol as shown in Algorithm 1. This method
+maintains a matrixA∈RN×(R+1)that records the
+real-time responses of each agent across debate
+rounds. Concurrently, a score dictionaryS is used
+31981
+
+PAGE 6
+Approaches Decision Anti-Conformity Fairness Security
+Sparse MADLi et al. (2024b)Majority V oting✗ ✗ ✗Liang et al. (2024)LLM-as-a-Judge✗ ✗ ✗ReConcile (Chen et al., 2024b)Weighted V oting✗ ✓ ✗ChatEval (Chan et al., 2024)Majority V oting✗ ✗ ✗DMAD (Liu et al., 2025)Majority V oting✗ ✗ ✓SoM (Du et al., 2024)Majority V oting✗ ✓ ✓
+FREE-MAD-N score✓ ✓ ✓FREE-MAD-C score✗ ✓ ✓
+Table 1: A comprehensive comparison between our
+proposed approach and existing methods.
+to track the scores associated with multiple answers
+that emerge throughout the debate. The mechanism
+evaluates the likelihood of an answer being correct
+by tracking whether agents exhibit a shift in their
+opinions across rounds (whether the answer pro-
+vided in the current round differs from that in the
+previous round). The agents in this framework are
+not designed to seek consensus; instead, they rig-
+orously assess the reasoning behind the answers.
+Therefore, a change in an agent’s response is in-
+terpreted as an indicator that a more accurate an-
+swer has been identified. Specifically, answers that
+agents abandon are considered more likely to be in-
+correct, whereas newly adopted answers are treated
+as more likely to be correct. This dynamic informs
+the score updates within the dictionaryS.
+We assign different weights wif to answers
+based on whether agents have changed their re-
+sponses between rounds. Here, wi∈Wrepresents
+system-defined parameters, andf is a correction
+factor inversely proportional to the current round
+number. As the number of rounds increases, the
+amount of contextual information each agent re-
+ceives also grows, thereby increasing the risk of
+conformity, particularly for agents based on smaller
+models. To limit the influence of conformity, the
+impact of opinion shifts in later rounds is down-
+weighted via the factorf. We defineMS as the set
+of answers with the highest score. Although this set
+usually contains a single candidate, we adopt a ran-
+domized selection strategy to maintain theoretical
+robustness.
+4.4 Framework Design
+As noted in (Weng et al., 2025), LLMs’ confor-
+mity presents a double-edged sword. On the one
+hand, it fosters consensus and cohesive outcomes.
+On the other hand, it undermines the reliability
+of agents’ judgments in sensitive domains such
+as voting. Debate based on anti-conformity mit-
+igates the negative effects of blind conformity
+among agents. However, for relatively simple tasks,
+LLMs may show excessive anti-conformity, which
+Correct Answer
+Wrong Answer
+ Correct Answer
+"B" "C""C"
+Consensus-Free Debate Stage
+Initial Answers
+Wrong Answer
+ Correct Answer
+"B" "C"
+Debate Answers
+Wrong Answer
+"B"
+Score Computation
+"C"
+"B" 35.83
+36.67 Final Answer
+Figure 2: The inference process of our MAD framework.
+When the correct answers are in the minority in the final
+round, the framework is still able to identify the correct
+one as the final answer.
+causes stubbornness and reduces reasoning accu-
+racy. Therefore, we argue that conformity-oriented
+and anti-conformity-oriented debate modes should
+be adapted and switched according to the task. To
+achieve finer control over excessive conformity, the
+weight parameterW in the score mechanism can be
+adjusted, which regulates the balance between an
+agent changing its opinion and maintaining its orig-
+inal stance. Based on this idea, we propose FREE-
+MAD, which consists of two sub-schemes that
+share a score-based decision stage. FREE-MAD-N
+integrates an anti-conformity debate process, while
+FREE-MAD-Cintegrates a conformity-based de-
+bate process. Together, the schemes extend the
+framework’s applicability to a wider range of real-
+world scenarios.
+4.5 Analysis
+We compare our proposed FREE-MAD framework
+with existing MAD approaches, as shown in Ta-
+ble 1. Below, we provide a detailed analysis of the
+advantages of FREE-MAD.
+Accuracy. The FREE-MAD framework adopts a
+consensus-free debate strategy, which helps reduce
+the influence of conformity. This approach encour-
+ages agents to concentrate more on the correctness
+of reasoning steps, and may alleviate the effect of
+error propagation. In addition, existing methods
+usually require multiple rounds of debate to reach
+consensus. When the number of rounds R is small,
+such as whenR= 1 , these approaches may expe-
+rience reduced reasoning performance due to the
+lack of consensus, which can lead to lower accu-
+racy. In contrast, the performance of FREE-MAD
+is not closely tied toR.
+Scalability. Prior work (Zeng et al., 2025) provides
+31982
+
+PAGE 7
+a general complexity analysis of the token cost (TC)
+in MAD as:O
+(
+NR 2V+N 2RV+NR|q|
+)
+, where
+V is the maximum token cost for each agent. There-
+fore, a practical MAD framework should aim to
+achieve high accuracy with fewer agents and fewer
+rounds (Liu et al., 2025). The consensus-building
+process generally takes 2 to 3 rounds (Chen et al.,
+2024b; Du et al., 2024; Yang et al., 2025; Xiong
+et al., 2023) to be effective. In contrast, our method
+theoretically requires only a single round of debate
+without any consensus constraint, which substan-
+tially reduces token consumption.
+Security. Under communication attacks, agents
+that withdraw from the debate process generally
+trigger onlyS[ˆr]←S[ˆr] +w4f in Algorithm 1 un-
+der our score scheme, because these agents retain
+context containing only their own prior responses,
+which does not affect the overall debate process.
+In addition, the score strategy is executed entirely
+outside the LLM reasoning and follows a deter-
+ministic protocol, rendering it immune to LLM
+hallucination.
+Fairness. During the debate stage, some ap-
+proaches adopt role-based debate strategies (Chan
+et al., 2024), where agents are assigned unequal
+statuses and perform different functions. This de-
+sign reinforces the implicit biases of LLMs (Va-
+sista et al., 2025; Myung et al., 2025; Kim et al.,
+2024) and undermines the fairness of MAD sys-
+tems (Xiong et al., 2023). In contrast, agents in
+FREE-MAD do not require any predefined roles,
+and they participate equally in the debate process.
+5 Experiments
+5.1 Experimental Setup
+Evaluation Benchmark. Based on the comparison
+in Table 1 and the analysis in Section 4.5, we select
+the SoM framework (Du et al., 2024) as the base-
+line for our experiments to ensure a fair comparison
+(SoM is also widely adopted as a baseline in related
+work (Chen et al., 2024b; Wang et al., 2025a; Li
+et al., 2024b)). Moreover, our proposed FREE-
+MAD is implemented on top of SoM to minimize
+the influence of confounding factors. In Algorithm
+1, the weightsW are initialized to{20,25,30,20}
+based on theoretical analysis. We present the exper-
+imental setup for evaluating the security of FREE-
+MAD in Appendix D. For the ablation study, we
+compare four schemes, as summarized in Table 2,
+including our FREE-MAD and the SoM baseline.
+This comparison highlights the effectiveness of the
+SchemesFREE-MAD-NFREE-MAD-CBaseline 1 Baseline 2 (SoM)
+DebateAnti-conformity Conformity Anti-conformity ConformityDecision Score Score Majority V oting Majority V oting
+Table 2: Module configurations of multiple comparative
+variants in ablation experiments.
+two core modules we developed.
+Datasets. To comprehensively evaluate the capa-
+bility of FREE-MAD, we conduct experiments on
+8 benchmark datasets. For mathematical reasoning,
+we use GSM-Ranges (Shrestha et al., 2025) (levels
+4 and 6), AIME2024, AIME2025 (Art of Problem
+Solving, 2025), and MATH500 (Lightman et al.,
+2024). For logical reasoning, we employ Strate-
+gyQA (Geva et al., 2021) and the Logical Fallacies
+dataset of MMLU (Hendrycks et al., 2021). For
+knowledge and theoretical reasoning, we adopt the
+multiple-choice questions dataset from AICrypto
+(Wang et al., 2025c), which constitutes the first
+benchmark specifically constructed to assess the
+cryptographic capabilities of LLMs.
+Agent Groups. To ensure that the MAD frame-
+work possesses the basic capability to handle our
+datasets, we design two configurations of MAD.
+For AIME2024 and AIME2025, we construct
+MAD with N= 3 based on Qwen1.5-7B-Chat 4
+and DeepSeek-V3 (DeepSeek-AI et al., 2024). For
+the other datasets, we uniformly construct MAD
+withN= 4 using Qwen1.5-7B-Chat and Qwen2.5-
+72B-Instruct (Qwen et al., 2025). Other details are
+provided in Appendix.
+5.2 Evaluation Metrics
+To evaluate the reasoning performance and scala-
+bility of MAD, we assess both inference accuracy
+and token consumption. Following (Zeng et al.,
+2025), we adopt token consumption as the metric
+for scalability. The computation of accuracy fol-
+lows Algorithm 1, while the calculation of token
+consumption is defined as follows:
+TC=
+R∑
+k=0
+N∑
+i=1
+T i
+k,(6)
+whereT i
+k denotes the number of output tokens gen-
+erated by agenta i in thek-th round.
+6 Main Results and Discussion
+6.1 Reasoning Performance
+The evaluation results of reasoning accuracy on
+eight benchmarks are presented in Figure 3 (R= 1 )
+4https://qwenlm.github.io/zh/blog/qwen1.5
+31983
+
+PAGE 8
+GSM-Level4 GSM-Level6 AIME2024 AIME2025 MATH500 Logical Fallacies AICrypto StrategyQA
+Benchmark Datasets
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90Accuracy (%)
+73.75
+70.00
+53.33
+43.33
+65.00
+70.00
+75.00
+65.0065.00
+61.25
+43.33
+36.67
+66.25
+72.50
+75.00
+71.25
+66.25
+63.75
+26.67 26.67
+62.50
+67.50
+71.25
+61.2560.00
+52.50
+33.33
+26.67
+65.00 66.25
+63.75 65.00
+Free-MAD-n Free-MAD-c Baseline 1 Baseline 2
+Figure 3: Comprehensive comparative experimental results for MAD frameworks across multiple benchmarks.
+GSM-Level4MATH500
+Logical Fallacies
+AICrypto
+Free-MAD-n
+Free-MAD-c
+Baseline 1
+Baseline 2
+67.50 65.00 71.25 80.00
+72.50 65.00 73.75 76.25
+47.50 42.50 48.75 66.25
+41.25 48.75 60.00 52.50
+20 40 60 80 100
+(a) Experimental results whenR= 1.
+GSM-Level4MATH500
+Logical Fallacies
+AICrypto
+Free-MAD-n
+Free-MAD-c
+Baseline 1
+Baseline 2
+86.25 73.75 81.25 82.50
+75.00 65.00 80.00 82.50
+65.00 58.75 20.00 17.50
+62.50 62.50 21.25 18.75
+20 40 60 80 100 (b) Experimental results whenR= 2.
+Figure 4: Empirical evaluation of the security of MAD frameworks across multiple benchmarks, showing the
+comparison of their reasoning accuracy under communication attacks across varying numbers of rounds.
+and Table 4 ( R= 2 ). Overall, our proposed
+FREE-MAD substantially outperforms the base-
+lines, achieving average improvements of 13.0%
+and 16.5% over baselines, respectively. These re-
+sults demonstrate a significant enhancement in rea-
+soning performance. In particular, for mathemati-
+cal reasoning tasks, the advantage of FREE-MAD
+becomes more evident with increasing problem
+difficulty. Reducing conformity clearly improves
+the effectiveness of MAD. The specific effects of
+conformity and anti-conformity on the reasoning
+process of LLMs are detailed in Appendix F. No-
+tably, under anti-conformity, the reasoning process
+of LLMs appears to be more rational.
+On the MATH500 dataset, we observe that
+weaker models exhibit a previously mentioned ten-
+dency toward rigidity in reasoning when confor-
+mity is suppressed. In such cases, these models
+fail to switch to correct lines of reasoning, result-
+SchemesFREE-MAD-NFREE-MAD-CBaseline 1 Baseline 2
+Accuracy64.43% (↑16%/19%) 61.41% (↑10%/14%) 55.73% 54.06%
+Table 3: Comparison of reasoning accuracy between
+our schemes and baselines whenR= 1.
+ing in comparable performance between FREE-
+MAD and the baselines. This limitation is ex-
+pected, as a fixed set of agents cannot be univer-
+sally optimal across all task categories. For logi-
+cal and knowledge-based reasoning, FREE-MAD
+still significantly outperforms the baselines. How-
+ever, FREE-MAD-Cconsistently achieves better
+results than FREE-MAD-N, because for models
+lacking relevant knowledge, idea switching under
+anti-conformity tends to occur with relatively high
+randomness. Consequently, in such scenarios, con-
+formity may lead to more effective outcomes. By
+comparing the four variants in our ablation study,
+we demonstrate that the proposed core score-based
+decision mechanism exhibits superior performance.
+31984
+
+PAGE 9
+50 55 60 65 70 75 80
+Accuracy (%)
+100000
+150000
+200000
+250000
+300000
+350000
+400000
+450000
+500000Token Consumption
+Free-MAD-n (R = 1)
+Free-MAD-c (R = 1)
+Baseline 1 ( R = 1)
+Baseline 2 ( R = 1)
+Free-MAD-n (R = 2)
+Free-MAD-c (R = 2)
+Baseline 1 ( R = 2)
+Baseline 2 ( R = 2)
+Figure 5: Comparison of token consumption and rea-
+soning accuracy between our proposed schemes and
+baselines under different debate rounds.
+6.2 Scalability
+We compared the token consumption and reason-
+ing accuracy of four MAD variants under R= 1
+and R= 2 , as shown in Figure 5. With an
+increasing number of debate rounds, the reason-
+ing accuracy of MAD improves. Notably, FREE-
+MAD achieves accuracy comparable to or even
+higher than the two-round baseline 2 setting with
+only a single debate round, while incurring almost
+no additional token consumption, demonstrating
+promising scalability. Specifically, FREE-MAD-N
+achieves stronger reasoning accuracy compared to
+the baselines, whereas FREE-MAD-Coffers bet-
+ter scalability. More importantly, our approach
+eliminates the need for multiple debate rounds to
+reach consensus, which significantly reduces the
+execution time of the MAD system.
+6.3 Security
+Compared to the normal scenario, both baseline
+1 and baseline 2 exhibit a substantial drop in ac-
+curacy, reaching up to 20% (see Figure 4). In
+contrast, FREE-MAD consistently maintains very
+high accuracy. Interestingly, in some cases, it even
+slightly outperforms the original accuracy. This
+behavior can be attributed to the fact that communi-
+cation attacks prevent some agents from receiving
+responses from others, while simultaneously reduc-
+ing the probability of receiving incorrect informa-
+tion. These results demonstrate that FREE-MAD
+possesses strong robustness and security.
+7 Conclusion
+This paper proposes FREE-MAD, a novel MAD
+framework that integrates controllable conformity
+with a score-based decision mechanism. Unlike tra-
+ditional MAD approaches, FREE-MAD does not
+rely on multi-round interactions or need to reach
+a consensus. By evaluating the entire debate tra-
+jectory instead of relying solely on the final round,
+the accuracy of deciding the answer is enhanced.
+Extensive experiments show that FREE-MAD out-
+performs existing MAD approaches in terms of
+reasoning accuracy, scalability, and robustness.
+8 Limitations
+In this paper, we construct a general MAD frame-
+work that incorporates a controllable conformity
+debate process together with a score-based mech-
+anism that determines the final decision across all
+debate outcomes. Although FREE-MAD achieves
+significant reductions in overhead and improve-
+ments in accuracy, its token overhead still affects
+practical deployment compared with single model
+inference, and further optimization is necessary.
+FREE-MAD provides a general framework for mul-
+tiple MAD schemes. Evaluating optimization gains
+across more schemes is necessary, but resource con-
+straints prevent such evaluations.
+Acknowledgments
+This work is supported in part by the National
+Natural Science Foundation of China (Grant No.
+62272043), Beijing Natural Science Foundation
+(Grant No. L251002), National Natural Sci-
+ence Foundation of China (Grant No. 62372040,
+62572045), Natural Science Foundation of Beijing,
+China (Grant No. 4254086) and Yangtze Delta
+Region Institute of Tsinghua University, Zhejiang
+(No.LZZLX24F007).
+We thank Jonathan Santilli for providing an in-
+dustrial grade and robust Python implementation
+of FREE-MAD 5. This implementation enhances
+the practical applicability of FREE-MAD and miti-
+gates inherent limitations of the original method.
+References
+Art of Problem Solving. 2025. AIME Problems and
+Solutions. Accessed: 2025-05-15.
+Chi-Min Chan, Weize Chen, Yusheng Su, Jianxuan Yu,
+Wei Xue, Shanghang Zhang, Jie Fu, and Zhiyuan Liu.
+2024. Chateval: Towards better LLM-based eval-
+uators through multi-agent debate. InThe Twelfth
+International Conference on Learning Representa-
+tions.
+5https://github.com/jonathansantilli/freemad
+31985
+
+PAGE 10
+Bei Chen, Gaolei Li, Xi Lin, Zheng Wang, and Jianhua
+Li. 2024a. Blockagents: Towards byzantine-robust
+llm-based multi-agent coordination via blockchain.
+InProceedings of the ACM Turing Award Celebration
+Conference - China 2024, ACM-TURC ’24, page
+187–192, New York, NY , USA. Association for Com-
+puting Machinery.
+Justin Chen, Swarnadeep Saha, and Mohit Bansal.
+2024b. ReConcile: Round-table conference im-
+proves reasoning via consensus among diverse LLMs.
+InProceedings of the 62nd Annual Meeting of the
+Association for Computational Linguistics (Volume 1:
+Long Papers), pages 7066–7085, Bangkok, Thailand.
+Association for Computational Linguistics.
+Young-Min Cho, Sharath Chandra Guntuku, and Lyle
+Ungar. 2025. Herd behavior: Investigating peer in-
+fluence in llm-based multi-agent systems.Preprint,
+arXiv:2505.21588.
+Jina Chun, Qihong Chen, Jiawei Li, and Iftekhar Ahmed.
+2025. Is multi-agent debate (mad) the silver bullet?
+an empirical analysis of mad in code summarization
+and translation.arXiv preprint arXiv:2503.12029.
+DeepSeek-AI, Aixin Liu, Bei Feng, Bing Xue, Bingx-
+uan Wang, Bochao Wu, Chengda Lu, Chenggang
+Zhao, Chengqi Deng, Chenyu Zhang, Chong Ruan,
+Damai Dai, Daya Guo, Dejian Yang, Deli Chen,
+Dongjie Ji, Erhang Li, Fangyun Lin, Fucong Dai,
+and 181 others. 2024. Deepseek-v3 technical report.
+arXiv preprint arXiv:2412.19437.
+Yilun Du, Shuang Li, Antonio Torralba, Joshua B.
+Tenenbaum, and Igor Mordatch. 2024. Improving
+factuality and reasoning in language models through
+multiagent debate. InProceedings of the 41st Inter-
+national Conference on Machine Learning, ICML’24.
+JMLR.org.
+Sisi Duan, Michael K. Reiter, and Haibin Zhang. 2018.
+Beat: Asynchronous bft made practical. InProceed-
+ings of the 2018 ACM SIGSAC Conference on Com-
+puter and Communications Security, CCS ’18, page
+2028–2041, New York, NY , USA. Association for
+Computing Machinery.
+Mor Geva, Daniel Khashabi, Elad Segal, Tushar Khot,
+Dan Roth, and Jonathan Berant. 2021. Did aristotle
+use a laptop? a question answering benchmark with
+implicit reasoning strategies.Transactions of the
+Association for Computational Linguistics, 9:346–
+361.
+Kai Greshake, Sahar Abdelnabi, Shailesh Mishra,
+Christoph Endres, Thorsten Holz, and Mario Fritz.
+2023. Not what you’ve signed up for: Compromis-
+ing real-world llm-integrated applications with indi-
+rect prompt injection. InProceedings of the 16th
+ACM Workshop on Artificial Intelligence and Secu-
+rity, AISec ’23, page 79–90, New York, NY , USA.
+Association for Computing Machinery.
+Daya Guo, Dejian Yang, Haowei Zhang, Junxiao
+Song, Ruoyu Zhang, Runxin Xu, Qihao Zhu, Shi-
+rong Ma, Peiyi Wang, Xiao Bi, and 1 others. 2025.
+Deepseek-r1: Incentivizing reasoning capability in
+llms via reinforcement learning.arXiv preprint
+arXiv:2501.12948.
+Pengfei He, Yuping Lin, Shen Dong, Han Xu, Yue Xing,
+and Hui Liu. 2025. Red-teaming LLM multi-agent
+systems via communication attacks. InFindings of
+the Association for Computational Linguistics: ACL
+2025, pages 6726–6747, Vienna, Austria. Associa-
+tion for Computational Linguistics.
+Dan Hendrycks, Collin Burns, Steven Basart, Andy
+Zou, Mantas Mazeika, Dawn Song, and Jacob Stein-
+hardt. 2021. Measuring massive multitask language
+understanding.Proceedings of the International Con-
+ference on Learning Representations (ICLR).
+Ziwei Ji, Tiezheng Yu, Yan Xu, Nayeon Lee, Etsuko
+Ishii, and Pascale Fung. 2023. Towards mitigating
+LLM hallucination via self reflection. InFindings
+of the Association for Computational Linguistics:
+EMNLP 2023, pages 1827–1843, Singapore. Associ-
+ation for Computational Linguistics.
+Alex Kim, Keonwoo Kim, and Sangwon Yoon. 2024.
+DEBATE: Devil’s advocate-based assessment and
+text evaluation. InFindings of the Association for
+Computational Linguistics: ACL 2024, pages 1885–
+1897, Bangkok, Thailand. Association for Computa-
+tional Linguistics.
+Han Li, Yuling Shi, Shaoxin Lin, Xiaodong Gu, Heng
+Lian, Xin Wang, Yantao Jia, Tao Huang, and Qianx-
+iang Wang. 2025. Swe-debate: Competitive multi-
+agent debate for software issue resolution.arXiv
+preprint arXiv:2507.23348.
+Huizhong Li, Yujie Chen, Xiang Shi, Xingqiang Bai,
+Nan Mo, Wenlin Li, Rui Guo, Zhang Wang, and
+Yi Sun. 2023. Fisco-bcos: An enterprise-grade per-
+missioned blockchain system with high-performance.
+InProceedings of the International Conference for
+High Performance Computing, Networking, Storage
+and Analysis, SC ’23, New York, NY , USA. Associa-
+tion for Computing Machinery.
+Weitao Li, Junkai Li, Weizhi Ma, and Yang Liu. 2024a.
+Citation-enhanced generation for LLM-based chat-
+bots. InProceedings of the 62nd Annual Meeting of
+the Association for Computational Linguistics (Vol-
+ume 1: Long Papers), pages 1451–1466, Bangkok,
+Thailand. Association for Computational Linguistics.
+Yunxuan Li, Yibing Du, Jiageng Zhang, Le Hou, Pe-
+ter Grabowski, Yeqing Li, and Eugene Ie. 2024b.
+Improving multi-agent debate with sparse commu-
+nication topology. InFindings of the Association
+for Computational Linguistics: EMNLP 2024, pages
+7281–7294, Miami, Florida, USA. Association for
+Computational Linguistics.
+Tian Liang, Zhiwei He, Wenxiang Jiao, Xing Wang,
+Yan Wang, Rui Wang, Yujiu Yang, Shuming Shi, and
+31986
+
+PAGE 11
+Zhaopeng Tu. 2024. Encouraging divergent thinking
+in large language models through multi-agent debate.
+InProceedings of the 2024 Conference on Empiri-
+cal Methods in Natural Language Processing, pages
+17889–17904, Miami, Florida, USA. Association for
+Computational Linguistics.
+Hunter Lightman, Vineet Kosaraju, Yuri Burda, Harri-
+son Edwards, Bowen Baker, Teddy Lee, Jan Leike,
+John Schulman, Ilya Sutskever, and Karl Cobbe.
+2024. Let’s verify step by step. InThe Twelfth Inter-
+national Conference on Learning Representations.
+Lei Liu, Xiaoyan Yang, Junchi Lei, Yue Shen, Jian
+Wang, Peng Wei, Zhixuan Chu, Zhan Qin, and
+Kui Ren. 2024a. A survey on medical large
+language models: Technology, application, trust-
+worthiness, and future directions.arXiv preprint
+arXiv:2406.03712.
+Yexiang Liu, Jie Cao, Zekun Li, Ran He, and Tieniu
+Tan. 2025. Breaking mental set to improve reasoning
+through diverse multi-agent debate. InThe Thir-
+teenth International Conference on Learning Repre-
+sentations.
+Yupei Liu, Yuqi Jia, Runpeng Geng, Jinyuan Jia, and
+Neil Zhenqiang Gong. 2024b. Formalizing and
+benchmarking prompt injection attacks and defenses.
+In33rd USENIX Security Symposium (USENIX
+Security 24), pages 1831–1847, Philadelphia, PA.
+USENIX Association.
+Haoxiang Luo, Gang Sun, Yinqiu Liu, Dongcheng Zhao,
+Dusit Niyato, Hongfang Yu, and Schahram Dustdar.
+2025a. A weighted byzantine fault tolerance con-
+sensus driven trusted multiple large language models
+network.arXiv preprint arXiv:2505.05103.
+Junyu Luo, Weizhi Zhang, Ye Yuan, Yusheng Zhao,
+Junwei Yang, Yiyang Gu, Bohan Wu, Binqi Chen,
+Ziyue Qiao, Qingqing Long, and 1 others. 2025b.
+Large language model agent: A survey on method-
+ology, applications and challenges.arXiv preprint
+arXiv:2503.21460.
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler
+Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon,
+Nouha Dziri, Shrimai Prabhumoye, Yiming Yang,
+Shashank Gupta, Bodhisattwa Prasad Majumder,
+Katherine Hermann, Sean Welleck, Amir Yazdan-
+bakhsh, and Peter Clark. 2023. Self-refine: iterative
+refinement with self-feedback. InProceedings of the
+37th International Conference on Neural Information
+Processing Systems, NIPS ’23, Red Hook, NY , USA.
+Curran Associates Inc.
+Junho Myung, Yeon Su Park, Sunwoo Kim, Shin Yoo,
+and Alice Oh. 2025. PapersPlease: A benchmark
+for evaluating motivational values of large language
+models based on ERG theory. InProceedings of
+the Fourth Workshop on Generation, Evaluation and
+Metrics (GEM²), pages 522–531, Vienna, Austria
+and virtual meeting. Association for Computational
+Linguistics.
+Long Phan, Alice Gatti, Ziwen Han, Nathaniel Li,
+Josephina Hu, Hugh Zhang, Chen Bo Calvin Zhang,
+Mohamed Shaaban, John Ling, Sean Shi, and 1 oth-
+ers. 2025. Humanity’s last exam.arXiv preprint
+arXiv:2501.14249.
+Senmao Qi, Yifei Zou, Peng Li, Ziyi Lin, Xi-
+uzhen Cheng, and Dongxiao Yu. 2025. Ampli-
+fied vulnerabilities: Structured jailbreak attacks
+on llm-based multi-agent debate.arXiv preprint
+arXiv:2504.16489.
+Qwen, An Yang, Baosong Yang, Beichen Zhang,
+Binyuan Hui, Bo Zheng, Bowen Yu, Chengyuan
+Li, Dayiheng Liu, Fei Huang, Haoran Wei, Huan
+Lin, Jian Yang, Jianhong Tu, Jianwei Zhang, Jianxin
+Yang, Jiaxi Yang, Jingren Zhou, Junyang Lin, and
+24 others. 2025. Qwen2.5 technical report.Preprint,
+arXiv:2412.15115.
+Safal Shrestha, Minwu Kim, and Keith Ross. 2025.
+Mathematical reasoning in large language models:
+Assessing logical and arithmetic errors across wide
+numerical ranges.arXiv preprint arXiv:2502.08680.
+Vighnesh Subramaniam, Yilun Du, Joshua B. Tenen-
+baum, Antonio Torralba, Shuang Li, and Igor Mor-
+datch. 2025. Multiagent finetuning: Self improve-
+ment with diverse reasoning chains. InThe Thir-
+teenth International Conference on Learning Repre-
+sentations.
+Qiushi Sun, Zhangyue Yin, Xiang Li, Zhiyong Wu,
+Xipeng Qiu, and Lingpeng Kong. 2024. Corex: Push-
+ing the boundaries of complex reasoning through
+multi-model collaboration. InICLR 2024 Workshop
+on Large Language Model (LLM) Agents.
+Ishwara Vasista, Imran Mirza, Cole Huang, Rohan Ra-
+jasekhara Patil, Aslihan Akalin, Kevin Zhu, and Sean
+O’Brien. 2025. MALIBU benchmark: Multi-agent
+LLM implicit bias uncovered. InICLR 2025 Work-
+shop on Building Trust in Language Models and Ap-
+plications.
+Haotian Wang, Xiyuan Du, Weijiang Yu, Qianglong
+Chen, Kun Zhu, Zheng Chu, Lian Yan, and Yi Guan.
+2025a. Learning to break: Knowledge-enhanced
+reasoning in multi-agent debate system.Neurocom-
+puting, 618:129063.
+Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc V Le,
+Ed H. Chi, Sharan Narang, Aakanksha Chowdhery,
+and Denny Zhou. 2023. Self-consistency improves
+chain of thought reasoning in language models. In
+The Eleventh International Conference on Learning
+Representations.
+Yihan Wang, Qiao Yan, Zhenghao Xing, Lihao Liu, Jun-
+jun He, Chi-Wing Fu, Xiaowei Hu, and Pheng-Ann
+Heng. 2025b. Silence is not consensus: Disrupt-
+ing agreement bias in multi-agent llms via catfish
+agent for clinical decision making.arXiv preprint
+arXiv:2505.21503.
+31987
+
+PAGE 12
+Yu Wang, Yijian Liu, Liheng Ji, Han Luo, Wenjie Li,
+Xiaofei Zhou, Chiyun Feng, Puji Wang, Yuhan Cao,
+Geyuan Zhang, and 1 others. 2025c. Aicrypto: A
+comprehensive benchmark for evaluating cryptog-
+raphy capabilities of large language models.arXiv
+preprint arXiv:2507.09580.
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten
+Bosma, brian ichter, Fei Xia, Ed Chi, Quoc V Le,
+and Denny Zhou. 2022. Chain-of-thought prompt-
+ing elicits reasoning in large language models. In
+Advances in Neural Information Processing Systems,
+volume 35, pages 24824–24837. Curran Associates,
+Inc.
+Zhiyuan Weng, Guikun Chen, and Wenguan Wang.
+2025. Do as we do, not as you think: the confor-
+mity of large language models. InThe Thirteenth
+International Conference on Learning Representa-
+tions.
+Kai Xiong, Xiao Ding, Yixin Cao, Ting Liu, and Bing
+Qin. 2023. Examining inter-consistency of large lan-
+guage models collaboration: An in-depth analysis
+via debate. InThe 2023 Conference on Empirical
+Methods in Natural Language Processing.
+Weixiang Yan, Haitian Liu, Yunkun Wang, Yunzhe Li,
+Qian Chen, Wen Wang, Tingyu Lin, Weishan Zhao,
+Li Zhu, Hari Sundaram, and Shuiguang Deng. 2024.
+CodeScope: An execution-based multilingual mul-
+titask multidimensional benchmark for evaluating
+LLMs on code understanding and generation. In
+Proceedings of the 62nd Annual Meeting of the As-
+sociation for Computational Linguistics (Volume 1:
+Long Papers), pages 5511–5558, Bangkok, Thailand.
+Association for Computational Linguistics.
+Yongjin Yang, Euiin Yi, Jongwoo Ko, Kimin Lee,
+Zhijing Jin, and Se-Young Yun. 2025. Revisiting
+multi-agent debate as test-time scaling: A systematic
+study of conditional effectiveness.arXiv preprint
+arXiv:2505.22960.
+Yuting Zeng, Weizhe Huang, Lei Jiang, Tongxuan Liu,
+XiTai Jin, Chen Tianying Tiana, Jing Li, and Xiaohua
+Xu. 2025. S 2-MAD: Breaking the token barrier to en-
+hance multi-agent debate efficiency. InProceedings
+of the 2025 Conference of the Nations of the Americas
+Chapter of the Association for Computational Lin-
+guistics: Human Language Technologies (Volume 1:
+Long Papers), pages 9393–9408, Albuquerque, New
+Mexico. Association for Computational Linguistics.
+Qiusi Zhan, Richard Fang, Henil Shalin Panchal, and
+Daniel Kang. 2025. Adaptive attacks break defenses
+against indirect prompt injection attacks on LLM
+agents. InFindings of the Association for Computa-
+tional Linguistics: NAACL 2025, pages 7101–7117,
+Albuquerque, New Mexico. Association for Compu-
+tational Linguistics.
+Boyang Zhang, Yicong Tan, Yun Shen, Ahmed Salem,
+Michael Backes, Savvas Zannettou, and Yang Zhang.
+2024. Breaking agents: Compromising autonomous
+llm agents through malfunction amplification.arXiv
+preprint arXiv:2407.20859.
+Haibin Zhang, Sisi Duan, Boxin Zhao, and Liehuang
+Zhu. 2023. Waterbear: practical asynchronous
+bft matching security guarantees of partially syn-
+chronous bft. InProceedings of the 32nd USENIX
+Conference on Security Symposium, SEC ’23, USA.
+USENIX Association.
+Shaowei Zhang and Deyi Xiong. 2025. Debate4MATH:
+Multi-agent debate for fine-grained reasoning in math.
+InFindings of the Association for Computational
+Linguistics: ACL 2025, pages 16810–16824, Vienna,
+Austria. Association for Computational Linguistics.
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan
+Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin,
+Zhuohan Li, Dacheng Li, Eric Xing, Hao Zhang,
+Joseph E Gonzalez, and Ion Stoica. 2023. Judging
+llm-as-a-judge with mt-bench and chatbot arena. In
+Advances in Neural Information Processing Systems,
+volume 36, pages 46595–46623. Curran Associates,
+Inc.
+Xiaochen Zhu, Caiqi Zhang, Tom Stafford, Nigel Col-
+lier, and Andreas Vlachos. 2025. Conformity in large
+language models. InProceedings of the 63rd Annual
+Meeting of the Association for Computational Lin-
+guistics (Volume 1: Long Papers), pages 3854–3872,
+Vienna, Austria. Association for Computational Lin-
+guistics.
+Yuwen Zou, Yang Hong, Jingyi Xu, Lekun Liu, and
+Wenjun Fan. 2024. Leveraging large language mod-
+els for challenge solving in capture-the-flag. In2024
+IEEE 23rd International Conference on Trust, Secu-
+rity and Privacy in Computing and Communications
+(TrustCom), pages 1541–1550.
+31988
+
+PAGE 13
+A Analysis and Discussion
+A.1 Compatibility
+FREE-MAD is highly compatible with existing
+MAD frameworks. In the debate stage, FREE-
+MAD supports arbitrary debate structures, includ-
+ing Sparse MAD configurations where interactions
+are preserved only among a subset of agents. In
+the decision stage, our score-based decision mech-
+anism is completed during the execution of the
+debate itself and does not interfere with any addi-
+tional decision protocols applied afterward. As a
+result, it can coexist with majority voting, LLM-as-
+a-Judge, and other decision-making strategies.
+A.2 Future Work
+We conduct systematic sensitivity analyses across
+multiple sets of weighting parameters. The results
+show that FREE-MAD remains stable under weight
+perturbations. We plan to further investigate the im-
+pact of different weighting configurationsW on the
+score-based decision stage, with the goal of identi-
+fying coefficient settings that can support stronger
+reasoning accuracy and robustness of MAD. In
+addition, we will construct more heterogeneous
+MAD systems by incorporating a broader range of
+LLMs and more challenging benchmarks, thereby
+further validating the generality of the proposed
+framework. For example, we intend to examine the
+performance of MAD instantiated with reasoning
+LLMs such as DeepSeek-R1 (Guo et al., 2025) on
+the HLE benchmark (Phan et al., 2025). Regard-
+ing the study of MAD’s security, we will employ
+a wider variety of attacks, such as prompt injec-
+tion attacks (Liu et al., 2024b), to provide a more
+comprehensive evaluation of the framework.
+B Statement
+We use AI assistants to polish the writing. The
+method proposed in this paper may only be used
+for research purposes.
+C Experimental Setup
+In our experiments, we selected eight datasets to
+comprehensively cover different types of tasks. Re-
+garding the number of samples, we referred to the
+configuration used in prior work (Liu et al., 2025;
+Du et al., 2024). Specifically, we employed the
+complete datasets for AIME2024 and AIME2025,
+while for the other datasets we selected 80 sam-
+ples for evaluation. All model queries were con-
+ducted through APIs, and the temperature param-
+eter (when supported) was set to its default value.
+To mitigate the influence of randomness in the eval-
+uation, we reported outcomes that tend toward the
+middle of repeated runs. For consistency, we cal-
+culate tokens uniformly using the DeepSeek-V3
+tokenizer6. To enable support for heterogeneous
+agents, we apply minor modifications to SoM.
+D FREE-MAD under Communication
+Attacks and its Evaluation
+For the security evaluation, we construct MAD un-
+der communication attacks based on Algorithm 2,
+and apply the same modification to the SoM frame-
+work to serve as a baseline for comparison. Specif-
+ically, in the modified setting, we perform the op-
+eration of aggregating responses from other agents
+only for the ContextC of agents that are not under
+attack. The compromised agent is unable to receive
+responses from other agents, while the other agents
+can still receive the outputs generated by this agent.
+We evaluate the accuracy of MAD across multiple
+benchmark datasets by setting the proportion of
+compromised agents to|V|/|N|= 50%(see Algo-
+rithm 2), which better reflects the adversarial capa-
+bility in real-world deployments. We evaluate the
+security of the MAD framework under communica-
+tion attacks on four datasets: GSM-Ranges (Level
+4), MATH500, Logical Fallacies, and AICrypto.
+6https://api-docs.deepseek.com/quick_start/token_usage
+31989
+
+PAGE 14
+Algorithm 2:FREE-MAD under Communication Attacks
+Input:Answer matrixA∈RN×(R+1)fromNagents overRrounds; List of task inputs and
+ground truth responsesD task ={qi,r g
+i}; WeightsW={wi}4
+i=1; Guiding promptp;
+Agents under attackV={vi}L
+i=1
+Output:Accuracy
+1success←0; Initialize empty score dictionaryS←∅
+2forq,r g inD task do
+3fork←0toRdo
+4f= (k+ 1) −1# Initial scoring factor with a non-zero value.
+5fori←1toNdo
+6ifk̸= 0anda i /∈Vthen
+7ContextC←Aggregate responses from other agents in roundk−1
+8r k
+i ←Pai(q,p); UpdateCandAwithr k
+i
+9ˆr←A[i][k]
+10ifk= 0then
+11S[ˆr]←S[ˆr] +w 1f# Assign an initial score to the answer.
+12else
+13r p←A[i][k−1]# Find the answer of agentai in the previous round.
+14ifˆr̸=r p then
+15ifr p∈Sthen
+16S[r p]←S[rp]−w2f# The answer has been transferred fromr p toˆr.
+17S[ˆr]←S[ˆr] +w 3f
+18else
+19S[ˆr]←S[ˆr] +w 4f# The agenta i maintains this answer.
+20Remove keys fromSwhere key isNone.
+21MS←arg max kS[k]
+22if|MS|>1then
+23Randomly chooser final∈MS# Guarantee robustness.
+24else
+25r final←MS[0]
+26success←success+I(r final =r g)
+27Accuracy← success
+|D|
+28ReturnAccuracy
+31990
+
+PAGE 15
+E Prompt
+Core Prompt to Mitigating Conformity
+"Since some malicious agents may deliberately disseminate incorrect answers, you must follow the reasoning procedure
+below and avoid being misled.
+1. Initial Reasoning
+Clearly enumerate your initial logical steps and the final conclusion.
+2. Analysis of Other Agents’ Reasoning
+Specify which agents’ reasoning is correct and which contains errors, and identify the exact type of error. You must provide
+concrete error descriptions rather than general comments. Note that the correct answer may not exist within the current set of
+answers.
+3. Comparative Analysis with Your Own Reasoning
+Examine whether you have made similar mistakes and provide justification for your assessment.
+4. Final Decision
+Indicate whether you will revise your conclusion (Yes/No). If yes, explain the reasoning errors; if no, justify why your
+reasoning stands.
+5. Additional Requirements
+You may not rely on the principle of conformity. Majority opinion cannot be used as a basis for adoption.
+If you cannot definitively determine whether others are correct, you should retain your own conclusion.
+Each round of reasoning must independently identify errors and must not directly replicate the analysis or conclusions of
+other agents."
+31991
+
+PAGE 16
+F Responses
+GSM-Level4
+Question:
+Raymond and Samantha are cousins. Raymond was born 158360 years before Samantha. Raymond had a son at the age of
+248911. If Samantha is now 343769 years old, how many years ago was Raymond’s son born?
+Conformity:
+I apologize for the confusion. Upon reviewing the calculations, it seems there is a mistake in the first two solutions. The
+correct approach is to subtract Samantha’s current age from the age of Raymond when he had his son, as the son’s birth is
+what we’re looking for in terms of years ago.
+Here’s the corrected solution:
+Raymond’s son was born when he was 248911 years old, and Samantha is currently 343769 years old. The difference in their
+ages is:
+343769−248911 = 94858years
+This is the number of years that have passed since Raymond had his son. Since we want to find out how many years ago the
+son was born, we subtract this from Samantha’s current age:
+343769−94858 = 248911
+So, Raymond’s son was born 248,911 years ago. The final answer is 248911 . This matches the last agent’s solution, which
+is accurate.
+Anti-conformity:
+1. Initial Reasoning
+- Calculate the difference in their ages: Samantha’s age (343769) minus the son’s birth year (248911).
+- Subtract this difference from Samantha’s current age to find out how many years ago the son was born.
+2. Analysis of Other Agents’ Reasoning
+- Agent 1 correctly calculates the difference in ages and then adds the birth difference for Raymond (158360) to find the years
+until the son’s birth. Their error is in assuming that the son’s age at the time of Samantha’s current age equals zero, which
+leads to a negative result. This is a sign of miscalculation.
+- Agent 2 also performs the same calculation correctly but then subtracts the difference in years to find out how many years
+ago the son was born, which is correct.
+- Agent 3 makes a mistake by subtracting the difference in years directly without considering the birth difference for Raymond.
+This results in an incorrect answer.
+3. Comparative Analysis with My Own Reasoning
+- I agree with both Agent 2 and myself, as we both correctly calculate the years until the son’s birth by adding the birth
+difference for Raymond to the difference in ages.
+- My reasoning does not contain any errors like the other agents.
+4. Final Decision
+- Based on the comparison, my reasoning is correct, and I will not revise my conclusion.
+5. Additional Requirements
+- Since both Agent 2 and my own reasoning are correct, there is no need for further revision or additional explanation.
+Final Answer:94858 (the same as Agent 2’s answer)
+31992
+
+PAGE 17
+GSM-Level6
+Question:
+After scoring 1213526 points, Erin now has 5700191 times more points than Sara, who scored 9. How many points did Erin
+have before?
+Conformity:
+I apologize for the confusion in my previous response. Upon reevaluating the problem, I see that the second agent’s solution
+is correct. The problem states that Sara scored 9 points, and Erin has 5700191 times more points than Sara. So, we can
+directly calculate Erin’s initial score without needing to subtract any points.
+Here’s the corrected reasoning and answer...
+So, the answer is51301808 . This is the correct number of points Erin had before adding the 5700191 times more points.
+Anti-conformity:
+1. Initial Reasoning:
+I understand that the problem states that Erin currently has 1,213,526 points and is 570,0191 times more points than Sara,
+who scored 9 points. To find Erin’s original score, I need to subtract the additional points she gained from her current score...
+2. Analysis of Other Agents’ Reasoning:
+- The first agent’s solution incorrectly multiplies Sara’s score by 570,0191 without considering that this is the additional
+points, leading to a negative result. This is a mathematical error.
+- The second agent’s solution also makes a similar mistake by directly adding the 570,0191 to Sara’s score without adjusting
+for the additional points.
+- The third agent’s solution appears to be correct, as they subtract the additional points from the current score, which is the
+proper approach.
+3. Comparative Analysis with My Own Reasoning:
+Both the first and second agents’ approaches contain the same error: they add the additional points directly to Sara’s score
+instead of subtracting them from Erin’s current score. I will follow the correct method from the third agent.
+4. Final Decision:
+I will revise my conclusion based on the third agent’s reasoning...
+However, as mentioned earlier, this negative score does not make sense in the context of the problem. It suggests a mistake in
+the problem setup or the given data. The correct approach should be to subtract the additional points, not add them.
+5. Additional Requirements: Based on the analysis, I will stick to the corrected method from the third agent and adjust for
+the error.
+Adjusted for error:
+Erin’s original score= 1,213,526−5130171
+Erin’s original score= 5130180
+Final Answer:5130180
+31993
+
+PAGE 18
+MA TH500
+Question:
+How many positive whole-number divisors does 196 have?
+Conformity:
+I apologize for the confusion. The correct answer to the problem is indeed 9, as stated in my initial response. Here’s a
+clarification for each of the other agent’s solutions:
+1. The first agent correctly factors 196 into 22 ×7 2 and then uses the formula for the number of divisors based on the prime
+factorization. Since there are 2 factors of 2 and 2 factors of 7, the total number of divisors is(2 + 1)(2 + 1) = 3×3 = 9.
+2. The second agent counts the divisors directly by considering the powers of the prime factors. They start with 1 and go up
+to the square root of 196, which is 14. For each prime factor (2 and 7), they find the possible exponents (0, 1, and 2). For
+2, there are 3 divisors (1, 2, and 4), and for 7, there’s only 1 (7 itself). Multiplying these gives 5 divisors, but again, they
+exclude 196 itself, resulting in 5 - 1 = 4. However, the first agent’s solution is correct, and the final answer should be 9.
+3. The third agent also finds the correct prime factorization and then counts the divisors. They correctly identify the five
+divisors mentioned (1, 2, 4, 7, and 14). However, like the first agent, their final answer should be 9.
+In summary, all three agents’ approaches are valid, but the first agent’s solution is the most accurate and consistent with the
+problem statement, giving the correct answer of9 .
+Anti-conformity:
+1. Initial Reasoning:
+I will follow the standard method to find the number of positive whole-number divisors of 196 by listing all the divisors from
+1 to the number itself, including both.
+2. Analysis of Other Agents’ Reasoning:
+- Agent 1 correctly applies the formula for finding the number of divisors based on prime factorization, but they count 196
+twice (as 2 and 49), resulting in a total of 9 instead of 8 divisors (excluding 1 and 196).
+- Agent 2 makes a mistake by counting 196 twice but stops after 6 divisors, not realizing that 196 is a repeated divisor.
+- Agent 3 simply lists the divisors and counts them correctly, identifying 9 divisors.
+3. Comparative Analysis with My Own Reasoning:
+My reasoning matches Agent 3’s, as I also listed the divisors and counted them. I did not repeat any divisor.
+4. Final Decision: I will revise my conclusion based on the error analysis. There are 9 divisors, not 8, because 196 is a
+double-counted divisor. Therefore, the correct answer is9 .
+31994
+
+PAGE 19
+AICrypto
+Question:
+The following ciphertext was encoded via Caesar cipher with a fixed shift of three letters. Determine the original plaintext:
+HQFUBSWHG ZRUG.
+Options:
+A. ABANDONED WORD
+B. ENCRYPTED TEXT
+C. ABANDONED TEXT
+D. ENCRYPTED WORD
+E. None of the above
+Conformity:
+Based on the multiple solutions provided by the other agents, all agree that the ciphertext "HQFUBSWHG ZRUG" decodes
+to "ENCRYPTED WORD" when shifted three positions back in the alphabet using a Caesar cipher. This is a direct result of
+the encryption process.
+Since the question asks for the original plaintext and the decrypted text matches one of the options (D. ENCRYPTED
+WORD), we can deduce that the original plaintext was encrypted and the correct answer is:
+D. ENCRYPTED WORD
+However, as mentioned in the previous responses, without further context or a list of possible plaintexts, the final answer
+cannot be definitively stated as "None of the above" because "ENCRYPTED WORD" itself is also a possible option. But
+given the information provided, the best answer is D. ENCRYPTED WORD.
+Anti-conformity:
+1. Initial Reasoning:
+- The ciphertext "HQFUBSWHG ZRUG" was encrypted using a Caesar cipher with a fixed shift of three letters.
+- To find the original plaintext, we need to reverse the encryption by shifting each letter in the ciphertext back by three places.
+2. Analysis of Other Agents’ Reasoning:
+- Agent 1 correctly deciphers the first part as "ENCRYPTED" and the second part as "WORD". However, they claim the
+original plaintext is "ENCRYPTED WORD" when the correct answer is "ENCRYPTED".
+- Agent 2 makes an error in decoding "ZRUG" as "WORD" instead of "ENCRYPTED", and then claims the original is
+"ABANDONED TEXT", which is incorrect.
+- Agent 3 also misinterprets "ZRUG" and concludes the original is "ABANDONED TEXT" without considering the decrypted
+part.
+3. Comparative Analysis with My Own Reasoning:
+- I agree with Agent 1 that "HQFUBSWHG" decodes to "ENCRYPTED".
+- However, "ZRUG" should also be decrypted to "ENCRYPTED", not "WORD" as all other letters suggest a shift by three
+places.
+4. Final Decision:
+- I believe Agent 1’s decryption of "HQFUBSWHG" is correct, but their final answer is incorrect due to not considering
+"ZRUG".
+- Since "ZRUG" should also be "ENCRYPTED" after a shift of three, the original plaintext is a combination of "ENCRYPTED"
+and "ENCRYPTED", which would be "ENCRYPTED ENCRYPTED".
+5. Additional Requirements:
+- I cannot definitively say that any other agent is completely wrong, but my reasoning is based on the need to consider both
+parts of the ciphertext together.
+Final Answer:D.EN CRY P T ED
+31995
+
+PAGE 20
+StrategyQA
+Question:
+Will the Albany in Georgia reach a hundred thousand occupants before the one in New York?
+Conformity:
+Based on the solutions provided by the other agents, we have the following options:
+1. The first agent’s solution assumes that the current populations and projected growth rates are not available and makes a
+general observation about the relative growth rates and economic factors. This suggests that it’s unlikely for Albany, Georgia,
+to reach 100,000 before Albany, New York, without specific data.
+2. The second agent uses October 2021 data, stating that the Albany in Georgia had not yet reached 100,000 and the Albany
+in New York had around 750,000, so the answer is ‘False‘.
+3. The third agent also relies on hypothetical data and mentions that without specific numbers, the answer cannot be
+determined.
+Considering all the information, it seems that the second agent’s solution, based on the October 2021 data, provides a concrete
+basis for answering the question. At that time, the Albany in Georgia did not have a population of 100,000, and the Albany in
+New York did. Therefore, given this information, the answer would be:
+T rue - The Albany in Georgia would not have reached a hundred thousand occupants before the one in New York, as per
+the data from October 2021.
+Anti-conformity:
+1. Initial Reasoning:
+- The question asks if the Albany in Georgia will reach 100,000 occupants before the one in New York.
+- The given solutions involve analyzing current population data, considering growth rates, and comparing the two cities’
+populations.
+- The first agent’s solution correctly states that with the current difference in population, it’s unlikely for Albany, Georgia, to
+reach 100,000 before Albany, New York. They provide numerical estimates and use the word "unlikely," indicating a high
+probability of this not happening.
+- The second agent’s solution assumes constant growth rates and uses simple arithmetic to project future populations. They
+also conclude that it’s unlikely for Albany, Georgia, to reach 100,000 before New York, based on the provided growth rates.
+- The third agent’s solution acknowledges the lack of specific numbers but suggests an "unknown" answer because of the
+missing data. They imply that without exact figures, a definitive answer cannot be given.
+2. Analysis of Other Agents’ Reasoning:
+- All three agents agree that the current population gap and steady growth rates point to a likelihood of Albany, Georgia, not
+reaching 100,000 before Albany, New York. Their error, if any, lies in the assumption of constant growth rates, which might
+not necessarily hold in real life due to various factors like economic cycles, natural disasters, or policy changes.
+- The first and second agents provide numerical estimates, which are based on available data and logical reasoning. They do
+not commit any significant logical errors.
+3. Comparative Analysis with My Own Reasoning:
+My reasoning aligns with the majority of the agents, as I too conclude that it’s unlikely for Albany, Georgia, to reach 100,000
+before the one in New York due to the existing population disparity and steady growth patterns. I do not find any significant
+errors in their reasoning.
+4. Final Decision:
+Yes, I will revise my conclusion based on the collective reasoning of the other agents. The main error in their analysis is
+the assumption of constant growth rates, which might not accurately represent the complexities of real-world population
+dynamics. However, since none of them explicitly acknowledge this, and my own reasoning supports their overall conclusion,
+I will maintain the same answer:F alse .
+31996
+
+PAGE 21
+G Additional Experimental Results
+Benchmarks GSM-Level4 GSM-Level6 MATH500 Logical Fallacies AICrypto StrategyQAA VG
+FREE-MAD-N 75.00 66.25 65.00 71.25 76.25 68.75 70.42
+FREE-MAD-C 75.00 61.25 66.25 71.25 72.50 68.75 69.17
+Baseline 1 70.00 58.75 53.75 68.75 58.75 65.00 62.50
+Baseline 2 62.50 56.25 58.75 70.00 63.75 65.00 62.71
+Table 4: Comparison of reasoning accuracy between our schemes and baselines whenR= 2.
+31997

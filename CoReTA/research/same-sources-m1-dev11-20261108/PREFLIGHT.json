@@ -1,0 +1,59 @@
+{
+  "result": "PASS",
+  "source_requests_exactly_reconstructed": 1056,
+  "same_config": true,
+  "source_freeze_unchanged": true,
+  "historical_M1_trajectories_replayed": 55,
+  "max_replay_and_stress_plus_cap": 6339,
+  "fault_tests": [
+    {
+      "test": "valid",
+      "result": "PASS"
+    },
+    {
+      "test": "unknown",
+      "result": "PASS"
+    },
+    {
+      "test": "limit",
+      "result": "PASS"
+    },
+    {
+      "test": "system",
+      "result": "PASS"
+    },
+    {
+      "test": "exact_request_reuse_execution",
+      "result": "PASS",
+      "reused_calls": 4
+    }
+  ],
+  "same_source_ids_all_tasks": true,
+  "generated_teammate_messages_absent": true,
+  "max_new_calls": 55,
+  "max_new_output_tokens": 23936,
+  "exact_source_prompt_matches_in_replayed_histories": 4,
+  "limitations": "11 old development tasks, one seed, fact selection supplied by four-member source run; no equal-total-compute or autonomous solo claim",
+  "freeze": {
+    "research/same-sources-m1-dev11-20261108/experiment.py": "60d2dc9be95141527e7d3150164ffebb6f825df412b047b351bcc43b82b5496b",
+    "research/same-sources-m1-dev11-20261108/launch.py": "9610889b3a47e7018e426f164137fb0f9c3d4ce240c42c9027dbf56efbb74f13",
+    "research/same-sources-m1-dev11-20261108/config.json": "901995639fc4c51b853a1a35e6c2d547c98ff163def3c0b912595abe3a1c0ff6",
+    "research/same-sources-m1-dev11-20261108/EXPERIMENT_REVIEW.md": "91943c0642e3327b4d14756fe7b82ed8e0c52bba679c20be0dce505389a0e1b8",
+    "research/name-protocol-dev11-20261108/experiment.py": "7a1fec880fb4840cf6425413e567fd1c2e8d2b5969aa0bc0023a332a910beb89",
+    "research/name-protocol-dev11-20261108/tasks.json": "68b907d146afa48c765287d238dbf78a6b5905f5d337a4c065964c1008a66768",
+    "research/name-protocol-dev11-20261108/labels.json": "eff429e1f2b911977414211f33896caadba99165d9d51204c2160e2d87b8f60c",
+    "runs/name-protocol-dev11-20261108-v1/responses.jsonl": "748eb9987458e04126947ee71101e2e14b359dfb7e9d755f2a7764fa0dffa835",
+    "runs/name-protocol-dev11-20261108-v1/scores.json": "56576085f5e56cdb57792fbee1dfcfd2cc61bb89449ef713eb3123dc3180d372",
+    "runs/name-protocol-dev11-20261108-v1/STATUS.json": "755cb47c4f1342c7dfc91d54b56cc89424e0ad074b7dda71bca4a6786b9537c0",
+    "runs/name-protocol-dev11-20261108-v1/manifest.json": "419d555a51765a688e7aacbded2a6116e50783551b36de45f8e212287635e8ef",
+    "research/name-protocol-dev11-20261108/config.json": "03398c1613ea44548bde48d813a1568fa0e1bd0f67df5506cdeb1edda0c2fb73",
+    "research/name-protocol-dev11-20261108/SELECTION.json": "757ee831f7f3559e2b27f2c9e55dbd9a4ac7d7ef21c7f9ce0b6cc552d07559d7",
+    "research/name-protocol-dev11-20261108/EXPERIMENT_REVIEW.md": "74ff02e73dfdbed56c035be4613811931c72222120e6b94dc44fb7989d6b3f2f",
+    "research/name-interface-tech-20261108-v2/experiment.py": "03c226996170491ce6752da1e57465929b5fd056d41d95cb27b9a1fc47949420",
+    "research/psych-sbp-pilot-20261108/pilot.py": "3eefdfbceca999857df7ba6fa4919ac92431147c44eef4848caa55cf35c1682c",
+    "tools/b0_training.py": "613c2be400cff2150e4d01c33bd12a1bdf385715097015f2711f79e694130fde",
+    "tools/b0_answers.py": "df9622b63739094178e1348d717ea2cf2d67ee35746c1cc3df7899192810aff2",
+    "tools/prepare_answer_only_expert.py": "697edb7b6fe99434ce20a710560832002a404f41a07173fc95dee51d30794fdb",
+    "runs/name-interface-tech-20261108-v2/responses.jsonl": "f741ec340ca78f78fc579069183dd851c568acedcc06785dd0d8acd6555f9166"
+  }
+}

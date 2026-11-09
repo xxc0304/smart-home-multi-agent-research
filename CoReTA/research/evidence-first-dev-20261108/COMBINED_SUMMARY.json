@@ -1,0 +1,1477 @@
+{
+  "original_n": 11,
+  "complete_task_ids": [
+    1,
+    4,
+    9,
+    11,
+    30,
+    33,
+    34,
+    50
+  ],
+  "missing_task_ids": [
+    7,
+    8,
+    23
+  ],
+  "total_calls": 776,
+  "active_seconds": 4410.636965578946,
+  "output_tokens": 94693,
+  "non_eos": 3,
+  "complete_arms": 32,
+  "means": {
+    "A_private": {
+      "n": 8,
+      "team_expected_accuracy": 0.5,
+      "expert_final_accuracy": 0.625
+    },
+    "B_ordinary": {
+      "n": 8,
+      "team_expected_accuracy": 0.5,
+      "expert_final_accuracy": 0.375
+    },
+    "E_facts": {
+      "n": 8,
+      "team_expected_accuracy": 0.6875,
+      "expert_final_accuracy": 0.625
+    },
+    "F_facts_opinions": {
+      "n": 8,
+      "team_expected_accuracy": 0.5,
+      "expert_final_accuracy": 0.5
+    }
+  },
+  "missing_reason": "One common independent initial hit the unchanged 256-token cap in each of IDs 7,8,23. No retry or zero imputation.",
+  "scope": "One-seed previously used development tasks; missingness not random; no population or method effectiveness conclusion.",
+  "scores": [
+    {
+      "task_id": 1,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": null
+      },
+      "final_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_2"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 3,
+          "option_2": 1
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_3"
+    },
+    {
+      "task_id": 1,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": null
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_3"
+    },
+    {
+      "task_id": 1,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": null
+      },
+      "final_answers": {
+        "M1": "option_1",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_1"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 0.5,
+        "winners": [
+          "option_1",
+          "option_3"
+        ],
+        "counts": {
+          "option_1": 2,
+          "option_3": 2
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_3",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "task_id": 1,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": null
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": true,
+      "gold": "option_3",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "task_id": 4,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_2"
+    },
+    {
+      "task_id": 4,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_2"
+    },
+    {
+      "task_id": 4,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_2",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 4,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_4",
+        "M2": "option_4",
+        "M3": "option_4",
+        "M4": "option_4"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_4"
+        ],
+        "counts": {
+          "option_4": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": false,
+      "gold": "option_2",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 8,
+      "arm": "A_private",
+      "complete": false,
+      "reason": "COMMON_INITIAL_INCOMPLETE"
+    },
+    {
+      "task_id": 8,
+      "arm": "B_ordinary",
+      "complete": false,
+      "reason": "COMMON_INITIAL_INCOMPLETE"
+    },
+    {
+      "task_id": 8,
+      "arm": "E_facts",
+      "complete": false,
+      "reason": "COMMON_INITIAL_INCOMPLETE"
+    },
+    {
+      "task_id": 8,
+      "arm": "F_facts_opinions",
+      "complete": false,
+      "reason": "COMMON_INITIAL_INCOMPLETE"
+    },
+    {
+      "task_id": 9,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_3",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_3": 1,
+          "option_2": 1,
+          "option_1": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0.5,
+        "winners": [
+          "option_2",
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 2
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_3"
+    },
+    {
+      "task_id": 9,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_3": 1,
+          "option_2": 1,
+          "option_1": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": false,
+      "gold": "option_3"
+    },
+    {
+      "task_id": 9,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_3": 1,
+          "option_2": 1,
+          "option_1": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_3",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "task_id": 9,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_3",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_3": 1,
+          "option_2": 1,
+          "option_1": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_3": 1
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": false,
+      "gold": "option_3",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "task_id": 11,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_3",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_2",
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_3": 1,
+          "option_2": 3
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_1"
+    },
+    {
+      "task_id": 11,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_3",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_2",
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_1"
+    },
+    {
+      "task_id": 11,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_3",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_2",
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_1",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "task_id": 11,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_3",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_2",
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_1",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "task_id": 23,
+      "arm": "A_private",
+      "complete": false,
+      "reason": "COMMON_INITIAL_INCOMPLETE"
+    },
+    {
+      "task_id": 23,
+      "arm": "B_ordinary",
+      "complete": false,
+      "reason": "COMMON_INITIAL_INCOMPLETE"
+    },
+    {
+      "task_id": 23,
+      "arm": "E_facts",
+      "complete": false,
+      "reason": "COMMON_INITIAL_INCOMPLETE"
+    },
+    {
+      "task_id": 23,
+      "arm": "F_facts_opinions",
+      "complete": false,
+      "reason": "COMMON_INITIAL_INCOMPLETE"
+    },
+    {
+      "task_id": 30,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": null,
+        "M2": null,
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_1",
+        "M3": "option_2",
+        "M4": "option_1"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 0.5,
+        "winners": [
+          "option_1",
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 2,
+          "option_1": 2
+        }
+      },
+      "expert_initial_correct": null,
+      "expert_final_correct": true,
+      "gold": "option_2"
+    },
+    {
+      "task_id": 30,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": null,
+        "M2": null,
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": null,
+      "expert_final_correct": true,
+      "gold": "option_2"
+    },
+    {
+      "task_id": 30,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": null,
+        "M2": null,
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": null,
+      "expert_final_correct": true,
+      "gold": "option_2",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 30,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": null,
+        "M2": null,
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": null,
+      "expert_final_correct": true,
+      "gold": "option_2",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 33,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1",
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_1": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_3": 1,
+          "option_2": 1,
+          "option_1": 2
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_2"
+    },
+    {
+      "task_id": 33,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1",
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_1": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_3": 1,
+          "option_2": 3
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_2"
+    },
+    {
+      "task_id": 33,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1",
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_1": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_2",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 33,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_1",
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_1": 2
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_2",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 34,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_3"
+      },
+      "final_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 3,
+          "option_3": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_1"
+    },
+    {
+      "task_id": 34,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_3"
+      },
+      "final_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 3,
+          "option_3": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_1"
+    },
+    {
+      "task_id": 34,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_3"
+      },
+      "final_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_1"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 3,
+          "option_3": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_1",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 34,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_3"
+      },
+      "final_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_3"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 3,
+          "option_3": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 3,
+          "option_3": 1
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_1",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 50,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_2",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_2",
+        "M4": "option_1"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 1,
+          "option_1": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 1,
+          "option_1": 1
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_3"
+    },
+    {
+      "task_id": 50,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_2",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 1,
+          "option_1": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": false,
+      "gold": "option_3"
+    },
+    {
+      "task_id": 50,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_2",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 1,
+          "option_1": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_3",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 50,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_2",
+        "M4": "option_1"
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 2,
+          "option_2": 1,
+          "option_1": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_3",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": "CANCELLED_BY_USER",
+  "client_date": "2026-11-09",
+  "recorded_utc": "2026-11-08T16:28:48.137880+00:00",
+  "reason": "Explicit user request: stop this batch and preserve existing records; experiment priority reconsidered before viewing quality outcomes.",
+  "pid": 2767473,
+  "process_exited": true,
+  "raw_executor_status_preserved": "STOPPED_SYSTEM_FAULT",
+  "raw_exception": "KeyboardInterrupt",
+  "complete_units": 12,
+  "planned_units": 156,
+  "trial_snapshots": 13,
+  "responses": 357,
+  "new_returned_calls": 305,
+  "reused_returned_calls": 52,
+  "attempts": 358,
+  "inflight_attempts_without_response": 1,
+  "complete_arm_snapshots": 25,
+  "gpu_snapshot": "2 MiB, 0 %",
+  "raw_sha256": {
+    "responses.jsonl": "c38239266510e4a15903db34c02b71ac13485b9597d222a648d6c88535938fec",
+    "attempts.jsonl": "4b8c1e0452c663fe1abf22425312f7087c50e3930b669d148ba49158ce76ec1f",
+    "scores.json": "d1c8ab64c7f234c253a535a2fe07c412a75edfee116ad916d9939e4d343954a0",
+    "manifest.json": "c447d365b433e5dbda23e1e9da88a8634a56493dace0721825776ffc0f71af0a",
+    "STATUS.json": "a7186ffa02ac6d8e9f5b62565cdf6f45cf77157b213a35bee07ee7538c7c626f"
+  },
+  "automatic_resume": false,
+  "scope": "STOPPED_DEVELOPMENT_PREFIX_NOT_COMPLETED_EXPERIMENT"
+}

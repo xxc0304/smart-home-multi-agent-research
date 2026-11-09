@@ -1,0 +1,335 @@
+{
+  "status": "CANDIDATE_DESIGN_NOT_RUNNING_NOT_FROZEN",
+  "scope": "Existing D development pool; outcome-stratified diagnostics separate from deterministic background; not new holdout.",
+  "source": "research/expert-composition100-20261109/INPUTS.json",
+  "source_sha256": "41db8d95e3fbc994d3ef7bfa696be6288b9a9bc835797c365b80e0e9064007c3",
+  "selection_salt": "expert-evidence-scale32-20261109/task-selection-v1",
+  "diagnostic": [
+    {
+      "source_index": 6,
+      "id": "3hop1__213909_572271_588905",
+      "group": "g6",
+      "strict_training_answer_isolation": false,
+      "question": "What county shares a border with another county, that contains the village where James F. Wade was born?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/006.json"
+    },
+    {
+      "source_index": 17,
+      "id": "3hop1__275359_810457_285920",
+      "group": "g17",
+      "strict_training_answer_isolation": false,
+      "question": "What county shares a border with another county, where the birthplace of Cyrus David Foss is found?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/017.json"
+    },
+    {
+      "source_index": 24,
+      "id": "2hop__22341_92923",
+      "group": "g8",
+      "strict_training_answer_isolation": true,
+      "question": "When did we decide to leave the organization that has completely surrounded Switzerland and Liechtenstein since 1995?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/024.json"
+    },
+    {
+      "source_index": 49,
+      "id": "2hop__482757_12019",
+      "group": "g49",
+      "strict_training_answer_isolation": false,
+      "question": "When was the institute that owned The Collegian founded?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/049.json"
+    },
+    {
+      "source_index": 43,
+      "id": "2hop__135148_622675",
+      "group": "g41",
+      "strict_training_answer_isolation": false,
+      "question": "What language was used by Renana Jhabvala's mother?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/043.json"
+    },
+    {
+      "source_index": 27,
+      "id": "2hop__159600_2179",
+      "group": "g27",
+      "strict_training_answer_isolation": true,
+      "question": "What is the longest suspension bridge in the country that Logan returned to?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/027.json"
+    },
+    {
+      "source_index": 28,
+      "id": "2hop__75451_55099",
+      "group": "g28",
+      "strict_training_answer_isolation": true,
+      "question": "Who plays the man with the largest signature on the declaration of independence in Sons of Liberty?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/028.json"
+    },
+    {
+      "source_index": 45,
+      "id": "2hop__560_568792",
+      "group": "g45",
+      "strict_training_answer_isolation": true,
+      "question": "Who is the child of Liszt's mistress?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/045.json"
+    }
+  ],
+  "background": [
+    {
+      "source_index": 42,
+      "id": "2hop__638155_2702",
+      "group": "g42",
+      "strict_training_answer_isolation": true,
+      "question": "Kanye is credited for the shift away from what genre of the musical style that Cypress Hill performed in?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/042.json"
+    },
+    {
+      "source_index": 18,
+      "id": "2hop__69856_442921",
+      "group": "g18",
+      "strict_training_answer_isolation": true,
+      "question": "Who is the sibling of the person who wrote the script for the 1996 Crucible movie adaption?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/018.json"
+    },
+    {
+      "source_index": 14,
+      "id": "2hop__107474_166568",
+      "group": "g14",
+      "strict_training_answer_isolation": true,
+      "question": "Who is the spouse of the person who made The Circe Invidiosa?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/014.json"
+    },
+    {
+      "source_index": 12,
+      "id": "2hop__328840_159000",
+      "group": "g12",
+      "strict_training_answer_isolation": false,
+      "question": "In what league does the football club that performed Blue Is the Color, compete?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/012.json"
+    },
+    {
+      "source_index": 36,
+      "id": "2hop__236547_101443",
+      "group": "g36",
+      "strict_training_answer_isolation": false,
+      "question": "What continent holds the projecting land mass where the Edwards Islands are located?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/036.json"
+    },
+    {
+      "source_index": 20,
+      "id": "2hop__853995_326926",
+      "group": "g20",
+      "strict_training_answer_isolation": false,
+      "question": "What guitarist and singer played with the band that performed I'm Your Witchdoctor?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/020.json"
+    },
+    {
+      "source_index": 4,
+      "id": "2hop__128801_205185",
+      "group": "g4",
+      "strict_training_answer_isolation": true,
+      "question": "What county is the town where KNFM is licensed the capital of?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/004.json"
+    },
+    {
+      "source_index": 31,
+      "id": "2hop__446183_21489",
+      "group": "g31",
+      "strict_training_answer_isolation": true,
+      "question": "In what year was the author of The Insider's Guide to the Colleges established?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/031.json"
+    },
+    {
+      "source_index": 34,
+      "id": "2hop__79539_465884",
+      "group": "g34",
+      "strict_training_answer_isolation": false,
+      "question": "What county contains the city that shares its name with the dog in You've Got Mail?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/034.json"
+    },
+    {
+      "source_index": 33,
+      "id": "2hop__10001_33297",
+      "group": "g33",
+      "strict_training_answer_isolation": true,
+      "question": "What did the organization that formulates multiple regional divisions as is convenient for its various operations dub \"The Trusteeship of the Powerful?\"",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/033.json"
+    },
+    {
+      "source_index": 47,
+      "id": "2hop__143707_518072",
+      "group": "g47",
+      "strict_training_answer_isolation": true,
+      "question": "What is the record label for the singer of Vinternatten?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/047.json"
+    },
+    {
+      "source_index": 7,
+      "id": "2hop__116096_409504",
+      "group": "g7",
+      "strict_training_answer_isolation": true,
+      "question": "Where was the director of The Man of the Hour born?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/007.json"
+    },
+    {
+      "source_index": 40,
+      "id": "2hop__108232_474793",
+      "group": "g5",
+      "strict_training_answer_isolation": true,
+      "question": "Who was married to the painter of The Great Red Dragon Paintings?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/040.json"
+    },
+    {
+      "source_index": 37,
+      "id": "2hop__59004_21639",
+      "group": "g37",
+      "strict_training_answer_isolation": true,
+      "question": "In Ann Arbor, who represents the assembly with the power to make immigration laws?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/037.json"
+    },
+    {
+      "source_index": 29,
+      "id": "2hop__147332_797858",
+      "group": "g29",
+      "strict_training_answer_isolation": false,
+      "question": "What type of community is the municipality where Norbert Pfretzschner died, an instance of?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/029.json"
+    },
+    {
+      "source_index": 50,
+      "id": "3hop1__312064_245703_824591",
+      "group": "g32",
+      "strict_training_answer_isolation": false,
+      "question": "In what country does book censorship occur where the mouth of the Wei river is found?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/050.json"
+    },
+    {
+      "source_index": 23,
+      "id": "2hop__5453_665779",
+      "group": "g23",
+      "strict_training_answer_isolation": true,
+      "question": "In what county is the Midwest Regional Medical Center?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/023.json"
+    },
+    {
+      "source_index": 55,
+      "id": "2hop__131044_46354",
+      "group": "g55",
+      "strict_training_answer_isolation": false,
+      "question": "When did the gold rush start in the state of Tana Glacier?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/055.json"
+    },
+    {
+      "source_index": 11,
+      "id": "2hop__26852_71366",
+      "group": "g11",
+      "strict_training_answer_isolation": false,
+      "question": "What year did the council which was seated in 1949 adopt the convention of cybercrime in?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/011.json"
+    },
+    {
+      "source_index": 0,
+      "id": "2hop__150255_698136",
+      "group": "g0",
+      "strict_training_answer_isolation": false,
+      "question": "What type of school is the university that published the Owen Wister Review, an instance of?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/000.json"
+    },
+    {
+      "source_index": 35,
+      "id": "2hop__7483_160863",
+      "group": "g35",
+      "strict_training_answer_isolation": true,
+      "question": "When was the territory covered by RIBA's Cambridge branch office created?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/035.json"
+    },
+    {
+      "source_index": 54,
+      "id": "2hop__142888_303417",
+      "group": "g1",
+      "strict_training_answer_isolation": false,
+      "question": "What is the record label of the It Won't Hurt performer?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/054.json"
+    },
+    {
+      "source_index": 30,
+      "id": "2hop__53030_539716",
+      "group": "g30",
+      "strict_training_answer_isolation": true,
+      "question": "Hebron, on the island where the story Anne of Green Gables takes place, is located in what county?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/030.json"
+    },
+    {
+      "source_index": 25,
+      "id": "2hop__9717_1891",
+      "group": "g25",
+      "strict_training_answer_isolation": true,
+      "question": "How many meters is Riverbank State Park elevated above the river that the Manhattan grid plan is aligned with rather than cardinal directions?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/025.json"
+    }
+  ],
+  "unselected_background_reserve": [
+    {
+      "source_index": 22,
+      "id": "2hop__15104_8955",
+      "group": "g22",
+      "strict_training_answer_isolation": false,
+      "question": "When did Tito first visit the person who laid claim to Eritrea and Italian Somaliland in a letter to Franklin D. Roosevelt?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/022.json"
+    },
+    {
+      "source_index": 2,
+      "id": "2hop__141962_841802",
+      "group": "g2",
+      "strict_training_answer_isolation": true,
+      "question": "Who is the sibling of I Never Loved a Man the Way I Love You's artist?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/002.json"
+    },
+    {
+      "source_index": 21,
+      "id": "2hop__123210_700310",
+      "group": "g21",
+      "strict_training_answer_isolation": true,
+      "question": "What's a part of Clas Alströmer's alma mater?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/021.json"
+    },
+    {
+      "source_index": 39,
+      "id": "3hop1__797401_479775_779156",
+      "group": "g39",
+      "strict_training_answer_isolation": true,
+      "question": "What is the capital of the county having the community headquartering Sinclair Broadcast Group?",
+      "source_task_file": "runs/b1-grounded-revision-20261107-v1/trials/039.json"
+    }
+  ],
+  "exclusions": {
+    "1": "Same-title song/record-label target ambiguity",
+    "3": "Age/birthday timing and pre-existing semantic sensitivity",
+    "9": "three/3 known scoring boundary",
+    "10": "BBC date/programme scope sensitivity",
+    "13": "OS series/version/current-time boundary",
+    "15": "France/French known scoring boundary",
+    "26": "Region/capital mixed target and known output-limit history",
+    "38": "Region administrative granularity",
+    "44": "Composer/writer/arranger and sung-through wording",
+    "51": "Book topic/setting granularity",
+    "52": "Era phrasing known scoring boundary",
+    "53": "Multiple supplied Doure villages satisfy relation"
+  },
+  "source_score_fields_consulted": false,
+  "group_count": 32,
+  "questions": 32,
+  "seeds_per_question": 2,
+  "paired_units": 64,
+  "primary_background_questions": 24,
+  "primary_background_units": 48,
+  "max_new_model_calls": 2688,
+  "calls_per_unit": {
+    "common_initials": 4,
+    "common_expert_private_work": 1,
+    "common_expert_candidate": 1,
+    "per_arm_work": 8,
+    "per_arm_finals": 4,
+    "arms": 3,
+    "total": 42
+  },
+  "timing_prefix_units": 2,
+  "timing_prefix_calls": 84,
+  "no_auto_expansion": true
+}

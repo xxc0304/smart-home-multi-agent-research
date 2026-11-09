@@ -1,0 +1,30 @@
+test_branch_failure_blocks_dependents_not_other_arms (test_b1_controls.ProtocolChecks.test_branch_failure_blocks_dependents_not_other_arms) ... ok
+test_immediate_broadcast_and_no_other_final (test_b1_controls.ProtocolChecks.test_immediate_broadcast_and_no_other_final) ... ok
+test_initial_failure_stops_dependencies_and_raw_kept (test_b1_controls.ProtocolChecks.test_initial_failure_stops_dependencies_and_raw_kept) ... ok
+test_initials_shared_only_once_and_disclosure_delayed (test_b1_controls.ProtocolChecks.test_initials_shared_only_once_and_disclosure_delayed) ... ok
+test_matched_orders_seeds_and_two_turns (test_b1_controls.ProtocolChecks.test_matched_orders_seeds_and_two_turns) ... ok
+test_private_history_is_only_own_and_no_cross_arm (test_b1_controls.ProtocolChecks.test_private_history_is_only_own_and_no_cross_arm) ... ok
+test_snapshots_and_real_origin (test_b1_controls.ProtocolChecks.test_snapshots_and_real_origin) ... ok
+test_batch_missing_not_hidden_and_zero_denominator (test_b1_controls.ScoringChecks.test_batch_missing_not_hidden_and_zero_denominator) ... ok
+test_empty_short_answer_abstains_without_schema_error (test_b1_controls.ScoringChecks.test_empty_short_answer_abstains_without_schema_error) ... ok
+test_raw_short_answers_are_not_cleaned_twice (test_b1_controls.ScoringChecks.test_raw_short_answers_are_not_cleaned_twice) ... ok
+test_readout_loss_distinct_from_expert_harm_and_fixture (test_b1_controls.ScoringChecks.test_readout_loss_distinct_from_expert_harm_and_fixture) ... ok
+test_replay_rejects_changed_visibility (test_b1_controls.ScoringChecks.test_replay_rejects_changed_visibility) ... ok
+test_tie_expected_score_and_no_expert_priority (test_b1_controls.ScoringChecks.test_tie_expected_score_and_no_expert_priority) ... ok
+test_C_scores_bound_to_adapter_and_inference (test_b1_runtime.RuntimeChecks.test_C_scores_bound_to_adapter_and_inference) ... ok
+test_OOM_stops_and_records_missing_denominator (test_b1_runtime.RuntimeChecks.test_OOM_stops_and_records_missing_denominator) ... ok
+test_complete_52_fixture_resume_and_budget (test_b1_runtime.RuntimeChecks.test_complete_52_fixture_resume_and_budget) ... ok
+test_fixed_D_inputs_and_groups_without_targets (test_b1_runtime.RuntimeChecks.test_fixed_D_inputs_and_groups_without_targets) ... ok
+test_origin_and_missing_independent_C_gate (test_b1_runtime.RuntimeChecks.test_origin_and_missing_independent_C_gate) ... ok
+test_pending_configuration_refuses_before_load (test_b1_runtime.RuntimeChecks.test_pending_configuration_refuses_before_load) ... ok
+test_prefix_parser_does_not_parse_unselected_labels (test_b1_runtime.RuntimeChecks.test_prefix_parser_does_not_parse_unselected_labels) ... ok
+test_real_large_batch_cannot_skip_early_stages (test_b1_runtime.RuntimeChecks.test_real_large_batch_cannot_skip_early_stages) ... ok
+test_tiny_local_Peft_route_and_generation_entry (test_b1_runtime.RuntimeChecks.test_tiny_local_Peft_route_and_generation_entry) ... Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 983.19it/s]
+Loading weights:   0%|          | 0/12 [00:00<?, ?it/s]Loading weights: 100%|██████████| 12/12 [00:00<00:00, 21290.88it/s]
+[transformers] Passing `generation_config` together with generation-related arguments=({'max_time', 'max_new_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 4.880s
+
+OK

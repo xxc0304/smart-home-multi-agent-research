@@ -1,0 +1,154 @@
+{
+  "status": {
+    "status": "COMPLETED_WITH_INCOMPLETE_UNITS",
+    "calls": 2610,
+    "generated_calls": 2610,
+    "processed_units": 64,
+    "complete_units": 62,
+    "total_units": 64,
+    "elapsed_seconds": 13872.855504996958,
+    "unit": 63,
+    "index": 25,
+    "rep": 1,
+    "arm": "A",
+    "actor": "M4",
+    "stage": "final"
+  },
+  "cost": {
+    "generated_calls": 2610,
+    "output_tokens": 256396,
+    "response_seconds": 13449.702206948423,
+    "non_ok": 2
+  },
+  "available_units": {
+    "background": {
+      "n": 46,
+      "seed_counts": {
+        "0": 23,
+        "1": 23
+      },
+      "arms": {
+        "A": {
+          "team_expected_em": 0.8260869565217391,
+          "expert_em": 0.9130434782608695,
+          "ordinary_em": 0.8260869565217391
+        },
+        "B": {
+          "team_expected_em": 0.8586956521739131,
+          "expert_em": 0.8913043478260869,
+          "ordinary_em": 0.855072463768116
+        },
+        "C": {
+          "team_expected_em": 0.8695652173913043,
+          "expert_em": 0.8913043478260869,
+          "ordinary_em": 0.8623188405797102
+        }
+      }
+    },
+    "diagnostic": {
+      "n": 16,
+      "seed_counts": {
+        "0": 8,
+        "1": 8
+      },
+      "arms": {
+        "A": {
+          "team_expected_em": 0.8125,
+          "expert_em": 0.6875,
+          "ordinary_em": 0.8125
+        },
+        "B": {
+          "team_expected_em": 0.8125,
+          "expert_em": 0.6875,
+          "ordinary_em": 0.8125
+        },
+        "C": {
+          "team_expected_em": 0.6875,
+          "expert_em": 0.625,
+          "ordinary_em": 0.6875
+        }
+      }
+    }
+  },
+  "primary_background_both_seeds": {
+    "different_tasks": 23,
+    "arms": {
+      "A": 0.8260869565217391,
+      "B": 0.8586956521739131,
+      "C": 0.8695652173913043
+    },
+    "contrasts": {
+      "C-B": {
+        "mean": 0.010869565217391304,
+        "descriptive_task_bootstrap95": [
+          -0.03260869565217391,
+          0.06521739130434782
+        ],
+        "tasks_positive": 1,
+        "tasks_negative": 1,
+        "tasks_equal": 21
+      },
+      "B-A": {
+        "mean": 0.03260869565217391,
+        "descriptive_task_bootstrap95": [
+          -0.043478260869565216,
+          0.11956521739130435
+        ],
+        "tasks_positive": 2,
+        "tasks_negative": 1,
+        "tasks_equal": 20
+      },
+      "C-A": {
+        "mean": 0.043478260869565216,
+        "descriptive_task_bootstrap95": [
+          0.0,
+          0.10869565217391304
+        ],
+        "tasks_positive": 2,
+        "tasks_negative": 0,
+        "tasks_equal": 21
+      }
+    }
+  },
+  "fixed19_sensitivity_both_seeds": {
+    "different_tasks": 18,
+    "arms": {
+      "A": 0.8888888888888888,
+      "B": 0.8888888888888888,
+      "C": 0.9166666666666666
+    },
+    "contrasts": {
+      "C-B": {
+        "mean": 0.027777777777777776,
+        "descriptive_task_bootstrap95": [
+          0.0,
+          0.08333333333333333
+        ],
+        "tasks_positive": 1,
+        "tasks_negative": 0,
+        "tasks_equal": 17
+      },
+      "B-A": {
+        "mean": 0.0,
+        "descriptive_task_bootstrap95": [
+          -0.08333333333333333,
+          0.08333333333333333
+        ],
+        "tasks_positive": 1,
+        "tasks_negative": 1,
+        "tasks_equal": 16
+      },
+      "C-A": {
+        "mean": 0.027777777777777776,
+        "descriptive_task_bootstrap95": [
+          0.0,
+          0.08333333333333333
+        ],
+        "tasks_positive": 1,
+        "tasks_negative": 0,
+        "tasks_equal": 17
+      }
+    }
+  },
+  "scope": "Existing development; assistant exploratory analysis. Available prefix units not a completed primary comparison. Bootstrap descriptive, no population or independent confirmation claim."
+}

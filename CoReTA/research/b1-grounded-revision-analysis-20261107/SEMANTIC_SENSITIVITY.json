@@ -1,0 +1,759 @@
+{
+  "minimalIdentifiedEvents": {
+    "name": "Only numeric three/3 and identified record-sales wording",
+    "scope": "ASSISTANT_EXPLORATORY_NO_OFFICIAL_SCORE_OR_VOTE_MUTATION",
+    "extra_aliases": {
+      "9": [
+        "3"
+      ],
+      "83": [
+        "Over 38 million records.",
+        "Over 38 million records"
+      ]
+    },
+    "cohorts": {
+      "fresh": {
+        "A": {
+          "n": 56,
+          "teamEM": 0.65625,
+          "expertEM": 0.625
+        },
+        "B": {
+          "n": 56,
+          "teamEM": 0.6964285714285714,
+          "expertEM": 0.7142857142857143
+        },
+        "C": {
+          "n": 56,
+          "teamEM": 0.6696428571428571,
+          "expertEM": 0.5892857142857143
+        },
+        "D": {
+          "n": 56,
+          "teamEM": 0.6785714285714286,
+          "expertEM": 0.7142857142857143
+        },
+        "B_check": {
+          "n": 56,
+          "teamEM": 0.6964285714285714,
+          "expertEM": 0.7142857142857143
+        },
+        "B_relation": {
+          "n": 56,
+          "teamEM": 0.6964285714285714,
+          "expertEM": 0.7142857142857143
+        }
+      },
+      "fresh_strict": {
+        "A": {
+          "n": 29,
+          "teamEM": 0.6379310344827587,
+          "expertEM": 0.5862068965517241
+        },
+        "B": {
+          "n": 29,
+          "teamEM": 0.6896551724137931,
+          "expertEM": 0.7241379310344828
+        },
+        "C": {
+          "n": 29,
+          "teamEM": 0.6551724137931034,
+          "expertEM": 0.5517241379310345
+        },
+        "D": {
+          "n": 29,
+          "teamEM": 0.6896551724137931,
+          "expertEM": 0.7241379310344828
+        },
+        "B_check": {
+          "n": 29,
+          "teamEM": 0.6896551724137931,
+          "expertEM": 0.7241379310344828
+        },
+        "B_relation": {
+          "n": 29,
+          "teamEM": 0.6896551724137931,
+          "expertEM": 0.7241379310344828
+        }
+      },
+      "fresh_answer_overlap": {
+        "A": {
+          "n": 27,
+          "teamEM": 0.6759259259259259,
+          "expertEM": 0.6666666666666666
+        },
+        "B": {
+          "n": 27,
+          "teamEM": 0.7037037037037037,
+          "expertEM": 0.7037037037037037
+        },
+        "C": {
+          "n": 27,
+          "teamEM": 0.6851851851851852,
+          "expertEM": 0.6296296296296297
+        },
+        "D": {
+          "n": 27,
+          "teamEM": 0.6666666666666666,
+          "expertEM": 0.7037037037037037
+        },
+        "B_check": {
+          "n": 27,
+          "teamEM": 0.7037037037037037,
+          "expertEM": 0.7037037037037037
+        },
+        "B_relation": {
+          "n": 27,
+          "teamEM": 0.7037037037037037,
+          "expertEM": 0.7037037037037037
+        }
+      },
+      "old_coverage": {
+        "A": {
+          "n": 36,
+          "teamEM": 0.4513888888888889,
+          "expertEM": 0.4722222222222222
+        },
+        "B": {
+          "n": 36,
+          "teamEM": 0.5,
+          "expertEM": 0.5277777777777778
+        },
+        "C": {
+          "n": 35,
+          "teamEM": 0.5071428571428571,
+          "expertEM": 0.45714285714285713
+        },
+        "D": {
+          "n": 36,
+          "teamEM": 0.5277777777777778,
+          "expertEM": 0.5
+        },
+        "B_check": {
+          "n": 36,
+          "teamEM": 0.5,
+          "expertEM": 0.5277777777777778
+        },
+        "B_relation": {
+          "n": 36,
+          "teamEM": 0.5,
+          "expertEM": 0.5277777777777778
+        }
+      },
+      "mechanism": {
+        "A": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.75
+        },
+        "B": {
+          "n": 8,
+          "teamEM": 0.4375,
+          "expertEM": 0.625
+        },
+        "C": {
+          "n": 8,
+          "teamEM": 0.15625,
+          "expertEM": 0.625
+        },
+        "D": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.375
+        },
+        "B_check": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.625
+        },
+        "B_relation": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.625
+        }
+      },
+      "all": {
+        "A": {
+          "n": 100,
+          "teamEM": 0.56,
+          "expertEM": 0.58
+        },
+        "B": {
+          "n": 100,
+          "teamEM": 0.605,
+          "expertEM": 0.64
+        },
+        "C": {
+          "n": 99,
+          "teamEM": 0.5707070707070707,
+          "expertEM": 0.5454545454545454
+        },
+        "D": {
+          "n": 100,
+          "teamEM": 0.6,
+          "expertEM": 0.61
+        },
+        "B_check": {
+          "n": 100,
+          "teamEM": 0.6,
+          "expertEM": 0.64
+        },
+        "B_relation": {
+          "n": 100,
+          "teamEM": 0.6,
+          "expertEM": 0.64
+        }
+      }
+    }
+  },
+  "clearSurface": {
+    "name": "Clear numeric/unit/geographic qualification/period surface sensitivity",
+    "scope": "ASSISTANT_EXPLORATORY_NO_OFFICIAL_SCORE_OR_VOTE_MUTATION",
+    "extra_aliases": {
+      "9": [
+        "3"
+      ],
+      "11": [
+        "8 November 2001"
+      ],
+      "15": [
+        "French actor"
+      ],
+      "25": [
+        "21 meters"
+      ],
+      "26": [
+        "Midland County, Texas.",
+        "Midland County, Texas"
+      ],
+      "32": [
+        "Lop Lake"
+      ],
+      "38": [
+        "Fairfield County, Connecticut",
+        "Fairfield County, Connecticut."
+      ],
+      "39": [
+        "Towson, Maryland."
+      ],
+      "48": [
+        "Lille, France"
+      ],
+      "52": [
+        "Guomindang-imposed martial law (1949–1987)",
+        "Guomindang-imposed martial law"
+      ],
+      "56": [
+        "linear defence",
+        "Linear defense concept",
+        "linear defense"
+      ],
+      "62": [
+        "40%"
+      ],
+      "64": [
+        "Kershaw County, South Carolina."
+      ],
+      "65": [
+        "Chinese-majority",
+        "Chinese descent"
+      ],
+      "70": [
+        "trolley routes",
+        "trolley service routes"
+      ],
+      "75": [
+        "40%"
+      ],
+      "78": [
+        "2.5%"
+      ],
+      "81": [
+        "March 1st, 1920"
+      ],
+      "83": [
+        "Over 38 million records.",
+        "Over 38 million records"
+      ],
+      "88": [
+        "Jubilee Records"
+      ],
+      "89": [
+        "neutral",
+        "Neutral",
+        "neutral side"
+      ]
+    },
+    "cohorts": {
+      "fresh": {
+        "A": {
+          "n": 56,
+          "teamEM": 0.6919642857142857,
+          "expertEM": 0.7142857142857143
+        },
+        "B": {
+          "n": 56,
+          "teamEM": 0.75,
+          "expertEM": 0.7857142857142857
+        },
+        "C": {
+          "n": 56,
+          "teamEM": 0.7053571428571429,
+          "expertEM": 0.6785714285714286
+        },
+        "D": {
+          "n": 56,
+          "teamEM": 0.7142857142857143,
+          "expertEM": 0.7678571428571429
+        },
+        "B_check": {
+          "n": 56,
+          "teamEM": 0.75,
+          "expertEM": 0.7857142857142857
+        },
+        "B_relation": {
+          "n": 56,
+          "teamEM": 0.75,
+          "expertEM": 0.7857142857142857
+        }
+      },
+      "fresh_strict": {
+        "A": {
+          "n": 29,
+          "teamEM": 0.6379310344827587,
+          "expertEM": 0.6206896551724138
+        },
+        "B": {
+          "n": 29,
+          "teamEM": 0.7241379310344828,
+          "expertEM": 0.7586206896551724
+        },
+        "C": {
+          "n": 29,
+          "teamEM": 0.6551724137931034,
+          "expertEM": 0.5862068965517241
+        },
+        "D": {
+          "n": 29,
+          "teamEM": 0.6896551724137931,
+          "expertEM": 0.7241379310344828
+        },
+        "B_check": {
+          "n": 29,
+          "teamEM": 0.7241379310344828,
+          "expertEM": 0.7586206896551724
+        },
+        "B_relation": {
+          "n": 29,
+          "teamEM": 0.7241379310344828,
+          "expertEM": 0.7586206896551724
+        }
+      },
+      "fresh_answer_overlap": {
+        "A": {
+          "n": 27,
+          "teamEM": 0.75,
+          "expertEM": 0.8148148148148148
+        },
+        "B": {
+          "n": 27,
+          "teamEM": 0.7777777777777778,
+          "expertEM": 0.8148148148148148
+        },
+        "C": {
+          "n": 27,
+          "teamEM": 0.7592592592592593,
+          "expertEM": 0.7777777777777778
+        },
+        "D": {
+          "n": 27,
+          "teamEM": 0.7407407407407407,
+          "expertEM": 0.8148148148148148
+        },
+        "B_check": {
+          "n": 27,
+          "teamEM": 0.7777777777777778,
+          "expertEM": 0.8148148148148148
+        },
+        "B_relation": {
+          "n": 27,
+          "teamEM": 0.7777777777777778,
+          "expertEM": 0.8148148148148148
+        }
+      },
+      "old_coverage": {
+        "A": {
+          "n": 36,
+          "teamEM": 0.5763888888888888,
+          "expertEM": 0.6388888888888888
+        },
+        "B": {
+          "n": 36,
+          "teamEM": 0.6666666666666666,
+          "expertEM": 0.7222222222222222
+        },
+        "C": {
+          "n": 35,
+          "teamEM": 0.5928571428571429,
+          "expertEM": 0.6
+        },
+        "D": {
+          "n": 36,
+          "teamEM": 0.6388888888888888,
+          "expertEM": 0.6944444444444444
+        },
+        "B_check": {
+          "n": 36,
+          "teamEM": 0.6388888888888888,
+          "expertEM": 0.7222222222222222
+        },
+        "B_relation": {
+          "n": 36,
+          "teamEM": 0.6388888888888888,
+          "expertEM": 0.7222222222222222
+        }
+      },
+      "mechanism": {
+        "A": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.75
+        },
+        "B": {
+          "n": 8,
+          "teamEM": 0.4375,
+          "expertEM": 0.625
+        },
+        "C": {
+          "n": 8,
+          "teamEM": 0.15625,
+          "expertEM": 0.625
+        },
+        "D": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.375
+        },
+        "B_check": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.625
+        },
+        "B_relation": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.625
+        }
+      },
+      "all": {
+        "A": {
+          "n": 100,
+          "teamEM": 0.625,
+          "expertEM": 0.69
+        },
+        "B": {
+          "n": 100,
+          "teamEM": 0.695,
+          "expertEM": 0.75
+        },
+        "C": {
+          "n": 99,
+          "teamEM": 0.6212121212121212,
+          "expertEM": 0.6464646464646465
+        },
+        "D": {
+          "n": 100,
+          "teamEM": 0.66,
+          "expertEM": 0.71
+        },
+        "B_check": {
+          "n": 100,
+          "teamEM": 0.68,
+          "expertEM": 0.75
+        },
+        "B_relation": {
+          "n": 100,
+          "teamEM": 0.68,
+          "expertEM": 0.75
+        }
+      }
+    }
+  },
+  "withCivilWarSubject": {
+    "name": "Additional Lincoln-presidency/Civil-War topic-granularity boundary",
+    "scope": "ASSISTANT_EXPLORATORY_NO_OFFICIAL_SCORE_OR_VOTE_MUTATION",
+    "extra_aliases": {
+      "9": [
+        "3"
+      ],
+      "11": [
+        "8 November 2001"
+      ],
+      "15": [
+        "French actor"
+      ],
+      "25": [
+        "21 meters"
+      ],
+      "26": [
+        "Midland County, Texas.",
+        "Midland County, Texas"
+      ],
+      "32": [
+        "Lop Lake"
+      ],
+      "38": [
+        "Fairfield County, Connecticut",
+        "Fairfield County, Connecticut."
+      ],
+      "39": [
+        "Towson, Maryland."
+      ],
+      "48": [
+        "Lille, France"
+      ],
+      "51": [
+        "The main subject of the book named for the author of \"Four Score and Seven Years Ago\" is the presidency of Abraham Lincoln during the American Civil War.",
+        "The presidency of Abraham Lincoln during the American Civil War."
+      ],
+      "52": [
+        "Guomindang-imposed martial law (1949–1987)",
+        "Guomindang-imposed martial law"
+      ],
+      "56": [
+        "linear defence",
+        "Linear defense concept",
+        "linear defense"
+      ],
+      "62": [
+        "40%"
+      ],
+      "64": [
+        "Kershaw County, South Carolina."
+      ],
+      "65": [
+        "Chinese-majority",
+        "Chinese descent"
+      ],
+      "70": [
+        "trolley routes",
+        "trolley service routes"
+      ],
+      "75": [
+        "40%"
+      ],
+      "78": [
+        "2.5%"
+      ],
+      "81": [
+        "March 1st, 1920"
+      ],
+      "83": [
+        "Over 38 million records.",
+        "Over 38 million records"
+      ],
+      "88": [
+        "Jubilee Records"
+      ],
+      "89": [
+        "neutral",
+        "Neutral",
+        "neutral side"
+      ]
+    },
+    "cohorts": {
+      "fresh": {
+        "A": {
+          "n": 56,
+          "teamEM": 0.6964285714285714,
+          "expertEM": 0.7142857142857143
+        },
+        "B": {
+          "n": 56,
+          "teamEM": 0.7678571428571429,
+          "expertEM": 0.7857142857142857
+        },
+        "C": {
+          "n": 56,
+          "teamEM": 0.7053571428571429,
+          "expertEM": 0.6785714285714286
+        },
+        "D": {
+          "n": 56,
+          "teamEM": 0.7142857142857143,
+          "expertEM": 0.7678571428571429
+        },
+        "B_check": {
+          "n": 56,
+          "teamEM": 0.7678571428571429,
+          "expertEM": 0.7857142857142857
+        },
+        "B_relation": {
+          "n": 56,
+          "teamEM": 0.7678571428571429,
+          "expertEM": 0.7857142857142857
+        }
+      },
+      "fresh_strict": {
+        "A": {
+          "n": 29,
+          "teamEM": 0.6379310344827587,
+          "expertEM": 0.6206896551724138
+        },
+        "B": {
+          "n": 29,
+          "teamEM": 0.7241379310344828,
+          "expertEM": 0.7586206896551724
+        },
+        "C": {
+          "n": 29,
+          "teamEM": 0.6551724137931034,
+          "expertEM": 0.5862068965517241
+        },
+        "D": {
+          "n": 29,
+          "teamEM": 0.6896551724137931,
+          "expertEM": 0.7241379310344828
+        },
+        "B_check": {
+          "n": 29,
+          "teamEM": 0.7241379310344828,
+          "expertEM": 0.7586206896551724
+        },
+        "B_relation": {
+          "n": 29,
+          "teamEM": 0.7241379310344828,
+          "expertEM": 0.7586206896551724
+        }
+      },
+      "fresh_answer_overlap": {
+        "A": {
+          "n": 27,
+          "teamEM": 0.7592592592592593,
+          "expertEM": 0.8148148148148148
+        },
+        "B": {
+          "n": 27,
+          "teamEM": 0.8148148148148148,
+          "expertEM": 0.8148148148148148
+        },
+        "C": {
+          "n": 27,
+          "teamEM": 0.7592592592592593,
+          "expertEM": 0.7777777777777778
+        },
+        "D": {
+          "n": 27,
+          "teamEM": 0.7407407407407407,
+          "expertEM": 0.8148148148148148
+        },
+        "B_check": {
+          "n": 27,
+          "teamEM": 0.8148148148148148,
+          "expertEM": 0.8148148148148148
+        },
+        "B_relation": {
+          "n": 27,
+          "teamEM": 0.8148148148148148,
+          "expertEM": 0.8148148148148148
+        }
+      },
+      "old_coverage": {
+        "A": {
+          "n": 36,
+          "teamEM": 0.5763888888888888,
+          "expertEM": 0.6388888888888888
+        },
+        "B": {
+          "n": 36,
+          "teamEM": 0.6666666666666666,
+          "expertEM": 0.7222222222222222
+        },
+        "C": {
+          "n": 35,
+          "teamEM": 0.5928571428571429,
+          "expertEM": 0.6
+        },
+        "D": {
+          "n": 36,
+          "teamEM": 0.6388888888888888,
+          "expertEM": 0.6944444444444444
+        },
+        "B_check": {
+          "n": 36,
+          "teamEM": 0.6388888888888888,
+          "expertEM": 0.7222222222222222
+        },
+        "B_relation": {
+          "n": 36,
+          "teamEM": 0.6388888888888888,
+          "expertEM": 0.7222222222222222
+        }
+      },
+      "mechanism": {
+        "A": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.75
+        },
+        "B": {
+          "n": 8,
+          "teamEM": 0.4375,
+          "expertEM": 0.625
+        },
+        "C": {
+          "n": 8,
+          "teamEM": 0.15625,
+          "expertEM": 0.625
+        },
+        "D": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.375
+        },
+        "B_check": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.625
+        },
+        "B_relation": {
+          "n": 8,
+          "teamEM": 0.375,
+          "expertEM": 0.625
+        }
+      },
+      "all": {
+        "A": {
+          "n": 100,
+          "teamEM": 0.6275,
+          "expertEM": 0.69
+        },
+        "B": {
+          "n": 100,
+          "teamEM": 0.705,
+          "expertEM": 0.75
+        },
+        "C": {
+          "n": 99,
+          "teamEM": 0.6212121212121212,
+          "expertEM": 0.6464646464646465
+        },
+        "D": {
+          "n": 100,
+          "teamEM": 0.66,
+          "expertEM": 0.71
+        },
+        "B_check": {
+          "n": 100,
+          "teamEM": 0.69,
+          "expertEM": 0.75
+        },
+        "B_relation": {
+          "n": 100,
+          "teamEM": 0.69,
+          "expertEM": 0.75
+        }
+      }
+    }
+  }
+}

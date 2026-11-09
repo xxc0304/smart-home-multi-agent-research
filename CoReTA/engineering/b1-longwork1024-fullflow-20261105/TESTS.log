@@ -1,0 +1,53 @@
+test_complete_visibility_and_paired_seeds (test_b1_concise.ConciseChecks.test_complete_visibility_and_paired_seeds) ... ok
+test_initial_format_failure_never_starts_dependents (test_b1_concise.ConciseChecks.test_initial_format_failure_never_starts_dependents) ... ok
+test_mixed_contract_cannot_be_reported_as_one_batch (test_b1_concise.ConciseChecks.test_mixed_contract_cannot_be_reported_as_one_batch) ... ok
+test_natural_answer_and_technical_failure_are_distinct (test_b1_concise.ConciseChecks.test_natural_answer_and_technical_failure_are_distinct) ... ok
+test_readable_cannot_be_pooled_with_strict_contract (test_b1_concise.ConciseChecks.test_readable_cannot_be_pooled_with_strict_contract) ... ok
+test_readable_empty_text_still_blocks_and_prompts_are_identical (test_b1_concise.ConciseChecks.test_readable_empty_text_still_blocks_and_prompts_are_identical) ... ok
+test_readable_word_warning_keeps_raw_text_and_all_dependencies (test_b1_concise.ConciseChecks.test_readable_word_warning_keeps_raw_text_and_all_dependencies) ... ok
+test_work_failure_isolated_to_that_arm_and_replayable (test_b1_concise.ConciseChecks.test_work_failure_isolated_to_that_arm_and_replayable) ... ok
+test_branch_failure_blocks_dependents_not_other_arms (test_b1_controls.ProtocolChecks.test_branch_failure_blocks_dependents_not_other_arms) ... ok
+test_immediate_broadcast_and_no_other_final (test_b1_controls.ProtocolChecks.test_immediate_broadcast_and_no_other_final) ... ok
+test_initial_failure_stops_dependencies_and_raw_kept (test_b1_controls.ProtocolChecks.test_initial_failure_stops_dependencies_and_raw_kept) ... ok
+test_initials_shared_only_once_and_disclosure_delayed (test_b1_controls.ProtocolChecks.test_initials_shared_only_once_and_disclosure_delayed) ... ok
+test_matched_orders_seeds_and_two_turns (test_b1_controls.ProtocolChecks.test_matched_orders_seeds_and_two_turns) ... ok
+test_private_history_is_only_own_and_no_cross_arm (test_b1_controls.ProtocolChecks.test_private_history_is_only_own_and_no_cross_arm) ... ok
+test_snapshots_and_real_origin (test_b1_controls.ProtocolChecks.test_snapshots_and_real_origin) ... ok
+test_batch_missing_not_hidden_and_zero_denominator (test_b1_controls.ScoringChecks.test_batch_missing_not_hidden_and_zero_denominator) ... ok
+test_empty_short_answer_abstains_without_schema_error (test_b1_controls.ScoringChecks.test_empty_short_answer_abstains_without_schema_error) ... ok
+test_raw_short_answers_are_not_cleaned_twice (test_b1_controls.ScoringChecks.test_raw_short_answers_are_not_cleaned_twice) ... ok
+test_readout_loss_distinct_from_expert_harm_and_fixture (test_b1_controls.ScoringChecks.test_readout_loss_distinct_from_expert_harm_and_fixture) ... ok
+test_replay_rejects_changed_visibility (test_b1_controls.ScoringChecks.test_replay_rejects_changed_visibility) ... ok
+test_tie_expected_score_and_no_expert_priority (test_b1_controls.ScoringChecks.test_tie_expected_score_and_no_expert_priority) ... ok
+test_cannot_pool_old_and_new_contract (test_b1_long_work.LongWorkChecks.test_cannot_pool_old_and_new_contract) ... ok
+test_long_contract_requires_registered_short_answer_shape (test_b1_long_work.LongWorkChecks.test_long_contract_requires_registered_short_answer_shape) ... ok
+test_no_word_limit_or_new_unknown_instruction (test_b1_long_work.LongWorkChecks.test_no_word_limit_or_new_unknown_instruction) ... ok
+test_only_work_cap_changes_prompts_visibility_and_seeds_identical (test_b1_long_work.LongWorkChecks.test_only_work_cap_changes_prompts_visibility_and_seeds_identical) ... ok
+test_real_failure_still_isolates_dependents (test_b1_long_work.LongWorkChecks.test_real_failure_still_isolates_dependents) ... ok
+test_runtime_manifest_registration_and_resume_gate (test_b1_long_work.LongWorkChecks.test_runtime_manifest_registration_and_resume_gate) ... ok
+test_C_scores_bound_to_adapter_and_inference (test_b1_runtime.RuntimeChecks.test_C_scores_bound_to_adapter_and_inference) ... ok
+test_OOM_stops_and_records_missing_denominator (test_b1_runtime.RuntimeChecks.test_OOM_stops_and_records_missing_denominator) ... ok
+test_complete_52_fixture_resume_and_budget (test_b1_runtime.RuntimeChecks.test_complete_52_fixture_resume_and_budget) ... ok
+test_fixed_D_inputs_and_groups_without_targets (test_b1_runtime.RuntimeChecks.test_fixed_D_inputs_and_groups_without_targets) ... ok
+test_origin_and_missing_independent_C_gate (test_b1_runtime.RuntimeChecks.test_origin_and_missing_independent_C_gate) ... ok
+test_pending_configuration_refuses_before_load (test_b1_runtime.RuntimeChecks.test_pending_configuration_refuses_before_load) ... ok
+test_prefix_parser_does_not_parse_unselected_labels (test_b1_runtime.RuntimeChecks.test_prefix_parser_does_not_parse_unselected_labels) ... ok
+test_real_large_batch_cannot_skip_early_stages (test_b1_runtime.RuntimeChecks.test_real_large_batch_cannot_skip_early_stages) ... ok
+test_revised_answer_contract_replay_resume_and_scoring (test_b1_runtime.RuntimeChecks.test_revised_answer_contract_replay_resume_and_scoring) ... ok
+test_tiny_local_Peft_route_and_generation_entry (test_b1_runtime.RuntimeChecks.test_tiny_local_Peft_route_and_generation_entry) ... 
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 941.91it/s]
+
+Loading weights:   0%|          | 0/12 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 12/12 [00:00<00:00, 21336.01it/s]
+[transformers] Passing `generation_config` together with generation-related arguments=({'max_time', 'max_new_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+ok
+test_cap_without_eos (test_b1_stop_status.StopChecks.test_cap_without_eos) ... ok
+test_eos_at_cap_is_success (test_b1_stop_status.StopChecks.test_eos_at_cap_is_success) ... ok
+test_time_limit_is_not_token_limit (test_b1_stop_status.StopChecks.test_time_limit_is_not_token_limit) ... ok
+test_unknown_stop_never_passes (test_b1_stop_status.StopChecks.test_unknown_stop_never_passes) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 4.992s
+
+OK

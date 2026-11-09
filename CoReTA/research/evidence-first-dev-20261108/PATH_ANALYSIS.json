@@ -1,0 +1,1963 @@
+{
+  "table": [
+    {
+      "id": 1,
+      "name": "evacuation_west_city",
+      "gold": "West City",
+      "initial": {
+        "M3": "W",
+        "M2": "C",
+        "M1": "W",
+        "M4": "?"
+      },
+      "all_hidden": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "selected_hidden": [
+        "H03",
+        "H02",
+        "H01",
+        "H04"
+      ],
+      "arms": {
+        "A_private": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_1",
+            "M2": "option_1",
+            "M3": "option_1",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 2035,
+          "input_tokens": 26205,
+          "output_tokens": 2574,
+          "seconds": 110.248886640009
+        },
+        "B_ordinary": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 2879,
+          "input_tokens": 73963,
+          "output_tokens": 3439,
+          "seconds": 152.5520709718112
+        },
+        "E_facts": {
+          "team": 0.5,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "C",
+            "M3": "C",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_1",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_1"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 3068,
+          "input_tokens": 67738,
+          "output_tokens": 3084,
+          "seconds": 137.35616973100696
+        },
+        "F_facts_opinions": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 1978,
+          "input_tokens": 68008,
+          "output_tokens": 1994,
+          "seconds": 92.47234557417687
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "toma_butera_2009",
+      "gold": "Mr. X's son",
+      "initial": {
+        "M2": "W",
+        "M4": "C",
+        "M1": "C",
+        "M3": "C"
+      },
+      "all_hidden": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "selected_hidden": [
+        "H01",
+        "H03",
+        "H02"
+      ],
+      "arms": {
+        "A_private": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "W",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_4",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 2180,
+          "input_tokens": 25515,
+          "output_tokens": 2741,
+          "seconds": 117.0192893112544
+        },
+        "B_ordinary": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 2541,
+          "input_tokens": 67289,
+          "output_tokens": 3104,
+          "seconds": 138.065157222969
+        },
+        "E_facts": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 2913,
+          "input_tokens": 73186,
+          "output_tokens": 2929,
+          "seconds": 131.82184119697195
+        },
+        "F_facts_opinions": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_4",
+            "M2": "option_4",
+            "M3": "option_4",
+            "M4": "option_4"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "?"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 4068,
+          "input_tokens": 99635,
+          "output_tokens": 4084,
+          "seconds": 184.17538340110332
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "critical_hospital_transfer",
+      "gold": "Hospital A",
+      "initial": {
+        "M4": "W",
+        "M1": "C",
+        "M3": "W",
+        "M2": "W"
+      },
+      "all_hidden": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "selected_hidden": [
+        "H04",
+        "H02",
+        "H01",
+        "H03"
+      ],
+      "arms": {
+        "A_private": {
+          "team": 0.5,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "W",
+            "M3": "C",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_2",
+            "M3": "option_3",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 2058,
+          "input_tokens": 22653,
+          "output_tokens": 2551,
+          "seconds": 111.08057274192106
+        },
+        "B_ordinary": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 2237,
+          "input_tokens": 60648,
+          "output_tokens": 2819,
+          "seconds": 127.89768421102781
+        },
+        "E_facts": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 2475,
+          "input_tokens": 61490,
+          "output_tokens": 2491,
+          "seconds": 114.04432610014919
+        },
+        "F_facts_opinions": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "C",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_2",
+            "M3": "option_3",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 2741,
+          "input_tokens": 77103,
+          "output_tokens": 2757,
+          "seconds": 127.66917130502407
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "emergency_conference_relocation",
+      "gold": "School Gym",
+      "initial": {
+        "M2": "W",
+        "M1": "W",
+        "M3": "W",
+        "M4": "W"
+      },
+      "all_hidden": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "selected_hidden": [
+        "H02",
+        "H01",
+        "H03",
+        "H04"
+      ],
+      "arms": {
+        "A_private": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 1518,
+          "input_tokens": 19464,
+          "output_tokens": 1891,
+          "seconds": 82.80230038485024
+        },
+        "B_ordinary": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 2321,
+          "input_tokens": 56327,
+          "output_tokens": 2711,
+          "seconds": 122.65882921591401
+        },
+        "E_facts": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 1855,
+          "input_tokens": 51974,
+          "output_tokens": 1871,
+          "seconds": 86.4864018218359
+        },
+        "F_facts_opinions": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 2062,
+          "input_tokens": 64987,
+          "output_tokens": 2078,
+          "seconds": 97.23822217423003
+        }
+      }
+    },
+    {
+      "id": 30,
+      "name": "the_lead_investor_decision",
+      "gold": "Skylake Ventures",
+      "initial": {
+        "M3": "W",
+        "M1": "?",
+        "M4": "W",
+        "M2": "?"
+      },
+      "all_hidden": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "selected_hidden": [
+        "H02",
+        "H01",
+        "H03"
+      ],
+      "arms": {
+        "A_private": {
+          "team": 0.5,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "W",
+            "M3": "C",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_1",
+            "M3": "option_2",
+            "M4": "option_1"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "?"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 3214,
+          "input_tokens": 27799,
+          "output_tokens": 4066,
+          "seconds": 175.67907195788575
+        },
+        "B_ordinary": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "?"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 3652,
+          "input_tokens": 89661,
+          "output_tokens": 4547,
+          "seconds": 205.5145524208201
+        },
+        "E_facts": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "?"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 3121,
+          "input_tokens": 69495,
+          "output_tokens": 3137,
+          "seconds": 142.24327154882485
+        },
+        "F_facts_opinions": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "?"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 4017,
+          "input_tokens": 99872,
+          "output_tokens": 4033,
+          "seconds": 185.22725188586628
+        }
+      }
+    },
+    {
+      "id": 33,
+      "name": "Critical Sample Transfer",
+      "gold": "Lab Nova",
+      "initial": {
+        "M4": "W",
+        "M2": "W",
+        "M3": "W",
+        "M1": "W"
+      },
+      "all_hidden": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "selected_hidden": [
+        "H03",
+        "H01",
+        "H02"
+      ],
+      "arms": {
+        "A_private": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "C",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_2",
+            "M3": "option_1",
+            "M4": "option_1"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 1578,
+          "input_tokens": 17674,
+          "output_tokens": 2033,
+          "seconds": 88.44673428504029
+        },
+        "B_ordinary": {
+          "team": 1,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 3451,
+          "input_tokens": 70043,
+          "output_tokens": 3914,
+          "seconds": 175.42262055893661
+        },
+        "E_facts": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 2905,
+          "input_tokens": 61713,
+          "output_tokens": 2921,
+          "seconds": 132.2517996839597
+        },
+        "F_facts_opinions": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "?"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 3168,
+          "input_tokens": 75480,
+          "output_tokens": 3184,
+          "seconds": 145.80710363195976
+        }
+      }
+    },
+    {
+      "id": 34,
+      "name": "Safe Haven After the Spill",
+      "gold": "Cedar Station",
+      "initial": {
+        "M2": "C",
+        "M4": "W",
+        "M1": "C",
+        "M3": "C"
+      },
+      "all_hidden": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "selected_hidden": [
+        "H01",
+        "H03",
+        "H02"
+      ],
+      "arms": {
+        "A_private": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_1",
+            "M2": "option_1",
+            "M3": "option_1",
+            "M4": "option_1"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 1736,
+          "input_tokens": 19694,
+          "output_tokens": 2196,
+          "seconds": 95.89798415615223
+        },
+        "B_ordinary": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_1",
+            "M2": "option_1",
+            "M3": "option_1",
+            "M4": "option_1"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 2289,
+          "input_tokens": 57325,
+          "output_tokens": 2755,
+          "seconds": 124.49039202887798
+        },
+        "E_facts": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_1",
+            "M2": "option_1",
+            "M3": "option_1",
+            "M4": "option_1"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 1659,
+          "input_tokens": 44491,
+          "output_tokens": 1675,
+          "seconds": 77.27519034699071
+        },
+        "F_facts_opinions": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_1",
+            "M2": "option_1",
+            "M3": "option_1",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 1991,
+          "input_tokens": 58017,
+          "output_tokens": 2007,
+          "seconds": 92.99810607195832
+        }
+      }
+    },
+    {
+      "id": 50,
+      "name": "secure_meeting_room_decision",
+      "gold": "Conference Room Gamma",
+      "initial": {
+        "M1": "C",
+        "M2": "C",
+        "M3": "W",
+        "M4": "W"
+      },
+      "all_hidden": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "selected_hidden": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "arms": {
+        "A_private": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_2",
+            "M4": "option_1"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 1667,
+          "input_tokens": 19493,
+          "output_tokens": 2101,
+          "seconds": 92.0871759110014
+        },
+        "B_ordinary": {
+          "team": 0,
+          "expert": false,
+          "finals": {
+            "M1": "W",
+            "M2": "W",
+            "M3": "W",
+            "M4": "W"
+          },
+          "choices": {
+            "M1": "option_2",
+            "M2": "option_2",
+            "M3": "option_2",
+            "M4": "option_2"
+          },
+          "m1_path": [
+            {
+              "stage": "exchange",
+              "round": 0,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "W"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "W"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "W"
+            }
+          ],
+          "work_tokens": 2636,
+          "input_tokens": 61035,
+          "output_tokens": 3059,
+          "seconds": 138.56995355698746
+        },
+        "E_facts": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 1615,
+          "input_tokens": 48030,
+          "output_tokens": 1631,
+          "seconds": 76.2079424689291
+        },
+        "F_facts_opinions": {
+          "team": 1,
+          "expert": true,
+          "finals": {
+            "M1": "C",
+            "M2": "C",
+            "M3": "C",
+            "M4": "C"
+          },
+          "choices": {
+            "M1": "option_3",
+            "M2": "option_3",
+            "M3": "option_3",
+            "M4": "option_3"
+          },
+          "m1_path": [
+            {
+              "stage": "work",
+              "round": 1,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 2,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 3,
+              "result": "C"
+            },
+            {
+              "stage": "work",
+              "round": 4,
+              "result": "C"
+            },
+            {
+              "stage": "final",
+              "round": 0,
+              "result": "C"
+            }
+          ],
+          "work_tokens": 1993,
+          "input_tokens": 64669,
+          "output_tokens": 2009,
+          "seconds": 94.46537892601918
+        }
+      }
+    }
+  ],
+  "contrasts": {
+    "E_facts-B_ordinary": {
+      "team_gains": [
+        {
+          "id": 1,
+          "delta": 0.5
+        },
+        {
+          "id": 9,
+          "delta": 1
+        },
+        {
+          "id": 50,
+          "delta": 1
+        }
+      ],
+      "team_losses": [
+        {
+          "id": 33,
+          "delta": -1
+        }
+      ],
+      "expert_gains": [
+        9,
+        50
+      ],
+      "expert_losses": []
+    },
+    "E_facts-F_facts_opinions": {
+      "team_gains": [
+        {
+          "id": 4,
+          "delta": 1
+        },
+        {
+          "id": 9,
+          "delta": 1
+        }
+      ],
+      "team_losses": [
+        {
+          "id": 1,
+          "delta": -0.5
+        }
+      ],
+      "expert_gains": [
+        4,
+        9
+      ],
+      "expert_losses": [
+        1
+      ]
+    },
+    "B_ordinary-A_private": {
+      "team_gains": [
+        {
+          "id": 30,
+          "delta": 0.5
+        },
+        {
+          "id": 33,
+          "delta": 1
+        }
+      ],
+      "team_losses": [
+        {
+          "id": 9,
+          "delta": -0.5
+        },
+        {
+          "id": 50,
+          "delta": -1
+        }
+      ],
+      "expert_gains": [],
+      "expert_losses": [
+        9,
+        50
+      ]
+    }
+  },
+  "transitions": {
+    "A_private": {
+      "initial_right_final_right": [
+        4,
+        9,
+        34,
+        50
+      ],
+      "initial_right_final_wrong": [],
+      "initial_wrong_final_right": [],
+      "initial_wrong_final_wrong": [
+        1,
+        11,
+        33
+      ],
+      "unreadable_initial": [
+        30
+      ]
+    },
+    "B_ordinary": {
+      "initial_right_final_right": [
+        4,
+        34
+      ],
+      "initial_right_final_wrong": [
+        9,
+        50
+      ],
+      "initial_wrong_final_right": [],
+      "initial_wrong_final_wrong": [
+        1,
+        11,
+        33
+      ],
+      "unreadable_initial": [
+        30
+      ]
+    },
+    "E_facts": {
+      "initial_right_final_right": [
+        4,
+        9,
+        34,
+        50
+      ],
+      "initial_right_final_wrong": [],
+      "initial_wrong_final_right": [],
+      "initial_wrong_final_wrong": [
+        1,
+        11,
+        33
+      ],
+      "unreadable_initial": [
+        30
+      ]
+    },
+    "F_facts_opinions": {
+      "initial_right_final_right": [
+        34,
+        50
+      ],
+      "initial_right_final_wrong": [
+        4,
+        9
+      ],
+      "initial_wrong_final_right": [
+        1
+      ],
+      "initial_wrong_final_wrong": [
+        11,
+        33
+      ],
+      "unreadable_initial": [
+        30
+      ]
+    }
+  },
+  "costs": {
+    "A_private": {
+      "n": 192,
+      "input_tokens": 178497,
+      "output_tokens": 20153,
+      "seconds": 873.2620153881144
+    },
+    "B_ordinary": {
+      "n": 192,
+      "input_tokens": 536291,
+      "output_tokens": 26348,
+      "seconds": 1185.1712601873442
+    },
+    "E_facts": {
+      "n": 192,
+      "input_tokens": 498425,
+      "output_tokens": 20209,
+      "seconds": 920.2749101757072
+    },
+    "F_facts_opinions": {
+      "n": 192,
+      "input_tokens": 628079,
+      "output_tokens": 22616,
+      "seconds": 1042.6409302473767
+    }
+  },
+  "cost_note": "E/F each charged full shared fact-selection cost; common initials excluded symmetrically. Branch initial selections counted as full selected statements, not semantic-use proof."
+}

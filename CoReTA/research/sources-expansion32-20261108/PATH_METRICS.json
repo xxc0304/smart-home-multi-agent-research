@@ -1,0 +1,930 @@
+{
+  "strict_parser_reconstruction_pass": true,
+  "initialStats": {
+    "M1_n": 60,
+    "M1_known": 59,
+    "M1_correct": 26,
+    "ordinary_n": 180,
+    "ordinary_known": 173,
+    "ordinary_correct": 21
+  },
+  "member": {
+    "B_ordinary": {
+      "team": 0.35,
+      "M1": 0.5333333333333333,
+      "M1_correct_team_not_fully_correct": [
+        [
+          14,
+          2026110910
+        ],
+        [
+          14,
+          2126110910
+        ],
+        [
+          24,
+          2026110910
+        ],
+        [
+          24,
+          2126110910
+        ],
+        [
+          28,
+          2026110910
+        ],
+        [
+          32,
+          2026110910
+        ],
+        [
+          32,
+          2126110910
+        ],
+        [
+          35,
+          2026110910
+        ],
+        [
+          36,
+          2126110910
+        ],
+        [
+          46,
+          2026110910
+        ],
+        [
+          46,
+          2126110910
+        ],
+        [
+          53,
+          2026110910
+        ]
+      ],
+      "M1_wrong_team_better": [],
+      "ordinary": 0.3333333333333333
+    },
+    "E_facts": {
+      "team": 0.55,
+      "M1": 0.6166666666666667,
+      "M1_correct_team_not_fully_correct": [
+        [
+          24,
+          2126110910
+        ],
+        [
+          46,
+          2026110910
+        ],
+        [
+          52,
+          2026110910
+        ],
+        [
+          57,
+          2126110910
+        ]
+      ],
+      "M1_wrong_team_better": [],
+      "ordinary": 0.5444444444444444
+    },
+    "S_same_sources_m1": {
+      "team": 0.5833333333333334,
+      "M1": 0.5833333333333334,
+      "M1_correct_team_not_fully_correct": [],
+      "M1_wrong_team_better": [],
+      "ordinary": null
+    }
+  },
+  "decomposition": {
+    "E_M1_improved_over_S": [
+      [
+        16,
+        2026110910
+      ],
+      [
+        45,
+        2126110910
+      ],
+      [
+        48,
+        2026110910
+      ],
+      [
+        49,
+        2026110910
+      ],
+      [
+        49,
+        2126110910
+      ],
+      [
+        56,
+        2126110910
+      ],
+      [
+        60,
+        2126110910
+      ]
+    ],
+    "E_M1_worse_than_S": [
+      [
+        16,
+        2126110910
+      ],
+      [
+        58,
+        2126110910
+      ],
+      [
+        60,
+        2026110910
+      ],
+      [
+        63,
+        2026110910
+      ],
+      [
+        64,
+        2126110910
+      ]
+    ],
+    "E_team_gain_over_B_with_B_M1_already_final_correct": [
+      [
+        14,
+        2026110910
+      ],
+      [
+        14,
+        2126110910
+      ],
+      [
+        24,
+        2026110910
+      ],
+      [
+        28,
+        2026110910
+      ],
+      [
+        32,
+        2026110910
+      ],
+      [
+        32,
+        2126110910
+      ],
+      [
+        36,
+        2126110910
+      ],
+      [
+        46,
+        2126110910
+      ],
+      [
+        53,
+        2026110910
+      ]
+    ],
+    "E_team_gain_over_B_with_M1_improvement": [
+      [
+        16,
+        2026110910
+      ],
+      [
+        29,
+        2126110910
+      ],
+      [
+        45,
+        2126110910
+      ],
+      [
+        48,
+        2026110910
+      ],
+      [
+        49,
+        2026110910
+      ],
+      [
+        49,
+        2126110910
+      ],
+      [
+        56,
+        2126110910
+      ],
+      [
+        60,
+        2126110910
+      ]
+    ]
+  },
+  "source_coverage": {
+    "all_units": 64,
+    "all_hidden_selected": 64,
+    "missing": []
+  },
+  "byArm": {
+    "B_ordinary": {
+      "paths": 256,
+      "strict_last_known": 234,
+      "explicit_last_known": 234,
+      "both_known": 234,
+      "changed": 20,
+      "correct_to_wrong": 6,
+      "wrong_to_correct": 5,
+      "wrong_to_wrong": 9,
+      "changed_back_to_initial": 17,
+      "harmful_source_tasks": [
+        41,
+        48,
+        49,
+        53
+      ],
+      "changes": [
+        {
+          "task": 13,
+          "seed": 2126110910,
+          "arm": "B_ordinary",
+          "actor": "M1",
+          "last_call": 82,
+          "final_call": 85,
+          "strict_last": "Lab Alpha",
+          "last": "Lab Alpha",
+          "last_mode": "strict",
+          "final": "Lab Gamma",
+          "initial": "Lab Alpha",
+          "last_correct": false,
+          "final_correct": true,
+          "last_text": "After reviewing the evidence, Lab Alpha is the only lab with the specialized code machine (S01) and has a history of security violations (S03). H01 confirms Lab Alpha’s machine was never removed during the theft window, and H04 shows their staff were in the break room, which contradicts any claim of theft. However, Lab Gamma’s missing person report is inconsistent with their badge records (H03), but H03 also shows their headcount is consistent.  \nANSWER: Lab Alpha",
+          "final_text": "Lab Gamma",
+          "all_work_correct": [
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 13,
+          "seed": 2126110910,
+          "arm": "B_ordinary",
+          "actor": "M4",
+          "last_call": 84,
+          "final_call": 88,
+          "strict_last": "Lab Alpha",
+          "last": "Lab Alpha",
+          "last_mode": "strict",
+          "final": "Lab Gamma",
+          "initial": "Lab Gamma",
+          "last_correct": false,
+          "final_correct": true,
+          "last_text": "After reviewing all evidence, Lab Alpha is the only one with the specialized code machine (S01) and has a history of security violations (S03). While H04 shows Lab Alpha’s staff were in the break room, this contradicts their access claim, but the break room is in a different building, which may not implicate them. Lab Gamma’s missing person report is inconsistent with their badge records, but H03 shows their headcount is consistent.  \nANSWER: Lab Alpha",
+          "final_text": "Lab Gamma",
+          "all_work_correct": [
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "task": 14,
+          "seed": 2126110910,
+          "arm": "B_ordinary",
+          "actor": "M1",
+          "last_call": 198,
+          "final_call": 199,
+          "strict_last": "Restaurant B",
+          "last": "Restaurant B",
+          "last_mode": "strict",
+          "final": "Restaurant C",
+          "initial": "Restaurant C",
+          "last_correct": false,
+          "final_correct": true,
+          "last_text": "**Explanation:**  \nRestaurant B is safe for the shellfish allergy, offers vegetarian options, and is known for a quiet atmosphere. While M1 initially considered Restaurant C, it is noisy and has potential cross-contamination risks. The consensus among all members supports Restaurant B as the safest and most suitable choice.  \n\nANSWER: Restaurant B",
+          "final_text": "Restaurant C",
+          "all_work_correct": [
+            false,
+            false,
+            true,
+            false
+          ]
+        },
+        {
+          "task": 17,
+          "seed": 2126110910,
+          "arm": "B_ordinary",
+          "actor": "M4",
+          "last_call": 423,
+          "final_call": 430,
+          "strict_last": "Riverbank Clearing (B)",
+          "last": "Riverbank Clearing (B)",
+          "last_mode": "strict",
+          "final": "Plateau Camp (D)",
+          "initial": "Riverbank Clearing (B)",
+          "last_correct": false,
+          "final_correct": true,
+          "last_text": "The Riverbank Clearing (B) is closest to sightings, has easy river access, and level ground, but faces nighttime predator risks. Plateau Camp (D) is safer with no insects but farther from the animal. While D is safer, B offers better proximity and accessibility. Considering safety, proximity, and accessibility, Riverbank Clearing (B) is the best choice.  \nANSWER: Riverbank Clearing (B)",
+          "final_text": "Plateau Camp (D)",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 29,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M1",
+          "last_call": 708,
+          "final_call": 712,
+          "strict_last": "Mountain Lodge",
+          "last": "Mountain Lodge",
+          "last_mode": "strict",
+          "final": "Summerfield School",
+          "initial": "Summerfield School",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "**Explanation:** A landslide warning has been issued for Summerfield School, making it unsafe. Mountain Lodge has a confirmed chemical spill hazard. Riverside Park has a fallen tree on the north lane. Only Mountain Lodge meets all criteria without immediate environmental hazards.  \n\nANSWER: Mountain Lodge",
+          "final_text": "Summerfield School",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 29,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M4",
+          "last_call": 710,
+          "final_call": 715,
+          "strict_last": "Mountain Lodge",
+          "last": "Mountain Lodge",
+          "last_mode": "strict",
+          "final": "Summerfield School",
+          "initial": "Summerfield School",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "**Explanation:**  \nMountain Lodge has no weather alerts and a safe bridge, but a chemical spill hazard was confirmed. Summerfield School has backup generators but a landslide warning. Riverside Park has a fallen tree. Only Mountain Lodge meets all criteria without immediate environmental hazards.  \n\nANSWER: Mountain Lodge",
+          "final_text": "Summerfield School",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 39,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M1",
+          "last_call": 1280,
+          "final_call": 1282,
+          "strict_last": "LZ Charlie",
+          "last": "LZ Charlie",
+          "last_mode": "strict",
+          "final": "LZ Bravo",
+          "initial": "LZ Bravo",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "**Explanation:** While LZ Bravo has full support and clear approach, recent evidence shows flooding is submerging part of its runway, making it unsafe. LZ Charlie has a clear main runway despite minor taxiway repairs and crosswinds that now exceed limits. After reviewing all evidence, LZ Charlie is the safest option with a clear runway and minimal immediate risks.\n\nANSWER: LZ Charlie",
+          "final_text": "LZ Bravo",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 39,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M2",
+          "last_call": 1278,
+          "final_call": 1283,
+          "strict_last": "LZ Charlie",
+          "last": "LZ Charlie",
+          "last_mode": "strict",
+          "final": "LZ Bravo",
+          "initial": "LZ Bravo",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "**Explanation:** While LZ Bravo has full medical and fire support and a clear runway, recent evidence indicates flooding is submerging part of its runway, raising safety concerns. LZ Charlie has a clear main runway despite minor taxiway repairs, making it the safest option under current conditions. The risk of flooding at Bravo and crosswinds at Charlie must be balanced, but LZ Charlie has the clearest runway with minimal immediate risks.  \n\nANSWER: LZ Charlie",
+          "final_text": "LZ Bravo",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 39,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M4",
+          "last_call": 1281,
+          "final_call": 1285,
+          "strict_last": "LZ Charlie",
+          "last": "LZ Charlie",
+          "last_mode": "strict",
+          "final": "LZ Bravo",
+          "initial": "LZ Bravo",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "**Explanation:** While LZ Bravo has full support and a clear runway, recent evidence of flooding at Bravo raises safety concerns. LZ Charlie has a clear main runway despite minor taxiway repairs and crosswinds that now exceed limits. After reviewing all evidence, LZ Charlie remains the safest option with a clear runway and minimal immediate risks.\n\n**ANSWER:** LZ Charlie",
+          "final_text": "LZ Bravo",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 39,
+          "seed": 2126110910,
+          "arm": "B_ordinary",
+          "actor": "M2",
+          "last_call": 1335,
+          "final_call": 1340,
+          "strict_last": "LZ Charlie",
+          "last": "LZ Charlie",
+          "last_mode": "strict",
+          "final": "LZ Bravo",
+          "initial": "LZ Bravo",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "**Explanation:** LZ Bravo has full medical and fire support, a clear runway, and no air traffic, making it the safest option. However, M3 and M4 raised concerns about flooding at Bravo and repairs at Charlie. Despite these, LZ Charlie's main runway is confirmed open and safe. After considering all evidence, LZ Charlie remains the most reliable choice.\n\nANSWER: LZ Charlie",
+          "final_text": "LZ Bravo",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 39,
+          "seed": 2126110910,
+          "arm": "B_ordinary",
+          "actor": "M4",
+          "last_call": 1336,
+          "final_call": 1342,
+          "strict_last": "LZ Charlie",
+          "last": "LZ Charlie",
+          "last_mode": "strict",
+          "final": "LZ Bravo",
+          "initial": "LZ Bravo",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "**Explanation:** While LZ Bravo has full support and a clear runway, recent evidence indicates flooding at Bravo may compromise safety. LZ Charlie has a clear main runway despite repair work, making it the most reliable option. After weighing all evidence, LZ Charlie remains the safest choice.\n\nANSWER: LZ Charlie",
+          "final_text": "LZ Bravo",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 41,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M4",
+          "last_call": 1394,
+          "final_call": 1399,
+          "strict_last": "Mars Colony",
+          "last": "Mars Colony",
+          "last_mode": "strict",
+          "final": "Orion Station",
+          "initial": "Orion Station",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "**Explanation:** Orion Station has a ready shuttle and sufficient oxygen for 8 hours, but M1 and M3 note oxygen supply issues. Mars Colony has verified life-support systems and cleared landing pads, making it more reliable despite the distance. While Orion is immediate, Mars is safer given the criticality of life-support systems.  \n\nANSWER: Mars Colony",
+          "final_text": "Orion Station",
+          "all_work_correct": [
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "task": 45,
+          "seed": 2126110910,
+          "arm": "B_ordinary",
+          "actor": "M3",
+          "last_call": 1678,
+          "final_call": 1683,
+          "strict_last": "Lab Beta",
+          "last": "Lab Beta",
+          "last_mode": "strict",
+          "final": "Lab Gamma",
+          "initial": "Lab Gamma",
+          "last_correct": false,
+          "final_correct": true,
+          "last_text": "**Explanation:** Lab Beta is on the second floor, reinforced for earthquakes, with secure chemical storage and restored power. M1 raised a structural concern, but no confirmation of failure was provided. Lab Gamma has power issues and lacks key reagents. Based on available evidence, Lab Beta remains the most reliable choice.  \nANSWER: Lab Beta",
+          "final_text": "Lab Gamma",
+          "all_work_correct": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 48,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M1",
+          "last_call": 1963,
+          "final_call": 1966,
+          "strict_last": "Lab 2 Bench",
+          "last": "Lab 2 Bench",
+          "last_mode": "strict",
+          "final": "Cold Storage B",
+          "initial": "Cold Storage B",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "The technician's routine and temperature sensor data strongly suggest Cold Storage B, but the faulty door sensor and the researcher's observation of no unlogged vials contradict this. The technician was seen heading toward Lab 2 after a call, but the vial was last seen in Cold Storage B. However, Lab 2’s inventory shows no record of the sample, and the Decontamination Room was undisturbed.  \nANSWER: Lab 2 Bench",
+          "final_text": "Cold Storage B",
+          "all_work_correct": [
+            null,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "task": 49,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M1",
+          "last_call": 2077,
+          "final_call": 2080,
+          "strict_last": "Hilltop Cabin",
+          "last": "Hilltop Cabin",
+          "last_mode": "strict",
+          "final": "Riverside Station",
+          "initial": "Riverside Station",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "The main bridge to Riverside Station is in good condition (S01), and the Valley Edge Outpost is blocked by a landslide (H04) and flooded trails (H03). The Hilltop Cabin’s road is not mentioned as blocked, but the highway to Valley Edge is blocked (H04). However, H02 indicates an evacuation for Riverside due to the hydro dam emergency, making it unsafe.  \nANSWER: Hilltop Cabin",
+          "final_text": "Riverside Station",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "task": 49,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M2",
+          "last_call": 2079,
+          "final_call": 2081,
+          "strict_last": "Hilltop Cabin",
+          "last": "Hilltop Cabin",
+          "last_mode": "strict",
+          "final": "Valley Edge Outpost",
+          "initial": "Valley Edge Outpost",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "**Explanation:** S01 confirms Riverside's bridge is safe, but H02 indicates evacuation for Riverside due to the hydro dam emergency. H04 blocks Valley Edge via the main highway. Hilltop Cabin is not mentioned as blocked, making it the only confirmed safe and reachable option.  \n\nANSWER: Hilltop Cabin",
+          "final_text": "Valley Edge Outpost",
+          "all_work_correct": [
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "task": 53,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M2",
+          "last_call": 2418,
+          "final_call": 2423,
+          "strict_last": "Mountain Ridge",
+          "last": "Mountain Ridge",
+          "last_mode": "strict",
+          "final": "Ocean Bluff",
+          "initial": "Forest Edge",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "**Explanation:**  \nOcean Bluff is stable and accessible but faces flood risk (H04). Forest Edge is prohibited by wildlife restrictions (H03). River Valley has unstable soil (H02). Mountain Ridge is accessible (S02) and has no immediate prohibitions, making it the most feasible site.  \n\nANSWER: Mountain Ridge",
+          "final_text": "Ocean Bluff",
+          "all_work_correct": [
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "task": 53,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M3",
+          "last_call": 2421,
+          "final_call": 2424,
+          "strict_last": "Mountain Ridge",
+          "last": "Mountain Ridge",
+          "last_mode": "strict",
+          "final": "Ocean Bluff",
+          "initial": "Ocean Bluff",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "**Explanation:** Forest Edge is prohibited by H03. Ocean Bluff faces flood risk (H04). Mountain Ridge is accessible (S02) and has no immediate prohibitions. River Valley lacks access details. Mountain Ridge is the most feasible site.  \nANSWER: Mountain Ridge",
+          "final_text": "Ocean Bluff",
+          "all_work_correct": [
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "task": 60,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M2",
+          "last_call": 2989,
+          "final_call": 2993,
+          "strict_last": "Area C (the Meadow)",
+          "last": "Area C (the Meadow)",
+          "last_mode": "strict",
+          "final": "Area B (the Wetland)",
+          "initial": "Area B (the Wetland)",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "The conflicting opinions center on whether H02 rules out Area C. While H02 states that Area C's only suitable clearing is inaccessible, the ranger's report describes a grassy clearing with dew, which matches Area C's environment. Area B is flooded, and Area A has no official evidence. H02 must be considered, but the description aligns more with Area C's habitat.  \n\nANSWER: Area C (the Meadow)",
+          "final_text": "Area B (the Wetland)",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 61,
+          "seed": 2026110910,
+          "arm": "B_ordinary",
+          "actor": "M1",
+          "last_call": 3103,
+          "final_call": 3106,
+          "strict_last": "Main Generator Room",
+          "last": "Main Generator Room",
+          "last_mode": "strict",
+          "final": "Water Pump Facility",
+          "initial": "Water Pump Facility",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "The main generator failed at midnight, with lightning striking near it. The water pumps continued operating until 1:15am, indicating the failure didn't immediately affect them. The communication tower had a surge trigger, but the generator was previously checked and is the most likely source.  \nANSWER: Main Generator Room",
+          "final_text": "Water Pump Facility",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ]
+    },
+    "E_facts": {
+      "paths": 256,
+      "strict_last_known": 239,
+      "explicit_last_known": 239,
+      "both_known": 239,
+      "changed": 5,
+      "correct_to_wrong": 2,
+      "wrong_to_correct": 2,
+      "wrong_to_wrong": 1,
+      "changed_back_to_initial": 5,
+      "harmful_source_tasks": [
+        32,
+        60
+      ],
+      "changes": [
+        {
+          "task": 32,
+          "seed": 2026110910,
+          "arm": "E_facts",
+          "actor": "M4",
+          "last_call": 842,
+          "final_call": 849,
+          "strict_last": "Route C (Old Supply Road)",
+          "last": "Route C (Old Supply Road)",
+          "last_mode": "strict",
+          "final": "Route B (Frozen Lake)",
+          "initial": "Route B (Frozen Lake)",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "**Explanation:** Route B is blocked by a quarantine due to a viral outbreak, and Route A faces a high landslide risk. Route C has structural safety and a specialized rescue unit, making it the safest option despite challenges. The bridge is structurally sound, and backup is available.\n\nANSWER: Route C (Old Supply Road)",
+          "final_text": "Route B (Frozen Lake)",
+          "all_work_correct": [
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "task": 48,
+          "seed": 2126110910,
+          "arm": "E_facts",
+          "actor": "M4",
+          "last_call": 2040,
+          "final_call": 2046,
+          "strict_last": "Cold Storage B",
+          "last": "Cold Storage B",
+          "last_mode": "strict",
+          "final": "Lab 2 Bench",
+          "initial": "Lab 2 Bench",
+          "last_correct": false,
+          "final_correct": true,
+          "last_text": "The technician typically stores samples in Cold Storage B, and temperature sensors showed it was opened around the time she finished. Another researcher saw no unlogged vials there, but the technician was seen heading toward Lab 2 after a call, suggesting she may have moved the sample. However, Lab 2’s inventory shows no record of the sample, making Cold Storage B the most likely location.  \nCold Storage B",
+          "final_text": "Lab 2 Bench",
+          "all_work_correct": [
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "task": 52,
+          "seed": 2026110910,
+          "arm": "E_facts",
+          "actor": "M1",
+          "last_call": 2326,
+          "final_call": 2328,
+          "strict_last": "Red Cliff Lodge",
+          "last": "Red Cliff Lodge",
+          "last_mode": "strict",
+          "final": "Green Valley Outpost",
+          "initial": "Green Valley Outpost",
+          "last_correct": false,
+          "final_correct": true,
+          "last_text": "The Blue Lake Cabin's bridge is now impassable due to a dam release, making it inaccessible. Red Cliff Lodge is directly in the storm's path with extreme winds, but its solid stone structure is more likely to withstand the storm. Green Valley Outpost is rated for emergency use but is further away. However, structural integrity is critical in this scenario.  \nANSWER: Red Cliff Lodge",
+          "final_text": "Green Valley Outpost",
+          "all_work_correct": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 53,
+          "seed": 2126110910,
+          "arm": "E_facts",
+          "actor": "M2",
+          "last_call": 2496,
+          "final_call": 2500,
+          "strict_last": "Forest Edge",
+          "last": "Forest Edge",
+          "last_mode": "strict",
+          "final": "Ocean Bluff",
+          "initial": "Ocean Bluff",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "**Explanation:** Forest Edge has an open access road (S04) but faces a new wildlife restriction (H03) starting tomorrow. Ocean Bluff is inaccessible due to flooding (H04). Mountain Ridge is risky (H01), and River Valley is unstable (H02). Despite the new hazard, Forest Edge is the only site with confirmed accessibility and no immediate hazards.\n\nANSWER: Forest Edge",
+          "final_text": "Ocean Bluff",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 60,
+          "seed": 2126110910,
+          "arm": "E_facts",
+          "actor": "M2",
+          "last_call": 3067,
+          "final_call": 3070,
+          "strict_last": "Area A (the Oak Woods)",
+          "last": "Area A (the Oak Woods)",
+          "last_mode": "strict",
+          "final": "Area B (the Wetland)",
+          "initial": "Area B (the Wetland)",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "The analysis by M1, M2, and M3 supports Area B as inaccessible due to flooding (H01) and Area C ruled out by H02 and H04. M4 and others argue for Area A based on amateur sightings (H03), but H02 blocks Area C and H04 rules it out due to wild dogs. The only remaining plausible area is Area A, despite lack of official evidence.  \nANSWER: Area A (the Oak Woods)",
+          "final_text": "Area B (the Wetland)",
+          "all_work_correct": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    "S_same_sources_m1": {
+      "paths": 64,
+      "strict_last_known": 57,
+      "explicit_last_known": 58,
+      "both_known": 58,
+      "changed": 3,
+      "correct_to_wrong": 2,
+      "wrong_to_correct": 0,
+      "wrong_to_wrong": 1,
+      "changed_back_to_initial": 3,
+      "harmful_source_tasks": [
+        45,
+        49
+      ],
+      "changes": [
+        {
+          "task": 35,
+          "seed": 2026110910,
+          "arm": "S_same_sources_m1",
+          "actor": "M1",
+          "last_call": 967,
+          "final_call": 968,
+          "strict_last": "Green House",
+          "last": "Green House",
+          "last_mode": "strict",
+          "final": "Blue House",
+          "initial": "Blue House",
+          "last_correct": false,
+          "final_correct": false,
+          "last_text": "The Blue House is open with volunteers, but there are gas pipe concerns and a closed bridge. The Green House is inaccessible. The Red House has limited supplies but is likely safe. However, the Blue House's risks are not as severe as the Green House's inaccessibility.  \nANSWER: Green House",
+          "final_text": "Blue House",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "task": 45,
+          "seed": 2126110910,
+          "arm": "S_same_sources_m1",
+          "actor": "M1",
+          "last_call": 1708,
+          "final_call": 1709,
+          "strict_last": "Lab Gamma",
+          "last": "Lab Gamma",
+          "last_mode": "strict",
+          "final": "Lab Beta",
+          "initial": "Lab Beta",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "**Explanation:** Lab Beta has secure chemical storage and earthquake reinforcement but faces a structural crack risk. Lab Gamma has emergency power and air filtration but lacks key reagents. Lab Alpha is at risk of flooding. While Beta has risks, Gamma’s power and air system are critical for research, and reagents may be delivered soon.  \n**ANSWER: Lab Gamma**",
+          "final_text": "Lab Beta",
+          "all_work_correct": [
+            false,
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "task": 49,
+          "seed": 2026110910,
+          "arm": "S_same_sources_m1",
+          "actor": "M1",
+          "last_call": 2107,
+          "final_call": 2108,
+          "strict_last": "Hilltop Cabin",
+          "last": "Hilltop Cabin",
+          "last_mode": "strict",
+          "final": "Riverside Station",
+          "initial": "Riverside Station",
+          "last_correct": true,
+          "final_correct": false,
+          "last_text": "The Riverside Station's bridge is in good condition (S01), but H02 states it is downstream of a hydro dam emergency, which evicts it. Valley Edge is blocked by a landslide (H04) and flooded trails (H03). Hilltop Cabin's road is not mentioned as blocked, but H02's evacuation order affects Riverside, not Hilltop.  \nANSWER: Hilltop Cabin",
+          "final_text": "Riverside Station",
+          "all_work_correct": [
+            true,
+            false,
+            false,
+            true
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+## 2026-11-05 T2采样核验/T3完整合同验证实际执行
+
+见engineering/b1-sampling-check-20261105/RESULTS.md与engineering/b1-concise-fullflow-20261105/RESULTS.md、SUMMARY.json。T2 24/24成功，实际采样/seed/252层adapter开关通过，12对重复逐token一致；旧普通三人对错向量完全相同，不能当独立三证据。32回归与旧32轨迹/评分完全一致；T3 V16 16/16正常（Unknown 4）；六题技术批1/2正常、0/6完整，REVISE，限技术历史失败样本且primary=false。完整流程尚未通过；末条请求{'request_id': '2hop__342640_126084|01', 'actor': 'M2', 'stage': 'initial', 'arm': None, 'status': 'FORMAT_VIOLATION', 'usage': {'input_tokens': 4111, 'output_tokens': 41, 'elapsed_seconds': 2.461280470000929, 'adapter_enabled': False, 'finish_reason': 'EOS', 'output_cap': 128, 'ended_with_eos': True, 'peak_allocated_bytes': 3968050176, 'peak_reserved_bytes': 4383047680, 'format_violation': 'WORD_LIMIT'}}。已按冻结规则停止，未自动换提示/补跑。原32仍28完整，旧分数不改，新生成42，无训练/新C-H/付费API；新提示与cap改变不冒充引擎提速。助手自审none/provisional。阶段REVISE_FULLFLOW，不自动扩样/补旧结果；下一动作见报告。
+

@@ -1,0 +1,451 @@
+{
+  "rule": {
+    "version": "SBP_LETTER_ID_AUX_V1",
+    "status": "post_observation_exploratory",
+    "exposure": "First pilot responses inspected before introducing this auxiliary metric; not preregistered.",
+    "mapping": {
+      "A": "Candidate A",
+      "B": "Candidate B",
+      "C": "Candidate C",
+      "D": "Candidate D"
+    },
+    "allowed": "Exactly four numbered lines 1..4, each one uppercase A..D or exact Candidate A..D; no duplicates.",
+    "unchanged": "No facts, rank order, gold, prompts, original parser, generation, or strict score files changed."
+  },
+  "snapshot_rows": 224,
+  "original_strict_invalid": 209,
+  "aux_invalid": 0,
+  "results": [
+    {
+      "seed": 20261108,
+      "arm": "A_private",
+      "initials": {
+        "M4": 8,
+        "M1": 2,
+        "M2": 8,
+        "M3": 8
+      },
+      "finals": {
+        "M1": 2,
+        "M2": 8,
+        "M3": 8,
+        "M4": 8
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 6.5,
+        "borda_expected_l1": 8.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 6.5,
+        "borda_expected_l1": 8.0
+      }
+    },
+    {
+      "seed": 20261108,
+      "arm": "B_hidden",
+      "initials": {
+        "M4": 8,
+        "M1": 2,
+        "M2": 8,
+        "M3": 8
+      },
+      "finals": {
+        "M1": 8,
+        "M2": 8,
+        "M3": 8,
+        "M4": 8
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 6.5,
+        "borda_expected_l1": 8.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 8.0,
+        "borda_expected_l1": 8.0
+      }
+    },
+    {
+      "seed": 20261108,
+      "arm": "D_revealed",
+      "initials": {
+        "M4": 8,
+        "M1": 2,
+        "M2": 8,
+        "M3": 8
+      },
+      "finals": {
+        "M1": 8,
+        "M2": 8,
+        "M3": 8,
+        "M4": 8
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 6.5,
+        "borda_expected_l1": 8.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 8.0,
+        "borda_expected_l1": 8.0
+      }
+    },
+    {
+      "seed": 20261108,
+      "arm": "F_full",
+      "initials": {
+        "M4": 4,
+        "M1": 2,
+        "M2": 2,
+        "M3": 0
+      },
+      "finals": {
+        "M1": 4,
+        "M2": 4,
+        "M3": 4,
+        "M4": 4
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 2.0,
+        "vote_winners": [
+          [
+            "Candidate D",
+            "Candidate A",
+            "Candidate C",
+            "Candidate B"
+          ]
+        ],
+        "random_submitter_expected_l1": 2.0,
+        "borda_expected_l1": 2.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 4.0,
+        "vote_winners": [
+          [
+            "Candidate D",
+            "Candidate A",
+            "Candidate B",
+            "Candidate C"
+          ]
+        ],
+        "random_submitter_expected_l1": 4.0,
+        "borda_expected_l1": 4.0
+      }
+    },
+    {
+      "seed": 20261108,
+      "arm": "N_none",
+      "initials": {
+        "M4": 8,
+        "M1": 8,
+        "M2": 8,
+        "M3": 8
+      },
+      "finals": {
+        "M1": 8,
+        "M2": 8,
+        "M3": 8,
+        "M4": 8
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 8.0,
+        "borda_expected_l1": 8.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 8.0,
+        "borda_expected_l1": 8.0
+      }
+    },
+    {
+      "seed": 20261109,
+      "arm": "A_private",
+      "initials": {
+        "M3": 8,
+        "M4": 8,
+        "M1": 2,
+        "M2": 8
+      },
+      "finals": {
+        "M1": 0,
+        "M2": 8,
+        "M3": 8,
+        "M4": 8
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 6.5,
+        "borda_expected_l1": 8.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 6.0,
+        "borda_expected_l1": 8.0
+      }
+    },
+    {
+      "seed": 20261109,
+      "arm": "B_hidden",
+      "initials": {
+        "M3": 8,
+        "M4": 8,
+        "M1": 2,
+        "M2": 8
+      },
+      "finals": {
+        "M1": 8,
+        "M2": 8,
+        "M3": 8,
+        "M4": 8
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 6.5,
+        "borda_expected_l1": 8.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 8.0,
+        "borda_expected_l1": 8.0
+      }
+    },
+    {
+      "seed": 20261109,
+      "arm": "D_revealed",
+      "initials": {
+        "M3": 8,
+        "M4": 8,
+        "M1": 2,
+        "M2": 8
+      },
+      "finals": {
+        "M1": 8,
+        "M2": 8,
+        "M3": 8,
+        "M4": 8
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 6.5,
+        "borda_expected_l1": 8.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate D",
+            "Candidate C"
+          ]
+        ],
+        "random_submitter_expected_l1": 8.0,
+        "borda_expected_l1": 8.0
+      }
+    },
+    {
+      "seed": 20261109,
+      "arm": "F_full",
+      "initials": {
+        "M3": 2,
+        "M4": 4,
+        "M1": 2,
+        "M2": 2
+      },
+      "finals": {
+        "M1": 2,
+        "M2": 2,
+        "M3": 2,
+        "M4": 2
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 2.0,
+        "vote_winners": [
+          [
+            "Candidate D",
+            "Candidate A",
+            "Candidate C",
+            "Candidate B"
+          ]
+        ],
+        "random_submitter_expected_l1": 2.5,
+        "borda_expected_l1": 2.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 2.0,
+        "vote_winners": [
+          [
+            "Candidate D",
+            "Candidate A",
+            "Candidate C",
+            "Candidate B"
+          ]
+        ],
+        "random_submitter_expected_l1": 2.0,
+        "borda_expected_l1": 2.0
+      }
+    },
+    {
+      "seed": 20261109,
+      "arm": "N_none",
+      "initials": {
+        "M3": 8,
+        "M4": 8,
+        "M1": 8,
+        "M2": 8
+      },
+      "finals": {
+        "M1": 8,
+        "M2": 8,
+        "M3": 8,
+        "M4": 8
+      },
+      "complete": true,
+      "initial_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 8.0,
+        "borda_expected_l1": 8.0
+      },
+      "final_aggregate": {
+        "vote_expected_l1": 8.0,
+        "vote_winners": [
+          [
+            "Candidate A",
+            "Candidate B",
+            "Candidate C",
+            "Candidate D"
+          ]
+        ],
+        "random_submitter_expected_l1": 8.0,
+        "borda_expected_l1": 8.0
+      }
+    }
+  ],
+  "source_status": "COMPLETED"
+}

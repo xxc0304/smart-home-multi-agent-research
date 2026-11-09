@@ -1,0 +1,904 @@
+{
+  "status": {
+    "status": "COMPLETED",
+    "calls": 1056,
+    "maximum_calls": 1056,
+    "new_generation_calls": 848,
+    "inherited_records": 208,
+    "unused_cache_records": 0,
+    "elapsed_seconds": 2502.167556711007,
+    "failure": null,
+    "complete_arms": 44,
+    "freeze_unchanged": true
+  },
+  "planned_task_ids": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    11,
+    23,
+    30,
+    33,
+    34,
+    50
+  ],
+  "complete_pair_ids": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    11,
+    23,
+    30,
+    33,
+    34,
+    50
+  ],
+  "all11_view": {
+    "task_ids": [
+      1,
+      4,
+      7,
+      8,
+      9,
+      11,
+      23,
+      30,
+      33,
+      34,
+      50
+    ],
+    "n": 11,
+    "means": {
+      "A_private": {
+        "n_tasks": 11,
+        "team_expected_accuracy": 0.3181818181818182,
+        "M1_final_accuracy": 0.6363636363636364,
+        "ordinary_individual_accuracy": 0.24242424242424243
+      },
+      "B_ordinary": {
+        "n_tasks": 11,
+        "team_expected_accuracy": 0.45454545454545453,
+        "M1_final_accuracy": 0.45454545454545453,
+        "ordinary_individual_accuracy": 0.3333333333333333
+      },
+      "E_facts": {
+        "n_tasks": 11,
+        "team_expected_accuracy": 0.7272727272727273,
+        "M1_final_accuracy": 0.7272727272727273,
+        "ordinary_individual_accuracy": 0.6666666666666666
+      },
+      "F_facts_opinions": {
+        "n_tasks": 11,
+        "team_expected_accuracy": 0.6363636363636364,
+        "M1_final_accuracy": 0.6363636363636364,
+        "ordinary_individual_accuracy": 0.5757575757575758
+      }
+    },
+    "M1_private_accuracy": 0.6363636363636364,
+    "contrasts": {
+      "E_facts minus B_ordinary": {
+        "gains": [
+          {
+            "task_id": 9,
+            "delta": 1.0
+          },
+          {
+            "task_id": 23,
+            "delta": 1.0
+          },
+          {
+            "task_id": 30,
+            "delta": 1.0
+          },
+          {
+            "task_id": 50,
+            "delta": 1.0
+          }
+        ],
+        "losses": [
+          {
+            "task_id": 1,
+            "delta": -1.0
+          }
+        ],
+        "mean_delta": 0.2727272727272727
+      },
+      "F_facts_opinions minus B_ordinary": {
+        "gains": [
+          {
+            "task_id": 9,
+            "delta": 1.0
+          },
+          {
+            "task_id": 23,
+            "delta": 1.0
+          },
+          {
+            "task_id": 50,
+            "delta": 1.0
+          }
+        ],
+        "losses": [
+          {
+            "task_id": 1,
+            "delta": -1.0
+          }
+        ],
+        "mean_delta": 0.18181818181818182
+      },
+      "E_facts minus F_facts_opinions": {
+        "gains": [
+          {
+            "task_id": 30,
+            "delta": 1.0
+          }
+        ],
+        "losses": [],
+        "mean_delta": 0.09090909090909091
+      },
+      "B_ordinary minus A_private": {
+        "gains": [
+          {
+            "task_id": 4,
+            "delta": 0.5
+          },
+          {
+            "task_id": 11,
+            "delta": 0.5
+          },
+          {
+            "task_id": 33,
+            "delta": 1.0
+          },
+          {
+            "task_id": 34,
+            "delta": 0.5
+          }
+        ],
+        "losses": [
+          {
+            "task_id": 50,
+            "delta": -1.0
+          }
+        ],
+        "mean_delta": 0.13636363636363635
+      }
+    },
+    "table": [
+      {
+        "task_id": 1,
+        "M1_private": false,
+        "M1_initial": false,
+        "team_expected": {
+          "A_private": 1.0,
+          "B_ordinary": 1.0,
+          "E_facts": 0.0,
+          "F_facts_opinions": 0.0
+        },
+        "M1_final": {
+          "A_private": false,
+          "B_ordinary": false,
+          "E_facts": false,
+          "F_facts_opinions": false
+        }
+      },
+      {
+        "task_id": 4,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.5,
+          "B_ordinary": 1.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 7,
+        "M1_private": false,
+        "M1_initial": false,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 0.0,
+          "F_facts_opinions": 0.0
+        },
+        "M1_final": {
+          "A_private": false,
+          "B_ordinary": false,
+          "E_facts": false,
+          "F_facts_opinions": false
+        }
+      },
+      {
+        "task_id": 8,
+        "M1_private": false,
+        "M1_initial": false,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 0.0,
+          "F_facts_opinions": 0.0
+        },
+        "M1_final": {
+          "A_private": false,
+          "B_ordinary": false,
+          "E_facts": false,
+          "F_facts_opinions": false
+        }
+      },
+      {
+        "task_id": 9,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": false,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 11,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.5,
+          "B_ordinary": 1.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 23,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 30,
+        "M1_private": false,
+        "M1_initial": false,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 0.0
+        },
+        "M1_final": {
+          "A_private": false,
+          "B_ordinary": false,
+          "E_facts": true,
+          "F_facts_opinions": false
+        }
+      },
+      {
+        "task_id": 33,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 1.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 34,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.5,
+          "B_ordinary": 1.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 50,
+        "M1_private": true,
+        "M1_initial": null,
+        "team_expected": {
+          "A_private": 1.0,
+          "B_ordinary": 0.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": false,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      }
+    ]
+  },
+  "excluding_complete_technical2_view": {
+    "task_ids": [
+      1,
+      4,
+      7,
+      8,
+      9,
+      23,
+      30,
+      34,
+      50
+    ],
+    "n": 9,
+    "means": {
+      "A_private": {
+        "n_tasks": 9,
+        "team_expected_accuracy": 0.3333333333333333,
+        "M1_final_accuracy": 0.5555555555555556,
+        "ordinary_individual_accuracy": 0.25925925925925924
+      },
+      "B_ordinary": {
+        "n_tasks": 9,
+        "team_expected_accuracy": 0.3333333333333333,
+        "M1_final_accuracy": 0.3333333333333333,
+        "ordinary_individual_accuracy": 0.25925925925925924
+      },
+      "E_facts": {
+        "n_tasks": 9,
+        "team_expected_accuracy": 0.6666666666666666,
+        "M1_final_accuracy": 0.6666666666666666,
+        "ordinary_individual_accuracy": 0.5925925925925926
+      },
+      "F_facts_opinions": {
+        "n_tasks": 9,
+        "team_expected_accuracy": 0.5555555555555556,
+        "M1_final_accuracy": 0.5555555555555556,
+        "ordinary_individual_accuracy": 0.48148148148148145
+      }
+    },
+    "M1_private_accuracy": 0.5555555555555556,
+    "contrasts": {
+      "E_facts minus B_ordinary": {
+        "gains": [
+          {
+            "task_id": 9,
+            "delta": 1.0
+          },
+          {
+            "task_id": 23,
+            "delta": 1.0
+          },
+          {
+            "task_id": 30,
+            "delta": 1.0
+          },
+          {
+            "task_id": 50,
+            "delta": 1.0
+          }
+        ],
+        "losses": [
+          {
+            "task_id": 1,
+            "delta": -1.0
+          }
+        ],
+        "mean_delta": 0.3333333333333333
+      },
+      "F_facts_opinions minus B_ordinary": {
+        "gains": [
+          {
+            "task_id": 9,
+            "delta": 1.0
+          },
+          {
+            "task_id": 23,
+            "delta": 1.0
+          },
+          {
+            "task_id": 50,
+            "delta": 1.0
+          }
+        ],
+        "losses": [
+          {
+            "task_id": 1,
+            "delta": -1.0
+          }
+        ],
+        "mean_delta": 0.2222222222222222
+      },
+      "E_facts minus F_facts_opinions": {
+        "gains": [
+          {
+            "task_id": 30,
+            "delta": 1.0
+          }
+        ],
+        "losses": [],
+        "mean_delta": 0.1111111111111111
+      },
+      "B_ordinary minus A_private": {
+        "gains": [
+          {
+            "task_id": 4,
+            "delta": 0.5
+          },
+          {
+            "task_id": 34,
+            "delta": 0.5
+          }
+        ],
+        "losses": [
+          {
+            "task_id": 50,
+            "delta": -1.0
+          }
+        ],
+        "mean_delta": 0.0
+      }
+    },
+    "table": [
+      {
+        "task_id": 1,
+        "M1_private": false,
+        "M1_initial": false,
+        "team_expected": {
+          "A_private": 1.0,
+          "B_ordinary": 1.0,
+          "E_facts": 0.0,
+          "F_facts_opinions": 0.0
+        },
+        "M1_final": {
+          "A_private": false,
+          "B_ordinary": false,
+          "E_facts": false,
+          "F_facts_opinions": false
+        }
+      },
+      {
+        "task_id": 4,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.5,
+          "B_ordinary": 1.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 7,
+        "M1_private": false,
+        "M1_initial": false,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 0.0,
+          "F_facts_opinions": 0.0
+        },
+        "M1_final": {
+          "A_private": false,
+          "B_ordinary": false,
+          "E_facts": false,
+          "F_facts_opinions": false
+        }
+      },
+      {
+        "task_id": 8,
+        "M1_private": false,
+        "M1_initial": false,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 0.0,
+          "F_facts_opinions": 0.0
+        },
+        "M1_final": {
+          "A_private": false,
+          "B_ordinary": false,
+          "E_facts": false,
+          "F_facts_opinions": false
+        }
+      },
+      {
+        "task_id": 9,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": false,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 23,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 30,
+        "M1_private": false,
+        "M1_initial": false,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 0.0
+        },
+        "M1_final": {
+          "A_private": false,
+          "B_ordinary": false,
+          "E_facts": true,
+          "F_facts_opinions": false
+        }
+      },
+      {
+        "task_id": 34,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.5,
+          "B_ordinary": 1.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 50,
+        "M1_private": true,
+        "M1_initial": null,
+        "team_expected": {
+          "A_private": 1.0,
+          "B_ordinary": 0.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": false,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      }
+    ]
+  },
+  "predeclared_clearer_subset_view": {
+    "task_ids": [
+      9,
+      33,
+      34
+    ],
+    "n": 3,
+    "means": {
+      "A_private": {
+        "n_tasks": 3,
+        "team_expected_accuracy": 0.16666666666666666,
+        "M1_final_accuracy": 1.0,
+        "ordinary_individual_accuracy": 0.1111111111111111
+      },
+      "B_ordinary": {
+        "n_tasks": 3,
+        "team_expected_accuracy": 0.6666666666666666,
+        "M1_final_accuracy": 0.6666666666666666,
+        "ordinary_individual_accuracy": 0.4444444444444444
+      },
+      "E_facts": {
+        "n_tasks": 3,
+        "team_expected_accuracy": 1.0,
+        "M1_final_accuracy": 1.0,
+        "ordinary_individual_accuracy": 1.0
+      },
+      "F_facts_opinions": {
+        "n_tasks": 3,
+        "team_expected_accuracy": 1.0,
+        "M1_final_accuracy": 1.0,
+        "ordinary_individual_accuracy": 0.8888888888888888
+      }
+    },
+    "M1_private_accuracy": 1.0,
+    "contrasts": {
+      "E_facts minus B_ordinary": {
+        "gains": [
+          {
+            "task_id": 9,
+            "delta": 1.0
+          }
+        ],
+        "losses": [],
+        "mean_delta": 0.3333333333333333
+      },
+      "F_facts_opinions minus B_ordinary": {
+        "gains": [
+          {
+            "task_id": 9,
+            "delta": 1.0
+          }
+        ],
+        "losses": [],
+        "mean_delta": 0.3333333333333333
+      },
+      "E_facts minus F_facts_opinions": {
+        "gains": [],
+        "losses": [],
+        "mean_delta": 0.0
+      },
+      "B_ordinary minus A_private": {
+        "gains": [
+          {
+            "task_id": 33,
+            "delta": 1.0
+          },
+          {
+            "task_id": 34,
+            "delta": 0.5
+          }
+        ],
+        "losses": [],
+        "mean_delta": 0.5
+      }
+    },
+    "table": [
+      {
+        "task_id": 9,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 0.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": false,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 33,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.0,
+          "B_ordinary": 1.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      },
+      {
+        "task_id": 34,
+        "M1_private": true,
+        "M1_initial": true,
+        "team_expected": {
+          "A_private": 0.5,
+          "B_ordinary": 1.0,
+          "E_facts": 1.0,
+          "F_facts_opinions": 1.0
+        },
+        "M1_final": {
+          "A_private": true,
+          "B_ordinary": true,
+          "E_facts": true,
+          "F_facts_opinions": true
+        }
+      }
+    ]
+  },
+  "work_final_changes": [
+    {
+      "task_id": 1,
+      "arm": "A_private",
+      "actor": "M2",
+      "last_work": null,
+      "final": "North Hill",
+      "initial": null,
+      "last_work_call": 31,
+      "final_call": 33,
+      "last_work_in_final_payload": true,
+      "last_work_correct": null,
+      "final_correct": false
+    },
+    {
+      "task_id": 4,
+      "arm": "A_private",
+      "actor": "M3",
+      "last_work": "Mrs. Y",
+      "final": "Mr. X's son",
+      "initial": "Mrs. Y",
+      "last_work_call": 125,
+      "final_call": 130,
+      "last_work_in_final_payload": true,
+      "last_work_correct": false,
+      "final_correct": true
+    },
+    {
+      "task_id": 4,
+      "arm": "E_facts",
+      "actor": "M4",
+      "last_work": "Mr. X",
+      "final": "Mr. X's son",
+      "initial": "Mr. X",
+      "last_work_call": 167,
+      "final_call": 171,
+      "last_work_in_final_payload": true,
+      "last_work_correct": false,
+      "final_correct": true
+    },
+    {
+      "task_id": 9,
+      "arm": "B_ordinary",
+      "actor": "M2",
+      "last_work": "Hospital B",
+      "final": "Hospital C",
+      "initial": "Hospital C",
+      "last_work_call": 433,
+      "final_call": 437,
+      "last_work_in_final_payload": true,
+      "last_work_correct": false,
+      "final_correct": false
+    },
+    {
+      "task_id": 30,
+      "arm": "E_facts",
+      "actor": "M2",
+      "last_work": "Skylake Ventures",
+      "final": "Northstar Partners",
+      "initial": "Northstar Partners",
+      "last_work_call": 740,
+      "final_call": 745,
+      "last_work_in_final_payload": true,
+      "last_work_correct": true,
+      "final_correct": false
+    },
+    {
+      "task_id": 30,
+      "arm": "E_facts",
+      "actor": "M4",
+      "last_work": "Northstar Partners",
+      "final": "Peak Capital",
+      "initial": "Peak Capital",
+      "last_work_call": 743,
+      "final_call": 747,
+      "last_work_in_final_payload": true,
+      "last_work_correct": false,
+      "final_correct": false
+    },
+    {
+      "task_id": 30,
+      "arm": "F_facts_opinions",
+      "actor": "M3",
+      "last_work": "Northstar Partners",
+      "final": "Peak Capital",
+      "initial": "Peak Capital",
+      "last_work_call": 762,
+      "final_call": 766,
+      "last_work_in_final_payload": true,
+      "last_work_correct": false,
+      "final_correct": false
+    },
+    {
+      "task_id": 33,
+      "arm": "B_ordinary",
+      "actor": "M2",
+      "last_work": "Lab Nova",
+      "final": "Lab Atlas",
+      "initial": "Lab Atlas",
+      "last_work_call": 816,
+      "final_call": 821,
+      "last_work_in_final_payload": true,
+      "last_work_correct": true,
+      "final_correct": false
+    },
+    {
+      "task_id": 33,
+      "arm": "B_ordinary",
+      "actor": "M3",
+      "last_work": "Lab Nova",
+      "final": "Lab Gemini",
+      "initial": "Lab Gemini",
+      "last_work_call": 817,
+      "final_call": 822,
+      "last_work_in_final_payload": true,
+      "last_work_correct": true,
+      "final_correct": false
+    }
+  ],
+  "ordinary_correction_candidates": [
+    {
+      "task_id": 1,
+      "arm": "B_ordinary",
+      "requires_semantic_trace_review": true,
+      "note": "Do not call this ordinary-member causal correction before evidence and adoption review."
+    },
+    {
+      "task_id": 30,
+      "arm": "E_facts",
+      "requires_semantic_trace_review": true,
+      "note": "Do not call this ordinary-member causal correction before evidence and adoption review."
+    }
+  ],
+  "failed_arms": [],
+  "actual_new_output_tokens": 50414,
+  "actual_reused_output_tokens": 10609,
+  "scope": "Fixed used development tasks, one seed; no population significance, equivalence, psychological mechanism, or efficiency superiority claim."
+}

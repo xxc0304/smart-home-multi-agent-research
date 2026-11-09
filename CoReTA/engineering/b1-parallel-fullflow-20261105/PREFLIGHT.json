@@ -1,0 +1,57 @@
+{
+  "science": "PASS",
+  "engineering": "PASS",
+  "scope": "TECHNICAL_EXECUTOR_COMPARISON_NOT_QUALITY_EQUIVALENCE",
+  "historical_replay": {
+    "serial": {
+      "real_historical_records_replayed": 104,
+      "traces_exact": true
+    },
+    "batch2": {
+      "real_historical_records_replayed": 104,
+      "traces_exact": true
+    }
+  },
+  "failed_dependency_stops": true,
+  "mixed_route_cap_rejected": true,
+  "max_historical_input_plus_cap": 5203,
+  "qualification": {
+    "status": "COMPLETE",
+    "primary_enabled": true,
+    "qualification": "SUPPORTED_TASK_ADVANTAGE",
+    "n_expected": 160,
+    "difference": 0.375,
+    "cluster_ci95": [
+      0.2893081761006289,
+      0.4605283094098883
+    ],
+    "item_ci95": [
+      0.29375,
+      0.4625
+    ],
+    "n_groups": 139,
+    "largest_group_n": 4,
+    "warnings": [],
+    "paired_counts": {
+      "both_correct": 17,
+      "only_expert": 65,
+      "only_baseline": 5,
+      "both_wrong": 73
+    },
+    "evidence_type": "ACTUAL_MODEL_RESPONSES",
+    "bootstrap": {
+      "repeats": 10000,
+      "seed": 20261102,
+      "unit": "predeclared_dependency_group"
+    }
+  },
+  "new_generations_max": 208,
+  "order": [
+    "batch2",
+    "serial"
+  ],
+  "soft_seconds": 2500,
+  "engine_soft_seconds": 1200,
+  "hard_seconds": 2700,
+  "CUDA_fullflow_pending": true
+}

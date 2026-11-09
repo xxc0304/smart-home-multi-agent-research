@@ -1,0 +1,50 @@
+{
+  "verdict": "PASS_ALL_RECORDS_REQUESTS_ROUTING_AND_OFFICIAL_SCORING",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "new_model_calls": 0,
+  "freeze_verified": true,
+  "approval_verified": true,
+  "original_scores_unchanged": true,
+  "scorer_exact_recomputation": true,
+  "source_prefixes": 32,
+  "questions": 16,
+  "cases": 192,
+  "attempts": 384,
+  "confirmed_returns": 384,
+  "all_eos": true,
+  "request_sequence_exact": true,
+  "matched_three_condition_units": 64,
+  "cost": {
+    "input_tokens": 1336801,
+    "output_tokens": 30453
+  },
+  "by_role_stage": {
+    "E_work": {
+      "calls": 96,
+      "input_tokens": 320280,
+      "output_tokens": 7040,
+      "generation_seconds": 548.3686416368873
+    },
+    "E_final": {
+      "calls": 96,
+      "input_tokens": 329632,
+      "output_tokens": 462,
+      "generation_seconds": 92.07474644796457
+    },
+    "B_work": {
+      "calls": 96,
+      "input_tokens": 330764,
+      "output_tokens": 22505,
+      "generation_seconds": 1054.9754939889535
+    },
+    "B_final": {
+      "calls": 96,
+      "input_tokens": 356125,
+      "output_tokens": 446,
+      "generation_seconds": 73.19628098988323
+    }
+  },
+  "elapsed_seconds": 1847.5227279719838,
+  "semantic_correctness_not_certified_by_technical_audit": true
+}

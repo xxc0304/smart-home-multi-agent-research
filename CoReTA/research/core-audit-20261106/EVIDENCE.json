@@ -1,0 +1,227 @@
+{
+  "scope": "DESCRIPTIVE_REPEATED_D8_NOT_CONFIRMATORY_OR_CAUSAL",
+  "new_model_calls": 0,
+  "new_C_H_question_reads": 0,
+  "calibration": {
+    "source": "engineering/b0-first-run-20261103/C160_RESULTS.md",
+    "status": "PREVIOUSLY_AUDITED_REPORT_NOT_REEVALUATED",
+    "base_em": 0.1375,
+    "expert_em": 0.5125,
+    "paired_difference": 0.375,
+    "n": 160,
+    "only_expert_correct": 65,
+    "only_base_correct": 5,
+    "both_correct": 17,
+    "both_wrong": 73,
+    "decoding": "greedy_short_answer",
+    "qualification": "TASK_ANSWER_ADVANTAGE_NOT_COMMUNICATION_EXPERTISE"
+  },
+  "engines": {
+    "serial": {
+      "n_unique_development_questions": 8,
+      "initial_expert_em": 0.75,
+      "initial_members_em": {
+        "M1": 0.75,
+        "M2": 0.25,
+        "M3": 0.25,
+        "M4": 0.25
+      },
+      "initial_team_expected_em": 0.28125,
+      "initial_correctness_strata": {
+        "E_correct_B_any_correct": 2,
+        "E_correct_B_all_wrong": 4,
+        "E_wrong_B_any_correct": 0,
+        "all_initial_wrong": 2
+      },
+      "arms": {
+        "A": {
+          "team_expected_em": 0.625,
+          "team_actual_em": 0.625,
+          "expert_final_em": 0.625,
+          "expert_harm_n": 1,
+          "expert_correction_n": 0,
+          "members_final_em": {
+            "M1": 0.625,
+            "M2": 0.625,
+            "M3": 0.625,
+            "M4": 0.75
+          }
+        },
+        "B": {
+          "team_expected_em": 0.75,
+          "team_actual_em": 0.75,
+          "expert_final_em": 0.75,
+          "expert_harm_n": 1,
+          "expert_correction_n": 1,
+          "members_final_em": {
+            "M1": 0.75,
+            "M2": 0.75,
+            "M3": 0.75,
+            "M4": 0.75
+          }
+        },
+        "C": {
+          "team_expected_em": 0.78125,
+          "team_actual_em": 0.875,
+          "expert_final_em": 0.625,
+          "expert_harm_n": 1,
+          "expert_correction_n": 0,
+          "members_final_em": {
+            "M1": 0.625,
+            "M2": 0.75,
+            "M3": 0.75,
+            "M4": 0.75
+          }
+        },
+        "D": {
+          "team_expected_em": 0.625,
+          "team_actual_em": 0.625,
+          "expert_final_em": 0.625,
+          "expert_harm_n": 1,
+          "expert_correction_n": 0,
+          "members_final_em": {
+            "M1": 0.625,
+            "M2": 0.625,
+            "M3": 0.625,
+            "M4": 0.625
+          }
+        }
+      },
+      "comparisons": {
+        "hidden": {
+          "team_talk_minus_private": 0.125,
+          "expert_talk_minus_private": 0.125,
+          "team_gain_items": [
+            {
+              "index": 0,
+              "id": "2hop__123383_21417",
+              "delta": 1
+            }
+          ],
+          "team_loss_items": [],
+          "expert_gain_items": [
+            {
+              "index": 0,
+              "id": "2hop__123383_21417"
+            }
+          ],
+          "expert_loss_items": []
+        },
+        "revealed": {
+          "team_talk_minus_private": -0.15625,
+          "expert_talk_minus_private": 0,
+          "team_gain_items": [],
+          "team_loss_items": [
+            {
+              "index": 0,
+              "id": "2hop__123383_21417",
+              "delta": -1
+            },
+            {
+              "index": 5,
+              "id": "2hop__153074_79404",
+              "delta": -0.25
+            }
+          ],
+          "expert_gain_items": [],
+          "expert_loss_items": []
+        }
+      },
+      "static_vote_minus_expert": -0.46875,
+      "hidden_discussion_minus_initial_vote": 0.46875,
+      "hidden_private_minus_initial_vote": 0.34375
+    },
+    "batch2": {
+      "n_unique_development_questions": 8,
+      "initial_expert_em": 0.75,
+      "initial_members_em": {
+        "M1": 0.75,
+        "M2": 0.25,
+        "M3": 0.25,
+        "M4": 0.25
+      },
+      "initial_team_expected_em": 0.28125,
+      "initial_correctness_strata": {
+        "E_correct_B_any_correct": 2,
+        "E_correct_B_all_wrong": 4,
+        "E_wrong_B_any_correct": 0,
+        "all_initial_wrong": 2
+      },
+      "arms": {
+        "A": {
+          "team_expected_em": 0.75,
+          "team_actual_em": 0.75,
+          "expert_final_em": 0.75,
+          "expert_harm_n": 1,
+          "expert_correction_n": 1,
+          "members_final_em": {
+            "M1": 0.75,
+            "M2": 0.75,
+            "M3": 0.75,
+            "M4": 0.625
+          }
+        },
+        "B": {
+          "team_expected_em": 0.75,
+          "team_actual_em": 0.75,
+          "expert_final_em": 0.75,
+          "expert_harm_n": 1,
+          "expert_correction_n": 1,
+          "members_final_em": {
+            "M1": 0.75,
+            "M2": 0.75,
+            "M3": 0.75,
+            "M4": 0.75
+          }
+        },
+        "C": {
+          "team_expected_em": 0.625,
+          "team_actual_em": 0.625,
+          "expert_final_em": 0.625,
+          "expert_harm_n": 1,
+          "expert_correction_n": 0,
+          "members_final_em": {
+            "M1": 0.625,
+            "M2": 0.625,
+            "M3": 0.625,
+            "M4": 0.625
+          }
+        },
+        "D": {
+          "team_expected_em": 0.625,
+          "team_actual_em": 0.625,
+          "expert_final_em": 0.625,
+          "expert_harm_n": 1,
+          "expert_correction_n": 0,
+          "members_final_em": {
+            "M1": 0.625,
+            "M2": 0.625,
+            "M3": 0.625,
+            "M4": 0.625
+          }
+        }
+      },
+      "comparisons": {
+        "hidden": {
+          "team_talk_minus_private": 0,
+          "expert_talk_minus_private": 0,
+          "team_gain_items": [],
+          "team_loss_items": [],
+          "expert_gain_items": [],
+          "expert_loss_items": []
+        },
+        "revealed": {
+          "team_talk_minus_private": 0,
+          "expert_talk_minus_private": 0,
+          "team_gain_items": [],
+          "team_loss_items": [],
+          "expert_gain_items": [],
+          "expert_loss_items": []
+        }
+      },
+      "static_vote_minus_expert": -0.46875,
+      "hidden_discussion_minus_initial_vote": 0.46875,
+      "hidden_private_minus_initial_vote": 0.46875
+    }
+  }
+}

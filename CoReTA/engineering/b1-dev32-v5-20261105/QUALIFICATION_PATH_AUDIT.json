@@ -1,0 +1,83 @@
+{
+  "adapters": {
+    "configured": {
+      "path": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter",
+      "resolved_from_SSH_cwd": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter",
+      "resolved_from_project": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter",
+      "exists": true,
+      "files": {
+        "README.md": "2f697929de505f318926ee230e55dbcc4f958995cc2c22b52e7f773d25090e9b",
+        "adapter_model.safetensors": "2b849ddcfe0afb69362325b1095dc435115bf3002694bb33c955b61f1e4318db",
+        "b0_origin.json": "ae512f2d4f0c6281755f1a1817e4d831e1dc72b82d518c2181ea496a40dd1f1c",
+        "adapter_config.json": "2a9d93319effb9ac7ceafaf24e75a3b0d6a0f7c5202c5810794a9d3004c58865"
+      }
+    },
+    "baseline_C_score": {
+      "path": null
+    },
+    "expert_C_score": {
+      "path": "runs/b0-first-run-20261103-v2/attempt1/adapter",
+      "resolved_from_SSH_cwd": "/home/xiaoxinchen/runs/b0-first-run-20261103-v2/attempt1/adapter",
+      "resolved_from_project": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter",
+      "exists": true,
+      "files": {
+        "README.md": "2f697929de505f318926ee230e55dbcc4f958995cc2c22b52e7f773d25090e9b",
+        "adapter_model.safetensors": "2b849ddcfe0afb69362325b1095dc435115bf3002694bb33c955b61f1e4318db",
+        "b0_origin.json": "ae512f2d4f0c6281755f1a1817e4d831e1dc72b82d518c2181ea496a40dd1f1c",
+        "adapter_config.json": "2a9d93319effb9ac7ceafaf24e75a3b0d6a0f7c5202c5810794a9d3004c58865"
+      }
+    }
+  },
+  "scores": {
+    "baseline_C_score": {
+      "path": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-C160-20261103/C_B_score.json",
+      "sha256": "68d952df3b0a7a1504835db14360258161ec3e85d1c2d73354d5b2be14dcab59",
+      "manifest_adapter": null
+    },
+    "expert_C_score": {
+      "path": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-C160-20261103/C_E_score.json",
+      "sha256": "e61f700b13413c2e8e2fbaab34454273cbf873cebe11d705bb5ee854845ec810",
+      "manifest_adapter": "runs/b0-first-run-20261103-v2/attempt1/adapter"
+    }
+  },
+  "original_qualification_and_adapter_hashes_unchanged": {
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-C160-20261103/C_B_score.json": true,
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-C160-20261103/C_E_score.json": true,
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter/README.md": true,
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter/adapter_model.safetensors": true,
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter/b0_origin.json": true,
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter/adapter_config.json": true
+  },
+  "all_original_qualification_hashes_match": true,
+  "same_adapter_under_project_root": true,
+  "prior_qualification": {
+    "status": "COMPLETE",
+    "primary_enabled": true,
+    "qualification": "SUPPORTED_TASK_ADVANTAGE",
+    "n_expected": 160,
+    "difference": 0.375,
+    "cluster_ci95": [
+      0.2893081761006289,
+      0.4605283094098883
+    ],
+    "item_ci95": [
+      0.29375,
+      0.4625
+    ],
+    "n_groups": 139,
+    "largest_group_n": 4,
+    "warnings": [],
+    "paired_counts": {
+      "both_correct": 17,
+      "only_expert": 65,
+      "only_baseline": 5,
+      "both_wrong": 73
+    },
+    "evidence_type": "ACTUAL_MODEL_RESPONSES",
+    "bootstrap": {
+      "repeats": 10000,
+      "seed": 20261102,
+      "unit": "predeclared_dependency_group"
+    }
+  }
+}

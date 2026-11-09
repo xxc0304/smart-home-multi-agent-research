@@ -1,0 +1,15 @@
+{
+  "verdict": "PASS",
+  "checks": [
+    "2912_real_full_response_replay_same_payload_and_order_only_generation_seed_changed",
+    "all56_task_ids_strata_groups_and_source_hashes",
+    "four_controls_and52_calls_per_item",
+    "independent_arm_output_limit_skips_only_dependent_A_no_retry",
+    "initial_failure_isolates_task",
+    "pending_request_is_idempotent"
+  ],
+  "real_replayed_requests": 2912,
+  "fixture_only": true,
+  "new_model_calls": 0,
+  "code_sha256": "7e0537f0d3f4450dc223f3ac7c6d1b3ebfa8c2af8f60a1deb53217f0acd74d31"
+}

@@ -1,0 +1,23 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:52,  7.53it/s]/data2/xiaoxinchen/venvs/coreta/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   6%|▌         | 22/398 [00:00<00:03, 110.49it/s]Loading weights:  12%|█▏        | 49/398 [00:00<00:02, 173.33it/s]Loading weights:  20%|██        | 81/398 [00:00<00:01, 221.69it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:01, 249.19it/s]Loading weights:  35%|███▌      | 141/398 [00:00<00:00, 258.21it/s]Loading weights:  42%|████▏     | 169/398 [00:00<00:00, 263.68it/s]Loading weights:  50%|█████     | 199/398 [00:00<00:00, 274.03it/s]Loading weights:  57%|█████▋    | 227/398 [00:00<00:00, 270.10it/s]Loading weights:  65%|██████▍   | 257/398 [00:01<00:00, 271.53it/s]Loading weights:  73%|███████▎  | 289/398 [00:01<00:00, 279.12it/s]Loading weights:  80%|███████▉  | 317/398 [00:01<00:00, 278.19it/s]Loading weights:  87%|████████▋ | 345/398 [00:01<00:00, 277.90it/s]Loading weights:  95%|█████████▍| 377/398 [00:01<00:00, 284.32it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 254.62it/s]
+[transformers] Passing `generation_config` together with generation-related arguments=({'max_time', 'max_new_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+/data2/xiaoxinchen/venvs/coreta/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+{"done": 1, "request_id": "2hop__142515_31413|M2", "status": "OK"}
+{"done": 2, "request_id": "2hop__142515_31413|M1", "status": "OK"}
+{"done": 3, "request_id": "2hop__14120_89145|M2", "status": "OK"}
+{"done": 4, "request_id": "2hop__14120_89145|M1", "status": "OK"}
+{"done": 5, "request_id": "2hop__558996_529125|M2", "status": "OK"}
+{"done": 6, "request_id": "2hop__558996_529125|M1", "status": "OK"}
+{"done": 7, "request_id": "3hop1__144381_728452_124684|M2", "status": "OK"}
+{"done": 8, "request_id": "3hop1__144381_728452_124684|M1", "status": "OK"}
+{"done": 9, "request_id": "3hop1__146192_728452_124684|M2", "status": "OK"}
+{"done": 10, "request_id": "3hop1__146192_728452_124684|M1", "status": "OK"}
+{"done": 11, "request_id": "2hop__559896_160837|M2", "status": "OK"}
+{"done": 12, "request_id": "2hop__559896_160837|M1", "status": "OK"}
+{"done": 13, "request_id": "2hop__92103_29312|M2", "status": "OK"}
+{"done": 14, "request_id": "2hop__92103_29312|M1", "status": "OK"}
+{"done": 15, "request_id": "3hop1__136883_728452_124684|M2", "status": "OK"}
+{"done": 16, "request_id": "3hop1__136883_728452_124684|M1", "status": "OK"}
+{"mode": "v", "n_expected_requests": 16, "n_generated": 16, "n_ok": 16, "fatal": null, "elapsed_seconds": 17.554152686992893, "n_expected_tasks": 8, "n_complete_tasks": null, "unknown_outputs": 4, "primary_enabled": false, "verdict": "PASS_TECHNICAL_ONLY", "original_scores_unchanged": true}

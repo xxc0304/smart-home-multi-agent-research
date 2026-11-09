@@ -1,0 +1,31 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:50,  7.83it/s]/data2/xiaoxinchen/venvs/coreta/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   6%|▌         | 22/398 [00:00<00:03, 113.50it/s]Loading weights:  12%|█▏        | 49/398 [00:00<00:01, 177.70it/s]Loading weights:  20%|██        | 81/398 [00:00<00:01, 226.48it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:01, 253.35it/s]Loading weights:  36%|███▌      | 143/398 [00:00<00:00, 265.34it/s]Loading weights:  43%|████▎     | 170/398 [00:00<00:00, 263.52it/s]Loading weights:  51%|█████     | 202/398 [00:00<00:00, 276.84it/s]Loading weights:  59%|█████▉    | 234/398 [00:00<00:00, 286.09it/s]Loading weights:  66%|██████▋   | 264/398 [00:01<00:00, 287.72it/s]Loading weights:  74%|███████▎  | 293/398 [00:01<00:00, 285.33it/s]Loading weights:  81%|████████  | 323/398 [00:01<00:00, 285.99it/s]Loading weights:  89%|████████▉ | 355/398 [00:01<00:00, 291.23it/s]Loading weights:  97%|█████████▋| 385/398 [00:01<00:00, 290.41it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 261.33it/s]
+[transformers] Passing `generation_config` together with generation-related arguments=({'max_time', 'max_new_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+/data2/xiaoxinchen/venvs/coreta/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+{"done": 1, "request_id": "2hop__142515_31413|M2|20261102|0", "status": "OK", "sampling_calls": 14}
+{"done": 2, "request_id": "2hop__142515_31413|M1|20261102|0", "status": "OK", "sampling_calls": 3}
+{"done": 3, "request_id": "2hop__142515_31413|M2|20261102|1", "status": "OK", "sampling_calls": 14}
+{"done": 4, "request_id": "2hop__142515_31413|M1|20261102|1", "status": "OK", "sampling_calls": 3}
+{"done": 5, "request_id": "2hop__142515_31413|M2|20261103|0", "status": "OK", "sampling_calls": 14}
+{"done": 6, "request_id": "2hop__142515_31413|M1|20261103|0", "status": "OK", "sampling_calls": 3}
+{"done": 7, "request_id": "2hop__142515_31413|M2|20261103|1", "status": "OK", "sampling_calls": 14}
+{"done": 8, "request_id": "2hop__142515_31413|M1|20261103|1", "status": "OK", "sampling_calls": 3}
+{"done": 9, "request_id": "2hop__142515_31413|M2|20261104|0", "status": "OK", "sampling_calls": 14}
+{"done": 10, "request_id": "2hop__142515_31413|M1|20261104|0", "status": "OK", "sampling_calls": 3}
+{"done": 11, "request_id": "2hop__142515_31413|M2|20261104|1", "status": "OK", "sampling_calls": 14}
+{"done": 12, "request_id": "2hop__142515_31413|M1|20261104|1", "status": "OK", "sampling_calls": 3}
+{"done": 13, "request_id": "2hop__14120_89145|M2|20261102|0", "status": "OK", "sampling_calls": 5}
+{"done": 14, "request_id": "2hop__14120_89145|M1|20261102|0", "status": "OK", "sampling_calls": 6}
+{"done": 15, "request_id": "2hop__14120_89145|M2|20261102|1", "status": "OK", "sampling_calls": 5}
+{"done": 16, "request_id": "2hop__14120_89145|M1|20261102|1", "status": "OK", "sampling_calls": 6}
+{"done": 17, "request_id": "2hop__14120_89145|M2|20261103|0", "status": "OK", "sampling_calls": 5}
+{"done": 18, "request_id": "2hop__14120_89145|M1|20261103|0", "status": "OK", "sampling_calls": 6}
+{"done": 19, "request_id": "2hop__14120_89145|M2|20261103|1", "status": "OK", "sampling_calls": 5}
+{"done": 20, "request_id": "2hop__14120_89145|M1|20261103|1", "status": "OK", "sampling_calls": 6}
+{"done": 21, "request_id": "2hop__14120_89145|M2|20261104|0", "status": "OK", "sampling_calls": 5}
+{"done": 22, "request_id": "2hop__14120_89145|M1|20261104|0", "status": "OK", "sampling_calls": 8}
+{"done": 23, "request_id": "2hop__14120_89145|M2|20261104|1", "status": "OK", "sampling_calls": 5}
+{"done": 24, "request_id": "2hop__14120_89145|M1|20261104|1", "status": "OK", "sampling_calls": 8}
+{"n_expected": 24, "n_generated": 24, "n_ok": 24, "fatal": null, "elapsed_seconds": 24.645805694002775, "repeats": [{"task_id": "2hop__142515_31413", "actor": "M2", "seed": 20261102, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__142515_31413", "actor": "M1", "seed": 20261102, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__142515_31413", "actor": "M2", "seed": 20261103, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__142515_31413", "actor": "M1", "seed": 20261103, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__142515_31413", "actor": "M2", "seed": 20261104, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__142515_31413", "actor": "M1", "seed": 20261104, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__14120_89145", "actor": "M2", "seed": 20261102, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__14120_89145", "actor": "M1", "seed": 20261102, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__14120_89145", "actor": "M2", "seed": 20261103, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__14120_89145", "actor": "M1", "seed": 20261103, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__14120_89145", "actor": "M2", "seed": 20261104, "same_output_ids": true, "same_first_rng": true}, {"task_id": "2hop__14120_89145", "actor": "M1", "seed": 20261104, "same_output_ids": true, "same_first_rng": true}], "different_seed_rng_distinct": true, "verdict": "PASS_TECHNICAL_ONLY", "original_scores_unchanged": true}

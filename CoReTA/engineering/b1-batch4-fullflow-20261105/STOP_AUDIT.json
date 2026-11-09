@@ -1,0 +1,104 @@
+{
+  "verdict": "PASS_RECORD_INTEGRITY_REVISE_EXECUTOR_COMPLETENESS",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "planned_tasks_per_engine": 8,
+  "visited_tasks": 4,
+  "complete_four_arm_tasks": 0,
+  "attempted_requests": 102,
+  "returned_responses": 102,
+  "normal_EOS": 99,
+  "token_limits": 3,
+  "failures": [
+    {
+      "item_index": 0,
+      "request_id": "2hop__123383_21417|04",
+      "stage": "work",
+      "arm": "A",
+      "actor": "M4",
+      "round": 1,
+      "batch_size": 4,
+      "input_tokens": 2878,
+      "output_tokens": 512,
+      "raw_output": "The question asks for the year when Wesley Alba Sturges's institutional employer was created. From the provided information, we know that Wesley Alba Sturges was a professor of law at the Yale Law School from 1924 to 1961. The history provided indicates that the answer is \"1931\", but this seems to be a misattribution because 1931 is the year when the Palacio de las Dueñas became a national monument, not the creation of an employer for Wesley Alba Sturges.\n\nTo correctly answer the question, we need to identify the institutional employer of Wesley Alba Sturges. From the paragraphs, we find that Wesley Alba Sturges was a professor at the Yale Law School. The history provided is \"1931\", which might have been a mistake. However, the correct answer would be the year the Yale Law School was established. \n\nLooking at the provided paragraphs, the only one that mentions Yale is \"Wesley College (Manitoba)\", which was a college in Winnipeg, Manitoba, Canada, from 1888 to 1938. However, this is not related to Wesley Alba Sturges. \n\nThe correct answer is the year the Yale Law School was established. From the paragraph titled \"Yale University\", we can see that the Yale Law School was established in 1810. However, this is not directly stated. The paragraph mentions that the Yale School of Medicine was established in 1810, but the Yale Law School was established later. \n\nLooking back at the paragraphs, the only one that mentions the Yale Law School is \"Wesley Alba Sturges\". The paragraph says that he was a professor of law at the Yale Law School from 1924 to 1961. This indicates that the Yale Law School was already established when he started his career there. \n\nThe correct answer is the year the Yale Law School was created. From the paragraph \"Yale University\", we can see that the Yale Law School was established in 1810. However, this is not explicitly stated. The paragraph says that the Yale School of Medicine was established in 1810, but the Yale Law School was established later. \n\nThe correct answer is the year the Yale Law School was created. From the paragraph \"Wesley Alba Sturges\", we can see that he was a professor at the Yale",
+      "prior_comparisons": [
+        {
+          "engine": "serial",
+          "same_payload": true,
+          "same_seed": true,
+          "output_tokens": 300,
+          "status": "OK"
+        },
+        {
+          "engine": "batch2",
+          "same_payload": true,
+          "same_seed": true,
+          "output_tokens": 412,
+          "status": "OK"
+        }
+      ]
+    },
+    {
+      "item_index": 0,
+      "request_id": "2hop__123383_21417|16",
+      "stage": "work",
+      "arm": "B",
+      "actor": "M4",
+      "round": 1,
+      "batch_size": 4,
+      "input_tokens": 2966,
+      "output_tokens": 512,
+      "raw_output": "The question asks for the date when Wesley Alba Sturges's institutional employer was created. From the provided information, we know that Wesley Alba Sturges was a professor of law at the Yale Law School from 1924 to 1961. The institutional employer in this context would be the Yale Law School.\n\nLooking at the paragraph about Wesley Alba Sturges, it states that \"Wesley Alba Sturges (1893-1962) was a professor of law at the Yale Law School from 1924 to 1961...\" This indicates that he was employed by the Yale Law School. However, the question is about when the institutional employer (Yale Law School) was created.\n\nThe paragraph about Wesley College (Manitoba) mentions that \"Wesley College was a college that existed in Winnipeg, Manitoba, Canada, from 1888 to 1938.\" However, this is not directly related to the Yale Law School.\n\nThe paragraph about Yale University states that \"In 1887, as the college continued to grow under the presidency of Timothy Dwight V, Yale College was renamed Yale University.\" However, this is about the university as a whole, not specifically the Yale Law School.\n\nThe paragraph about the Yale Law School is not explicitly provided, but we can infer that the Yale Law School was established as part of Yale University. The first law school in the United States was established at the University of Virginia in 1819, but this is not directly relevant.\n\nThe paragraph about Wesley College (Manitoba) is not directly related to the Yale Law School.\n\nThe paragraph about Wesley Alba Sturges mentions that he was a professor of law at the Yale Law School from 1924 to 1961. This suggests that the Yale Law School was established before 1924. However, the exact date when the Yale Law School was created is not explicitly provided in the given information.\n\nThe paragraph about the Yale Law School is not explicitly provided, but we can infer that the Yale Law School was established as part of Yale University. The first law school in the United States was established at the University of Virginia in 1819, but this is not directly relevant.\n\nThe paragraph about Wesley College (Manitoba) is not directly related to the Yale Law School.\n\nThe paragraph about the Yale Law School is not explicitly provided, but we can infer that",
+      "prior_comparisons": [
+        {
+          "engine": "serial",
+          "same_payload": false,
+          "same_seed": true,
+          "output_tokens": 263,
+          "status": "OK"
+        },
+        {
+          "engine": "batch2",
+          "same_payload": true,
+          "same_seed": true,
+          "output_tokens": 363,
+          "status": "OK"
+        }
+      ]
+    },
+    {
+      "item_index": 0,
+      "request_id": "2hop__123383_21417|30",
+      "stage": "work",
+      "arm": "C",
+      "actor": "M3",
+      "round": 1,
+      "batch_size": 4,
+      "input_tokens": 2911,
+      "output_tokens": 512,
+      "raw_output": "The question asks for the date when Wesley Alba Sturges's institutional employer was created. From the provided information, we know that Wesley Alba Sturges was a professor of law at the Yale Law School from 1924 to 1961. The institutional employer in this context is likely the Yale Law School.\n\nLooking at the paragraph about \"Wesley College (Manitoba)\", it states that Wesley College existed in Winnipeg, Manitoba, from 1888 to 1938. However, this is not directly related to Wesley Alba Sturges.\n\nThe paragraph about \"Yale University\" mentions that in 1887, as the college continued to grow, Yale College was renamed Yale University. This indicates that the university was established in 1887. However, the Yale Law School was established later. The paragraph about \"Yale University\" also mentions the establishment of the Yale School of Medicine in 1810, the Yale Divinity School in 1822, and other schools and departments over time.\n\nThe paragraph about \"Wesley Alba Sturges\" mentions that he was a professor of law at the Yale Law School from 1924 to 1961. Therefore, the institutional employer in question is the Yale Law School. However, the question is about when the institutional employer was created, not when Wesley Alba Sturges joined it.\n\nFrom the paragraph about \"Yale University\", we can infer that the Yale Law School was established as part of Yale University. The university was established in 1887, and the Law School was established later. However, the exact date when the Yale Law School was created is not explicitly mentioned in the provided information.\n\nThe paragraph about \"Wesley College (Manitoba)\" mentions that the college existed from 1888 to 1938, but this is not related to Wesley Alba Sturges.\n\nThe paragraph about \"Yale University\" mentions that in 1887, as the college continued to grow, Yale College was renamed Yale University. This indicates that the university was established in 1887. However, the Law School was established later.\n\nSince the exact date when the Yale Law School was created is not explicitly mentioned in the provided information, we cannot determine the exact date when Wesley Alba Sturges's institutional employer was created. However, we can infer that the Yale Law School was",
+      "prior_comparisons": [
+        {
+          "engine": "serial",
+          "same_payload": true,
+          "same_seed": true,
+          "output_tokens": 408,
+          "status": "OK"
+        },
+        {
+          "engine": "batch2",
+          "same_payload": true,
+          "same_seed": true,
+          "output_tokens": 372,
+          "status": "OK"
+        }
+      ]
+    }
+  ],
+  "freeze_and_approval_match": true,
+  "trace_replay_and_scoring_match": true,
+  "route_flags_valid": true,
+  "all_run_files_unchanged": true,
+  "serial_not_started": true,
+  "usable_speed_or_complete_team_accuracy": false
+}

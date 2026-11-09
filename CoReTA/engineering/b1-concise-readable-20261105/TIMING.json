@@ -1,0 +1,53 @@
+{
+  "n_requests": 312,
+  "n_complete_52_request_tasks": 6,
+  "task_request_counts": {
+    "9": 52,
+    "13": 52,
+    "16": 52,
+    "22": 52,
+    "0": 52,
+    "1": 52
+  },
+  "format_warnings": 3,
+  "technical_non_ok": 0,
+  "partial_lines_skipped": 0,
+  "stages": {
+    "initial": {
+      "n": 24,
+      "generate_seconds": 20.726416402001632,
+      "output_tokens": 195,
+      "aggregate_output_tokens_per_generate_second": 9.408283430085293,
+      "mean_input_tokens": 3060.6666666666665
+    },
+    "work": {
+      "n": 192,
+      "generate_seconds": 938.5100057801319,
+      "output_tokens": 17553,
+      "aggregate_output_tokens_per_generate_second": 18.703050464985882,
+      "mean_input_tokens": 3441.5364583333335
+    },
+    "final": {
+      "n": 96,
+      "generate_seconds": 77.11250437497802,
+      "output_tokens": 407,
+      "aggregate_output_tokens_per_generate_second": 5.278002618367379,
+      "mean_input_tokens": 3786.7708333333335
+    }
+  },
+  "results": {
+    "mode": "team",
+    "n_expected_requests": 312,
+    "n_generated": 312,
+    "n_ok": 312,
+    "fatal": null,
+    "elapsed_seconds": 1045.544046023002,
+    "n_expected_tasks": 6,
+    "n_complete_tasks": 6,
+    "unknown_outputs": 5,
+    "primary_enabled": false,
+    "verdict": "PASS_READABLE_EOS_WITH_FORMAT_WARNINGS",
+    "original_scores_unchanged": true,
+    "n_format_warnings": 3
+  }
+}

@@ -1,0 +1,13 @@
+# Cumulative B1 D32 first pass — stage start
+
+2026-11-04. User explicitly requested starting and more than8 items. Execute the already-defined32-item development prefix, via required2→8→32 staging. Preserve the existing first2 items byte-for-byte, same v2 initial/final256+strict suffix, work512, two rounds, four arms, seeds/order, model and adapter. No selection by scores, replacement questions, repeated seeds, training, C rerun or H access.32 is development, not final confirmatory N.
+
+Maximum new task generations1560=6×52+24×52; cumulative32×52=1664 including104 already done. First8 adds6 items:3600s soft /3900s hard. Final32 adds24:10800s soft /11100s hard. Outer job hard15120s, no retries or automatic protocol/cap adjustment. Estimate from D2~5min/item:150min new work, not a throughput guarantee. Per-stage budgets are maximums, not promises that every item finishes.
+
+Scientific purpose: obtain enough fixed development trajectories to inspect expert-correct retention/harm, useful correction, private versus discussion and identity treatment contrasts. Treat them as packages, not unique mechanisms. Keep all expert initial errors. Track denominators, voting/readout loss and group-related uncertainty. No significant-gain threshold or score-dependent advancement.
+
+Prelaunch check: verify prior frozen runtime/model/adapter bindings and completedD2, exact staged config equality except wall_seconds, full32 input order and prompt lengths, replay104 genuine complete requests, stress full histories (synthetic, not semantic evidence), and current GPU availability. New code is an orchestration/review wrapper around unchanged tested B1 runtime; no new generation/prompt/scoring mechanism.
+
+Checkpoint8: replay every full trace, verify initial/final/work caps and actor adapter routing, exact inherited first2 traces,312 new requests/416 cumulative, no missing/output-limit/technical failures, no fatal error, unchanged config and freeze. Record assistant scientific/readiness review before32. If incomplete/fails/budget exceeded, stop and preserve all records; do not retry, tune or replace items. Advance solely on technical integrity, regardless of correctness. Full32 must likewise preserve first8 traces exactly and new requests≤1248; incomplete results retain planned/recorded/complete denominators.
+
+Deliver durable process/status, both manifests and complete raw journals/traces, scores using only selected D prefix labels after each stage, exact inheritance audit, timing/memory/tokens and stage self-review; update handoff/current state and active tracker with actual start/completion/failure. No GitHub push. Reviews are assistant self-review (independence=none/provisional).

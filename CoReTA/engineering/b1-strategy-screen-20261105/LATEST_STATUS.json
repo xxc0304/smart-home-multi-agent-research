@@ -1,0 +1,152 @@
+{
+  "checked_utc": "2026-11-05T06:24:20.639720+00:00",
+  "prior": {
+    "status": {
+      "status": "COMPLETE",
+      "error": null,
+      "counts": {
+        "batch2": {
+          "n_calls": 104,
+          "n_batch2_responses": 88,
+          "n_complete": 2,
+          "n_unknown": 0,
+          "input_tokens": 349819,
+          "output_tokens": 12442,
+          "format": "original_v2_no_new_Unknown_instruction"
+        },
+        "serial": {
+          "n_calls": 104,
+          "n_batch2_responses": 0,
+          "n_complete": 2,
+          "n_unknown": 0,
+          "input_tokens": 346423,
+          "output_tokens": 11770,
+          "format": "original_v2_no_new_Unknown_instruction"
+        }
+      }
+    },
+    "result": {
+      "status": "COMPLETE",
+      "error": null,
+      "elapsed_seconds": 1162.7340212099953,
+      "timings": [
+        {
+          "engine": "batch2",
+          "seconds": 550.2267866990005,
+          "calls": 104,
+          "peak_allocated_bytes": 5705184256,
+          "peak_reserved_bytes": 7373586432
+        },
+        {
+          "engine": "serial",
+          "seconds": 605.420955345995,
+          "calls": 104,
+          "peak_allocated_bytes": 4216605184,
+          "peak_reserved_bytes": 7373586432
+        }
+      ],
+      "counts": {
+        "batch2": {
+          "n_calls": 104,
+          "n_batch2_responses": 88,
+          "n_complete": 2,
+          "n_unknown": 0,
+          "input_tokens": 349819,
+          "output_tokens": 12442,
+          "format": "original_v2_no_new_Unknown_instruction"
+        },
+        "serial": {
+          "n_calls": 104,
+          "n_batch2_responses": 0,
+          "n_complete": 2,
+          "n_unknown": 0,
+          "input_tokens": 346423,
+          "output_tokens": 11770,
+          "format": "original_v2_no_new_Unknown_instruction"
+        }
+      },
+      "engine_time_ratio": 1.100311671443921,
+      "cross_engine_same_text": 49,
+      "cross_engine_same_tokens": 49,
+      "cross_engine_compared": 104
+    },
+    "scores": {
+      "batch2": {
+        "initial": {
+          "expert_em": 0.0,
+          "expert_f1": 0.0,
+          "team_expected_em": 0.0,
+          "team_actual_em": 0.0,
+          "team_expected_f1": 0.0,
+          "team_actual_f1": 0.0,
+          "oracle_hit": 0.0
+        },
+        "arms": {
+          "A": {
+            "expected_em": 0.5,
+            "actual_em": 0.5,
+            "expert_em": 0.5
+          },
+          "B": {
+            "expected_em": 0.5,
+            "actual_em": 0.5,
+            "expert_em": 0.5
+          },
+          "C": {
+            "expected_em": 0.0,
+            "actual_em": 0.0,
+            "expert_em": 0.0
+          },
+          "D": {
+            "expected_em": 0.0,
+            "actual_em": 0.0,
+            "expert_em": 0.0
+          }
+        }
+      },
+      "serial": {
+        "initial": {
+          "expert_em": 0.0,
+          "expert_f1": 0.0,
+          "team_expected_em": 0.0,
+          "team_actual_em": 0.0,
+          "team_expected_f1": 0.0,
+          "team_actual_f1": 0.0,
+          "oracle_hit": 0.0
+        },
+        "arms": {
+          "A": {
+            "expected_em": 0.0,
+            "actual_em": 0.0,
+            "expert_em": 0.0
+          },
+          "B": {
+            "expected_em": 0.5,
+            "actual_em": 0.5,
+            "expert_em": 0.5
+          },
+          "C": {
+            "expected_em": 0.5,
+            "actual_em": 0.5,
+            "expert_em": 0.0
+          },
+          "D": {
+            "expected_em": 0.0,
+            "actual_em": 0.0,
+            "expert_em": 0.0
+          }
+        }
+      }
+    },
+    "evidence_archive": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-parallel-fullflow-20261105-v1-evidence.tar.gz"
+  },
+  "screen": {
+    "status": {
+      "status": "RUNNING",
+      "engine": "serial",
+      "repeat": 0,
+      "n_generated": 6,
+      "elapsed_seconds": 30.338005007011816
+    }
+  }
+}

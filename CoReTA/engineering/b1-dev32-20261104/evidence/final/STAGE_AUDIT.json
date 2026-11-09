@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-11-04T03:09:23.445375+08:00",
+  "verdict": "REVISE",
+  "scope": "TECHNICAL_INTEGRITY_DEVELOPMENT_ONLY",
+  "reviewer": "assistant-authored fixed checks, self-review; independence=none/provisional",
+  "n_expected": 32,
+  "n_recorded": 32,
+  "n_complete": 28,
+  "inherited_items": 8,
+  "inherited_traces_byte_identical": true,
+  "adapter_routes_match": true,
+  "trace_replay_complete": false,
+  "status_counts": {
+    "OK": 1580,
+    "OUTPUT_LIMIT": 4
+  },
+  "new_requests": 1168,
+  "max_new_requests": 1248,
+  "cumulative_requests": 1584,
+  "elapsed_seconds": 7116.411609620001,
+  "max_input_tokens": 6505,
+  "input_tokens": 5717032,
+  "output_tokens": 190025,
+  "peak_memory": {
+    "peak_allocated_bytes": 4676285440,
+    "peak_reserved_bytes": 8160018432
+  },
+  "initial_baseline": {
+    "expert_em": 0.6785714285714286,
+    "expert_f1": 0.7053571428571429,
+    "team_expected_em": 0.11607142857142858,
+    "team_actual_em": 0.10714285714285714,
+    "team_expected_f1": 0.2152044513457557,
+    "team_actual_f1": 0.2072463768115942,
+    "oracle_hit": 0.6785714285714286
+  },
+  "arms": {
+    "A": {
+      "expected_em": 0.5178571428571429,
+      "actual_em": 0.5,
+      "expert_em": 0.5714285714285714,
+      "expert_harm_n": 4,
+      "expert_harm_denominator": 19,
+      "expert_correction_n": 1,
+      "expert_correction_denominator": 9,
+      "expert_correct_but_not_selected_expected": 0.125
+    },
+    "B": {
+      "expected_em": 0.6428571428571429,
+      "actual_em": 0.6428571428571429,
+      "expert_em": 0.6785714285714286,
+      "expert_harm_n": 3,
+      "expert_harm_denominator": 19,
+      "expert_correction_n": 3,
+      "expert_correction_denominator": 9,
+      "expert_correct_but_not_selected_expected": 0.03571428571428571
+    },
+    "C": {
+      "expected_em": 0.5625,
+      "actual_em": 0.5714285714285714,
+      "expert_em": 0.6428571428571429,
+      "expert_harm_n": 3,
+      "expert_harm_denominator": 19,
+      "expert_correction_n": 2,
+      "expert_correction_denominator": 9,
+      "expert_correct_but_not_selected_expected": 0.19642857142857142
+    },
+    "D": {
+      "expected_em": 0.5714285714285714,
+      "actual_em": 0.5714285714285714,
+      "expert_em": 0.6785714285714286,
+      "expert_harm_n": 2,
+      "expert_harm_denominator": 19,
+      "expert_correction_n": 2,
+      "expert_correction_denominator": 9,
+      "expert_correct_but_not_selected_expected": 0.10714285714285714
+    }
+  },
+  "scientific_review": "PASS only fixed development trajectories; no causal/confirmatory or method-superiority claim; no score-dependent advancement"
+}

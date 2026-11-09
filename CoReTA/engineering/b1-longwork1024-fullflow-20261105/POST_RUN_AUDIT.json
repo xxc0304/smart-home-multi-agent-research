@@ -1,0 +1,104 @@
+{
+  "verdict": "PASS_RECORDS_AND_D8_COMPLETENESS",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "scope": "REPEATED_DEVELOPMENT_D8_NOT_QUALITY_EQUIVALENCE",
+  "all_original_run_files_unchanged": true,
+  "freeze_and_approval_match": true,
+  "trace_replay_journal_and_official_scores_recomputed": true,
+  "all_832_actual_EOS_cap_and_adapter_routes_verified": true,
+  "all_four_cell_reviews_pass": true,
+  "counts": {
+    "serial": {
+      "complete": 8,
+      "attempts_and_returns": 416,
+      "statuses": {
+        "OK": 416
+      },
+      "unknown": 0
+    },
+    "batch2": {
+      "complete": 8,
+      "attempts_and_returns": 416,
+      "statuses": {
+        "OK": 416
+      },
+      "unknown": 0
+    }
+  },
+  "comparison_with_previous_512_run": {
+    "serial": {
+      "shared_requests": 416,
+      "same_payload_and_seed": 416,
+      "same_raw_output": 416
+    },
+    "batch2": {
+      "shared_requests": 397,
+      "same_payload_and_seed": 395,
+      "same_raw_output": 393
+    }
+  },
+  "rescued_requests": [
+    {
+      "request_id": "2hop__153074_79404|05",
+      "actor": "M4",
+      "arm": "A",
+      "old_cap": 512,
+      "old_tokens": 512,
+      "new_tokens": 528,
+      "same_payload": true,
+      "same_seed": true,
+      "new_finish_reason": "EOS"
+    },
+    {
+      "request_id": "2hop__153074_79404|30",
+      "actor": "M3",
+      "arm": "C",
+      "old_cap": 512,
+      "old_tokens": 512,
+      "new_tokens": 586,
+      "same_payload": true,
+      "same_seed": true,
+      "new_finish_reason": "EOS"
+    }
+  ],
+  "changed_team_outcomes": [
+    {
+      "index": 0,
+      "id": "2hop__123383_21417",
+      "arms": {
+        "A": {
+          "serial_expected_em": 0.0,
+          "batch2_expected_em": 1.0,
+          "serial_actual_em": 0,
+          "batch2_actual_em": 1
+        },
+        "C": {
+          "serial_expected_em": 1.0,
+          "batch2_expected_em": 0.0,
+          "serial_actual_em": 1,
+          "batch2_actual_em": 0
+        }
+      }
+    },
+    {
+      "index": 5,
+      "id": "2hop__153074_79404",
+      "arms": {
+        "C": {
+          "serial_expected_em": 0.25,
+          "batch2_expected_em": 0.0,
+          "serial_actual_em": 1,
+          "batch2_actual_em": 0
+        }
+      }
+    }
+  ],
+  "seconds": {
+    "serial": 2404.911577657971,
+    "batch2": 2147.525490528991
+  },
+  "time_saved_fraction": 0.10702517694211278,
+  "max_new_generations": 0,
+  "new_C_H_reads": false
+}

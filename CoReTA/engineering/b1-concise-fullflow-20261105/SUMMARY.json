@@ -1,0 +1,170 @@
+{
+  "date": "2026-11-05",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "sampling": {
+    "n_expected": 24,
+    "n_generated": 24,
+    "n_ok": 24,
+    "fatal": null,
+    "elapsed_seconds": 24.645805694002775,
+    "repeats": [
+      {
+        "task_id": "2hop__142515_31413",
+        "actor": "M2",
+        "seed": 20261102,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__142515_31413",
+        "actor": "M1",
+        "seed": 20261102,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__142515_31413",
+        "actor": "M2",
+        "seed": 20261103,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__142515_31413",
+        "actor": "M1",
+        "seed": 20261103,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__142515_31413",
+        "actor": "M2",
+        "seed": 20261104,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__142515_31413",
+        "actor": "M1",
+        "seed": 20261104,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__14120_89145",
+        "actor": "M2",
+        "seed": 20261102,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__14120_89145",
+        "actor": "M1",
+        "seed": 20261102,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__14120_89145",
+        "actor": "M2",
+        "seed": 20261103,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__14120_89145",
+        "actor": "M1",
+        "seed": 20261103,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__14120_89145",
+        "actor": "M2",
+        "seed": 20261104,
+        "same_output_ids": true,
+        "same_first_rng": true
+      },
+      {
+        "task_id": "2hop__14120_89145",
+        "actor": "M1",
+        "seed": 20261104,
+        "same_output_ids": true,
+        "same_first_rng": true
+      }
+    ],
+    "different_seed_rng_distinct": true,
+    "verdict": "PASS_TECHNICAL_ONLY",
+    "original_scores_unchanged": true
+  },
+  "V_migration": {
+    "mode": "v",
+    "n_expected_requests": 16,
+    "n_generated": 16,
+    "n_ok": 16,
+    "fatal": null,
+    "elapsed_seconds": 17.554152686992893,
+    "n_expected_tasks": 8,
+    "n_complete_tasks": null,
+    "unknown_outputs": 4,
+    "primary_enabled": false,
+    "verdict": "PASS_TECHNICAL_ONLY",
+    "original_scores_unchanged": true
+  },
+  "V_counts": {
+    "M1": {
+      "n": 8,
+      "correct": 6
+    },
+    "M2": {
+      "n": 8,
+      "correct": 3
+    }
+  },
+  "team": {
+    "mode": "team",
+    "n_expected_requests": 312,
+    "n_generated": 2,
+    "n_ok": 1,
+    "fatal": null,
+    "elapsed_seconds": 10.372872106992872,
+    "n_expected_tasks": 6,
+    "n_complete_tasks": 0,
+    "unknown_outputs": 0,
+    "primary_enabled": false,
+    "verdict": "REVISE",
+    "original_scores_unchanged": true
+  },
+  "team_status_counts": {
+    "FORMAT_VIOLATION": 1,
+    "OK": 1
+  },
+  "team_max_word_counts": {
+    "initial": 28,
+    "work": 0,
+    "final": 0
+  },
+  "last_request": {
+    "request_id": "2hop__342640_126084|01",
+    "actor": "M2",
+    "stage": "initial",
+    "arm": null,
+    "status": "FORMAT_VIOLATION",
+    "usage": {
+      "input_tokens": 4111,
+      "output_tokens": 41,
+      "elapsed_seconds": 2.461280470000929,
+      "adapter_enabled": false,
+      "finish_reason": "EOS",
+      "output_cap": 128,
+      "ended_with_eos": true,
+      "peak_allocated_bytes": 3968050176,
+      "peak_reserved_bytes": 4383047680,
+      "format_violation": "WORD_LIMIT"
+    }
+  },
+  "original32_still_complete28": true,
+  "overall_stage": "REVISE_FULLFLOW",
+  "new_generations": 42
+}

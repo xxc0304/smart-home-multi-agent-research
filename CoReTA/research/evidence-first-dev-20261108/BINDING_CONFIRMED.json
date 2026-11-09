@@ -1,0 +1,12 @@
+{
+  "scope": "Five selected unambiguous within-message name/ID mismatches; assistant semantic review, provisional, not exhaustive prevalence or replacement scoring.",
+  "unit": "One fourth-round work response, not the private final's unobservable intended meaning.",
+  "cases": [
+    {"task_id": 1, "run": "evidence-first-dev-20261108-v1", "call": 28, "arm": "A_private", "actor": "M1", "stated_choice": "West City", "correct_id_for_stated_choice": "option_3", "emitted_id": "option_1", "mapped_emitted_choice": "North Hill", "review": "Explicit concluding sentence names West City as safest and most viable."},
+    {"task_id": 11, "run": "evidence-first-remainder-20261108-v1", "call": 169, "arm": "E_facts", "actor": "M1", "stated_choice": "School Gym", "correct_id_for_stated_choice": "option_1", "emitted_id": "option_3", "mapped_emitted_choice": "City Library", "review": "Explicitly calls School Gym option_3 and the only viable option; displayed mapping assigns it option_1."},
+    {"task_id": 33, "run": "evidence-first-remainder-20261108-v1", "call": 365, "arm": "E_facts", "actor": "M1", "stated_choice": "Lab Nova", "correct_id_for_stated_choice": "option_2", "emitted_id": "option_3", "mapped_emitted_choice": "Lab Atlas", "review": "Explicit final sentence selects Nova; formal ID selects Atlas."},
+    {"task_id": 34, "run": "evidence-first-remainder-20261108-v1", "call": 422, "arm": "A_private", "actor": "M2", "stated_choice": "Maple Lodge", "correct_id_for_stated_choice": "option_3", "emitted_id": "option_1", "mapped_emitted_choice": "Cedar Station", "review": "Explicitly calls Maple the only confirmed safe/reachable option but emits the official correct Cedar ID. Shows formal right need not mean rationale right."},
+    {"task_id": 50, "run": "evidence-first-remainder-20261108-v1", "call": 536, "arm": "B_ordinary", "actor": "M1", "stated_choice": "Conference Room Beta", "correct_id_for_stated_choice": "option_1", "emitted_id": "option_2", "mapped_emitted_choice": "Conference Room Alpha", "review": "Concluding sentence says Beta better; ID selects Alpha. Both named and submitted choices are wrong relative to Gamma."}
+  ],
+  "do_not_infer": "Do not use last-mentioned-name heuristic as semantic correctness; do not infer private final intention from preceding work; do not silently remap final IDs."
+}

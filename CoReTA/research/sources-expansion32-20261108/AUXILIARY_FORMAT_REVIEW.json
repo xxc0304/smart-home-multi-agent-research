@@ -1,0 +1,121 @@
+{
+  "primary": false,
+  "rule_status": "posthoc exploratory exact-name correspondence only; no raw/frozen-score modification",
+  "aliases": {
+    "38": {
+      "Site A": "Site A (Open field with tent)",
+      "Site B": "Site B (Community sports center)",
+      "Site C": "Site C (Hilltop park)",
+      "Site D": "Site D (Library)"
+    },
+    "62": {
+      "AI hardware startup": "Option B: AI hardware startup"
+    }
+  },
+  "n_tasks": 32,
+  "n_task_seed_units": 64,
+  "means": {
+    "B_ordinary": 0.328125,
+    "E_facts": 0.53125,
+    "S_same_sources_m1": 0.5625
+  },
+  "recovered_units": [
+    {
+      "task_id": 38,
+      "seed": 2026110910,
+      "arm": "B_ordinary",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 38,
+      "seed": 2026110910,
+      "arm": "E_facts",
+      "score": 1,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 38,
+      "seed": 2026110910,
+      "arm": "S_same_sources_m1",
+      "score": 1,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 38,
+      "seed": 2126110910,
+      "arm": "B_ordinary",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 38,
+      "seed": 2126110910,
+      "arm": "E_facts",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 38,
+      "seed": 2126110910,
+      "arm": "S_same_sources_m1",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 62,
+      "seed": 2026110910,
+      "arm": "B_ordinary",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 62,
+      "seed": 2026110910,
+      "arm": "E_facts",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 62,
+      "seed": 2026110910,
+      "arm": "S_same_sources_m1",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 62,
+      "seed": 2126110910,
+      "arm": "B_ordinary",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 62,
+      "seed": 2126110910,
+      "arm": "E_facts",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    },
+    {
+      "task_id": 62,
+      "seed": 2126110910,
+      "arm": "S_same_sources_m1",
+      "score": 0,
+      "strict_score": null,
+      "was_strict_unknown": true
+    }
+  ],
+  "limits": "Alias table was defined after reading these outputs. Cannot claim prespecified full32 scoring or independent semantic validation."
+}

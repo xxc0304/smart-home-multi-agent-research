@@ -1,0 +1,38 @@
+{
+  "scope": "Retrospective audit; original frozen labels and selection unchanged",
+  "reviewer": "assistant",
+  "independence": "provisional",
+  "prior_flags_already_available": true,
+  "controls": [
+    {
+      "index": 13,
+      "declared_control": "both_wrong_by_official_EM",
+      "prior_strict_aliases": null,
+      "prior_lenient_aliases": {
+        "aliases": [
+          "macOS High Sierra"
+        ],
+        "reason": "Version/series and temporal target boundary, not unambiguous same answer."
+      },
+      "prior_question_flag": "OS version/series target",
+      "design_boundary_flag": null,
+      "semantic_control_label_needs_revision": true
+    },
+    {
+      "index": 15,
+      "declared_control": "both_wrong_by_official_EM",
+      "prior_strict_aliases": {
+        "aliases": [
+          "France",
+          "French actor"
+        ],
+        "reason": "Source nationality maps to requested country; no different country."
+      },
+      "prior_lenient_aliases": null,
+      "prior_question_flag": null,
+      "design_boundary_flag": null,
+      "semantic_control_label_needs_revision": true
+    }
+  ],
+  "no_model_calls": true
+}

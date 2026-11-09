@@ -1,0 +1,52 @@
+{
+  "scope": "RETROSPECTIVE_ASSISTANT_SENSITIVITY_RULES_SYMMETRIC_ALL_ACTORS_AND_STAGES_NOT_OFFICIAL_RESCORING",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "strict": {
+    "old:5": {"aliases": ["Appointment by the President of the Republic of Singapore under the Subordinate Courts Act.", "Appointment by the President of Singapore under the Subordinate Courts Act."], "reason": "Explicit appointment process, same office/jurisdiction as official target; source origin/residence concern separately retained. Mixed Geneva initial not accepted."},
+    "old:10": {"aliases": ["neutral", "neutral side", "neutral powers"], "reason": "Question asks side; neutral phrase projects official sentence Switzerland was neutral."},
+    "old:12": {"aliases": ["Spanish National Research Council (CSIC)"], "reason": "Full institution with acronym appended, same entity."},
+    "old:13": {"aliases": ["Spanish National Research Council (CSIC)"], "reason": "Full institution plus acronym; missing birthplace bridge not repaired."},
+    "old:22": {"aliases": ["Chinese-majority", "Chinese descent"], "reason": "Race target Chinese with descriptive majority/descent phrasing."},
+    "old:38": {"aliases": ["Kershaw County, South Carolina."], "reason": "Same county with state qualification."},
+    "old:41": {"aliases": ["linear defence", "linear defense", "Linear defense concept.", "Linear defence concept."], "reason": "Same concept, optional concept noun and UK/US spelling."},
+    "old:46": {"aliases": ["40%", "40 percent"], "reason": "Numeral/word percentage equivalence."},
+    "old:49": {"aliases": ["Athina Andrelos", "his then-girlfriend, Athina Andrelos"], "reason": "Same named person; relation qualifier optional, song bridge concern remains."},
+    "old:55": {"aliases": ["40%", "40 percent"], "reason": "Numeral/word percentage equivalence."},
+    "old:58": {"aliases": ["Anna Gordy"], "reason": "Same uniquely named target with married surname omitted; spouse bridge quality not certified."},
+    "old:60": {"aliases": ["Westminster", "Westminster, central London."], "reason": "Explicit source location; official alias London already permits broader location. School name itself not accepted."},
+    "old:62": {"aliases": ["March 1st, 1920"], "reason": "Question asks year, full date supplies same year."},
+    "old:69": {"aliases": ["2.5%"], "reason": "Percent symbol optional; city2.4 not accepted."},
+    "old:72": {"aliases": ["Supreme Governor of the Church of England"], "reason": "Same office with institution qualifier."},
+    "old:73": {"aliases": ["Jubilee Records"], "reason": "Same label plus Records suffix, already identified in prior auxiliary scoring. Only used for existing repeat evidence; this task is absent from the common-complete75."},
+    "old:74": {"aliases": ["The currency of Finland before the Euro was the Finnish markka. Since Iivantiira is located in Finland, the currency before the Euro was the Finnish markka.", "Finland's currency before the Euro was the Finnish markka. However, since Iivantiira is located in Finland, the currency before the Euro was the Finnish markka."], "reason": "Explicit correct currency repeated in complete observed initial answer; whitelist full strings, no generic gold substring extraction."},
+    "new:9": {"aliases": ["3"], "reason": "three/3 same count."},
+    "new:11": {"aliases": ["8 November 2001"], "reason": "Question asks adoption year, full adoption date includes same year."},
+    "new:15": {"aliases": ["France", "French actor"], "reason": "Source nationality maps to requested country; no different country."},
+    "new:25": {"aliases": ["21 meters", "21 m"], "reason": "Question fixes meters, same numeric value with explicit unit."},
+    "new:32": {"aliases": ["Lop Lake", "The Great Wall of China ends at Lop Lake."], "reason": "Same endpoint with west qualifier omitted or complete correct sentence."},
+    "new:48": {"aliases": ["Lille, France"], "reason": "Same city with country qualifier."},
+    "new:52": {"aliases": ["Guomindang-imposed martial law (1949–1987)", "Guomindang-imposed martial law", "era of Guomindang-imposed martial law"], "reason": "Same source era, expanded period description."}
+  },
+  "lenient_additional": {
+    "old:1": {"aliases": ["western Europe"], "reason": "Broad location only; less specific than target coastal relation."},
+    "old:5": {"aliases": ["President of the Republic of Singapore"], "reason": "Office retained but appointment action omitted; not strict full how-answer."},
+    "old:12": {"aliases": ["Andalusian headquarters", "Andalusian headquarters of the Spanish National Research Council", "The Andalusian headquarters of the Spanish National Research Council (CSIC).", "The Science Museum in the city where Amalia Molina was born (Seville) is part of the Andalusian headquarters of the Spanish National Research Council (CSIC)."], "reason": "Regional/parent organization and partial naming boundary."},
+    "old:54": {"aliases": ["Qaleh Now District"], "reason": "Nested district versus rural-district boundary; Ray County not accepted."},
+    "old:65": {"aliases": ["Luftwaffe units"], "reason": "Correct object retained but gaining control omitted."},
+    "old:71": {"aliases": ["Rocky Mountains", "Collegiate Peaks"], "reason": "Nested mountain-range granularity, not a strict identical target."},
+    "new:3": {"aliases": ["two weeks off his 74th birthday"], "reason": "Upcoming birthday description, not exact answer to turned-age request."},
+    "new:10": {"aliases": ["1932"], "reason": "Month missing; partial date only."},
+    "new:13": {"aliases": ["macOS High Sierra"], "reason": "Version/series and temporal target boundary, not unambiguous same answer."},
+    "new:16": {"aliases": ["2016"], "reason": "Day/month missing; not strict full date."},
+    "new:38": {"aliases": ["Connecticut"], "reason": "Region wording permits state/county ambiguity; not strict county equality."},
+    "new:51": {"aliases": ["The main subject of the book named for the author of \"Four Score and Seven Years Ago\" is the presidency of Abraham Lincoln during the American Civil War.", "The presidency of Abraham Lincoln during the American Civil War."], "reason": "Source-supported presidency/Civil-War topic granularity; broad History not accepted."}
+  },
+  "known_question_flags": {
+    "definite_nonunique": {"new:53": "Multiple supplied Doure villages satisfy country relation, with distinct departments."},
+    "expanded_stress": {
+      "old:5": "Origin versus residence city", "old:11": "Concept-car versus production first year", "old:13": "Birthplace bridge not explicit", "old:17": "Multiple same-name Murphy Lakes and ambiguous county relation", "old:29": "Multiple producer organizations/founder bridge", "old:35": "Chrysler/DaimlerChrysler corporate identity bridge", "old:47": "Person-party bridge weak", "old:48": "Long geographic/trade bridge weak", "old:49": "You Look Perfect Tonight title/Perfect bridge not explicit", "old:50": "Homonymous Dodgsons/father bridge", "old:58": "Coauthor target source does not explicitly establish spouse", "old:69": "Bandy origin not established by national team paragraph", "new:13": "OS version/series target", "new:38": "Region administrative granularity", "new:51": "Book subject versus setting granularity"
+    }
+  },
+  "not_accepted": ["Do not accept a wrong entity merely because correct target appears somewhere in a long answer", "Do not repair full reasoning chains with aliases", "Do not treat incomplete dates as strict equivalence", "Do not alter official scores, targets or vote classes", "Unknown/question flags do not certify every remaining task as clean"]
+}

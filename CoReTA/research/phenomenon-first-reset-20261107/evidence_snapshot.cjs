@@ -1,0 +1,11 @@
+// Numeric evidence inventory only, not a completed semantic phenomenon census.
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const root=path.resolve(__dirname,'../..');const load=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+const old=load('research/b1-dev80-analysis-20261106/ANALYSIS.json').cases.filter(r=>r.complete);
+const fresh=load('runs/b1-grounded-revision-20261107-v1/scores.json').rows.filter(r=>r.cohort==='fresh');
+const pair=load('research/b1-grounded-revision-analysis-20261107/ANALYSIS.json').pairs;
+const mean=xs=>xs.reduce((a,b)=>a+b,0)/xs.length;
+function summarize(rs,arm,initials){return{n:rs.length,arms:Object.fromEntries(['A','B','C','D'].map(c=>[c,{team:mean(rs.map(r=>arm(r,c).expected_em)),expert:mean(rs.map(r=>arm(r,c).expert_em))}])),matched:Object.fromEntries([['B','A'],['D','C']].map(([left,right])=>[left+'-'+right,{expertCorrectPrivateWrongTalk:rs.filter(r=>arm(r,right).expert_em===1&&arm(r,left).expert_em===0).length,expertWrongPrivateCorrectTalk:rs.filter(r=>arm(r,right).expert_em===0&&arm(r,left).expert_em===1).length}])),B_expertFinalCorrectTeamBelowOne:rs.filter(r=>arm(r,'B').expert_em===1&&arm(r,'B').expected_em<1).length,baseThreeInitialRawSame:rs.filter(r=>new Set(['M2','M3','M4'].map(a=>initials(r)[a])).size===1).length};}
+const out={scope:'REVIEW_INPUT_OFFICIAL_EM_CANDIDATES_NOT_SEMANTIC_EVENT_PREVALENCE',D80_common75:summarize(old,(r,c)=>r.arms[c].score,r=>r.initials),fresh56:summarize(fresh,(r,c)=>r.conditions[c],r=>pair.find(p=>p.id===r.id).initials),baseThreeBFinalRawSame:{D80:old.filter(r=>new Set(['M2','M3','M4'].map(a=>r.arms.B.finals[a])).size===1).length,fresh56:pair.filter(p=>p.cohort==='fresh'&&new Set(['M2','M3','M4'].map(a=>p.conditions.B.finals[a])).size===1).length},known_semantic_boundaries:{fresh_B_readout_events:[{index:9,type:'three vs 3'},{index:51,type:'topic granularity/verbosity'},{index:31,type:'public mixed relation/commitment, not sustained clear correct argument'}]},census_complete:false,independent_human_review:false,new_model_calls:0};
+if(old.length!==75||fresh.length!==56)throw Error('Denominator mismatch');
+fs.writeFileSync(path.join(__dirname,'EVIDENCE_SNAPSHOT.json'),JSON.stringify(out,null,2)+'\n');console.log(JSON.stringify(out));

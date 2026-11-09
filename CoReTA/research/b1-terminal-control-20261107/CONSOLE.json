@@ -1,0 +1,447 @@
+{
+  "summary": {
+    "original_private_terminal_failure": {
+      "differentGroups": 6,
+      "pairedGenerations": 12,
+      "onCorrect": 1,
+      "offCorrect": 6,
+      "gains": 6,
+      "losses": 1,
+      "unchanged": 5,
+      "affectedTasks": [
+        "new:34",
+        "new:45",
+        "new:3",
+        "new:2"
+      ]
+    },
+    "original_stable_correct_control": {
+      "differentGroups": 6,
+      "pairedGenerations": 12,
+      "onCorrect": 12,
+      "offCorrect": 7,
+      "gains": 0,
+      "losses": 5,
+      "unchanged": 7,
+      "affectedTasks": [
+        "new:16",
+        "new:41",
+        "new:26"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "id": "p00",
+      "key": "new:35",
+      "task_id": "2hop__7483_160863",
+      "group": "g35",
+      "stratum": "original_private_terminal_failure",
+      "gold": "1994",
+      "original": "1966",
+      "work": "The East of England was created in 1994, but the RIBA's Cambridge branch office was opened in 1966.",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "1966",
+          "off": "1966",
+          "onEM": 0,
+          "offEM": 0,
+          "delta": 0,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "1966",
+          "off": "1966",
+          "onEM": 0,
+          "offEM": 0,
+          "delta": 0,
+          "originalOnExact": true
+        }
+      ]
+    },
+    {
+      "id": "p01",
+      "key": "new:19",
+      "task_id": "3hop1__232823_810457_285920",
+      "group": "g17",
+      "stratum": "original_private_terminal_failure",
+      "gold": "Greene County",
+      "original": "Ulster County",
+      "work": "Greene County",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "Ulster County",
+          "off": "Ulster County",
+          "onEM": 0,
+          "offEM": 0,
+          "delta": 0,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "Ulster County",
+          "off": "Ulster County",
+          "onEM": 0,
+          "offEM": 0,
+          "delta": 0,
+          "originalOnExact": true
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "key": "new:34",
+      "task_id": "2hop__79539_465884",
+      "group": "g34",
+      "stratum": "original_private_terminal_failure",
+      "gold": "Monroe County",
+      "original": "Brinkley",
+      "work": "Monroe County",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "Brinkley",
+          "off": "Monroe County",
+          "onEM": 0,
+          "offEM": 1,
+          "delta": 1,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "Brinkley",
+          "off": "Monroe County",
+          "onEM": 0,
+          "offEM": 1,
+          "delta": 1,
+          "originalOnExact": true
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "key": "new:45",
+      "task_id": "2hop__560_568792",
+      "group": "g45",
+      "stratum": "original_private_terminal_failure",
+      "gold": "Cosima Wagner",
+      "original": "Marie d'Agoult",
+      "work": "Cosima Wagner was born to Franz Liszt and Marie d'Agoult.",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "Marie d'Agoult",
+          "off": "Cosima Wagner",
+          "onEM": 0,
+          "offEM": 1,
+          "delta": 1,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "Richard Wagner",
+          "off": "Cosima Wagner",
+          "onEM": 0,
+          "offEM": 1,
+          "delta": 1,
+          "originalOnExact": false
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "key": "new:3",
+      "task_id": "2hop__815884_21244",
+      "group": "g3",
+      "stratum": "original_private_terminal_failure",
+      "gold": "74",
+      "original": "Ronald Reagan",
+      "work": "Ronald Reagan turned 74",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "Ronald Reagan",
+          "off": "Ronald Reagan",
+          "onEM": 0,
+          "offEM": 0,
+          "delta": 0,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "74",
+          "off": "Ronald Reagan",
+          "onEM": 1,
+          "offEM": 0,
+          "delta": -1,
+          "originalOnExact": false
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "key": "new:2",
+      "task_id": "2hop__141962_841802",
+      "group": "g2",
+      "stratum": "original_private_terminal_failure",
+      "gold": "Carolyn Franklin",
+      "original": "R&B and Gospel singer",
+      "work": "Carolyn Franklin",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "R&B and Gospel singer",
+          "off": "Carolyn Franklin",
+          "onEM": 0,
+          "offEM": 1,
+          "delta": 1,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "R&B and Gospel singer",
+          "off": "Carolyn Franklin",
+          "onEM": 0,
+          "offEM": 1,
+          "delta": 1,
+          "originalOnExact": true
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "key": "new:30",
+      "task_id": "2hop__53030_539716",
+      "group": "g30",
+      "stratum": "original_stable_correct_control",
+      "gold": "Prince County",
+      "original": "Prince County",
+      "work": "Prince County",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "Prince County",
+          "off": "Prince County",
+          "onEM": 1,
+          "offEM": 1,
+          "delta": 0,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "Prince County",
+          "off": "Prince County",
+          "onEM": 1,
+          "offEM": 1,
+          "delta": 0,
+          "originalOnExact": true
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "key": "new:14",
+      "task_id": "2hop__107474_166568",
+      "group": "g14",
+      "stratum": "original_stable_correct_control",
+      "gold": "Esther Kenworthy Waterhouse",
+      "original": "Esther Kenworthy Waterhouse",
+      "work": "Esther Kenworthy Waterhouse",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "Esther Kenworthy Waterhouse",
+          "off": "Esther Kenworthy Waterhouse",
+          "onEM": 1,
+          "offEM": 1,
+          "delta": 0,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "Esther Kenworthy Waterhouse",
+          "off": "Esther Kenworthy Waterhouse",
+          "onEM": 1,
+          "offEM": 1,
+          "delta": 0,
+          "originalOnExact": true
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "key": "new:16",
+      "task_id": "2hop__22408_92923",
+      "group": "g8",
+      "stratum": "original_stable_correct_control",
+      "gold": "23 June 2016",
+      "original": "23 June 2016",
+      "work": "In a referendum on 23 June 2016, 51.9% of the participating UK electorate voted to leave the EU.",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "23 June 2016",
+          "off": "2016",
+          "onEM": 1,
+          "offEM": 0,
+          "delta": -1,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "23 June 2016",
+          "off": "2016",
+          "onEM": 1,
+          "offEM": 0,
+          "delta": -1,
+          "originalOnExact": true
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "key": "new:41",
+      "task_id": "2hop__44510_253211",
+      "group": "g41",
+      "stratum": "original_stable_correct_control",
+      "gold": "English language",
+      "original": "English language",
+      "work": "English language",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "English language",
+          "off": "Khushwant Singh",
+          "onEM": 1,
+          "offEM": 0,
+          "delta": -1,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "English language",
+          "off": "Khushwant Singh",
+          "onEM": 1,
+          "offEM": 0,
+          "delta": -1,
+          "originalOnExact": true
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "key": "new:26",
+      "task_id": "2hop__128806_205185",
+      "group": "g4",
+      "stratum": "original_stable_correct_control",
+      "gold": "Midland County",
+      "original": "Midland County",
+      "work": "Midland County",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "Midland County",
+          "off": "Midland County",
+          "onEM": 1,
+          "offEM": 1,
+          "delta": 0,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "Midland County",
+          "off": "Midland, Texas",
+          "onEM": 1,
+          "offEM": 0,
+          "delta": -1,
+          "originalOnExact": true
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "key": "new:18",
+      "task_id": "2hop__69856_442921",
+      "group": "g18",
+      "stratum": "original_stable_correct_control",
+      "gold": "Joan Maxine Copeland",
+      "original": "Joan Copeland",
+      "work": "Joan Copeland is the sister of playwright Arthur Miller, who wrote the script for the 1996 Crucible movie adaption.",
+      "rep": [
+        {
+          "rep": 0,
+          "on": "Joan Copeland",
+          "off": "Joan Copeland",
+          "onEM": 1,
+          "offEM": 1,
+          "delta": 0,
+          "originalOnExact": true
+        },
+        {
+          "rep": 1,
+          "on": "Joan Copeland",
+          "off": "Joan Copeland",
+          "onEM": 1,
+          "offEM": 1,
+          "delta": 0,
+          "originalOnExact": true
+        }
+      ]
+    }
+  ],
+  "stageAdvantage": {
+    "old": {
+      "n": 75,
+      "initial": {
+        "expert": 0.6133333333333333,
+        "ordinary": 0.12
+      },
+      "arms": {
+        "A": {
+          "expert": 0.5866666666666667,
+          "ordinary": 0.44
+        },
+        "B": {
+          "expert": 0.64,
+          "ordinary": 0.5333333333333333
+        },
+        "C": {
+          "expert": 0.6,
+          "ordinary": 0.4622222222222222
+        },
+        "D": {
+          "expert": 0.6,
+          "ordinary": 0.5511111111111111
+        }
+      }
+    },
+    "new": {
+      "n": 56,
+      "initial": {
+        "expert": 0.6607142857142857,
+        "ordinary": 0.2916666666666667
+      },
+      "arms": {
+        "A": {
+          "expert": 0.625,
+          "ordinary": 0.6190476190476191
+        },
+        "B": {
+          "expert": 0.7142857142857143,
+          "ordinary": 0.6785714285714286
+        },
+        "C": {
+          "expert": 0.5892857142857143,
+          "ordinary": 0.5952380952380952
+        },
+        "D": {
+          "expert": 0.7142857142857143,
+          "ordinary": 0.6607142857142857
+        }
+      }
+    }
+  }
+}

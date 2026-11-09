@@ -1,0 +1,20 @@
+{
+  "fixture": false,
+  "model_path": "/data2/xiaoxinchen/models/Qwen3-4B-1cfa9a7",
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "dtype": "bfloat16",
+  "quantization": "4bit",
+  "device": "cuda:0",
+  "max_length": 16384,
+  "template_kwargs": {"enable_thinking": false},
+  "generation": {"do_sample": true, "temperature": 0.7, "top_p": 0.95, "top_k": 0},
+  "seeds": [20261108, 20261109],
+  "work_tokens": 512,
+  "final_tokens": 256,
+  "rounds": 4,
+  "run_dir": "runs/psych-sbp-pilot-20261108-v1",
+  "adapter": null,
+  "purpose": "TWO_SEED_SINGLE_SCENARIO_INFORMATION_EXPERTISE_TECHNICAL_DIAGNOSTIC",
+  "wall_clock_cutoff": null,
+  "generation_retries": 0
+}

@@ -7,6 +7,7 @@ from b0_answers import answer_text, answer_score, paired_interval, write_json
 from metrics.answer import normalize_answer
 from expert_mechanism_protocol import ACTORS, task_data, validate_task
 from prepare_answer_only_expert import SYSTEM
+from b1_output_contract import VERSION as CONCISE_VERSION, READABLE_VERSION, LONG_WORK_VERSION, instruction, violation
 
 ARMS = ('A', 'B', 'C', 'D')
 PUBLIC = ('B', 'D')
@@ -18,12 +19,28 @@ FINAL = 'Give only your final short answer to the question.'
 
 
 class Trial:
-    def __init__(self, task, *, expert_actor, seed=20261102, task_index=0, fixture=False):
+    def __init__(self, task, *, expert_actor, seed=20261102, task_index=0, fixture=False,
+                 answer_tokens=64, answer_suffix='', output_contract=None):
         self.task = validate_task(task)
         if (expert_actor not in ACTORS or type(seed) is not int or type(fixture) is not bool
                 or type(task_index) is not int or task_index < 0):
             raise ValueError('explicit_expert_seed_fixture_required')
+        concise = output_contract in (CONCISE_VERSION, READABLE_VERSION)
+        long_work = output_contract == LONG_WORK_VERSION
+        if (output_contract not in (None, CONCISE_VERSION, READABLE_VERSION, LONG_WORK_VERSION) or type(answer_tokens) is not int
+                or answer_tokens not in ((128,) if concise else (64,256))
+                or not isinstance(answer_suffix,str) or (concise and answer_suffix)
+                or (long_work and (answer_tokens!=256 or not answer_suffix))):
+            raise ValueError('registered_answer_contract_required')
+        self.output_contract = output_contract
+        self.concise = concise
+        self.work_tokens = 1024 if long_work else 768 if concise else 512
+        self.answer_tokens,self.answer_suffix=answer_tokens,answer_suffix
         self.config = dict(expert_actor=expert_actor, seed=seed, task_index=task_index, fixture=fixture)
+        if answer_tokens!=64 or answer_suffix:
+            self.config.update(answer_tokens=answer_tokens,answer_suffix=answer_suffix)
+        if concise or long_work:
+            self.config['output_contract'] = output_contract
         self.base_seed = seed + task_index * 10000
         rng = random.Random(self.base_seed)
         self.initial_order = rng.sample(list(ACTORS), 4)
@@ -68,9 +85,14 @@ class Trial:
         self.pending = dict(request_id=f'{self.task["id"]}|{self.cursor:02d}', arm=arm,
             stage=stage, round=round_no, actor=actor,
             seed=self.base_seed + stage_seed + ACTORS.index(actor),
-            max_new_tokens=512 if stage == 'work' else 64,
+            max_new_tokens=self.work_tokens if stage == 'work' else self.answer_tokens,
             payload=dict(system=SYSTEM if stage == 'initial' else WORK if stage == 'work' else FINAL,
-                user='TASK_DATA\n' + json.dumps(data, ensure_ascii=False, indent=2)))
+                user='TASK_DATA\n' + json.dumps(data, ensure_ascii=False, indent=2) +
+                    (self.answer_suffix if stage in ('initial','final') else '')))
+        if self.concise:
+            suffix = instruction(stage)
+            self.pending['payload']['system'] += '\n' + suffix
+            self.pending['payload']['user'] += '\n\nOUTPUT FORMAT: ' + suffix
         return deepcopy(self.pending)
 
     def submit(self, request_id, raw_output, *, status='OK', usage=None, source_kind=None):
@@ -81,6 +103,14 @@ class Trial:
             raise ValueError('real_response_origin_required')
         if status == 'OK' and not isinstance(raw_output, str):
             status = 'NON_TEXT_OUTPUT'
+        if status == 'OK' and self.concise:
+            reason = violation(raw_output, req['stage'])
+            if reason:
+                if self.output_contract == READABLE_VERSION and reason != 'EMPTY_OR_NON_TEXT':
+                    usage = dict(usage or {}, format_warning=reason)
+                else:
+                    status = 'FORMAT_VIOLATION'
+                    usage = dict(usage or {}, format_violation=reason)
         record = dict(**req, raw_output=raw_output, status=status, usage=deepcopy(usage),
                       source_kind=source_kind, fixture=self.config['fixture'])
         self.records.append(record)
@@ -106,7 +136,8 @@ class Trial:
                 and all(len(self.finals[a]) == 4 for a in ARMS))
 
     def export(self):
-        return deepcopy(dict(protocol='B1_TWO_ROUND_FOUR_ARM_V1', task=self.task,
+        return deepcopy(dict(protocol='B1_TWO_ROUND_FOUR_ARM_V6' if self.output_contract == LONG_WORK_VERSION else 'B1_TWO_ROUND_FOUR_ARM_V5' if self.output_contract == READABLE_VERSION else 'B1_TWO_ROUND_FOUR_ARM_V4' if self.output_contract else 'B1_TWO_ROUND_FOUR_ARM_V2' if self.answer_tokens!=64 or self.answer_suffix
+                             else 'B1_TWO_ROUND_FOUR_ARM_V1', task=self.task,
             config=self.config, initial_order=self.initial_order, orders=self.orders,
             initials=self.initials, work=self.work, finals=self.finals,
             records=self.records, complete=self.complete, expected_generations=52,
@@ -193,7 +224,9 @@ def summarize(traces, targets, expected_ids, groups, repeats=10000):
             or len(set(expected_ids))!=len(expected_ids) or set(groups)!=set(expected_ids)):
         raise ValueError('duplicate_or_extra_trials')
     reports=[score_trial(by_id[k],targets[k]) for k in expected_ids if k in by_id]
-    signatures={(r['config']['expert_actor'],r['config']['seed'],r['config']['fixture']) for r in reports}
+    signatures={(r['config']['expert_actor'],r['config']['seed'],r['config']['fixture'],
+                 r['config'].get('answer_tokens',64),r['config'].get('answer_suffix',''),
+                 r['config'].get('output_contract')) for r in reports}
     if len(signatures)>1:
         raise ValueError('mixed_batch_conditions')
     completed=[r for r in reports if r['complete']]

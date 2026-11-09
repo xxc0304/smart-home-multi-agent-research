@@ -1,5 +1,7 @@
 # CoReTA 数据与任务说明
 
+2026-11-08新增开发分配：规范数据包`data/task-packs/hiddenbench-expansion32-20261108-v1/`（原件快照`data/source/hiddenbench-20261108/benchmark.json`），与`research/sources-expansion32-20261108/`执行镜像三JSON逐字一致。SELECTION固定HiddenBench32任务/2seed三组；源快照SHA2815afffca4e470d1dfbc81e625160447df1109ce371968181c9e1e6b90443a3，排除已知内容核读和可用请求日志题面匹配，按固定哈希选取。历史划分丢失，非秘密/独立留出；模型任务投影与离线标签分文件，原题事实不改，全部题面边界见研究目录CONTENT_REVIEW.md。两seed不增加独立题数，未分配8题不在本轮生成范围。
+
 `data/` 是本项目的规范数据目录。任务来源、候选集、适配任务和冻结任务包分开保存；不把任务开发数据、诊断样本和留出评价集混作一个集合。
 
 ## 目录导航

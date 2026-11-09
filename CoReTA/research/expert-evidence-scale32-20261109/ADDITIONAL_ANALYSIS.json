@@ -1,0 +1,51 @@
+{
+  "seed_results": {
+    "background/0": {
+      "A": 0.8260869565217391,
+      "B": 0.8478260869565217,
+      "C": 0.9130434782608695
+    },
+    "background/1": {
+      "A": 0.8260869565217391,
+      "B": 0.8695652173913043,
+      "C": 0.8260869565217391
+    },
+    "diagnostic/0": {
+      "A": 0.75,
+      "B": 0.875,
+      "C": 0.875
+    },
+    "diagnostic/1": {
+      "A": 0.875,
+      "B": 0.75,
+      "C": 0.5
+    }
+  },
+  "candidate_strata": {
+    "0": {
+      "units": 13,
+      "C_minus_B_expected_sum": -2,
+      "changed_units": [
+        38,
+        39
+      ]
+    },
+    "1": {
+      "units": 49,
+      "C_minus_B_expected_sum": 0.5,
+      "changed_units": [
+        15,
+        27,
+        34,
+        36,
+        47
+      ]
+    }
+  },
+  "all_initial_correct_units": 22,
+  "final_unique_strings": 48,
+  "fixed24_missing_task_C_minus_B_arithmetic_bounds": [
+    -0.03125,
+    0.052083333333333336
+  ]
+}

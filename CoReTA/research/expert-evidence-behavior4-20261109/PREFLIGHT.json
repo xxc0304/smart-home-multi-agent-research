@@ -1,0 +1,70 @@
+{
+  "result": "PASS",
+  "qualification": "SUPPORTED_TASK_ADVANTAGE",
+  "request_lengths_checked": 192,
+  "max_input_plus_cap": 6149,
+  "full_actual_response_replay_calls": 128,
+  "tests": [
+    {
+      "mode": "actual_full_response_replay",
+      "result": "PASS"
+    },
+    {
+      "mode": "missing_review_sections",
+      "result": "PASS"
+    },
+    {
+      "mode": "empty",
+      "result": "PASS"
+    },
+    {
+      "mode": "review_limit",
+      "result": "PASS"
+    },
+    {
+      "mode": "system",
+      "result": "PASS"
+    },
+    {
+      "mode": "cancel",
+      "result": "PASS"
+    }
+  ],
+  "freeze": {
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-evidence-behavior4-20261109/probe.py": "f6cdfc6e058cde02e4c886316a2284144fb5a4a07195948a7aa083872c631009",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-evidence-behavior4-20261109/launch.py": "9ab72da06af3e6058b379ec7b8d6cecf321fa3e47e9da194b2f5fc63d33e080e",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-evidence-behavior4-20261109/config.json": "809f8bf0956287df66ac8388b60a6dd99a23f950def15e299251a10d0dae847d",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-evidence-behavior4-20261109/INPUTS.json": "93d08749a8c9e8afcf75da2824c1fc785f31291e1c4fdc8994900666c4ddaaad",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-evidence-behavior4-20261109/DESIGN.md": "42f934082637a16567303c54014112e472689192961307f5861f58357a0e3cb1",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-evidence-behavior4-20261109/RUBRIC.md": "8822e4975893b36ab079177efeef49a5af2c654f5527b83ecac2df53cca7cce9",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-evidence-behavior4-20261109/EXPERIMENT_REVIEW.md": "be1bfb2acd7d64bc889ea2bc519008dc539a0f0ffa259cbffddef0eac87a8d60",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-final-visibility-design-20261109/build_design.py": "3ffe555926b96e99d73a8e7d9fc5d65923a3812420f50f4ee00711c238a638fe",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-composition100-20261109/experiment.py": "fa8f0a3994ce5ff1cd4bfe6147d72bf7a1103858b520db939f486cfbbd471deb",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/expert-composition100-20261109/LABELS.json": "1099af27c4d4e3a047a71d002567fa0fab5e559eb4b45a0dac0a99a0e36c810e",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-stage-advantage-seed1-20261107-v1/trials/006.json": "4cabbe5fb38f5bddb15e426045b4b97b684d93ab5318b28a15e03cc57e4c46ad",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-stage-advantage-seed1-20261107-v1/trials/043.json": "a55cb93f833169752b9f0fdf752891afff8183daed95e454618bebabbdc18e19",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-stage-advantage-seed1-20261107-v1/trials/017.json": "92ffce51a7be1ce53bf6972cdac747c807a343485e7216fa82efe7f45e81cd70",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-stage-advantage-seed1-20261107-v1/trials/000.json": "1b23f1d8e5122091943192572f391f32b7def8436e7493966c1dd298bdfa5e4d",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-grounded-revision-20261107-v1/trials/006.json": "6eb5a4c8282d70b533156836ce687d53fd4c9a517556bbcdc603bbecbd1d0b71",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-grounded-revision-20261107-v1/trials/043.json": "cd19acbcdb85f863a42093d212c44670e4ef6130d9e8c743515571bfd581b628",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-grounded-revision-20261107-v1/trials/017.json": "5d7a0183cb31e2bbee04785f292dab51f2b511b229f03fb1f5c1187866ea0fdc",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b1-grounded-revision-20261107-v1/trials/000.json": "0db46ceedc99ea662f5a35a612a4bbbc3a041bb83eedb864e7ac3dfbf62026cd",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/b1_controls.py": "427eeb65b7531d3a6d6609d7afa95ce1655b66b4641e9da0960647475efd017d",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/b1_runtime.py": "e62588c3bb8ac476c43c28738e074f38c081f8d9db073d38e72b45fcc4843670",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/b1_multi_backend.py": "d99828f9c8773892a5683f64f71a27c70463e98e2d8a03d6ea32fc756c57205e",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/b0_answers.py": "df9622b63739094178e1348d717ea2cf2d67ee35746c1cc3df7899192810aff2",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/b0_training.py": "613c2be400cff2150e4d01c33bd12a1bdf385715097015f2711f79e694130fde",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/b1_stop_status.py": "b3062f89025c74f15512e2d32a6e4138d6ef87a1ac3026df3430dd40ba1f842a",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/b1_output_contract.py": "6d1dfde9c4309cb72c4708139d80ff1c658187c5db9f806fd3d369879c33f318",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/expert_mechanism_protocol.py": "a2399216594461c35c6604f6684f87d96a47e88f3d8e4fbe21e001f2f8c956a0",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/prepare_answer_only_expert.py": "697edb7b6fe99434ce20a710560832002a404f41a07173fc95dee51d30794fdb",
+    "/data2/xiaoxinchen/agent-research/CoReTA/tools/prepare_expert_training.py": "3597d77a0941fd59df2da4cdb7189989e1f204efee2ba8209146521d81cae0a1",
+    "/data2/xiaoxinchen/agent-research/CoReTA/research/musique-data-preparation-20261030/official_scorer/metrics/answer.py": "580445cbba0ca4a14d826d49f2155b84383894c9a938844bd90096d606de9e67",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter/adapter_config.json": "2a9d93319effb9ac7ceafaf24e75a3b0d6a0f7c5202c5810794a9d3004c58865",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter/adapter_model.safetensors": "2b849ddcfe0afb69362325b1095dc435115bf3002694bb33c955b61f1e4318db",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter/b0_origin.json": "ae512f2d4f0c6281755f1a1817e4d831e1dc72b82d518c2181ea496a40dd1f1c",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-C160-20261103/C_B_score.json": "68d952df3b0a7a1504835db14360258161ec3e85d1c2d73354d5b2be14dcab59",
+    "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-C160-20261103/C_E_score.json": "e61f700b13413c2e8e2fbaab34454273cbf873cebe11d705bb5ee854845ec810"
+  },
+  "model_calls": 0
+}

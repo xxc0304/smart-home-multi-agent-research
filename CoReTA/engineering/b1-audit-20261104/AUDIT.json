@@ -1,0 +1,268 @@
+{
+  "recomputed_scores_identical": true,
+  "all32_replay_structurally_valid": true,
+  "private_visibility_and_identity_and_no_final_leak": "PASS",
+  "initial_correct_complete28": {
+    "M1": 19,
+    "M2": 3,
+    "M3": 3,
+    "M4": 3
+  },
+  "arms": {
+    "A": {
+      "available_n": 30,
+      "expected_sum": 16.5,
+      "planned32_expected_bounds": [
+        0.515625,
+        0.578125
+      ],
+      "harm_ids": [
+        "2hop__153074_79404",
+        "2hop__857136_78066",
+        "2hop__178056_377891",
+        "2hop__722744_134827"
+      ],
+      "correction_ids": [
+        "2hop__726238_705760"
+      ],
+      "readout_loss_ids": [
+        "2hop__726238_705760",
+        "2hop__262172_14904",
+        "2hop__455004_523858",
+        "2hop__468328_34197"
+      ],
+      "ordinary_initial_correct": 9,
+      "ordinary_final_correct": 41,
+      "correct_candidate_but_team_not_correct": [
+        "2hop__123383_21417",
+        "2hop__446970_49333",
+        "2hop__726238_705760",
+        "2hop__262172_14904",
+        "2hop__455004_523858",
+        "2hop__468328_34197"
+      ]
+    },
+    "B": {
+      "available_n": 30,
+      "expected_sum": 19.0,
+      "planned32_expected_bounds": [
+        0.59375,
+        0.65625
+      ],
+      "harm_ids": [
+        "2hop__153074_79404",
+        "2hop__857136_78066",
+        "2hop__178056_377891"
+      ],
+      "correction_ids": [
+        "2hop__123383_21417",
+        "2hop__446970_49333",
+        "2hop__145663_123897"
+      ],
+      "readout_loss_ids": [
+        "2hop__145663_123897"
+      ],
+      "ordinary_initial_correct": 9,
+      "ordinary_final_correct": 55,
+      "correct_candidate_but_team_not_correct": [
+        "3hop1__33286_22372_8184",
+        "2hop__145663_123897"
+      ]
+    },
+    "C": {
+      "available_n": 30,
+      "expected_sum": 16.75,
+      "planned32_expected_bounds": [
+        0.5234375,
+        0.5859375
+      ],
+      "harm_ids": [
+        "2hop__153074_79404",
+        "2hop__178056_377891",
+        "2hop__722744_134827"
+      ],
+      "correction_ids": [
+        "2hop__446970_49333",
+        "2hop__726238_705760"
+      ],
+      "readout_loss_ids": [
+        "2hop__857136_78066",
+        "2hop__726238_705760",
+        "2hop__262172_14904",
+        "2hop__543705_18221",
+        "2hop__455004_523858",
+        "2hop__468328_34197"
+      ],
+      "ordinary_initial_correct": 9,
+      "ordinary_final_correct": 43,
+      "correct_candidate_but_team_not_correct": [
+        "2hop__153074_79404",
+        "2hop__857136_78066",
+        "2hop__726238_705760",
+        "2hop__262172_14904",
+        "2hop__543705_18221",
+        "2hop__455004_523858",
+        "2hop__468328_34197"
+      ]
+    },
+    "D": {
+      "available_n": 31,
+      "expected_sum": 18.0,
+      "planned32_expected_bounds": [
+        0.5625,
+        0.59375
+      ],
+      "harm_ids": [
+        "2hop__153074_79404",
+        "2hop__857136_78066"
+      ],
+      "correction_ids": [
+        "2hop__446970_49333",
+        "2hop__145663_123897"
+      ],
+      "readout_loss_ids": [
+        "2hop__446970_49333",
+        "2hop__145663_123897",
+        "2hop__455004_523858"
+      ],
+      "ordinary_initial_correct": 9,
+      "ordinary_final_correct": 48,
+      "correct_candidate_but_team_not_correct": [
+        "2hop__446970_49333",
+        "2hop__145663_123897",
+        "2hop__455004_523858"
+      ]
+    }
+  },
+  "missing_bounds": {
+    "B-A": {
+      "available_pairs": 29,
+      "planned32_difference_bounds": [
+        0.015625,
+        0.140625
+      ]
+    },
+    "D-C": {
+      "available_pairs": 30,
+      "planned32_difference_bounds": [
+        -0.0234375,
+        0.0703125
+      ]
+    },
+    "D-B": {
+      "available_pairs": 30,
+      "planned32_difference_bounds": [
+        -0.09375,
+        0.0
+      ]
+    },
+    "C-A": {
+      "available_pairs": 29,
+      "planned32_difference_bounds": [
+        -0.0546875,
+        0.0703125
+      ]
+    }
+  },
+  "contrasts": {
+    "B-A": {
+      "expected_em": {
+        "difference": 0.125,
+        "cluster_ci95": [
+          -0.019230769230769232,
+          0.2777777777777778
+        ],
+        "item_ci95_sensitivity": [
+          -0.017857142857142856,
+          0.2857142857142857
+        ]
+      },
+      "expert_em": {
+        "difference": 0.10714285714285714,
+        "cluster_ci95": [
+          -0.037037037037037035,
+          0.2692307692307692
+        ],
+        "item_ci95_sensitivity": [
+          -0.03571428571428571,
+          0.25
+        ]
+      }
+    },
+    "D-C": {
+      "expected_em": {
+        "difference": 0.008928571428571428,
+        "cluster_ci95": [
+          -0.16666666666666666,
+          0.19166666666666668
+        ],
+        "item_ci95_sensitivity": [
+          -0.16071428571428573,
+          0.1787946428571396
+        ]
+      },
+      "expert_em": {
+        "difference": 0.03571428571428571,
+        "cluster_ci95": [
+          -0.11538461538461539,
+          0.19230769230769232
+        ],
+        "item_ci95_sensitivity": [
+          -0.10714285714285714,
+          0.17857142857142858
+        ]
+      }
+    },
+    "D-B": {
+      "expected_em": {
+        "difference": -0.07142857142857142,
+        "cluster_ci95": [
+          -0.20689655172413793,
+          0.07142857142857142
+        ],
+        "item_ci95_sensitivity": [
+          -0.21428571428571427,
+          0.07142857142857142
+        ]
+      },
+      "expert_em": {
+        "difference": 0.0,
+        "cluster_ci95": [
+          -0.10714285714285714,
+          0.10714285714285714
+        ],
+        "item_ci95_sensitivity": [
+          -0.10714285714285714,
+          0.10714285714285714
+        ]
+      }
+    },
+    "C-A": {
+      "expected_em": {
+        "difference": 0.044642857142857144,
+        "cluster_ci95": [
+          -0.07142857142857142,
+          0.17307692307692307
+        ],
+        "item_ci95_sensitivity": [
+          -0.07142857142857142,
+          0.16964285714285715
+        ]
+      },
+      "expert_em": {
+        "difference": 0.07142857142857142,
+        "cluster_ci95": [
+          0.0,
+          0.18518518518518517
+        ],
+        "item_ci95_sensitivity": [
+          0.0,
+          0.17857142857142858
+        ]
+      }
+    }
+  },
+  "n_case_exports": 12,
+  "scoring_status": "INCOMPLETE",
+  "primary_enabled": false
+}

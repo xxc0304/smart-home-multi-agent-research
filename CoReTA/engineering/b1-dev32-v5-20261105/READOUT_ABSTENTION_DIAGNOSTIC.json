@@ -1,0 +1,153 @@
+{
+  "scope": "POST_HOC_DEVELOPMENT_DIAGNOSTIC_NOT_CONFIRMATION",
+  "rule": "Exclude normalized exact Unknown from voting; empty vote scores zero; uniform tied-class expectation.",
+  "no_generation": true,
+  "original_scores_unchanged": true,
+  "source": "C:\\Users\\肖欣辰\\Documents\\ChatGPT\\agent-SH-research\\lab-diagnostics-20261105\\b1-dev32-20261105-v5\\stage32\\scores.json",
+  "arms": {
+    "A": {
+      "n": 32,
+      "original_expected_em": 0.390625,
+      "alternative_expected_em": 0.578125,
+      "improved_items": 7,
+      "worsened_items": 0,
+      "changed": [
+        {
+          "id": "2hop__663664_46366",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        },
+        {
+          "id": "2hop__178056_377891",
+          "original": 0.0,
+          "unknown_as_abstention": 0.5,
+          "difference": 0.5
+        },
+        {
+          "id": "2hop__262172_14904",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        },
+        {
+          "id": "2hop__523788_161358",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        },
+        {
+          "id": "2hop__622767_161358",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        },
+        {
+          "id": "2hop__455004_523858",
+          "original": 0.0,
+          "unknown_as_abstention": 0.5,
+          "difference": 0.5
+        },
+        {
+          "id": "2hop__468328_34197",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        }
+      ]
+    },
+    "B": {
+      "n": 32,
+      "original_expected_em": 0.59375,
+      "alternative_expected_em": 0.6875,
+      "improved_items": 3,
+      "worsened_items": 0,
+      "changed": [
+        {
+          "id": "2hop__622767_161358",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        },
+        {
+          "id": "2hop__455004_523858",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        },
+        {
+          "id": "2hop__468328_34197",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        }
+      ]
+    },
+    "C": {
+      "n": 32,
+      "original_expected_em": 0.4453125,
+      "alternative_expected_em": 0.5729166666666666,
+      "improved_items": 6,
+      "worsened_items": 0,
+      "changed": [
+        {
+          "id": "2hop__663664_46366",
+          "original": 0.5,
+          "unknown_as_abstention": 1.0,
+          "difference": 0.5
+        },
+        {
+          "id": "2hop__178056_377891",
+          "original": 0.25,
+          "unknown_as_abstention": 0.3333333333333333,
+          "difference": 0.08333333333333331
+        },
+        {
+          "id": "2hop__262172_14904",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        },
+        {
+          "id": "2hop__709908_500443",
+          "original": 0.5,
+          "unknown_as_abstention": 1.0,
+          "difference": 0.5
+        },
+        {
+          "id": "2hop__622767_161358",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        },
+        {
+          "id": "2hop__455004_523858",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        }
+      ]
+    },
+    "D": {
+      "n": 32,
+      "original_expected_em": 0.5625,
+      "alternative_expected_em": 0.625,
+      "improved_items": 2,
+      "worsened_items": 0,
+      "changed": [
+        {
+          "id": "2hop__622767_161358",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        },
+        {
+          "id": "2hop__455004_523858",
+          "original": 0.0,
+          "unknown_as_abstention": 1.0,
+          "difference": 1.0
+        }
+      ]
+    }
+  }
+}

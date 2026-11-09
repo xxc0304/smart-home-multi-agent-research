@@ -1,0 +1,329 @@
+{
+  "status": {
+    "status": "COMPLETED_WITH_INHERITED_MISSING",
+    "calls": 744,
+    "generated_calls": 726,
+    "reused_calls": 18,
+    "processed_units": 64,
+    "eligible_complete_units": 62,
+    "total_units": 64,
+    "eligible_units": 62,
+    "elapsed_seconds": 3653.9487872839672,
+    "unit": 63,
+    "index": 25,
+    "rep": 1,
+    "arm": "S",
+    "stage": "revision",
+    "slot": 3
+  },
+  "background": {
+    "processed_units": 48,
+    "eligible_units": 46,
+    "arms": {
+      "R": {
+        "valid_units": 46,
+        "different_tasks": 23,
+        "em": 0.8260869565217391,
+        "f1": 0.8260869565217391
+      },
+      "S": {
+        "valid_units": 46,
+        "different_tasks": 23,
+        "em": 0.8043478260869565,
+        "f1": 0.827536231884058,
+        "candidate_transitions": {
+          "wrong_opportunities": 8,
+          "wrong_to_right": 3,
+          "right_opportunities": 38,
+          "right_to_wrong": 4
+        }
+      },
+      "G": {
+        "valid_units": 46,
+        "different_tasks": 23,
+        "em": 0.7391304347826086,
+        "f1": 0.7565217391304347,
+        "candidate_transitions": {
+          "wrong_opportunities": 8,
+          "wrong_to_right": 3,
+          "right_opportunities": 38,
+          "right_to_wrong": 7
+        }
+      },
+      "L": {
+        "valid_units": 46,
+        "different_tasks": 23,
+        "em": 0.7391304347826086,
+        "f1": 0.7782608695652173,
+        "candidate_transitions": {
+          "wrong_opportunities": 8,
+          "wrong_to_right": 3,
+          "right_opportunities": 38,
+          "right_to_wrong": 7
+        }
+      }
+    },
+    "paired": {
+      "L-G": {
+        "common_units": 46,
+        "complete_two_seed_tasks": 23,
+        "mean_task_em_difference": 0.0,
+        "positive_tasks": 1,
+        "negative_tasks": 1,
+        "tied_tasks": 21
+      },
+      "L-S": {
+        "common_units": 46,
+        "complete_two_seed_tasks": 23,
+        "mean_task_em_difference": -0.06521739130434782,
+        "positive_tasks": 2,
+        "negative_tasks": 3,
+        "tied_tasks": 18
+      },
+      "L-R": {
+        "common_units": 46,
+        "complete_two_seed_tasks": 23,
+        "mean_task_em_difference": -0.08695652173913043,
+        "positive_tasks": 2,
+        "negative_tasks": 4,
+        "tied_tasks": 17
+      }
+    }
+  },
+  "diagnostic": {
+    "processed_units": 16,
+    "eligible_units": 16,
+    "arms": {
+      "R": {
+        "valid_units": 16,
+        "different_tasks": 8,
+        "em": 0.6875,
+        "f1": 0.74375
+      },
+      "S": {
+        "valid_units": 16,
+        "different_tasks": 8,
+        "em": 0.75,
+        "f1": 0.7708333333333334,
+        "candidate_transitions": {
+          "wrong_opportunities": 5,
+          "wrong_to_right": 1,
+          "right_opportunities": 11,
+          "right_to_wrong": 0
+        }
+      },
+      "G": {
+        "valid_units": 16,
+        "different_tasks": 8,
+        "em": 0.4375,
+        "f1": 0.5833333333333334,
+        "candidate_transitions": {
+          "wrong_opportunities": 5,
+          "wrong_to_right": 2,
+          "right_opportunities": 11,
+          "right_to_wrong": 6
+        }
+      },
+      "L": {
+        "valid_units": 16,
+        "different_tasks": 8,
+        "em": 0.4375,
+        "f1": 0.53125,
+        "candidate_transitions": {
+          "wrong_opportunities": 5,
+          "wrong_to_right": 2,
+          "right_opportunities": 11,
+          "right_to_wrong": 6
+        }
+      }
+    },
+    "paired": {
+      "L-G": {
+        "common_units": 16,
+        "complete_two_seed_tasks": 8,
+        "mean_task_em_difference": 0.0,
+        "positive_tasks": 1,
+        "negative_tasks": 1,
+        "tied_tasks": 6
+      },
+      "L-S": {
+        "common_units": 16,
+        "complete_two_seed_tasks": 8,
+        "mean_task_em_difference": -0.3125,
+        "positive_tasks": 1,
+        "negative_tasks": 4,
+        "tied_tasks": 3
+      },
+      "L-R": {
+        "common_units": 16,
+        "complete_two_seed_tasks": 8,
+        "mean_task_em_difference": -0.25,
+        "positive_tasks": 1,
+        "negative_tasks": 4,
+        "tied_tasks": 3
+      }
+    }
+  },
+  "fixed_lower_boundary_background": {
+    "processed_units": 38,
+    "eligible_units": 36,
+    "arms": {
+      "R": {
+        "valid_units": 36,
+        "different_tasks": 18,
+        "em": 0.8333333333333334,
+        "f1": 0.8333333333333334
+      },
+      "S": {
+        "valid_units": 36,
+        "different_tasks": 18,
+        "em": 0.8611111111111112,
+        "f1": 0.8907407407407408,
+        "candidate_transitions": {
+          "wrong_opportunities": 6,
+          "wrong_to_right": 3,
+          "right_opportunities": 30,
+          "right_to_wrong": 2
+        }
+      },
+      "G": {
+        "valid_units": 36,
+        "different_tasks": 18,
+        "em": 0.8333333333333334,
+        "f1": 0.8555555555555556,
+        "candidate_transitions": {
+          "wrong_opportunities": 6,
+          "wrong_to_right": 3,
+          "right_opportunities": 30,
+          "right_to_wrong": 3
+        }
+      },
+      "L": {
+        "valid_units": 36,
+        "different_tasks": 18,
+        "em": 0.8055555555555556,
+        "f1": 0.8277777777777778,
+        "candidate_transitions": {
+          "wrong_opportunities": 6,
+          "wrong_to_right": 3,
+          "right_opportunities": 30,
+          "right_to_wrong": 4
+        }
+      }
+    },
+    "paired": {
+      "L-G": {
+        "common_units": 36,
+        "complete_two_seed_tasks": 18,
+        "mean_task_em_difference": -0.027777777777777776,
+        "positive_tasks": 0,
+        "negative_tasks": 1,
+        "tied_tasks": 17
+      },
+      "L-S": {
+        "common_units": 36,
+        "complete_two_seed_tasks": 18,
+        "mean_task_em_difference": -0.05555555555555555,
+        "positive_tasks": 1,
+        "negative_tasks": 2,
+        "tied_tasks": 15
+      },
+      "L-R": {
+        "common_units": 36,
+        "complete_two_seed_tasks": 18,
+        "mean_task_em_difference": -0.027777777777777776,
+        "positive_tasks": 2,
+        "negative_tasks": 2,
+        "tied_tasks": 14
+      }
+    }
+  },
+  "auxiliary_mixed_development": {
+    "processed_units": 64,
+    "eligible_units": 62,
+    "arms": {
+      "R": {
+        "valid_units": 62,
+        "different_tasks": 31,
+        "em": 0.7903225806451613,
+        "f1": 0.8048387096774193
+      },
+      "S": {
+        "valid_units": 62,
+        "different_tasks": 31,
+        "em": 0.7903225806451613,
+        "f1": 0.8129032258064516,
+        "candidate_transitions": {
+          "wrong_opportunities": 13,
+          "wrong_to_right": 4,
+          "right_opportunities": 49,
+          "right_to_wrong": 4
+        }
+      },
+      "G": {
+        "valid_units": 62,
+        "different_tasks": 31,
+        "em": 0.6612903225806451,
+        "f1": 0.7118279569892473,
+        "candidate_transitions": {
+          "wrong_opportunities": 13,
+          "wrong_to_right": 5,
+          "right_opportunities": 49,
+          "right_to_wrong": 13
+        }
+      },
+      "L": {
+        "valid_units": 62,
+        "different_tasks": 31,
+        "em": 0.6612903225806451,
+        "f1": 0.714516129032258,
+        "candidate_transitions": {
+          "wrong_opportunities": 13,
+          "wrong_to_right": 5,
+          "right_opportunities": 49,
+          "right_to_wrong": 13
+        }
+      }
+    },
+    "paired": {
+      "L-G": {
+        "common_units": 62,
+        "complete_two_seed_tasks": 31,
+        "mean_task_em_difference": 0.0,
+        "positive_tasks": 2,
+        "negative_tasks": 2,
+        "tied_tasks": 27
+      },
+      "L-S": {
+        "common_units": 62,
+        "complete_two_seed_tasks": 31,
+        "mean_task_em_difference": -0.12903225806451613,
+        "positive_tasks": 3,
+        "negative_tasks": 7,
+        "tied_tasks": 21
+      },
+      "L-R": {
+        "common_units": 62,
+        "complete_two_seed_tasks": 31,
+        "mean_task_em_difference": -0.12903225806451613,
+        "positive_tasks": 3,
+        "negative_tasks": 8,
+        "tied_tasks": 20
+      }
+    }
+  },
+  "new_cost": {
+    "calls": 726,
+    "logical_responses": 744,
+    "generated": 726,
+    "output_tokens": 61541,
+    "generation_seconds": 3419.8769129820867
+  },
+  "reused_v1_reviews": {
+    "calls": 18,
+    "original_output_tokens": 1857,
+    "original_generation_seconds": 100.60500484821387
+  },
+  "v1_discarded_revision_calls": 6,
+  "warning": "Development/frozen proposal component study; paired task differences require both seeds. No semantic verification inferred from correctness; incomplete units not zero."
+}

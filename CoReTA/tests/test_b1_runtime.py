@@ -105,6 +105,19 @@ class RuntimeChecks(unittest.TestCase):
                 c['baseline_C_score' if condition=='B' else 'expert_C_score']=str(path)
             q=validate_runtime(c)
             self.assertEqual(q['qualification'],'SUPPORTED_TASK_ADVANTAGE')
+            # Bind a completed 256-token C protocol without rerunning or relabeling it.
+            for field in ('baseline_C_score','expert_C_score'):
+                score=load_json(c[field])
+                score['manifest']['inference']['generation']['max_new_tokens']=256
+                score['manifest']['inference']['evaluation_answer_suffix']='fixed short-answer suffix'
+                write_json(c[field],score)
+            with self.assertRaisesRegex(ValueError,'C_not_answer_only_frozen_policy'):
+                validate_runtime(c)
+            c['qualification_answer_tokens']=256
+            with self.assertRaisesRegex(ValueError,'C_qualification_answer_suffix_mismatch'):
+                validate_runtime(c)
+            c['qualification_answer_suffix']='fixed short-answer suffix'
+            self.assertEqual(validate_runtime(c)['qualification'],'SUPPORTED_TASK_ADVANTAGE')
             c['seed']+=1
             with self.assertRaisesRegex(ValueError,'registered_B1_seed'):
                 validate_runtime(c)
@@ -139,6 +152,37 @@ class RuntimeChecks(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'resume_configuration_changed'):
                 run_batch(c,[first,second],{first['id']:'g1',second['id']:'g2'},folder/'bad',
                           resume_from=a,fixture_backend=next_fake)
+
+    def test_revised_answer_contract_replay_resume_and_scoring(self):
+        with tempfile.TemporaryDirectory() as d:
+            folder=Path(d);base=folder/'base';base.mkdir()
+            adapter=folder/'adapter';origin(base,adapter)
+            c=runtime_config(base,adapter)
+            c.update(answer_tokens=256,answer_suffix='\nOnly the short answer.',
+                     answer_policy_version='B1_SHORT256_SUFFIX_V2')
+            first=task();second=dict(task(),id='REVISED_SECOND')
+            a=folder/'one';b=folder/'two'
+            run_batch(c,[first],{first['id']:'g1'},a,fixture_backend=ScriptedFixture())
+            trace=load_json(a/'trials/000.json')
+            self.assertEqual(trace['protocol'],'B1_TWO_ROUND_FOUR_ARM_V2')
+            self.assertTrue(replay(trace).complete)
+            short=[r for r in trace['records'] if r['stage']!='work']
+            work=[r for r in trace['records'] if r['stage']=='work']
+            self.assertEqual((len(short),len(work)),(20,32))
+            self.assertTrue(all(r['max_new_tokens']==256 and r['payload']['user'].endswith(c['answer_suffix']) for r in short))
+            self.assertTrue(all(r['max_new_tokens']==512 and not r['payload']['user'].endswith(c['answer_suffix']) for r in work))
+            backend=ScriptedFixture()
+            run_batch(c,[first,second],{first['id']:'g1',second['id']:'g2'},b,
+                      resume_from=a,fixture_backend=backend)
+            self.assertEqual(backend.n,52)
+            traces=[load_json(p) for p in sorted((b/'trials').glob('*.json'))]
+            scored=summarize(traces,{t['id']:dict(id=t['id'],answer='1900') for t in (first,second)},
+                [first['id'],second['id']],{first['id']:'g1',second['id']:'g2'},repeats=10)
+            self.assertEqual(scored['n_complete'],2)
+            c['answer_suffix']='changed'
+            with self.assertRaisesRegex(ValueError,'resume_configuration_changed'):
+                run_batch(c,[first,second],{first['id']:'g1',second['id']:'g2'},folder/'bad',
+                    resume_from=a,fixture_backend=ScriptedFixture())
 
     def test_OOM_stops_and_records_missing_denominator(self):
         with tempfile.TemporaryDirectory() as d:

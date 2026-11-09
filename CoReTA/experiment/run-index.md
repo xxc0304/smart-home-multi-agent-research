@@ -321,3 +321,19 @@
 | [`workboard-action-fix-20261022-r1`](../runs/workboard-action-fix-20261022-r1/) | [目录](../runs/workboard-action-fix-20261022-r1/) |
 | [`workboard-d0-engineering-20261022-r1`](../runs/workboard-d0-engineering-20261022-r1/) | [目录](../runs/workboard-d0-engineering-20261022-r1/) |
 | [`workboard-source-fix-20261022-r1`](../runs/workboard-source-fix-20261022-r1/) | [目录](../runs/workboard-source-fix-20261022-r1/) |
+
+2026-11-08 runs/source-filter12-20261108-v1：24/24完成，480逻辑360新120旧S复用，17分34秒，主11题E50/R54.55/S59.09但23共同可读E=R52.17；开发非确认，分析research/source-filter12-20261108/RESULTS_ANALYSIS.md。
+
+2026-11-09 runs/expert-composition100-20261109-v1 RUNNING：100不同开发问题，56第二seed，总156单元；全LoRA私人/讨论新臂，对照旧混合A/B；最多3747新增，后台PID2767473，research/expert-composition100-20261109。
+
+2026-11-09 P10 STOP：用户明确要求停止这批并保留记录。已核实PID2767473身份后发送SIGINT，进程退出，GPU2MiB/0%。停止前12完整单元+第13部分单元（25完整分支），357返回=305新增+52复用；358attempt中1条正在生成被中断无返回，如实保留，不自动补跑。原运行器捕获KeyboardInterrupt记STOPPED_SYSTEM_FAULT，原状态不覆盖，CANCELLATION.json明确CANCELLED_BY_USER，不是自发技术故障。停止后357响应/12完整评分全请求、历史、种子、token、全员adapter路由审计PASS；原freeze未变。完整run本机归档，5主文件SHA与远端逐字一致。因研究优先级停止，未以质量结果选停止点，不作为完整实验/独立确认。无新生成任务、无自动续跑或替代实验。
+
+2026-11-09 runs/expert-final-visibility-chain-20261109-v1 RUNNING，PID2782447；14题诊断后条件扩展至100已有开发题/155单元，最多2635新增，research/expert-final-visibility-chain-20261109。
+
+2026-11-09 P12阶段一完成并按规则关闭路线：COMPLETED_PILOT_ROUTE_CLOSED，14题×两seed28单元全完整；560返回=476新增+84精确复用，577.724秒=9分38秒，0技术非OK/系统失败，冻结不变，全部实际输入/种子/token/adapter/复用审计PASS。E及EO在明确县目标改正判据下均无合格增益，非测量单元相对N与旧B净分均0，ROUTE_DECISION=STOP_THIS_ROUTE_WITH_REPORT。因此没有进入127单元扩展，100题计划未执行；不能报全链100题完成。GPU已释放2MiB/0%，本机完整run归档，responses/scores/ROUTE_DECISION三SHA与远端一致。自动定量报告PHASE1_ANALYSIS存在，逐条语义分析仍待实际核读；不能以门槛关闭直接认定所有方法/现象无效或总体等效。此前30–60分钟估时偏高，真实仅9分38秒。用户8–10小时可等待未被用作强制凑时长或擅自开启下一新方法。
+
+2026-11-09 expert-evidence-behavior4-20261109-v1：4题双旧seed，128新增/8完整，COMPLETED，A/B团队期望68.75/75%，旧B75%；详见research/expert-evidence-behavior4-20261109/RESULTS_ANALYSIS.md。
+
+2026-11-09 expert-evidence-scale32-20261109-v1：RUNNING，32不同开发题双seed/三组/2688调用上限；首84审计PASS并继续，本机当前仅首2单元快照。设计/实际启动/检查证据见research/expert-evidence-scale32-20261109。
+
+2026-11-09 expert-evidence-scale32-20261109-v1已结束：64处理/62完整/2610新增，两初答超限保留，技术审计及全量归档SHA通过；主背景23双seed、诊断8双seed。语义分析pending，见research/expert-evidence-scale32-20261109/COMPLETION.json。

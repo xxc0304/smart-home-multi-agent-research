@@ -1,0 +1,1162 @@
+{
+  "n_expected": 2,
+  "n_recorded": 2,
+  "n_complete": 2,
+  "status": "COMPLETE",
+  "primary_enabled": true,
+  "scope": "DEVELOPMENT_DESCRIPTION_NOT_CONFIRMATORY_TEST",
+  "arms": {
+    "A": {
+      "n": 2,
+      "expected_em": 0.0,
+      "actual_em": 0.0,
+      "expected_f1": 0.0,
+      "actual_f1": 0.0,
+      "expert_em": 0.0,
+      "expert_f1": 0.1,
+      "expert_correct_but_not_selected_expected": 0.0,
+      "expert_correct_but_not_selected_actual": 0.0,
+      "oracle_hit": 0.5,
+      "tie_rate": 0.0,
+      "expert_harm_n": 0,
+      "expert_harm_denominator": 0,
+      "expert_harm_rate": null,
+      "expert_retention_rate": null,
+      "expert_correction_n": 0,
+      "expert_correction_denominator": 2,
+      "expert_correction_rate": 0.0,
+      "members": {
+        "M1": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.0,
+          "final_f1": 0.1,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 0,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.0
+        },
+        "M2": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.0,
+          "final_f1": 0.0,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 0,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.0
+        },
+        "M3": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.0,
+          "final_f1": 0.0,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 0,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.0
+        },
+        "M4": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.5,
+          "final_f1": 0.5,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 1,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.5
+        }
+      }
+    },
+    "B": {
+      "n": 2,
+      "expected_em": 0.5,
+      "actual_em": 0.5,
+      "expected_f1": 0.5,
+      "actual_f1": 0.5,
+      "expert_em": 0.5,
+      "expert_f1": 0.6,
+      "expert_correct_but_not_selected_expected": 0.0,
+      "expert_correct_but_not_selected_actual": 0.0,
+      "oracle_hit": 0.5,
+      "tie_rate": 0.0,
+      "expert_harm_n": 0,
+      "expert_harm_denominator": 0,
+      "expert_harm_rate": null,
+      "expert_retention_rate": null,
+      "expert_correction_n": 1,
+      "expert_correction_denominator": 2,
+      "expert_correction_rate": 0.5,
+      "members": {
+        "M1": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.5,
+          "final_f1": 0.6,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 1,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.5
+        },
+        "M2": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.5,
+          "final_f1": 0.5,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 1,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.5
+        },
+        "M3": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.5,
+          "final_f1": 0.5,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 1,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.5
+        },
+        "M4": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.5,
+          "final_f1": 0.5,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 1,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.5
+        }
+      }
+    },
+    "C": {
+      "n": 2,
+      "expected_em": 0.5,
+      "actual_em": 0.5,
+      "expected_f1": 0.5,
+      "actual_f1": 0.5,
+      "expert_em": 0.0,
+      "expert_f1": 0.1,
+      "expert_correct_but_not_selected_expected": 0.0,
+      "expert_correct_but_not_selected_actual": 0.0,
+      "oracle_hit": 0.5,
+      "tie_rate": 0.0,
+      "expert_harm_n": 0,
+      "expert_harm_denominator": 0,
+      "expert_harm_rate": null,
+      "expert_retention_rate": null,
+      "expert_correction_n": 0,
+      "expert_correction_denominator": 2,
+      "expert_correction_rate": 0.0,
+      "members": {
+        "M1": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.0,
+          "final_f1": 0.1,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 0,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.0
+        },
+        "M2": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.5,
+          "final_f1": 0.5,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 1,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.5
+        },
+        "M3": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.5,
+          "final_f1": 0.5,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 1,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.5
+        },
+        "M4": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.0,
+          "final_f1": 0.0,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 0,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.0
+        }
+      }
+    },
+    "D": {
+      "n": 2,
+      "expected_em": 0.0,
+      "actual_em": 0.0,
+      "expected_f1": 0.0,
+      "actual_f1": 0.0,
+      "expert_em": 0.0,
+      "expert_f1": 0.1,
+      "expert_correct_but_not_selected_expected": 0.0,
+      "expert_correct_but_not_selected_actual": 0.0,
+      "oracle_hit": 0.0,
+      "tie_rate": 0.0,
+      "expert_harm_n": 0,
+      "expert_harm_denominator": 0,
+      "expert_harm_rate": null,
+      "expert_retention_rate": null,
+      "expert_correction_n": 0,
+      "expert_correction_denominator": 2,
+      "expert_correction_rate": 0.0,
+      "members": {
+        "M1": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.0,
+          "final_f1": 0.1,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 0,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.0
+        },
+        "M2": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.0,
+          "final_f1": 0.0,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 0,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.0
+        },
+        "M3": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.0,
+          "final_f1": 0.0,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 0,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.0
+        },
+        "M4": {
+          "n": 2,
+          "initial_em": 0.0,
+          "initial_f1": 0.0,
+          "final_em": 0.0,
+          "final_f1": 0.0,
+          "harm_n": 0,
+          "correct_initial_n": 0,
+          "harm_rate": null,
+          "retention_rate": null,
+          "correction_n": 0,
+          "wrong_initial_n": 2,
+          "correction_rate": 0.0
+        }
+      }
+    }
+  },
+  "contrasts": {
+    "B-A": {
+      "expected_em": {
+        "difference": 0.5,
+        "cluster_ci95": [
+          0.0,
+          1.0
+        ],
+        "item_ci95_sensitivity": [
+          0.0,
+          1.0
+        ]
+      },
+      "expert_em": {
+        "difference": 0.5,
+        "cluster_ci95": [
+          0.0,
+          1.0
+        ],
+        "item_ci95_sensitivity": [
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "D-C": {
+      "expected_em": {
+        "difference": -0.5,
+        "cluster_ci95": [
+          -1.0,
+          0.0
+        ],
+        "item_ci95_sensitivity": [
+          -1.0,
+          0.0
+        ]
+      },
+      "expert_em": {
+        "difference": 0.0,
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "item_ci95_sensitivity": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "D-B": {
+      "expected_em": {
+        "difference": -0.5,
+        "cluster_ci95": [
+          -1.0,
+          0.0
+        ],
+        "item_ci95_sensitivity": [
+          -1.0,
+          0.0
+        ]
+      },
+      "expert_em": {
+        "difference": -0.5,
+        "cluster_ci95": [
+          -1.0,
+          0.0
+        ],
+        "item_ci95_sensitivity": [
+          -1.0,
+          0.0
+        ]
+      }
+    },
+    "C-A": {
+      "expected_em": {
+        "difference": 0.5,
+        "cluster_ci95": [
+          0.0,
+          1.0
+        ],
+        "item_ci95_sensitivity": [
+          0.0,
+          1.0
+        ]
+      },
+      "expert_em": {
+        "difference": 0.0,
+        "cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "item_ci95_sensitivity": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "reports": [
+    {
+      "id": "2hop__123383_21417",
+      "config": {
+        "expert_actor": "M1",
+        "seed": 20261102,
+        "task_index": 0,
+        "fixture": false,
+        "answer_tokens": 256,
+        "answer_suffix": "\n\nAnswer the question above. Output ONLY the short answer: a name, entity, date, number, or short phrase. Do not explain, restate the question, or describe your reasoning."
+      },
+      "complete": true,
+      "primary_enabled": true,
+      "n_expected": 52,
+      "n_recorded": 52,
+      "arms": {
+        "A": {
+          "complete": true,
+          "members": {
+            "M1": {
+              "answer": "1810",
+              "em": 0,
+              "f1": 0
+            },
+            "M2": {
+              "answer": "1931",
+              "em": 0,
+              "f1": 0
+            },
+            "M3": {
+              "answer": "1810",
+              "em": 0,
+              "f1": 0
+            },
+            "M4": {
+              "answer": "1843",
+              "em": 1,
+              "f1": 1.0
+            }
+          },
+          "vote": {
+            "answer": "1810",
+            "winners": [
+              "1810"
+            ],
+            "counts": {
+              "1810": 2,
+              "1931": 1,
+              "1843": 1
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20262103
+          },
+          "expected_em": 0.0,
+          "expected_f1": 0.0,
+          "actual_em": 0,
+          "actual_f1": 0,
+          "expert_em": 0,
+          "expert_f1": 0,
+          "expert_initial_em": 0,
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "expert_correct_but_not_selected_expected": 0.0,
+          "expert_correct_but_not_selected_actual": 0,
+          "oracle_hit": true,
+          "member_transitions": {
+            "M1": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M2": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M3": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M4": {
+              "initial_em": 0,
+              "final_em": 1,
+              "harmful": 0,
+              "corrected": 1
+            }
+          }
+        },
+        "B": {
+          "complete": true,
+          "members": {
+            "M1": {
+              "answer": "1843",
+              "em": 1,
+              "f1": 1.0
+            },
+            "M2": {
+              "answer": "1843",
+              "em": 1,
+              "f1": 1.0
+            },
+            "M3": {
+              "answer": "1843",
+              "em": 1,
+              "f1": 1.0
+            },
+            "M4": {
+              "answer": "1843",
+              "em": 1,
+              "f1": 1.0
+            }
+          },
+          "vote": {
+            "answer": "1843",
+            "winners": [
+              "1843"
+            ],
+            "counts": {
+              "1843": 4
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20262103
+          },
+          "expected_em": 1.0,
+          "expected_f1": 1.0,
+          "actual_em": 1,
+          "actual_f1": 1.0,
+          "expert_em": 1,
+          "expert_f1": 1.0,
+          "expert_initial_em": 0,
+          "expert_harm": 0,
+          "expert_correction": 1,
+          "expert_correct_but_not_selected_expected": 0.0,
+          "expert_correct_but_not_selected_actual": 0,
+          "oracle_hit": true,
+          "member_transitions": {
+            "M1": {
+              "initial_em": 0,
+              "final_em": 1,
+              "harmful": 0,
+              "corrected": 1
+            },
+            "M2": {
+              "initial_em": 0,
+              "final_em": 1,
+              "harmful": 0,
+              "corrected": 1
+            },
+            "M3": {
+              "initial_em": 0,
+              "final_em": 1,
+              "harmful": 0,
+              "corrected": 1
+            },
+            "M4": {
+              "initial_em": 0,
+              "final_em": 1,
+              "harmful": 0,
+              "corrected": 1
+            }
+          }
+        },
+        "C": {
+          "complete": true,
+          "members": {
+            "M1": {
+              "answer": "1810",
+              "em": 0,
+              "f1": 0
+            },
+            "M2": {
+              "answer": "1843",
+              "em": 1,
+              "f1": 1.0
+            },
+            "M3": {
+              "answer": "1843",
+              "em": 1,
+              "f1": 1.0
+            },
+            "M4": {
+              "answer": "1931",
+              "em": 0,
+              "f1": 0
+            }
+          },
+          "vote": {
+            "answer": "1843",
+            "winners": [
+              "1843"
+            ],
+            "counts": {
+              "1810": 1,
+              "1843": 2,
+              "1931": 1
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20262103
+          },
+          "expected_em": 1.0,
+          "expected_f1": 1.0,
+          "actual_em": 1,
+          "actual_f1": 1.0,
+          "expert_em": 0,
+          "expert_f1": 0,
+          "expert_initial_em": 0,
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "expert_correct_but_not_selected_expected": 0.0,
+          "expert_correct_but_not_selected_actual": 0,
+          "oracle_hit": true,
+          "member_transitions": {
+            "M1": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M2": {
+              "initial_em": 0,
+              "final_em": 1,
+              "harmful": 0,
+              "corrected": 1
+            },
+            "M3": {
+              "initial_em": 0,
+              "final_em": 1,
+              "harmful": 0,
+              "corrected": 1
+            },
+            "M4": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            }
+          }
+        },
+        "D": {
+          "complete": true,
+          "members": {
+            "M1": {
+              "answer": "1810",
+              "em": 0,
+              "f1": 0
+            },
+            "M2": {
+              "answer": "1810",
+              "em": 0,
+              "f1": 0
+            },
+            "M3": {
+              "answer": "1810",
+              "em": 0,
+              "f1": 0
+            },
+            "M4": {
+              "answer": "1810",
+              "em": 0,
+              "f1": 0
+            }
+          },
+          "vote": {
+            "answer": "1810",
+            "winners": [
+              "1810"
+            ],
+            "counts": {
+              "1810": 4
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20262103
+          },
+          "expected_em": 0.0,
+          "expected_f1": 0.0,
+          "actual_em": 0,
+          "actual_f1": 0,
+          "expert_em": 0,
+          "expert_f1": 0,
+          "expert_initial_em": 0,
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "expert_correct_but_not_selected_expected": 0.0,
+          "expert_correct_but_not_selected_actual": 0,
+          "oracle_hit": false,
+          "member_transitions": {
+            "M1": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M2": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M3": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M4": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            }
+          }
+        }
+      },
+      "initial": {
+        "members": {
+          "M1": {
+            "answer": "1810",
+            "em": 0,
+            "f1": 0
+          },
+          "M2": {
+            "answer": "1931",
+            "em": 0,
+            "f1": 0
+          },
+          "M3": {
+            "answer": "1931",
+            "em": 0,
+            "f1": 0
+          },
+          "M4": {
+            "answer": "1931",
+            "em": 0,
+            "f1": 0
+          }
+        },
+        "vote": {
+          "answer": "1931",
+          "winners": [
+            "1931"
+          ],
+          "counts": {
+            "1810": 1,
+            "1931": 3
+          },
+          "abstained": [],
+          "tie": false,
+          "seed": 20262102
+        },
+        "scores": {
+          "expected_em": 0.0,
+          "expected_f1": 0.0,
+          "actual_em": 0,
+          "actual_f1": 0
+        },
+        "oracle_hit": false
+      },
+      "evidence_type": "ACTUAL_LOCAL_MODEL_RESPONSE"
+    },
+    {
+      "id": "3hop1__478606_751065_78953",
+      "config": {
+        "expert_actor": "M1",
+        "seed": 20261102,
+        "task_index": 1,
+        "fixture": false,
+        "answer_tokens": 256,
+        "answer_suffix": "\n\nAnswer the question above. Output ONLY the short answer: a name, entity, date, number, or short phrase. Do not explain, restate the question, or describe your reasoning."
+      },
+      "complete": true,
+      "primary_enabled": true,
+      "n_expected": 52,
+      "n_recorded": 52,
+      "arms": {
+        "A": {
+          "complete": true,
+          "members": {
+            "M1": {
+              "answer": "western Europe",
+              "em": 0,
+              "f1": 0.2
+            },
+            "M2": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            },
+            "M3": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            },
+            "M4": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            }
+          },
+          "vote": {
+            "answer": "United Kingdom",
+            "winners": [
+              "United Kingdom"
+            ],
+            "counts": {
+              "western europe": 1,
+              "united kingdom": 3
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20272103
+          },
+          "expected_em": 0.0,
+          "expected_f1": 0.0,
+          "actual_em": 0,
+          "actual_f1": 0,
+          "expert_em": 0,
+          "expert_f1": 0.2,
+          "expert_initial_em": 0,
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "expert_correct_but_not_selected_expected": 0.0,
+          "expert_correct_but_not_selected_actual": 0,
+          "oracle_hit": false,
+          "member_transitions": {
+            "M1": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M2": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M3": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M4": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            }
+          }
+        },
+        "B": {
+          "complete": true,
+          "members": {
+            "M1": {
+              "answer": "western Europe",
+              "em": 0,
+              "f1": 0.2
+            },
+            "M2": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            },
+            "M3": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            },
+            "M4": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            }
+          },
+          "vote": {
+            "answer": "United Kingdom",
+            "winners": [
+              "United Kingdom"
+            ],
+            "counts": {
+              "western europe": 1,
+              "united kingdom": 3
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20272103
+          },
+          "expected_em": 0.0,
+          "expected_f1": 0.0,
+          "actual_em": 0,
+          "actual_f1": 0,
+          "expert_em": 0,
+          "expert_f1": 0.2,
+          "expert_initial_em": 0,
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "expert_correct_but_not_selected_expected": 0.0,
+          "expert_correct_but_not_selected_actual": 0,
+          "oracle_hit": false,
+          "member_transitions": {
+            "M1": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M2": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M3": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M4": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            }
+          }
+        },
+        "C": {
+          "complete": true,
+          "members": {
+            "M1": {
+              "answer": "western Europe",
+              "em": 0,
+              "f1": 0.2
+            },
+            "M2": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            },
+            "M3": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            },
+            "M4": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            }
+          },
+          "vote": {
+            "answer": "United Kingdom",
+            "winners": [
+              "United Kingdom"
+            ],
+            "counts": {
+              "western europe": 1,
+              "united kingdom": 3
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20272103
+          },
+          "expected_em": 0.0,
+          "expected_f1": 0.0,
+          "actual_em": 0,
+          "actual_f1": 0,
+          "expert_em": 0,
+          "expert_f1": 0.2,
+          "expert_initial_em": 0,
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "expert_correct_but_not_selected_expected": 0.0,
+          "expert_correct_but_not_selected_actual": 0,
+          "oracle_hit": false,
+          "member_transitions": {
+            "M1": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M2": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M3": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M4": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            }
+          }
+        },
+        "D": {
+          "complete": true,
+          "members": {
+            "M1": {
+              "answer": "western Europe",
+              "em": 0,
+              "f1": 0.2
+            },
+            "M2": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            },
+            "M3": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            },
+            "M4": {
+              "answer": "United Kingdom",
+              "em": 0,
+              "f1": 0
+            }
+          },
+          "vote": {
+            "answer": "United Kingdom",
+            "winners": [
+              "United Kingdom"
+            ],
+            "counts": {
+              "western europe": 1,
+              "united kingdom": 3
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20272103
+          },
+          "expected_em": 0.0,
+          "expected_f1": 0.0,
+          "actual_em": 0,
+          "actual_f1": 0,
+          "expert_em": 0,
+          "expert_f1": 0.2,
+          "expert_initial_em": 0,
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "expert_correct_but_not_selected_expected": 0.0,
+          "expert_correct_but_not_selected_actual": 0,
+          "oracle_hit": false,
+          "member_transitions": {
+            "M1": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M2": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M3": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            },
+            "M4": {
+              "initial_em": 0,
+              "final_em": 0,
+              "harmful": 0,
+              "corrected": 0
+            }
+          }
+        }
+      },
+      "initial": {
+        "members": {
+          "M1": {
+            "answer": "United Kingdom",
+            "em": 0,
+            "f1": 0
+          },
+          "M2": {
+            "answer": "United Kingdom",
+            "em": 0,
+            "f1": 0
+          },
+          "M3": {
+            "answer": "United Kingdom",
+            "em": 0,
+            "f1": 0
+          },
+          "M4": {
+            "answer": "United Kingdom",
+            "em": 0,
+            "f1": 0
+          }
+        },
+        "vote": {
+          "answer": "United Kingdom",
+          "winners": [
+            "United Kingdom"
+          ],
+          "counts": {
+            "united kingdom": 4
+          },
+          "abstained": [],
+          "tie": false,
+          "seed": 20272102
+        },
+        "scores": {
+          "expected_em": 0.0,
+          "expected_f1": 0.0,
+          "actual_em": 0,
+          "actual_f1": 0
+        },
+        "oracle_hit": false
+      },
+      "evidence_type": "ACTUAL_LOCAL_MODEL_RESPONSE"
+    }
+  ],
+  "initial_baseline": {
+    "expert_em": 0.0,
+    "expert_f1": 0.0,
+    "team_expected_em": 0.0,
+    "team_actual_em": 0.0,
+    "team_expected_f1": 0.0,
+    "team_actual_f1": 0.0,
+    "oracle_hit": 0.0
+  }
+}

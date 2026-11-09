@@ -1,0 +1,41 @@
+{
+  "verdict": "PASS_DIAGNOSTIC_INTEGRITY",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "source_hashes_verified": 12,
+  "approval_bound": true,
+  "actual_attempts": 72,
+  "actual_returns": 72,
+  "all_payloads_and_seeds_match": true,
+  "route_flags_and_EOS_valid": true,
+  "each_cell_all12_inputs": true,
+  "prefix_pairs_identical_of36": 36,
+  "original_batch4_token_reproductions_of12": 12,
+  "summary": {
+    "512:serial": {
+      "EOS": 11,
+      "TOKEN_LIMIT": 1
+    },
+    "512:batch2": {
+      "EOS": 12,
+      "TOKEN_LIMIT": 0
+    },
+    "512:batch4": {
+      "EOS": 9,
+      "TOKEN_LIMIT": 3
+    },
+    "1024:serial": {
+      "EOS": 12,
+      "TOKEN_LIMIT": 0
+    },
+    "1024:batch2": {
+      "EOS": 12,
+      "TOKEN_LIMIT": 0
+    },
+    "1024:batch4": {
+      "EOS": 11,
+      "TOKEN_LIMIT": 1
+    }
+  },
+  "scope": "SELECTED_FAILURE_WORK_DIAGNOSTIC_NOT_TEAM_QUALITY"
+}

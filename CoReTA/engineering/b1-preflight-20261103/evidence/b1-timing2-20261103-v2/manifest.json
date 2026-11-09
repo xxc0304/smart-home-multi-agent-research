@@ -1,0 +1,93 @@
+{
+  "protocol": "B1_TWO_ROUND_FOUR_ARM_V2",
+  "config": {
+    "fixture": false,
+    "reviewed_for_run": true,
+    "model_path": "/data2/xiaoxinchen/models/Qwen3-4B-1cfa9a7",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "dtype": "bfloat16",
+    "quantization": "4bit",
+    "device": "cuda:0",
+    "max_length": 16384,
+    "template_kwargs": {
+      "enable_thinking": false
+    },
+    "wall_seconds": 1800,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "gradient_accumulation_steps": 1,
+    "gradient_checkpointing": true,
+    "r": 8,
+    "alpha": 16,
+    "learning_rate": 2e-05,
+    "epochs": 1,
+    "seed": 20261102,
+    "generation": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "top_k": 0
+    },
+    "purpose": "B1_two_item_development_timing",
+    "expert_actor": "M1",
+    "adapter_path": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-first-run-20261103-v2/attempt1/adapter",
+    "baseline_C_score": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-C160-20261103/C_B_score.json",
+    "expert_C_score": "/data2/xiaoxinchen/agent-research/CoReTA/runs/b0-C160-20261103/C_E_score.json",
+    "qualification_answer_tokens": 256,
+    "qualification_answer_suffix": "\n\nAnswer the question above. Output ONLY the short answer: a name, entity, date, number, or short phrase. Do not explain, restate the question, or describe your reasoning.",
+    "answer_tokens": 256,
+    "answer_suffix": "\n\nAnswer the question above. Output ONLY the short answer: a name, entity, date, number, or short phrase. Do not explain, restate the question, or describe your reasoning.",
+    "answer_policy_version": "B1_SHORT256_SUFFIX_V2",
+    "work_tokens": 512
+  },
+  "expected_ids": [
+    "2hop__123383_21417",
+    "3hop1__478606_751065_78953"
+  ],
+  "groups": {
+    "2hop__123383_21417": "2hop__123383_21417",
+    "3hop1__478606_751065_78953": "3hop1__478606_751065_78953"
+  },
+  "qualification": {
+    "status": "COMPLETE",
+    "primary_enabled": true,
+    "qualification": "SUPPORTED_TASK_ADVANTAGE",
+    "n_expected": 160,
+    "difference": 0.375,
+    "cluster_ci95": [
+      0.2893081761006289,
+      0.4605283094098883
+    ],
+    "item_ci95": [
+      0.29375,
+      0.4625
+    ],
+    "n_groups": 139,
+    "largest_group_n": 4,
+    "warnings": [],
+    "paired_counts": {
+      "both_correct": 17,
+      "only_expert": 65,
+      "only_baseline": 5,
+      "both_wrong": 73
+    },
+    "evidence_type": "ACTUAL_MODEL_RESPONSES",
+    "bootstrap": {
+      "repeats": 10000,
+      "seed": 20261102,
+      "unit": "predeclared_dependency_group"
+    }
+  },
+  "fixture": false,
+  "expected_generations": 104,
+  "inherited_items": 0,
+  "resume_from": null,
+  "scope": "DEVELOPMENT_DESCRIPTION_NOT_CONFIRMATORY_TEST"
+}

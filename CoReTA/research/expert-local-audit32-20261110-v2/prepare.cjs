@@ -1,0 +1,23 @@
+const fs=require('fs'),path=require('path'),assert=require('assert').strict;
+const H=__dirname,R=path.resolve(H,'../..'),old='research/expert-evidence-scale32-20261109';
+const read=p=>JSON.parse(fs.readFileSync(path.join(R,p),'utf8'));
+const inputs=read(old+'/INPUTS.json'),config=read(old+'/config.json');
+const sourceRun='runs/expert-evidence-scale32-20261109-v1';
+const order=[39,0,...inputs.entries.map(e=>e.unit).filter(x=>x!==39&&x!==0)];
+const entries=order.map(u=>{const e=inputs.entries.find(x=>x.unit===u),p=sourceRun+`/trials/${String(u).padStart(3,'0')}.json`,t=read(p);
+ assert.equal(e.id,t.id);assert.equal(e.rep,t.rep);
+ return {...e,prefix_source:p,prefix:{complete:t.common_complete,initials:t.initials,explanation:t.explanation,candidate:t.candidate,failures:t.failures.common||null}};});
+assert.equal(entries.length,64);assert.equal(entries.filter(e=>e.prefix.complete).length,62);
+config.purpose='FROZEN_EXPERT_PROPOSAL_LOCAL_AUDIT_VS_GENERIC_AND_EXPERT_SELF';
+config.run_dir='runs/expert-local-audit32-20261110-v2';config.review_cap=768;config.revision_cap=256;
+config.reused_response_source='runs/expert-local-audit32-20261110-v1/responses.jsonl';config.reused_response_count=18;
+config.wall_clock_cutoff=null;config.generation_retries=0;
+const write=(n,x)=>fs.writeFileSync(path.join(H,n),JSON.stringify(x,null,2)+'\n');
+write('config.json',config);
+write('INPUTS.json',{scope:'DEVELOPMENT_FROZEN_PREFIX_REPLAY_NOT_FRESH_END_TO_END_VALIDATION',
+ sources:[old+'/INPUTS.json',old+'/LABELS.json',old+'/SCORING.json',old+'/MATERIAL_REVIEW.md',sourceRun+'/scores.json',sourceRun+'/responses.jsonl',config.reused_response_source,'runs/expert-local-audit32-20261110-v1/manifest.json',...entries.map(e=>e.prefix_source)],entries});
+write('LABELS.json',read(old+'/LABELS.json'));
+const scoring=read(old+'/SCORING.json');scoring.primary='Expert revision official answer EM; paired L-G on background tasks averaged across two frozen prefix seeds';
+scoring.statistics='Planned32 tasks/64 prefixes; two original common failures retained, 31 tasks/62 eligible prefixes. Background23 and diagnostic8 separate. L-G primary; L-S and L-R secondary. Fixed lower-boundary background18 sensitivity. Cluster by task/group, not reviewers or seeds. Missing arms explicit and paired denominators; no automatic retry.';
+write('SCORING.json',scoring);
+console.log(JSON.stringify({planned:64,eligible:62,questions:32,eligible_questions:31,v2_requests:744,v2_reused_reviews:18,v2_fresh_calls:726,study_unique_calls_max:750,max_v2_output_cap:62*(9*768+3*256),prefix_order:order.slice(0,2)}));

@@ -1,0 +1,930 @@
+{
+  "scope": "REVIEW_OF_EXISTING_ANALYSIS_NOT_NEW_EXPERIMENT",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "new_model_calls": 0,
+  "previous_analysis_hashes_verified": true,
+  "primary": {
+    "contrast": "B_delay-B",
+    "difference": 0.041666666666666664,
+    "cluster_ci95": [
+      0,
+      0.10416666666666667
+    ],
+    "gain_units": 2,
+    "loss_units": 0,
+    "unchanged_units": 46,
+    "warning": "Two seeds are clustered with task dependency groups, not independent questions; incomplete pairs reported separately."
+  },
+  "firstCandidateGains": 11,
+  "firstCandidateLosses": 3,
+  "laterLost": 7,
+  "orderChangeCounts": {
+    "n": 25,
+    "initial": 25,
+    "firstRound": 25,
+    "anyRound": 25
+  },
+  "orderChanges": [
+    {
+      "index": 77,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M2",
+            "M1",
+            "M3",
+            "M4"
+          ],
+          [
+            "M2",
+            "M4",
+            "M1",
+            "M3"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M4",
+            "M3",
+            "M1"
+          ],
+          [
+            "M4",
+            "M2",
+            "M1",
+            "M3"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 70,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M2",
+            "M3",
+            "M4",
+            "M1"
+          ],
+          [
+            "M2",
+            "M3",
+            "M4",
+            "M1"
+          ]
+        ],
+        [
+          [
+            "M4",
+            "M2",
+            "M3",
+            "M1"
+          ],
+          [
+            "M3",
+            "M1",
+            "M4",
+            "M2"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 76,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M1",
+            "M3",
+            "M2",
+            "M4"
+          ],
+          [
+            "M4",
+            "M2",
+            "M3",
+            "M1"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M4",
+            "M1",
+            "M3"
+          ],
+          [
+            "M1",
+            "M2",
+            "M3",
+            "M4"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 68,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M3",
+            "M2",
+            "M1",
+            "M4"
+          ],
+          [
+            "M4",
+            "M2",
+            "M1",
+            "M3"
+          ]
+        ],
+        [
+          [
+            "M1",
+            "M4",
+            "M3",
+            "M2"
+          ],
+          [
+            "M1",
+            "M4",
+            "M2",
+            "M3"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 17,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M2",
+            "M1",
+            "M4",
+            "M3"
+          ],
+          [
+            "M1",
+            "M4",
+            "M3",
+            "M2"
+          ]
+        ],
+        [
+          [
+            "M1",
+            "M2",
+            "M3",
+            "M4"
+          ],
+          [
+            "M2",
+            "M3",
+            "M4",
+            "M1"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 0,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M4",
+            "M1",
+            "M3",
+            "M2"
+          ],
+          [
+            "M4",
+            "M1",
+            "M3",
+            "M2"
+          ]
+        ],
+        [
+          [
+            "M4",
+            "M2",
+            "M1",
+            "M3"
+          ],
+          [
+            "M2",
+            "M1",
+            "M4",
+            "M3"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 26,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M3",
+            "M2",
+            "M4",
+            "M1"
+          ],
+          [
+            "M2",
+            "M1",
+            "M3",
+            "M4"
+          ]
+        ],
+        [
+          [
+            "M4",
+            "M1",
+            "M3",
+            "M2"
+          ],
+          [
+            "M3",
+            "M2",
+            "M4",
+            "M1"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 14,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M2",
+            "M3",
+            "M1",
+            "M4"
+          ],
+          [
+            "M1",
+            "M4",
+            "M3",
+            "M2"
+          ]
+        ],
+        [
+          [
+            "M1",
+            "M4",
+            "M2",
+            "M3"
+          ],
+          [
+            "M3",
+            "M1",
+            "M4",
+            "M2"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 63,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M4",
+            "M3",
+            "M1",
+            "M2"
+          ],
+          [
+            "M1",
+            "M3",
+            "M2",
+            "M4"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M3",
+            "M1",
+            "M4"
+          ],
+          [
+            "M4",
+            "M2",
+            "M1",
+            "M3"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 55,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M1",
+            "M4",
+            "M3",
+            "M2"
+          ],
+          [
+            "M2",
+            "M1",
+            "M4",
+            "M3"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M3",
+            "M1",
+            "M4"
+          ],
+          [
+            "M2",
+            "M1",
+            "M3",
+            "M4"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 30,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M3",
+            "M4",
+            "M2",
+            "M1"
+          ],
+          [
+            "M1",
+            "M4",
+            "M2",
+            "M3"
+          ]
+        ],
+        [
+          [
+            "M4",
+            "M2",
+            "M1",
+            "M3"
+          ],
+          [
+            "M3",
+            "M4",
+            "M1",
+            "M2"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 19,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M2",
+            "M4",
+            "M1",
+            "M3"
+          ],
+          [
+            "M4",
+            "M1",
+            "M2",
+            "M3"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M3",
+            "M1",
+            "M4"
+          ],
+          [
+            "M1",
+            "M2",
+            "M3",
+            "M4"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 73,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M1",
+            "M4",
+            "M3",
+            "M2"
+          ],
+          [
+            "M3",
+            "M1",
+            "M2",
+            "M4"
+          ]
+        ],
+        [
+          [
+            "M1",
+            "M3",
+            "M4",
+            "M2"
+          ],
+          [
+            "M3",
+            "M2",
+            "M4",
+            "M1"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 21,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M2",
+            "M1",
+            "M3",
+            "M4"
+          ],
+          [
+            "M2",
+            "M3",
+            "M1",
+            "M4"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M4",
+            "M3",
+            "M1"
+          ],
+          [
+            "M3",
+            "M4",
+            "M2",
+            "M1"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 23,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M2",
+            "M4",
+            "M3",
+            "M1"
+          ],
+          [
+            "M3",
+            "M4",
+            "M1",
+            "M2"
+          ]
+        ],
+        [
+          [
+            "M4",
+            "M1",
+            "M2",
+            "M3"
+          ],
+          [
+            "M1",
+            "M3",
+            "M2",
+            "M4"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 78,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M4",
+            "M2",
+            "M1",
+            "M3"
+          ],
+          [
+            "M2",
+            "M4",
+            "M1",
+            "M3"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M4",
+            "M1",
+            "M3"
+          ],
+          [
+            "M1",
+            "M3",
+            "M4",
+            "M2"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 34,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M1",
+            "M4",
+            "M2",
+            "M3"
+          ],
+          [
+            "M2",
+            "M1",
+            "M3",
+            "M4"
+          ]
+        ],
+        [
+          [
+            "M3",
+            "M2",
+            "M4",
+            "M1"
+          ],
+          [
+            "M2",
+            "M1",
+            "M3",
+            "M4"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M3",
+            "M1",
+            "M4",
+            "M2"
+          ],
+          [
+            "M3",
+            "M4",
+            "M2",
+            "M1"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M3",
+            "M4",
+            "M1"
+          ],
+          [
+            "M2",
+            "M4",
+            "M1",
+            "M3"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 62,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M3",
+            "M4",
+            "M1",
+            "M2"
+          ],
+          [
+            "M1",
+            "M4",
+            "M2",
+            "M3"
+          ]
+        ],
+        [
+          [
+            "M3",
+            "M1",
+            "M2",
+            "M4"
+          ],
+          [
+            "M4",
+            "M2",
+            "M3",
+            "M1"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 27,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M2",
+            "M1",
+            "M4",
+            "M3"
+          ],
+          [
+            "M4",
+            "M2",
+            "M1",
+            "M3"
+          ]
+        ],
+        [
+          [
+            "M1",
+            "M3",
+            "M2",
+            "M4"
+          ],
+          [
+            "M3",
+            "M4",
+            "M2",
+            "M1"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 18,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M1",
+            "M4",
+            "M2",
+            "M3"
+          ],
+          [
+            "M3",
+            "M2",
+            "M1",
+            "M4"
+          ]
+        ],
+        [
+          [
+            "M1",
+            "M2",
+            "M4",
+            "M3"
+          ],
+          [
+            "M3",
+            "M2",
+            "M4",
+            "M1"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 52,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M1",
+            "M2",
+            "M4",
+            "M3"
+          ],
+          [
+            "M1",
+            "M3",
+            "M4",
+            "M2"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M1",
+            "M3",
+            "M4"
+          ],
+          [
+            "M1",
+            "M2",
+            "M3",
+            "M4"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 43,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M1",
+            "M4",
+            "M3",
+            "M2"
+          ],
+          [
+            "M1",
+            "M3",
+            "M4",
+            "M2"
+          ]
+        ],
+        [
+          [
+            "M1",
+            "M4",
+            "M2",
+            "M3"
+          ],
+          [
+            "M3",
+            "M1",
+            "M2",
+            "M4"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 38,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M1",
+            "M3",
+            "M4",
+            "M2"
+          ],
+          [
+            "M2",
+            "M4",
+            "M3",
+            "M1"
+          ]
+        ],
+        [
+          [
+            "M2",
+            "M3",
+            "M1",
+            "M4"
+          ],
+          [
+            "M2",
+            "M3",
+            "M1",
+            "M4"
+          ]
+        ]
+      ]
+    },
+    {
+      "index": 31,
+      "initialOrderChanged": true,
+      "firstRoundChanged": true,
+      "anyRoundChanged": true,
+      "orders": [
+        [
+          [
+            "M4",
+            "M3",
+            "M1",
+            "M2"
+          ],
+          [
+            "M1",
+            "M3",
+            "M2",
+            "M4"
+          ]
+        ],
+        [
+          [
+            "M1",
+            "M4",
+            "M2",
+            "M3"
+          ],
+          [
+            "M3",
+            "M4",
+            "M2",
+            "M1"
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -2,7 +2,9 @@
 
 2026-10-29。用户要求审核读论文对话后的三条路线。本记录是助手的建议，不是用户已批准转向；只做文献和问题界定，没有设计冻结或模型运行。
 
-**后续状态（同日）：** 用户回复“开始吧”，已授权开始本轮有界专题阅读。已准备Belief in Authority的arXiv材料与ACL2026正式PDF，开始①动机；[本篇精读笔记](../../../papers/belief-authority-impact-authority-multi/精读笔记.md)。这不等于授权新课题、方法实现或模型实验。正式页已核实Findings of ACL 2026，未找到可定位本文实验代码；arXiv图/源码和正式PDF分开标记。
+**阅读状态更正（2026-11-04）：** 用户明确确认尚未开始阅读 Belief in Authority。此前本页“开始①动机”的记载有误，撤回该进度；原精读笔记链接指向的文件也未在当前仓库找到。该文及 Who Do LLMs Trust? 保留为候选阅读，不计入已读或已开始清单。
+
+**下一篇建议（2026-11-04，助手选文，尚未开始精读）：** Free-MAD: Consensus-Free Multi-Agent Debate，优先使用 Findings of ACL 2026 正式版（2026.findings-acl.1600）。结合当前专家资格与 D32 私人复议/讨论、身份显隐对照，以及已读 Hold Experts Back、Debate or Vote、The Consistency Illusion、When Debate Helps 和 MedAgentAudit，下一步优先核读一种直接干预有害修订与最终选择的方法。重点检查反从众提示如何同时影响正确保留和有效纠错、全轨迹评分依赖哪些可观察信号、提示与读出各自的消融及成本。已有综述摘要不作为完成 kelip-paper-reading 逐站精读的证据；本建议不改变现有实验协议，也不启动新实验。
 
 ## 建议
 

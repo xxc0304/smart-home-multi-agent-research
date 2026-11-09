@@ -1,0 +1,2218 @@
+{
+  "date": "2026-11-06",
+  "scope": "Offline research direction audit",
+  "new_model_calls": 0,
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "stats": {
+    "matched_paths": 19,
+    "matched_unique_questions": 15,
+    "initial_expert_correct_public_paths": 16,
+    "private_last_gold_candidate_paths": 17,
+    "clearer_paths": 9,
+    "clearer_private_last_gold_candidate_paths": 8,
+    "selected_team_improved": [
+      [
+        13,
+        "B",
+        0.25
+      ],
+      [
+        19,
+        "D",
+        1
+      ],
+      [
+        31,
+        "D",
+        0.5
+      ]
+    ],
+    "selected_team_worsened": [
+      [
+        26,
+        "B",
+        -1
+      ],
+      [
+        26,
+        "D",
+        -0.5
+      ],
+      [
+        50,
+        "D",
+        -1
+      ],
+      [
+        59,
+        "B",
+        -1
+      ]
+    ],
+    "selected_team_unchanged": 12,
+    "private_final_correct": 16,
+    "readout_paths": 15,
+    "readout_initial_expert_correct": 13,
+    "discussion_initial_wrong_final_correct_paths": 13,
+    "discussion_correction_already_correct_in_private": 9
+  },
+  "matched": [
+    {
+      "index": 2,
+      "question_number": 3,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "Who sings with the performer of A Feelin' Like That on Every Storm?",
+      "gold": "Co-writer Hillary Lindsey",
+      "boundary": "ASSISTANT_RELATION_LEVEL_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": true,
+      "initial_expert": {
+        "answer": "Hillary Lindsey",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__663664_46366|31",
+          "actor": "M1",
+          "round": 1,
+          "text": "Hillary Lindsey"
+        },
+        {
+          "request_id": "2hop__663664_46366|35",
+          "actor": "M1",
+          "round": 2,
+          "text": "Hillary Lindsey"
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__663664_46366|43",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question asks, \"Who sings with the performer of A Feelin' Like That on Every Storm?\" \n\nFrom the provided information, \"A Feelin' Like That\" is a song recorded by Gary Allan. Additionally, the paragraph about \"Every Storm (Runs Out of Rain)\" mentions that \"co-writer Hillary Lindsey sings backing vocals.\" However, this does not directly answer the question about who sings with the performer of \"A Feelin' Like That\" on \"Every Storm.\"\n\nThe history shows that M1 mentioned \"Hillary Lindsey\" and M4 and M2 mentioned \"Gary Allan.\" However, none of the provided information clearly states who sings with the performer of \"A Feelin' Like That\" on \"Every Storm.\" The information given is not sufficient to determine the answer to this question. Therefore, the answer cannot be determined from the provided material."
+        },
+        {
+          "request_id": "2hop__663664_46366|47",
+          "actor": "M1",
+          "round": 2,
+          "text": "Based on the information provided, the song \"A Feelin' Like That\" is recorded by Gary Allan, and \"Every Storm (Runs Out of Rain)\" is a song with a co-writer, Hillary Lindsey, who sings backing vocals. However, the provided information does not clearly state that Hillary Lindsey is the performer with whom Gary Allan sings on \"Every Storm (Runs Out of Rain).\" Therefore, the answer cannot be determined from the provided material."
+        }
+      ],
+      "private_final": {
+        "answer": "Hillary Lindsey",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "Hillary Lindsey",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 1,
+      "team_delta": 0,
+      "note": "私人工作直接给Hillary；公开工作找到伴唱人却否认桥接。"
+    },
+    {
+      "index": 13,
+      "question_number": 14,
+      "public_arm": "B",
+      "private_arm": "A",
+      "question": "What agency consists of the Science Museum in Alberto Lista's birth place?",
+      "gold": "Spanish National Research Council",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "Spanish National Research Council",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__638478_377891|06",
+          "actor": "M1",
+          "round": 1,
+          "text": "The Spanish National Research Council"
+        },
+        {
+          "request_id": "2hop__638478_377891|09",
+          "actor": "M1",
+          "round": 2,
+          "text": "The Spanish National Research Council"
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__638478_377891|18",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question is asking for the agency that consists of the Science Museum in Alberto Lista's birth place. \n\nFirst, we need to determine where Alberto Lista was born. From the provided information, Alberto Lista was born in a tiny place called Fliesteden, which is now part of Bergheim in the Rhein-Erft-Kreis region of Germany.\n\nNext, we need to find which agency consists of the Science Museum in this location. However, the provided information does not mention a Science Museum in Fliesteden or any agency related to it. \n\nLooking through the provided paragraphs, we can see that there is a mention of \"La Casa de la Ciencia de Sevilla - Science Museum\" in Seville, Spain, and \"Science Museum of Virginia\" in Richmond, Virginia, USA. However, these are not related to Fliesteden.\n\nTherefore, based on the information provided, there is no mention of an agency that consists of the Science Museum in Alberto Lista's birth place, Fliesteden. The information provided does not include any details about a Science Museum in Fliesteden or any agency related to it."
+        },
+        {
+          "request_id": "2hop__638478_377891|21",
+          "actor": "M1",
+          "round": 2,
+          "text": "After reviewing the information provided, it appears that there is no mention of a Science Museum in Fliesteden or any agency related to it. The information provided does not include any details about a Science Museum in Fliesteden or any agency related to it. Therefore, based on the information provided, there is no mention of an agency that consists of the Science Museum in Alberto Lista's birth place, Fliesteden."
+        }
+      ],
+      "private_final": {
+        "answer": "Spanish National Research Council",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "Spanish National Research Council",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 0,
+      "public_team_expected_em": 0.25,
+      "team_delta": 0.25,
+      "note": "私人目标串匹配；公开错接Fliesteden；支持材料的出生地桥接仍弱，不能把私人短串认证为完整推理。"
+    },
+    {
+      "index": 19,
+      "question_number": 20,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "When was the spring training home of the team Lance Blankenship is a member of built?",
+      "gold": "1976",
+      "boundary": "ASSISTANT_RELATION_LEVEL_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": false,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": true,
+      "initial_expert": {
+        "answer": "1976",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__543705_18221|30",
+          "actor": "M1",
+          "round": 1,
+          "text": "1976"
+        },
+        {
+          "request_id": "2hop__543705_18221|33",
+          "actor": "M1",
+          "round": 2,
+          "text": "1979"
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__543705_18221|42",
+          "actor": "M1",
+          "round": 1,
+          "text": "The answer cannot be determined from the information provided. The text does not mention the spring training home of the Oakland Athletics, the team Lance Blankenship played for. However, it is noted that the Chicago Cubs had a spring training home at HoHoKam Park, built in 1976, and Sloan Park, built in 2014. Since there is no direct information connecting Lance Blankenship to the Chicago Cubs, the answer cannot be determined."
+        },
+        {
+          "request_id": "2hop__543705_18221|45",
+          "actor": "M1",
+          "round": 2,
+          "text": "The answer cannot be determined from the information provided. The text does not mention the spring training home of the Oakland Athletics, the team Lance Blankenship played for."
+        }
+      ],
+      "private_final": {
+        "answer": "1976",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "1976",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 0,
+      "public_team_expected_em": 1,
+      "team_delta": 1,
+      "note": "私人第一次1976、第二次1979、终答1976，私人阶段也不稳定；公开未建立队伍/球场桥接。"
+    },
+    {
+      "index": 21,
+      "question_number": 22,
+      "public_arm": "B",
+      "private_arm": "A",
+      "question": "Who is the sister of the Powderfinger composer?",
+      "gold": "Astrid Young",
+      "boundary": "ASSISTANT_RELATION_LEVEL_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": true,
+      "initial_expert": {
+        "answer": "Astrid Young",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__709908_500443|05",
+          "actor": "M1",
+          "round": 1,
+          "text": "Astrid Young is the sister of Neil Young, who is the composer of the song \"Powderfinger\"."
+        },
+        {
+          "request_id": "2hop__709908_500443|10",
+          "actor": "M1",
+          "round": 2,
+          "text": "Astrid Young is the sister of Neil Young, who is the composer of the song \"Powderfinger.\""
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__709908_500443|17",
+          "actor": "M1",
+          "round": 1,
+          "text": "The information provided does not mention any siblings of Neil Young, the composer of the song \"Powderfinger.\" Therefore, we cannot determine who his sister is based on the given data."
+        },
+        {
+          "request_id": "2hop__709908_500443|22",
+          "actor": "M1",
+          "round": 2,
+          "text": "From the given data, the song \"Powderfinger\" is written by Neil Young. However, the information provided does not mention any siblings of Neil Young. The only information related to Neil Young is that he is the son of Scott Young, who is a Canadian journalist and the father of musicians Neil Young and Astrid Young. Therefore, based on the given data, we cannot determine who the sister of the Powderfinger composer (Neil Young) is."
+        }
+      ],
+      "private_final": {
+        "answer": "Astrid Young",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "Astrid Young",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 1,
+      "team_delta": 0,
+      "note": "私人明确Neil与Astrid兄妹；公开列出同父事实却拒绝推出姐妹关系。"
+    },
+    {
+      "index": 26,
+      "question_number": 27,
+      "public_arm": "B",
+      "private_arm": "A",
+      "question": "Worldwide record sales total how many for the band from \"That One Night: Live in Buenos Aires\"?",
+      "gold": "38 million",
+      "boundary": "ASSISTANT_RELATION_LEVEL_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": true,
+      "initial_expert": {
+        "answer": "38 million",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__622767_161358|07",
+          "actor": "M1",
+          "round": 1,
+          "text": "Megadeth has sold over 38 million records worldwide."
+        },
+        {
+          "request_id": "2hop__622767_161358|09",
+          "actor": "M1",
+          "round": 2,
+          "text": "Megadeth has sold over 38 million records worldwide."
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__622767_161358|19",
+          "actor": "M1",
+          "round": 1,
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The paragraphs mention that Megadeth has sold over 38 million records worldwide. However, it is important to note that this figure represents the band's total record sales, not specifically for the album \"That One Night: Live in Buenos Aires.\" The paragraphs do not provide specific sales figures for this album. Therefore, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires\" from the given information."
+        },
+        {
+          "request_id": "2hop__622767_161358|21",
+          "actor": "M1",
+          "round": 2,
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The paragraphs mention that Megadeth has sold over 38 million records worldwide. However, this figure represents the band's total record sales, not specifically for the album \"That One Night: Live in Buenos Aires.\" The paragraphs do not provide specific sales figures for this album. Therefore, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires\" from the given information."
+        }
+      ],
+      "private_final": {
+        "answer": "38 million",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "38 million",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 0,
+      "team_delta": -1,
+      "note": "私人明确乐队总销量；公开把问乐队的销量错改为问专辑销量；是较清楚的任务目标错绑。"
+    },
+    {
+      "index": 26,
+      "question_number": 27,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "Worldwide record sales total how many for the band from \"That One Night: Live in Buenos Aires\"?",
+      "gold": "38 million",
+      "boundary": "ASSISTANT_RELATION_LEVEL_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": true,
+      "initial_expert": {
+        "answer": "38 million",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__622767_161358|31",
+          "actor": "M1",
+          "round": 1,
+          "text": "38 million"
+        },
+        {
+          "request_id": "2hop__622767_161358|33",
+          "actor": "M1",
+          "round": 2,
+          "text": "38 million"
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__622767_161358|43",
+          "actor": "M1",
+          "round": 1,
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. However, the provided data does not specify the sales figures for this particular album. The total worldwide sales figure of 38 million records for Megadeth is for the band as a whole, not specifically for the album \"That One Night: Live in Buenos Aires.\" Therefore, we cannot determine the worldwide record sales total for the band from \"That One Night: Live in Buenos Aires\" with the information given."
+        },
+        {
+          "request_id": "2hop__622767_161358|45",
+          "actor": "M1",
+          "round": 2,
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The total worldwide sales figure of 38 million records for Megadeth is for the band as a whole, not specifically for the \"That One Night: Live in Buenos Aires\" album. Therefore, the information provided is insufficient to determine the worldwide record sales total for the band from \"That One Night: Live in Buenos Aires.\""
+        }
+      ],
+      "private_final": {
+        "answer": "38 million",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "38 million",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 0.5,
+      "team_delta": -0.5,
+      "note": "私人明确乐队总销量；公开把问乐队的销量错改为问专辑销量；是较清楚的任务目标错绑。"
+    },
+    {
+      "index": 29,
+      "question_number": 30,
+      "public_arm": "B",
+      "private_arm": "A",
+      "question": "Who founded the producer of To the Shores of Iwo Jima?",
+      "gold": "Samuel Nicholas",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "Samuel Nicholas",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__455004_523858|05",
+          "actor": "M1",
+          "round": 1,
+          "text": "Samuel Nicholas was the first officer commissioned in the United States Continental Marines (predecessor to the United States Marine Corps) and by tradition is considered to be the first Commandant of the Marine Corps."
+        },
+        {
+          "request_id": "2hop__455004_523858|10",
+          "actor": "M1",
+          "round": 2,
+          "text": "Samuel Nicholas was the first officer commissioned in the United States Continental Marines (predecessor to the United States Marine Corps) and by tradition is considered to be the first Commandant of the Marine Corps."
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__455004_523858|17",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question is asking who founded the producer of \"To the Shores of Iwo Jima.\" Based on the information provided, the film was produced by the United States Navy and United States Marine Corps. However, the term \"producer\" can be a bit ambiguous here. The producers were the United States Navy and United States Marine Corps, not an individual or a company. The term \"founder of the producer\" might be a bit confusing. If we interpret it as asking who founded the production of the film, then the answer would be the United States Navy and United States Marine Corps, as they are the ones who produced the film. If the question is asking for the founder of a producer organization, there isn't enough information in the provided data to determine that. Therefore, based on the information given, the answer to the question \"Who founded the producer of To the Shores of Iwo Jima?\" is that the United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer."
+        },
+        {
+          "request_id": "2hop__455004_523858|22",
+          "actor": "M1",
+          "round": 2,
+          "text": "The question is asking who founded the producer of \"To the Shores of Iwo Jima.\" Based on the information provided, \"To the Shores of Iwo Jima\" is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. \n\nThe term \"producer\" in this context refers to the organizations or entities that produced the film. The United States Navy and United States Marine Corps are the producers of the film, as stated in the data. However, the question is phrased as \"who founded the producer,\" which is a bit ambiguous.\n\nIf we interpret \"founder of the producer\" as asking who founded the production of the film, the answer would be the United States Navy and United States Marine Corps, as they are the ones who produced the film. If we interpret it as asking for the founder of a producer organization, there isn't enough information in the provided data to determine that.\n\nTherefore, based on the information given, the answer to the question \"Who founded the producer of To the Shores of Iwo Jima?\" is that the United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer."
+        }
+      ],
+      "private_final": {
+        "answer": "Samuel Nicholas",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "Samuel Nicholas",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 0,
+      "public_team_expected_em": 0,
+      "team_delta": 0,
+      "note": "私人给官方人名/首任军官事实；首任Commandant与创办者的等价桥接不足，不把公开质疑全算错误。"
+    },
+    {
+      "index": 29,
+      "question_number": 30,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "Who founded the producer of To the Shores of Iwo Jima?",
+      "gold": "Samuel Nicholas",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "Samuel Nicholas",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__455004_523858|29",
+          "actor": "M1",
+          "round": 1,
+          "text": "Samuel Nicholas"
+        },
+        {
+          "request_id": "2hop__455004_523858|34",
+          "actor": "M1",
+          "round": 2,
+          "text": "Samuel Nicholas"
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__455004_523858|41",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question asks who founded the producer of \"To the Shores of Iwo Jima.\" However, the provided information does not mention any \"founder\" of a producer for this film. Instead, it states that \"To the Shores of Iwo Jima\" is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. \n\nThe term \"producer\" in this context refers to the organizations that produced the film, which are the United States Navy and United States Marine Corps. There is no information provided about an individual or entity that \"founded\" the producer of the film. Therefore, based on the given data, we cannot determine who founded the producer of \"To the Shores of Iwo Jima.\" The answer is not available from the information provided."
+        },
+        {
+          "request_id": "2hop__455004_523858|46",
+          "actor": "M1",
+          "round": 2,
+          "text": "The question asks who founded the producer of \"To the Shores of Iwo Jima.\" Based on the information provided, \"To the Shores of Iwo Jima\" is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. \n\nThe term \"producer\" in this context refers to the organizations that produced the film, which are the United States Navy and United States Marine Corps. There is no information provided about an individual or entity that \"founded\" the producer of the film. The term \"founder\" implies an individual or entity that established or created the producer, but the given data does not mention any such founder.\n\nTherefore, based on the given data, we cannot determine who founded the producer of \"To the Shores of Iwo Jima.\" The answer is not available from the information provided."
+        }
+      ],
+      "private_final": {
+        "answer": "Samuel Nicholas",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "Samuel Nicholas",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 0,
+      "public_team_expected_em": 0,
+      "team_delta": 0,
+      "note": "私人给官方人名/首任军官事实；首任Commandant与创办者的等价桥接不足，不把公开质疑全算错误。"
+    },
+    {
+      "index": 31,
+      "question_number": 32,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "How many people died as a result of the fighting betwen Armenia and the country Çobankənd is located?",
+      "gold": "30,000",
+      "boundary": "ASSISTANT_RELATION_LEVEL_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": true,
+      "initial_expert": {
+        "answer": "30,000",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__468328_34197|30",
+          "actor": "M1",
+          "round": 1,
+          "text": "30,000 people died as a result of the fighting between Armenia and Azerbaijan."
+        },
+        {
+          "request_id": "2hop__468328_34197|32",
+          "actor": "M1",
+          "round": 2,
+          "text": "The provided information indicates that an estimated 30,000 people were killed during the fighting between Armenia and Azerbaijan. However, it is important to note that the exact number of casualties is not specified in the given data, and the figure of 30,000 is an estimate. The answer is based on the information that the Karabakh war ended after a Russian-brokered cease-fire was put in place in 1994, with an estimated 30,000 people having been killed by the time both Azerbaijan and Armenia had finally agreed to a ceasefire in 1994."
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__468328_34197|42",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question contains an error. \"Çobankənd\" is not a country, but a village located in Azerbaijan. The provided information mentions the Karabakh war between Armenia and Azerbaijan, which resulted in an estimated 30,000 deaths. However, the question refers to fighting between Armenia and \"Çobankənd,\" a village, which is not a country. Therefore, the number of people who died as a result of the fighting between Armenia and \"Çobankənd\" cannot be determined from the provided information. The correct answer would be that there is no country named \"Çobankənd,\" and thus, the number of people who died as a result of the fighting between Armenia and \"Çobankənd\" cannot be determined."
+        },
+        {
+          "request_id": "2hop__468328_34197|44",
+          "actor": "M1",
+          "round": 2,
+          "text": "The question seems to have a mistake. \"Çobankənd\" is not a country but a village located in Azerbaijan. The provided information mentions the Karabakh war between Armenia and Azerbaijan, which resulted in an estimated 30,000 deaths. However, since the question refers to fighting between Armenia and \"Çobankənd,\" which is a village, not a country, the number of people who died as a result of the fighting between Armenia and \"Çobankənd\" cannot be determined from the provided information. The correct answer would be that there is no country named \"Çobankənd,\" and thus, the number of people who died as a result of the fighting between Armenia and \"Çobankənd\" cannot be determined."
+        }
+      ],
+      "private_final": {
+        "answer": "30,000",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "30,000",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 0.5,
+      "public_team_expected_em": 1,
+      "team_delta": 0.5,
+      "note": "私人正确识别村庄所属国家；公开把题目误读为村庄本身是国家。团队反而改善，不能据工作标签推断团队伤害。"
+    },
+    {
+      "index": 35,
+      "question_number": 36,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "Who founded the company that made the Plymouth Prowler?",
+      "gold": "Walter Percy Chrysler",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "Walter Percy Chrysler",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__132590_663762|31",
+          "actor": "M1",
+          "round": 1,
+          "text": "Walter Percy Chrysler"
+        },
+        {
+          "request_id": "2hop__132590_663762|34",
+          "actor": "M1",
+          "round": 2,
+          "text": "Walter Percy Chrysler"
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__132590_663762|43",
+          "actor": "M1",
+          "round": 1,
+          "text": "Based on the provided information, the Plymouth Prowler was manufactured and marketed by DaimlerChrysler. However, the specific founders of DaimlerChrysler are not explicitly mentioned in the given text. The paragraph about Walter Chrysler notes that he was the founder of Chrysler Corporation, which is now part of Fiat Chrysler Automobiles. However, there is no direct information provided about the founders of DaimlerChrysler. Therefore, the answer is not explicitly stated in the provided data."
+        },
+        {
+          "request_id": "2hop__132590_663762|46",
+          "actor": "M1",
+          "round": 2,
+          "text": "The provided information does not specify the founders of DaimlerChrysler, the company that manufactured the Plymouth Prowler. Therefore, the specific founders of DaimlerChrysler are not mentioned in the given data."
+        }
+      ],
+      "private_final": {
+        "answer": "Walter Percy Chrysler",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "Walter Percy Chrysler",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 0,
+      "public_team_expected_em": 0,
+      "team_delta": 0,
+      "note": "Chrysler/DaimlerChrysler归属桥接有边界；私人目标短串不证明公开质疑不合理。"
+    },
+    {
+      "index": 37,
+      "question_number": 38,
+      "public_arm": "B",
+      "private_arm": "A",
+      "question": "Who is the child of the person who came up with the idea for Sgt. Pepper?",
+      "gold": "James McCartney",
+      "boundary": "ASSISTANT_RELATION_LEVEL_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": true,
+      "initial_expert": {
+        "answer": "James McCartney",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__78918_699691|05",
+          "actor": "M1",
+          "round": 1,
+          "text": "James McCartney is the child of Paul McCartney."
+        },
+        {
+          "request_id": "2hop__78918_699691|08",
+          "actor": "M1",
+          "round": 2,
+          "text": "James McCartney is the child of Paul McCartney."
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__78918_699691|17",
+          "actor": "M1",
+          "round": 1,
+          "text": "Based on the provided information, there is no direct mention of anyone coming up with the idea for Sgt. Pepper's Lonely Hearts Club Band. However, if we consider the only person mentioned with an idea (Richard Chambers for the Oregon Bottle Bill), and if we mistakenly assume that this is the reference for Sgt. Pepper, then the child of Richard Chambers would be Vicki Berger. Therefore, based on the provided information, the answer is Vicki Berger."
+        },
+        {
+          "request_id": "2hop__78918_699691|20",
+          "actor": "M1",
+          "round": 2,
+          "text": "The question is asking for the child of the person who came up with the idea for Sgt. Pepper's Lonely Hearts Club Band. However, none of the provided paragraphs mention anyone coming up with the idea for Sgt. Pepper's Lonely Hearts Club Band. Therefore, the answer cannot be determined from the provided information."
+        }
+      ],
+      "private_final": {
+        "answer": "Paul McCartney",
+        "em": 0,
+        "f1": 0.5
+      },
+      "public_final": {
+        "answer": "James McCartney",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 0,
+      "public_team_expected_em": 0,
+      "team_delta": 0,
+      "note": "私人工作James是Paul的孩子、私人终答却Paul；公开工作未承诺James，但公开终答James。两个阶段优劣相反。"
+    },
+    {
+      "index": 37,
+      "question_number": 38,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "Who is the child of the person who came up with the idea for Sgt. Pepper?",
+      "gold": "James McCartney",
+      "boundary": "ASSISTANT_RELATION_LEVEL_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": true,
+      "initial_expert": {
+        "answer": "James McCartney",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__78918_699691|29",
+          "actor": "M1",
+          "round": 1,
+          "text": "James McCartney is the child of Paul McCartney."
+        },
+        {
+          "request_id": "2hop__78918_699691|32",
+          "actor": "M1",
+          "round": 2,
+          "text": "James McCartney is the child of Paul McCartney."
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__78918_699691|41",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question asks for the child of the person who came up with the idea for Sgt. Pepper. From the provided information, there is no mention of anyone coming up with the idea for Sgt. Pepper. The only mention of someone coming up with an idea is Richard Chambers for the Oregon Bottle Bill, but this is unrelated to Sgt. Pepper. Therefore, the answer cannot be determined from the provided information."
+        },
+        {
+          "request_id": "2hop__78918_699691|44",
+          "actor": "M1",
+          "round": 2,
+          "text": "The question asks for the child of the person who came up with the idea for Sgt. Pepper. The provided information does not mention any person coming up with the idea for Sgt. Pepper. The only mention of someone coming up with an idea is Richard Chambers, who came up with the idea for the Oregon Bottle Bill. However, this is unrelated to Sgt. Pepper. Therefore, the answer cannot be determined from the provided information."
+        }
+      ],
+      "private_final": {
+        "answer": "Paul McCartney",
+        "em": 0,
+        "f1": 0.5
+      },
+      "public_final": {
+        "answer": "James McCartney",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 0,
+      "public_team_expected_em": 0,
+      "team_delta": 0,
+      "note": "私人工作James是Paul的孩子、私人终答却Paul；公开工作未承诺James，但公开终答James。两个阶段优劣相反。"
+    },
+    {
+      "index": 39,
+      "question_number": 40,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "Who was in charge of the city where Amanda Borden was born?",
+      "gold": "John Cranley",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "John Cranley",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__145100_126060|30",
+          "actor": "M1",
+          "round": 1,
+          "text": "John Cranley"
+        },
+        {
+          "request_id": "2hop__145100_126060|33",
+          "actor": "M1",
+          "round": 2,
+          "text": "John Cranley"
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__145100_126060|42",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question is asking for the person or authority figure in charge of the city where Amanda Borden was born. From the provided information, we know that Amanda Borden was born in Cincinnati, Ohio. The current mayor of Cincinnati is John Cranley. However, the question does not specify a time frame, and the information provided does not mention who was in charge of Cincinnati at the time Amanda Borden was born. Therefore, we cannot determine who was in charge of the city where Amanda Borden was born based on the provided information."
+        },
+        {
+          "request_id": "2hop__145100_126060|45",
+          "actor": "M1",
+          "round": 2,
+          "text": "The question asks for the person or authority figure in charge of the city where Amanda Borden was born. From the provided information, we know that Amanda Borden was born in Cincinnati, Ohio. The current mayor of Cincinnati is John Cranley. However, the question does not specify a time frame, and the information provided does not mention who was in charge of Cincinnati at the time Amanda Borden was born. Therefore, we cannot determine who was in charge of the city where Amanda Borden was born based on the provided information."
+        }
+      ],
+      "private_final": {
+        "answer": "John Cranley",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "John Cranley",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 1,
+      "team_delta": 0,
+      "note": "私人短串匹配；公开增加出生当年时点限制，题意时间边界保留。"
+    },
+    {
+      "index": 47,
+      "question_number": 48,
+      "public_arm": "B",
+      "private_arm": "A",
+      "question": "What political party was the man whose writings influenced the French Declaration of the Rights of Man and Citizen, a member of?",
+      "gold": "Democratic-Republican Party",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": false,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "center-right",
+        "official_em": 0,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__73046_196273|04",
+          "actor": "M1",
+          "round": 1,
+          "text": "center-right"
+        },
+        {
+          "request_id": "2hop__73046_196273|09",
+          "actor": "M1",
+          "round": 2,
+          "text": "center-right"
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__73046_196273|16",
+          "actor": "M1",
+          "round": 1,
+          "text": "center-right"
+        },
+        {
+          "request_id": "2hop__73046_196273|21",
+          "actor": "M1",
+          "round": 2,
+          "text": "The question asks for the political party of the man whose writings influenced the French Declaration of the Rights of Man and Citizen. From the provided material, we can see that the Declaration of the Rights of Man and of the Citizen was directly influenced by Thomas Jefferson, working with General Lafayette. However, the question is about the man whose writings influenced this declaration, and the answer lies in the context of the French Revolution.\n\nLooking through the paragraphs, we find that Michel Carlini was a French politician who was a member of the center-right Rally of the French People political party, started by General Charles de Gaulle. However, this is not directly related to the influence on the French Declaration of the Rights of Man and Citizen.\n\nThe paragraph titled \"Declaration of the Rights of Man and of the Citizen\" mentions that the declaration was influenced by Thomas Jefferson, General Lafayette, and Honoré Mirabeau. However, none of these individuals are mentioned as being part of a political party in the provided text.\n\nHowever, looking at the paragraph about George Mason, it states that his writings have been a significant influence on political thought and events, including the Virginia Declaration of Rights. This is not directly related to the French Declaration of the Rights of Man and Citizen.\n\nThe correct answer to the question is not directly provided in the text. However, based on the information that the French Declaration of the Rights of Man and Citizen was influenced by Thomas Jefferson, and that Michel Carlini was a member of the center-right Rally of the French People, we can infer that the man whose writings influenced the French Declaration of the Rights of Man and Citizen was likely Thomas Jefferson, who was a member of the Democratic-Republican Party. However, this is not explicitly stated in the provided text. Therefore, the answer is not directly provided in the text."
+        }
+      ],
+      "private_final": {
+        "answer": "Rally of the French People",
+        "em": 0,
+        "f1": 0
+      },
+      "public_final": {
+        "answer": "Democratic-Republican Party",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 0,
+      "public_team_expected_em": 0,
+      "team_delta": 0,
+      "note": "私人工作center-right本身不对；公开末次提出目标党名却否认材料支持，不能叫稳定私人优势被破坏。"
+    },
+    {
+      "index": 50,
+      "question_number": 51,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "Who is the father of Mock Turtle's creator?",
+      "gold": "Charles Dodgson",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "Charles Dodgson",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__109366_440021|30",
+          "actor": "M1",
+          "round": 1,
+          "text": "Charles Dodgson is the father of Lewis Carroll."
+        },
+        {
+          "request_id": "2hop__109366_440021|35",
+          "actor": "M1",
+          "round": 2,
+          "text": "Charles Dodgson is the father of Lewis Carroll."
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__109366_440021|42",
+          "actor": "M1",
+          "round": 1,
+          "text": "Based on the information provided, the creator of the Mock Turtle is Lewis Carroll, who is also known as Charles Lutwidge Dodgson. However, the information provided does not mention the father of Charles Lutwidge Dodgson. Therefore, based on the information given, we cannot determine the father of Mock Turtle's creator."
+        },
+        {
+          "request_id": "2hop__109366_440021|47",
+          "actor": "M1",
+          "round": 2,
+          "text": "The question is asking for the father of the creator of the Mock Turtle. From the provided information, we know that the Mock Turtle is a fictional character created by Lewis Carroll, who is also known as Charles Lutwidge Dodgson. The history mentions \"Charles Dodgson (priest)\" which refers to Lewis Carroll's real name. However, the information provided does not mention the father of Charles Lutwidge Dodgson. Therefore, based on the information given, we cannot determine the father of the creator of the Mock Turtle. The information provided does not include details about Charles Lutwidge Dodgson's father."
+        }
+      ],
+      "private_final": {
+        "answer": "Charles Dodgson",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "Charles Dodgson",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 0,
+      "team_delta": -1,
+      "note": "私人关系陈述匹配；公开混淆父子Dodgson身份；原资料父子桥接边界保留。"
+    },
+    {
+      "index": 59,
+      "question_number": 60,
+      "public_arm": "B",
+      "private_arm": "A",
+      "question": "What was the tallest mountain before the place of death for Tsewang Paljor was discovered?",
+      "gold": "Kangchenjunga",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "Kangchenjunga",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__487291_78529|07",
+          "actor": "M1",
+          "round": 1,
+          "text": "Kangchenjunga is the tallest mountain in the world before the place of death for Tsewang Paljor was discovered."
+        },
+        {
+          "request_id": "2hop__487291_78529|11",
+          "actor": "M1",
+          "round": 2,
+          "text": "Kangchenjunga is the tallest mountain in the world before the place of death for Tsewang Paljor was discovered."
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__487291_78529|19",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question is asking for the tallest mountain before the place of death for Tsewang Paljor was discovered. From the provided information, we know that Tsewang Paljor is believed to be the climber whose body is known as \"Green Boots\" on Mount Everest. The place of death for Tsewang Paljor is Mount Everest.\n\nNow, we need to find out what was the tallest mountain before the place of death for Tsewang Paljor was discovered. However, the information given does not directly state when or how the place of death for Tsewang Paljor was discovered. It only mentions that the body is known as \"Green Boots\" and that it is believed to be Tsewang Paljor.\n\nLooking at the paragraphs, there is a list of past presumed highest mountains, which includes Kangchenjunga, which was presumed to be the highest mountain until 1852. However, this is not directly related to Tsewang Paljor's place of death.\n\nThe tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. However, the information provided does not give a specific date or time for the discovery of the body. Therefore, we cannot determine the exact tallest mountain before the discovery of Tsewang Paljor's place of death.\n\nHowever, if we consider the tallest mountain in the world before the discovery of the body on Mount Everest, it would be Mount Everest itself, as it was the tallest mountain at that time. But this is not the correct interpretation of the question.\n\nThe question is a bit ambiguous, but based on the information provided, the tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. Since the body was discovered on Mount Everest, the tallest mountain before the discovery would still be Mount Everest. Therefore, the answer is Mount Everest."
+        },
+        {
+          "request_id": "2hop__487291_78529|23",
+          "actor": "M1",
+          "round": 2,
+          "text": "The question is asking for the tallest mountain before the place of death for Tsewang Paljor was discovered. From the provided information, we know that Tsewang Paljor is believed to be the climber whose body is known as \"Green Boots\" on Mount Everest. The place of death for Tsewang Paljor is Mount Everest.\n\nNow, we need to find out what was the tallest mountain before the place of death for Tsewang Paljor was discovered. However, the information given does not directly state when or how the place of death for Tsewang Paljor was discovered. It only mentions that the body is known as \"Green Boots\" and that it is believed to be Tsewang Paljor.\n\nLooking at the paragraphs, there is a list of past presumed highest mountains, which includes Kangchenjunga, which was presumed to be the highest mountain until 1852. However, this is not directly related to Tsewang Paljor's place of death.\n\nThe tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. However, the information provided does not give a specific date or time for the discovery of the body. Therefore, we cannot determine the exact tallest mountain before the discovery of Tsewang Paljor's place of death.\n\nHowever, if we consider the tallest mountain in the world before the discovery of the body on Mount Everest, it would be Mount Everest itself, as it was the tallest mountain at that time. But this is not the correct interpretation of the question.\n\nThe question is a bit ambiguous, but based on the information provided, the tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. Since the body was discovered on Mount Everest, the tallest mountain before the discovery would still be Mount Everest. Therefore, the answer is Mount Everest."
+        }
+      ],
+      "private_final": {
+        "answer": "Kangchenjunga",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "Kangchenjunga",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 0,
+      "team_delta": -1,
+      "note": "私人候选匹配；公开将发现珠峰误读为发现尸体；题句时间歧义保留。"
+    },
+    {
+      "index": 63,
+      "question_number": 64,
+      "public_arm": "B",
+      "private_arm": "A",
+      "question": "When was the band that performed Carnival established?",
+      "gold": "1978",
+      "boundary": "ASSISTANT_RELATION_LEVEL_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": true,
+      "initial_expert": {
+        "answer": "1978",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__417989_127008|06",
+          "actor": "M1",
+          "round": 1,
+          "text": "Duran Duran is an English new wave band formed in Birmingham in 1978."
+        },
+        {
+          "request_id": "2hop__417989_127008|08",
+          "actor": "M1",
+          "round": 2,
+          "text": "Duran Duran is an English new wave band formed in Birmingham in 1978."
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__417989_127008|18",
+          "actor": "M1",
+          "round": 1,
+          "text": "Duran Duran is an English new wave band formed in Birmingham in 1978. However, the provided information does not explicitly state that Duran Duran performed at a Carnival event. Therefore, we cannot definitively say that the band that performed Carnival was established in 1978."
+        },
+        {
+          "request_id": "2hop__417989_127008|20",
+          "actor": "M1",
+          "round": 2,
+          "text": "Duran Duran is an English new wave band formed in Birmingham in 1978. However, the provided information does not explicitly state that Duran Duran performed at a Carnival event. Therefore, we cannot definitively say that the band that performed Carnival was established in 1978."
+        }
+      ],
+      "private_final": {
+        "answer": "1978",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "1978",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 1,
+      "team_delta": 0,
+      "note": "私人明确乐队成立年；公开将Carnival专辑误读为嘉年华活动。"
+    },
+    {
+      "index": 67,
+      "question_number": 68,
+      "public_arm": "B",
+      "private_arm": "A",
+      "question": "When was the driving test introduced in Orsini's home country?",
+      "gold": "1934",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "1858",
+        "official_em": 0,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__16759_57749|07",
+          "actor": "M1",
+          "round": 1,
+          "text": "The driving test was introduced in Orsini's home country, the Italian refugee from Britain called Orsini attempted to assassinate Napoleon III with a bomb made in England in 1858."
+        },
+        {
+          "request_id": "2hop__16759_57749|08",
+          "actor": "M1",
+          "round": 2,
+          "text": "The driving test was introduced in Orsini's home country, Italy, in 1934."
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__16759_57749|19",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question asks for the year the driving test was introduced in Orsini's home country. \n\nFirst, we need to identify Orsini's home country. The name \"Orsini\" is a family name, and there are several historical figures with this name. One of them is Rienzi, who is mentioned in the first paragraph. However, the paragraph about Rienzi does not mention a country. Another reference is to \"Orsini\" in the context of Queen Victoria's assassination attempt in 1858, where an Italian refugee named Orsini attempted to assassinate Napoleon III. This suggests that Orsini is associated with Italy.\n\nGiven that Orsini is associated with Italy, we need to find when the driving test was introduced in Italy. However, the provided text does not directly mention the introduction of a driving test in Italy. Instead, it mentions the \"United Kingdom driving test\" being introduced in 1934. \n\nThe history provided includes several mentions of 1934, which is the year the driving test was introduced in the United Kingdom. However, the question is about Orsini's home country, which we have inferred to be Italy. Since there is no specific information about the introduction of a driving test in Italy, we cannot directly answer the question based on the provided information.\n\nTherefore, the answer cannot be determined from the given information. The text does not provide the year the driving test was introduced in Italy."
+        },
+        {
+          "request_id": "2hop__16759_57749|20",
+          "actor": "M1",
+          "round": 2,
+          "text": "The information provided does not specify the year the driving test was introduced in Italy, which is Orsini's home country. Therefore, the answer cannot be determined from the given information."
+        }
+      ],
+      "private_final": {
+        "answer": "1934",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "1934",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 1,
+      "team_delta": 0,
+      "note": "私人末次虽1934，但B错误把英国年份赋给意大利、D未建立国家桥接；金标/原资料国家指代有疑问，不能称正确推理被讨论损坏。"
+    },
+    {
+      "index": 67,
+      "question_number": 68,
+      "public_arm": "D",
+      "private_arm": "C",
+      "question": "When was the driving test introduced in Orsini's home country?",
+      "gold": "1934",
+      "boundary": "WEAK_BRIDGE_OR_WORDING_OR_MIXED_CANDIDATE",
+      "assistant_label_independence": "none/provisional",
+      "private_last_endorses_gold_candidate": true,
+      "private_last_label_scope": "candidate-only, not full reasoning/grounding certification",
+      "clearer_original_stratum": false,
+      "initial_expert": {
+        "answer": "1858",
+        "official_em": 0,
+        "public_in_B_D": true
+      },
+      "private_work": [
+        {
+          "request_id": "2hop__16759_57749|31",
+          "actor": "M1",
+          "round": 1,
+          "text": "The driving test was introduced in Orsini's home country in the 1930s."
+        },
+        {
+          "request_id": "2hop__16759_57749|32",
+          "actor": "M1",
+          "round": 2,
+          "text": "In 1934"
+        }
+      ],
+      "public_work": [
+        {
+          "request_id": "2hop__16759_57749|43",
+          "actor": "M1",
+          "round": 1,
+          "text": "The question asks for the year the driving test was introduced in Orsini's home country. From the given information, we know that Orsini is an Italian surname, as indicated by the mention of Queen Victoria and an Italian refugee named Orsini in 1858. Therefore, Orsini's home country is Italy.\n\nHowever, the provided text does not contain any specific information about when the driving test was introduced in Italy. The only information related to driving tests is about the United Kingdom driving test, which was introduced in 1934, but this is for the UK, not Italy.\n\nSince there is no information about driving tests in Italy, we cannot determine the exact year the driving test was introduced in Italy based on the provided information. The answer cannot be determined from the given text."
+        },
+        {
+          "request_id": "2hop__16759_57749|44",
+          "actor": "M1",
+          "round": 2,
+          "text": "The information provided does not specify when the driving test was introduced in Italy, which is Orsini's home country. The only information related to driving tests is about the United Kingdom driving test, introduced in 1934, but this is for the UK, not Italy. Therefore, the answer cannot be determined from the given information."
+        }
+      ],
+      "private_final": {
+        "answer": "1934",
+        "em": 1,
+        "f1": 1
+      },
+      "public_final": {
+        "answer": "1934",
+        "em": 1,
+        "f1": 1
+      },
+      "private_team_expected_em": 1,
+      "public_team_expected_em": 1,
+      "team_delta": 0,
+      "note": "私人末次虽1934，但B错误把英国年份赋给意大利、D未建立国家桥接；金标/原资料国家指代有疑问，不能称正确推理被讨论损坏。"
+    }
+  ],
+  "readout": [
+    {
+      "index": 12,
+      "question_number": 13,
+      "id": "2hop__178056_377891",
+      "arm": "B",
+      "question": "What is the Science Museum, in the city where Amalia Molina was born, a part of?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "ANSWER_SURFACE_EQUIVALENCE_CANDIDATE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Spanish National Research Council",
+        "M2": "Spanish National Research Council (CSIC)",
+        "M3": "Spanish National Research Council (CSIC)",
+        "M4": "Spanish National Research Council (CSIC)"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__178056_377891|19",
+          "text": "The Science Museum in the city where Amalia Molina was born, Seville, is part of the Spanish National Research Council (CSIC)."
+        },
+        {
+          "request_id": "2hop__178056_377891|23",
+          "text": "The Science Museum in the city where Amalia Molina was born, Seville, is part of the Spanish National Research Council (CSIC)."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "Spanish National Research Council",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__178056_377891|19",
+        "2hop__178056_377891|23"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 13,
+      "question_number": 14,
+      "id": "2hop__638478_377891",
+      "arm": "B",
+      "question": "What agency consists of the Science Museum in Alberto Lista's birth place?",
+      "official_expected_em": 0.25,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Spanish National Research Council",
+        "M2": "None of the provided information mentions a Science Museum in Alberto Lista's birth place, Fliesteden, or an agency consisting of such a museum.",
+        "M3": "None",
+        "M4": "None of the provided information mentions a Science Museum in Alberto Lista's birth place of Fliesteden or an agency related to it. Therefore, the answer is: None."
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__638478_377891|18",
+          "text": "The question is asking for the agency that consists of the Science Museum in Alberto Lista's birth place. \n\nFirst, we need to determine where Alberto Lista was born. From the provided information, Alberto Lista was born in a tiny place called Fliesteden, which is now part of Bergheim in the Rhein-Erft-Kreis region of Germany.\n\nNext, we need to find which agency consists of the Science Museum in this location. However, the provided information does not mention a Science Museum in Fliesteden or any agency related to it. \n\nLooking through the provided paragraphs, we can see that there is a mention of \"La Casa de la Ciencia de Sevilla - Science Museum\" in Seville, Spain, and \"Science Museum of Virginia\" in Richmond, Virginia, USA. However, these are not related to Fliesteden.\n\nTherefore, based on the information provided, there is no mention of an agency that consists of the Science Museum in Alberto Lista's birth place, Fliesteden. The information provided does not include any details about a Science Museum in Fliesteden or any agency related to it."
+        },
+        {
+          "request_id": "2hop__638478_377891|21",
+          "text": "After reviewing the information provided, it appears that there is no mention of a Science Museum in Fliesteden or any agency related to it. The information provided does not include any details about a Science Museum in Fliesteden or any agency related to it. Therefore, based on the information provided, there is no mention of an agency that consists of the Science Museum in Alberto Lista's birth place, Fliesteden."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "Spanish National Research Council",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__638478_377891|18",
+        "2hop__638478_377891|21"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 26,
+      "question_number": 27,
+      "id": "2hop__622767_161358",
+      "arm": "B",
+      "question": "Worldwide record sales total how many for the band from \"That One Night: Live in Buenos Aires\"?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "38 million",
+        "M2": "0",
+        "M3": "1,000,000",
+        "M4": "1,000,000"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__622767_161358|19",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The paragraphs mention that Megadeth has sold over 38 million records worldwide. However, it is important to note that this figure represents the band's total record sales, not specifically for the album \"That One Night: Live in Buenos Aires.\" The paragraphs do not provide specific sales figures for this album. Therefore, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires\" from the given information."
+        },
+        {
+          "request_id": "2hop__622767_161358|21",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The paragraphs mention that Megadeth has sold over 38 million records worldwide. However, this figure represents the band's total record sales, not specifically for the album \"That One Night: Live in Buenos Aires.\" The paragraphs do not provide specific sales figures for this album. Therefore, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires\" from the given information."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "38 million",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__622767_161358|19",
+        "2hop__622767_161358|21"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 29,
+      "question_number": 30,
+      "id": "2hop__455004_523858",
+      "arm": "B",
+      "question": "Who founded the producer of To the Shores of Iwo Jima?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_INSUFFICIENCY_PRIVATE_FINAL_CORRECT_WEAK_GOLD_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Samuel Nicholas",
+        "M2": "United States Navy and United States Marine Corps",
+        "M3": "The United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer.",
+        "M4": "The United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer."
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__455004_523858|17",
+          "text": "The question is asking who founded the producer of \"To the Shores of Iwo Jima.\" Based on the information provided, the film was produced by the United States Navy and United States Marine Corps. However, the term \"producer\" can be a bit ambiguous here. The producers were the United States Navy and United States Marine Corps, not an individual or a company. The term \"founder of the producer\" might be a bit confusing. If we interpret it as asking who founded the production of the film, then the answer would be the United States Navy and United States Marine Corps, as they are the ones who produced the film. If the question is asking for the founder of a producer organization, there isn't enough information in the provided data to determine that. Therefore, based on the information given, the answer to the question \"Who founded the producer of To the Shores of Iwo Jima?\" is that the United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer."
+        },
+        {
+          "request_id": "2hop__455004_523858|22",
+          "text": "The question is asking who founded the producer of \"To the Shores of Iwo Jima.\" Based on the information provided, \"To the Shores of Iwo Jima\" is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. \n\nThe term \"producer\" in this context refers to the organizations or entities that produced the film. The United States Navy and United States Marine Corps are the producers of the film, as stated in the data. However, the question is phrased as \"who founded the producer,\" which is a bit ambiguous.\n\nIf we interpret \"founder of the producer\" as asking who founded the production of the film, the answer would be the United States Navy and United States Marine Corps, as they are the ones who produced the film. If we interpret it as asking for the founder of a producer organization, there isn't enough information in the provided data to determine that.\n\nTherefore, based on the information given, the answer to the question \"Who founded the producer of To the Shores of Iwo Jima?\" is that the United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "Samuel Nicholas",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__455004_523858|17",
+        "2hop__455004_523858|22"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 37,
+      "question_number": 38,
+      "id": "2hop__78918_699691",
+      "arm": "B",
+      "question": "Who is the child of the person who came up with the idea for Sgt. Pepper?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "James McCartney",
+        "M2": "Vicki Berger",
+        "M3": "Vicki Berger",
+        "M4": "Vicki Berger"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__78918_699691|17",
+          "text": "Based on the provided information, there is no direct mention of anyone coming up with the idea for Sgt. Pepper's Lonely Hearts Club Band. However, if we consider the only person mentioned with an idea (Richard Chambers for the Oregon Bottle Bill), and if we mistakenly assume that this is the reference for Sgt. Pepper, then the child of Richard Chambers would be Vicki Berger. Therefore, based on the provided information, the answer is Vicki Berger."
+        },
+        {
+          "request_id": "2hop__78918_699691|20",
+          "text": "The question is asking for the child of the person who came up with the idea for Sgt. Pepper's Lonely Hearts Club Band. However, none of the provided paragraphs mention anyone coming up with the idea for Sgt. Pepper's Lonely Hearts Club Band. Therefore, the answer cannot be determined from the provided information."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "James McCartney",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__78918_699691|17",
+        "2hop__78918_699691|20"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 47,
+      "question_number": 48,
+      "id": "2hop__73046_196273",
+      "arm": "B",
+      "question": "What political party was the man whose writings influenced the French Declaration of the Rights of Man and Citizen, a member of?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_CORRECT_CANDIDATE_MIXED_WITH_DENIAL",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Democratic-Republican Party",
+        "M2": "Rally of the French People",
+        "M3": "Rally of the French People",
+        "M4": "Rally of the French People"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__73046_196273|16",
+          "text": "center-right"
+        },
+        {
+          "request_id": "2hop__73046_196273|21",
+          "text": "The question asks for the political party of the man whose writings influenced the French Declaration of the Rights of Man and Citizen. From the provided material, we can see that the Declaration of the Rights of Man and of the Citizen was directly influenced by Thomas Jefferson, working with General Lafayette. However, the question is about the man whose writings influenced this declaration, and the answer lies in the context of the French Revolution.\n\nLooking through the paragraphs, we find that Michel Carlini was a French politician who was a member of the center-right Rally of the French People political party, started by General Charles de Gaulle. However, this is not directly related to the influence on the French Declaration of the Rights of Man and Citizen.\n\nThe paragraph titled \"Declaration of the Rights of Man and of the Citizen\" mentions that the declaration was influenced by Thomas Jefferson, General Lafayette, and Honoré Mirabeau. However, none of these individuals are mentioned as being part of a political party in the provided text.\n\nHowever, looking at the paragraph about George Mason, it states that his writings have been a significant influence on political thought and events, including the Virginia Declaration of Rights. This is not directly related to the French Declaration of the Rights of Man and Citizen.\n\nThe correct answer to the question is not directly provided in the text. However, based on the information that the French Declaration of the Rights of Man and Citizen was influenced by Thomas Jefferson, and that Michel Carlini was a member of the center-right Rally of the French People, we can infer that the man whose writings influenced the French Declaration of the Rights of Man and Citizen was likely Thomas Jefferson, who was a member of the Democratic-Republican Party. However, this is not explicitly stated in the provided text. Therefore, the answer is not directly provided in the text."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "center-right",
+        "official_em": 0,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__73046_196273|16",
+        "2hop__73046_196273|21"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 59,
+      "question_number": 60,
+      "id": "2hop__487291_78529",
+      "arm": "B",
+      "question": "What was the tallest mountain before the place of death for Tsewang Paljor was discovered?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Kangchenjunga",
+        "M2": "Mount Everest",
+        "M3": "Mount Everest",
+        "M4": "Mount Everest"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__487291_78529|19",
+          "text": "The question is asking for the tallest mountain before the place of death for Tsewang Paljor was discovered. From the provided information, we know that Tsewang Paljor is believed to be the climber whose body is known as \"Green Boots\" on Mount Everest. The place of death for Tsewang Paljor is Mount Everest.\n\nNow, we need to find out what was the tallest mountain before the place of death for Tsewang Paljor was discovered. However, the information given does not directly state when or how the place of death for Tsewang Paljor was discovered. It only mentions that the body is known as \"Green Boots\" and that it is believed to be Tsewang Paljor.\n\nLooking at the paragraphs, there is a list of past presumed highest mountains, which includes Kangchenjunga, which was presumed to be the highest mountain until 1852. However, this is not directly related to Tsewang Paljor's place of death.\n\nThe tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. However, the information provided does not give a specific date or time for the discovery of the body. Therefore, we cannot determine the exact tallest mountain before the discovery of Tsewang Paljor's place of death.\n\nHowever, if we consider the tallest mountain in the world before the discovery of the body on Mount Everest, it would be Mount Everest itself, as it was the tallest mountain at that time. But this is not the correct interpretation of the question.\n\nThe question is a bit ambiguous, but based on the information provided, the tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. Since the body was discovered on Mount Everest, the tallest mountain before the discovery would still be Mount Everest. Therefore, the answer is Mount Everest."
+        },
+        {
+          "request_id": "2hop__487291_78529|23",
+          "text": "The question is asking for the tallest mountain before the place of death for Tsewang Paljor was discovered. From the provided information, we know that Tsewang Paljor is believed to be the climber whose body is known as \"Green Boots\" on Mount Everest. The place of death for Tsewang Paljor is Mount Everest.\n\nNow, we need to find out what was the tallest mountain before the place of death for Tsewang Paljor was discovered. However, the information given does not directly state when or how the place of death for Tsewang Paljor was discovered. It only mentions that the body is known as \"Green Boots\" and that it is believed to be Tsewang Paljor.\n\nLooking at the paragraphs, there is a list of past presumed highest mountains, which includes Kangchenjunga, which was presumed to be the highest mountain until 1852. However, this is not directly related to Tsewang Paljor's place of death.\n\nThe tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. However, the information provided does not give a specific date or time for the discovery of the body. Therefore, we cannot determine the exact tallest mountain before the discovery of Tsewang Paljor's place of death.\n\nHowever, if we consider the tallest mountain in the world before the discovery of the body on Mount Everest, it would be Mount Everest itself, as it was the tallest mountain at that time. But this is not the correct interpretation of the question.\n\nThe question is a bit ambiguous, but based on the information provided, the tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. Since the body was discovered on Mount Everest, the tallest mountain before the discovery would still be Mount Everest. Therefore, the answer is Mount Everest."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "Kangchenjunga",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__487291_78529|19",
+        "2hop__487291_78529|23"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 69,
+      "question_number": 70,
+      "id": "3hop1__479393_213066_8723",
+      "arm": "B",
+      "question": "What is the percentage of people claiming job seeker's allowance, in the country of origin of the sport that Kuzbass operates in?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_CORRECT_TASK_MAPPING_LATER_PEERS_RETAIN_WRONG_VALUE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "2.5%",
+        "M2": "2.4%",
+        "M3": "2.4%",
+        "M4": "2.4%"
+      },
+      "expert_work": [
+        {
+          "request_id": "3hop1__479393_213066_8723|18",
+          "text": "The question is asking for the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in. From the provided data, we can determine the sport that Kuzbass operates in is bandy. The country of origin of the sport bandy is England, as mentioned in the \"England national bandy team\" paragraph. The percentage of people claiming job seeker's allowance in England is given as 2.5% in the \"Southampton\" paragraph. However, the history section shows that multiple actors have provided the value \"2.4%\", which might be the percentage for Southampton, not England as a whole. Therefore, the correct answer should be 2.5% for England as a whole, but based on the history section, the answer is 2.4%."
+        },
+        {
+          "request_id": "3hop1__479393_213066_8723|21",
+          "text": "Based on the information provided, the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in (England) is **2.5%**. However, the history section shows that multiple actors have provided the value **2.4%**, which might be the percentage for Southampton, not England as a whole. Therefore, the correct answer is **2.5%** for England as a whole."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "2.4",
+        "official_em": 0,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "3hop1__479393_213066_8723|18",
+        "3hop1__479393_213066_8723|21"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 72,
+      "question_number": 73,
+      "id": "2hop__24744_15345",
+      "arm": "B",
+      "question": "What is Elizabeth's ranking in the religion in which all naturalists working at the two English universities?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "ANSWER_SURFACE_EQUIVALENCE_CANDIDATE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Supreme Governor",
+        "M2": "Supreme Governor of the Church of England",
+        "M3": "Supreme Governor of the Church of England",
+        "M4": "Supreme Governor of the Church of England"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__24744_15345|19",
+          "text": "Based on the information provided, the question is asking about Elizabeth's ranking in the religion in which all naturalists working at the two English universities (Oxford and Cambridge) are part of. From the paragraphs, we know that all naturalists in the two English universities were Church of England clergymen, as stated in paragraph 15. This indicates that the religion in question is the Church of England.\n\nLooking at the information about Elizabeth, we find in paragraph 16 that Elizabeth II is referred to as the \"Supreme Governor of the established Church of England.\" This is the highest position within the Church of England. Therefore, if the question is asking about Elizabeth's ranking in the Church of England, the answer would be that she is the Supreme Governor, which is the highest rank within that religion.\n\nHowever, the question is phrased as \"Elizabeth's ranking in the religion,\" which is a bit ambiguous. If it is referring to Elizabeth II, then her rank in the Church of England is as the Supreme Governor. If it is referring to another Elizabeth, such as Elizabeth from the \"Psychology and Aging\" journal (paragraph 10), there is no information provided about her religious rank or position in any religion.\n\nGiven the context and the mention of Elizabeth II in the history, it is most likely referring to her as the Supreme Governor of the Church of England. Therefore, the answer is that Elizabeth II is the Supreme Governor of the Church of England, which is the highest rank within that religion."
+        },
+        {
+          "request_id": "2hop__24744_15345|21",
+          "text": "Elizabeth's ranking in the religion in which all naturalists working at the two English universities (Oxford and Cambridge) are part of is as the Supreme Governor of the established Church of England."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "Supreme Governor",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__24744_15345|19",
+        "2hop__24744_15345|21"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 13,
+      "question_number": 14,
+      "id": "2hop__638478_377891",
+      "arm": "D",
+      "question": "What agency consists of the Science Museum in Alberto Lista's birth place?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_TARGET_MENTION_WITH_UNRESOLVED_WRONG_BIRTHPLACE_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Spanish National Research Council",
+        "M2": "Science Museum of Virginia",
+        "M3": "Science Museum of Virginia",
+        "M4": "Science Museum of Virginia"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__638478_377891|42",
+          "text": "The question is asking for the agency that consists of the Science Museum in Alberto Lista's birth place. From the provided information, Alberto Lista was born in a place called Fliesteden, which is now part of Bergheim, Rhein-Erft-Kreis in Germany. However, there is no direct mention of a science museum in Fliesteden or Bergheim in the given paragraphs. \n\nLooking through the paragraphs, the \"Science Museum of Virginia\" is mentioned as an agency of the Commonwealth of Virginia. However, this is not related to Alberto Lista's birthplace. The \"La Casa de la Ciencia de Sevilla - Science Museum\" is in Seville, Spain, but there is no information about Alberto Lista's birthplace being in Seville. The \"National Museum of Natural History, Bulgaria\" is in Sofia, Bulgaria, and again, there is no information about Alberto Lista's birthplace being in Bulgaria.\n\nNone of the other science museums mentioned in the paragraphs are located in Fliesteden or Bergheim. Therefore, based on the information provided, there is no direct answer to the question. The \"Science Museum of Virginia\" is an agency, but it is not associated with Alberto Lista's birthplace."
+        },
+        {
+          "request_id": "2hop__638478_377891|45",
+          "text": "Based on the information provided, there is no direct mention of a science museum in Fliesteden, which is now part of Bergheim, Rhein-Erft-Kreis in Germany. However, the text does mention that the \"La Casa de la Ciencia de Sevilla - Science Museum\" is located in Seville, Spain, and that it is affiliated with the Spanish National Research Council (CSIC). Therefore, the agency that consists of the Science Museum in Alberto Lista's birthplace is the Spanish National Research Council (CSIC)."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "Spanish National Research Council",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__638478_377891|42",
+        "2hop__638478_377891|45"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 26,
+      "question_number": 27,
+      "id": "2hop__622767_161358",
+      "arm": "D",
+      "question": "Worldwide record sales total how many for the band from \"That One Night: Live in Buenos Aires\"?",
+      "official_expected_em": 0.5,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "38 million",
+        "M2": "38 million",
+        "M3": "1,000,000",
+        "M4": "1,000,000"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__622767_161358|43",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. However, the provided data does not specify the sales figures for this particular album. The total worldwide sales figure of 38 million records for Megadeth is for the band as a whole, not specifically for the album \"That One Night: Live in Buenos Aires.\" Therefore, we cannot determine the worldwide record sales total for the band from \"That One Night: Live in Buenos Aires\" with the information given."
+        },
+        {
+          "request_id": "2hop__622767_161358|45",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The total worldwide sales figure of 38 million records for Megadeth is for the band as a whole, not specifically for the \"That One Night: Live in Buenos Aires\" album. Therefore, the information provided is insufficient to determine the worldwide record sales total for the band from \"That One Night: Live in Buenos Aires.\""
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "38 million",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__622767_161358|43",
+        "2hop__622767_161358|45"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 29,
+      "question_number": 30,
+      "id": "2hop__455004_523858",
+      "arm": "D",
+      "question": "Who founded the producer of To the Shores of Iwo Jima?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_INSUFFICIENCY_PRIVATE_FINAL_CORRECT_WEAK_GOLD_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Samuel Nicholas",
+        "M2": "United States Navy and United States Marine Corps",
+        "M3": "The United States Navy and United States Marine Corps.",
+        "M4": "United States Navy and United States Marine Corps"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__455004_523858|41",
+          "text": "The question asks who founded the producer of \"To the Shores of Iwo Jima.\" However, the provided information does not mention any \"founder\" of a producer for this film. Instead, it states that \"To the Shores of Iwo Jima\" is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. \n\nThe term \"producer\" in this context refers to the organizations that produced the film, which are the United States Navy and United States Marine Corps. There is no information provided about an individual or entity that \"founded\" the producer of the film. Therefore, based on the given data, we cannot determine who founded the producer of \"To the Shores of Iwo Jima.\" The answer is not available from the information provided."
+        },
+        {
+          "request_id": "2hop__455004_523858|46",
+          "text": "The question asks who founded the producer of \"To the Shores of Iwo Jima.\" Based on the information provided, \"To the Shores of Iwo Jima\" is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. \n\nThe term \"producer\" in this context refers to the organizations that produced the film, which are the United States Navy and United States Marine Corps. There is no information provided about an individual or entity that \"founded\" the producer of the film. The term \"founder\" implies an individual or entity that established or created the producer, but the given data does not mention any such founder.\n\nTherefore, based on the given data, we cannot determine who founded the producer of \"To the Shores of Iwo Jima.\" The answer is not available from the information provided."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "Samuel Nicholas",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__455004_523858|41",
+        "2hop__455004_523858|46"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 35,
+      "question_number": 36,
+      "id": "2hop__132590_663762",
+      "arm": "D",
+      "question": "Who founded the company that made the Plymouth Prowler?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_INSUFFICIENCY_PRIVATE_FINAL_CORRECT_WEAK_CORPORATE_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Walter Percy Chrysler",
+        "M2": "DaimlerChrysler",
+        "M3": "DaimlerChrysler",
+        "M4": "DaimlerChrysler"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__132590_663762|43",
+          "text": "Based on the provided information, the Plymouth Prowler was manufactured and marketed by DaimlerChrysler. However, the specific founders of DaimlerChrysler are not explicitly mentioned in the given text. The paragraph about Walter Chrysler notes that he was the founder of Chrysler Corporation, which is now part of Fiat Chrysler Automobiles. However, there is no direct information provided about the founders of DaimlerChrysler. Therefore, the answer is not explicitly stated in the provided data."
+        },
+        {
+          "request_id": "2hop__132590_663762|46",
+          "text": "The provided information does not specify the founders of DaimlerChrysler, the company that manufactured the Plymouth Prowler. Therefore, the specific founders of DaimlerChrysler are not mentioned in the given data."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "Walter Percy Chrysler",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__132590_663762|43",
+        "2hop__132590_663762|46"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 37,
+      "question_number": 38,
+      "id": "2hop__78918_699691",
+      "arm": "D",
+      "question": "Who is the child of the person who came up with the idea for Sgt. Pepper?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_INSUFFICIENCY_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "James McCartney",
+        "M2": "Vicki Berger",
+        "M3": "Vicki Berger",
+        "M4": "Vicki Berger"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__78918_699691|41",
+          "text": "The question asks for the child of the person who came up with the idea for Sgt. Pepper. From the provided information, there is no mention of anyone coming up with the idea for Sgt. Pepper. The only mention of someone coming up with an idea is Richard Chambers for the Oregon Bottle Bill, but this is unrelated to Sgt. Pepper. Therefore, the answer cannot be determined from the provided information."
+        },
+        {
+          "request_id": "2hop__78918_699691|44",
+          "text": "The question asks for the child of the person who came up with the idea for Sgt. Pepper. The provided information does not mention any person coming up with the idea for Sgt. Pepper. The only mention of someone coming up with an idea is Richard Chambers, who came up with the idea for the Oregon Bottle Bill. However, this is unrelated to Sgt. Pepper. Therefore, the answer cannot be determined from the provided information."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "James McCartney",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__78918_699691|41",
+        "2hop__78918_699691|44"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    },
+    {
+      "index": 50,
+      "question_number": 51,
+      "id": "2hop__109366_440021",
+      "arm": "D",
+      "question": "Who is the father of Mock Turtle's creator?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_IDENTITY_CONFUSION_PRIVATE_CORRECT_STRING_WEAK_SUPPLIED_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Charles Dodgson",
+        "M2": "Charles Lutwidge Dodgson",
+        "M3": "Charles Lutwidge Dodgson",
+        "M4": "Charles Lutwidge Dodgson"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__109366_440021|42",
+          "text": "Based on the information provided, the creator of the Mock Turtle is Lewis Carroll, who is also known as Charles Lutwidge Dodgson. However, the information provided does not mention the father of Charles Lutwidge Dodgson. Therefore, based on the information given, we cannot determine the father of Mock Turtle's creator."
+        },
+        {
+          "request_id": "2hop__109366_440021|47",
+          "text": "The question is asking for the father of the creator of the Mock Turtle. From the provided information, we know that the Mock Turtle is a fictional character created by Lewis Carroll, who is also known as Charles Lutwidge Dodgson. The history mentions \"Charles Dodgson (priest)\" which refers to Lewis Carroll's real name. However, the information provided does not mention the father of Charles Lutwidge Dodgson. Therefore, based on the information given, we cannot determine the father of the creator of the Mock Turtle. The information provided does not include details about Charles Lutwidge Dodgson's father."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation.",
+      "initial_expert": {
+        "answer": "Charles Dodgson",
+        "official_em": 1,
+        "public_in_B_D": true
+      },
+      "all_public_work_references": [
+        "2hop__109366_440021|42",
+        "2hop__109366_440021|47"
+      ],
+      "late_private_correct_answer_is_not_necessarily_new_information": true,
+      "scope_note": "Inherited E-work classification. All-peer causal/semantic census not claimed. First correct public E initial checked mechanically; later correct local binding reviewed in case69."
+    }
+  ],
+  "corrections": [
+    {
+      "index": 0,
+      "question_number": 1,
+      "arm": "B",
+      "initial": "Yale School of Medicine",
+      "final": "1843",
+      "matched_private_final_correct": true,
+      "note": "私人也已答对，不能据初终答转移证明同伴必要。"
+    },
+    {
+      "index": 22,
+      "question_number": 23,
+      "arm": "D",
+      "initial": "Chinese-majority",
+      "final": "Chinese",
+      "matched_private_final_correct": false,
+      "note": "Chinese-majority→Chinese，表述边界。"
+    },
+    {
+      "index": 47,
+      "question_number": 48,
+      "arm": "B",
+      "initial": "center-right",
+      "final": "Democratic-Republican Party",
+      "matched_private_final_correct": false,
+      "note": "公开猜党名且材料桥接弱。"
+    },
+    {
+      "index": 57,
+      "question_number": 58,
+      "arm": "B",
+      "initial": "Chicago",
+      "final": "William Hale Thompson",
+      "matched_private_final_correct": true,
+      "note": "私人也已答对，不能据初终答转移证明同伴必要。"
+    },
+    {
+      "index": 57,
+      "question_number": 58,
+      "arm": "D",
+      "initial": "Chicago",
+      "final": "William Hale Thompson",
+      "matched_private_final_correct": true,
+      "note": "私人也已答对，不能据初终答转移证明同伴必要。"
+    },
+    {
+      "index": 67,
+      "question_number": 68,
+      "arm": "B",
+      "initial": "1858",
+      "final": "1934",
+      "matched_private_final_correct": true,
+      "note": "私人也已答对，不能据初终答转移证明同伴必要。"
+    },
+    {
+      "index": 67,
+      "question_number": 68,
+      "arm": "D",
+      "initial": "1858",
+      "final": "1934",
+      "matched_private_final_correct": true,
+      "note": "私人也已答对，不能据初终答转移证明同伴必要。"
+    },
+    {
+      "index": 69,
+      "question_number": 70,
+      "arm": "B",
+      "initial": "2.4",
+      "final": "2.5%",
+      "matched_private_final_correct": false,
+      "note": "城市/全国局部关系清楚，但运动起源桥接弱。"
+    },
+    {
+      "index": 69,
+      "question_number": 70,
+      "arm": "D",
+      "initial": "2.4",
+      "final": "2.5%",
+      "matched_private_final_correct": true,
+      "note": "私人也已答对，不能据初终答转移证明同伴必要。"
+    },
+    {
+      "index": 71,
+      "question_number": 72,
+      "arm": "B",
+      "initial": "Collegiate Peaks",
+      "final": "Sawatch Range",
+      "matched_private_final_correct": false,
+      "note": "Collegiate Peaks/Sawatch/Rocky山系粒度边界；私人工作已经给过目标候选。"
+    },
+    {
+      "index": 71,
+      "question_number": 72,
+      "arm": "D",
+      "initial": "Collegiate Peaks",
+      "final": "Sawatch Range",
+      "matched_private_final_correct": true,
+      "note": "私人也已答对，不能据初终答转移证明同伴必要。"
+    },
+    {
+      "index": 78,
+      "question_number": 79,
+      "arm": "B",
+      "initial": "Maharashtra",
+      "final": "29",
+      "matched_private_final_correct": true,
+      "note": "私人也已答对，不能据初终答转移证明同伴必要。"
+    },
+    {
+      "index": 78,
+      "question_number": 79,
+      "arm": "D",
+      "initial": "Maharashtra",
+      "final": "29",
+      "matched_private_final_correct": true,
+      "note": "私人也已答对，不能据初终答转移证明同伴必要。"
+    }
+  ],
+  "examples": [
+    {
+      "index": 0,
+      "question_number": 1,
+      "question": "When was Wesley Alba Sturges's institutional employer created?",
+      "initials": {
+        "M1": "Yale School of Medicine",
+        "M2": "1931",
+        "M3": "1931",
+        "M4": "1931"
+      },
+      "support_paragraphs": [
+        {
+          "idx": 15,
+          "title": "Yale University",
+          "paragraph_text": "Yale expanded gradually, establishing the Yale School of Medicine (1810), Yale Divinity School (1822), Yale Law School (1843), Yale Graduate School of Arts and Sciences (1847), the Sheffield Scientific School (1847), and the Yale School of Fine Arts (1869). In 1887, as the college continued to grow under the presidency of Timothy Dwight V, Yale College was renamed Yale University. The university would later add the Yale School of Music (1894), the Yale School of Forestry & Environmental Studies (founded by Gifford Pinchot in 1900), the Yale School of Public Health (1915), the Yale School of Nursing (1923), the Yale School of Drama (1955), the Yale Physician Associate Program (1973), and the Yale School of Management (1976). It would also reorganize its relationship with the Sheffield Scientific School."
+        },
+        {
+          "idx": 17,
+          "title": "Wesley Alba Sturges",
+          "paragraph_text": "Wesley Alba Sturges (1893-1962) was a professor of law at the Yale Law School from 1924 to 1961, and served as dean of the law school from 1945 to 1954. He received his LL.B. from Yale in 1923. He retired from Yale in 1961 to become dean of the University of Miami School of Law. He was a prominent figure in Yale's Legal Realism movement. In his article (with Samuel Clark), \"Legal Theory and Real Property Mortgages\", 37 Yale L. J. 691 (1928), he sought to make the Legal Realist point that doctrinal distinctions between \"lien theory\" and \"title theory\" did not have any actual effect on how courts ruled in litigation about mortgage disputes. His casebook, \"Cases and Materials on the Law of Credit Transactions\", emphasized the contradictions in judicial decision-making and sought to dispel the view that \"what judges said in one case with its setting can be used to [predict] what they will decide in another case\" with a different factual setting."
+        }
+      ],
+      "work": [
+        {
+          "request_id": "2hop__123383_21417|16",
+          "actor": "M4",
+          "text": "The question asks for the year when Wesley Alba Sturges's institutional employer was created. From the provided information, we know that Wesley Alba Sturges was a professor of law at the Yale Law School from 1924 to 1961. The institutional employer in this context would be the Yale Law School or, more specifically, the institution that employed him, which is Yale University.\n\nLooking at the history provided, there is a mention of \"1931\" in the context of the Palacio de las Dueñas becoming a national monument. However, this is not related to Wesley Alba Sturges's employer.\n\nThe key information for determining when Wesley Alba Sturges's institutional employer was created is found in the paragraph about Wesley Alba Sturges. It states that he was a professor of law at the Yale Law School from 1924 to 1961. The Yale Law School is part of Yale University. However, the information about when the Yale Law School was created is not directly provided in the paragraphs.\n\nFrom the paragraph about Yale University, we know that it was renamed Yale University in 1887. However, the establishment of the Yale Law School is not directly mentioned. The paragraph about Wesley College (Manitoba) mentions that it existed from 1888 to 1938, but this is not related to Wesley Alba Sturges.\n\nThe most relevant information for the question is that Wesley Alba Sturges was a professor at the Yale Law School. The Yale Law School was established in 1843. Therefore, the institutional employer of Wesley Alba Sturges, which is the Yale Law School, was created in 1843."
+        },
+        {
+          "request_id": "2hop__123383_21417|17",
+          "actor": "M1",
+          "text": "The question asks for the year when Wesley Alba Sturges's institutional employer was created. From the provided information, we know that Wesley Alba Sturges was a professor of law at the Yale Law School from 1924 to 1961. The institutional employer in this context would be the Yale Law School or, more specifically, the institution that employed him, which is Yale University.\n\nLooking at the history provided, there is a mention of \"1931\" in the context of the Palacio de las Dueñas becoming a national monument. However, this is not related to Wesley Alba Sturges's employer.\n\nThe key information for determining when Wesley Alba Sturges's institutional employer was created is found in the paragraph about Wesley Alba Sturges. It states that he was a professor of law at the Yale Law School from 1924 to 1961. The Yale Law School is part of Yale University. However, the information about when the Yale Law School was created is not directly provided in the paragraphs.\n\nFrom the paragraph about Yale University, we know that it was renamed Yale University in 1887. However, the establishment of the Yale Law School is not directly mentioned. The paragraph about Wesley College (Manitoba) mentions that it existed from 1888 to 1938, but this is not related to Wesley Alba Sturges.\n\nThe most relevant information for the question is that Wesley Alba Sturges was a professor at the Yale Law School. The Yale Law School was established in 1843. Therefore, the institutional employer of Wesley Alba Sturges, which is the Yale Law School, was created in 1843."
+        },
+        {
+          "request_id": "2hop__123383_21417|18",
+          "actor": "M3",
+          "text": "To determine when Wesley Alba Sturges's institutional employer was created, we need to identify the institution that employed him. From the provided information, we know that Wesley Alba Sturges was a professor of law at the Yale Law School from 1924 to 1961. Therefore, his institutional employer would be the Yale Law School.\n\nThe question asks for the year when this employer was created. While the paragraphs do not explicitly state when the Yale Law School was established, we can infer this information from the history provided. In the history, there is a mention of the Yale University being renamed in 1887. However, the establishment of the Yale Law School is not directly mentioned. \n\nLooking at the paragraph about the Yale University, we find that it was established in 1887. However, the Yale Law School was established earlier. From the paragraph about the Yale Law School, we can infer that it was established in 1843. This is because the paragraph about the Yale University mentions that it was renamed Yale University in 1887, and the Yale Law School was established before this date.\n\nTherefore, the institutional employer of Wesley Alba Sturges, which is the Yale Law School, was created in 1843."
+        },
+        {
+          "request_id": "2hop__123383_21417|19",
+          "actor": "M2",
+          "text": "To determine the year when Wesley Alba Sturges's institutional employer was created, we need to identify the institution that employed him. From the provided information, we know that Wesley Alba Sturges was a professor of law at the Yale Law School from 1924 to 1961. Therefore, his institutional employer would be the Yale Law School.\n\nThe question asks for the year when this employer was created. While the paragraphs do not explicitly state when the Yale Law School was established, we can infer this information from the context of the history provided. The Yale University was renamed Yale University in 1887, but the Yale Law School was established earlier. From the paragraph about the Yale Law School, we can infer that it was established in 1843. This is because the Yale Law School was established before the university was renamed in 1887.\n\nTherefore, the institutional employer of Wesley Alba Sturges, which is the Yale Law School, was created in 1843."
+        },
+        {
+          "request_id": "2hop__123383_21417|20",
+          "actor": "M4",
+          "text": "To determine when Wesley Alba Sturges's institutional employer was created, we need to identify the institution that employed him. From the provided information, we know that Wesley Alba Sturges was a professor of law at the Yale Law School from 1924 to 1961. Therefore, his institutional employer would be the Yale Law School.\n\nThe question asks for the year when this employer was created. While the paragraphs do not explicitly state when the Yale Law School was established, we can infer this information from the context. The Yale Law School was established in 1843. This is because the Yale University was renamed Yale University in 1887, and the Yale Law School was established earlier. The establishment of the Yale Law School predates the renaming of the university, indicating that it was created in 1843.\n\nTherefore, the institutional employer of Wesley Alba Sturges, which is the Yale Law School, was created in 1843."
+        },
+        {
+          "request_id": "2hop__123383_21417|21",
+          "actor": "M1",
+          "text": "The institutional employer of Wesley Alba Sturges, which is the Yale Law School, was created in 1843."
+        },
+        {
+          "request_id": "2hop__123383_21417|22",
+          "actor": "M3",
+          "text": "Based on the information provided and the discussion among the team members, we can conclude that Wesley Alba Sturges's institutional employer, the Yale Law School, was created in 1843. This is inferred from the context that Wesley Alba Sturges was a professor at the Yale Law School, and the historical information that the Yale University was renamed in 1887, indicating that the Yale Law School was established earlier, specifically in 1843. Therefore, the answer to the question is 1843."
+        },
+        {
+          "request_id": "2hop__123383_21417|23",
+          "actor": "M2",
+          "text": "Based on the information provided and the discussion among the team members, we can conclude that Wesley Alba Sturges's institutional employer, the Yale Law School, was created in 1843. This is inferred from the context that Wesley Alba Sturges was a professor at the Yale Law School, and the historical information that the Yale University was renamed in 1887, indicating that the Yale Law School was established earlier, specifically in 1843. Therefore, the answer to the question is 1843."
+        }
+      ],
+      "finals": {
+        "M1": "1843",
+        "M2": "1843",
+        "M3": "1843",
+        "M4": "1843"
+      },
+      "interpretation": "普通M4首先形成材料目标对应的1843，E随即采用；私人E也能1843，不证明必要性，且各成员解释含错误的材料缺失断言。"
+    },
+    {
+      "index": 26,
+      "question_number": 27,
+      "question": "Worldwide record sales total how many for the band from \"That One Night: Live in Buenos Aires\"?",
+      "initials": {
+        "M1": "38 million",
+        "M2": "1,000,000",
+        "M3": "1,000,000",
+        "M4": "1,000,000"
+      },
+      "support_paragraphs": [
+        {
+          "idx": 3,
+          "title": "Megadeth",
+          "paragraph_text": "Megadeth has sold over 38 million records worldwide, earned platinum certification in the United States for five of its fifteen studio albums, and received twelve Grammy nominations. Megadeth won its first Grammy Award in 2017 for the song \"Dystopia\" in the Best Metal Performance category. The band's mascot, Vic Rattlehead, regularly appears on album artwork and live shows. The group has drawn controversy for its music and lyrics, including album bans and canceled concerts; MTV refused to play two of the band's music videos that the network considered to condone suicide."
+        },
+        {
+          "idx": 6,
+          "title": "That One Night: Live in Buenos Aires",
+          "paragraph_text": "That One Night: Live in Buenos Aires is a live album from American heavy metal band Megadeth which was released on CD and DVD formats. It features a live concert recorded in Buenos Aires on October 9, 2005 at the Obras Sanitarias Stadium. The performance is segued by cuts of Dave and Glen performing a few acoustic songs for some fans on the lawn outside of the band's hotel. It was at this concert that Dave Mustaine announced that Megadeth would continue on past the 2005 tour."
+        }
+      ],
+      "work": [
+        {
+          "request_id": "2hop__622767_161358|16",
+          "actor": "M3",
+          "text": "The question asks for the worldwide record sales total for the band from the live album \"That One Night: Live in Buenos Aires\". \n\nLooking at the provided information, the paragraph about \"That One Night: Live in Buenos Aires\" states that it is a live album from the American heavy metal band Megadeth. \n\nAdditionally, in the paragraph about Megadeth, it is mentioned that the band has sold over 38 million records worldwide. However, this figure is for the band as a whole, not specifically for the \"That One Night: Live in Buenos Aires\" album.\n\nThe paragraph about the album \"That One Night: Live in Buenos Aires\" does not provide any specific sales figures for the album itself. Therefore, we cannot determine the exact worldwide record sales total for the album from the given information. \n\nHowever, based on the history provided, several participants have mentioned \"1,000,000\" as a possible answer, but this is not supported by the information in the paragraphs. The correct answer would require specific sales figures for the album, which are not provided in the given text."
+        },
+        {
+          "request_id": "2hop__622767_161358|17",
+          "actor": "M2",
+          "text": "The question asks for the worldwide record sales total for the band from the live album \"That One Night: Live in Buenos Aires\". \n\nFrom the provided information, we know that \"That One Night: Live in Buenos Aires\" is a live album from the American heavy metal band Megadeth. However, the paragraphs do not provide specific sales figures for this album. \n\nIn the history, several participants have mentioned \"1,000,000\" as a possible answer, but this is not supported by the information in the paragraphs. The correct answer would require specific sales figures for the album, which are not provided in the given text.\n\nTherefore, based on the information provided, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires\". The information given is insufficient to provide a precise answer."
+        },
+        {
+          "request_id": "2hop__622767_161358|18",
+          "actor": "M4",
+          "text": "The question is asking for the worldwide record sales total for the band from the live album \"That One Night: Live in Buenos Aires.\" \n\nFrom the provided information, we know that \"That One Night: Live in Buenos Aires\" is a live album from the American heavy metal band Megadeth. However, the paragraphs do not provide specific sales figures for this album. \n\nIn the history, several participants have mentioned \"1,000,000\" as a possible answer, but this is not supported by the information in the paragraphs. The correct answer would require specific sales figures for the album, which are not provided in the given text.\n\nTherefore, based on the information provided, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires.\" The information given is insufficient to provide a precise answer."
+        },
+        {
+          "request_id": "2hop__622767_161358|19",
+          "actor": "M1",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The paragraphs mention that Megadeth has sold over 38 million records worldwide. However, it is important to note that this figure represents the band's total record sales, not specifically for the album \"That One Night: Live in Buenos Aires.\" The paragraphs do not provide specific sales figures for this album. Therefore, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires\" from the given information."
+        },
+        {
+          "request_id": "2hop__622767_161358|20",
+          "actor": "M2",
+          "text": "The question asks for the worldwide record sales total for the band from the live album \"That One Night: Live in Buenos Aires.\" \n\nFrom the provided information, we know that \"That One Night: Live in Buenos Aires\" is a live album from the American heavy metal band Megadeth. However, the paragraphs do not provide specific sales figures for this album. \n\nIn the history, several participants have mentioned \"1,000,000\" as a possible answer, but this is not supported by the information in the paragraphs. The correct answer would require specific sales figures for the album, which are not provided in the given text.\n\nTherefore, based on the information provided, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires.\" The information given is insufficient to provide a precise answer."
+        },
+        {
+          "request_id": "2hop__622767_161358|21",
+          "actor": "M1",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The paragraphs mention that Megadeth has sold over 38 million records worldwide. However, this figure represents the band's total record sales, not specifically for the album \"That One Night: Live in Buenos Aires.\" The paragraphs do not provide specific sales figures for this album. Therefore, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires\" from the given information."
+        },
+        {
+          "request_id": "2hop__622767_161358|22",
+          "actor": "M3",
+          "text": "The question is asking for the worldwide record sales total for the band from the live album \"That One Night: Live in Buenos Aires.\" \n\nFrom the provided information, we know that \"That One Night: Live in Buenos Aires\" is a live album from the American heavy metal band Megadeth. However, the paragraphs do not provide specific sales figures for this album. \n\nIn the history, several participants have mentioned \"1,000,000\" as a possible answer, but this is not supported by the information in the paragraphs. The correct answer would require specific sales figures for the album, which are not provided in the given text.\n\nTherefore, based on the information provided, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires.\" The information given is insufficient to provide a precise answer."
+        },
+        {
+          "request_id": "2hop__622767_161358|23",
+          "actor": "M4",
+          "text": "The question is asking for the worldwide record sales total for the band from the live album \"That One Night: Live in Buenos Aires.\" \n\nFrom the provided information, we know that \"That One Night: Live in Buenos Aires\" is a live album from the American heavy metal band Megadeth. However, the paragraphs do not provide specific sales figures for this album. \n\nIn the history, several participants have mentioned \"1,000,000\" as a possible answer, but this is not supported by the information in the paragraphs. The correct answer would require specific sales figures for the album, which are not provided in the given text.\n\nTherefore, based on the information provided, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires.\" The information given is insufficient to provide a precise answer."
+        }
+      ],
+      "finals": {
+        "M1": "38 million",
+        "M2": "0",
+        "M3": "1,000,000",
+        "M4": "1,000,000"
+      },
+      "interpretation": "普通成员先把乐队误读为专辑，E随后同样误读；仅时间顺序不证明机制，需实际分叉和下游再生。"
+    },
+    {
+      "index": 34,
+      "question_number": 35,
+      "question": "Who was the first Muslim elected president of Jai Kishan's political party?",
+      "initials": {
+        "M1": "Badruddin Tayyab Ji",
+        "M2": "Rahimtulla M. Sayani",
+        "M3": "Rahimtulla M. Sayani",
+        "M4": "Rahimtulla M. Sayani"
+      },
+      "support_paragraphs": [
+        {
+          "idx": 2,
+          "title": "Rahimtulla M. Sayani",
+          "paragraph_text": "Rahimtullah M Sayani was the ``Second Muslim ''to become the`` President of Indian National Congress ''. (First was Badruddin Tayyab Ji)"
+        },
+        {
+          "idx": 12,
+          "title": "Jai Kishan",
+          "paragraph_text": "Jai Kishan is an Indian politician belonging to Indian National Congress. He is an ex M.L.A from Sultan Pur Majra in Delhi, Sandeep Kumar of Aam Aadmi Party defeated him in 2015 election"
+        }
+      ],
+      "work": [
+        {
+          "request_id": "2hop__697106_51671|16",
+          "actor": "M1",
+          "text": "Rahimtulla M. Sayani"
+        },
+        {
+          "request_id": "2hop__697106_51671|17",
+          "actor": "M4",
+          "text": "The question asks for the first Muslim elected president of Jai Kishan's political party. \n\nFirst, we need to identify Jai Kishan's political party. According to the provided information, Jai Kishan is an Indian politician belonging to the Indian National Congress. Therefore, Jai Kishan's political party is the Indian National Congress.\n\nNext, we need to find out who was the first Muslim elected president of the Indian National Congress. \n\nLooking at the provided information, we find that Rahimtullah M Sayani was the \"Second Muslim\" to become the \"President of Indian National Congress\". The first was Badruddin Tayyab Ji. \n\nHowever, the question specifically asks for the first Muslim elected president of Jai Kishan's political party, which is the Indian National Congress. Therefore, we need to determine who was the first Muslim to be elected as the President of the Indian National Congress.\n\nFrom the information given, we know that Rahimtullah M Sayani was the second Muslim to become the President of the Indian National Congress. The first Muslim to be elected as the President of the Indian National Congress was Badruddin Tayyab Ji. \n\nTherefore, the answer to the question is Badruddin Tayyab Ji. However, the information provided does not explicitly state that Badruddin Tayyab Ji was the first Muslim to be elected as the President of the Indian National Congress. It only states that he was the first Muslim to become the President of the Indian National Congress, and that Rahimtullah M Sayani was the second. \n\nTherefore, the answer to the question is Badruddin Tayyab Ji."
+        },
+        {
+          "request_id": "2hop__697106_51671|18",
+          "actor": "M2",
+          "text": "The question asks for the first Muslim elected president of Jai Kishan's political party. \n\nFirst, we need to identify Jai Kishan's political party. According to the provided information, Jai Kishan is an Indian politician belonging to the Indian National Congress. Therefore, Jai Kishan's political party is the Indian National Congress.\n\nNext, we need to find out who was the first Muslim elected president of the Indian National Congress. \n\nLooking at the provided information, we find that Rahimtullah M Sayani was the \"Second Muslim\" to become the \"President of Indian National Congress\". The first was Badruddin Tayyab Ji.\n\nHowever, the question specifically asks for the first Muslim to be elected as the President of the Indian National Congress. The information provided does not explicitly state that Badruddin Tayyab Ji was the first Muslim to be elected as the President of the Indian National Congress. It only states that he was the first Muslim to become the President of the Indian National Congress, and that Rahimtullah M Sayani was the second.\n\nTherefore, based on the information provided, the answer to the question is Badruddin Tayyab Ji. However, there is a potential inconsistency in the information provided, as it does not explicitly confirm that Badruddin Tayyab Ji was the first Muslim to be elected as the President of the Indian National Congress. It only states that he was the first Muslim to become the President of the Indian National Congress."
+        },
+        {
+          "request_id": "2hop__697106_51671|19",
+          "actor": "M3",
+          "text": "The question asks for the first Muslim elected president of Jai Kishan's political party. \n\nFirst, we need to identify Jai Kishan's political party. According to the provided information, Jai Kishan is an Indian politician belonging to the Indian National Congress. Therefore, Jai Kishan's political party is the Indian National Congress.\n\nNext, we need to find out who was the first Muslim elected president of the Indian National Congress. \n\nLooking at the provided information, we find that Rahimtullah M Sayani was the \"Second Muslim\" to become the \"President of Indian National Congress\". The first was Badruddin Tayyab Ji.\n\nHowever, the question specifically asks for the first Muslim to be elected as the President of the Indian National Congress. The information provided does not explicitly state that Badruddin Tayyab Ji was the first Muslim to be elected as the President of the Indian National Congress. It only states that he was the first Muslim to become the President of the Indian National Congress, and that Rahimtullah M Sayani was the second.\n\nTherefore, based on the information provided, the answer to the question is Badruddin Tayyab Ji. However, there is a potential inconsistency in the information provided, as it does not explicitly confirm that Badruddin Tayyab Ji was the first Muslim to be elected as the President of the Indian National Congress. It only states that he was the first Muslim to become the President of the Indian National Congress."
+        },
+        {
+          "request_id": "2hop__697106_51671|20",
+          "actor": "M2",
+          "text": "The question asks for the first Muslim elected president of Jai Kishan's political party. \n\nFirst, we need to identify Jai Kishan's political party. According to the provided information, Jai Kishan is an Indian politician belonging to the Indian National Congress. Therefore, Jai Kishan's political party is the Indian National Congress.\n\nNext, we need to find out who was the first Muslim elected president of the Indian National Congress. \n\nLooking at the provided information, we find that Rahimtullah M Sayani was the \"Second Muslim\" to become the \"President of Indian National Congress\". The first was Badruddin Tayyab Ji.\n\nHowever, the question specifically asks for the first Muslim to be elected as the President of the Indian National Congress. The information provided does not explicitly state that Badruddin Tayyab Ji was the first Muslim to be elected as the President of the Indian National Congress. It only states that he was the first Muslim to become the President of the Indian National Congress, and that Rahimtullah M Sayani was the second.\n\nTherefore, based on the information provided, the answer to the question is Badruddin Tayyab Ji. However, there is a potential inconsistency in the information provided, as it does not explicitly confirm that Badruddin Tayyab Ji was the first Muslim to be elected as the President of the Indian National Congress. It only states that he was the first Muslim to become the President of the Indian National Congress."
+        },
+        {
+          "request_id": "2hop__697106_51671|21",
+          "actor": "M1",
+          "text": "Based on the information provided, the first Muslim elected president of Jai Kishan's political party, which is the Indian National Congress, is **Badruddin Tayyab Ji**."
+        },
+        {
+          "request_id": "2hop__697106_51671|22",
+          "actor": "M3",
+          "text": "Based on the information provided, the first Muslim elected president of Jai Kishan's political party is **Badruddin Tayyab Ji**. \n\nJai Kishan is an Indian politician belonging to the Indian National Congress, so his political party is the Indian National Congress. Rahimtullah M. Sayani was the second Muslim to become the President of the Indian National Congress, and Badruddin Tayyab Ji was the first. Therefore, the answer to the question is Badruddin Tayyab Ji."
+        },
+        {
+          "request_id": "2hop__697106_51671|23",
+          "actor": "M4",
+          "text": "Based on the information provided, the first Muslim elected president of Jai Kishan's political party is **Badruddin Tayyab Ji**. \n\nHere's the reasoning:\n\n1. **Identifying Jai Kishan's Political Party**: According to the provided information, Jai Kishan is an Indian politician belonging to the Indian National Congress. Therefore, Jai Kishan's political party is the Indian National Congress.\n\n2. **Finding the First Muslim President of the Indian National Congress**: The information states that Rahimtullah M. Sayani was the \"Second Muslim\" to become the \"President of Indian National Congress\", with Badruddin Tayyab Ji being the first. \n\n3. **Conclusion**: Since Jai Kishan's political party is the Indian National Congress, and the first Muslim to be elected as its President was Badruddin Tayyab Ji, the answer to the question is Badruddin Tayyab Ji. \n\nIt's important to note that while the information provided does not explicitly state that Badruddin Tayyab Ji was the first Muslim to be elected as the President of the Indian National Congress, it does confirm that he was the first Muslim to become the President of the Indian National Congress, making him the correct answer to the question."
+        }
+      ],
+      "finals": {
+        "M1": "Badruddin Tayyab Ji",
+        "M2": "Badruddin Tayyab Ji",
+        "M3": "Badruddin Tayyab Ji",
+        "M4": "Badruddin Tayyab Ji"
+      },
+      "interpretation": "E首次公开工作错误，普通M4/M2/M3据第一/第二位区分给正确候选，E第二次公开工作恢复正确。E初答本来正确，故不是普通独有稳定知识证明。"
+    },
+    {
+      "index": 69,
+      "question_number": 70,
+      "question": "What is the percentage of people claiming job seeker's allowance, in the country of origin of the sport that Kuzbass operates in?",
+      "initials": {
+        "M1": "2.4",
+        "M2": "2.4%",
+        "M3": "2.4%",
+        "M4": "2.4%"
+      },
+      "support_paragraphs": [
+        {
+          "idx": 0,
+          "title": "England national bandy team",
+          "paragraph_text": "The bandy team represented England in the 1913 European Bandy Championships in Davos, Switzerland. It was credited with winning the eight-nation tournament. At the time, bandy in England was administrated through the National Bandy Association."
+        },
+        {
+          "idx": 2,
+          "title": "Southampton",
+          "paragraph_text": "In March 2007 there were 120,305 jobs in Southampton, and 3,570 people claiming job seeker's allowance, approximately 2.4 per cent of the city's population. This compares with an average of 2.5 per cent for England as a whole."
+        },
+        {
+          "idx": 13,
+          "title": "Kuzbass Kemerovo Bandy Club",
+          "paragraph_text": "KhK Kuzbass () is a professional bandy club from Kemerovo, Russia, established in 1936. It plays in the Russian Bandy Super League, the top division of Russian bandy. The home games are played at Khimik Stadium in Kemerovo. While during the 2016-17 season, the indoor arena was their base, 2017-18 it will be Khimik again. The club colours are dark orange, white and black and the club logo also includes the arms of Kemerovo."
+        }
+      ],
+      "work": [
+        {
+          "request_id": "3hop1__479393_213066_8723|16",
+          "actor": "M4",
+          "text": "To answer the question \"What is the percentage of people claiming job seeker's allowance, in the country of origin of the sport that Kuzbass operates in?\", we need to break down the question into parts and find the relevant information from the provided data.\n\nFirst, we need to determine the sport that Kuzbass operates in. Looking at the paragraphs, we find that \"Kuzbass Kemerovo Bandy Club\" is a professional bandy club from Kemerovo, Russia. Bandy is a sport similar to field hockey, played with a ball and sticks, and it is a winter sport.\n\nNext, we need to find the country of origin of the sport, which is bandy. Bandy is a sport that has a history in England, as mentioned in the \"England national bandy team\" paragraph, where it is stated that the bandy team represented England in the 1913 European Bandy Championships.\n\nNow, we need to find the percentage of people claiming job seeker's allowance in England. The paragraph titled \"Southampton\" mentions that in March 2007, 3,570 people were claiming job seeker's allowance in Southampton, which is approximately 2.4% of the city's population. However, this is for Southampton, not England as a whole. The paragraph also states that this compares with an average of 2.5% for England as a whole.\n\nTherefore, the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in (England) is approximately 2.5%. However, the history section shows that multiple actors have provided the value \"2.4%\", which might be the percentage for Southampton, not England as a whole.\n\nThe correct answer should be 2.5% for England, but if the question is specifically about Southampton, then the answer is 2.4%. Given the context of the question, the answer is likely referring to England as a whole, so the percentage is 2.5%. However, based on the history section, which has multiple actors providing \"2.4%\", it might be that the intended answer is 2.4%. Therefore, the answer is 2.4%."
+        },
+        {
+          "request_id": "3hop1__479393_213066_8723|17",
+          "actor": "M3",
+          "text": "The question asks for the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in. \n\nFirst, we need to identify the sport that Kuzbass operates in. From the provided data, the \"Kuzbass Kemerovo Bandy Club\" is mentioned, which indicates that Kuzbass is associated with the sport of bandy.\n\nNext, we need to determine the country of origin of the sport bandy. The \"England national bandy team\" paragraph indicates that bandy has a history in England, as the team represented England in the 1913 European Bandy Championships.\n\nNow, we need to find the percentage of people claiming job seeker's allowance in England. The \"Southampton\" paragraph states that in March 2007, 3,570 people were claiming job seeker's allowance in Southampton, which is approximately 2.4% of the city's population. However, it also mentions that this compares with an average of 2.5% for England as a whole.\n\nThe history section shows that multiple actors have provided the value \"2.4%\", which might be the percentage for Southampton, not England as a whole. However, the question is about the country of origin of the sport (England), so the relevant figure is the 2.5% for England as a whole.\n\nTherefore, the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in (England) is approximately 2.5%. However, based on the history section, which has multiple actors providing \"2.4%\", it might be that the intended answer is 2.4%. Given the context of the question, the answer is likely referring to England as a whole, so the percentage is 2.5%. But based on the history section, the answer is 2.4%."
+        },
+        {
+          "request_id": "3hop1__479393_213066_8723|18",
+          "actor": "M1",
+          "text": "The question is asking for the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in. From the provided data, we can determine the sport that Kuzbass operates in is bandy. The country of origin of the sport bandy is England, as mentioned in the \"England national bandy team\" paragraph. The percentage of people claiming job seeker's allowance in England is given as 2.5% in the \"Southampton\" paragraph. However, the history section shows that multiple actors have provided the value \"2.4%\", which might be the percentage for Southampton, not England as a whole. Therefore, the correct answer should be 2.5% for England as a whole, but based on the history section, the answer is 2.4%."
+        },
+        {
+          "request_id": "3hop1__479393_213066_8723|19",
+          "actor": "M2",
+          "text": "To determine the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in, we need to follow these steps:\n\n1. **Identify the sport that Kuzbass operates in**: From the provided data, the \"Kuzbass Kemerovo Bandy Club\" is mentioned, which indicates that Kuzbass is associated with the sport of bandy.\n\n2. **Determine the country of origin of the sport (bandy)**: The \"England national bandy team\" paragraph indicates that bandy has a history in England, as the team represented England in the 1913 European Bandy Championships.\n\n3. **Find the percentage of people claiming job seeker's allowance in England**: The \"Southampton\" paragraph states that in March 2007, 3,570 people were claiming job seeker's allowance in Southampton, which is approximately 2.4% of the city's population. It also mentions that this compares with an average of 2.5% for England as a whole.\n\nBased on the information provided, the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in (England) is 2.5%. However, the history section shows that multiple actors have provided the value \"2.4%\", which might be the percentage for Southampton, not England as a whole. Given the context of the question, the answer is likely referring to England as a whole, so the percentage is 2.5%. But based on the history section, the answer is 2.4%. Therefore, the answer is 2.4%."
+        },
+        {
+          "request_id": "3hop1__479393_213066_8723|20",
+          "actor": "M3",
+          "text": "To answer the question, we need to determine the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in.\n\n1. **Identify the sport that Kuzbass operates in**: From the provided data, the \"Kuzbass Kemerovo Bandy Club\" is mentioned, which indicates that Kuzbass is associated with the sport of bandy.\n\n2. **Determine the country of origin of the sport (bandy)**: The \"England national bandy team\" paragraph indicates that bandy has a history in England, as the team represented England in the 1913 European Bandy Championships.\n\n3. **Find the percentage of people claiming job seeker's allowance in England**: The \"Southampton\" paragraph states that in March 2007, 3,570 people were claiming job seeker's allowance in Southampton, which is approximately 2.4% of the city's population. It also mentions that this compares with an average of 2.5% for England as a whole.\n\nBased on the information provided, the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in (England) is 2.5%. However, the history section shows that multiple actors have provided the value \"2.4%\", which might be the percentage for Southampton, not England as a whole. Given the context of the question, the answer is likely referring to England as a whole, so the percentage is 2.5%. But based on the history section, the answer is 2.4%. Therefore, the answer is 2.4%."
+        },
+        {
+          "request_id": "3hop1__479393_213066_8723|21",
+          "actor": "M1",
+          "text": "Based on the information provided, the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in (England) is **2.5%**. However, the history section shows that multiple actors have provided the value **2.4%**, which might be the percentage for Southampton, not England as a whole. Therefore, the correct answer is **2.5%** for England as a whole."
+        },
+        {
+          "request_id": "3hop1__479393_213066_8723|22",
+          "actor": "M4",
+          "text": "To determine the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in, we need to follow a structured approach:\n\n1. **Identify the sport that Kuzbass operates in**: From the provided data, the \"Kuzbass Kemerovo Bandy Club\" is mentioned, which indicates that Kuzbass is associated with the sport of bandy.\n\n2. **Determine the country of origin of the sport (bandy)**: The \"England national bandy team\" paragraph indicates that bandy has a history in England, as the team represented England in the 1913 European Bandy Championships.\n\n3. **Find the percentage of people claiming job seeker's allowance in England**: The \"Southampton\" paragraph states that in March 2007, 3,570 people were claiming job seeker's allowance in Southampton, which is approximately 2.4% of the city's population. It also mentions that this compares with an average of 2.5% for England as a whole.\n\nThe question asks for the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in, which is England. The data provided indicates that the average percentage for England as a whole is 2.5%. However, the history section shows that multiple actors have provided the value 2.4%, which might be the percentage for Southampton, not England as a whole.\n\nGiven the context of the question, the answer should refer to England as a whole, making the percentage 2.5%. However, based on the history section, which has multiple actors providing 2.4%, it might be that the intended answer is 2.4%. \n\nTherefore, the answer is 2.4%."
+        },
+        {
+          "request_id": "3hop1__479393_213066_8723|23",
+          "actor": "M2",
+          "text": "The question asks for the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in.\n\nFirst, we need to identify the sport that Kuzbass operates in. From the provided data, the \"Kuzbass Kemerovo Bandy Club\" is mentioned, which indicates that Kuzbass is associated with the sport of bandy.\n\nNext, we need to determine the country of origin of the sport (bandy). The \"England national bandy team\" paragraph indicates that bandy has a history in England, as the team represented England in the 1913 European Bandy Championships.\n\nNow, we need to find the percentage of people claiming job seeker's allowance in England. The \"Southampton\" paragraph states that in March 2007, 3,570 people were claiming job seeker's allowance in Southampton, which is approximately 2.4% of the city's population. It also mentions that this compares with an average of 2.5% for England as a whole.\n\nThe history section shows that multiple actors have provided the value \"2.4%\", which might be the percentage for Southampton, not England as a whole. However, the question is about the country of origin of the sport (England), so the relevant figure is the 2.5% for England as a whole.\n\nTherefore, the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in (England) is approximately 2.5%. However, based on the history section, which has multiple actors providing \"2.4%\", it might be that the intended answer is 2.4%. Given the context of the question, the answer is likely referring to England as a whole, so the percentage is 2.5%. But based on the history section, the answer is 2.4%. \n\nConsidering the context and the information provided, the answer is 2.4%."
+        }
+      ],
+      "finals": {
+        "M1": "2.5%",
+        "M2": "2.4%",
+        "M3": "2.4%",
+        "M4": "2.4%"
+      },
+      "interpretation": "普通成员先给城市/全国的正确区分却最后从历史选错；E后期公开正确局部关系，后续普通仍错。全题起源桥接弱，不作主导频率证据。"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+ "verdict":"PASS",
+ "scope":"SAME56_FIXED_ORDER_ONE_ADDITIONAL_GENERATION_SEED_DEVELOPMENT_REPLICATION",
+ "question":"Does the stage-dependent expert advantage and ordinary private-work improvement recur under one additional generation seed?",
+ "primary":"Per-task expert minus mean ordinary EM at initial/A/C, and paired change from initial; original and additional seed separate and jointly with task/group dependence preserved",
+ "secondary":"B-A/D-C individual and team changes; actual work token length; frozen retrospective semantic profiles and official F1",
+ "design":"All original fresh56 including flagged tasks, all four unchanged controls, original initial display and speaking orders; only generation seed +100000000. No outcome-based reselection, no prompt changes",
+ "limits":"Same56 development tasks,46 source groups,2 seeds total; not112 independent questions, not equivalence proof or causal isolation of computation/verbosity/SFT",
+ "budget":{"max_calls":2912,"max_output_tokens":2121728,"wall_clock_cutoff":null,"retry":false},
+ "reviewer":"assistant","independence":"none/provisional","engineering":"PENDING_ACTUAL_PREFLIGHT"
+}

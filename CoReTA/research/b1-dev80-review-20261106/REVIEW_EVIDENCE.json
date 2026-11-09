@@ -1,0 +1,842 @@
+{
+  "scope": "SUPPLEMENTAL_ASSISTANT_REVIEW_NOT_INDEPENDENT_OR_CAUSAL",
+  "prior_artifacts_hash_verified": true,
+  "new_model_calls": 0,
+  "style": {
+    "initialE": {
+      "n": 80,
+      "mean_output_tokens": 5.0125,
+      "at_most32_tokens": 80
+    },
+    "initialB": {
+      "n": 238,
+      "mean_output_tokens": 8.558823529411764,
+      "at_most32_tokens": 228
+    },
+    "workE": {
+      "n": 627,
+      "mean_output_tokens": 57.33811802232855,
+      "at_most32_tokens": 352
+    },
+    "workB": {
+      "n": 1873,
+      "mean_output_tokens": 250.72770955686065,
+      "at_most32_tokens": 0
+    },
+    "finalE": {
+      "n": 312,
+      "mean_output_tokens": 5.0993589743589745,
+      "at_most32_tokens": 312
+    },
+    "finalB": {
+      "n": 936,
+      "mean_output_tokens": 5.752136752136752,
+      "at_most32_tokens": 930
+    }
+  },
+  "readout_event_classifications": [
+    {
+      "index": 12,
+      "question_number": 13,
+      "id": "2hop__178056_377891",
+      "arm": "B",
+      "question": "What is the Science Museum, in the city where Amalia Molina was born, a part of?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "ANSWER_SURFACE_EQUIVALENCE_CANDIDATE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Spanish National Research Council",
+        "M2": "Spanish National Research Council (CSIC)",
+        "M3": "Spanish National Research Council (CSIC)",
+        "M4": "Spanish National Research Council (CSIC)"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__178056_377891|19",
+          "text": "The Science Museum in the city where Amalia Molina was born, Seville, is part of the Spanish National Research Council (CSIC)."
+        },
+        {
+          "request_id": "2hop__178056_377891|23",
+          "text": "The Science Museum in the city where Amalia Molina was born, Seville, is part of the Spanish National Research Council (CSIC)."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 13,
+      "question_number": 14,
+      "id": "2hop__638478_377891",
+      "arm": "B",
+      "question": "What agency consists of the Science Museum in Alberto Lista's birth place?",
+      "official_expected_em": 0.25,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Spanish National Research Council",
+        "M2": "None of the provided information mentions a Science Museum in Alberto Lista's birth place, Fliesteden, or an agency consisting of such a museum.",
+        "M3": "None",
+        "M4": "None of the provided information mentions a Science Museum in Alberto Lista's birth place of Fliesteden or an agency related to it. Therefore, the answer is: None."
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__638478_377891|18",
+          "text": "The question is asking for the agency that consists of the Science Museum in Alberto Lista's birth place. \n\nFirst, we need to determine where Alberto Lista was born. From the provided information, Alberto Lista was born in a tiny place called Fliesteden, which is now part of Bergheim in the Rhein-Erft-Kreis region of Germany.\n\nNext, we need to find which agency consists of the Science Museum in this location. However, the provided information does not mention a Science Museum in Fliesteden or any agency related to it. \n\nLooking through the provided paragraphs, we can see that there is a mention of \"La Casa de la Ciencia de Sevilla - Science Museum\" in Seville, Spain, and \"Science Museum of Virginia\" in Richmond, Virginia, USA. However, these are not related to Fliesteden.\n\nTherefore, based on the information provided, there is no mention of an agency that consists of the Science Museum in Alberto Lista's birth place, Fliesteden. The information provided does not include any details about a Science Museum in Fliesteden or any agency related to it."
+        },
+        {
+          "request_id": "2hop__638478_377891|21",
+          "text": "After reviewing the information provided, it appears that there is no mention of a Science Museum in Fliesteden or any agency related to it. The information provided does not include any details about a Science Museum in Fliesteden or any agency related to it. Therefore, based on the information provided, there is no mention of an agency that consists of the Science Museum in Alberto Lista's birth place, Fliesteden."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 26,
+      "question_number": 27,
+      "id": "2hop__622767_161358",
+      "arm": "B",
+      "question": "Worldwide record sales total how many for the band from \"That One Night: Live in Buenos Aires\"?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "38 million",
+        "M2": "0",
+        "M3": "1,000,000",
+        "M4": "1,000,000"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__622767_161358|19",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The paragraphs mention that Megadeth has sold over 38 million records worldwide. However, it is important to note that this figure represents the band's total record sales, not specifically for the album \"That One Night: Live in Buenos Aires.\" The paragraphs do not provide specific sales figures for this album. Therefore, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires\" from the given information."
+        },
+        {
+          "request_id": "2hop__622767_161358|21",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The paragraphs mention that Megadeth has sold over 38 million records worldwide. However, this figure represents the band's total record sales, not specifically for the album \"That One Night: Live in Buenos Aires.\" The paragraphs do not provide specific sales figures for this album. Therefore, we cannot determine the exact worldwide record sales total for the album \"That One Night: Live in Buenos Aires\" from the given information."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 29,
+      "question_number": 30,
+      "id": "2hop__455004_523858",
+      "arm": "B",
+      "question": "Who founded the producer of To the Shores of Iwo Jima?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_INSUFFICIENCY_PRIVATE_FINAL_CORRECT_WEAK_GOLD_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Samuel Nicholas",
+        "M2": "United States Navy and United States Marine Corps",
+        "M3": "The United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer.",
+        "M4": "The United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer."
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__455004_523858|17",
+          "text": "The question is asking who founded the producer of \"To the Shores of Iwo Jima.\" Based on the information provided, the film was produced by the United States Navy and United States Marine Corps. However, the term \"producer\" can be a bit ambiguous here. The producers were the United States Navy and United States Marine Corps, not an individual or a company. The term \"founder of the producer\" might be a bit confusing. If we interpret it as asking who founded the production of the film, then the answer would be the United States Navy and United States Marine Corps, as they are the ones who produced the film. If the question is asking for the founder of a producer organization, there isn't enough information in the provided data to determine that. Therefore, based on the information given, the answer to the question \"Who founded the producer of To the Shores of Iwo Jima?\" is that the United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer."
+        },
+        {
+          "request_id": "2hop__455004_523858|22",
+          "text": "The question is asking who founded the producer of \"To the Shores of Iwo Jima.\" Based on the information provided, \"To the Shores of Iwo Jima\" is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. \n\nThe term \"producer\" in this context refers to the organizations or entities that produced the film. The United States Navy and United States Marine Corps are the producers of the film, as stated in the data. However, the question is phrased as \"who founded the producer,\" which is a bit ambiguous.\n\nIf we interpret \"founder of the producer\" as asking who founded the production of the film, the answer would be the United States Navy and United States Marine Corps, as they are the ones who produced the film. If we interpret it as asking for the founder of a producer organization, there isn't enough information in the provided data to determine that.\n\nTherefore, based on the information given, the answer to the question \"Who founded the producer of To the Shores of Iwo Jima?\" is that the United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 37,
+      "question_number": 38,
+      "id": "2hop__78918_699691",
+      "arm": "B",
+      "question": "Who is the child of the person who came up with the idea for Sgt. Pepper?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "James McCartney",
+        "M2": "Vicki Berger",
+        "M3": "Vicki Berger",
+        "M4": "Vicki Berger"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__78918_699691|17",
+          "text": "Based on the provided information, there is no direct mention of anyone coming up with the idea for Sgt. Pepper's Lonely Hearts Club Band. However, if we consider the only person mentioned with an idea (Richard Chambers for the Oregon Bottle Bill), and if we mistakenly assume that this is the reference for Sgt. Pepper, then the child of Richard Chambers would be Vicki Berger. Therefore, based on the provided information, the answer is Vicki Berger."
+        },
+        {
+          "request_id": "2hop__78918_699691|20",
+          "text": "The question is asking for the child of the person who came up with the idea for Sgt. Pepper's Lonely Hearts Club Band. However, none of the provided paragraphs mention anyone coming up with the idea for Sgt. Pepper's Lonely Hearts Club Band. Therefore, the answer cannot be determined from the provided information."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 47,
+      "question_number": 48,
+      "id": "2hop__73046_196273",
+      "arm": "B",
+      "question": "What political party was the man whose writings influenced the French Declaration of the Rights of Man and Citizen, a member of?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_CORRECT_CANDIDATE_MIXED_WITH_DENIAL",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Democratic-Republican Party",
+        "M2": "Rally of the French People",
+        "M3": "Rally of the French People",
+        "M4": "Rally of the French People"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__73046_196273|16",
+          "text": "center-right"
+        },
+        {
+          "request_id": "2hop__73046_196273|21",
+          "text": "The question asks for the political party of the man whose writings influenced the French Declaration of the Rights of Man and Citizen. From the provided material, we can see that the Declaration of the Rights of Man and of the Citizen was directly influenced by Thomas Jefferson, working with General Lafayette. However, the question is about the man whose writings influenced this declaration, and the answer lies in the context of the French Revolution.\n\nLooking through the paragraphs, we find that Michel Carlini was a French politician who was a member of the center-right Rally of the French People political party, started by General Charles de Gaulle. However, this is not directly related to the influence on the French Declaration of the Rights of Man and Citizen.\n\nThe paragraph titled \"Declaration of the Rights of Man and of the Citizen\" mentions that the declaration was influenced by Thomas Jefferson, General Lafayette, and Honoré Mirabeau. However, none of these individuals are mentioned as being part of a political party in the provided text.\n\nHowever, looking at the paragraph about George Mason, it states that his writings have been a significant influence on political thought and events, including the Virginia Declaration of Rights. This is not directly related to the French Declaration of the Rights of Man and Citizen.\n\nThe correct answer to the question is not directly provided in the text. However, based on the information that the French Declaration of the Rights of Man and Citizen was influenced by Thomas Jefferson, and that Michel Carlini was a member of the center-right Rally of the French People, we can infer that the man whose writings influenced the French Declaration of the Rights of Man and Citizen was likely Thomas Jefferson, who was a member of the Democratic-Republican Party. However, this is not explicitly stated in the provided text. Therefore, the answer is not directly provided in the text."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 59,
+      "question_number": 60,
+      "id": "2hop__487291_78529",
+      "arm": "B",
+      "question": "What was the tallest mountain before the place of death for Tsewang Paljor was discovered?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Kangchenjunga",
+        "M2": "Mount Everest",
+        "M3": "Mount Everest",
+        "M4": "Mount Everest"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__487291_78529|19",
+          "text": "The question is asking for the tallest mountain before the place of death for Tsewang Paljor was discovered. From the provided information, we know that Tsewang Paljor is believed to be the climber whose body is known as \"Green Boots\" on Mount Everest. The place of death for Tsewang Paljor is Mount Everest.\n\nNow, we need to find out what was the tallest mountain before the place of death for Tsewang Paljor was discovered. However, the information given does not directly state when or how the place of death for Tsewang Paljor was discovered. It only mentions that the body is known as \"Green Boots\" and that it is believed to be Tsewang Paljor.\n\nLooking at the paragraphs, there is a list of past presumed highest mountains, which includes Kangchenjunga, which was presumed to be the highest mountain until 1852. However, this is not directly related to Tsewang Paljor's place of death.\n\nThe tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. However, the information provided does not give a specific date or time for the discovery of the body. Therefore, we cannot determine the exact tallest mountain before the discovery of Tsewang Paljor's place of death.\n\nHowever, if we consider the tallest mountain in the world before the discovery of the body on Mount Everest, it would be Mount Everest itself, as it was the tallest mountain at that time. But this is not the correct interpretation of the question.\n\nThe question is a bit ambiguous, but based on the information provided, the tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. Since the body was discovered on Mount Everest, the tallest mountain before the discovery would still be Mount Everest. Therefore, the answer is Mount Everest."
+        },
+        {
+          "request_id": "2hop__487291_78529|23",
+          "text": "The question is asking for the tallest mountain before the place of death for Tsewang Paljor was discovered. From the provided information, we know that Tsewang Paljor is believed to be the climber whose body is known as \"Green Boots\" on Mount Everest. The place of death for Tsewang Paljor is Mount Everest.\n\nNow, we need to find out what was the tallest mountain before the place of death for Tsewang Paljor was discovered. However, the information given does not directly state when or how the place of death for Tsewang Paljor was discovered. It only mentions that the body is known as \"Green Boots\" and that it is believed to be Tsewang Paljor.\n\nLooking at the paragraphs, there is a list of past presumed highest mountains, which includes Kangchenjunga, which was presumed to be the highest mountain until 1852. However, this is not directly related to Tsewang Paljor's place of death.\n\nThe tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. However, the information provided does not give a specific date or time for the discovery of the body. Therefore, we cannot determine the exact tallest mountain before the discovery of Tsewang Paljor's place of death.\n\nHowever, if we consider the tallest mountain in the world before the discovery of the body on Mount Everest, it would be Mount Everest itself, as it was the tallest mountain at that time. But this is not the correct interpretation of the question.\n\nThe question is a bit ambiguous, but based on the information provided, the tallest mountain before the place of death for Tsewang Paljor was discovered would be the tallest mountain before the discovery of the body on Mount Everest. Since the body was discovered on Mount Everest, the tallest mountain before the discovery would still be Mount Everest. Therefore, the answer is Mount Everest."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 69,
+      "question_number": 70,
+      "id": "3hop1__479393_213066_8723",
+      "arm": "B",
+      "question": "What is the percentage of people claiming job seeker's allowance, in the country of origin of the sport that Kuzbass operates in?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_CORRECT_TASK_MAPPING_LATER_PEERS_RETAIN_WRONG_VALUE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "2.5%",
+        "M2": "2.4%",
+        "M3": "2.4%",
+        "M4": "2.4%"
+      },
+      "expert_work": [
+        {
+          "request_id": "3hop1__479393_213066_8723|18",
+          "text": "The question is asking for the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in. From the provided data, we can determine the sport that Kuzbass operates in is bandy. The country of origin of the sport bandy is England, as mentioned in the \"England national bandy team\" paragraph. The percentage of people claiming job seeker's allowance in England is given as 2.5% in the \"Southampton\" paragraph. However, the history section shows that multiple actors have provided the value \"2.4%\", which might be the percentage for Southampton, not England as a whole. Therefore, the correct answer should be 2.5% for England as a whole, but based on the history section, the answer is 2.4%."
+        },
+        {
+          "request_id": "3hop1__479393_213066_8723|21",
+          "text": "Based on the information provided, the percentage of people claiming job seeker's allowance in the country of origin of the sport that Kuzbass operates in (England) is **2.5%**. However, the history section shows that multiple actors have provided the value **2.4%**, which might be the percentage for Southampton, not England as a whole. Therefore, the correct answer is **2.5%** for England as a whole."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 72,
+      "question_number": 73,
+      "id": "2hop__24744_15345",
+      "arm": "B",
+      "question": "What is Elizabeth's ranking in the religion in which all naturalists working at the two English universities?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "ANSWER_SURFACE_EQUIVALENCE_CANDIDATE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Supreme Governor",
+        "M2": "Supreme Governor of the Church of England",
+        "M3": "Supreme Governor of the Church of England",
+        "M4": "Supreme Governor of the Church of England"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__24744_15345|19",
+          "text": "Based on the information provided, the question is asking about Elizabeth's ranking in the religion in which all naturalists working at the two English universities (Oxford and Cambridge) are part of. From the paragraphs, we know that all naturalists in the two English universities were Church of England clergymen, as stated in paragraph 15. This indicates that the religion in question is the Church of England.\n\nLooking at the information about Elizabeth, we find in paragraph 16 that Elizabeth II is referred to as the \"Supreme Governor of the established Church of England.\" This is the highest position within the Church of England. Therefore, if the question is asking about Elizabeth's ranking in the Church of England, the answer would be that she is the Supreme Governor, which is the highest rank within that religion.\n\nHowever, the question is phrased as \"Elizabeth's ranking in the religion,\" which is a bit ambiguous. If it is referring to Elizabeth II, then her rank in the Church of England is as the Supreme Governor. If it is referring to another Elizabeth, such as Elizabeth from the \"Psychology and Aging\" journal (paragraph 10), there is no information provided about her religious rank or position in any religion.\n\nGiven the context and the mention of Elizabeth II in the history, it is most likely referring to her as the Supreme Governor of the Church of England. Therefore, the answer is that Elizabeth II is the Supreme Governor of the Church of England, which is the highest rank within that religion."
+        },
+        {
+          "request_id": "2hop__24744_15345|21",
+          "text": "Elizabeth's ranking in the religion in which all naturalists working at the two English universities (Oxford and Cambridge) are part of is as the Supreme Governor of the established Church of England."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 13,
+      "question_number": 14,
+      "id": "2hop__638478_377891",
+      "arm": "D",
+      "question": "What agency consists of the Science Museum in Alberto Lista's birth place?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_TARGET_MENTION_WITH_UNRESOLVED_WRONG_BIRTHPLACE_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Spanish National Research Council",
+        "M2": "Science Museum of Virginia",
+        "M3": "Science Museum of Virginia",
+        "M4": "Science Museum of Virginia"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__638478_377891|42",
+          "text": "The question is asking for the agency that consists of the Science Museum in Alberto Lista's birth place. From the provided information, Alberto Lista was born in a place called Fliesteden, which is now part of Bergheim, Rhein-Erft-Kreis in Germany. However, there is no direct mention of a science museum in Fliesteden or Bergheim in the given paragraphs. \n\nLooking through the paragraphs, the \"Science Museum of Virginia\" is mentioned as an agency of the Commonwealth of Virginia. However, this is not related to Alberto Lista's birthplace. The \"La Casa de la Ciencia de Sevilla - Science Museum\" is in Seville, Spain, but there is no information about Alberto Lista's birthplace being in Seville. The \"National Museum of Natural History, Bulgaria\" is in Sofia, Bulgaria, and again, there is no information about Alberto Lista's birthplace being in Bulgaria.\n\nNone of the other science museums mentioned in the paragraphs are located in Fliesteden or Bergheim. Therefore, based on the information provided, there is no direct answer to the question. The \"Science Museum of Virginia\" is an agency, but it is not associated with Alberto Lista's birthplace."
+        },
+        {
+          "request_id": "2hop__638478_377891|45",
+          "text": "Based on the information provided, there is no direct mention of a science museum in Fliesteden, which is now part of Bergheim, Rhein-Erft-Kreis in Germany. However, the text does mention that the \"La Casa de la Ciencia de Sevilla - Science Museum\" is located in Seville, Spain, and that it is affiliated with the Spanish National Research Council (CSIC). Therefore, the agency that consists of the Science Museum in Alberto Lista's birthplace is the Spanish National Research Council (CSIC)."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 26,
+      "question_number": 27,
+      "id": "2hop__622767_161358",
+      "arm": "D",
+      "question": "Worldwide record sales total how many for the band from \"That One Night: Live in Buenos Aires\"?",
+      "official_expected_em": 0.5,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_WRONG_INTERPRETATION_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "38 million",
+        "M2": "38 million",
+        "M3": "1,000,000",
+        "M4": "1,000,000"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__622767_161358|43",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. However, the provided data does not specify the sales figures for this particular album. The total worldwide sales figure of 38 million records for Megadeth is for the band as a whole, not specifically for the album \"That One Night: Live in Buenos Aires.\" Therefore, we cannot determine the worldwide record sales total for the band from \"That One Night: Live in Buenos Aires\" with the information given."
+        },
+        {
+          "request_id": "2hop__622767_161358|45",
+          "text": "Based on the information provided, the live album \"That One Night: Live in Buenos Aires\" is from the American heavy metal band Megadeth. The total worldwide sales figure of 38 million records for Megadeth is for the band as a whole, not specifically for the \"That One Night: Live in Buenos Aires\" album. Therefore, the information provided is insufficient to determine the worldwide record sales total for the band from \"That One Night: Live in Buenos Aires.\""
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 29,
+      "question_number": 30,
+      "id": "2hop__455004_523858",
+      "arm": "D",
+      "question": "Who founded the producer of To the Shores of Iwo Jima?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_INSUFFICIENCY_PRIVATE_FINAL_CORRECT_WEAK_GOLD_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Samuel Nicholas",
+        "M2": "United States Navy and United States Marine Corps",
+        "M3": "The United States Navy and United States Marine Corps.",
+        "M4": "United States Navy and United States Marine Corps"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__455004_523858|41",
+          "text": "The question asks who founded the producer of \"To the Shores of Iwo Jima.\" However, the provided information does not mention any \"founder\" of a producer for this film. Instead, it states that \"To the Shores of Iwo Jima\" is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. \n\nThe term \"producer\" in this context refers to the organizations that produced the film, which are the United States Navy and United States Marine Corps. There is no information provided about an individual or entity that \"founded\" the producer of the film. Therefore, based on the given data, we cannot determine who founded the producer of \"To the Shores of Iwo Jima.\" The answer is not available from the information provided."
+        },
+        {
+          "request_id": "2hop__455004_523858|46",
+          "text": "The question asks who founded the producer of \"To the Shores of Iwo Jima.\" Based on the information provided, \"To the Shores of Iwo Jima\" is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. \n\nThe term \"producer\" in this context refers to the organizations that produced the film, which are the United States Navy and United States Marine Corps. There is no information provided about an individual or entity that \"founded\" the producer of the film. The term \"founder\" implies an individual or entity that established or created the producer, but the given data does not mention any such founder.\n\nTherefore, based on the given data, we cannot determine who founded the producer of \"To the Shores of Iwo Jima.\" The answer is not available from the information provided."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 35,
+      "question_number": 36,
+      "id": "2hop__132590_663762",
+      "arm": "D",
+      "question": "Who founded the company that made the Plymouth Prowler?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_INSUFFICIENCY_PRIVATE_FINAL_CORRECT_WEAK_CORPORATE_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Walter Percy Chrysler",
+        "M2": "DaimlerChrysler",
+        "M3": "DaimlerChrysler",
+        "M4": "DaimlerChrysler"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__132590_663762|43",
+          "text": "Based on the provided information, the Plymouth Prowler was manufactured and marketed by DaimlerChrysler. However, the specific founders of DaimlerChrysler are not explicitly mentioned in the given text. The paragraph about Walter Chrysler notes that he was the founder of Chrysler Corporation, which is now part of Fiat Chrysler Automobiles. However, there is no direct information provided about the founders of DaimlerChrysler. Therefore, the answer is not explicitly stated in the provided data."
+        },
+        {
+          "request_id": "2hop__132590_663762|46",
+          "text": "The provided information does not specify the founders of DaimlerChrysler, the company that manufactured the Plymouth Prowler. Therefore, the specific founders of DaimlerChrysler are not mentioned in the given data."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 37,
+      "question_number": 38,
+      "id": "2hop__78918_699691",
+      "arm": "D",
+      "question": "Who is the child of the person who came up with the idea for Sgt. Pepper?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_INSUFFICIENCY_PRIVATE_FINAL_CORRECT",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "James McCartney",
+        "M2": "Vicki Berger",
+        "M3": "Vicki Berger",
+        "M4": "Vicki Berger"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__78918_699691|41",
+          "text": "The question asks for the child of the person who came up with the idea for Sgt. Pepper. From the provided information, there is no mention of anyone coming up with the idea for Sgt. Pepper. The only mention of someone coming up with an idea is Richard Chambers for the Oregon Bottle Bill, but this is unrelated to Sgt. Pepper. Therefore, the answer cannot be determined from the provided information."
+        },
+        {
+          "request_id": "2hop__78918_699691|44",
+          "text": "The question asks for the child of the person who came up with the idea for Sgt. Pepper. The provided information does not mention any person coming up with the idea for Sgt. Pepper. The only mention of someone coming up with an idea is Richard Chambers, who came up with the idea for the Oregon Bottle Bill. However, this is unrelated to Sgt. Pepper. Therefore, the answer cannot be determined from the provided information."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    },
+    {
+      "index": 50,
+      "question_number": 51,
+      "id": "2hop__109366_440021",
+      "arm": "D",
+      "question": "Who is the father of Mock Turtle's creator?",
+      "official_expected_em": 0,
+      "official_expert_em": 1,
+      "classification": "PUBLIC_IDENTITY_CONFUSION_PRIVATE_CORRECT_STRING_WEAK_SUPPLIED_BRIDGE",
+      "reviewer": "assistant",
+      "independence": "none/provisional",
+      "finals": {
+        "M1": "Charles Dodgson",
+        "M2": "Charles Lutwidge Dodgson",
+        "M3": "Charles Lutwidge Dodgson",
+        "M4": "Charles Lutwidge Dodgson"
+      },
+      "expert_work": [
+        {
+          "request_id": "2hop__109366_440021|42",
+          "text": "Based on the information provided, the creator of the Mock Turtle is Lewis Carroll, who is also known as Charles Lutwidge Dodgson. However, the information provided does not mention the father of Charles Lutwidge Dodgson. Therefore, based on the information given, we cannot determine the father of Mock Turtle's creator."
+        },
+        {
+          "request_id": "2hop__109366_440021|47",
+          "text": "The question is asking for the father of the creator of the Mock Turtle. From the provided information, we know that the Mock Turtle is a fictional character created by Lewis Carroll, who is also known as Charles Lutwidge Dodgson. The history mentions \"Charles Dodgson (priest)\" which refers to Lewis Carroll's real name. However, the information provided does not mention the father of Charles Lutwidge Dodgson. Therefore, based on the information given, we cannot determine the father of the creator of the Mock Turtle. The information provided does not include details about Charles Lutwidge Dodgson's father."
+        }
+      ],
+      "note": "Expert work and final outputs reviewed; this classification is not a full-peer-history causal annotation."
+    }
+  ],
+  "unique_flagged_tasks": 35,
+  "event_inventory": [
+    {
+      "index": 0,
+      "id": "2hop__123383_21417",
+      "reasons": [
+        "A:E_INITIAL_WRONG_FINAL_CORRECT",
+        "B:E_INITIAL_WRONG_FINAL_CORRECT"
+      ]
+    },
+    {
+      "index": 5,
+      "id": "2hop__153074_79404",
+      "reasons": [
+        "A:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B:E_INITIAL_CORRECT_FINAL_WRONG",
+        "C:E_INITIAL_CORRECT_FINAL_WRONG",
+        "D:E_INITIAL_CORRECT_FINAL_WRONG"
+      ]
+    },
+    {
+      "index": 10,
+      "id": "3hop1__33286_22372_8184",
+      "reasons": [
+        "C:TEAM_CAN_OUTSCORE_E",
+        "D:TEAM_CAN_OUTSCORE_E"
+      ]
+    },
+    {
+      "index": 11,
+      "id": "2hop__857136_78066",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B:E_INITIAL_CORRECT_FINAL_WRONG",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 12,
+      "id": "2hop__178056_377891",
+      "reasons": [
+        "A:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_INITIAL_CORRECT_FINAL_WRONG",
+        "D:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B-A:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 13,
+      "id": "2hop__638478_377891",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 17,
+      "id": "2hop__726238_705760",
+      "reasons": [
+        "A:E_INITIAL_WRONG_FINAL_CORRECT",
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_INITIAL_WRONG_FINAL_CORRECT",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 18,
+      "id": "2hop__262172_14904",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 19,
+      "id": "2hop__543705_18221",
+      "reasons": [
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 22,
+      "id": "2hop__107379_20644",
+      "reasons": [
+        "A:TEAM_CAN_OUTSCORE_E",
+        "C:TEAM_CAN_OUTSCORE_E",
+        "D:E_INITIAL_WRONG_FINAL_CORRECT",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 26,
+      "id": "2hop__622767_161358",
+      "reasons": [
+        "B:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 27,
+      "id": "2hop__722744_134827",
+      "reasons": [
+        "A:E_INITIAL_CORRECT_FINAL_WRONG",
+        "A:TEAM_CAN_OUTSCORE_E",
+        "C:E_INITIAL_CORRECT_FINAL_WRONG",
+        "C:TEAM_CAN_OUTSCORE_E",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 29,
+      "id": "2hop__455004_523858",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D:E_CORRECT_TEAM_EXPECTED_BELOW1"
+      ]
+    },
+    {
+      "index": 31,
+      "id": "2hop__468328_34197",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 34,
+      "id": "2hop__697106_51671",
+      "reasons": [
+        "A:E_INITIAL_CORRECT_FINAL_WRONG",
+        "C:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 35,
+      "id": "2hop__132590_663762",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 37,
+      "id": "2hop__78918_699691",
+      "reasons": [
+        "A:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_INITIAL_CORRECT_FINAL_WRONG",
+        "D:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 38,
+      "id": "2hop__481253_468473",
+      "reasons": [
+        "A:E_INITIAL_CORRECT_FINAL_WRONG",
+        "C:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 41,
+      "id": "2hop__41221_22303",
+      "reasons": [
+        "C:TEAM_CAN_OUTSCORE_E",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 42,
+      "id": "2hop__66459_52453",
+      "reasons": [
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 47,
+      "id": "2hop__73046_196273",
+      "reasons": [
+        "B:E_INITIAL_WRONG_FINAL_CORRECT",
+        "B:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 48,
+      "id": "4hop1__155787_497059_46089_86234",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B:E_INITIAL_CORRECT_FINAL_WRONG",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 50,
+      "id": "2hop__109366_440021",
+      "reasons": [
+        "D:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 52,
+      "id": "2hop__576033_289149",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B:E_INITIAL_CORRECT_FINAL_WRONG",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 57,
+      "id": "3hop1__388777_7258_72045",
+      "reasons": [
+        "A:E_INITIAL_WRONG_FINAL_CORRECT",
+        "B:E_INITIAL_WRONG_FINAL_CORRECT",
+        "C:E_INITIAL_WRONG_FINAL_CORRECT",
+        "D:E_INITIAL_WRONG_FINAL_CORRECT"
+      ]
+    },
+    {
+      "index": 59,
+      "id": "2hop__487291_78529",
+      "reasons": [
+        "B:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 62,
+      "id": "2hop__115615_120682",
+      "reasons": [
+        "A:TEAM_CAN_OUTSCORE_E",
+        "B:TEAM_CAN_OUTSCORE_E",
+        "C:TEAM_CAN_OUTSCORE_E",
+        "D:TEAM_CAN_OUTSCORE_E"
+      ]
+    },
+    {
+      "index": 66,
+      "id": "2hop__103913_87175",
+      "reasons": [
+        "D:E_INITIAL_CORRECT_FINAL_WRONG",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 67,
+      "id": "2hop__16759_57749",
+      "reasons": [
+        "A:E_INITIAL_WRONG_FINAL_CORRECT",
+        "B:E_INITIAL_WRONG_FINAL_CORRECT",
+        "C:E_INITIAL_WRONG_FINAL_CORRECT",
+        "D:E_INITIAL_WRONG_FINAL_CORRECT"
+      ]
+    },
+    {
+      "index": 69,
+      "id": "3hop1__479393_213066_8723",
+      "reasons": [
+        "B:E_INITIAL_WRONG_FINAL_CORRECT",
+        "B:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_INITIAL_WRONG_FINAL_CORRECT",
+        "D:E_INITIAL_WRONG_FINAL_CORRECT",
+        "B-A:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 71,
+      "id": "2hop__161955_609442",
+      "reasons": [
+        "A:TEAM_CAN_OUTSCORE_E",
+        "B:E_INITIAL_WRONG_FINAL_CORRECT",
+        "C:E_INITIAL_WRONG_FINAL_CORRECT",
+        "D:E_INITIAL_WRONG_FINAL_CORRECT",
+        "B-A:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 72,
+      "id": "2hop__24744_15345",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 77,
+      "id": "2hop__809080_84477",
+      "reasons": [
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "C:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B-A:PAIRED_CHANGE",
+        "D-C:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 78,
+      "id": "3hop1__234534_50519_159769",
+      "reasons": [
+        "A:E_INITIAL_WRONG_FINAL_CORRECT",
+        "A:E_CORRECT_TEAM_EXPECTED_BELOW1",
+        "B:E_INITIAL_WRONG_FINAL_CORRECT",
+        "C:E_INITIAL_WRONG_FINAL_CORRECT",
+        "D:E_INITIAL_WRONG_FINAL_CORRECT",
+        "B-A:PAIRED_CHANGE"
+      ]
+    },
+    {
+      "index": 79,
+      "id": "3hop1__388777_7258_81829",
+      "reasons": [
+        "A:E_INITIAL_CORRECT_FINAL_WRONG",
+        "B:E_INITIAL_CORRECT_FINAL_WRONG",
+        "C:E_INITIAL_CORRECT_FINAL_WRONG",
+        "D:E_INITIAL_CORRECT_FINAL_WRONG"
+      ]
+    }
+  ],
+  "independent_baseline_comparison": {
+    "n": 75,
+    "E0": 0.6133333333333333,
+    "EprivateA": 0.5866666666666667,
+    "EprivateC": 0.6,
+    "Bteam": 0.5366666666666666,
+    "Dteam": 0.5533333333333333,
+    "Bteam_minus_EprivateA": -0.050000000000000044,
+    "Dteam_minus_EprivateC": -0.046666666666666634,
+    "note": "Different total compute; exploratory, not a cost-matched superiority test."
+  }
+}

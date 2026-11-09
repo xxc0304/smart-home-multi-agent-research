@@ -1,3 +1,13 @@
+# 最新项目进展（2026-11-10）
+
+[CoReTA 最新进展与证据导航](CoReTA/PROJECT_PROGRESS_20261110.md)：已同步11月3日之后的实验代码、配置、结果分析、研究复审和文献笔记，并归档本机已有的23个运行目录原始记录。归档保留完成、缺失、停止和部分快照，不把目录数当独立实验数。
+
+当前主线是**利用真实专家优势提升多智能体团队表现，同时保留普通成员有效纠错**。最新局部审核组件实验已结束；未观察到优于通用批评的主指标净收益，尚无已验证有效的新架构。目前无待续跑批次。详见[最新结果](CoReTA/research/expert-local-audit32-20261110-v2/RESULTS_ANALYSIS.md)和[方向复审](CoReTA/research/expert-local-audit32-20261110-v2/RESEARCH_ALIGNMENT_REVIEW_20261110.md)。
+
+原始运行档案与每文件校验清单见[运行归档](CoReTA/experiment/archives/local-runs-20261110/README.md)。以下保留历史入口；当前状态以本节及CoReTA交接顶部为准。
+
+---
+
 # 最新实验进展（2026-11-03）
 
 [CoReTA 实测结果与当前工作](CoReTA/README.md)：4B专家训练及C160资格验证已完成，团队实验尚未启动。

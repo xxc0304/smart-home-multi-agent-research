@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-07",
+  "verdict": "RUN_ALLOWED",
+  "scope": "12_FIXED_PRIVATE_FINAL_PREFIXES_48_CALLS_LOCAL_ADAPTER_DIAGNOSTIC",
+  "science": "PASS",
+  "engineering": "PASS",
+  "freeze_sha256": "b9e5d7361f62cc2b53f96c9ec44efee5244f8a72cb5f5b5f95778488e4ceb8c3",
+  "fixtureTests": 7,
+  "actualMaxInputPlusCap": 3617,
+  "context": 16384,
+  "qualifiedExpert": "SUPPORTED_TASK_ADVANTAGE",
+  "localStageFilesMatch": [
+    "runner.py",
+    "launch.py",
+    "DIAGNOSTIC_INPUTS.json",
+    "DIAGNOSTIC_LABELS.json",
+    "diagnostic_config.json",
+    "TESTS.json",
+    "SCIENCE_REVIEW.json",
+    "EXPERIMENT_REVIEW.md"
+  ],
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "notAllowed": [
+    "training",
+    "new_C_H_evaluation",
+    "full_team_rerun",
+    "method_batch_expansion"
+  ],
+  "new_model_calls": 0
+}

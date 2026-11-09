@@ -1,0 +1,388 @@
+{
+  "status": "FAILED",
+  "n_source_tasks": 11,
+  "common_readable_task_ids": [
+    1,
+    4
+  ],
+  "arms": {
+    "A_private": {
+      "n_common_tasks": 2,
+      "expected_team_accuracy": 0.5,
+      "expert_final_accuracy": 0.5,
+      "ordinary_individual_mean_accuracy": 0.3333333333333333
+    },
+    "B_ordinary": {
+      "n_common_tasks": 2,
+      "expected_team_accuracy": 0.5,
+      "expert_final_accuracy": 0.5,
+      "ordinary_individual_mean_accuracy": 0.5
+    },
+    "E_facts": {
+      "n_common_tasks": 2,
+      "expected_team_accuracy": 0.75,
+      "expert_final_accuracy": 0.5,
+      "ordinary_individual_mean_accuracy": 0.8333333333333333
+    },
+    "F_facts_opinions": {
+      "n_common_tasks": 2,
+      "expected_team_accuracy": 0.5,
+      "expert_final_accuracy": 0.5,
+      "ordinary_individual_mean_accuracy": 0.5
+    }
+  },
+  "contrasts": {
+    "B_ordinary minus A_private": {
+      "n": 2,
+      "mean_team_delta": 0.0,
+      "expert_gains": 0,
+      "expert_harms": 0
+    },
+    "E_facts minus B_ordinary": {
+      "n": 2,
+      "mean_team_delta": 0.25,
+      "expert_gains": 0,
+      "expert_harms": 0
+    },
+    "F_facts_opinions minus B_ordinary": {
+      "n": 2,
+      "mean_team_delta": 0.0,
+      "expert_gains": 1,
+      "expert_harms": 1
+    },
+    "E_facts minus F_facts_opinions": {
+      "n": 2,
+      "mean_team_delta": 0.25,
+      "expert_gains": 1,
+      "expert_harms": 1
+    }
+  },
+  "scores": [
+    {
+      "task_id": 1,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": null
+      },
+      "final_answers": {
+        "M1": "option_1",
+        "M2": "option_1",
+        "M3": "option_1",
+        "M4": "option_2"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 0.0,
+        "winners": [
+          "option_1"
+        ],
+        "counts": {
+          "option_1": 3,
+          "option_2": 1
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_3"
+    },
+    {
+      "task_id": 1,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": null
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 0.0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_3"
+    },
+    {
+      "task_id": 1,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": null
+      },
+      "final_answers": {
+        "M1": "option_1",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_1"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 0.5,
+        "winners": [
+          "option_1",
+          "option_3"
+        ],
+        "counts": {
+          "option_1": 2,
+          "option_3": 2
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": false,
+      "gold": "option_3",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "task_id": 1,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_3",
+        "M3": "option_1",
+        "M4": null
+      },
+      "final_answers": {
+        "M1": "option_3",
+        "M2": "option_3",
+        "M3": "option_3",
+        "M4": "option_3"
+      },
+      "initial_vote": null,
+      "final_vote": {
+        "expected_accuracy": 1.0,
+        "winners": [
+          "option_3"
+        ],
+        "counts": {
+          "option_3": 4
+        }
+      },
+      "expert_initial_correct": false,
+      "expert_final_correct": true,
+      "gold": "option_3",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "task_id": 4,
+      "arm": "A_private",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1.0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1.0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_2"
+    },
+    {
+      "task_id": 4,
+      "arm": "B_ordinary",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1.0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1.0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_2"
+    },
+    {
+      "task_id": 4,
+      "arm": "E_facts",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_2",
+        "M2": "option_2",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1.0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 1.0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": true,
+      "gold": "option_2",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    },
+    {
+      "task_id": 4,
+      "arm": "F_facts_opinions",
+      "complete": true,
+      "initial_answers": {
+        "M1": "option_2",
+        "M2": "option_4",
+        "M3": "option_2",
+        "M4": "option_2"
+      },
+      "final_answers": {
+        "M1": "option_4",
+        "M2": "option_4",
+        "M3": "option_4",
+        "M4": "option_4"
+      },
+      "initial_vote": {
+        "expected_accuracy": 1.0,
+        "winners": [
+          "option_2"
+        ],
+        "counts": {
+          "option_2": 3,
+          "option_4": 1
+        }
+      },
+      "final_vote": {
+        "expected_accuracy": 0.0,
+        "winners": [
+          "option_4"
+        ],
+        "counts": {
+          "option_4": 4
+        }
+      },
+      "expert_initial_correct": true,
+      "expert_final_correct": false,
+      "gold": "option_2",
+      "selected_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "all_hidden_ids": [
+        "H01",
+        "H02",
+        "H03"
+      ]
+    }
+  ],
+  "no_population_significance_claim": true,
+  "scope": "Previously used development scenarios, one seed, information advantage adaptation; not held-out method effectiveness."
+}

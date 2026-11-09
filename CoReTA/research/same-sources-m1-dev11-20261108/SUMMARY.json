@@ -1,0 +1,151 @@
+{
+  "status": {
+    "status": "COMPLETED",
+    "logical_calls": 55,
+    "new_generation_calls": 51,
+    "reused_exact_E_calls": 4,
+    "maximum_new_calls": 55,
+    "complete_tasks": 11,
+    "elapsed_seconds": 141.7371584889479,
+    "failure": null,
+    "freeze_unchanged": true
+  },
+  "n_planned": 11,
+  "n_comparable": 11,
+  "per_task": [
+    {
+      "task_id": 1,
+      "S_complete": true,
+      "S_correct": false,
+      "S_answer": "East Town",
+      "A_M1": false,
+      "B_team": 1.0,
+      "E_team": 0.0,
+      "E_M1": false,
+      "F_team": 0.0
+    },
+    {
+      "task_id": 4,
+      "S_complete": true,
+      "S_correct": true,
+      "S_answer": "Mr. X's son",
+      "A_M1": true,
+      "B_team": 1.0,
+      "E_team": 1.0,
+      "E_M1": true,
+      "F_team": 1.0
+    },
+    {
+      "task_id": 7,
+      "S_complete": true,
+      "S_correct": false,
+      "S_answer": "Franklin Enterprises",
+      "A_M1": false,
+      "B_team": 0.0,
+      "E_team": 0.0,
+      "E_M1": false,
+      "F_team": 0.0
+    },
+    {
+      "task_id": 8,
+      "S_complete": true,
+      "S_correct": false,
+      "S_answer": "Billy Prentice",
+      "A_M1": false,
+      "B_team": 0.0,
+      "E_team": 0.0,
+      "E_M1": false,
+      "F_team": 0.0
+    },
+    {
+      "task_id": 9,
+      "S_complete": true,
+      "S_correct": true,
+      "S_answer": "Hospital A",
+      "A_M1": true,
+      "B_team": 0.0,
+      "E_team": 1.0,
+      "E_M1": true,
+      "F_team": 1.0
+    },
+    {
+      "task_id": 11,
+      "S_complete": true,
+      "S_correct": true,
+      "S_answer": "School Gym",
+      "A_M1": true,
+      "B_team": 1.0,
+      "E_team": 1.0,
+      "E_M1": true,
+      "F_team": 1.0
+    },
+    {
+      "task_id": 23,
+      "S_complete": true,
+      "S_correct": true,
+      "S_answer": "Grand Oak Hotel",
+      "A_M1": true,
+      "B_team": 0.0,
+      "E_team": 1.0,
+      "E_M1": true,
+      "F_team": 1.0
+    },
+    {
+      "task_id": 30,
+      "S_complete": true,
+      "S_correct": false,
+      "S_answer": "Northstar Partners",
+      "A_M1": false,
+      "B_team": 0.0,
+      "E_team": 1.0,
+      "E_M1": true,
+      "F_team": 0.0
+    },
+    {
+      "task_id": 33,
+      "S_complete": true,
+      "S_correct": true,
+      "S_answer": "Lab Nova",
+      "A_M1": true,
+      "B_team": 1.0,
+      "E_team": 1.0,
+      "E_M1": true,
+      "F_team": 1.0
+    },
+    {
+      "task_id": 34,
+      "S_complete": true,
+      "S_correct": true,
+      "S_answer": "Cedar Station",
+      "A_M1": true,
+      "B_team": 1.0,
+      "E_team": 1.0,
+      "E_M1": true,
+      "F_team": 1.0
+    },
+    {
+      "task_id": 50,
+      "S_complete": true,
+      "S_correct": true,
+      "S_answer": "Conference Room Gamma",
+      "A_M1": true,
+      "B_team": 0.0,
+      "E_team": 1.0,
+      "E_M1": true,
+      "F_team": 1.0
+    }
+  ],
+  "mean_on_same_readable_tasks": {
+    "S_correct": 0.6363636363636364,
+    "A_M1": 0.6363636363636364,
+    "B_team": 0.45454545454545453,
+    "E_team": 0.7272727272727273,
+    "E_M1": 0.7272727272727273,
+    "F_team": 0.6363636363636364
+  },
+  "E_team_minus_S_gains": [
+    30
+  ],
+  "E_team_minus_S_losses": [],
+  "limitations": "Conditional old dev single seed; no equivalence, mechanism identification, unseen generalization or efficiency claim."
+}

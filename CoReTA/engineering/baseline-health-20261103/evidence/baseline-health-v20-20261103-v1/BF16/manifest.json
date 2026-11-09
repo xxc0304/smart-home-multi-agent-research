@@ -1,0 +1,66 @@
+{
+  "expected_ids": [
+    "2hop__142515_31413",
+    "2hop__14120_89145",
+    "2hop__558996_529125",
+    "3hop1__144381_728452_124684",
+    "3hop1__146192_728452_124684",
+    "2hop__559896_160837",
+    "2hop__92103_29312",
+    "3hop1__136883_728452_124684",
+    "2hop__16777_419765",
+    "2hop__287389_160837",
+    "2hop__259942_126711",
+    "2hop__108098_170204",
+    "2hop__253472_162108",
+    "2hop__21832_82682",
+    "2hop__139922_750102",
+    "2hop__220643_26789",
+    "2hop__543094_26789",
+    "2hop__546494_529125",
+    "2hop__659570_49661",
+    "2hop__714594_781580"
+  ],
+  "fixture": false,
+  "technical_preflight": true,
+  "role": "V",
+  "condition": "B",
+  "diagnostic": true,
+  "arm": "BF16",
+  "config": {
+    "fixture": false,
+    "reviewed_for_run": true,
+    "model_path": "/data2/xiaoxinchen/models/Qwen3-4B-1cfa9a7",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "dtype": "bfloat16",
+    "quantization": "none",
+    "device": "cuda:0",
+    "max_length": 7326,
+    "template_kwargs": {
+      "enable_thinking": false
+    },
+    "wall_seconds": 600,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "gradient_accumulation_steps": 1,
+    "gradient_checkpointing": true,
+    "r": 8,
+    "alpha": 16,
+    "learning_rate": 2e-05,
+    "epochs": 1,
+    "seed": 20261102,
+    "generation": {
+      "do_sample": false,
+      "max_new_tokens": 256
+    },
+    "purpose": "V20_precision_diagnostic",
+    "evaluation_answer_suffix": "\n\nAnswer the question above. Output ONLY the short answer: a name, entity, date, number, or short phrase. Do not explain, restate the question, or describe your reasoning."
+  }
+}

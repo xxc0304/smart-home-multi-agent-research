@@ -1,0 +1,5118 @@
+{
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "criterion": "Input-only missing/incorrect bridge or core referent/granularity ambiguity; no filtering by old/new correctness. Previously exposed development data.",
+  "reviewed": [
+    {
+      "index": 71,
+      "id": "2hop__161955_609442",
+      "key": "02e02fbe5e2130e54ebf0b0e4901b13f9bae1bf570f554e76636c2bd05c309de",
+      "question": "Which range is Garfield Peak in the state of Hinsdale County part of?",
+      "eligible": false,
+      "reason": "Garfield Peak同时属Collegiate Peaks/Sawatch/Rocky多层山系，目标粒度非唯一。",
+      "support_paragraphs": [
+        {
+          "idx": 11,
+          "title": "Hinsdale County, Colorado",
+          "paragraph_text": "Hinsdale County is one of the 64 counties of the U.S. state of Colorado. As of the 2010 census, the population was 843, making it the third-least populous county in Colorado. With a population density of only 0.75 inhabitants per square mile (0.29/km2), it is also the least-densely populated county in Colorado. The county seat and only incorporated municipality in the county is Lake City. The county is named for George A. Hinsdale, a prominent pioneer and former Lieut. Governor of Colorado."
+        },
+        {
+          "idx": 12,
+          "title": "Garfield Peak (Colorado)",
+          "paragraph_text": "Garfield Peak is a high mountain summit of the Collegiate Peaks in the Sawatch Range of the Rocky Mountains of North America. The thirteener is located south-southwest (bearing 197°) of Independence Pass, Colorado, United States, on the Continental Divide separating San Isabel National Forest and Chaffee County from White River National Forest and Pitkin County. Garfield Peak was named in honor of James A. Garfield, 20th President of the United States."
+        }
+      ],
+      "target": {
+        "id": "2hop__161955_609442",
+        "answer": "Sawatch Range",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": true
+          },
+          {
+            "idx": 12,
+            "is_supporting": true
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 161955,
+            "question": "Hinsdale county resides in which US state?",
+            "answer": "Colorado",
+            "paragraph_support_idx": 11
+          },
+          {
+            "id": 609442,
+            "question": "Garfield Peak (#1 ) >> part of",
+            "answer": "Sawatch Range",
+            "paragraph_support_idx": 12
+          }
+        ]
+      }
+    },
+    {
+      "index": 77,
+      "id": "2hop__809080_84477",
+      "key": "058b381b01f45068008b951f553adc25b099c55e42057e330467084e6598334d",
+      "question": "When did the operator of SS Cufic wipe out?",
+      "eligible": true,
+      "reason": "wipe out按defunct理解。",
+      "support_paragraphs": [
+        {
+          "idx": 4,
+          "title": "White Star Line",
+          "paragraph_text": "White Star Line Former type Partnership Industry Shipping, transportation Fate merged with Cunard Line Successor Cunard White Star Line Founded 1845 (1845) in Liverpool, England Defunct 1934 Area served Transatlantic Parent Ismay, Imrie and Co. Website www.cunard.co.uk"
+        },
+        {
+          "idx": 19,
+          "title": "SS Cufic (1888)",
+          "paragraph_text": "SS \"Cufic\" was a livestock carrier, built by Harland and Wolff for the White Star Line, displacing 4,639 tons and completed on 1 December 1888. Her sister ship was the . She ran the Liverpool to New York route. In 1896, \"Cufic\" was chartered to a Spanish shipping company and renamed \"Nuestra Señora de Guadalupe\". She played a role in the Cuban Revolution, transporting horses between Spain and Cuba."
+        }
+      ],
+      "target": {
+        "id": "2hop__809080_84477",
+        "answer": "1934",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": true
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": true
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 809080,
+            "question": "SS Cufic >> operator",
+            "answer": "White Star Line",
+            "paragraph_support_idx": 19
+          },
+          {
+            "id": 84477,
+            "question": "when did #1 go out of business",
+            "answer": "1934",
+            "paragraph_support_idx": 4
+          }
+        ]
+      }
+    },
+    {
+      "index": 70,
+      "id": "2hop__159395_60853",
+      "key": "05f5ec2dadd14ee8a21a104845d2bbcd25d235b63f971b38e7ac4ba22a59aa59",
+      "question": "When did Cameroon's main ally change to driving on the right?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 10,
+          "title": "Cameroon",
+          "paragraph_text": "Its foreign policy closely follows that of its main ally, France (one of its former colonial rulers). Cameroon relies heavily on France for its defence, although military spending is high in comparison to other sectors of government.President Biya has engaged in a decades-long clash with the government of Nigeria over possession of the oil-rich Bakassi peninsula. Cameroon and Nigeria share a 1,000-mile (1 600 km) border and have disputed the sovereignty of the Bakassi peninsula. In 1994 Cameroon petitioned the International Court of Justice to resolve the dispute. The two countries attempted to establish a cease-fire in 1996, however, fighting continued for years. In 2002, the ICJ ruled that the Anglo-German Agreement of 1913 gave sovereignty to Cameroon. The ruling called for a withdrawal by both countries and denied the request by Cameroon for compensation due to Nigeria's long-term occupation. By 2004, Nigeria had failed to meet the deadline to handover the peninsula. A UN-mediated summit in June 2006 facilitated an agreement for Nigeria to withdraw from the region and both leaders signed the Greentree Agreement. The withdrawal and handover of control was completed by August 2006."
+        },
+        {
+          "idx": 15,
+          "title": "Left- and right-hand traffic",
+          "paragraph_text": "In France, traditionally foot traffic had kept right, while carriage traffic kept left. Following the French Revolution, all traffic kept right. Following the Napoleonic Wars, the French imposed RHT on parts of Europe. During the colonial period, RHT was introduced by the French in New France, French West Africa, the Maghreb, French Indochina, the West Indies, French Guiana and the Réunion, among others."
+        }
+      ],
+      "target": {
+        "id": "2hop__159395_60853",
+        "answer": "Following the French Revolution",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": true
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": true
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 159395,
+            "question": "Who is Cameroon's main ally?",
+            "answer": "France",
+            "paragraph_support_idx": 10
+          },
+          {
+            "id": 60853,
+            "question": "when did #1 change to driving on the right",
+            "answer": "Following the French Revolution",
+            "paragraph_support_idx": 15
+          }
+        ]
+      }
+    },
+    {
+      "index": 76,
+      "id": "2hop__846069_58115",
+      "key": "05f966178cc2525f3c75f2ef1ce91a0b133cee82086e720b3f6d317b789d231f",
+      "question": "When did the performer of Felt Good on My Lips release his first album?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 5,
+          "title": "Felt Good on My Lips",
+          "paragraph_text": "\"Felt Good on My Lips\" is a song written by Brett Beavers, Jim Beavers, Brett Warren and Brad Warren, and was performed by American country music singer Tim McGraw. It was released in September 2010 as the first single from his compilation album \"Number One Hits\", and has since become McGraw's 23rd Number One hit on Billboard's Hot Country Songs chart. The song is also included on his 2012 release \"Emotional Traffic\"."
+        },
+        {
+          "idx": 13,
+          "title": "Tim McGraw",
+          "paragraph_text": "Tim McGraw (1993) Not a Moment Too Soon (1994) All I Want (1995) Everywhere (1997) A Place in the Sun (1999) Set This Circus Down (2001) Tim McGraw and the Dancehall Doctors (2002) Live Like You Were Dying (2004) Let It Go (2007) Southern Voice (2009) Emotional Traffic (2012) Two Lanes of Freedom (2013) Sundown Heaven Town (2014) Damn Country Music (2015) The Rest of Our Life (with Faith Hill) (2017)"
+        }
+      ],
+      "target": {
+        "id": "2hop__846069_58115",
+        "answer": "1993",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": true
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": true
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 846069,
+            "question": "Felt Good on My Lips >> performer",
+            "answer": "Tim McGraw",
+            "paragraph_support_idx": 5
+          },
+          {
+            "id": 58115,
+            "question": "when did #1 release his first album",
+            "answer": "1993",
+            "paragraph_support_idx": 13
+          }
+        ]
+      }
+    },
+    {
+      "index": 44,
+      "id": "2hop__528151_829081",
+      "key": "0b77fc7fe51b828d216336e9212ff5b554d6cee157276fbb0081ee85443eee99",
+      "question": "What is the city where The Black Lillies formed the capital of?",
+      "eligible": false,
+      "reason": "材料是政府合署办公楼，不明确支持城市为县首府；capital/seat桥接弱。",
+      "support_paragraphs": [
+        {
+          "idx": 5,
+          "title": "Knoxville City-County Building",
+          "paragraph_text": "The Knoxville City-County Building is a building at 400 Main Street in Knoxville, Tennessee that houses the offices of the city government of Knoxville and the county government of Knox County, Tennessee. It also houses the Knox County Jail. The building stands ten stories, and contains of office space. At the time it was built it was said to be the largest office building in Tennessee."
+        },
+        {
+          "idx": 12,
+          "title": "The Black Lillies",
+          "paragraph_text": "The Black Lillies are an Americana band from Knoxville, Tennessee that was founded in early 2009 by Cruz Contreras (formerly of Robinella and the CCstringband). Their present lineup includes Contreras (lead vocals, guitar, keys, mandolin), Sam Quinn (formerly of The Everybodyfields) on bass, Bowman Townsend on percussion, and Dustin Schaefer on electric guitar and vocals."
+        }
+      ],
+      "target": {
+        "id": "2hop__528151_829081",
+        "answer": "Knox County",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": true
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": true
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 528151,
+            "question": "The Black Lillies >> location of formation",
+            "answer": "Knoxville",
+            "paragraph_support_idx": 12
+          },
+          {
+            "id": 829081,
+            "question": "#1 >> capital of",
+            "answer": "Knox County",
+            "paragraph_support_idx": 5
+          }
+        ]
+      }
+    },
+    {
+      "index": 68,
+      "id": "2hop__157305_72062",
+      "key": "10066d26eb5674938e6f6d2a3ac8b2d6194f6464cc7e4f9abfcc95565a9a3130",
+      "question": "What specialized agency at John Hendra's employer serves as its public health division?",
+      "eligible": true,
+      "reason": "UN Women为UN实体，机构层级是材料内局部推断。",
+      "support_paragraphs": [
+        {
+          "idx": 11,
+          "title": "John Hendra",
+          "paragraph_text": "Prior to this position he served from 2011-2014 as UN Assistant Secretary-General and Deputy Executive Director, Policy and Programme, at the United Nations Entity for Gender Equality and the Empowerment of Women (UN Women). He was appointed by the United Nations Secretary-General Ban Ki-Moon on 11 March 2011. John has also been closely involved in the process of formulating the 2030 Agenda, including as a member of the Informal Senior Coordination Group (2012-2014) and as Co-Chair of the UN Development Group's MDG Task Force. He also recently served as Co-Chair of the UN Leadership Group."
+        },
+        {
+          "idx": 17,
+          "title": "List of specialized agencies of the United Nations",
+          "paragraph_text": "The World Health Organization (WHO) acts as a coordinating authority on international public health and deals with health and sanitation and diseases and sends medical teams to help combat epidemics. Established on 7 April 1948, the agency inherited the mandate and resources of its predecessor, the Health Organization, which had been an agency of the League of Nations. It was established in April 7, 1948 when 26 members of the United Nations ratified its Constitution. April 7 is celebrated as the World Health Day every year. The WHO is governed by 194 Member States through the World Health Assembly. Its headquarters are at Geneva in Switzerland."
+        }
+      ],
+      "target": {
+        "id": "2hop__157305_72062",
+        "answer": "The World Health Organization (WHO)",
+        "answer_aliases": [
+          "WHO",
+          "World Health Organization"
+        ],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": true
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": true
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 157305,
+            "question": "What is John Hendra's place of employment?",
+            "answer": "United Nations",
+            "paragraph_support_idx": 11
+          },
+          {
+            "id": 72062,
+            "question": "the specialized agency that serves as the public health division of #1 is",
+            "answer": "The World Health Organization (WHO)",
+            "paragraph_support_idx": 17
+          }
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "id": "2hop__726238_705760",
+      "key": "11a777295ee51151879cd788b651811229706a8c95b5f9c8fac337dca3476c90",
+      "question": "What county is bordered by another county, where Murphy Lake can be found?",
+      "eligible": true,
+      "reason": "边界由Colgate跨县线推得；非穷尽所有邻县。",
+      "support_paragraphs": [
+        {
+          "idx": 14,
+          "title": "Colgate, Wisconsin",
+          "paragraph_text": "Colgate is an unincorporated community in Washington County, Wisconsin, United States, straddling the county line with Waukesha County. Colgate is located partially in the village of Richfield, and the town of Lisbon. Its ZIP code is 53017."
+        },
+        {
+          "idx": 15,
+          "title": "Murphy Lake (Washington County, Wisconsin)",
+          "paragraph_text": "Murphy Lake is a lake in Washington County, Wisconsin, United States. Murphy Lake lies at an elevation of 974 feet (297 m)."
+        }
+      ],
+      "target": {
+        "id": "2hop__726238_705760",
+        "answer": "Waukesha County",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": true
+          },
+          {
+            "idx": 15,
+            "is_supporting": true
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 726238,
+            "question": "Murphy Lake >> located in the administrative territorial entity",
+            "answer": "Washington County",
+            "paragraph_support_idx": 15
+          },
+          {
+            "id": 705760,
+            "question": "#1 >> shares border with",
+            "answer": "Waukesha County",
+            "paragraph_support_idx": 14
+          }
+        ]
+      }
+    },
+    {
+      "index": 53,
+      "id": "3hop1__153084_701863_54641",
+      "key": "13b93f7dac8046e0b2cb4b9ec84d7e0730be9940fdf187db642a693d3ab5f6f1",
+      "question": "When was the original broadcaster of the series which 97 Seconds belongs and the hound released?",
+      "eligible": false,
+      "reason": "broadcaster与and the hound拼接题意不完整，依赖Fox标题词串桥接。",
+      "support_paragraphs": [
+        {
+          "idx": 9,
+          "title": "List of House episodes",
+          "paragraph_text": "\"House\", also known as \"House, M.D.\", is an American medical drama series which premiered on Fox on November 16, 2004. \"House\" was created by David Shore. The show follows Dr. Gregory House (Hugh Laurie), an irascible, maverick medical genius who heads a team of diagnosticians at the fictional Princeton-Plainsboro Teaching Hospital (PPTH) in New Jersey. In a typical episode, the team is presented with an unusual case; the storyline follows the diagnosis of the patient's illness, a process often complicated by the internal competition and personal foibles of the diagnostic team. The team leader, House, frequently clashes with his boss (Dr. Lisa Cuddy (Lisa Edelstein) in seasons 1 through 7, and Dr. Eric Foreman in season 8), and his only friend, Dr. James Wilson (Robert Sean Leonard)."
+        },
+        {
+          "idx": 15,
+          "title": "97 Seconds",
+          "paragraph_text": "\"97 Seconds\" is the third episode of the fourth season of \"House\" and the seventy-third episode overall. It aired on October 9, 2007."
+        },
+        {
+          "idx": 17,
+          "title": "The Fox and the Hound",
+          "paragraph_text": "The Fox and the Hound was released to theaters on July 10, 1981 to financial success. At the time of release it was the most expensive animated film produced to date, costing $12 million. It was re-released to theaters on March 25, 1988. A direct - to - video followup, The Fox and the Hound 2, was released to DVD on December 12, 2006."
+        }
+      ],
+      "target": {
+        "id": "3hop1__153084_701863_54641",
+        "answer": "July 10, 1981",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": true
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": true
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": true
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 153084,
+            "question": "To which series does 97 Seconds belong?",
+            "answer": "House",
+            "paragraph_support_idx": 15
+          },
+          {
+            "id": 701863,
+            "question": "#1 >> original broadcaster",
+            "answer": "Fox",
+            "paragraph_support_idx": 9
+          },
+          {
+            "id": 54641,
+            "question": "when was the #2 and the hound released",
+            "answer": "July 10, 1981",
+            "paragraph_support_idx": 17
+          }
+        ]
+      }
+    },
+    {
+      "index": 0,
+      "id": "2hop__123383_21417",
+      "key": "144ac971bc501ce2ff52e57d890d11f4053f8052017654a204fcc550df9876ed",
+      "question": "When was Wesley Alba Sturges's institutional employer created?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 15,
+          "title": "Yale University",
+          "paragraph_text": "Yale expanded gradually, establishing the Yale School of Medicine (1810), Yale Divinity School (1822), Yale Law School (1843), Yale Graduate School of Arts and Sciences (1847), the Sheffield Scientific School (1847), and the Yale School of Fine Arts (1869). In 1887, as the college continued to grow under the presidency of Timothy Dwight V, Yale College was renamed Yale University. The university would later add the Yale School of Music (1894), the Yale School of Forestry & Environmental Studies (founded by Gifford Pinchot in 1900), the Yale School of Public Health (1915), the Yale School of Nursing (1923), the Yale School of Drama (1955), the Yale Physician Associate Program (1973), and the Yale School of Management (1976). It would also reorganize its relationship with the Sheffield Scientific School."
+        },
+        {
+          "idx": 17,
+          "title": "Wesley Alba Sturges",
+          "paragraph_text": "Wesley Alba Sturges (1893-1962) was a professor of law at the Yale Law School from 1924 to 1961, and served as dean of the law school from 1945 to 1954. He received his LL.B. from Yale in 1923. He retired from Yale in 1961 to become dean of the University of Miami School of Law. He was a prominent figure in Yale's Legal Realism movement. In his article (with Samuel Clark), \"Legal Theory and Real Property Mortgages\", 37 Yale L. J. 691 (1928), he sought to make the Legal Realist point that doctrinal distinctions between \"lien theory\" and \"title theory\" did not have any actual effect on how courts ruled in litigation about mortgage disputes. His casebook, \"Cases and Materials on the Law of Credit Transactions\", emphasized the contradictions in judicial decision-making and sought to dispel the view that \"what judges said in one case with its setting can be used to [predict] what they will decide in another case\" with a different factual setting."
+        }
+      ],
+      "target": {
+        "id": "2hop__123383_21417",
+        "answer": "1843",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": true
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": true
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 123383,
+            "question": "Where did Wesley Alba Sturges study or work?",
+            "answer": "Yale Law School",
+            "paragraph_support_idx": 17
+          },
+          {
+            "id": 21417,
+            "question": "When was #1 created?",
+            "answer": "1843",
+            "paragraph_support_idx": 15
+          }
+        ]
+      }
+    },
+    {
+      "index": 26,
+      "id": "2hop__622767_161358",
+      "key": "192f92493937d854f51e33078cc207b38d3472ec1562cb5042ecbf876bb2f8c2",
+      "question": "Worldwide record sales total how many for the band from \"That One Night: Live in Buenos Aires\"?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 3,
+          "title": "Megadeth",
+          "paragraph_text": "Megadeth has sold over 38 million records worldwide, earned platinum certification in the United States for five of its fifteen studio albums, and received twelve Grammy nominations. Megadeth won its first Grammy Award in 2017 for the song \"Dystopia\" in the Best Metal Performance category. The band's mascot, Vic Rattlehead, regularly appears on album artwork and live shows. The group has drawn controversy for its music and lyrics, including album bans and canceled concerts; MTV refused to play two of the band's music videos that the network considered to condone suicide."
+        },
+        {
+          "idx": 6,
+          "title": "That One Night: Live in Buenos Aires",
+          "paragraph_text": "That One Night: Live in Buenos Aires is a live album from American heavy metal band Megadeth which was released on CD and DVD formats. It features a live concert recorded in Buenos Aires on October 9, 2005 at the Obras Sanitarias Stadium. The performance is segued by cuts of Dave and Glen performing a few acoustic songs for some fans on the lawn outside of the band's hotel. It was at this concert that Dave Mustaine announced that Megadeth would continue on past the 2005 tour."
+        }
+      ],
+      "target": {
+        "id": "2hop__622767_161358",
+        "answer": "38 million",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": true
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": true
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 622767,
+            "question": "That One Night: Live in Buenos Aires >> performer",
+            "answer": "Megadeth",
+            "paragraph_support_idx": 6
+          },
+          {
+            "id": 161358,
+            "question": "how many records has #1 sold worldwide?",
+            "answer": "38 million",
+            "paragraph_support_idx": 3
+          }
+        ]
+      }
+    },
+    {
+      "index": 67,
+      "id": "2hop__16759_57749",
+      "key": "1ae7167190053d7b08697e3bb663ae010f74b2e27c5fce4f7a337c97246daf93",
+      "question": "When was the driving test introduced in Orsini's home country?",
+      "eligible": false,
+      "reason": "Orsini意大利/英国home country指代不明，目标1934来自英国材料。",
+      "support_paragraphs": [
+        {
+          "idx": 8,
+          "title": "Queen Victoria",
+          "paragraph_text": "On 14 January 1858, an Italian refugee from Britain called Orsini attempted to assassinate Napoleon III with a bomb made in England. The ensuing diplomatic crisis destabilised the government, and Palmerston resigned. Derby was reinstated as prime minister. Victoria and Albert attended the opening of a new basin at the French military port of Cherbourg on 5 August 1858, in an attempt by Napoleon III to reassure Britain that his military preparations were directed elsewhere. On her return Victoria wrote to Derby reprimanding him for the poor state of the Royal Navy in comparison to the French one. Derby's ministry did not last long, and in June 1859 Victoria recalled Palmerston to office."
+        },
+        {
+          "idx": 10,
+          "title": "United Kingdom driving test",
+          "paragraph_text": "Legislation for compulsory testing was introduced for all new drivers with the Road Traffic Act 1934. The test was initially voluntary to avoid a rush of candidates until 1 June 1935 when all people who had started to drive on or after 1 April 1934 needed to have passed the test."
+        }
+      ],
+      "target": {
+        "id": "2hop__16759_57749",
+        "answer": "1934",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": true
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": true
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 16759,
+            "question": "Where was Orsini from?",
+            "answer": "Britain",
+            "paragraph_support_idx": 8
+          },
+          {
+            "id": 57749,
+            "question": "when was the driving test introduced in #1",
+            "answer": "1934",
+            "paragraph_support_idx": 10
+          }
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "id": "2hop__342640_126084",
+      "key": "22b5fcaee5c89f0c031d1e59342dfae4876d875e0f04a9ad989f08e5e06a4f6e",
+      "question": "Who was in charge of the state Gopinath Munde lives in?",
+      "eligible": false,
+      "reason": "谁in charge未定时间，材料只说上一任联盟首席部长，核心时间指代不足。",
+      "support_paragraphs": [
+        {
+          "idx": 2,
+          "title": "Gopinath Munde",
+          "paragraph_text": "Gopinath Pandurang Munde (12 December 1949 – 3 June 2014) was an Indian politician from Maharashtra. And most popular Leader in Maharashtra called as a 'Lokneta'. He was a senior leader of the Bharatiya Janata Party (BJP) and Union Minister for Rural Development and Panchayati Raj in Narendra Modi's Cabinet, Four Number in Seniority Ranking which, however, was short-lived due to his death in a road accident. He was a member of Maharashtra's Legislative Assembly (MLA) for five terms during 1980–1985 and 1990–2009. He was also the leader of opposition in the Assembly during 1992–1995."
+        },
+        {
+          "idx": 14,
+          "title": "Maharashtra",
+          "paragraph_text": "The politics of the state since its formation in 1960 have been dominated by the Indian National Congress party. Maharashtra became a bastion of the Congress party producing stalwarts such as Yashwantrao Chavan, Vasantdada Patil, Vasantrao Naik and Shankarrao Chavan. Sharad Pawar has been a towering personality in the state and National politics for over forty years. During his career, he has split the Congress twice with significant consequences for the state politics. The Congress party enjoyed a near unchallenged dominance of the political landscape until 1995 when the Shiv Sena and the Bharatiya Janata Party (BJP) secured an overwhelming majority in the state to form a coalition government. After his second parting from the Congress party in 1999, Sharad Pawar formed the NCP but formed a coalition with the Congress to keep out the BJP-Shivsena combine out of the government for fifteen years until September 2014. Prithviraj Chavan of the Congress party was the last Chief Minister of Maharashtra under the Congress / NCP alliance."
+        }
+      ],
+      "target": {
+        "id": "2hop__342640_126084",
+        "answer": "Prithviraj Chavan",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": true
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": true
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 342640,
+            "question": "Gopinath Munde >> residence",
+            "answer": "Maharashtra",
+            "paragraph_support_idx": 2
+          },
+          {
+            "id": 126084,
+            "question": "Who was in charge of #1 ?",
+            "answer": "Prithviraj Chavan",
+            "paragraph_support_idx": 14
+          }
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "id": "2hop__446970_49333",
+      "key": "25ee65052ba47c9bab916cf16adc0bcc87672f27c9485515a5049ebd6e4b96f7",
+      "question": "When was the first circulation of currency for the country where Balama is located?",
+      "eligible": true,
+      "reason": "按材料当前货币metical的引入理解；保留first currency轻度措辞边界。",
+      "support_paragraphs": [
+        {
+          "idx": 4,
+          "title": "Mozambican metical",
+          "paragraph_text": "The metical (MZM) replaced the escudo at par on 16 June 1980. It was divided into 100 centavos. The metical underwent severe inflation. After the revaluation of the Romanian leu, the metical briefly became the least valued currency unit, at a value of about 24,500 meticais per USD, until the Zimbabwean dollar took the title in late August 2005."
+        },
+        {
+          "idx": 6,
+          "title": "Balama",
+          "paragraph_text": "Balama is a town in Balama District of Cabo Delgado Province in northern Mozambique. It is the seat of the district."
+        }
+      ],
+      "target": {
+        "id": "2hop__446970_49333",
+        "answer": "16 June 1980",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": true
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": true
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 446970,
+            "question": "Balama >> country",
+            "answer": "Mozambique",
+            "paragraph_support_idx": 6
+          },
+          {
+            "id": 49333,
+            "question": "when did the currencies of #1 first come in circulation",
+            "answer": "16 June 1980",
+            "paragraph_support_idx": 4
+          }
+        ]
+      }
+    },
+    {
+      "index": 63,
+      "id": "2hop__417989_127008",
+      "key": "26db1a52b59457b9599b332ec0b96e0b1180885941182cd80a4407ac3c8ac2ae",
+      "question": "When was the band that performed Carnival established?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 13,
+          "title": "Duran Duran",
+          "paragraph_text": "Duran Duran () are an English new wave band formed in Birmingham in 1978. The band were one of the most successful acts of the 1980s, but by the end of the decade, membership and music style changes challenged the band before a resurgence in the early 1990s. The group were a leading band in the MTV-driven Second British Invasion of the US in the 1980s. They achieved 14 singles in the top 10 of the UK Singles Chart and 21 in the US \"Billboard\" Hot 100, and have sold over 100 million records worldwide."
+        },
+        {
+          "idx": 16,
+          "title": "Carnival (EP)",
+          "paragraph_text": "Carnival is a dance music EP by Duran Duran, originally released in various markets around the world in September 1982 by EMI."
+        }
+      ],
+      "target": {
+        "id": "2hop__417989_127008",
+        "answer": "1978",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": true
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": true
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 417989,
+            "question": "Carnival >> performer",
+            "answer": "Duran Duran",
+            "paragraph_support_idx": 16
+          },
+          {
+            "id": 127008,
+            "question": "When was #1 established?",
+            "answer": "1978",
+            "paragraph_support_idx": 13
+          }
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "id": "2hop__638478_377891",
+      "key": "2947847a639659e3298cc0f9c358bc681c7c7c56b200ed913c385b16b286ee18",
+      "question": "What agency consists of the Science Museum in Alberto Lista's birth place?",
+      "eligible": false,
+      "reason": "Alberto Lista支持段未给出生地，关联博物馆缺链。",
+      "support_paragraphs": [
+        {
+          "idx": 9,
+          "title": "Alberto Lista",
+          "paragraph_text": "He began teaching at the age of fifteen, and when little over twenty was made professor of elocution and poetry at the University of Seville. In 1813 he was exiled, on political grounds, but pardoned in 1817. He then returned to Spain and, after teaching for three years at Bilbao, started a critical review at Madrid. Shortly afterwards he founded the celebrated college of San Mateo in that city. The liberal character of the San Mateo educational system was not favored by the government, and in 1823 the college was closed."
+        },
+        {
+          "idx": 10,
+          "title": "La Casa de la Ciencia de Sevilla - Science Museum",
+          "paragraph_text": "Along with a museum, the building houses the Andalusian headquarters of the Spanish National Research Council (CSIC). CSIC is the largest public institution devoted to research in Spain, and the third largest in Europe. The building was opened to the public in 2008, with the goal of sharing knowledge acquired through scientific research. La Casa de la Ciencia aims to be a bridge between the scientific research community and the public, sharing contemporary scientific research and information on environmental issues."
+        }
+      ],
+      "target": {
+        "id": "2hop__638478_377891",
+        "answer": "Spanish National Research Council",
+        "answer_aliases": [
+          "CSIC"
+        ],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": true
+          },
+          {
+            "idx": 10,
+            "is_supporting": true
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 638478,
+            "question": "Alberto Lista >> place of birth",
+            "answer": "Seville",
+            "paragraph_support_idx": 9
+          },
+          {
+            "id": 377891,
+            "question": "Science Museum, #1 >> part of",
+            "answer": "Spanish National Research Council",
+            "paragraph_support_idx": 10
+          }
+        ]
+      }
+    },
+    {
+      "index": 35,
+      "id": "2hop__132590_663762",
+      "key": "29938d5c179bd5a3be2a75ee42521194db588dd7f1a566f2b175409cf1ceb910",
+      "question": "Who founded the company that made the Plymouth Prowler?",
+      "eligible": false,
+      "reason": "制造公司DaimlerChrysler与Chrysler创办者不是同一组织，缺少公司归属桥接。",
+      "support_paragraphs": [
+        {
+          "idx": 1,
+          "title": "Walter Chrysler",
+          "paragraph_text": "Walter Percy Chrysler (April 2, 1875 – August 18, 1940) was an American automotive industry executive and founder of Chrysler Corporation, now a part of Fiat Chrysler Automobiles."
+        },
+        {
+          "idx": 7,
+          "title": "Plymouth Prowler",
+          "paragraph_text": "The Plymouth Prowler, later the Chrysler Prowler, is a retro-styled production car manufactured and marketed from 1997 to 2002 by DaimlerChrysler, based on the 1993 concept car of the same name."
+        }
+      ],
+      "target": {
+        "id": "2hop__132590_663762",
+        "answer": "Walter Percy Chrysler",
+        "answer_aliases": [
+          "Walter Chrysler"
+        ],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": true
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": true
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 132590,
+            "question": "What company made Plymouth Prowler?",
+            "answer": "Chrysler",
+            "paragraph_support_idx": 7
+          },
+          {
+            "id": 663762,
+            "question": "#1 >> founded by",
+            "answer": "Walter Percy Chrysler",
+            "paragraph_support_idx": 1
+          }
+        ]
+      }
+    },
+    {
+      "index": 55,
+      "id": "4hop1__204168_9522_41885_9426",
+      "key": "2a0b8084a18ad75fb8d3ffe459a39922c6d32dfbdca21f2f962837fcf07aec5c",
+      "question": "How much glaciation has disappeared in the country where, along with Germany and Otto Furrer's birth country, Lake Constance can be found?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 6,
+          "title": "Otto Furrer",
+          "paragraph_text": "Furrer was born in Zermatt. He became a world champion in the combined event, received a silver medal in the slalom and a bronze medal in the downhill in Cortina d'Ampezzo in 1932. He was killed in an accident on the Matterhorn."
+        },
+        {
+          "idx": 13,
+          "title": "Alps",
+          "paragraph_text": "Some high mountain villages, such as Avoriaz (in France), Wengen, and Zermatt (in Switzerland) are accessible only by cable car or cog-rail trains, and are car free. Other villages in the Alps are considering becoming car free zones or limiting the number of cars for reasons of sustainability of the fragile Alpine terrain."
+        },
+        {
+          "idx": 14,
+          "title": "Alps",
+          "paragraph_text": "High levels of precipitation cause the glaciers to descend to permafrost levels in some areas whereas in other, more arid regions, glaciers remain above about the 3,500 m (11,483 ft) level. The 1,817 square kilometres (702 sq mi) of the Alps covered by glaciers in 1876 had shrunk to 1,342 km2 (518 sq mi) by 1973, resulting in decreased river run-off levels. Forty percent of the glaciation in Austria has disappeared since 1850, and 30% of that in Switzerland."
+        },
+        {
+          "idx": 15,
+          "title": "Rhine",
+          "paragraph_text": "Lake Constance consists of three bodies of water: the Obersee (\"upper lake\"), the Untersee (\"lower lake\"), and a connecting stretch of the Rhine, called the Seerhein (\"Lake Rhine\"). The lake is situated in Germany, Switzerland and Austria near the Alps. Specifically, its shorelines lie in the German states of Bavaria and Baden-Württemberg, the Austrian state of Vorarlberg, and the Swiss cantons of Thurgau and St. Gallen. The Rhine flows into it from the south following the Swiss-Austrian border. It is located at approximately 47°39′N 9°19′E﻿ / ﻿47.650°N 9.317°E﻿ / 47.650; 9.317."
+        }
+      ],
+      "target": {
+        "id": "4hop1__204168_9522_41885_9426",
+        "answer": "Forty percent",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": true
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": true
+          },
+          {
+            "idx": 14,
+            "is_supporting": true
+          },
+          {
+            "idx": 15,
+            "is_supporting": true
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 204168,
+            "question": "Otto Furrer >> place of birth",
+            "answer": "Zermatt",
+            "paragraph_support_idx": 6
+          },
+          {
+            "id": 9522,
+            "question": "Where are the villages of Wengen and #1 located?",
+            "answer": "Switzerland",
+            "paragraph_support_idx": 13
+          },
+          {
+            "id": 41885,
+            "question": "Besides Germany and #2 , where else is Lake Constance?",
+            "answer": "Austria",
+            "paragraph_support_idx": 15
+          },
+          {
+            "id": 9426,
+            "question": "How much of the glaciation in #3 disappeared?",
+            "answer": "Forty percent",
+            "paragraph_support_idx": 14
+          }
+        ]
+      }
+    },
+    {
+      "index": 30,
+      "id": "2hop__4502_754711",
+      "key": "2e2ecbc5bb596bcd9f01559370502c01cb302c693cd231faa6e66f762a7e58ee",
+      "question": "Who played the fictional Lost character named after the individual who was an advocate of separation of powers?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 0,
+          "title": "John Locke (Lost)",
+          "paragraph_text": "John Locke is a fictional character played by Terry O'Quinn on the ABC television series \"Lost\". He is named after the English philosopher of the same name. In 2007, O'Quinn won the Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series for his portrayal of Locke."
+        },
+        {
+          "idx": 15,
+          "title": "Separation of powers under the United States Constitution",
+          "paragraph_text": "During the Age of Enlightenment, philosophers such as John Locke advocated the principle in their writings, whereas others, such as Thomas Hobbes, strongly opposed it. Montesquieu was one of the foremost supporters of separating the legislature, the executive, and the judiciary. His writings considerably influenced the opinions of the framers of the United States Constitution."
+        }
+      ],
+      "target": {
+        "id": "2hop__4502_754711",
+        "answer": "Terry O'Quinn",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": true
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": true
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 4502,
+            "question": "Who was an advocate of separation of powers?",
+            "answer": "John Locke",
+            "paragraph_support_idx": 15
+          },
+          {
+            "id": 754711,
+            "question": "#1 >> performer",
+            "answer": "Terry O'Quinn",
+            "paragraph_support_idx": 0
+          }
+        ]
+      }
+    },
+    {
+      "index": 19,
+      "id": "2hop__543705_18221",
+      "key": "31ed257c1a5d8d98b91883f008115b45e02f7f18e11fefe8c662f44c969ba9b3",
+      "question": "When was the spring training home of the team Lance Blankenship is a member of built?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 0,
+          "title": "Lance Blankenship",
+          "paragraph_text": "Blankenship played his entire career with the Oakland Athletics (1988–1993) after the A's drafted him in the 10th round of the 1986 MLB amateur draft. He made his Major League Baseball debut on September 4, 1988, and played his final game on August 15, 1993. His career concluded with a regular season .222 batting average, nine home runs, 92 runs batted in, and 54 stolen bases."
+        },
+        {
+          "idx": 5,
+          "title": "Chicago Cubs",
+          "paragraph_text": "The former location in Mesa is actually the second HoHoKam Park; the first was built in 1976 as the spring-training home of the Oakland Athletics who left the park in 1979. Apart from HoHoKam Park and Sloan Park the Cubs also have another Mesa training facility called Fitch Park, this complex provides 25,000 square feet (2,300 m2) of team facilities, including major league clubhouse, four practice fields, one practice infield, enclosed batting tunnels, batting cages, a maintenance facility, and administrative offices for the Cubs."
+        }
+      ],
+      "target": {
+        "id": "2hop__543705_18221",
+        "answer": "1976",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": true
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": true
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 543705,
+            "question": "Lance Blankenship >> member of sports team",
+            "answer": "Oakland Athletics",
+            "paragraph_support_idx": 0
+          },
+          {
+            "id": 18221,
+            "question": "When was the spring training home of the #1 built?",
+            "answer": "1976",
+            "paragraph_support_idx": 5
+          }
+        ]
+      }
+    },
+    {
+      "index": 50,
+      "id": "2hop__109366_440021",
+      "key": "369e2334d139fd7643322273ab4d5a510fbf48296891e71ac7e640ce4093876d",
+      "question": "Who is the father of Mock Turtle's creator?",
+      "eligible": false,
+      "reason": "父子Dodgson同名且材料父子关系桥接不足。",
+      "support_paragraphs": [
+        {
+          "idx": 2,
+          "title": "Charles Dodgson (priest)",
+          "paragraph_text": "Charles Dodgson was born in 1800 in Hamilton, Lanarkshire, the son of Charles Dodgson, an army captain, and grandson of Charles Dodgson, Bishop of Elphin. He was educated at Westminster School and Christ Church, Oxford, where he graduated in 1821 with a double first in mathematics and classics. He was elected a Student of Christ Church and taught mathematics there until 1827."
+        },
+        {
+          "idx": 16,
+          "title": "Mock Turtle",
+          "paragraph_text": "The Mock Turtle is a fictional character devised by Lewis Carroll from his popular book \"Alice's Adventures in Wonderland\". Its name is taken from a dish that was popular in the Victorian period, mock turtle soup."
+        }
+      ],
+      "target": {
+        "id": "2hop__109366_440021",
+        "answer": "Charles Dodgson",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": true
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": true
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 109366,
+            "question": "Who is the creator of Mock Turtle?",
+            "answer": "Lewis Carroll",
+            "paragraph_support_idx": 16
+          },
+          {
+            "id": 440021,
+            "question": "#1 >> father",
+            "answer": "Charles Dodgson",
+            "paragraph_support_idx": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 73,
+      "id": "2hop__143481_696803",
+      "key": "3af1400b228f5311a802b2fb0d995d92f9a308c6577f245afa3922540bc6afa6",
+      "question": "What was the record label of the artist who recorded Roses in the Snow?",
+      "eligible": true,
+      "reason": "按给定材料Harris早期唱片标签回答；非全职业生涯唯一唱片公司。",
+      "support_paragraphs": [
+        {
+          "idx": 1,
+          "title": "Roses in the Snow",
+          "paragraph_text": "Roses in the Snow is the seventh album by country music artist Emmylou Harris, released in 1980. While Harris' previous release, 1979's \"Blue Kentucky Girl\", featured traditional, straight-ahead country (as opposed to the country-rock of her prior efforts), \"Roses in the Snow\" found Harris performing Bluegrass-inspired music, with material by Flatt and Scruggs, Paul Simon, The Carter Family, and Johnny Cash. Cash, Dolly Parton, Linda Ronstadt, The Whites, Ricky Skaggs, Willie Nelson and Tony Rice made guest appearances. \"Wayfaring Stranger\" was released as the first single in 1980 and went to #7 on the Billboard Country charts. The second single, a remake of a Simon & Garfunkel song, \"The Boxer\" reached #13. Backing musicians included Albert Lee and Jerry Douglas."
+        },
+        {
+          "idx": 14,
+          "title": "Gliding Bird",
+          "paragraph_text": "Gliding Bird is the debut studio album by American country music singer-songwriter Emmylou Harris, released in 1969 on Jubilee Records (JGS-8031.) Her first name was shown as two words (\"Emmy Lou\") on the jacket."
+        }
+      ],
+      "target": {
+        "id": "2hop__143481_696803",
+        "answer": "Jubilee",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": true
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": true
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 143481,
+            "question": "Who recorded Roses in the Snow?",
+            "answer": "Emmylou Harris",
+            "paragraph_support_idx": 1
+          },
+          {
+            "id": 696803,
+            "question": "#1 >> record label",
+            "answer": "Jubilee",
+            "paragraph_support_idx": 14
+          }
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "id": "2hop__709908_500443",
+      "key": "3b291790b3a5c1f07fd22ad9b04776d131e85178a88be45d32ddd7616a2d135c",
+      "question": "Who is the sister of the Powderfinger composer?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 5,
+          "title": "Powderfinger (song)",
+          "paragraph_text": "\"Powderfinger\" is a song written by Neil Young, first released on his 1979 album \"Rust Never Sleeps\". It subsequently appeared on several of Young's live recordings. A 2014 \"Rolling Stone\" special issue on Young ranked it as Young's best song ever."
+        },
+        {
+          "idx": 7,
+          "title": "Scott Young (writer)",
+          "paragraph_text": "Scott Alexander Young (April 14, 1918 – June 12, 2005) was a Canadian journalist, sportswriter, novelist and the father of musicians Neil Young and Astrid Young. Over his career, Young wrote 45 books, including novels and non-fiction for adult and youth audiences."
+        }
+      ],
+      "target": {
+        "id": "2hop__709908_500443",
+        "answer": "Astrid Young",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": true
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": true
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 709908,
+            "question": "Powderfinger >> composer",
+            "answer": "Neil Young",
+            "paragraph_support_idx": 5
+          },
+          {
+            "id": 500443,
+            "question": "#1 >> sibling",
+            "answer": "Astrid Young",
+            "paragraph_support_idx": 7
+          }
+        ]
+      }
+    },
+    {
+      "index": 54,
+      "id": "2hop__273952_686699",
+      "key": "404671013b2b9f0a4ed8429d111f4239fa3d82b1cf41d4c8520c9a9e25697575",
+      "question": "What district holds the village of Qaleh Now-e Khaleseh, in the city where Mohammad Barzegar was born?",
+      "eligible": false,
+      "reason": "Tehran市与Tehran省/Ray县范围不同，题目城市归属链不足。",
+      "support_paragraphs": [
+        {
+          "idx": 12,
+          "title": "Mohammad Barzegar",
+          "paragraph_text": "Mohammad Barzegar (; born July 24, 1976 in Tehran) is an Iranian footballer. He won the 2001–02 Iran Pro League with Persepolis."
+        },
+        {
+          "idx": 14,
+          "title": "Qaleh Now-e Khaleseh, Tehran",
+          "paragraph_text": "Qaleh Now-e Khaleseh (, also Romanized as Qal‘eh Now-e Khāleṣeh; also known as Qal‘eh Now, Qal‘eh Now-e Ghār, and Qal‘eh-ye Nowghār) is a village in Qaleh Now Rural District, Qaleh Now District, Ray County, Tehran Province, Iran. At the 2006 census, its population was 4,718, in 1,195 families. The village is the seat of Qaleh Now District, established on 16 September 2012 and Qaleh Now Rural District."
+        }
+      ],
+      "target": {
+        "id": "2hop__273952_686699",
+        "answer": "Qaleh Now Rural District",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": true
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": true
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 273952,
+            "question": "Mohammad Barzegar >> place of birth",
+            "answer": "Tehran",
+            "paragraph_support_idx": 12
+          },
+          {
+            "id": 686699,
+            "question": "Qaleh Now-e Khaleseh, #1 >> located in the administrative territorial entity",
+            "answer": "Qaleh Now Rural District",
+            "paragraph_support_idx": 14
+          }
+        ]
+      }
+    },
+    {
+      "index": 61,
+      "id": "2hop__355966_565667",
+      "key": "453ab794e077d8c1c3e3785a9889d8148125147b4bd0d0680df887febf153af2",
+      "question": "What shares a border with Carolus Maneken's birthplace?",
+      "eligible": false,
+      "reason": "出生地either Ghent or Kassel；湖横跨县不能唯一支持出生地边界关系。",
+      "support_paragraphs": [
+        {
+          "idx": 6,
+          "title": "Carolus Maneken",
+          "paragraph_text": "Carolus Maneken was born circa 1419 in either Ghent or Kassel. He studied in Leuven, and was from 1437 until his death in 1493 the first director of the \"Collège du Lys\" or Paedagogium Lilii, one of the four colleges of the Arts Faculty."
+        },
+        {
+          "idx": 13,
+          "title": "Stellbergsee",
+          "paragraph_text": "Stellbergsee is a lake in Söhre, Landkreis Kassel and Schwalm-Eder-Kreis, Hesse, Germany. At an elevation of 356 m, its surface area is 0.014 km²."
+        }
+      ],
+      "target": {
+        "id": "2hop__355966_565667",
+        "answer": "Schwalm-Eder-Kreis",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": true
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": true
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 355966,
+            "question": "Carolus Maneken >> place of birth",
+            "answer": "Kassel",
+            "paragraph_support_idx": 6
+          },
+          {
+            "id": 565667,
+            "question": "#1 >> shares border with",
+            "answer": "Schwalm-Eder-Kreis",
+            "paragraph_support_idx": 13
+          }
+        ]
+      }
+    },
+    {
+      "index": 23,
+      "id": "2hop__838348_32631",
+      "key": "4650c086a0afbf220cdd592cc7a7fa72c915f3c964498d4a237b5dbd64dc1a04",
+      "question": "What did Goring believe the operator of German submarine U-608 would gain with further support?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 0,
+          "title": "German submarine U-608",
+          "paragraph_text": "German submarine \"U-608\" was a Type VIIC U-boat of Nazi Germany's \"Kriegsmarine\" during World War II. During the Battle of the Atlantic, she was commanded by Rolf Struckmeier as a unit of Wolfpack Vorwärts (2–15 September 1942)."
+        },
+        {
+          "idx": 18,
+          "title": "The Blitz",
+          "paragraph_text": "Directive 23 was the only concession made by Göring to the Kriegsmarine over the strategic bombing strategy of the Luftwaffe against Britain. Thereafter, he would refuse to make available any air units to destroy British dockyards, ports, port facilities, or shipping in dock or at sea, lest Kriegsmarine gain control of more Luftwaffe units. Raeder's successor—Karl Dönitz—would—on the intervention of Hitler—gain control of one unit (KG 40), but Göring would soon regain it. Göring's lack of cooperation was detrimental to the one air strategy with potentially decisive strategic effect on Britain. Instead, he wasted aircraft of Fliegerführer Atlantik (Flying Command Atlantic) on bombing mainland Britain instead of attacks against convoys. For Göring, his prestige had been damaged by the defeat in the Battle of Britain, and he wanted to regain it by subduing Britain by air power alone. He was always reluctant to cooperate with Raeder."
+        }
+      ],
+      "target": {
+        "id": "2hop__838348_32631",
+        "answer": "control of more Luftwaffe units",
+        "answer_aliases": [
+          "Luftwaffe"
+        ],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": true
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": true
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 838348,
+            "question": "German submarine U-608 >> operator",
+            "answer": "Kriegsmarine",
+            "paragraph_support_idx": 0
+          },
+          {
+            "id": 32631,
+            "question": "What did Goring believe the #1 would gain with further support?",
+            "answer": "control of more Luftwaffe units",
+            "paragraph_support_idx": 18
+          }
+        ]
+      }
+    },
+    {
+      "index": 78,
+      "id": "3hop1__234534_50519_159769",
+      "key": "4aae3d6675bcab2b0507be75d5115018d9fa051316fa34e1b3b2f3e087e2af39",
+      "question": "The country where Flora Steiger-Crawford was born has how many states?",
+      "eligible": true,
+      "reason": "按给定历史材料29州评分，不引入当前州数。",
+      "support_paragraphs": [
+        {
+          "idx": 8,
+          "title": "Government of India",
+          "paragraph_text": "The Government of India (ISO: Bhārat Sarkār), often abbreviated as GoI, is the union government created by the constitution of India as the legislative, executive and judicial authority of the union of 29 states and seven union territories of a constitutionally democratic republic. It is located in New Delhi, the capital of India."
+        },
+        {
+          "idx": 12,
+          "title": "Mumbai",
+          "paragraph_text": "Mumbai Bombay Megacity Mumbai Top to bottom: Cuffe Parade skyline, the Gateway of India (L), Taj Mahal Palace Hotel (R), Chhatrapati Shivaji Terminus and the Bandra -- Worli Sea Link. Nickname (s): Bambai, Mumbai city, City of Seven Islands, City of Dreams, Gateway to India, Hollywood of India Mumbai Location of Mumbai in Maharashtra, India Mumbai Mumbai (India) Show map of Maharashtra Show map of India Show all Coordinates: 18 ° 58 ′ 30 ''N 72 ° 49 ′ 33'' E ﻿ / ﻿ 18.97500 ° N 72.82583 ° E ﻿ / 18.97500; 72.82583 Coordinates: 18 ° 58 ′ 30 ''N 72 ° 49 ′ 33'' E ﻿ / ﻿ 18.97500 ° N 72.82583 ° E ﻿ / 18.97500; 72.82583 Country India State Maharashtra District Mumbai City Mumbai Suburban First settled 1507 Named for Mumbadevi Government Type Mayor -- Council Body MCGM Mayor Vishwanath Mahadeshwar (Shiv Sena) Municipal commissioner Ajoy Mehta Area Megacity 603 km (233 sq mi) Metro 4,355 km (1,681.5 sq mi) Elevation 14 m (46 ft) Population (2011) Megacity 12,442,373 Rank 1st Density 21,000 / km (53,000 / sq mi) Metro 18,414,288 20,748,395 (Extended UA) Metro Rank 1st Demonym (s) Mumbaikar Time zone IST (UTC + 5: 30) PIN code (s) 400 001 to 400 107 Area code (s) + 91 - 22 Vehicle registration MH - 01 (South), MH - 02 (West), MH - 03 (Central), MH - 47 (North) GDP / PPP $368 billion (Metro area, 2015) Official language Marathi Website www.mcgm.gov.in"
+        },
+        {
+          "idx": 17,
+          "title": "Flora Steiger-Crawford",
+          "paragraph_text": "Flora Steiger-Crawford (1 September 1899, Bombay – 31 July 1991, Zurich) was a Swiss architect and sculptor. In 1923, she became the first woman to graduate in architecture from the Federal Institute of Technology in Zurich where she studied under Karl Coelestin Moser. After working with Pfleghard & Haefeli in Zurich, she married Rudolf Steiger in 1924 and established her own firm with him in Riehen, moving to Zurich the following year. Their first project, the Sandreuter House in Riehen (1924), is considered to be the first Modernist house in Switzerland. Steiger-Crawford went on to design individual houses while developing modern furniture, including a stackable metal chair for the Zett House in Zurich (1932). In 1930, she turned to sculpture, terminating her architectural activities in 1938. From 1938, she was a member of the Swiss Association of Female Artists and Sculptors."
+        }
+      ],
+      "target": {
+        "id": "3hop1__234534_50519_159769",
+        "answer": "29",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": true
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": true
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": true
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 234534,
+            "question": "Flora Steiger-Crawford >> place of birth",
+            "answer": "Bombay",
+            "paragraph_support_idx": 17
+          },
+          {
+            "id": 50519,
+            "question": "in which country is the city of #1",
+            "answer": "India",
+            "paragraph_support_idx": 12
+          },
+          {
+            "id": 159769,
+            "question": "How many states does #2 have?",
+            "answer": "29",
+            "paragraph_support_idx": 8
+          }
+        ]
+      }
+    },
+    {
+      "index": 66,
+      "id": "2hop__103913_87175",
+      "key": "4ef6e9acdff86d79f671cbac22c4d73918609c231fd36d649fb7eea898e15236",
+      "question": "When was the country that Berngal belongs to first invaded by the British?",
+      "eligible": false,
+      "reason": "first invaded by British与Norman首次登陆、王权介入不等价，历史事件界定歧义。",
+      "support_paragraphs": [
+        {
+          "idx": 8,
+          "title": "History of Ireland",
+          "paragraph_text": "By the 12th century, Ireland was divided politically into a shifting hierarchy of petty kingdoms and over-kingdoms. Power was exercised by the heads of a few regional dynasties vying against each other for supremacy over the whole island. One of these men, King Diarmait Mac Murchada of Leinster was forcibly exiled by the new High King, Ruaidri mac Tairrdelbach Ua Conchobair of the Western kingdom of Connacht. Fleeing to Aquitaine, Diarmait obtained permission from Henry II to recruit Norman knights to regain his kingdom. The first Norman knight landed in Ireland in 1167, followed by the main forces of Normans, Welsh and Flemings. Several counties were restored to the control of Diarmait, who named his son - in - law, the Norman Richard de Clare, known as Strongbow, heir to his kingdom. This troubled King Henry, who feared the establishment of a rival Norman state in Ireland. Accordingly, he resolved to establish his authority. In 1177 Prince John Lackland was made Lord of Ireland by his father Henry II of England at the Council of Oxford."
+        },
+        {
+          "idx": 14,
+          "title": "Berngal",
+          "paragraph_text": "Berngal, son of Géde Ollgothach, was, according to medieval Irish legend and historical tradition, a High King of Ireland. He took power after killing his predecessor and cousin and his father's killer, Fíachu Findoilches. He made so much war that there was a shortage of milk and corn - according to one version, only a sack and a half. He ruled for either twenty-one or twelve years, until he was killed by his cousin Ailill, son of Slánoll. The \"Lebor Gabála Érenn\" synchronises his reign with that of Deioces of the Medes (694–665 BC). The chronology of Geoffrey Keating's \"Foras Feasa ar Éirinn\" dates his reign to 833–831 BC, that of the \"Annals of the Four Masters\" to 1209–1197 BC."
+        }
+      ],
+      "target": {
+        "id": "2hop__103913_87175",
+        "answer": "1167",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": true
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": true
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 103913,
+            "question": "Which country does Berngal belong to?",
+            "answer": "Ireland",
+            "paragraph_support_idx": 14
+          },
+          {
+            "id": 87175,
+            "question": "when was #1 first invaded by the british",
+            "answer": "1167",
+            "paragraph_support_idx": 8
+          }
+        ]
+      }
+    },
+    {
+      "index": 58,
+      "id": "2hop__722744_263710",
+      "key": "5164e14e6456f1f102e01b7c44f1f5f78a9d23501f99107192a8435035199aa0",
+      "question": "Who is the spouse of the performer of Hello Broadway?",
+      "eligible": false,
+      "reason": "Marvin与Anna共同写歌不证明配偶关系。",
+      "support_paragraphs": [
+        {
+          "idx": 6,
+          "title": "Baby, I'm for Real",
+          "paragraph_text": "\"Baby, I'm for Real\" is a soul ballad written by Marvin Gaye and Anna Gordy Gaye, produced by Marvin and recorded and released by American Motown vocal group The Originals for the Soul label issued in 1969."
+        },
+        {
+          "idx": 18,
+          "title": "Hello Broadway",
+          "paragraph_text": "Hello Broadway is the fourth studio album by soul singer Marvin Gaye, released in 1964. It is an album of standards and Broadway material."
+        }
+      ],
+      "target": {
+        "id": "2hop__722744_263710",
+        "answer": "Anna Gordy Gaye",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": true
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": true
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 722744,
+            "question": "Hello Broadway >> performer",
+            "answer": "Marvin Gaye",
+            "paragraph_support_idx": 18
+          },
+          {
+            "id": 263710,
+            "question": "#1 >> spouse",
+            "answer": "Anna Gordy Gaye",
+            "paragraph_support_idx": 6
+          }
+        ]
+      }
+    },
+    {
+      "index": 48,
+      "id": "4hop1__155787_497059_46089_86234",
+      "key": "52750314f7fabecc49d548dc0a9bc63acd955954b5442a9f232e253c72574eef",
+      "question": "When did the French come to the area, with the middle leg of the journey from England to the continent with the river that the Tekezé turns into?",
+      "eligible": false,
+      "reason": "Nile/continent/中间航程/加勒比的核心桥接在题面和资料中不完整。",
+      "support_paragraphs": [
+        {
+          "idx": 0,
+          "title": "French West Indies",
+          "paragraph_text": "Pierre Belain d'Esnambuc was a French trader and adventurer in the Caribbean, who established the first permanent French colony, Saint - Pierre, on the island of Martinique in 1635. Belain sailed to the Caribbean in 1625, hoping to establish a French settlement on the island of St. Christopher (St. Kitts). In 1626 he returned to France, where he won the support of Cardinal Richelieu to establish French colonies in the region. Richelieu became a shareholder in the Compagnie de Saint - Christophe, created to accomplish this with d'Esnambuc at its head. The company was not particularly successful and Richelieu had it reorganized as the Compagnie des Îles de l'Amérique. In 1635 d'Esnambuc sailed to Martinique with one hundred French settlers to clear land for sugarcane plantations."
+        },
+        {
+          "idx": 2,
+          "title": "Atbarah River",
+          "paragraph_text": "The Atbarah River (; transliterated: Nahr 'Atbarah) in northeast Africa rises in northwest Ethiopia, approximately 50 km north of Lake Tana and 30 km west of Gondar. It flows about 805 km (500 mi) to the Nile in north-central Sudan, joining it at the city of Atbarah (). The river's tributary, the Tekezé (Setit) River, is perhaps the true upper course of the Atbarah, as the Tekezé follows the longer course prior to the confluence of the two rivers (at 14° 10' N, 36° E) in northeastern Sudan. The Atbarah is the last tributary of the Nile before it reaches the Mediterranean."
+        },
+        {
+          "idx": 4,
+          "title": "Tekezé River",
+          "paragraph_text": "The Tekezé River rises in the central Ethiopian Highlands near Mount Qachen within Lasta, from where it flows west, north, then west again, forming the westernmost border of Ethiopia and Eritrea from the confluence of the Tomsa with the Tekezé at to the tripoint between the two countries and Sudan at . After entering northeastern Sudan at the tripoint it joins the Atbarah River, which is a tributary of the Nile. The Tekezé is perhaps the true upper course of the Atbarah, as the former follows the longer course prior to the confluence of the two rivers."
+        },
+        {
+          "idx": 5,
+          "title": "Triangular trade",
+          "paragraph_text": "Historically the particular routes were also shaped by the powerful influence of winds and currents during the age of sail. For example, from the main trading nations of Western Europe it was much easier to sail westwards after first going south of 30 N latitude and reaching the so - called ``trade winds ''; thus arriving in the Caribbean rather than going straight west to the North American mainland. Returning from North America, it is easiest to follow the Gulf Stream in a northeasterly direction using the westerlies. A similar triangle to this, called the volta do mar was already being used by the Portuguese, before Christopher Columbus' voyage, to sail to the Canary Islands and the Azores. Columbus simply expanded the triangle outwards, and his route became the main way for Europeans to reach, and return from, the Americas."
+        }
+      ],
+      "target": {
+        "id": "4hop1__155787_497059_46089_86234",
+        "answer": "1625",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": true
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": true
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": true
+          },
+          {
+            "idx": 5,
+            "is_supporting": true
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 155787,
+            "question": "What river does Tekezé River turn into?",
+            "answer": "Atbarah River",
+            "paragraph_support_idx": 4
+          },
+          {
+            "id": 497059,
+            "question": "#1 >> continent",
+            "answer": "Africa",
+            "paragraph_support_idx": 2
+          },
+          {
+            "id": 46089,
+            "question": "the middle leg of the journey from england to #2 to the americas",
+            "answer": "the Caribbean",
+            "paragraph_support_idx": 5
+          },
+          {
+            "id": 86234,
+            "question": "when did the french come to the #3",
+            "answer": "1625",
+            "paragraph_support_idx": 0
+          }
+        ]
+      }
+    },
+    {
+      "index": 34,
+      "id": "2hop__697106_51671",
+      "key": "632fcafa497fb712018ac24726638ba95d5e925a52b04bd763b9ae7a2bce37dd",
+      "question": "Who was the first Muslim elected president of Jai Kishan's political party?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 2,
+          "title": "Rahimtulla M. Sayani",
+          "paragraph_text": "Rahimtullah M Sayani was the ``Second Muslim ''to become the`` President of Indian National Congress ''. (First was Badruddin Tayyab Ji)"
+        },
+        {
+          "idx": 12,
+          "title": "Jai Kishan",
+          "paragraph_text": "Jai Kishan is an Indian politician belonging to Indian National Congress. He is an ex M.L.A from Sultan Pur Majra in Delhi, Sandeep Kumar of Aam Aadmi Party defeated him in 2015 election"
+        }
+      ],
+      "target": {
+        "id": "2hop__697106_51671",
+        "answer": "Badruddin Tayyab Ji",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": true
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": true
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 697106,
+            "question": "Jai Kishan >> member of political party",
+            "answer": "Indian National Congress",
+            "paragraph_support_idx": 12
+          },
+          {
+            "id": 51671,
+            "question": "who was the first muslim to be elected as president of #1",
+            "answer": "Badruddin Tayyab Ji",
+            "paragraph_support_idx": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "id": "2hop__782778_777968",
+      "key": "64f8b0cf3523c6e32da305db22dd6c2c85912a76b8729cdfe8838f79ba63e010",
+      "question": "What is the capitol of the province where Artsvanik is located?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 5,
+          "title": "Artsvanik",
+          "paragraph_text": "Artsvanik (, formerly, Yeritsvanik, Yeritsvank’, Yertsu Vank’, Karmir Vank’, Yerets’, Yerets and Yeretsvanik) is a village and rural community (municipality) in the Syunik Province of Armenia. The National Statistical Service of the Republic of Armenia (ARMSTAT) reported its population as 578 in 2010, down from 652 at the 2001 census."
+        },
+        {
+          "idx": 17,
+          "title": "Kapan",
+          "paragraph_text": "Kapan () is a town at the southeast of Armenia, serving as the administrative centre of the urban community of Kapan as well as the provincial capital of Syunik Province. It is located in the valley of the Voghji River, on the northern slopes of Mount Khustup. According to the 2011 census, the population of Kapan is 43,190, slightly declined from 45,711 in the 2001 census. Kapan is the most populous town in the Syunik Province and the entire region of southern Armenia. However, the current population of the town is around 34,600 as per the 2016 official estimate."
+        }
+      ],
+      "target": {
+        "id": "2hop__782778_777968",
+        "answer": "Kapan",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": true
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": true
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 782778,
+            "question": "Artsvanik >> located in the administrative territorial entity",
+            "answer": "Syunik Province",
+            "paragraph_support_idx": 5
+          },
+          {
+            "id": 777968,
+            "question": "#1 >> capital",
+            "answer": "Kapan",
+            "paragraph_support_idx": 17
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "id": "2hop__136868_80243",
+      "key": "66e3a6d829d020563567412044bbbdd915cec6447b5300f14b27011d192deb68",
+      "question": "What is the currency in the city in China that The Last Conflict is based in?",
+      "eligible": false,
+      "reason": "Hong Kong制作电影不自动证明故事based in香港。",
+      "support_paragraphs": [
+        {
+          "idx": 4,
+          "title": "Hong Kong dollar",
+          "paragraph_text": "The Hong Kong dollar (Chinese: 港幣; Cantonese Yale: Góng bàih; sign: HK $; code: HKD) is the official currency of Hong Kong. It is subdivided into 100 cents. The Hong Kong Monetary Authority is the governmental currency board and also the de facto central bank for Hong Kong and the Hong Kong dollar."
+        },
+        {
+          "idx": 12,
+          "title": "The Last Conflict",
+          "paragraph_text": "The Last Conflict is a 1988 Hong Kong action crime thriller television film produced by TVB directed by Raymond Lee and starring Donnie Yen, Adia Chan, Francis Ng, Stephen Chow, Lau Kong and Andy Tai."
+        }
+      ],
+      "target": {
+        "id": "2hop__136868_80243",
+        "answer": "Hong Kong dollar",
+        "answer_aliases": [
+          "HK$",
+          "$",
+          "HKD"
+        ],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": true
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": true
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 136868,
+            "question": "Which place is The Last Conflict in?",
+            "answer": "Hong Kong",
+            "paragraph_support_idx": 12
+          },
+          {
+            "id": 80243,
+            "question": "what is the currency in #1 china",
+            "answer": "Hong Kong dollar",
+            "paragraph_support_idx": 4
+          }
+        ]
+      }
+    },
+    {
+      "index": 62,
+      "id": "2hop__115615_120682",
+      "key": "6705be9e7032a235bdb6cf682db32f7699a593011795a577b1a63f8b417aa890",
+      "question": "Which year did the agency that designed USRA 0-8-0 end?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 13,
+          "title": "USRA 0-8-0",
+          "paragraph_text": "The USRA 0-8-0 was a USRA standard class of steam locomotive designed under the control of the United States Railroad Administration, the nationalized railroad system in the United States during World War I. This was the standard heavy switcher of the USRA types, and was of 0-8-0 wheel arrangement in the Whyte notation, or \"D\" in UIC classification."
+        },
+        {
+          "idx": 19,
+          "title": "United States Railroad Administration",
+          "paragraph_text": "The United States Railroad Administration (USRA) was the name of the nationalized railroad system of the United States between December 28, 1917, and March 1st, 1920. It was possibly the largest American experiment with nationalization, and was undertaken against a background of war emergency."
+        }
+      ],
+      "target": {
+        "id": "2hop__115615_120682",
+        "answer": "1920",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": true
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": true
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 115615,
+            "question": "Who desigened USRA 0-8-0?",
+            "answer": "United States Railroad Administration",
+            "paragraph_support_idx": 13
+          },
+          {
+            "id": 120682,
+            "question": "Which year did #1 end?",
+            "answer": "1920",
+            "paragraph_support_idx": 19
+          }
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "id": "2hop__722744_134827",
+      "key": "6915232e4c4db0e0be4215b3140747ca7a64e53f77bc62682174a281c8059d54",
+      "question": "Who is the mother of the artist who released Hello Broadway?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 7,
+          "title": "Marvin Gaye",
+          "paragraph_text": "Gaye was born Marvin Pentz Gay Jr. on April 2, 1939, at Freedman's Hospital in Washington, D.C., to church minister Marvin Gay Sr., and domestic worker Alberta Gay (née Cooper). His first home was in a public housing project, the Fairfax Apartments (now demolished) at 1617 1st Street SW in the Southwest Waterfront neighborhood. Although one of the city's oldest neighborhoods, with many elegant Federal-style homes, Southwest was primarily a vast slum. Most buildings were small, in extensive disrepair, and lacked both electricity and running water. The alleys were full of one- and two-story shacks, and nearly every dwelling was overcrowded. Gaye and his friends nicknamed the area \"Simple City\", owing to its being \"half-city, half country\"."
+        },
+        {
+          "idx": 16,
+          "title": "Hello Broadway",
+          "paragraph_text": "Hello Broadway is the fourth studio album by soul singer Marvin Gaye, released in 1964. It is an album of standards and Broadway material."
+        }
+      ],
+      "target": {
+        "id": "2hop__722744_134827",
+        "answer": "Alberta Gay",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": true
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": true
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 722744,
+            "question": "Hello Broadway >> performer",
+            "answer": "Marvin Gaye",
+            "paragraph_support_idx": 16
+          },
+          {
+            "id": 134827,
+            "question": "Who is the mother of #1 ?",
+            "answer": "Alberta Gay",
+            "paragraph_support_idx": 7
+          }
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "id": "2hop__455004_523858",
+      "key": "69725c8fc220bea2a6a74b8c804d957d45ce4703d73be05ab70c3c2c177e3f14",
+      "question": "Who founded the producer of To the Shores of Iwo Jima?",
+      "eligible": false,
+      "reason": "首任军官/Commandant不等同创办者；海军与海军陆战队双制作方未消歧。",
+      "support_paragraphs": [
+        {
+          "idx": 9,
+          "title": "To the Shores of Iwo Jima",
+          "paragraph_text": "To the Shores of Iwo Jima is a 1945 Kodachrome color short war film produced by the United States Navy and United States Marine Corps. It documents the Battle of Iwo Jima, and was the first time that American audiences saw in color the footage of the famous flag raising on Iwo Jima."
+        },
+        {
+          "idx": 10,
+          "title": "Samuel Nicholas",
+          "paragraph_text": "Samuel Nicholas (1744 – 27 August 1790) was the first officer commissioned in the United States Continental Marines (predecessor to the United States Marine Corps) and by tradition is considered to be the first Commandant of the Marine Corps."
+        }
+      ],
+      "target": {
+        "id": "2hop__455004_523858",
+        "answer": "Samuel Nicholas",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": true
+          },
+          {
+            "idx": 10,
+            "is_supporting": true
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 455004,
+            "question": "To the Shores of Iwo Jima >> producer",
+            "answer": "United States Marine Corps",
+            "paragraph_support_idx": 9
+          },
+          {
+            "id": 523858,
+            "question": "#1 >> founded by",
+            "answer": "Samuel Nicholas",
+            "paragraph_support_idx": 10
+          }
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "id": "2hop__178056_377891",
+      "key": "6ccddd1d8daf4c408e30a94fc3e7c23dfee65e9bcb1edce43058c6b6d2855b44",
+      "question": "What is the Science Museum, in the city where Amalia Molina was born, a part of?",
+      "eligible": false,
+      "reason": "同建筑有CSIC总部不等同博物馆所属，且已有缩写表述边界。",
+      "support_paragraphs": [
+        {
+          "idx": 5,
+          "title": "Amalia Molina",
+          "paragraph_text": "Amalia Molina (Seville, 1881 - Barcelona, July 8, 1956) was a popular Spanish tonadillera and dancer. Raised in Triana, she moved at a young age to Madrid, where she debuted at the age of 17. Her career took her to Latin America and even Broadway. In Paris she premiered in the opera, \"Goyescas\". She starred in the film, \"Malvaloca\" (1926). She was married from 1904 to Trelles del Busto."
+        },
+        {
+          "idx": 19,
+          "title": "La Casa de la Ciencia de Sevilla - Science Museum",
+          "paragraph_text": "Along with a museum, the building houses the Andalusian headquarters of the Spanish National Research Council (CSIC). CSIC is the largest public institution devoted to research in Spain, and the third largest in Europe. The building was opened to the public in 2008, with the goal of sharing knowledge acquired through scientific research. La Casa de la Ciencia aims to be a bridge between the scientific research community and the public, sharing contemporary scientific research and information on environmental issues."
+        }
+      ],
+      "target": {
+        "id": "2hop__178056_377891",
+        "answer": "Spanish National Research Council",
+        "answer_aliases": [
+          "CSIC"
+        ],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": true
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": true
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 178056,
+            "question": "Amalia Molina >> place of birth",
+            "answer": "Seville",
+            "paragraph_support_idx": 5
+          },
+          {
+            "id": 377891,
+            "question": "Science Museum, #1 >> part of",
+            "answer": "Spanish National Research Council",
+            "paragraph_support_idx": 19
+          }
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "id": "2hop__262172_14904",
+      "key": "6df86ce39b8b2c85eb1c50ad36479db3d0236feb105ebb1efc2d8c35a8c77a6f",
+      "question": "Who was the first president of the publisher of Dreaming?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 18,
+          "title": "Adolescence",
+          "paragraph_text": "The formal study of adolescent psychology began with the publication of G. Stanley Hall's \"Adolescence in 1904.\" Hall, who was the first president of the American Psychological Association, viewed adolescence primarily as a time of internal turmoil and upheaval (sturm und drang). This understanding of youth was based on two then new ways of understanding human behavior: Darwin's evolutionary theory and Freud's psychodynamic theory. He believed that adolescence was a representation of our human ancestors' phylogenetic shift from being primitive to being civilized. Hall's assertions stood relatively uncontested until the 1950s when psychologists such as Erik Erikson and Anna Freud started to formulate their theories about adolescence. Freud believed that the psychological disturbances associated with youth were biologically based and culturally universal while Erikson focused on the dichotomy between identity formation and role fulfillment. Even with their different theories, these three psychologists agreed that adolescence was inherently a time of disturbance and psychological confusion. The less turbulent aspects of adolescence, such as peer relations and cultural influence, were left largely ignored until the 1980s. From the '50s until the '80s, the focus of the field was mainly on describing patterns of behavior as opposed to explaining them."
+        },
+        {
+          "idx": 19,
+          "title": "Dreaming (journal)",
+          "paragraph_text": "Dreaming is a peer-reviewed academic journal published by the American Psychological Association on behalf of the International Association for the Study of Dreams. The journal covers research on dreaming, as well as on dreaming from the viewpoint of any of the arts and humanities. The current editor-in-chief is Deirdre Barrett (Harvard Medical School)."
+        }
+      ],
+      "target": {
+        "id": "2hop__262172_14904",
+        "answer": "G. Stanley Hall",
+        "answer_aliases": [
+          "Stanley Hall"
+        ],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": true
+          },
+          {
+            "idx": 19,
+            "is_supporting": true
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 262172,
+            "question": "Dreaming >> publisher",
+            "answer": "American Psychological Association",
+            "paragraph_support_idx": 19
+          },
+          {
+            "id": 14904,
+            "question": "Who was the first president of #1 ?",
+            "answer": "G. Stanley Hall",
+            "paragraph_support_idx": 18
+          }
+        ]
+      }
+    },
+    {
+      "index": 52,
+      "id": "2hop__576033_289149",
+      "key": "6e24cd368786a14b78c6d5d89dcfa99b080b7e9447fd8f3e9a6f7a5d419ab4be",
+      "question": "What county is Six Flags Magic Mountain located in?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 12,
+          "title": "Six Flags Magic Mountain",
+          "paragraph_text": "Six Flags Magic Mountain is a theme park located in the Santa Clarita, California, neighborhood of Valencia, northwest of downtown Los Angeles. It opened on May 30, 1971, as Magic Mountain, a development of the Newhall Land and Farming Company. In 1979, Six Flags purchased the park and added the name \"Six Flags\" to the park's title."
+        },
+        {
+          "idx": 15,
+          "title": "Santa Clarita, California",
+          "paragraph_text": "Santa Clarita, officially the City of Santa Clarita, is the third largest city in Los Angeles County, California, and the 23rd largest in the state of California. It is a suburb of Los Angeles. The city has annexed a number of unincorporated areas, contributing to the large population increase. It is located about northwest of downtown Los Angeles, and occupies most of the Santa Clarita Valley. It is a notable example of a U.S. edge city or boomburb. Santa Clarita was ranked by \"Money\" magazine in 2006 as 18th of the top 100 places to live."
+        }
+      ],
+      "target": {
+        "id": "2hop__576033_289149",
+        "answer": "Los Angeles County",
+        "answer_aliases": [
+          "Los Angeles County, California"
+        ],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": true
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": true
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 576033,
+            "question": "Six Flags Magic Mountain >> location",
+            "answer": "Santa Clarita",
+            "paragraph_support_idx": 12
+          },
+          {
+            "id": 289149,
+            "question": "#1 >> located in the administrative territorial entity",
+            "answer": "Los Angeles County",
+            "paragraph_support_idx": 15
+          }
+        ]
+      }
+    },
+    {
+      "index": 59,
+      "id": "2hop__487291_78529",
+      "key": "7fa25fb25b93b8e7dc9d7192db77a43f1847dfa92cdf9c0809a156b7ae02d39e",
+      "question": "What was the tallest mountain before the place of death for Tsewang Paljor was discovered?",
+      "eligible": false,
+      "reason": "发现最高峰和发现尸体时间存在核心歧义。",
+      "support_paragraphs": [
+        {
+          "idx": 3,
+          "title": "List of past presumed highest mountains",
+          "paragraph_text": "Chimborazo, 6,267 metres (20,561 ft). Presumed highest from sixteenth century until the beginning of the 19th century. Not in the top 100 highest mountains when measured from sea level, however due to the earth's equatorial bulge this is the farthest point from the Earth's center. Nanda Devi, 7,816 metres (25,643 ft). Presumed highest in the world before Kangchenjunga was sighted in an era when Nepal was still closed to the outside world. Now known to be the 23rd highest mountain in the world. Dhaulagiri, 8,167 metres (26,795 ft). Presumed highest from 1808 until 1847. Now known to be the 7th highest mountain in the world. Kangchenjunga, 8,586 metres (28,169 ft). Presumed highest from 1847 until 1852. Now known to be the 3rd highest mountain in the world. Mount Everest, 8,848 metres (29,029 ft). Established as highest in 1852 and officially confirmed in 1856. K2, 8,611 metres (28,251 ft). Discovered in 1856 before Mt. Everest was officially confirmed, K2's elevation became something of an enigma until it was officially resolved at a later date. News media reported in 1986 that satellite measurements by the University of Washington during an expedition to K2 by George Wallenstein had given a height between 29,064 feet (8,859 m) and 29,228 feet (8,909 m). This erroneous figure was quickly retracted, and K2's status as second highest was reaffirmed."
+        },
+        {
+          "idx": 19,
+          "title": "Green Boots",
+          "paragraph_text": "Green Boots is the name given to the unidentified corpse of a climber that became a landmark on the main Northeast ridge route of Mount Everest. Though his identity has not been officially confirmed, he is believed to be Tsewang Paljor, an Indian climber who died on Mount Everest in 1996. The term \"Green Boots\" originated from the green Koflach mountaineering boots that are on the feet of the corpse. All expeditions from the north side encountered the body curled in the limestone alcove cave at . In 2006, a different climber, David Sharp, died during a solo climb in what is known as \"Green Boots' Cave\"."
+        }
+      ],
+      "target": {
+        "id": "2hop__487291_78529",
+        "answer": "Kangchenjunga",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": true
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": false
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": true
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 487291,
+            "question": "Tsewang Paljor >> place of death",
+            "answer": "Mount Everest",
+            "paragraph_support_idx": 19
+          },
+          {
+            "id": 78529,
+            "question": "before #1 was discovered what was the tallest mountain",
+            "answer": "Kangchenjunga",
+            "paragraph_support_idx": 3
+          }
+        ]
+      }
+    },
+    {
+      "index": 43,
+      "id": "4hop3__31642_754527_397221_20507",
+      "key": "80dd9a3a2ad9022ba306dbfb3ece0f2c6ebdf5b4bcc5728e41bc23cabd4b87b0",
+      "question": "When was the country where Meteti is located colonized by the country where a terrorist bombing Gaddafi's Libya was supposedly involved in occurred?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 0,
+          "title": "Muammar Gaddafi",
+          "paragraph_text": "In 1977, Gaddafi dissolved the Republic and created a new socialist state, the Jamahiriya (\"state of the masses\"). Officially adopting a symbolic role in governance, he retained power as military commander-in-chief and head of the Revolutionary Committees responsible for policing and suppressing opponents. Overseeing unsuccessful border conflicts with Egypt and Chad, Gaddafi's support for foreign militants and alleged responsibility for the Lockerbie bombing led to Libya's label of \"international pariah\". A particularly hostile relationship developed with the United States and United Kingdom, resulting in the 1986 U.S. bombing of Libya and United Nations-imposed economic sanctions. Rejecting his earlier ideological commitments, from 1999 Gaddafi encouraged economic privatization and sought rapprochement with Western nations, also embracing Pan-Africanism and helping to establish the African Union. Amid the Arab Spring, in 2011 an anti-Gaddafist uprising led by the National Transitional Council (NTC) broke out, resulting in the Libyan Civil War. NATO intervened militarily on the side of the NTC, bringing about the government's downfall. Retreating to Sirte, Gaddafi was captured and killed by NTC militants."
+        },
+        {
+          "idx": 6,
+          "title": "All Saints Church, Lockerbie",
+          "paragraph_text": "All Saints Church is in Ashgrove Terrace, Lockerbie, Dumfries and Galloway, Scotland. It is a Category B listed building and an active Scottish Episcopal Church in the Diocese of Glasgow and Galloway."
+        },
+        {
+          "idx": 12,
+          "title": "British Empire",
+          "paragraph_text": "In 1695, the Scottish Parliament granted a charter to the Company of Scotland, which established a settlement in 1698 on the isthmus of Panama. Besieged by neighbouring Spanish colonists of New Granada, and afflicted by malaria, the colony was abandoned two years later. The Darien scheme was a financial disaster for Scotland—a quarter of Scottish capital was lost in the enterprise—and ended Scottish hopes of establishing its own overseas empire. The episode also had major political consequences, persuading the governments of both England and Scotland of the merits of a union of countries, rather than just crowns. This occurred in 1707 with the Treaty of Union, establishing the Kingdom of Great Britain."
+        },
+        {
+          "idx": 16,
+          "title": "Metetí",
+          "paragraph_text": "Metetí is a town and corregimiento in Pinogana District, Darién Province, Panama with a population of 7,976 as of 2010. It was created by Law 58 of July 29, 1998, owing to the Declaration of Unconstitutionality of Law 1 of 1982. Its population as of 2000 was 6,244. It is the last major town on the Inter-American Highway before the highway ends at Yaviza. Most of the town's residents are originally from Chiriquí Province. The town has a bank with an ATM, a few restaurants and hotels, a police station, and a gas station."
+        }
+      ],
+      "target": {
+        "id": "4hop3__31642_754527_397221_20507",
+        "answer": "1698",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": true
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": true
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": true
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": true
+          },
+          {
+            "idx": 17,
+            "is_supporting": false
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 31642,
+            "question": "What terrorist bombing was Gaddafi's Libya supposedly involved in?",
+            "answer": "Lockerbie",
+            "paragraph_support_idx": 0
+          },
+          {
+            "id": 754527,
+            "question": "All Saints Church, #1 >> located in the administrative territorial entity",
+            "answer": "Scotland",
+            "paragraph_support_idx": 6
+          },
+          {
+            "id": 397221,
+            "question": "Metetí >> country",
+            "answer": "Panama",
+            "paragraph_support_idx": 16
+          },
+          {
+            "id": 20507,
+            "question": "When was #3 colonized by #2 ?",
+            "answer": "1698",
+            "paragraph_support_idx": 12
+          }
+        ]
+      }
+    },
+    {
+      "index": 38,
+      "id": "2hop__481253_468473",
+      "key": "85539dfdc59b2124364ecfc443325d31f0be6eb56335824844e6e8ce439afa93",
+      "question": "What is the administrative territorial entity of the birthplace of Ike Hampton?",
+      "eligible": true,
+      "reason": "题目目标与材料支持链可判定。",
+      "support_paragraphs": [
+        {
+          "idx": 12,
+          "title": "Old Quaker Cemetery",
+          "paragraph_text": "Old Quaker Cemetery , founded in 1759, is a cemetery located in Camden, South Carolina, in Kershaw County. It dates back to the earliest days of Camden, which was first settled in 1730, and is the oldest inland city in South Carolina. The cemetery is notable in that it maintains the gravesites of numerous famous people, to include three Civil War Confederate Army Generals, two Medal of Honor recipients, and one South Carolina Governor."
+        },
+        {
+          "idx": 17,
+          "title": "Ike Hampton",
+          "paragraph_text": "Isaac Bernard Hampton (born August 22, 1951 in Camden, South Carolina) is a former Major League Baseball catcher. He was signed by the New York Mets as an amateur free agent on August 22, 1970 and played for the Mets (1974) and the California Angels (1975–1979)."
+        }
+      ],
+      "target": {
+        "id": "2hop__481253_468473",
+        "answer": "Kershaw County",
+        "answer_aliases": [],
+        "answerable": true,
+        "paragraphs": [
+          {
+            "idx": 0,
+            "is_supporting": false
+          },
+          {
+            "idx": 1,
+            "is_supporting": false
+          },
+          {
+            "idx": 2,
+            "is_supporting": false
+          },
+          {
+            "idx": 3,
+            "is_supporting": false
+          },
+          {
+            "idx": 4,
+            "is_supporting": false
+          },
+          {
+            "idx": 5,
+            "is_supporting": false
+          },
+          {
+            "idx": 6,
+            "is_supporting": false
+          },
+          {
+            "idx": 7,
+            "is_supporting": false
+          },
+          {
+            "idx": 8,
+            "is_supporting": false
+          },
+          {
+            "idx": 9,
+            "is_supporting": false
+          },
+          {
+            "idx": 10,
+            "is_supporting": false
+          },
+          {
+            "idx": 11,
+            "is_supporting": false
+          },
+          {
+            "idx": 12,
+            "is_supporting": true
+          },
+          {
+            "idx": 13,
+            "is_supporting": false
+          },
+          {
+            "idx": 14,
+            "is_supporting": false
+          },
+          {
+            "idx": 15,
+            "is_supporting": false
+          },
+          {
+            "idx": 16,
+            "is_supporting": false
+          },
+          {
+            "idx": 17,
+            "is_supporting": true
+          },
+          {
+            "idx": 18,
+            "is_supporting": false
+          },
+          {
+            "idx": 19,
+            "is_supporting": false
+          }
+        ],
+        "question_decomposition": [
+          {
+            "id": 481253,
+            "question": "Ike Hampton >> place of birth",
+            "answer": "Camden",
+            "paragraph_support_idx": 17
+          },
+          {
+            "id": 468473,
+            "question": "#1 >> located in the administrative territorial entity",
+            "answer": "Kershaw County",
+            "paragraph_support_idx": 12
+          }
+        ]
+      }
+    }
+  ],
+  "mechanism": {
+    "0": "普通成员先形成正确机构年份，专家初答错误；检验有效纠正保留。",
+    "21": "同父关系可推出姐妹，公开拒绝推断；目标关系绑定。",
+    "26": "乐队总销量被误读为专辑销量，且有团队损失候选。",
+    "31": "村庄所属国家被误读成村庄是国家；同时旧讨论团队改善，防只挑损害。",
+    "34": "第一/第二位主席，普通成员能纠正专家错误工作。",
+    "38": "私人工作正确而末答错；检验阶段问题是否误当讨论瓶颈。",
+    "52": "市与县，局部消息对照已改变E工作但未跑下游。",
+    "63": "Carnival专辑与嘉年华活动误读；旧团队仍对，检验工作改善是否必要。"
+  }
+}

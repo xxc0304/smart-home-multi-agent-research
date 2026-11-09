@@ -1,0 +1,42 @@
+{
+  "science": "PASS",
+  "engineering": "PASS",
+  "requests": 24,
+  "max_input_tokens": 3134,
+  "C_H_bodies_read": false,
+  "offline_audit": {
+    "traces": 32,
+    "actual_records": 1584,
+    "replay_seed_and_declared_adapter_checks": "PASS",
+    "complete_n": 28,
+    "ordinary_all3_raw_equal": 23,
+    "pairs": {
+      "M2_M3": {
+        "n": 28,
+        "raw_equal": 23,
+        "normalized_equal": 23,
+        "both_wrong": 25,
+        "both_correct": 3,
+        "correctness_phi": 1.0
+      },
+      "M2_M4": {
+        "n": 28,
+        "raw_equal": 25,
+        "normalized_equal": 25,
+        "both_wrong": 25,
+        "both_correct": 3,
+        "correctness_phi": 1.0
+      },
+      "M3_M4": {
+        "n": 28,
+        "raw_equal": 25,
+        "normalized_equal": 25,
+        "both_wrong": 25,
+        "both_correct": 3,
+        "correctness_phi": 1.0
+      }
+    },
+    "seed_note": "arm matched by design; different ordinary initial seeds, identical initial payloads",
+    "past_rng_not_logged": true
+  }
+}

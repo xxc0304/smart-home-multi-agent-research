@@ -1,0 +1,413 @@
+{
+  "summaries": {
+    "D80": {
+      "n": 75,
+      "groups": 62,
+      "pairs": {
+        "B-A": {
+          "expertHarm": {
+            "events": 4,
+            "opportunities": 44,
+            "rate": 0.09090909090909091,
+            "descriptive_wilson95_iid_reference_only": [
+              0.03592219322731624,
+              0.21159239166598612
+            ]
+          },
+          "expertGain": {
+            "events": 8,
+            "opportunities": 31,
+            "rate": 0.25806451612903225,
+            "descriptive_wilson95_iid_reference_only": [
+              0.13701705906393744,
+              0.43246135809433794
+            ]
+          },
+          "gainWithPrivateTerminalSwitch": 4,
+          "expertDelta": 0.05333333333333334,
+          "expertDeltaGroupBootstrap95": [
+            -0.0379746835443038,
+            0.14666666666666667
+          ],
+          "teamDelta": 0.03666666666666667,
+          "teamDeltaGroupBootstrap95": [
+            -0.03353658536585366,
+            0.10855263157894737
+          ],
+          "harmKeys": [
+            "old:11",
+            "old:17",
+            "old:48",
+            "old:52"
+          ],
+          "gainKeys": [
+            "old:12",
+            "old:27",
+            "old:34",
+            "old:37",
+            "old:38",
+            "old:47",
+            "old:69",
+            "old:71"
+          ]
+        },
+        "D-C": {
+          "expertHarm": {
+            "events": 5,
+            "opportunities": 45,
+            "rate": 0.1111111111111111,
+            "descriptive_wilson95_iid_reference_only": [
+              0.04840471794567186,
+              0.2349909699576858
+            ]
+          },
+          "expertGain": {
+            "events": 5,
+            "opportunities": 30,
+            "rate": 0.16666666666666666,
+            "descriptive_wilson95_iid_reference_only": [
+              0.0733654237184855,
+              0.3356435050641603
+            ]
+          },
+          "gainWithPrivateTerminalSwitch": 4,
+          "expertDelta": 0,
+          "expertDeltaGroupBootstrap95": [
+            -0.08108108108108109,
+            0.08108108108108109
+          ],
+          "teamDelta": 0.056666666666666664,
+          "teamDeltaGroupBootstrap95": [
+            -0.0189873417721519,
+            0.136986301369863
+          ],
+          "harmKeys": [
+            "old:11",
+            "old:17",
+            "old:48",
+            "old:52",
+            "old:66"
+          ],
+          "gainKeys": [
+            "old:22",
+            "old:27",
+            "old:34",
+            "old:37",
+            "old:38"
+          ]
+        }
+      },
+      "terminal": {
+        "privatePathRate": {
+          "events": 16,
+          "opportunities": 150,
+          "rate": 0.10666666666666667,
+          "descriptive_wilson95_iid_reference_only": [
+            0.06673036965207342,
+            0.16624622258414684
+          ]
+        },
+        "privateGivenCommittedCandidate": {
+          "events": 16,
+          "opportunities": 111,
+          "rate": 0.14414414414414414,
+          "descriptive_wilson95_iid_reference_only": [
+            0.0907151993508928,
+            0.22137992020566577
+          ]
+        },
+        "privateTasks": {
+          "events": 9,
+          "opportunities": 75,
+          "rate": 0.12,
+          "descriptive_wilson95_iid_reference_only": [
+            0.06443371823944515,
+            0.2125964020474873
+          ]
+        },
+        "privateEventDependencyGroups": 8,
+        "privateTaskGroupBootstrap95": [
+          0.04411764705882353,
+          0.2
+        ],
+        "privatePathGroupBootstrap95": [
+          0.041666666666666664,
+          0.1794871794871795
+        ],
+        "publicStrictEvents": 0,
+        "publicPaths": 150,
+        "publicCommittedCandidatePaths": 87,
+        "scope": "No substantive different-target public-last-work->expert-final switches found in this coarse target review. Zero not population absence; partial/underspecification/semantic equivalents excluded."
+      },
+      "readoutPaths": 15,
+      "strata": {
+        "E_initial_only_correct": {
+          "n": 40,
+          "groups": 33,
+          "Aexpert": 33,
+          "Bexpert": 35,
+          "BteamExpected": 28.25,
+          "keys": [
+            "old:2",
+            "old:3",
+            "old:5",
+            "old:6",
+            "old:11",
+            "old:12",
+            "old:13",
+            "old:14",
+            "old:15",
+            "old:16",
+            "old:18",
+            "old:19",
+            "old:20",
+            "old:21",
+            "old:25",
+            "old:26",
+            "old:27",
+            "old:29",
+            "old:31",
+            "old:34",
+            "old:35",
+            "old:37",
+            "old:38",
+            "old:39",
+            "old:40",
+            "old:42",
+            "old:48",
+            "old:50",
+            "old:52",
+            "old:58",
+            "old:59",
+            "old:63",
+            "old:66",
+            "old:68",
+            "old:72",
+            "old:74",
+            "old:75",
+            "old:76",
+            "old:77",
+            "old:79"
+          ]
+        },
+        "E_initial_wrong_any_base_correct": {
+          "n": 3,
+          "groups": 3,
+          "Aexpert": 2,
+          "Bexpert": 3,
+          "BteamExpected": 3,
+          "keys": [
+            "old:57",
+            "old:67",
+            "old:71"
+          ]
+        }
+      }
+    },
+    "fresh56": {
+      "n": 56,
+      "groups": 46,
+      "pairs": {
+        "B-A": {
+          "expertHarm": {
+            "events": 4,
+            "opportunities": 35,
+            "rate": 0.11428571428571428,
+            "descriptive_wilson95_iid_reference_only": [
+              0.04535179333097357,
+              0.2595146864621381
+            ]
+          },
+          "expertGain": {
+            "events": 9,
+            "opportunities": 21,
+            "rate": 0.42857142857142855,
+            "descriptive_wilson95_iid_reference_only": [
+              0.2446996892537596,
+              0.6345344563069328
+            ]
+          },
+          "gainWithPrivateTerminalSwitch": 4,
+          "expertDelta": 0.08928571428571429,
+          "expertDeltaGroupBootstrap95": [
+            -0.038461538461538464,
+            0.22641509433962265
+          ],
+          "teamDelta": 0.04017857142857143,
+          "teamDeltaGroupBootstrap95": [
+            -0.031818181818181815,
+            0.12053571428571429
+          ],
+          "harmKeys": [
+            "new:1",
+            "new:37",
+            "new:43",
+            "new:44"
+          ],
+          "gainKeys": [
+            "new:0",
+            "new:2",
+            "new:11",
+            "new:17",
+            "new:27",
+            "new:31",
+            "new:35",
+            "new:39",
+            "new:46"
+          ]
+        },
+        "D-C": {
+          "expertHarm": {
+            "events": 6,
+            "opportunities": 33,
+            "rate": 0.18181818181818182,
+            "descriptive_wilson95_iid_reference_only": [
+              0.08610768208940667,
+              0.3438823163466992
+            ]
+          },
+          "expertGain": {
+            "events": 13,
+            "opportunities": 23,
+            "rate": 0.5652173913043478,
+            "descriptive_wilson95_iid_reference_only": [
+              0.3681137508501646,
+              0.743653646743258
+            ]
+          },
+          "gainWithPrivateTerminalSwitch": 7,
+          "expertDelta": 0.125,
+          "expertDeltaGroupBootstrap95": [
+            -0.0392156862745098,
+            0.288135593220339
+          ],
+          "teamDelta": 0.008928571428571428,
+          "teamDeltaGroupBootstrap95": [
+            -0.06896551724137931,
+            0.07758620689655173
+          ],
+          "harmKeys": [
+            "new:1",
+            "new:3",
+            "new:37",
+            "new:38",
+            "new:44",
+            "new:51"
+          ],
+          "gainKeys": [
+            "new:2",
+            "new:8",
+            "new:11",
+            "new:17",
+            "new:19",
+            "new:25",
+            "new:27",
+            "new:28",
+            "new:34",
+            "new:35",
+            "new:39",
+            "new:45",
+            "new:46"
+          ]
+        }
+      },
+      "terminal": {
+        "privatePathRate": {
+          "events": 12,
+          "opportunities": 112,
+          "rate": 0.10714285714285714,
+          "descriptive_wilson95_iid_reference_only": [
+            0.06236012372515781,
+            0.17798093468458379
+          ]
+        },
+        "privateGivenCommittedCandidate": {
+          "events": 12,
+          "opportunities": 84,
+          "rate": 0.14285714285714285,
+          "descriptive_wilson95_iid_reference_only": [
+            0.08365020540566916,
+            0.23330102917623075
+          ]
+        },
+        "privateTasks": {
+          "events": 8,
+          "opportunities": 56,
+          "rate": 0.14285714285714285,
+          "descriptive_wilson95_iid_reference_only": [
+            0.07420788536920624,
+            0.25735921228705333
+          ]
+        },
+        "privateEventDependencyGroups": 6,
+        "privateTaskGroupBootstrap95": [
+          0.037037037037037035,
+          0.27586206896551724
+        ],
+        "privatePathGroupBootstrap95": [
+          0.02586206896551724,
+          0.21296296296296297
+        ],
+        "publicStrictEvents": 0,
+        "publicPaths": 112,
+        "publicCommittedCandidatePaths": 79,
+        "scope": "No substantive different-target public-last-work->expert-final switches found in this coarse target review. Zero not population absence; partial/underspecification/semantic equivalents excluded."
+      },
+      "readoutPaths": 6,
+      "strata": {
+        "E_initial_only_correct": {
+          "n": 24,
+          "groups": 21,
+          "Aexpert": 19,
+          "Bexpert": 22,
+          "BteamExpected": 20,
+          "keys": [
+            "new:0",
+            "new:1",
+            "new:2",
+            "new:6",
+            "new:9",
+            "new:10",
+            "new:16",
+            "new:17",
+            "new:18",
+            "new:19",
+            "new:22",
+            "new:26",
+            "new:29",
+            "new:30",
+            "new:34",
+            "new:37",
+            "new:38",
+            "new:39",
+            "new:42",
+            "new:46",
+            "new:48",
+            "new:49",
+            "new:51",
+            "new:54"
+          ]
+        },
+        "E_initial_wrong_any_base_correct": {
+          "n": 4,
+          "groups": 4,
+          "Aexpert": 2,
+          "Bexpert": 3,
+          "BteamExpected": 3,
+          "keys": [
+            "new:3",
+            "new:27",
+            "new:28",
+            "new:45"
+          ]
+        }
+      }
+    }
+  },
+  "payloadAudit": {
+    "expertFinals": 524,
+    "ordinaryFinals": 786,
+    "allPassed": true
+  },
+  "inputHashesUnchanged": true
+}

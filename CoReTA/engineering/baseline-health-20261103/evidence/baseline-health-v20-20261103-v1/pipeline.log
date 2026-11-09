@@ -1,0 +1,47 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:51,  7.72it/s]/data2/xiaoxinchen/venvs/coreta/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   6%|▌         | 22/398 [00:00<00:03, 111.99it/s]Loading weights:  12%|█▏        | 49/398 [00:00<00:01, 175.43it/s]Loading weights:  20%|██        | 81/398 [00:00<00:01, 224.09it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:01, 250.86it/s]Loading weights:  36%|███▌      | 143/398 [00:00<00:00, 263.32it/s]Loading weights:  43%|████▎     | 170/398 [00:00<00:00, 261.45it/s]Loading weights:  51%|█████     | 202/398 [00:00<00:00, 274.55it/s]Loading weights:  59%|█████▉    | 234/398 [00:00<00:00, 283.60it/s]Loading weights:  66%|██████▋   | 264/398 [00:01<00:00, 285.54it/s]Loading weights:  74%|███████▎  | 293/398 [00:01<00:00, 283.00it/s]Loading weights:  81%|████████  | 323/398 [00:01<00:00, 283.64it/s]Loading weights:  89%|████████▉ | 355/398 [00:01<00:00, 289.41it/s]Loading weights:  96%|█████████▋| 384/398 [00:01<00:00, 288.14it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 259.17it/s]
+/data2/xiaoxinchen/venvs/coreta/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+NF4 1 OK
+NF4 2 OK
+NF4 3 OK
+NF4 4 OK
+NF4 5 OK
+NF4 6 OK
+NF4 7 OK
+NF4 8 OK
+NF4 9 OK
+NF4 10 OK
+NF4 11 OK
+NF4 12 OK
+NF4 13 OK
+NF4 14 OK
+NF4 15 OK
+NF4 16 OK
+NF4 17 OK
+NF4 18 OK
+NF4 19 OK
+NF4 20 OK
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 16493.10it/s]
+BF16 1 OK
+BF16 2 OK
+BF16 3 OK
+BF16 4 OK
+BF16 5 OK
+BF16 6 OK
+BF16 7 OK
+BF16 8 OK
+BF16 9 OK
+BF16 10 OK
+BF16 11 OK
+BF16 12 OK
+BF16 13 OK
+BF16 14 OK
+BF16 15 OK
+BF16 16 OK
+BF16 17 OK
+BF16 18 OK
+BF16 19 OK
+BF16 20 OK
+{"status": "COMPLETE_DIAGNOSTIC", "n_expected": 20, "primary_enabled": false, "conditions": {"NF4": {"status": "COMPLETE", "n_valid": 20, "metrics": {"em": 0.15, "f1": 0.205}}, "BF16": {"status": "COMPLETE", "n_valid": 20, "metrics": {"em": 0.1, "f1": 0.2031045751633987}}}, "paired_counts": {"both_correct": 2, "only_NF4": 1, "only_BF16": 0, "both_wrong": 17}, "raw_answer_agreement": 12, "NF4_historical_raw_agreement": 20, "em_difference_BF16_minus_NF4": -0.04999999999999999}

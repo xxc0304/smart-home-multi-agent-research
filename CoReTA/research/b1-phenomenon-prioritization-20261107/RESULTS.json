@@ -1,0 +1,6498 @@
+{
+  "scope": "EXPLORATORY_ASSISTANT_CANDIDATE_PRIORITIZATION_NOT_FULL_REASONING_OR_POPULATION_CENSUS",
+  "reviewer": "assistant",
+  "independentHumanReview": false,
+  "new_model_calls": 0,
+  "cohortsNotPooled": true,
+  "summaries": {
+    "D80": {
+      "n": 75,
+      "dependencyGroups": 62,
+      "arms": {
+        "A": {
+          "n": 75,
+          "expertEM": 0.5866666666666667,
+          "teamExpectedEM": 0.5,
+          "lastWorkLabels": {
+            "C": 56,
+            "M": 2,
+            "N": 17
+          },
+          "strictTerminalSwitch": 8
+        },
+        "B": {
+          "n": 75,
+          "expertEM": 0.64,
+          "teamExpectedEM": 0.5366666666666666,
+          "lastWorkLabels": {
+            "C": 46,
+            "M": 1,
+            "N": 28
+          },
+          "strictTerminalSwitch": 0
+        },
+        "C": {
+          "n": 75,
+          "expertEM": 0.6,
+          "teamExpectedEM": 0.49666666666666665,
+          "lastWorkLabels": {
+            "C": 55,
+            "M": 3,
+            "N": 17
+          },
+          "strictTerminalSwitch": 8
+        },
+        "D": {
+          "n": 75,
+          "expertEM": 0.6,
+          "teamExpectedEM": 0.5533333333333333,
+          "lastWorkLabels": {
+            "C": 41,
+            "M": 2,
+            "N": 32
+          },
+          "strictTerminalSwitch": 0
+        }
+      },
+      "pairs": {
+        "B-A": {
+          "expertHarm": {
+            "events": 4,
+            "opportunities": 44,
+            "rate": 0.09090909090909091,
+            "descriptive_wilson95_iid_reference_only": [
+              0.03592219322731624,
+              0.21159239166598612
+            ]
+          },
+          "expertGain": {
+            "events": 8,
+            "opportunities": 31,
+            "rate": 0.25806451612903225,
+            "descriptive_wilson95_iid_reference_only": [
+              0.13701705906393744,
+              0.43246135809433794
+            ]
+          },
+          "gainWithPrivateTerminalSwitch": 4,
+          "expertDelta": 0.05333333333333334,
+          "expertDeltaGroupBootstrap95": [
+            -0.0379746835443038,
+            0.14666666666666667
+          ],
+          "teamDelta": 0.03666666666666667,
+          "teamDeltaGroupBootstrap95": [
+            -0.03353658536585366,
+            0.10855263157894737
+          ],
+          "harmKeys": [
+            "old:11",
+            "old:17",
+            "old:48",
+            "old:52"
+          ],
+          "gainKeys": [
+            "old:12",
+            "old:27",
+            "old:34",
+            "old:37",
+            "old:38",
+            "old:47",
+            "old:69",
+            "old:71"
+          ]
+        },
+        "D-C": {
+          "expertHarm": {
+            "events": 5,
+            "opportunities": 45,
+            "rate": 0.1111111111111111,
+            "descriptive_wilson95_iid_reference_only": [
+              0.04840471794567186,
+              0.2349909699576858
+            ]
+          },
+          "expertGain": {
+            "events": 5,
+            "opportunities": 30,
+            "rate": 0.16666666666666666,
+            "descriptive_wilson95_iid_reference_only": [
+              0.0733654237184855,
+              0.3356435050641603
+            ]
+          },
+          "gainWithPrivateTerminalSwitch": 4,
+          "expertDelta": 0,
+          "expertDeltaGroupBootstrap95": [
+            -0.08108108108108109,
+            0.08108108108108109
+          ],
+          "teamDelta": 0.056666666666666664,
+          "teamDeltaGroupBootstrap95": [
+            -0.0189873417721519,
+            0.136986301369863
+          ],
+          "harmKeys": [
+            "old:11",
+            "old:17",
+            "old:48",
+            "old:52",
+            "old:66"
+          ],
+          "gainKeys": [
+            "old:22",
+            "old:27",
+            "old:34",
+            "old:37",
+            "old:38"
+          ]
+        }
+      },
+      "strata": {
+        "E_initial_only_correct": {
+          "n": 40,
+          "groups": 33,
+          "Aexpert": 33,
+          "Bexpert": 35,
+          "BteamExpected": 28.25,
+          "keys": [
+            "old:2",
+            "old:3",
+            "old:5",
+            "old:6",
+            "old:11",
+            "old:12",
+            "old:13",
+            "old:14",
+            "old:15",
+            "old:16",
+            "old:18",
+            "old:19",
+            "old:20",
+            "old:21",
+            "old:25",
+            "old:26",
+            "old:27",
+            "old:29",
+            "old:31",
+            "old:34",
+            "old:35",
+            "old:37",
+            "old:38",
+            "old:39",
+            "old:40",
+            "old:42",
+            "old:48",
+            "old:50",
+            "old:52",
+            "old:58",
+            "old:59",
+            "old:63",
+            "old:66",
+            "old:68",
+            "old:72",
+            "old:74",
+            "old:75",
+            "old:76",
+            "old:77",
+            "old:79"
+          ]
+        },
+        "E_initial_wrong_any_base_correct": {
+          "n": 3,
+          "groups": 3,
+          "Aexpert": 2,
+          "Bexpert": 3,
+          "BteamExpected": 3,
+          "keys": [
+            "old:57",
+            "old:67",
+            "old:71"
+          ]
+        }
+      },
+      "terminal": {
+        "privatePathRate": {
+          "events": 16,
+          "opportunities": 150,
+          "rate": 0.10666666666666667,
+          "descriptive_wilson95_iid_reference_only": [
+            0.06673036965207342,
+            0.16624622258414684
+          ]
+        },
+        "privateGivenCommittedCandidate": {
+          "events": 16,
+          "opportunities": 111,
+          "rate": 0.14414414414414414,
+          "descriptive_wilson95_iid_reference_only": [
+            0.0907151993508928,
+            0.22137992020566577
+          ]
+        },
+        "privateTasks": {
+          "events": 9,
+          "opportunities": 75,
+          "rate": 0.12,
+          "descriptive_wilson95_iid_reference_only": [
+            0.06443371823944515,
+            0.2125964020474873
+          ]
+        },
+        "privateEventDependencyGroups": 8,
+        "privateTaskGroupBootstrap95": [
+          0.04411764705882353,
+          0.2
+        ],
+        "privatePathGroupBootstrap95": [
+          0.041666666666666664,
+          0.1794871794871795
+        ],
+        "publicStrictEvents": 0,
+        "publicPaths": 150,
+        "publicCommittedCandidatePaths": 87,
+        "scope": "No substantive different-target public-last-work->expert-final switches found in this coarse target review. Zero not population absence; partial/underspecification/semantic equivalents excluded."
+      },
+      "readout": {
+        "formalPaths": 15,
+        "formalTasks": 11,
+        "rows": [
+          {
+            "key": "old:12",
+            "arm": "B",
+            "id": "2hop__178056_377891",
+            "group": "2hop__178056_377891",
+            "expectedEM": 0,
+            "expertFinal": "Spanish National Research Council",
+            "lastWorkLabel": "C",
+            "kind": "SURFACE_EQUIVALENCE",
+            "note": "CSIC abbreviation appended; peers share institution semantically.",
+            "finals": {
+              "M1": "Spanish National Research Council",
+              "M2": "Spanish National Research Council (CSIC)",
+              "M3": "Spanish National Research Council (CSIC)",
+              "M4": "Spanish National Research Council (CSIC)"
+            }
+          },
+          {
+            "key": "old:13",
+            "arm": "B",
+            "id": "2hop__638478_377891",
+            "group": "2hop__178056_377891",
+            "expectedEM": 0.25,
+            "expertFinal": "Spanish National Research Council",
+            "lastWorkLabel": "N",
+            "kind": "NO_CLEAR_PUBLIC_TARGET",
+            "note": "Public work misbinds birthplace/denies source; final E target alone is not public contribution.",
+            "finals": {
+              "M1": "Spanish National Research Council",
+              "M2": "None of the provided information mentions a Science Museum in Alberto Lista's birth place, Fliesteden, or an agency consisting of such a museum.",
+              "M3": "None",
+              "M4": "None of the provided information mentions a Science Museum in Alberto Lista's birth place of Fliesteden or an agency related to it. Therefore, the answer is: None."
+            }
+          },
+          {
+            "key": "old:13",
+            "arm": "D",
+            "id": "2hop__638478_377891",
+            "group": "2hop__178056_377891",
+            "expectedEM": 0,
+            "expertFinal": "Spanish National Research Council",
+            "lastWorkLabel": "M",
+            "kind": "MIXED_PUBLIC_AND_WEAK_SOURCE",
+            "note": "Correct agency appears after wrong birthplace reasoning; source bridge incomplete.",
+            "finals": {
+              "M1": "Spanish National Research Council",
+              "M2": "Science Museum of Virginia",
+              "M3": "Science Museum of Virginia",
+              "M4": "Science Museum of Virginia"
+            }
+          },
+          {
+            "key": "old:26",
+            "arm": "B",
+            "id": "2hop__622767_161358",
+            "group": "2hop__523788_161358",
+            "expectedEM": 0,
+            "expertFinal": "38 million",
+            "lastWorkLabel": "N",
+            "kind": "PUBLIC_TARGET_WITHDRAWN",
+            "note": "38m mentioned then band-sales question changed to album sales.",
+            "finals": {
+              "M1": "38 million",
+              "M2": "0",
+              "M3": "1,000,000",
+              "M4": "1,000,000"
+            }
+          },
+          {
+            "key": "old:26",
+            "arm": "D",
+            "id": "2hop__622767_161358",
+            "group": "2hop__523788_161358",
+            "expectedEM": 0.5,
+            "expertFinal": "38 million",
+            "lastWorkLabel": "N",
+            "kind": "PUBLIC_TARGET_WITHDRAWN",
+            "note": "Correct band total appears but is denied as answering question.",
+            "finals": {
+              "M1": "38 million",
+              "M2": "38 million",
+              "M3": "1,000,000",
+              "M4": "1,000,000"
+            }
+          },
+          {
+            "key": "old:29",
+            "arm": "B",
+            "id": "2hop__455004_523858",
+            "group": "2hop__455004_523858",
+            "expectedEM": 0,
+            "expertFinal": "Samuel Nicholas",
+            "lastWorkLabel": "N",
+            "kind": "NO_CLEAR_PUBLIC_TARGET_AND_SOURCE_BOUNDARY",
+            "note": "Denies founder availability; multi-producer source bridge weak.",
+            "finals": {
+              "M1": "Samuel Nicholas",
+              "M2": "United States Navy and United States Marine Corps",
+              "M3": "The United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer.",
+              "M4": "The United States Navy and United States Marine Corps produced the film, but there is no specific individual or organization mentioned as the founder of the producer."
+            }
+          },
+          {
+            "key": "old:29",
+            "arm": "D",
+            "id": "2hop__455004_523858",
+            "group": "2hop__455004_523858",
+            "expectedEM": 0,
+            "expertFinal": "Samuel Nicholas",
+            "lastWorkLabel": "N",
+            "kind": "NO_CLEAR_PUBLIC_TARGET_AND_SOURCE_BOUNDARY",
+            "note": "Denies founder availability; no correct contribution commitment.",
+            "finals": {
+              "M1": "Samuel Nicholas",
+              "M2": "United States Navy and United States Marine Corps",
+              "M3": "The United States Navy and United States Marine Corps.",
+              "M4": "United States Navy and United States Marine Corps"
+            }
+          },
+          {
+            "key": "old:35",
+            "arm": "D",
+            "id": "2hop__132590_663762",
+            "group": "2hop__132590_663762",
+            "expectedEM": 0,
+            "expertFinal": "Walter Percy Chrysler",
+            "lastWorkLabel": "N",
+            "kind": "NO_CLEAR_PUBLIC_TARGET_AND_SOURCE_BOUNDARY",
+            "note": "Denies founder; Chrysler/DaimlerChrysler corporate identity boundary.",
+            "finals": {
+              "M1": "Walter Percy Chrysler",
+              "M2": "DaimlerChrysler",
+              "M3": "DaimlerChrysler",
+              "M4": "DaimlerChrysler"
+            }
+          },
+          {
+            "key": "old:37",
+            "arm": "B",
+            "id": "2hop__78918_699691",
+            "group": "2hop__78918_699691",
+            "expectedEM": 0,
+            "expertFinal": "James McCartney",
+            "lastWorkLabel": "N",
+            "kind": "NO_CLEAR_PUBLIC_TARGET",
+            "note": "Correct child never clearly endorsed in either public work; private final recovery.",
+            "finals": {
+              "M1": "James McCartney",
+              "M2": "Vicki Berger",
+              "M3": "Vicki Berger",
+              "M4": "Vicki Berger"
+            }
+          },
+          {
+            "key": "old:37",
+            "arm": "D",
+            "id": "2hop__78918_699691",
+            "group": "2hop__78918_699691",
+            "expectedEM": 0,
+            "expertFinal": "James McCartney",
+            "lastWorkLabel": "N",
+            "kind": "NO_CLEAR_PUBLIC_TARGET",
+            "note": "Correct child never clearly endorsed in either public work; private final recovery.",
+            "finals": {
+              "M1": "James McCartney",
+              "M2": "Vicki Berger",
+              "M3": "Vicki Berger",
+              "M4": "Vicki Berger"
+            }
+          },
+          {
+            "key": "old:47",
+            "arm": "B",
+            "id": "2hop__73046_196273",
+            "group": "2hop__73046_196273",
+            "expectedEM": 0,
+            "expertFinal": "Democratic-Republican Party",
+            "lastWorkLabel": "M",
+            "kind": "MIXED_PUBLIC_AND_WEAK_SOURCE",
+            "note": "Expected party inferred then explicitly disclaimed; weak source bridge.",
+            "finals": {
+              "M1": "Democratic-Republican Party",
+              "M2": "Rally of the French People",
+              "M3": "Rally of the French People",
+              "M4": "Rally of the French People"
+            }
+          },
+          {
+            "key": "old:50",
+            "arm": "D",
+            "id": "2hop__109366_440021",
+            "group": "2hop__109366_440021",
+            "expectedEM": 0,
+            "expertFinal": "Charles Dodgson",
+            "lastWorkLabel": "N",
+            "kind": "NO_CLEAR_PUBLIC_TARGET_AND_SOURCE_BOUNDARY",
+            "note": "No clear correct father relation; homonymous Dodgsons and missing bridge.",
+            "finals": {
+              "M1": "Charles Dodgson",
+              "M2": "Charles Lutwidge Dodgson",
+              "M3": "Charles Lutwidge Dodgson",
+              "M4": "Charles Lutwidge Dodgson"
+            }
+          },
+          {
+            "key": "old:59",
+            "arm": "B",
+            "id": "2hop__487291_78529",
+            "group": "2hop__487291_78529",
+            "expectedEM": 0,
+            "expertFinal": "Kangchenjunga",
+            "lastWorkLabel": "N",
+            "kind": "PUBLIC_TARGET_WITHDRAWN",
+            "note": "Kangchenjunga mentioned but answer redirected to body discovery/Everest.",
+            "finals": {
+              "M1": "Kangchenjunga",
+              "M2": "Mount Everest",
+              "M3": "Mount Everest",
+              "M4": "Mount Everest"
+            }
+          },
+          {
+            "key": "old:69",
+            "arm": "B",
+            "id": "3hop1__479393_213066_8723",
+            "group": "3hop1__479393_213066_8723",
+            "expectedEM": 0,
+            "expertFinal": "2.5%",
+            "lastWorkLabel": "C",
+            "kind": "CLEAR_LOCAL_PUBLIC_NONADOPTION_WEAK_UPSTREAM",
+            "note": "2.5 country vs2.4city explicitly distinguished; peers keep2.4; origin-of-sport premise not fully established.",
+            "finals": {
+              "M1": "2.5%",
+              "M2": "2.4%",
+              "M3": "2.4%",
+              "M4": "2.4%"
+            }
+          },
+          {
+            "key": "old:72",
+            "arm": "B",
+            "id": "2hop__24744_15345",
+            "group": "2hop__24744_15345",
+            "expectedEM": 0,
+            "expertFinal": "Supreme Governor",
+            "lastWorkLabel": "C",
+            "kind": "SURFACE_EQUIVALENCE",
+            "note": "Peers give same office plus Church qualifier.",
+            "finals": {
+              "M1": "Supreme Governor",
+              "M2": "Supreme Governor of the Church of England",
+              "M3": "Supreme Governor of the Church of England",
+              "M4": "Supreme Governor of the Church of England"
+            }
+          }
+        ]
+      },
+      "homogeneity": {
+        "baseInitialRawSame": 66,
+        "baseFinalBRawSame": 67
+      }
+    },
+    "fresh56": {
+      "n": 56,
+      "dependencyGroups": 46,
+      "arms": {
+        "A": {
+          "n": 56,
+          "expertEM": 0.625,
+          "teamExpectedEM": 0.6383928571428571,
+          "lastWorkLabels": {
+            "C": 43,
+            "M": 2,
+            "N": 11
+          },
+          "strictTerminalSwitch": 5
+        },
+        "B": {
+          "n": 56,
+          "expertEM": 0.7142857142857143,
+          "teamExpectedEM": 0.6785714285714286,
+          "lastWorkLabels": {
+            "C": 41,
+            "M": 6,
+            "N": 9
+          },
+          "strictTerminalSwitch": 0
+        },
+        "C": {
+          "n": 56,
+          "expertEM": 0.5892857142857143,
+          "teamExpectedEM": 0.6517857142857143,
+          "lastWorkLabels": {
+            "C": 41,
+            "M": 2,
+            "N": 13
+          },
+          "strictTerminalSwitch": 7
+        },
+        "D": {
+          "n": 56,
+          "expertEM": 0.7142857142857143,
+          "teamExpectedEM": 0.6607142857142857,
+          "lastWorkLabels": {
+            "C": 38,
+            "M": 4,
+            "N": 14
+          },
+          "strictTerminalSwitch": 0
+        }
+      },
+      "pairs": {
+        "B-A": {
+          "expertHarm": {
+            "events": 4,
+            "opportunities": 35,
+            "rate": 0.11428571428571428,
+            "descriptive_wilson95_iid_reference_only": [
+              0.04535179333097357,
+              0.2595146864621381
+            ]
+          },
+          "expertGain": {
+            "events": 9,
+            "opportunities": 21,
+            "rate": 0.42857142857142855,
+            "descriptive_wilson95_iid_reference_only": [
+              0.2446996892537596,
+              0.6345344563069328
+            ]
+          },
+          "gainWithPrivateTerminalSwitch": 4,
+          "expertDelta": 0.08928571428571429,
+          "expertDeltaGroupBootstrap95": [
+            -0.038461538461538464,
+            0.22641509433962265
+          ],
+          "teamDelta": 0.04017857142857143,
+          "teamDeltaGroupBootstrap95": [
+            -0.031818181818181815,
+            0.12053571428571429
+          ],
+          "harmKeys": [
+            "new:1",
+            "new:37",
+            "new:43",
+            "new:44"
+          ],
+          "gainKeys": [
+            "new:0",
+            "new:2",
+            "new:11",
+            "new:17",
+            "new:27",
+            "new:31",
+            "new:35",
+            "new:39",
+            "new:46"
+          ]
+        },
+        "D-C": {
+          "expertHarm": {
+            "events": 6,
+            "opportunities": 33,
+            "rate": 0.18181818181818182,
+            "descriptive_wilson95_iid_reference_only": [
+              0.08610768208940667,
+              0.3438823163466992
+            ]
+          },
+          "expertGain": {
+            "events": 13,
+            "opportunities": 23,
+            "rate": 0.5652173913043478,
+            "descriptive_wilson95_iid_reference_only": [
+              0.3681137508501646,
+              0.743653646743258
+            ]
+          },
+          "gainWithPrivateTerminalSwitch": 7,
+          "expertDelta": 0.125,
+          "expertDeltaGroupBootstrap95": [
+            -0.0392156862745098,
+            0.288135593220339
+          ],
+          "teamDelta": 0.008928571428571428,
+          "teamDeltaGroupBootstrap95": [
+            -0.06896551724137931,
+            0.07758620689655173
+          ],
+          "harmKeys": [
+            "new:1",
+            "new:3",
+            "new:37",
+            "new:38",
+            "new:44",
+            "new:51"
+          ],
+          "gainKeys": [
+            "new:2",
+            "new:8",
+            "new:11",
+            "new:17",
+            "new:19",
+            "new:25",
+            "new:27",
+            "new:28",
+            "new:34",
+            "new:35",
+            "new:39",
+            "new:45",
+            "new:46"
+          ]
+        }
+      },
+      "strata": {
+        "E_initial_only_correct": {
+          "n": 24,
+          "groups": 21,
+          "Aexpert": 19,
+          "Bexpert": 22,
+          "BteamExpected": 20,
+          "keys": [
+            "new:0",
+            "new:1",
+            "new:2",
+            "new:6",
+            "new:9",
+            "new:10",
+            "new:16",
+            "new:17",
+            "new:18",
+            "new:19",
+            "new:22",
+            "new:26",
+            "new:29",
+            "new:30",
+            "new:34",
+            "new:37",
+            "new:38",
+            "new:39",
+            "new:42",
+            "new:46",
+            "new:48",
+            "new:49",
+            "new:51",
+            "new:54"
+          ]
+        },
+        "E_initial_wrong_any_base_correct": {
+          "n": 4,
+          "groups": 4,
+          "Aexpert": 2,
+          "Bexpert": 3,
+          "BteamExpected": 3,
+          "keys": [
+            "new:3",
+            "new:27",
+            "new:28",
+            "new:45"
+          ]
+        }
+      },
+      "terminal": {
+        "privatePathRate": {
+          "events": 12,
+          "opportunities": 112,
+          "rate": 0.10714285714285714,
+          "descriptive_wilson95_iid_reference_only": [
+            0.06236012372515781,
+            0.17798093468458379
+          ]
+        },
+        "privateGivenCommittedCandidate": {
+          "events": 12,
+          "opportunities": 84,
+          "rate": 0.14285714285714285,
+          "descriptive_wilson95_iid_reference_only": [
+            0.08365020540566916,
+            0.23330102917623075
+          ]
+        },
+        "privateTasks": {
+          "events": 8,
+          "opportunities": 56,
+          "rate": 0.14285714285714285,
+          "descriptive_wilson95_iid_reference_only": [
+            0.07420788536920624,
+            0.25735921228705333
+          ]
+        },
+        "privateEventDependencyGroups": 6,
+        "privateTaskGroupBootstrap95": [
+          0.037037037037037035,
+          0.27586206896551724
+        ],
+        "privatePathGroupBootstrap95": [
+          0.02586206896551724,
+          0.21296296296296297
+        ],
+        "publicStrictEvents": 0,
+        "publicPaths": 112,
+        "publicCommittedCandidatePaths": 79,
+        "scope": "No substantive different-target public-last-work->expert-final switches found in this coarse target review. Zero not population absence; partial/underspecification/semantic equivalents excluded."
+      },
+      "readout": {
+        "formalPaths": 6,
+        "formalTasks": 5,
+        "rows": [
+          {
+            "key": "new:9",
+            "arm": "B",
+            "id": "2hop__86793_84145",
+            "group": "g9",
+            "expectedEM": 0,
+            "expertFinal": "three",
+            "lastWorkLabel": "C",
+            "kind": "SURFACE_EQUIVALENCE",
+            "note": "three and3 same number.",
+            "finals": {
+              "M1": "three",
+              "M2": "3",
+              "M3": "3",
+              "M4": "3"
+            }
+          },
+          {
+            "key": "new:9",
+            "arm": "D",
+            "id": "2hop__86793_84145",
+            "group": "g9",
+            "expectedEM": 0,
+            "expertFinal": "three",
+            "lastWorkLabel": "C",
+            "kind": "SURFACE_EQUIVALENCE",
+            "note": "three and3 same number.",
+            "finals": {
+              "M1": "three",
+              "M2": "3",
+              "M3": "3",
+              "M4": "3"
+            }
+          },
+          {
+            "key": "new:31",
+            "arm": "B",
+            "id": "2hop__446183_21489",
+            "group": "g31",
+            "expectedEM": 0,
+            "expertFinal": "1878",
+            "lastWorkLabel": "M",
+            "kind": "MIXED_PUBLIC_TARGET",
+            "note": "1878 bound to guide then withheld; not unambiguously correct public author relation.",
+            "finals": {
+              "M1": "1878",
+              "M2": "1973",
+              "M3": "1973",
+              "M4": "1973"
+            }
+          },
+          {
+            "key": "new:35",
+            "arm": "D",
+            "id": "2hop__7483_160863",
+            "group": "g35",
+            "expectedEM": 0,
+            "expertFinal": "1994",
+            "lastWorkLabel": "N",
+            "kind": "NO_CLEAR_PUBLIC_TARGET",
+            "note": "Both public works deny creation date; final E1994 correct only at private submission.",
+            "finals": {
+              "M1": "1994",
+              "M2": "1966",
+              "M3": "1966",
+              "M4": "1966"
+            }
+          },
+          {
+            "key": "new:49",
+            "arm": "D",
+            "id": "2hop__482757_12019",
+            "group": "g49",
+            "expectedEM": 0,
+            "expertFinal": "1960",
+            "lastWorkLabel": "N",
+            "kind": "NO_CLEAR_PUBLIC_TARGET",
+            "note": "Both public works choose newspaper1963 rather than university1960.",
+            "finals": {
+              "M1": "1960",
+              "M2": "1963",
+              "M3": "1963",
+              "M4": "1963"
+            }
+          },
+          {
+            "key": "new:51",
+            "arm": "B",
+            "id": "2hop__74057_709978",
+            "group": "g51",
+            "expectedEM": 0,
+            "expertFinal": "American Civil War",
+            "lastWorkLabel": "C",
+            "kind": "SUPPORTED_TOPIC_GRANULARITY",
+            "note": "Peers presidency during Civil War supported by source; not clear substantive rejection.",
+            "finals": {
+              "M1": "American Civil War",
+              "M2": "The main subject of the book named for the author of \"Four Score and Seven Years Ago\" is the presidency of Abraham Lincoln during the American Civil War.",
+              "M3": "The presidency of Abraham Lincoln during the American Civil War.",
+              "M4": "The main subject of the book named for the author of \"Four Score and Seven Years Ago\" is the presidency of Abraham Lincoln during the American Civil War."
+            }
+          }
+        ]
+      },
+      "homogeneity": {
+        "baseInitialRawSame": 47,
+        "baseFinalBRawSame": 53
+      }
+    }
+  },
+  "freshAnswerStrata": {
+    "strict_T_answer_disjoint": {
+      "n": 29,
+      "privatePaths": 58,
+      "terminalSwitchPaths": 6,
+      "terminalSwitchTasks": 4,
+      "eventDependencyGroups": 4,
+      "keys": [
+        "new:2",
+        "new:3",
+        "new:35",
+        "new:45"
+      ]
+    },
+    "T_answer_string_overlap_only": {
+      "n": 27,
+      "privatePaths": 54,
+      "terminalSwitchPaths": 6,
+      "terminalSwitchTasks": 4,
+      "eventDependencyGroups": 2,
+      "keys": [
+        "new:17",
+        "new:19",
+        "new:34",
+        "new:46"
+      ]
+    }
+  },
+  "matchedExpertChanges": [
+    {
+      "key": "old:11",
+      "id": "2hop__857136_78066",
+      "group": "2hop__857136_78066",
+      "contrast": "B-A",
+      "direction": "harm",
+      "privateFinal": "1962",
+      "talkFinal": "1964",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "QUESTION_BOUNDARY",
+        "note": "Concept car 1962 vs production 1964; not clean unreasonable expert harm."
+      }
+    },
+    {
+      "key": "old:11",
+      "id": "2hop__857136_78066",
+      "group": "2hop__857136_78066",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "1962",
+      "talkFinal": "1964",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "QUESTION_BOUNDARY",
+        "note": "Concept car 1962 vs production 1964; not clean unreasonable expert harm."
+      }
+    },
+    {
+      "key": "old:12",
+      "id": "2hop__178056_377891",
+      "group": "2hop__178056_377891",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Andalusian headquarters",
+      "talkFinal": "Spanish National Research Council",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private work correct; final Andalusian headquarters under-specifies institution. Discussion/base CSIC strings semantically aligned; formal boundary."
+      }
+    },
+    {
+      "key": "old:17",
+      "id": "2hop__726238_705760",
+      "group": "2hop__726238_705760",
+      "contrast": "B-A",
+      "direction": "harm",
+      "privateFinal": "Waukesha County",
+      "talkFinal": "Grand County",
+      "privateLastLabel": "N",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "PRIVATE_RECOVERY_VS_PUBLIC_WRONG_BINDING",
+        "note": "Private last work Washington -> final Waukesha; discussion picks Grand. Multiple Murphy Lake entries; do not call persuasion of a committed correct private work."
+      }
+    },
+    {
+      "key": "old:17",
+      "id": "2hop__726238_705760",
+      "group": "2hop__726238_705760",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "Waukesha County",
+      "talkFinal": "Grand County",
+      "privateLastLabel": "N",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "PRIVATE_RECOVERY_VS_PUBLIC_WRONG_BINDING",
+        "note": "Private last work Washington -> final Waukesha; discussion picks Grand. Multiple Murphy Lake entries; do not call persuasion of a committed correct private work."
+      }
+    },
+    {
+      "key": "old:22",
+      "id": "2hop__107379_20644",
+      "group": "2hop__107379_20644",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Chinese-majority",
+      "talkFinal": "Chinese",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Chinese-majority vs Chinese is wording equivalence; no substantive D expert improvement."
+      }
+    },
+    {
+      "key": "old:27",
+      "id": "2hop__722744_134827",
+      "group": "2hop__722744_134827",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Marvin Gay Sr.",
+      "talkFinal": "Alberta Gay",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private correct mother->wrong father at final; discussion preserves mother, not new knowledge demonstrated."
+      }
+    },
+    {
+      "key": "old:27",
+      "id": "2hop__722744_134827",
+      "group": "2hop__722744_134827",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Marvin Gay Sr.",
+      "talkFinal": "Alberta Gay",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private correct mother->wrong father at final; discussion preserves mother, not new knowledge demonstrated."
+      }
+    },
+    {
+      "key": "old:34",
+      "id": "2hop__697106_51671",
+      "group": "2hop__697106_51671",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Rahimtullah M. Sayani",
+      "talkFinal": "Badruddin Tayyab Ji",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private work already correct first Muslim; private final picks second. B/D first public wrong, second recovers. Cannot assign gain wholly to new knowledge."
+      }
+    },
+    {
+      "key": "old:34",
+      "id": "2hop__697106_51671",
+      "group": "2hop__697106_51671",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Rahimtullah M. Sayani",
+      "talkFinal": "Badruddin Tayyab Ji",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private work already correct first Muslim; private final picks second. B/D first public wrong, second recovers. Cannot assign gain wholly to new knowledge."
+      }
+    },
+    {
+      "key": "old:37",
+      "id": "2hop__78918_699691",
+      "group": "2hop__78918_699691",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Paul McCartney",
+      "talkFinal": "James McCartney",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private work already correct child; private final returns father. Discussion public does not endorse child but final correct; no clear public expert utilization."
+      }
+    },
+    {
+      "key": "old:37",
+      "id": "2hop__78918_699691",
+      "group": "2hop__78918_699691",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Paul McCartney",
+      "talkFinal": "James McCartney",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private work already correct child; private final returns father. Discussion public does not endorse child but final correct; no clear public expert utilization."
+      }
+    },
+    {
+      "key": "old:38",
+      "id": "2hop__481253_468473",
+      "group": "2hop__481253_468473",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Old Quaker Cemetery",
+      "talkFinal": "Kershaw County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private correct county->cemetery final; discussion retains county. Primarily terminal mismatch candidate."
+      }
+    },
+    {
+      "key": "old:38",
+      "id": "2hop__481253_468473",
+      "group": "2hop__481253_468473",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Old Quaker Cemetery",
+      "talkFinal": "Kershaw County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private correct county->cemetery final; discussion retains county. Primarily terminal mismatch candidate."
+      }
+    },
+    {
+      "key": "old:47",
+      "id": "2hop__73046_196273",
+      "group": "2hop__73046_196273",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Rally of the French People",
+      "talkFinal": "Democratic-Republican Party",
+      "privateLastLabel": "N",
+      "talkLastLabel": "M",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private wrong, public B correct party mentioned then disclaimed; final correct. Bridge/source weak, no clean grounded correction."
+      }
+    },
+    {
+      "key": "old:48",
+      "id": "4hop1__155787_497059_46089_86234",
+      "group": "3hop1__155787_497059_54366",
+      "contrast": "B-A",
+      "direction": "harm",
+      "privateFinal": "1625",
+      "talkFinal": "1635",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "LOCAL_DATE_SWITCH_WEAK_CHAIN",
+        "note": "Arrival 1625 vs colony 1635; long triangular-trade geographic bridge not fully secured."
+      }
+    },
+    {
+      "key": "old:48",
+      "id": "4hop1__155787_497059_46089_86234",
+      "group": "3hop1__155787_497059_54366",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "1625",
+      "talkFinal": "1635",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "LOCAL_DATE_SWITCH_WEAK_CHAIN",
+        "note": "Arrival 1625 vs colony 1635; long triangular-trade geographic bridge not fully secured."
+      }
+    },
+    {
+      "key": "old:52",
+      "id": "2hop__576033_289149",
+      "group": "2hop__576033_289149",
+      "contrast": "B-A",
+      "direction": "harm",
+      "privateFinal": "Los Angeles County",
+      "talkFinal": "Santa Clarita County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "CLEAR_LOCAL_TARGET_HARM",
+        "note": "Park->Santa Clarita->Los Angeles County is explicit; public replaces city with invented county. D first work is correct, second becomes wrong."
+      }
+    },
+    {
+      "key": "old:52",
+      "id": "2hop__576033_289149",
+      "group": "2hop__576033_289149",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "Los Angeles County",
+      "talkFinal": "Santa Clarita County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "CLEAR_LOCAL_TARGET_HARM",
+        "note": "Park->Santa Clarita->Los Angeles County is explicit; public replaces city with invented county. D first work is correct, second becomes wrong."
+      }
+    },
+    {
+      "key": "old:66",
+      "id": "2hop__103913_87175",
+      "group": "2hop__103913_87175",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "1167",
+      "talkFinal": "1177",
+      "privateLastLabel": "M",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "LOCAL_DATE_ROLE_HARM",
+        "note": "1167 first landing vs 1177 appointment; D wrong date role. Private last work only 12th century; no claim full private public state correct."
+      }
+    },
+    {
+      "key": "old:69",
+      "id": "3hop1__479393_213066_8723",
+      "group": "3hop1__479393_213066_8723",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "2.4%",
+      "talkFinal": "2.5%",
+      "privateLastLabel": "N",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "B improves 2.4->2.5 with city/country distinction; origin-of-bandy bridge weak. C also recovers at final."
+      }
+    },
+    {
+      "key": "old:71",
+      "id": "2hop__161955_609442",
+      "group": "2hop__161955_609442",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Rocky Mountains",
+      "talkFinal": "Sawatch Range",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Sawatch vs nested Rocky Mountains is granularity boundary; private work already names Sawatch."
+      }
+    },
+    {
+      "key": "new:0",
+      "id": "2hop__150255_698136",
+      "group": "g0",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "University of Wyoming",
+      "talkFinal": "land-grant university",
+      "privateLastLabel": "M",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private last work attaches land-grant type to magazine, final university entity; discussion resolves target type. Mixed private work, not strict terminal switch."
+      }
+    },
+    {
+      "key": "new:1",
+      "id": "2hop__81372_303417",
+      "group": "g1",
+      "contrast": "B-A",
+      "direction": "harm",
+      "privateFinal": "Reprise Records",
+      "talkFinal": "Universal",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "ENTITY_BINDING_HARM_WITH_SOURCE_BOUNDARY",
+        "note": "Dwight Yoakam/Reprise replaced by same-title Bonnie Tyler/Scorpions package; full-context ambiguity/temporal label boundary retained."
+      }
+    },
+    {
+      "key": "new:1",
+      "id": "2hop__81372_303417",
+      "group": "g1",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "Reprise Records",
+      "talkFinal": "Universal",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "ENTITY_BINDING_HARM_WITH_SOURCE_BOUNDARY",
+        "note": "Dwight Yoakam/Reprise replaced by same-title Bonnie Tyler/Scorpions package; full-context ambiguity/temporal label boundary retained."
+      }
+    },
+    {
+      "key": "new:2",
+      "id": "2hop__141962_841802",
+      "group": "g2",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "R&B and Gospel singer",
+      "talkFinal": "Carolyn Franklin",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private correct sibling -> genre at final; discussion retains sibling."
+      }
+    },
+    {
+      "key": "new:2",
+      "id": "2hop__141962_841802",
+      "group": "g2",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "R&B and Gospel singer",
+      "talkFinal": "Carolyn Franklin",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private correct sibling -> genre at final; discussion retains sibling."
+      }
+    },
+    {
+      "key": "new:3",
+      "id": "2hop__815884_21244",
+      "group": "g3",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "74",
+      "talkFinal": "73",
+      "privateLastLabel": "N",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "TEMPORAL_RELATION_HARM",
+        "note": "Turns soon after term start=74; discussion answers age at start=73. C final 74 but last work names Reagan only."
+      }
+    },
+    {
+      "key": "new:8",
+      "id": "2hop__22408_40795",
+      "group": "g8",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "1995",
+      "talkFinal": "1972",
+      "privateLastLabel": "N",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "D public correct accession year appears second round, private remains wrong; accession-treaty wording defines source-specific year."
+      }
+    },
+    {
+      "key": "new:11",
+      "id": "2hop__26852_71366",
+      "group": "g11",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "8 November 2001",
+      "talkFinal": "2001",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private date 8 November 2001 already answers requested year 2001; formal-only gain."
+      }
+    },
+    {
+      "key": "new:11",
+      "id": "2hop__26852_71366",
+      "group": "g11",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "8 November 2001",
+      "talkFinal": "2001",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private date 8 November 2001 already answers requested year 2001; formal-only gain."
+      }
+    },
+    {
+      "key": "new:17",
+      "id": "3hop1__275359_810457_285920",
+      "group": "g17",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Ulster County",
+      "talkFinal": "Greene County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private work already Greene, final Ulster; same source family as new19/new46, not three independent mechanisms."
+      }
+    },
+    {
+      "key": "new:17",
+      "id": "3hop1__275359_810457_285920",
+      "group": "g17",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Ulster County",
+      "talkFinal": "Greene County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private work already Greene, final Ulster; same source family as new19/new46, not three independent mechanisms."
+      }
+    },
+    {
+      "key": "new:19",
+      "id": "3hop1__232823_810457_285920",
+      "group": "g17",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Ulster County",
+      "talkFinal": "Greene County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private C work Greene, final Ulster; shared source family."
+      }
+    },
+    {
+      "key": "new:25",
+      "id": "2hop__9717_1891",
+      "group": "g25",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "21 meters",
+      "talkFinal": "21",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "21 meters vs21 is unit formatting; no substantive D gain."
+      }
+    },
+    {
+      "key": "new:27",
+      "id": "2hop__159600_2179",
+      "group": "g27",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Golden Gate Bridge",
+      "talkFinal": "Verrazano-Narrows Bridge",
+      "privateLastLabel": "N",
+      "talkLastLabel": "M",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private confidently wrong bridge; ordinary initial/first work correct before expert adopts; later public B mixed. Positive correction candidate, not pure private-final artifact."
+      }
+    },
+    {
+      "key": "new:27",
+      "id": "2hop__159600_2179",
+      "group": "g27",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Golden Gate Bridge",
+      "talkFinal": "Verrazano-Narrows Bridge",
+      "privateLastLabel": "N",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private confidently wrong bridge; ordinary initial/first work correct before expert adopts; later public B mixed. Positive correction candidate, not pure private-final artifact."
+      }
+    },
+    {
+      "key": "new:28",
+      "id": "2hop__75451_55099",
+      "group": "g28",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Ryan Eggold",
+      "talkFinal": "Rafe Spall",
+      "privateLastLabel": "N",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "C work and final wrong actor, D correct; ordinary initial includes right actor. Useful correction candidate; exposure package not psychological mechanism."
+      }
+    },
+    {
+      "key": "new:31",
+      "id": "2hop__446183_21489",
+      "group": "g31",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "1872",
+      "talkFinal": "1878",
+      "privateLastLabel": "N",
+      "talkLastLabel": "M",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private wrong year; B1878 mentioned under wrong guide/author binding then withheld. Final correct; no clean correct public expert ignored."
+      }
+    },
+    {
+      "key": "new:34",
+      "id": "2hop__79539_465884",
+      "group": "g34",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Brinkley",
+      "talkFinal": "Monroe County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "C correct county->city at final; D retains county."
+      }
+    },
+    {
+      "key": "new:35",
+      "id": "2hop__7483_160863",
+      "group": "g35",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "1966",
+      "talkFinal": "1994",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Both private last works distinguish correct1994, finals choose1966. B clear correct public, D public denies availability but final correct."
+      }
+    },
+    {
+      "key": "new:35",
+      "id": "2hop__7483_160863",
+      "group": "g35",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "1966",
+      "talkFinal": "1994",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Both private last works distinguish correct1994, finals choose1966. B clear correct public, D public denies availability but final correct."
+      }
+    },
+    {
+      "key": "new:37",
+      "id": "2hop__59004_21639",
+      "group": "g37",
+      "contrast": "B-A",
+      "direction": "harm",
+      "privateFinal": "Debbie Dingell",
+      "talkFinal": "Michigan State Legislature",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "CLEAR_LOCAL_TARGET_HARM",
+        "note": "Federal Congress representative Debbie Dingell replaced by state legislature; private final and work correct. Ordinary final already wrong in private, so team net score need not decline."
+      }
+    },
+    {
+      "key": "new:37",
+      "id": "2hop__59004_21639",
+      "group": "g37",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "Debbie Dingell",
+      "talkFinal": "Michigan State Legislature",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "CLEAR_LOCAL_TARGET_HARM",
+        "note": "Federal Congress representative Debbie Dingell replaced by state legislature; private final and work correct. Ordinary final already wrong in private, so team net score need not decline."
+      }
+    },
+    {
+      "key": "new:38",
+      "id": "2hop__146996_211364",
+      "group": "g38",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "Fairfield County",
+      "talkFinal": "Connecticut",
+      "privateLastLabel": "C",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "GRANULARITY_BOUNDARY",
+        "note": "Fairfield County vs Connecticut for underspecified region; different administrative levels, not a clean false fact."
+      }
+    },
+    {
+      "key": "new:39",
+      "id": "3hop1__797401_479775_779156",
+      "group": "g39",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Baltimore County, Maryland",
+      "talkFinal": "Towson",
+      "privateLastLabel": "N",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private first work Towson, second and final county; public correct. Work drift before final, not strict last-work terminal switch."
+      }
+    },
+    {
+      "key": "new:39",
+      "id": "3hop1__797401_479775_779156",
+      "group": "g39",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Baltimore County, Maryland",
+      "talkFinal": "Towson",
+      "privateLastLabel": "N",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "OTHER_GAIN_OR_BOUNDARY",
+        "note": "Private first work Towson, second and final county; public correct. Work drift before final, not strict last-work terminal switch."
+      }
+    },
+    {
+      "key": "new:43",
+      "id": "2hop__135148_622675",
+      "group": "g41",
+      "contrast": "B-A",
+      "direction": "harm",
+      "privateFinal": "English language",
+      "talkFinal": "Hindi",
+      "privateLastLabel": "C",
+      "talkLastLabel": "M",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "UNSUPPORTED_LANGUAGE_HARM_TEAM_RETAINS_CORRECT",
+        "note": "Writing English is changed into mother-tongue uncertainty and final Hindi; all ordinary members retain English, team correct."
+      }
+    },
+    {
+      "key": "new:44",
+      "id": "2hop__674613_433799",
+      "group": "g44",
+      "contrast": "B-A",
+      "direction": "harm",
+      "privateFinal": "Johann Christoph Pepusch",
+      "talkFinal": "John Gay",
+      "privateLastLabel": "N",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "PRIVATE_RECOVERY_VS_PUBLIC_WRONG_ROLE",
+        "note": "Composer/arranger Pepusch vs author Gay; private work itself says Gay, correct only at final. Initial expert wrong. Do not label correct expertise persuaded wrong."
+      }
+    },
+    {
+      "key": "new:44",
+      "id": "2hop__674613_433799",
+      "group": "g44",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "Johann Christoph Pepusch",
+      "talkFinal": "John Gay",
+      "privateLastLabel": "N",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "PRIVATE_RECOVERY_VS_PUBLIC_WRONG_ROLE",
+        "note": "Composer/arranger Pepusch vs author Gay; private work itself says Gay, correct only at final. Initial expert wrong. Do not label correct expertise persuaded wrong."
+      }
+    },
+    {
+      "key": "new:45",
+      "id": "2hop__560_568792",
+      "group": "g45",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Marie d'Agoult",
+      "talkFinal": "Cosima Wagner",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "C last work correct child, final mother; D retains child."
+      }
+    },
+    {
+      "key": "new:46",
+      "id": "3hop1__529985_810457_285920",
+      "group": "g17",
+      "contrast": "B-A",
+      "direction": "gain",
+      "privateFinal": "Ulster County",
+      "talkFinal": "Greene County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private Greene->Ulster final; shared source family."
+      }
+    },
+    {
+      "key": "new:46",
+      "id": "3hop1__529985_810457_285920",
+      "group": "g17",
+      "contrast": "D-C",
+      "direction": "gain",
+      "privateFinal": "Ulster County",
+      "talkFinal": "Greene County",
+      "privateLastLabel": "C",
+      "talkLastLabel": "C",
+      "privateTerminalSwitch": true,
+      "judgment": {
+        "kind": "PRIVATE_TERMINAL_SWITCH_ALREADY_HAS_CORRECT_CANDIDATE",
+        "note": "Private Greene->Ulster final; shared source family."
+      }
+    },
+    {
+      "key": "new:51",
+      "id": "2hop__74057_709978",
+      "group": "g51",
+      "contrast": "D-C",
+      "direction": "harm",
+      "privateFinal": "American Civil War",
+      "talkFinal": "A Valley Grows Up",
+      "privateLastLabel": "N",
+      "talkLastLabel": "N",
+      "privateTerminalSwitch": false,
+      "judgment": {
+        "kind": "TOPIC_GRANULARITY_BOUNDARY",
+        "note": "Civil War vs history; B longer presidency/Civil War supported, D too broad. Source topic/metric ambiguity; no clean expert ignored claim."
+      }
+    }
+  ],
+  "payloadAudit": {
+    "expertFinals": 524,
+    "ordinaryFinals": 786,
+    "allPassed": true,
+    "checks": [
+      {
+        "key": "old:0",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:0",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:0",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:0",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:1",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:1",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:1",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:1",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:2",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:2",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:2",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:2",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:3",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:3",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:3",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:3",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:4",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:4",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:4",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:4",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:5",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:5",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:5",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:5",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:6",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:6",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:6",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:6",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:7",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:7",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:7",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:7",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:8",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:8",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:8",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:8",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:10",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:10",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:10",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:10",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:11",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:11",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:11",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:11",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:12",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:12",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:12",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:12",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:13",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:13",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:13",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:13",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:14",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:14",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:14",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:14",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:15",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:15",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:15",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:15",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:16",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:16",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:16",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:16",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:17",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:17",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:17",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:17",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:18",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:18",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:18",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:18",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:19",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:19",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:19",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:19",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:20",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:20",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:20",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:20",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:21",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:21",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:21",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:21",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:22",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:22",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:22",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:22",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:23",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:23",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:23",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:23",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:24",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:24",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:24",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:24",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:25",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:25",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:25",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:25",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:26",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:26",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:26",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:26",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:27",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:27",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:27",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:27",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:28",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:28",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:28",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:28",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:29",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:29",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:29",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:29",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:30",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:30",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:30",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:30",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:31",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:31",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:31",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:31",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:33",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:33",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:33",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:33",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:34",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:34",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:34",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:34",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:35",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:35",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:35",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:35",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:36",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:36",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:36",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:36",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:37",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:37",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:37",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:37",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:38",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:38",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:38",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:38",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:39",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:39",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:39",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:39",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:40",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:40",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:40",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:40",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:41",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:41",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:41",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:41",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:42",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:42",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:42",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:42",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:43",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:43",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:43",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:43",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:44",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:44",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:44",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:44",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:46",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:46",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:46",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:46",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:47",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:47",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:47",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:47",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:48",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:48",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:48",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:48",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:49",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:49",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:49",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:49",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:50",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:50",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:50",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:50",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:51",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:51",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:51",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:51",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:52",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:52",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:52",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:52",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:54",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:54",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:54",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:54",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:55",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:55",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:55",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:55",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:56",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:56",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:56",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:56",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:57",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:57",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:57",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:57",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:58",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:58",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:58",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:58",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:59",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:59",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:59",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:59",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:60",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:60",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:60",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:60",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:61",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:61",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:61",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:61",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:62",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:62",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:62",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:62",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:63",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:63",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:63",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:63",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:64",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:64",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:64",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:64",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:65",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:65",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:65",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:65",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:66",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:66",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:66",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:66",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:67",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:67",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:67",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:67",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:68",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:68",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:68",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:68",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:69",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:69",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:69",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:69",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:70",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:70",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:70",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:70",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:71",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:71",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:71",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:71",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:72",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:72",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:72",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:72",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:74",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:74",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:74",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:74",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:75",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:75",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:75",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:75",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:76",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:76",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:76",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:76",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:77",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:77",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:77",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:77",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:78",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:78",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:78",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:78",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:79",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:79",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "old:79",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "old:79",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:0",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:0",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:0",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:0",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:1",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:1",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:1",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:1",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:2",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:2",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:2",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:2",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:3",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:3",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:3",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:3",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:4",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:4",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:4",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:4",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:5",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:5",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:5",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:5",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:6",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:6",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:6",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:6",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:7",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:7",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:7",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:7",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:8",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:8",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:8",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:8",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:9",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:9",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:9",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:9",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:10",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:10",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:10",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:10",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:11",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:11",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:11",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:11",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:12",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:12",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:12",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:12",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:13",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:13",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:13",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:13",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:14",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:14",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:14",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:14",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:15",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:15",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:15",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:15",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:16",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:16",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:16",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:16",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:17",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:17",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:17",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:17",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:18",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:18",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:18",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:18",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:19",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:19",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:19",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:19",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:20",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:20",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:20",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:20",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:21",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:21",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:21",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:21",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:22",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:22",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:22",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:22",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:23",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:23",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:23",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:23",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:24",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:24",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:24",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:24",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:25",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:25",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:25",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:25",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:26",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:26",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:26",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:26",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:27",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:27",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:27",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:27",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:28",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:28",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:28",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:28",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:29",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:29",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:29",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:29",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:30",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:30",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:30",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:30",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:31",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:31",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:31",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:31",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:32",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:32",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:32",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:32",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:33",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:33",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:33",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:33",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:34",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:34",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:34",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:34",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:35",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:35",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:35",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:35",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:36",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:36",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:36",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:36",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:37",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:37",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:37",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:37",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:38",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:38",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:38",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:38",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:39",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:39",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:39",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:39",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:40",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:40",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:40",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:40",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:41",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:41",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:41",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:41",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:42",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:42",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:42",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:42",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:43",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:43",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:43",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:43",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:44",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:44",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:44",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:44",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:45",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:45",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:45",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:45",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:46",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:46",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:46",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:46",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:47",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:47",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:47",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:47",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:48",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:48",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:48",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:48",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:49",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:49",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:49",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:49",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:50",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:50",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:50",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:50",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:51",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:51",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:51",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:51",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:52",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:52",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:52",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:52",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:53",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:53",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:53",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:53",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:54",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:54",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:54",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:54",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:55",
+        "arm": "A",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:55",
+        "arm": "B",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      },
+      {
+        "key": "new:55",
+        "arm": "C",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": null
+      },
+      {
+        "key": "new:55",
+        "arm": "D",
+        "EfinalIncludesExactE2": true,
+        "questionMatches": true,
+        "rawFinalMatchesSaved": true,
+        "adapterEnabled": true,
+        "ordinaryFinalsIncludeE2": true
+      }
+    ]
+  },
+  "inputHashesUnchanged": true,
+  "uncertainty": "Wilson is descriptive iid reference only and ignores dependencies. Group bootstrap resamples declared dependency groups, retains all items per group; exploratory selection and single configuration prevent representative/population or confirmatory causal inference."
+}

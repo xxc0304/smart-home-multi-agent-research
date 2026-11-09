@@ -1,0 +1,148 @@
+{
+  "result": "PASS",
+  "freeze": {
+    "research/name-protocol-dev11-20261108/experiment.py": "7a1fec880fb4840cf6425413e567fd1c2e8d2b5969aa0bc0023a332a910beb89",
+    "research/name-protocol-dev11-20261108/config.json": "03398c1613ea44548bde48d813a1568fa0e1bd0f67df5506cdeb1edda0c2fb73",
+    "research/name-protocol-dev11-20261108/tasks.json": "68b907d146afa48c765287d238dbf78a6b5905f5d337a4c065964c1008a66768",
+    "research/name-protocol-dev11-20261108/labels.json": "eff429e1f2b911977414211f33896caadba99165d9d51204c2160e2d87b8f60c",
+    "research/name-protocol-dev11-20261108/SELECTION.json": "757ee831f7f3559e2b27f2c9e55dbd9a4ac7d7ef21c7f9ce0b6cc552d07559d7",
+    "research/name-protocol-dev11-20261108/EXPERIMENT_REVIEW.md": "74ff02e73dfdbed56c035be4613811931c72222120e6b94dc44fb7989d6b3f2f",
+    "research/name-interface-tech-20261108-v2/experiment.py": "03c226996170491ce6752da1e57465929b5fd056d41d95cb27b9a1fc47949420",
+    "research/psych-sbp-pilot-20261108/pilot.py": "3eefdfbceca999857df7ba6fa4919ac92431147c44eef4848caa55cf35c1682c",
+    "tools/b0_training.py": "613c2be400cff2150e4d01c33bd12a1bdf385715097015f2711f79e694130fde",
+    "tools/b0_answers.py": "df9622b63739094178e1348d717ea2cf2d67ee35746c1cc3df7899192810aff2",
+    "tools/prepare_answer_only_expert.py": "697edb7b6fe99434ce20a710560832002a404f41a07173fc95dee51d30794fdb",
+    "runs/name-interface-tech-20261108-v2/responses.jsonl": "f741ec340ca78f78fc579069183dd851c568acedcc06785dd0d8acd6555f9166"
+  },
+  "task_ids": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    11,
+    23,
+    30,
+    33,
+    34,
+    50
+  ],
+  "reuse": {
+    "result": "PASS",
+    "all_208_requests_exactly_reconstructed": true,
+    "complete_reused_task_ids": [
+      11,
+      33
+    ],
+    "initial_only_reused_ids": [
+      7,
+      8,
+      23,
+      34
+    ],
+    "inherited_records": 208,
+    "maximum_new_calls": 848,
+    "scientific_config_and_shared_tasks_identical": true,
+    "old_freeze_unchanged": true,
+    "development_data_not_new_independent_evidence": true
+  },
+  "fault_tests": [
+    {
+      "case": "normal",
+      "pass": true,
+      "state": "COMPLETED",
+      "logical_calls": 192,
+      "new_calls": 192,
+      "inherited": 0
+    },
+    {
+      "case": "complete_cache",
+      "pass": true,
+      "state": "COMPLETED",
+      "logical_calls": 192,
+      "new_calls": 0,
+      "inherited": 192
+    },
+    {
+      "case": "initial_cache",
+      "pass": true,
+      "state": "COMPLETED",
+      "logical_calls": 192,
+      "new_calls": 184,
+      "inherited": 8
+    },
+    {
+      "case": "mismatched_cache",
+      "pass": true,
+      "state": "FAILED",
+      "logical_calls": 0,
+      "new_calls": 0,
+      "inherited": 0
+    },
+    {
+      "case": "single_branch_failure",
+      "pass": true,
+      "state": "COMPLETED",
+      "logical_calls": 173,
+      "new_calls": 173,
+      "inherited": 0
+    },
+    {
+      "case": "invalid_reference",
+      "pass": true,
+      "state": "COMPLETED",
+      "logical_calls": 149,
+      "new_calls": 149,
+      "inherited": 0
+    },
+    {
+      "case": "two_independent_failures",
+      "pass": true,
+      "state": "FAILED",
+      "logical_calls": 34,
+      "new_calls": 34,
+      "inherited": 0
+    },
+    {
+      "case": "system_failure",
+      "pass": true,
+      "state": "FAILED",
+      "logical_calls": 2,
+      "new_calls": 2,
+      "inherited": 0
+    },
+    {
+      "case": "ambiguous_final",
+      "pass": true,
+      "state": "COMPLETED",
+      "logical_calls": 192,
+      "new_calls": 192,
+      "inherited": 0
+    },
+    {
+      "case": "common_failure",
+      "pass": true,
+      "state": "COMPLETED",
+      "logical_calls": 97,
+      "new_calls": 97,
+      "inherited": 0
+    },
+    {
+      "case": "two_common_failures",
+      "pass": true,
+      "state": "FAILED",
+      "logical_calls": 2,
+      "new_calls": 2,
+      "inherited": 0
+    }
+  ],
+  "actual_208_response_reconstruction": true,
+  "max_replayed_history_plus_cap": 3805,
+  "name_field_terminal_name_prefix_and_missing_regression": "PASS",
+  "maximum_logical_calls": 1056,
+  "maximum_new_generation_calls": 848,
+  "maximum_inherited_records": 208,
+  "maximum_total_output_tokens": 495616,
+  "maximum_new_output_tokens": 389120,
+  "scope": "single fixed development review, not held-out method confirmation"
+}

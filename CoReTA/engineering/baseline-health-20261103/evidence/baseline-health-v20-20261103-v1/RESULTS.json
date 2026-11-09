@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE_DIAGNOSTIC",
+  "n_expected": 20,
+  "primary_enabled": false,
+  "conditions": {
+    "NF4": {
+      "status": "COMPLETE",
+      "n_valid": 20,
+      "metrics": {
+        "em": 0.15,
+        "f1": 0.205
+      }
+    },
+    "BF16": {
+      "status": "COMPLETE",
+      "n_valid": 20,
+      "metrics": {
+        "em": 0.1,
+        "f1": 0.2031045751633987
+      }
+    }
+  },
+  "paired_counts": {
+    "both_correct": 2,
+    "only_NF4": 1,
+    "only_BF16": 0,
+    "both_wrong": 17
+  },
+  "raw_answer_agreement": 12,
+  "NF4_historical_raw_agreement": 20,
+  "em_difference_BF16_minus_NF4": -0.04999999999999999
+}

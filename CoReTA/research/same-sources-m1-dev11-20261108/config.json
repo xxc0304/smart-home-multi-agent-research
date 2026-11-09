@@ -1,0 +1,41 @@
+{
+  "fixture": false,
+  "model_path": "/data2/xiaoxinchen/models/Qwen3-4B-1cfa9a7",
+  "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "dtype": "bfloat16",
+  "quantization": "4bit",
+  "device": "cuda:0",
+  "max_length": 16384,
+  "template_kwargs": {
+    "enable_thinking": false
+  },
+  "generation": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "top_k": 0
+  },
+  "seed": 2026110810,
+  "initial_tokens": 1024,
+  "work_tokens": 512,
+  "final_tokens": 128,
+  "run_dir": "runs/same-sources-m1-dev11-20261108-v1",
+  "flow_task_ids": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    11,
+    23,
+    30,
+    33,
+    34,
+    50
+  ],
+  "adapter": null,
+  "wall_clock_cutoff": null,
+  "generation_retries": 0,
+  "purpose": "CONDITIONAL_M1_ONLY_REASONING_GIVEN_IDENTICAL_SOURCE_SELECTION_ARTIFACTS",
+  "source_run": "runs/name-protocol-dev11-20261108-v1"
+}

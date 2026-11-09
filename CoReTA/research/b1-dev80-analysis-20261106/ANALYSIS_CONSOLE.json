@@ -1,0 +1,635 @@
+{
+  "full": {
+    "n": 75,
+    "initial": {
+      "expert": 46,
+      "base": {
+        "M2": 9,
+        "M3": 9,
+        "M4": 9
+      },
+      "strata": {
+        "E0_anyB0": 26,
+        "E1_anyB0": 40,
+        "E1_anyB1": 6,
+        "E0_anyB1": 3
+      },
+      "base_same": 66
+    },
+    "arms": {
+      "A": {
+        "expert_correct": 44,
+        "team_expected_correct": 37.5,
+        "team_actual_correct": 37,
+        "oracle_correct": 50,
+        "base_correct": {
+          "M2": 31,
+          "M3": 35,
+          "M4": 33
+        },
+        "base_same": 41,
+        "all_same": 24,
+        "expert_correct_team_loss": [
+          11,
+          13,
+          17,
+          18,
+          29,
+          31,
+          35,
+          48,
+          52,
+          72,
+          77,
+          78
+        ],
+        "ordinary_rescues": [
+          22,
+          27,
+          62,
+          71
+        ],
+        "harm_indices": [
+          5,
+          12,
+          27,
+          34,
+          37,
+          38,
+          79
+        ],
+        "correction_indices": [
+          0,
+          17,
+          57,
+          67,
+          78
+        ]
+      },
+      "B": {
+        "expert_correct": 48,
+        "team_expected_correct": 40.25,
+        "team_actual_correct": 40,
+        "oracle_correct": 49,
+        "base_correct": {
+          "M2": 40,
+          "M3": 40,
+          "M4": 40
+        },
+        "base_same": 68,
+        "all_same": 54,
+        "expert_correct_team_loss": [
+          12,
+          13,
+          26,
+          29,
+          37,
+          47,
+          59,
+          69,
+          72
+        ],
+        "ordinary_rescues": [
+          62
+        ],
+        "harm_indices": [
+          5,
+          11,
+          48,
+          52,
+          79
+        ],
+        "correction_indices": [
+          0,
+          47,
+          57,
+          67,
+          69,
+          71,
+          78
+        ]
+      },
+      "C": {
+        "expert_correct": 45,
+        "team_expected_correct": 37.25,
+        "team_actual_correct": 37,
+        "oracle_correct": 52,
+        "base_correct": {
+          "M2": 35,
+          "M3": 34,
+          "M4": 35
+        },
+        "base_same": 47,
+        "all_same": 28,
+        "expert_correct_team_loss": [
+          11,
+          13,
+          17,
+          18,
+          19,
+          29,
+          31,
+          35,
+          42,
+          48,
+          52,
+          59,
+          72,
+          77
+        ],
+        "ordinary_rescues": [
+          10,
+          22,
+          27,
+          41,
+          62
+        ],
+        "harm_indices": [
+          5,
+          12,
+          27,
+          34,
+          37,
+          38,
+          79
+        ],
+        "correction_indices": [
+          17,
+          57,
+          67,
+          69,
+          71,
+          78
+        ]
+      },
+      "D": {
+        "expert_correct": 45,
+        "team_expected_correct": 41.5,
+        "team_actual_correct": 41,
+        "oracle_correct": 47,
+        "base_correct": {
+          "M2": 42,
+          "M3": 41,
+          "M4": 41
+        },
+        "base_same": 72,
+        "all_same": 55,
+        "expert_correct_team_loss": [
+          13,
+          26,
+          29,
+          35,
+          37,
+          50
+        ],
+        "ordinary_rescues": [
+          10,
+          62
+        ],
+        "harm_indices": [
+          5,
+          11,
+          12,
+          48,
+          52,
+          66,
+          79
+        ],
+        "correction_indices": [
+          22,
+          57,
+          67,
+          69,
+          71,
+          78
+        ]
+      }
+    },
+    "contrasts": {
+      "B-A": {
+        "team_gains": [
+          {
+            "index": 13,
+            "delta": 0.25
+          },
+          {
+            "index": 18,
+            "delta": 1
+          },
+          {
+            "index": 31,
+            "delta": 0.5
+          },
+          {
+            "index": 34,
+            "delta": 1
+          },
+          {
+            "index": 35,
+            "delta": 0.5
+          },
+          {
+            "index": 38,
+            "delta": 1
+          },
+          {
+            "index": 77,
+            "delta": 1
+          },
+          {
+            "index": 78,
+            "delta": 0.5
+          }
+        ],
+        "team_losses": [
+          {
+            "index": 22,
+            "delta": -1
+          },
+          {
+            "index": 26,
+            "delta": -1
+          },
+          {
+            "index": 59,
+            "delta": -1
+          }
+        ],
+        "expert_gains": [
+          12,
+          27,
+          34,
+          37,
+          38,
+          47,
+          69,
+          71
+        ],
+        "expert_losses": [
+          11,
+          17,
+          48,
+          52
+        ],
+        "expert_harm_both": [
+          5,
+          79
+        ],
+        "expert_harm_discussion_only": [
+          11,
+          48,
+          52
+        ],
+        "expert_harm_private_only": [
+          12,
+          27,
+          34,
+          37,
+          38
+        ]
+      },
+      "D-C": {
+        "team_gains": [
+          {
+            "index": 18,
+            "delta": 1
+          },
+          {
+            "index": 19,
+            "delta": 1
+          },
+          {
+            "index": 31,
+            "delta": 0.5
+          },
+          {
+            "index": 34,
+            "delta": 1
+          },
+          {
+            "index": 38,
+            "delta": 1
+          },
+          {
+            "index": 42,
+            "delta": 0.75
+          },
+          {
+            "index": 59,
+            "delta": 0.5
+          },
+          {
+            "index": 72,
+            "delta": 1
+          },
+          {
+            "index": 77,
+            "delta": 0.5
+          }
+        ],
+        "team_losses": [
+          {
+            "index": 26,
+            "delta": -0.5
+          },
+          {
+            "index": 41,
+            "delta": -0.5
+          },
+          {
+            "index": 50,
+            "delta": -1
+          },
+          {
+            "index": 66,
+            "delta": -1
+          }
+        ],
+        "expert_gains": [
+          22,
+          27,
+          34,
+          37,
+          38
+        ],
+        "expert_losses": [
+          11,
+          17,
+          48,
+          52,
+          66
+        ],
+        "expert_harm_both": [
+          5,
+          12,
+          79
+        ],
+        "expert_harm_discussion_only": [
+          11,
+          48,
+          52,
+          66
+        ],
+        "expert_harm_private_only": [
+          27,
+          34,
+          37,
+          38
+        ]
+      },
+      "D-B": {
+        "team_gains": [
+          {
+            "index": 10,
+            "delta": 1
+          },
+          {
+            "index": 22,
+            "delta": 1
+          },
+          {
+            "index": 26,
+            "delta": 0.5
+          },
+          {
+            "index": 59,
+            "delta": 1
+          },
+          {
+            "index": 69,
+            "delta": 1
+          },
+          {
+            "index": 72,
+            "delta": 1
+          }
+        ],
+        "team_losses": [
+          {
+            "index": 0,
+            "delta": -1
+          },
+          {
+            "index": 13,
+            "delta": -0.25
+          },
+          {
+            "index": 35,
+            "delta": -1
+          },
+          {
+            "index": 50,
+            "delta": -1
+          },
+          {
+            "index": 66,
+            "delta": -1
+          }
+        ],
+        "expert_gains": [
+          22
+        ],
+        "expert_losses": [
+          0,
+          12,
+          47,
+          66
+        ],
+        "expert_harm_both": [
+          5,
+          11,
+          48,
+          52,
+          79
+        ],
+        "expert_harm_discussion_only": [
+          12,
+          66
+        ],
+        "expert_harm_private_only": []
+      },
+      "C-A": {
+        "team_gains": [
+          {
+            "index": 10,
+            "delta": 1
+          },
+          {
+            "index": 41,
+            "delta": 0.5
+          },
+          {
+            "index": 69,
+            "delta": 1
+          },
+          {
+            "index": 77,
+            "delta": 0.5
+          },
+          {
+            "index": 78,
+            "delta": 0.5
+          }
+        ],
+        "team_losses": [
+          {
+            "index": 0,
+            "delta": -1
+          },
+          {
+            "index": 19,
+            "delta": -1
+          },
+          {
+            "index": 35,
+            "delta": -0.5
+          },
+          {
+            "index": 42,
+            "delta": -0.75
+          },
+          {
+            "index": 59,
+            "delta": -0.5
+          }
+        ],
+        "expert_gains": [
+          69,
+          71
+        ],
+        "expert_losses": [
+          0
+        ],
+        "expert_harm_both": [
+          5,
+          12,
+          27,
+          34,
+          37,
+          38,
+          79
+        ],
+        "expert_harm_discussion_only": [],
+        "expert_harm_private_only": []
+      }
+    }
+  },
+  "sensitivity": {
+    "arms": {
+      "A": {
+        "n": 77,
+        "expected_em": 0.487012987012987,
+        "expert_em": 0.5714285714285714
+      },
+      "B": {
+        "n": 79,
+        "expected_em": 0.509493670886076,
+        "expert_em": 0.620253164556962
+      },
+      "C": {
+        "n": 77,
+        "expected_em": 0.4837662337662338,
+        "expert_em": 0.5844155844155844
+      },
+      "D": {
+        "n": 79,
+        "expected_em": 0.5379746835443038,
+        "expert_em": 0.5822784810126582
+      }
+    },
+    "contrasts": {
+      "B-A": {
+        "pairwise_n": 77,
+        "pairwise_difference": 0.03571428571428571,
+        "fixed80_bounds": [
+          -0.003125,
+          0.046875
+        ]
+      },
+      "D-C": {
+        "pairwise_n": 77,
+        "pairwise_difference": 0.05519480519480519,
+        "fixed80_bounds": [
+          0.028125,
+          0.078125
+        ]
+      },
+      "D-B": {
+        "pairwise_n": 79,
+        "pairwise_difference": 0.028481012658227847,
+        "fixed80_bounds": [
+          0.015625,
+          0.040625
+        ]
+      },
+      "C-A": {
+        "pairwise_n": 75,
+        "pairwise_difference": -0.0033333333333333335,
+        "fixed80_bounds": [
+          -0.040625,
+          0.034375
+        ]
+      }
+    },
+    "note": "Arithmetic bounds on fixed 80 missing outcomes, not population confidence intervals or imputations."
+  },
+  "failures": [
+    {
+      "index": 9,
+      "question_number": 10,
+      "id": "2hop__342640_126084",
+      "actor": "M3",
+      "arm": null,
+      "stage": "initial",
+      "tokens": 256,
+      "status": "OUTPUT_LIMIT",
+      "repeated_8gram_fraction": 0.10040160642570284
+    },
+    {
+      "index": 32,
+      "question_number": 33,
+      "id": "3hop1__75023_58494_1865",
+      "actor": "M2",
+      "arm": "C",
+      "stage": "work",
+      "tokens": 1024,
+      "status": "OUTPUT_LIMIT",
+      "repeated_8gram_fraction": 0.4493608652900688
+    },
+    {
+      "index": 45,
+      "question_number": 46,
+      "id": "3hop1__568406_233976_24199",
+      "actor": "M4",
+      "arm": "A",
+      "stage": "work",
+      "tokens": 1024,
+      "status": "OUTPUT_LIMIT",
+      "repeated_8gram_fraction": 0.5535889872173059
+    },
+    {
+      "index": 53,
+      "question_number": 54,
+      "id": "3hop1__153084_701863_54641",
+      "actor": "M3",
+      "arm": "A",
+      "stage": "work",
+      "tokens": 1024,
+      "status": "OUTPUT_LIMIT",
+      "repeated_8gram_fraction": 0.5712881022615536
+    },
+    {
+      "index": 73,
+      "question_number": 74,
+      "id": "2hop__143481_696803",
+      "actor": "M4",
+      "arm": "C",
+      "stage": "work",
+      "tokens": 1024,
+      "status": "OUTPUT_LIMIT",
+      "repeated_8gram_fraction": 0.25073746312684364
+    }
+  ],
+  "recordCount": 4071,
+  "outputTokens": 519329
+}

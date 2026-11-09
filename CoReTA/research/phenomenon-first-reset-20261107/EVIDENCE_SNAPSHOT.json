@@ -1,0 +1,92 @@
+{
+  "scope": "REVIEW_INPUT_OFFICIAL_EM_CANDIDATES_NOT_SEMANTIC_EVENT_PREVALENCE",
+  "D80_common75": {
+    "n": 75,
+    "arms": {
+      "A": {
+        "team": 0.5,
+        "expert": 0.5866666666666667
+      },
+      "B": {
+        "team": 0.5366666666666666,
+        "expert": 0.64
+      },
+      "C": {
+        "team": 0.49666666666666665,
+        "expert": 0.6
+      },
+      "D": {
+        "team": 0.5533333333333333,
+        "expert": 0.6
+      }
+    },
+    "matched": {
+      "B-A": {
+        "expertCorrectPrivateWrongTalk": 4,
+        "expertWrongPrivateCorrectTalk": 8
+      },
+      "D-C": {
+        "expertCorrectPrivateWrongTalk": 5,
+        "expertWrongPrivateCorrectTalk": 5
+      }
+    },
+    "B_expertFinalCorrectTeamBelowOne": 9,
+    "baseThreeInitialRawSame": 66
+  },
+  "fresh56": {
+    "n": 56,
+    "arms": {
+      "A": {
+        "team": 0.6383928571428571,
+        "expert": 0.625
+      },
+      "B": {
+        "team": 0.6785714285714286,
+        "expert": 0.7142857142857143
+      },
+      "C": {
+        "team": 0.6517857142857143,
+        "expert": 0.5892857142857143
+      },
+      "D": {
+        "team": 0.6607142857142857,
+        "expert": 0.7142857142857143
+      }
+    },
+    "matched": {
+      "B-A": {
+        "expertCorrectPrivateWrongTalk": 4,
+        "expertWrongPrivateCorrectTalk": 9
+      },
+      "D-C": {
+        "expertCorrectPrivateWrongTalk": 6,
+        "expertWrongPrivateCorrectTalk": 13
+      }
+    },
+    "B_expertFinalCorrectTeamBelowOne": 3,
+    "baseThreeInitialRawSame": 47
+  },
+  "baseThreeBFinalRawSame": {
+    "D80": 67,
+    "fresh56": 53
+  },
+  "known_semantic_boundaries": {
+    "fresh_B_readout_events": [
+      {
+        "index": 9,
+        "type": "three vs 3"
+      },
+      {
+        "index": 51,
+        "type": "topic granularity/verbosity"
+      },
+      {
+        "index": 31,
+        "type": "public mixed relation/commitment, not sustained clear correct argument"
+      }
+    ]
+  },
+  "census_complete": false,
+  "independent_human_review": false,
+  "new_model_calls": 0
+}

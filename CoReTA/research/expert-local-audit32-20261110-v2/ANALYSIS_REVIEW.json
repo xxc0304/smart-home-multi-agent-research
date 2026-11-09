@@ -1,0 +1,36 @@
+{
+  "stage": "P29",
+  "reviewer": "assistant_self_review_not_independent_human",
+  "scope": "Offline results verification and bounded process analysis; zero new model calls",
+  "verdict": "PASS_FOR_BOUNDED_ANALYSIS",
+  "evidence": {
+    "independent_metric_checks": 496,
+    "actual_responses_previously_audited": 744,
+    "read_expert_candidates_and_explanations": 62,
+    "read_revised_answers": 186,
+    "read_full_reviews": 186,
+    "available_reviews": 558,
+    "all_em_or_GL_answer_difference_units_read_GL": 25,
+    "additional_wrong_control_unit": 39,
+    "case_notes_units": 26,
+    "original_result_hashes_unchanged": true
+  },
+  "supported": [
+    "No primary background EM increment L versus G; six EM differences cancel across all development units, rather than all outputs being identical",
+    "Current local role-prompt implementation fails to add net benefit versus simple references on this development sample",
+    "Specific reviews reproduce correct facts but misidentify target, contain mixed valid observations and wrong replacements, or fail to complete a correction",
+    "Background corrected units are also fixed by expert self-review and already have correct facts in the original expert explanation",
+    "Some ordinary complement exists in a bridge diagnostic unit; locking expert original answers is not justified",
+    "One S formal EM loss is a predeclared unit alias difference, not a reasoning error"
+  ],
+  "revise_or_do_not_claim": [
+    "Full P25 architecture has been implemented or falsified",
+    "Every criticism of an officially correct candidate is false",
+    "Every correct final answer proves a correct review was accepted",
+    "Final short-answer output reveals per-review acceptance or internal causal mechanism",
+    "Same base models, prior answers or majority pressure are isolated causes",
+    "All558 reviews or all full source passages received independent human semantic review",
+    "Development null proves equivalence, universal expert harm or publishable method novelty"
+  ],
+  "decision": "Do not expand the unchanged local-review template. Preserve strong baselines and clarify a concrete selective-revision operation before any separately reviewed new experiment. No new experiment launched."
+}

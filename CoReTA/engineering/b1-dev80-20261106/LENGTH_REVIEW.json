@@ -1,0 +1,14 @@
+{
+  "initial_max": 7971,
+  "synthetic_pressure_max": 17579,
+  "context_limit": 16384,
+  "synthetic_overflow_cases": [
+    {
+      "index": 62,
+      "total_with_cap": 17579
+    }
+  ],
+  "decision": "INITIAL_INPUTS_MUST_FIT; EXTREME_SYNTHETIC_NOT_A_MODEL_FORECAST; CHECK_EACH_REAL_REQUEST_AND_ISOLATE_OVERFLOW",
+  "no_input_truncation": true,
+  "new_model_generations": 0
+}

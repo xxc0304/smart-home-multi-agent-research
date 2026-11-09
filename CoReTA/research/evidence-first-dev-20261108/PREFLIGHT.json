@@ -1,0 +1,80 @@
+{
+  "result": "PASS",
+  "freeze": {
+    "research/evidence-first-dev-20261108/experiment.py": "7d21956ef2f5309029220436335a1b0118d46eeefdc33c35c25729fe479d2485",
+    "research/evidence-first-dev-20261108/config.json": "b3d3f4ca1010332c87cafbc447fe2bd10523b24c9d072fde6afe14520b2a3a02",
+    "research/evidence-first-dev-20261108/tasks.json": "d32373374c497345aa9b3b300d63ff665f666fa4eadac4ec6c49c612a1f0921b",
+    "research/evidence-first-dev-20261108/labels.json": "0b1645888181683f6fd12b89a266749dd92809497535152d49a4cd16ae38f680",
+    "research/evidence-first-dev-20261108/SELECTION.json": "3edd0bb4836dcb4a7395ef83f1be9467740111eb669b9f227846b00a119790dd",
+    "research/evidence-first-dev-20261108/EXPERIMENT_REVIEW.md": "f53f73adccea6cef3c7327d973c30e59afd92d9edefc3bf5ac1b7bb68915344b",
+    "research/psych-sbp-pilot-20261108/pilot.py": "3eefdfbceca999857df7ba6fa4919ac92431147c44eef4848caa55cf35c1682c",
+    "tools/b0_training.py": "613c2be400cff2150e4d01c33bd12a1bdf385715097015f2711f79e694130fde",
+    "tools/b0_answers.py": "df9622b63739094178e1348d717ea2cf2d67ee35746c1cc3df7899192810aff2",
+    "tools/prepare_answer_only_expert.py": "697edb7b6fe99434ce20a710560832002a404f41a07173fc95dee51d30794fdb"
+  },
+  "task_ids": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    11,
+    23,
+    30,
+    33,
+    34,
+    50
+  ],
+  "max_replayed_history_plus_cap": 4082,
+  "real_history_source_sha256": "ea5a7dc99a995c2875518b609151f66148806303bd82ff5baebef62b3152f02e",
+  "real_prior_outputs": 224,
+  "new_choice_and_reference_parser_tests": "synthetic; first two tasks are technical development",
+  "maximum_calls": 1056,
+  "maximum_output_tokens": 461824,
+  "fault_tests": [
+    {
+      "case": "normal",
+      "pass": true,
+      "attempts": 192,
+      "responses": 192,
+      "state": "COMPLETED"
+    },
+    {
+      "case": "single_branch_failure",
+      "pass": true,
+      "attempts": 173,
+      "responses": 173,
+      "state": "COMPLETED"
+    },
+    {
+      "case": "invalid_reference",
+      "pass": true,
+      "attempts": 149,
+      "responses": 149,
+      "state": "COMPLETED"
+    },
+    {
+      "case": "two_independent_failures",
+      "pass": true,
+      "attempts": 34,
+      "responses": 34,
+      "state": "FAILED"
+    },
+    {
+      "case": "system_failure",
+      "pass": true,
+      "attempts": 3,
+      "responses": 2,
+      "state": "FAILED"
+    },
+    {
+      "case": "ambiguous_final",
+      "pass": true,
+      "attempts": 192,
+      "responses": 192,
+      "state": "COMPLETED"
+    }
+  ],
+  "no_gold_in_payloads": true,
+  "same_selected_fact_text_E_F": true
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-07",
+  "verdict": "PASS",
+  "scope": "PURPOSEFUL_FIXED_FINAL_PREFIX_ADAPTER_EFFECT_DIAGNOSTIC",
+  "question": "Does disabling the expert answer-only adapter change terminal answers with identical full task/history and matched sampling?",
+  "inputs": "12 different fresh development task/source groups: six original private terminal failures and six original stable correct controls; deterministic hash selection within predeclared strata, no new holdout",
+  "manipulation": "Only backend adapter on/off; M1 model-visible identity, full paragraphs, own history, system/user prompt, output cap and within-pair seed identical",
+  "primary": "Paired final EM changes on/off, separately for failures and stable controls; raw text/semantic target switch and original-seed reproduction also audited",
+  "limits": "Outcome-selected fixed prefixes, one Qwen4B/SFT/quantization/configuration, 12 groups and 2 seeds; no prevalence, team benefit, generic expert deficit or psychological mechanism claim",
+  "predictions": {
+    "off_recovers_failures_controls_retained": "Supports local adapter contribution to terminal mismatch, not its universal cause",
+    "both_fail": "Adapter alone insufficient; inspect shared finalization prompt/history and target specificity",
+    "off_harms_controls": "Report loss as well as recovery; no blanket adapter-off policy",
+    "on_original_seed_does_not_reproduce": "Audit actual payload/model/template/runtime before treating original failure selection as replicated"
+  },
+  "budget": {"max_calls": 48,"max_output_tokens": 12288,"wall_clock_cutoff": null,"retry": false,"training": false,"new_C_H_evaluation": false},
+  "authorization": "User latest 开始吧 follows proposed ordinary comparison and minimal diagnostic; within existing local lab-compute scope, no paid API",
+  "reviewer": "assistant",
+  "independence": "none/provisional",
+  "engineering": "PENDING_ACTUAL_PREFLIGHT",
+  "run_allowed_until_engineering_pass": false
+}

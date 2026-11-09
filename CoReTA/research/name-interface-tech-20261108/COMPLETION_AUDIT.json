@@ -1,0 +1,65 @@
+{
+  "result": "PASS",
+  "status": "FAILED",
+  "snapshot_responses": 24,
+  "snapshot_attempts": 24,
+  "max_input_plus_cap": 2099,
+  "complete_arms_checked": 0,
+  "all_requests_reconstructed": true,
+  "all_output_ids_decoded": true,
+  "source_permissions_checked": true,
+  "fact_selection_requests": [],
+  "non_eos": 0,
+  "unreadable_finals": 0,
+  "output_tokens": 2052,
+  "generation_seconds": 90.99229908309644,
+  "freeze_unchanged": true,
+  "scope": "assistant provisional audit; not independent human or semantic correctness certification",
+  "unreadable_initials": 4,
+  "unreadable_nonfact_outputs": 4,
+  "legacy_option_ids_emitted": 0,
+  "initial_probe": {
+    "tasks": [
+      7,
+      8,
+      11,
+      23,
+      33,
+      34
+    ],
+    "planned_calls": 24,
+    "attempted_calls": 24,
+    "failures": [
+      {
+        "task_id": 7,
+        "actor": "M1",
+        "reason": "UNREADABLE_NAME"
+      },
+      {
+        "task_id": 7,
+        "actor": "M2",
+        "reason": "UNREADABLE_NAME"
+      },
+      {
+        "task_id": 8,
+        "actor": "M3",
+        "reason": "UNREADABLE_NAME"
+      },
+      {
+        "task_id": 8,
+        "actor": "M4",
+        "reason": "UNREADABLE_NAME"
+      }
+    ],
+    "gate": "FAIL",
+    "accuracy_not_used_to_gate": true
+  },
+  "stage_max_output_tokens": {
+    "initial": 248,
+    "exchange": 0,
+    "facts": 0,
+    "work": 0,
+    "final": 0
+  },
+  "not_method_efficacy": true
+}

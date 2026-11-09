@@ -1,0 +1,268 @@
+[
+  {
+    "id": 16,
+    "name": "Crisis Backup Decision",
+    "description": "Your company’s IT systems have just suffered a major ransomware attack. Senior management is demanding you make an immediate group decision: choose where to send the next full backup copy of all systems. You have contracts in place with three geographically separate data centers—Alpha, Bravo, and Charlie—each with a track record of reliability. Only one can receive the backup now (due to bandwidth limitations), and there's no opportunity to create a second backup for at least a week. If the chosen center fails, company data may be permanently lost, so your group must agree which site offers the best security and continuity under urgent conditions. Each of you has received a short briefing: some details are shared; an additional confidential update has been given to each person, which might affect your assessment of the risks.",
+    "shared": {
+      "S01": "Data Center Bravo is currently rated as having the best firewall and intrusion protection according to the latest independent audit report.",
+      "S02": "Alpha, Bravo, and Charlie all report no power outages or physical damage in the past year.",
+      "S03": "The company’s legal department says any site failure could have major regulatory consequences; the primary concern is ensuring the backup stays both physically secure and rapidly accessible.",
+      "S04": "The latest IT operations dashboard reports Alpha is busiest but still within normal usage; Bravo and Charlie at normal load."
+    },
+    "hidden": {
+      "H01": "Bravo has just received a legal notice from a government agency about possible asset freezes due to an ongoing investigation; details are not being shared publicly yet, and services may be disrupted pending developments.",
+      "H02": "Construction crews are scheduled to do electrical maintenance near Data Center Alpha within the next 24 hours, with a risk of power cuts (but the data center has not announced an outage).",
+      "H03": "A cable cut near Data Center Charlie last month has been fully repaired, and the center has recently passed an extra security audit prompted by that incident.",
+      "H04": "An internal alert notes Bravo’s site manager for this weekend is a temp unfamiliar with emergency protocols, but nothing has gone wrong so far."
+    },
+    "options": {
+      "Alpha": "Alpha",
+      "Bravo": "Bravo",
+      "Charlie": "Charlie"
+    }
+  },
+  {
+    "id": 17,
+    "name": "scientists_animal_base_decision",
+    "description": "You are part of an international science team sent to set up a temporary research base in a remote part of West Africa, where a rare animal species was just sighted. You have limited daylight to choose the safest and most practical base location. Conditions include dense jungle, a wide river, and an open high plateau. The animal has not been studied before and is believed to be evasive. Four potential base sites are available: A) Deep Jungle Site, B) Riverbank Clearing, C) Hilltop Overlook, and D) Plateau Camp. You must select a base that is both accessible and safe from environmental and wildlife hazards. Time is short. If your group chooses the site that allows you to safely set up and observe the animal, your research will be a global breakthrough.",
+    "shared": {
+      "S01": "Riverbank Clearing (Site B) is closest to multiple sighting locations and is described in a local guidebook as level ground with easy river access.",
+      "S02": "Local villagers say the Deep Jungle Site (A) has abundant fresh water and thick forest canopy, which is good for shade, though it's further from the roads.",
+      "S03": "Hilltop Overlook (C) has decent views and radio line-of-sight but rumors mention occasional landslides after rain.",
+      "S04": "Plateau Camp (D) is the most open and furthest from the animal's reported territory, making sightings potentially less likely."
+    },
+    "hidden": {
+      "H01": "Last week's rain caused mudslides that blocked the only road leading to Hilltop Overlook (Site C), making it unreachable by vehicle for days.",
+      "H02": "Local herders reported that the Deep Jungle Site (A) has become impassable due to recent flooding—current too strong for safe wading or boat access.",
+      "H03": "Plateau Camp (Site D) is the only area where the wind patterns don't carry biting insects from the swamp—other locations will have severe insect problems at dusk.",
+      "H04": "Park rangers set up camera traps last month and recorded nocturnal predators frequenting the Riverbank Clearing (Site B), making it highly dangerous at night."
+    },
+    "options": {
+      "Deep Jungle Site (A)": "Deep Jungle Site (A)",
+      "Riverbank Clearing (B)": "Riverbank Clearing (B)",
+      "Hilltop Overlook (C)": "Hilltop Overlook (C)",
+      "Plateau Camp (D)": "Plateau Camp (D)"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Critical Data Backup Site Selection",
+    "description": "You are IT coordinators at a national research institute. A sophisticated cyberattack is underway, targeting all your digital assets. You must immediately choose a site to physically deliver critical data for offline backup before the attacker can permanently destroy or corrupt systems. There are three candidate facilities:\n- Mountain Server Farm (isolated, known for its robust network and backup power).\n- Valley Research Annex (onsite security team and advanced air-gapped systems).\n- City HQ Facility (main office building, older but recently renovated infrastructure).\nOnly one location is both reachable and appropriately secure under current conditions. Time is of the essence: the attacker may escalate at any moment, so the decision must be rapid and correct.",
+    "shared": {
+      "S01": "Mountain Server Farm is on an isolated network and has backup generators in the event of a main power loss.",
+      "S02": "Valley Research Annex is monitored by a live security team and is equipped with air-gapped backup systems.",
+      "S03": "City HQ Facility just completed a major infrastructure upgrade, including new firewalls and physical barriers, but remains directly connected to the internet."
+    },
+    "hidden": {
+      "H01": "Emergency backup power at Mountain Server Farm was rerouted this morning to support a nearby hospital and is currently unavailable for the servers.",
+      "H02": "The Mountain Server Farm's isolated network has been down for the last 12 hours, and the local team is unable to restore connectivity.",
+      "H03": "The Valley Research Annex was bypassed by the attackers, but a security technician just discovered the main network routing switch was replaced with one loaded with hidden malware.",
+      "H04": "The City HQ Facility's recent renovation included installation of a separate, newly-laid internet line with verified security audits, and there is confirmation that the building is physically undisturbed."
+    },
+    "options": {
+      "Mountain Server Farm": "Mountain Server Farm",
+      "Valley Research Annex": "Valley Research Annex",
+      "City HQ Facility": "City HQ Facility"
+    }
+  },
+  {
+    "id": 39,
+    "name": "emergency_aircraft_landing_site",
+    "description": "A passenger aircraft has experienced engine trouble and needs to make an emergency landing. There are three possible landing zones within range: LZ Alpha, LZ Bravo, and LZ Charlie. Each has its own pros and cons. Weather conditions are worsening rapidly. The pilot requests that you (the coordination team) quickly select the safest landing zone. Acting on incomplete information could result in disaster, but time is short. You must discuss and make a recommendation as a group. Only one landing zone is truly suitable; the others are too risky under current circumstances.",
+    "shared": {
+      "S01": "LZ Bravo is the only site with full fire and medical crews standing by, and it has a recently resurfaced runway.",
+      "S02": "Local ATC reports that all approaches to LZ Bravo are currently clear of air traffic.",
+      "S03": "LZ Alpha is a basic airstrip used mostly for cargo flights, with minimal ground support.",
+      "S04": "LZ Charlie is a larger airport but is undergoing some repair work to minor taxiways. The main runway, however, is reported open.",
+      "S05": "Wind speeds are moderate at all sites according to earlier updates."
+    },
+    "hidden": {
+      "H01": "Despite reports of open runways, LZ Charlie's emergency power just failed, disabling all runway lighting and navigation aids.",
+      "H02": "A previously scheduled cargo flight to LZ Alpha was just diverted elsewhere, leaving the runway and landing approach completely clear for this arrival.",
+      "H03": "Flooding has just been observed at LZ Bravo, submerging the eastern third of the runway (which cannot be seen from the tower) and making safe landing impossible.",
+      "H04": "The most recent weather update now reports sudden crosswinds at LZ Charlie are exceeding safe landing limits for this aircraft type."
+    },
+    "options": {
+      "LZ Alpha": "LZ Alpha",
+      "LZ Bravo": "LZ Bravo",
+      "LZ Charlie": "LZ Charlie"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Safe Lab Choice After Earthquake",
+    "description": "You are four scientists tasked by the government to analyze a dangerous new virus as quickly as possible to inform emergency pandemic responses. Three laboratories—Lab Alpha, Lab Beta, and Lab Gamma—are available. An earthquake struck earlier today, causing possible damage throughout the facility. Time is critical: you must start the research within the next several hours.\n\nEach lab has unique equipment and safety features, but you must choose only one. All labs are typically considered safe, but the earthquake may have altered the situation. If you choose the only truly safe and operational lab, the research can proceed. If not, vital evidence could be lost, causing setbacks to containment efforts.",
+    "shared": {
+      "S01": "Lab Alpha contains specialized virology equipment but is located in the basement.",
+      "S02": "Lab Beta is on the second floor and was recently reinforced for earthquakes; all chemical storage in Beta remains secure after the quake.",
+      "S03": "Lab Gamma is on the top floor, farther from emergency exits, but has an independent air filtration system that passed government inspection last month.",
+      "S04": "Power is restored to all labs except Gamma, which is still on emergency battery backup."
+    },
+    "hidden": {
+      "H01": "Structural engineers found a major crack in a supporting beam underneath Beta’s floor that worsened since initial inspections—unexpected aftershocks are expected within the next 24 hours.",
+      "H02": "All scheduled deliveries of reagents for virus research were mistakenly routed to Gamma and have now arrived there—but have not been delivered to the other labs, which now lack key supplies.",
+      "H03": "The emergency battery in Gamma has enough charge to last twelve more hours, which is enough for the critical first phase of the experiment, and the air system continues to operate independently regardless of main power.",
+      "H04": "Water is leaking into Lab Alpha from cracks in the basement wall, creating a risk of flooding and electrical hazards."
+    },
+    "options": {
+      "Lab Alpha": "Lab Alpha",
+      "Lab Beta": "Lab Beta",
+      "Lab Gamma": "Lab Gamma"
+    }
+  },
+  {
+    "id": 46,
+    "name": "emergency_evacuation_center_choice",
+    "description": "You are a member of an emergency coordination team tasked with directing a group of visitors to the safest available evacuation center after a sudden chemical spill in your town. Three centers are prepared: Riverside School Gym, Hillside Community Center, and Downtown Library Hall. A recent flood warning has complicated the situation, and you must make a group decision swiftly.",
+    "shared": {
+      "S01": "All three evacuation centers have enough space to hold the evacuees.",
+      "S02": "Hillside Community Center has working power and backup generators.",
+      "S03": "Riverside School Gym is closer to the river and sometimes floods during heavy rain.",
+      "S04": "Downtown Library Hall is farther from the spill and on high ground, but it's older and less often used for emergencies.",
+      "S05": "Local authorities recommend against Riverside School Gym if there’s a flooding risk."
+    },
+    "hidden": {
+      "H01": "A water main break means that the Hillside Community Center currently has no potable water or restrooms available.",
+      "H02": "Tests of local air quality show that the air inside the Downtown Library Hall has high levels of chemical vapor due to faulty air intake filters.",
+      "H03": "Fire department reports confirm that the Riverside School Gym is fully dry and the latest flood warning only applies downstream, not to this facility.",
+      "H04": "The road leading to Hillside Community Center is blocked due to a large fallen tree; there is no way to detour as of this hour."
+    },
+    "options": {
+      "Riverside School Gym": "Riverside School Gym",
+      "Hillside Community Center": "Hillside Community Center",
+      "Downtown Library Hall": "Downtown Library Hall"
+    }
+  },
+  {
+    "id": 49,
+    "name": "choosing_the_safe_field_station",
+    "description": "You are part of a scientific expedition team about to cross a forested region to reach a field station for an urgent wildlife survey. Time is tight, and you can't afford to be delayed. There are three possible field stations to pick as your base: Riverside Station (accessible by the main bridge), Hilltop Cabin (accessible by a winding road), and Valley Edge Outpost (accessible via trails that split from the highway and from the riverside road). Each participant knows the base status, but different team members have received separate logistical updates from park rangers and local authorities. Only one station is reachable and safe for tonight.",
+    "shared": {
+      "S01": "A new bridge to Riverside Station was opened last month, and routine checks showed it was in good condition just this morning.",
+      "S02": "All supplies for tonight are already delivered to the three stations.",
+      "S03": "The park's main highway crosses both the river (to Riverside) and leads to the outpost (Valley Edge).",
+      "S04": "Weather this week has been unusually calm aside from some melting snow in the mountains."
+    },
+    "hidden": {
+      "H01": "A fire department bulletin: the only small bridge giving alternate access to Valley Edge from the north is closed for urgent repairs until tomorrow.",
+      "H02": "A car radio alert: There's a sudden emergency at the upstream hydro dam, prompting evacuation orders for all stations directly downstream (including Riverside).",
+      "H03": "A message from a supply manager: the hiking trail connecting Riverside and Valley Edge is flooded and not passable on foot or vehicle.",
+      "H04": "A park ranger just reported a landslide has blocked the main highway leading toward Valley Edge Outpost."
+    },
+    "options": {
+      "Riverside Station": "Riverside Station",
+      "Hilltop Cabin": "Hilltop Cabin",
+      "Valley Edge Outpost": "Valley Edge Outpost"
+    }
+  },
+  {
+    "id": 52,
+    "name": "mountain_storm_shelter",
+    "description": "Your hiking group is unexpectedly stranded in the mountains due to a rapidly approaching windstorm. You must immediately choose one place to shelter for the night before the storm intensifies. There are three well-known shelters within reach: Blue Lake Cabin, Red Cliff Lodge, and Green Valley Outpost. Only one option is safe and accessible—the others all hide serious dangers or are unreachable at present. Your team must coordinate and decide wisely; if you shelter in the only safe location, everyone survives. If you pick wrong, the outcome could be fatal.",
+    "shared": {
+      "S01": "Blue Lake Cabin has a recent delivery of emergency rations, medical kits, and blankets. It is accessible by crossing a bridge, which the ranger station repaired last week after a minor landslide.",
+      "S02": "Red Cliff Lodge is a solid stone building that usually withstands harsh weather, but contact was lost with its caretaker earlier today.",
+      "S03": "Green Valley Outpost is further away and designed primarily as a rest stop for day hikers, with basic shelter but minimal supplies.",
+      "S04": "The local ranger station’s last broadcast said the storm’s strongest winds are expected to hit somewhere north of your current location, but the reports are not exact."
+    },
+    "hidden": {
+      "H01": "A sign near the Blue Lake trailhead warns that an upstream dam release is set for tonight, which will further raise water levels and could worsen the bridge collapse situation.",
+      "H02": "A new weather alert (missed in earlier updates) says the storm will hit Red Cliff Lodge directly, with extreme, possibly structural-damaging winds expected at that elevation.",
+      "H03": "A hiker coming from Blue Lake reports the bridge washed out in the last hour and is now impassable.",
+      "H04": "Green Valley Outpost, though lacking supplies, is built partially underground and is rated for emergency use in extreme weather, per a maintenance record found in your group’s gear."
+    },
+    "options": {
+      "Blue Lake Cabin": "Blue Lake Cabin",
+      "Red Cliff Lodge": "Red Cliff Lodge",
+      "Green Valley Outpost": "Green Valley Outpost"
+    }
+  },
+  {
+    "id": 56,
+    "name": "Secure the Masterpiece",
+    "description": "You are a member of a four-person emergency response team at a large city's art district. There has been a sudden chemical leak from a nearby industrial plant, and local authorities have ordered an immediate lockdown. The team must decide where to move a priceless painting, currently displayed in the main public gallery, to ensure its safety. Three secure locations nearby are available:\n- The Government Records Vault (Accessed via a side street)\n- The City Art Museum's Disaster-Proof Storage (Next block, built for fire and flood protection)\n- The University Science Building's Secure Lab (Two blocks away with high-end security)\n\nEach participant in the team has special channels providing unique information. You need to work together to use all your knowledge before making a decision. Only one location is truly safe under the present circumstances. If you make the right choice, the painting will be safe, and your team succeeds; the wrong choice could destroy the artwork.",
+    "shared": {
+      "S01": "The chemical leak is expected to spread with the wind to several nearby blocks within 30 minutes.",
+      "S02": "The City Art Museum's Disaster-Proof Storage is specifically designed to withstand emergencies such as fires, flooding, and vandalism, and it is unoccupied today.",
+      "S03": "The University Science Building's Secure Lab has the highest level of security clearance, and its filtration system can typically handle chemical contaminants.",
+      "S04": "The Government Records Vault is the farthest from the plant, but it is rarely used and requires special Keycard X for entry.",
+      "S05": "The painting must be kept in a controlled environment, free from chemical vapors or temperature fluctuations."
+    },
+    "hidden": {
+      "H01": "The main generator for the University Science Building is scheduled for maintenance today; backup power is sufficient for lights but not the laboratory's HVAC system.",
+      "H02": "A protest is occurring on the street that provides access to the Government Records Vault, delaying vehicle access by roughly 10 minutes.",
+      "H03": "A wind change is forecast shortly, which will direct the chemical leak directly toward the Art Museum's block within 20 minutes.",
+      "H04": "A security alert just went out: lab technicians in the science building are all being evacuated as a precaution by university order."
+    },
+    "options": {
+      "The Government Records Vault": "The Government Records Vault",
+      "The City Art Museum's Disaster-Proof Storage": "The City Art Museum's Disaster-Proof Storage",
+      "The University Science Building's Secure Lab": "The University Science Building's Secure Lab"
+    }
+  },
+  {
+    "id": 60,
+    "name": "The Elusive Bird Sighting",
+    "description": "You are part of a research group searching for the recently spotted rare Bluecrest Thrush in the large Greenwood Nature Reserve. The park is divided into three main sections: Area A (the Oak Woods), Area B (the Wetland), and Area C (the Meadow). A trusted park ranger reported sighting the bird yesterday at sunrise, but due to heavy fog, the exact location was unclear. Each group member will receive one unique field report in addition to the public information.",
+    "shared": {
+      "S01": "The trusted ranger noted that the sighting took place in a grassy clearing with dew on the ground, and that songbirds could be heard nearby.",
+      "S02": "In Area A, the Oak Woods, the last official survey found no evidence of Bluecrest Thrush for the past season.",
+      "S03": "Area B, the Wetland, is partially flooded due to recent storms, making movement difficult and likely discouraging small land birds.",
+      "S04": "Area C, the Meadow, is famous for its grassy clearings and hosts several songbird species; it has had intermittent sightings of rare birds before."
+    },
+    "hidden": {
+      "H01": "Area B’s main trail has been entirely underwater since the storm, making it physically impossible to cross it on foot or for the ranger to have entered there yesterday.",
+      "H02": "The only patch of ground in Area C that is suitable as a 'grassy clearing' is currently under maintenance and was cordoned off completely yesterday; researchers cannot enter it.",
+      "H03": "Though the last official survey found no Bluecrest Thrush in Area A, several spontaneous amateur sightings with photos have been submitted from Area A to the reserve’s website in the last two weeks.",
+      "H04": "Last night, local residents saw wild dogs passing through Area C and observed them again at dawn. Bluecrest Thrushes avoid areas where wild dogs were seen in the preceding 24 hours."
+    },
+    "options": {
+      "Area A (the Oak Woods)": "Area A (the Oak Woods)",
+      "Area B (the Wetland)": "Area B (the Wetland)",
+      "Area C (the Meadow)": "Area C (the Meadow)"
+    }
+  },
+  {
+    "id": 63,
+    "name": "Emergency Event Relocation",
+    "description": "Your team is in charge of relocating a major university event due to an unexpected power failure at the original venue. You must choose a new location from three options within the campus, each with pros and cons. Time is tight: the event is in two hours, so you must act quickly. Each possible venue must accommodate 200 attendees and provide shelter in case of sudden rain. All venues are prepared and have been used for similar events in the past. You'll lose significant event funding if your choice proves unsafe or unusable.",
+    "shared": {
+      "S01": "Garden Hall has a small roof leak reported overnight, but staff have placed buckets to catch any water. The main hall was not inspected this morning because staff prioritized the Pavilion and Lodge.",
+      "S02": "River Pavilion is fully set up, and security has confirmed it is dry and free of flooding. Pavilion staff are onsite, kitchens are stocked, and all technical equipment has been tested as working post-storm.",
+      "S03": "Mountain Lodge is on high ground and has backup power. However, heavy snow has been falling since last night, and it's uncertain whether the road will stay open."
+    },
+    "hidden": {
+      "H01": "The access road to Mountain Lodge was completely blocked by fallen trees at 8am, and campus maintenance does not expect it to be cleared today. Also, the roof leak at Garden Hall is only over the storage closet; the main hall is confirmed dry and ready.",
+      "H02": "A Pavilion staff member disclosed privately that mold was discovered under the kitchen sink during setup; he worries it could affect food safety if it gets stirred up during cooking.",
+      "H03": "River Pavilion's kitchen experienced a brief electrical short circuit this morning; staff report the smell of burning wires lingered but cleared quickly.",
+      "H04": "Maintenance at River Pavilion discovered areas under the wooden floor feel spongy; one floorboard was discovered to be cracked, but staff covered the area with a mat for now."
+    },
+    "options": {
+      "Garden Hall": "Garden Hall",
+      "River Pavilion": "River Pavilion",
+      "Mountain Lodge": "Mountain Lodge"
+    }
+  },
+  {
+    "id": 64,
+    "name": "Office Outbreak Mystery",
+    "description": "You are employees on the safety committee of MetroLoop Inc., called together urgently to advise management after 12 people fell ill at company headquarters. The company cafeteria is under scrutiny, but the source of the outbreak isn’t yet confirmed. Your team must quickly identify the likely cause to guide containment actions. You have three leading hypotheses:\n- Food poisoning from the cafeteria\n- Contaminated water supply\n- Airborne toxin from the HVAC system\nEach of you has received reports or observations not known by others. The company needs your answer within 15 minutes. Speed matters, but so does accuracy—acting on the wrong cause may harm colleagues.",
+    "shared": {
+      "S01": "All 12 sick employees had lunch in the company cafeteria on the day symptoms began.",
+      "S02": "Several cafeteria staff are also reporting mild symptoms.",
+      "S03": "Water samples from office faucets showed no immediate contamination in preliminary tests.",
+      "S04": "Symptoms included nausea and dizziness, reported by all affected employees within an hour after lunch."
+    },
+    "hidden": {
+      "H01": "I didn’t eat anything from the cafeteria that day, but I developed the same symptoms as the others.",
+      "H02": "The building’s air vents have been malfunctioning for two days, with an unusual odor reported throughout the open-plan office area, but not in the cafeteria itself.",
+      "H03": "A client visiting from another city became sick late in the afternoon, despite bringing their own bottled water and packed lunch, but spent the afternoon in Meeting Room 4 near the sick employees.",
+      "H04": "A health department specialist found early traces of a rarely encountered airborne compound in air filters serving areas outside the cafeteria, but not in the kitchen or dining area."
+    },
+    "options": {
+      "Cafeteria Food": "Cafeteria Food",
+      "Contaminated Water Supply": "Contaminated Water Supply",
+      "Airborne Toxin from HVAC": "Airborne Toxin from HVAC"
+    }
+  }
+]

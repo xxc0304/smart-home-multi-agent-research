@@ -1,0 +1,3909 @@
+{
+  "scope": "EXPLORATORY_D16_LOCAL_RECEIVER_PROBE_ASSISTANT_SEMANTIC_REVIEW",
+  "new_model_calls": 0,
+  "summaries": {
+    "all": {
+      "units": 64,
+      "unique_tasks": 16,
+      "conditions": {
+        "P0": {
+          "final_correct": 55,
+          "work_correct_candidate": 54,
+          "work_wrong_candidate": 6,
+          "work_insufficient": 4,
+          "correct_work_wrong_final": [
+            "q034_E/P0/0",
+            "q034_E/P0/1",
+            "q038_E/P0/0",
+            "q038_E/P0/1"
+          ],
+          "wrong_work_correct_final": [
+            "q069_E/P0/0",
+            "q069_E/P0/1"
+          ],
+          "insufficient_work_correct_final": [
+            "q002_E/P0/1",
+            "q002_B/P0/0",
+            "q002_B/P0/1"
+          ]
+        },
+        "P1": {
+          "final_correct": 55,
+          "work_correct_candidate": 53,
+          "work_wrong_candidate": 10,
+          "work_insufficient": 1,
+          "correct_work_wrong_final": [
+            "q038_E/P1/0",
+            "q038_E/P1/1"
+          ],
+          "wrong_work_correct_final": [
+            "q052_E/P1/0",
+            "q052_E/P1/1",
+            "q069_E/P1/0",
+            "q069_E/P1/1"
+          ],
+          "insufficient_work_correct_final": []
+        },
+        "P2": {
+          "final_correct": 54,
+          "work_correct_candidate": 53,
+          "work_wrong_candidate": 8,
+          "work_insufficient": 3,
+          "correct_work_wrong_final": [
+            "q038_E/P2/0",
+            "q038_E/P2/1"
+          ],
+          "wrong_work_correct_final": [
+            "q069_E/P2/0"
+          ],
+          "insufficient_work_correct_final": [
+            "q002_E/P2/1",
+            "q002_B/P2/0"
+          ]
+        }
+      },
+      "contrasts": {
+        "P1-P0": {
+          "final_gains": [],
+          "final_losses": [],
+          "work_gains": [
+            "q002_E/1",
+            "q002_B/0",
+            "q002_B/1"
+          ],
+          "work_losses": [
+            "q034_E/0",
+            "q034_E/1",
+            "q052_E/0",
+            "q052_E/1"
+          ],
+          "same_work_text": 21,
+          "same_final_text": 61,
+          "same_final_normalized": 61
+        },
+        "P2-P1": {
+          "final_gains": [
+            "q018_B/0"
+          ],
+          "final_losses": [
+            "q018_B/1",
+            "q034_B/1"
+          ],
+          "work_gains": [
+            "q018_B/0",
+            "q052_E/0",
+            "q052_E/1",
+            "q069_E/1"
+          ],
+          "work_losses": [
+            "q002_E/1",
+            "q002_B/0",
+            "q018_B/1",
+            "q034_B/1"
+          ],
+          "same_work_text": 13,
+          "same_final_text": 61,
+          "same_final_normalized": 61
+        }
+      }
+    },
+    "expert": {
+      "units": 32,
+      "unique_tasks": 16,
+      "conditions": {
+        "P0": {
+          "final_correct": 28,
+          "work_correct_candidate": 29,
+          "work_wrong_candidate": 2,
+          "work_insufficient": 1,
+          "correct_work_wrong_final": [
+            "q034_E/P0/0",
+            "q034_E/P0/1",
+            "q038_E/P0/0",
+            "q038_E/P0/1"
+          ],
+          "wrong_work_correct_final": [
+            "q069_E/P0/0",
+            "q069_E/P0/1"
+          ],
+          "insufficient_work_correct_final": [
+            "q002_E/P0/1"
+          ]
+        },
+        "P1": {
+          "final_correct": 28,
+          "work_correct_candidate": 26,
+          "work_wrong_candidate": 6,
+          "work_insufficient": 0,
+          "correct_work_wrong_final": [
+            "q038_E/P1/0",
+            "q038_E/P1/1"
+          ],
+          "wrong_work_correct_final": [
+            "q052_E/P1/0",
+            "q052_E/P1/1",
+            "q069_E/P1/0",
+            "q069_E/P1/1"
+          ],
+          "insufficient_work_correct_final": []
+        },
+        "P2": {
+          "final_correct": 28,
+          "work_correct_candidate": 28,
+          "work_wrong_candidate": 3,
+          "work_insufficient": 1,
+          "correct_work_wrong_final": [
+            "q038_E/P2/0",
+            "q038_E/P2/1"
+          ],
+          "wrong_work_correct_final": [
+            "q069_E/P2/0"
+          ],
+          "insufficient_work_correct_final": [
+            "q002_E/P2/1"
+          ]
+        }
+      },
+      "contrasts": {
+        "P1-P0": {
+          "final_gains": [],
+          "final_losses": [],
+          "work_gains": [
+            "q002_E/1"
+          ],
+          "work_losses": [
+            "q034_E/0",
+            "q034_E/1",
+            "q052_E/0",
+            "q052_E/1"
+          ],
+          "same_work_text": 16,
+          "same_final_text": 30,
+          "same_final_normalized": 30
+        },
+        "P2-P1": {
+          "final_gains": [],
+          "final_losses": [],
+          "work_gains": [
+            "q052_E/0",
+            "q052_E/1",
+            "q069_E/1"
+          ],
+          "work_losses": [
+            "q002_E/1"
+          ],
+          "same_work_text": 12,
+          "same_final_text": 32,
+          "same_final_normalized": 32
+        }
+      }
+    },
+    "ordinary": {
+      "units": 32,
+      "unique_tasks": 16,
+      "conditions": {
+        "P0": {
+          "final_correct": 27,
+          "work_correct_candidate": 25,
+          "work_wrong_candidate": 4,
+          "work_insufficient": 3,
+          "correct_work_wrong_final": [],
+          "wrong_work_correct_final": [],
+          "insufficient_work_correct_final": [
+            "q002_B/P0/0",
+            "q002_B/P0/1"
+          ]
+        },
+        "P1": {
+          "final_correct": 27,
+          "work_correct_candidate": 27,
+          "work_wrong_candidate": 4,
+          "work_insufficient": 1,
+          "correct_work_wrong_final": [],
+          "wrong_work_correct_final": [],
+          "insufficient_work_correct_final": []
+        },
+        "P2": {
+          "final_correct": 26,
+          "work_correct_candidate": 25,
+          "work_wrong_candidate": 5,
+          "work_insufficient": 2,
+          "correct_work_wrong_final": [],
+          "wrong_work_correct_final": [],
+          "insufficient_work_correct_final": [
+            "q002_B/P2/0"
+          ]
+        }
+      },
+      "contrasts": {
+        "P1-P0": {
+          "final_gains": [],
+          "final_losses": [],
+          "work_gains": [
+            "q002_B/0",
+            "q002_B/1"
+          ],
+          "work_losses": [],
+          "same_work_text": 5,
+          "same_final_text": 31,
+          "same_final_normalized": 31
+        },
+        "P2-P1": {
+          "final_gains": [
+            "q018_B/0"
+          ],
+          "final_losses": [
+            "q018_B/1",
+            "q034_B/1"
+          ],
+          "work_gains": [
+            "q018_B/0"
+          ],
+          "work_losses": [
+            "q002_B/0",
+            "q018_B/1",
+            "q034_B/1"
+          ],
+          "same_work_text": 1,
+          "same_final_text": 29,
+          "same_final_normalized": 29
+        }
+      }
+    },
+    "no_retained_peer_work": {
+      "units": 22,
+      "unique_tasks": 6,
+      "conditions": {
+        "P0": {
+          "final_correct": 15,
+          "work_correct_candidate": 17,
+          "work_wrong_candidate": 2,
+          "work_insufficient": 3,
+          "correct_work_wrong_final": [
+            "q034_E/P0/0",
+            "q034_E/P0/1",
+            "q038_E/P0/0",
+            "q038_E/P0/1"
+          ],
+          "wrong_work_correct_final": [],
+          "insufficient_work_correct_final": [
+            "q002_B/P0/0",
+            "q002_B/P0/1"
+          ]
+        },
+        "P1": {
+          "final_correct": 15,
+          "work_correct_candidate": 15,
+          "work_wrong_candidate": 6,
+          "work_insufficient": 1,
+          "correct_work_wrong_final": [
+            "q038_E/P1/0",
+            "q038_E/P1/1"
+          ],
+          "wrong_work_correct_final": [
+            "q052_E/P1/0",
+            "q052_E/P1/1"
+          ],
+          "insufficient_work_correct_final": []
+        },
+        "P2": {
+          "final_correct": 14,
+          "work_correct_candidate": 15,
+          "work_wrong_candidate": 5,
+          "work_insufficient": 2,
+          "correct_work_wrong_final": [
+            "q038_E/P2/0",
+            "q038_E/P2/1"
+          ],
+          "wrong_work_correct_final": [],
+          "insufficient_work_correct_final": [
+            "q002_B/P2/0"
+          ]
+        }
+      },
+      "contrasts": {
+        "P1-P0": {
+          "final_gains": [],
+          "final_losses": [],
+          "work_gains": [
+            "q002_B/0",
+            "q002_B/1"
+          ],
+          "work_losses": [
+            "q034_E/0",
+            "q034_E/1",
+            "q052_E/0",
+            "q052_E/1"
+          ],
+          "same_work_text": 5,
+          "same_final_text": 19,
+          "same_final_normalized": 19
+        },
+        "P2-P1": {
+          "final_gains": [
+            "q018_B/0"
+          ],
+          "final_losses": [
+            "q018_B/1",
+            "q034_B/1"
+          ],
+          "work_gains": [
+            "q018_B/0",
+            "q052_E/0",
+            "q052_E/1"
+          ],
+          "work_losses": [
+            "q002_B/0",
+            "q018_B/1",
+            "q034_B/1"
+          ],
+          "same_work_text": 7,
+          "same_final_text": 19,
+          "same_final_normalized": 19
+        }
+      }
+    },
+    "retained_peer_work": {
+      "units": 42,
+      "unique_tasks": 11,
+      "conditions": {
+        "P0": {
+          "final_correct": 40,
+          "work_correct_candidate": 37,
+          "work_wrong_candidate": 4,
+          "work_insufficient": 1,
+          "correct_work_wrong_final": [],
+          "wrong_work_correct_final": [
+            "q069_E/P0/0",
+            "q069_E/P0/1"
+          ],
+          "insufficient_work_correct_final": [
+            "q002_E/P0/1"
+          ]
+        },
+        "P1": {
+          "final_correct": 40,
+          "work_correct_candidate": 38,
+          "work_wrong_candidate": 4,
+          "work_insufficient": 0,
+          "correct_work_wrong_final": [],
+          "wrong_work_correct_final": [
+            "q069_E/P1/0",
+            "q069_E/P1/1"
+          ],
+          "insufficient_work_correct_final": []
+        },
+        "P2": {
+          "final_correct": 40,
+          "work_correct_candidate": 38,
+          "work_wrong_candidate": 3,
+          "work_insufficient": 1,
+          "correct_work_wrong_final": [],
+          "wrong_work_correct_final": [
+            "q069_E/P2/0"
+          ],
+          "insufficient_work_correct_final": [
+            "q002_E/P2/1"
+          ]
+        }
+      },
+      "contrasts": {
+        "P1-P0": {
+          "final_gains": [],
+          "final_losses": [],
+          "work_gains": [
+            "q002_E/1"
+          ],
+          "work_losses": [],
+          "same_work_text": 16,
+          "same_final_text": 42,
+          "same_final_normalized": 42
+        },
+        "P2-P1": {
+          "final_gains": [],
+          "final_losses": [],
+          "work_gains": [
+            "q069_E/1"
+          ],
+          "work_losses": [
+            "q002_E/1"
+          ],
+          "same_work_text": 6,
+          "same_final_text": 42,
+          "same_final_normalized": 42
+        }
+      }
+    },
+    "semantic_primary": {
+      "units": 56,
+      "unique_tasks": 14,
+      "conditions": {
+        "P0": {
+          "final_correct": 49,
+          "work_correct_candidate": 50,
+          "work_wrong_candidate": 2,
+          "work_insufficient": 4,
+          "correct_work_wrong_final": [
+            "q034_E/P0/0",
+            "q034_E/P0/1",
+            "q038_E/P0/0",
+            "q038_E/P0/1"
+          ],
+          "wrong_work_correct_final": [],
+          "insufficient_work_correct_final": [
+            "q002_E/P0/1",
+            "q002_B/P0/0",
+            "q002_B/P0/1"
+          ]
+        },
+        "P1": {
+          "final_correct": 49,
+          "work_correct_candidate": 49,
+          "work_wrong_candidate": 6,
+          "work_insufficient": 1,
+          "correct_work_wrong_final": [
+            "q038_E/P1/0",
+            "q038_E/P1/1"
+          ],
+          "wrong_work_correct_final": [
+            "q052_E/P1/0",
+            "q052_E/P1/1"
+          ],
+          "insufficient_work_correct_final": []
+        },
+        "P2": {
+          "final_correct": 48,
+          "work_correct_candidate": 48,
+          "work_wrong_candidate": 5,
+          "work_insufficient": 3,
+          "correct_work_wrong_final": [
+            "q038_E/P2/0",
+            "q038_E/P2/1"
+          ],
+          "wrong_work_correct_final": [],
+          "insufficient_work_correct_final": [
+            "q002_E/P2/1",
+            "q002_B/P2/0"
+          ]
+        }
+      },
+      "contrasts": {
+        "P1-P0": {
+          "final_gains": [],
+          "final_losses": [],
+          "work_gains": [
+            "q002_E/1",
+            "q002_B/0",
+            "q002_B/1"
+          ],
+          "work_losses": [
+            "q034_E/0",
+            "q034_E/1",
+            "q052_E/0",
+            "q052_E/1"
+          ],
+          "same_work_text": 18,
+          "same_final_text": 53,
+          "same_final_normalized": 53
+        },
+        "P2-P1": {
+          "final_gains": [
+            "q018_B/0"
+          ],
+          "final_losses": [
+            "q018_B/1",
+            "q034_B/1"
+          ],
+          "work_gains": [
+            "q018_B/0",
+            "q052_E/0",
+            "q052_E/1"
+          ],
+          "work_losses": [
+            "q002_E/1",
+            "q002_B/0",
+            "q018_B/1",
+            "q034_B/1"
+          ],
+          "same_work_text": 13,
+          "same_final_text": 53,
+          "same_final_normalized": 53
+        }
+      }
+    }
+  },
+  "cost": {
+    "P0": {
+      "calls": 128,
+      "input_tokens": 436351,
+      "output_tokens": 10206,
+      "generation_seconds": 589.2987426528125,
+      "work_tokens": 9903,
+      "final_tokens": 303
+    },
+    "P1": {
+      "calls": 128,
+      "input_tokens": 449073,
+      "output_tokens": 10501,
+      "generation_seconds": 624.5005382988602,
+      "work_tokens": 10199,
+      "final_tokens": 302
+    },
+    "P2": {
+      "calls": 128,
+      "input_tokens": 451377,
+      "output_tokens": 9746,
+      "generation_seconds": 554.815882112016,
+      "work_tokens": 9443,
+      "final_tokens": 303
+    }
+  },
+  "original_comparison": {
+    "P1_seed0_work": {
+      "same": 24,
+      "different": 8
+    },
+    "P1_seed0_final": {
+      "same": 27,
+      "different": 5
+    },
+    "note": "Work payload/seed same, old batch2 vs new singleton; original final has different time/history/seed, so not a replication comparison."
+  },
+  "seed_diff": {
+    "P0": {
+      "work_text_changes": 23,
+      "final_text_changes": 1,
+      "final_correctness_changes": 1
+    },
+    "P1": {
+      "work_text_changes": 24,
+      "final_text_changes": 1,
+      "final_correctness_changes": 1
+    },
+    "P2": {
+      "work_text_changes": 20,
+      "final_text_changes": 2,
+      "final_correctness_changes": 2
+    }
+  },
+  "changes": [
+    {
+      "prefix": "q002_E",
+      "task_index": 2,
+      "role": "E",
+      "repeat": 1,
+      "contrast": "P1-P0",
+      "work_before": "INSUFFICIENT_OR_UNCOMMITTED",
+      "work_after": "CORRECT_CONCLUDING_CANDIDATE",
+      "final_before": "Hillary Lindsey",
+      "final_after": "Hillary Lindsey",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q002_E",
+      "task_index": 2,
+      "role": "E",
+      "repeat": 1,
+      "contrast": "P2-P1",
+      "work_before": "CORRECT_CONCLUDING_CANDIDATE",
+      "work_after": "INSUFFICIENT_OR_UNCOMMITTED",
+      "final_before": "Hillary Lindsey",
+      "final_after": "Hillary Lindsey",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q002_B",
+      "task_index": 2,
+      "role": "B",
+      "repeat": 0,
+      "contrast": "P1-P0",
+      "work_before": "INSUFFICIENT_OR_UNCOMMITTED",
+      "work_after": "CORRECT_CONCLUDING_CANDIDATE",
+      "final_before": "Hillary Lindsey",
+      "final_after": "Hillary Lindsey",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q002_B",
+      "task_index": 2,
+      "role": "B",
+      "repeat": 0,
+      "contrast": "P2-P1",
+      "work_before": "CORRECT_CONCLUDING_CANDIDATE",
+      "work_after": "INSUFFICIENT_OR_UNCOMMITTED",
+      "final_before": "Hillary Lindsey",
+      "final_after": "Hillary Lindsey",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q002_B",
+      "task_index": 2,
+      "role": "B",
+      "repeat": 1,
+      "contrast": "P1-P0",
+      "work_before": "INSUFFICIENT_OR_UNCOMMITTED",
+      "work_after": "CORRECT_CONCLUDING_CANDIDATE",
+      "final_before": "Hillary Lindsey",
+      "final_after": "Hillary Lindsey",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q018_B",
+      "task_index": 18,
+      "role": "B",
+      "repeat": 0,
+      "contrast": "P2-P1",
+      "work_before": "INSUFFICIENT_OR_UNCOMMITTED",
+      "work_after": "CORRECT_CONCLUDING_CANDIDATE",
+      "final_before": "Anuman",
+      "final_after": "G. Stanley Hall",
+      "final_em_delta": 1
+    },
+    {
+      "prefix": "q018_B",
+      "task_index": 18,
+      "role": "B",
+      "repeat": 1,
+      "contrast": "P2-P1",
+      "work_before": "CORRECT_CONCLUDING_CANDIDATE",
+      "work_after": "INSUFFICIENT_OR_UNCOMMITTED",
+      "final_before": "G. Stanley Hall",
+      "final_after": "Anuman",
+      "final_em_delta": -1
+    },
+    {
+      "prefix": "q034_E",
+      "task_index": 34,
+      "role": "E",
+      "repeat": 0,
+      "contrast": "P1-P0",
+      "work_before": "CORRECT_CONCLUDING_CANDIDATE",
+      "work_after": "WRONG_CONCLUDING_CANDIDATE",
+      "final_before": "Rahimtullah M. Sayani",
+      "final_after": "Rahimtulla M. Sayani",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q034_E",
+      "task_index": 34,
+      "role": "E",
+      "repeat": 1,
+      "contrast": "P1-P0",
+      "work_before": "CORRECT_CONCLUDING_CANDIDATE",
+      "work_after": "WRONG_CONCLUDING_CANDIDATE",
+      "final_before": "Rahimtullah M. Sayani",
+      "final_after": "Rahimtulla M. Sayani",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q034_B",
+      "task_index": 34,
+      "role": "B",
+      "repeat": 1,
+      "contrast": "P2-P1",
+      "work_before": "CORRECT_CONCLUDING_CANDIDATE",
+      "work_after": "WRONG_CONCLUDING_CANDIDATE",
+      "final_before": "Badruddin Tayyab Ji",
+      "final_after": "Rahimtulla M. Sayani",
+      "final_em_delta": -1
+    },
+    {
+      "prefix": "q052_E",
+      "task_index": 52,
+      "role": "E",
+      "repeat": 0,
+      "contrast": "P1-P0",
+      "work_before": "CORRECT_CONCLUDING_CANDIDATE",
+      "work_after": "WRONG_CONCLUDING_CANDIDATE",
+      "final_before": "Los Angeles County",
+      "final_after": "Los Angeles County",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q052_E",
+      "task_index": 52,
+      "role": "E",
+      "repeat": 0,
+      "contrast": "P2-P1",
+      "work_before": "WRONG_CONCLUDING_CANDIDATE",
+      "work_after": "CORRECT_CONCLUDING_CANDIDATE",
+      "final_before": "Los Angeles County",
+      "final_after": "Los Angeles County",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q052_E",
+      "task_index": 52,
+      "role": "E",
+      "repeat": 1,
+      "contrast": "P1-P0",
+      "work_before": "CORRECT_CONCLUDING_CANDIDATE",
+      "work_after": "WRONG_CONCLUDING_CANDIDATE",
+      "final_before": "Los Angeles County",
+      "final_after": "Los Angeles County",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q052_E",
+      "task_index": 52,
+      "role": "E",
+      "repeat": 1,
+      "contrast": "P2-P1",
+      "work_before": "WRONG_CONCLUDING_CANDIDATE",
+      "work_after": "CORRECT_CONCLUDING_CANDIDATE",
+      "final_before": "Los Angeles County",
+      "final_after": "Los Angeles County",
+      "final_em_delta": 0
+    },
+    {
+      "prefix": "q069_E",
+      "task_index": 69,
+      "role": "E",
+      "repeat": 1,
+      "contrast": "P2-P1",
+      "work_before": "WRONG_CONCLUDING_CANDIDATE",
+      "work_after": "CORRECT_CONCLUDING_CANDIDATE",
+      "final_before": "2.5%",
+      "final_after": "2.5%",
+      "final_em_delta": 0
+    }
+  ],
+  "rows": [
+    {
+      "prefix": "q000_E",
+      "task_index": 0,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 0,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 19
+        },
+        "P1": {
+          "work_id": 1,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 368
+        },
+        "P2": {
+          "work_id": 0,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 19
+        }
+      }
+    },
+    {
+      "prefix": "q000_E",
+      "task_index": 0,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 2,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 33
+        },
+        "P1": {
+          "work_id": 2,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 33
+        },
+        "P2": {
+          "work_id": 2,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 33
+        }
+      }
+    },
+    {
+      "prefix": "q000_B",
+      "task_index": 0,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 5,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 206
+        },
+        "P1": {
+          "work_id": 3,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 270
+        },
+        "P2": {
+          "work_id": 4,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 265
+        }
+      }
+    },
+    {
+      "prefix": "q000_B",
+      "task_index": 0,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 7,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 270
+        },
+        "P1": {
+          "work_id": 8,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 287
+        },
+        "P2": {
+          "work_id": 6,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1843",
+          "final_metrics": {
+            "answer": "1843",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 325
+        }
+      }
+    },
+    {
+      "prefix": "q002_E",
+      "task_index": 2,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 1,
+      "retained_peer_work": 3,
+      "conditions": {
+        "P0": {
+          "work_id": 10,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 215
+        },
+        "P1": {
+          "work_id": 10,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 215
+        },
+        "P2": {
+          "work_id": 9,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 77
+        }
+      }
+    },
+    {
+      "prefix": "q002_E",
+      "task_index": 2,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 1,
+      "retained_peer_work": 3,
+      "conditions": {
+        "P0": {
+          "work_id": 11,
+          "work_code": "INSUFFICIENT_OR_UNCOMMITTED",
+          "work_correct": 0,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 89
+        },
+        "P1": {
+          "work_id": 12,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 181
+        },
+        "P2": {
+          "work_id": 11,
+          "work_code": "INSUFFICIENT_OR_UNCOMMITTED",
+          "work_correct": 0,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "prefix": "q002_B",
+      "task_index": 2,
+      "role": "B",
+      "kind": "ONE_EXPERT_INITIAL",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 13,
+          "work_code": "INSUFFICIENT_OR_UNCOMMITTED",
+          "work_correct": 0,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 212
+        },
+        "P1": {
+          "work_id": 14,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 232
+        },
+        "P2": {
+          "work_id": 15,
+          "work_code": "INSUFFICIENT_OR_UNCOMMITTED",
+          "work_correct": 0,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 226
+        }
+      }
+    },
+    {
+      "prefix": "q002_B",
+      "task_index": 2,
+      "role": "B",
+      "kind": "ONE_EXPERT_INITIAL",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 18,
+          "work_code": "INSUFFICIENT_OR_UNCOMMITTED",
+          "work_correct": 0,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 165
+        },
+        "P1": {
+          "work_id": 16,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 206
+        },
+        "P2": {
+          "work_id": 17,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Hillary Lindsey",
+          "final_metrics": {
+            "answer": "Hillary Lindsey",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 295
+        }
+      }
+    },
+    {
+      "prefix": "q003_E",
+      "task_index": 3,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 19,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 6
+        },
+        "P1": {
+          "work_id": 19,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 6
+        },
+        "P2": {
+          "work_id": 19,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 6
+        }
+      }
+    },
+    {
+      "prefix": "q003_E",
+      "task_index": 3,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 19,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 6
+        },
+        "P1": {
+          "work_id": 19,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 6
+        },
+        "P2": {
+          "work_id": 19,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 6
+        }
+      }
+    },
+    {
+      "prefix": "q003_B",
+      "task_index": 3,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 21,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 137
+        },
+        "P1": {
+          "work_id": 21,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 137
+        },
+        "P2": {
+          "work_id": 20,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "prefix": "q003_B",
+      "task_index": 3,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 22,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 137
+        },
+        "P1": {
+          "work_id": 23,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 137
+        },
+        "P2": {
+          "work_id": 20,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kapan",
+          "final_metrics": {
+            "answer": "Kapan",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 136
+        }
+      }
+    },
+    {
+      "prefix": "q004_E",
+      "task_index": 4,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 24,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "people of France",
+          "final_metrics": {
+            "answer": "people of France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 37
+        },
+        "P1": {
+          "work_id": 25,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "people of France",
+          "final_metrics": {
+            "answer": "people of France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 35
+        },
+        "P2": {
+          "work_id": 25,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "people of France",
+          "final_metrics": {
+            "answer": "people of France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 35
+        }
+      }
+    },
+    {
+      "prefix": "q004_E",
+      "task_index": 4,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 27,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "people of France",
+          "final_metrics": {
+            "answer": "people of France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 225
+        },
+        "P1": {
+          "work_id": 26,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "people of France",
+          "final_metrics": {
+            "answer": "people of France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 228
+        },
+        "P2": {
+          "work_id": 25,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "people of France",
+          "final_metrics": {
+            "answer": "people of France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 35
+        }
+      }
+    },
+    {
+      "prefix": "q004_B",
+      "task_index": 4,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 28,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "France",
+          "final_metrics": {
+            "answer": "France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 214
+        },
+        "P1": {
+          "work_id": 28,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "France",
+          "final_metrics": {
+            "answer": "France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 214
+        },
+        "P2": {
+          "work_id": 29,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "France",
+          "final_metrics": {
+            "answer": "France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 225
+        }
+      }
+    },
+    {
+      "prefix": "q004_B",
+      "task_index": 4,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": true,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 28,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "France",
+          "final_metrics": {
+            "answer": "France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 214
+        },
+        "P1": {
+          "work_id": 28,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "France",
+          "final_metrics": {
+            "answer": "France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 214
+        },
+        "P2": {
+          "work_id": 28,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "France",
+          "final_metrics": {
+            "answer": "France",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 214
+        }
+      }
+    },
+    {
+      "prefix": "q018_E",
+      "task_index": 18,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 31,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "G. Stanley Hall",
+          "final_metrics": {
+            "answer": "G. Stanley Hall",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 20
+        },
+        "P1": {
+          "work_id": 31,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "G. Stanley Hall",
+          "final_metrics": {
+            "answer": "G. Stanley Hall",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 20
+        },
+        "P2": {
+          "work_id": 30,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "G. Stanley Hall",
+          "final_metrics": {
+            "answer": "G. Stanley Hall",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 10
+        }
+      }
+    },
+    {
+      "prefix": "q018_E",
+      "task_index": 18,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 31,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "G. Stanley Hall",
+          "final_metrics": {
+            "answer": "G. Stanley Hall",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 20
+        },
+        "P1": {
+          "work_id": 30,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "G. Stanley Hall",
+          "final_metrics": {
+            "answer": "G. Stanley Hall",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 10
+        },
+        "P2": {
+          "work_id": 30,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "G. Stanley Hall",
+          "final_metrics": {
+            "answer": "G. Stanley Hall",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 10
+        }
+      }
+    },
+    {
+      "prefix": "q018_B",
+      "task_index": 18,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 32,
+          "work_code": "INSUFFICIENT_OR_UNCOMMITTED",
+          "work_correct": 0,
+          "final": "American Psychological Association",
+          "final_metrics": {
+            "answer": "American Psychological Association",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 226
+        },
+        "P1": {
+          "work_id": 33,
+          "work_code": "INSUFFICIENT_OR_UNCOMMITTED",
+          "work_correct": 0,
+          "final": "Anuman",
+          "final_metrics": {
+            "answer": "Anuman",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 195
+        },
+        "P2": {
+          "work_id": 34,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "G. Stanley Hall",
+          "final_metrics": {
+            "answer": "G. Stanley Hall",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 198
+        }
+      }
+    },
+    {
+      "prefix": "q018_B",
+      "task_index": 18,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 37,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "G. Stanley Hall",
+          "final_metrics": {
+            "answer": "G. Stanley Hall",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 141
+        },
+        "P1": {
+          "work_id": 35,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "G. Stanley Hall",
+          "final_metrics": {
+            "answer": "G. Stanley Hall",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 234
+        },
+        "P2": {
+          "work_id": 36,
+          "work_code": "INSUFFICIENT_OR_UNCOMMITTED",
+          "work_correct": 0,
+          "final": "Anuman",
+          "final_metrics": {
+            "answer": "Anuman",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 216
+        }
+      }
+    },
+    {
+      "prefix": "q019_E",
+      "task_index": 19,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 40,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 35
+        },
+        "P1": {
+          "work_id": 38,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 132
+        },
+        "P2": {
+          "work_id": 39,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 10
+        }
+      }
+    },
+    {
+      "prefix": "q019_E",
+      "task_index": 19,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 41,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 64
+        },
+        "P1": {
+          "work_id": 42,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 150
+        },
+        "P2": {
+          "work_id": 39,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 10
+        }
+      }
+    },
+    {
+      "prefix": "q019_B",
+      "task_index": 19,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 44,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 362
+        },
+        "P1": {
+          "work_id": 44,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 362
+        },
+        "P2": {
+          "work_id": 43,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 387
+        }
+      }
+    },
+    {
+      "prefix": "q019_B",
+      "task_index": 19,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 45,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 361
+        },
+        "P1": {
+          "work_id": 46,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 297
+        },
+        "P2": {
+          "work_id": 43,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1976",
+          "final_metrics": {
+            "answer": "1976",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 387
+        }
+      }
+    },
+    {
+      "prefix": "q027_E",
+      "task_index": 27,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 47,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 20
+        },
+        "P1": {
+          "work_id": 47,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 20
+        },
+        "P2": {
+          "work_id": 48,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        }
+      }
+    },
+    {
+      "prefix": "q027_E",
+      "task_index": 27,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 47,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 20
+        },
+        "P1": {
+          "work_id": 47,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 20
+        },
+        "P2": {
+          "work_id": 48,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        }
+      }
+    },
+    {
+      "prefix": "q027_B",
+      "task_index": 27,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 51,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 146
+        },
+        "P1": {
+          "work_id": 49,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 157
+        },
+        "P2": {
+          "work_id": 50,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 134
+        }
+      }
+    },
+    {
+      "prefix": "q027_B",
+      "task_index": 27,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 53,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 161
+        },
+        "P1": {
+          "work_id": 54,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 150
+        },
+        "P2": {
+          "work_id": 52,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Alberta Gay",
+          "final_metrics": {
+            "answer": "Alberta Gay",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 122
+        }
+      }
+    },
+    {
+      "prefix": "q031_E",
+      "task_index": 31,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 56,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 224
+        },
+        "P1": {
+          "work_id": 56,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 224
+        },
+        "P2": {
+          "work_id": 55,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 162
+        }
+      }
+    },
+    {
+      "prefix": "q031_E",
+      "task_index": 31,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 57,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 234
+        },
+        "P1": {
+          "work_id": 57,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 234
+        },
+        "P2": {
+          "work_id": 57,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 234
+        }
+      }
+    },
+    {
+      "prefix": "q031_B",
+      "task_index": 31,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 58,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 220
+        },
+        "P1": {
+          "work_id": 59,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 226
+        },
+        "P2": {
+          "work_id": 60,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 266
+        }
+      }
+    },
+    {
+      "prefix": "q031_B",
+      "task_index": 31,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 62,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 232
+        },
+        "P1": {
+          "work_id": 56,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 224
+        },
+        "P2": {
+          "work_id": 61,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "30,000",
+          "final_metrics": {
+            "answer": "30,000",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 236
+        }
+      }
+    },
+    {
+      "prefix": "q034_E",
+      "task_index": 34,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 64,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Rahimtullah M. Sayani",
+          "final_metrics": {
+            "answer": "Rahimtullah M. Sayani",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 19
+        },
+        "P1": {
+          "work_id": 63,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Rahimtulla M. Sayani",
+          "final_metrics": {
+            "answer": "Rahimtulla M. Sayani",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 20
+        },
+        "P2": {
+          "work_id": 63,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Rahimtulla M. Sayani",
+          "final_metrics": {
+            "answer": "Rahimtulla M. Sayani",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 20
+        }
+      }
+    },
+    {
+      "prefix": "q034_E",
+      "task_index": 34,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 64,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Rahimtullah M. Sayani",
+          "final_metrics": {
+            "answer": "Rahimtullah M. Sayani",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 19
+        },
+        "P1": {
+          "work_id": 63,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Rahimtulla M. Sayani",
+          "final_metrics": {
+            "answer": "Rahimtulla M. Sayani",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 20
+        },
+        "P2": {
+          "work_id": 63,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Rahimtulla M. Sayani",
+          "final_metrics": {
+            "answer": "Rahimtulla M. Sayani",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 20
+        }
+      }
+    },
+    {
+      "prefix": "q034_B",
+      "task_index": 34,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 66,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Badruddin Tayyab Ji",
+          "final_metrics": {
+            "answer": "Badruddin Tayyab Ji",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 312
+        },
+        "P1": {
+          "work_id": 67,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Badruddin Tayyab Ji",
+          "final_metrics": {
+            "answer": "Badruddin Tayyab Ji",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 356
+        },
+        "P2": {
+          "work_id": 65,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Badruddin Tayyab Ji",
+          "final_metrics": {
+            "answer": "Badruddin Tayyab Ji",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 363
+        }
+      }
+    },
+    {
+      "prefix": "q034_B",
+      "task_index": 34,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 68,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Badruddin Tayyab Ji",
+          "final_metrics": {
+            "answer": "Badruddin Tayyab Ji",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 264
+        },
+        "P1": {
+          "work_id": 69,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Badruddin Tayyab Ji",
+          "final_metrics": {
+            "answer": "Badruddin Tayyab Ji",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 318
+        },
+        "P2": {
+          "work_id": 70,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Rahimtulla M. Sayani",
+          "final_metrics": {
+            "answer": "Rahimtulla M. Sayani",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 552
+        }
+      }
+    },
+    {
+      "prefix": "q038_E",
+      "task_index": 38,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 71,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Old Quaker Cemetery",
+          "final_metrics": {
+            "answer": "Old Quaker Cemetery",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 10
+        },
+        "P1": {
+          "work_id": 71,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Old Quaker Cemetery",
+          "final_metrics": {
+            "answer": "Old Quaker Cemetery",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 10
+        },
+        "P2": {
+          "work_id": 71,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Old Quaker Cemetery",
+          "final_metrics": {
+            "answer": "Old Quaker Cemetery",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 10
+        }
+      }
+    },
+    {
+      "prefix": "q038_E",
+      "task_index": 38,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 71,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Old Quaker Cemetery",
+          "final_metrics": {
+            "answer": "Old Quaker Cemetery",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 10
+        },
+        "P1": {
+          "work_id": 71,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Old Quaker Cemetery",
+          "final_metrics": {
+            "answer": "Old Quaker Cemetery",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 10
+        },
+        "P2": {
+          "work_id": 71,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Old Quaker Cemetery",
+          "final_metrics": {
+            "answer": "Old Quaker Cemetery",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 10
+        }
+      }
+    },
+    {
+      "prefix": "q038_B",
+      "task_index": 38,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 74,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kershaw County",
+          "final_metrics": {
+            "answer": "Kershaw County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 409
+        },
+        "P1": {
+          "work_id": 72,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kershaw County",
+          "final_metrics": {
+            "answer": "Kershaw County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 206
+        },
+        "P2": {
+          "work_id": 73,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kershaw County",
+          "final_metrics": {
+            "answer": "Kershaw County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 199
+        }
+      }
+    },
+    {
+      "prefix": "q038_B",
+      "task_index": 38,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 76,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kershaw County",
+          "final_metrics": {
+            "answer": "Kershaw County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 171
+        },
+        "P1": {
+          "work_id": 77,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kershaw County",
+          "final_metrics": {
+            "answer": "Kershaw County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 122
+        },
+        "P2": {
+          "work_id": 75,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Kershaw County",
+          "final_metrics": {
+            "answer": "Kershaw County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 197
+        }
+      }
+    },
+    {
+      "prefix": "q052_E",
+      "task_index": 52,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 78,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Los Angeles County",
+          "final_metrics": {
+            "answer": "Los Angeles County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        },
+        "P1": {
+          "work_id": 79,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Los Angeles County",
+          "final_metrics": {
+            "answer": "Los Angeles County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 22
+        },
+        "P2": {
+          "work_id": 78,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Los Angeles County",
+          "final_metrics": {
+            "answer": "Los Angeles County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        }
+      }
+    },
+    {
+      "prefix": "q052_E",
+      "task_index": 52,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 78,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Los Angeles County",
+          "final_metrics": {
+            "answer": "Los Angeles County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        },
+        "P1": {
+          "work_id": 80,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Los Angeles County",
+          "final_metrics": {
+            "answer": "Los Angeles County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 30
+        },
+        "P2": {
+          "work_id": 78,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Los Angeles County",
+          "final_metrics": {
+            "answer": "Los Angeles County",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        }
+      }
+    },
+    {
+      "prefix": "q052_B",
+      "task_index": 52,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 81,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Santa Clarita County",
+          "final_metrics": {
+            "answer": "Santa Clarita County",
+            "em": 0,
+            "f1": 0.3333333333333333
+          },
+          "output_tokens": 92
+        },
+        "P1": {
+          "work_id": 82,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Santa Clarita County",
+          "final_metrics": {
+            "answer": "Santa Clarita County",
+            "em": 0,
+            "f1": 0.3333333333333333
+          },
+          "output_tokens": 104
+        },
+        "P2": {
+          "work_id": 83,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Santa Clarita County",
+          "final_metrics": {
+            "answer": "Santa Clarita County",
+            "em": 0,
+            "f1": 0.3333333333333333
+          },
+          "output_tokens": 159
+        }
+      }
+    },
+    {
+      "prefix": "q052_B",
+      "task_index": 52,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 86,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Santa Clarita County",
+          "final_metrics": {
+            "answer": "Santa Clarita County",
+            "em": 0,
+            "f1": 0.3333333333333333
+          },
+          "output_tokens": 147
+        },
+        "P1": {
+          "work_id": 84,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Santa Clarita County",
+          "final_metrics": {
+            "answer": "Santa Clarita County",
+            "em": 0,
+            "f1": 0.3333333333333333
+          },
+          "output_tokens": 93
+        },
+        "P2": {
+          "work_id": 85,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "Santa Clarita County",
+          "final_metrics": {
+            "answer": "Santa Clarita County",
+            "em": 0,
+            "f1": 0.3333333333333333
+          },
+          "output_tokens": 187
+        }
+      }
+    },
+    {
+      "prefix": "q057_E",
+      "task_index": 57,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 87,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        },
+        "P1": {
+          "work_id": 87,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        },
+        "P2": {
+          "work_id": 87,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        }
+      }
+    },
+    {
+      "prefix": "q057_E",
+      "task_index": 57,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 87,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        },
+        "P1": {
+          "work_id": 87,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        },
+        "P2": {
+          "work_id": 87,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 8
+        }
+      }
+    },
+    {
+      "prefix": "q057_B",
+      "task_index": 57,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 89,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 447
+        },
+        "P1": {
+          "work_id": 90,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 507
+        },
+        "P2": {
+          "work_id": 88,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 372
+        }
+      }
+    },
+    {
+      "prefix": "q057_B",
+      "task_index": 57,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 0,
+      "conditions": {
+        "P0": {
+          "work_id": 91,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 537
+        },
+        "P1": {
+          "work_id": 92,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 162
+        },
+        "P2": {
+          "work_id": 93,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "William Hale Thompson",
+          "final_metrics": {
+            "answer": "William Hale Thompson",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 259
+        }
+      }
+    },
+    {
+      "prefix": "q069_E",
+      "task_index": 69,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": false,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 94,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.5%",
+          "final_metrics": {
+            "answer": "2.5%",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 174
+        },
+        "P1": {
+          "work_id": 94,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.5%",
+          "final_metrics": {
+            "answer": "2.5%",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 174
+        },
+        "P2": {
+          "work_id": 95,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.5%",
+          "final_metrics": {
+            "answer": "2.5%",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 321
+        }
+      }
+    },
+    {
+      "prefix": "q069_E",
+      "task_index": 69,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": false,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 96,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.5%",
+          "final_metrics": {
+            "answer": "2.5%",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 402
+        },
+        "P1": {
+          "work_id": 96,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.5%",
+          "final_metrics": {
+            "answer": "2.5%",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 402
+        },
+        "P2": {
+          "work_id": 97,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "2.5%",
+          "final_metrics": {
+            "answer": "2.5%",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 328
+        }
+      }
+    },
+    {
+      "prefix": "q069_B",
+      "task_index": 69,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": false,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 4,
+      "conditions": {
+        "P0": {
+          "work_id": 100,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.4%",
+          "final_metrics": {
+            "answer": "2.4%",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 380
+        },
+        "P1": {
+          "work_id": 98,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.4%",
+          "final_metrics": {
+            "answer": "2.4%",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 380
+        },
+        "P2": {
+          "work_id": 99,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.4%",
+          "final_metrics": {
+            "answer": "2.4%",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 371
+        }
+      }
+    },
+    {
+      "prefix": "q069_B",
+      "task_index": 69,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": false,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 4,
+      "conditions": {
+        "P0": {
+          "work_id": 102,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.4%",
+          "final_metrics": {
+            "answer": "2.4%",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 424
+        },
+        "P1": {
+          "work_id": 103,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.4%",
+          "final_metrics": {
+            "answer": "2.4%",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 408
+        },
+        "P2": {
+          "work_id": 101,
+          "work_code": "WRONG_CONCLUDING_CANDIDATE",
+          "work_correct": 0,
+          "final": "2.4%",
+          "final_metrics": {
+            "answer": "2.4%",
+            "em": 0,
+            "f1": 0
+          },
+          "output_tokens": 358
+        }
+      }
+    },
+    {
+      "prefix": "q071_E",
+      "task_index": 71,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": false,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 105,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 197
+        },
+        "P1": {
+          "work_id": 106,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 202
+        },
+        "P2": {
+          "work_id": 104,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 209
+        }
+      }
+    },
+    {
+      "prefix": "q071_E",
+      "task_index": 71,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": false,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 107,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 72
+        },
+        "P1": {
+          "work_id": 107,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 72
+        },
+        "P2": {
+          "work_id": 108,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 10
+        }
+      }
+    },
+    {
+      "prefix": "q071_B",
+      "task_index": 71,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": false,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 109,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 180
+        },
+        "P1": {
+          "work_id": 110,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 198
+        },
+        "P2": {
+          "work_id": 111,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 184
+        }
+      }
+    },
+    {
+      "prefix": "q071_B",
+      "task_index": 71,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": false,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 113,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 208
+        },
+        "P1": {
+          "work_id": 110,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 198
+        },
+        "P2": {
+          "work_id": 112,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "Sawatch Range",
+          "final_metrics": {
+            "answer": "Sawatch Range",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 195
+        }
+      }
+    },
+    {
+      "prefix": "q077_E",
+      "task_index": 77,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 116,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 54
+        },
+        "P1": {
+          "work_id": 114,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 40
+        },
+        "P2": {
+          "work_id": 115,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 30
+        }
+      }
+    },
+    {
+      "prefix": "q077_E",
+      "task_index": 77,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 1,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 118,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 39
+        },
+        "P1": {
+          "work_id": 119,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 112
+        },
+        "P2": {
+          "work_id": 117,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 47
+        }
+      }
+    },
+    {
+      "prefix": "q077_B",
+      "task_index": 77,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 121,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 260
+        },
+        "P1": {
+          "work_id": 122,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 270
+        },
+        "P2": {
+          "work_id": 120,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 201
+        }
+      }
+    },
+    {
+      "prefix": "q077_B",
+      "task_index": 77,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 1,
+      "conditions": {
+        "P0": {
+          "work_id": 123,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 270
+        },
+        "P1": {
+          "work_id": 124,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 136
+        },
+        "P2": {
+          "work_id": 125,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "1934",
+          "final_metrics": {
+            "answer": "1934",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 199
+        }
+      }
+    },
+    {
+      "prefix": "q078_E",
+      "task_index": 78,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 126,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 78
+        },
+        "P1": {
+          "work_id": 127,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 119
+        },
+        "P2": {
+          "work_id": 128,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 6
+        }
+      }
+    },
+    {
+      "prefix": "q078_E",
+      "task_index": 78,
+      "role": "E",
+      "kind": "PEER_INITIAL_BLOCK",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 126,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 78
+        },
+        "P1": {
+          "work_id": 127,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 119
+        },
+        "P2": {
+          "work_id": 128,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 6
+        }
+      }
+    },
+    {
+      "prefix": "q078_B",
+      "task_index": 78,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 0,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 131,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 125
+        },
+        "P1": {
+          "work_id": 129,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 126
+        },
+        "P2": {
+          "work_id": 130,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 154
+        }
+      }
+    },
+    {
+      "prefix": "q078_B",
+      "task_index": 78,
+      "role": "B",
+      "kind": "ONE_EXPERT_WORK_MESSAGE",
+      "repeat": 1,
+      "semantic_primary": true,
+      "neutral": false,
+      "pre_state_correct": 0,
+      "retained_peer_work": 2,
+      "conditions": {
+        "P0": {
+          "work_id": 133,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 125
+        },
+        "P1": {
+          "work_id": 133,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 125
+        },
+        "P2": {
+          "work_id": 132,
+          "work_code": "CORRECT_CONCLUDING_CANDIDATE",
+          "work_correct": 1,
+          "final": "29",
+          "final_metrics": {
+            "answer": "29",
+            "em": 1,
+            "f1": 1
+          },
+          "output_tokens": 227
+        }
+      }
+    }
+  ]
+}

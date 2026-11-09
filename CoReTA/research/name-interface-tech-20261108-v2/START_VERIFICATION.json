@@ -1,0 +1,113 @@
+{
+  "result": "PASS",
+  "status": "RUNNING",
+  "snapshot_responses": 80,
+  "snapshot_attempts": 81,
+  "max_input_plus_cap": 2529,
+  "complete_arms_checked": 2,
+  "all_requests_reconstructed": true,
+  "all_output_ids_decoded": true,
+  "source_permissions_checked": true,
+  "fact_selection_requests": [
+    {
+      "task_id": 11,
+      "actor": "M2",
+      "status": "OK",
+      "unknown": [],
+      "selected": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "H02"
+      ],
+      "strict_id_format": true
+    },
+    {
+      "task_id": 11,
+      "actor": "M1",
+      "status": "OK",
+      "unknown": [],
+      "selected": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "H01",
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "strict_id_format": true
+    },
+    {
+      "task_id": 11,
+      "actor": "M3",
+      "status": "OK",
+      "unknown": [],
+      "selected": [
+        "S01",
+        "S02",
+        "S03",
+        "H03"
+      ],
+      "strict_id_format": true
+    },
+    {
+      "task_id": 11,
+      "actor": "M4",
+      "status": "OK",
+      "unknown": [],
+      "selected": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "strict_id_format": true
+    }
+  ],
+  "non_eos": 0,
+  "unreadable_finals": 0,
+  "output_tokens": 4805,
+  "generation_seconds": 215.80203859251924,
+  "freeze_unchanged": true,
+  "scope": "assistant provisional audit; not independent human or semantic correctness certification",
+  "unreadable_initials": 0,
+  "unreadable_nonfact_outputs": 0,
+  "legacy_option_ids_emitted": 0,
+  "initial_probe": {
+    "tasks": [
+      7,
+      8,
+      11,
+      23,
+      33,
+      34
+    ],
+    "planned_calls": 24,
+    "attempted_calls": 24,
+    "failures": [],
+    "gate": "PASS",
+    "accuracy_not_used_to_gate": true,
+    "inherited_records": 24,
+    "strict_answer_field_count": 20
+  },
+  "stage_max_output_tokens": {
+    "initial": 248,
+    "exchange": 86,
+    "facts": 25,
+    "work": 69,
+    "final": 3
+  },
+  "not_method_efficacy": true,
+  "inherited_records": 24,
+  "new_generation_records": 56,
+  "parse_modes": {
+    "ANSWER_FIELD": 64,
+    "TERMINAL_FULL_NAME": 4,
+    "WHOLE_NAME": 8
+  },
+  "generation_seconds_excluding_inherited": 124.8097395094228,
+  "no_initial_regeneration": true
+}

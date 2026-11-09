@@ -1,0 +1,47 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:52,  7.57it/s]/data2/xiaoxinchen/venvs/coreta/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   6%|▌         | 22/398 [00:00<00:03, 110.72it/s]Loading weights:  12%|█▏        | 49/398 [00:00<00:02, 173.23it/s]Loading weights:  20%|██        | 81/398 [00:00<00:01, 221.26it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:01, 248.66it/s]Loading weights:  35%|███▌      | 141/398 [00:00<00:00, 257.32it/s]Loading weights:  42%|████▏     | 169/398 [00:00<00:00, 263.23it/s]Loading weights:  51%|█████     | 201/398 [00:00<00:00, 274.42it/s]Loading weights:  58%|█████▊    | 229/398 [00:00<00:00, 273.34it/s]Loading weights:  65%|██████▍   | 257/398 [00:01<00:00, 274.20it/s]Loading weights:  73%|███████▎  | 289/398 [00:01<00:00, 282.07it/s]Loading weights:  80%|███████▉  | 318/398 [00:01<00:00, 283.12it/s]Loading weights:  87%|████████▋ | 347/398 [00:01<00:00, 276.64it/s]Loading weights:  95%|█████████▍| 378/398 [00:01<00:00, 280.71it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 255.54it/s]
+[transformers] Passing `generation_config` together with generation-related arguments=({'max_new_tokens', 'max_time'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+/data2/xiaoxinchen/venvs/coreta/lib/python3.12/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+V_SOLO 1 B OK
+V_SOLO 1 E OK
+V_SOLO 2 B OK
+V_SOLO 2 E OK
+V_SOLO 3 B OK
+V_SOLO 3 E OK
+V_SOLO 4 B OK
+V_SOLO 4 E OK
+V_SOLO 5 B OK
+V_SOLO 5 E OK
+V_SOLO 6 B OK
+V_SOLO 6 E OK
+V_SOLO 7 B OK
+V_SOLO 7 E OK
+V_SOLO 8 B OK
+V_SOLO 8 E OK
+V_SOLO 9 B OK
+V_SOLO 9 E OK
+V_SOLO 10 B OK
+V_SOLO 10 E OK
+V_SOLO 11 B OK
+V_SOLO 11 E OK
+V_SOLO 12 B OK
+V_SOLO 12 E OK
+V_SOLO 13 B OK
+V_SOLO 13 E OK
+V_SOLO 14 B OK
+V_SOLO 14 E OK
+V_SOLO 15 B OK
+V_SOLO 15 E OK
+V_SOLO 16 B OK
+V_SOLO 16 E OK
+V_SOLO 17 B OK
+V_SOLO 17 E OK
+V_SOLO 18 B OK
+V_SOLO 18 E OK
+V_SOLO 19 B OK
+V_SOLO 19 E OK
+V_SOLO 20 B OK
+V_SOLO 20 E OK
+{"status": "COMPLETE", "fatal_error": null, "planned_generations": 40, "actual_generations": 40, "conditions": {"B": {"n_recorded": 20, "n_valid": 20, "metrics": {"em": 0.15, "f1": 0.21088235294117647}}, "E": {"n_recorded": 20, "n_valid": 20, "metrics": {"em": 0.55, "f1": 0.6416666666666667}}}, "evidence": "V_DEVELOPMENT_TEAM_PROMPT_TRANSFER_NOT_C_QUALIFICATION", "elapsed_seconds": 38.339272515997436, "generation_config": {"max_length": null, "max_new_tokens": null, "min_length": null, "min_new_tokens": null, "early_stopping": null, "max_time": null, "stop_strings": null, "do_sample": true, "num_beams": 1, "use_mtp": null, "use_cache": null, "cache_implementation": null, "cache_config": null, "max_cache_len": null, "temperature": 0.7, "top_k": 0, "top_p": 0.95, "min_p": null, "top_h": null, "typical_p": null, "epsilon_cutoff": null, "eta_cutoff": null, "repetition_penalty": 1.0, "encoder_repetition_penalty": null, "length_penalty": null, "no_repeat_ngram_size": 0, "bad_words_ids": null, "renormalize_logits": null, "forced_bos_token_id": null, "forced_eos_token_id": null, "remove_invalid_values": null, "exponential_decay_length_penalty": null, "suppress_tokens": null, "begin_suppress_tokens": null, "sequence_bias": null, "token_healing": null, "guidance_scale": null, "watermarking_config": null, "num_return_sequences": null, "output_attentions": null, "output_hidden_states": null, "output_scores": null, "output_logits": null, "return_dict_in_generate": null, "pad_token_id": 151643, "bos_token_id": 151643, "eos_token_id": [151645, 151643], "encoder_no_repeat_ngram_size": null, "decoder_start_token_id": null, "is_assistant": null, "num_assistant_tokens": null, "num_assistant_tokens_schedule": null, "assistant_confidence_threshold": null, "prompt_lookup_num_tokens": null, "max_matching_ngram_size": null, "assistant_early_exit": null, "assistant_lookbehind": null, "target_lookbehind": null, "assistant_ensemble_weight": null, "speculation_type": null, "compile_config": null, "disable_compile": null, "continuous_batching_config": null, "low_memory": null, "penalty_alpha": null, "dola_layers": null, "diversity_penalty": null, "num_beam_groups": null, "constraints": null, "force_words_ids": null, "prefill_chunk_size": null, "_from_model_config": null, "transformers_version": "5.22.1"}, "peak_allocated_bytes": 4183601152, "peak_reserved_bytes": 5083496448, "em_difference": 0.4}

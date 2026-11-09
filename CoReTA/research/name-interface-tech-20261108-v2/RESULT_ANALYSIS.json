@@ -1,0 +1,241 @@
+{
+  "scope": "Purpose-selected technical cases 11/33, one seed, not method-effectiveness or frequency estimate.",
+  "table": [
+    {
+      "task_id": 11,
+      "arm": "A_private",
+      "team_expected": 0.5,
+      "expert_final": true,
+      "last_work_correct": 2,
+      "final_correct": 2,
+      "initial_answers": {
+        "M1": "School Gym",
+        "M2": "School Gym",
+        "M3": "City Library",
+        "M4": "City Library"
+      },
+      "final_answers": {
+        "M1": "School Gym",
+        "M2": "School Gym",
+        "M3": "City Library",
+        "M4": "City Library"
+      }
+    },
+    {
+      "task_id": 11,
+      "arm": "B_ordinary",
+      "team_expected": 1,
+      "expert_final": true,
+      "last_work_correct": 4,
+      "final_correct": 4,
+      "initial_answers": {
+        "M1": "School Gym",
+        "M2": "School Gym",
+        "M3": "City Library",
+        "M4": "City Library"
+      },
+      "final_answers": {
+        "M1": "School Gym",
+        "M2": "School Gym",
+        "M3": "School Gym",
+        "M4": "School Gym"
+      }
+    },
+    {
+      "task_id": 11,
+      "arm": "E_facts",
+      "team_expected": 1,
+      "expert_final": true,
+      "last_work_correct": 4,
+      "final_correct": 4,
+      "initial_answers": {
+        "M1": "School Gym",
+        "M2": "School Gym",
+        "M3": "City Library",
+        "M4": "City Library"
+      },
+      "final_answers": {
+        "M1": "School Gym",
+        "M2": "School Gym",
+        "M3": "School Gym",
+        "M4": "School Gym"
+      }
+    },
+    {
+      "task_id": 11,
+      "arm": "F_facts_opinions",
+      "team_expected": 1,
+      "expert_final": true,
+      "last_work_correct": 4,
+      "final_correct": 4,
+      "initial_answers": {
+        "M1": "School Gym",
+        "M2": "School Gym",
+        "M3": "City Library",
+        "M4": "City Library"
+      },
+      "final_answers": {
+        "M1": "School Gym",
+        "M2": "School Gym",
+        "M3": "School Gym",
+        "M4": "School Gym"
+      }
+    },
+    {
+      "task_id": 33,
+      "arm": "A_private",
+      "team_expected": 0,
+      "expert_final": true,
+      "last_work_correct": 1,
+      "final_correct": 1,
+      "initial_answers": {
+        "M1": "Lab Nova",
+        "M2": "Lab Atlas",
+        "M3": "Lab Gemini",
+        "M4": "Lab Gemini"
+      },
+      "final_answers": {
+        "M1": "Lab Nova",
+        "M2": "Lab Atlas",
+        "M3": "Lab Gemini",
+        "M4": "Lab Gemini"
+      }
+    },
+    {
+      "task_id": 33,
+      "arm": "B_ordinary",
+      "team_expected": 1,
+      "expert_final": true,
+      "last_work_correct": 4,
+      "final_correct": 2,
+      "initial_answers": {
+        "M1": "Lab Nova",
+        "M2": "Lab Atlas",
+        "M3": "Lab Gemini",
+        "M4": "Lab Gemini"
+      },
+      "final_answers": {
+        "M1": "Lab Nova",
+        "M2": "Lab Atlas",
+        "M3": "Lab Gemini",
+        "M4": "Lab Nova"
+      }
+    },
+    {
+      "task_id": 33,
+      "arm": "E_facts",
+      "team_expected": 1,
+      "expert_final": true,
+      "last_work_correct": 4,
+      "final_correct": 4,
+      "initial_answers": {
+        "M1": "Lab Nova",
+        "M2": "Lab Atlas",
+        "M3": "Lab Gemini",
+        "M4": "Lab Gemini"
+      },
+      "final_answers": {
+        "M1": "Lab Nova",
+        "M2": "Lab Nova",
+        "M3": "Lab Nova",
+        "M4": "Lab Nova"
+      }
+    },
+    {
+      "task_id": 33,
+      "arm": "F_facts_opinions",
+      "team_expected": 1,
+      "expert_final": true,
+      "last_work_correct": 4,
+      "final_correct": 4,
+      "initial_answers": {
+        "M1": "Lab Nova",
+        "M2": "Lab Atlas",
+        "M3": "Lab Gemini",
+        "M4": "Lab Gemini"
+      },
+      "final_answers": {
+        "M1": "Lab Nova",
+        "M2": "Lab Nova",
+        "M3": "Lab Nova",
+        "M4": "Lab Nova"
+      }
+    }
+  ],
+  "summaries": {
+    "A_private": {
+      "n_tasks": 2,
+      "team_expected_accuracy": 0.25,
+      "expert_final_accuracy": 1,
+      "ordinary_final_accuracy": 0.16666666666666666,
+      "last_work_to_final_changes": 0
+    },
+    "B_ordinary": {
+      "n_tasks": 2,
+      "team_expected_accuracy": 1,
+      "expert_final_accuracy": 1,
+      "ordinary_final_accuracy": 0.6666666666666666,
+      "last_work_to_final_changes": 2
+    },
+    "E_facts": {
+      "n_tasks": 2,
+      "team_expected_accuracy": 1,
+      "expert_final_accuracy": 1,
+      "ordinary_final_accuracy": 1,
+      "last_work_to_final_changes": 0
+    },
+    "F_facts_opinions": {
+      "n_tasks": 2,
+      "team_expected_accuracy": 1,
+      "expert_final_accuracy": 1,
+      "ordinary_final_accuracy": 1,
+      "last_work_to_final_changes": 0
+    }
+  },
+  "last_work_final_paths_checked": 32,
+  "changes": [
+    {
+      "task_id": 33,
+      "arm": "B_ordinary",
+      "actor": "M2",
+      "last_work_call": 160,
+      "final_call": 165,
+      "initial": "Lab Atlas",
+      "last_work": "Lab Nova",
+      "final": "Lab Atlas",
+      "own_work_path": [
+        "Lab Nova",
+        "Lab Nova",
+        "Lab Nova",
+        "Lab Nova"
+      ],
+      "last_work_correct": true,
+      "final_correct": false,
+      "full_last_work_present_in_final_payload": true,
+      "last_work_text": "**Explanation:** Lab Gemini has a strong track record and advanced cooling systems, but the highway is closed. Lab Atlas has reliable staff but is under maintenance with insufficient backup power. Lab Nova has functional equipment and staff after a recent power outage, making it the most viable option despite limited emergency experience.\n\nANSWER: Lab Nova",
+      "final_text": "Lab Atlas"
+    },
+    {
+      "task_id": 33,
+      "arm": "B_ordinary",
+      "actor": "M3",
+      "last_work_call": 161,
+      "final_call": 166,
+      "initial": "Lab Gemini",
+      "last_work": "Lab Nova",
+      "final": "Lab Gemini",
+      "own_work_path": [
+        "Lab Nova",
+        "Lab Nova",
+        "Lab Nova",
+        "Lab Nova"
+      ],
+      "last_work_correct": true,
+      "final_correct": false,
+      "full_last_work_present_in_final_payload": true,
+      "last_work_text": "**Explanation:** Lab Gemini has a strong track record and advanced cooling systems. Lab Atlas is under maintenance with insufficient backup power. Lab Nova has functional equipment and staff after a recent power outage, making it the most viable option despite limited emergency experience.  \n\nANSWER: Lab Nova",
+      "final_text": "Lab Gemini"
+    }
+  ],
+  "evidence_note": "All final payloads reconstructed in COMPLETION_AUDIT; changed paths additionally assert exact own last-work text is present. No inference of internal belief or unique causal mechanism."
+}

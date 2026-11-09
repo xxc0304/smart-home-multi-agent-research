@@ -1,0 +1,9 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert').strict;
+const read=n=>JSON.parse(fs.readFileSync(path.join(__dirname,n),'utf8')),sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const pre=read('PREFLIGHT.json'),fr=read('FREEZE.json');assert(pre.science==='PASS'&&pre.engineering==='PASS'&&pre.max_calls===48&&pre.max_input_plus_cap===3617&&pre.context===16384&&read('TESTS.json').n===7);
+const matched=[];for(const [p,h]of Object.entries(fr.files)){const name=p.split('/').at(-1);if(p.includes('/research/b1-terminal-control-20261107/')){const local=path.join(__dirname,name);assert.equal(sha(local),h,'Frozen stage file differs '+name);matched.push(name);}}
+assert.equal(matched.length,8);
+const r={date:'2026-11-07',verdict:'RUN_ALLOWED',scope:'12_FIXED_PRIVATE_FINAL_PREFIXES_48_CALLS_LOCAL_ADAPTER_DIAGNOSTIC',science:'PASS',engineering:'PASS',freeze_sha256:sha(path.join(__dirname,'FREEZE.json')),fixtureTests:7,actualMaxInputPlusCap:3617,context:16384,qualifiedExpert:'SUPPORTED_TASK_ADVANTAGE',localStageFilesMatch:matched,reviewer:'assistant',independence:'none/provisional',notAllowed:['training','new_C_H_evaluation','full_team_rerun','method_batch_expansion'],new_model_calls:0};
+fs.writeFileSync(path.join(__dirname,'READY_REVIEW.json'),JSON.stringify(r,null,2)+'\n');
+fs.writeFileSync(path.join(__dirname,'READY_REVIEW.md'),`# 启动前最终审核\n\n2026-11-07。科学PASS、工程PASS，RUN_ALLOWED限12真实私人终答前缀、48次adapter配对调用；助手none/provisional。\n\n7项真实输入/原响应fixture和故障检查通过；实际tokenizer全部载荷最大输入+cap3617<16384，既有独立专家资格SUPPORTED_TASK_ADVANTAGE，原权重/配置/模板与本批8源码/输入文件匹配冻结。首次路径问题已修复，原资格检查保留。冻结SHA256：${r.freeze_sha256}。\n\n唯一模型变化是adapter开/关，M1可见身份/原问题/资料/自身历史、输出cap、配对seed相同。12来源组，6原失败/6原稳定，定向开发诊断；不估总体发生率，不称团队方法收益。最多12288输出token、无时间硬截止、无自动生成重试，单条超限隔离，系统异常停止并留未完成。\n\n允许后台有限执行并完成归档/评分/原seed复现与语义核对。启动时再核冻结与GPU空闲，由APPROVAL.json记录实际派发；本审核不替代实际运行结果。\n`);
+console.log(JSON.stringify(r));

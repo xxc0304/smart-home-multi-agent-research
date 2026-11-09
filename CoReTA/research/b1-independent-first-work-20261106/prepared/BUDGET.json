@@ -1,0 +1,22 @@
+{
+  "unique_questions": 25,
+  "coverage_questions": 24,
+  "mechanism_questions": 8,
+  "overlap": 7,
+  "repeats": 2,
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "B_delay"
+  ],
+  "max_calls": 3200,
+  "max_output_tokens": 2355200,
+  "wall_clock_cutoff": null,
+  "legacy_config_wall_seconds_unused": true,
+  "generation_retry": false,
+  "physical_calls_may_be_lower": "B and B_delay share newly generated prefix before first expert work",
+  "execution": "ALL_SINGLETON_IDENTICAL_SHAPE",
+  "failure_policy": "Independent branch isolation for output limit/input length/empty; shared initial failure skips task-seed; any system fault stops batch."
+}

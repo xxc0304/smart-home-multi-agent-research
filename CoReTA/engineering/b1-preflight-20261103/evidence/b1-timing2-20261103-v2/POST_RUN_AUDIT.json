@@ -1,0 +1,414 @@
+{
+  "completed_at": "2026-11-04T00:04:59.155173+08:00",
+  "planned_items": 2,
+  "complete_items": 2,
+  "recorded_generations": 104,
+  "statuses": {
+    "OK": 104
+  },
+  "adapter_routes_match": true,
+  "trace_replay_scoring_match": true,
+  "by_phase": {
+    "initial": {
+      "n": 8,
+      "status_counts": {
+        "OK": 8
+      },
+      "max_input_tokens": 2842,
+      "max_output_tokens": 5,
+      "total_output_tokens": 32,
+      "generation_seconds": 4.9442576880064735
+    },
+    "work": {
+      "n": 64,
+      "status_counts": {
+        "OK": 64
+      },
+      "max_input_tokens": 4680,
+      "max_output_tokens": 482,
+      "total_output_tokens": 11610,
+      "generation_seconds": 560.5302581299984
+    },
+    "final": {
+      "n": 32,
+      "status_counts": {
+        "OK": 32
+      },
+      "max_input_tokens": 4947,
+      "max_output_tokens": 5,
+      "total_output_tokens": 128,
+      "generation_seconds": 25.03475855000943
+    }
+  },
+  "execution": {
+    "fixture": false,
+    "fatal_error": null,
+    "n_expected": 2,
+    "n_recorded": 2,
+    "n_complete": 2,
+    "new_backend_requests": 104,
+    "wall_seconds": 1800,
+    "elapsed_seconds": 597.6325060790004,
+    "peak_memory": {
+      "peak_allocated_bytes": 4216902144,
+      "peak_reserved_bytes": 5507121152
+    },
+    "peak_scope": "load_and_all_requests_including_failures; unavailable_on_CPU"
+  },
+  "items": [
+    {
+      "id": "2hop__123383_21417",
+      "complete": true,
+      "initial": {
+        "M1": {
+          "answer": "1810",
+          "em": 0
+        },
+        "M2": {
+          "answer": "1931",
+          "em": 0
+        },
+        "M3": {
+          "answer": "1931",
+          "em": 0
+        },
+        "M4": {
+          "answer": "1931",
+          "em": 0
+        }
+      },
+      "arms": {
+        "A": {
+          "expected_em": 0.0,
+          "actual_em": 0,
+          "expert_em": 0,
+          "vote": {
+            "answer": "1810",
+            "winners": [
+              "1810"
+            ],
+            "counts": {
+              "1810": 2,
+              "1931": 1,
+              "1843": 1
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20262103
+          },
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "member_answers": {
+            "M1": {
+              "answer": "1810",
+              "em": 0
+            },
+            "M2": {
+              "answer": "1931",
+              "em": 0
+            },
+            "M3": {
+              "answer": "1810",
+              "em": 0
+            },
+            "M4": {
+              "answer": "1843",
+              "em": 1
+            }
+          }
+        },
+        "B": {
+          "expected_em": 1.0,
+          "actual_em": 1,
+          "expert_em": 1,
+          "vote": {
+            "answer": "1843",
+            "winners": [
+              "1843"
+            ],
+            "counts": {
+              "1843": 4
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20262103
+          },
+          "expert_harm": 0,
+          "expert_correction": 1,
+          "member_answers": {
+            "M1": {
+              "answer": "1843",
+              "em": 1
+            },
+            "M2": {
+              "answer": "1843",
+              "em": 1
+            },
+            "M3": {
+              "answer": "1843",
+              "em": 1
+            },
+            "M4": {
+              "answer": "1843",
+              "em": 1
+            }
+          }
+        },
+        "C": {
+          "expected_em": 1.0,
+          "actual_em": 1,
+          "expert_em": 0,
+          "vote": {
+            "answer": "1843",
+            "winners": [
+              "1843"
+            ],
+            "counts": {
+              "1810": 1,
+              "1843": 2,
+              "1931": 1
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20262103
+          },
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "member_answers": {
+            "M1": {
+              "answer": "1810",
+              "em": 0
+            },
+            "M2": {
+              "answer": "1843",
+              "em": 1
+            },
+            "M3": {
+              "answer": "1843",
+              "em": 1
+            },
+            "M4": {
+              "answer": "1931",
+              "em": 0
+            }
+          }
+        },
+        "D": {
+          "expected_em": 0.0,
+          "actual_em": 0,
+          "expert_em": 0,
+          "vote": {
+            "answer": "1810",
+            "winners": [
+              "1810"
+            ],
+            "counts": {
+              "1810": 4
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20262103
+          },
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "member_answers": {
+            "M1": {
+              "answer": "1810",
+              "em": 0
+            },
+            "M2": {
+              "answer": "1810",
+              "em": 0
+            },
+            "M3": {
+              "answer": "1810",
+              "em": 0
+            },
+            "M4": {
+              "answer": "1810",
+              "em": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "3hop1__478606_751065_78953",
+      "complete": true,
+      "initial": {
+        "M1": {
+          "answer": "United Kingdom",
+          "em": 0
+        },
+        "M2": {
+          "answer": "United Kingdom",
+          "em": 0
+        },
+        "M3": {
+          "answer": "United Kingdom",
+          "em": 0
+        },
+        "M4": {
+          "answer": "United Kingdom",
+          "em": 0
+        }
+      },
+      "arms": {
+        "A": {
+          "expected_em": 0.0,
+          "actual_em": 0,
+          "expert_em": 0,
+          "vote": {
+            "answer": "United Kingdom",
+            "winners": [
+              "United Kingdom"
+            ],
+            "counts": {
+              "western europe": 1,
+              "united kingdom": 3
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20272103
+          },
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "member_answers": {
+            "M1": {
+              "answer": "western Europe",
+              "em": 0
+            },
+            "M2": {
+              "answer": "United Kingdom",
+              "em": 0
+            },
+            "M3": {
+              "answer": "United Kingdom",
+              "em": 0
+            },
+            "M4": {
+              "answer": "United Kingdom",
+              "em": 0
+            }
+          }
+        },
+        "B": {
+          "expected_em": 0.0,
+          "actual_em": 0,
+          "expert_em": 0,
+          "vote": {
+            "answer": "United Kingdom",
+            "winners": [
+              "United Kingdom"
+            ],
+            "counts": {
+              "western europe": 1,
+              "united kingdom": 3
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20272103
+          },
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "member_answers": {
+            "M1": {
+              "answer": "western Europe",
+              "em": 0
+            },
+            "M2": {
+              "answer": "United Kingdom",
+              "em": 0
+            },
+            "M3": {
+              "answer": "United Kingdom",
+              "em": 0
+            },
+            "M4": {
+              "answer": "United Kingdom",
+              "em": 0
+            }
+          }
+        },
+        "C": {
+          "expected_em": 0.0,
+          "actual_em": 0,
+          "expert_em": 0,
+          "vote": {
+            "answer": "United Kingdom",
+            "winners": [
+              "United Kingdom"
+            ],
+            "counts": {
+              "western europe": 1,
+              "united kingdom": 3
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20272103
+          },
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "member_answers": {
+            "M1": {
+              "answer": "western Europe",
+              "em": 0
+            },
+            "M2": {
+              "answer": "United Kingdom",
+              "em": 0
+            },
+            "M3": {
+              "answer": "United Kingdom",
+              "em": 0
+            },
+            "M4": {
+              "answer": "United Kingdom",
+              "em": 0
+            }
+          }
+        },
+        "D": {
+          "expected_em": 0.0,
+          "actual_em": 0,
+          "expert_em": 0,
+          "vote": {
+            "answer": "United Kingdom",
+            "winners": [
+              "United Kingdom"
+            ],
+            "counts": {
+              "western europe": 1,
+              "united kingdom": 3
+            },
+            "abstained": [],
+            "tie": false,
+            "seed": 20272103
+          },
+          "expert_harm": 0,
+          "expert_correction": 0,
+          "member_answers": {
+            "M1": {
+              "answer": "western Europe",
+              "em": 0
+            },
+            "M2": {
+              "answer": "United Kingdom",
+              "em": 0
+            },
+            "M3": {
+              "answer": "United Kingdom",
+              "em": 0
+            },
+            "M4": {
+              "answer": "United Kingdom",
+              "em": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "continuation_ready": true,
+  "interpretation": "Two development items are technical/descriptive only; no mechanism/effect claim."
+}
